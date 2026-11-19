@@ -5,7 +5,7 @@ Bot Discord de quiz façon -dle (Pokédle, et d'autres sujets à venir), tous su
 ## Utilisation
 
 - `/quiz pokedle` : lance le Pokédle du jour dans le salon (et plus tard `/quiz animedle`...). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
-- Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, le nom anglais marche aussi, et une faute de frappe est tolérée sur les noms d'au moins 5 lettres (« Roocool » → Roucool, « Ratattac » → Rattatac), sauf si deux noms collent.
+- Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, le nom anglais marche aussi, et une faute de frappe est tolérée sur les noms d'au moins 4 lettres (« Roocool » → Roucool, « Ratattac » → Rattatac), sauf si deux noms collent.
 - `/guess name:<nom>` : pareil, mais avec l'autocomplétion pendant la frappe (sans les noms déjà proposés). Pratique pour « Nidoran♀ » ou « M. Mime ».
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
 - `/quiz giveup` : abandonne la partie et donne la réponse.

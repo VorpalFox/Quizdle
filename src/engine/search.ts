@@ -15,8 +15,8 @@ function keys(entry: Entry): string[] {
   return [entry.name, entry.id, ...(entry.aliases ?? [])].map(normalize)
 }
 
-// En dessous, une faute tolérée ferait prendre des mots courants pour des noms (« new » → Mew)
-const MIN_TYPO_LENGTH = 5
+// En dessous, une faute tolérée ferait prendre des mots courants pour des noms (« new » → Mew, « ami » → Abo)
+const MIN_TYPO_LENGTH = 4
 
 // Nom exact d'abord, sinon une faute de frappe tolérée (« roocool » → Roucool, « ratattac » → Rattatac),
 // mais seulement si une seule entrée colle : on ne devine pas entre deux noms proches

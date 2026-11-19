@@ -68,10 +68,11 @@ describe('recherche', () => {
   it('tolère une faute, sauf sur les noms courts ou si deux entrées collent', () => {
     expect(findEntry(fruits, 'citrn')?.id).toBe('citron')
     expect(findEntry(fruits, 'Cirton')?.id).toBe('citron')
-    expect(findEntry(fruits, 'kiwo')).toBeUndefined()
-    const withPoire: Subject = { ...fruits, entries: [...fruits.entries, { id: 'poire', name: 'Poire', attributes: {} }] }
-    expect(findEntry(withPoire, 'poime')).toBeUndefined() // pomme ou poire ?
-    expect(findEntry(withPoire, 'pomme')?.id).toBe('pomme') // l'exact passe avant
+    expect(findEntry(fruits, 'kiwo')?.id).toBe('kiwi')
+    const more: Subject = { ...fruits, entries: [...fruits.entries, { id: 'poire', name: 'Poire', attributes: {} }, { id: 'mure', name: 'Mûr', attributes: {} }] }
+    expect(findEntry(more, 'mir')).toBeUndefined() // 3 lettres : trop court pour une faute
+    expect(findEntry(more, 'poime')).toBeUndefined() // pomme ou poire ?
+    expect(findEntry(more, 'pomme')?.id).toBe('pomme') // l'exact passe avant
   })
 
   it('autocomplétion : préfixes avant les contenus, exclut les déjà proposés', () => {
