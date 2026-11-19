@@ -3,6 +3,7 @@
 ## L'idée du projet
 
 - Un bot Discord du même genre que le Pokédle, mais **plus large** : pas seulement les Pokémon, plein d'autres sujets de quiz.
+- **Un seul bot pour tous les quiz** : on choisit Pokédle, Animedle... au lancement de la partie. Une partie à la fois par salon, mais on peut en enchaîner une autre (même sujet ou pas) dès que la précédente est finie.
 - Le moteur doit rester **séparé** du bot, comme dans CoopPoker, pour pouvoir changer de front plus tard (site web, autre plateforme...).
 - La première étape était de refaire un Pokédle comme base, en organisant le code pour pouvoir **refaire le même type de quiz sur d'autres sujets facilement**.
 

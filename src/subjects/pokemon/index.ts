@@ -6,7 +6,7 @@ const withUnit = (unit: string) => (value: AttributeValue) =>
 
 export const pokemon: Subject = {
   id: 'pokemon',
-  name: 'Pokémon',
+  name: 'Pokédle',
   description: 'Trouve le Pokémon mystère',
   attributes: [
     { key: 'types', label: 'Types', kind: 'set' },
