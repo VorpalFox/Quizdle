@@ -49,7 +49,15 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ### Données Weebdle
 
-Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans [data/recommendations.json](data/recommendations.json). Pour l'instant, [data/weebdle.json](data/weebdle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO.md](TODO.md).
+Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans [data/recommendations.json](data/recommendations.json). `npm run fetch:weebdle` régénère [data/weebdle.json](data/weebdle.json) depuis AniList ([scripts/fetchWeebdle.ts](scripts/fetchWeebdle.ts)).
+
+- **Récupération** : tous les personnages de chaque anime de la liste. Les réponses sont gardées dans `.cache/weebdle/` (hors git) : si le script s'arrête, le relancer reprend où il en était, et une relance complète ne refait aucune requête. Pour retélécharger, supprimer ce dossier. Compter une vingtaine de minutes la 1re fois.
+- **Un personnage, un anime** : un personnage présent dans plusieurs animes de la liste (Index et Railgun, Fate/Zero et UBW...) revient à l'anime où il est principal, et s'il l'est dans plusieurs, ou nulle part, à celui sorti en premier.
+- **4 à 20 personnages par anime** : tous s'il y en a 20 ou moins. Au-delà, on écarte ceux qui n'ont ni âge ni taille (sauf s'il en faut pour arriver à 20), puis on prend les principaux (les 10 plus populaires, et jusqu'à 6 de plus) et on complète avec des secondaires, moitié par popularité, moitié au sort. Le tirage a une graine fixe (l'id AniList de l'anime) : relancer le script redonne les mêmes personnages. Les figurants ne servent qu'à compléter un anime qui a moins de 4 personnages.
+- **Anime** : l'anime de la liste auquel le personnage est attribué (son titre dans `recommendations.json`, sans « (TV) » ni « (2011) »). Genres, studio, année et source viennent de cet anime. Âge, taille et noms acceptés comme pour l'Animedle.
+- **Récap** : à la fin, le script affiche et écrit dans `.cache/weebdle/weebdle-recap.md` le nombre de personnages par anime, ceux sans âge, sans taille ou sans sexe (à compléter à la main), les personnages présents dans plusieurs animes et les noms partagés par plusieurs personnages.
+
+Attention : relancer le script réécrit `data/weebdle.json`, et donc efface les corrections faites à la main.
 
 ## Installation
 
