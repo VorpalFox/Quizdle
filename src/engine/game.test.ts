@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
-import { dailyEntry, dayKey } from './pick.js'
+import { dayKey, randomEntry } from './pick.js'
 import { findEntry, searchEntries } from './search.js'
 import type { Subject } from './types.js'
 
@@ -62,9 +62,10 @@ describe('recherche', () => {
 
 describe('Game', () => {
   const target = fruits.entries[0]! // Pomme
+  const DAY = '2026-11-19'
 
   it('compare chaque attribut et gagne sur la bonne réponse', () => {
-    const game = new Game(fruits, target)
+    const game = new Game(fruits, target, DAY)
     const guess = game.guess('Pêche', 'alice')
     expect(guess.correct).toBe(false)
     expect(guess.results.map(r => r.feedback)).toEqual(['partial', 'wrong', 'correct'])
@@ -74,7 +75,7 @@ describe('Game', () => {
   })
 
   it('refuse un inconnu ou un doublon sans consommer d\'essai', () => {
-    const game = new Game(fruits, target)
+    const game = new Game(fruits, target, DAY)
     game.guess('Kiwi', 'alice')
     expect(() => game.guess('kiwi', 'bob')).toThrow(GameError)
     expect(() => game.guess('banane', 'bob')).toThrow(GameError)
@@ -82,7 +83,7 @@ describe('Game', () => {
   })
 
   it('perd une fois les essais épuisés', () => {
-    const game = new Game(fruits, target)
+    const game = new Game(fruits, target, DAY)
     game.guess('Kiwi', 'a')
     game.guess('Citron', 'a')
     game.guess('Pêche', 'a')
@@ -90,15 +91,10 @@ describe('Game', () => {
   })
 })
 
-describe('quiz du jour', () => {
-  it('dailyEntry : même cible pour une même date', () => {
-    expect(dailyEntry(fruits, '2026-11-19')).toBe(dailyEntry(fruits, '2026-11-19'))
-  })
-
-  it('dailyEntry : pas de doublon avant d\'avoir fait le tour des entrées', () => {
-    // 2026-11-15 est un multiple de 4 jours depuis 1970 : début d'un tour pour 4 entrées
-    const days = ['2026-11-15', '2026-11-16', '2026-11-17', '2026-11-18']
-    expect(new Set(days.map(day => dailyEntry(fruits, day).id)).size).toBe(4)
+describe('tirage', () => {
+  it('randomEntry : évite les entrées exclues, et repart sur tout si tout est exclu', () => {
+    expect(randomEntry(fruits, new Set(['pomme', 'citron', 'peche'])).id).toBe('kiwi')
+    expect(randomEntry(fruits, new Set(['pomme', 'citron', 'peche', 'kiwi']), () => 0).id).toBe('pomme')
   })
 
   it('dayKey : le jour change à minuit heure de Paris, pas à minuit UTC', () => {

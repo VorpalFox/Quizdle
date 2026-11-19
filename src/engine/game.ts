@@ -18,7 +18,7 @@ export interface Guess {
 export interface GameSnapshot {
   subjectId: string
   targetId: string
-  day: string | null
+  day: string
   guesses: { entryId: string, playerId: string }[]
   status: GameStatus
 }
@@ -28,8 +28,8 @@ export class Game {
   readonly guesses: Guess[] = []
   private _status: GameStatus = 'playing'
 
-  // day : le jour (AAAA-MM-JJ) pour une partie « du jour », null pour une partie libre
-  constructor(readonly subject: Subject, readonly target: Entry, readonly day: string | null = null) {}
+  // day : le jour (AAAA-MM-JJ) de la partie du jour
+  constructor(readonly subject: Subject, readonly target: Entry, readonly day: string) {}
 
   // Les propositions sont rejouées pour recalculer les indices
   static restore(snapshot: GameSnapshot, getSubject: (id: string) => Subject | undefined): Game {

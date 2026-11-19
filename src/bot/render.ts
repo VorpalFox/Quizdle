@@ -16,9 +16,9 @@ const COLOR_LOST = 0xed4245
 
 const LEGEND = '🟩 juste · 🟨 en partie · 🟥 faux · ⬆️ c\'est plus · ⬇️ c\'est moins'
 
-// « Pokédle du jour » ou « Pokédle » pour une partie libre
+// « Pokédle du jour »
 function gameTitle(game: Game): string {
-  return game.day ? `${game.subject.name} du jour` : game.subject.name
+  return `${game.subject.name} du jour`
 }
 
 export function renderStart(game: Game): EmbedBuilder {

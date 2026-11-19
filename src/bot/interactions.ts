@@ -1,15 +1,10 @@
 import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, MessageFlags } from 'discord.js'
-import { Game, GameError } from '../engine/game.js'
-import { dailyEntry, dayKey, randomEntry } from '../engine/pick.js'
+import { type Game, GameError } from '../engine/game.js'
 import { searchEntries } from '../engine/search.js'
-import type { Subject } from '../engine/types.js'
 import { getSubject } from '../subjects/registry.js'
-import { COMMAND_NAME } from './commands.js'
+import { COMMAND_NAME, DEBUG_COMMAND_NAME } from './commands.js'
 import { renderBoard, renderGuess, renderReveal, renderStart } from './render.js'
-import { GameStore, STATE_FILE } from './store.js'
-
-// Une partie par salon, partagée par tous ceux du salon (coop)
-const store = GameStore.load(STATE_FILE)
+import type { GameStore } from './store.js'
 
 // File d'attente par salon : deux propositions simultanées sont traitées l'une après l'autre
 const queues = new Map<string, Promise<void>>()
@@ -20,16 +15,20 @@ function inQueue(channelId: string, task: () => Promise<void>): Promise<void> {
   return run
 }
 
-export async function handleInteraction(interaction: Interaction): Promise<void> {
+export async function handleInteraction(interaction: Interaction, store: GameStore): Promise<void> {
   if (interaction.isAutocomplete() && interaction.commandName === COMMAND_NAME)
-    return handleAutocomplete(interaction) // pas de file : Discord laisse 3 s pour répondre, et ça ne modifie rien
-  if (interaction.isChatInputCommand() && interaction.commandName === COMMAND_NAME)
-    await inQueue(interaction.channelId, () => handleCommand(interaction))
+    return handleAutocomplete(interaction, store) // pas de file : Discord laisse 3 s pour répondre, et ça ne modifie rien
+  if (!interaction.isChatInputCommand())
+    return
+  if (interaction.commandName === COMMAND_NAME)
+    await inQueue(interaction.channelId, () => handleCommand(interaction, () => runCommand(interaction, store)))
+  else if (interaction.commandName === DEBUG_COMMAND_NAME)
+    await handleCommand(interaction, () => runDebugCommand(interaction, store))
 }
 
-async function handleCommand(interaction: ChatInputCommandInteraction): Promise<void> {
+async function handleCommand(interaction: ChatInputCommandInteraction, run: () => Promise<void>): Promise<void> {
   try {
-    await runCommand(interaction)
+    await run()
   } catch (error) {
     if (!(error instanceof GameError))
       throw error
@@ -39,27 +38,20 @@ async function handleCommand(interaction: ChatInputCommandInteraction): Promise<
 }
 
 // On sauvegarde avant de répondre : si la réponse échoue, la proposition est quand même gardée
-async function runCommand(interaction: ChatInputCommandInteraction): Promise<void> {
+async function runCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
   const channelId = interaction.channelId
   const current = store.get(channelId)
 
   switch (interaction.options.getSubcommand()) {
-    case 'daily': {
-      ensureNoGameInProgress(current)
-      const subject = requiredSubject(interaction)
-      const day = dayKey()
-      if (store.dailyPlayed(channelId, subject.id, day))
-        throw new GameError(`Le ${subject.name} du jour a déjà été joué dans ce salon. Rendez-vous demain, ou \`/quiz start\` pour une partie libre !`)
-      const game = new Game(subject, dailyEntry(subject, day), day)
-      store.start(channelId, game)
-      await interaction.reply({ embeds: [renderStart(game)] })
-      return
-    }
     case 'start': {
-      ensureNoGameInProgress(current)
-      const subject = requiredSubject(interaction)
-      const game = new Game(subject, randomEntry(subject))
-      store.start(channelId, game)
+      if (current?.status === 'playing')
+        throw new GameError('Une partie est déjà en cours dans ce salon (`/quiz giveup` pour l\'arrêter).')
+      const subject = getSubject(interaction.options.getString('subject', true))
+      if (!subject)
+        throw new GameError('Sujet inconnu.')
+      if (store.playedToday(channelId, subject.id))
+        throw new GameError(`Le ${subject.name} du jour a déjà été joué dans ce salon. Rendez-vous demain !`)
+      const game = store.startDaily(channelId, subject)
       await interaction.reply({ embeds: [renderStart(game)] })
       return
     }
@@ -72,7 +64,7 @@ async function runCommand(interaction: ChatInputCommandInteraction): Promise<voi
     }
     case 'board':
       if (!current)
-        throw new GameError('Aucune partie dans ce salon. Lance-en une avec `/quiz daily` ou `/quiz start`.')
+        throw new GameError('Aucune partie dans ce salon. Lance-en une avec `/quiz start`.')
       await interaction.reply({ embeds: [renderBoard(current)] })
       return
     case 'giveup': {
@@ -85,25 +77,22 @@ async function runCommand(interaction: ChatInputCommandInteraction): Promise<voi
   }
 }
 
-function ensureNoGameInProgress(game: Game | undefined): void {
-  if (game?.status === 'playing')
-    throw new GameError('Une partie est déjà en cours dans ce salon (`/quiz giveup` pour l\'arrêter).')
-}
-
-function requiredSubject(interaction: ChatInputCommandInteraction): Subject {
-  const subject = getSubject(interaction.options.getString('subject', true))
-  if (!subject)
-    throw new GameError('Sujet inconnu.')
-  return subject
+async function runDebugCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
+  if (!process.env.DISCORD_OWNER_ID || interaction.user.id !== process.env.DISCORD_OWNER_ID)
+    throw new GameError('Commande réservée au propriétaire du bot.')
+  if (interaction.options.getSubcommand() === 'reset') {
+    store.reset()
+    await interaction.reply({ content: '🔄 Nouveau tirage du jour, et toutes les parties sont effacées (sur tous les serveurs).', flags: MessageFlags.Ephemeral })
+  }
 }
 
 function playingGame(game: Game | undefined): Game {
   if (game?.status !== 'playing')
-    throw new GameError('Aucune partie en cours dans ce salon. Lance-en une avec `/quiz daily` ou `/quiz start`.')
+    throw new GameError('Aucune partie en cours dans ce salon. Lance-en une avec `/quiz start`.')
   return game
 }
 
-async function handleAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
+async function handleAutocomplete(interaction: AutocompleteInteraction, store: GameStore): Promise<void> {
   const game = store.get(interaction.channelId)
   if (game?.status !== 'playing')
     return interaction.respond([])
