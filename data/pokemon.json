@@ -1,0 +1,2938 @@
+[
+ {
+  "id": "1",
+  "name": "Bulbizarre",
+  "aliases": [
+   "bulbasaur"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Vert",
+   "stage": 1,
+   "height": 0.7,
+   "weight": 6.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "2",
+  "name": "Herbizarre",
+  "aliases": [
+   "ivysaur"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Vert",
+   "stage": 2,
+   "height": 1,
+   "weight": 13,
+   "generation": 1
+  }
+ },
+ {
+  "id": "3",
+  "name": "Florizarre",
+  "aliases": [
+   "venusaur"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Vert",
+   "stage": 3,
+   "height": 2,
+   "weight": 100,
+   "generation": 1
+  }
+ },
+ {
+  "id": "4",
+  "name": "Salamèche",
+  "aliases": [
+   "charmander"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Montagne",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 8.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "5",
+  "name": "Reptincel",
+  "aliases": [
+   "charmeleon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Montagne",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 19,
+   "generation": 1
+  }
+ },
+ {
+  "id": "6",
+  "name": "Dracaufeu",
+  "aliases": [
+   "charizard"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+  "attributes": {
+   "types": [
+    "Feu",
+    "Vol"
+   ],
+   "habitat": "Montagne",
+   "color": "Rouge",
+   "stage": 3,
+   "height": 1.7,
+   "weight": 90.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "7",
+  "name": "Carapuce",
+  "aliases": [
+   "squirtle"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "8",
+  "name": "Carabaffe",
+  "aliases": [
+   "wartortle"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1,
+   "weight": 22.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "9",
+  "name": "Tortank",
+  "aliases": [
+   "blastoise"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 3,
+   "height": 1.6,
+   "weight": 85.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "10",
+  "name": "Chenipan",
+  "aliases": [
+   "caterpie"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+  "attributes": {
+   "types": [
+    "Insecte"
+   ],
+   "habitat": "Forêt",
+   "color": "Vert",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 2.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "11",
+  "name": "Chrysacier",
+  "aliases": [
+   "metapod"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+  "attributes": {
+   "types": [
+    "Insecte"
+   ],
+   "habitat": "Forêt",
+   "color": "Vert",
+   "stage": 2,
+   "height": 0.7,
+   "weight": 9.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "12",
+  "name": "Papilusion",
+  "aliases": [
+   "butterfree"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Vol"
+   ],
+   "habitat": "Forêt",
+   "color": "Blanc",
+   "stage": 3,
+   "height": 1.1,
+   "weight": 32,
+   "generation": 1
+  }
+ },
+ {
+  "id": "13",
+  "name": "Aspicot",
+  "aliases": [
+   "weedle"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 3.2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "14",
+  "name": "Coconfort",
+  "aliases": [
+   "kakuna"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 0.6,
+   "weight": 10,
+   "generation": 1
+  }
+ },
+ {
+  "id": "15",
+  "name": "Dardargnan",
+  "aliases": [
+   "beedrill"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Jaune",
+   "stage": 3,
+   "height": 1,
+   "weight": 29.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "16",
+  "name": "Roucool",
+  "aliases": [
+   "pidgey"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Forêt",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 1.8,
+   "generation": 1
+  }
+ },
+ {
+  "id": "17",
+  "name": "Roucoups",
+  "aliases": [
+   "pidgeotto"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Forêt",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "18",
+  "name": "Roucarnage",
+  "aliases": [
+   "pidgeot"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Forêt",
+   "color": "Marron",
+   "stage": 3,
+   "height": 1.5,
+   "weight": 39.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "19",
+  "name": "Rattata",
+  "aliases": [
+   "rattata"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 3.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "20",
+  "name": "Rattatac",
+  "aliases": [
+   "raticate"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 2,
+   "height": 0.7,
+   "weight": 18.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "21",
+  "name": "Piafabec",
+  "aliases": [
+   "spearow"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "22",
+  "name": "Rapasdepic",
+  "aliases": [
+   "fearow"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.2,
+   "weight": 38,
+   "generation": 1
+  }
+ },
+ {
+  "id": "23",
+  "name": "Abo",
+  "aliases": [
+   "ekans"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 1,
+   "height": 2,
+   "weight": 6.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "24",
+  "name": "Arbok",
+  "aliases": [
+   "arbok"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 2,
+   "height": 3.5,
+   "weight": 65,
+   "generation": 1
+  }
+ },
+ {
+  "id": "25",
+  "name": "Pikachu",
+  "aliases": [
+   "pikachu"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Forêt",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 0.4,
+   "weight": 6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "26",
+  "name": "Raichu",
+  "aliases": [
+   "raichu"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Forêt",
+   "color": "Jaune",
+   "stage": 3,
+   "height": 0.8,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "27",
+  "name": "Sabelette",
+  "aliases": [
+   "sandshrew"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 12,
+   "generation": 1
+  }
+ },
+ {
+  "id": "28",
+  "name": "Sablaireau",
+  "aliases": [
+   "sandslash"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1,
+   "weight": 29.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "29",
+  "name": "Nidoran♀",
+  "aliases": [
+   "nidoran-f"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 7,
+   "generation": 1
+  }
+ },
+ {
+  "id": "30",
+  "name": "Nidorina",
+  "aliases": [
+   "nidorina"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 0.8,
+   "weight": 20,
+   "generation": 1
+  }
+ },
+ {
+  "id": "31",
+  "name": "Nidoqueen",
+  "aliases": [
+   "nidoqueen"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+  "attributes": {
+   "types": [
+    "Poison",
+    "Sol"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 3,
+   "height": 1.3,
+   "weight": 60,
+   "generation": 1
+  }
+ },
+ {
+  "id": "32",
+  "name": "Nidoran♂",
+  "aliases": [
+   "nidoran-m"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "33",
+  "name": "Nidorino",
+  "aliases": [
+   "nidorino"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 2,
+   "height": 0.9,
+   "weight": 19.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "34",
+  "name": "Nidoking",
+  "aliases": [
+   "nidoking"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png",
+  "attributes": {
+   "types": [
+    "Poison",
+    "Sol"
+   ],
+   "habitat": "Prairie",
+   "color": "Violet",
+   "stage": 3,
+   "height": 1.4,
+   "weight": 62,
+   "generation": 1
+  }
+ },
+ {
+  "id": "35",
+  "name": "Mélofée",
+  "aliases": [
+   "clefairy"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+  "attributes": {
+   "types": [
+    "Fée"
+   ],
+   "habitat": "Montagne",
+   "color": "Rose",
+   "stage": 2,
+   "height": 0.6,
+   "weight": 7.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "36",
+  "name": "Mélodelfe",
+  "aliases": [
+   "clefable"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png",
+  "attributes": {
+   "types": [
+    "Fée"
+   ],
+   "habitat": "Montagne",
+   "color": "Rose",
+   "stage": 3,
+   "height": 1.3,
+   "weight": 40,
+   "generation": 1
+  }
+ },
+ {
+  "id": "37",
+  "name": "Goupix",
+  "aliases": [
+   "vulpix"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 9.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "38",
+  "name": "Feunard",
+  "aliases": [
+   "ninetales"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 19.9,
+   "generation": 1
+  }
+ },
+ {
+  "id": "39",
+  "name": "Rondoudou",
+  "aliases": [
+   "jigglypuff"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Fée"
+   ],
+   "habitat": "Prairie",
+   "color": "Rose",
+   "stage": 2,
+   "height": 0.5,
+   "weight": 5.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "40",
+  "name": "Grodoudou",
+  "aliases": [
+   "wigglytuff"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Fée"
+   ],
+   "habitat": "Prairie",
+   "color": "Rose",
+   "stage": 3,
+   "height": 1,
+   "weight": 12,
+   "generation": 1
+  }
+ },
+ {
+  "id": "41",
+  "name": "Nosferapti",
+  "aliases": [
+   "zubat"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+  "attributes": {
+   "types": [
+    "Poison",
+    "Vol"
+   ],
+   "habitat": "Grotte",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 7.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "42",
+  "name": "Nosferalto",
+  "aliases": [
+   "golbat"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+  "attributes": {
+   "types": [
+    "Poison",
+    "Vol"
+   ],
+   "habitat": "Grotte",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.6,
+   "weight": 55,
+   "generation": 1
+  }
+ },
+ {
+  "id": "43",
+  "name": "Mystherbe",
+  "aliases": [
+   "oddish"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 5.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "44",
+  "name": "Ortide",
+  "aliases": [
+   "gloom"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 0.8,
+   "weight": 8.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "45",
+  "name": "Rafflesia",
+  "aliases": [
+   "vileplume"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Prairie",
+   "color": "Rouge",
+   "stage": 3,
+   "height": 1.2,
+   "weight": 18.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "46",
+  "name": "Paras",
+  "aliases": [
+   "paras"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Plante"
+   ],
+   "habitat": "Forêt",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 5.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "47",
+  "name": "Parasect",
+  "aliases": [
+   "parasect"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Plante"
+   ],
+   "habitat": "Forêt",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1,
+   "weight": 29.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "48",
+  "name": "Mimitoss",
+  "aliases": [
+   "venonat"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Violet",
+   "stage": 1,
+   "height": 1,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "49",
+  "name": "Aéromite",
+  "aliases": [
+   "venomoth"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.5,
+   "weight": 12.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "50",
+  "name": "Taupiqueur",
+  "aliases": [
+   "diglett"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Grotte",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.2,
+   "weight": 0.8,
+   "generation": 1
+  }
+ },
+ {
+  "id": "51",
+  "name": "Triopikeur",
+  "aliases": [
+   "dugtrio"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Grotte",
+   "color": "Marron",
+   "stage": 2,
+   "height": 0.7,
+   "weight": 33.3,
+   "generation": 1
+  }
+ },
+ {
+  "id": "52",
+  "name": "Miaouss",
+  "aliases": [
+   "meowth"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 4.2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "53",
+  "name": "Persian",
+  "aliases": [
+   "persian"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1,
+   "weight": 32,
+   "generation": 1
+  }
+ },
+ {
+  "id": "54",
+  "name": "Psykokwak",
+  "aliases": [
+   "psyduck"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 19.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "55",
+  "name": "Akwakwak",
+  "aliases": [
+   "golduck"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1.7,
+   "weight": 76.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "56",
+  "name": "Férosinge",
+  "aliases": [
+   "mankey"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 28,
+   "generation": 1
+  }
+ },
+ {
+  "id": "57",
+  "name": "Colossinge",
+  "aliases": [
+   "primeape"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1,
+   "weight": 32,
+   "generation": 1
+  }
+ },
+ {
+  "id": "58",
+  "name": "Caninos",
+  "aliases": [
+   "growlithe"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.7,
+   "weight": 19,
+   "generation": 1
+  }
+ },
+ {
+  "id": "59",
+  "name": "Arcanin",
+  "aliases": [
+   "arcanine"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.9,
+   "weight": 155,
+   "generation": 1
+  }
+ },
+ {
+  "id": "60",
+  "name": "Ptitard",
+  "aliases": [
+   "poliwag"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 12.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "61",
+  "name": "Têtarte",
+  "aliases": [
+   "poliwhirl"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1,
+   "weight": 20,
+   "generation": 1
+  }
+ },
+ {
+  "id": "62",
+  "name": "Tartard",
+  "aliases": [
+   "poliwrath"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Combat"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 3,
+   "height": 1.3,
+   "weight": 54,
+   "generation": 1
+  }
+ },
+ {
+  "id": "63",
+  "name": "Abra",
+  "aliases": [
+   "abra"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.9,
+   "weight": 19.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "64",
+  "name": "Kadabra",
+  "aliases": [
+   "kadabra"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 56.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "65",
+  "name": "Alakazam",
+  "aliases": [
+   "alakazam"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 3,
+   "height": 1.5,
+   "weight": 48,
+   "generation": 1
+  }
+ },
+ {
+  "id": "66",
+  "name": "Machoc",
+  "aliases": [
+   "machop"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Montagne",
+   "color": "Gris",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 19.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "67",
+  "name": "Machopeur",
+  "aliases": [
+   "machoke"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Montagne",
+   "color": "Gris",
+   "stage": 2,
+   "height": 1.5,
+   "weight": 70.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "68",
+  "name": "Mackogneur",
+  "aliases": [
+   "machamp"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Montagne",
+   "color": "Gris",
+   "stage": 3,
+   "height": 1.6,
+   "weight": 130,
+   "generation": 1
+  }
+ },
+ {
+  "id": "69",
+  "name": "Chétiflor",
+  "aliases": [
+   "bellsprout"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Vert",
+   "stage": 1,
+   "height": 0.7,
+   "weight": 4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "70",
+  "name": "Boustiflor",
+  "aliases": [
+   "weepinbell"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Vert",
+   "stage": 2,
+   "height": 1,
+   "weight": 6.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "71",
+  "name": "Empiflor",
+  "aliases": [
+   "victreebel"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Poison"
+   ],
+   "habitat": "Forêt",
+   "color": "Vert",
+   "stage": 3,
+   "height": 1.7,
+   "weight": 15.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "72",
+  "name": "Tentacool",
+  "aliases": [
+   "tentacool"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Poison"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.9,
+   "weight": 45.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "73",
+  "name": "Tentacruel",
+  "aliases": [
+   "tentacruel"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Poison"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1.6,
+   "weight": 55,
+   "generation": 1
+  }
+ },
+ {
+  "id": "74",
+  "name": "Racaillou",
+  "aliases": [
+   "geodude"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Sol"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 20,
+   "generation": 1
+  }
+ },
+ {
+  "id": "75",
+  "name": "Gravalanch",
+  "aliases": [
+   "graveler"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Sol"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1,
+   "weight": 105,
+   "generation": 1
+  }
+ },
+ {
+  "id": "76",
+  "name": "Grolem",
+  "aliases": [
+   "golem"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Sol"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 3,
+   "height": 1.4,
+   "weight": 300,
+   "generation": 1
+  }
+ },
+ {
+  "id": "77",
+  "name": "Ponyta",
+  "aliases": [
+   "ponyta"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 1,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "78",
+  "name": "Galopa",
+  "aliases": [
+   "rapidash"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1.7,
+   "weight": 95,
+   "generation": 1
+  }
+ },
+ {
+  "id": "79",
+  "name": "Ramoloss",
+  "aliases": [
+   "slowpoke"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Psy"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rose",
+   "stage": 1,
+   "height": 1.2,
+   "weight": 36,
+   "generation": 1
+  }
+ },
+ {
+  "id": "80",
+  "name": "Flagadoss",
+  "aliases": [
+   "slowbro"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Psy"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rose",
+   "stage": 2,
+   "height": 1.6,
+   "weight": 78.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "81",
+  "name": "Magnéti",
+  "aliases": [
+   "magnemite"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+  "attributes": {
+   "types": [
+    "Électrik",
+    "Acier"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Gris",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "82",
+  "name": "Magnéton",
+  "aliases": [
+   "magneton"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png",
+  "attributes": {
+   "types": [
+    "Électrik",
+    "Acier"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Gris",
+   "stage": 2,
+   "height": 1,
+   "weight": 60,
+   "generation": 1
+  }
+ },
+ {
+  "id": "83",
+  "name": "Canarticho",
+  "aliases": [
+   "farfetchd"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 15,
+   "generation": 1
+  }
+ },
+ {
+  "id": "84",
+  "name": "Doduo",
+  "aliases": [
+   "doduo"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 1.4,
+   "weight": 39.2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "85",
+  "name": "Dodrio",
+  "aliases": [
+   "dodrio"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+  "attributes": {
+   "types": [
+    "Normal",
+    "Vol"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.8,
+   "weight": 85.2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "86",
+  "name": "Otaria",
+  "aliases": [
+   "seel"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Blanc",
+   "stage": 1,
+   "height": 1.1,
+   "weight": 90,
+   "generation": 1
+  }
+ },
+ {
+  "id": "87",
+  "name": "Lamantine",
+  "aliases": [
+   "dewgong"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Glace"
+   ],
+   "habitat": "Mer",
+   "color": "Blanc",
+   "stage": 2,
+   "height": 1.7,
+   "weight": 120,
+   "generation": 1
+  }
+ },
+ {
+  "id": "88",
+  "name": "Tadmorv",
+  "aliases": [
+   "grimer"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Ville",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.9,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "89",
+  "name": "Grotadmorv",
+  "aliases": [
+   "muk"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Ville",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.2,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "90",
+  "name": "Kokiyas",
+  "aliases": [
+   "shellder"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "91",
+  "name": "Crustabri",
+  "aliases": [
+   "cloyster"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Glace"
+   ],
+   "habitat": "Mer",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.5,
+   "weight": 132.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "92",
+  "name": "Fantominus",
+  "aliases": [
+   "gastly"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+  "attributes": {
+   "types": [
+    "Spectre",
+    "Poison"
+   ],
+   "habitat": "Grotte",
+   "color": "Violet",
+   "stage": 1,
+   "height": 1.3,
+   "weight": 0.1,
+   "generation": 1
+  }
+ },
+ {
+  "id": "93",
+  "name": "Spectrum",
+  "aliases": [
+   "haunter"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+  "attributes": {
+   "types": [
+    "Spectre",
+    "Poison"
+   ],
+   "habitat": "Grotte",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.6,
+   "weight": 0.1,
+   "generation": 1
+  }
+ },
+ {
+  "id": "94",
+  "name": "Ectoplasma",
+  "aliases": [
+   "gengar"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+  "attributes": {
+   "types": [
+    "Spectre",
+    "Poison"
+   ],
+   "habitat": "Grotte",
+   "color": "Violet",
+   "stage": 3,
+   "height": 1.5,
+   "weight": 40.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "95",
+  "name": "Onix",
+  "aliases": [
+   "onix"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Sol"
+   ],
+   "habitat": "Grotte",
+   "color": "Gris",
+   "stage": 1,
+   "height": 8.8,
+   "weight": 210,
+   "generation": 1
+  }
+ },
+ {
+  "id": "96",
+  "name": "Soporifik",
+  "aliases": [
+   "drowzee"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 1,
+   "weight": 32.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "97",
+  "name": "Hypnomade",
+  "aliases": [
+   "hypno"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1.6,
+   "weight": 75.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "98",
+  "name": "Krabby",
+  "aliases": [
+   "krabby"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 6.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "99",
+  "name": "Krabboss",
+  "aliases": [
+   "kingler"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 60,
+   "generation": 1
+  }
+ },
+ {
+  "id": "100",
+  "name": "Voltorbe",
+  "aliases": [
+   "voltorb"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Ville",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 10.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "101",
+  "name": "Électrode",
+  "aliases": [
+   "electrode"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Ville",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.2,
+   "weight": 66.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "102",
+  "name": "Noeunoeuf",
+  "aliases": [
+   "exeggcute"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Psy"
+   ],
+   "habitat": "Forêt",
+   "color": "Rose",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 2.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "103",
+  "name": "Noadkoko",
+  "aliases": [
+   "exeggutor"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
+  "attributes": {
+   "types": [
+    "Plante",
+    "Psy"
+   ],
+   "habitat": "Forêt",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 2,
+   "weight": 120,
+   "generation": 1
+  }
+ },
+ {
+  "id": "104",
+  "name": "Osselait",
+  "aliases": [
+   "cubone"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 6.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "105",
+  "name": "Ossatueur",
+  "aliases": [
+   "marowak"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
+  "attributes": {
+   "types": [
+    "Sol"
+   ],
+   "habitat": "Montagne",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1,
+   "weight": 45,
+   "generation": 1
+  }
+ },
+ {
+  "id": "106",
+  "name": "Kicklee",
+  "aliases": [
+   "hitmonlee"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.5,
+   "weight": 49.8,
+   "generation": 1
+  }
+ },
+ {
+  "id": "107",
+  "name": "Tygnon",
+  "aliases": [
+   "hitmonchan"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png",
+  "attributes": {
+   "types": [
+    "Combat"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.4,
+   "weight": 50.2,
+   "generation": 1
+  }
+ },
+ {
+  "id": "108",
+  "name": "Excelangue",
+  "aliases": [
+   "lickitung"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Prairie",
+   "color": "Rose",
+   "stage": 1,
+   "height": 1.2,
+   "weight": 65.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "109",
+  "name": "Smogo",
+  "aliases": [
+   "koffing"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Ville",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 1,
+   "generation": 1
+  }
+ },
+ {
+  "id": "110",
+  "name": "Smogogo",
+  "aliases": [
+   "weezing"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
+  "attributes": {
+   "types": [
+    "Poison"
+   ],
+   "habitat": "Ville",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.2,
+   "weight": 9.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "111",
+  "name": "Rhinocorne",
+  "aliases": [
+   "rhyhorn"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+  "attributes": {
+   "types": [
+    "Sol",
+    "Roche"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Gris",
+   "stage": 1,
+   "height": 1,
+   "weight": 115,
+   "generation": 1
+  }
+ },
+ {
+  "id": "112",
+  "name": "Rhinoféros",
+  "aliases": [
+   "rhydon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
+  "attributes": {
+   "types": [
+    "Sol",
+    "Roche"
+   ],
+   "habitat": "Terrain accidenté",
+   "color": "Gris",
+   "stage": 2,
+   "height": 1.9,
+   "weight": 120,
+   "generation": 1
+  }
+ },
+ {
+  "id": "113",
+  "name": "Leveinard",
+  "aliases": [
+   "chansey"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Rose",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 34.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "114",
+  "name": "Saquedeneu",
+  "aliases": [
+   "tangela"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png",
+  "attributes": {
+   "types": [
+    "Plante"
+   ],
+   "habitat": "Prairie",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 1,
+   "weight": 35,
+   "generation": 1
+  }
+ },
+ {
+  "id": "115",
+  "name": "Kangourex",
+  "aliases": [
+   "kangaskhan"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 2.2,
+   "weight": 80,
+   "generation": 1
+  }
+ },
+ {
+  "id": "116",
+  "name": "Hypotrempe",
+  "aliases": [
+   "horsea"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 8,
+   "generation": 1
+  }
+ },
+ {
+  "id": "117",
+  "name": "Hypocéan",
+  "aliases": [
+   "seadra"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1.2,
+   "weight": 25,
+   "generation": 1
+  }
+ },
+ {
+  "id": "118",
+  "name": "Poissirène",
+  "aliases": [
+   "goldeen"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.6,
+   "weight": 15,
+   "generation": 1
+  }
+ },
+ {
+  "id": "119",
+  "name": "Poissoroy",
+  "aliases": [
+   "seaking"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 39,
+   "generation": 1
+  }
+ },
+ {
+  "id": "120",
+  "name": "Stari",
+  "aliases": [
+   "staryu"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 34.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "121",
+  "name": "Staross",
+  "aliases": [
+   "starmie"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Psy"
+   ],
+   "habitat": "Mer",
+   "color": "Violet",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 80,
+   "generation": 1
+  }
+ },
+ {
+  "id": "122",
+  "name": "M. Mime",
+  "aliases": [
+   "mr-mime"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png",
+  "attributes": {
+   "types": [
+    "Psy",
+    "Fée"
+   ],
+   "habitat": "Ville",
+   "color": "Rose",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 54.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "123",
+  "name": "Insécateur",
+  "aliases": [
+   "scyther"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
+  "attributes": {
+   "types": [
+    "Insecte",
+    "Vol"
+   ],
+   "habitat": "Prairie",
+   "color": "Vert",
+   "stage": 1,
+   "height": 1.5,
+   "weight": 56,
+   "generation": 1
+  }
+ },
+ {
+  "id": "124",
+  "name": "Lippoutou",
+  "aliases": [
+   "jynx"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+  "attributes": {
+   "types": [
+    "Glace",
+    "Psy"
+   ],
+   "habitat": "Ville",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.4,
+   "weight": 40.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "125",
+  "name": "Élektek",
+  "aliases": [
+   "electabuzz"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Prairie",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 1.1,
+   "weight": 30,
+   "generation": 1
+  }
+ },
+ {
+  "id": "126",
+  "name": "Magmar",
+  "aliases": [
+   "magmar"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Montagne",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 44.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "127",
+  "name": "Scarabrute",
+  "aliases": [
+   "pinsir"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+  "attributes": {
+   "types": [
+    "Insecte"
+   ],
+   "habitat": "Forêt",
+   "color": "Marron",
+   "stage": 1,
+   "height": 1.5,
+   "weight": 55,
+   "generation": 1
+  }
+ },
+ {
+  "id": "128",
+  "name": "Tauros",
+  "aliases": [
+   "tauros"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Prairie",
+   "color": "Marron",
+   "stage": 1,
+   "height": 1.4,
+   "weight": 88.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "129",
+  "name": "Magicarpe",
+  "aliases": [
+   "magikarp"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Rouge",
+   "stage": 1,
+   "height": 0.9,
+   "weight": 10,
+   "generation": 1
+  }
+ },
+ {
+  "id": "130",
+  "name": "Léviator",
+  "aliases": [
+   "gyarados"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Vol"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 6.5,
+   "weight": 235,
+   "generation": 1
+  }
+ },
+ {
+  "id": "131",
+  "name": "Lokhlass",
+  "aliases": [
+   "lapras"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png",
+  "attributes": {
+   "types": [
+    "Eau",
+    "Glace"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 2.5,
+   "weight": 220,
+   "generation": 1
+  }
+ },
+ {
+  "id": "132",
+  "name": "Métamorph",
+  "aliases": [
+   "ditto"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Violet",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "133",
+  "name": "Évoli",
+  "aliases": [
+   "eevee"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.3,
+   "weight": 6.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "134",
+  "name": "Aquali",
+  "aliases": [
+   "vaporeon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+  "attributes": {
+   "types": [
+    "Eau"
+   ],
+   "habitat": "Ville",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1,
+   "weight": 29,
+   "generation": 1
+  }
+ },
+ {
+  "id": "135",
+  "name": "Voltali",
+  "aliases": [
+   "jolteon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+  "attributes": {
+   "types": [
+    "Électrik"
+   ],
+   "habitat": "Ville",
+   "color": "Jaune",
+   "stage": 2,
+   "height": 0.8,
+   "weight": 24.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "136",
+  "name": "Pyroli",
+  "aliases": [
+   "flareon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+  "attributes": {
+   "types": [
+    "Feu"
+   ],
+   "habitat": "Ville",
+   "color": "Rouge",
+   "stage": 2,
+   "height": 0.9,
+   "weight": 25,
+   "generation": 1
+  }
+ },
+ {
+  "id": "137",
+  "name": "Porygon",
+  "aliases": [
+   "porygon"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Ville",
+   "color": "Rose",
+   "stage": 1,
+   "height": 0.8,
+   "weight": 36.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "138",
+  "name": "Amonita",
+  "aliases": [
+   "omanyte"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 7.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "139",
+  "name": "Amonistar",
+  "aliases": [
+   "omastar"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 1,
+   "weight": 35,
+   "generation": 1
+  }
+ },
+ {
+  "id": "140",
+  "name": "Kabuto",
+  "aliases": [
+   "kabuto"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Marron",
+   "stage": 1,
+   "height": 0.5,
+   "weight": 11.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "141",
+  "name": "Kabutops",
+  "aliases": [
+   "kabutops"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Eau"
+   ],
+   "habitat": "Mer",
+   "color": "Marron",
+   "stage": 2,
+   "height": 1.3,
+   "weight": 40.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "142",
+  "name": "Ptéra",
+  "aliases": [
+   "aerodactyl"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+  "attributes": {
+   "types": [
+    "Roche",
+    "Vol"
+   ],
+   "habitat": "Montagne",
+   "color": "Violet",
+   "stage": 1,
+   "height": 1.8,
+   "weight": 59,
+   "generation": 1
+  }
+ },
+ {
+  "id": "143",
+  "name": "Ronflex",
+  "aliases": [
+   "snorlax"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+  "attributes": {
+   "types": [
+    "Normal"
+   ],
+   "habitat": "Montagne",
+   "color": "Noir",
+   "stage": 2,
+   "height": 2.1,
+   "weight": 460,
+   "generation": 1
+  }
+ },
+ {
+  "id": "144",
+  "name": "Artikodin",
+  "aliases": [
+   "articuno"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+  "attributes": {
+   "types": [
+    "Glace",
+    "Vol"
+   ],
+   "habitat": "Rare",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 1.7,
+   "weight": 55.4,
+   "generation": 1
+  }
+ },
+ {
+  "id": "145",
+  "name": "Électhor",
+  "aliases": [
+   "zapdos"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+  "attributes": {
+   "types": [
+    "Électrik",
+    "Vol"
+   ],
+   "habitat": "Rare",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 1.6,
+   "weight": 52.6,
+   "generation": 1
+  }
+ },
+ {
+  "id": "146",
+  "name": "Sulfura",
+  "aliases": [
+   "moltres"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+  "attributes": {
+   "types": [
+    "Feu",
+    "Vol"
+   ],
+   "habitat": "Rare",
+   "color": "Jaune",
+   "stage": 1,
+   "height": 2,
+   "weight": 60,
+   "generation": 1
+  }
+ },
+ {
+  "id": "147",
+  "name": "Minidraco",
+  "aliases": [
+   "dratini"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
+  "attributes": {
+   "types": [
+    "Dragon"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 1,
+   "height": 1.8,
+   "weight": 3.3,
+   "generation": 1
+  }
+ },
+ {
+  "id": "148",
+  "name": "Draco",
+  "aliases": [
+   "dragonair"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
+  "attributes": {
+   "types": [
+    "Dragon"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Bleu",
+   "stage": 2,
+   "height": 4,
+   "weight": 16.5,
+   "generation": 1
+  }
+ },
+ {
+  "id": "149",
+  "name": "Dracolosse",
+  "aliases": [
+   "dragonite"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+  "attributes": {
+   "types": [
+    "Dragon",
+    "Vol"
+   ],
+   "habitat": "Bord de l'eau",
+   "color": "Marron",
+   "stage": 3,
+   "height": 2.2,
+   "weight": 210,
+   "generation": 1
+  }
+ },
+ {
+  "id": "150",
+  "name": "Mewtwo",
+  "aliases": [
+   "mewtwo"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Rare",
+   "color": "Violet",
+   "stage": 1,
+   "height": 2,
+   "weight": 122,
+   "generation": 1
+  }
+ },
+ {
+  "id": "151",
+  "name": "Mew",
+  "aliases": [
+   "mew"
+  ],
+  "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+  "attributes": {
+   "types": [
+    "Psy"
+   ],
+   "habitat": "Rare",
+   "color": "Rose",
+   "stage": 1,
+   "height": 0.4,
+   "weight": 4,
+   "generation": 1
+  }
+ }
+]
