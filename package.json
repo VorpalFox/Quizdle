@@ -12,6 +12,8 @@
     "dev": "tsx watch src/index.ts",
     "deploy-commands": "node dist/deployCommands.js",
     "fetch:pokemon": "tsx scripts/fetchPokemon.ts",
+    "fetch:anime": "tsx scripts/fetchAnime.ts",
+    "fetch:weebdle": "tsx scripts/fetchWeebdle.ts",
     "test": "vitest run"
   },
   "engines": {

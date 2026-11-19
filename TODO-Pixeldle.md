@@ -2,7 +2,7 @@
 
 Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Le sujet est déjà branché ([src/subjects/pixeldle/index.ts](src/subjects/pixeldle/index.ts)), mais [data/pixeldle.json](data/pixeldle.json) ne contient qu'un personnage factice. Il faut le remplir avec les vrais personnages.
 
-Le TODO du Weebdle (branche `Fx/Weebdle`) suit la même logique : s'y référer en cas de doute, les règles ci-dessous en sont adaptées.
+Le TODO du Weebdle ([TODO-Weebdle.md](TODO-Weebdle.md)) suit la même logique : s'y référer en cas de doute, les règles ci-dessous en sont adaptées.
 
 ## Point de départ
 

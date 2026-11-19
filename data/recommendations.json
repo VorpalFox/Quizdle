@@ -1,0 +1,926 @@
+[
+ {
+  "anilistId": 4654,
+  "title": "A Certain Magical Index",
+  "romaji": "Toaru Majutsu no Index",
+  "format": "TV",
+  "year": 2008
+ },
+ {
+  "anilistId": 6213,
+  "title": "A Certain Scientific Railgun",
+  "romaji": "Toaru Kagaku no Railgun",
+  "format": "TV",
+  "year": 2009
+ },
+ {
+  "anilistId": 20954,
+  "title": "A Silent Voice",
+  "romaji": "Koe no Katachi",
+  "format": "MOVIE",
+  "year": 2016
+ },
+ {
+  "anilistId": 11759,
+  "title": "Accel World",
+  "romaji": "Accel World",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 20613,
+  "title": "Akame ga Kill!",
+  "romaji": "Akame ga Kill!",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 20632,
+  "title": "ALDNOAH.ZERO",
+  "romaji": "Aldnoah.Zero",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 6547,
+  "title": "Angel Beats!",
+  "romaji": "Angel Beats!",
+  "format": "TV",
+  "year": 2010
+ },
+ {
+  "anilistId": 9989,
+  "title": "Anohana: The Flower We Saw That Day",
+  "romaji": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 21851,
+  "title": "Armed Girl's Machiavellism",
+  "romaji": "Busou Shoujo Machiavellianism",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 108268,
+  "title": "Ascendance of a Bookworm",
+  "romaji": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 107663,
+  "title": "ASTRA LOST IN SPACE",
+  "romaji": "Kanata no Astra",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 16498,
+  "title": "Attack on Titan",
+  "romaji": "Shingeki no Kyojin",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 7674,
+  "title": "Bakuman.",
+  "romaji": "Bakuman.",
+  "format": "TV",
+  "year": 2010
+ },
+ {
+  "anilistId": 126047,
+  "title": "Battle Game in 5 Seconds",
+  "romaji": "Deatte 5-byou de Battle",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 20457,
+  "title": "Black Bullet",
+  "romaji": "Black Bullet",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 4898,
+  "title": "Black Butler",
+  "romaji": "Kuroshitsuji",
+  "format": "TV",
+  "year": 2008
+ },
+ {
+  "anilistId": 14075,
+  "title": "Blast of Tempest",
+  "romaji": "Zetsuen no Tempest",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 20727,
+  "title": "Blood Blockade Battlefront",
+  "romaji": "Kekkai Sensen",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 10490,
+  "title": "Blood-C",
+  "romaji": "BLOOD-C",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 137822,
+  "title": "BLUE LOCK",
+  "romaji": "Blue Lock",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 128705,
+  "title": "Blue Period",
+  "romaji": "Blue Period",
+  "format": "ONA",
+  "year": 2021
+ },
+ {
+  "anilistId": 110354,
+  "title": "BNA",
+  "romaji": "BNA",
+  "format": "ONA",
+  "year": 2020
+ },
+ {
+  "anilistId": 14345,
+  "title": "BTOOOM!",
+  "romaji": "BTOOOM!",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 21311,
+  "title": "Bungo Stray Dogs",
+  "romaji": "Bungou Stray Dogs",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 127230,
+  "title": "Chainsaw Man",
+  "romaji": "Chainsaw Man",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 4975,
+  "title": "ChäoS;HEAd",
+  "romaji": "ChäoS;HEAd",
+  "format": "TV",
+  "year": 2008
+ },
+ {
+  "anilistId": 20997,
+  "title": "Charlotte",
+  "romaji": "Charlotte",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 21092,
+  "title": "Chivalry of a Failed Knight",
+  "romaji": "Rakudai Kishi no Cavalry",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 98659,
+  "title": "Classroom of the Elite",
+  "romaji": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 1575,
+  "title": "Code Geass: Lelouch of the Rebellion",
+  "romaji": "Code Geass: Hangyaku no Lelouch",
+  "format": "TV",
+  "year": 2006
+ },
+ {
+  "anilistId": 21509,
+  "title": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
+  "romaji": "Danganronpa 3: The End of Kibougamine Gakuen - Mirai-hen",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 16592,
+  "title": "Danganronpa: The Animation",
+  "romaji": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei - The Animation",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 99423,
+  "title": "DARLING in the FRANXX",
+  "romaji": "Darling in the Franxx",
+  "format": "TV",
+  "year": 2018
+ },
+ {
+  "anilistId": 105190,
+  "title": "Darwin's Game",
+  "romaji": "Darwin's Game",
+  "format": "TV",
+  "year": 2020
+ },
+ {
+  "anilistId": 1535,
+  "title": "Death Note",
+  "romaji": "DEATH NOTE",
+  "format": "TV",
+  "year": 2006
+ },
+ {
+  "anilistId": 20931,
+  "title": "Death Parade",
+  "romaji": "Death Parade",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 101922,
+  "title": "Demon Slayer: Kimetsu no Yaiba",
+  "romaji": "Kimetsu no Yaiba",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 98460,
+  "title": "Devilman Crybaby",
+  "romaji": "DEVILMAN crybaby",
+  "format": "ONA",
+  "year": 2018
+ },
+ {
+  "anilistId": 101347,
+  "title": "Dororo",
+  "romaji": "Dororo",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 105333,
+  "title": "Dr. STONE",
+  "romaji": "Dr. STONE",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 21123,
+  "title": "DRIFTERS",
+  "romaji": "DRIFTERS",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 21234,
+  "title": "ERASED",
+  "romaji": "Boku dake ga Inai Machi",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 19603,
+  "title": "Fate/stay night: Unlimited Blade Works",
+  "romaji": "Fate/stay night: Unlimited Blade Works",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 10087,
+  "title": "Fate/Zero",
+  "romaji": "Fate/Zero",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 154587,
+  "title": "Frieren: Beyond Journey’s End",
+  "romaji": "Sousou no Frieren",
+  "format": "TV",
+  "year": 2023
+ },
+ {
+  "anilistId": 13125,
+  "title": "From the New World",
+  "romaji": "Shinsekai yori",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 5114,
+  "title": "Fullmetal Alchemist: Brotherhood",
+  "romaji": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST",
+  "format": "TV",
+  "year": 2009
+ },
+ {
+  "anilistId": 20994,
+  "title": "Gate",
+  "romaji": "GATE: Jieitai Kanochi nite, Kaku Tatakaeri",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 108241,
+  "title": "Gleipnir",
+  "romaji": "Gleipnir",
+  "format": "TV",
+  "year": 2020
+ },
+ {
+  "anilistId": 852,
+  "title": "Gokinjo Monogatari",
+  "romaji": "Gokinjo Monogatari",
+  "format": "TV",
+  "year": 1995
+ },
+ {
+  "anilistId": 17895,
+  "title": "Golden Time",
+  "romaji": "Golden Time",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 110349,
+  "title": "Great Pretender",
+  "romaji": "GREAT PRETENDER",
+  "format": "ONA",
+  "year": 2020
+ },
+ {
+  "anilistId": 21428,
+  "title": "Grimgar of Fantasy and Ash",
+  "romaji": "Hai to Gensou no Grimgar",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 10793,
+  "title": "Guilty Crown",
+  "romaji": "Guilty Crown",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 2001,
+  "title": "Gurren Lagann",
+  "romaji": "Tengen Toppa Gurren Lagann",
+  "format": "TV",
+  "year": 2007
+ },
+ {
+  "anilistId": 777,
+  "title": "Hellsing Ultimate",
+  "romaji": "HELLSING OVA",
+  "format": "OVA",
+  "year": 2006
+ },
+ {
+  "anilistId": 11061,
+  "title": "Hunter x Hunter (2011)",
+  "romaji": "HUNTER×HUNTER (2011)",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 139820,
+  "title": "I'm the Villainess, So I'm Taming the Final Boss",
+  "romaji": "Akuyaku Reijou nano de Last Boss wo Kattemimashita",
+  "format": "ONA",
+  "year": 2022
+ },
+ {
+  "anilistId": 112608,
+  "title": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
+  "romaji": "Slime Taoshite 300-nen, Shiranai Uchi ni Level MAX ni Nattemashita",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 185,
+  "title": "Initial D 1st Stage",
+  "romaji": "Initial D",
+  "format": "TV",
+  "year": 1998
+ },
+ {
+  "anilistId": 20920,
+  "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+  "romaji": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 190569,
+  "title": "Jaadugar: A Witch in Mongolia",
+  "romaji": "Tenmaku no Jaadugar",
+  "format": "TV",
+  "year": 2026
+ },
+ {
+  "anilistId": 14719,
+  "title": "JoJo's Bizarre Adventure (TV)",
+  "romaji": "JoJo no Kimyou na Bouken (TV)",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 101921,
+  "title": "Kaguya-sama: Love is War",
+  "romaji": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 98314,
+  "title": "Kakegurui",
+  "romaji": "Kakegurui",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 18679,
+  "title": "Kill la Kill",
+  "romaji": "Kill la Kill",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 21202,
+  "title": "KONOSUBA -God's blessing on this wonderful world!",
+  "romaji": "Kono Subarashii Sekai ni Shukufuku wo!",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 17265,
+  "title": "Log Horizon",
+  "romaji": "Log Horizon",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 97986,
+  "title": "Made in Abyss",
+  "romaji": "Made in Abyss",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 14513,
+  "title": "Magi: The Labyrinth of Magic",
+  "romaji": "Magi: The labyrinth of magic",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 20541,
+  "title": "Mekakucity Actors",
+  "romaji": "Mekakucity Actors",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 131083,
+  "title": "Mieruko-chan",
+  "romaji": "Mieruko-chan",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 21507,
+  "title": "Mob Psycho 100",
+  "romaji": "Mob Psycho 100",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 108465,
+  "title": "Mushoku Tensei: Jobless Reincarnation",
+  "romaji": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 21459,
+  "title": "My Hero Academia",
+  "romaji": "Boku no Hero Academia",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 19815,
+  "title": "No Game, No Life",
+  "romaji": "No Game No Life",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 160,
+  "title": "Now and Then, Here and There",
+  "romaji": "Ima, Soko ni Iru Boku",
+  "format": "TV",
+  "year": 1999
+ },
+ {
+  "anilistId": 21708,
+  "title": "Occultic;Nine",
+  "romaji": "Occultic;Nine",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 21087,
+  "title": "One-Punch Man",
+  "romaji": "One Punch Man",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 150672,
+  "title": "OSHI NO KO",
+  "romaji": "[Oshi no Ko]",
+  "format": "TV",
+  "year": 2023
+ },
+ {
+  "anilistId": 853,
+  "title": "Ouran High School Host Club",
+  "romaji": "Ouran Koukou Host Club",
+  "format": "TV",
+  "year": 2006
+ },
+ {
+  "anilistId": 20832,
+  "title": "Overlord",
+  "romaji": "Overlord",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 1943,
+  "title": "Paprika",
+  "romaji": "Paprika",
+  "format": "MOVIE",
+  "year": 2006
+ },
+ {
+  "anilistId": 322,
+  "title": "Paradise Kiss",
+  "romaji": "Paradise Kiss",
+  "format": "TV",
+  "year": 2005
+ },
+ {
+  "anilistId": 20872,
+  "title": "Plastic Memories",
+  "romaji": "Plastic Memories",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 13601,
+  "title": "PSYCHO-PASS",
+  "romaji": "PSYCHO-PASS",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 9756,
+  "title": "Puella Magi Madoka Magica",
+  "romaji": "Mahou Shoujo Madoka☆Magica",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 113717,
+  "title": "Ranking of Kings",
+  "romaji": "Ousama Ranking",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 101291,
+  "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+  "romaji": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+  "format": "TV",
+  "year": 2018
+ },
+ {
+  "anilistId": 97980,
+  "title": "Re:CREATORS",
+  "romaji": "Re:CREATORS",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 21355,
+  "title": "Re:ZERO -Starting Life in Another World-",
+  "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 139587,
+  "title": "Reincarnated as a Sword",
+  "romaji": "Tensei Shitara Ken Deshita",
+  "format": "ONA",
+  "year": 2022
+ },
+ {
+  "anilistId": 21049,
+  "title": "ReLIFE",
+  "romaji": "ReLIFE",
+  "format": "ONA",
+  "year": 2016
+ },
+ {
+  "anilistId": 440,
+  "title": "Revolutionary Girl Utena",
+  "romaji": "Shoujo Kakumei Utena",
+  "format": "TV",
+  "year": 1997
+ },
+ {
+  "anilistId": 20955,
+  "title": "Rokka -Braves of the Six Flowers-",
+  "romaji": "Rokka no Yuusha",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 21613,
+  "title": "Saga of Tanya the Evil",
+  "romaji": "Youjo Senki",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 2476,
+  "title": "School Days (TV)",
+  "romaji": "School Days (TV)",
+  "format": "TV",
+  "year": 2007
+ },
+ {
+  "anilistId": 21701,
+  "title": "Scum's Wish",
+  "romaji": "Kuzu no Honkai",
+  "format": "TV",
+  "year": 2017
+ },
+ {
+  "anilistId": 20829,
+  "title": "Seraph of the End: Vampire Reign",
+  "romaji": "Owari no Seraph",
+  "format": "TV",
+  "year": 2015
+ },
+ {
+  "anilistId": 7724,
+  "title": "Shiki",
+  "romaji": "Shiki",
+  "format": "TV",
+  "year": 2010
+ },
+ {
+  "anilistId": 196187,
+  "title": "Smoking Behind the Supermarket with You",
+  "romaji": "Super no Ura de Yani Suu Futari",
+  "format": "TV",
+  "year": 2026
+ },
+ {
+  "anilistId": 140960,
+  "title": "SPY x FAMILY",
+  "romaji": "SPY×FAMILY",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 9253,
+  "title": "Steins;Gate",
+  "romaji": "Steins;Gate",
+  "format": "TV",
+  "year": 2011
+ },
+ {
+  "anilistId": 129201,
+  "title": "Summer Time Rendering",
+  "romaji": "Summer Time Render",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 11757,
+  "title": "Sword Art Online",
+  "romaji": "Sword Art Online",
+  "format": "TV",
+  "year": 2012
+ },
+ {
+  "anilistId": 20661,
+  "title": "Terror in Resonance",
+  "romaji": "Zankyou no Terror",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 101280,
+  "title": "That Time I Got Reincarnated as a Slime",
+  "romaji": "Tensei Shitara Slime Datta Ken",
+  "format": "TV",
+  "year": 2018
+ },
+ {
+  "anilistId": 161645,
+  "title": "The Apothecary Diaries",
+  "romaji": "Kusuriya no Hitorigoto",
+  "format": "TV",
+  "year": 2023
+ },
+ {
+  "anilistId": 114121,
+  "title": "The Daily Life of the Immortal King",
+  "romaji": "Xian Wang De Richang Shenghuo",
+  "format": "ONA",
+  "year": 2020
+ },
+ {
+  "anilistId": 162896,
+  "title": "The Elusive Samurai",
+  "romaji": "Nige Jouzu no Wakagimi",
+  "format": "TV",
+  "year": 2024
+ },
+ {
+  "anilistId": 130298,
+  "title": "The Eminence in Shadow",
+  "romaji": "Kage no Jitsuryokusha ni Naritakute!",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 153629,
+  "title": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
+  "romaji": "Tensei Oujo to Tensai Reijou no Mahou Kakumei",
+  "format": "TV",
+  "year": 2023
+ },
+ {
+  "anilistId": 144553,
+  "title": "The Reincarnation of the Strongest Exorcist in Another World",
+  "romaji": "Saikyou Onmyouji no Isekai Tenseiki",
+  "format": "TV",
+  "year": 2023
+ },
+ {
+  "anilistId": 99263,
+  "title": "The Rising of the Shield Hero",
+  "romaji": "Tate no Yuusha no Nariagari",
+  "format": "TV",
+  "year": 2019
+ },
+ {
+  "anilistId": 20789,
+  "title": "The Seven Deadly Sins",
+  "romaji": "Nanatsu no Taizai",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 147642,
+  "title": "The Unwanted Undead Adventurer",
+  "romaji": "Nozomanu Fushi no Boukensha",
+  "format": "ONA",
+  "year": 2024
+ },
+ {
+  "anilistId": 153818,
+  "title": "The Witch and the Beast",
+  "romaji": "Majo to Yajuu",
+  "format": "TV",
+  "year": 2024
+ },
+ {
+  "anilistId": 114535,
+  "title": "To Your Eternity",
+  "romaji": "Fumetsu no Anata e",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 108463,
+  "title": "Toilet-bound Hanako-kun",
+  "romaji": "Jibaku Shounen Hanako-kun",
+  "format": "TV",
+  "year": 2020
+ },
+ {
+  "anilistId": 16011,
+  "title": "Tokyo Ravens",
+  "romaji": "Tokyo Ravens",
+  "format": "TV",
+  "year": 2013
+ },
+ {
+  "anilistId": 4224,
+  "title": "Toradora!",
+  "romaji": "Toradora!",
+  "format": "TV",
+  "year": 2008
+ },
+ {
+  "anilistId": 115230,
+  "title": "Tower of God",
+  "romaji": "Kami no Tou: Tower of God",
+  "format": "TV",
+  "year": 2020
+ },
+ {
+  "anilistId": 142074,
+  "title": "Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs",
+  "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 177,
+  "title": "Tsubasa RESERVoir CHRoNiCLE",
+  "romaji": "Tsubasa Chronicle",
+  "format": "TV",
+  "year": 2005
+ },
+ {
+  "anilistId": 21499,
+  "title": "Twin Star Exorcists",
+  "romaji": "Sousei no Onmyouji",
+  "format": "TV",
+  "year": 2016
+ },
+ {
+  "anilistId": 135806,
+  "title": "Uncle from Another World",
+  "romaji": "Isekai Oji-san",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 128546,
+  "title": "Vivy -Fluorite Eye's Song-",
+  "romaji": "Vivy: Fluorite Eye’s Song",
+  "format": "TV",
+  "year": 2021
+ },
+ {
+  "anilistId": 20729,
+  "title": "World Trigger",
+  "romaji": "World Trigger",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 99578,
+  "title": "Wotakoi: Love is Hard for Otaku",
+  "romaji": "Wotaku ni Koi wa Muzukashii",
+  "format": "TV",
+  "year": 2018
+ },
+ {
+  "anilistId": 141774,
+  "title": "Ya Boy Kongming!",
+  "romaji": "Paripi Koumei",
+  "format": "TV",
+  "year": 2022
+ },
+ {
+  "anilistId": 20665,
+  "title": "Your lie in April",
+  "romaji": "Shigatsu wa Kimi no Uso",
+  "format": "TV",
+  "year": 2014
+ },
+ {
+  "anilistId": 21519,
+  "title": "Your Name.",
+  "romaji": "Kimi no Na wa.",
+  "format": "MOVIE",
+  "year": 2016
+ }
+]
