@@ -39,20 +39,39 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ## Installation
 
+### Appli Discord
+
+1. Sur le [Discord Developer Portal](https://discord.com/developers/applications) : *New Application*.
+2. *Bot* > *Reset Token* : c'est le `DISCORD_TOKEN`. Aucun intent privilégié n'est nécessaire.
+3. *OAuth2* > *URL Generator* : cocher les scopes `bot` et `applications.commands`, puis la permission *Send Messages*. Ouvrir l'URL générée pour inviter le bot sur le serveur.
+
+### Lancer le bot
+
 ```
 npm install
-cp .env.example .env    # puis remplir le token et l'ID de l'appli
+cp .env.example .env    # puis remplir .env (pas .env.example, qui est commité)
 npm run build
-npm run deploy-commands
-npm start               # ou npm run dev pendant le développement
+npm run deploy-commands # à relancer quand les commandes ou la liste des sujets changent
+npm start               # ou npm run dev pendant le développement (relance à chaque modif)
 ```
 
-Pour le Raspberry : `pm2 start ecosystem.config.cjs`.
+Variables du `.env` :
+
+- `DISCORD_TOKEN` : le token du bot (secret).
+- `DISCORD_CLIENT_ID` : *General Information* > *Application ID*.
+- `DISCORD_GUILD_ID` : optionnel, l'ID du serveur de test (mode développeur de Discord, puis clic droit sur le serveur > *Copier l'identifiant*). Les commandes y apparaissent tout de suite, avec `/quizdebug`. Sans lui, `/quiz` est enregistrée en global.
+- `DISCORD_OWNER_ID` : ton ID Discord, le seul compte qui peut lancer `/quizdebug`.
+
+Dans VS Code, la config de lancement *Bot Discord* ([.vscode/launch.json](.vscode/launch.json)) démarre le bot avec le débogueur.
+
+Tests : `npm test`. Type-check : `npm run typecheck`.
+
+Pour le Raspberry : `npm run build`, puis `pm2 start ecosystem.config.cjs`.
+
+### Fonctionnement
 
 Le bot ne fait aucune requête réseau : les données sont dans `data/`, générées une fois à la main par les scripts. Le tirage du jour se fait au démarrage s'il n'y en a pas pour aujourd'hui, puis à minuit, sans retomber sur une ancienne cible avant d'avoir fait le tour. Le tirage et les parties sont sauvegardés dans `state/games.json` (hors git) : ils survivent à un redémarrage.
 
 ### Debug
 
 `/quizdebug reset` refait le tirage du jour et efface toutes les parties. Elle n'est enregistrée que sur le serveur de test (`DISCORD_GUILD_ID`), cachée aux non-admins, et seul `DISCORD_OWNER_ID` peut la lancer. Sans `DISCORD_GUILD_ID`, `deploy-commands` enregistre `/quiz` en global, sans la commande de debug. À retirer avant la v1.
-
-La suite prévue est dans [TODO.md](TODO.md).
