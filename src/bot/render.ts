@@ -26,7 +26,7 @@ export function renderStart(game: Game): EmbedBuilder {
   return new EmbedBuilder()
     .setColor(COLOR_PLAYING)
     .setTitle(`🔎 ${gameTitle(game)}`)
-    .setDescription(`${game.subject.description} ! Propose avec \`/quiz guess\`.\n${limit}.\n\nIndices : ${game.subject.attributes.map(a => a.label).join(', ')}\n${LEGEND}`)
+    .setDescription(`${game.subject.description} ! Écris un nom dans le salon, ou utilise \`/guess\` pour avoir l'autocomplétion.\n${limit}.\n\nIndices : ${game.subject.attributes.map(a => a.label).join(', ')}\n${LEGEND}`)
 }
 
 export function renderGuess(game: Game, guess: Guess): EmbedBuilder {

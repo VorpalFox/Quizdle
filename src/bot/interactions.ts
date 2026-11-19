@@ -1,10 +1,13 @@
-import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, MessageFlags } from 'discord.js'
+import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, type Message, MessageFlags } from 'discord.js'
 import { type Game, GameError } from '../engine/game.js'
-import { searchEntries } from '../engine/search.js'
+import { findEntry, searchEntries } from '../engine/search.js'
 import { getSubject } from '../subjects/registry.js'
-import { COMMAND_NAME, DEBUG_COMMAND_NAME } from './commands.js'
+import { COMMAND_NAME, DEBUG_COMMAND_NAME, GUESS_COMMAND_NAME } from './commands.js'
 import { renderBoard, renderGuess, renderReveal, renderStart } from './render.js'
 import type { GameStore } from './store.js'
+
+// Au-delà, un message n'est sûrement pas un nom : on ne cherche même pas
+const MAX_MESSAGE_GUESS_LENGTH = 50
 
 // File d'attente par salon : deux propositions simultanées sont traitées l'une après l'autre
 const queues = new Map<string, Promise<void>>()
@@ -16,14 +19,41 @@ function inQueue(channelId: string, task: () => Promise<void>): Promise<void> {
 }
 
 export async function handleInteraction(interaction: Interaction, store: GameStore): Promise<void> {
-  if (interaction.isAutocomplete() && interaction.commandName === COMMAND_NAME)
+  if (interaction.isAutocomplete() && interaction.commandName === GUESS_COMMAND_NAME)
     return handleAutocomplete(interaction, store) // pas de file : Discord laisse 3 s pour répondre, et ça ne modifie rien
   if (!interaction.isChatInputCommand())
     return
   if (interaction.commandName === COMMAND_NAME)
     await inQueue(interaction.channelId, () => handleCommand(interaction, () => runCommand(interaction, store)))
+  else if (interaction.commandName === GUESS_COMMAND_NAME)
+    await inQueue(interaction.channelId, () => handleCommand(interaction, () => runGuessCommand(interaction, store)))
   else if (interaction.commandName === DEBUG_COMMAND_NAME)
     await handleCommand(interaction, () => runDebugCommand(interaction, store))
+}
+
+// Un nom tapé directement dans le salon pendant une partie. Tout ce qui n'est pas un nom du quiz
+// est de la discussion normale : on l'ignore sans rien dire.
+export async function handleMessage(message: Message, store: GameStore): Promise<void> {
+  if (message.author.bot || !message.inGuild() || message.content.length > MAX_MESSAGE_GUESS_LENGTH)
+    return
+  const game = store.get(message.channelId)
+  if (game?.status !== 'playing' || !findEntry(game.subject, message.content))
+    return
+  await inQueue(message.channelId, async () => {
+    // la partie a pu finir pendant l'attente dans la file
+    const current = store.get(message.channelId)
+    if (current?.status !== 'playing')
+      return
+    try {
+      const guess = current.guess(message.content, message.author.id)
+      store.save()
+      await message.reply({ embeds: [renderGuess(current, guess)], allowedMentions: { repliedUser: false } })
+    } catch (error) {
+      if (!(error instanceof GameError))
+        throw error
+      await message.reply({ content: `⚠️ ${error.message}`, allowedMentions: { repliedUser: false } })
+    }
+  })
 }
 
 async function handleCommand(interaction: ChatInputCommandInteraction, run: () => Promise<void>): Promise<void> {
@@ -55,13 +85,6 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
       await interaction.reply({ embeds: [renderStart(game)] })
       return
     }
-    case 'guess': {
-      const game = playingGame(current)
-      const guess = game.guess(interaction.options.getString('name', true), interaction.user.id)
-      store.save()
-      await interaction.reply({ embeds: [renderGuess(game, guess)] })
-      return
-    }
     case 'board':
       if (!current)
         throw new GameError('Aucune partie dans ce salon. Lance-en une avec `/quiz start`.')
@@ -75,6 +98,13 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
       return
     }
   }
+}
+
+async function runGuessCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
+  const game = playingGame(store.get(interaction.channelId))
+  const guess = game.guess(interaction.options.getString('name', true), interaction.user.id)
+  store.save()
+  await interaction.reply({ embeds: [renderGuess(game, guess)] })
 }
 
 async function runDebugCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {

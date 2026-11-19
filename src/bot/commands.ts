@@ -2,6 +2,7 @@ import { InteractionContextType, SlashCommandBuilder } from 'discord.js'
 import { subjects } from '../subjects/registry.js'
 
 export const COMMAND_NAME = 'quiz'
+export const GUESS_COMMAND_NAME = 'guess'
 export const DEBUG_COMMAND_NAME = 'quizdebug'
 
 export const quizCommand = new SlashCommandBuilder()
@@ -16,12 +17,15 @@ export const quizCommand = new SlashCommandBuilder()
       .setDescription('Quiz subject')
       .setRequired(true)
       .addChoices(...subjects.map(subject => ({ name: subject.name, value: subject.id })))))
-  .addSubcommand(sub => sub
-    .setName('guess')
-    .setDescription('Make a guess')
-    .addStringOption(option => option.setName('name').setDescription('Your guess').setRequired(true).setAutocomplete(true)))
   .addSubcommand(sub => sub.setName('board').setDescription('Show every guess so far'))
   .addSubcommand(sub => sub.setName('giveup').setDescription('Give up and reveal the answer'))
+
+// Commande à part pour qu'elle soit courte à taper : /guess pika…
+export const guessCommand = new SlashCommandBuilder()
+  .setName(GUESS_COMMAND_NAME)
+  .setDescription('Make a guess in this channel\'s quiz')
+  .setContexts(InteractionContextType.Guild)
+  .addStringOption(option => option.setName('name').setDescription('Your guess').setRequired(true).setAutocomplete(true))
 
 // Debug, à virer plus tard : enregistrée seulement sur le serveur de test, cachée aux non-admins,
 // et le bot vérifie en plus que c'est bien DISCORD_OWNER_ID qui l'appelle

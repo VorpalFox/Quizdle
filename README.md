@@ -5,7 +5,8 @@ Bot Discord de quiz façon -dle (Pokédle, et d'autres sujets à venir), tous su
 ## Utilisation
 
 - `/quiz start subject:<sujet>` : lance le quiz du jour dans le salon. La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
-- `/quiz guess name:<nom>` : fait une proposition. La liste se complète pendant la frappe, sans les noms déjà proposés. Les accents et la casse sont ignorés, et le nom anglais marche aussi.
+- Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, et le nom anglais marche aussi.
+- `/guess name:<nom>` : pareil, mais avec l'autocomplétion pendant la frappe (sans les noms déjà proposés). Pratique pour « Nidoran♀ » ou « M. Mime ».
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
 - `/quiz giveup` : abandonne la partie et donne la réponse.
 
@@ -42,8 +43,8 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 ### Appli Discord
 
 1. Sur le [Discord Developer Portal](https://discord.com/developers/applications) : *New Application*.
-2. *Bot* > *Reset Token* : c'est le `DISCORD_TOKEN`. Aucun intent privilégié n'est nécessaire.
-3. *OAuth2* > *URL Generator* : cocher les scopes `bot` et `applications.commands`, puis la permission *Send Messages*. Ouvrir l'URL générée pour inviter le bot sur le serveur.
+2. *Bot* > *Reset Token* : c'est le `DISCORD_TOKEN`. Sur la même page, activer *Message Content Intent* (pour lire les noms écrits dans le salon). Intent privilégié : au-delà de 100 serveurs, Discord demande une validation.
+3. *OAuth2* > *URL Generator* : cocher les scopes `bot` et `applications.commands`, puis les permissions *View Channels*, *Send Messages*, *Embed Links* et *Read Message History*. Ouvrir l'URL générée pour inviter le bot sur le serveur.
 
 ### Lancer le bot
 
