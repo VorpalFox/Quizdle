@@ -49,7 +49,7 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ### Données Weebdle
 
-Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans `data/recommendations.json` (hors git). Pour l'instant, [data/weebdle.json](data/weebdle.json) ne contient qu'un personnage factice : les vraies données restent à récupérer.
+Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans [data/recommendations.json](data/recommendations.json). Pour l'instant, [data/weebdle.json](data/weebdle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO.md](TODO.md).
 
 ## Installation
 
