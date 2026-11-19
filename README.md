@@ -4,7 +4,7 @@ Bot Discord de quiz façon -dle (Pokédle, et d'autres sujets à venir), tous su
 
 ## Utilisation
 
-- `/quiz start subject:<sujet>` : lance le quiz du jour dans le salon. La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
+- `/quiz pokedle` : lance le Pokédle du jour dans le salon (et plus tard `/quiz animedle`...). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
 - Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, et le nom anglais marche aussi.
 - `/guess name:<nom>` : pareil, mais avec l'autocomplétion pendant la frappe (sans les noms déjà proposés). Pratique pour « Nidoran♀ » ou « M. Mime ».
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
@@ -32,7 +32,7 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
    - `exact` : juste ou faux (couleur, pays...)
    - `set` : une liste de valeurs, juste en partie s'il y en a au moins une en commun (types, genres...)
    - `number` : juste, ou ⬆️ / ⬇️ (taille, année...). `format` sert à ajouter l'unité.
-3. L'ajouter dans [src/subjects/registry.ts](src/subjects/registry.ts), puis relancer `npm run deploy-commands`.
+3. L'ajouter dans [src/subjects/registry.ts](src/subjects/registry.ts), puis relancer `npm run deploy-commands`. L'`id` du sujet devient sa commande (`/quiz <id>`, ex : `pokedle`) : en minuscules, sans accent, et ni `board` ni `giveup`.
 
 ### Données Pokémon
 

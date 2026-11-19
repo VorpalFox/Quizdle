@@ -9,14 +9,12 @@ export const quizCommand = new SlashCommandBuilder()
   .setName(COMMAND_NAME)
   .setDescription('Guess the mystery item of the day')
   .setContexts(InteractionContextType.Guild)
-  .addSubcommand(sub => sub
-    .setName('start')
-    .setDescription('Play today\'s quiz in this channel (same answer for everyone)')
-    .addStringOption(option => option
-      .setName('subject')
-      .setDescription('Quiz subject')
-      .setRequired(true)
-      .addChoices(...subjects.map(subject => ({ name: subject.name, value: subject.id })))))
+
+// Une sous-commande par sujet, nommée d'après son id : /quiz pokedle, /quiz animedle...
+for (const subject of subjects)
+  quizCommand.addSubcommand(sub => sub.setName(subject.id).setDescription(`Play today's ${subject.name} in this channel (same answer for everyone)`))
+
+quizCommand
   .addSubcommand(sub => sub.setName('board').setDescription('Show every guess so far'))
   .addSubcommand(sub => sub.setName('giveup').setDescription('Give up and reveal the answer'))
 

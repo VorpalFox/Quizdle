@@ -1,13 +1,16 @@
 import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, type Message, MessageFlags } from 'discord.js'
 import { type Game, GameError } from '../engine/game.js'
 import { findEntry, searchEntries } from '../engine/search.js'
-import { getSubject } from '../subjects/registry.js'
+import { getSubject, subjects } from '../subjects/registry.js'
 import { COMMAND_NAME, DEBUG_COMMAND_NAME, GUESS_COMMAND_NAME } from './commands.js'
 import { renderBoard, renderGuess, renderReveal, renderStart } from './render.js'
 import type { GameStore } from './store.js'
 
 // Au-delà, un message n'est sûrement pas un nom : on ne cherche même pas
 const MAX_MESSAGE_GUESS_LENGTH = 50
+
+// « `/quiz pokedle` ou `/quiz animedle` »
+const START_HINT = subjects.map(subject => `\`/${COMMAND_NAME} ${subject.id}\``).join(' ou ')
 
 // File d'attente par salon : deux propositions simultanées sont traitées l'une après l'autre
 const queues = new Map<string, Promise<void>>()
@@ -73,21 +76,9 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
   const current = store.get(channelId)
 
   switch (interaction.options.getSubcommand()) {
-    case 'start': {
-      if (current?.status === 'playing')
-        throw new GameError('Une partie est déjà en cours dans ce salon (`/quiz giveup` pour l\'arrêter).')
-      const subject = getSubject(interaction.options.getString('subject', true))
-      if (!subject)
-        throw new GameError('Sujet inconnu.')
-      if (store.playedToday(channelId, subject.id))
-        throw new GameError(`Le ${subject.name} du jour a déjà été joué dans ce salon. Rendez-vous demain !`)
-      const game = store.startDaily(channelId, subject)
-      await interaction.reply({ embeds: [renderStart(game)] })
-      return
-    }
     case 'board':
       if (!current)
-        throw new GameError('Aucune partie dans ce salon. Lance-en une avec `/quiz start`.')
+        throw new GameError(`Aucune partie dans ce salon. Lance-en une avec ${START_HINT}.`)
       await interaction.reply({ embeds: [renderBoard(current)] })
       return
     case 'giveup': {
@@ -96,6 +87,18 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
       store.save()
       await interaction.reply({ embeds: [renderReveal(game)] })
       return
+    }
+    // les autres sous-commandes sont les sujets : /quiz pokedle...
+    default: {
+      if (current?.status === 'playing')
+        throw new GameError('Une partie est déjà en cours dans ce salon (`/quiz giveup` pour l\'arrêter).')
+      const subject = getSubject(interaction.options.getSubcommand())
+      if (!subject)
+        throw new GameError('Sujet inconnu.')
+      if (store.playedToday(channelId, subject.id))
+        throw new GameError(`Le ${subject.name} du jour a déjà été joué dans ce salon. Rendez-vous demain !`)
+      const game = store.startDaily(channelId, subject)
+      await interaction.reply({ embeds: [renderStart(game)] })
     }
   }
 }
@@ -118,7 +121,7 @@ async function runDebugCommand(interaction: ChatInputCommandInteraction, store: 
 
 function playingGame(game: Game | undefined): Game {
   if (game?.status !== 'playing')
-    throw new GameError('Aucune partie en cours dans ce salon. Lance-en une avec `/quiz start`.')
+    throw new GameError(`Aucune partie en cours dans ce salon. Lance-en une avec ${START_HINT}.`)
   return game
 }
 

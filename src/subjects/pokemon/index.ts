@@ -5,7 +5,8 @@ const withUnit = (unit: string) => (value: AttributeValue) =>
   typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : '—'
 
 export const pokemon: Subject = {
-  id: 'pokemon',
+  // l'id sert aussi de nom de commande : /quiz pokedle
+  id: 'pokedle',
   name: 'Pokédle',
   description: 'Trouve le Pokémon mystère',
   attributes: [
