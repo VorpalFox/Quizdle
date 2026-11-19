@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
 import { dayKey, randomEntry } from './pick.js'
-import { findEntry, searchEntries } from './search.js'
+import { findEntry, isOneTypoAway, searchEntries } from './search.js'
 import type { Subject } from './types.js'
 
 // Sujet inventé : le moteur ne doit rien savoir des Pokémon
@@ -52,6 +52,26 @@ describe('recherche', () => {
     expect(findEntry(fruits, ' PÊCHE! ')?.id).toBe('peche')
     expect(findEntry(fruits, 'Lemon')?.id).toBe('citron')
     expect(findEntry(fruits, 'banane')).toBeUndefined()
+  })
+
+  it('isOneTypoAway : une lettre changée, ajoutée, enlevée ou deux voisines inversées', () => {
+    expect(isOneTypoAway('roocool', 'roucool')).toBe(true)
+    expect(isOneTypoAway('ratattac', 'rattatac')).toBe(true)
+    expect(isOneTypoAway('salamch', 'salameche')).toBe(false)
+    expect(isOneTypoAway('salamche', 'salameche')).toBe(true)
+    expect(isOneTypoAway('salamechee', 'salameche')).toBe(true)
+    expect(isOneTypoAway('salamehce', 'salameche')).toBe(true)
+    expect(isOneTypoAway('slamaeche', 'salameche')).toBe(false)
+    expect(isOneTypoAway('salameche', 'salameche')).toBe(false)
+  })
+
+  it('tolère une faute, sauf sur les noms courts ou si deux entrées collent', () => {
+    expect(findEntry(fruits, 'citrn')?.id).toBe('citron')
+    expect(findEntry(fruits, 'Cirton')?.id).toBe('citron')
+    expect(findEntry(fruits, 'kiwo')).toBeUndefined()
+    const withPoire: Subject = { ...fruits, entries: [...fruits.entries, { id: 'poire', name: 'Poire', attributes: {} }] }
+    expect(findEntry(withPoire, 'poime')).toBeUndefined() // pomme ou poire ?
+    expect(findEntry(withPoire, 'pomme')?.id).toBe('pomme') // l'exact passe avant
   })
 
   it('autocomplétion : préfixes avant les contenus, exclut les déjà proposés', () => {
