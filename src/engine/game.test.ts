@@ -124,18 +124,3 @@ describe('tirage', () => {
     expect(dayKey(new Date('2026-11-19T22:30:00Z'))).toBe('2026-11-19')
   })
 })
-
-describe('sauvegarde', () => {
-  it('une partie rechargée retrouve ses propositions et son statut', () => {
-    const game = new Game(fruits, fruits.entries[0]!, '2026-11-19')
-    game.guess('Kiwi', 'alice')
-    game.guess('Citron', 'bob')
-    game.abandon()
-
-    const restored = Game.restore(JSON.parse(JSON.stringify(game.toSnapshot())), id => (id === fruits.id ? fruits : undefined))
-    expect(restored.day).toBe('2026-11-19')
-    expect(restored.status).toBe('abandoned')
-    expect(restored.guesses.map(g => [g.entry.id, g.playerId])).toEqual([['kiwi', 'alice'], ['citron', 'bob']])
-    expect(restored.remainingGuesses).toBe(1)
-  })
-})

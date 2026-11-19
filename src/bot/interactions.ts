@@ -49,7 +49,6 @@ export async function handleMessage(message: Message, store: GameStore): Promise
       return
     try {
       const guess = current.guess(message.content, message.author.id)
-      store.save()
       await message.reply({ embeds: [renderGuess(current, guess)], allowedMentions: { repliedUser: false } })
     } catch (error) {
       if (!(error instanceof GameError))
@@ -70,7 +69,6 @@ async function handleCommand(interaction: ChatInputCommandInteraction, run: () =
   }
 }
 
-// On sauvegarde avant de répondre : si la réponse échoue, la proposition est quand même gardée
 async function runCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
   const channelId = interaction.channelId
   const current = store.get(channelId)
@@ -84,7 +82,6 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
     case 'giveup': {
       const game = playingGame(current)
       game.abandon()
-      store.save()
       await interaction.reply({ embeds: [renderReveal(game)] })
       return
     }
@@ -106,7 +103,6 @@ async function runCommand(interaction: ChatInputCommandInteraction, store: GameS
 async function runGuessCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
   const game = playingGame(store.get(interaction.channelId))
   const guess = game.guess(interaction.options.getString('name', true), interaction.user.id)
-  store.save()
   await interaction.reply({ embeds: [renderGuess(game, guess)] })
 }
 

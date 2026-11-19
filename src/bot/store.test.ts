@@ -1,48 +1,67 @@
-import { mkdtempSync, rmSync } from 'node:fs'
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { pokemon } from '../subjects/pokemon/index.js'
+import { DailyDraw } from './daily.js'
 import { GameStore } from './store.js'
 
-describe('GameStore', () => {
+describe('DailyDraw et GameStore', () => {
   let dir: string
   let file: URL
 
   beforeEach(() => {
     dir = mkdtempSync(join(tmpdir(), 'quizdle-'))
-    file = pathToFileURL(join(dir, 'state', 'games.json'))
+    file = pathToFileURL(join(dir, 'state', 'daily.json'))
   })
 
   afterEach(() => rmSync(dir, { recursive: true, force: true }))
 
-  it('garde le tirage du jour et les parties après un redémarrage', () => {
-    const store = GameStore.load(file, '2026-11-19')
-    const game = store.startDaily('salon', pokemon)
-    game.guess('Pikachu', 'alice')
-    store.save()
+  it('garde la réponse du jour après un redémarrage, mais pas les parties', () => {
+    const daily = DailyDraw.load(file, '2026-11-19')
+    const target = new GameStore(daily).startDaily('salon', pokemon).target
 
-    const reloaded = GameStore.load(file, '2026-11-19')
-    expect(reloaded.get('salon')?.target.id).toBe(game.target.id)
-    expect(reloaded.get('salon')?.guesses.map(g => g.entry.name)).toEqual(['Pikachu'])
-    expect(reloaded.playedToday('salon', pokemon.id)).toBe(true)
+    const reloaded = DailyDraw.load(file, '2026-11-19')
+    expect(reloaded.target(pokemon).id).toBe(target.id)
     expect(reloaded.ensureDay('2026-11-19')).toBe(false)
+    expect(new GameStore(reloaded).get('salon')).toBeUndefined()
   })
 
-  it('nouveau tirage au changement de jour, sans retomber sur une ancienne cible', () => {
-    const store = GameStore.load(file, '2026-11-01')
+  it('oublie au chargement les sujets qui n\'existent plus', () => {
+    DailyDraw.load(file, '2026-11-19')
+    const saved = JSON.parse(readFileSync(file, 'utf8'))
+    saved.targets.ancien = '1'
+    saved.history.ancien = ['1']
+    writeFileSync(file, JSON.stringify(saved))
+
+    DailyDraw.load(file, '2026-11-19').redraw() // redraw pour forcer une sauvegarde
+    const cleaned = JSON.parse(readFileSync(file, 'utf8'))
+    expect(Object.keys(cleaned.targets)).toEqual([pokemon.id])
+    expect(Object.keys(cleaned.history)).toEqual([pokemon.id])
+  })
+
+  it('nouveau tirage au changement de jour, sans retomber sur une ancienne réponse', () => {
+    const daily = DailyDraw.load(file, '2026-11-01')
+    const store = new GameStore(daily)
     const targets = new Set([store.startDaily('salon', pokemon).target.id])
     for (let day = 2; day <= 30; day++) {
-      expect(store.ensureDay(`2026-11-${String(day).padStart(2, '0')}`)).toBe(true)
+      expect(daily.ensureDay(`2026-11-${String(day).padStart(2, '0')}`)).toBe(true)
       expect(store.playedToday('salon', pokemon.id)).toBe(false)
-      targets.add(store.startDaily(`salon${day}`, pokemon).target.id)
+      targets.add(store.startDaily('salon', pokemon).target.id)
     }
     expect(targets.size).toBe(30)
   })
 
+  it('une seule partie du jour par salon et par sujet', () => {
+    const store = new GameStore(DailyDraw.load(file, '2026-11-19'))
+    store.startDaily('salon', pokemon)
+    expect(store.playedToday('salon', pokemon.id)).toBe(true)
+    expect(store.playedToday('autre salon', pokemon.id)).toBe(false)
+  })
+
   it('reset : oublie les parties du jour', () => {
-    const store = GameStore.load(file, '2026-11-19')
+    const store = new GameStore(DailyDraw.load(file, '2026-11-19'))
     store.startDaily('salon', pokemon)
     store.reset()
     expect(store.get('salon')).toBeUndefined()

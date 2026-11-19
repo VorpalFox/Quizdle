@@ -71,7 +71,7 @@ Pour le Raspberry : `npm run build`, puis `pm2 start ecosystem.config.cjs`.
 
 ### Fonctionnement
 
-Le bot ne fait aucune requête réseau : les données sont dans `data/`, générées une fois à la main par les scripts. Le tirage du jour se fait au démarrage s'il n'y en a pas pour aujourd'hui, puis à minuit, sans retomber sur une ancienne cible avant d'avoir fait le tour. Le tirage et les parties sont sauvegardés dans `state/games.json` (hors git) : ils survivent à un redémarrage.
+Le bot ne fait aucune requête réseau : les données sont dans `data/`, générées une fois à la main par les scripts. Le tirage du jour se fait au démarrage s'il n'y en a pas pour aujourd'hui, puis à minuit, sans retomber sur une ancienne cible avant d'avoir fait le tour. Seul le tirage est sauvegardé, dans `state/daily.json` (hors git) : la réponse du jour de chaque sujet et l'historique des anciennes réponses. Les parties ne sont gardées qu'en mémoire : un redémarrage les efface, et le salon peut relancer la partie du jour (même réponse).
 
 ### Debug
 
