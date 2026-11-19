@@ -1,0 +1,402 @@
+[
+ {
+  "title": "Super Mario",
+  "wikidataId": "Q4802838"
+ },
+ {
+  "title": "The Legend of Zelda",
+  "wikidataId": "Q12393"
+ },
+ {
+  "title": "Pokémon",
+  "wikidataId": "Q864"
+ },
+ {
+  "title": "Sonic the Hedgehog",
+  "wikidataId": null
+ },
+ {
+  "title": "Final Fantasy",
+  "wikidataId": "Q12391356"
+ },
+ {
+  "title": "Street Fighter",
+  "wikidataId": "Q288035"
+ },
+ {
+  "title": "Mortal Kombat",
+  "wikidataId": "Q241163"
+ },
+ {
+  "title": "Tekken",
+  "wikidataId": "Q219623"
+ },
+ {
+  "title": "Resident Evil",
+  "wikidataId": "Q220260"
+ },
+ {
+  "title": "Metal Gear",
+  "wikidataId": "Q216655"
+ },
+ {
+  "title": "Kingdom Hearts",
+  "wikidataId": "Q755167"
+ },
+ {
+  "title": "Donkey Kong",
+  "wikidataId": null
+ },
+ {
+  "title": "Kirby",
+  "wikidataId": "Q2569953"
+ },
+ {
+  "title": "Metroid",
+  "wikidataId": null
+ },
+ {
+  "title": "Star Fox",
+  "wikidataId": "Q1501747"
+ },
+ {
+  "title": "Fire Emblem",
+  "wikidataId": "Q1768977"
+ },
+ {
+  "title": "Animal Crossing",
+  "wikidataId": "Q1139803"
+ },
+ {
+  "title": "Splatoon",
+  "wikidataId": "Q88477559"
+ },
+ {
+  "title": "Crash Bandicoot",
+  "wikidataId": "Q507898"
+ },
+ {
+  "title": "Spyro the Dragon",
+  "wikidataId": "Q927422"
+ },
+ {
+  "title": "Ratchet & Clank",
+  "wikidataId": "Q5170139"
+ },
+ {
+  "title": "Jak and Daxter",
+  "wikidataId": "Q1678804"
+ },
+ {
+  "title": "Sly Cooper",
+  "wikidataId": "Q2227411"
+ },
+ {
+  "title": "Tomb Raider",
+  "wikidataId": null
+ },
+ {
+  "title": "Uncharted",
+  "wikidataId": "Q1064135"
+ },
+ {
+  "title": "The Last of Us",
+  "wikidataId": "Q28062624"
+ },
+ {
+  "title": "God of War",
+  "wikidataId": "Q817369"
+ },
+ {
+  "title": "Halo",
+  "wikidataId": null
+ },
+ {
+  "title": "Gears of War",
+  "wikidataId": "Q3100030"
+ },
+ {
+  "title": "Mass Effect",
+  "wikidataId": null
+ },
+ {
+  "title": "Dragon Age",
+  "wikidataId": "Q1766436"
+ },
+ {
+  "title": "The Elder Scrolls",
+  "wikidataId": "Q466530"
+ },
+ {
+  "title": "Fallout",
+  "wikidataId": "Q167835"
+ },
+ {
+  "title": "The Witcher",
+  "wikidataId": "Q18935909"
+ },
+ {
+  "title": "Grand Theft Auto",
+  "wikidataId": "Q132730"
+ },
+ {
+  "title": "Red Dead",
+  "wikidataId": "Q3422689"
+ },
+ {
+  "title": "Assassin's Creed",
+  "wikidataId": null
+ },
+ {
+  "title": "Far Cry",
+  "wikidataId": "Q337865"
+ },
+ {
+  "title": "Prince of Persia",
+  "wikidataId": null
+ },
+ {
+  "title": "Rayman",
+  "wikidataId": "Q13219467"
+ },
+ {
+  "title": "Raving Rabbids",
+  "wikidataId": "Q2746843"
+ },
+ {
+  "title": "Half-Life",
+  "wikidataId": "Q752241"
+ },
+ {
+  "title": "Portal",
+  "wikidataId": "Q7231475"
+ },
+ {
+  "title": "Team Fortress",
+  "wikidataId": "Q18396192"
+ },
+ {
+  "title": "Left 4 Dead",
+  "wikidataId": "Q6516784"
+ },
+ {
+  "title": "Overwatch",
+  "wikidataId": null
+ },
+ {
+  "title": "League of Legends",
+  "wikidataId": null
+ },
+ {
+  "title": "Valorant",
+  "wikidataId": "Q86919275"
+ },
+ {
+  "title": "Apex Legends",
+  "wikidataId": "Q61478103"
+ },
+ {
+  "title": "Warcraft",
+  "wikidataId": "Q815739"
+ },
+ {
+  "title": "StarCraft",
+  "wikidataId": "Q290106"
+ },
+ {
+  "title": "Diablo",
+  "wikidataId": "Q44165"
+ },
+ {
+  "title": "Dragon Quest",
+  "wikidataId": "Q615908"
+ },
+ {
+  "title": "Persona",
+  "wikidataId": "Q1083352"
+ },
+ {
+  "title": "Tales of",
+  "wikidataId": "Q1193867"
+ },
+ {
+  "title": "Xenoblade Chronicles",
+  "wikidataId": "Q58541191"
+ },
+ {
+  "title": "Chrono",
+  "wikidataId": "Q325320"
+ },
+ {
+  "title": "Devil May Cry",
+  "wikidataId": "Q436567"
+ },
+ {
+  "title": "Bayonetta",
+  "wikidataId": "Q20062305"
+ },
+ {
+  "title": "Mega Man",
+  "wikidataId": "Q2667596"
+ },
+ {
+  "title": "Castlevania",
+  "wikidataId": "Q2515184"
+ },
+ {
+  "title": "Silent Hill",
+  "wikidataId": "Q236821"
+ },
+ {
+  "title": "Danganronpa",
+  "wikidataId": null
+ },
+ {
+  "title": "Ace Attorney",
+  "wikidataId": "Q339944"
+ },
+ {
+  "title": "Professor Layton",
+  "wikidataId": "Q1210316"
+ },
+ {
+  "title": "Like a Dragon",
+  "wikidataId": "Q2594935"
+ },
+ {
+  "title": "Guilty Gear",
+  "wikidataId": "Q2415783"
+ },
+ {
+  "title": "The King of Fighters",
+  "wikidataId": "Q340517"
+ },
+ {
+  "title": "Dead or Alive",
+  "wikidataId": "Q1180890"
+ },
+ {
+  "title": "Soulcalibur",
+  "wikidataId": "Q1207356"
+ },
+ {
+  "title": "Genshin Impact",
+  "wikidataId": "Q65059474"
+ },
+ {
+  "title": "Honkai: Star Rail",
+  "wikidataId": "Q108896777"
+ },
+ {
+  "title": "Zenless Zone Zero",
+  "wikidataId": "Q111983519"
+ },
+ {
+  "title": "Nier",
+  "wikidataId": "Q1572908"
+ },
+ {
+  "title": "Dark Souls",
+  "wikidataId": "Q99431276"
+ },
+ {
+  "title": "Elden Ring",
+  "wikidataId": null
+ },
+ {
+  "title": "Undertale",
+  "wikidataId": "Q21039924"
+ },
+ {
+  "title": "Hollow Knight",
+  "wikidataId": null
+ },
+ {
+  "title": "Minecraft",
+  "wikidataId": "Q25445348"
+ },
+ {
+  "title": "Five Nights at Freddy's",
+  "wikidataId": "Q19847113"
+ },
+ {
+  "title": "BioShock",
+  "wikidataId": "Q4914658"
+ },
+ {
+  "title": "Borderlands",
+  "wikidataId": "Q16820462"
+ },
+ {
+  "title": "Call of Duty",
+  "wikidataId": null
+ },
+ {
+  "title": "Banjo-Kazooie",
+  "wikidataId": "Q2715287"
+ },
+ {
+  "title": "Pikmin",
+  "wikidataId": "Q8198020"
+ },
+ {
+  "title": "EarthBound",
+  "wikidataId": "Q1780267"
+ },
+ {
+  "title": "Kid Icarus",
+  "wikidataId": "Q1740851"
+ },
+ {
+  "title": "Okami",
+  "wikidataId": "Q385184"
+ },
+ {
+  "title": "Inazuma Eleven",
+  "wikidataId": "Q3149799"
+ },
+ {
+  "title": "Yo-kai Watch",
+  "wikidataId": "Q11446791"
+ },
+ {
+  "title": "Touhou Project",
+  "wikidataId": "Q907907"
+ },
+ {
+  "title": "Hades",
+  "wikidataId": "Q59756366"
+ },
+ {
+  "title": "Stardew Valley",
+  "wikidataId": "Q23013817"
+ },
+ {
+  "title": "Baldur's Gate",
+  "wikidataId": "Q2640148"
+ },
+ {
+  "title": "Cyberpunk 2077",
+  "wikidataId": "Q3182559"
+ },
+ {
+  "title": "Horizon",
+  "wikidataId": null
+ },
+ {
+  "title": "Dishonored",
+  "wikidataId": "Q98649769"
+ },
+ {
+  "title": "Detroit: Become Human",
+  "wikidataId": "Q21246348"
+ },
+ {
+  "title": "Life Is Strange",
+  "wikidataId": "Q38609053"
+ },
+ {
+  "title": "Wario",
+  "wikidataId": "Q8065610"
+ }
+]

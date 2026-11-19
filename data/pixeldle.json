@@ -1,0 +1,16 @@
+[
+ {
+  "id": "factice",
+  "name": "Personnage Factice",
+  "aliases": ["Factice"],
+  "attributes": {
+   "gender": "Autre",
+   "species": "Humain",
+   "franchise": "Franchise Factice",
+   "year": 2000,
+   "developer": "Studio Factice",
+   "genres": ["Plates-formes", "Aventure"],
+   "platform": "PlayStation"
+  }
+ }
+]

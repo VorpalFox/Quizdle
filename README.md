@@ -4,7 +4,7 @@ Bot Discord de quiz façon -dle (Pokédle, et d'autres sujets à venir), tous su
 
 ## Utilisation
 
-- `/quiz pokedle` : lance le Pokédle du jour dans le salon (et plus tard `/quiz animedle`...). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
+- `/quiz pokedle` ou `/quiz pixeldle` : lance le quiz du jour dans le salon (un Pokémon, ou un personnage de jeu vidéo). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
 - Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, le nom anglais marche aussi, et une faute de frappe est tolérée si le mot tapé fait au moins 4 lettres (« Roocool » → Roucool, « Ratattac » → Rattatac), sauf si deux noms collent.
 - `/guess name:<nom>` : pareil, mais avec l'autocomplétion pendant la frappe (sans les noms déjà proposés). Pratique pour « Nidoran♀ » ou « M. Mime ».
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
@@ -37,6 +37,10 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 ### Données Pokémon
 
 `npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 151 premiers par défaut). Pour aller plus loin : `npm run fetch:pokemon -- 1025`. PokeAPI ne donne les habitats que jusqu'à la 3e génération : après, l'habitat est vide (« — »).
+
+### Données Pixeldle
+
+Les personnages de jeu vidéo, tirés de [Wikidata](https://www.wikidata.org) : sexe, espèce, franchise, et les infos de leur 1er jeu (année, développeur, genres, plateforme). La liste des franchises de départ est dans [data/pixeldle-franchises.json](data/pixeldle-franchises.json). Pour l'instant, [data/pixeldle.json](data/pixeldle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO-Pixeldle.md](TODO-Pixeldle.md).
 
 ## Installation
 

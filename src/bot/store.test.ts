@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { pokemon } from '../subjects/pokemon/index.js'
+import { subjects } from '../subjects/registry.js'
 import { DailyDraw } from './daily.js'
 import { GameStore } from './store.js'
 
@@ -36,7 +37,7 @@ describe('DailyDraw et GameStore', () => {
 
     DailyDraw.load(file, '2026-11-19').redraw() // redraw pour forcer une sauvegarde
     const cleaned = JSON.parse(readFileSync(file, 'utf8'))
-    expect(Object.keys(cleaned.targets)).toEqual([pokemon.id])
+    expect(Object.keys(cleaned.targets)).toEqual(subjects.map(subject => subject.id))
   })
 
   it('nouveau tirage au changement de jour, jamais deux fois de suite la même réponse', () => {
