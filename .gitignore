@@ -2,3 +2,6 @@ node_modules/
 dist/
 .env
 state/
+# Pseudos et IDs Discord du serveur : on ne les publie pas
+data/recommendations.json
+data/recommendations.md
