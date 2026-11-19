@@ -1,20 +1,26 @@
-import { InteractionContextType, SlashCommandBuilder } from 'discord.js'
+import { InteractionContextType, SlashCommandBuilder, type SlashCommandStringOption } from 'discord.js'
 import { subjects } from '../subjects/registry.js'
 
 export const COMMAND_NAME = 'quiz'
+
+const subjectOption = (option: SlashCommandStringOption) => option
+  .setName('subject')
+  .setDescription('Quiz subject')
+  .setRequired(true)
+  .addChoices(...subjects.map(subject => ({ name: subject.name, value: subject.id })))
 
 export const quizCommand = new SlashCommandBuilder()
   .setName(COMMAND_NAME)
   .setDescription('Guess the mystery item')
   .setContexts(InteractionContextType.Guild)
   .addSubcommand(sub => sub
+    .setName('daily')
+    .setDescription('Play today\'s quiz in this channel (same answer for everyone)')
+    .addStringOption(subjectOption))
+  .addSubcommand(sub => sub
     .setName('start')
-    .setDescription('Start a quiz in this channel')
-    .addStringOption(option => option
-      .setName('subject')
-      .setDescription('Quiz subject')
-      .setRequired(true)
-      .addChoices(...subjects.map(subject => ({ name: subject.name, value: subject.id })))))
+    .setDescription('Start a quiz with a random answer in this channel')
+    .addStringOption(subjectOption))
   .addSubcommand(sub => sub
     .setName('guess')
     .setDescription('Make a guess')

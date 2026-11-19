@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
-import { dailyEntry } from './pick.js'
+import { dailyEntry, dayKey } from './pick.js'
 import { findEntry, searchEntries } from './search.js'
 import type { Subject } from './types.js'
 
@@ -90,7 +90,34 @@ describe('Game', () => {
   })
 })
 
-it('dailyEntry : même cible pour une même date', () => {
-  const day = new Date('2026-11-19T12:00:00Z')
-  expect(dailyEntry(fruits, day)).toBe(dailyEntry(fruits, day))
+describe('quiz du jour', () => {
+  it('dailyEntry : même cible pour une même date', () => {
+    expect(dailyEntry(fruits, '2026-11-19')).toBe(dailyEntry(fruits, '2026-11-19'))
+  })
+
+  it('dailyEntry : pas de doublon avant d\'avoir fait le tour des entrées', () => {
+    // 2026-11-15 est un multiple de 4 jours depuis 1970 : début d'un tour pour 4 entrées
+    const days = ['2026-11-15', '2026-11-16', '2026-11-17', '2026-11-18']
+    expect(new Set(days.map(day => dailyEntry(fruits, day).id)).size).toBe(4)
+  })
+
+  it('dayKey : le jour change à minuit heure de Paris, pas à minuit UTC', () => {
+    expect(dayKey(new Date('2026-11-19T23:30:00Z'))).toBe('2026-11-20')
+    expect(dayKey(new Date('2026-11-19T22:30:00Z'))).toBe('2026-11-19')
+  })
+})
+
+describe('sauvegarde', () => {
+  it('une partie rechargée retrouve ses propositions et son statut', () => {
+    const game = new Game(fruits, fruits.entries[0]!, '2026-11-19')
+    game.guess('Kiwi', 'alice')
+    game.guess('Citron', 'bob')
+    game.abandon()
+
+    const restored = Game.restore(JSON.parse(JSON.stringify(game.toSnapshot())), id => (id === fruits.id ? fruits : undefined))
+    expect(restored.day).toBe('2026-11-19')
+    expect(restored.status).toBe('abandoned')
+    expect(restored.guesses.map(g => [g.entry.id, g.playerId])).toEqual([['kiwi', 'alice'], ['citron', 'bob']])
+    expect(restored.remainingGuesses).toBe(1)
+  })
 })

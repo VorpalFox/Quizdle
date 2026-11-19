@@ -1,10 +1,11 @@
 # Quizdle
 
-Bot Discord de quiz façon Pokédle : on doit trouver un élément mystère, et chaque proposition donne un indice par attribut. Une partie par salon, et tout le salon joue ensemble.
+Bot Discord de quiz façon -dle (Pokédle, et d'autres sujets à venir), tous sur le même bot : on doit trouver un élément mystère, et chaque proposition donne un indice par attribut. Une partie par salon, et tout le salon joue ensemble.
 
 ## Utilisation
 
-- `/quiz start subject:<sujet>` : lance une partie dans le salon.
+- `/quiz daily subject:<sujet>` : lance le quiz du jour dans le salon. La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie du jour par salon et par sujet.
+- `/quiz start subject:<sujet>` : lance une partie libre dans le salon, avec une réponse au hasard. On peut en enchaîner autant qu'on veut.
 - `/quiz guess name:<nom>` : fait une proposition. La liste se complète pendant la frappe, sans les noms déjà proposés. Les accents et la casse sont ignorés, et le nom anglais marche aussi.
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
 - `/quiz giveup` : abandonne la partie et donne la réponse.
@@ -49,6 +50,6 @@ npm start               # ou npm run dev pendant le développement
 
 Pour le Raspberry : `pm2 start ecosystem.config.cjs`.
 
-Les parties sont gardées en mémoire : un redémarrage du bot les efface.
+Les parties sont sauvegardées dans `state/games.json` (hors git) : elles survivent à un redémarrage du bot.
 
 La suite prévue est dans [TODO.md](TODO.md).

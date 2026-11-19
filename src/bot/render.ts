@@ -16,11 +16,16 @@ const COLOR_LOST = 0xed4245
 
 const LEGEND = '🟩 juste · 🟨 en partie · 🟥 faux · ⬆️ c\'est plus · ⬇️ c\'est moins'
 
+// « Pokédle du jour » ou « Pokédle » pour une partie libre
+function gameTitle(game: Game): string {
+  return game.day ? `${game.subject.name} du jour` : game.subject.name
+}
+
 export function renderStart(game: Game): EmbedBuilder {
   const limit = game.remainingGuesses === null ? 'Essais illimités' : `${game.remainingGuesses} essais`
   return new EmbedBuilder()
     .setColor(COLOR_PLAYING)
-    .setTitle(`🔎 ${game.subject.name}`)
+    .setTitle(`🔎 ${gameTitle(game)}`)
     .setDescription(`${game.subject.description} ! Propose avec \`/quiz guess\`.\n${limit}.\n\nIndices : ${game.subject.attributes.map(a => a.label).join(', ')}\n${LEGEND}`)
 }
 
@@ -51,7 +56,7 @@ export function renderBoard(game: Game): EmbedBuilder {
     description = `${description.slice(0, 4000)}\n…`
   return new EmbedBuilder()
     .setColor(COLOR_PLAYING)
-    .setTitle(`🔎 ${game.subject.name} · ${game.guesses.length} proposition${game.guesses.length > 1 ? 's' : ''}`)
+    .setTitle(`🔎 ${gameTitle(game)} · ${game.guesses.length} proposition${game.guesses.length > 1 ? 's' : ''}`)
     .setDescription(`*${header}*\n\n${description}`)
 }
 
