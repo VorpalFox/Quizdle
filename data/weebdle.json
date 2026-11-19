@@ -1,0 +1,17 @@
+[
+ {
+  "id": "factice",
+  "name": "Personnage Factice",
+  "aliases": ["Factice"],
+  "attributes": {
+   "gender": "Autre",
+   "age": 20,
+   "height": 170,
+   "anime": "Anime Factice",
+   "genres": ["Action", "Comédie"],
+   "studio": "Studio Factice",
+   "year": 2020,
+   "source": "Original"
+  }
+ }
+]

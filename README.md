@@ -1,10 +1,10 @@
 # Quizdle
 
-Bot Discord de quiz façon -dle (Pokédle, Animedle...), tous sur le même bot : on doit trouver un élément mystère, et chaque proposition donne un indice par attribut. Une partie par salon, et tout le salon joue ensemble.
+Bot Discord de quiz façon -dle (Pokédle, Animedle, Weebdle), tous sur le même bot : on doit trouver un élément mystère, et chaque proposition donne un indice par attribut. Une partie par salon, et tout le salon joue ensemble.
 
 ## Utilisation
 
-- `/quiz pokedle` ou `/quiz animedle` : lance le quiz du jour dans le salon (un Pokémon, ou un personnage d'anime). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
+- `/quiz pokedle`, `/quiz animedle` ou `/quiz weebdle` : lance le quiz du jour dans le salon (un Pokémon, un personnage d'anime populaire, ou un personnage des animes conseillés sur le serveur). La réponse est la même pour tout le monde ce jour-là et change à minuit (heure de Paris). Une partie par jour, par salon et par sujet.
 - Écrire un nom directement dans le salon pendant une partie : c'est une proposition. Les messages qui ne sont pas un nom du quiz sont ignorés, on peut donc discuter normalement. Les accents et la casse sont ignorés, le nom anglais marche aussi, et une faute de frappe est tolérée si le mot tapé fait au moins 4 lettres (« Roocool » → Roucool, « Ratattac » → Rattatac), sauf si deux noms collent.
 - `/guess name:<nom>` : pareil, mais avec l'autocomplétion pendant la frappe (sans les noms déjà proposés). Pratique pour « Nidoran♀ » ou « M. Mime ».
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
@@ -46,6 +46,10 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 - **Âge** : le 1er nombre donné par AniList (« 17-18 » → 17). Absent pour environ 15 % des personnages.
 - **Taille** : extraite de la description AniList (« Height: 170 cm »). Absente pour environ 25 % des personnages.
 - **Noms acceptés** : le nom complet dans les deux ordres, les variantes qui contiennent son nom (« Monkey D. Luffy »), et le prénom ou le nom seul s'il n'appartient qu'à un personnage (« Luffy » oui, « Elric » non). Pas les surnoms (« Master », « Zero »...), qui seraient pris pour des propositions dans la discussion.
+
+### Données Weebdle
+
+Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans `data/recommendations.json` (hors git). Pour l'instant, [data/weebdle.json](data/weebdle.json) ne contient qu'un personnage factice : les vraies données restent à récupérer.
 
 ## Installation
 
