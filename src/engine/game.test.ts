@@ -70,7 +70,8 @@ describe('recherche', () => {
     expect(findEntry(fruits, 'Cirton')?.id).toBe('citron')
     expect(findEntry(fruits, 'kiwo')?.id).toBe('kiwi')
     const more: Subject = { ...fruits, entries: [...fruits.entries, { id: 'poire', name: 'Poire', attributes: {} }, { id: 'mure', name: 'Mûr', attributes: {} }] }
-    expect(findEntry(more, 'mir')).toBeUndefined() // 3 lettres : trop court pour une faute
+    expect(findEntry(more, 'mir')).toBeUndefined() // 3 lettres tapées : trop court pour une faute
+    expect(findEntry(more, 'murr')?.id).toBe('mure') // 4 lettres tapées : ok, même vers un nom de 3
     expect(findEntry(more, 'poime')).toBeUndefined() // pomme ou poire ?
     expect(findEntry(more, 'pomme')?.id).toBe('pomme') // l'exact passe avant
   })

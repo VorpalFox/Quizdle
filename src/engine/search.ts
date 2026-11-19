@@ -15,7 +15,8 @@ function keys(entry: Entry): string[] {
   return [entry.name, entry.id, ...(entry.aliases ?? [])].map(normalize)
 }
 
-// En dessous, une faute tolérée ferait prendre des mots courants pour des noms (« new » → Mew, « ami » → Abo)
+// Faute tolérée seulement si le mot tapé fait au moins 4 lettres : en dessous, des mots courants
+// seraient pris pour des noms (« new » → Mew, « ami » → Abo)
 const MIN_TYPO_LENGTH = 4
 
 // Nom exact d'abord, sinon une faute de frappe tolérée (« roocool » → Roucool, « ratattac » → Rattatac),
@@ -25,9 +26,9 @@ export function findEntry(subject: Subject, query: string): Entry | undefined {
   if (!wanted)
     return undefined
   const exact = subject.entries.find(entry => keys(entry).includes(wanted))
-  if (exact)
+  if (exact || wanted.length < MIN_TYPO_LENGTH)
     return exact
-  const close = subject.entries.filter(entry => keys(entry).some(key => key.length >= MIN_TYPO_LENGTH && isOneTypoAway(wanted, key)))
+  const close = subject.entries.filter(entry => keys(entry).some(key => isOneTypoAway(wanted, key)))
   return close.length === 1 ? close[0] : undefined
 }
 
