@@ -10,8 +10,6 @@ interface SavedDaily {
   day: string
   // sujet → id de la réponse du jour
   targets: Record<string, string>
-  // sujet → anciennes réponses, pour ne pas retomber dessus avant d'avoir fait le tour
-  history: Record<string, string[]>
 }
 
 // La réponse du jour de chaque sujet : la seule chose sauvegardée sur disque.
@@ -19,7 +17,6 @@ interface SavedDaily {
 export class DailyDraw {
   private _day = ''
   private readonly targets = new Map<string, Entry>()
-  private readonly history = new Map<string, string[]>()
 
   private constructor(private readonly file: URL) {}
 
@@ -59,13 +56,9 @@ export class DailyDraw {
   }
 
   private draw(subject: Subject): void {
-    let history = this.history.get(subject.id) ?? []
-    // tout le monde y est passé : on recommence un tour
-    if (history.length >= subject.entries.length)
-      history = []
-    const entry = randomEntry(subject, new Set(history))
-    this.history.set(subject.id, [...history, entry.id])
-    this.targets.set(subject.id, entry)
+    // pas deux fois de suite la même réponse : on exclut celle d'avant (celle de la veille, ou d'avant le reset)
+    const previous = this.targets.get(subject.id)
+    this.targets.set(subject.id, randomEntry(subject, new Set(previous ? [previous.id] : [])))
   }
 
   // Écrit dans un fichier temporaire puis renomme : pas de fichier à moitié écrit si le bot s'arrête pile à ce moment
@@ -73,7 +66,6 @@ export class DailyDraw {
     const saved: SavedDaily = {
       day: this._day,
       targets: Object.fromEntries([...this.targets].map(([subjectId, entry]) => [subjectId, entry.id])),
-      history: Object.fromEntries(this.history),
     }
     mkdirSync(new URL('.', this.file), { recursive: true })
     const temp = new URL(`${this.file.href}.tmp`)
@@ -88,10 +80,6 @@ export class DailyDraw {
       const entry = getSubject(subjectId)?.entries.find(candidate => candidate.id === entryId)
       if (entry)
         this.targets.set(subjectId, entry)
-    }
-    for (const [subjectId, ids] of Object.entries(saved.history)) {
-      if (getSubject(subjectId))
-        this.history.set(subjectId, ids)
     }
   }
 }

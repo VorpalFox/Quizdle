@@ -32,25 +32,24 @@ describe('DailyDraw et GameStore', () => {
     DailyDraw.load(file, '2026-11-19')
     const saved = JSON.parse(readFileSync(file, 'utf8'))
     saved.targets.ancien = '1'
-    saved.history.ancien = ['1']
     writeFileSync(file, JSON.stringify(saved))
 
     DailyDraw.load(file, '2026-11-19').redraw() // redraw pour forcer une sauvegarde
     const cleaned = JSON.parse(readFileSync(file, 'utf8'))
     expect(Object.keys(cleaned.targets)).toEqual([pokemon.id])
-    expect(Object.keys(cleaned.history)).toEqual([pokemon.id])
   })
 
-  it('nouveau tirage au changement de jour, sans retomber sur une ancienne réponse', () => {
+  it('nouveau tirage au changement de jour, jamais deux fois de suite la même réponse', () => {
     const daily = DailyDraw.load(file, '2026-11-01')
     const store = new GameStore(daily)
-    const targets = new Set([store.startDaily('salon', pokemon).target.id])
+    let previous = store.startDaily('salon', pokemon).target.id
     for (let day = 2; day <= 30; day++) {
       expect(daily.ensureDay(`2026-11-${String(day).padStart(2, '0')}`)).toBe(true)
       expect(store.playedToday('salon', pokemon.id)).toBe(false)
-      targets.add(store.startDaily('salon', pokemon).target.id)
+      const target = store.startDaily('salon', pokemon).target.id
+      expect(target).not.toBe(previous)
+      previous = target
     }
-    expect(targets.size).toBe(30)
   })
 
   it('une seule partie du jour par salon et par sujet', () => {
