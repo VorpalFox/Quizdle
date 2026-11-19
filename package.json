@@ -1,6 +1,6 @@
 {
   "name": "quizdle",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Bot Discord de quiz façon Pokédle, avec un moteur indépendant des sujets",
   "private": true,
   "type": "module",
