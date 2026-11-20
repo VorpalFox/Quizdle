@@ -36,7 +36,7 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ### Données Pokémon
 
-`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 386 premiers par défaut, jusqu'à la 3e génération). Pour aller plus loin : `npm run fetch:pokemon -- 1025`. PokeAPI ne donne les habitats que jusqu'à la 3e génération : après, l'habitat est vide (« — »).
+`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 386 premiers par défaut, jusqu'à la 3e génération). Pour aller plus loin : `npm run fetch:pokemon -- 1025`. Indices : types, habitat, groupes d'œufs (noms officiels : Monstrueux, Terrestre, Aquatique 1...), couleur, stade d'évolution, taille, poids, génération. L'habitat n'existe que dans Rouge Feu et Vert Feuille : après la 3e génération, il est vide (❔). Les groupes d'œufs, eux, existent pour tous les Pokémon.
 
 ### Données Animedle
 

@@ -1,5 +1,5 @@
 // Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 386 par défaut : jusqu'à la 3e génération]
-// Les habitats n'existent dans PokeAPI que jusqu'à la 3e génération (au-delà : null).
+// Les habitats n'existent dans PokeAPI que jusqu'à la 3e génération (au-delà : null). Les groupes d'œufs existent pour tous.
 import { writeFile } from 'node:fs/promises'
 
 const API = 'https://pokeapi.co/api/v2'
@@ -14,6 +14,12 @@ const TYPES: Record<string, string> = {
 const HABITATS: Record<string, string> = {
   'cave': 'Grotte', 'forest': 'Forêt', 'grassland': 'Prairie', 'mountain': 'Montagne', 'rare': 'Rare',
   'rough-terrain': 'Terrain accidenté', 'sea': 'Mer', 'urban': 'Ville', 'waters-edge': "Bord de l'eau",
+}
+// Noms officiels français (ceux de PokeAPI)
+const EGG_GROUPS: Record<string, string> = {
+  'monster': 'Monstrueux', 'water1': 'Aquatique 1', 'bug': 'Insectoïde', 'flying': 'Aérien', 'ground': 'Terrestre',
+  'fairy': 'Féerique', 'plant': 'Végétal', 'humanshape': 'Humanoïde', 'water3': 'Aquatique 3', 'mineral': 'Minéral',
+  'indeterminate': 'Amorphe', 'water2': 'Aquatique 2', 'ditto': 'Métamorph', 'dragon': 'Draconique', 'no-eggs': 'Inconnu',
 }
 const COLORS: Record<string, string> = {
   black: 'Noir', blue: 'Bleu', brown: 'Marron', gray: 'Gris', green: 'Vert',
@@ -58,6 +64,7 @@ async function fetchOne(id: number) {
     attributes: {
       types: [...pokemon.types].sort((a: any, b: any) => a.slot - b.slot).map((t: any) => TYPES[t.type.name] ?? t.type.name),
       habitat: species.habitat ? HABITATS[species.habitat.name] ?? species.habitat.name : null,
+      eggGroups: species.egg_groups.map((group: any) => EGG_GROUPS[group.name] ?? group.name),
       color: COLORS[species.color.name] ?? species.color.name,
       stage: stageIn(chain.chain, species.name),
       height: pokemon.height / 10,

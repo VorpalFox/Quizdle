@@ -12,6 +12,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.7,
@@ -32,6 +36,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1,
@@ -52,6 +60,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 2,
@@ -71,6 +83,10 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.6,
@@ -90,6 +106,10 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.1,
@@ -110,6 +130,10 @@
     "Vol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Rouge",
    "stage": 3,
    "height": 1.7,
@@ -129,6 +153,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.5,
@@ -148,6 +176,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1,
@@ -167,6 +199,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.6,
@@ -186,6 +222,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.3,
@@ -205,6 +244,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 0.7,
@@ -225,6 +267,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Blanc",
    "stage": 3,
    "height": 1.1,
@@ -245,6 +290,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.3,
@@ -265,6 +313,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.6,
@@ -285,6 +336,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Jaune",
    "stage": 3,
    "height": 1,
@@ -305,6 +359,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.3,
@@ -325,6 +382,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.1,
@@ -345,6 +405,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 1.5,
@@ -364,6 +427,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.3,
@@ -383,6 +449,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 0.7,
@@ -403,6 +472,9 @@
     "Vol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.3,
@@ -423,6 +495,9 @@
     "Vol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.2,
@@ -442,6 +517,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre",
+    "Draconique"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 2,
@@ -461,6 +540,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre",
+    "Draconique"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 3.5,
@@ -480,6 +563,10 @@
     "Électrik"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.4,
@@ -499,6 +586,10 @@
     "Électrik"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Jaune",
    "stage": 3,
    "height": 0.8,
@@ -518,6 +609,9 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.6,
@@ -537,6 +631,9 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1,
@@ -556,6 +653,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -575,6 +676,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.8,
@@ -595,6 +699,9 @@
     "Sol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.3,
@@ -614,6 +721,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.5,
@@ -633,6 +744,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 0.9,
@@ -653,6 +768,10 @@
     "Sol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 3,
    "height": 1.4,
@@ -672,6 +791,9 @@
     "Fée"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 0.6,
@@ -691,6 +813,9 @@
     "Fée"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 3,
    "height": 1.3,
@@ -710,6 +835,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.6,
@@ -729,6 +857,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.1,
@@ -749,6 +880,9 @@
     "Fée"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 0.5,
@@ -769,6 +903,9 @@
     "Fée"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 3,
    "height": 1,
@@ -789,6 +926,9 @@
     "Vol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.8,
@@ -809,6 +949,9 @@
     "Vol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.6,
@@ -829,6 +972,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.5,
@@ -849,6 +995,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.8,
@@ -869,6 +1018,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Rouge",
    "stage": 3,
    "height": 1.2,
@@ -889,6 +1041,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde",
+    "Végétal"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.3,
@@ -909,6 +1065,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde",
+    "Végétal"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1,
@@ -929,6 +1089,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 1,
@@ -949,6 +1112,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.5,
@@ -968,6 +1134,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.2,
@@ -987,6 +1156,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 0.7,
@@ -1006,6 +1178,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.4,
@@ -1025,6 +1200,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1,
@@ -1044,6 +1222,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.8,
@@ -1063,6 +1245,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.7,
@@ -1082,6 +1268,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.5,
@@ -1101,6 +1290,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1,
@@ -1120,6 +1312,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.7,
@@ -1139,6 +1334,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.9,
@@ -1158,6 +1356,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -1177,6 +1378,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1,
@@ -1197,6 +1401,9 @@
     "Combat"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.3,
@@ -1216,6 +1423,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.9,
@@ -1235,6 +1445,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.3,
@@ -1254,6 +1467,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 1.5,
@@ -1273,6 +1489,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.8,
@@ -1292,6 +1511,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.5,
@@ -1311,6 +1533,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Gris",
    "stage": 3,
    "height": 1.6,
@@ -1331,6 +1556,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.7,
@@ -1351,6 +1579,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1,
@@ -1371,6 +1602,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.7,
@@ -1391,6 +1625,9 @@
     "Poison"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.9,
@@ -1411,6 +1648,9 @@
     "Poison"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.6,
@@ -1431,6 +1671,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.4,
@@ -1451,6 +1694,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1,
@@ -1471,6 +1717,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 1.4,
@@ -1490,6 +1739,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1,
@@ -1509,6 +1761,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.7,
@@ -1529,6 +1784,10 @@
     "Psy"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 1.2,
@@ -1549,6 +1808,10 @@
     "Psy"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 1.6,
@@ -1569,6 +1832,9 @@
     "Acier"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.3,
@@ -1589,6 +1855,9 @@
     "Acier"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1,
@@ -1609,6 +1878,10 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Aérien",
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.8,
@@ -1629,6 +1902,9 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.4,
@@ -1649,6 +1925,9 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.8,
@@ -1668,6 +1947,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 1.1,
@@ -1688,6 +1971,10 @@
     "Glace"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 1.7,
@@ -1707,6 +1994,9 @@
     "Poison"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.9,
@@ -1726,6 +2016,9 @@
     "Poison"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.2,
@@ -1745,6 +2038,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.3,
@@ -1765,6 +2061,9 @@
     "Glace"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.5,
@@ -1785,6 +2084,9 @@
     "Poison"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 1.3,
@@ -1805,6 +2107,9 @@
     "Poison"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.6,
@@ -1825,6 +2130,9 @@
     "Poison"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 3,
    "height": 1.5,
@@ -1845,6 +2153,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 8.8,
@@ -1864,6 +2175,9 @@
     "Psy"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1,
@@ -1883,6 +2197,9 @@
     "Psy"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.6,
@@ -1902,6 +2219,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.4,
@@ -1921,6 +2241,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.3,
@@ -1940,6 +2263,9 @@
     "Électrik"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.5,
@@ -1959,6 +2285,9 @@
     "Électrik"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.2,
@@ -1979,6 +2308,9 @@
     "Psy"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.4,
@@ -1999,6 +2331,9 @@
     "Psy"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 2,
@@ -2018,6 +2353,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.4,
@@ -2037,6 +2375,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1,
@@ -2056,6 +2397,9 @@
     "Combat"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.5,
@@ -2075,6 +2419,9 @@
     "Combat"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.4,
@@ -2094,6 +2441,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 1.2,
@@ -2113,6 +2463,9 @@
     "Poison"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.6,
@@ -2132,6 +2485,9 @@
     "Poison"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.2,
@@ -2152,6 +2508,10 @@
     "Roche"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 1,
@@ -2172,6 +2532,10 @@
     "Roche"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.9,
@@ -2191,6 +2555,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 1.1,
@@ -2210,6 +2577,9 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 1,
@@ -2229,6 +2599,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 2.2,
@@ -2248,6 +2621,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -2267,6 +2644,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.2,
@@ -2286,6 +2667,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.6,
@@ -2305,6 +2689,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.3,
@@ -2324,6 +2711,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.8,
@@ -2344,6 +2734,9 @@
     "Psy"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.1,
@@ -2364,6 +2757,9 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 1.3,
@@ -2384,6 +2780,9 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 1.5,
@@ -2404,6 +2803,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.4,
@@ -2423,6 +2825,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.1,
@@ -2442,6 +2847,9 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.3,
@@ -2461,6 +2869,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.5,
@@ -2480,6 +2891,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.4,
@@ -2499,6 +2913,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2",
+    "Draconique"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.9,
@@ -2519,6 +2937,10 @@
     "Vol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 6.5,
@@ -2539,6 +2961,10 @@
     "Glace"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 2.5,
@@ -2558,6 +2984,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Métamorph"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.3,
@@ -2577,6 +3006,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.3,
@@ -2596,6 +3028,9 @@
     "Eau"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1,
@@ -2615,6 +3050,9 @@
     "Électrik"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.8,
@@ -2634,6 +3072,9 @@
     "Feu"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 0.9,
@@ -2653,6 +3094,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.8,
@@ -2673,6 +3117,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -2693,6 +3141,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1,
@@ -2713,6 +3165,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.5,
@@ -2733,6 +3189,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.3,
@@ -2753,6 +3213,9 @@
     "Vol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 1.8,
@@ -2772,6 +3235,9 @@
     "Normal"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 2.1,
@@ -2792,6 +3258,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 1.7,
@@ -2812,6 +3281,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1.6,
@@ -2832,6 +3304,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 2,
@@ -2851,6 +3326,10 @@
     "Dragon"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 1.8,
@@ -2870,6 +3349,10 @@
     "Dragon"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 4,
@@ -2890,6 +3373,10 @@
     "Vol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 2.2,
@@ -2909,6 +3396,9 @@
     "Psy"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 2,
@@ -2928,6 +3418,9 @@
     "Psy"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.4,
@@ -2947,6 +3440,10 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.9,
@@ -2966,6 +3463,10 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.2,
@@ -2985,6 +3486,10 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.8,
@@ -3004,6 +3509,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.5,
@@ -3023,6 +3531,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.9,
@@ -3042,6 +3553,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 3,
    "height": 1.7,
@@ -3061,6 +3575,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -3080,6 +3598,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.1,
@@ -3099,6 +3621,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 2.3,
@@ -3118,6 +3644,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.8,
@@ -3137,6 +3666,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.8,
@@ -3157,6 +3689,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.7,
@@ -3177,6 +3712,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.6,
@@ -3197,6 +3735,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 1,
@@ -3217,6 +3758,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.4,
@@ -3237,6 +3781,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.5,
@@ -3257,6 +3804,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.1,
@@ -3277,6 +3827,9 @@
     "Vol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Violet",
    "stage": 3,
    "height": 1.8,
@@ -3297,6 +3850,9 @@
     "Électrik"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.5,
@@ -3317,6 +3873,9 @@
     "Électrik"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.2,
@@ -3336,6 +3895,9 @@
     "Électrik"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.3,
@@ -3355,6 +3917,9 @@
     "Fée"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.3,
@@ -3375,6 +3940,9 @@
     "Fée"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.3,
@@ -3394,6 +3962,9 @@
     "Fée"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 0.3,
@@ -3414,6 +3985,10 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien",
+    "Féerique"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 0.6,
@@ -3434,6 +4009,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.2,
@@ -3454,6 +4032,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.5,
@@ -3473,6 +4054,10 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 0.6,
@@ -3492,6 +4077,10 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 0.8,
@@ -3511,6 +4100,10 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 3,
    "height": 1.4,
@@ -3530,6 +4123,9 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 0.4,
@@ -3550,6 +4146,10 @@
     "Fée"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Féerique"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.4,
@@ -3570,6 +4170,10 @@
     "Fée"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Féerique"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 0.8,
@@ -3589,6 +4193,9 @@
     "Roche"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.2,
@@ -3608,6 +4215,9 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.1,
@@ -3628,6 +4238,10 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.4,
@@ -3648,6 +4262,10 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 0.6,
@@ -3668,6 +4286,10 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 0.8,
@@ -3687,6 +4309,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.8,
@@ -3706,6 +4331,9 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.3,
@@ -3725,6 +4353,9 @@
     "Plante"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Végétal"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.8,
@@ -3745,6 +4376,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 1.2,
@@ -3765,6 +4399,10 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -3785,6 +4423,10 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.4,
@@ -3804,6 +4446,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 0.9,
@@ -3823,6 +4468,9 @@
     "Ténèbres"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 1,
@@ -3843,6 +4491,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.5,
@@ -3863,6 +4514,10 @@
     "Psy"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 2,
@@ -3882,6 +4537,9 @@
     "Spectre"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.7,
@@ -3901,6 +4559,9 @@
     "Psy"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.5,
@@ -3920,6 +4581,9 @@
     "Psy"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.3,
@@ -3940,6 +4604,9 @@
     "Psy"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1.5,
@@ -3959,6 +4626,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.6,
@@ -3979,6 +4649,9 @@
     "Acier"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.2,
@@ -3998,6 +4671,9 @@
     "Normal"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1.5,
@@ -4018,6 +4694,9 @@
     "Vol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 1.1,
@@ -4038,6 +4717,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 9.2,
@@ -4057,6 +4739,10 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.6,
@@ -4076,6 +4762,10 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.4,
@@ -4096,6 +4786,9 @@
     "Poison"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.5,
@@ -4116,6 +4809,9 @@
     "Acier"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.8,
@@ -4136,6 +4832,9 @@
     "Roche"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.6,
@@ -4156,6 +4855,9 @@
     "Combat"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 1.5,
@@ -4176,6 +4878,9 @@
     "Glace"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.9,
@@ -4195,6 +4900,9 @@
     "Normal"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.6,
@@ -4214,6 +4922,9 @@
     "Normal"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.8,
@@ -4233,6 +4944,9 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.7,
@@ -4253,6 +4967,9 @@
     "Roche"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 0.8,
@@ -4273,6 +4990,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.4,
@@ -4293,6 +5013,9 @@
     "Sol"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.1,
@@ -4313,6 +5036,10 @@
     "Roche"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.6,
@@ -4332,6 +5059,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 2"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.6,
@@ -4351,6 +5082,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 2"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 0.9,
@@ -4371,6 +5106,10 @@
     "Vol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.9,
@@ -4391,6 +5130,9 @@
     "Vol"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 2.1,
@@ -4411,6 +5153,9 @@
     "Vol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 1.7,
@@ -4431,6 +5176,9 @@
     "Feu"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.6,
@@ -4451,6 +5199,9 @@
     "Feu"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 1.4,
@@ -4471,6 +5222,10 @@
     "Dragon"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.8,
@@ -4490,6 +5245,9 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.5,
@@ -4509,6 +5267,9 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.1,
@@ -4528,6 +5289,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 0.6,
@@ -4547,6 +5311,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.4,
@@ -4566,6 +5333,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 1.2,
@@ -4585,6 +5355,9 @@
     "Combat"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.7,
@@ -4604,6 +5377,9 @@
     "Combat"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1.4,
@@ -4624,6 +5400,9 @@
     "Psy"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.4,
@@ -4643,6 +5422,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.6,
@@ -4662,6 +5444,9 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.7,
@@ -4681,6 +5466,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 1.2,
@@ -4700,6 +5488,9 @@
     "Normal"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 3,
    "height": 1.5,
@@ -4719,6 +5510,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1.9,
@@ -4738,6 +5532,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 2.1,
@@ -4757,6 +5554,9 @@
     "Eau"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 2,
@@ -4777,6 +5577,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.6,
@@ -4797,6 +5600,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.2,
@@ -4817,6 +5623,9 @@
     "Ténèbres"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 2,
@@ -4837,6 +5646,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 5.2,
@@ -4857,6 +5669,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 3.8,
@@ -4877,6 +5692,9 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.6,
@@ -4896,6 +5714,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.5,
@@ -4915,6 +5737,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 0.9,
@@ -4934,6 +5760,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Monstrueux",
+    "Draconique"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.7,
@@ -4953,6 +5783,9 @@
     "Feu"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.4,
@@ -4973,6 +5806,9 @@
     "Combat"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 0.9,
@@ -4993,6 +5829,9 @@
     "Combat"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 3,
    "height": 1.9,
@@ -5012,6 +5851,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -5032,6 +5875,10 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.7,
@@ -5052,6 +5899,10 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Monstrueux",
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.5,
@@ -5071,6 +5922,9 @@
     "Ténèbres"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.5,
@@ -5090,6 +5944,9 @@
     "Ténèbres"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1,
@@ -5109,6 +5966,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.4,
@@ -5128,6 +5988,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 0.5,
@@ -5147,6 +6010,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.3,
@@ -5166,6 +6032,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 0.6,
@@ -5186,6 +6055,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Jaune",
    "stage": 3,
    "height": 1,
@@ -5205,6 +6077,9 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 0.7,
@@ -5225,6 +6100,9 @@
     "Poison"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.2,
@@ -5245,6 +6123,10 @@
     "Plante"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.5,
@@ -5265,6 +6147,10 @@
     "Plante"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.2,
@@ -5285,6 +6171,10 @@
     "Plante"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 1.5,
@@ -5304,6 +6194,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Végétal"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.5,
@@ -5324,6 +6218,10 @@
     "Ténèbres"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Végétal"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 1,
@@ -5344,6 +6242,10 @@
     "Ténèbres"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Végétal"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 1.3,
@@ -5364,6 +6266,9 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.3,
@@ -5384,6 +6289,9 @@
     "Vol"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Aérien"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.7,
@@ -5404,6 +6312,10 @@
     "Vol"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aérien"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 0.6,
@@ -5424,6 +6336,10 @@
     "Vol"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aérien"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.2,
@@ -5444,6 +6360,10 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde",
+    "Amorphe"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 0.4,
@@ -5464,6 +6384,10 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde",
+    "Amorphe"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 0.8,
@@ -5484,6 +6408,10 @@
     "Fée"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Humanoïde",
+    "Amorphe"
+   ],
    "color": "Blanc",
    "stage": 3,
    "height": 1.6,
@@ -5504,6 +6432,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Insectoïde"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.5,
@@ -5524,6 +6456,10 @@
     "Vol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Insectoïde"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.8,
@@ -5543,6 +6479,10 @@
     "Plante"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.4,
@@ -5563,6 +6503,10 @@
     "Combat"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.2,
@@ -5582,6 +6526,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.8,
@@ -5601,6 +6548,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 1.4,
@@ -5620,6 +6570,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 3,
    "height": 2,
@@ -5640,6 +6593,9 @@
     "Sol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.5,
@@ -5660,6 +6616,9 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 0.8,
@@ -5680,6 +6639,9 @@
     "Spectre"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 0.8,
@@ -5699,6 +6661,10 @@
     "Normal"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.6,
@@ -5718,6 +6684,10 @@
     "Normal"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1,
@@ -5737,6 +6707,10 @@
     "Normal"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Monstrueux",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.5,
@@ -5756,6 +6730,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1,
@@ -5775,6 +6752,9 @@
     "Combat"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 2,
    "height": 2.3,
@@ -5795,6 +6775,9 @@
     "Fée"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.2,
@@ -5814,6 +6797,9 @@
     "Roche"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 1,
@@ -5833,6 +6819,10 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.6,
@@ -5852,6 +6842,10 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.1,
@@ -5872,6 +6866,9 @@
     "Spectre"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.5,
@@ -5892,6 +6889,10 @@
     "Fée"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Terrestre",
+    "Féerique"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.6,
@@ -5912,6 +6913,9 @@
     "Roche"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.4,
@@ -5932,6 +6936,9 @@
     "Roche"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 0.9,
@@ -5952,6 +6959,9 @@
     "Roche"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Monstrueux"
+   ],
    "color": "Gris",
    "stage": 3,
    "height": 2.1,
@@ -5972,6 +6982,9 @@
     "Psy"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -5992,6 +7005,9 @@
     "Psy"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Humanoïde"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.3,
@@ -6011,6 +7027,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.6,
@@ -6030,6 +7049,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 2,
    "height": 1.5,
@@ -6049,6 +7071,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.4,
@@ -6068,6 +7093,9 @@
     "Électrik"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.4,
@@ -6087,6 +7115,10 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde",
+    "Humanoïde"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.7,
@@ -6106,6 +7138,10 @@
     "Insecte"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Insectoïde",
+    "Humanoïde"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 0.6,
@@ -6126,6 +7162,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 0.3,
@@ -6145,6 +7185,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.4,
@@ -6164,6 +7207,9 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 1.7,
@@ -6184,6 +7230,9 @@
     "Ténèbres"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.8,
@@ -6204,6 +7253,9 @@
     "Ténèbres"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.8,
@@ -6223,6 +7275,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Terrestre",
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 2,
@@ -6242,6 +7298,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Terrestre",
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 14.5,
@@ -6262,6 +7322,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.7,
@@ -6282,6 +7345,9 @@
     "Sol"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.9,
@@ -6301,6 +7367,9 @@
     "Feu"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.5,
@@ -6320,6 +7389,9 @@
     "Psy"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.7,
@@ -6339,6 +7411,9 @@
     "Psy"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Violet",
    "stage": 2,
    "height": 0.9,
@@ -6358,6 +7433,10 @@
     "Normal"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre",
+    "Humanoïde"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.1,
@@ -6377,6 +7456,10 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Insectoïde",
+    "Draconique"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.7,
@@ -6397,6 +7480,10 @@
     "Dragon"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Insectoïde",
+    "Draconique"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.1,
@@ -6417,6 +7504,10 @@
     "Dragon"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Insectoïde",
+    "Draconique"
+   ],
    "color": "Vert",
    "stage": 3,
    "height": 2,
@@ -6436,6 +7527,10 @@
     "Plante"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Végétal",
+    "Humanoïde"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 0.4,
@@ -6456,6 +7551,10 @@
     "Ténèbres"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Végétal",
+    "Humanoïde"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.3,
@@ -6476,6 +7575,10 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -6496,6 +7599,10 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Aérien",
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.1,
@@ -6515,6 +7622,9 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 1.3,
@@ -6534,6 +7644,10 @@
     "Poison"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Terrestre",
+    "Draconique"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 2.7,
@@ -6554,6 +7668,9 @@
     "Psy"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 1,
@@ -6574,6 +7691,9 @@
     "Psy"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 1.2,
@@ -6594,6 +7714,9 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.4,
@@ -6614,6 +7737,9 @@
     "Sol"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.9,
@@ -6633,6 +7759,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 0.6,
@@ -6653,6 +7783,10 @@
     "Ténèbres"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 3"
+   ],
    "color": "Rouge",
    "stage": 2,
    "height": 1.1,
@@ -6673,6 +7807,9 @@
     "Psy"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.5,
@@ -6693,6 +7830,9 @@
     "Psy"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 1.5,
@@ -6713,6 +7853,9 @@
     "Plante"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Violet",
    "stage": 1,
    "height": 1,
@@ -6733,6 +7876,9 @@
     "Plante"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Vert",
    "stage": 2,
    "height": 1.5,
@@ -6753,6 +7899,9 @@
     "Insecte"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.7,
@@ -6773,6 +7922,9 @@
     "Insecte"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 3"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.5,
@@ -6792,6 +7944,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 0.6,
@@ -6811,6 +7967,10 @@
     "Eau"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Aquatique 1",
+    "Draconique"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 6.2,
@@ -6830,6 +7990,10 @@
     "Normal"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Féerique",
+    "Amorphe"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.3,
@@ -6849,6 +8013,9 @@
     "Normal"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 1,
@@ -6868,6 +8035,9 @@
     "Spectre"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.6,
@@ -6887,6 +8057,9 @@
     "Spectre"
    ],
    "habitat": "Ville",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 1.1,
@@ -6906,6 +8079,9 @@
     "Spectre"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Noir",
    "stage": 1,
    "height": 0.8,
@@ -6925,6 +8101,9 @@
     "Spectre"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Noir",
    "stage": 2,
    "height": 1.6,
@@ -6945,6 +8124,10 @@
     "Vol"
    ],
    "habitat": "Forêt",
+   "eggGroups": [
+    "Monstrueux",
+    "Végétal"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 2,
@@ -6964,6 +8147,9 @@
     "Psy"
    ],
    "habitat": "Prairie",
+   "eggGroups": [
+    "Amorphe"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 0.6,
@@ -6983,6 +8169,9 @@
     "Ténèbres"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Terrestre"
+   ],
    "color": "Blanc",
    "stage": 1,
    "height": 1.2,
@@ -7002,6 +8191,9 @@
     "Psy"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -7021,6 +8213,10 @@
     "Glace"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Féerique",
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 0.7,
@@ -7040,6 +8236,10 @@
     "Glace"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Féerique",
+    "Minéral"
+   ],
    "color": "Gris",
    "stage": 2,
    "height": 1.5,
@@ -7060,6 +8260,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.8,
@@ -7080,6 +8284,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.1,
@@ -7100,6 +8308,10 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Terrestre"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.4,
@@ -7119,6 +8331,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.4,
@@ -7138,6 +8353,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.7,
@@ -7157,6 +8375,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1"
+   ],
    "color": "Rose",
    "stage": 2,
    "height": 1.8,
@@ -7177,6 +8398,10 @@
     "Roche"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 1",
+    "Aquatique 2"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 1,
@@ -7196,6 +8421,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Aquatique 2"
+   ],
    "color": "Rose",
    "stage": 1,
    "height": 0.6,
@@ -7215,6 +8443,9 @@
     "Dragon"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -7234,6 +8465,9 @@
     "Dragon"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Draconique"
+   ],
    "color": "Blanc",
    "stage": 2,
    "height": 1.1,
@@ -7254,6 +8488,9 @@
     "Vol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Draconique"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.5,
@@ -7274,6 +8511,9 @@
     "Psy"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 0.6,
@@ -7294,6 +8534,9 @@
     "Psy"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Bleu",
    "stage": 2,
    "height": 1.2,
@@ -7314,6 +8557,9 @@
     "Psy"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Minéral"
+   ],
    "color": "Bleu",
    "stage": 3,
    "height": 1.6,
@@ -7333,6 +8579,9 @@
     "Roche"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Marron",
    "stage": 1,
    "height": 1.7,
@@ -7352,6 +8601,9 @@
     "Glace"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 1.8,
@@ -7371,6 +8623,9 @@
     "Acier"
    ],
    "habitat": "Grotte",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Gris",
    "stage": 1,
    "height": 1.9,
@@ -7391,6 +8646,9 @@
     "Psy"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 1.4,
@@ -7411,6 +8669,9 @@
     "Psy"
    ],
    "habitat": "Bord de l'eau",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 2,
@@ -7430,6 +8691,9 @@
     "Eau"
    ],
    "habitat": "Mer",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Bleu",
    "stage": 1,
    "height": 4.5,
@@ -7449,6 +8713,9 @@
     "Sol"
    ],
    "habitat": "Terrain accidenté",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 3.5,
@@ -7469,6 +8736,9 @@
     "Vol"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Vert",
    "stage": 1,
    "height": 7,
@@ -7489,6 +8759,9 @@
     "Psy"
    ],
    "habitat": "Montagne",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Jaune",
    "stage": 1,
    "height": 0.3,
@@ -7508,6 +8781,9 @@
     "Psy"
    ],
    "habitat": "Rare",
+   "eggGroups": [
+    "Inconnu"
+   ],
    "color": "Rouge",
    "stage": 1,
    "height": 1.7,

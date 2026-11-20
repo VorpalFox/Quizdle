@@ -12,6 +12,7 @@ export const pokemon: Subject = {
   attributes: [
     { key: 'types', label: 'Types', kind: 'set' },
     { key: 'habitat', label: 'Habitat', kind: 'exact' },
+    { key: 'eggGroups', label: 'Groupes d\'œufs', kind: 'set' },
     { key: 'color', label: 'Couleur', kind: 'exact' },
     { key: 'stage', label: "Stade d'évolution", kind: 'number' },
     { key: 'height', label: 'Taille', kind: 'number', format: withUnit('m') },
