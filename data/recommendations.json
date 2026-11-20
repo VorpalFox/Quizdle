@@ -133,6 +133,13 @@
   "year": 2011
  },
  {
+  "anilistId": 9919,
+  "title": "Blue Exorcist",
+  "romaji": "Ao no Exorcist",
+  "format": "TV",
+  "year": 2011
+ },
+ {
   "anilistId": 137822,
   "title": "BLUE LOCK",
   "romaji": "Blue Lock",
@@ -838,13 +845,6 @@
   "romaji": "Tsubasa Chronicle",
   "format": "TV",
   "year": 2005
- },
- {
-  "anilistId": 21499,
-  "title": "Twin Star Exorcists",
-  "romaji": "Sousei no Onmyouji",
-  "format": "TV",
-  "year": 2016
  },
  {
   "anilistId": 135806,

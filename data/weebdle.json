@@ -8488,6 +8488,491 @@
   }
  },
  {
+  "id": "24482",
+  "name": "Rin Okumura",
+  "aliases": [
+   "Okumura Rin",
+   "奥村燐"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24482-E6087V4uAVqL.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "24734",
+  "name": "Yukio Okumura",
+  "aliases": [
+   "Okumura Yukio",
+   "奥村雪男",
+   "Yukio"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24734-GgVZoNAPnxoc.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "32110",
+  "name": "Shura Kirigakure",
+  "aliases": [
+   "Kirigakure Shura",
+   "霧隠・シュラ",
+   "Shura",
+   "Kirigakure"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b32110-Ats6VvSZy300.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 26,
+   "occupation": [
+    "Chevalier"
+   ],
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "30432",
+  "name": "Mephisto Pheles",
+  "aliases": [
+   "Pheles Mephisto",
+   "メフィスト・フェレス",
+   "Mephisto",
+   "Pheles"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30432-I4KwsegOrzfq.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Chevalier"
+   ],
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "43187",
+  "name": "Kuro",
+  "aliases": [
+   "クロ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43187-uJySWMkmaWmZ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "30431",
+  "name": "Shirou Fujimoto",
+  "aliases": [
+   "Fujimoto Shirou",
+   "藤本獅郎",
+   "Fujimoto"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30431-l5NMqfM82w4q.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "30430",
+  "name": "Shiemi Moriyama",
+  "aliases": [
+   "Moriyama Shiemi",
+   "杜山しえみ",
+   "Shiemi",
+   "Moriyama"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30430-LwO3yM6dg0HF.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "32162",
+  "name": "Izumo Kamiki",
+  "aliases": [
+   "Kamiki Izumo",
+   "神木出雲",
+   "Izumo",
+   "Kamiki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b32162-VQiwb6CHEv8K.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "30429",
+  "name": "Ryuuji Suguro",
+  "aliases": [
+   "Suguro Ryuuji",
+   "勝呂竜士"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30429-NmVCBSzm3GNY.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "38983",
+  "name": "Renzou Shima",
+  "aliases": [
+   "Shima Renzou",
+   "志摩廉造",
+   "Renzou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38983-NrEXYWsAzm68.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "30433",
+  "name": "Amaimon",
+  "aliases": [
+   "アマイモン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30433-8YHbgfkBTn8P.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": [
+    "Verts"
+   ],
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "47527",
+  "name": "Nii-chan",
+  "aliases": [
+   "ニーちゃん"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b47527-Ms1bzAyPzCih.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "48511",
+  "name": "Yuri Egin",
+  "aliases": [
+   "Egin Yuri",
+   "Yuri Frederick Egin (ユリ ・フレデリク・エギン)",
+   "ユリ・エギン",
+   "Egin"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48511-FfvuZ6i6Czep.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "48449",
+  "name": "Satan",
+  "aliases": [
+   "サタン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48449-LZibifWzcpoo.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Roi"
+   ],
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "38984",
+  "name": "Konekomaru Miwa",
+  "aliases": [
+   "Miwa Konekomaru",
+   "三輪子猫丸",
+   "Konekomaru"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38984-nTBWABvnb24V.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "45001",
+  "name": "Nemu Takara",
+  "aliases": [
+   "Takara Nemu",
+   "宝ねむ",
+   "Nemu",
+   "Takara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45001-DUT4jJDPghM8.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "34758",
+  "name": "Arthur Auguste Angel",
+  "aliases": [
+   "Angel Auguste Arthur",
+   "アーサー・オーギュスト・エンジェル",
+   "Angel"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34758-XzvetamkXXVQ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 30,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "43137",
+  "name": "Tatsuma Suguro",
+  "aliases": [
+   "Suguro Tatsuma",
+   "勝呂達磨",
+   "Tatsuma"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43137.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "84925",
+  "name": "Ukobach",
+  "aliases": [
+   "ウコバク"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84925-XAU47vDVmu10.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "38985",
+  "name": "Igor Neuhaus",
+  "aliases": [
+   "Neuhaus Igor",
+   "イゴール・ネイガウス",
+   "Igor",
+   "Neuhaus"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38985-pW70uJHQONhK.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 39,
+   "occupation": null,
+   "hair": null,
+   "anime": "Blue Exorcist",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
   "id": "162213",
   "name": "Meguru Bachira",
   "aliases": [
@@ -25932,8 +26417,7 @@
   "name": "Arthur Hellsing",
   "aliases": [
    "Hellsing Arthur",
-   "アーサー・ヘルシング",
-   "Arthur"
+   "アーサー・ヘルシング"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/45137.jpg",
   "attributes": {
@@ -26698,7 +27182,6 @@
   "aliases": [
    "Zelm Auguste",
    "オーギュスト・ジェルム",
-   "Auguste",
    "Zelm"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269685-yrG8b5yGGHgY.png",
@@ -36439,6 +36922,7 @@
   "aliases": [
    "Morimoto Kengo",
    "森本ケンゴ",
+   "Kengo",
    "Morimoto"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282773-gsQoxIAsLuf2.jpg",
@@ -36795,6 +37279,7 @@
   "aliases": [
    "Amakusa Benio",
    "天草紅緒",
+   "Benio",
    "Amakusa"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1147-0okuGlQxmN7T.png",
@@ -41404,6 +41889,7 @@
   "aliases": [
    "Kaizaki Arata",
    "海崎新太",
+   "Arata",
    "Kaizaki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89425-vLPRybM1gNa7.png",
@@ -52230,6 +52716,7 @@
   "aliases": [
    "Momoe Tenma",
    "百枝天馬",
+   "Tenma",
    "Momoe"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84557-AiXDWbAGKRRS.jpg",
@@ -54526,564 +55013,6 @@
   }
  },
  {
-  "id": "89538",
-  "name": "Benio Adashino",
-  "aliases": [
-   "Adashino Benio",
-   "化野紅緒",
-   "Adashino"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89538-rRC6ibZA2eCk.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 14,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89537",
-  "name": "Rokuro Enmadou",
-  "aliases": [
-   "Enmadou Rokuro",
-   "焔魔堂ろくろ",
-   "Rokuro",
-   "Enmadou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89537-ruoRVI6090vx.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 14,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89699",
-  "name": "Seigen Amawaka",
-  "aliases": [
-   "Amawaka Seigen",
-   "天若清弦",
-   "Seigen",
-   "Amawaka"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89699-rYu3cCEw3AQ2.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 43,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89698",
-  "name": "Mayura Otomi",
-  "aliases": [
-   "Otomi Mayura",
-   "音海繭良",
-   "Mayura",
-   "Otomi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89698-AlaCd2EZzBoT.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89703",
-  "name": "Shimon Ikaruga",
-  "aliases": [
-   "Ikaruga Shimon",
-   "斑鳩士門",
-   "Shimon",
-   "Ikaruga"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89703-DgYPXozcJPSF.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 18,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89697",
-  "name": "Yuuto Ijika",
-  "aliases": [
-   "Ijika Yuuto",
-   "石鏡悠斗",
-   "Yuuto",
-   "Ijika"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89697-isW48juyFuzJ.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "157255",
-  "name": "Tenma Unomiya",
-  "aliases": [
-   "Unomiya Tenma",
-   "鸕宮天馬",
-   "Unomiya"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157255-y1cPbLzpYYKf.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 19,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89704",
-  "name": "Kamui",
-  "aliases": [
-   "神威"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89704-AYBVfDUQn3sF.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "129216",
-  "name": "Suzu",
-  "aliases": [
-   "鈴"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129216-Z5ovnFsk9SIM.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "129215",
-  "name": "Sae",
-  "aliases": [
-   "さえ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129215-SuPoNJB998Wq.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89702",
-  "name": "Arima Tsuchimikado",
-  "aliases": [
-   "Tsuchimikado Arima",
-   "土御門有馬"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/89702-2KyNFuduvksI.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 45,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "89700",
-  "name": "Kinako",
-  "aliases": [
-   "きなこ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/89700-yH3R0zvVTpAN.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 11,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "197357",
-  "name": "Kankuro Mitosaka",
-  "aliases": [
-   "Mitosaka Kankuro",
-   "水度坂勘久郎",
-   "Kankuro",
-   "Mitosaka"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b197357-sBu1bbh58Rb4.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 27,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "277094",
-  "name": "Subaru Mitejima",
-  "aliases": [
-   "Mitejima Subaru",
-   "御幣島すばる",
-   "Mitejima"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277094-0ZapsCURiUcY.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 35,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "277097",
-  "name": "Cordelia Kasukami",
-  "aliases": [
-   "Kasukami Cordelia",
-   "勝神コーデリア",
-   "Cordelia",
-   "Kasukami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277097-WDzKJDoUdIRr.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 21,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "207919",
-  "name": "Miku Zeze",
-  "aliases": [
-   "Zeze Miku",
-   "膳所美玖",
-   "Zeze"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207919-tKTGPARlFUvy.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 56,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "277096",
-  "name": "Sakura Sada",
-  "aliases": [
-   "Sada Sakura",
-   "蹉砣桜",
-   "Sada"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277096-aHR9XyAwT7Vn.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 23,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "175318",
-  "name": "Arata Inanaki",
-  "aliases": [
-   "Inanaki Arata",
-   "嗎新",
-   "Inanaki"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175318-SZ30AVBRDYa3.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 42,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "207918",
-  "name": "Kengo Ujii",
-  "aliases": [
-   "Ujii Kengo",
-   "雲林院憲剛",
-   "Ujii"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207918-QsPxenb7I23d.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 26,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
-  "id": "277091",
-  "name": "Narumi Ioroi",
-  "aliases": [
-   "Ioroi Narumi",
-   "五百蔵鳴海",
-   "Ioroi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277091-YhjLz1Ktrfnh.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 45,
-   "occupation": null,
-   "hair": null,
-   "anime": "Twin Star Exorcists",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "Studio Pierrot"
-  }
- },
- {
   "id": "205566",
   "name": "Yousuke Shibazaki",
   "aliases": [
@@ -56245,8 +56174,7 @@
   "aliases": [
    "Miwa Shuuji",
    "三輪秀次",
-   "Shuuji",
-   "Miwa"
+   "Shuuji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155813-g4zWrHMpbOyw.png",
   "attributes": {
