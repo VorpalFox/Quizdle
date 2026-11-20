@@ -14,8 +14,8 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Jujutsu Sorcerer",
-    "Teacher"
+    "Exorciste",
+    "Professeur"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -69,7 +69,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Captain"
+    "Capitaine"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -151,7 +151,7 @@
    "gender": "Homme",
    "age": 19,
    "occupation": [
-    "Swordsman"
+    "Épéiste"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -234,7 +234,7 @@
    "gender": "Homme",
    "age": 24,
    "occupation": [
-    "Detective"
+    "Détective"
    ],
    "hair": null,
    "anime": "Death Note",
@@ -290,8 +290,8 @@
    "gender": "Femme",
    "age": 15,
    "occupation": [
-    "104th Training Corps",
-    "Survey Corps"
+    "Recrue",
+    "Bataillon d'exploration"
    ],
    "hair": null,
    "anime": "Attack on Titan",
@@ -344,7 +344,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Mercenary"
+    "Mercenaire"
    ],
    "hair": null,
    "anime": "Berserk",
@@ -551,7 +551,7 @@
    "gender": "Homme",
    "age": 18,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "Steins;Gate",
@@ -579,11 +579,13 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Sorcerer",
-    "Student",
+    "Sorcier",
+    "Élève",
     "Vessel"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -681,7 +683,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Second L",
+    "Tueur en série"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -706,7 +711,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "Mob Psycho 100",
    "genres": [
@@ -811,7 +818,7 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "State Alchemist"
+    "Alchimiste d'État"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -865,7 +872,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 13,
-   "occupation": null,
+   "occupation": [
+    "Charbonnier",
+    "Pourfendeur de démons"
+   ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -918,8 +928,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Sorcerer",
-    "Student"
+    "Sorcier",
+    "Élève"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -945,7 +955,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Lycéen",
+    "Mannequin"
+   ],
    "hair": null,
    "anime": "My Dress-Up Darling",
    "genres": [
@@ -972,7 +985,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Agent immobilier"
+   ],
    "hair": null,
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -1022,9 +1037,11 @@
    "gender": "Homme",
    "age": 33,
    "occupation": [
-    "Commander"
+    "Commandant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Vinland Saga",
    "genres": [
     "Action",
@@ -1098,7 +1115,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Super-héros"
+   ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
@@ -1208,8 +1228,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Hikikomori"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -1335,7 +1359,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Scientifique",
+    "Inventeur",
+    "Astronome",
+    "Astronaute",
+    "Ingénieur"
+   ],
    "hair": null,
    "anime": "Dr. STONE",
    "genres": [
@@ -1359,7 +1390,7 @@
    "gender": "Homme",
    "age": 19,
    "occupation": [
-    "Chef"
+    "Cuisinier"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -1462,7 +1493,7 @@
    "gender": "Femme",
    "age": 28,
    "occupation": [
-    "Archaeologist"
+    "Archéologue"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -1515,8 +1546,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant en secondaire",
+    "Shinigami remplaçant"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Bleach",
    "genres": [
     "Action",
@@ -1625,7 +1661,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Pilot"
+    "Pilote"
    ],
    "hair": null,
    "anime": "DARLING in the FRANXX",
@@ -1707,7 +1743,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 12,
-   "occupation": null,
+   "occupation": [
+    "Femme au foyer"
+   ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -1736,9 +1774,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Captain",
-    "Outside Hitter",
-    "Middle Blocker"
+    "Capitaine",
+    "Volleyeur"
    ],
    "hair": null,
    "anime": "HAIKYU!!",
@@ -1765,7 +1802,7 @@
    "gender": "Homme",
    "age": 29,
    "occupation": [
-    "Commander"
+    "Commandant"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -1818,7 +1855,7 @@
    "gender": "Femme",
    "age": 27,
    "occupation": [
-    "City Hall Clerk",
+    "Fonctionnaire",
     "Assassin"
    ],
    "hair": null,
@@ -1900,9 +1937,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Student",
-    "Marine Explorer",
-    "Oceanographer"
+    "Élève",
+    "Explorateur",
+    "Océanographe"
    ],
    "hair": null,
    "anime": "JoJo's Bizarre Adventure",
@@ -1930,8 +1967,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "104th Trainees Squad",
-    "Survey Corps"
+    "Recrue",
+    "Bataillon d'exploration"
    ],
    "hair": null,
    "anime": "Attack on Titan",
@@ -1986,8 +2023,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Apprenti super-héros"
+   ],
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -2039,7 +2081,7 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Demon Slayer"
+    "Pourfendeur de démons"
    ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
@@ -2067,7 +2109,7 @@
    "gender": "Homme",
    "age": 27,
    "occupation": [
-    "Sorcerer"
+    "Sorcier"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -2121,8 +2163,8 @@
    "gender": "Femme",
    "age": 16,
    "occupation": [
-    "Jujutsu Sorcerer",
-    "Student"
+    "Exorciste",
+    "Élève"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -2183,8 +2225,7 @@
    "gender": "Femme",
    "age": 6,
    "occupation": [
-    "First-Grade Student",
-    "Test Subject"
+    "Élève"
    ],
    "hair": null,
    "anime": "SPY x FAMILY",
@@ -2212,8 +2253,8 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "13th Commander",
-    "Survey Corps"
+    "Commandant",
+    "Bataillon d'exploration"
    ],
    "hair": null,
    "anime": "Attack on Titan",
@@ -2241,7 +2282,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
    "genres": [
@@ -2264,9 +2307,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "God of War",
-    "Delivery God",
-    "God of Calamity"
+    "Dieu"
    ],
    "hair": null,
    "anime": "Noragami",
@@ -2296,7 +2337,7 @@
    "gender": "Femme",
    "age": 17,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "Fate/stay night",
@@ -2403,7 +2444,7 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Setter"
+    "Volleyeur"
    ],
    "hair": null,
    "anime": "HAIKYU!!",
@@ -2511,8 +2552,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 1000,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Exorcisme",
+    "Fleau de classe s"
+   ],
+   "hair": [
+    "Noirs",
+    "Roses"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -2563,7 +2610,7 @@
    "gender": "Femme",
    "age": 17,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "Horimiya",
@@ -2591,8 +2638,8 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Sorcerer",
-    "Student"
+    "Sorcier",
+    "Élève"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -2619,8 +2666,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Pilote d'EVA"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
@@ -2725,7 +2776,7 @@
    "gender": "Homme",
    "age": 20,
    "occupation": [
-    "Warrior"
+    "Guerrier"
    ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
@@ -2753,8 +2804,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Pilote d'EVA"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
@@ -2809,9 +2864,11 @@
    "gender": "Femme",
    "age": 29,
    "occupation": [
-    "Officer"
+    "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
@@ -2862,7 +2919,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 28,
-   "occupation": null,
+   "occupation": [
+    "Capitaine"
+   ],
    "hair": null,
    "anime": "Black Clover",
    "genres": [
@@ -2913,7 +2972,7 @@
    "gender": "Femme",
    "age": 17,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "Kaguya-sama: Love is War",
@@ -2993,7 +3052,7 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Libero"
+    "Volleyeur"
    ],
    "hair": null,
    "anime": "HAIKYU!!",
@@ -3044,7 +3103,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
@@ -3072,7 +3131,7 @@
    "gender": "Homme",
    "age": 24,
    "occupation": [
-    "Captain"
+    "Capitaine"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -3125,7 +3184,7 @@
    "gender": "Femme",
    "age": 18,
    "occupation": [
-    "Navigator"
+    "Navigateur"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -3182,7 +3241,7 @@
    "gender": "Femme",
    "age": 16,
    "occupation": [
-    "Commander"
+    "Commandant"
    ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
@@ -3209,8 +3268,8 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Psychiatrist",
-    "Spy"
+    "Psychiatre",
+    "Espion"
    ],
    "hair": null,
    "anime": "SPY x FAMILY",
@@ -3391,7 +3450,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Guerrier"
+   ],
    "hair": null,
    "anime": "Dragon Ball",
    "genres": [
@@ -3420,8 +3481,8 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Sorcerer",
-    "Student"
+    "Sorcier",
+    "Élève"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -3448,7 +3509,7 @@
    "gender": "Femme",
    "age": 16,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": null,
    "anime": "My Teen Romantic Comedy SNAFU",
@@ -3473,7 +3534,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Teacher"
+    "Professeur"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
@@ -3650,7 +3711,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Aventurier"
+   ],
    "hair": null,
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
@@ -3825,7 +3888,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Student"
+    "Élève"
    ],
    "hair": [
     "Blonds"
@@ -3960,7 +4023,7 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Doctor"
+    "Médecin"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -4018,7 +4081,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 28,
-   "occupation": null,
+   "occupation": [
+    "Neurochirurgien"
+   ],
    "hair": null,
    "anime": "Monster",
    "genres": [
@@ -4072,8 +4137,8 @@
    "gender": "Homme",
    "age": 30,
    "occupation": [
-    "Pro Hero",
-    "Teacher"
+    "Héros professionnel",
+    "Professeur"
    ],
    "hair": null,
    "anime": "My Hero Academia",
@@ -4097,7 +4162,7 @@
    "gender": "Femme",
    "age": 28,
    "occupation": [
-    "Superhero"
+    "Super-héros"
    ],
    "hair": [
     "Verts"
@@ -4177,7 +4242,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 34,
-   "occupation": null,
+   "occupation": [
+    "Sorcier"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -4361,7 +4428,7 @@
    "gender": "Homme",
    "age": 27,
    "occupation": [
-    "Curse User"
+    "Utilisateur de fléaux"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -4460,7 +4527,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Goddess"
+    "Déesse"
    ],
    "hair": null,
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
@@ -4622,7 +4689,7 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Commander"
+    "Commandant"
    ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
@@ -4677,7 +4744,7 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Middle Blocker"
+    "Volleyeur"
    ],
    "hair": null,
    "anime": "HAIKYU!!",
@@ -4703,7 +4770,7 @@
    "gender": "Femme",
    "age": 15,
    "occupation": [
-    "Goddess"
+    "Déesse"
    ],
    "hair": [
     "Noirs"
@@ -4861,7 +4928,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "King"
+    "Roi"
    ],
    "hair": null,
    "anime": "Fate/stay night",
@@ -5020,9 +5087,15 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Captain"
+    "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Blonds",
+    "Rouges",
+    "Bleus",
+    "Violets"
+   ],
    "anime": "Dragon Ball Z",
    "genres": [
     "Action",
@@ -5048,7 +5121,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Alchemist"
+    "Alchimiste"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -5159,8 +5232,8 @@
    "gender": "Homme",
    "age": 18,
    "occupation": [
-    "Sorcerer",
-    "Student"
+    "Sorcier",
+    "Élève"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -5183,7 +5256,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Dieu de la mort"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -5236,7 +5311,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Lycoris Agent",
+    "Serveuse"
+   ],
    "hair": null,
    "anime": "Lycoris Recoil",
    "genres": [
@@ -5285,7 +5363,11 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Capitaine",
+    "Commander of the Secret Mobile Corps",
+    "Corps Commander of the Executive Militia"
+   ],
    "hair": null,
    "anime": "Bleach",
    "genres": [
