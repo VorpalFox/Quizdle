@@ -8,13 +8,14 @@ const FEEDBACK_EMOJI: Record<Feedback, string> = {
   wrong: '🟥',
   higher: '⬆️',
   lower: '⬇️',
+  unknown: '❔',
 }
 
 const COLOR_PLAYING = 0x5865f2
 const COLOR_WON = 0x57f287
 const COLOR_LOST = 0xed4245
 
-const LEGEND = '🟩 juste · 🟨 en partie · 🟥 faux · ⬆️ c\'est plus · ⬇️ c\'est moins'
+const LEGEND = '🟩 juste · 🟨 en partie · 🟥 faux · ⬆️ c\'est plus · ⬇️ c\'est moins · ❔ inconnu pour la réponse'
 
 // « Pokédle du jour »
 function gameTitle(game: Game): string {

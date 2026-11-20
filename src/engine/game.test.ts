@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { compareValues } from './compare.js'
+import { compareEntries, compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
 import { dayKey, randomEntry } from './pick.js'
 import { findEntry, isOneTypoAway, searchEntries } from './search.js'
@@ -28,7 +28,19 @@ describe('compareValues', () => {
   it('exact', () => {
     expect(compareValues('exact', 'Hiver', 'Hiver')).toBe('correct')
     expect(compareValues('exact', 'Été', 'Hiver')).toBe('wrong')
-    expect(compareValues('exact', null, null)).toBe('correct')
+  })
+
+  it('cible sans valeur : inconnu, quel que soit le type', () => {
+    expect(compareValues('exact', null, null)).toBe('unknown')
+    expect(compareValues('exact', 'Hiver', null)).toBe('unknown')
+    expect(compareValues('set', ['Rouge'], [])).toBe('unknown')
+    expect(compareValues('number', 150, null)).toBe('unknown')
+  })
+
+  it('bon perso : tout est juste, même ses indices vides', () => {
+    const kiwi = fruits.entries[3]!
+    expect(compareEntries(fruits.attributes, kiwi, kiwi).map(r => r.feedback)).toEqual(['correct', 'correct', 'correct'])
+    expect(compareEntries(fruits.attributes, fruits.entries[0]!, kiwi).map(r => r.feedback)).toEqual(['partial', 'wrong', 'unknown'])
   })
 
   it('set', () => {

@@ -1,7 +1,8 @@
 import type { AttributeDef, AttributeKind, AttributeValue, Entry } from './types.js'
 
 // higher / lower : la valeur de la cible est plus grande / plus petite que celle proposée
-export type Feedback = 'correct' | 'partial' | 'wrong' | 'higher' | 'lower'
+// unknown : la cible n'a pas de valeur pour cet indice, on ne peut rien en dire
+export type Feedback = 'correct' | 'partial' | 'wrong' | 'higher' | 'lower' | 'unknown'
 
 export interface AttributeResult {
   attribute: AttributeDef
@@ -12,6 +13,8 @@ export interface AttributeResult {
 }
 
 export function compareValues(kind: AttributeKind, guess: AttributeValue, target: AttributeValue): Feedback {
+  if (asList(target).length === 0)
+    return 'unknown'
   switch (kind) {
     case 'exact':
       return guess === target ? 'correct' : 'wrong'
@@ -36,7 +39,9 @@ export function compareEntries(attributes: readonly AttributeDef[], guess: Entry
   return attributes.map(attribute => {
     const value = guess.attributes[attribute.key] ?? null
     const targetValue = target.attributes[attribute.key] ?? null
-    return { attribute, value, feedback: compareValues(attribute.kind, value, targetValue), common: commonValues(attribute.kind, value, targetValue) }
+    // le bon perso : tout est juste, même ses indices vides
+    const feedback = guess.id === target.id ? 'correct' : compareValues(attribute.kind, value, targetValue)
+    return { attribute, value, feedback, common: commonValues(attribute.kind, value, targetValue) }
   })
 }
 

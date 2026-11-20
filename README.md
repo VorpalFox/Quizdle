@@ -10,7 +10,7 @@ Bot Discord de quiz façon -dle (Pokédle, Animedle, Weebdle, Pixeldle), tous su
 - `/quiz board` : la grille de toutes les propositions, la plus récente en haut.
 - `/quiz giveup` : abandonne la partie et donne la réponse.
 
-Indices : 🟩 juste · 🟨 en partie (ex : un type sur deux, les valeurs en commun sont en gras) · 🟥 faux · ⬆️ la réponse est plus grande · ⬇️ la réponse est plus petite.
+Indices : 🟩 juste · 🟨 en partie (ex : un type sur deux, les valeurs en commun sont en gras) · 🟥 faux · ⬆️ la réponse est plus grande · ⬇️ la réponse est plus petite · ❔ la réponse n'a pas cette info (âge inconnu, cheveux pas renseignés...), l'indice ne dit rien.
 
 ## Architecture
 
