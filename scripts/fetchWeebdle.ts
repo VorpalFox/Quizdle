@@ -11,6 +11,8 @@ import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
+import { translateEntries } from './translate.js'
+import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
 
 const MAX_PER_ANIME = 20
 const MIN_PER_ANIME = 4
@@ -255,23 +257,30 @@ const selections = animes.map(anime => ({ anime, chosen: select(anime, assigned.
 // --- Écriture ---
 
 const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.name)))
-const generated: Entry[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
-  id: String(character.id),
-  name: character.name.full,
-  aliases: aliases(character.name, uniqueParts),
-  image: character.image.large,
-  attributes: {
-    gender: gender(character.gender, character.description),
-    age: parseAge(character.age, character.description),
-    occupation: parseOccupation(character.description),
-    hair: parseHair(character.description),
-    anime: cleanTitle(anime.rec.title),
-    genres: genres(anime.media.genres),
-    year: anime.media.startDate.year ?? anime.rec.year,
-    studio: anime.media.studios.nodes[0]?.name ?? null,
+const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
+  name: character.name,
+  animeTitles: [anime.rec.title, anime.rec.romaji, anime.media.title.english ?? '', anime.media.title.romaji],
+  entry: {
+    id: String(character.id),
+    name: character.name.full,
+    aliases: aliases(character.name, uniqueParts),
+    image: character.image.large,
+    attributes: {
+      gender: gender(character.gender, character.description),
+      age: parseAge(character.age, character.description),
+      occupation: parseOccupation(character.description),
+      hair: parseHair(character.description),
+      anime: cleanTitle(anime.rec.title),
+      genres: genres(anime.media.genres),
+      year: anime.media.startDate.year ?? anime.rec.year,
+      studio: anime.media.studios.nodes[0]?.name ?? null,
+    },
   },
 })))
-const { entries, warnings } = applyManual(generated, manual, characterAttributes.map(({ key }) => key))
+// Ce qu'AniList n'a pas donné : depuis Wikipédia, puis tout en français. Les corrections à la main passent après.
+const wiki = await completeFromWikipedia(targets)
+const translated = translateEntries(wiki.entries)
+const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
@@ -284,6 +293,10 @@ if (failed.length > 0)
 lines.push(`Corrections (data/weebdle-manual.json) : ${manual.exclude.length} retirés, ${editedIds.size} corrigés, ${manual.add.length} ajoutés`, '')
 if (warnings.length > 0)
   lines.push(`## ⚠️ Corrections qui ne collent pas (${warnings.length})`, ...warnings.map(text => `- ${text}`), '')
+
+lines.push(`## Complétés par Wikipédia (${wiki.filled.length})`, ...wiki.filled.map(text => `- ${text}`), '')
+const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1])
+lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')
 for (const { anime, chosen, total } of selections) {

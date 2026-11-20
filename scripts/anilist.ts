@@ -121,10 +121,15 @@ export function parseOccupation(description: string | null): string[] | null {
     const found = OCCUPATION_IN_TEXT.exec(withoutSpoilers(description))
     return found ? [capitalize(found[1]!.toLowerCase())] : null
   }
+  return splitOccupations(value)
+}
+
+// « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et »).
+export function splitOccupations(value: string): string[] | null {
   const list = value
     .replace(/~!|!~/g, '')
     .replace(/\s*\([^)]*\)/g, '')
-    .split(/\s*(?:,|;|\/|\band\b|\bformerly\b|\bprevious(?:ly)?\b)\s*/i)
+    .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
     .filter(part => part.length > 1 && part.length <= 40)
     .map(capitalize)
@@ -135,17 +140,18 @@ function capitalize(text: string): string {
   return text[0]!.toUpperCase() + text.slice(1)
 }
 
+// Les mots anglais (AniList, Wikipédia EN) et français (Wikipédia FR)
 const HAIR_COLORS: [RegExp, string][] = [
-  [/black|raven|ebony/i, 'Noirs'], [/white|snow/i, 'Blancs'], [/silver|platinum/i, 'Argentés'], [/gr[ae]y/i, 'Gris'],
-  [/blond|golden|gold|yellow/i, 'Blonds'], [/brown|brunette|chestnut|auburn/i, 'Bruns'], [/orange|ginger/i, 'Roux'],
-  [/\bred|crimson|scarlet/i, 'Rouges'], [/pink/i, 'Roses'], [/blue|cyan|teal|turquoise/i, 'Bleus'], [/green/i, 'Verts'],
-  [/purple|violet|lavender|lilac/i, 'Violets'], [/bald/i, 'Chauve'],
+  [/black|raven|ebony|noir/i, 'Noirs'], [/white|snow|blanc/i, 'Blancs'], [/silver|platinum|argent/i, 'Argentés'], [/gr[ae]y|gris/i, 'Gris'],
+  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blonds'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Bruns'], [/orange|ginger|roux|rousse/i, 'Roux'],
+  [/\bred|crimson|scarlet|rouge/i, 'Rouges'], [/pink|\brose/i, 'Roses'], [/blue|cyan|teal|turquoise|bleu/i, 'Bleus'], [/green|\bvert/i, 'Verts'],
+  [/purple|violet|lavender|lilac|mauve/i, 'Violets'], [/bald|chauve/i, 'Chauve'],
 ]
 const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
 const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
 
-const hairColors = (text: string) => HAIR_COLORS.filter(([pattern]) => pattern.test(text)).map(([, color]) => color)
+export const hairColors = (text: string) => HAIR_COLORS.filter(([pattern]) => pattern.test(text)).map(([, color]) => color)
 
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.

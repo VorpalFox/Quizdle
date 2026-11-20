@@ -5,6 +5,8 @@ import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
+import { translateEntries } from './translate.js'
+import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
 
 // Corrections à la main (data/anime-manual.json) : un personnage retiré n'est pas remplacé
 const manual = readManual(manualFile('animedle'))
@@ -78,9 +80,9 @@ for (let page = 1; characters.length < count; page++) {
 const kept = characters.slice(0, count).filter(character => mainAnime(character))
 const uniqueParts = uniqueNameParts(kept.map(character => character.name))
 
-const generated: Entry[] = kept.map(character => {
+const targets: WikiTarget[] = kept.map(character => {
   const anime = mainAnime(character)!
-  return {
+  const entry: Entry = {
     id: String(character.id),
     name: character.name.full,
     aliases: aliases(character.name, uniqueParts),
@@ -96,8 +98,12 @@ const generated: Entry[] = kept.map(character => {
       studio: anime.studios.nodes[0]?.name ?? null,
     },
   }
+  return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji] }
 })
-const { entries, warnings } = applyManual(generated, manual, characterAttributes.map(({ key }) => key))
+// Ce qu'AniList n'a pas donné : depuis Wikipédia, puis tout en français. Les corrections à la main passent après.
+const wiki = await completeFromWikipedia(targets)
+const translated = translateEntries(wiki.entries)
+const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
 const keptIds = new Set(kept.map(character => String(character.id)))
 warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))
 
@@ -106,6 +112,10 @@ console.log(`\n${entries.length} personnages écrits dans data/anime.json`)
 console.log(`Corrections (data/anime-manual.json) : ${manual.exclude.length} retirés, ${Object.keys(manual.edit).length} corrigés, ${manual.add.length} ajoutés`)
 for (const warning of warnings)
   console.log(`⚠️ ${warning}`)
+console.log(`Complétés par Wikipédia : ${wiki.filled.length}`)
+for (const line of wiki.filled)
+  console.log(`  ${line}`)
+console.log(`Occupations pas traduites (à ajouter dans scripts/translate.ts) : ${[...translated.untranslated].map(([value, count]) => `${value} (${count})`).join(', ') || 'aucune'}`)
 // Ce qui manque, à compléter à la main
 for (const [label, key] of [['sexe', 'gender'], ['âge', 'age'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
   const missing = entries.filter(entry => entry.attributes[key] === null)
