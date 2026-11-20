@@ -1,9 +1,9 @@
-// Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 151 par défaut]
+// Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 386 par défaut : jusqu'à la 3e génération]
 // Les habitats n'existent dans PokeAPI que jusqu'à la 3e génération (au-delà : null).
 import { writeFile } from 'node:fs/promises'
 
 const API = 'https://pokeapi.co/api/v2'
-const lastId = Number(process.argv[2] ?? 151)
+const lastId = Number(process.argv[2] ?? 386)
 const CONCURRENCY = 10
 
 const TYPES: Record<string, string> = {
