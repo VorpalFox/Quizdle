@@ -10,5 +10,5 @@ export const weebdle: Subject = {
   name: 'Weebdle',
   description: 'Trouve le personnage mystère, tiré des animes conseillés sur le serveur',
   attributes: characterAttributes,
-  entries: loadEntries('weebdle.json'),
+  entries: loadEntries('weebdle.json', { subjectId: 'weebdle', attributes: characterAttributes }),
 }

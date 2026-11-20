@@ -55,6 +55,12 @@ export class DailyDraw {
     this.save()
   }
 
+  // La réponse du jour d'un sujet vient d'être retirée du quiz (/quizdebug remove) : nouveau tirage pour ce sujet seulement
+  redrawSubject(subject: Subject): void {
+    this.draw(subject)
+    this.save()
+  }
+
   private draw(subject: Subject): void {
     // pas deux fois de suite la même réponse : on exclut celle d'avant (celle de la veille, ou d'avant le reset)
     const previous = this.targets.get(subject.id)

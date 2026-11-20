@@ -1,5 +1,6 @@
-import { InteractionContextType, SlashCommandBuilder } from 'discord.js'
-import { subjects } from '../subjects/registry.js'
+import { InteractionContextType, SlashCommandBuilder, type SlashCommandSubcommandBuilder } from 'discord.js'
+import { manualSubjectIds } from '../subjects/manual.js'
+import { getSubject, subjects } from '../subjects/registry.js'
 
 export const COMMAND_NAME = 'quiz'
 export const GUESS_COMMAND_NAME = 'guess'
@@ -33,3 +34,21 @@ export const debugCommand = new SlashCommandBuilder()
   .setContexts(InteractionContextType.Guild)
   .setDefaultMemberPermissions(0)
   .addSubcommand(sub => sub.setName('reset').setDescription('Draw new answers for today and forget every game'))
+  .addSubcommand(sub => addEntryOptions(sub.setName('remove').setDescription('Remove an entry from a quiz for good (saved in data/<subject>-manual.json)')))
+  .addSubcommand(sub => addEntryOptions(sub.setName('edit').setDescription('Change or fill an attribute of an entry (saved in data/<subject>-manual.json)'))
+    .addStringOption(option => option.setName('attribute').setDescription('Attribute to change').setRequired(true).addChoices(...correctableAttributes()))
+    .addStringOption(option => option.setName('value').setDescription('New value. Several: "Blancs, Noirs". Empty: "-"').setRequired(true)))
+
+// Sujet (ceux qui ont un fichier de corrections) + entrée, avec l'autocomplétion
+function addEntryOptions(sub: SlashCommandSubcommandBuilder): SlashCommandSubcommandBuilder {
+  return sub
+    .addStringOption(option => option.setName('subject').setDescription('Quiz').setRequired(true)
+      .addChoices(...manualSubjectIds.map(id => ({ name: getSubject(id)?.name ?? id, value: id }))))
+    .addStringOption(option => option.setName('name').setDescription('Entry').setRequired(true).setAutocomplete(true))
+}
+
+// Les attributs des sujets corrigeables (Animedle et Weebdle partagent les mêmes)
+function correctableAttributes(): { name: string, value: string }[] {
+  const attributes = new Map(manualSubjectIds.flatMap(id => getSubject(id)?.attributes ?? []).map(attribute => [attribute.key, attribute.label]))
+  return [...attributes].map(([key, label]) => ({ name: label, value: key }))
+}

@@ -4,10 +4,10 @@ import { writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
-import { applyManual, loadManual } from './manual.js'
+import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 
 // Corrections à la main (data/anime-manual.json) : un personnage retiré n'est pas remplacé
-const manual = await loadManual(new URL('../data/anime-manual.json', import.meta.url))
+const manual = readManual(manualFile('animedle'))
 
 const count = Number(process.argv[2] ?? 200)
 const PER_PAGE = 25

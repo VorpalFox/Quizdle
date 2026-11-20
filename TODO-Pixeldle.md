@@ -45,7 +45,7 @@ Noms : le nom français s'il existe (label `fr`), sinon l'anglais. Noms accepté
 
 ## Le fichier écrit à la main
 
-`data/pixeldle-manual.json`, à créer. Le script le **fusionne** avec ce qu'il récupère. [scripts/manual.ts](scripts/manual.ts) le fait déjà pour l'Animedle et le Weebdle (`exclude`, `edit`, `add`, voir le README) : le réutiliser.
+`data/pixeldle-manual.json`, à créer. Le script le **fusionne** avec ce qu'il récupère. [src/subjects/manual.ts](src/subjects/manual.ts) le fait déjà pour l'Animedle et le Weebdle (`exclude`, `edit`, `add`, voir le README) : le réutiliser.
 
 - il ajoute des personnages que Wikidata n'a pas (les avatars, voir plus bas, et les oublis) ;
 - il complète ou corrige des champs d'un personnage récupéré (même `id`) : un âge, une espèce, un nom mal traduit ;
@@ -130,7 +130,7 @@ Pour vérifier les données d'un coup d'œil :
 ## Plus tard (une fois les données là)
 
 - **Noms ambigus :** avec un millier de personnages, plus de prénoms partagés et plus de mots courants reconnus comme des noms dans la discussion. Pistes : afficher la franchise entre parenthèses dans l'autocomplétion de `/guess`, et un message qui demande de préciser quand un nom écrit dans le salon correspond à plusieurs personnages.
-- **Retirer un personnage trop inconnu en cours de partie :** une commande (par exemple `/quizdebug remove <nom>`) qui l'ajoute à une liste d'exclusion versionnée, respectée par le script. Si la partie du jour portait sur lui, nouveau tirage. Même commande que pour le Weebdle si elle existe déjà.
+- **Retirer un personnage trop inconnu en cours de partie :** une commande (par exemple `/quizdebug remove <nom>`) qui l'ajoute à une liste d'exclusion versionnée, respectée par le script. Si la partie du jour portait sur lui, nouveau tirage. `/quizdebug remove` existe déjà pour l'Animedle et le Weebdle ([src/bot/corrections.ts](src/bot/corrections.ts)) : ajouter le Pixeldle dans `MANUAL_FILES` ([src/subjects/manual.ts](src/subjects/manual.ts)).
 
 ## Fin
 

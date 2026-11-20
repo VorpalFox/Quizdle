@@ -10,7 +10,7 @@ import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
-import { applyManual, loadManual } from './manual.js'
+import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 
 const MAX_PER_ANIME = 20
 const MIN_PER_ANIME = 4
@@ -135,7 +135,7 @@ const releasedBefore = (a: Anime, b: Anime) => {
 
 // Corrections à la main : les personnages retirés ne sont jamais tirés (leur place revient au suivant),
 // les personnages corrigés sont toujours gardés
-const manual = await loadManual(new URL('data/weebdle-manual.json', root))
+const manual = readManual(manualFile('weebdle'))
 const excludedIds = new Set(manual.exclude)
 const editedIds = new Set(Object.keys(manual.edit))
 const cachedIds = new Set(animes.flatMap(anime => anime.cast.map(({ character }) => String(character.id))))

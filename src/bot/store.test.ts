@@ -19,6 +19,19 @@ describe('DailyDraw et GameStore', () => {
 
   afterEach(() => rmSync(dir, { recursive: true, force: true }))
 
+  it('refait le tirage d\'un sujet seulement si on retire sa réponse du jour', () => {
+    const daily = DailyDraw.load(file, '2026-11-19')
+    const store = new GameStore(daily)
+    const target = daily.target(pokemon)
+    const other = pokemon.entries.find(entry => entry.id !== target.id)!
+
+    expect(store.redrawIfTarget(pokemon, other.id)).toBe(false)
+    expect(daily.target(pokemon).id).toBe(target.id)
+    expect(store.redrawIfTarget(pokemon, target.id)).toBe(true)
+    expect(daily.target(pokemon).id).not.toBe(target.id)
+    expect(DailyDraw.load(file, '2026-11-19').target(pokemon).id).toBe(daily.target(pokemon).id)
+  })
+
   it('garde la réponse du jour après un redémarrage, mais pas les parties', () => {
     const daily = DailyDraw.load(file, '2026-11-19')
     const target = new GameStore(daily).startDaily('salon', pokemon).target

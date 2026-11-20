@@ -60,7 +60,7 @@ Les personnages des animes conseillés sur le serveur, avec les mêmes indices q
 
 ### Corrections à la main (Animedle et Weebdle)
 
-Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les scripts les réécrivent. Les corrections vont dans [data/anime-manual.json](data/anime-manual.json) et [data/weebdle-manual.json](data/weebdle-manual.json), que les scripts appliquent à chaque génération sans jamais les modifier :
+Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les scripts les réécrivent. Les corrections vont dans [data/anime-manual.json](data/anime-manual.json) et [data/weebdle-manual.json](data/weebdle-manual.json), à la main ou avec `/quizdebug remove` et `/quizdebug edit` (voir Debug). Les scripts les appliquent à chaque génération sans jamais les modifier, et le bot au démarrage :
 
 ```json
 {
@@ -123,4 +123,10 @@ Le bot ne fait aucune requête réseau : les données sont dans `data/`, génér
 
 ### Debug
 
-`/quizdebug reset` refait le tirage du jour et efface toutes les parties. Elle n'est enregistrée que sur le serveur de test (`DISCORD_GUILD_ID`), cachée aux non-admins, et seul `DISCORD_OWNER_ID` peut la lancer. Sans `DISCORD_GUILD_ID`, `deploy-commands` enregistre `/quiz` et `/guess` en global, sans la commande de debug.
+- `/quizdebug reset` refait le tirage du jour et efface toutes les parties.
+- `/quizdebug remove subject:<Animedle|Weebdle> name:<personnage>` retire un personnage pour de bon : il est ajouté à `exclude` dans le fichier de corrections du sujet, et disparaît tout de suite du quiz. Si c'était la réponse du jour, nouveau tirage pour les parties suivantes (celles en cours gardent leur réponse).
+- `/quizdebug edit subject:<...> name:<personnage> attribute:<attribut> value:<valeur>` change ou remplit un attribut : écrit dans `edit`, appliqué tout de suite, parties en cours comprises. Plusieurs valeurs : « Blancs, Noirs ». Vide : « - ». Si personne d'autre n'a cette valeur, le bot le signale et donne les plus courantes (pour écrire « Blancs » comme les autres, pas « blanc »).
+
+L'autocomplétion du nom affiche l'anime entre parenthèses, pour ne pas confondre deux homonymes. Le bot relit les fichiers de corrections au démarrage : une correction survit à un redémarrage. Sur le Raspberry, ces fichiers changent donc dans `data/` : penser à les commiter depuis le Raspberry (ou à les recopier) pour ne pas les perdre au prochain `git pull`.
+
+Les commandes de debug ne sont enregistrées que sur le serveur de test (`DISCORD_GUILD_ID`), cachées aux non-admins, et seul `DISCORD_OWNER_ID` peut les lancer. Sans `DISCORD_GUILD_ID`, `deploy-commands` enregistre `/quiz` et `/guess` en global, sans la commande de debug.
