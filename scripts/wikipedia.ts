@@ -131,8 +131,12 @@ export function wikiGender(value: string | null): string | null {
   return value ? GENDERS[normalize(value.split(',')[0]!)] ?? null : null
 }
 
+// Les wikis décrivent parfois les cheveux en détail (« White, with light blue tips and green streaks ») :
+// on garde les 2 premières couleurs citées
+const MAX_HAIR_COLORS = 2
+
 export function wikiHair(value: string | null): string[] | null {
-  const colors = value ? hairColors(value) : []
+  const colors = value ? hairColors(value).slice(0, MAX_HAIR_COLORS) : []
   return colors.length > 0 ? colors : null
 }
 

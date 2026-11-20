@@ -54,7 +54,8 @@ describe('wikiGender / wikiHair', () => {
     expect(wikiGender('Female')).toBe('Femme')
     expect(wikiGender('Inconnu')).toBeNull()
     expect(wikiHair('Noir')).toEqual(['Noirs'])
-    expect(wikiHair('Châtain et blanc')).toEqual(['Blancs', 'Bruns'])
+    expect(wikiHair('Châtain et blanc')).toEqual(['Bruns', 'Blancs'])
+    expect(wikiHair('White, with light blue tips and green streaks')).toEqual(['Blancs', 'Bleus'])
   })
 })
 

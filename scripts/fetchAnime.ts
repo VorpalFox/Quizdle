@@ -7,6 +7,7 @@ import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { fixedOccupationIds, translateEntries } from './translate.js'
+import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
 
@@ -187,10 +188,11 @@ const targets: WikiTarget[] = kept.map(character => {
   }
   return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji, universes.get(anime.id)!] }
 })
-// Ce qu'AniList n'a pas donné : depuis Wikidata (lien par l'ID AniList), puis Wikipédia, puis tout en français.
+// Ce qu'AniList n'a pas donné : depuis Wikidata (lien par l'ID AniList), puis les wikis Fandom, puis Wikipédia, puis tout en français.
 // Les corrections à la main passent après.
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
-const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
+const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
+const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
 const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
 const keptIds = new Set(kept.map(character => String(character.id)))
@@ -202,6 +204,7 @@ console.log(`Corrections (data/anime-manual.json) : ${manual.exclude.length} ret
 for (const warning of warnings)
   console.log(`⚠️ ${warning}`)
 console.log(`Complétés par Wikidata : ${wikidata.filled.length}`)
+console.log(`Complétés par Fandom : ${fandom.filled.length}${fandom.noWiki.length > 0 ? ` (sans wiki : ${fandom.noWiki.join(', ')})` : ''}`)
 console.log(`Complétés par Wikipédia : ${wiki.filled.length}`)
 for (const line of wiki.filled)
   console.log(`  ${line}`)

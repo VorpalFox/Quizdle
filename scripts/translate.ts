@@ -67,27 +67,83 @@ const OCCUPATIONS: Record<string, string | null> = {
   'unknown': null, 'test subject': null, 'sujet psi': null,
 }
 
-// Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant
-const RULES: [RegExp, string][] = [
-  // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « Gilberta company's master »
-  [/\b(?:leader|commander|master|chief|commandant|responsable|führer)\b/, 'Leader'],
+// Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
+// Les cas précis d'abord, puis les grandes familles de métiers. null : pas une occupation, on la retire.
+const RULES: [RegExp, string | null][] = [
+  [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker/, 'Mafieux'],
+  // Les piliers et disciples de Demon Slayer (« Water Hashira »)
+  [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
+  [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
+  [/serial killer|mass murderer/, 'Tueur en série'],
+  [/magical ?☆?girl/, 'Magical girl'],
+  // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
+  [/\b(?:leader|commander|master|chief|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
   [/\bcaptain\b/, 'Capitaine'],
   [/\bguardian\b/, 'Gardien'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],
   // « Pilote d'EVA », « Stamen » et « Pistil » (les pilotes de DARLING in the FRANXX)
   [/\bpilot|stamen|pistil/, 'Pilote'],
   [/surgeon|chirurgien/, 'Chirurgien'],
-  [/teacher|professor|housemaster|headmaster/, 'Professeur'],
-  [/detective/, 'Détective'],
+  [/teacher|professor|housemaster|headmaster|instructor|lecturer|mentor|tutor|\bcoach|trainer|principal/, 'Professeur'],
+  [/detective|investigator|inspector/, 'Détective'],
+  [/\bspy\b|espionage|counterintelligence|intelligence/, 'Espion'],
   [/\bagent\b/, 'Agent secret'],
-  [/magazine|journalist|reporter/, 'Journaliste'],
+  [/magazine|journalist|reporter|announcer/, 'Journaliste'],
   [/\bmanager\b/, 'Gérant'],
-  [/\b(?:owner|shop|shopkeeper)\b/, 'Commerçant'],
+  [/\b(?:owner|shop|shopkeeper|store)\b/, 'Commerçant'],
   // Les postes de Tower of God
   [/bearer|wave controller/, 'Combattant'],
   [/super-?h[ée]ro/, 'Super-héros'],
+  [/\bknight|crusader|paladin/, 'Chevalier'],
+  [/\b(?:king|emperor|monarch|ruler|warlord)\b/, 'Roi'],
+  [/\b(?:queen|empress)\b/, 'Reine'],
+  [/princess|heiress/, 'Princesse'],
+  [/\bprince\b|\bheir\b/, 'Prince'],
+  [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
+  [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
+  [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)\b/, 'Combattant'],
+  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)\b/, 'Officier'],
+  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)\b/, 'Garde'],
+  [/butler/, 'Majordome'],
+  [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
+  [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
+  [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musicien'],
+  [/\b(?:idol|celebrity|influencer|youtuber|streamer|personality|entertainer|actor|actress)\b/, 'Célébrité'],
+  [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Marchand'],
+  [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientifique'],
+  [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Médecin'],
+  [/writer|author|editor|novelist|poet|mangaka/, 'Écrivain'],
+  [/\b(?:slave|livestock)\b/, 'Esclave'],
+  [/prisoner|inmate/, 'Prisonnier'],
+  [/unemployed|\bneet\b|homeless/, 'Chômeur'],
+  [/con ?-?artist|conman|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
+  [/killer|murderer|assassin|hitman|hitwoman/, 'Assassin'],
+  [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Magicien'],
+  [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Religieux'],
+  [/athlete|player|runner|skater|gymnast|pitcher|racer|swimmer|boxer|wrestler/, 'Sportif'],
+  [/farmer|farming|gardener|woodcutter|carpenter|baker|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
+  [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|librarian|delivery|courier/, 'Employé'],
+  [/assistant|\baide\b|sidekick|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
+  [/traveler|traveller|nomad|wanderer/, 'Voyageur'],
+  [/\bpresident\b|representative|second-in-command/, 'Leader'],
+  [/\bhunter\b/, 'Chasseur'],
+  [/\bhero(?:ine)?\b|vassal weapon/, 'Héros'],
+  [/supervillain|villain/, 'Méchant'],
+  [/waitress|waiter|hostess/, 'Serveur'],
+  [/singer|vocals/, 'Chanteur'],
+  [/astronaut|cosmonaut/, 'Astronaute'],
+  [/politician|senator|ambassador|diplomat|chancellor|official|prelate/, 'Politicien'],
+  [/attorney|prosecutor|lawyer/, 'Avocat'],
+  [/firefighter/, 'Pompier'],
+  [/bandit/, 'Voleur'],
+  [/game (?:designer|planner|tester)|producer|promoter/, 'Employé'],
+  [/house ?wife|house spouse/, 'Femme au foyer'],
   [/[ée]tudiant/, 'Étudiant'],
-  [/\bstudent\b/, 'Élève'],
+  [/\bstudent\b|schooler|freshman|pupil|high school|class representative|homeroom/, 'Élève'],
+  // Pas des occupations : animaux, valeurs vides
+  [/\bpet\b|housepet|familiar|^none$|^current$|^former$|^inc$|^npc$/, null],
+  // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)
+  [/\b(?:member|members|seat|crew|team|squad|council|cast|division|committee|corps|group)\b/, null],
 ]
 
 // Les occupations déjà en français (Wikipédia FR, corrections à la main) : on les garde telles quelles
@@ -95,7 +151,8 @@ const FRENCH = new Set([...Object.values(OCCUPATIONS), ...RULES.map(([, french])
 
 // La traduction, null si ce n'est pas une occupation, undefined si on ne sait pas la traduire
 export function translateOccupation(value: string): string | null | undefined {
-  const key = value.toLowerCase()
+  // « ・Slave », « Legendary Hero Former », « Former Attorney » → sans les puces ni « former »
+  const key = value.toLowerCase().replace(/^[\s・*•-]+/, '').replace(/^former\s+|\s+former$/, '').trim()
   if (key in OCCUPATIONS)
     return OCCUPATIONS[key]
   if (FRENCH.has(key))

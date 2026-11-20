@@ -151,7 +151,12 @@ const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
 const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
 
-export const hairColors = (text: string) => HAIR_COLORS.filter(([pattern]) => pattern.test(text)).map(([, color]) => color)
+// Les couleurs citées, dans l'ordre du texte (« White with blue tips » → Blancs, Bleus)
+export const hairColors = (text: string) => HAIR_COLORS
+  .map(([pattern, color]) => ({ color, index: text.search(pattern) }))
+  .filter(({ index }) => index >= 0)
+  .sort((a, b) => a.index - b.index)
+  .map(({ color }) => color)
 
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.
