@@ -44,7 +44,8 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 - **Anime** : la 1re série TV où le personnage apparaît, titre anglais sinon romaji, sans « Season 2 » ni « (2011) ». Genres, année et studio viennent de cet anime.
 - **Âge** : le 1er nombre donné par AniList (« 17-18 » → 17). Absent pour environ 15 % des personnages.
-- **Occupation** et **cheveux** : AniList n'a pas de champ pour ça. Ils sont tirés de la description quand elle en parle (« Occupation: Teacher », « Hair Color: Black » ou « black hair » dans le texte), soit pour environ 15 % des personnages pour l'occupation et 4 % pour les cheveux. Le reste est à compléter à la main. L'occupation reste en anglais, comme sur AniList.
+- **Sexe** : celui d'AniList, sinon celui des pronoms de la description (« he », « his » ou « she », « her » : au moins un, et deux fois plus que ceux de l'autre sexe). Testé sur les personnages dont on connaît le sexe : 0,8 % d'erreurs.
+- **Occupation** et **cheveux** : AniList n'a pas de champ pour ça. Ils sont tirés de la description quand elle en parle : une ligne « Occupation: Teacher » ou « Hair Color: Black », sinon le texte (« is a young nun » → Nun, « long black hair » → Noirs). L'occupation tirée du texte est moins sûre : à relire. Environ 30 % des personnages de l'Animedle ont une occupation, 4 % des cheveux ; le reste est à compléter à la main. L'occupation reste en anglais, comme sur AniList.
 - **Noms acceptés** : le nom complet dans les deux ordres, les variantes qui contiennent son nom (« Monkey D. Luffy »), et le prénom ou le nom seul s'il n'appartient qu'à un personnage (« Luffy » oui, « Elric » non). Pas les surnoms (« Master », « Zero »...), qui seraient pris pour des propositions dans la discussion.
 
 ### Données Weebdle

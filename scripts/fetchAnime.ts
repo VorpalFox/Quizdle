@@ -80,7 +80,7 @@ const entries = kept.map(character => {
     aliases: aliases(character.name, uniqueParts),
     image: character.image.large,
     attributes: {
-      gender: gender(character.gender),
+      gender: gender(character.gender, character.description),
       age: parseAge(character.age, character.description),
       occupation: parseOccupation(character.description),
       hair: parseHair(character.description),

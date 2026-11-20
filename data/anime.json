@@ -68,7 +68,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Captain"
+   ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
@@ -148,7 +150,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Swordsman"
+   ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
@@ -229,7 +233,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 24,
-   "occupation": null,
+   "occupation": [
+    "Detective"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -337,7 +343,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Mercenary"
+   ],
    "hair": null,
    "anime": "Berserk",
    "genres": [
@@ -383,7 +391,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 1000,
-   "occupation": null,
+   "occupation": [
+    "Mage"
+   ],
    "hair": null,
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -540,7 +550,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Steins;Gate",
    "genres": [
@@ -1009,7 +1021,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 33,
-   "occupation": null,
+   "occupation": [
+    "Commander"
+   ],
    "hair": null,
    "anime": "Vinland Saga",
    "genres": [
@@ -1344,7 +1358,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Chef"
+   ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
@@ -1608,7 +1624,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Pilot"
+   ],
    "hair": null,
    "anime": "DARLING in the FRANXX",
    "genres": [
@@ -1746,7 +1764,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 29,
-   "occupation": null,
+   "occupation": [
+    "Commander"
+   ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
    "genres": [
@@ -2275,7 +2295,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Fate/stay night",
    "genres": [
@@ -2395,33 +2417,6 @@
   }
  },
  {
-  "id": "130050",
-  "name": "Giyuu Tomioka",
-  "aliases": [
-   "Tomioka Giyuu",
-   "冨岡義勇",
-   "Giyuu",
-   "Tomioka"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 19,
-   "occupation": null,
-   "hair": null,
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2019,
-   "studio": "ufotable"
-  }
- },
- {
   "id": "38005",
   "name": "Homura Akemi",
   "aliases": [
@@ -2447,6 +2442,33 @@
    ],
    "year": 2011,
    "studio": "Shaft"
+  }
+ },
+ {
+  "id": "130050",
+  "name": "Giyuu Tomioka",
+  "aliases": [
+   "Tomioka Giyuu",
+   "冨岡義勇",
+   "Giyuu",
+   "Tomioka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": null,
+   "hair": null,
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
   }
  },
  {
@@ -2540,7 +2562,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Horimiya",
    "genres": [
@@ -2647,7 +2671,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Mage"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -2698,7 +2724,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 20,
-   "occupation": null,
+   "occupation": [
+    "Warrior"
+   ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -2780,7 +2808,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 29,
-   "occupation": null,
+   "occupation": [
+    "Officer"
+   ],
    "hair": null,
    "anime": "Neon Genesis Evangelion",
    "genres": [
@@ -2882,7 +2912,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Kaguya-sama: Love is War",
    "genres": [
@@ -3011,7 +3043,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
@@ -3037,7 +3071,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 24,
-   "occupation": null,
+   "occupation": [
+    "Captain"
+   ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
@@ -3145,7 +3181,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Commander"
+   ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
    "genres": [
@@ -3340,34 +3378,6 @@
   }
  },
  {
-  "id": "157115",
-  "name": "Toge Inumaki",
-  "aliases": [
-   "Inumaki Toge",
-   "狗巻棘",
-   "Toge",
-   "Inumaki"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 17,
-   "occupation": [
-    "Sorcerer",
-    "Student"
-   ],
-   "hair": null,
-   "anime": "JUJUTSU KAISEN",
-   "genres": [
-    "Action",
-    "Drame",
-    "Surnaturel"
-   ],
-   "year": 2020,
-   "studio": "MAPPA"
-  }
- },
- {
   "id": "246",
   "name": "Gokuu Son",
   "aliases": [
@@ -3397,6 +3407,34 @@
   }
  },
  {
+  "id": "157115",
+  "name": "Toge Inumaki",
+  "aliases": [
+   "Inumaki Toge",
+   "狗巻棘",
+   "Toge",
+   "Inumaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Sorcerer",
+    "Student"
+   ],
+   "hair": null,
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA"
+  }
+ },
+ {
   "id": "67067",
   "name": "Yukino Yukinoshita",
   "aliases": [
@@ -3409,7 +3447,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
@@ -3432,7 +3472,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Teacher"
+   ],
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
@@ -3782,7 +3824,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -3888,7 +3932,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Mage"
+   ],
    "hair": null,
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -3958,31 +4004,6 @@
   }
  },
  {
-  "id": "121889",
-  "name": "Yumeko Jabami",
-  "aliases": [
-   "Jabami Yumeko",
-   "蛇喰夢子",
-   "Yumeko",
-   "Jabami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "Kakegurui",
-   "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "MAPPA"
-  }
- },
- {
   "id": "718",
   "name": "Kenzou Tenma",
   "aliases": [
@@ -4009,6 +4030,31 @@
    ],
    "year": 2004,
    "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "Kakegurui",
+   "genres": [
+    "Drame",
+    "Mystère",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
   }
  },
  {
@@ -4413,7 +4459,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Goddess"
+   ],
    "hair": null,
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
@@ -4573,7 +4621,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Commander"
+   ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
    "genres": [
@@ -4810,7 +4860,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "King"
+   ],
    "hair": null,
    "anime": "Fate/stay night",
    "genres": [
@@ -4915,7 +4967,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -4965,7 +5019,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Captain"
+   ],
    "hair": null,
    "anime": "Dragon Ball Z",
    "genres": [

@@ -44,7 +44,23 @@ export interface CharacterName {
   alternative: string[]
 }
 
-export const gender = (value: string | null) => value ? GENDERS[value] ?? 'Autre' : null
+const withoutSpoilers = (description: string | null) => (description ?? '').replace(/~!.*?(!~|$)/gs, '')
+const count = (text: string, pattern: RegExp) => (text.match(pattern) ?? []).length
+
+// Le sexe donné par AniList, sinon celui des pronoms de la description : au moins un, et deux fois plus
+// que ceux de l'autre sexe. Testé sur les personnages du Weebdle dont on connaît le sexe : 0,8 % d'erreurs.
+export function gender(value: string | null, description: string | null = null): string | null {
+  if (value)
+    return GENDERS[value] ?? 'Autre'
+  const text = withoutSpoilers(description)
+  const he = count(text, /\b(he|him|his|himself)\b/gi)
+  const she = count(text, /\b(she|her|hers|herself)\b/gi)
+  if (he >= 1 && he >= 2 * she)
+    return 'Homme'
+  if (she >= 1 && she >= 2 * he)
+    return 'Femme'
+  return null
+}
 export const genres = (values: string[]) => values.map(genre => GENRES[genre] ?? genre)
 
 // « JUJUTSU KAISEN Season 2 » → « JUJUTSU KAISEN », « Hunter x Hunter (2011) » → « Hunter x Hunter »
@@ -82,20 +98,41 @@ export function parseAge(age: string | null, description: string | null = null):
 
 const MAX_OCCUPATION_LINE = 100
 
-// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. En anglais, comme AniList : à trier à la main.
+// Métiers courants cherchés dans le texte quand la description n'a pas de ligne « Occupation: »
+const OCCUPATIONS = [
+  'office worker', 'salaryman', 'police officer', 'policeman', 'manga artist', 'mangaka', 'student', 'teacher', 'professor',
+  'doctor', 'nurse', 'scientist', 'researcher', 'lawyer', 'detective', 'reporter', 'journalist', 'writer', 'novelist', 'artist',
+  'idol', 'singer', 'musician', 'actor', 'actress', 'model', 'chef', 'cook', 'maid', 'butler', 'servant', 'merchant', 'shopkeeper',
+  'soldier', 'knight', 'samurai', 'ninja', 'warrior', 'swordsman', 'swordswoman', 'mercenary', 'assassin', 'hunter', 'pilot',
+  'captain', 'commander', 'general', 'lieutenant', 'sergeant', 'officer', 'guard', 'spy', 'thief', 'pirate', 'adventurer',
+  'mage', 'witch', 'wizard', 'sorcerer', 'sorceress', 'priest', 'priestess', 'nun', 'shrine maiden', 'cleric', 'healer', 'archer',
+  'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'lord', 'lady', 'president', 'hero', 'god', 'goddess',
+]
+// « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
+// Pas « a model student » (élève modèle) ni « a lady killer ».
+const OCCUPATION_IN_TEXT = new RegExp(String.raw`\b(?:is|was|works as|worked as|serves as) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+
+// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon le 1er métier courant du texte
+// (« is a young nun » → ["Nun"]), moins sûr : à relire. En anglais, comme AniList : à trier à la main.
 export function parseOccupation(description: string | null): string[] | null {
   const value = descriptionField(description, ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'])
   // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »)
-  if (!value || value.length > MAX_OCCUPATION_LINE)
-    return null
+  if (!value || value.length > MAX_OCCUPATION_LINE) {
+    const found = OCCUPATION_IN_TEXT.exec(withoutSpoilers(description))
+    return found ? [capitalize(found[1]!.toLowerCase())] : null
+  }
   const list = value
     .replace(/~!|!~/g, '')
     .replace(/\s*\([^)]*\)/g, '')
     .split(/\s*(?:,|;|\/|\band\b|\bformerly\b|\bprevious(?:ly)?\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
     .filter(part => part.length > 1 && part.length <= 40)
-    .map(part => part[0]!.toUpperCase() + part.slice(1))
+    .map(capitalize)
   return list.length > 0 ? [...new Set(list)] : null
+}
+
+function capitalize(text: string): string {
+  return text[0]!.toUpperCase() + text.slice(1)
 }
 
 const HAIR_COLORS: [RegExp, string][] = [
@@ -117,7 +154,7 @@ export function parseHair(description: string | null): string[] | null {
   const fromField = field ? hairColors(field) : []
   if (fromField.length > 0)
     return fromField
-  const found = HAIR_IN_TEXT.exec((description ?? '').replace(/~!.*?(!~|$)/gs, ''))
+  const found = HAIR_IN_TEXT.exec(withoutSpoilers(description))
   const fromText = found ? hairColors(found[1]!) : []
   return fromText.length > 0 ? fromText : null
 }
