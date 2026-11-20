@@ -58,7 +58,29 @@ Les personnages des animes conseillés sur le serveur, avec les mêmes indices q
 - **Anime** : l'anime de la liste auquel le personnage est attribué (son titre dans `recommendations.json`, sans « (TV) » ni « (2011) »). Genres, année et studio viennent de cet anime. Âge, occupation, cheveux et noms acceptés comme pour l'Animedle.
 - **Récap** : à la fin, le script affiche et écrit dans `.cache/weebdle/weebdle-recap.md` le nombre de personnages par anime, ceux sans sexe, sans âge, sans occupation ou sans cheveux (à compléter à la main), les personnages présents dans plusieurs animes et les noms partagés par plusieurs personnages.
 
-Attention : relancer le script réécrit `data/weebdle.json`, et donc efface les corrections faites à la main.
+### Corrections à la main (Animedle et Weebdle)
+
+Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les scripts les réécrivent. Les corrections vont dans [data/anime-manual.json](data/anime-manual.json) et [data/weebdle-manual.json](data/weebdle-manual.json), que les scripts appliquent à chaque génération sans jamais les modifier :
+
+```json
+{
+ "exclude": ["307811"],
+ "edit": {
+  "27": { "_nom": "Killua Zoldyck", "hair": ["Blancs"], "occupation": ["Assassin"] },
+  "45627": { "_nom": "Levi", "age": 30 }
+ },
+ "add": [
+  { "id": "manuel-1", "name": "Nom", "aliases": [], "attributes": { "gender": "Homme", "age": 20, "occupation": null, "hair": ["Roux"], "anime": "...", "genres": ["Action"], "year": 2011, "studio": "..." } }
+ ]
+}
+```
+
+- **`exclude`** : les ids des personnages à retirer. Au Weebdle, sa place revient au suivant du tirage ; à l'Animedle, il n'est pas remplacé.
+- **`edit`** : id → champs à remplacer, soit `name`, `aliases` ou `image`, soit un attribut (`gender`, `age`, `occupation`, `hair`, `anime`, `genres`, `year`, `studio`). Les autres champs gardent la valeur d'AniList. Les clés qui commencent par `_` sont ignorées : `_nom` sert juste à s'y retrouver. Au Weebdle, un personnage corrigé est **toujours gardé**, même s'il n'avait pas été tiré : pour ajouter un personnage AniList de la liste, il suffit de le corriger.
+- **`add`** : des personnages complets, absents d'AniList.
+- Les ids sont ceux d'AniList (dans l'URL `anilist.co/character/<id>`, ou dans le récap). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
+- Le tirage du Weebdle est stable : chaque personnage a un rang « au sort » fixe. Retirer ou corriger un personnage ne change que la place concernée, pas le reste de la sélection.
+
 
 ### Données Pixeldle
 

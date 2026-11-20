@@ -7,7 +7,10 @@
 // 3. Garder 4 à 20 personnages par anime (voir select)
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
+import type { Entry } from '../src/engine/types.js'
+import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { applyManual, loadManual } from './manual.js'
 
 const MAX_PER_ANIME = 20
 const MIN_PER_ANIME = 4
@@ -130,12 +133,20 @@ const releasedBefore = (a: Anime, b: Anime) => {
   return 0
 }
 
+// Corrections à la main : les personnages retirés ne sont jamais tirés (leur place revient au suivant),
+// les personnages corrigés sont toujours gardés
+const manual = await loadManual(new URL('data/weebdle-manual.json', root))
+const excludedIds = new Set(manual.exclude)
+const editedIds = new Set(Object.keys(manual.edit))
+const cachedIds = new Set(animes.flatMap(anime => anime.cast.map(({ character }) => String(character.id))))
+const unknownExcluded = manual.exclude.filter(id => !cachedIds.has(id))
+
 // Tous les animes de la liste où apparaît chaque personnage (principal ou secondaire)
 const appearances = new Map<number, { anime: Anime, role: Role, character: Character }[]>()
 for (const anime of animes) {
   anime.cast = anime.cast
     .map(({ role, character }) => ({ role, character: { ...character, name: cleanName(character.name) } }))
-    .filter(({ character }) => !NOT_CHARACTERS.has(normalize(character.name.full)))
+    .filter(({ character }) => !NOT_CHARACTERS.has(normalize(character.name.full)) && !excludedIds.has(String(character.id)))
   for (const { role, character } of anime.cast) {
     if (role !== 'BACKGROUND')
       appearances.set(character.id, [...appearances.get(character.id) ?? [], { anime, role, character }])
@@ -176,23 +187,17 @@ for (const anime of animes) {
 
 // --- 3. Choisir 4 à 20 personnages par anime ---
 
-// Tirage reproductible : même graine (l'id AniList de l'anime) → mêmes personnages
-function mulberry32(seed: number): () => number {
-  return () => {
-    seed = (seed + 0x6D2B79F5) | 0
-    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
-  }
+// Tirage reproductible et stable : chaque personnage a un rang « au sort » fixe, tiré de l'id de l'anime et du sien.
+// Retirer un personnage ne rebat donc pas les cartes : seule sa place change de main.
+function drawRank(seed: number, id: number): number {
+  let t = (Math.imul(seed, 0x9E3779B1) ^ Math.imul(id, 0x85EBCA77)) + 0x6D2B79F5 | 0
+  t = Math.imul(t ^ (t >>> 15), 1 | t)
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296
 }
 
-function shuffle<T>(items: T[], random: () => number): T[] {
-  const result = [...items]
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [result[i], result[j]] = [result[j]!, result[i]!]
-  }
-  return result
+function draw(items: Candidate[], seed: number): Candidate[] {
+  return items.toSorted((a, b) => drawRank(seed, a.character.id) - drawRank(seed, b.character.id))
 }
 
 const byPopularity = (a: Candidate, b: Candidate) => b.character.favourites - a.character.favourites || a.character.id - b.character.id
@@ -202,16 +207,23 @@ const hasInfo = ({ character: { age, description } }: Candidate) =>
   parseAge(age, description) !== null || parseOccupation(description) !== null || parseHair(description) !== null
 
 // `slots` personnages parmi `pool` (trié par popularité) : moitié les plus populaires, moitié au sort parmi les autres
-function mix(pool: Candidate[], slots: number, random: () => number, popularityOnly: boolean): Candidate[] {
+function mix(pool: Candidate[], slots: number, seed: number, popularityOnly: boolean): Candidate[] {
   if (slots >= pool.length)
     return pool
   if (popularityOnly)
     return pool.slice(0, slots)
   const popular = Math.ceil(slots / 2)
-  return [...pool.slice(0, popular), ...shuffle(pool.slice(popular), random).slice(0, slots - popular)]
+  return [...pool.slice(0, popular), ...draw(pool.slice(popular), seed).slice(0, slots - popular)]
 }
 
+// Les personnages corrigés à la main sont toujours gardés : ils prennent la place des derniers du tirage
 function select(anime: Anime, candidates: Candidate[]): Candidate[] {
+  const pinned = candidates.filter(({ character }) => editedIds.has(String(character.id)))
+  const drawn = selectWithoutPinned(anime, candidates).filter(candidate => !pinned.includes(candidate))
+  return [...pinned, ...drawn].slice(0, Math.max(MAX_PER_ANIME, pinned.length)).toSorted(byRoleThenPopularity)
+}
+
+function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[] {
   const sorted = candidates.toSorted(byRoleThenPopularity)
   if (sorted.length <= MAX_PER_ANIME)
     return sorted
@@ -224,14 +236,14 @@ function select(anime: Anime, candidates: Candidate[]): Candidate[] {
   if (pool.length <= MAX_PER_ANIME)
     return pool
 
-  const random = mulberry32(anime.rec.anilistId)
+  const seed = anime.rec.anilistId
   const mains = pool.filter(({ role }) => role === 'MAIN').toSorted(byPopularity)
   const supporting = pool.filter(({ role }) => role !== 'MAIN').toSorted(byPopularity)
   const chosenMains = mains.length < TOP_MAINS
     ? mains
-    : [...mains.slice(0, TOP_MAINS), ...mix(mains.slice(TOP_MAINS), MAX_MAINS - TOP_MAINS, random, false)]
+    : [...mains.slice(0, TOP_MAINS), ...mix(mains.slice(TOP_MAINS), MAX_MAINS - TOP_MAINS, seed, false)]
   const slots = MAX_PER_ANIME - chosenMains.length
-  const chosen = [...chosenMains, ...mix(supporting, slots, random, slots < MIN_SLOTS_FOR_RANDOM)]
+  const chosen = [...chosenMains, ...mix(supporting, slots, seed, slots < MIN_SLOTS_FOR_RANDOM)]
 
   // Pas assez de secondaires : on complète avec les principaux restants
   const leftovers = pool.filter(candidate => !chosen.includes(candidate))
@@ -243,7 +255,7 @@ const selections = animes.map(anime => ({ anime, chosen: select(anime, assigned.
 // --- Écriture ---
 
 const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.name)))
-const entries = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
+const generated: Entry[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
   id: String(character.id),
   name: character.name.full,
   aliases: aliases(character.name, uniqueParts),
@@ -259,6 +271,8 @@ const entries = selections.flatMap(({ anime, chosen }) => chosen.map(({ characte
     studio: anime.media.studios.nodes[0]?.name ?? null,
   },
 })))
+const { entries, warnings } = applyManual(generated, manual, characterAttributes.map(({ key }) => key))
+warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
@@ -267,6 +281,9 @@ await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, n
 const lines: string[] = [`# Récap du Weebdle : ${entries.length} personnages, ${selections.length} animes`, '']
 if (failed.length > 0)
   lines.push(`## Animes pas récupérés (${failed.length})`, ...failed.map(text => `- ${text}`), '')
+lines.push(`Corrections (data/weebdle-manual.json) : ${manual.exclude.length} retirés, ${editedIds.size} corrigés, ${manual.add.length} ajoutés`, '')
+if (warnings.length > 0)
+  lines.push(`## ⚠️ Corrections qui ne collent pas (${warnings.length})`, ...warnings.map(text => `- ${text}`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')
 for (const { anime, chosen, total } of selections) {
@@ -290,7 +307,7 @@ lines.push(`## Personnages dans plusieurs animes de la liste (${keptDuplicates.l
 // Noms ou alias partagés par plusieurs personnages : la recherche prendra le premier
 const owners = new Map<string, Set<string>>()
 for (const entry of entries) {
-  for (const key of new Set([entry.name, ...entry.aliases].map(normalize)))
+  for (const key of new Set([entry.name, ...entry.aliases ?? []].map(normalize)))
     owners.set(key, (owners.get(key) ?? new Set()).add(`${entry.name} (${entry.attributes.anime})`))
 }
 const ambiguous = [...owners].filter(([key, names]) => key && names.size > 1)

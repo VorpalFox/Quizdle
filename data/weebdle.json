@@ -2580,7 +2580,6 @@
   "aliases": [
    "Amifumi Inko",
    "網文韻子",
-   "Inko",
    "Amifumi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88442-loOLjc2QKZKO.png",
@@ -5755,7 +5754,8 @@
   "name": "Akira Hattori",
   "aliases": [
    "Hattori Akira",
-   "服部哲"
+   "服部哲",
+   "Hattori"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18914-JY7zOgWjFmdL.png",
   "attributes": {
@@ -5850,17 +5850,18 @@
   }
  },
  {
-  "id": "23485",
-  "name": "Yujiro Hattori",
+  "id": "23682",
+  "name": "Aiko Iwase",
   "aliases": [
-   "Hattori Yujiro",
-   "服部雄二郎",
-   "Yujiro"
+   "Iwase Aiko",
+   "Akina Aiko",
+   "岩瀬愛子",
+   "Iwase"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23485-8skseqqIg7yO.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23682-kpjKKo9HRBA0.png",
   "attributes": {
-   "gender": "Homme",
-   "age": 27,
+   "gender": "Femme",
+   "age": 15,
    "occupation": null,
    "hair": null,
    "anime": "Bakuman.",
@@ -8309,6 +8310,7 @@
   "aliases": [
    "Tokizane Shinichirou",
    "敦時真慎一郎",
+   "Shinichirou",
    "Tokizane"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42666.jpg",
@@ -8492,8 +8494,7 @@
   "aliases": [
    "Bachira Meguru",
    "蜂楽廻",
-   "Meguru",
-   "Bachira"
+   "Meguru"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
   "attributes": {
@@ -8779,31 +8780,6 @@
   }
  },
  {
-  "id": "169405",
-  "name": "Anri Teieri",
-  "aliases": [
-   "Teieri Anri",
-   "帝襟アンリ",
-   "Anri",
-   "Teieri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169405-RFVC95ooQp13.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 22,
-   "occupation": null,
-   "hair": null,
-   "anime": "BLUE LOCK",
-   "genres": [
-    "Action",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2022,
-   "studio": "8-bit"
-  }
- },
- {
   "id": "187524",
   "name": "Tabito Karasu",
   "aliases": [
@@ -8816,83 +8792,6 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
-   "anime": "BLUE LOCK",
-   "genres": [
-    "Action",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2022,
-   "studio": "8-bit"
-  }
- },
- {
-  "id": "191409",
-  "name": "Kenyu Yukimiya",
-  "aliases": [
-   "Yukimiya Kenyu",
-   "雪宮剣優",
-   "Kenyu",
-   "Yukimiya"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191409-qU7sRhVmpgRQ.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Forward",
-    "Winger"
-   ],
-   "hair": null,
-   "anime": "BLUE LOCK",
-   "genres": [
-    "Action",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2022,
-   "studio": "8-bit"
-  }
- },
- {
-  "id": "169403",
-  "name": "Ikki Niko",
-  "aliases": [
-   "Niko Ikki",
-   "二子一揮",
-   "Niko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169403-x8h2FGUA5eya.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 15,
-   "occupation": null,
-   "hair": null,
-   "anime": "BLUE LOCK",
-   "genres": [
-    "Action",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2022,
-   "studio": "8-bit"
-  }
- },
- {
-  "id": "169406",
-  "name": "Zantetsu Tsurugi",
-  "aliases": [
-   "Tsurugi Zantetsu",
-   "剣城斬鉄",
-   "Zantetsu",
-   "Tsurugi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169406-wTagOOkC7fi5.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 17,
    "occupation": null,
    "hair": null,
    "anime": "BLUE LOCK",
@@ -8955,15 +8854,111 @@
   }
  },
  {
+  "id": "300812",
+  "name": "Pablo Cabassos",
+  "aliases": [
+   "Cabassos Pablo",
+   "Pablo Cavasoz",
+   "パブロ・カバソス",
+   "Pablo",
+   "Cabassos"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300812-68JTZiSqi5Jp.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 23,
+   "occupation": null,
+   "hair": null,
+   "anime": "BLUE LOCK",
+   "genres": [
+    "Action",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2022,
+   "studio": "8-bit"
+  }
+ },
+ {
+  "id": "299060",
+  "name": "Yuu Bachira",
+  "aliases": [
+   "Bachira Yuu",
+   "蜂楽優"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b299060-O5zirBDDRc6a.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 37,
+   "occupation": null,
+   "hair": null,
+   "anime": "BLUE LOCK",
+   "genres": [
+    "Action",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2022,
+   "studio": "8-bit"
+  }
+ },
+ {
+  "id": "169393",
+  "name": "Yudai Imamura",
+  "aliases": [
+   "Imamura Yudai",
+   "今村遊大",
+   "Yudai",
+   "Imamura"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169393-v2sZMcol9gtH.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": null,
+   "hair": null,
+   "anime": "BLUE LOCK",
+   "genres": [
+    "Action",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2022,
+   "studio": "8-bit"
+  }
+ },
+ {
   "id": "284964",
   "name": "Junichi Wanima",
   "aliases": [
    "Wanima Junichi",
    "鰐間淳壱",
-   "Junichi",
-   "Wanima"
+   "Junichi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284964-uVJVSIAr2cB3.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": null,
+   "hair": null,
+   "anime": "BLUE LOCK",
+   "genres": [
+    "Action",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2022,
+   "studio": "8-bit"
+  }
+ },
+ {
+  "id": "284965",
+  "name": "Keisuke Wanima",
+  "aliases": [
+   "Wanima Keisuke",
+   "鰐間計助"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284965-93igj5yBKpDO.jpg",
   "attributes": {
    "gender": "Homme",
    "age": 18,
@@ -9730,7 +9725,8 @@
   "name": "Kouichi Ishizaki",
   "aliases": [
    "Ishizaki Kouichi",
-   "石崎浩一"
+   "石崎浩一",
+   "Ishizaki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162787-XbJotvjuQibL.png",
   "attributes": {
@@ -10355,6 +10351,7 @@
   "aliases": [
    "Kondou Isamu",
    "近藤勇",
+   "Isamu",
    "Kondou"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84461.jpg",
@@ -12366,7 +12363,8 @@
   "name": "Ikki Kurogane",
   "aliases": [
    "Kurogane Ikki",
-   "黒鉄一輝"
+   "黒鉄一輝",
+   "Ikki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88265-2MlVZH85EPpR.png",
   "attributes": {
@@ -13080,20 +13078,65 @@
   }
  },
  {
-  "id": "191508",
-  "name": "Chie Hoshinomiya",
+  "id": "207025",
+  "name": "Ken Sudou",
   "aliases": [
-   "Hoshinomiya Chie",
-   "星之宮知恵",
-   "Chie",
-   "Hoshinomiya"
+   "Sudou Ken",
+   "須藤健",
+   "Ken"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191508-GekReas1uAlI.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207025-gpnIy6ewtfVu.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "Classroom of the Elite",
+   "genres": [
+    "Drame",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "273647",
+  "name": "Albert Yamada",
+  "aliases": [
+   "Yamada Albert",
+   "山田アルベルト",
+   "Albert"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b273647-DByKPQyQaeOw.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "Classroom of the Elite",
+   "genres": [
+    "Drame",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "191507",
+  "name": "Masumi Kamuro",
+  "aliases": [
+   "Kamuro Masumi",
+   "神室真澄",
+   "Masumi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191507-YIt6i1p7GIXU.png",
   "attributes": {
    "gender": "Femme",
-   "age": 29,
+   "age": 16,
    "occupation": [
-    "Teacher"
+    "Student"
    ],
    "hair": null,
    "anime": "Classroom of the Elite",
@@ -13106,18 +13149,20 @@
   }
  },
  {
-  "id": "282225",
-  "name": "Mako Amikura",
+  "id": "207026",
+  "name": "Kouhei Katsuragi",
   "aliases": [
-   "Amikura Mako",
-   "網倉麻子",
-   "Amikura"
+   "Katsuragi Kouhei",
+   "葛城康平",
+   "Katsuragi"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282225-3y4GoPaEnklz.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207026-M98kkCZdkIfP.png",
   "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": null,
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Classroom of the Elite",
    "genres": [
@@ -13155,89 +13200,45 @@
   }
  },
  {
-  "id": "191506",
-  "name": "Satsuki Shinohara",
+  "id": "273648",
+  "name": "Yahiko Totsuka",
   "aliases": [
-   "Shinohara Satsuki",
-   "篠原さつき"
+   "Totsuka Yahiko",
+   "戸塚弥彦",
+   "Yahiko",
+   "Totsuka"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191506-4eKgEo4z62Cz.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": null,
-   "hair": null,
-   "anime": "Classroom of the Elite",
-   "genres": [
-    "Drame",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "Lerche"
-  }
- },
- {
-  "id": "282230",
-  "name": "Daichi Ishizaki",
-  "aliases": [
-   "Ishizaki Daichi",
-   "石崎大地",
-   "Daichi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282230-AhTZ1ajQYoV2.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b273648-bb7WViiKWiDb.jpg",
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
-   "anime": "Classroom of the Elite",
-   "genres": [
-    "Drame",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "Lerche"
-  }
- },
- {
-  "id": "284289",
-  "name": "Chihiro Shiranami",
-  "aliases": [
-   "Shiranami Chihiro",
-   "白波千尋",
-   "Shiranami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284289-HXcgPYmSzIXr.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": null,
-   "hair": null,
-   "anime": "Classroom of the Elite",
-   "genres": [
-    "Drame",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "Lerche"
-  }
- },
- {
-  "id": "207028",
-  "name": "Tomonari Mashima",
-  "aliases": [
-   "Mashima Tomonari",
-   "真嶋智也",
-   "Tomonari",
-   "Mashima"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207028-UARWe5XOhSj1.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
    "occupation": [
-    "Teacher"
+    "Student"
    ],
+   "hair": null,
+   "anime": "Classroom of the Elite",
+   "genres": [
+    "Drame",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "284288",
+  "name": "Hideo Sotomura",
+  "aliases": [
+   "Sotomura Hideo",
+   "外村秀雄",
+   "Hideo",
+   "Sotomura"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284288-Nu0hmRlKkFFi.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": null,
    "hair": null,
    "anime": "Classroom of the Elite",
    "genres": [
@@ -13282,7 +13283,6 @@
   "aliases": [
    "Stadtfeld Kallen",
    "カレン・シュタットフェルト",
-   "Kallen",
    "Stadtfeld"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b558-8tSMZ4a0LWrn.jpg",
@@ -13574,45 +13574,20 @@
   }
  },
  {
-  "id": "1710",
-  "name": "Schneizel el Britannia",
+  "id": "11166",
+  "name": "Xingke Li",
   "aliases": [
-   "Britannia el Schneizel",
-   "シュナイゼル・エル・ブリタニア",
-   "Schneizel"
+   "Li Xingke",
+   "黎星刻",
+   "Xingke"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1710-GA8qDtSsY4jN.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11166-FLEJh0viRLwm.png",
   "attributes": {
    "gender": "Homme",
-   "age": 27,
+   "age": null,
    "occupation": [
-    "Prince"
+    "Pilot"
    ],
-   "hair": null,
-   "anime": "Code Geass: Lelouch of the Rebellion",
-   "genres": [
-    "Action",
-    "Drame",
-    "Mecha",
-    "Science-fiction",
-    "Thriller"
-   ],
-   "year": 2006,
-   "studio": "Sunrise"
-  }
- },
- {
-  "id": "1865",
-  "name": "Kaguya Sumeragi",
-  "aliases": [
-   "Sumeragi Kaguya",
-   "皇神楽耶"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/1865-14xoLeBKilHb.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 14,
-   "occupation": null,
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
@@ -13736,16 +13711,17 @@
   }
  },
  {
-  "id": "1125",
-  "name": "Shinichirou Tamaki",
+  "id": "1129",
+  "name": "Marianne vi Britannia",
   "aliases": [
-   "Tamaki Shinichirou",
-   "玉城真一郎"
+   "Britannia vi Marianne",
+   "マリアンヌ・ヴィ・ブリタニア",
+   "Marianne"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1125-cAd8eOWmcuuo.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/1129.jpg",
   "attributes": {
-   "gender": "Homme",
-   "age": 24,
+   "gender": "Femme",
+   "age": 30,
    "occupation": null,
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
@@ -13761,20 +13737,46 @@
   }
  },
  {
-  "id": "25812",
-  "name": "Odysseus eu Britannia",
+  "id": "48471",
+  "name": "Kallen no Haha",
   "aliases": [
-   "Britannia eu Odysseus",
-   "オデュッセウス・ウ・ブリタニア",
-   "Odysseus"
+   "Haha no Kallen",
+   "カレンの母"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/25812.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/48471.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Femme",
    "age": null,
    "occupation": [
-    "Prince"
+    "Maid"
    ],
+   "hair": null,
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "1116",
+  "name": "Andreas Darlton",
+  "aliases": [
+   "Darlton Andreas",
+   "アンドレアス・ダールトン",
+   "Andreas",
+   "Darlton"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1116-D3NpQEn8FLon.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 47,
+   "occupation": null,
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
@@ -14592,7 +14594,8 @@
   "aliases": [
    "Hagakure Yasuhiro",
    "葉隠康比呂",
-   "Yasuhiro"
+   "Yasuhiro",
+   "Hagakure"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65533-TTk8RyEQaoSe.jpg",
   "attributes": {
@@ -15275,8 +15278,7 @@
   "name": "Kaname Sudou",
   "aliases": [
    "Sudou Kaname",
-   "須藤要",
-   "Sudou"
+   "須藤要"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87219-MTH9EllXD115.png",
   "attributes": {
@@ -15865,8 +15867,7 @@
   "name": "Teru Mikami",
   "aliases": [
    "Mikami Teru",
-   "魅上照",
-   "Mikami"
+   "魅上照"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n1904-xKw2NgiE6VbU.jpg",
   "attributes": {
@@ -16067,17 +16068,17 @@
   }
  },
  {
-  "id": "17555",
-  "name": "Hirokazu Ukita",
+  "id": "3766",
+  "name": "Kanzo Mogi",
   "aliases": [
-   "Ukita Hirokazu",
-   "宇生田広数",
-   "Ukita"
+   "Mogi Kanzo",
+   "模木完造",
+   "Kanzo"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n17555-bRedmqb33U5T.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3766-xMCG0Vajfe2z.png",
   "attributes": {
    "gender": "Homme",
-   "age": 26,
+   "age": 30,
    "occupation": null,
    "hair": null,
    "anime": "Death Note",
@@ -16092,20 +16093,43 @@
   }
  },
  {
-  "id": "84507",
-  "name": "Takeshi Ooi",
+  "id": "20002",
+  "name": "Hideki Ide",
   "aliases": [
-   "Ooi Takeshi",
-   "尾々井剛",
-   "Ooi"
+   "Ide Hideki",
+   "伊出英基",
+   "Ide"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/84507.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20002-9GCrfzo30BDk.png",
   "attributes": {
    "gender": "Homme",
-   "age": 43,
-   "occupation": [
-    "President"
+   "age": 34,
+   "occupation": null,
+   "hair": null,
+   "anime": "Death Note",
+   "genres": [
+    "Mystère",
+    "Psychologique",
+    "Surnaturel",
+    "Thriller"
    ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "17555",
+  "name": "Hirokazu Ukita",
+  "aliases": [
+   "Ukita Hirokazu",
+   "宇生田広数",
+   "Ukita"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n17555-bRedmqb33U5T.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 26,
+   "occupation": null,
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -16201,46 +16225,17 @@
   }
  },
  {
-  "id": "30939",
-  "name": "Hitoshi Demegawa",
+  "id": "5174",
+  "name": "Shingo Midou",
   "aliases": [
-   "Demegawa Hitoshi",
-   "出目川仁",
-   "Hitoshi",
-   "Demegawa"
+   "Midou Shingo",
+   "三堂芯吾"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n30939-jGDDNVx9KUAY.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n5174-cYFDgXOjy3Ms.png",
   "attributes": {
    "gender": "Homme",
-   "age": 38,
+   "age": 32,
    "occupation": null,
-   "hair": null,
-   "anime": "Death Note",
-   "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
-    "Thriller"
-   ],
-   "year": 2006,
-   "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "84505",
-  "name": "Eiichi Takahashi",
-  "aliases": [
-   "Takahashi Eiichi",
-   "鷹橋鋭",
-   "Eiichi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/84505.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "President"
-   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -17078,21 +17073,19 @@
   }
  },
  {
-  "id": "129132",
-  "name": "Muzan Kibutsuji",
+  "id": "137778",
+  "name": "Gyoumei Himejima",
   "aliases": [
-   "Kibutsuji Muzan",
-   "鬼舞辻無惨",
-   "Muzan",
-   "Kibutsuji"
+   "Himejima Gyoumei",
+   "悲鳴嶼行冥",
+   "Gyoumei",
+   "Himejima"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129132-4nIZakUZ1o8W.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137778-H4Uzb9cSCvZ6.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": 1000,
-   "occupation": [
-    "King"
-   ],
+   "age": 27,
+   "occupation": null,
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -17134,30 +17127,6 @@
   }
  },
  {
-  "id": "138846",
-  "name": "Yushirou",
-  "aliases": [
-   "愈史郎"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138846-i8frJEl8baly.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 35,
-   "occupation": null,
-   "hair": null,
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2019,
-   "studio": "ufotable"
-  }
- },
- {
   "id": "137808",
   "name": "Kagaya Ubuyashiki",
   "aliases": [
@@ -17183,14 +17152,14 @@
   }
  },
  {
-  "id": "145286",
-  "name": "Naho Takada",
+  "id": "145287",
+  "name": "Kiyo Terauchi",
   "aliases": [
-   "Takada Naho",
-   "高田なほ",
-   "Naho"
+   "Terauchi Kiyo",
+   "寺内きよ",
+   "Kiyo"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145286-dWQZ9VB0DlHv.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145287-XMoG5upMikFs.jpg",
   "attributes": {
    "gender": "Femme",
    "age": null,
@@ -17276,6 +17245,30 @@
   "attributes": {
    "gender": "Homme",
    "age": 8,
+   "occupation": null,
+   "hair": null,
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "207949",
+  "name": "Gotou",
+  "aliases": [
+   "後藤"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207949-ZteimhlyO7EX.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 23,
    "occupation": null,
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
@@ -21908,16 +21901,20 @@
   }
  },
  {
-  "id": "650",
-  "name": "Lust",
+  "id": "15532",
+  "name": "May Chang",
   "aliases": [
-   "Lust the Lascivious",
-   "ラスト"
+   "Chang May",
+   "Mei Chang",
+   "Princess Chang",
+   "メイ・チャン",
+   "May",
+   "Chang"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b650-viEy6bOIcGiU.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/15532.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": 250,
+   "age": 11,
    "occupation": null,
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -21970,6 +21967,30 @@
   "attributes": {
    "gender": "Femme",
    "age": 5,
+   "occupation": null,
+   "hair": null,
+   "anime": "Fullmetal Alchemist: Brotherhood",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2009,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "5411",
+  "name": "Gluttony",
+  "aliases": [
+   "Gluttony the Voracious",
+   "グラトニー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/5411.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 160,
    "occupation": null,
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -22039,59 +22060,6 @@
   }
  },
  {
-  "id": "17103",
-  "name": "Rebecca Catalina",
-  "aliases": [
-   "Catalina Rebecca",
-   "レベッカ・カタリナ",
-   "Rebecca",
-   "Catalina"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/17103.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Soldier"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist: Brotherhood",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2009,
-   "studio": "bones"
-  }
- },
- {
-  "id": "145723",
-  "name": "Joi",
-  "aliases": [
-   "女医"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145723-s5gCNd1pGnT2.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Doctor"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist: Brotherhood",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2009,
-   "studio": "bones"
-  }
- },
- {
   "id": "39241",
   "name": "Raven",
   "aliases": [
@@ -22123,6 +22091,31 @@
    "チャーリー"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n50123-2kInS5rwOuM7.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Soldier"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist: Brotherhood",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2009,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "52739",
+  "name": "Damiano",
+  "aliases": [
+   "ダミアノ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n52739-CVU3CZq0UBx7.png",
   "attributes": {
    "gender": "Homme",
    "age": null,
@@ -22589,6 +22582,7 @@
   "aliases": [
    "Boa Nol Gaston",
    "ガストン・ノル・ボァ",
+   "Gaston",
    "Nol",
    "Boa"
   ],
@@ -26266,17 +26260,20 @@
   }
  },
  {
-  "id": "29805",
-  "name": "Ikalgo",
+  "id": "29806",
+  "name": "Morel Mackernasey",
   "aliases": [
-   "イカルゴ"
+   "Mackernasey Morel",
+   "モラウ=マッカーナーシ",
+   "Morel",
+   "Mackernasey"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/29805-YicEgIbxmSkv.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b29806-49vvaQbvx7Ag.jpg",
   "attributes": {
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Officer"
+    "Hunter"
    ],
    "hair": null,
    "anime": "Hunter x Hunter",
@@ -26312,15 +26309,12 @@
   }
  },
  {
-  "id": "55071",
-  "name": "Pariston Hill",
+  "id": "82925",
+  "name": "Knov",
   "aliases": [
-   "Hill Pariston",
-   "パリストン゠ヒル",
-   "Pariston",
-   "Hill"
+   "ノヴ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55071-rUsNSPYGF7Y5.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/82925.jpg",
   "attributes": {
    "gender": "Homme",
    "age": null,
@@ -26363,14 +26357,36 @@
   }
  },
  {
-  "id": "29807",
-  "name": "Shoot McMahon",
+  "id": "84077",
+  "name": "Koala",
   "aliases": [
-   "McMahon Shoot",
-   "シュート＝マクマホン",
-   "Shoot"
+   "コアラ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/29807.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/84077.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Soldier"
+   ],
+   "hair": null,
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2011,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "33285",
+  "name": "Tsezguerra",
+  "aliases": [
+   "ツェズゲラ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b33285-n1K7KaTFVj5D.png",
   "attributes": {
    "gender": "Homme",
    "age": null,
@@ -26389,41 +26405,17 @@
   }
  },
  {
-  "id": "172921",
-  "name": "Amane",
+  "id": "50847",
+  "name": "Buhara",
   "aliases": [
-   "アマネ"
+   "ブハラ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172921-rgObppgA4trX.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b50847-XGj2qeYWkvIK.jpg",
   "attributes": {
    "gender": null,
    "age": null,
    "occupation": [
-    "Servant"
-   ],
-   "hair": null,
-   "anime": "Hunter x Hunter",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2011,
-   "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "83377",
-  "name": "Peggy",
-  "aliases": [
-   "ペギー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/83377.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Officer"
+    "Hunter"
    ],
    "hair": null,
    "anime": "Hunter x Hunter",
@@ -27571,8 +27563,7 @@
   "aliases": [
    "Mogi Natsuki",
    "Natalie Mogi",
-   "茂木なつき",
-   "Mogi"
+   "茂木なつき"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17255-FyQe48duTmEW.png",
   "attributes": {
@@ -27618,7 +27609,6 @@
   "aliases": [
    "Shouji Shingo",
    "庄司真吾",
-   "Shingo",
    "Shouji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b32008-DwmzYlJXLIsT.png",
@@ -28207,6 +28197,32 @@
   }
  },
  {
+  "id": "143047",
+  "name": "Anya Fromel",
+  "aliases": [
+   "Fromel Anya",
+   "アーニャ・フローメル",
+   "Fromel"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143047-S8aXD2FNKiPW.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 22,
+   "occupation": null,
+   "hair": null,
+   "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy",
+    "Romance"
+   ],
+   "year": 2015,
+   "studio": "J.C.STAFF"
+  }
+ },
+ {
   "id": "142536",
   "name": "Ottarl",
   "aliases": [
@@ -28245,32 +28261,6 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy",
-    "Romance"
-   ],
-   "year": 2015,
-   "studio": "J.C.STAFF"
-  }
- },
- {
-  "id": "143052",
-  "name": "Chloe Rollo",
-  "aliases": [
-   "Rollo Chloe",
-   "クロエ・ロロ",
-   "Rollo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143052-in6jAkYQPFoT.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 21,
    "occupation": null,
    "hair": null,
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
@@ -28339,19 +28329,21 @@
   }
  },
  {
-  "id": "122203",
-  "name": "Lunoire Faust",
+  "id": "142542",
+  "name": "Gareth Landrock",
   "aliases": [
-   "Faust Lunoire",
-   "ルノア・ファウスト",
-   "Lunoire",
-   "Faust"
+   "Landrock Gareth",
+   "ガレス・ランドロック",
+   "Gareth",
+   "Landrock"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122203-Ghj2Dau1YeHx.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b142542-spZGwjtiqBEy.png",
   "attributes": {
-   "gender": "Femme",
-   "age": 22,
-   "occupation": null,
+   "gender": "Homme",
+   "age": 56,
+   "occupation": [
+    "Adventurer"
+   ],
    "hair": null,
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
@@ -28366,18 +28358,18 @@
   }
  },
  {
-  "id": "122206",
-  "name": "Mia Grand",
+  "id": "122200",
+  "name": "Mord Latro",
   "aliases": [
-   "Grand Mia",
-   "Mama Mia",
-   "ミア・グランド",
-   "Grand"
+   "Latro Mord",
+   "モルド・ラトロー",
+   "Mord",
+   "Latro"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122206-7YEjlbz0KnjP.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/122200-F51vOIWgcAQh.jpg",
   "attributes": {
-   "gender": "Femme",
-   "age": 55,
+   "gender": "Homme",
+   "age": 35,
    "occupation": null,
    "hair": null,
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
@@ -29301,7 +29293,8 @@
   "aliases": [
    "Shinomiya Kaguya",
    "Mistress Kaguya",
-   "四宮かぐや"
+   "四宮かぐや",
+   "Kaguya"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120649-NPaWaIpWy60E.png",
   "attributes": {
@@ -30142,7 +30135,8 @@
   "aliases": [
    "Kiryuuin Satsuki",
    "Satsuki Kiryuin",
-   "鬼龍院皐月"
+   "鬼龍院皐月",
+   "Satsuki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83799-oPxSwMA9XAvu.png",
   "attributes": {
@@ -31922,7 +31916,8 @@
   "aliases": [
    "Saluja Alibaba",
    "アリババ・サルージャ",
-   "Alibaba"
+   "Alibaba",
+   "Saluja"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b42501-BKURFIipvE1C.png",
   "attributes": {
@@ -32178,15 +32173,41 @@
   }
  },
  {
-  "id": "54601",
-  "name": "Hinahoho",
+  "id": "46825",
+  "name": "Hakuei Ren",
   "aliases": [
-   "ヒナホホ"
+   "Ren Hakuei",
+   "練白瑛",
+   "Hakuei"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54601-APSxkbTVC4U8.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/46825.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 21,
+   "occupation": [
+    "General"
+   ],
+   "hair": null,
+   "anime": "Magi: The Labyrinth of Magic",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2012,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "46821",
+  "name": "Cassim",
+  "aliases": [
+   "カシム"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46821-ITItsfBDM4xS.png",
   "attributes": {
    "gender": "Homme",
-   "age": 35,
+   "age": 18,
    "occupation": null,
    "hair": null,
    "anime": "Magi: The Labyrinth of Magic",
@@ -32209,28 +32230,6 @@
   "attributes": {
    "gender": "Homme",
    "age": 29,
-   "occupation": null,
-   "hair": null,
-   "anime": "Magi: The Labyrinth of Magic",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2012,
-   "studio": "A-1 Pictures"
-  }
- },
- {
-  "id": "54595",
-  "name": "Pisti",
-  "aliases": [
-   "ピスティ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54595.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 18,
    "occupation": null,
    "hair": null,
    "anime": "Magi: The Labyrinth of Magic",
@@ -32269,39 +32268,17 @@
   }
  },
  {
-  "id": "54619",
-  "name": "Toya",
-  "aliases": [],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54619.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": [
-    "Bruns"
-   ],
-   "anime": "Magi: The Labyrinth of Magic",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2012,
-   "studio": "A-1 Pictures"
-  }
- },
- {
-  "id": "54579",
-  "name": "Koubun Ka",
+  "id": "54581",
+  "name": "Seisyun Ri",
   "aliases": [
-   "Ka Koubun",
-   "夏黄文",
-   "Koubun"
+   "Ri Seisyun",
+   "李青舜",
+   "Seisyun"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54579.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54581.jpg",
   "attributes": {
-   "gender": "Femme",
-   "age": 25,
+   "gender": "Homme",
+   "age": 17,
    "occupation": null,
    "hair": null,
    "anime": "Magi: The Labyrinth of Magic",
@@ -32315,17 +32292,42 @@
   }
  },
  {
-  "id": "54585",
-  "name": "Abhmad Saluja",
+  "id": "54625",
+  "name": "Leila",
   "aliases": [
-   "Saluja Abhmad",
-   "Abhmad"
+   "ライラ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54585.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/54625.jpg",
   "attributes": {
    "gender": null,
-   "age": 25,
-   "occupation": null,
+   "age": null,
+   "occupation": [
+    "Merchant"
+   ],
+   "hair": null,
+   "anime": "Magi: The Labyrinth of Magic",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2012,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "65121",
+  "name": "Barkak",
+  "aliases": [
+   "生の俵"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/65121.jpg",
+  "attributes": {
+   "gender": null,
+   "age": null,
+   "occupation": [
+    "General"
+   ],
    "hair": null,
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
@@ -33725,8 +33727,7 @@
   "name": "Shinji Kamuro",
   "aliases": [
    "Kamuro Shinji",
-   "神室真司",
-   "Kamuro"
+   "神室真司"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133381-RV0pRdJ00pfM.jpg",
   "attributes": {
@@ -34346,8 +34347,7 @@
    "Midoriya Izuku",
    "Young Midoriya",
    "緑谷出久",
-   "Izuku",
-   "Midoriya"
+   "Izuku"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
   "attributes": {
@@ -34618,18 +34618,18 @@
   }
  },
  {
-  "id": "89895",
-  "name": "Hanta Sero",
+  "id": "127427",
+  "name": "Nemuri Kayama",
   "aliases": [
-   "Sero Hanta",
-   "瀬呂範太",
-   "Hanta",
-   "Sero"
+   "Kayama Nemuri",
+   "香山睡",
+   "Nemuri",
+   "Kayama"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89895-DpFrgTelc9Qx.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127427-urv42J2E7TZ2.png",
   "attributes": {
-   "gender": "Homme",
-   "age": 15,
+   "gender": "Femme",
+   "age": 31,
    "occupation": [
     "Hero"
    ],
@@ -34645,18 +34645,21 @@
   }
  },
  {
-  "id": "121529",
-  "name": "Yuu Takeyama",
+  "id": "125956",
+  "name": "All For One",
   "aliases": [
-   "Takeyama Yuu",
-   "岳山優"
+   "One For All",
+   "オール・フォー・ワン",
+   "All",
+   "For",
+   "One"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121529-Uu4aQdOP4G98.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/125956-jzhb8Z4peLb8.jpg",
   "attributes": {
-   "gender": "Femme",
-   "age": 22,
+   "gender": "Homme",
+   "age": null,
    "occupation": [
-    "Pro Hero"
+    "Villain"
    ],
    "hair": null,
    "anime": "My Hero Academia",
@@ -34670,17 +34673,20 @@
   }
  },
  {
-  "id": "89900",
-  "name": "Tooru Hagakure",
+  "id": "127425",
+  "name": "Hizashi Yamada",
   "aliases": [
-   "Hagakure Tooru",
-   "葉隠透"
+   "Yamada Hizashi",
+   "山田ひざし",
+   "Hizashi"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89900-QOH8tvJgtFVj.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127425-POL7I9NC4emH.png",
   "attributes": {
-   "gender": "Femme",
-   "age": 15,
-   "occupation": null,
+   "gender": "Homme",
+   "age": 30,
+   "occupation": [
+    "Teacher"
+   ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
@@ -34720,13 +34726,18 @@
   }
  },
  {
-  "id": "143542",
-  "name": "Thirteen",
-  "aliases": [],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143542-nZhQB2X6w1Cl.png",
+  "id": "89896",
+  "name": "Mashirao Ojiro",
+  "aliases": [
+   "Ojiro Mashirao",
+   "尾白猿夫",
+   "Mashirao",
+   "Ojiro"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89896-3QzT5nSEPjcr.png",
   "attributes": {
-   "gender": null,
-   "age": 28,
+   "gender": "Homme",
+   "age": 15,
    "occupation": null,
    "hair": null,
    "anime": "My Hero Academia",
@@ -34740,15 +34751,35 @@
   }
  },
  {
-  "id": "191597",
-  "name": "Higari Maijima",
+  "id": "136897",
+  "name": "Inko Midoriya",
   "aliases": [
-   "Maijima Higari",
-   "埋島干狩",
-   "Higari",
-   "Maijima"
+   "Midoriya Inko",
+   "绿谷引子"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191597-3okHoV3FlDsb.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136897-PGSMkwM1Nh4r.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 41,
+   "occupation": null,
+   "hair": null,
+   "anime": "My Hero Academia",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "191596",
+  "name": "Snipe",
+  "aliases": [
+   "スナイプ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191596-DnTHoaO7huTU.jpg",
   "attributes": {
    "gender": "Homme",
    "age": null,
@@ -34767,46 +34798,21 @@
   }
  },
  {
-  "id": "148747",
-  "name": "Daruma Ujiko",
+  "id": "129758",
+  "name": "Shinji Nishiya",
   "aliases": [
-   "Ujiko Daruma",
-   "氏子達磨",
-   "Daruma",
-   "Ujiko"
+   "Nishiya Shinji",
+   "西屋森児",
+   "Nishiya"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148747-8pzci7WGBjgN.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129758-Za9Rd3Jw2rWU.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Servant"
+   "age": 27,
+   "occupation": null,
+   "hair": [
+    "Rouges"
    ],
-   "hair": null,
-   "anime": "My Hero Academia",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie"
-   ],
-   "year": 2016,
-   "studio": "bones"
-  }
- },
- {
-  "id": "149187",
-  "name": "Desutegoro",
-  "aliases": [
-   "デステゴロ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b149187-KovqtsbG8ffN.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Hero"
-   ],
-   "hair": null,
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -35876,8 +35882,7 @@
   "name": "Kouhei Izumi",
   "aliases": [
    "Izumi Kouhei",
-   "和泉公平",
-   "Kouhei"
+   "和泉公平"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/126210-oYAj62ObbOYC.jpg",
   "attributes": {
@@ -36179,44 +36184,20 @@
   }
  },
  {
-  "id": "137661",
-  "name": "Isamu",
+  "id": "156126",
+  "name": "Chougoukin Kurobikari",
   "aliases": [
-   "イサム"
+   "Kurobikari Chougoukin",
+   "超合金クロビカリ",
+   "Chougoukin",
+   "Kurobikari"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137661-G30CrZkCLAWx.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156126-QQpzi77vVx45.png",
   "attributes": {
    "gender": "Homme",
-   "age": 10,
+   "age": 27,
    "occupation": [
     "Superhero"
-   ],
-   "hair": null,
-   "anime": "One-Punch Man",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
-   ],
-   "year": 2015,
-   "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "158071",
-  "name": "Lin Lin",
-  "aliases": [
-   "Lin Lin",
-   "リンリン",
-   "Lin"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158071-WfuwmSg8dESF.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Artist"
    ],
    "hair": null,
    "anime": "One-Punch Man",
@@ -36256,16 +36237,18 @@
   }
  },
  {
-  "id": "86039",
-  "name": "Banehige",
+  "id": "8841",
+  "name": "Butagami",
   "aliases": [
-   "バネヒゲ"
+   "豚神"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b86039-W1oBy3Ma0yuk.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b8841-sm1m2mVez5IE.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": 47,
-   "occupation": null,
+   "age": null,
+   "occupation": [
+    "Superhero"
+   ],
    "hair": null,
    "anime": "One-Punch Man",
    "genres": [
@@ -36279,16 +36262,72 @@
   }
  },
  {
-  "id": "86035",
-  "name": "Max",
+  "id": "81933",
+  "name": "Bofoi",
   "aliases": [
-   "Lightning Max",
-   "マックス"
+   "Bofoi Hakase (ボフォイ博士)",
+   "Dr. Bofoi",
+   "ボフォイ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b86035-7qVYP8GdGirt.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/81933.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": 21,
+   "age": null,
+   "occupation": [
+    "Superhero"
+   ],
+   "hair": null,
+   "anime": "One-Punch Man",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 2015,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "156125",
+  "name": "Tanktop Master",
+  "aliases": [
+   "Master Tanktop",
+   "タンクトップマスター",
+   "Tanktop",
+   "Master"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156125-xkTuQF1zpOuw.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Superhero"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "One-Punch Man",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 2015,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "165855",
+  "name": "Iaian",
+  "aliases": [
+   "イアイアン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165855-0YK8GfxwyOg3.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 33,
    "occupation": null,
    "hair": null,
    "anime": "One-Punch Man",
@@ -36332,44 +36371,17 @@
   }
  },
  {
-  "id": "208321",
-  "name": "Fukegao",
+  "id": "137876",
+  "name": "Sitch",
   "aliases": [
-   "フケガオ"
+   "シッチ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208321-EIr2oZDRXdYT.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137876-DqyrUJOrwEU0.jpg",
   "attributes": {
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Scientist"
-   ],
-   "hair": null,
-   "anime": "One-Punch Man",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
-   ],
-   "year": 2015,
-   "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "326812",
-  "name": "Chitei Ou",
-  "aliases": [
-   "Ou Chitei",
-   "地底王",
-   "Chitei"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326812-E8ki8WiKK1Nq.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "King"
+    "Officer"
    ],
    "hair": null,
    "anime": "One-Punch Man",
@@ -39429,8 +39441,7 @@
   "aliases": [
    "Midou Masatake",
    "御堂将剛",
-   "Masatake",
-   "Midou"
+   "Masatake"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n73347-YyVGUK40UfFa.png",
   "attributes": {
@@ -41713,6 +41724,35 @@
   }
  },
  {
+  "id": "124115",
+  "name": "Rachins Hoffman",
+  "aliases": [
+   "Hoffman Rachins",
+   "ラチンス・ホフマン",
+   "Rachins",
+   "Hoffman"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124115-AlzT5EbLBWbt.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 23,
+   "occupation": null,
+   "hair": null,
+   "anime": "Re:ZERO -Starting Life in Another World-",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Psychologique",
+    "Romance",
+    "Thriller"
+   ],
+   "year": 2016,
+   "studio": "WHITE FOX"
+  }
+ },
+ {
   "id": "205261",
   "name": "Kan",
   "aliases": [
@@ -41739,48 +41779,22 @@
   }
  },
  {
-  "id": "205262",
-  "name": "Gaston",
+  "id": "218202",
+  "name": "Bordeaux Zellgef",
   "aliases": [
-   "ガストン"
+   "Zellgef Bordeaux",
+   "ボルドー・ツェルゲフ",
+   "Bordeaux",
+   "Zellgef"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205262-4QkNpvgw0svU.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b218202-zCXaFinepDRV.png",
   "attributes": {
-   "gender": null,
-   "age": 26,
-   "occupation": null,
-   "hair": null,
-   "anime": "Re:ZERO -Starting Life in Another World-",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Psychologique",
-    "Romance",
-    "Thriller"
-   ],
-   "year": 2016,
-   "studio": "WHITE FOX"
-  }
- },
- {
-  "id": "185044",
-  "name": "Ketty Muttart",
-  "aliases": [
-   "Muttart Ketty",
-   "ケティ・ムッタート",
-   "Ketty",
-   "Muttart"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b185044-9Ofs1dFdTP27.jpg",
-  "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
-   "occupation": [
-    "Merchant"
+   "occupation": null,
+   "hair": [
+    "Bleus"
    ],
-   "hair": null,
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -41801,7 +41815,8 @@
   "aliases": [
    "McMahon Miklotov",
    "マイクロトフ・マクマホン",
-   "Miklotov"
+   "Miklotov",
+   "McMahon"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b354519-0RCQ84r7RIh7.png",
   "attributes": {
@@ -44261,8 +44276,7 @@
   "aliases": [
    "Terauchi Takuya",
    "寺内タクヤ",
-   "Takuya",
-   "Terauchi"
+   "Takuya"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138853-GPETvwndMX3c.jpg",
   "attributes": {
@@ -45589,8 +45603,7 @@
    "Anya Roche",
    "Anya Klein",
    "Princess Anya",
-   "アーニャ・フォージャー",
-   "Anya"
+   "アーニャ・フォージャー"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
   "attributes": {
@@ -48180,6 +48193,7 @@
    "Aubert Chloe",
    "Chloe O’Bell",
    "クロエ・オベール",
+   "Chloe",
    "Aubert"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b132760-RnM24QiV5pHJ.jpg",
@@ -51956,16 +51970,18 @@
   }
  },
  {
-  "id": "131567",
-  "name": "Gustav",
+  "id": "131912",
+  "name": "Twigo",
   "aliases": [
-   "グスタフ"
+   "ツイーゴ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131567-WZU3Lc8wkKDp.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131912-KbRBxNWdVwW1.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": 21,
-   "occupation": null,
+   "age": null,
+   "occupation": [
+    "Knight"
+   ],
    "hair": null,
    "anime": "The Seven Deadly Sins",
    "genres": [
@@ -51981,14 +51997,14 @@
   }
  },
  {
-  "id": "131912",
-  "name": "Twigo",
+  "id": "131564",
+  "name": "Vivian",
   "aliases": [
-   "ツイーゴ"
+   "ビビアン"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131912-KbRBxNWdVwW1.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131564-ZXykjCxYfwgL.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Femme",
    "age": null,
    "occupation": [
     "Knight"
@@ -57710,7 +57726,8 @@
   "name": "Chika Amatori",
   "aliases": [
    "Amatori Chika",
-   "雨取千佳"
+   "雨取千佳",
+   "Amatori"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89227-0ZGxGJbsapB5.png",
   "attributes": {
@@ -57913,14 +57930,40 @@
   }
  },
  {
-  "id": "179798",
-  "name": "Yousuke Yoneya",
+  "id": "155806",
+  "name": "Shiori Usami",
   "aliases": [
-   "Yoneya Yousuke",
-   "米屋陽介",
-   "Yoneya"
+   "Usami Shiori",
+   "宇佐美栞",
+   "Usami"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179798-lB9WtHNpOnnL.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155806-2nz9dv5V9uUD.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Student"
+   ],
+   "hair": null,
+   "anime": "World Trigger",
+   "genres": [
+    "Action",
+    "Science-fiction"
+   ],
+   "year": 2014,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "155813",
+  "name": "Shuuji Miwa",
+  "aliases": [
+   "Miwa Shuuji",
+   "三輪秀次",
+   "Shuuji",
+   "Miwa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155813-g4zWrHMpbOyw.png",
   "attributes": {
    "gender": "Homme",
    "age": 17,
@@ -57960,14 +58003,14 @@
   }
  },
  {
-  "id": "213237",
-  "name": "Ken Satori",
+  "id": "179790",
+  "name": "Mitsuru Tokieda",
   "aliases": [
-   "Satori Ken",
-   "佐鳥賢",
-   "Ken"
+   "Tokieda Mitsuru",
+   "時枝充",
+   "Tokieda"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b213237-IxYbvrb0Ff3t.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179790-HBubu8limnk3.jpg",
   "attributes": {
    "gender": "Homme",
    "age": 16,
@@ -57983,16 +58026,16 @@
   }
  },
  {
-  "id": "179776",
-  "name": "Hikari Nire",
+  "id": "179771",
+  "name": "Tooru Narasaka",
   "aliases": [
-   "Nire Hikari",
-   "仁礼光",
-   "Nire"
+   "Narasaka Tooru",
+   "奈良坂透",
+   "Narasaka"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179776-jZMC9rXdlcqV.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179771-CfAzvewKh1Po.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Homme",
    "age": 17,
    "occupation": null,
    "hair": null,
@@ -58006,16 +58049,17 @@
   }
  },
  {
-  "id": "179793",
-  "name": "Ren Tsukimi",
+  "id": "179764",
+  "name": "Kaho Mikami",
   "aliases": [
-   "Tsukimi Ren",
-   "月見蓮"
+   "Mikami Kaho",
+   "三上歌歩 ",
+   "Kaho"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179793-LlzFxfyLcpRC.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179764-5Hil4FLfqzYG.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": 19,
+   "age": 16,
    "occupation": null,
    "hair": null,
    "anime": "World Trigger",
@@ -58028,20 +58072,18 @@
   }
  },
  {
-  "id": "179755",
-  "name": "Yuka Kon",
+  "id": "179782",
+  "name": "Kyouko Sawamura",
   "aliases": [
-   "Kon Yuka",
-   "今結花 ",
-   "Yuka"
+   "Sawamura Kyouko",
+   "沢村響子",
+   "Sawamura"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179755-W10wbwxhFmf0.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179782-3zEpVRrfwG26.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": 18,
-   "occupation": [
-    "Cook"
-   ],
+   "age": 25,
+   "occupation": null,
    "hair": null,
    "anime": "World Trigger",
    "genres": [
@@ -58053,47 +58095,21 @@
   }
  },
  {
-  "id": "179800",
-  "name": "Takeru Yuiga",
+  "id": "179795",
+  "name": "Ryou Utagawa",
   "aliases": [
-   "Yuiga Takeru",
-   "唯我尊",
-   "Takeru",
-   "Yuiga"
+   "Utagawa Ryou",
+   "歌川遼",
+   "Utagawa"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179800-GFa2FdWTsUYH.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179795-hmirGtGMBoTC.jpg",
   "attributes": {
    "gender": "Homme",
    "age": 16,
    "occupation": null,
    "hair": [
-    "Noirs"
+    "Bruns"
    ],
-   "anime": "World Trigger",
-   "genres": [
-    "Action",
-    "Science-fiction"
-   ],
-   "year": 2014,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "179732",
-  "name": "Rinji Amatori",
-  "aliases": [
-   "Amatori Rinji",
-   "雨取麟児",
-   "Rinji"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179732-KRQDyZHA3qFU.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 20,
-   "occupation": [
-    "Student"
-   ],
-   "hair": null,
    "anime": "World Trigger",
    "genres": [
     "Action",
@@ -58391,7 +58407,8 @@
   "aliases": [
    "Tsukimi Eiko",
    "月見英子",
-   "Eiko"
+   "Eiko",
+   "Tsukimi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b256379-iQtDQh1FZUkJ.jpg",
   "attributes": {

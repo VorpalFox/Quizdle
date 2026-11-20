@@ -4691,32 +4691,6 @@
   }
  },
  {
-  "id": "65865",
-  "name": "Rikka Takanashi",
-  "aliases": [
-   "Takanashi Rikka",
-   "小鳥遊六花",
-   "Rikka",
-   "Takanashi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65865-AC0ru7cDXUgK.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 15,
-   "occupation": null,
-   "hair": null,
-   "anime": "Love, Chunibyo & Other Delusions",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 2012,
-   "studio": "Kyoto Animation"
-  }
- },
- {
   "id": "121956",
   "name": "Shouko Komi",
   "aliases": [
@@ -4742,6 +4716,32 @@
    ],
    "year": 2021,
    "studio": "OLM"
+  }
+ },
+ {
+  "id": "65865",
+  "name": "Rikka Takanashi",
+  "aliases": [
+   "Takanashi Rikka",
+   "小鳥遊六花",
+   "Rikka",
+   "Takanashi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65865-AC0ru7cDXUgK.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Love, Chunibyo & Other Delusions",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2012,
+   "studio": "Kyoto Animation"
   }
  },
  {

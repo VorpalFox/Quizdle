@@ -45,7 +45,7 @@ Noms : le nom français s'il existe (label `fr`), sinon l'anglais. Noms accepté
 
 ## Le fichier écrit à la main
 
-`data/pixeldle-manual.json`, à créer. Le script le **fusionne** avec ce qu'il récupère :
+`data/pixeldle-manual.json`, à créer. Le script le **fusionne** avec ce qu'il récupère. [scripts/manual.ts](scripts/manual.ts) le fait déjà pour l'Animedle et le Weebdle (`exclude`, `edit`, `add`, voir le README) : le réutiliser.
 
 - il ajoute des personnages que Wikidata n'a pas (les avatars, voir plus bas, et les oublis) ;
 - il complète ou corrige des champs d'un personnage récupéré (même `id`) : un âge, une espèce, un nom mal traduit ;

@@ -1,7 +1,13 @@
 // Génère data/anime.json (personnages de l'Animedle) depuis AniList. Usage : npm run fetch:anime -- [nombre de personnages, 200 par défaut]
 // On prend les personnages les plus mis en favoris : ceux que les fans connaissent.
 import { writeFile } from 'node:fs/promises'
+import type { Entry } from '../src/engine/types.js'
+import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { applyManual, loadManual } from './manual.js'
+
+// Corrections à la main (data/anime-manual.json) : un personnage retiré n'est pas remplacé
+const manual = await loadManual(new URL('../data/anime-manual.json', import.meta.url))
 
 const count = Number(process.argv[2] ?? 200)
 const PER_PAGE = 25
@@ -72,7 +78,7 @@ for (let page = 1; characters.length < count; page++) {
 const kept = characters.slice(0, count).filter(character => mainAnime(character))
 const uniqueParts = uniqueNameParts(kept.map(character => character.name))
 
-const entries = kept.map(character => {
+const generated: Entry[] = kept.map(character => {
   const anime = mainAnime(character)!
   return {
     id: String(character.id),
@@ -91,9 +97,15 @@ const entries = kept.map(character => {
     },
   }
 })
+const { entries, warnings } = applyManual(generated, manual, characterAttributes.map(({ key }) => key))
+const keptIds = new Set(kept.map(character => String(character.id)))
+warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))
 
 await writeFile(new URL('../data/anime.json', import.meta.url), `${JSON.stringify(entries, null, 1)}\n`)
 console.log(`\n${entries.length} personnages écrits dans data/anime.json`)
+console.log(`Corrections (data/anime-manual.json) : ${manual.exclude.length} retirés, ${Object.keys(manual.edit).length} corrigés, ${manual.add.length} ajoutés`)
+for (const warning of warnings)
+  console.log(`⚠️ ${warning}`)
 // Ce qui manque, à compléter à la main
 for (const [label, key] of [['sexe', 'gender'], ['âge', 'age'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
   const missing = entries.filter(entry => entry.attributes[key] === null)
