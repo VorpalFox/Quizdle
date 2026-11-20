@@ -16,17 +16,30 @@ Le TODO du Weebdle ([TODO-Weebdle.md](TODO-Weebdle.md)) suit la même logique : 
 
 ## Attributs
 
-Proposés dans [src/subjects/pixeldle/index.ts](src/subjects/pixeldle/index.ts). Ils peuvent changer si la recherche montre que d'autres sont plus pertinents ou mieux renseignés.
+Choisis après un sondage de Wikidata (voir plus bas) : 5 sur le personnage, 4 sur son 1er jeu. Définis dans [src/subjects/pixeldle/index.ts](src/subjects/pixeldle/index.ts). Si l'un d'eux s'avère trop peu rempli une fois les données là, on l'enlève.
 
-| Clé | Indice | Type | Source Wikidata | Remarque |
-|---|---|---|---|---|
-| `gender` | Sexe | exact | P21 | Homme / Femme / Autre / Au choix (avatar personnalisable) |
-| `species` | Espèce | exact | P31 du personnage | À ramener à une petite liste : Humain, Animal, Robot / IA, Alien, Monstre, Créature, Divinité... Wikidata mélange vraies espèces et catégories (« personnage de cinéma ») : les ignorer |
-| `franchise` | Franchise | exact | celle du fichier de franchises | Le titre de [data/pixeldle-franchises.json](data/pixeldle-franchises.json) |
-| `year` | 1re apparition | number | P4584 (1re apparition) puis P577 (date) | Sinon la date du 1er jeu de la franchise où il apparaît |
-| `developer` | Développeur | exact | P178 du 1er jeu | Garder un seul studio, le principal |
-| `genres` | Genres | set | P136 du 1er jeu | À ramener à une quinzaine de genres simples en français (Plates-formes, RPG, Action-aventure, Combat, FPS, Survie, Stratégie...) |
-| `platform` | Plateforme | exact | P400 du 1er jeu | Wikidata liste tous les portages : garder la plateforme d'origine, ramenée à une famille (Nintendo, PlayStation, Xbox, PC, Sega, Arcade, Mobile) |
+| Clé | Indice | Type | Source Wikidata | Rempli* | Remarque |
+|---|---|---|---|---|---|
+| `gender` | Sexe | exact | P21 | 35 % | Homme / Femme / Autre / Au choix (avatar personnalisable). Beaucoup à compléter à la main |
+| `species` | Espèce | exact | P31 du personnage | ~98 % | À ramener à une petite liste : Humain, Animal, Robot / IA, Alien, Monstre, Créature, Divinité... Wikidata mélange vraies espèces (Hylien, Koopa) et catégories (« personnage de jeu vidéo », « personnage de Mario ») : ignorer les catégories |
+| `nationality` | Nationalité | exact | P27 | 12 % | Pays réel ou monde de fiction (États-Unis, Hyrule, Royaume Champignon). Garder la plus spécifique (Mario : Royaume Champignon plutôt qu'États-Unis) |
+| `occupation` | Occupation | set | P106 | 17 % | Valeurs très éclatées (plombier, épéiste, ingénieur, chasseur de monstre) : à regrouper en une vingtaine de métiers simples |
+| `hair` | Cheveux | set | P1884 | 5 % | « cheveux bruns » → Bruns. « Chauve » pour les crânes rasés (Kratos), « — » pour les créatures sans cheveux |
+| `franchise` | Franchise | exact | celle du fichier de franchises | 100 % | Le titre de [data/pixeldle-franchises.json](data/pixeldle-franchises.json) |
+| `developer` | Développeur | exact | P178 du 1er jeu | 90 % | Garder un seul studio, le principal (Donkey Kong : Nintendo, pas ses 3 entrées) |
+| `genres` | Genres | set | P136 du 1er jeu | 91 % | À ramener à une quinzaine de genres simples en français (Plates-formes, RPG, Action-aventure, Combat, FPS, TPS, Horreur, Survie, Stratégie...) |
+| `year` | 1re apparition | number | P577 du 1er jeu | 95 % | 1er jeu : P4584 (1re apparition, 35 % des personnages), sinon le plus ancien des jeux où il apparaît (P1441 / P674) |
+
+\* Sur 1 421 personnages et 191 jeux de 16 franchises (Mario, Zelda, Final Fantasy, Street Fighter, Resident Evil, The Witcher, Persona, Dark Souls, Fallout, Undertale, Control, Dead Space, Life Is Strange, Subnautica, BioShock, Portal), sondage du 19/11/2026.
+
+### Ce qu'a montré le sondage
+
+- **Les infos de jeu sont bien remplies, pas celles des personnages** : date, développeur, genre, plateforme et pays d'origine sont au-dessus de 88 % sur les jeux. Sur les personnages, seule P31 l'est ; nationalité, occupation et cheveux seront surtout à compléter à la main.
+- **« Présent dans l'œuvre » (P1441) ramène aussi des non-personnages** : sur Mario, Zelda et Final Fantasy, 130 niveaux, 93 lieux, des objets, des pays. Ne garder que les éléments dont P31 est (une sous-classe de) personnage de fiction (Q95074), ou une espèce de fiction.
+- **Les petits jeux n'ont souvent aucun personnage** (Firewatch, SOMA : 0 ; Dead Space : 4) : ils passeront par `data/pixeldle-manual.json`.
+- **Le nombre de jeux reliés est incomplet** (Link n'est relié qu'à 1 jeu par P1441) : ne pas s'en servir seul pour décider qui est « principal ».
+- **Les requêtes SPARQL lourdes expirent** (502, timeout) : récupérer d'abord les jeux d'une série (`?jeu wdt:P179 <série>`), puis leurs personnages avec `VALUES ?jeu { ... }`, franchise par franchise, plutôt qu'une union avec `BIND`. L'API `w/api.php` limite après quelques requêtes.
+- **Écartés** : plateforme (portages tous listés, origine difficile à déduire), éditeur (redondant avec le développeur), pays d'origine du jeu, PEGI, mode de jeu, compositeur, lieu de l'action, rôle (héros / méchant, 5 % rempli), créateur, nombre de jeux, popularité. Pays d'origine (88 %) et PEGI (48 %, en ⬆️⬇️) sont les meilleurs remplaçants si un attribut est retiré.
 
 Noms : le nom français s'il existe (label `fr`), sinon l'anglais. Noms acceptés (`aliases`) : l'autre langue, les alias Wikidata qui contiennent son nom, et le prénom ou le nom seul s'il n'appartient qu'à un personnage. Pas les surnoms trop courants (même règle que l'Animedle). Image : P18 si présente (souvent absente pour les personnages sous copyright, ce n'est pas grave).
 
@@ -38,7 +51,7 @@ Noms : le nom français s'il existe (label `fr`), sinon l'anglais. Noms accepté
 - il complète ou corrige des champs d'un personnage récupéré (même `id`) : un âge, une espèce, un nom mal traduit ;
 - il est versionné, et le script ne l'écrase jamais.
 
-Pour un personnage ajouté à la main, on ne renseigne que ce que Wikidata ne peut pas savoir (nom, alias, sexe, espèce, franchise) : le script calcule le reste à partir du jeu (année, développeur, genres, plateforme).
+Pour un personnage ajouté à la main, on renseigne ce qui concerne le personnage (nom, alias, sexe, espèce, nationalité, occupation, cheveux, franchise, et son 1er jeu) : le script calcule le reste à partir du jeu (développeur, genres, année).
 
 ## Récupération
 

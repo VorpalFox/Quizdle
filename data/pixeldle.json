@@ -6,11 +6,13 @@
   "attributes": {
    "gender": "Autre",
    "species": "Humain",
+   "nationality": "Pays Factice",
+   "occupation": ["Aventurier"],
+   "hair": ["Bruns"],
    "franchise": "Franchise Factice",
-   "year": 2000,
    "developer": "Studio Factice",
    "genres": ["Plates-formes", "Aventure"],
-   "platform": "PlayStation"
+   "year": 2000
   }
  }
 ]

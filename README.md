@@ -61,7 +61,7 @@ Attention : relancer le script réécrit `data/weebdle.json`, et donc efface les
 
 ### Données Pixeldle
 
-Les personnages de jeu vidéo, tirés de [Wikidata](https://www.wikidata.org) : sexe, espèce, franchise, et les infos de leur 1er jeu (année, développeur, genres, plateforme). La liste des franchises de départ est dans [data/pixeldle-franchises.json](data/pixeldle-franchises.json). Pour l'instant, [data/pixeldle.json](data/pixeldle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO-Pixeldle.md](TODO-Pixeldle.md).
+Les personnages de jeu vidéo, tirés de [Wikidata](https://www.wikidata.org) : sexe, espèce, nationalité, occupation, couleur des cheveux, et les infos de leur 1er jeu (franchise, développeur, genres, année). La liste des franchises de départ est dans [data/pixeldle-franchises.json](data/pixeldle-franchises.json). Pour l'instant, [data/pixeldle.json](data/pixeldle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO-Pixeldle.md](TODO-Pixeldle.md).
 
 ## Installation
 
