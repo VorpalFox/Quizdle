@@ -18,12 +18,16 @@ export const characterAttributes: readonly AttributeDef[] = [
   { key: 'studio', label: 'Studio', kind: 'exact' },
 ]
 
+// À l'Animedle, l'anime est l'univers du perso, la 1re série de sa franchise (JoJo plutôt que Diamond is Unbreakable).
+// Même clé « anime » : les corrections à la main ne changent pas.
+const animedleAttributes = characterAttributes.map(attribute => attribute.key === 'anime' ? { ...attribute, label: 'Univers' } : attribute)
+
 // Personnages d'anime : données générées depuis AniList par npm run fetch:anime
 export const anime: Subject = {
   // l'id sert aussi de nom de commande : /quiz animedle
   id: 'animedle',
   name: 'Animedle',
   description: 'Trouve le personnage d\'anime mystère',
-  attributes: characterAttributes,
-  entries: loadEntries('anime.json', { subjectId: 'animedle', attributes: characterAttributes }),
+  attributes: animedleAttributes,
+  entries: loadEntries('anime.json', { subjectId: 'animedle', attributes: animedleAttributes }),
 }
