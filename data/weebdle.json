@@ -15691,7 +15691,8 @@
   "aliases": [
    "Katsura Keiichi",
    "カツラケーイチ",
-   "Keiichi"
+   "Keiichi",
+   "Katsura"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145134-CDz9dklwt9hX.jpg",
   "attributes": {
@@ -16980,7 +16981,8 @@
   "aliases": [
    "Kanroji Mitsuri",
    "甘露寺蜜璃",
-   "Mitsuri"
+   "Mitsuri",
+   "Kanroji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136072-xVwyRUKdpybi.png",
   "attributes": {
@@ -17380,7 +17382,8 @@
   "name": "Miki Kuroda",
   "aliases": [
    "Kuroda Miki",
-   "黒田ミキ"
+   "黒田ミキ",
+   "Kuroda"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7971-mjwR42qPcQ5N.jpg",
   "attributes": {
@@ -39036,6 +39039,7 @@
   "aliases": [
    "Shimazaki Setsuna",
    "シマザキセツナ",
+   "Setsuna",
    "Shimazaki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126973-VPlc6LeOLVsG.png",
@@ -40415,7 +40419,8 @@
   "aliases": [
    "Saionji Kyouichi",
    "西園寺莢一",
-   "Kyouichi"
+   "Kyouichi",
+   "Saionji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b755-sUeKFWK8MrQ1.jpg",
   "attributes": {
@@ -41369,246 +41374,6 @@
    ],
    "year": 2017,
    "studio": "NUT"
-  }
- },
- {
-  "id": "3359",
-  "name": "Kotonoha Katsura",
-  "aliases": [
-   "Katsura Kotonoha",
-   "桂言葉",
-   "Kotonoha"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/3359.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 15,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "3360",
-  "name": "Sekai Saionji",
-  "aliases": [
-   "Saionji Sekai",
-   "西園寺世界",
-   "Sekai"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/3360.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 15,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "3358",
-  "name": "Makoto Itou",
-  "aliases": [
-   "Itou Makoto",
-   "伊藤誠"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3358-tQvnbNiByQHH.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "3380",
-  "name": "Setsuna Kiyoura",
-  "aliases": [
-   "Kiyoura Setsuna",
-   "清浦刹那",
-   "Kiyoura"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/3380.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "4085",
-  "name": "Otome Katou",
-  "aliases": [
-   "Katou Otome",
-   "加藤乙女",
-   "Otome",
-   "Katou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4085.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "5166",
-  "name": "Kokoro Katsura",
-  "aliases": [
-   "Katsura Kokoro",
-   "桂心"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/5166.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 11,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "4084",
-  "name": "Hikari Kuroda",
-  "aliases": [
-   "Kuroda Hikari",
-   "黒田光"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4084.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Élève"
-   ],
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "4086",
-  "name": "Nanami Kanroji",
-  "aliases": [
-   "Kanroji Nanami",
-   "甘露寺七海"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4086.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "5275",
-  "name": "Taisuke Sawanaga",
-  "aliases": [
-   "Sawanaga Taisuke",
-   "澤永泰介",
-   "Taisuke",
-   "Sawanaga"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5275-bu0hkzpZPy06.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
-  }
- },
- {
-  "id": "8628",
-  "name": "Minami Obuchi",
-  "aliases": [
-   "Obuchi Minami",
-   "小渕みなみ",
-   "Obuchi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b8628-H1d6dHZjMGyA.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "School Days",
-   "genres": [
-    "Drame",
-    "Psychologique",
-    "Romance"
-   ],
-   "year": 2007,
-   "studio": "TNK"
   }
  },
  {
