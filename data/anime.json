@@ -107,7 +107,9 @@
    "occupation": [
     "Tueur"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -197,7 +199,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -220,7 +224,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Noble",
+    "Leader"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -278,7 +285,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Serveur",
+    "Détective",
+    "Roi",
+    "Peacekeeper"
+   ],
    "hair": null,
    "anime": "Tokyo Ghoul",
    "genres": [
@@ -638,7 +651,8 @@
     "Élève"
    ],
    "hair": [
-    "Roses"
+    "Blonds",
+    "Noirs"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
@@ -663,7 +677,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Actrice",
+    "Mannequin",
+    "Policier",
+    "Chanteur"
+   ],
    "hair": null,
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
@@ -719,7 +739,9 @@
     "Garde du corps",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -1008,7 +1030,9 @@
     "Sorcier",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -1210,10 +1234,13 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
+    "Héros professionnel",
     "Élève",
-    "Super-héros"
+    "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -1237,7 +1264,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 22,
-   "occupation": null,
+   "occupation": [
+    "Détective",
+    "Mafieux"
+   ],
    "hair": null,
    "anime": "Bungo Stray Dogs",
    "genres": [
@@ -1331,7 +1361,11 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Chômeur"
+    "Élève",
+    "Majordome",
+    "Chevalier",
+    "Religieux",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -1362,8 +1396,15 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève",
+    "Food critic",
+    "Professeur"
+   ],
+   "hair": [
+    "Rouges",
+    "Roses"
+   ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
     "Comédie",
@@ -1385,7 +1426,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "anime": "DARLING in the FRANXX",
    "genres": [
@@ -1414,7 +1457,9 @@
    "gender": "Homme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Classroom of the Elite",
    "genres": [
     "Drame",
@@ -1437,8 +1482,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 11,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur"
+   ],
+   "hair": [
+    "Verts",
+    "Noirs"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -1462,14 +1512,13 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Élève",
     "Scientifique",
-    "Inventeur",
-    "Astronome",
-    "Astronaute",
-    "Ingénieur"
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs",
+    "Verts"
+   ],
    "anime": "Dr. STONE",
    "genres": [
     "Action",
@@ -1727,8 +1776,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns",
+    "Violets"
+   ],
    "anime": "Bakemonogatari",
    "genres": [
     "Comédie",
@@ -1755,7 +1809,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Chasseur de démons",
+    "Wild Fiend"
+   ],
    "hair": null,
    "anime": "Chainsaw Man",
    "genres": [
@@ -1843,7 +1900,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -1874,7 +1933,10 @@
    "occupation": [
     "Femme au foyer"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Roux"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -1988,7 +2050,9 @@
     "Fonctionnaire",
     "Assassin"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -2194,7 +2258,9 @@
    "gender": "Femme",
    "age": 598,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Bakemonogatari",
    "genres": [
     "Comédie",
@@ -2224,7 +2290,10 @@
    "occupation": [
     "Pourfendeur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds",
+    "Roux"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -2252,7 +2321,9 @@
    "occupation": [
     "Sorcier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -2433,9 +2504,13 @@
    "gender": "Femme",
    "age": 16,
    "occupation": [
+    "Exorciste",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -2459,7 +2534,9 @@
    "occupation": [
     "Dieu"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Noragami",
    "genres": [
     "Action",
@@ -2546,7 +2623,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
     "Comédie",
@@ -2657,7 +2736,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -2719,7 +2800,6 @@
     "Fléau"
    ],
    "hair": [
-    "Noirs",
     "Roses"
    ],
    "anime": "JUJUTSU KAISEN",
@@ -2749,7 +2829,9 @@
     "Acteur",
     "Idole"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -2777,7 +2859,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Horimiya",
    "genres": [
     "Comédie",
@@ -2806,7 +2890,9 @@
     "Sorcier",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -2916,7 +3002,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Commerçant"
+   ],
    "hair": [
     "Roses"
    ],
@@ -2947,7 +3036,10 @@
    "occupation": [
     "Guerrier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds",
+    "Rouges"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -3097,9 +3189,11 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Capitaine"
+    "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Black Clover",
    "genres": [
     "Action",
@@ -3178,7 +3272,11 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Professeur",
+    "Serveur"
+   ],
    "hair": null,
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
@@ -3205,7 +3303,11 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Élève",
+    "Petits boulots",
+    "Commerçant"
+   ],
    "hair": [
     "Roses"
    ],
@@ -3257,7 +3359,10 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Espion",
+    "Serveuse"
+   ],
    "hair": [
     "Violets"
    ],
@@ -3342,8 +3447,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève",
+    "Professeur"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Fruits Basket",
    "genres": [
     "Comédie",
@@ -3397,7 +3507,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 24,
-   "occupation": null,
+   "occupation": [
+    "Neapolitan Executioner"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -3460,7 +3572,9 @@
     "Psychiatre",
     "Espion"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -3510,7 +3624,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Sword Art Online",
    "genres": [
@@ -3536,8 +3652,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Mafieux",
+    "Sportif"
+   ],
+   "hair": [
+    "Blonds",
+    "Noirs"
+   ],
    "anime": "Tokyo Revengers",
    "genres": [
     "Action",
@@ -3559,8 +3681,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 11,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Promised Neverland",
    "genres": [
     "Drame",
@@ -3612,7 +3738,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Processor"
+   ],
    "hair": [
     "Roux"
    ],
@@ -3681,7 +3809,10 @@
     "Sorcier",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -3708,7 +3839,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
     "Comédie",
@@ -3789,7 +3922,10 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Violets"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -3863,7 +3999,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 13,
-   "occupation": null,
+   "occupation": [
+    "Avocat"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -3891,7 +4029,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "BANANA FISH",
    "genres": [
     "Action",
@@ -3997,8 +4137,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
+   "hair": [
+    "Noirs",
+    "Violets"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -4024,7 +4169,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Musicien",
+    "Élève"
+   ],
    "hair": null,
    "anime": "Your lie in April",
    "genres": [
@@ -4166,8 +4314,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Fruits Basket",
    "genres": [
     "Comédie",
@@ -4278,8 +4430,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
@@ -4590,7 +4746,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -4686,7 +4844,9 @@
    "occupation": [
     "Utilisateur de fléaux"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -4796,7 +4956,9 @@
    "occupation": [
     "Déesse"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -4938,7 +5100,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Aventurier"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -4999,8 +5163,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 23,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Combattant",
+    "Pourfendeur de démons",
+    "Garde du corps"
+   ],
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -5107,8 +5277,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Bakemonogatari",
    "genres": [
     "Comédie",
@@ -5164,8 +5338,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Non-Curse User"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -5244,8 +5422,15 @@
   "attributes": {
    "gender": "Homme",
    "age": 43,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Artisan",
+    "Voleur",
+    "Chevalier",
+    "Roi"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Seven Deadly Sins",
    "genres": [
     "Action",
@@ -5302,7 +5487,11 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Jockey",
+    "Professeur",
+    "Fruit Importer"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -5442,7 +5631,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Détective"
+   ],
    "hair": null,
    "anime": "Tokyo Ghoul",
    "genres": [
@@ -5501,8 +5692,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 26,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Détective"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -5532,7 +5727,9 @@
     "Sorcier",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
@@ -5581,7 +5778,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -5667,8 +5866,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Capitaine",
-    "Leader"
+    "Shinigami"
    ],
    "hair": null,
    "anime": "Bleach",
