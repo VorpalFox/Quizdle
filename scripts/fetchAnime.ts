@@ -27,7 +27,7 @@ const QUERY = `query ($page: Int, $perPage: Int) {
       description
       image { large }
       media(type: ANIME, sort: START_DATE, perPage: 25) {
-        nodes { id format title { romaji english } startDate { year } genres studios(isMain: true) { nodes { name } } }
+        edges { characterRole node { id format title { romaji english } startDate { year } genres studios(isMain: true) { nodes { name } } } }
       }
     }
   }
@@ -52,23 +52,37 @@ interface Character {
   age: string | null
   description: string | null
   image: { large: string }
-  media: { nodes: Media[] }
+  media: { edges: { characterRole: Role, node: Media }[] }
 }
+
+type Role = 'MAIN' | 'SUPPORTING' | 'BACKGROUND'
 
 async function fetchPage(page: number, perPage: number): Promise<Character[]> {
   const data = await anilist<{ Page: { characters: Character[] } }>(QUERY, { page, perPage })
   return data.Page.characters
 }
 
-// La 1re série où le personnage apparaît : « Hunter x Hunter » plutôt que la version 2011, « JUJUTSU KAISEN » plutôt que la saison 2
+// Où le personnage a un rôle principal, seules les séries et les films comptent : les ONA, OVA et spéciaux sont souvent
+// des courts dérivés ou des clips (« IRIS OUT » pour Reze)
+const MAIN_ROLE_FORMATS = ['TV', 'TV_SHORT', 'MOVIE']
+
+// La 1re série où le personnage apparaît : « Hunter x Hunter » plutôt que la version 2011, « JUJUTSU KAISEN » plutôt que la saison 2.
+// D'abord une série ou un film où il a un rôle principal : un caméo ne compte pas (Saiki dans Assassination Classroom).
 function mainAnime(character: Character): Media | undefined {
-  const dated = character.media.nodes.filter(media => media.startDate.year)
-  for (const format of FORMAT_PRIORITY) {
-    const found = dated.find(media => media.format === format) // déjà triés par date de sortie
+  const dated = character.media.edges.filter(edge => edge.node.startDate.year) // déjà triés par date de sortie
+  const asMain = dated.filter(edge => edge.characterRole === 'MAIN').map(edge => edge.node)
+  for (const format of MAIN_ROLE_FORMATS) {
+    const found = asMain.find(media => media.format === format)
     if (found)
       return found
   }
-  return dated[0]
+  const all = dated.map(edge => edge.node)
+  for (const format of FORMAT_PRIORITY) {
+    const found = all.find(media => media.format === format)
+    if (found)
+      return found
+  }
+  return all[0]
 }
 
 // --- Univers : la 1re série de la franchise ---
@@ -82,12 +96,12 @@ const RELATIONS_QUERY = `query ($id: Int) {
   }
 }`
 
-// Une série, et celles dont elle découle (préquelles, histoire principale d'un spin-off)
+// Une série, et celles de la même histoire (préquelles, suites, histoire principale d'un spin-off, versions alternatives)
 interface Related {
   title: string
   format: string
   start: [number, number, number]
-  parents: number[]
+  family: number[]
 }
 
 interface RelationsResponse {
@@ -99,7 +113,8 @@ interface RelationsResponse {
   }
 }
 
-const UPSTREAM = new Set(['PREQUEL', 'PARENT'])
+// Les versions alternatives relient Fate/stay night aux films Heaven's Feel, et Fullmetal Alchemist à Brotherhood
+const SAME_STORY = new Set(['PREQUEL', 'SEQUEL', 'PARENT', 'ALTERNATIVE'])
 // Au cas où AniList boucle ou relie des franchises entières entre elles
 const MAX_FRANCHISE_SIZE = 40
 const relationsFile = new URL('../.cache/anime/relations.json', import.meta.url)
@@ -108,7 +123,8 @@ const relations = JSON.parse(await readFile(relationsFile, 'utf8').catch(() => '
 
 async function related(id: number): Promise<Related> {
   const cached = relations[id]
-  if (cached)
+  // Une entrée de l'ancien cache (sans `family`) est récupérée de nouveau
+  if (cached?.family)
     return cached
   const { Media: media } = await anilist<RelationsResponse>(RELATIONS_QUERY, { id })
   await sleep(DELAY_MS)
@@ -117,19 +133,20 @@ async function related(id: number): Promise<Related> {
     title: cleanTitle(media.title.english ?? media.title.romaji),
     format: media.format,
     start: [year ?? 9999, month ?? 99, day ?? 99],
-    parents: media.relations.edges.filter(edge => edge.node.type === 'ANIME' && UPSTREAM.has(edge.relationType)).map(edge => edge.node.id),
+    family: media.relations.edges.filter(edge => edge.node.type === 'ANIME' && SAME_STORY.has(edge.relationType)).map(edge => edge.node.id),
   }
   relations[id] = found
   await writeFile(relationsFile, JSON.stringify(relations))
   return found
 }
 
-const SERIES_FORMATS = new Set(['TV', 'ONA', 'TV_SHORT'])
+// La racine de l'univers : la plus ancienne série TV, sinon série courte ou ONA, sinon n'importe quoi
+const ROOT_FORMATS = [['TV'], ['TV_SHORT', 'ONA']]
 const startedBefore = (a: Related, b: Related) => a.start[0] - b.start[0] || a.start[1] - b.start[1] || a.start[2] - b.start[2]
 
-// On remonte toutes les préquelles, puis on garde la série la plus ancienne (TV de préférence) : Diamond is Unbreakable
-// → JoJo's Bizarre Adventure, Dragon Ball Z → Dragon Ball. La plus ancienne, pas le bout de la chaîne : Fate/Zero est
-// la préquelle de Fate/stay night, mais sortie après.
+// On parcourt toute l'histoire (préquelles, suites, versions alternatives), puis on garde la plus ancienne série TV :
+// Diamond is Unbreakable → JoJo's Bizarre Adventure, Dragon Ball Z → Dragon Ball, Heaven's Feel → Fate/stay night.
+// La plus ancienne, pas le bout de la chaîne : Fate/Zero est la préquelle de Fate/stay night, mais sortie après.
 async function franchise(id: number): Promise<string> {
   const seen = new Map<number, Related>()
   const queue = [id]
@@ -139,10 +156,11 @@ async function franchise(id: number): Promise<string> {
       continue
     const media = await related(current)
     seen.set(current, media)
-    queue.push(...media.parents)
+    queue.push(...media.family)
   }
   const all = [...seen.values()].toSorted(startedBefore)
-  return (all.find(media => SERIES_FORMATS.has(media.format)) ?? all[0]!).title
+  const root = ROOT_FORMATS.map(formats => all.find(media => formats.includes(media.format))).find(Boolean) ?? all[0]!
+  return root.title
 }
 
 // --- Récupération ---

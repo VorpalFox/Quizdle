@@ -27,7 +27,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -54,7 +54,7 @@
     "Fantasy",
     "Mystère"
    ],
-   "year": 2013,
+   "year": 2018,
    "studio": "WIT STUDIO"
   }
  },
@@ -416,7 +416,7 @@
     "Mystère"
    ],
    "year": 2023,
-   "studio": "OLM"
+   "studio": "Toho"
   }
  },
  {
@@ -442,7 +442,7 @@
     "Fantasy"
    ],
    "year": 2023,
-   "studio": "MADHOUSE"
+   "studio": "Toho"
   }
  },
  {
@@ -472,7 +472,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "WHITE FOX"
+   "studio": "Frontier Works"
   }
  },
  {
@@ -630,7 +630,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "WHITE FOX"
+   "studio": "Frontier Works"
   }
  },
  {
@@ -661,7 +661,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -1007,11 +1007,11 @@
    "genres": [
     "Action",
     "Fantasy",
-    "Romance",
+    "Psychologique",
     "Surnaturel"
    ],
-   "year": 2006,
-   "studio": "Studio DEEN"
+   "year": 2017,
+   "studio": "ufotable"
   }
  },
  {
@@ -1040,7 +1040,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -1131,7 +1131,7 @@
     "Aventure",
     "Comédie"
    ],
-   "year": 2016,
+   "year": 2017,
    "studio": "bones"
   }
  },
@@ -1597,8 +1597,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Président du conseil des élèves",
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -1606,7 +1611,7 @@
     "Romance",
     "Tranche de vie"
    ],
-   "year": 2019,
+   "year": 2020,
    "studio": "A-1 Pictures"
   }
  },
@@ -1686,15 +1691,14 @@
    "hair": [
     "Roses"
    ],
-   "anime": "Assassination Classroom",
+   "anime": "The Disastrous Life of Saiki K.",
    "genres": [
-    "Action",
     "Comédie",
-    "Drame",
+    "Tranche de vie",
     "Surnaturel"
    ],
-   "year": 2016,
-   "studio": "Lerche"
+   "year": 2018,
+   "studio": "J.C.STAFF"
   }
  },
  {
@@ -1793,7 +1797,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Shaft"
+   "studio": "Aniplex"
   }
  },
  {
@@ -2020,8 +2024,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève",
+    "Leader"
+   ],
+   "hair": [
+    "Bleus",
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -2120,8 +2130,8 @@
     "Aventure",
     "Fantasy"
    ],
-   "year": 1999,
-   "studio": "Nippon Animation"
+   "year": 2011,
+   "studio": "MADHOUSE"
   }
  },
  {
@@ -2149,7 +2159,7 @@
     "Aventure",
     "Surnaturel"
    ],
-   "year": 2012,
+   "year": 2014,
    "studio": "david production"
   }
  },
@@ -2265,13 +2275,13 @@
    "genres": [
     "Comédie",
     "Drame",
+    "Ecchi",
     "Mystère",
     "Psychologique",
-    "Romance",
     "Surnaturel"
    ],
-   "year": 2009,
-   "studio": "Shaft"
+   "year": 2012,
+   "studio": "Aniplex"
   }
  },
  {
@@ -2331,7 +2341,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -2390,7 +2400,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -2485,7 +2495,7 @@
     "Fantasy",
     "Mystère"
    ],
-   "year": 2013,
+   "year": 2018,
    "studio": "WIT STUDIO"
   }
  },
@@ -2518,7 +2528,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -2575,7 +2585,7 @@
     "Surnaturel"
    ],
    "year": 2006,
-   "studio": "Studio DEEN"
+   "studio": "NBCUniversal Entertainment Japan"
   }
  },
  {
@@ -2598,13 +2608,14 @@
    "hair": [
     "Roses"
    ],
-   "anime": "Slow Loop",
+   "anime": "BOCCHI THE ROCK!",
    "genres": [
-    "Tranche de vie",
-    "Sport"
+    "Comédie",
+    "Musique",
+    "Tranche de vie"
    ],
    "year": 2022,
-   "studio": "CONNECT"
+   "studio": "CloverWorks"
   }
  },
  {
@@ -2665,7 +2676,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Shaft"
+   "studio": "Aniplex"
   }
  },
  {
@@ -2720,7 +2731,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "Shaft"
+   "studio": "Aniplex"
   }
  },
  {
@@ -2750,8 +2761,8 @@
     "Fantasy",
     "Surnaturel"
    ],
-   "year": 2019,
-   "studio": "ufotable"
+   "year": 2025,
+   "studio": "Aniplex"
   }
  },
  {
@@ -2782,7 +2793,7 @@
     "Surnaturel"
    ],
    "year": 2006,
-   "studio": "Studio DEEN"
+   "studio": "NBCUniversal Entertainment Japan"
   }
  },
  {
@@ -2808,7 +2819,7 @@
     "Drame",
     "Surnaturel"
    ],
-   "year": 2020,
+   "year": 2025,
    "studio": "MAPPA"
   }
  },
@@ -2899,8 +2910,8 @@
     "Drame",
     "Surnaturel"
    ],
-   "year": 2020,
-   "studio": "MAPPA"
+   "year": 2026,
+   "studio": "Toho"
   }
  },
  {
@@ -3046,9 +3057,10 @@
     "Aventure",
     "Drame",
     "Fantasy",
+    "Mystère",
     "Surnaturel"
    ],
-   "year": 2019,
+   "year": 2021,
    "studio": "ufotable"
   }
  },
@@ -3371,9 +3383,10 @@
     "Action",
     "Drame",
     "Horreur",
+    "Romance",
     "Surnaturel"
    ],
-   "year": 2022,
+   "year": 2025,
    "studio": "MAPPA"
   }
  },
@@ -3396,12 +3409,9 @@
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Surnaturel"
+    "Comédie"
    ],
-   "year": 2015,
+   "year": 2016,
    "studio": "Lerche"
   }
  },
@@ -3426,11 +3436,9 @@
    "genres": [
     "Action",
     "Aventure",
-    "Comédie",
-    "Drame",
-    "Fantasy"
+    "Comédie"
    ],
-   "year": 1999,
+   "year": 2016,
    "studio": "Toei Animation"
   }
  },
@@ -3523,7 +3531,7 @@
     "Surnaturel"
    ],
    "year": 2026,
-   "studio": "david production"
+   "studio": "Warner Bros. Japan"
   }
  },
  {
@@ -3636,7 +3644,7 @@
     "Romance"
    ],
    "year": 2012,
-   "studio": "A-1 Pictures"
+   "studio": "Aniplex"
   }
  },
  {
@@ -3721,8 +3729,8 @@
     "Drame",
     "Sport"
    ],
-   "year": 2014,
-   "studio": "Production I.G"
+   "year": 2024,
+   "studio": "Toho"
   }
  },
  {
@@ -3820,7 +3828,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
@@ -4152,8 +4160,8 @@
     "Fantasy",
     "Surnaturel"
    ],
-   "year": 2019,
-   "studio": "ufotable"
+   "year": 2025,
+   "studio": "Aniplex"
   }
  },
  {
@@ -4358,7 +4366,7 @@
     "Romance"
    ],
    "year": 2012,
-   "studio": "A-1 Pictures"
+   "studio": "Aniplex"
   }
  },
  {
@@ -4384,7 +4392,7 @@
     "Fantasy"
    ],
    "year": 2023,
-   "studio": "MADHOUSE"
+   "studio": "Toho"
   }
  },
  {
@@ -4591,7 +4599,7 @@
     "Fantasy",
     "Surnaturel"
    ],
-   "year": 2002,
+   "year": 2005,
    "studio": "Studio Pierrot"
   }
  },
@@ -4605,7 +4613,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 58,
-   "occupation": null,
+   "occupation": [
+    "Leader",
+    "Élève"
+   ],
    "hair": null,
    "anime": "Toilet-bound Hanako-kun",
    "genres": [
@@ -4694,16 +4705,15 @@
    "age": 27,
    "occupation": null,
    "hair": null,
-   "anime": "The Legend of Luoxiaohei",
+   "anime": "Howl‘s Moving Castle",
    "genres": [
-    "Action",
     "Aventure",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Drame",
+    "Fantasy",
+    "Romance"
    ],
-   "year": 2011,
-   "studio": "HMCH"
+   "year": 2004,
+   "studio": "Studio Ghibli"
   }
  },
  {
@@ -4760,7 +4770,7 @@
     "Tranche de vie"
    ],
    "year": 2008,
-   "studio": "J.C.STAFF"
+   "studio": "Genco"
   }
  },
  {
@@ -4853,7 +4863,7 @@
     "Drame",
     "Surnaturel"
    ],
-   "year": 2020,
+   "year": 2023,
    "studio": "MAPPA"
   }
  },
@@ -4998,7 +5008,7 @@
     "Ecchi"
    ],
    "year": 2013,
-   "studio": "TRIGGER"
+   "studio": "Aniplex"
   }
  },
  {
@@ -5029,7 +5039,7 @@
     "Surnaturel"
    ],
    "year": 1998,
-   "studio": "Triangle Staff"
+   "studio": "TV Tokyo"
   }
  },
  {
@@ -5084,7 +5094,7 @@
     "Surnaturel"
    ],
    "year": 2021,
-   "studio": "david production"
+   "studio": "Warner Bros. Japan"
   }
  },
  {
@@ -5111,13 +5121,12 @@
     "Action",
     "Comédie",
     "Ecchi",
-    "Fantasy",
     "Mecha",
     "Romance",
     "Science-fiction"
    ],
-   "year": 2013,
-   "studio": "AIC Plus+"
+   "year": 2022,
+   "studio": "GEEKTOYS"
   }
  },
  {
@@ -5175,11 +5184,10 @@
    "genres": [
     "Action",
     "Aventure",
-    "Drame",
     "Fantasy",
     "Surnaturel"
    ],
-   "year": 2019,
+   "year": 2021,
    "studio": "ufotable"
   }
  },
@@ -5293,7 +5301,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Shaft"
+   "studio": "Aniplex"
   }
  },
  {
@@ -5320,7 +5328,7 @@
     "Fantasy",
     "Mystère"
    ],
-   "year": 2013,
+   "year": 2017,
    "studio": "WIT STUDIO"
   }
  },
@@ -5402,12 +5410,12 @@
    "anime": "Fate/stay night",
    "genres": [
     "Action",
+    "Drame",
     "Fantasy",
-    "Romance",
     "Surnaturel"
    ],
-   "year": 2006,
-   "studio": "Studio DEEN"
+   "year": 2011,
+   "studio": "Aniplex"
   }
  },
  {
@@ -5505,7 +5513,7 @@
     "Surnaturel"
    ],
    "year": 2026,
-   "studio": "david production"
+   "studio": "Warner Bros. Japan"
   }
  },
  {
@@ -5705,7 +5713,7 @@
     "Mystère",
     "Surnaturel"
    ],
-   "year": 2016,
+   "year": 2023,
    "studio": "bones"
   }
  },
@@ -5737,7 +5745,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "MAPPA"
+   "studio": "Toho"
   }
  },
  {
