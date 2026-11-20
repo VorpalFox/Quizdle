@@ -6,14 +6,16 @@ const withUnit = (unit: string) => (value: AttributeValue) =>
 
 // Indices d'un personnage d'anime : partagés par l'Animedle et le Weebdle
 export const characterAttributes: readonly AttributeDef[] = [
+  // Le personnage
   { key: 'gender', label: 'Sexe', kind: 'exact' },
   { key: 'age', label: 'Âge', kind: 'number', format: withUnit('ans') },
-  { key: 'height', label: 'Taille', kind: 'number', format: withUnit('cm') },
+  { key: 'occupation', label: 'Occupation', kind: 'set' },
+  { key: 'hair', label: 'Cheveux', kind: 'set' },
+  // Son anime
   { key: 'anime', label: 'Anime', kind: 'exact' },
   { key: 'genres', label: 'Genres', kind: 'set' },
-  { key: 'studio', label: 'Studio', kind: 'exact' },
   { key: 'year', label: 'Année', kind: 'number' },
-  { key: 'source', label: 'Source', kind: 'exact' },
+  { key: 'studio', label: 'Studio', kind: 'exact' },
 ]
 
 // Personnages d'anime : données générées depuis AniList par npm run fetch:anime

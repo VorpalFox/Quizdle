@@ -1,7 +1,7 @@
 // Génère data/anime.json (personnages de l'Animedle) depuis AniList. Usage : npm run fetch:anime -- [nombre de personnages, 200 par défaut]
 // On prend les personnages les plus mis en favoris : ceux que les fans connaissent.
 import { writeFile } from 'node:fs/promises'
-import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHeight, sleep, source, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 
 const count = Number(process.argv[2] ?? 200)
 const PER_PAGE = 25
@@ -16,7 +16,7 @@ const QUERY = `query ($page: Int, $perPage: Int) {
       description
       image { large }
       media(type: ANIME, sort: START_DATE, perPage: 25) {
-        nodes { format title { romaji english } startDate { year } genres source studios(isMain: true) { nodes { name } } }
+        nodes { format title { romaji english } startDate { year } genres studios(isMain: true) { nodes { name } } }
       }
     }
   }
@@ -30,7 +30,6 @@ interface Media {
   title: { romaji: string, english: string | null }
   startDate: { year: number | null }
   genres: string[]
-  source: string | null
   studios: { nodes: { name: string }[] }
 }
 
@@ -82,16 +81,21 @@ const entries = kept.map(character => {
     image: character.image.large,
     attributes: {
       gender: gender(character.gender),
-      age: parseAge(character.age),
-      height: parseHeight(character.description),
+      age: parseAge(character.age, character.description),
+      occupation: parseOccupation(character.description),
+      hair: parseHair(character.description),
       anime: cleanTitle(anime.title.english ?? anime.title.romaji),
       genres: genres(anime.genres),
-      studio: anime.studios.nodes[0]?.name ?? null,
       year: anime.startDate.year,
-      source: source(anime.source),
+      studio: anime.studios.nodes[0]?.name ?? null,
     },
   }
 })
 
 await writeFile(new URL('../data/anime.json', import.meta.url), `${JSON.stringify(entries, null, 1)}\n`)
 console.log(`\n${entries.length} personnages écrits dans data/anime.json`)
+// Ce qui manque, à compléter à la main
+for (const [label, key] of [['sexe', 'gender'], ['âge', 'age'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
+  const missing = entries.filter(entry => entry.attributes[key] === null)
+  console.log(`Sans ${label} : ${missing.length} (${Math.round(missing.length / entries.length * 100)} %)`)
+}

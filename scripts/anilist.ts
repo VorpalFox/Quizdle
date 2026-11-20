@@ -37,10 +37,6 @@ export const GENRES: Record<string, string> = {
   'Mystery': 'Mystère', 'Psychological': 'Psychologique', 'Romance': 'Romance', 'Sci-Fi': 'Science-fiction',
   'Slice of Life': 'Tranche de vie', 'Sports': 'Sport', 'Supernatural': 'Surnaturel', 'Thriller': 'Thriller', 'Hentai': 'Hentai',
 }
-export const SOURCES: Record<string, string> = {
-  MANGA: 'Manga', LIGHT_NOVEL: 'Light novel', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel', VIDEO_GAME: 'Jeu vidéo',
-  NOVEL: 'Roman', WEB_NOVEL: 'Web novel', DOUJINSHI: 'Doujinshi', OTHER: 'Autre', GAME: 'Jeu',
-}
 
 export interface CharacterName {
   full: string
@@ -50,7 +46,6 @@ export interface CharacterName {
 
 export const gender = (value: string | null) => value ? GENDERS[value] ?? 'Autre' : null
 export const genres = (values: string[]) => values.map(genre => GENRES[genre] ?? genre)
-export const source = (value: string | null) => value ? SOURCES[value] ?? value : null
 
 // « JUJUTSU KAISEN Season 2 » → « JUJUTSU KAISEN », « Hunter x Hunter (2011) » → « Hunter x Hunter »
 export function cleanTitle(title: string): string {
@@ -60,22 +55,71 @@ export function cleanTitle(title: string): string {
     .trim()
 }
 
-// « 17-18 » → 17, « 1000+ » → 1000, « 17- » → 17
-export function parseAge(age: string | null): number | null {
-  const found = /\d+/.exec(age ?? '')
+// Une ligne « __Occupation:__ Teacher » ou « **Hair Color:** Black » de la description AniList.
+// Sans les spoilers (~!...!~), les liens et le gras.
+export function descriptionField(description: string | null, names: string[]): string | null {
+  const pattern = new RegExp(String.raw`^\s*(?:__|\*\*)?\s*(?:${names.join('|')})\s*:?\s*(?:__|\*\*)?\s*:?\s*(.+)$`, 'i')
+  for (const line of (description ?? '').split('\n')) {
+    const found = pattern.exec(line)
+    if (!found)
+      continue
+    const value = found[1]!
+      .replace(/~!.*?(!~|$)/g, '')
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+      .replace(/__|\*\*|<[^>]+>/g, '')
+      .trim()
+    if (value)
+      return value
+  }
+  return null
+}
+
+// « 17-18 » → 17, « 1000+ » → 1000, « 17- » → 17. Sinon la ligne « Age: » de la description.
+export function parseAge(age: string | null, description: string | null = null): number | null {
+  const found = /\d+/.exec(age ?? '') ?? /^\d+/.exec(descriptionField(description, ['Age']) ?? '')
   return found ? Number(found[0]) : null
 }
 
-// Dans la description : « __Height:__ 170 cm (5'7") », ou « 1,65m »
-export function parseHeight(description: string | null): number | null {
-  const line = (description ?? '').split('\n').find(text => /height/i.test(text))
-  if (!line)
+const MAX_OCCUPATION_LINE = 100
+
+// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. En anglais, comme AniList : à trier à la main.
+export function parseOccupation(description: string | null): string[] | null {
+  const value = descriptionField(description, ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'])
+  // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »)
+  if (!value || value.length > MAX_OCCUPATION_LINE)
     return null
-  const cm = /(\d{2,3}(?:[.,]\d+)?)\s*cm/i.exec(line)
-  if (cm)
-    return Math.round(Number(cm[1]!.replace(',', '.')))
-  const meters = /(\d[.,]\d{1,2})\s*m\b/i.exec(line)
-  return meters ? Math.round(Number(meters[1]!.replace(',', '.')) * 100) : null
+  const list = value
+    .replace(/~!|!~/g, '')
+    .replace(/\s*\([^)]*\)/g, '')
+    .split(/\s*(?:,|;|\/|\band\b|\bformerly\b|\bprevious(?:ly)?\b)\s*/i)
+    .map(part => part.replace(/[.:!]+$/, '').trim())
+    .filter(part => part.length > 1 && part.length <= 40)
+    .map(part => part[0]!.toUpperCase() + part.slice(1))
+  return list.length > 0 ? [...new Set(list)] : null
+}
+
+const HAIR_COLORS: [RegExp, string][] = [
+  [/black|raven|ebony/i, 'Noirs'], [/white|snow/i, 'Blancs'], [/silver|platinum/i, 'Argentés'], [/gr[ae]y/i, 'Gris'],
+  [/blond|golden|gold|yellow/i, 'Blonds'], [/brown|brunette|chestnut|auburn/i, 'Bruns'], [/orange|ginger/i, 'Roux'],
+  [/\bred|crimson|scarlet/i, 'Rouges'], [/pink/i, 'Roses'], [/blue|cyan|teal|turquoise/i, 'Bleus'], [/green/i, 'Verts'],
+  [/purple|violet|lavender|lilac/i, 'Violets'], [/bald/i, 'Chauve'],
+]
+const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
+// « black hair », « long silver hair », « black and white hair », « red-colored hair »
+const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
+
+const hairColors = (text: string) => HAIR_COLORS.filter(([pattern]) => pattern.test(text)).map(([, color]) => color)
+
+// La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
+// Rare sur AniList (quelques %) : le reste est à compléter à la main.
+export function parseHair(description: string | null): string[] | null {
+  const field = descriptionField(description, ['Hair Colou?rs?', 'Hair'])
+  const fromField = field ? hairColors(field) : []
+  if (fromField.length > 0)
+    return fromField
+  const found = HAIR_IN_TEXT.exec((description ?? '').replace(/~!.*?(!~|$)/gs, ''))
+  const fromText = found ? hairColors(found[1]!) : []
+  return fromText.length > 0 ? fromText : null
 }
 
 // Les noms acceptés : nom complet dans les deux ordres, et les variantes qui contiennent son nom

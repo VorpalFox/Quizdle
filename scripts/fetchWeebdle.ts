@@ -7,7 +7,7 @@
 // 3. Garder 4 à 20 personnages par anime (voir select)
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
-import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHeight, sleep, source, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 
 const MAX_PER_ANIME = 20
 const MIN_PER_ANIME = 4
@@ -198,7 +198,8 @@ function shuffle<T>(items: T[], random: () => number): T[] {
 const byPopularity = (a: Candidate, b: Candidate) => b.character.favourites - a.character.favourites || a.character.id - b.character.id
 const roleRank: Record<Role, number> = { MAIN: 0, SUPPORTING: 1, BACKGROUND: 2 }
 const byRoleThenPopularity = (a: Candidate, b: Candidate) => roleRank[a.role] - roleRank[b.role] || byPopularity(a, b)
-const hasInfo = ({ character }: Candidate) => parseAge(character.age) !== null || parseHeight(character.description) !== null
+const hasInfo = ({ character: { age, description } }: Candidate) =>
+  parseAge(age, description) !== null || parseOccupation(description) !== null || parseHair(description) !== null
 
 // `slots` personnages parmi `pool` (trié par popularité) : moitié les plus populaires, moitié au sort parmi les autres
 function mix(pool: Candidate[], slots: number, random: () => number, popularityOnly: boolean): Candidate[] {
@@ -215,7 +216,7 @@ function select(anime: Anime, candidates: Candidate[]): Candidate[] {
   if (sorted.length <= MAX_PER_ANIME)
     return sorted
 
-  // On écarte ceux qui n'ont ni âge ni taille, sauf s'il en faut pour arriver à 20
+  // On écarte ceux qui n'ont ni âge, ni occupation, ni cheveux, sauf s'il en faut pour arriver à 20
   const informed = sorted.filter(hasInfo)
   const pool = informed.length >= MAX_PER_ANIME
     ? informed
@@ -249,13 +250,13 @@ const entries = selections.flatMap(({ anime, chosen }) => chosen.map(({ characte
   image: character.image.large,
   attributes: {
     gender: gender(character.gender),
-    age: parseAge(character.age),
-    height: parseHeight(character.description),
+    age: parseAge(character.age, character.description),
+    occupation: parseOccupation(character.description),
+    hair: parseHair(character.description),
     anime: cleanTitle(anime.rec.title),
     genres: genres(anime.media.genres),
-    studio: anime.media.studios.nodes[0]?.name ?? null,
     year: anime.media.startDate.year ?? anime.rec.year,
-    source: source(anime.media.source),
+    studio: anime.media.studios.nodes[0]?.name ?? null,
   },
 })))
 
@@ -277,7 +278,7 @@ lines.push('')
 if (withBackground.length > 0)
   lines.push(`## Complétés avec des figurants (${withBackground.length})`, ...withBackground.map(text => `- ${text}`), '')
 
-for (const [label, key] of [['âge', 'age'], ['taille', 'height'], ['sexe', 'gender']] as const) {
+for (const [label, key] of [['sexe', 'gender'], ['âge', 'age'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
   const missing = entries.filter(entry => entry.attributes[key] === null)
   lines.push(`## Sans ${label} (${missing.length})`, ...missing.map(entry => `- ${entry.name} (${entry.attributes.anime}, id ${entry.id})`), '')
 }
