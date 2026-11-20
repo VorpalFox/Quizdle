@@ -23,7 +23,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('A Certain Scientific Railgun')]: ['toarumajutsunoindex'],
   [normalize('A Certain Magical Index')]: ['toarumajutsunoindex'],
   [normalize('Re:ZERO -Starting Life in Another World-')]: ['rezero'],
-  [normalize('Kaguya-sama: Love is War')]: ['kaguyasama'],
+  [normalize('Kaguya-sama: Love is War')]: ['kaguyasama-wa-kokurasetai'],
   [normalize('That Time I Got Reincarnated as a Slime')]: ['tensura'],
   [normalize('Puella Magi Madoka Magica')]: ['madoka', 'puellamagimadokamagica'],
   [normalize('JoJo\'s Bizarre Adventure')]: ['jojo'],
@@ -31,7 +31,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Fate/stay night')]: ['typemoon'],
   [normalize('Fate/stay night: Unlimited Blade Works')]: ['typemoon'],
   [normalize('Fate/Zero')]: ['typemoon'],
-  [normalize('Toradora!')]: ['toradora'],
+  [normalize('Toradora!')]: ['tora-dora'],
   [normalize('The Apothecary Diaries')]: ['kusuriya'],
   [normalize('The Rising of the Shield Hero')]: ['shield-hero', 'tate-no-yuusha-no-nariagari', 'the-rising-of-the-shield-hero'],
   [normalize('Danganronpa 3: The End of Hope’s Peak High School - Future Arc')]: ['danganronpa'],
@@ -43,7 +43,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Is It Wrong to Try to Pick Up Girls in a Dungeon?')]: ['danmachi'],
   [normalize('Mekakucity Actors')]: ['kagerou-project', 'kagerouproject'],
   [normalize('Ouran High School Host Club')]: ['ouran', 'ouranhighschoolhostclub'],
-  [normalize('Paradise Kiss')]: ['paradisekiss', 'paradise-kiss'],
+  [normalize('Paradise Kiss')]: ['parakiss'],
   [normalize('Rascal Does Not Dream of Bunny Girl Senpai')]: ['aobuta', 'seishun-buta-yarou'],
   [normalize('Revolutionary Girl Utena')]: ['utena', 'revolutionarygirlutena'],
   [normalize('Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs')]: ['mobuseka'],
@@ -51,13 +51,14 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Uncle from Another World')]: ['isekai-ojisan', 'uncle-from-another-world'],
   [normalize('Vivy -Fluorite Eye\'s Song-')]: ['vivy', 'vivy-fluorite-eyes-song'],
   [normalize('BNA')]: ['brand-new-animal'],
-  [normalize('Battle Game in 5 Seconds')]: ['battle-game-in-5-seconds', 'battlegamein5seconds'],
+  [normalize('Battle Game in 5 Seconds')]: ['battle-in-5-seconds-after-meeting'],
   [normalize('Chivalry of a Failed Knight')]: ['rakudai-kishi'],
-  [normalize('The Unwanted Undead Adventurer')]: ['nozomanu-fushi-no-boukensha', 'the-unwanted-undead-adventurer'],
-  [normalize('The Witch and the Beast')]: ['the-witch-and-the-beast', 'majo-to-yajuu'],
+  [normalize('The Unwanted Undead Adventurer')]: ['the-unwanted-immortal-adventurer'],
+  [normalize('The Witch and the Beast')]: ['witchandthebeast'],
   [normalize('I\'m the Villainess, So I\'m Taming the Final Boss')]: ['im-the-villainess-so-im-taming-the-final-boss', 'akuyaku-reijou'],
-  [normalize('Smoking Behind the Supermarket with You')]: null,
-  [normalize('Paprika')]: null,
+  [normalize('Smoking Behind the Supermarket with You')]: ['yanisuu'],
+  // Le wiki de Satoshi Kon : tous ses films, donc les persos de Paprika aussi
+  [normalize('Paprika')]: ['satoshikon'],
   // Animedle
   [normalize('Attack on Titan')]: ['attackontitan', 'shingekinokyojin'],
   [normalize('Mob Psycho 100')]: ['mob-psycho-100', 'mobpsycho100'],
@@ -78,19 +79,21 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('OSHI NO KO')]: ['oshi-no-ko', 'oshinoko'],
   [normalize('A Silent Voice')]: ['koenokatachi', 'a-silent-voice'],
   [normalize('Mushoku Tensei: Jobless Reincarnation')]: ['mushokutensei'],
-  [normalize('Monster')]: ['monster-anime', 'naokiurasawasmonster'],
+  [normalize('Monster')]: ['obluda'],
+  // Wiki en français seulement : <wiki>/<langue>
+  [normalize('Assassination Classroom')]: ['assassination-classroom/fr'],
   [normalize('86 EIGHTY-SIX')]: ['86-eighty-six', 'eighty-six'],
   [normalize('Land of the Lustrous')]: ['houseki-no-kuni'],
   [normalize('The Promised Neverland')]: ['yakusokunoneverland'],
   [normalize('Rent-a-Girlfriend')]: ['kanojo-okarishimasu'],
   [normalize('Your lie in April')]: ['shigatsu-wa-kimi-no-uso'],
   [normalize('Cyberpunk: Edgerunners')]: ['cyberpunk'],
-  [normalize('Toilet-bound Hanako-kun')]: ['jibaku-shounen-hanako-kun'],
+  [normalize('Toilet-bound Hanako-kun')]: ['hanako-kun'],
   [normalize('The Legend of Luoxiaohei')]: ['the-legend-of-luo-xiaohei', 'luoxiaohei'],
   [normalize('Serial Experiments Lain')]: ['lain'],
   [normalize('NANA')]: ['nana-anime', 'nana'],
   [normalize('Komi Can’t Communicate')]: ['komi-san', 'komisan'],
-  [normalize('Love, Chunibyo & Other Delusions')]: ['chuunibyou'],
+  [normalize('Love, Chunibyo & Other Delusions')]: ['chunibyo'],
   [normalize('The Seven Deadly Sins')]: ['nanatsu-no-taizai'],
   [normalize('GTO: Great Teacher Onizuka')]: ['gto', 'great-teacher-onizuka'],
   [normalize('DAN DA DAN')]: ['dandadan'],
@@ -98,11 +101,11 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Black Lagoon')]: ['blacklagoon'],
 }
 
-// Les champs de l'infobox, selon les wikis
+// Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
 const FIELDS = {
-  gender: ['gender', 'sex'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job'],
-  hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors'],
+  gender: ['gender', 'sex', 'sexe', 'genre'],
+  occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'métier', 'activité', 'fonction'],
+  hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -118,7 +121,9 @@ const writeJson = (name: string, value: unknown) => writeFile(cacheFile(name), J
 
 // Une requête à l'API d'un wiki, avec reprise quand Fandom nous freine. null : le wiki n'existe pas.
 async function api(wiki: string, params: Record<string, string>): Promise<any | null> {
-  const url = `https://${wiki}.fandom.com/api.php?${new URLSearchParams({ ...params, format: 'json', formatversion: '2' })}`
+  // « assassination-classroom/fr » : le wiki en français est sous fandom.com/fr
+  const [host, language] = wiki.split('/')
+  const url = `https://${host}.fandom.com${language ? `/${language}` : ''}/api.php?${new URLSearchParams({ ...params, format: 'json', formatversion: '2' })}`
   for (let attempt = 1; ; attempt++) {
     const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, redirect: 'manual' }).catch(() => null)
     // Un wiki qui n'existe pas : redirection vers la page « pas trouvé », ou nom de domaine inconnu
@@ -191,7 +196,7 @@ type Pages = Record<string, string | null>
 
 // Le début (section 0) de ces pages, en suivant les redirections, depuis le cache ou par lots de 50
 async function fetchPages(wiki: string, titles: string[]): Promise<Pages> {
-  const cache = await readJson<Pages>(`pages-${wiki}`, {})
+  const cache = await readJson<Pages>(`pages-${wiki.replace('/', '-')}`, {})
   const missing = [...new Set(titles)].filter(title => !(title in cache))
   for (let i = 0; i < missing.length; i += TITLES_PER_REQUEST) {
     const batch = missing.slice(i, i + TITLES_PER_REQUEST)
@@ -204,7 +209,7 @@ async function fetchPages(wiki: string, titles: string[]): Promise<Pages> {
         current = renamed.get(current)!
       cache[title] = pages.get(current)?.slice(0, MAX_CACHED_LENGTH) ?? null
     }
-    await writeJson(`pages-${wiki}`, cache)
+    await writeJson(`pages-${wiki.replace('/', '-')}`, cache)
     await sleep(DELAY_MS)
   }
   return cache

@@ -6519,7 +6519,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6543,7 +6545,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6565,7 +6569,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6588,7 +6594,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6612,7 +6620,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6637,7 +6647,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -6662,7 +6674,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6707,8 +6721,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Observer Participant"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6801,7 +6819,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Marchand"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -29881,8 +29901,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève",
+    "Leader"
+   ],
+   "hair": [
+    "Bleus",
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -29961,8 +29987,14 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Collégien",
+    "Élève"
+   ],
+   "hair": [
+    "Blancs",
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -29987,8 +30019,14 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader",
+    "Célébrité"
+   ],
+   "hair": [
+    "Blonds",
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -30011,8 +30049,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Élève",
+    "Leader"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -30039,7 +30082,10 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Roses"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -30064,7 +30110,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Directeur d'école"
+   ],
    "hair": null,
    "anime": "Kaguya-sama: Love is War",
    "genres": [
@@ -30093,7 +30141,10 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Gris"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -38575,8 +38626,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Psychotherapist"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -38808,8 +38863,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Works for Happy Berry"
+   ],
+   "hair": [
+    "Roses"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -38891,8 +38950,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Patternmaker"
+   ],
+   "hair": [
+    "Violets"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -38918,7 +38981,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -38941,8 +39006,14 @@
   "attributes": {
    "gender": "Femme",
    "age": 36,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Président",
+    "Designer of Happy Berry"
+   ],
+   "hair": [
+    "Bruns",
+    "Blonds"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -45507,7 +45578,10 @@
    "occupation": [
     "Vendeur"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Bruns"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -45580,8 +45654,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -45602,7 +45680,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Gérant"
+   ],
    "hair": null,
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
@@ -45624,8 +45704,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Floor lead"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -45646,8 +45730,13 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Marchand"
+   ],
+   "hair": [
+    "Gris",
+    "Blonds"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -52453,7 +52542,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
     "Action",
@@ -52941,7 +53032,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325560-QBsSNIQ7RcGb.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
    "occupation": null,
    "hair": null,
@@ -54215,7 +54306,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Célébrité"
+   ],
    "hair": null,
    "anime": "Toradora!",
    "genres": [
@@ -54470,9 +54563,11 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/41719.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Toradora!",
    "genres": [
