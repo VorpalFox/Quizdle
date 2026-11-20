@@ -1,5 +1,7 @@
 {
- "exclude": [],
+ "exclude": [
+  "134579"
+ ],
  "edit": {
   "80": {
    "_nom": "Light Yagami",
@@ -40,6 +42,9 @@
   "126156": {
    "_nom": "Myne",
    "occupation": null
+  },
+  "131041": {
+   "_nom": "Gabiru"
   }
  },
  "add": []

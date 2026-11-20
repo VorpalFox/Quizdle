@@ -47005,6 +47005,29 @@
   }
  },
  {
+  "id": "131043",
+  "name": "Hakurou",
+  "aliases": [
+   "ハクロウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131043-AyEdKg1Xkjrd.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "That Time I Got Reincarnated as a Slime",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy"
+   ],
+   "year": 2018,
+   "studio": "8-bit"
+  }
+ },
+ {
   "id": "132760",
   "name": "Chloe Aubert",
   "aliases": [
@@ -47018,6 +47041,29 @@
   "attributes": {
    "gender": "Femme",
    "age": 10,
+   "occupation": null,
+   "hair": null,
+   "anime": "That Time I Got Reincarnated as a Slime",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy"
+   ],
+   "year": 2018,
+   "studio": "8-bit"
+  }
+ },
+ {
+  "id": "131041",
+  "name": "Gabiru",
+  "aliases": [
+   "ガビル"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131041-MKPEBzVY1XPh.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
    "occupation": null,
    "hair": null,
    "anime": "That Time I Got Reincarnated as a Slime",
@@ -47119,56 +47165,6 @@
    "age": null,
    "occupation": [
     "Leader"
-   ],
-   "hair": null,
-   "anime": "That Time I Got Reincarnated as a Slime",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2018,
-   "studio": "8-bit"
-  }
- },
- {
-  "id": "134579",
-  "name": "Kaidou",
-  "aliases": [
-   "海道"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134579-IcabUVenyIW0.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Capitaine"
-   ],
-   "hair": null,
-   "anime": "That Time I Got Reincarnated as a Slime",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2018,
-   "studio": "8-bit"
-  }
- },
- {
-  "id": "255591",
-  "name": "Orthos",
-  "aliases": [
-   "オルトス"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b255591-enKYOcDKdi3Y.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Roi"
    ],
    "hair": null,
    "anime": "That Time I Got Reincarnated as a Slime",
