@@ -1,5 +1,25 @@
 {
  "exclude": [],
- "edit": {},
+ "edit": {
+  "80": {
+   "_nom": "Light Yagami",
+   "occupation": [
+    "Tueur en série"
+   ]
+  },
+  "127212": {
+   "_nom": "Yuuji Itadori",
+   "occupation": [
+    "Exorciste",
+    "Élève"
+   ]
+  },
+  "133701": {
+   "_nom": "Sukuna",
+   "occupation": [
+    "Fléau"
+   ]
+  }
+ },
  "add": []
 }

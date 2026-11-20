@@ -4227,9 +4227,7 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": [
-    "Soldier's child"
-   ],
+   "occupation": null,
    "hair": [
     "Bleus"
    ],
@@ -4303,7 +4301,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Gilberta company's master"
+    "Leader"
    ],
    "hair": null,
    "anime": "Ascendance of a Bookworm",
@@ -5157,7 +5155,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant",
+    "Leader",
     "Bataillon d'exploration"
    ],
    "hair": null,
@@ -6976,8 +6974,7 @@
    "gender": "Homme",
    "age": 12,
    "occupation": [
-    "Comte",
-    "Watchdog of the Queen"
+    "Comte"
    ],
    "hair": null,
    "anime": "Black Butler",
@@ -8345,8 +8342,7 @@
    "age": 14,
    "occupation": [
     "Élève",
-    "Criminel",
-    "Former member of the Main Cast"
+    "Criminel"
    ],
    "hair": [
     "Blonds"
@@ -13264,7 +13260,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Order of the Black Knights Leader"
+    "Leader"
    ],
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
@@ -14796,7 +14792,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Stamen"
+    "Pilote"
    ],
    "hair": null,
    "anime": "DARLING in the FRANXX",
@@ -15774,7 +15770,6 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Second L",
     "Tueur en série"
    ],
    "hair": null,
@@ -18987,7 +18982,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "DRIFTERS",
@@ -21688,7 +21683,7 @@
    "gender": "Homme",
    "age": 29,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -21771,7 +21766,7 @@
    "gender": "Homme",
    "age": 29,
    "occupation": [
-    "Agent de renseignement"
+    "Agent secret"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -21854,9 +21849,7 @@
   "attributes": {
    "gender": "Autre",
    "age": null,
-   "occupation": [
-    "Instigator for Father"
-   ],
+   "occupation": null,
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -25053,9 +25046,8 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant en second",
-    "Guerrier",
-    "Team Dai-Gurren Member"
+    "Leader",
+    "Guerrier"
    ],
    "hair": null,
    "anime": "Gurren Lagann",
@@ -26092,7 +26084,7 @@
    "gender": "Homme",
    "age": 26,
    "occupation": [
-    "Leader of the Phantom Troupe"
+    "Leader"
    ],
    "hair": null,
    "anime": "Hunter x Hunter",
@@ -29013,7 +29005,7 @@
    "gender": null,
    "age": null,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "JoJo's Bizarre Adventure",
@@ -34384,7 +34376,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Apprenti super-héros"
+    "Super-héros"
    ],
    "hair": [
     "Noirs",
@@ -35742,7 +35734,7 @@
    "gender": "Homme",
    "age": 26,
    "occupation": [
-    "Disappointing cosplay-otaku detective"
+    "Détective"
    ],
    "hair": null,
    "anime": "Occultic;Nine",
@@ -35770,7 +35762,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Black magic agent"
+    "Magicienne"
    ],
    "hair": null,
    "anime": "Occultic;Nine",
@@ -35850,7 +35842,7 @@
    "age": 23,
    "occupation": [
     "Éditeur",
-    "Occult magazine \"Mumu\""
+    "Journaliste"
    ],
    "hair": null,
    "anime": "Occultic;Nine",
@@ -37693,7 +37685,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Area Guardian of the Treasury"
+    "Gardien"
    ],
    "hair": null,
    "anime": "Overlord",
@@ -41374,7 +41366,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Hikikomori"
+    "Chômeur"
    ],
    "hair": [
     "Noirs"
@@ -43827,7 +43819,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
@@ -43853,7 +43845,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
@@ -45503,7 +45495,7 @@
    "gender": "Femme",
    "age": 40,
    "occupation": [
-    "The manager of Super S"
+    "Gérant"
    ],
    "hair": null,
    "anime": "Smoking Behind the Supermarket with You",
@@ -45734,7 +45726,7 @@
    "age": 20,
    "occupation": [
     "Diplomate",
-    "Agent de renseignement"
+    "Agent secret"
    ],
    "hair": null,
    "anime": "SPY x FAMILY",
@@ -45847,8 +45839,7 @@
    "gender": "Homme",
    "age": 66,
    "occupation": [
-    "Professeur",
-    "Housemaster of Cecile Hall"
+    "Professeur"
    ],
    "hair": null,
    "anime": "SPY x FAMILY",
@@ -48288,7 +48279,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "That Time I Got Reincarnated as a Slime",
@@ -48339,7 +48330,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Chef"
+    "Leader"
    ],
    "hair": null,
    "anime": "That Time I Got Reincarnated as a Slime",
@@ -54776,7 +54767,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Light Bearer"
+    "Combattant"
    ],
    "hair": null,
    "anime": "Tower of God",
@@ -54806,7 +54797,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Wave Controller"
+    "Combattant"
    ],
    "hair": null,
    "anime": "Tower of God",
@@ -54835,7 +54826,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Spear Bearer"
+    "Combattant"
    ],
    "hair": null,
    "anime": "Tower of God",
@@ -54941,7 +54932,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Wave Controller",
+    "Combattant",
     "Éclaireur",
     "Guide"
    ],

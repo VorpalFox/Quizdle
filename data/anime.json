@@ -180,7 +180,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Order of the Black Knights Leader"
+    "Leader"
    ],
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
@@ -579,9 +579,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Sorcier",
-    "Élève",
-    "Vessel"
+    "Exorciste",
+    "Élève"
    ],
    "hair": [
     "Roses"
@@ -684,7 +683,6 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Second L",
     "Tueur en série"
    ],
    "hair": null,
@@ -1037,7 +1035,7 @@
    "gender": "Homme",
    "age": 33,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -1229,7 +1227,7 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Hikikomori"
+    "Chômeur"
    ],
    "hair": [
     "Noirs"
@@ -1547,8 +1545,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Étudiant en secondaire",
-    "Shinigami remplaçant"
+    "Étudiant",
+    "Shinigami"
    ],
    "hair": [
     "Roux"
@@ -1802,7 +1800,7 @@
    "gender": "Homme",
    "age": 29,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -2024,7 +2022,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Apprenti super-héros"
+    "Super-héros"
    ],
    "hair": [
     "Noirs",
@@ -2253,7 +2251,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commandant",
+    "Leader",
     "Bataillon d'exploration"
    ],
    "hair": null,
@@ -2553,8 +2551,7 @@
    "gender": "Homme",
    "age": 1000,
    "occupation": [
-    "Exorcisme",
-    "Fleau de classe s"
+    "Fléau"
    ],
    "hair": [
     "Noirs",
@@ -2667,7 +2664,7 @@
    "gender": "Femme",
    "age": 14,
    "occupation": [
-    "Pilote d'EVA"
+    "Pilote"
    ],
    "hair": [
     "Bleus"
@@ -2805,7 +2802,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Pilote d'EVA"
+    "Pilote"
    ],
    "hair": [
     "Bruns"
@@ -3241,7 +3238,7 @@
    "gender": "Femme",
    "age": 16,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
@@ -3586,7 +3583,7 @@
    "gender": "Homme",
    "age": 26,
    "occupation": [
-    "Leader of the Phantom Troupe"
+    "Leader"
    ],
    "hair": null,
    "anime": "Hunter x Hunter",
@@ -4082,7 +4079,7 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Neurochirurgien"
+    "Chirurgien"
    ],
    "hair": null,
    "anime": "Monster",
@@ -4322,7 +4319,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Owner of the Urahara Shop"
+    "Commerçant"
    ],
    "hair": null,
    "anime": "Bleach",
@@ -4689,7 +4686,7 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Commandant"
+    "Leader"
    ],
    "hair": null,
    "anime": "86 EIGHTY-SIX",
@@ -5257,7 +5254,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Dieu de la mort"
+    "Shinigami"
    ],
    "hair": null,
    "anime": "Death Note",
@@ -5312,7 +5309,7 @@
    "gender": "Femme",
    "age": 17,
    "occupation": [
-    "Lycoris Agent",
+    "Agent secret",
     "Serveuse"
    ],
    "hair": null,
@@ -5365,8 +5362,7 @@
    "age": null,
    "occupation": [
     "Capitaine",
-    "Commander of the Secret Mobile Corps",
-    "Corps Commander of the Executive Militia"
+    "Leader"
    ],
    "hair": null,
    "anime": "Bleach",
