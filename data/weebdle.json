@@ -12353,7 +12353,8 @@
   "name": "Ayumi Otosaka",
   "aliases": [
    "Otosaka Ayumi",
-   "乙坂歩未"
+   "乙坂歩未",
+   "Ayumi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
   "attributes": {
@@ -23612,250 +23613,6 @@
   }
  },
  {
-  "id": "1241",
-  "name": "Mikako Kouda",
-  "aliases": [
-   "Kouda Mikako",
-   "幸田実果子"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1241-X8UEE94wYVjY.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 36,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "1242",
-  "name": "Tsutomu Yamaguchi",
-  "aliases": [
-   "Yamaguchi Tsutomu",
-   "山口ツトム,",
-   "Tsutomu"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/1242.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4406",
-  "name": "Risa Kanzaki",
-  "aliases": [
-   "Kanzaki Risa",
-   "神崎リサ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4406-lccs4ggzfx11.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4403",
-  "name": "Mariko Nakasu",
-  "aliases": [
-   "Nakasu Mariko",
-   "Mariko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4403-DLJkyeaAGNbk.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4405",
-  "name": "Yuusuke Tashiro",
-  "aliases": [
-   "Tashiro Yuusuke",
-   "Yuusuke",
-   "Tashiro"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4405.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4404",
-  "name": "Ayumi Oikawa",
-  "aliases": [
-   "Oikawa Ayumi",
-   "Oikawa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4404.jpg",
-  "attributes": {
-   "gender": null,
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4407",
-  "name": "Mai Oota",
-  "aliases": [
-   "Oota Mai",
-   "Oota"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4407.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4409",
-  "name": "Jiro Nishino",
-  "aliases": [
-   "Nishino Jiro",
-   "Jiro"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4409.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": [
-    "Violets"
-   ],
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "35803",
-  "name": "Ruriko Kouda",
-  "aliases": [
-   "Kouda Ruriko",
-   "Ruriko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35803-pK8AGgFBaLn4.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
-  "id": "4408",
-  "name": "Shintarou Nakasu",
-  "aliases": [
-   "Nakasu Shintarou",
-   "中須新太郎"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/4408.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Gokinjo Monogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 1995,
-   "studio": "Toei Animation"
-  }
- },
- {
   "id": "43669",
   "name": "Kouko Kaga",
   "aliases": [
@@ -28438,430 +28195,6 @@
   }
  },
  {
-  "id": "328089",
-  "name": "Sitara",
-  "aliases": [
-   "シタラ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b328089-TzlTQ4EZIBaN.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "361640",
-  "name": "Töregene",
-  "aliases": [
-   "ドレゲネ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b361640-VyDdnpRPPJ9N.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403710",
-  "name": "Boraqchin",
-  "aliases": [
-   "ボラクチン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403710-BduBXhchx2AQ.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403707",
-  "name": "Sorghaghtani Beki",
-  "aliases": [
-   "Beki Sorghaghtani",
-   "ソルコクタニ・ベキ",
-   "Sorghaghtani",
-   "Beki"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403707-kvhmvNEH9ttv.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "380761",
-  "name": "Tolui",
-  "aliases": [
-   "トルイ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b380761-OBRyfq50aBMN.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "394597",
-  "name": "Muhammad",
-  "aliases": [
-   "ムハンマド"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394597-q2aDxnKIg3mV.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 12,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "399632",
-  "name": "Ögedei",
-  "aliases": [
-   "Ogedei",
-   "オゴタイ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b399632-MSSlYLuzWn1h.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "394596",
-  "name": "Shira",
-  "aliases": [
-   "シラ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394596-iZOHgYGnVhKe.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403708",
-  "name": "Möge",
-  "aliases": [
-   "モゲ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403708-PH59B8JBQS19.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "394598",
-  "name": "Fatima",
-  "aliases": [
-   "ファーティマ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b394598-eK079JCVAMml.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "399633",
-  "name": "Chagatai",
-  "aliases": [
-   "チャガタイ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b399633-oPdMEx36k0sY.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "399634",
-  "name": "Jochi",
-  "aliases": [
-   "ジュチ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b399634-zWlHlWp0ZjwX.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403348",
-  "name": "Zumurrud",
-  "aliases": [
-   "ズムッルド"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403348-Cen0PSCX1jHs.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403349",
-  "name": "Anis",
-  "aliases": [
-   "アニース"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403349-w6UXPLvIvOhW.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403709",
-  "name": "Kirgistani",
-  "aliases": [
-   "キルギスタニ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403709-wJUHj40XyBHD.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403897",
-  "name": "Chinqai",
-  "aliases": [
-   "チンカイ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403897-ZXLvo8QydTC2.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "405242",
-  "name": "Khulan",
-  "aliases": [
-   "クラン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b405242-rC7eVnYiQptU.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "406001",
-  "name": "Güyük",
-  "aliases": [
-   "グユク"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b406001-RiJUJhCwAlVA.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403350",
-  "name": "Oji",
-  "aliases": [
-   "伯父"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403350-yQw2CaEiFsy3.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
-  "id": "403351",
-  "name": "Ahmad",
-  "aliases": [
-   "アフマド"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b403351-N55jwaVhXvzF.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Jaadugar: A Witch in Mongolia",
-   "genres": [
-    "Aventure",
-    "Drame"
-   ],
-   "year": 2026,
-   "studio": "Science SARU"
-  }
- },
- {
   "id": "6356",
   "name": "Joseph Joestar",
   "aliases": [
@@ -32476,7 +31809,8 @@
   "name": "Shintarou Kisaragi",
   "aliases": [
    "Kisaragi Shintarou",
-   "如月伸太郎"
+   "如月伸太郎",
+   "Shintarou"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67167-YOM5d1WQtDzG.png",
   "attributes": {
@@ -37867,6 +37201,79 @@
    "Nagase"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b432-DeCme2RqDXbF.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Paradise Kiss",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2005,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "1241",
+  "name": "Mikako Kouda",
+  "aliases": [
+   "Kouda Mikako",
+   "幸田実果子"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1241-X8UEE94wYVjY.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 36,
+   "occupation": null,
+   "hair": null,
+   "anime": "Paradise Kiss",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2005,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "4406",
+  "name": "Risa Kanzaki",
+  "aliases": [
+   "Kanzaki Risa",
+   "神崎リサ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4406-lccs4ggzfx11.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Paradise Kiss",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2005,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "1242",
+  "name": "Tsutomu Yamaguchi",
+  "aliases": [
+   "Yamaguchi Tsutomu",
+   "山口ツトム,",
+   "Tsutomu"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/1242.jpg",
   "attributes": {
    "gender": "Homme",
    "age": null,
@@ -48927,7 +48334,8 @@
   "name": "Akane Nishino",
   "aliases": [
    "Nishino Akane",
-   "西野アカネ"
+   "西野アカネ",
+   "Nishino"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b229652-JE0EUB5nfONo.png",
   "attributes": {
