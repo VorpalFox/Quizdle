@@ -29,6 +29,15 @@ export class GameStore {
     return this.played.get(PLAYED_KEY(channelId, subjectId)) === this.daily.day
   }
 
+  // Debug : une entrée retirée du quiz. Si c'était la réponse du jour, nouveau tirage pour ce sujet.
+  // Les parties en cours gardent leur réponse ; les suivantes auront la nouvelle. Renvoie true si on a retiré.
+  redrawIfTarget(subject: Subject, entryId: string): boolean {
+    if (this.daily.target(subject).id !== entryId)
+      return false
+    this.daily.redrawSubject(subject)
+    return true
+  }
+
   // Debug : nouveau tirage pour aujourd'hui et on oublie toutes les parties
   reset(): void {
     this.daily.redraw()

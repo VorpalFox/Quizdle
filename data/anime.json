@@ -1,0 +1,5890 @@
+[
+ {
+  "id": "127691",
+  "name": "Satoru Gojou",
+  "aliases": [
+   "Gojou Satoru",
+   "Satoru Gojo",
+   "五条悟",
+   "Satoru",
+   "Gojou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 28,
+   "occupation": [
+    "Exorciste",
+    "Professeur"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "45627",
+  "name": "Levi",
+  "aliases": [
+   "Levi Heichou (リヴァイ兵長)",
+   "Captain Levi",
+   "リヴァイ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Voyou",
+    "Soldat"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2018,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "40",
+  "name": "Luffy Monkey",
+  "aliases": [
+   "Monkey Luffy",
+   "Mugiwara no Luffy (麦わらのルフィ)",
+   "Straw Hat Luffy",
+   "Monkey D. Rufy",
+   "Luffy",
+   "Monkey"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Capitaine"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "27",
+  "name": "Killua Zoldyck",
+  "aliases": [
+   "Zoldyck Killua",
+   "キルア=ゾルディック",
+   "Killua",
+   "Zoldyck"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b27-Z5O02kQUydpT.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 11,
+   "occupation": [
+    "Tueur"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Nippon Animation"
+  }
+ },
+ {
+  "id": "40882",
+  "name": "Eren Yeager",
+  "aliases": [
+   "Yeager Eren",
+   "Eren Jaeger",
+   "Eren Jäger",
+   "エレン・イェーガー",
+   "Eren",
+   "Yeager"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Révolutionnaire",
+    "Soldat",
+    "Épéiste"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2013,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "62",
+  "name": "Zoro Roronoa",
+  "aliases": [
+   "Roronoa Zoro",
+   "ロロノア・ゾロ",
+   "Zoro",
+   "Roronoa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": [
+    "Épéiste"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "417",
+  "name": "Lelouch Lamperouge",
+  "aliases": [
+   "Lamperouge Lelouch",
+   "ルルーシュ・ランペルージ",
+   "Lelouch",
+   "Lamperouge"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b417-gVLmIJu9phcK.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "88572",
+  "name": "Emilia",
+  "aliases": [
+   "エミリア"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Noble",
+    "Leader"
+   ],
+   "hair": [
+    "Argentés"
+   ],
+   "anime": "Re:ZERO -Starting Life in Another World-",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Psychologique",
+    "Romance",
+    "Thriller"
+   ],
+   "year": 2016,
+   "studio": "WHITE FOX"
+  }
+ },
+ {
+  "id": "71",
+  "name": "L Lawliet",
+  "aliases": [
+   "Lawliet L",
+   "エル・ローライト",
+   "Lawliet"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 24,
+   "occupation": [
+    "Détective"
+   ],
+   "hair": null,
+   "anime": "Death Note",
+   "genres": [
+    "Mystère",
+    "Psychologique",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "87275",
+  "name": "Ken Kaneki",
+  "aliases": [
+   "Kaneki Ken",
+   "金木研",
+   "Ken",
+   "Kaneki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87275-mb13EWZBdbh3.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Étudiant",
+    "Serveur",
+    "Détective",
+    "Roi",
+    "Peacekeeper"
+   ],
+   "hair": null,
+   "anime": "Tokyo Ghoul",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "40881",
+  "name": "Mikasa Ackerman",
+  "aliases": [
+   "Ackerman Mikasa",
+   "ミカサ・アッカーマン",
+   "Mikasa",
+   "Ackerman"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Recrue",
+    "Bataillon d'exploration"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2013,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "89334",
+  "name": "Arataka Reigen",
+  "aliases": [
+   "Reigen Arataka",
+   "霊幻新隆",
+   "Arataka",
+   "Reigen"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89334-OPj1hCzvrt7X.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 28,
+   "occupation": null,
+   "hair": null,
+   "anime": "Mob Psycho 100",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Psychologique",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "422",
+  "name": "Guts",
+  "aliases": [
+   "ガッツ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b422-XTaiTuvRohsV.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Mercenaire"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Berserk",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 1997,
+   "studio": "OLM"
+  }
+ },
+ {
+  "id": "126824",
+  "name": "Maomao",
+  "aliases": [
+   "猫猫"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Courtisane",
+    "Servante",
+    "Apothicaire"
+   ],
+   "hair": null,
+   "anime": "The Apothecary Diaries",
+   "genres": [
+    "Drame",
+    "Mystère"
+   ],
+   "year": 2023,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "176754",
+  "name": "Frieren",
+  "aliases": [
+   "フリーレン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 1000,
+   "occupation": [
+    "Mage"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "Frieren: Beyond Journey’s End",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2023,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "34470",
+  "name": "Kurisu Makise",
+  "aliases": [
+   "Makise Kurisu",
+   "牧瀬紅莉栖",
+   "Kurisu",
+   "Makise"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34470-Jw2LXZBL5R8i.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 18,
+   "occupation": [
+    "Médecin"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Steins;Gate",
+   "genres": [
+    "Drame",
+    "Psychologique",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2011,
+   "studio": "Frontier Works"
+  }
+ },
+ {
+  "id": "10138",
+  "name": "Thorfinn Karlsefni",
+  "aliases": [
+   "Karlsefni Thorfinn",
+   "トルフィン・カルルセヴニ",
+   "Thorfinn",
+   "Karlsefni"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b10138-zOPrka0ddZOR.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 6,
+   "occupation": [
+    "Marin",
+    "Fermier",
+    "Mercenaire",
+    "Guerrier",
+    "Éclaireur",
+    "Soldat",
+    "Pirate",
+    "Épéiste",
+    "Explorateur",
+    "Tueur",
+    "Assassin"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Vinland Saga",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame"
+   ],
+   "year": 2019,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "137080",
+  "name": "Makima",
+  "aliases": [
+   "マキマ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Rouges"
+   ],
+   "anime": "Chainsaw Man",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "14",
+  "name": "Itachi Uchiha",
+  "aliases": [
+   "Uchiha Itachi",
+   "Sharingan no Itachi (写輪眼のイタチ)",
+   "Itachi of the Sharingan",
+   "うちはイタチ",
+   "Itachi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Tueur",
+    "Épéiste",
+    "Ninja"
+   ],
+   "hair": null,
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2002,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "85",
+  "name": "Kakashi Hatake",
+  "aliases": [
+   "Hatake Kakashi",
+   "Kakashi of the Sharingan",
+   "はたけカカシ",
+   "Kakashi",
+   "Hatake"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 25,
+   "occupation": [
+    "Ninja"
+   ],
+   "hair": null,
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2002,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "35252",
+  "name": "Rintarou Okabe",
+  "aliases": [
+   "Okabe Rintarou",
+   "岡部倫太郎",
+   "Rintarou",
+   "Okabe"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35252-DY9TW6pusqeh.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Steins;Gate",
+   "genres": [
+    "Drame",
+    "Psychologique",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2011,
+   "studio": "Frontier Works"
+  }
+ },
+ {
+  "id": "127212",
+  "name": "Yuuji Itadori",
+  "aliases": [
+   "Itadori Yuuji",
+   "虎杖悠仁",
+   "Yuuji",
+   "Itadori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Exorciste",
+    "Élève"
+   ],
+   "hair": [
+    "Blonds",
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "127222",
+  "name": "Mai Sakurajima",
+  "aliases": [
+   "Sakurajima Mai",
+   "桜島麻衣",
+   "Mai",
+   "Sakurajima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Actrice",
+    "Mannequin",
+    "Policier",
+    "Chanteur"
+   ],
+   "hair": null,
+   "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2018,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "130102",
+  "name": "Denji",
+  "aliases": [
+   "デンジ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Chainsaw Man",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "28",
+  "name": "Kurapika",
+  "aliases": [
+   "クラピカ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28-ivA7UGnfE40a.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Garde du corps",
+    "Épéiste"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Nippon Animation"
+  }
+ },
+ {
+  "id": "80",
+  "name": "Light Yagami",
+  "aliases": [
+   "Yagami Light",
+   "Light Asahi",
+   "夜神月",
+   "Light",
+   "Yagami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Étudiant",
+    "Tueur en série"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Death Note",
+   "genres": [
+    "Mystère",
+    "Psychologique",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "89616",
+  "name": "Shigeo Kageyama",
+  "aliases": [
+   "Kageyama Shigeo",
+   "影山茂夫",
+   "Shigeo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Collégien"
+   ],
+   "hair": null,
+   "anime": "Mob Psycho 100",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Psychologique",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "137079",
+  "name": "Power",
+  "aliases": [
+   "パワー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Blonds",
+    "Roses"
+   ],
+   "anime": "Chainsaw Man",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "90169",
+  "name": "Violet Evergarden",
+  "aliases": [
+   "Evergarden Violet",
+   "ヴァイオレット・エヴァーガーデン",
+   "Violet",
+   "Evergarden"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Violet Evergarden",
+   "genres": [
+    "Drame",
+    "Fantasy",
+    "Tranche de vie"
+   ],
+   "year": 2018,
+   "studio": "Kyoto Animation"
+  }
+ },
+ {
+  "id": "120649",
+  "name": "Kaguya Shinomiya",
+  "aliases": [
+   "Shinomiya Kaguya",
+   "Mistress Kaguya",
+   "四宮かぐや",
+   "Kaguya",
+   "Shinomiya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120649-NPaWaIpWy60E.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "11",
+  "name": "Edward Elric",
+  "aliases": [
+   "Elric Edward",
+   "エドワード・エルリック",
+   "Edward"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Alchimiste d'État"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2003,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "17",
+  "name": "Naruto Uzumaki",
+  "aliases": [
+   "Uzumaki Naruto",
+   "うずまきナルト",
+   "Naruto",
+   "Uzumaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 12,
+   "occupation": [
+    "Ninja"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2002,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "126071",
+  "name": "Tanjirou Kamado",
+  "aliases": [
+   "Kamado Tanjirou",
+   "竈門炭治郎",
+   "Tanjirou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 13,
+   "occupation": [
+    "Mercenaire",
+    "Épéiste",
+    "Chasseur de démons"
+   ],
+   "hair": null,
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "500",
+  "name": "Sakura Matou",
+  "aliases": [
+   "Matou Sakura",
+   "間桐桜",
+   "Sakura",
+   "Matou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "Fate/stay night",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2017,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "126635",
+  "name": "Megumi Fushiguro",
+  "aliases": [
+   "Fushiguro Megumi",
+   "伏黒恵",
+   "Megumi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Sorcier",
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "133676",
+  "name": "Marin Kitagawa",
+  "aliases": [
+   "Kitagawa Marin",
+   "喜多川海夢",
+   "Marin",
+   "Kitagawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Mannequin",
+    "Lycéen",
+    "Cosplayeur"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "My Dress-Up Darling",
+   "genres": [
+    "Comédie",
+    "Ecchi",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2022,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "6356",
+  "name": "Joseph Joestar",
+  "aliases": [
+   "Joestar Joseph",
+   "Josef Joestar",
+   "Mr. Joestar",
+   "ジョセフ・ジョースター",
+   "Joseph"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6356-RImEfUfHpC58.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Chasseur de vampires"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "89220",
+  "name": "Shouto Todoroki",
+  "aliases": [
+   "Todoroki Shouto",
+   "Shouto (ショート)",
+   "Shoto Todoroki",
+   "轟焦凍",
+   "Shouto",
+   "Todoroki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Super-héros",
+    "Lycéen"
+   ],
+   "hair": null,
+   "anime": "My Hero Academia",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2017,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "13020",
+  "name": "Askeladd",
+  "aliases": [
+   "アシェラッド"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13020-ZdiYlNmpRUNS.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 33,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Vinland Saga",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame"
+   ],
+   "year": 2019,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "89361",
+  "name": "Megumin",
+  "aliases": [
+   "めぐみん"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 13,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Noirs",
+    "Bruns"
+   ],
+   "anime": "KONOSUBA -God's blessing on this wonderful world!",
+   "genres": [
+    "Aventure",
+    "Comédie",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2016,
+   "studio": "Studio DEEN"
+  }
+ },
+ {
+  "id": "88575",
+  "name": "Rem",
+  "aliases": [
+   "レム"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Servante"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Re:ZERO -Starting Life in Another World-",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Psychologique",
+    "Romance",
+    "Thriller"
+   ],
+   "year": 2016,
+   "studio": "WHITE FOX"
+  }
+ },
+ {
+  "id": "88892",
+  "name": "Katsuki Bakugou",
+  "aliases": [
+   "Bakugou Katsuki",
+   "Katsuki Bakugo",
+   "爆豪勝己",
+   "Katsuki",
+   "Bakugou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Héros professionnel",
+    "Élève",
+    "Assistant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "My Hero Academia",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "89198",
+  "name": "Osamu Dazai",
+  "aliases": [
+   "Dazai Osamu",
+   "太宰治",
+   "Osamu",
+   "Dazai"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89198-qKmRTw4Y3PRC.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 22,
+   "occupation": [
+    "Détective",
+    "Mafieux"
+   ],
+   "hair": null,
+   "anime": "Bungo Stray Dogs",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "672",
+  "name": "Gintoki Sakata",
+  "aliases": [
+   "Sakata Gintoki",
+   "Ginpachi Sakata (坂田銀八)",
+   "坂田銀時",
+   "Gintoki",
+   "Sakata"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b672-cP5VPriN67xJ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 27,
+   "occupation": [
+    "Samouraï",
+    "Épéiste"
+   ],
+   "hair": [
+    "Argentés"
+   ],
+   "anime": "Gintama",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Science-fiction"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "121103",
+  "name": "Chika Fujiwara",
+  "aliases": [
+   "Fujiwara Chika",
+   "Love Detective Chika",
+   "Fortune Teller Chika",
+   "Secretary Fujiwara",
+   "藤原千花",
+   "Chika",
+   "Fujiwara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roses",
+    "Argentés"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "88573",
+  "name": "Subaru Natsuki",
+  "aliases": [
+   "Natsuki Subaru",
+   "Natsuki Schwartz",
+   "ナツキ・スバル",
+   "Subaru",
+   "Natsuki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Majordome",
+    "Chevalier",
+    "Religieux",
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Re:ZERO -Starting Life in Another World-",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Psychologique",
+    "Romance",
+    "Thriller"
+   ],
+   "year": 2016,
+   "studio": "WHITE FOX"
+  }
+ },
+ {
+  "id": "126375",
+  "name": "Itsuki Nakano",
+  "aliases": [
+   "Nakano Itsuki",
+   "中野五月",
+   "Itsuki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Food critic",
+    "Professeur"
+   ],
+   "hair": [
+    "Rouges",
+    "Roses"
+   ],
+   "anime": "The Quintessential Quintuplets",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "Tezuka Productions"
+  }
+ },
+ {
+  "id": "124382",
+  "name": "Ichigo",
+  "aliases": [
+   "イチゴ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Pilote"
+   ],
+   "hair": null,
+   "anime": "DARLING in the FRANXX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Psychologique",
+    "Romance",
+    "Science-fiction"
+   ],
+   "year": 2018,
+   "studio": "TRIGGER"
+  }
+ },
+ {
+  "id": "123212",
+  "name": "Kiyotaka Ayanokouji",
+  "aliases": [
+   "Ayanokouji Kiyotaka",
+   "綾小路清隆",
+   "Kiyotaka",
+   "Ayanokouji"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Classroom of the Elite",
+   "genres": [
+    "Drame",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "30",
+  "name": "Gon Freecss",
+  "aliases": [
+   "Freecss Gon",
+   "ゴン＝フリークス",
+   "Gon",
+   "Freecss"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30-lyFExKyDhefc.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 11,
+   "occupation": [
+    "Chasseur"
+   ],
+   "hair": [
+    "Verts",
+    "Noirs"
+   ],
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Nippon Animation"
+  }
+ },
+ {
+  "id": "124142",
+  "name": "Senkuu Ishigami",
+  "aliases": [
+   "Ishigami Senkuu",
+   "石神千空",
+   "Senkuu"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124142-XUO1g7wRqkaT.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Scientifique",
+    "Leader"
+   ],
+   "hair": [
+    "Blancs",
+    "Verts"
+   ],
+   "anime": "Dr. STONE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Science-fiction"
+   ],
+   "year": 2019,
+   "studio": "TMS Entertainment"
+  }
+ },
+ {
+  "id": "305",
+  "name": "Sanji",
+  "aliases": [
+   "サンジ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": [
+    "Cuisinier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "73935",
+  "name": "Saitama",
+  "aliases": [
+   "サイタマ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 25,
+   "occupation": [
+    "Professeur",
+    "Super-héros"
+   ],
+   "hair": null,
+   "anime": "One-Punch Man",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 2015,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "125886",
+  "name": "Miko Iino",
+  "aliases": [
+   "Iino Miko",
+   "伊井野ミコ",
+   "Miko",
+   "Iino"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125886-TQbmqAaSgBLS.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Président du conseil des élèves",
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2020,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "129928",
+  "name": "Jin-U Seong",
+  "aliases": [
+   "Seong Jin-U",
+   "성진우",
+   "Jin-U",
+   "Seong"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 23,
+   "occupation": null,
+   "hair": null,
+   "anime": "Solo Leveling",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2024,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "61",
+  "name": "Robin Nico",
+  "aliases": [
+   "Nico Robin",
+   "ニコロビン",
+   "Robin",
+   "Nico"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 28,
+   "occupation": [
+    "Archéologue"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "90107",
+  "name": "Kusuo Saiki",
+  "aliases": [
+   "Saiki Kusuo",
+   "斉木楠雄",
+   "Kusuo",
+   "Saiki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90107-ZULW5HlPX1uU.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Voyant",
+    "Lycéen"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "The Disastrous Life of Saiki K.",
+   "genres": [
+    "Comédie",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2018,
+   "studio": "J.C.STAFF"
+  }
+ },
+ {
+  "id": "5",
+  "name": "Ichigo Kurosaki",
+  "aliases": [
+   "Kurosaki Ichigo",
+   "黒崎一護",
+   "Kurosaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5-a7bkJgjhhigE.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Épéiste",
+    "Lycéen",
+    "Chasseur",
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "94",
+  "name": "Asuka Langley Souryuu",
+  "aliases": [
+   "Souryuu Langley Asuka",
+   "Asuka Langley Shikinami",
+   "惣流・アスカ・ラングレー",
+   "Asuka",
+   "Langley",
+   "Souryuu"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b94-d631a3Z2KPvd.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Collégien"
+   ],
+   "hair": [
+    "Roux",
+    "Bruns"
+   ],
+   "anime": "Neon Genesis Evangelion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Mystère",
+    "Psychologique",
+    "Science-fiction"
+   ],
+   "year": 1995,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "22037",
+  "name": "Hitagi Senjougahara",
+  "aliases": [
+   "Senjougahara Hitagi",
+   "戦場ヶ原ひたぎ",
+   "Hitagi",
+   "Senjougahara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns",
+    "Violets"
+   ],
+   "anime": "Bakemonogatari",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2009,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "137081",
+  "name": "Aki Hayakawa",
+  "aliases": [
+   "Hayakawa Aki",
+   "早川アキ",
+   "Aki",
+   "Hayakawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Chasseur de démons",
+    "Wild Fiend"
+   ],
+   "hair": null,
+   "anime": "Chainsaw Man",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "124381",
+  "name": "Zero Two",
+  "aliases": [
+   "Two Zero",
+   "ゼロツー",
+   "Zero",
+   "Two"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Pilote"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "DARLING in the FRANXX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Psychologique",
+    "Romance",
+    "Science-fiction"
+   ],
+   "year": 2018,
+   "studio": "TRIGGER"
+  }
+ },
+ {
+  "id": "66173",
+  "name": "Izumi Miyamura",
+  "aliases": [
+   "Miyamura Izumi",
+   "宮村伊澄",
+   "Izumi",
+   "Miyamura"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66173-g8eU1LGWPB8O.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Boulanger",
+    "Lycéen"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Horimiya",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2021,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "129130",
+  "name": "Inosuke Hashibira",
+  "aliases": [
+   "Hashibira Inosuke",
+   "嘴平伊之助",
+   "Inosuke",
+   "Hashibira"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "127518",
+  "name": "Nezuko Kamado",
+  "aliases": [
+   "Kamado Nezuko",
+   "竈門禰豆子",
+   "Nezuko"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 12,
+   "occupation": [
+    "Femme au foyer"
+   ],
+   "hair": [
+    "Noirs",
+    "Roux"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "64769",
+  "name": "Shouyou Hinata",
+  "aliases": [
+   "Hinata Shouyou",
+   "Shoyo Hinata",
+   "日向翔陽",
+   "Shouyou",
+   "Hinata"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Capitaine",
+    "Volleyeur"
+   ],
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "68",
+  "name": "Roy Mustang",
+  "aliases": [
+   "Mustang Roy",
+   "ロイ・マスタング",
+   "Roy",
+   "Mustang"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 29,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Fullmetal Alchemist",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2003,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "121102",
+  "name": "Yuu Ishigami",
+  "aliases": [
+   "Ishigami Yuu",
+   "Treasurer Ishigami",
+   "石上優"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121102-tiQFxnSEIAwm.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Élève",
+    "Leader"
+   ],
+   "hair": [
+    "Bleus",
+    "Noirs"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "138102",
+  "name": "Yor Forger",
+  "aliases": [
+   "Forger Yor",
+   "Yor Briar (ヨル・ブライア)",
+   "ヨル・フォージャー",
+   "Yor"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 27,
+   "occupation": [
+    "Fonctionnaire",
+    "Assassin"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "SPY x FAMILY",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "1",
+  "name": "Spike Spiegel",
+  "aliases": [
+   "Spiegel Spike",
+   "Spike Spike",
+   "スパイク・スピーゲル",
+   "Spike",
+   "Spiegel"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1-ChxaldmieFlQ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 27,
+   "occupation": [
+    "Assassin",
+    "Tireur",
+    "Chasseur de primes",
+    "Pilote"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "Cowboy Bebop",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Science-fiction"
+   ],
+   "year": 1998,
+   "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "31",
+  "name": "Hisoka Morow",
+  "aliases": [
+   "Morow Hisoka",
+   "Hisoka Morou",
+   "ヒソカ・モロウ",
+   "Hisoka",
+   "Morow"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b31-FZckOuu7L1un.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 28,
+   "occupation": null,
+   "hair": null,
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2011,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "4003",
+  "name": "Joutarou Kuujou",
+  "aliases": [
+   "Kuujou Joutarou",
+   "Professor Kuujou",
+   "空条承太郎",
+   "Joutarou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Explorateur",
+    "Océanographe"
+   ],
+   "hair": null,
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "46494",
+  "name": "Armin Arlert",
+  "aliases": [
+   "Arlert Armin",
+   "Armin Arlelt",
+   "アルミン・アルレルト",
+   "Armin",
+   "Arlert"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Recrue",
+    "Bataillon d'exploration"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2013,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "71121",
+  "name": "Hange Zoe",
+  "aliases": [
+   "Zoe Hange",
+   "Hange Zoë",
+   "ハンジ・ゾエ",
+   "Hange",
+   "Zoe"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71121-7R7CnQd3lHgt.png",
+  "attributes": {
+   "gender": null,
+   "age": null,
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2013,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "89028",
+  "name": "Izuku Midoriya",
+  "aliases": [
+   "Midoriya Izuku",
+   "Young Midoriya",
+   "緑谷出久",
+   "Izuku",
+   "Midoriya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Super-héros",
+    "Lycéen"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "My Hero Academia",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "23602",
+  "name": "Shinobu Oshino",
+  "aliases": [
+   "Oshino Shinobu",
+   "忍野忍",
+   "Oshino"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23602-Z4MDNYcoAWZu.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 598,
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Bakemonogatari",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Ecchi",
+    "Mystère",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "129131",
+  "name": "Zenitsu Agatsuma",
+  "aliases": [
+   "Agatsuma Zenitsu",
+   "我妻善逸",
+   "Zenitsu",
+   "Agatsuma"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
+   "hair": [
+    "Blonds",
+    "Roux"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "133704",
+  "name": "Kento Nanami",
+  "aliases": [
+   "Nanami Kento",
+   "七海建人",
+   "Kento"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 27,
+   "occupation": [
+    "Sorcier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "123962",
+  "name": "Rimuru Tempest",
+  "aliases": [
+   "Tempest Rimuru",
+   "King of Tempest",
+   "リムル・テンペスト",
+   "Rimuru",
+   "Tempest"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123962-eL9yGV0NLMF7.png",
+  "attributes": {
+   "gender": "Autre",
+   "age": 37,
+   "occupation": null,
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "That Time I Got Reincarnated as a Slime",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy"
+   ],
+   "year": 2018,
+   "studio": "8-bit"
+  }
+ },
+ {
+  "id": "133700",
+  "name": "Nobara Kugisaki",
+  "aliases": [
+   "Kugisaki Nobara",
+   "釘崎野薔薇",
+   "Nobara",
+   "Kugisaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Exorciste",
+    "Élève"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "13",
+  "name": "Sasuke Uchiha",
+  "aliases": [
+   "Uchiha Sasuke",
+   "The Uchiha Survivor",
+   "The Last Uchiha",
+   "Sasuke of the Sharingan",
+   "うちはサスケ",
+   "Sasuke"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 12,
+   "occupation": [
+    "Ninja",
+    "Épéiste"
+   ],
+   "hair": null,
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2002,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "138100",
+  "name": "Anya Forger",
+  "aliases": [
+   "Forger Anya",
+   "Anya Williams",
+   "Anya Levski",
+   "Anya Roche",
+   "Anya Klein",
+   "Princess Anya",
+   "アーニャ・フォージャー",
+   "Anya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 6,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "SPY x FAMILY",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "46496",
+  "name": "Erwin Smith",
+  "aliases": [
+   "Smith Erwin",
+   "エルヴィン・スミス",
+   "Erwin",
+   "Smith"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Leader",
+    "Bataillon d'exploration"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2018,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "134167",
+  "name": "Maki Zenin",
+  "aliases": [
+   "Zenin Maki",
+   "Miss Zenin",
+   "禪院真希",
+   "Maki",
+   "Zenin"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Exorciste",
+    "Élève"
+   ],
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "84677",
+  "name": "Yato",
+  "aliases": [
+   "夜ト"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84677-PFmohzIXD1ud.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Dieu"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Noragami",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "498",
+  "name": "Rin Toosaka",
+  "aliases": [
+   "Toosaka Rin",
+   "Rin Tohsaka",
+   "Rin Tousaka",
+   "遠坂凛",
+   "Rin",
+   "Toosaka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2006,
+   "studio": "NBCUniversal Entertainment Japan"
+  }
+ },
+ {
+  "id": "257562",
+  "name": "Hitori Gotou",
+  "aliases": [
+   "Gotou Hitori",
+   "Hitori Gotoh",
+   "後藤ひとり",
+   "Hitori",
+   "Gotou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b257562-Ru35NYPfsqhY.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "BOCCHI THE ROCK!",
+   "genres": [
+    "Comédie",
+    "Musique",
+    "Tranche de vie"
+   ],
+   "year": 2022,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "67065",
+  "name": "Hachiman Hikigaya",
+  "aliases": [
+   "Hikigaya Hachiman",
+   "比企谷八幡",
+   "Hachiman",
+   "Hikigaya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67065-Dhec6tE2yWA9.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "My Teen Romantic Comedy SNAFU",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2013,
+   "studio": "Brain's Base"
+  }
+ },
+ {
+  "id": "22036",
+  "name": "Koyomi Araragi",
+  "aliases": [
+   "Araragi Koyomi",
+   "阿良々木暦",
+   "Koyomi",
+   "Araragi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22036-Ed3CjwPlDLp4.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Étudiant",
+    "Exorciste"
+   ],
+   "hair": null,
+   "anime": "Bakemonogatari",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2009,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "64771",
+  "name": "Tobio Kageyama",
+  "aliases": [
+   "Kageyama Tobio",
+   "Kageyama the Kalm",
+   "影山飛雄",
+   "Tobio"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Volleyeur"
+   ],
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "38005",
+  "name": "Homura Akemi",
+  "aliases": [
+   "Akemi Homura",
+   "暁美ほむら",
+   "Homura",
+   "Akemi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38005-T3NR8p2f021x.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": null,
+   "hair": null,
+   "anime": "Puella Magi Madoka Magica",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Magical girl",
+    "Psychologique",
+    "Thriller"
+   ],
+   "year": 2011,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "130050",
+  "name": "Giyuu Tomioka",
+  "aliases": [
+   "Tomioka Giyuu",
+   "冨岡義勇",
+   "Giyuu",
+   "Tomioka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2025,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "497",
+  "name": "Artoria Pendragon",
+  "aliases": [
+   "Pendragon Artoria",
+   "Altria Pendragon",
+   "Arturia Pendragon",
+   "Arthur Pendragon",
+   "アルトリア・ペンドラゴン",
+   "Artoria",
+   "Pendragon"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 35,
+   "occupation": [
+    "Épéiste"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2006,
+   "studio": "NBCUniversal Entertainment Japan"
+  }
+ },
+ {
+  "id": "133701",
+  "name": "Sukuna",
+  "aliases": [
+   "Ryoumen Sukuna (両面宿儺)",
+   "宿儺"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 1000,
+   "occupation": [
+    "Fléau"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2025,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "188783",
+  "name": "Kana Arima",
+  "aliases": [
+   "Arima Kana",
+   "有馬かな",
+   "Kana",
+   "Arima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188783-77orwP7vNuNg.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Acteur",
+    "Idole"
+   ],
+   "hair": [
+    "Rouges"
+   ],
+   "anime": "OSHI NO KO",
+   "genres": [
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Doga Kobo"
+  }
+ },
+ {
+  "id": "66171",
+  "name": "Kyouko Hori",
+  "aliases": [
+   "Hori Kyouko",
+   "堀京子",
+   "Kyouko",
+   "Hori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66171-o2vk3689wWFK.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Horimiya",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2021,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "129571",
+  "name": "Yuuta Okkotsu",
+  "aliases": [
+   "Okkotsu Yuuta",
+   "Yuta Okkotsu",
+   "乙骨憂太",
+   "Yuuta",
+   "Okkotsu"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Sorcier",
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2026,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "86",
+  "name": "Rei Ayanami",
+  "aliases": [
+   "Ayanami Rei",
+   "Tentative Name: Rei Ayanami",
+   "綾波レイ",
+   "Rei",
+   "Ayanami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/86-cA1zL7fyls8E.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Pilote"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Neon Genesis Evangelion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Mystère",
+    "Psychologique",
+    "Science-fiction"
+   ],
+   "year": 1995,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "80243",
+  "name": "Shouko Nishimiya",
+  "aliases": [
+   "Nishimiya Shouko",
+   "西宮硝子",
+   "Nishimiya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80243-RzxE51iUU5eq.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 12,
+   "occupation": null,
+   "hair": null,
+   "anime": "A Silent Voice",
+   "genres": [
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2016,
+   "studio": "Kyoto Animation"
+  }
+ },
+ {
+  "id": "88350",
+  "name": "Roxy Migurdia",
+  "aliases": [
+   "Migurdia Roxy",
+   "ロキシー・ミグルディア",
+   "Roxy",
+   "Migurdia"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88350-QU1iwgZ887U8.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Mage"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Mushoku Tensei: Jobless Reincarnation",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2021,
+   "studio": "Studio Bind"
+  }
+ },
+ {
+  "id": "126373",
+  "name": "Miku Nakano",
+  "aliases": [
+   "Nakano Miku",
+   "中野三玖",
+   "Miku"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Commerçant"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "The Quintessential Quintuplets",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "Tezuka Productions"
+  }
+ },
+ {
+  "id": "129133",
+  "name": "Kyoujurou Rengoku",
+  "aliases": [
+   "Rengoku Kyoujurou",
+   "煉獄杏寿郎",
+   "Kyoujurou",
+   "Rengoku"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 20,
+   "occupation": [
+    "Guerrier"
+   ],
+   "hair": [
+    "Blonds",
+    "Rouges"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2021,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "89",
+  "name": "Shinji Ikari",
+  "aliases": [
+   "Ikari Shinji",
+   "碇シンジ",
+   "Shinji",
+   "Ikari"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89-ZtZhXkh1rITn.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Agent secret",
+    "Lycéen",
+    "Pilote"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Neon Genesis Evangelion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Mystère",
+    "Psychologique",
+    "Science-fiction"
+   ],
+   "year": 1995,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "719",
+  "name": "Johan Liebert",
+  "aliases": [
+   "Liebert Johan",
+   "ヨハン・リーベルト",
+   "Johan",
+   "Liebert"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Monster",
+   "genres": [
+    "Drame",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Thriller"
+   ],
+   "year": 2004,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "1259",
+  "name": "Misato Katsuragi",
+  "aliases": [
+   "Katsuragi Misato",
+   "葛城ミサト",
+   "Misato",
+   "Katsuragi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 29,
+   "occupation": [
+    "Officier"
+   ],
+   "hair": [
+    "Violets"
+   ],
+   "anime": "Neon Genesis Evangelion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Mystère",
+    "Psychologique",
+    "Science-fiction"
+   ],
+   "year": 1995,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "1111",
+  "name": "C.C.",
+  "aliases": [
+   "シー･ツー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Pilote"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "124440",
+  "name": "Yami Sukehiro",
+  "aliases": [
+   "Sukehiro Yami",
+   "ヤミ・スケヒロ",
+   "Yami",
+   "Sukehiro"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124440-Lpdo6y8cljV6.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 28,
+   "occupation": [
+    "Chevalier"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Black Clover",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy"
+   ],
+   "year": 2017,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "80491",
+  "name": "Shouya Ishida",
+  "aliases": [
+   "Ishida Shouya",
+   "石田将也",
+   "Shouya",
+   "Ishida"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80491-NK6pxb6oH61P.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 12,
+   "occupation": null,
+   "hair": null,
+   "anime": "A Silent Voice",
+   "genres": [
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2016,
+   "studio": "Kyoto Animation"
+  }
+ },
+ {
+  "id": "121104",
+  "name": "Ai Hayasaka",
+  "aliases": [
+   "Hayasaka Ai",
+   "早坂愛",
+   "Hayasaka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121104-7TYRl3EEsDYU.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "127221",
+  "name": "Sakuta Azusagawa",
+  "aliases": [
+   "Azusagawa Sakuta",
+   "梓川咲太",
+   "Sakuta",
+   "Azusagawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Élève",
+    "Professeur",
+    "Serveur"
+   ],
+   "hair": null,
+   "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2018,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "126372",
+  "name": "Nino Nakano",
+  "aliases": [
+   "Nakano Nino",
+   "中野二乃",
+   "Nino"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève",
+    "Petits boulots",
+    "Commerçant"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "The Quintessential Quintuplets",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "Tezuka Productions"
+  }
+ },
+ {
+  "id": "67327",
+  "name": "Yuu Nishinoya",
+  "aliases": [
+   "Nishinoya Yuu",
+   "西谷夕",
+   "Nishinoya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Volleyeur"
+   ],
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "148740",
+  "name": "Reze",
+  "aliases": [
+   "Lady Reze",
+   "レゼ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Espion",
+    "Serveuse"
+   ],
+   "hair": [
+    "Violets"
+   ],
+   "anime": "Chainsaw Man",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2025,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "71933",
+  "name": "Karma Akabane",
+  "aliases": [
+   "Akabane Karma",
+   "赤羽業",
+   "Karma",
+   "Akabane"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71933-HQ1TSjlrJ8Hv.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Assassination Classroom",
+   "genres": [
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "13767",
+  "name": "Law Trafalgar",
+  "aliases": [
+   "Trafalgar Law",
+   "トラファルガー・ロー",
+   "Law",
+   "Trafalgar"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13767-U604OJN9dxCn.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 24,
+   "occupation": [
+    "Capitaine"
+   ],
+   "hair": null,
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "209",
+  "name": "Kyou Souma",
+  "aliases": [
+   "Souma Kyou",
+   "草摩夾",
+   "Kyou",
+   "Souma"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209-NOAbiLvJt1QA.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Élève",
+    "Professeur"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "Fruits Basket",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2001,
+   "studio": "Studio DEEN"
+  }
+ },
+ {
+  "id": "723",
+  "name": "Nami",
+  "aliases": [
+   "ナミ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 18,
+   "occupation": [
+    "Navigateur"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "11772",
+  "name": "Gyro Zeppeli",
+  "aliases": [
+   "Zeppeli Gyro",
+   "ユリウス・カエサル・ツェペリ",
+   "Gyro",
+   "Zeppeli"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 24,
+   "occupation": [
+    "Neapolitan Executioner"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Mystère",
+    "Sport",
+    "Surnaturel"
+   ],
+   "year": 2026,
+   "studio": "Warner Bros. Japan"
+  }
+ },
+ {
+  "id": "141061",
+  "name": "Vladilena Milizé",
+  "aliases": [
+   "Milizé Vladilena",
+   "ヴラディレーナ・ミリーゼ",
+   "Vladilena",
+   "Milizé"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Argentés"
+   ],
+   "anime": "86 EIGHTY-SIX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction"
+   ],
+   "year": 2021,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "138101",
+  "name": "Loid Forger",
+  "aliases": [
+   "Forger Loid",
+   "ロイド・フォージャー",
+   "Loid"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Psychiatre",
+    "Espion"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "SPY x FAMILY",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2022,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "123385",
+  "name": "Phosphophyllite",
+  "aliases": [
+   "フォスフォフィライト"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123385-ild8gXk13xcO.png",
+  "attributes": {
+   "gender": "Autre",
+   "age": 300,
+   "occupation": null,
+   "hair": null,
+   "anime": "Land of the Lustrous",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "Orange"
+  }
+ },
+ {
+  "id": "36828",
+  "name": "Asuna Yuuki",
+  "aliases": [
+   "Yuuki Asuna",
+   "Asuna (アスナ)",
+   "結城明日奈",
+   "Asuna",
+   "Yuuki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36828-j5ib0adAzGMx.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": null,
+   "anime": "Sword Art Online",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance"
+   ],
+   "year": 2012,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "145341",
+  "name": "Manjirou Sano",
+  "aliases": [
+   "Sano Manjirou",
+   "佐野万次郎",
+   "Manjirou",
+   "Sano"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Mafieux",
+    "Sportif"
+   ],
+   "hair": [
+    "Blonds",
+    "Noirs"
+   ],
+   "anime": "Tokyo Revengers",
+   "genres": [
+    "Action",
+    "Drame",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2021,
+   "studio": "LIDENFILMS"
+  }
+ },
+ {
+  "id": "121724",
+  "name": "Ray",
+  "aliases": [
+   "レイ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121724-SJTdODjeO7e6.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 11,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "The Promised Neverland",
+   "genres": [
+    "Drame",
+    "Fantasy",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Thriller"
+   ],
+   "year": 2019,
+   "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "71267",
+  "name": "Kenma Kozume",
+  "aliases": [
+   "Kozume Kenma",
+   "孤爪研磨",
+   "Kenma",
+   "Kozume"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": null,
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2024,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "174873",
+  "name": "Kurena Kukumila",
+  "aliases": [
+   "Kukumila Kurena",
+   "クレナ・ククミラ",
+   "Kurena",
+   "Kukumila"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Processor"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "86 EIGHTY-SIX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction"
+   ],
+   "year": 2021,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "246",
+  "name": "Gokuu Son",
+  "aliases": [
+   "Son Gokuu",
+   "Goku Son",
+   "孫悟空",
+   "Gokuu",
+   "Son"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Fermier",
+    "Guerrier",
+    "Artiste martial",
+    "Lutteur"
+   ],
+   "hair": [
+    "Noirs",
+    "Blonds"
+   ],
+   "anime": "Dragon Ball",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 1986,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "157115",
+  "name": "Toge Inumaki",
+  "aliases": [
+   "Inumaki Toge",
+   "狗巻棘",
+   "Toge",
+   "Inumaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Sorcier",
+    "Élève"
+   ],
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "67067",
+  "name": "Yukino Yukinoshita",
+  "aliases": [
+   "Yukinoshita Yukino",
+   "雪ノ下雪乃",
+   "Yukino",
+   "Yukinoshita"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67067-gqhgjlni0Bcf.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "My Teen Romantic Comedy SNAFU",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2013,
+   "studio": "Brain's Base"
+  }
+ },
+ {
+  "id": "65643",
+  "name": "Koro-sensei",
+  "aliases": [
+   "殺せんせー "
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65643-jimrOw0RGtoB.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
+   "anime": "Assassination Classroom",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2015,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "154224",
+  "name": "Mami Nanami",
+  "aliases": [
+   "Nanami Mami",
+   "七海麻美",
+   "Mami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b154224-7dJ09BKEnG3v.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 19,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Rent-a-Girlfriend",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance"
+   ],
+   "year": 2020,
+   "studio": "TMS Entertainment"
+  }
+ },
+ {
+  "id": "58",
+  "name": "Chrollo Lucilfer",
+  "aliases": [
+   "Lucilfer Chrollo",
+   "クロロ・ルシルフル",
+   "Chrollo",
+   "Lucilfer"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b58-USOmsz3nursi.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 26,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs",
+    "Violets"
+   ],
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Nippon Animation"
+  }
+ },
+ {
+  "id": "123285",
+  "name": "Asta",
+  "aliases": [
+   "アスタ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123285-tKijiuQErDS0.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Épéiste"
+   ],
+   "hair": null,
+   "anime": "Black Clover",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy"
+   ],
+   "year": 2017,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "125659",
+  "name": "Gabi Braun",
+  "aliases": [
+   "Braun Gabi",
+   "ガビ・ブラウン",
+   "Gabi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125659-O37MZQWibV7g.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2020,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "4004",
+  "name": "Dio Brando",
+  "aliases": [
+   "Brando Dio",
+   "ディオ・ブランドー",
+   "Dio",
+   "Brando"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4004-w0OtWuvjhftG.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 13,
+   "occupation": [
+    "Avocat"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "13580",
+  "name": "Ash Lynx",
+  "aliases": [
+   "Lynx Ash",
+   "アッシュ・リンクス",
+   "Ash",
+   "Lynx"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13580-1J7PwIB8kTpu.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "BANANA FISH",
+   "genres": [
+    "Action",
+    "Drame",
+    "Psychologique",
+    "Thriller"
+   ],
+   "year": 2018,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "89364",
+  "name": "Kazuma Satou",
+  "aliases": [
+   "Satou Kazuma",
+   "佐藤和真",
+   "Kazuma",
+   "Satou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "KONOSUBA -God's blessing on this wonderful world!",
+   "genres": [
+    "Aventure",
+    "Comédie",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2016,
+   "studio": "Studio DEEN"
+  }
+ },
+ {
+  "id": "23277",
+  "name": "Meruem",
+  "aliases": [
+   "メルエム"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23277-EYmIxzL64Mji.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 40,
+   "occupation": null,
+   "hair": null,
+   "anime": "Hunter x Hunter",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy"
+   ],
+   "year": 2011,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "2075",
+  "name": "Kamina",
+  "aliases": [
+   "カミナ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2075-sWb5Xz76JWdX.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Leader",
+    "Pilote"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Gurren Lagann",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Mecha",
+    "Romance",
+    "Science-fiction"
+   ],
+   "year": 2007,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "136070",
+  "name": "Shinobu Kochou",
+  "aliases": [
+   "Kochou Shinobu",
+   "胡蝶しのぶ",
+   "Kochou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136070-MC9LLxJsHyHE.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 18,
+   "occupation": [
+    "Pourfendeur de démons"
+   ],
+   "hair": [
+    "Noirs",
+    "Violets"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2025,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "69411",
+  "name": "Kaori Miyazono",
+  "aliases": [
+   "Miyazono Kaori",
+   "宮園かをり",
+   "Kaori",
+   "Miyazono"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Musicien",
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Your lie in April",
+   "genres": [
+    "Drame",
+    "Musique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2014,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "71611",
+  "name": "Tooru Oikawa",
+  "aliases": [
+   "Oikawa Tooru",
+   "Tohru Oikawa",
+   "Oikawa the Great",
+   "及川徹",
+   "Oikawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71611-cUZwVfzeNXD9.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Volleyeur"
+   ],
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "284157",
+  "name": "Lucy",
+  "aliases": [
+   "ルーシー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 20,
+   "occupation": [
+    "Hacker",
+    "Mercenaire"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "Cyberpunk: Edgerunners",
+   "genres": [
+    "Action",
+    "Drame",
+    "Psychologique",
+    "Science-fiction"
+   ],
+   "year": 2022,
+   "studio": "TRIGGER"
+  }
+ },
+ {
+  "id": "121101",
+  "name": "Miyuki Shirogane",
+  "aliases": [
+   "Shirogane Miyuki",
+   "白銀御行",
+   "Miyuki",
+   "Shirogane"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121101-Q8HzKP15At2d.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "2072",
+  "name": "Ace Portgas",
+  "aliases": [
+   "Portgas Ace",
+   "Fire Fist Ace",
+   "Portgaz D. Ace",
+   "Ace",
+   "Portgas"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2072-Lc6jEdsueJUK.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 20,
+   "occupation": [
+    "Pirate"
+   ],
+   "hair": null,
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "207",
+  "name": "Tooru Honda",
+  "aliases": [
+   "Honda Tooru",
+   "Tohru Honda",
+   "本田透",
+   "Honda"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207-RQ4EUdTD0K62.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Fruits Basket",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2001,
+   "studio": "Studio DEEN"
+  }
+ },
+ {
+  "id": "36765",
+  "name": "Kazuto Kirigaya",
+  "aliases": [
+   "Kirigaya Kazuto",
+   "桐ヶ谷和人",
+   "Kazuto",
+   "Kirigaya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36765-BnLbXg0Tzzh9.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Justicier",
+    "Épéiste"
+   ],
+   "hair": null,
+   "anime": "Sword Art Online",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance"
+   ],
+   "year": 2012,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "183965",
+  "name": "Fern",
+  "aliases": [
+   "フェルン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Mage"
+   ],
+   "hair": [
+    "Violets"
+   ],
+   "anime": "Frieren: Beyond Journey’s End",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2023,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "309",
+  "name": "Chopper Tony Tony",
+  "aliases": [
+   "Tony Tony Chopper",
+   "トニートニー・チョッパー",
+   "Chopper",
+   "Tony"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Médecin"
+   ],
+   "hair": null,
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "13085",
+  "name": "Jousuke Higashikata",
+  "aliases": [
+   "Higashikata Jousuke",
+   "Josuke Higashikata",
+   "東方仗助",
+   "Jousuke",
+   "Higashikata"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13085-CkmgXL7SSLxL.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "718",
+  "name": "Kenzou Tenma",
+  "aliases": [
+   "Tenma Kenzou",
+   "Kenzo Tenma",
+   "Dr. Tenma",
+   "天馬賢三",
+   "Kenzou",
+   "Tenma"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 28,
+   "occupation": [
+    "Chirurgien",
+    "Détective"
+   ],
+   "hair": null,
+   "anime": "Monster",
+   "genres": [
+    "Drame",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Thriller"
+   ],
+   "year": 2004,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": null,
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Kakegurui",
+   "genres": [
+    "Drame",
+    "Mystère",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "89225",
+  "name": "Shouta Aizawa",
+  "aliases": [
+   "Aizawa Shouta",
+   "Shota Aizawa",
+   "相澤消太",
+   "Shouta",
+   "Aizawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 30,
+   "occupation": [
+    "Héros professionnel",
+    "Professeur"
+   ],
+   "hair": null,
+   "anime": "My Hero Academia",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "81929",
+  "name": "Tatsumaki",
+  "aliases": [
+   "タツマキ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 28,
+   "occupation": [
+    "Super-héros"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "One-Punch Man",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 2015,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "2007",
+  "name": "Shikamaru Nara",
+  "aliases": [
+   "Nara Shikamaru",
+   "奈良シカマル",
+   "Shikamaru",
+   "Nara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 13,
+   "occupation": [
+    "Ninja"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2005,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "128651",
+  "name": "Hanako",
+  "aliases": [
+   "花子"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 58,
+   "occupation": [
+    "Leader",
+    "Élève"
+   ],
+   "hair": null,
+   "anime": "Toilet-bound Hanako-kun",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Lerche"
+  }
+ },
+ {
+  "id": "88348",
+  "name": "Rudeus Greyrat",
+  "aliases": [
+   "Greyrat Rudeus",
+   "ルーデウス・グレイラット",
+   "Rudeus"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88348-bIe5XnXdRpmX.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 34,
+   "occupation": [
+    "Étudiant",
+    "Magicien",
+    "Aventurier",
+    "Épéiste"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Mushoku Tensei: Jobless Reincarnation",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2021,
+   "studio": "Studio Bind"
+  }
+ },
+ {
+  "id": "12055",
+  "name": "Yoshikage Kira",
+  "aliases": [
+   "Kira Yoshikage",
+   "吉良吉影",
+   "Yoshikage",
+   "Kira"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12055-eCEkIVV4qoCu.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 33,
+   "occupation": [
+    "Tueur en série"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "507",
+  "name": "Howl",
+  "aliases": [
+   "ハウル"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b507-g9yz1GTLtPla.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 27,
+   "occupation": null,
+   "hair": null,
+   "anime": "Howl‘s Moving Castle",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Romance"
+   ],
+   "year": 2004,
+   "studio": "Studio Ghibli"
+  }
+ },
+ {
+  "id": "210",
+  "name": "Kisuke Urahara",
+  "aliases": [
+   "Urahara Kisuke",
+   "浦原喜助",
+   "Kisuke",
+   "Urahara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Commerçant"
+   ],
+   "hair": null,
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "12064",
+  "name": "Taiga Aisaka",
+  "aliases": [
+   "Aisaka Taiga",
+   "逢坂大河",
+   "Taiga",
+   "Aisaka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12064-7PDN3ylIeAZn.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Toradora!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2008,
+   "studio": "Genco"
+  }
+ },
+ {
+  "id": "424",
+  "name": "Griffith",
+  "aliases": [
+   "グリフィス"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b424-Jfrsf8I7zBps.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Chevalier",
+    "Mercenaire",
+    "Épéiste",
+    "Tueur"
+   ],
+   "hair": [
+    "Argentés"
+   ],
+   "anime": "Berserk",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Horreur",
+    "Surnaturel"
+   ],
+   "year": 1997,
+   "studio": "OLM"
+  }
+ },
+ {
+  "id": "87277",
+  "name": "Touka Kirishima",
+  "aliases": [
+   "Kirishima Touka",
+   "霧嶋董香",
+   "Touka",
+   "Kirishima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87277-oUaqrI1iBzu6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Serveur",
+    "Lycéen"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Tokyo Ghoul",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "133699",
+  "name": "Suguru Getou",
+  "aliases": [
+   "Getou Suguru",
+   "夏油傑",
+   "Suguru",
+   "Getou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 27,
+   "occupation": [
+    "Utilisateur de fléaux"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "45887",
+  "name": "Sasha Blouse",
+  "aliases": [
+   "Blouse Sasha",
+   "Sasha Braus",
+   "サシャ・ブラウス",
+   "Sasha",
+   "Blouse"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Chasseur",
+    "Soldat"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2013,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "2257",
+  "name": "Simon",
+  "aliases": [
+   "シモン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2257-jnalsdnIX1vN.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Leader",
+    "Pilote"
+   ],
+   "hair": null,
+   "anime": "Gurren Lagann",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Mecha",
+    "Romance",
+    "Science-fiction"
+   ],
+   "year": 2007,
+   "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "458",
+  "name": "Revy",
+  "aliases": [
+   "レヴィ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b458-tlKqPcuR287U.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Pirate",
+    "Voyou"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Black Lagoon",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "89362",
+  "name": "Aqua",
+  "aliases": [
+   "アクア"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Déesse"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "KONOSUBA -God's blessing on this wonderful world!",
+   "genres": [
+    "Aventure",
+    "Comédie",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2016,
+   "studio": "Studio DEEN"
+  }
+ },
+ {
+  "id": "83797",
+  "name": "Ryuuko Matoi",
+  "aliases": [
+   "Matoi Ryuuko",
+   "Ryuko Matoi",
+   "纏流子",
+   "Ryuuko",
+   "Matoi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83797-ix0Cl5OMfV22.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roux",
+    "Noirs"
+   ],
+   "anime": "Kill la Kill",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Ecchi"
+   ],
+   "year": 2013,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "2219",
+  "name": "Lain Iwakura",
+  "aliases": [
+   "Iwakura Lain",
+   "岩倉玲音",
+   "Lain",
+   "Iwakura"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2219-K3wzEOVwdUhL.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 14,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Serial Experiments Lain",
+   "genres": [
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 1998,
+   "studio": "TV Tokyo"
+  }
+ },
+ {
+  "id": "702",
+  "name": "Nana Oosaki",
+  "aliases": [
+   "Oosaki Nana",
+   "大崎ナナ",
+   "Nana",
+   "Oosaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b702-qqO3zbj5hp1l.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "NANA",
+   "genres": [
+    "Drame",
+    "Musique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "11222",
+  "name": "Jolyne Kuujou",
+  "aliases": [
+   "Kuujou Jolyne",
+   "Jolyne Cujoh",
+   "空条徐倫",
+   "Jolyne"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11222-Se9QoJHDSeYY.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 19,
+   "occupation": null,
+   "hair": [
+    "Blonds",
+    "Verts"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2021,
+   "studio": "Warner Bros. Japan"
+  }
+ },
+ {
+  "id": "70069",
+  "name": "Kurumi Tokisaki",
+  "aliases": [
+   "Tokisaki Kurumi",
+   "時崎狂三",
+   "Kurumi",
+   "Tokisaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70069-DEV7X6o2L7oG.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Date A Live",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Ecchi",
+    "Mecha",
+    "Romance",
+    "Science-fiction"
+   ],
+   "year": 2022,
+   "studio": "GEEKTOYS"
+  }
+ },
+ {
+  "id": "141060",
+  "name": "Shinei Nouzen",
+  "aliases": [
+   "Nouzen Shinei",
+   "シンエイ・ノウゼン",
+   "Shinei",
+   "Nouzen"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "86 EIGHTY-SIX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction"
+   ],
+   "year": 2021,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "136071",
+  "name": "Tengen Uzui",
+  "aliases": [
+   "Uzui Tengen",
+   "宇髄天元",
+   "Tengen",
+   "Uzui"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136071-99Kexnnn2PiV.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 23,
+   "occupation": [
+    "Combattant",
+    "Pourfendeur de démons",
+    "Garde du corps"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2021,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "67329",
+  "name": "Kei Tsukishima",
+  "aliases": [
+   "Tsukishima Kei",
+   "月島蛍",
+   "Kei",
+   "Tsukishima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Volleyeur"
+   ],
+   "hair": null,
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "121956",
+  "name": "Shouko Komi",
+  "aliases": [
+   "Komi Shouko",
+   "古見硝子",
+   "Komi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121956-5FbIbcd6gAZW.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Déesse"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Komi Can’t Communicate",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2021,
+   "studio": "OLM"
+  }
+ },
+ {
+  "id": "65865",
+  "name": "Rikka Takanashi",
+  "aliases": [
+   "Takanashi Rikka",
+   "小鳥遊六花",
+   "Rikka",
+   "Takanashi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65865-AC0ru7cDXUgK.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": null,
+   "hair": null,
+   "anime": "Love, Chunibyo & Other Delusions",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2012,
+   "studio": "Kyoto Animation"
+  }
+ },
+ {
+  "id": "22055",
+  "name": "Tsubasa Hanekawa",
+  "aliases": [
+   "Hanekawa Tsubasa",
+   "羽川翼",
+   "Tsubasa",
+   "Hanekawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22055-EaTsy30ihdgb.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Bakemonogatari",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2009,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "46484",
+  "name": "Reiner Braun",
+  "aliases": [
+   "Braun Reiner",
+   "ライナー・ブラウン",
+   "Reiner"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Guerrier",
+    "Soldat"
+   ],
+   "hair": null,
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2017,
+   "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "162722",
+  "name": "Touji Fushiguro",
+  "aliases": [
+   "Fushiguro Touji",
+   "Toji Fushiguro",
+   "Touji Zenin",
+   "伏黒甚爾",
+   "Touji"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162722-btzdghBizxKS.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Non-Curse User"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "1662",
+  "name": "Gaara",
+  "aliases": [
+   "Gaara of the Desert",
+   "Sabaku no Gaara",
+   "我愛羅"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 12,
+   "occupation": [
+    "Ninja"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "Naruto",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2002,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "2514",
+  "name": "Gilgamesh",
+  "aliases": [
+   "ギルガメッシュ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Roi"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2011,
+   "studio": "Aniplex"
+  }
+ },
+ {
+  "id": "77605",
+  "name": "Ban",
+  "aliases": [
+   "Bandit Ban",
+   "Undead Ban",
+   "バン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b77605-NrjhQwZwgJ3l.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 43,
+   "occupation": [
+    "Artisan",
+    "Voleur",
+    "Chevalier",
+    "Roi"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "The Seven Deadly Sins",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Ecchi",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "6",
+  "name": "Rukia Kuchiki",
+  "aliases": [
+   "Kuchiki Rukia",
+   "朽木ルキア",
+   "Rukia",
+   "Kuchiki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6-25WoBeWMZXBc.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Épéiste",
+    "Chasseur",
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "19492",
+  "name": "Johnny Joestar",
+  "aliases": [
+   "Joestar Johnny",
+   "ジョニィ・ジョースター",
+   "Johnny"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 19,
+   "occupation": [
+    "Jockey",
+    "Professeur",
+    "Fruit Importer"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Mystère",
+    "Sport",
+    "Surnaturel"
+   ],
+   "year": 2026,
+   "studio": "Warner Bros. Japan"
+  }
+ },
+ {
+  "id": "88349",
+  "name": "Eris Boreas Greyrat",
+  "aliases": [
+   "Greyrat Boreas Eris",
+   "エリス・ボレアス・グレイラット",
+   "Eris",
+   "Boreas"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": null,
+   "anime": "Mushoku Tensei: Jobless Reincarnation",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2021,
+   "studio": "Studio Bind"
+  }
+ },
+ {
+  "id": "434",
+  "name": "Eikichi Onizuka",
+  "aliases": [
+   "Onizuka Eikichi",
+   "鬼塚英吉",
+   "Eikichi",
+   "Onizuka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b434-Q0K9e4HukawA.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 22,
+   "occupation": null,
+   "hair": null,
+   "anime": "GTO: Great Teacher Onizuka",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Tranche de vie"
+   ],
+   "year": 1999,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "913",
+  "name": "Vegeta",
+  "aliases": [
+   "Vegeta IV",
+   "Prince Vegeta",
+   "ベジータ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b913-NIFkKazWM8VO.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Capitaine"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Dragon Ball",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Comédie",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 1989,
+   "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "12",
+  "name": "Alphonse Elric",
+  "aliases": [
+   "Elric Alphonse",
+   "アルフォンス・エルリック",
+   "Alphonse"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Alchimiste"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2003,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "88412",
+  "name": "Juuzou Suzuya",
+  "aliases": [
+   "Suzuya Juuzou",
+   "鈴屋什造",
+   "Juuzou",
+   "Suzuya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Détective"
+   ],
+   "hair": null,
+   "anime": "Tokyo Ghoul",
+   "genres": [
+    "Action",
+    "Drame",
+    "Horreur",
+    "Mystère",
+    "Psychologique",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "222594",
+  "name": "Momo Ayase",
+  "aliases": [
+   "Ayase Momo",
+   "綾瀬桃",
+   "Momo",
+   "Ayase"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Serveur",
+    "Lycéen"
+   ],
+   "hair": null,
+   "anime": "DAN DA DAN",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Science-fiction",
+    "Surnaturel"
+   ],
+   "year": 2024,
+   "studio": "Science SARU"
+  }
+ },
+ {
+  "id": "89201",
+  "name": "Ranpo Edogawa",
+  "aliases": [
+   "Edogawa Ranpo",
+   "江戸川乱歩",
+   "Ranpo",
+   "Edogawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89201-K0X5HNq88Oub.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 26,
+   "occupation": [
+    "Détective"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Bungo Stray Dogs",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "bones"
+  }
+ },
+ {
+  "id": "137975",
+  "name": "Aoi Toudou",
+  "aliases": [
+   "Toudou Aoi",
+   "Aoi Todo",
+   "東堂葵",
+   "Aoi",
+   "Toudou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 18,
+   "occupation": [
+    "Sorcier",
+    "Élève"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Toho"
+  }
+ },
+ {
+  "id": "75",
+  "name": "Ryuk",
+  "aliases": [
+   "リューク"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Tueur"
+   ],
+   "hair": null,
+   "anime": "Death Note",
+   "genres": [
+    "Mystère",
+    "Psychologique",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "55131",
+  "name": "Houtarou Oreki",
+  "aliases": [
+   "Oreki Houtarou",
+   "折木奉太郎",
+   "Houtarou",
+   "Oreki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "Hyouka",
+   "genres": [
+    "Mystère",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2012,
+   "studio": "Kyoto Animation"
+  }
+ },
+ {
+  "id": "260329",
+  "name": "Chisato Nishikigi",
+  "aliases": [
+   "Nishikigi Chisato",
+   "錦木千束",
+   "Chisato",
+   "Nishikigi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260329-1Z5n1QgViEBI.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Espion"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Lycoris Recoil",
+   "genres": [
+    "Action",
+    "Tranche de vie"
+   ],
+   "year": 2022,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
+  "id": "1086",
+  "name": "Sousuke Aizen",
+  "aliases": [
+   "Aizen Sousuke",
+   "藍染惣右介",
+   "Sousuke",
+   "Aizen"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1086-qR9218BjZTC0.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Scientifique",
+    "Épéiste",
+    "Tueur",
+    "Hypnotiseur"
+   ],
+   "hair": null,
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "908",
+  "name": "Yoruichi Shihouin",
+  "aliases": [
+   "Shihouin Yoruichi",
+   "四楓院夜一",
+   "Yoruichi",
+   "Shihouin"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b908-JSYUkJLCw1f0.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Shinigami"
+   ],
+   "hair": null,
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
+  }
+ }
+]

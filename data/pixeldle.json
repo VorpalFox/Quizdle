@@ -1,0 +1,18 @@
+[
+ {
+  "id": "factice",
+  "name": "Personnage Factice",
+  "aliases": ["Factice"],
+  "attributes": {
+   "gender": "Autre",
+   "species": "Humain",
+   "nationality": "Pays Factice",
+   "occupation": ["Aventurier"],
+   "hair": ["Bruns"],
+   "franchise": "Franchise Factice",
+   "developer": "Studio Factice",
+   "genres": ["Plates-formes", "Aventure"],
+   "year": 2000
+  }
+ }
+]

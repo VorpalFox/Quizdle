@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { pokemon } from '../subjects/pokemon/index.js'
+import { subjects } from '../subjects/registry.js'
 import { DailyDraw } from './daily.js'
 import { GameStore } from './store.js'
 
@@ -17,6 +18,19 @@ describe('DailyDraw et GameStore', () => {
   })
 
   afterEach(() => rmSync(dir, { recursive: true, force: true }))
+
+  it('refait le tirage d\'un sujet seulement si on retire sa réponse du jour', () => {
+    const daily = DailyDraw.load(file, '2026-11-19')
+    const store = new GameStore(daily)
+    const target = daily.target(pokemon)
+    const other = pokemon.entries.find(entry => entry.id !== target.id)!
+
+    expect(store.redrawIfTarget(pokemon, other.id)).toBe(false)
+    expect(daily.target(pokemon).id).toBe(target.id)
+    expect(store.redrawIfTarget(pokemon, target.id)).toBe(true)
+    expect(daily.target(pokemon).id).not.toBe(target.id)
+    expect(DailyDraw.load(file, '2026-11-19').target(pokemon).id).toBe(daily.target(pokemon).id)
+  })
 
   it('garde la réponse du jour après un redémarrage, mais pas les parties', () => {
     const daily = DailyDraw.load(file, '2026-11-19')
@@ -36,7 +50,7 @@ describe('DailyDraw et GameStore', () => {
 
     DailyDraw.load(file, '2026-11-19').redraw() // redraw pour forcer une sauvegarde
     const cleaned = JSON.parse(readFileSync(file, 'utf8'))
-    expect(Object.keys(cleaned.targets)).toEqual([pokemon.id])
+    expect(Object.keys(cleaned.targets)).toEqual(subjects.map(subject => subject.id))
   })
 
   it('nouveau tirage au changement de jour, jamais deux fois de suite la même réponse', () => {

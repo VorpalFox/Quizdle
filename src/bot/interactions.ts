@@ -1,8 +1,12 @@
 import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, type Message, MessageFlags } from 'discord.js'
+import { formatValue } from '../engine/compare.js'
 import { type Game, GameError } from '../engine/game.js'
 import { findEntry, searchEntries } from '../engine/search.js'
+import type { Subject } from '../engine/types.js'
+import { hasManual, manualFileName } from '../subjects/manual.js'
 import { getSubject, subjects } from '../subjects/registry.js'
 import { COMMAND_NAME, DEBUG_COMMAND_NAME, GUESS_COMMAND_NAME } from './commands.js'
+import { editAttribute, removeEntry, resolveEntry } from './corrections.js'
 import { renderBoard, renderGuess, renderReveal, renderStart } from './render.js'
 import type { GameStore } from './store.js'
 
@@ -24,6 +28,8 @@ function inQueue(channelId: string, task: () => Promise<void>): Promise<void> {
 export async function handleInteraction(interaction: Interaction, store: GameStore): Promise<void> {
   if (interaction.isAutocomplete() && interaction.commandName === GUESS_COMMAND_NAME)
     return handleAutocomplete(interaction, store) // pas de file : Discord laisse 3 s pour répondre, et ça ne modifie rien
+  if (interaction.isAutocomplete() && interaction.commandName === DEBUG_COMMAND_NAME)
+    return handleDebugAutocomplete(interaction)
   if (!interaction.isChatInputCommand())
     return
   if (interaction.commandName === COMMAND_NAME)
@@ -106,13 +112,64 @@ async function runGuessCommand(interaction: ChatInputCommandInteraction, store: 
   await interaction.reply({ embeds: [renderGuess(game, guess)] })
 }
 
+// Le debug n'est accepté que dans un salon précis du serveur de test : tous ceux qui peuvent y écrire peuvent s'en servir
+function inDebugChannel(interaction: ChatInputCommandInteraction | AutocompleteInteraction): boolean {
+  const { DISCORD_GUILD_ID, DISCORD_DEBUG_CHANNEL_ID } = process.env
+  return Boolean(DISCORD_GUILD_ID && DISCORD_DEBUG_CHANNEL_ID)
+    && interaction.guildId === DISCORD_GUILD_ID && interaction.channelId === DISCORD_DEBUG_CHANNEL_ID
+}
+
 async function runDebugCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
-  if (!process.env.DISCORD_OWNER_ID || interaction.user.id !== process.env.DISCORD_OWNER_ID)
-    throw new GameError('Commande réservée au propriétaire du bot.')
-  if (interaction.options.getSubcommand() === 'reset') {
-    store.reset()
-    await interaction.reply({ content: '🔄 Nouveau tirage du jour, et toutes les parties sont effacées (sur tous les serveurs).', flags: MessageFlags.Ephemeral })
+  if (!inDebugChannel(interaction))
+    throw new GameError('Commande réservée au salon de debug.')
+  const reply = (content: string) => interaction.reply({ content, flags: MessageFlags.Ephemeral })
+
+  switch (interaction.options.getSubcommand()) {
+    case 'reset':
+      store.reset()
+      await reply('🔄 Nouveau tirage du jour, et toutes les parties sont effacées (sur tous les serveurs).')
+      return
+    case 'remove': {
+      const subject = correctableSubject(interaction.options.getString('subject', true))
+      const entry = resolveEntry(subject, interaction.options.getString('name', true))
+      const { redrawn } = removeEntry(subject, entry, store)
+      await reply(`🗑️ **${entry.name}** est retiré du ${subject.name} (\`${manualFileName(subject.id)}\`).`
+        + (redrawn ? '\nC\'était la réponse du jour : nouveau tirage pour les prochaines parties (celles en cours gardent leur réponse).' : ''))
+      return
+    }
+    case 'edit': {
+      const subject = correctableSubject(interaction.options.getString('subject', true))
+      const entry = resolveEntry(subject, interaction.options.getString('name', true))
+      const key = interaction.options.getString('attribute', true)
+      const attribute = subject.attributes.find(candidate => candidate.key === key)
+      if (!attribute)
+        throw new GameError(`Le ${subject.name} n'a pas d'attribut « ${key} ».`)
+      const { value, unseen, known } = editAttribute(subject, entry, attribute, interaction.options.getString('value', true))
+      const warning = unseen.length === 0 ? '' : `\n⚠️ ${unseen.map(item => `« ${item} »`).join(', ')} : aucun autre personnage n'a cette valeur. `
+        + `Les plus courantes : ${known.slice(0, 15).join(', ') || 'aucune'}.`
+      await reply(`✏️ **${entry.name}** : ${attribute.label} → ${formatValue(attribute, value)}${warning}`)
+    }
   }
+}
+
+function correctableSubject(id: string): Subject {
+  const subject = getSubject(id)
+  if (!subject || !hasManual(id))
+    throw new GameError(`Le sujet « ${id} » ne se corrige pas avec cette commande.`)
+  return subject
+}
+
+// L'entrée à corriger : le nom, avec l'anime entre parenthèses pour ne pas confondre deux homonymes
+async function handleDebugAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
+  const subjectId = interaction.options.getString('subject')
+  const subject = subjectId ? getSubject(subjectId) : undefined
+  if (!inDebugChannel(interaction) || !subject || !hasManual(subject.id))
+    return interaction.respond([])
+  const found = searchEntries(subject, interaction.options.getFocused(), 25)
+  await interaction.respond(found.map(entry => {
+    const anime = entry.attributes.anime
+    return { name: (typeof anime === 'string' ? `${entry.name} (${anime})` : entry.name).slice(0, 100), value: entry.id }
+  }))
 }
 
 function playingGame(game: Game | undefined): Game {

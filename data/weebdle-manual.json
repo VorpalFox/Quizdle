@@ -1,0 +1,52 @@
+{
+ "exclude": [
+  "134579"
+ ],
+ "edit": {
+  "80": {
+   "_nom": "Light Yagami",
+   "occupation": [
+    "Étudiant",
+    "Tueur en série"
+   ]
+  },
+  "651": {
+   "_nom": "Envy",
+   "occupation": null
+  },
+  "2378": {
+   "_nom": "Viral",
+   "occupation": [
+    "Leader",
+    "Guerrier"
+   ]
+  },
+  "12531": {
+   "_nom": "Ciel Phantomhive",
+   "occupation": [
+    "Comte"
+   ]
+  },
+  "42663": {
+   "_nom": "Nene Motoe",
+   "occupation": [
+    "Élève",
+    "Criminel"
+   ]
+  },
+  "120415": {
+   "_nom": "Aria Kurenaino",
+   "occupation": [
+    "Magicienne"
+   ]
+  },
+  "126156": {
+   "_nom": "Myne",
+   "occupation": null
+  },
+  "131041": {
+   "_nom": "Gabiru"
+  }
+ },
+ "add": []
+}
