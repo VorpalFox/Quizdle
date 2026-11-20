@@ -1714,6 +1714,7 @@
    "Vise Black",
    "Black Vice",
    "ブラック・バイス",
+   "Black",
    "Vise"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70325-U2jh3mMkV4Da.png",
@@ -10035,7 +10036,8 @@
   "aliases": [
    "Murasaki Shiki",
    "村崎志紀",
-   "Shiki"
+   "Shiki",
+   "Murasaki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75878-L05woLa02VqW.png",
   "attributes": {
@@ -18772,513 +18774,6 @@
   }
  },
  {
-  "id": "24183",
-  "name": "Toyohisa Shimazu",
-  "aliases": [
-   "Shimazu Toyohisa",
-   "島津豊久",
-   "Shimazu"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24183-zvUBfbdvEYyZ.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "24184",
-  "name": "Nobunaga Oda",
-  "aliases": [
-   "Oda Nobunaga",
-   "織田信長"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/24184.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "24200",
-  "name": "Yoichi Nasu no Suketaka",
-  "aliases": [
-   "Suketaka no Nasu Yoichi",
-   "那須与一",
-   "Nasu",
-   "Suketaka"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/24200.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43715",
-  "name": "Olminu",
-  "aliases": [
-   "オルミーヌ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43715.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43709",
-  "name": "Naoshi Kanno",
-  "aliases": [
-   "Kanno Naoshi",
-   "菅野直",
-   "Naoshi",
-   "Kanno"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43709-8a0rJnf9qjYb.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "29971",
-  "name": "Jeanne d'Arc",
-  "aliases": [
-   "d'Arc Jeanne",
-   "ジャンヌ・ダルク",
-   "Jeanne",
-   "d'Arc"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b29971-hrBLpNbSKbYG.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43716",
-  "name": "Abe no Seimei",
-  "aliases": [
-   "Seimei no Abe",
-   "Abe no Haruakira",
-   "安倍晴明",
-   "Abe",
-   "Seimei"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43716.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43719",
-  "name": "EASY",
-  "aliases": [
-   "イーズィー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43719.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "37822",
-  "name": "Hannibal Barca",
-  "aliases": [
-   "Barca Hannibal",
-   "ハンニバル・バルカ",
-   "Hannibal",
-   "Barca"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b37822-W6724dxYSfs8.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Leader"
-   ],
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "34584",
-  "name": "Toshizou Hijikata",
-  "aliases": [
-   "Hijikata Toshizou",
-   "土方歳三",
-   "Toshizou",
-   "Hijikata"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/34584.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "34734",
-  "name": "Anastasia Romanova",
-  "aliases": [
-   "Romanova Anastasia",
-   "アナスタシア・ニコラエヴナ・ロマノヴァ",
-   "Romanova"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/34734.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "74647",
-  "name": "Butch Cassidy",
-  "aliases": [
-   "Cassidy Butch",
-   "ブッチ・キャシディ",
-   "Butch",
-   "Cassidy"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74647-4NzIo5bAEeTy.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43710",
-  "name": "The Black King",
-  "aliases": [
-   "King Black The",
-   "黒王"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43710.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "29970",
-  "name": "Scipio Africanus",
-  "aliases": [
-   "Africanus Scipio",
-   "スキピオ・アフリカヌス",
-   "Scipio",
-   "Africanus"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/29970.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "32930",
-  "name": "Grigori Rasputin",
-  "aliases": [
-   "Rasputin Grigori",
-   "ラスプーチン",
-   "Grigori",
-   "Rasputin"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/32930.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43718",
-  "name": "Murasaki",
-  "aliases": [
-   "紫"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43718.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43711",
-  "name": "Gilles de Rais",
-  "aliases": [
-   "Rais de Gilles",
-   "ジルドレ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43711.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "74649",
-  "name": "The Sundance Kid",
-  "aliases": [
-   "Kid Sundance The",
-   "ザ・サンダンス・キッド",
-   "Sundance",
-   "Kid"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/74649.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43714",
-  "name": "Saint-Germi",
-  "aliases": [
-   "Count Saint-Germi",
-   "サンジェルミ伯"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43714.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
-  "id": "43712",
-  "name": "Minamoto Yoshitsune",
-  "aliases": [
-   "Yoshitsune Minamoto",
-   "Minamoto no Yoshitsune",
-   "源義経",
-   "Minamoto",
-   "Yoshitsune"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/43712.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "DRIFTERS",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Comédie",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Hoods Entertainment"
-  }
- },
- {
   "id": "89275",
   "name": "Satoru Fujinuma",
   "aliases": [
@@ -20350,7 +19845,9 @@
   "name": "Gilles de Rais",
   "aliases": [
    "Rais de Gilles",
-   "ジル・ド・レェ"
+   "ジル・ド・レェ",
+   "Gilles",
+   "Rais"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16024-MZXEjshw6q6B.png",
   "attributes": {
@@ -37905,6 +37402,7 @@
   "aliases": [
    "Senguuji Toyohisa",
    "泉宮寺豊久",
+   "Toyohisa",
    "Senguuji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/74405.jpg",
@@ -40165,6 +39663,7 @@
   "aliases": [
    "Hoshin Anastasia",
    "アナスタシア・ホーシン",
+   "Anastasia",
    "Hoshin"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90177-K1XztcZqHl3c.png",
@@ -40566,6 +40065,7 @@
   "aliases": [
    "Asaji Nobunaga",
    "朝地信長",
+   "Nobunaga",
    "Asaji"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89840-0FdYSJRVQahH.jpg",
@@ -42220,7 +41720,8 @@
   "name": "Yoichi Saotome",
   "aliases": [
    "Saotome Yoichi",
-   "早乙女与一"
+   "早乙女与一",
+   "Yoichi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88988-ioriKKJJQNat.png",
   "attributes": {
