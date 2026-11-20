@@ -49,14 +49,28 @@ const OCCUPATIONS: Record<string, string | null> = {
   'hikikomori': 'Chômeur',
   // Sport
   'middle blocker': 'Volleyeur', 'outside hitter': 'Volleyeur', 'setter': 'Volleyeur', 'libero': 'Volleyeur', 'athlete': 'Athlète',
+  // Wikidata : déjà en français, ramené à notre vocabulaire
+  'idole japonaise': 'Idole', 'femme de ménage': 'Servante', 'dame de compagnie': 'Servante', 'domestique': 'Serviteur',
+  'devil hunter': 'Chasseur de démons', 'chasseur de démon': 'Chasseur de démons', 'chasseur de monstre': 'Chasseur',
+  'tueur': 'Tueur', 'meurtrier': 'Tueur', 'thug': 'Voyou', 'as de la gâchette': 'Tireur', 'terroriste': 'Terroriste',
+  'piqueuse': 'Volleyeur', 'seiyū': 'Doubleur', 'travail à temps partiel': 'Petits boulots', 'travailleur': 'Employé',
+  'livreur de pizza': 'Livreur', 'coursier': 'Livreur', 'écolier': 'Élève', 'enseignant': 'Professeur', 'floral designer': 'Fleuriste',
+  'caissier': 'Vendeur', 'cosplayer-server': 'Serveur', 'neurologue': 'Médecin', 'pratiquant d\'arts martiaux': 'Artiste martial',
+  'personnalité politique': 'Politicien', 'personnalité du monde des affaires': 'Homme d\'affaires', 'conseiller': 'Conseiller',
+  'monarque': 'Monarque', 'consort': 'Noble', 'membre de la famille royale': 'Noble', 'courtisane': 'Courtisane',
+  'révolutionnaire': 'Révolutionnaire', 'justicier': 'Justicier', 'philanthrope': 'Philanthrope', 'youtubeur': 'Youtubeur',
+  'voyageur dans le temps': 'Voyageur temporel', 'tueur de masse': 'Tueur', 'tueur à gages': 'Assassin', 'mob enforcer': 'Voyou',
+  'travailleur autonome': 'Indépendant', 'agriculteur': 'Fermier', 'modèle photo': 'Mannequin', 'clairvoyant': 'Voyant',
+  'chasseur de fantômes': 'Exorciste', 'généticien': 'Scientifique', 'cosplayeur': 'Cosplayeur', 'boulanger': 'Boulanger',
+  'chasseur de primes': 'Chasseur de primes', 'lutteur': 'Lutteur', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotiseur',
   // Pas des occupations
-  'unknown': null, 'test subject': null,
+  'unknown': null, 'test subject': null, 'sujet psi': null,
 }
 
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant
 const RULES: [RegExp, string][] = [
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « Gilberta company's master »
-  [/\b(?:leader|commander|master|chief)\b/, 'Leader'],
+  [/\b(?:leader|commander|master|chief|commandant|responsable|führer)\b/, 'Leader'],
   [/\bcaptain\b/, 'Capitaine'],
   [/\bguardian\b/, 'Gardien'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],

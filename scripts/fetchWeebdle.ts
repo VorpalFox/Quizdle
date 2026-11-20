@@ -12,6 +12,7 @@ import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { fixedOccupationIds, translateEntries } from './translate.js'
+import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
 
 const MAX_PER_ANIME = 20
@@ -277,8 +278,10 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
     },
   },
 })))
-// Ce qu'AniList n'a pas donné : depuis Wikipédia, puis tout en français. Les corrections à la main passent après.
-const wiki = await completeFromWikipedia(targets)
+// Ce qu'AniList n'a pas donné : depuis Wikidata (lien par l'ID AniList), puis Wikipédia, puis tout en français.
+// Les corrections à la main passent après.
+const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
+const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
 const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
@@ -294,6 +297,7 @@ lines.push(`Corrections (data/weebdle-manual.json) : ${manual.exclude.length} re
 if (warnings.length > 0)
   lines.push(`## ⚠️ Corrections qui ne collent pas (${warnings.length})`, ...warnings.map(text => `- ${text}`), '')
 
+lines.push(`## Complétés par Wikidata (${wikidata.filled.length})`, ...wikidata.filled.map(text => `- ${text}`), '')
 lines.push(`## Complétés par Wikipédia (${wiki.filled.length})`, ...wiki.filled.map(text => `- ${text}`), '')
 const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')

@@ -145,7 +145,7 @@ const HAIR_COLORS: [RegExp, string][] = [
   [/black|raven|ebony|noir/i, 'Noirs'], [/white|snow|blanc/i, 'Blancs'], [/silver|platinum|argent/i, 'Argentés'], [/gr[ae]y|gris/i, 'Gris'],
   [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blonds'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Bruns'], [/orange|ginger|roux|rousse/i, 'Roux'],
   [/\bred|crimson|scarlet|rouge/i, 'Rouges'], [/pink|\brose/i, 'Roses'], [/blue|cyan|teal|turquoise|bleu/i, 'Bleus'], [/green|\bvert/i, 'Verts'],
-  [/purple|violet|lavender|lilac|mauve/i, 'Violets'], [/bald|chauve/i, 'Chauve'],
+  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Violets'], [/bald|chauve/i, 'Chauve'],
 ]
 const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
