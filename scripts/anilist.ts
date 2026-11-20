@@ -124,12 +124,12 @@ export function parseOccupation(description: string | null): string[] | null {
   return splitOccupations(value)
 }
 
-// « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et »).
+// « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et », « puis »).
 export function splitOccupations(value: string): string[] | null {
   const list = value
     .replace(/~!|!~/g, '')
     .replace(/\s*\([^)]*\)/g, '')
-    .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
+    .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
     .filter(part => part.length > 1 && part.length <= 40)
     .map(capitalize)
