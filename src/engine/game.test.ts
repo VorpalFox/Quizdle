@@ -91,6 +91,7 @@ describe('Game', () => {
     const guess = game.guess('Pêche', 'alice')
     expect(guess.correct).toBe(false)
     expect(guess.results.map(r => r.feedback)).toEqual(['partial', 'wrong', 'correct'])
+    expect(guess.results[0]!.common).toEqual(['Rouge'])
     expect(game.guess('pomme', 'bob').correct).toBe(true)
     expect(game.status).toBe('won')
     expect(() => game.guess('Kiwi', 'alice')).toThrow(GameError)

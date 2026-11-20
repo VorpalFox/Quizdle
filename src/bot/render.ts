@@ -1,5 +1,5 @@
 import { EmbedBuilder } from 'discord.js'
-import { type Feedback, formatValue } from '../engine/compare.js'
+import { type AttributeResult, type Feedback, formatValue } from '../engine/compare.js'
 import type { Game, Guess } from '../engine/game.js'
 
 const FEEDBACK_EMOJI: Record<Feedback, string> = {
@@ -29,8 +29,16 @@ export function renderStart(game: Game): EmbedBuilder {
     .setDescription(`${game.subject.description} ! Écris un nom dans le salon, ou utilise \`/guess\` pour avoir l'autocomplétion.\n${limit}.\n\nIndices : ${game.subject.attributes.map(a => a.label).join(', ')}\n${LEGEND}`)
 }
 
+// En partie juste : les valeurs en commun avec la cible en gras (« **Action** / Romance »)
+function formatResult(result: AttributeResult): string {
+  const { attribute, value, feedback, common } = result
+  if (feedback !== 'partial' || attribute.format || !Array.isArray(value))
+    return formatValue(attribute, value)
+  return (value as readonly (string | number)[]).map(item => common.includes(item) ? `**${item}**` : String(item)).join(' / ')
+}
+
 export function renderGuess(game: Game, guess: Guess): EmbedBuilder {
-  const lines = guess.results.map(result => `${FEEDBACK_EMOJI[result.feedback]} **${result.attribute.label}** : ${formatValue(result.attribute, result.value)}`)
+  const lines = guess.results.map(result => `${FEEDBACK_EMOJI[result.feedback]} **${result.attribute.label}** : ${formatResult(result)}`)
   const embed = new EmbedBuilder()
     .setColor(guess.correct ? COLOR_WON : COLOR_PLAYING)
     .setTitle(`#${game.guesses.length} · ${guess.entry.name}`)
