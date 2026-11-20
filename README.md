@@ -118,7 +118,7 @@ Variables du `.env` :
 - `DISCORD_TOKEN` : le token du bot (secret).
 - `DISCORD_CLIENT_ID` : *General Information* > *Application ID*.
 - `DISCORD_GUILD_ID` : optionnel, l'ID du serveur de test (mode développeur de Discord, puis clic droit sur le serveur > *Copier l'identifiant*). Les commandes y apparaissent tout de suite, avec `/quizdebug`. Sans lui, `/quiz` est enregistrée en global.
-- `DISCORD_OWNER_ID` : ton ID Discord, le seul compte qui peut lancer `/quizdebug`.
+- `DISCORD_DEBUG_CHANNEL_ID` : l'ID d'un salon du serveur de test (clic droit sur le salon > *Copier l'identifiant*). `/quizdebug` ne marche que dans ce salon.
 
 Dans VS Code, la config de lancement *Bot Discord* ([.vscode/launch.json](.vscode/launch.json)) démarre le bot avec le débogueur.
 
@@ -138,4 +138,4 @@ Le bot ne fait aucune requête réseau : les données sont dans `data/`, génér
 
 L'autocomplétion du nom affiche l'anime entre parenthèses, pour ne pas confondre deux homonymes. Le bot relit les fichiers de corrections au démarrage : une correction survit à un redémarrage. Sur le Raspberry, ces fichiers changent donc dans `data/` : penser à les commiter depuis le Raspberry (ou à les recopier) pour ne pas les perdre au prochain `git pull`.
 
-Les commandes de debug ne sont enregistrées que sur le serveur de test (`DISCORD_GUILD_ID`), cachées aux non-admins, et seul `DISCORD_OWNER_ID` peut les lancer. Sans `DISCORD_GUILD_ID`, `deploy-commands` enregistre `/quiz` et `/guess` en global, sans la commande de debug.
+Les commandes de debug ne sont enregistrées que sur le serveur de test (`DISCORD_GUILD_ID`), et le bot ne les accepte que dans le salon `DISCORD_DEBUG_CHANNEL_ID` : tous ceux qui peuvent écrire dans ce salon peuvent s'en servir (attention, `reset` touche tous les serveurs). La commande reste visible dans les autres salons du serveur, où elle est refusée ; pour la cacher : *Paramètres du serveur* > *Intégrations* > le bot > `/quizdebug`, et ne l'autoriser que dans ce salon. Sans `DISCORD_GUILD_ID`, `deploy-commands` enregistre `/quiz` et `/guess` en global, sans la commande de debug.

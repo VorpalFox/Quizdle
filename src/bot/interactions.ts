@@ -112,11 +112,16 @@ async function runGuessCommand(interaction: ChatInputCommandInteraction, store: 
   await interaction.reply({ embeds: [renderGuess(game, guess)] })
 }
 
-const isOwner = (userId: string) => Boolean(process.env.DISCORD_OWNER_ID) && userId === process.env.DISCORD_OWNER_ID
+// Le debug n'est accepté que dans un salon précis du serveur de test : tous ceux qui peuvent y écrire peuvent s'en servir
+function inDebugChannel(interaction: ChatInputCommandInteraction | AutocompleteInteraction): boolean {
+  const { DISCORD_GUILD_ID, DISCORD_DEBUG_CHANNEL_ID } = process.env
+  return Boolean(DISCORD_GUILD_ID && DISCORD_DEBUG_CHANNEL_ID)
+    && interaction.guildId === DISCORD_GUILD_ID && interaction.channelId === DISCORD_DEBUG_CHANNEL_ID
+}
 
 async function runDebugCommand(interaction: ChatInputCommandInteraction, store: GameStore): Promise<void> {
-  if (!isOwner(interaction.user.id))
-    throw new GameError('Commande réservée au propriétaire du bot.')
+  if (!inDebugChannel(interaction))
+    throw new GameError('Commande réservée au salon de debug.')
   const reply = (content: string) => interaction.reply({ content, flags: MessageFlags.Ephemeral })
 
   switch (interaction.options.getSubcommand()) {
@@ -158,7 +163,7 @@ function correctableSubject(id: string): Subject {
 async function handleDebugAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
   const subjectId = interaction.options.getString('subject')
   const subject = subjectId ? getSubject(subjectId) : undefined
-  if (!isOwner(interaction.user.id) || !subject || !hasManual(subject.id))
+  if (!inDebugChannel(interaction) || !subject || !hasManual(subject.id))
     return interaction.respond([])
   const found = searchEntries(subject, interaction.options.getFocused(), 25)
   await interaction.respond(found.map(entry => {

@@ -26,13 +26,13 @@ export const guessCommand = new SlashCommandBuilder()
   .setContexts(InteractionContextType.Guild)
   .addStringOption(option => option.setName('name').setDescription('Your guess').setRequired(true).setAutocomplete(true))
 
-// Debug, à virer plus tard : enregistrée seulement sur le serveur de test, cachée aux non-admins,
-// et le bot vérifie en plus que c'est bien DISCORD_OWNER_ID qui l'appelle
+// Debug, à virer plus tard : enregistrée seulement sur le serveur de test (DISCORD_GUILD_ID), et le bot ne l'accepte
+// que dans le salon DISCORD_DEBUG_CHANNEL_ID. Visible de tous sur ce serveur : pour la cacher ailleurs,
+// Paramètres du serveur > Intégrations > le bot > /quizdebug, et ne l'autoriser que dans ce salon.
 export const debugCommand = new SlashCommandBuilder()
   .setName(DEBUG_COMMAND_NAME)
-  .setDescription('Debug tools (owner only)')
+  .setDescription('Debug tools (debug channel only)')
   .setContexts(InteractionContextType.Guild)
-  .setDefaultMemberPermissions(0)
   .addSubcommand(sub => sub.setName('reset').setDescription('Draw new answers for today and forget every game'))
   .addSubcommand(sub => addEntryOptions(sub.setName('remove').setDescription('Remove an entry from a quiz for good (saved in data/<subject>-manual.json)')))
   .addSubcommand(sub => addEntryOptions(sub.setName('edit').setDescription('Change or fill an attribute of an entry (saved in data/<subject>-manual.json)'))
