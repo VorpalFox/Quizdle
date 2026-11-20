@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { translateEntries } from './translate.js'
+import { fixedOccupationIds, translateEntries, translateOccupation } from './translate.js'
 import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from './wikipedia.js'
 
 const SUBARU_FR = `{{Infobox Personnage (fiction)
@@ -75,11 +75,41 @@ describe('pageTitles', () => {
   })
 })
 
+describe('translateOccupation', () => {
+  it('MotCle_RegleGenerique', () => {
+    expect(translateOccupation('Leader of the Phantom Troupe')).toBe('Leader')
+    expect(translateOccupation('Commander of the Secret Mobile Corps')).toBe('Leader')
+    expect(translateOccupation('Gilberta company\'s master')).toBe('Leader')
+    expect(translateOccupation('Housemaster of Cecile Hall')).toBe('Professeur')
+    expect(translateOccupation('Area Guardian of the Treasury')).toBe('Gardien')
+    expect(translateOccupation('Captain of the Black Bulls')).toBe('Capitaine')
+    expect(translateOccupation('Dieu de la mort')).toBe('Shinigami')
+    expect(translateOccupation('Étudiant en secondaire')).toBe('Étudiant')
+    expect(translateOccupation('Student at U.A. High School')).toBe('Élève')
+  })
+
+  it('DictionnairePrioritaire_PasLaRegle', () => {
+    expect(translateOccupation('Real estate agent')).toBe('Agent immobilier')
+    expect(translateOccupation('Lycoris Agent')).toBe('Agent secret')
+  })
+
+  it('DejaEnFrancais_Garde', () => {
+    expect(translateOccupation('Guerrier')).toBe('Guerrier')
+    expect(translateOccupation('Jedi')).toBeUndefined()
+  })
+})
+
 describe('translateEntries', () => {
   it('Occupations_TraduitesEtInconnuesListees', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Student', 'Unknown', 'Jedi'] } }
     const { entries, untranslated } = translateEntries([entry])
     expect(entries[0]!.attributes.occupation).toEqual(['Élève', 'Jedi'])
     expect([...untranslated]).toEqual([['Jedi', 1]])
+  })
+
+  it('CorrigeeALaMain_PasListee', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Jedi'] } }
+    const { untranslated } = translateEntries([entry], fixedOccupationIds({ '1': { occupation: ['Chevalier'] } }))
+    expect(untranslated.size).toBe(0)
   })
 })

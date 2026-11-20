@@ -5,7 +5,7 @@ import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { translateEntries } from './translate.js'
+import { fixedOccupationIds, translateEntries } from './translate.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
 
 // Corrections à la main (data/anime-manual.json) : un personnage retiré n'est pas remplacé
@@ -102,7 +102,7 @@ const targets: WikiTarget[] = kept.map(character => {
 })
 // Ce qu'AniList n'a pas donné : depuis Wikipédia, puis tout en français. Les corrections à la main passent après.
 const wiki = await completeFromWikipedia(targets)
-const translated = translateEntries(wiki.entries)
+const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
 const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
 const keptIds = new Set(kept.map(character => String(character.id)))
 warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))
