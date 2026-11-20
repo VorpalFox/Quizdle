@@ -61,7 +61,7 @@ C'est approximatif : testé sur les 386 premiers, le vrai habitat est dans la li
 
 ### Données Weebdle
 
-Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans [data/recommendations.json](data/recommendations.json). `npm run fetch:weebdle` régénère [data/weebdle.json](data/weebdle.json) depuis AniList ([scripts/fetchWeebdle.ts](scripts/fetchWeebdle.ts)).
+Les personnages des animes conseillés sur le serveur, avec les mêmes indices que l'Animedle. La liste des animes est dans [data/recommendations.json](data/recommendations.json), recopiée à la main depuis le salon #conseil-en-anime : pour la revérifier, `npm run dump:recos` écrit tous les messages du salon dans `.cache/discord/recos.txt` (hors git, avec le token du bot). Pour retirer un anime entier, le retirer de cette liste. `npm run fetch:weebdle` régénère [data/weebdle.json](data/weebdle.json) depuis AniList ([scripts/fetchWeebdle.ts](scripts/fetchWeebdle.ts)).
 
 - **Récupération** : tous les personnages de chaque anime de la liste. Les réponses sont gardées dans `.cache/weebdle/` (hors git) : si le script s'arrête, le relancer reprend où il en était, et une relance complète ne refait aucune requête. Pour retélécharger, supprimer ce dossier. Compter une vingtaine de minutes la 1re fois.
 - **Un personnage, un anime** : un personnage présent dans plusieurs animes de la liste (Index et Railgun, Fate/Zero et UBW...) revient à l'anime où il est principal, et s'il l'est dans plusieurs, ou nulle part, à celui sorti en premier.
