@@ -1,9 +1,15 @@
 // Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 386 par défaut : jusqu'à la 3e génération]
-// Les habitats n'existent dans PokeAPI que jusqu'à la 3e génération (au-delà : null). Les groupes d'œufs existent pour tous.
+// L'habitat officiel n'existe que jusqu'à la 3e génération. De la 4e à la 8e, il est repris de la famille d'évolution
+// si elle a un membre plus ancien, sinon déduit des lieux de capture (voir pokemonHabitat.ts). Les groupes d'œufs existent pour tous.
 import { writeFile } from 'node:fs/promises'
+import { deduceHabitats, type Encounter } from './pokemonHabitat.js'
 
 const API = 'https://pokeapi.co/api/v2'
 const lastId = Number(process.argv[2] ?? 386)
+// PokeAPI n'a aucun lieu de capture pour la 9e génération : pas d'habitat possible au-delà
+const MAX_ID = 905
+if (lastId > MAX_ID)
+  throw new Error(`Au plus ${MAX_ID} (fin de la 8e génération) : au-delà, PokeAPI n'a ni habitat ni lieu de capture`)
 const CONCURRENCY = 10
 
 const TYPES: Record<string, string> = {
@@ -40,6 +46,27 @@ function get(url: string): Promise<any> {
   return cache.get(url)!
 }
 
+const speciesId = (url: string) => Number(url.split('/').at(-2))
+
+// Les espèces d'une famille d'évolution (leur URL)
+function familyUrls(link: ChainLink & { species: { url: string } }): string[] {
+  return [link.species.url, ...link.evolves_to.flatMap(next => familyUrls(next as ChainLink & { species: { url: string } }))]
+}
+
+// L'habitat officiel d'un membre de la famille (une évolution a toujours celui de sa pré-évolution, vérifié
+// sur les 3 premières générations), sinon celui déduit des lieux de capture de toute la famille
+async function familyHabitats(chain: any, species: any, pokemon: any): Promise<string[]> {
+  const members = await Promise.all(familyUrls(chain.chain).filter(url => speciesId(url) <= MAX_ID).map(get))
+  const official = members.find(member => member.habitat)
+  if (official)
+    return [HABITATS[official.habitat.name] ?? official.habitat.name]
+  const encounters: Encounter[] = (await Promise.all(members.map(member => get(`${API}/pokemon/${member.id}/encounters`))))
+    .flat()
+    .flatMap((place: any) => place.version_details.flatMap((version: any) => version.encounter_details.map((detail: any) => ({ area: place.location_area.name, method: detail.method.name }))))
+  const firstType = [...pokemon.types].sort((a: any, b: any) => a.slot - b.slot)[0].type.name
+  return deduceHabitats(encounters, species.is_legendary || species.is_mythical, firstType).map(habitat => HABITATS[habitat] ?? habitat)
+}
+
 function stageIn(link: ChainLink, species: string, depth = 1): number | null {
   if (link.species.name === species)
     return depth
@@ -63,7 +90,7 @@ async function fetchOne(id: number) {
     image: pokemon.sprites.other?.['official-artwork']?.front_default ?? pokemon.sprites.front_default,
     attributes: {
       types: [...pokemon.types].sort((a: any, b: any) => a.slot - b.slot).map((t: any) => TYPES[t.type.name] ?? t.type.name),
-      habitat: species.habitat ? HABITATS[species.habitat.name] ?? species.habitat.name : null,
+      habitat: species.habitat ? [HABITATS[species.habitat.name] ?? species.habitat.name] : await familyHabitats(chain, species, pokemon),
       eggGroups: species.egg_groups.map((group: any) => EGG_GROUPS[group.name] ?? group.name),
       color: COLORS[species.color.name] ?? species.color.name,
       stage: stageIn(chain.chain, species.name),

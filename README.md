@@ -36,7 +36,14 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ### Données Pokémon
 
-`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 386 premiers par défaut, jusqu'à la 3e génération). Pour aller plus loin : `npm run fetch:pokemon -- 1025`. Indices : types, habitat, groupes d'œufs (noms officiels : Monstrueux, Terrestre, Aquatique 1...), couleur, stade d'évolution, taille, poids, génération. L'habitat n'existe que dans Rouge Feu et Vert Feuille : après la 3e génération, il est vide (❔). Les groupes d'œufs, eux, existent pour tous les Pokémon.
+`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 386 premiers par défaut, jusqu'à la 3e génération). Pour aller plus loin : `npm run fetch:pokemon -- 905` (au plus 905, fin de la 8e génération : PokeAPI n'a aucun lieu de capture pour la 9e). Indices : types, habitat, groupes d'œufs (noms officiels : Monstrueux, Terrestre, Aquatique 1...), couleur, stade d'évolution, taille, poids, génération. Les groupes d'œufs existent pour tous les Pokémon.
+
+L'habitat officiel n'existe que dans Rouge Feu et Vert Feuille, donc jusqu'à la 3e génération. Au-delà ([scripts/pokemonHabitat.ts](scripts/pokemonHabitat.ts)) :
+- si la famille d'évolution a un membre des 3 premières générations, on reprend son habitat (Magnézone → celui de Magnéton) : une évolution a toujours l'habitat de sa pré-évolution ;
+- sinon, il est déduit des lieux de capture de toute la famille (route → Prairie, Coup d'Boule → Forêt, pêche en mer → Mer...). Quand les votes sont serrés, il y en a plusieurs (3 au plus) : l'habitat est une liste, comme les types ;
+- sans aucun lieu : Rare pour un légendaire, sinon selon le type (les starters).
+
+C'est approximatif : testé sur les 386 premiers, le vrai habitat est dans la liste déduite 62 % du temps.
 
 ### Données Animedle
 

@@ -11,7 +11,8 @@ export const pokemon: Subject = {
   description: 'Trouve le Pokémon mystère',
   attributes: [
     { key: 'types', label: 'Types', kind: 'set' },
-    { key: 'habitat', label: 'Habitat', kind: 'exact' },
+    // une liste : officiel jusqu'à la 3e génération, déduit (parfois plusieurs) au-delà
+    { key: 'habitat', label: 'Habitat', kind: 'set' },
     { key: 'eggGroups', label: 'Groupes d\'œufs', kind: 'set' },
     { key: 'color', label: 'Couleur', kind: 'exact' },
     { key: 'stage', label: "Stade d'évolution", kind: 'number' },
