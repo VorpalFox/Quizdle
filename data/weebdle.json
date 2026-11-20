@@ -13,7 +13,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -62,10 +64,12 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13917-160NVNDNgywA.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -87,8 +91,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Violets"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -113,7 +121,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -138,7 +148,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -186,7 +198,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "A Certain Magical Index",
    "genres": [
@@ -209,7 +223,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "A Certain Magical Index",
    "genres": [
@@ -235,7 +251,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -260,7 +278,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -358,7 +378,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -381,7 +403,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -460,7 +484,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -484,7 +510,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -510,9 +538,11 @@
    "gender": "Femme",
    "age": 13,
    "occupation": [
-    "Élève"
+    "Collégien"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -560,8 +590,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 12,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Collégien"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -586,7 +620,9 @@
    "gender": "Femme",
    "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -688,7 +724,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -1402,7 +1440,9 @@
    "gender": "Femme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1453,7 +1493,9 @@
    "gender": "Femme",
    "age": 13,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1894,8 +1936,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Révolutionnaire",
+    "Assassin"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Akame ga Kill!",
    "genres": [
     "Action",
@@ -1921,7 +1968,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Akame ga Kill!",
    "genres": [
     "Action",
@@ -2004,7 +2053,9 @@
    "occupation": [
     "Général"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Akame ga Kill!",
    "genres": [
     "Action",
@@ -2952,7 +3003,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -2976,7 +3029,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3000,7 +3055,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -4351,7 +4408,9 @@
    "occupation": [
     "Artisan"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Ascendance of a Bookworm",
    "genres": [
     "Fantasy",
@@ -4420,7 +4479,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Ascendance of a Bookworm",
    "genres": [
     "Fantasy",
@@ -4440,8 +4501,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Volleyeur"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ascendance of a Bookworm",
    "genres": [
     "Fantasy",
@@ -5045,7 +5110,11 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Révolutionnaire",
+    "Soldat",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5075,7 +5144,9 @@
     "Recrue",
     "Bataillon d'exploration"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5105,7 +5176,9 @@
     "Recrue",
     "Bataillon d'exploration"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5129,7 +5202,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Voyou",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5184,7 +5260,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Chasseur",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5210,7 +5289,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Guerrier",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5237,7 +5319,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5263,7 +5347,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Guerrier"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5290,7 +5376,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5314,7 +5402,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
@@ -5581,7 +5671,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Mangaka"
+   ],
    "hair": null,
    "anime": "Bakuman.",
    "genres": [
@@ -5686,7 +5778,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Doubleur"
+   ],
    "hair": null,
    "anime": "Bakuman.",
    "genres": [
@@ -5864,7 +5958,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Mangaka"
+   ],
    "hair": null,
    "anime": "Bakuman.",
    "genres": [
@@ -8244,7 +8340,10 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Chasseur de vampires",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Blood-C",
    "genres": [
@@ -9433,7 +9532,10 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns",
+    "Bleus"
+   ],
    "anime": "BNA",
    "genres": [
     "Action",
@@ -10892,8 +10994,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -10915,8 +11021,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -10938,8 +11048,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur de démons"
+   ],
+   "hair": [
+    "Blonds",
+    "Roses"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -11825,7 +11940,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13291,8 +13408,15 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Garde du corps",
+    "Révolutionnaire",
+    "Terroriste",
+    "Pilote"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -13317,7 +13441,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Politicien",
+    "Officier",
+    "Pilote"
+   ],
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
@@ -13371,7 +13500,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -13479,7 +13610,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Politicien"
+   ],
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
@@ -13619,7 +13752,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -14276,7 +14411,10 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roux",
+    "Blonds"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -14691,7 +14829,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -14772,7 +14912,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15780,7 +15922,9 @@
     "Étudiant",
     "Tueur en série"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -15806,7 +15950,9 @@
    "occupation": [
     "Mannequin"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -15831,7 +15977,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 13,
-   "occupation": null,
+   "occupation": [
+    "Détective"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -15857,7 +16005,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Détective"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -15960,7 +16110,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 48,
-   "occupation": null,
+   "occupation": [
+    "Policier"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -16088,7 +16240,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 30,
-   "occupation": null,
+   "occupation": [
+    "Policier"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -16113,7 +16267,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 34,
-   "occupation": null,
+   "occupation": [
+    "Policier"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -16764,8 +16920,9 @@
    "gender": "Homme",
    "age": 13,
    "occupation": [
-    "Charbonnier",
-    "Pourfendeur de démons"
+    "Mercenaire",
+    "Épéiste",
+    "Chasseur de démons"
    ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
@@ -16880,7 +17037,9 @@
    "gender": "Homme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -17019,7 +17178,9 @@
    "occupation": [
     "Chasseur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -17153,7 +17314,9 @@
    "gender": "Homme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -17312,7 +17475,10 @@
    "gender": "Homme",
    "age": 17,
    "occupation": [
-    "Élève"
+    "Étudiant",
+    "Justicier",
+    "Tueur",
+    "Chasseur de démons"
    ],
    "hair": null,
    "anime": "Devilman Crybaby",
@@ -17364,7 +17530,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Devilman Crybaby",
    "genres": [
@@ -18789,8 +18957,16 @@
   "attributes": {
    "gender": "Homme",
    "age": 10,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Mangaka",
+    "Petits boulots",
+    "Livreur",
+    "Voyageur temporel"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ERASED",
    "genres": [
     "Drame",
@@ -19243,8 +19419,15 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Cuisinier",
+    "Archer",
+    "Épéiste",
+    "Philanthrope"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -19315,7 +19498,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -19363,7 +19548,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -19455,7 +19642,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -19630,7 +19819,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 35,
-   "occupation": null,
+   "occupation": [
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Fate/Zero",
    "genres": [
@@ -19681,7 +19872,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Justicier"
+   ],
    "hair": null,
    "anime": "Fate/Zero",
    "genres": [
@@ -19985,7 +20178,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 8,
-   "occupation": null,
+   "occupation": [
+    "Élève"
+   ],
    "hair": null,
    "anime": "Fate/Zero",
    "genres": [
@@ -20139,7 +20334,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20163,7 +20360,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20209,7 +20408,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20234,7 +20435,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20256,7 +20459,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20278,7 +20483,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20300,8 +20507,14 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien",
+    "Fleuriste",
+    "Chasseur"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20371,7 +20584,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20392,7 +20607,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -20414,7 +20631,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -20439,7 +20658,9 @@
    "occupation": [
     "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20463,7 +20684,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -20487,7 +20710,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
     "Aventure",
@@ -21194,7 +21419,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21221,7 +21448,9 @@
    "occupation": [
     "Mécanicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21249,7 +21478,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21277,7 +21508,9 @@
    "occupation": [
     "Agent secret"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21359,7 +21592,9 @@
    "gender": "Autre",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21383,8 +21618,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 59,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Officier",
+    "Leader",
+    "Épéiste"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21409,7 +21650,9 @@
    "gender": "Femme",
    "age": 35,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21436,8 +21679,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 11,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Artiste martial",
+    "Alchimiste"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21539,7 +21787,9 @@
    "occupation": [
     "Alchimiste d'État"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -21670,7 +21920,9 @@
    "gender": "Femme",
    "age": 961,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gate",
    "genres": [
     "Action",
@@ -21722,7 +21974,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Gate",
    "genres": [
     "Action",
@@ -21817,8 +22071,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 23,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Médecin"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gate",
    "genres": [
     "Action",
@@ -24204,8 +24462,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader",
+    "Pilote"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -24229,7 +24492,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Leader",
+    "Pilote"
+   ],
    "hair": null,
    "anime": "Gurren Lagann",
    "genres": [
@@ -24285,7 +24551,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Cuisinier"
+   ],
    "hair": null,
    "anime": "Gurren Lagann",
    "genres": [
@@ -24737,8 +25005,15 @@
   "attributes": {
    "gender": "Homme",
    "age": 581,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Tireur",
+    "Chasseur de vampires",
+    "Tueur",
+    "Assassin"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24761,8 +25036,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Policier",
+    "Chasseur de vampires"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24787,8 +25067,14 @@
   "attributes": {
    "gender": "Femme",
    "age": 22,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur de vampires",
+    "Leader",
+    "Soldat"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24811,8 +25097,14 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Prêtre",
+    "Chasseur de vampires",
+    "Épéiste"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24839,7 +25131,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24864,7 +25158,9 @@
    "occupation": [
     "Majordome"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24886,8 +25182,13 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Livreur",
+    "Assassin"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24910,8 +25211,13 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Officier",
+    "Leader"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -24938,7 +25244,9 @@
    "occupation": [
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -25033,7 +25341,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -25057,8 +25367,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Gris"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -25105,8 +25419,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -25177,7 +25495,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -25223,7 +25543,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 11,
-   "occupation": null,
+   "occupation": [
+    "Tueur"
+   ],
    "hair": null,
    "anime": "Hunter x Hunter",
    "genres": [
@@ -25245,7 +25567,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Garde du corps",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Hunter x Hunter",
    "genres": [
@@ -25495,7 +25820,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 31,
-   "occupation": null,
+   "occupation": [
+    "Explorateur"
+   ],
    "hair": null,
    "anime": "Hunter x Hunter",
    "genres": [
@@ -26209,8 +26536,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Initial D 1st Stage",
    "genres": [
     "Action",
@@ -26232,7 +26563,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Initial D 1st Stage",
    "genres": [
@@ -26279,7 +26612,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 23,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Initial D 1st Stage",
    "genres": [
@@ -26303,7 +26638,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 43,
-   "occupation": null,
+   "occupation": [
+    "Indépendant"
+   ],
    "hair": null,
    "anime": "Initial D 1st Stage",
    "genres": [
@@ -26675,7 +27012,9 @@
    "occupation": [
     "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26702,7 +27041,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26728,8 +27069,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Forgeron",
+    "Aventurier"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26786,7 +27132,9 @@
    "gender": "Femme",
    "age": 21,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26811,8 +27159,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26839,7 +27191,9 @@
    "gender": "Femme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26867,7 +27221,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26895,7 +27251,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26924,7 +27282,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26954,7 +27314,9 @@
    "occupation": [
     "Princesse"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -26983,7 +27345,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27010,8 +27374,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 99,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Verts"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27089,8 +27457,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27116,7 +27488,9 @@
    "occupation": [
     "Dieu"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27172,7 +27546,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27198,8 +27574,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 35,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
     "Action",
@@ -27227,9 +27607,11 @@
    "gender": "Homme",
    "age": 18,
    "occupation": [
-    "Agent immobilier"
+    "Chasseur de vampires"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
@@ -27254,7 +27636,9 @@
    "gender": "Homme",
    "age": 13,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
@@ -27280,7 +27664,9 @@
    "occupation": [
     "Archéologue"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
@@ -27327,7 +27713,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Homme d'affaires",
+    "Philanthrope"
+   ],
    "hair": null,
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -27706,8 +28095,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -27733,8 +28126,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roses",
+    "Argentés"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -27813,7 +28211,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -28089,7 +28489,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -28499,8 +28901,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roux",
+    "Noirs"
+   ],
    "anime": "Kill la Kill",
    "genres": [
     "Action",
@@ -28525,7 +28932,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kill la Kill",
    "genres": [
     "Action",
@@ -28599,7 +29008,9 @@
    "gender": "Femme",
    "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Kill la Kill",
    "genres": [
     "Action",
@@ -28990,8 +29401,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 13,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Noirs",
+    "Bruns"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -29018,7 +29434,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -29065,8 +29483,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aventurier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -29088,8 +29510,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 20,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -29468,7 +29894,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Log Horizon",
    "genres": [
     "Action",
@@ -30121,7 +30549,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123188-9yVeXsmPmtAY.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
    "occupation": [
     "Explorateur",
@@ -30308,7 +30736,9 @@
    "gender": "Femme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -31706,7 +32136,7 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Élève"
+    "Collégien"
    ],
    "hair": null,
    "anime": "Mob Psycho 100",
@@ -32231,7 +32661,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32256,9 +32688,14 @@
    "gender": "Homme",
    "age": 34,
    "occupation": [
-    "Sorcier"
+    "Étudiant",
+    "Magicien",
+    "Aventurier",
+    "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32306,8 +32743,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Blancs",
+    "Verts"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32332,7 +32774,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Guerrier",
+    "Aventurier"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -32358,7 +32803,11 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Garde du corps",
+    "Aventurier",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -32383,7 +32832,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aventurier",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -32434,8 +32886,15 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Magicien",
+    "Servante",
+    "Conseiller"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32459,8 +32918,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien",
+    "Aventurier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32513,7 +32977,9 @@
    "occupation": [
     "Guerrier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32537,8 +33003,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Épéiste"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32563,7 +33034,9 @@
    "occupation": [
     "Servante"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32591,7 +33064,9 @@
    "occupation": [
     "Impératrice"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32666,7 +33141,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32691,7 +33168,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -32771,10 +33250,10 @@
    "gender": "Homme",
    "age": 14,
    "occupation": [
-    "Super-héros"
+    "Super-héros",
+    "Lycéen"
    ],
    "hair": [
-    "Noirs",
     "Verts"
    ],
    "anime": "My Hero Academia",
@@ -32802,10 +33281,12 @@
    "gender": "Femme",
    "age": 15,
    "occupation": [
-    "Élève",
-    "Super-héros"
+    "Super-héros",
+    "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -32830,7 +33311,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Super-héros",
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
@@ -32883,8 +33367,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -32908,8 +33396,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 20,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Méchant"
+   ],
+   "hair": [
+    "Noirs",
+    "Blancs",
+    "Bleus"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -32958,7 +33452,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
@@ -33030,7 +33527,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Super-héros",
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
@@ -34334,7 +34834,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 25,
-   "occupation": null,
+   "occupation": [
+    "Professeur",
+    "Super-héros"
+   ],
    "hair": null,
    "anime": "One-Punch Man",
    "genres": [
@@ -34856,7 +35359,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Acteur",
+    "Idole"
+   ],
    "hair": null,
    "anime": "OSHI NO KO",
    "genres": [
@@ -34881,7 +35387,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Acteur"
+   ],
    "hair": null,
    "anime": "OSHI NO KO",
    "genres": [
@@ -34956,7 +35464,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Idole"
+   ],
    "hair": null,
    "anime": "OSHI NO KO",
    "genres": [
@@ -34979,7 +35489,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Acteur",
+    "Youtubeur"
+   ],
    "hair": null,
    "anime": "OSHI NO KO",
    "genres": [
@@ -35388,7 +35901,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35412,7 +35927,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35437,7 +35954,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35462,7 +35981,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35486,7 +36007,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35511,7 +36034,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -35564,7 +36089,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Lycéen"
+   ],
    "hair": null,
    "anime": "Ouran High School Host Club",
    "genres": [
@@ -36613,7 +37140,9 @@
    "gender": "Femme",
    "age": 9,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -37154,8 +37683,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Policier"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -37643,7 +38176,9 @@
    "gender": "Femme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -37668,8 +38203,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 13,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Épéiste"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -37722,7 +38261,9 @@
    "gender": "Femme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -38007,7 +38548,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209533-bICkAMcaURRi.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
    "occupation": null,
    "hair": null,
@@ -39278,7 +39819,9 @@
    "gender": "Femme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39303,8 +39846,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Servante"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39361,8 +39908,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Servante"
+   ],
+   "hair": [
+    "Roses"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39421,8 +39972,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chevalier"
+   ],
+   "hair": [
+    "Roux"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39450,7 +40005,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Chevalier"
+   ],
    "hair": null,
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -39480,7 +40037,9 @@
    "gender": "Femme",
    "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39534,8 +40093,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 21,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chevalier"
+   ],
+   "hair": [
+    "Violets"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39563,7 +40126,9 @@
    "gender": "Homme",
    "age": 62,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39592,7 +40157,9 @@
    "gender": "Homme",
    "age": 29,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39621,7 +40188,9 @@
    "gender": "Femme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39649,7 +40218,9 @@
    "gender": "Femme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39678,7 +40249,9 @@
    "gender": "Femme",
    "age": 22,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39706,7 +40279,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -39736,7 +40311,9 @@
    "gender": "Homme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -39822,7 +40399,9 @@
    "gender": "Homme",
    "age": 74,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -40130,8 +40709,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Épéiste",
+    "Collégien"
+   ],
+   "hair": [
+    "Roses"
+   ],
    "anime": "Revolutionary Girl Utena",
    "genres": [
     "Action",
@@ -40158,8 +40742,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Serviteur"
+   ],
+   "hair": [
+    "Violets"
+   ],
    "anime": "Revolutionary Girl Utena",
    "genres": [
     "Action",
@@ -40898,8 +41486,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 9,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Officier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -41577,7 +42169,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Monarque"
+   ],
    "hair": null,
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
@@ -42430,7 +43024,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 24,
-   "occupation": null,
+   "occupation": [
+    "Vendeur"
+   ],
    "hair": null,
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
@@ -42455,7 +43051,9 @@
    "occupation": [
     "Employé de bureau"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -42479,7 +43077,9 @@
    "occupation": [
     "Gérant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -42626,7 +43226,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -42768,7 +43370,9 @@
     "Informateur",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -42823,7 +43427,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -43130,8 +43736,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Médecin"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -43183,7 +43793,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Serveur"
+   ],
    "hair": null,
    "anime": "Steins;Gate",
    "genres": [
@@ -43209,7 +43821,9 @@
    "gender": "Femme",
    "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -43257,8 +43871,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Miko"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -43283,7 +43901,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -43356,7 +43976,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 11,
-   "occupation": null,
+   "occupation": [
+    "Chercheur"
+   ],
    "hair": null,
    "anime": "Steins;Gate",
    "genres": [
@@ -43955,7 +44577,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Justicier",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Sword Art Online",
    "genres": [
@@ -44058,7 +44683,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -44902,7 +45529,9 @@
    "gender": "Autre",
    "age": 37,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -44930,7 +45559,9 @@
    "occupation": [
     "Seigneur"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -44953,7 +45584,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -45024,7 +45657,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -45070,7 +45705,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -45186,7 +45823,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -45236,7 +45875,9 @@
    "gender": "Femme",
    "age": 10,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -45382,7 +46023,11 @@
   "attributes": {
    "gender": "Femme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Courtisane",
+    "Servante",
+    "Apothicaire"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45403,7 +46048,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Fonctionnaire",
+    "Noble"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45445,7 +46093,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -45489,8 +46139,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 23,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -45510,7 +46164,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 40,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45534,7 +46190,9 @@
    "occupation": [
     "Empereur"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -45557,7 +46215,9 @@
    "occupation": [
     "Serviteur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -45600,7 +46260,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 30,
-   "occupation": null,
+   "occupation": [
+    "Courtisane"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45621,8 +46283,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -45642,7 +46308,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 30,
-   "occupation": null,
+   "occupation": [
+    "Courtisane"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45663,7 +46331,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45707,7 +46377,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 20,
-   "occupation": null,
+   "occupation": [
+    "Courtisane"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -45728,7 +46400,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 40,
-   "occupation": null,
+   "occupation": [
+    "Courtisane"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -46327,7 +47001,9 @@
    "gender": "Homme",
    "age": 8,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46351,7 +47027,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46373,7 +47051,9 @@
    "gender": "Femme",
    "age": 8,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46397,7 +47077,9 @@
    "gender": "Femme",
    "age": 8,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46421,7 +47103,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46443,7 +47127,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46466,7 +47152,9 @@
    "gender": "Homme",
    "age": 8,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46490,7 +47178,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46653,7 +47343,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Elusive Samurai",
    "genres": [
     "Action",
@@ -46799,7 +47491,9 @@
    "gender": "Homme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46821,7 +47515,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46843,7 +47539,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46867,7 +47565,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46890,7 +47590,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46916,7 +47618,9 @@
    "occupation": [
     "Princesse"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46939,7 +47643,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46961,7 +47667,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -46985,7 +47693,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47013,7 +47723,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47035,7 +47747,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47057,7 +47771,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47079,7 +47795,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47105,7 +47823,9 @@
    "occupation": [
     "Princesse"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47129,7 +47849,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47155,7 +47877,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47183,7 +47907,9 @@
    "occupation": [
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47205,7 +47931,9 @@
    "gender": "Femme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47227,7 +47955,9 @@
    "gender": "Femme",
    "age": 24,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47249,7 +47979,9 @@
    "gender": "Femme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Eminence in Shadow",
    "genres": [
     "Action",
@@ -47800,7 +48532,9 @@
    "gender": "Homme",
    "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Rising of the Shield Hero",
    "genres": [
     "Action",
@@ -48306,7 +49040,9 @@
    "occupation": [
     "Princesse"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "The Seven Deadly Sins",
    "genres": [
     "Action",
@@ -50064,7 +50800,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84559-r05DStyd0Luq.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "age": null,
    "occupation": null,
    "hair": null,
@@ -50430,7 +51166,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -50453,8 +51191,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -50482,7 +51224,9 @@
    "occupation": [
     "Mannequin"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -50509,7 +51253,9 @@
    "occupation": [
     "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -52007,7 +52753,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Archéologue",
+    "Épéiste"
+   ],
    "hair": null,
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
@@ -52106,7 +52855,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Aventure",
@@ -52177,8 +52928,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Archer"
+   ],
+   "hair": [
+    "Gris"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Aventure",
@@ -52825,7 +53580,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -53785,7 +54542,9 @@
    "gender": "Homme",
    "age": 26,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
     "Comédie",
@@ -53808,7 +54567,9 @@
    "gender": "Femme",
    "age": 27,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
     "Comédie",
@@ -53832,7 +54593,9 @@
    "gender": "Femme",
    "age": 26,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
     "Comédie",
@@ -53908,7 +54671,9 @@
    "gender": "Femme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
     "Comédie",
