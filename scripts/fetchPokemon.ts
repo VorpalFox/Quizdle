@@ -1,11 +1,11 @@
-// Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 386 par défaut : jusqu'à la 3e génération]
+// Génère data/pokemon.json depuis PokeAPI. Usage : npm run fetch:pokemon -- [dernier n° de Pokédex, 905 par défaut : jusqu'à la 8e génération]
 // L'habitat officiel n'existe que jusqu'à la 3e génération. De la 4e à la 8e, il est repris de la famille d'évolution
 // si elle a un membre plus ancien, sinon déduit des lieux de capture (voir pokemonHabitat.ts). Les groupes d'œufs existent pour tous.
 import { writeFile } from 'node:fs/promises'
 import { deduceHabitats, type Encounter } from './pokemonHabitat.js'
 
 const API = 'https://pokeapi.co/api/v2'
-const lastId = Number(process.argv[2] ?? 386)
+const lastId = Number(process.argv[2] ?? 905)
 // PokeAPI n'a aucun lieu de capture pour la 9e génération : pas d'habitat possible au-delà
 const MAX_ID = 905
 if (lastId > MAX_ID)

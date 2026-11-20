@@ -36,7 +36,7 @@ Le bot ne passe que par le moteur, et le moteur ne connaît que l'interface `Sub
 
 ### Données Pokémon
 
-`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 386 premiers par défaut, jusqu'à la 3e génération). Pour aller plus loin : `npm run fetch:pokemon -- 905` (au plus 905, fin de la 8e génération : PokeAPI n'a aucun lieu de capture pour la 9e). Indices : types, habitat, groupes d'œufs (noms officiels : Monstrueux, Terrestre, Aquatique 1...), couleur, stade d'évolution, taille, poids, génération. Les groupes d'œufs existent pour tous les Pokémon.
+`npm run fetch:pokemon` régénère [data/pokemon.json](data/pokemon.json) depuis PokeAPI (les 905 premiers par défaut, jusqu'à la 8e génération : PokeAPI n'a aucun lieu de capture pour la 9e, donc pas d'habitat possible). Pour moins : `npm run fetch:pokemon -- 386`. Indices : types, habitat, groupes d'œufs (noms officiels : Monstrueux, Terrestre, Aquatique 1...), couleur, stade d'évolution, taille, poids, génération. Les groupes d'œufs existent pour tous les Pokémon.
 
 L'habitat officiel n'existe que dans Rouge Feu et Vert Feuille, donc jusqu'à la 3e génération. Au-delà ([scripts/pokemonHabitat.ts](scripts/pokemonHabitat.ts)) :
 - si la famille d'évolution a un membre des 3 premières générations, on reprend son habitat (Magnézone → celui de Magnéton) : une évolution a toujours l'habitat de sa pré-évolution ;
