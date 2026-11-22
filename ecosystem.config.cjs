@@ -6,6 +6,10 @@ module.exports = {
       script: 'dist/index.js',
       cwd: __dirname,
       restart_delay: 5000,
+      // Le bot sort avec 78 quand il replante juste après un redémarrage : pm2 le laisse arrêté (src/bot/crash.ts)
+      stop_exit_codes: [78],
+      // Horodate les logs, pour dater une coupure
+      time: true,
     },
   ],
 }
