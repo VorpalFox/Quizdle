@@ -4,7 +4,7 @@ Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Côté 
 
 ## Où on en est
 
-`npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 493 personnages, 173 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
+`npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 473 personnages, 172 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
 
 Remplissage : sexe 96 %, espèce 81 %, nationalité 43 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
 
