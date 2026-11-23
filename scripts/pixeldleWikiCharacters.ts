@@ -102,13 +102,15 @@ export function introRoles(intro: string): string[] {
 // Un compagnon ou un assistant, quand l'introduction le dit (« Epona is Link's horse », « Dog is Alyx's pet robot »,
 // « ADA is the AI assistant ») : la fonction du personnage, pas un rôle d'histoire comme « possible companion »
 const COMPANION = /'s\s+(?:[\w-]+\s+){0,3}(?:companion|sidekick|pet|steed|horse|mount|partner|dog|wolf|familiar)\b|\b(?:companion|sidekick|pet|steed|familiar) of\b/i
-const ASSISTANT = /\bassistant\b/i
+// « a "guide" », « as their guide », « Milton Library Assistant » : le nom, pas le verbe (« she will guide Stella »)
+const ASSISTANT = /\b(?:a|an|the|their|his|her|its)\s+(?:[\w-]+\s+){0,2}["“]?(?:assistant|guide)\b|\b[A-Z]\w+ (?:Assistant|Guide)\b/
+const NOT_ASSISTANT = /\bassistant (?:manager|director|professor)|guidebook/i
 
-export function introFunction(intro: string): 'Compagnon' | 'Assistant' | null {
+export function introFunction(intro: string, name = ''): 'Compagnon' | 'Assistant' | null {
   const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)
-  const roles = sentences.map(sentence => WHAT_HE_IS.exec(sentence)?.[1] ?? '')
-  if (roles.some(role => ASSISTANT.test(role) && !/\bassistant (?:manager|director|professor)/i.test(role)))
+  if (/^(?:assistant|guide)$/i.test(name) || sentences.some(sentence => ASSISTANT.test(sentence) && !NOT_ASSISTANT.test(sentence)))
     return 'Assistant'
+  const roles = sentences.map(sentence => WHAT_HE_IS.exec(sentence)?.[1] ?? '')
   if (roles.some(role => COMPANION.test(role) && !/\b(?:possible|potential|recruitable|romance)/i.test(role)))
     return 'Compagnon'
   return null

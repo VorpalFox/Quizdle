@@ -2513,6 +2513,10 @@
    "_nom": "Paimon",
    "species": [
     "Inconnu"
+   ],
+   "_raison": "« as their guide » (page pas lue par le script)",
+   "occupation": [
+    "Assistant"
    ]
   },
   "wiki-solasta-shadwyn": {
@@ -3851,6 +3855,13 @@
    "occupation": [
     "Protecteur"
    ]
+  },
+  "Q137798536": {
+   "_nom": "Elora",
+   "_raison": "« the guide of that realm » (page pas lue par le script)",
+   "occupation": [
+    "Assistant"
+   ]
   }
  },
  "add": [
@@ -4459,7 +4470,9 @@
      "Robot"
     ],
     "nationality": null,
-    "occupation": null,
+    "occupation": [
+     "Compagnon"
+    ],
     "hair": null,
     "franchise": "The Riftbreaker",
     "developer": "EXOR Studios",
@@ -5705,7 +5718,9 @@
     "gender": "Aucun",
     "year": 2019,
     "franchise": "Satisfactory",
-    "occupation": null
+    "occupation": [
+     "Assistant"
+    ]
    }
   },
   {

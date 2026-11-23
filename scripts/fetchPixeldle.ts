@@ -594,7 +594,7 @@ const entries = manualApplied.entries.map(entry => {
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
 function functionRole(entry: Entry): string[] | null {
-  const role = introFunction(introsById.get(entry.id) ?? '')
+  const role = introFunction(introsById.get(entry.id) ?? '', entry.name)
   if (!role)
     return null
   entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
