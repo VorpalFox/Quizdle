@@ -73,7 +73,14 @@
   "Q136403141",
   "Q17216707",
   "Q139594797",
-  "wiki-unreal-raiden"
+  "wiki-unreal-raiden",
+  "Q1072320",
+  "wiki-unreal-selket",
+  "wiki-unreal-sobek",
+  "wiki-unreal-sapphire",
+  "wiki-unreal-apophis",
+  "wiki-unreal-devastation",
+  "wiki-unreal-anubis"
  ],
  "edit": {
   "Q2265837": {
@@ -1769,13 +1776,6 @@
    ],
    "gender": "Homme"
   },
-  "Q1072320": {
-   "_nom": "Crabe de tête",
-   "species": [
-    "Extraterrestre"
-   ],
-   "gender": "Aucun"
-  },
   "Q99671042": {
    "_nom": "Boomer",
    "species": [
@@ -2336,7 +2336,10 @@
    "name": "Liza",
    "attributes": {
     "gender": "Femme",
-    "species": null,
+    "species": [
+     "Démon",
+     "Esprit"
+    ],
     "nationality": [
      "Ermys"
     ],
@@ -4552,6 +4555,9 @@
     "Vitalis Bénévent",
     "Sophia"
    ]
+  },
+  "Unreal": {
+   "limit": 10
   }
  },
  "defaults": {

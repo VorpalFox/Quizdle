@@ -101,13 +101,13 @@ const SPECIES: Record<string, string | null> = {
   'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
   'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'Robot',
   // Valeurs des wikis gardées brutes (majuscule), traduites au cas par cas
-  'honey bear': 'Ours', 'fallen angel': 'Ange', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
+  'honey bear': 'Ours', 'fallen angel': 'Ange déchu', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
   'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
   'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
-  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Tribu de la Lune', 'elder god': 'Divinité',
+  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Sélénite', 'elder god': 'Divinité',
   'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Extraterrestre',
-  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Gluant', 'leftherian': 'Humain', 'memetic entity': 'Entité',
-  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Être d\'un autre monde',
+  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Slime', 'leftherian': 'Humain', 'memetic entity': 'Entité',
+  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Extraterrestre',
   'nomaï': 'Nomai',
   'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
 }
@@ -118,7 +118,7 @@ const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans
 // Champ multiple : une espèce composée vaut ses deux parts (Talos, humain devenu dieu), une IA est un robot
 const SPECIES_PARTS: Record<string, string[]> = {
   'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
-  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Humain mutant': ['Humain', 'Mutant'],
+  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Ange déchu': ['Ange', 'Démon'], 'Humain mutant': ['Humain', 'Mutant'],
   'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
   'Hybride': ['Humain', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
 }

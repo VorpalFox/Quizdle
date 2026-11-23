@@ -18520,32 +18520,6 @@
   }
  },
  {
-  "id": "Q1072320",
-  "name": "Crabe de tête",
-  "aliases": [
-   "headcrab",
-   "tête de Crabe",
-   "Crabes de tête",
-   "Crabe",
-   "tête"
-  ],
-  "attributes": {
-   "gender": "Aucun",
-   "species": [
-    "Extraterrestre"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Half-Life",
-   "developer": "Valve",
-   "genres": [
-    "FPS"
-   ],
-   "year": 1998
-  }
- },
- {
   "id": "Q1209383",
   "name": "Barney Calhoun",
   "aliases": [
@@ -18951,6 +18925,24 @@
     "Horreur"
    ],
    "year": 2004
+  }
+ },
+ {
+  "id": "Q135430461",
+  "name": "Houndeye",
+  "aliases": [],
+  "attributes": {
+   "gender": null,
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Half-Life",
+   "developer": "Valve",
+   "genres": [
+    "FPS"
+   ],
+   "year": 1998
   }
  },
  {
@@ -22668,7 +22660,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Gluant"
+    "Slime"
    ],
    "nationality": null,
    "occupation": null,
@@ -45183,7 +45175,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Ange"
+    "Ange",
+    "Démon"
    ],
    "nationality": null,
    "occupation": [
@@ -46625,7 +46618,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Tribu de la Lune"
+    "Sélénite"
    ],
    "nationality": [
     "Moon",
@@ -51859,30 +51852,6 @@
   }
  },
  {
-  "id": "wiki-unreal-selket",
-  "name": "Selket",
-  "aliases": [],
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Nakhti"
-   ],
-   "nationality": [
-    "Nakhti Imperial City"
-   ],
-   "occupation": [
-    "Guerrier"
-   ],
-   "hair": null,
-   "franchise": "Unreal",
-   "developer": "Epic Games",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2005
-  }
- },
- {
   "id": "wiki-unreal-xan-kriegor",
   "name": "Xan Kriegor",
   "aliases": [
@@ -51928,30 +51897,6 @@
     "FPS"
    ],
    "year": 1998
-  }
- },
- {
-  "id": "wiki-unreal-sobek",
-  "name": "Sobek",
-  "aliases": [],
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Nakhti"
-   ],
-   "nationality": [
-    "Na'pt Bon"
-   ],
-   "occupation": [
-    "Soldat"
-   ],
-   "hair": null,
-   "franchise": "Unreal",
-   "developer": "Epic Games",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2005
   }
  },
  {
@@ -61657,7 +61602,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Être d'un autre monde"
+    "Extraterrestre"
    ],
    "nationality": [
     "Germany",
@@ -61718,7 +61663,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Être d'un autre monde"
+    "Extraterrestre"
    ],
    "nationality": [
     "Other World Empire"
@@ -62153,7 +62098,10 @@
   "name": "Liza",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Démon",
+    "Esprit"
+   ],
    "nationality": [
     "Ermys"
    ],
