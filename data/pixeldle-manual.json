@@ -1250,7 +1250,11 @@
   "wiki-amnesia-empress-tihana": {
    "_nom": "Empress Tihana",
    "_raison": "année : Amnesia: Rebirth",
-   "year": 2020
+   "year": 2020,
+   "nationality": [
+    "Other World Empire",
+    "Other World"
+   ]
   },
   "wiki-amnesia-leon-de-vries": {
    "_nom": "Leon De Vries",
@@ -2328,6 +2332,21 @@
    "_nom": "Gorge",
    "_raison": "année : Unreal Tournament 2003",
    "year": 2002
+  },
+  "wiki-unreal-lauren": {
+   "_nom": "Lauren",
+   "_raison": "année : Unreal Tournament 2003",
+   "year": 2002
+  },
+  "wiki-unreal-sapphire": {
+   "_nom": "Sapphire",
+   "_raison": "année : Unreal Tournament 2003",
+   "year": 2002,
+   "nationality": [
+    "Paso Robles",
+    "California",
+    "United States"
+   ]
   }
  },
  "add": [
@@ -2365,7 +2384,8 @@
      "Esprit"
     ],
     "nationality": [
-     "Ermys"
+     "Emrys",
+     "Other World"
     ],
     "occupation": null,
     "hair": null,

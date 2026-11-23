@@ -51920,7 +51920,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2002
   }
  },
  {
@@ -52055,7 +52055,9 @@
     "Humain"
    ],
    "nationality": [
-    "Paso Robles"
+    "Paso Robles",
+    "California",
+    "United States"
    ],
    "occupation": [
     "Combattant"
@@ -52066,7 +52068,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2002
   }
  },
  {
@@ -61690,7 +61692,8 @@
     "Extraterrestre"
    ],
    "nationality": [
-    "Other World Empire"
+    "Other World Empire",
+    "Other World"
    ],
    "occupation": [
     "Souverain",
@@ -62127,7 +62130,8 @@
     "Esprit"
    ],
    "nationality": [
-    "Ermys"
+    "Emrys",
+    "Other World"
    ],
    "occupation": null,
    "hair": null,
