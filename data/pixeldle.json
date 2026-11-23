@@ -27913,8 +27913,7 @@
     "Humain"
    ],
    "nationality": [
-    "Japan",
-    "United States"
+    "Japan"
    ],
    "occupation": [
     "Avocat",
@@ -27947,7 +27946,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -27976,7 +27977,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Germany",
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -28005,7 +28009,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -28034,7 +28040,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -28061,7 +28069,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -28090,7 +28100,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Artiste"
    ],
@@ -28121,7 +28133,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Détective"
    ],
@@ -28151,7 +28165,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -28180,7 +28196,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Criminel"
    ],
@@ -28206,7 +28224,7 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Japan"
    ],
    "occupation": [
     "Avocat"
@@ -28235,7 +28253,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -28263,7 +28283,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -28293,7 +28315,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": [
     "Détective"
    ],
@@ -28322,7 +28347,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Étudiant",
     "Policier",
@@ -28353,7 +28380,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Journaliste"
    ],
@@ -28380,7 +28409,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -28408,7 +28439,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -28471,7 +28504,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],

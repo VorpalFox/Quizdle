@@ -2650,7 +2650,11 @@
   "Q848540": {
    "_nom": "Franziska von Karma",
    "_raison": "année : Phoenix Wright: Justice for All",
-   "year": 2002
+   "year": 2002,
+   "nationality": [
+    "Germany",
+    "Japan"
+   ]
   },
   "Q16167007": {
    "_nom": "Morgan Fey",
@@ -3150,6 +3154,25 @@
    "_nom": "Reinhardt Schneider",
    "nationality": [
     "Germany"
+   ]
+  },
+  "Q1038163": {
+   "_nom": "Phoenix Wright",
+   "nationality": [
+    "Japan"
+   ]
+  },
+  "Q5576788": {
+   "_nom": "Godot",
+   "nationality": [
+    "Japan"
+   ]
+  },
+  "Q106687047": {
+   "_nom": "Herlock Sholmes",
+   "nationality": [
+    "London",
+    "United Kingdom"
    ]
   }
  },
@@ -5628,6 +5651,9 @@
   "Ace Attorney": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Japan"
    ]
   },
   "Persona": {
