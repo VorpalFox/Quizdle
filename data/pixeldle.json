@@ -744,6 +744,28 @@
   }
  },
  {
+  "id": "Q64846584",
+  "name": "Morshu",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Hylien",
+   "nationality": [
+    "Hyrule"
+   ],
+   "occupation": [
+    "Commerçant"
+   ],
+   "hair": null,
+   "franchise": "The Legend of Zelda",
+   "developer": "Animation Magic",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1993
+  }
+ },
+ {
   "id": "Q3781071",
   "name": "Vaati",
   "aliases": [],
@@ -867,26 +889,6 @@
     "Action-aventure"
    ],
    "year": 2011
-  }
- },
- {
-  "id": "Q119157699",
-  "name": "Bokoblin",
-  "aliases": [
-   "Red Bokoblin"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": "Bokoblin",
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "The Legend of Zelda",
-   "developer": "Nintendo",
-   "genres": [
-    "Action-aventure"
-   ],
-   "year": 2002
   }
  },
  {
@@ -1726,38 +1728,6 @@
   }
  },
  {
-  "id": "Q6030387",
-  "name": "Princess Sally Acorn",
-  "aliases": [
-   "Acorn Sally Princess",
-   "Princess Sally Acorn (Sonic the Hedgehog)",
-   "Sally Acorn",
-   "Sally Acorn (Sonic the Hedgehog)",
-   "Princess",
-   "Sally",
-   "Acorn"
-  ],
-  "attributes": {
-   "gender": "Femme",
-   "species": "Écureuil",
-   "nationality": null,
-   "occupation": [
-    "Noble",
-    "Révolutionnaire"
-   ],
-   "hair": [
-    "Bruns"
-   ],
-   "franchise": "Sonic the Hedgehog",
-   "developer": "Sonic Team",
-   "genres": [
-    "Action",
-    "Arcade"
-   ],
-   "year": 1993
-  }
- },
- {
   "id": "Q2376637",
   "name": "Fang the Sniper",
   "aliases": [
@@ -1885,6 +1855,26 @@
     "Plates-formes"
    ],
    "year": 1991
+  }
+ },
+ {
+  "id": "Q5729571",
+  "name": "Black Doom",
+  "aliases": [
+   "Doom Black"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Extraterrestre",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Sonic the Hedgehog",
+   "developer": "Sega",
+   "genres": [
+    "TPS"
+   ],
+   "year": 2005
   }
  },
  {
@@ -17887,31 +17877,6 @@
   }
  },
  {
-  "id": "Q57984075",
-  "name": "Saxton Hale",
-  "aliases": [
-   "Hale Saxton",
-   "Saxton"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": "Humain",
-   "nationality": [
-    "Australia"
-   ],
-   "occupation": [
-    "Homme d'affaires"
-   ],
-   "hair": null,
-   "franchise": "Team Fortress",
-   "developer": "Valve",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2007
-  }
- },
- {
   "id": "Q57984293",
   "name": "Dr. Cadaverus Hale",
   "aliases": [
@@ -18054,6 +18019,29 @@
    "gender": "Homme",
    "species": null,
    "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Team Fortress",
+   "developer": "Valve",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2007
+  }
+ },
+ {
+  "id": "Q64453673",
+  "name": "Bette Mann",
+  "aliases": [
+   "Mann Bette",
+   "Bette"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": [
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
@@ -34444,33 +34432,6 @@
   }
  },
  {
-  "id": "Q114455",
-  "name": "Drizzt Do'Urden",
-  "aliases": [
-   "Do'Urden Drizzt",
-   "Drizzt",
-   "Do'Urden"
-  ],
-  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Drizzt-DoUrden.jpg?width=400",
-  "attributes": {
-   "gender": "Homme",
-   "species": "Elfe",
-   "nationality": null,
-   "occupation": [
-    "Épéiste"
-   ],
-   "hair": [
-    "Blancs"
-   ],
-   "franchise": "Baldur's Gate",
-   "developer": "BioWare",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2000
-  }
- },
- {
   "id": "Q1072331",
   "name": "Elminster Aumar",
   "aliases": [
@@ -34770,6 +34731,28 @@
    "nationality": null,
    "occupation": [
     "Guerrier"
+   ],
+   "hair": null,
+   "franchise": "Baldur's Gate",
+   "developer": "Larian Studios",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2023
+  }
+ },
+ {
+  "id": "Q123984319",
+  "name": "Gale",
+  "aliases": [
+   "Gale Dekarios"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": [
+    "Magicien"
    ],
    "hair": null,
    "franchise": "Baldur's Gate",
@@ -37124,8 +37107,7 @@
   "aliases": [
    "Black Sirius",
    "Sirius Black III",
-   "Sirius",
-   "Black"
+   "Sirius"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sirius%20Black%20fanart%20-%20Cor-Sa.jpg?width=400",
   "attributes": {
@@ -38735,8 +38717,7 @@
   "name": "Samuel Hayden (Doom)",
   "aliases": [
    "(Doom) Hayden Samuel",
-   "Hayden",
-   "(Doom)"
+   "Hayden"
   ],
   "attributes": {
    "gender": null,
@@ -57982,8 +57963,10 @@
  },
  {
   "id": "avatar-outer-wilds",
-  "name": "Hatchling",
+  "name": "Le protagoniste",
   "aliases": [
+   "The protagonist",
+   "Hatchling",
    "Novice",
    "Outer Wilds"
   ],

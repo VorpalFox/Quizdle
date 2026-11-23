@@ -36,16 +36,10 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 3. **Trous à combler** :
    - 106 personnages sans sexe et 475 sans espèce (listés dans le récap) ;
    - 283 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
-4. **À trancher avec FX** :
-   - les **9 « peut-être invités »** (Sally Acorn, Clank, Saxton Hale, Ambessa, Rhonin, Blackhand, Claudia Wolf, Janice Quatlane, Drizzt) : `exclude` ou non ;
-   - les **4 pages « À vérifier »** de `pixeldle-enrich.md` (Bokoblin, Xehanort, Villager, Talos) : déjà corrigées par `edit`, à confirmer ;
-   - les **Lapins crétins dans Rayman** : Raving Rabbids est retiré, et il n'y a que Rabbid Peach dans Rayman. En ajouter ?
-   - les **Héros de Dragon Quest** : seul celui de DQ III est gardé, les deux autres sont retirés (un avatar par franchise). À confirmer ;
-   - les noms d'avatars donnés de mémoire, sans vérifier la traduction française officielle : Godwoken, Hatchling, Élève de cinquième année.
-5. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
-6. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
-7. **Wikipédia en dernier recours** : prévu au départ pour compléter les champs vides, pas encore fait.
-8. **Fin** :
+4. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
+5. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
+6. **Wikipédia en dernier recours** : prévu au départ pour compléter les champs vides, pas encore fait.
+7. **Fin** :
    - relire le jeu en vrai (`/quiz pixeldle`) ;
    - commiter les données et les scripts ;
    - mettre à jour la section « Données Pixeldle » du README (elle dit encore que le fichier ne contient qu'un personnage factice) ;
@@ -61,9 +55,13 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
   - un protagoniste personnalisable mais nommé par le jeu (Shepard, V) est un vrai personnage ;
   - un avatar au maximum par franchise.
 - **Sans protagoniste unique** : jeux à héros multiples (Overwatch, LoL, jeux de combat…), Solasta (personnages de D&D), Age of Empires III (20 héros de la campagne).
+- **Lapins crétins** : Rabbid Peach est gardé dans Rayman, pour qu'il y ait au moins un lapin crétin.
+- **Dragon Quest** : seul le Héros de DQ III est gardé (un avatar par franchise).
 - **Pokémon** : pas de Pokémon (le Pokédle les couvre), seulement des humains. Quatre protagonistes de jeux différents sont gardés d'office : Flora, Aurore, Ludvina et Serena, plus Sacha.
 - **Une franchise par licence** : The Forest est retiré au profit de Sons of the Forest.
 - **Franchises retirées** : L'Amerzone, The Planet Crafter, Astroneer (aucun personnage), Raving Rabbids (les Lapins crétins vont dans Rayman), The Forest.
+- **Invités** : Sally Acorn, Drizzt et Saxton Hale sont retirés ; Clank, Ambessa, Rhonin, Blackhand, Claudia Wolf et Janice Quatlane sont gardés (ils viennent des jeux). Le récap les liste encore : c'est validé.
+- **Pages d'un autre personnage** (« À vérifier » de `pixeldle-enrich.md`) : Xehanort, Villager et Talos (Divinité, comme Sigmar) sont validés tels que corrigés ; Bokoblin est retiré.
 - **Pas d'invités d'un autre média**, sauf pour les franchises qui en sont tirées (Batman: Arkham, Hogwarts Legacy, Alice, Nancy Drew, Warhammer, Call of Cthulhu, The Witcher).
 - **Pas de groupes ni d'objets** (« Companions », « Necromorphs »…), pas de doublons, pas de versions d'un autre média (Netflix, DmC, Reincarnation, anime, film).
 

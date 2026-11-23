@@ -63,7 +63,11 @@
   "wiki-life-is-strange-max-s-notes",
   "wiki-life-is-strange-alexandra-chen",
   "wiki-amnesia-gatherers",
-  "Q142243992"
+  "Q142243992",
+  "Q6030387",
+  "Q114455",
+  "Q57984075",
+  "Q119157699"
  ],
  "edit": {
   "Q2265837": {
@@ -1570,8 +1574,10 @@
   },
   {
    "id": "avatar-outer-wilds",
-   "name": "Hatchling",
+   "name": "Le protagoniste",
    "aliases": [
+    "The protagonist",
+    "Hatchling",
     "Novice",
     "Outer Wilds"
    ],
