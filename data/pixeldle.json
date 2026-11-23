@@ -35918,6 +35918,26 @@
   }
  },
  {
+  "id": "Q6011231",
+  "name": "Meryl",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "EarthBound",
+   "developer": "Nintendo",
+   "genres": [
+    "RPG"
+   ],
+   "year": 1989
+  }
+ },
+ {
   "id": "Q6025538",
   "name": "Mr. Everdred",
   "aliases": [
@@ -35976,29 +35996,6 @@
    "nationality": [
     "Twoson",
     "Eagleland"
-   ],
-   "occupation": null,
-   "hair": null,
-   "franchise": "EarthBound",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "RPG"
-   ],
-   "year": 1994
-  }
- },
- {
-  "id": "Q17209231",
-  "name": "Poo",
-  "aliases": [],
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "nationality": [
-    "Dalaam",
-    "Chommo"
    ],
    "occupation": null,
    "hair": null,
