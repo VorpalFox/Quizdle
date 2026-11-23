@@ -296,21 +296,31 @@
    ]
   },
   "wiki-green-hell-jake-higgins": {
+   "_nom": "Jake Higgins",
    "_raison": "anthropologue",
    "species": [
     "Humain"
    ],
    "occupation": [
     "Scientifique"
+   ],
+   "nationality": [
+    "United States",
+    "Amazon"
    ]
   },
   "wiki-green-hell-mia-higgins": {
+   "_nom": "Mia Higgins",
    "_raison": "linguiste",
    "species": [
     "Humain"
    ],
    "occupation": [
     "Scientifique"
+   ],
+   "nationality": [
+    "United States",
+    "Amazon"
    ]
   },
   "Q113954461": {
@@ -610,17 +620,25 @@
    ]
   },
   "wiki-devil-may-cry-kyrie": {
+   "_nom": "Kyrie",
    "_raison": "sexe faux ou absent du wiki",
-   "gender": "Femme"
+   "gender": "Femme",
+   "nationality": [
+    "Fortuna"
+   ]
   },
   "wiki-devil-may-cry-nico": {
    "_raison": "sexe faux ou absent du wiki",
    "gender": "Femme"
   },
   "wiki-devil-may-cry-lucia": {
+   "_nom": "Lucia",
    "_raison": "démone artificielle",
    "species": [
     "Démon"
+   ],
+   "nationality": [
+    "Dumary Island"
    ]
   },
   "wiki-nier-pod-042": {
@@ -678,9 +696,14 @@
    ]
   },
   "wiki-hades-hermes": {
+   "_nom": "Hermes",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Olympus",
+    "Greece"
    ]
   },
   "wiki-hades-charon": {
@@ -690,15 +713,25 @@
    ]
   },
   "wiki-hades-zeus": {
+   "_nom": "Zeus",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Olympus",
+    "Greece"
    ]
   },
   "wiki-hades-poseidon": {
+   "_nom": "Poseidon",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Olympus",
+    "Greece"
    ]
   },
   "wiki-hades-melinoe": {
@@ -766,16 +799,24 @@
    ]
   },
   "Q5820357": {
+   "_nom": "Eggplant Wizard",
    "_raison": "monstre du 1er jeu",
    "gender": "Homme",
    "species": [
     "Monstre"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-medusa": {
+   "_nom": "Medusa",
    "_raison": "divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-hades": {
@@ -787,43 +828,64 @@
    "hair": [
     "Rouges",
     "Verts"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-thanatos": {
+   "_nom": "Thanatos",
    "_raison": "divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-viridi": {
+   "_nom": "Viridi",
    "_raison": "divinité",
    "species": [
     "Divinité"
-   ]
+   ],
+   "nationality": null
   },
   "wiki-kid-icarus-pandora": {
+   "_nom": "Pandora",
    "_raison": "divinité",
    "species": [
     "Divinité"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-magnus": {
+   "_nom": "Magnus",
    "_raison": "mercenaire humain",
    "species": [
     "Humain"
-   ]
+   ],
+   "nationality": null
   },
   "wiki-kid-icarus-hewdraw": {
+   "_nom": "Hewdraw",
    "_raison": "monstre",
    "species": [
     "Monstre"
+   ],
+   "nationality": [
+    "Underworld"
    ]
   },
   "wiki-kid-icarus-chaos-kin": {
+   "_nom": "Chaos Kin",
    "_raison": "monstre",
    "species": [
     "Monstre"
-   ]
+   ],
+   "nationality": null
   },
   "Q126033521": {
    "_raison": "sexe absent",
@@ -1078,7 +1140,11 @@
    "_nom": "Angus Bumby",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
   },
   "wiki-alice-madness-returns-dollmaker": {
    "_nom": "Dollmaker",
@@ -1090,25 +1156,41 @@
    "_nom": "Pris Witless",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
   },
   "wiki-alice-madness-returns-lizzie-liddell": {
    "_nom": "Lizzie Liddell",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
   },
   "wiki-alice-madness-returns-arthur-liddell": {
    "_nom": "Arthur Liddell",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
   },
   "wiki-alice-madness-returns-nan-sharpe": {
    "_nom": "Nan Sharpe",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
   },
   "wiki-alice-madness-returns-carpenter": {
    "_nom": "Carpenter",
@@ -1221,7 +1303,10 @@
   "wiki-devil-may-cry-credo": {
    "_nom": "Credo",
    "_raison": "année : Devil May Cry 4",
-   "year": 2008
+   "year": 2008,
+   "nationality": [
+    "Fortuna"
+   ]
   },
   "wiki-banjo-kazooie-old-king-coal": {
    "_nom": "Old King Coal",
@@ -1662,6 +1747,9 @@
    "_nom": "Madama Butterfly",
    "species": [
     "Démon"
+   ],
+   "nationality": [
+    "Hell"
    ]
   },
   "wiki-bayonetta-morgana": {
@@ -1834,7 +1922,10 @@
    "species": [
     "Mort-vivant"
    ],
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "nationality": [
+    "Mars"
+   ]
   },
   "Q108324036": {
    "_nom": "Mancubus",
@@ -2175,7 +2266,10 @@
   },
   "Q139494225": {
    "_nom": "Samuel Hayden (Doom)",
-   "gender": "Homme"
+   "gender": "Homme",
+   "nationality": [
+    "Mars"
+   ]
   },
   "Q3241098": {
    "_nom": "Nurgle",
@@ -2571,7 +2665,11 @@
   "Q3785618": {
    "_nom": "Hildegard von Krone",
    "_raison": "année : Soulcalibur IV",
-   "year": 2008
+   "year": 2008,
+   "nationality": [
+    "Wolfkrone",
+    "Holy Roman Empire"
+   ]
   },
   "Q1606932": {
    "_nom": "Tira",
@@ -2581,12 +2679,18 @@
   "Q12013637": {
    "_nom": "Amy Sorel",
    "_raison": "année : Soulcalibur III",
-   "year": 2005
+   "year": 2005,
+   "nationality": [
+    "France"
+   ]
   },
   "Q114834241": {
    "_nom": "Kilik",
    "_raison": "année : Soulcalibur",
-   "year": 1998
+   "year": 1998,
+   "nationality": [
+    "China"
+   ]
   },
   "Q845864": {
    "_nom": "Bowser",
@@ -2669,6 +2773,9 @@
    ],
    "hair": [
     "N/A"
+   ],
+   "nationality": [
+    "Sur'Kesh"
    ]
   },
   "Q1061603": {
@@ -2693,6 +2800,356 @@
    "_nom": "Tawna",
    "hair": [
     "Blonds"
+   ]
+  },
+  "Q5524087": {
+   "_nom": "Garrus Vakarian",
+   "nationality": [
+    "Palaven"
+   ]
+  },
+  "Q13584579": {
+   "_nom": "Tali'Zorah",
+   "nationality": [
+    "Rannoch"
+   ]
+  },
+  "Q16572370": {
+   "_nom": "Liara T'Soni",
+   "nationality": [
+    "Thessia"
+   ]
+  },
+  "Q21170274": {
+   "_nom": "Urdnot Wrex",
+   "nationality": [
+    "Tuchanka"
+   ]
+  },
+  "Q140421452": {
+   "_nom": "Grunt",
+   "nationality": [
+    "Tuchanka"
+   ]
+  },
+  "Q51955113": {
+   "_nom": "Javik",
+   "nationality": [
+    "Eden Prime"
+   ]
+  },
+  "Q88459424": {
+   "_nom": "Thane Krios",
+   "nationality": [
+    "Kahje"
+   ]
+  },
+  "Q107133468": {
+   "_nom": "Samara",
+   "nationality": [
+    "Thessia"
+   ]
+  },
+  "Q140073387": {
+   "_nom": "EDI",
+   "nationality": [
+    "Moon"
+   ]
+  },
+  "Q141491418": {
+   "_nom": "Saren Arterius",
+   "nationality": [
+    "Palaven"
+   ]
+  },
+  "Q16568495": {
+   "_nom": "Kaidan Alenko",
+   "nationality": [
+    "Vancouver",
+    "Canada",
+    "Earth"
+   ]
+  },
+  "Q18345485": {
+   "_nom": "Miranda Lawson",
+   "nationality": [
+    "Sydney",
+    "Australia",
+    "Earth"
+   ]
+  },
+  "Q730684": {
+   "_nom": "Doomguy",
+   "nationality": [
+    "Earth",
+    "Mars"
+   ]
+  },
+  "Q24206": {
+   "_nom": "Taki",
+   "nationality": [
+    "Japan"
+   ]
+  },
+  "Q2306495": {
+   "_nom": "Ivy Valentine",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
+  },
+  "Q2010349": {
+   "_nom": "Sophitia",
+   "nationality": [
+    "Athens",
+    "Greece"
+   ]
+  },
+  "Q2337647": {
+   "_nom": "Voldo",
+   "nationality": [
+    "Venice",
+    "Italy"
+   ]
+  },
+  "Q3661956": {
+   "_nom": "Cassandra Alexandra",
+   "nationality": [
+    "Athens",
+    "Greece"
+   ]
+  },
+  "Q3980428": {
+   "_nom": "Talim",
+   "nationality": [
+    "Philippines"
+   ]
+  },
+  "Q1165490": {
+   "_nom": "Cervantes de Leon",
+   "nationality": [
+    "Valencia",
+    "Spain"
+   ]
+  },
+  "Q4021809": {
+   "_nom": "Chai Xianghua",
+   "nationality": [
+    "China"
+   ]
+  },
+  "Q4922057": {
+   "_nom": "Kuroko",
+   "nationality": [
+    "Japan"
+   ]
+  },
+  "Q60533066": {
+   "_nom": "Heishiro Mitsurugi",
+   "nationality": [
+    "Bizen",
+    "Japan"
+   ]
+  },
+  "Q138649808": {
+   "_nom": "Seong Mi-na",
+   "nationality": [
+    "Korea"
+   ]
+  },
+  "Q6100401": {
+   "_nom": "Raphael Sorel",
+   "nationality": [
+    "Rouen",
+    "France"
+   ]
+  },
+  "Q121361716": {
+   "_nom": "Maxi",
+   "nationality": [
+    "Ryukyu",
+    "Japan"
+   ]
+  },
+  "Q140754030": {
+   "_nom": "Lilith",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q5674967": {
+   "_nom": "Andariel",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q17628767": {
+   "_nom": "Diablo",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q135320394": {
+   "_nom": "Azmodan",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q135320460": {
+   "_nom": "Mephisto",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q135320511": {
+   "_nom": "The Butcher",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q4810757": {
+   "_nom": "Tyrael",
+   "nationality": [
+    "Heaven"
+   ]
+  },
+  "Q135320363": {
+   "_nom": "Auriel",
+   "nationality": [
+    "Heaven"
+   ]
+  },
+  "Q135320411": {
+   "_nom": "Imperius",
+   "nationality": [
+    "Heaven"
+   ]
+  },
+  "Q43974014": {
+   "_nom": "Malthael",
+   "nationality": [
+    "Heaven"
+   ]
+  },
+  "Q11343205": {
+   "_nom": "Mundus",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "wiki-devil-may-cry-sparda": {
+   "_nom": "Sparda",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q1324170": {
+   "_nom": "Trish",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q1217094": {
+   "_nom": "Nero",
+   "nationality": [
+    "Fortuna"
+   ]
+  },
+  "wiki-bayonetta-rodin": {
+   "_nom": "Rodin",
+   "nationality": [
+    "Hell"
+   ]
+  },
+  "Q15726631": {
+   "_nom": "Nitrous Oxide",
+   "nationality": [
+    "Gasmoxia"
+   ]
+  },
+  "Q3101952": {
+   "_nom": "George Stobbart",
+   "nationality": [
+    "Idaho",
+    "United States"
+   ]
+  },
+  "wiki-les-chevaliers-de-baphomet-duane-henderson": {
+   "_nom": "Duane Henderson",
+   "nationality": [
+    "United States"
+   ]
+  },
+  "wiki-les-chevaliers-de-baphomet-pearl-henderson": {
+   "_nom": "Pearl Henderson",
+   "nationality": [
+    "United States"
+   ]
+  },
+  "wiki-les-chevaliers-de-baphomet-lady-piermont": {
+   "_nom": "Lady Piermont",
+   "nationality": [
+    "United Kingdom"
+   ]
+  },
+  "wiki-les-chevaliers-de-baphomet-flobbage": {
+   "_nom": "Flobbage",
+   "nationality": [
+    "United Kingdom"
+   ]
+  },
+  "wiki-les-chevaliers-de-baphomet-bruno-ostvald": {
+   "_nom": "Bruno Ostvald",
+   "nationality": null
+  },
+  "wiki-ark-mei-yin-li": {
+   "_nom": "Mei Yin Li",
+   "nationality": [
+    "China"
+   ]
+  },
+  "wiki-ark-edmund-rockwell": {
+   "_nom": "Edmund Rockwell",
+   "nationality": [
+    "United Kingdom"
+   ]
+  },
+  "wiki-ark-gaius-marcellus-nerva": {
+   "_nom": "Gaius Marcellus Nerva",
+   "nationality": [
+    "Roman Empire"
+   ]
+  },
+  "wiki-ark-john-dahkeya": {
+   "_nom": "John Dahkeya",
+   "nationality": [
+    "United States"
+   ]
+  },
+  "Q1269082": {
+   "_nom": "Alice",
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ]
+  },
+  "Q28669582": {
+   "_nom": "Carmilla",
+   "nationality": [
+    "Styria",
+    "Austria"
+   ]
+  },
+  "Q123701557": {
+   "_nom": "Nathan Graves",
+   "nationality": [
+    "Austria"
+   ]
+  },
+  "Q126947107": {
+   "_nom": "Reinhardt Schneider",
+   "nationality": [
+    "Germany"
    ]
   }
  },
@@ -4993,6 +5450,9 @@
   "Les Chevaliers de Baphomet": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "France"
    ]
   },
   "Far Cry": {
@@ -5038,6 +5498,10 @@
   "The Long Dark": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
    ]
   },
   "Mirror's Edge": {
@@ -5048,6 +5512,10 @@
   "Firewatch": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Wyoming",
+    "United States"
    ]
   },
   "XCOM": {
@@ -5098,6 +5566,11 @@
   "The Sinking City": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
    ]
   },
   "Blue Prince": {
@@ -5118,11 +5591,20 @@
   "Lost Records: Bloom & Rage": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
    ]
   },
   "Silent Hill": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Silent Hill",
+    "United States"
    ]
   },
   "Soulcalibur": {
@@ -5138,6 +5620,9 @@
   "Danganronpa": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Japan"
    ]
   },
   "Ace Attorney": {
@@ -5148,6 +5633,9 @@
   "Persona": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Japan"
    ]
   },
   "Metal Gear": {
@@ -5183,6 +5671,9 @@
   "Alice: Madness Returns": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Wonderland"
    ]
   },
   "Myst": {
@@ -5228,6 +5719,9 @@
   "Doki Doki Literature Club": {
    "species": [
     "Humain"
+   ],
+   "nationality": [
+    "Japan"
    ]
   },
   "BioShock": {
@@ -5279,6 +5773,80 @@
    "species": [
     "Objet",
     "Forgotling"
+   ]
+  },
+  "Banishers: Ghosts of New Eden": {
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ]
+  },
+  "Call of Cthulhu": {
+   "nationality": [
+    "Darkwater",
+    "Massachusetts",
+    "United States"
+   ]
+  },
+  "Left 4 Dead": {
+   "nationality": [
+    "United States"
+   ]
+  },
+  "Portal": {
+   "nationality": [
+    "Michigan",
+    "United States"
+   ]
+  },
+  "Crash Bandicoot": {
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ]
+  },
+  "Castlevania": {
+   "nationality": [
+    "Romania"
+   ]
+  },
+  "Hades": {
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ]
+  },
+  "Kid Icarus": {
+   "nationality": [
+    "Skyworld"
+   ]
+  },
+  "Nier": {
+   "nationality": [
+    "Earth"
+   ]
+  },
+  "Saturnalia": {
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ]
+  },
+  "Hunt: Showdown": {
+   "nationality": [
+    "Louisiana",
+    "United States"
+   ]
+  },
+  "Mass Effect": {
+   "nationality": [
+    "Earth"
+   ]
+  },
+  "Doom": {
+   "nationality": [
+    "Hell"
    ]
   }
  }

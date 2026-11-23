@@ -9569,7 +9569,10 @@
     "Mutant",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9599,7 +9602,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -9626,7 +9632,10 @@
     "Mutant",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -9650,7 +9659,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -9674,7 +9686,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -9698,7 +9713,10 @@
     "Tigre",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9725,7 +9743,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "Rouges"
@@ -9747,7 +9768,10 @@
    "species": [
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -9775,7 +9799,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -9800,7 +9827,10 @@
     "Kangourou",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9824,7 +9854,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -9847,7 +9880,10 @@
    "species": [
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9873,7 +9909,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gasmoxia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -9894,7 +9932,10 @@
     "Ours",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9920,7 +9961,10 @@
     "Marsupial",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9947,7 +9991,10 @@
     "Marsupial",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9970,7 +10017,10 @@
     "Bandicoot",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -9999,7 +10049,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10023,7 +10076,10 @@
     "Panda",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -10049,7 +10105,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wumpa Islands",
+    "Australia"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -13978,7 +14037,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -14006,7 +14067,9 @@
    "species": [
     "Turien"
    ],
-   "nationality": null,
+   "nationality": [
+    "Palaven"
+   ],
    "occupation": [
     "Justicier"
    ],
@@ -14034,7 +14097,9 @@
    "species": [
     "Quarian"
    ],
-   "nationality": null,
+   "nationality": [
+    "Rannoch"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -14062,7 +14127,9 @@
    "species": [
     "Asari"
    ],
-   "nationality": null,
+   "nationality": [
+    "Thessia"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -14089,7 +14156,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Garde"
    ],
@@ -14117,7 +14186,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vancouver",
+    "Canada",
+    "Earth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14143,7 +14216,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sur'Kesh"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -14172,7 +14247,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sydney",
+    "Australia",
+    "Earth"
+   ],
    "occupation": [
     "Scientifique",
     "Pilote",
@@ -14201,7 +14280,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Tuchanka"
+   ],
    "occupation": [
     "Mercenaire",
     "Garde",
@@ -14230,7 +14311,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Mercenaire",
     "Révolutionnaire",
@@ -14261,7 +14344,9 @@
    "species": [
     "Humanoïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Eden Prime"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14283,7 +14368,9 @@
    "species": [
     "Drell"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kahje"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14304,7 +14391,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14327,7 +14416,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Garde",
     "Soldat"
@@ -14351,7 +14442,9 @@
    "species": [
     "Asari"
    ],
-   "nationality": null,
+   "nationality": [
+    "Thessia"
+   ],
    "occupation": [
     "Justicier"
    ],
@@ -14377,7 +14470,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14404,7 +14499,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Aventurier"
    ],
@@ -14427,7 +14524,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Moon"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -14452,7 +14551,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Tuchanka"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -14477,7 +14578,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Palaven"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
@@ -19666,7 +19769,10 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Policier"
    ],
@@ -19691,7 +19797,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -19717,7 +19826,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -19771,7 +19883,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -19794,7 +19909,10 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -19817,7 +19935,10 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -20371,7 +20492,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Gris"
@@ -20396,7 +20519,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -20486,7 +20611,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Bruns",
@@ -20543,7 +20670,9 @@
    "species": [
     "Infecté"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -20566,7 +20695,9 @@
    "species": [
     "Infecté"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Left 4 Dead",
@@ -20590,7 +20721,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": [
     "Survivant"
    ],
@@ -23009,7 +23142,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -23034,7 +23169,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Heaven"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -23058,7 +23195,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": [
     "Rouges"
@@ -23109,7 +23248,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Diablo",
@@ -23155,7 +23296,9 @@
    "species": [
     "Ange"
    ],
-   "nationality": null,
+   "nationality": [
+    "Heaven"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -23179,7 +23322,9 @@
    "species": [
     "Ange"
    ],
-   "nationality": null,
+   "nationality": [
+    "Heaven"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Diablo",
@@ -23201,7 +23346,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Diablo",
@@ -23223,7 +23370,9 @@
    "species": [
     "Ange"
    ],
-   "nationality": null,
+   "nationality": [
+    "Heaven"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -23247,7 +23396,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Diablo",
@@ -23272,7 +23423,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": [
     "Domestique"
    ],
@@ -23648,7 +23801,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -23674,7 +23829,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Justicier"
    ],
@@ -23734,7 +23891,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Justicier",
     "Artiste"
@@ -23762,7 +23921,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Roux"
@@ -23787,7 +23948,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Sportif"
    ],
@@ -23815,7 +23978,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Détective"
    ],
@@ -23844,7 +24009,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Détective",
     "Justicier"
@@ -23873,7 +24040,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -23901,7 +24070,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Persona",
@@ -23927,7 +24098,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Combattant"
    ],
@@ -23955,7 +24128,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Persona",
@@ -23979,7 +24154,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -24005,7 +24182,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -24033,7 +24212,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Justicier"
    ],
@@ -24060,7 +24241,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -24084,7 +24267,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Persona",
@@ -24107,7 +24292,9 @@
     "Chat",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -25617,7 +25804,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -25645,7 +25834,9 @@
     "Humain",
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fortuna"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -25668,7 +25859,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Devil May Cry",
@@ -26337,7 +26530,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26392,7 +26587,10 @@
    "species": [
     "Vampire"
    ],
-   "nationality": null,
+   "nationality": [
+    "Styria",
+    "Austria"
+   ],
    "occupation": [
     "Domestique"
    ],
@@ -26419,7 +26617,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26445,7 +26645,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26472,7 +26674,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Magicien",
     "Chasseur de monstres"
@@ -26590,7 +26794,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26615,7 +26821,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Austria"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26643,7 +26851,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26668,7 +26878,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26694,7 +26906,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Germany"
+   ],
    "occupation": [
     "Chasseur de monstres"
    ],
@@ -26750,7 +26964,9 @@
    "species": [
     "Vampire"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania"
+   ],
    "occupation": [
     "Noble"
    ],
@@ -26779,7 +26995,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -26833,7 +27052,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Écrivain"
    ],
@@ -26919,7 +27141,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Religieux",
     "Dirigeant",
@@ -26980,7 +27205,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -27008,7 +27236,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Religieux"
    ],
@@ -27030,7 +27261,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
@@ -27084,7 +27318,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
@@ -27109,7 +27346,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
@@ -27129,7 +27369,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -27151,7 +27394,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Artiste"
    ],
@@ -27205,7 +27451,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": [
     "Détective"
    ],
@@ -27227,7 +27476,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -27347,7 +27599,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Professeur"
    ],
@@ -27375,7 +27629,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -27402,7 +27658,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Gamer"
    ],
@@ -27428,7 +27686,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Blancs"
@@ -27482,7 +27742,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Informaticien",
     "Étudiant"
@@ -27512,7 +27774,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Artiste"
    ],
@@ -27538,7 +27802,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Danganronpa",
@@ -27562,7 +27828,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": [
     "Blancs"
@@ -31122,7 +31390,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Chasseur de monstres",
     "Ninja"
@@ -31148,7 +31418,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31170,7 +31443,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Athens",
+    "Greece"
+   ],
    "occupation": [
     "Épéiste"
    ],
@@ -31192,7 +31468,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Venice",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31237,7 +31516,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Athens",
+    "Greece"
+   ],
    "occupation": [
     "Épéiste"
    ],
@@ -31263,7 +31545,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wolfkrone",
+    "Holy Roman Empire"
+   ],
    "occupation": [
     "Épéiste"
    ],
@@ -31285,7 +31570,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Philippines"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31308,7 +31595,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Valencia",
+    "Spain"
+   ],
    "occupation": [
     "Épéiste"
    ],
@@ -31354,7 +31644,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "China"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31374,7 +31666,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31420,7 +31714,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Bizen",
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31444,7 +31741,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Korea"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31467,7 +31766,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Rouen",
+    "France"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31489,7 +31791,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31535,7 +31839,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "China"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -31555,7 +31861,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ryukyu",
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Soulcalibur",
@@ -33229,7 +33538,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": [
     "Blancs"
@@ -33253,7 +33564,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Nier",
@@ -33273,7 +33586,9 @@
    "species": [
     "Gestalt"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": [
     "Argentés",
@@ -33296,7 +33611,9 @@
    "species": [
     "Humanoïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Commerçant"
    ],
@@ -37379,7 +37696,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Skyworld"
+   ],
    "occupation": null,
    "hair": [
     "Verts"
@@ -37401,7 +37720,9 @@
    "species": [
     "Ange"
    ],
-   "nationality": null,
+   "nationality": [
+    "Skyworld"
+   ],
    "occupation": [
     "Soldat",
     "Garde",
@@ -37431,7 +37752,9 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -37455,7 +37778,9 @@
    "species": [
     "Ange"
    ],
-   "nationality": null,
+   "nationality": [
+    "Skyworld"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
@@ -38095,7 +38420,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -38116,7 +38444,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -38137,7 +38468,10 @@
    "species": [
     "Gorgone"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -38158,7 +38492,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -43312,6 +43649,7 @@
     "Humain"
    ],
    "nationality": [
+    "London",
     "United Kingdom"
    ],
    "occupation": null,
@@ -43337,7 +43675,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth",
+    "Mars"
+   ],
    "occupation": [
     "Astronaute",
     "Soldat",
@@ -43363,7 +43704,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doom",
@@ -43386,7 +43729,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doom",
@@ -43412,7 +43757,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doom",
@@ -43437,7 +43784,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mars"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -43465,7 +43814,9 @@
    "species": [
     "Mort-vivant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mars"
+   ],
    "occupation": [
     "Chasseur"
    ],
@@ -43489,7 +43840,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doom",
@@ -43516,7 +43869,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doom",
@@ -44343,7 +44698,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -44427,7 +44784,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -44452,7 +44811,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Japan"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Doki Doki Literature Club",
@@ -45011,7 +45372,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Idaho",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Les Chevaliers de Baphomet",
@@ -46400,7 +46764,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": null,
    "hair": [
     "Blancs"
@@ -46423,7 +46789,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fortuna"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -46446,7 +46814,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Dumary Island"
+   ],
    "occupation": null,
    "hair": [
     "Rouges"
@@ -46469,7 +46839,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fortuna"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Devil May Cry",
@@ -46687,7 +47059,7 @@
     "Démon"
    ],
    "nationality": [
-    "Human World"
+    "Hell"
    ],
    "occupation": null,
    "hair": null,
@@ -46712,7 +47084,9 @@
     "Ange",
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell"
+   ],
    "occupation": [
     "Serveur",
     "Ouvrier",
@@ -46899,7 +47273,9 @@
    "species": [
     "Réplicant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": [
     "Blonds",
@@ -46922,7 +47298,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Dirigeant",
     "Musicien",
@@ -46949,7 +47327,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Dirigeant",
     "Érudit",
@@ -46980,7 +47360,9 @@
    "species": [
     "Grimoire"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Nier",
@@ -47000,7 +47382,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -47024,7 +47408,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": [
     "Blancs",
@@ -47047,7 +47433,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": null,
    "hair": [
     "Blancs",
@@ -47074,7 +47462,9 @@
    "species": [
     "Pod"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -47100,7 +47490,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -47125,7 +47517,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Révolutionnaire"
    ],
@@ -47149,7 +47543,9 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth"
+   ],
    "occupation": [
     "Révolutionnaire"
    ],
@@ -48004,7 +48400,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -48026,7 +48424,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": [
     "Rouges",
@@ -48052,7 +48452,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -48074,7 +48476,9 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -48144,7 +48548,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
@@ -48711,7 +49117,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -48734,7 +49143,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -48757,7 +49169,10 @@
    "species": [
     "Squelette"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -48780,7 +49195,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Argentés"
@@ -48804,7 +49222,10 @@
     "Chien",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -48827,7 +49248,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -48850,7 +49274,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -48873,7 +49300,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Olympus",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -48894,7 +49324,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -48915,7 +49348,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Olympus",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -48936,7 +49372,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Olympus",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Verts"
@@ -48959,7 +49398,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Verts"
@@ -48982,7 +49424,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -49003,7 +49448,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -49026,7 +49474,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hades",
@@ -49047,7 +49498,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Greece"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -50030,7 +50484,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "ARK",
@@ -50079,7 +50535,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "China"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -50195,7 +50653,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Roman Empire"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "ARK",
@@ -50219,7 +50679,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "ARK",
@@ -52060,7 +52522,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -52086,7 +52551,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Criminel"
    ],
@@ -52113,7 +52581,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Chasseur"
    ],
@@ -52166,7 +52637,10 @@
     "Ours",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -52192,7 +52666,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Religieux"
    ],
@@ -52216,7 +52693,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -52270,7 +52750,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Criminel"
    ],
@@ -52294,7 +52777,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Fermier"
    ],
@@ -52320,7 +52806,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Great Bear Island",
+    "Canada"
+   ],
    "occupation": [
     "Criminel"
    ],
@@ -52832,7 +53321,9 @@
     "Lapin",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Domestique"
    ],
@@ -52858,7 +53349,9 @@
     "Insecte",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Oracle"
    ],
@@ -52883,7 +53376,9 @@
    "species": [
     "Dragon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Garde"
    ],
@@ -52908,7 +53403,9 @@
    "species": [
     "Griffon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Alice: Madness Returns",
@@ -52934,7 +53431,9 @@
     "Tortue",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -52960,7 +53459,9 @@
     "Lièvre",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -52984,7 +53485,9 @@
     "Loir",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -53010,7 +53513,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": [
     "Étudiant",
     "Médecin",
@@ -53037,7 +53543,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Criminel",
     "Chauffeur"
@@ -53066,7 +53574,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Souverain"
    ],
@@ -53094,7 +53604,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Commerçant",
     "Mécanicien"
@@ -53122,7 +53634,9 @@
     "Chat",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Guide"
    ],
@@ -53151,7 +53665,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -53176,7 +53693,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Noble"
    ],
@@ -53203,7 +53722,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -53226,7 +53748,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -53253,7 +53777,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": [
     "Professeur"
    ],
@@ -53280,7 +53807,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "London",
+    "United Kingdom"
+   ],
    "occupation": [
     "Prostitué",
     "Homme d'affaires",
@@ -53308,7 +53838,9 @@
     "Morse",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wonderland"
+   ],
    "occupation": [
     "Acteur"
    ],
@@ -53870,7 +54402,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -53891,7 +54426,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -53914,7 +54452,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -53938,7 +54479,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -53963,7 +54507,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -53984,7 +54531,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -54005,7 +54555,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -54026,7 +54579,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wyoming",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
@@ -54273,7 +54829,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States",
+    "Amazon"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -54297,7 +54856,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States",
+    "Amazon"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -58608,7 +59170,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58655,7 +59221,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58677,7 +59247,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58700,7 +59274,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58723,7 +59301,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58745,7 +59327,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -58768,7 +59354,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -58793,7 +59383,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont",
+    "Massachusetts",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -60749,7 +61343,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Cuisinier"
    ],
@@ -60774,7 +61371,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Serveur",
     "Commerçant"
@@ -60800,7 +61400,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -60826,7 +61429,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Professeur"
    ],
@@ -60852,7 +61458,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -60875,7 +61484,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Chasseur"
    ],
@@ -60901,7 +61513,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -60925,7 +61540,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Commerçant"
    ],
@@ -60951,7 +61569,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": [
     "Chasseur"
    ],
@@ -60976,7 +61597,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Eden",
+    "Massachusetts"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -60998,7 +61622,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -61025,7 +61653,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -61052,7 +61684,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Serveur",
     "Fermier"
@@ -61082,7 +61718,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Employé"
    ],
@@ -61107,7 +61747,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Érudit"
    ],
@@ -61136,7 +61780,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Artiste"
    ],
@@ -61162,7 +61810,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Commerçant",
     "Serveur"
@@ -61191,7 +61843,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -61218,7 +61874,11 @@
     "Cerf",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -61242,7 +61902,11 @@
     "Chat",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -61267,7 +61931,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Velvet Cove",
+    "Michigan",
+    "United States"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -61293,7 +61961,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -61318,7 +61988,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -61342,7 +62014,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -61367,7 +62041,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": [
     "Violets",
@@ -61393,7 +62069,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -61417,7 +62095,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -61439,7 +62119,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": [
     "Gris"
@@ -61461,7 +62143,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "United Kingdom"
+   ],
    "occupation": null,
    "hair": [
     "Gris"
@@ -61512,7 +62196,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "France"
+   ],
    "occupation": null,
    "hair": [
     "Gris"
@@ -62861,7 +63547,11 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -62887,7 +63577,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -62911,7 +63605,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -62936,7 +63634,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -62960,7 +63662,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -62984,7 +63690,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63007,7 +63717,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63028,7 +63742,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63053,7 +63771,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63078,7 +63800,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63102,7 +63828,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63125,7 +63855,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63148,7 +63882,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63172,7 +63910,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
@@ -63196,7 +63938,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gravoi",
+    "Sardinia",
+    "Italy"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
