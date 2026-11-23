@@ -687,9 +687,13 @@
    "gender": "Homme"
   },
   "wiki-hades-nyx": {
+   "_nom": "Nyx",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Conseiller"
    ]
   },
   "wiki-hades-hypnos": {
@@ -896,6 +900,9 @@
    ],
    "nationality": [
     "Underworld"
+   ],
+   "occupation": [
+    "Soldat"
    ]
   },
   "wiki-kid-icarus-viridi": {
@@ -1874,6 +1881,9 @@
    ],
    "nationality": [
     "Hell"
+   ],
+   "occupation": [
+    "Protecteur"
    ]
   },
   "wiki-bayonetta-morgana": {
@@ -2433,11 +2443,17 @@
   },
   "Q3241098": {
    "_nom": "Nurgle",
-   "gender": "Homme"
+   "gender": "Homme",
+   "occupation": [
+    "Destructeur"
+   ]
   },
   "Q12620555": {
    "_nom": "Khorne",
-   "gender": "Homme"
+   "gender": "Homme",
+   "occupation": [
+    "Destructeur"
+   ]
   },
   "Q4148376": {
    "_nom": "Gregor Eisenhorn",
@@ -2476,6 +2492,9 @@
    "_nom": "Athena",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Conseiller"
    ]
   },
   "Q1328424": {
@@ -3819,6 +3838,18 @@
    "_nom": "Be'lakor",
    "occupation": [
     "Souverain"
+   ]
+  },
+  "Q2664991": {
+   "_nom": "Devil Jin",
+   "occupation": [
+    "Destructeur"
+   ]
+  },
+  "Q137887405": {
+   "_nom": "Hylia",
+   "occupation": [
+    "Protecteur"
    ]
   }
  },

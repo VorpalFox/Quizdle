@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
+import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -66,6 +66,21 @@ describe('citedYear', () => {
 describe('pronounGender, groupes', () => {
   it('écarte un groupe dont le texte dit surtout « they »', () => {
     expect(pronounGender("'''Clockwork Soldiers''' are machines. They patrol. They were built by Jindosh, his finest work; he is proud of them and their power. He sells them.")).toBeNull()
+  })
+})
+
+describe('introAlignment', () => {
+  it('Hostile_OuAmical', () => {
+    expect(introAlignment('Nightmare is a final boss in the Kirby series.')).toBe('hostile')
+    expect(introAlignment('Shiranui is the historical hero who saved Kamiki Village.')).toBe('friendly')
+  })
+
+  it('DernierIndiceGagne', () => {
+    expect(introAlignment('Athena serving as the deuteragonist-turned-final antagonist.')).toBe('hostile')
+  })
+
+  it('SansIndice_Null', () => {
+    expect(introAlignment('The Outsider is a mysterious being, neither good nor evil.')).toBeNull()
   })
 })
 

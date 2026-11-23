@@ -18,7 +18,7 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedGame, fullPages, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, fullPages, introAlignment, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -563,6 +563,8 @@ const introsById = new Map([
   ...fromWikis.flatMap(({ franchise, chosen }) => chosen.map(({ name, games }) => [wikiId(franchise, name), games.intro?.[0] ?? ''] as const)),
 ])
 const occupationExcerpts: string[] = []
+const entityRoles: string[] = []
+const ENTITY_SPECIES = new Set(['Divinité', 'Démon', 'Ange'])
 const withIntroOccupation = (entry: Entry): Entry => {
   const empty = !(entry.attributes.occupation as string[] | null)?.length
   if (!empty || 'occupation' in (manual.edit[entry.id] ?? {}))
@@ -581,8 +583,22 @@ const warnings = manualApplied.warnings
 // regroupées (Aucune ou Inconnu plutôt que vide), N/A pour les cheveux d'un robot ou d'un animal
 const entries = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
-  return { ...entry, attributes: { ...entry.attributes, species, occupation: occupationOrNone(mergeOccupations(entry.attributes.occupation), species), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
+  const occupation = mergeOccupations(entry.attributes.occupation) ?? entityRole(entry, species)
+  return { ...entry, attributes: { ...entry.attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
 })
+
+// Un dieu, un démon ou un ange sans métier : Destructeur s'il est hostile, Protecteur s'il est du côté du joueur
+// (d'après l'introduction de sa page), à relire dans le récap
+function entityRole(entry: Entry, species: string[] | null): string[] | null {
+  if (!species?.some(name => ENTITY_SPECIES.has(name)))
+    return null
+  const alignment = introAlignment(introsById.get(entry.id) ?? '')
+  if (!alignment)
+    return null
+  const role = alignment === 'hostile' ? 'Destructeur' : 'Protecteur'
+  entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
+  return [role]
+}
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---
@@ -609,6 +625,7 @@ lines.push(`## Franchises avec moins de 4 personnages (${few.length})`, ...few.m
 lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie « Characters », les plus longues pages avec une infobox qui donne le sexe`, '',
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
+lines.push(`## Dieux, démons et anges : Destructeur ou Protecteur d'après l'introduction (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
 lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année devinée (${yearGuesses.length}) : aucun jeu reconnu dans l'infobox, 1er jeu de la série pris par défaut`, ...yearGuesses.map(text => `- ${text}`), '')

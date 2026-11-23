@@ -99,6 +99,22 @@ export function introRoles(intro: string): string[] {
   }).filter(role => !NOT_A_JOB.test(role))
 }
 
+// Le camp d'une entité (dieu, démon, ange) d'après son introduction : le dernier indice du début du texte gagne
+// (« deuteragonist-turned-final antagonist » : hostile)
+const ALIGNMENT_LENGTH = 300
+const HOSTILE_HINT = /\b(?:antagonists?|villains?|final boss|evils?|destruction|destroy\w*|calamity|corrupt\w*|hatred|plague)\b/gi
+const FRIENDLY_HINT = /\b(?:protagonists?|deuteragonists?|heroe?s?|ally|allies|saved|protectors?|guardians?|benevolent|good personality|patron)\b/gi
+
+export function introAlignment(intro: string): 'hostile' | 'friendly' | null {
+  const text = intro.slice(0, ALIGNMENT_LENGTH).replace(/neither good nor evil/gi, '')
+  const last = (pattern: RegExp) => Math.max(-1, ...[...text.matchAll(pattern)].map(match => match.index!))
+  const hostile = last(HOSTILE_HINT)
+  const friendly = last(FRIENDLY_HINT)
+  if (hostile < 0 && friendly < 0)
+    return null
+  return hostile > friendly ? 'hostile' : 'friendly'
+}
+
 // La section « Appearance » (ou « Design », « Description ») : là où la page décrit le physique
 const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*==+\s*$([\s\S]*?)(?=^==[^=]|(?![\s\S]))/im
 
