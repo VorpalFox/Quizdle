@@ -62,7 +62,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 - **Franchises retirées** : L'Amerzone, The Planet Crafter, Astroneer (aucun personnage), Raving Rabbids (les Lapins crétins vont dans Rayman), The Forest.
 - **Invités** : Sally Acorn, Drizzt et Saxton Hale sont retirés ; Clank, Ambessa, Rhonin, Blackhand, Claudia Wolf et Janice Quatlane sont gardés (ils viennent des jeux). Le récap les liste encore : c'est validé.
 - **Pages d'un autre personnage** (« À vérifier » de `pixeldle-enrich.md`) : Xehanort, Villager et Talos (Divinité, comme Sigmar) sont validés tels que corrigés ; Bokoblin est retiré.
-- **Pas d'invités d'un autre média**, sauf pour les franchises qui en sont tirées (Batman: Arkham, Hogwarts Legacy, Alice, Nancy Drew, Warhammer, Call of Cthulhu, The Witcher).
+- **Pas d'invités d'une autre licence**. Un perso né dans un autre média de la même licence est gardé s'il fait ensuite partie intégrante d'un jeu (J.D. Morrison, venu de l'anime DMC). Idem pour les franchises tirées d'un autre média (Batman: Arkham, Hogwarts Legacy, Alice, Nancy Drew, Warhammer, Call of Cthulhu, The Witcher).
 - **Pas de groupes ni d'objets** (« Companions », « Necromorphs »…), pas de doublons, pas de versions d'un autre média (Netflix, DmC, Reincarnation, anime, film).
 
 ### Valeurs
