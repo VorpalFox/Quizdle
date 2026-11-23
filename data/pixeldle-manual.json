@@ -643,6 +643,9 @@
    ],
    "nationality": [
     "Dumary Island"
+   ],
+   "occupation": [
+    "Garde"
    ]
   },
   "wiki-nier-pod-042": {
@@ -657,15 +660,23 @@
    ]
   },
   "Q125857256": {
+   "_nom": "Zagreus",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Noble"
    ]
   },
   "Q125857288": {
+   "_nom": "Megaera",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Garde"
    ]
   },
   "Q126027875": {
@@ -682,15 +693,23 @@
    ]
   },
   "wiki-hades-hypnos": {
+   "_nom": "Hypnos",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Employé"
    ]
   },
   "wiki-hades-persephone": {
+   "_nom": "Persephone",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-hades-hades": {
@@ -712,12 +731,20 @@
    "nationality": [
     "Olympus",
     "Greece"
+   ],
+   "occupation": [
+    "Livreur"
    ]
   },
   "wiki-hades-charon": {
+   "_nom": "Charon",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Marin",
+    "Commerçant"
    ]
   },
   "wiki-hades-zeus": {
@@ -729,6 +756,9 @@
    "nationality": [
     "Olympus",
     "Greece"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-hades-poseidon": {
@@ -740,15 +770,22 @@
    "nationality": [
     "Olympus",
     "Greece"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-hades-melinoe": {
+   "_nom": "Melinoë",
    "_raison": "année : Hades II (son père s'appelle Hades, comme le 1er jeu)",
    "species": [
     "Divinité"
    ],
-   "_nom": "Melinoë",
-   "year": 2024
+   "year": 2024,
+   "occupation": [
+    "Magicien",
+    "Noble"
+   ]
   },
   "wiki-hades-achilles": {
    "_raison": "ombre d'un mortel",
@@ -800,10 +837,14 @@
    ]
   },
   "Q142103107": {
+   "_nom": "Dark Pit",
    "_raison": "double de Pit",
    "gender": "Homme",
    "species": [
     "Ange"
+   ],
+   "occupation": [
+    "Soldat"
    ]
   },
   "Q5820357": {
@@ -825,6 +866,9 @@
    ],
    "nationality": [
     "Underworld"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-kid-icarus-hades": {
@@ -839,6 +883,9 @@
    ],
    "nationality": [
     "Underworld"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-kid-icarus-thanatos": {
@@ -1278,6 +1325,9 @@
    "year": 2018,
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Archer"
    ]
   },
   "wiki-god-of-war-mimir": {
@@ -1567,30 +1617,46 @@
    "_nom": "Gwyn, Lord of Cinder",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-dark-souls-gwynevere-princess-of-sunlight": {
    "_nom": "Gwynevere, Princess of Sunlight",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Noble"
    ]
   },
   "wiki-dark-souls-dark-sun-gwyndolin": {
    "_nom": "Dark Sun Gwyndolin",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Noble"
    ]
   },
   "wiki-dark-souls-witch-of-izalith": {
    "_nom": "Witch of Izalith",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Magicien",
+    "Souverain"
    ]
   },
   "wiki-dark-souls-gravelord-nito": {
    "_nom": "Gravelord Nito",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-dark-souls-crossbreed-priscilla": {
@@ -1763,6 +1829,9 @@
    "_nom": "Flea",
    "species": [
     "Démon"
+   ],
+   "occupation": [
+    "Magicien"
    ]
   },
   "Q11325143": {
@@ -2247,15 +2316,24 @@
   },
   "Q108466077": {
    "_nom": "Azura",
-   "gender": "Femme"
+   "gender": "Femme",
+   "occupation": [
+    "Souverain"
+   ]
   },
   "Q112601404": {
    "_nom": "Molag Bal",
-   "gender": "Homme"
+   "gender": "Homme",
+   "occupation": [
+    "Souverain"
+   ]
   },
   "Q112601430": {
    "_nom": "Mehrunes Dagon",
-   "gender": "Homme"
+   "gender": "Homme",
+   "occupation": [
+    "Souverain"
+   ]
   },
   "Q56363359": {
    "_nom": "Pyro",
@@ -2515,7 +2593,10 @@
    "species": [
     "Divinité"
    ],
-   "_raison": "dieu du tonnerre"
+   "_raison": "dieu du tonnerre",
+   "occupation": [
+    "Garde"
+   ]
   },
   "wiki-unreal-ne-ban": {
    "_nom": "Ne'Ban",
@@ -3079,18 +3160,27 @@
    "_nom": "Diablo",
    "nationality": [
     "Hell"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "Q135320394": {
    "_nom": "Azmodan",
    "nationality": [
     "Hell"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "Q135320460": {
    "_nom": "Mephisto",
    "nationality": [
     "Hell"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "Q135320511": {
@@ -3109,6 +3199,9 @@
    "_nom": "Auriel",
    "nationality": [
     "Heaven"
+   ],
+   "occupation": [
+    "Dirigeant"
    ]
   },
   "Q135320411": {
@@ -3666,6 +3759,66 @@
    "_nom": "Harmonie",
    "occupation": [
     "Noble"
+   ]
+  },
+  "Q10343913": {
+   "_nom": "Palutena",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "wiki-god-of-war-ares": {
+   "_nom": "Ares",
+   "occupation": [
+    "Combattant"
+   ]
+  },
+  "Q115123377": {
+   "_nom": "Vaermina",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "wiki-devil-may-cry-urizen": {
+   "_nom": "Urizen",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "Q3874510": {
+   "_nom": "Nelo Angelo",
+   "occupation": [
+    "Chevalier"
+   ]
+  },
+  "Q110755596": {
+   "_nom": "Ghirahim",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "Q1094005": {
+   "_nom": "Sigmar",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "Q2024094": {
+   "_nom": "Grimnir",
+   "occupation": [
+    "Combattant"
+   ]
+  },
+  "Q2098458": {
+   "_nom": "Grungni",
+   "occupation": [
+    "Ouvrier"
+   ]
+  },
+  "Q3637127": {
+   "_nom": "Be'lakor",
+   "occupation": [
+    "Souverain"
    ]
   }
  },

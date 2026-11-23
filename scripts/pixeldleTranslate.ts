@@ -625,7 +625,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'forger': 'Ouvrier', 'logger': 'Ouvrier', 'mining expert': 'Ouvrier', 'foreman of gecko': 'Ouvrier', 'custodian': 'Ouvrier',
   'maintenance android': 'Mécanicien',
   // Death Stranding : les porteurs livrent
-  'porter': 'Chauffeur', 'porter in training': 'Chauffeur',
+  'porter': 'Livreur', 'porter in training': 'Livreur',
   // Commerce, service
   'barista': 'Serveur', 'alewife': 'Serveur', 'works at maxine\'s diner': 'Serveur', 'proprietor': 'Commerçant',
   'proprieter of the mikaelsen ranch': 'Fermier', 'bookeeper at wren\'s nook': 'Employé',
