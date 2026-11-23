@@ -1942,12 +1942,18 @@
    "_nom": "Boomer",
    "species": [
     "Infecté"
+   ],
+   "occupation": [
+    "Prédateur"
    ]
   },
   "Q134105270": {
    "_nom": "Witch",
    "species": [
     "Infecté"
+   ],
+   "occupation": [
+    "Prédateur"
    ]
   },
   "Q117815576": {
@@ -1980,6 +1986,9 @@
    "gender": "Aucun",
    "nationality": [
     "Mars"
+   ],
+   "occupation": [
+    "Prédateur"
    ]
   },
   "Q108324036": {
@@ -1987,7 +1996,10 @@
    "species": [
     "Démon"
    ],
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q17194084": {
    "_nom": "Ukiki",
@@ -2151,7 +2163,10 @@
   },
   "Q115943937": {
    "_nom": "Sea Dragon Leviathan",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q115943944": {
    "_nom": "Sea Emperor Leviathan",
@@ -2171,19 +2186,31 @@
   },
   "Q4219956": {
    "_nom": "Cyberdemon",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q108324133": {
    "_nom": "Cacodemon",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q10373741": {
    "_nom": "Spider Mastermind",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q108333052": {
    "_nom": "Âme Perdue",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "occupation": [
+    "Prédateur"
+   ]
   },
   "Q3027554": {
    "_nom": "Dieu-machine",
@@ -3247,6 +3274,9 @@
    ],
    "hair": [
     "N/A"
+   ],
+   "occupation": [
+    "Prédateur"
    ]
   },
   "Q51340087": {

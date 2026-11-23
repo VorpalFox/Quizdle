@@ -96,6 +96,11 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientifique'])
   })
 
+  it('CreatureHostile_Predateur', () => {
+    expect(infoboxValues({ behavior: 'Hostile' }, new Map()).occupation).toEqual(['Prédateur'])
+    expect(infoboxValues({ behavior: 'Passive' }, new Map()).occupation).toBeUndefined()
+  })
+
   it('SeulementLocation_DernierRecours', () => {
     expect(infoboxValues({ location: 'Diamond City, Sanctuary, Vault 111' }, new Map()).nationality).toEqual(['Diamond City', 'Sanctuary'])
     expect(infoboxValues({ location: 'Diamond City', hometown: 'Boston' }, new Map()).nationality).toEqual(['Boston', 'United States'])

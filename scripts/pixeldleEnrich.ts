@@ -38,9 +38,13 @@ const FIELDS = {
   occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
   // Le grade ou la classe, faute d'occupation
   rank: ['rank', 'class', 'position'],
+  // Le comportement d'une créature envers le joueur (« Hostile » sur le wiki Minecraft)
+  behavior: ['behavior', 'behaviour', 'temperament', 'disposition', 'aggression', 'hostility'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior'>
+const PREDATOR = 'Prédateur'
+const HOSTILE = /^(?:hostile|aggressive|predatory)/i
 const MAX_LOCATIONS = 2
 // Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
 const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
@@ -322,6 +326,10 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const ranks = rank ? parseOccupations(rank) : []
   if (ranks.length > 0)
     result.occupation = [...new Set(ranks)].slice(0, 2)
+  // Une créature hostile au joueur, sans métier : Prédateur
+  const behavior = first(fields, FIELDS.behavior)
+  if (!result.occupation && behavior && HOSTILE.test(firstItem(behavior)))
+    result.occupation = [PREDATOR]
   const hair = first(fields, FIELDS.hair)
   if (hair) {
     const parsed = wikiHair(hair)
