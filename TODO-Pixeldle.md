@@ -2,13 +2,11 @@
 
 Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Côté nombre de personnages, c'est terminé (validé avec FX le 23/11/2026). Ce fichier ne garde que ce qu'il reste à faire, et de quoi s'y retrouver.
 
-**Rien n'est commité** : tout est dans la copie de travail de la branche `Fx/Pixeldle`.
-
 ## Où on en est
 
-`npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 422 personnages, 169 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
+`npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 493 personnages, 173 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
 
-Remplissage : sexe 96 %, espèce 82 %, nationalité 41 %, occupation 53 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
+Remplissage : sexe 96 %, espèce 81 %, nationalité 41 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
 
 Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
@@ -26,32 +24,28 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 - [scripts/pixeldleEnrich.ts](scripts/pixeldleEnrich.ts) : lit les infobox pour compléter les personnages de Wikidata.
 - [scripts/pixeldleWikiCharacters.ts](scripts/pixeldleWikiCharacters.ts) : ajoute des personnages depuis les wikis.
 - [scripts/pixeldleTranslate.ts](scripts/pixeldleTranslate.ts) : les tables de traduction (espèce, occupation, genres, développeur, nationalité, sexe), plus `FRANCHISE_DEVELOPERS`.
-- [data/pixeldle-franchises.json](data/pixeldle-franchises.json) : les franchises du quiz.
+- [data/pixeldle-franchises.json](data/pixeldle-franchises.json) : les franchises du quiz. `source` : `top100` ou `steam` (la liste de FX). `games` (optionnel) : les jeux que Wikidata ne relie pas à la série (American McGee's Alice).
 - [data/pixeldle-manual.json](data/pixeldle-manual.json) : les corrections à la main (format dans le README) : `exclude`, `edit`, `add`, et `wikis` (réglages par franchise : `pages`, `preferred`, `limit`, `category`). Chaque correction a une `_raison`.
 
 ## À faire
 
 1. **Sundered** : 0 personnage. FX remplit le wiki, puis on relance le script avec les bons réglages dans `wikis`.
-2. **Traductions manquantes** (rubriques « Pas traduits » du récap, à ajouter dans `pixeldleTranslate.ts`) :
-   - **143 occupations**, la plupart venues des wikis ;
-   - **11 genres** venus de Wikidata : simulateur de vol spatial, cozy game, Immersive sim, inventory management, jeu de pêche, jeu d'aventure à la troisième personne, jeu avec énigmes, monster-taming, walking simulator, jeu de tir, Extraction shooter ;
-   - 4 sexes et 2 espèces mal lus dans les infobox (« Male (3) Female (4) », « Yes », « 1 », « •Human ») : plutôt à corriger dans la lecture des infobox.
-3. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
+2. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
    - les doublons d'écriture, par exemple Nomaï / Nomai (Outer Wilds) ;
-   - **nationalité** : les lieux de fiction sont gardés tels quels (320 valeurs). FX doit décider quoi en faire : les garder, les regrouper par monde, ou les retirer.
-4. **Trous à combler** :
-   - 105 personnages sans sexe et 444 sans espèce (listés dans le récap) ;
-   - 233 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
-5. **À trancher avec FX** :
+   - **nationalité** : les lieux de fiction sont gardés tels quels (332 valeurs). FX doit décider quoi en faire : les garder, les regrouper par monde, ou les retirer.
+3. **Trous à combler** :
+   - 106 personnages sans sexe et 475 sans espèce (listés dans le récap) ;
+   - 283 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
+4. **À trancher avec FX** :
    - les **9 « peut-être invités »** (Sally Acorn, Clank, Saxton Hale, Ambessa, Rhonin, Blackhand, Claudia Wolf, Janice Quatlane, Drizzt) : `exclude` ou non ;
    - les **4 pages « À vérifier »** de `pixeldle-enrich.md` (Bokoblin, Xehanort, Villager, Talos) : déjà corrigées par `edit`, à confirmer ;
    - les **Lapins crétins dans Rayman** : Raving Rabbids est retiré, et il n'y a que Rabbid Peach dans Rayman. En ajouter ?
    - les **Héros de Dragon Quest** : seul celui de DQ III est gardé, les deux autres sont retirés (un avatar par franchise). À confirmer ;
    - les noms d'avatars donnés de mémoire, sans vérifier la traduction française officielle : Godwoken, Hatchling, Élève de cinquième année.
-6. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
-7. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
-8. **Wikipédia en dernier recours** : prévu au départ pour compléter les champs vides, pas encore fait.
-9. **Fin** :
+5. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
+6. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
+7. **Wikipédia en dernier recours** : prévu au départ pour compléter les champs vides, pas encore fait.
+8. **Fin** :
    - relire le jeu en vrai (`/quiz pixeldle`) ;
    - commiter les données et les scripts ;
    - mettre à jour la section « Données Pixeldle » du README (elle dit encore que le fichier ne contient qu'un personnage factice) ;
@@ -81,6 +75,10 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
   - « Au choix » pour un avatar personnalisable.
 - **Genres** : pas de thèmes (LGBT, science-fiction, post-apo…).
 - **Développeurs forcés** (`FRANCHISE_DEVELOPERS`) : Undertale → Toby Fox, Sly Cooper → Sucker Punch, Twelve Minutes → Luis Antonio, Rebel Galaxy → Double Damage Games, Breathedge → RedRuins Softworks.
+- **Genres** :
+  - les valeurs inconnues de Wikidata ne restent pas brutes : un genre nouveau est ajouté à `GENRE_RULES` (ramené à un des nôtres, gardé, ou retiré) ;
+  - **Immersive sim** (`FRANCHISE_GENRES`, sur toute la franchise) : Dishonored, Deus Ex, BioShock, The Elder Scrolls, Fallout. Prey l'a par Wikidata.
+- **Occupations** : le dictionnaire exact `OCCUPATIONS` passe avant les règles. Les rôles dans l'histoire (Antagonist, Ally, Companion), les liens de famille et les dieux sont retirés.
 
 ### Comment le script complète depuis les wikis
 

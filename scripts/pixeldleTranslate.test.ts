@@ -8,6 +8,7 @@ describe('translateSpecies', () => {
     expect(translateSpecies('renard anthropomorphe')).toBe('Renard')
     expect(translateSpecies('fée dans une œuvre de fiction')).toBe('Fée')
     expect(translateSpecies('elfe de la nuit')).toBe('Elfe')
+    expect(translateSpecies('•Human')).toBe('Humain')
   })
 
   it('PeupleDUneFranchise_GardeTelQuel', () => {
@@ -22,6 +23,12 @@ describe('translateSpecies', () => {
 })
 
 describe('translateGender', () => {
+  it('PlusieursVersions_PasTranche', () => {
+    expect(translateGender(['Male (3) Female (4)'])).toBeNull()
+    expect(translateGender(['Left 4 Dead, Male, Left 4 Dead 2, Male or Female'])).toBeNull()
+    expect(translateGender(['Yes'])).toBeNull()
+  })
+
   it('AutresSexes_NosValeurs', () => {
     expect(translateGender(['genre déterminé par le joueur'])).toBe('Au choix')
     expect(translateGender(['femme trans'])).toBe('Femme')
@@ -32,6 +39,19 @@ describe('translateGender', () => {
 })
 
 describe('translateOccupation', () => {
+  it('ValeurExacteDesInfobox_Dictionnaire', () => {
+    expect(translateOccupation('Weaponsmith')).toBe('Ouvrier')
+    expect(translateOccupation('· Weaponsmith')).toBe('Ouvrier')
+    expect(translateOccupation('---- Confederate marshal')).toBe('Policier')
+    expect(translateOccupation('Proprieter of the Mikaelsen Ranch')).toBe('Fermier')
+  })
+
+  it('RoleDansLHistoire_Retire', () => {
+    expect(translateOccupation('Antagonist')).toBeNull()
+    expect(translateOccupation('Companion')).toBeNull()
+    expect(translateOccupation('God of chaos')).toBeNull()
+  })
+
   it('OccupationsWikidata_NosFamilles', () => {
     expect(translateOccupation('Pratiquant d\'arts martiaux')).toBe('Combattant')
     expect(translateOccupation('Chasseur de primes')).toBe('Chasseur de primes')
@@ -83,6 +103,20 @@ describe('translateGenre', () => {
   it('Themes_Retires', () => {
     expect(translateGenre('jeu vidéo avec des personnages LGBT')).toBeNull()
     expect(translateGenre('jeu vidéo postapocalyptique')).toBeNull()
+    expect(translateGenre('cozy game')).toBeNull()
+    expect(translateGenre('inventory management video game')).toBeNull()
+  })
+
+  it('GenresDeNiche_RamenesOuGardes', () => {
+    expect(translateGenre('simulateur de vol spatial')).toBe('Simulation')
+    expect(translateGenre('jeu vidéo de pêche')).toBe('Simulation')
+    expect(translateGenre('jeu de tir')).toBe('FPS')
+    expect(translateGenre('Extraction shooter')).toBe('FPS')
+    expect(translateGenre('jeu d\'aventure à la troisième personne')).toBe('Aventure')
+    expect(translateGenre('jeu vidéo comprenant des éléments d\'énigme')).toBe('Réflexion')
+    expect(translateGenre('Immersive sim')).toBe('Immersive sim')
+    expect(translateGenre('monster-taming game')).toBe('Monster-taming')
+    expect(translateGenre('walking simulator')).toBe('Walking simulator')
   })
 })
 

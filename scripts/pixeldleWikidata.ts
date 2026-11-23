@@ -139,13 +139,14 @@ async function cached<T>(name: string, ids: Iterable<string>, size: number, fetc
 
 // --- Franchises ---
 
-async function fetchFranchise(id: string): Promise<FranchiseData> {
-  const games = [...new Set((await sparql(`SELECT DISTINCT ?game WHERE {
+// `extraGames` : les jeux que Wikidata ne relie pas à la franchise (American McGee's Alice pour Alice: Madness Returns)
+async function fetchFranchise(id: string, extraGames: string[]): Promise<FranchiseData> {
+  const games = [...new Set([...(await sparql(`SELECT DISTINCT ?game WHERE {
     { VALUES ?game { wd:${id} } ?game wdt:P31/wdt:P279* wd:${VIDEO_GAME} }
     UNION { ?game wdt:P179 wd:${id} }
     UNION { ?game wdt:P179/wdt:P179 wd:${id} }
     UNION { ?game wdt:P8345 wd:${id} . ?game wdt:P31/wdt:P279* wd:${VIDEO_GAME} }
-  }`)).map(row => row.game!))]
+  }`)).map(row => row.game!), ...extraGames])]
 
   // La franchise elle-même, puis ses jeux par lots
   const rows: Row[] = await sparql(`SELECT DISTINCT ?character ?via ?kind ?type WHERE {
@@ -177,14 +178,15 @@ async function fetchFranchise(id: string): Promise<FranchiseData> {
 }
 
 // Les données de chaque franchise, depuis le cache ou Wikidata (cache enregistré après chaque franchise)
-export async function fetchFranchises(franchises: { title: string, wikidataId: string }[]): Promise<Record<string, FranchiseData>> {
+export async function fetchFranchises(franchises: { title: string, wikidataId: string, games?: string[] }[]): Promise<Record<string, FranchiseData>> {
   await mkdir(cacheDir, { recursive: true })
   const cache = await readCache<FranchiseData>('franchises')
-  for (const [index, { title, wikidataId }] of franchises.entries()) {
-    if (wikidataId in cache)
+  for (const [index, { title, wikidataId, games = [] }] of franchises.entries()) {
+    // En cache, sauf si on a ajouté des jeux à la main depuis
+    if (wikidataId in cache && games.every(game => cache[wikidataId]!.games.includes(game)))
       continue
     process.stdout.write(`\rFranchises : ${index + 1}/${franchises.length} (${title})`.padEnd(70))
-    cache[wikidataId] = await fetchFranchise(wikidataId)
+    cache[wikidataId] = await fetchFranchise(wikidataId, games)
     await writeCache('franchises', cache)
   }
   console.log()

@@ -232,7 +232,9 @@ export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>
   const preferred = [...settings.pages ?? [], ...settings.preferred ?? []]
   const rank = (title: string) => preferred.includes(title) ? preferred.indexOf(title) : preferred.length
   const sorted = Object.entries(pages).toSorted((a, b) => rank(a[0]) - rank(b[0]) || b[1] - a[1] || a[0].localeCompare(b[0]))
-    .filter(([title]) => ![...known].some(name => sameCharacter(name, characterName(title))))
+    // Une page donnée à la main n'est écartée que sur le nom exact (plus bas) : l'alias « Rune » d'Amicia de Rune
+    // écarterait Hugo de Rune
+    .filter(([title]) => preferred.includes(title) || ![...known].some(name => sameCharacter(name, characterName(title))))
   const chosen: WikiCharacter[] = []
   const names = new Set([...known].map(normalize))
   for (let start = 0; start < sorted.length && chosen.length < max; start += max * READ_FACTOR) {

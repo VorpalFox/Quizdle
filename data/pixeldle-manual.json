@@ -52,7 +52,18 @@
   "Q130270850",
   "Q130303899",
   "Q114999365",
-  "wiki-nancy-drew-tom-swift"
+  "wiki-nancy-drew-tom-swift",
+  "Q137506277",
+  "Q63565540",
+  "Q63809119",
+  "wiki-alice-madness-returns-dress",
+  "wiki-alice-madness-returns-insane-child-leader",
+  "Q116431493",
+  "Q131378084",
+  "wiki-life-is-strange-max-s-notes",
+  "wiki-life-is-strange-alexandra-chen",
+  "wiki-amnesia-gatherers",
+  "Q142243992"
  ],
  "edit": {
   "Q2265837": {
@@ -773,6 +784,54 @@
   "Q126033828": {
    "_raison": "humain",
    "species": "Humain"
+  },
+  "wiki-alice-madness-returns-angus-bumby": {
+   "_nom": "Angus Bumby",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-dollmaker": {
+   "_nom": "Dollmaker",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-pris-witless": {
+   "_nom": "Pris Witless",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-lizzie-liddell": {
+   "_nom": "Lizzie Liddell",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-arthur-liddell": {
+   "_nom": "Arthur Liddell",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-nan-sharpe": {
+   "_nom": "Nan Sharpe",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-carpenter": {
+   "_nom": "Carpenter",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
+  },
+  "wiki-alice-madness-returns-walrus": {
+   "_nom": "Walrus",
+   "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
+   "year": 2011,
+   "developer": "Spicy Horse"
   }
  },
  "add": [
@@ -2400,6 +2459,23 @@
     "franchise": "Portal",
     "year": 2007
    }
+  },
+  {
+   "id": "avatar-among-us",
+   "name": "Crewmate",
+   "aliases": [
+    "Coéquipier",
+    "Among Us"
+   ],
+   "attributes": {
+    "gender": "Au choix",
+    "franchise": "Among Us",
+    "occupation": [
+     "Astronaute",
+     "Scientifique"
+    ],
+    "species": "Humanoïde"
+   }
   }
  ],
  "wikis": {
@@ -2675,6 +2751,99 @@
     "V",
     "Urizen",
     "Agnus"
+   ]
+  },
+  "Among Us": {
+   "_raison": "juste l'avatar (add), validé avec FX",
+   "limit": 1
+  },
+  "Borderlands": {
+   "_raison": "la saga complète, le 2 en priorité : validé avec FX",
+   "preferred": [
+    "Tiny Tina",
+    "Maya",
+    "Axton",
+    "Salvador",
+    "Krieg",
+    "Mad Moxxi",
+    "Mr. Torgue",
+    "Roland",
+    "Marcus Kincaid",
+    "Scooter"
+   ],
+   "limit": 20
+  },
+  "Tomb Raider": {
+   "_raison": "la saga complète, reboot compris : validé avec FX. Les pages ont la timeline entre parenthèses",
+   "pages": [
+    "Conrad Roth (Survivor Timeline)",
+    "Winston",
+    "Zip (Legend Timeline)",
+    "Mathias (Survivor Timeline)",
+    "Konstantin (Survivor Timeline)",
+    "Pedro Dominguez",
+    "Anaya Imanu (Legend Timeline)"
+   ],
+   "preferred": [
+    "Jacob",
+    "Ana"
+   ],
+   "limit": 20
+  },
+  "Life Is Strange": {
+   "_raison": "la saga complète : validé avec FX",
+   "preferred": [
+    "Daniel Diaz",
+    "Kate Marsh",
+    "Nathan Prescott",
+    "David Madsen",
+    "Joyce Price",
+    "Steph Gingrich",
+    "Gabe Chen",
+    "Safiya Llewellyn-Fayyad",
+    "Chris Eriksen",
+    "Frank Bowers"
+   ],
+   "limit": 20
+  },
+  "Alice: Madness Returns": {
+   "_raison": "avec American McGee's Alice : validé avec FX",
+   "preferred": [
+    "White Rabbit",
+    "Caterpillar",
+    "Jabberwock",
+    "Gryphon",
+    "Mock Turtle",
+    "March Hare",
+    "Dormouse",
+    "Tweedle Dee and Tweedle Dum"
+   ],
+   "limit": 20
+  },
+  "Amnesia": {
+   "_raison": "la saga complète : validé avec FX",
+   "preferred": [
+    "Daniel",
+    "Alexander",
+    "Heinrich Cornelius Agrippa",
+    "Oswald Mandus",
+    "Tasi Trianon",
+    "Henri Clément",
+    "Justine Florbelle"
+   ]
+  },
+  "A Plague Tale": {
+   "_raison": "nouvelle franchise : validé avec FX",
+   "preferred": [
+    "Amicia de Rune",
+    "Hugo de Rune",
+    "Lucas",
+    "Mélie",
+    "Arnaud Malpart",
+    "Rodric",
+    "Béatrice de Rune",
+    "Vitalis Bénévent",
+    "Sophia"
    ]
   }
  }

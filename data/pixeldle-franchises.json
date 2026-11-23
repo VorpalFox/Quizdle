@@ -475,6 +475,11 @@
   "source": "top100"
  },
  {
+  "title": "Deus Ex",
+  "wikidataId": "Q746459",
+  "source": "steam"
+ },
+ {
   "title": "Detroit: Become Human",
   "wikidataId": "Q21246348",
   "source": "top100"
@@ -670,6 +675,9 @@
   "source": "steam",
   "steamGames": [
    "Alice: Madness Returns"
+  ],
+  "games": [
+   "Q465689"
   ]
  },
  {
@@ -1101,5 +1109,20 @@
   "steamGames": [
    "The First Descendant"
   ]
+ },
+ {
+  "title": "Among Us",
+  "wikidataId": "Q96417649",
+  "source": "steam"
+ },
+ {
+  "title": "Amnesia",
+  "wikidataId": "Q61981093",
+  "source": "steam"
+ },
+ {
+  "title": "A Plague Tale",
+  "wikidataId": "Q107265252",
+  "source": "steam"
  }
 ]

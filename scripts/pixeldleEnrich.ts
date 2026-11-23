@@ -149,7 +149,8 @@ export function parseGender(value: string): string | null | undefined {
     return 'Homme'
   if (/^(?:they|agender|non-?binary|x\b|x-gender|intersex)\b/.test(key))
     return 'Autre'
-  return translateGender([firstItem(value)])
+  // La valeur entière d'abord : « Left 4 Dead, Male, Left 4 Dead 2, Male or Female » n'est pas tranché
+  return translateGender([value, firstItem(value)])
 }
 
 export function parseSpecies(value: string): string | null | undefined {

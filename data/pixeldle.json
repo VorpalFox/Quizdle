@@ -31,7 +31,8 @@
   "id": "Q210593",
   "name": "Luigi",
   "aliases": [
-   "Bébé Luigi"
+   "Bébé Luigi",
+   "Luigi Mario"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/GER%20Wuppertal%2C%20Obere%20Lichtenplatzer%20Stra%C3%9Fe%20010.jpg?width=400",
   "attributes": {
@@ -139,7 +140,9 @@
  {
   "id": "Q536138",
   "name": "Wario",
-  "aliases": [],
+  "aliases": [
+   "Wario Bros"
+  ],
   "attributes": {
    "gender": "Homme",
    "species": "Humain",
@@ -236,7 +239,8 @@
    "Jr. Bowser",
    "Bowser Jr. Koopa",
    "Bowser Koopa Jr.",
-   "Koopa Jr."
+   "Koopa Jr.",
+   "Bowser Junior"
   ],
   "attributes": {
    "gender": "Homme",
@@ -319,7 +323,8 @@
   "name": "Bébé Luigi",
   "aliases": [
    "Baby Luigi",
-   "Luigi Bébé"
+   "Luigi Bébé",
+   "Baby Luigi Bros"
   ],
   "attributes": {
    "gender": "Homme",
@@ -1406,11 +1411,11 @@
   "name": "Miles « Tails » Prower",
   "aliases": [
    "Prower » Tails « Miles",
-   "Tails the Fox",
    "Tails",
    "Miles Prower",
    "Miles Tails",
    "Tails Prower",
+   "Tails the Fox",
    "Prower"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tails%20sculpture%20in%20Cin%C3%A9polis.png?width=400",
@@ -1437,11 +1442,11 @@
   "aliases": [
    "Dr. Eggman",
    "Eggman Doctor",
-   "Doctor Robotnik",
-   "Eggman",
-   "Doctor Ivo \"Eggman\" Robotnik",
    "Doctor Ivo Robotnik",
-   "Docteur Eggman"
+   "Doctor Robotnik",
+   "Docteur Eggman",
+   "Eggman",
+   "Doctor Ivo \"Eggman\" Robotnik"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Docteur%20Robotnik%20%2826620641335%29.jpg?width=400",
   "attributes": {
@@ -3781,6 +3786,7 @@
    "Wong Ada",
    "Ada"
   ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DragonCon2010%20-%20Sunday%20-%20Ada%20Wong%20Cosplayer.jpg?width=400",
   "attributes": {
    "gender": "Femme",
    "species": "Humain",
@@ -6801,7 +6807,7 @@
    "occupation": [
     "Noble",
     "Soldat",
-    "Souverain"
+    "Combattant"
    ],
    "hair": [
     "Bleus"
@@ -7416,7 +7422,8 @@
   "id": "Q59220438",
   "name": "Marie",
   "aliases": [
-   "Isabelle"
+   "Isabelle",
+   "Shizue"
   ],
   "attributes": {
    "gender": "Femme",
@@ -7439,6 +7446,7 @@
   "name": "Kéké Laglisse",
   "aliases": [
    "K.K. Slider",
+   "Totakeke",
    "Laglisse Kéké",
    "Kéké",
    "Laglisse"
@@ -12491,7 +12499,8 @@
    "developer": "Bethesda",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 1996
   }
@@ -12511,7 +12520,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12531,7 +12541,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12559,7 +12570,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12579,7 +12591,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12599,7 +12612,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12618,7 +12632,8 @@
    "developer": "Bethesda",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 1996
   }
@@ -12640,7 +12655,8 @@
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
    "genres": [
-    "MMO"
+    "MMO",
+    "Immersive sim"
    ],
    "year": 2014
   }
@@ -12663,7 +12679,8 @@
    "developer": "Bethesda",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2006
   }
@@ -12690,7 +12707,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12716,7 +12734,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12736,7 +12755,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12758,7 +12778,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12784,7 +12805,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12807,7 +12829,8 @@
    "developer": "Bethesda",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2006
   }
@@ -12836,7 +12859,8 @@
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
    "genres": [
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 1994
   }
@@ -12856,7 +12880,8 @@
    "genres": [
     "Action-aventure",
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011
   }
@@ -12887,7 +12912,8 @@
    "developer": "Bethesda",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2006
   }
@@ -12906,7 +12932,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -12930,7 +12957,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -12953,7 +12981,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -12976,7 +13005,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -12999,7 +13029,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -13016,6 +13047,7 @@
    "species": "Humain",
    "nationality": null,
    "occupation": [
+    "Religieux",
     "Dirigeant",
     "Chef de clan"
    ],
@@ -13026,7 +13058,8 @@
    "developer": "Obsidian Entertainment",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2010
   }
@@ -13050,7 +13083,8 @@
    "developer": "Bethesda",
    "genres": [
     "Simulation",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13072,7 +13106,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -13099,7 +13134,8 @@
    "developer": "Obsidian Entertainment",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2010
   }
@@ -13126,7 +13162,8 @@
    "developer": "Obsidian Entertainment",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2010
   }
@@ -13147,7 +13184,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13168,7 +13206,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13189,7 +13228,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13216,7 +13256,8 @@
    "developer": "Bethesda",
    "genres": [
     "Action-RPG",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13239,7 +13280,8 @@
    "developer": "Obsidian Entertainment",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2010
   }
@@ -13265,7 +13307,8 @@
    "developer": "Obsidian Entertainment",
    "genres": [
     "RPG",
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2010
   }
@@ -13284,7 +13327,8 @@
    "developer": "Bethesda",
    "genres": [
     "Simulation",
-    "Survie"
+    "Survie",
+    "Immersive sim"
    ],
    "year": 2015
   }
@@ -13298,13 +13342,15 @@
    "species": "Mutant",
    "nationality": null,
    "occupation": [
-    "Espion"
+    "Espion",
+    "Ouvrier"
    ],
    "hair": null,
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -13329,7 +13375,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -13351,7 +13398,8 @@
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
-    "RPG"
+    "RPG",
+    "Immersive sim"
    ],
    "year": 1997
   }
@@ -14090,6 +14138,32 @@
   }
  },
  {
+  "id": "Q119133151",
+  "name": "Lucia Caminos",
+  "aliases": [
+   "Caminos Lucia",
+   "Lucia",
+   "Lucia Maria Rivera Caminos",
+   "Caminos"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Criminel"
+   ],
+   "hair": null,
+   "franchise": "Grand Theft Auto",
+   "developer": "Rockstar Games",
+   "genres": [
+    "Action-aventure",
+    "TPS"
+   ],
+   "year": 2026
+  }
+ },
+ {
   "id": "Q2270469",
   "name": "Luis Lopez",
   "aliases": [
@@ -14139,6 +14213,33 @@
     "Action-aventure"
    ],
    "year": 2002
+  }
+ },
+ {
+  "id": "Q119133150",
+  "name": "Jason Duval",
+  "aliases": [
+   "Duval Jason",
+   "Jason",
+   "Grand Theft Auto Jason",
+   "GTA Jason",
+   "Duval"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Criminel"
+   ],
+   "hair": null,
+   "franchise": "Grand Theft Auto",
+   "developer": "Rockstar Games",
+   "genres": [
+    "Action-aventure",
+    "TPS"
+   ],
+   "year": 2026
   }
  },
  {
@@ -14212,33 +14313,6 @@
   }
  },
  {
-  "id": "Q119133150",
-  "name": "Jason Duval",
-  "aliases": [
-   "Duval Jason",
-   "Grand Theft Auto Jason",
-   "GTA Jason",
-   "Jason",
-   "Duval"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": "Humain",
-   "nationality": "États-Unis",
-   "occupation": [
-    "Criminel"
-   ],
-   "hair": null,
-   "franchise": "Grand Theft Auto",
-   "developer": "Rockstar Games",
-   "genres": [
-    "Action-aventure",
-    "TPS"
-   ],
-   "year": 2026
-  }
- },
- {
   "id": "Q14542331",
   "name": "Catalina",
   "aliases": [],
@@ -14305,30 +14379,6 @@
     "Action-aventure"
    ],
    "year": 2001
-  }
- },
- {
-  "id": "Q62596103",
-  "name": "Karen Daniels",
-  "aliases": [
-   "Daniels Karen",
-   "Karen",
-   "Daniels"
-  ],
-  "attributes": {
-   "gender": "Femme",
-   "species": "Humain",
-   "nationality": "États-Unis",
-   "occupation": [
-    "Espion"
-   ],
-   "hair": null,
-   "franchise": "Grand Theft Auto",
-   "developer": "Rockstar",
-   "genres": [
-    "Action-aventure"
-   ],
-   "year": 2008
   }
  },
  {
@@ -14790,8 +14840,8 @@
   "id": "Q127657228",
   "name": "Reverend Swanson",
   "aliases": [
-   "Swanson Reverend",
    "Orville Swanson",
+   "Swanson Reverend",
    "Reverend Orville Swanson",
    "Reverend",
    "Swanson"
@@ -15851,7 +15901,8 @@
    "Mr. Freeman",
    "Freeman",
    "Dr. Freeman",
-   "le Freeman"
+   "le Freeman",
+   "Dr. Gordon Freeman"
   ],
   "attributes": {
    "gender": "Homme",
@@ -16530,7 +16581,11 @@
  {
   "id": "Q56363333",
   "name": "Scout",
-  "aliases": [],
+  "aliases": [
+   "BLU Scout",
+   "Red Scout",
+   "TF2 Scout"
+  ],
   "attributes": {
    "gender": "Homme",
    "species": "Humain",
@@ -16661,7 +16716,10 @@
  {
   "id": "Q56363406",
   "name": "Medic",
-  "aliases": [],
+  "aliases": [
+   "Blu Medic",
+   "Red Medic"
+  ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MCM%202013%20-%20Team%20Fortress%20Medic%20%288979388310%29.jpg?width=400",
   "attributes": {
    "gender": "Homme",
@@ -16705,9 +16763,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
-   "The Spy",
    "Spy (Team Fortress 2)",
-   "Spy (TF2)"
+   "Spy (TF2)",
+   "Blu Spy",
+   "Red Spy",
+   "TF2 Spy",
+   "The Spy"
   ],
   "attributes": {
    "gender": "Homme",
@@ -17529,7 +17590,10 @@
  {
   "id": "Q114153088",
   "name": "Kiriko",
-  "aliases": [],
+  "aliases": [
+   "Kiriko Kamori",
+   "Kiriko Yamagami"
+  ],
   "attributes": {
    "gender": "Femme",
    "species": "Humain",
@@ -18779,7 +18843,8 @@
    "species": "Humanoïde",
    "nationality": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Magicien"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -19124,6 +19189,7 @@
    "species": "Protoss",
    "nationality": null,
    "occupation": [
+    "Politicien",
     "Dirigeant",
     "Terroriste"
    ],
@@ -20204,7 +20270,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": "Iselia",
-   "occupation": null,
+   "occupation": [
+    "Héros"
+   ],
    "hair": null,
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -22137,7 +22205,9 @@
    "gender": "Femme",
    "species": "Vampire",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Domestique"
+   ],
    "hair": null,
    "franchise": "Castlevania",
    "developer": "Eighting",
@@ -22468,7 +22538,8 @@
   "name": "Pyramid Head",
   "aliases": [
    "Head Pyramid",
-   "Pyramid"
+   "Pyramid",
+   "Head"
   ],
   "attributes": {
    "gender": "Homme",
@@ -27587,8 +27658,8 @@
   "name": "Hoshimi Miyabi",
   "aliases": [
    "Miyabi Hoshimi",
-   "Hoshimi",
-   "Miyabi"
+   "Miyabi",
+   "Hoshimi"
   ],
   "attributes": {
    "gender": "Femme",
@@ -28268,7 +28339,9 @@
    "gender": "Femme",
    "species": "Numen",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Guerrier"
+   ],
    "hair": null,
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -28380,7 +28453,9 @@
    "gender": "Femme",
    "species": "Carian",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Érudit"
+   ],
    "hair": null,
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -29373,10 +29448,10 @@
   "id": "Q114353654",
   "name": "Ghast",
   "aliases": [
-   "Minecraft Ghast",
    "Ghast (Minecraft)",
    "Ghast mob",
-   "MC Ghast"
+   "MC Ghast",
+   "Minecraft Ghast"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Otakuthon%202014-%20Ghast%20%2815029688875%29.jpg?width=400",
   "attributes": {
@@ -29696,7 +29771,8 @@
   "id": "Q116136891",
   "name": "Chica",
   "aliases": [
-   "Chica the Chicken"
+   "Chica the Chicken",
+   "Withered Chica"
   ],
   "attributes": {
    "gender": "Femme",
@@ -29916,8 +29992,9 @@
   "name": "Circus Baby",
   "aliases": [
    "Baby Circus",
-   "Circus",
-   "Baby"
+   "Baby",
+   "Scrap Baby",
+   "Circus"
   ],
   "attributes": {
    "gender": "Femme",
@@ -30036,7 +30113,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2013
   }
@@ -30059,7 +30137,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2013
   }
@@ -30081,7 +30160,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2013
   }
@@ -30107,7 +30187,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2007
   }
@@ -30132,7 +30213,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2007
   }
@@ -30157,7 +30239,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2007
   }
@@ -30184,7 +30267,8 @@
    "franchise": "BioShock",
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2013
   }
@@ -30373,69 +30457,6 @@
    "occupation": [
     "Voleur"
    ],
-   "hair": null,
-   "franchise": "Borderlands",
-   "developer": "Gearbox Software",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2009
-  }
- },
- {
-  "id": "Q63565540",
-  "name": "Bone Head",
-  "aliases": [
-   "Head Bone",
-   "Bone"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": "Humain",
-   "nationality": null,
-   "occupation": [
-    "Voleur"
-   ],
-   "hair": null,
-   "franchise": "Borderlands",
-   "developer": "Gearbox Software",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2009
-  }
- },
- {
-  "id": "Q63809119",
-  "name": "Michael Mamaril",
-  "aliases": [
-   "Mamaril Michael",
-   "Mamaril"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": "Humain",
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Borderlands",
-   "developer": "Gearbox Software",
-   "genres": [
-    "FPS",
-    "Action-RPG"
-   ],
-   "year": 2012
-  }
- },
- {
-  "id": "Q137506277",
-  "name": "necrophage",
-  "aliases": [],
-  "attributes": {
-   "gender": null,
-   "species": "Plante",
-   "nationality": null,
-   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -33945,7 +33966,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "Night City",
-   "occupation": null,
+   "occupation": [
+    "Informaticien"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -34135,7 +34158,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -34159,7 +34183,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -34180,9 +34205,251 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
+  }
+ },
+ {
+  "id": "Q27300001",
+  "name": "Adam Jensen",
+  "aliases": [
+   "Jensen Adam",
+   "Jensen"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Informaticien",
+    "Policier",
+    "Garde",
+    "Espion"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Deus Ex",
+   "developer": "Eidos Montréal",
+   "genres": [
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2011
+  }
+ },
+ {
+  "id": "Q608897",
+  "name": "JC Denton",
+  "aliases": [
+   "Denton JC"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Dirigeant",
+    "Espion"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "FPS",
+    "RPG",
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "Q5266182",
+  "name": "Chad Dumier",
+  "aliases": [
+   "Dumier Chad",
+   "Chad",
+   "Dumier"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Politicien",
+    "Dirigeant",
+    "Terroriste"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "FPS",
+    "RPG",
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "Q10404975",
+  "name": "Alex Denton",
+  "aliases": [
+   "Denton Alex"
+  ],
+  "attributes": {
+   "gender": null,
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2003
+  }
+ },
+ {
+  "id": "Q19977352",
+  "name": "Morgan Everett",
+  "aliases": [
+   "Everett Morgan",
+   "Everett"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": [
+    "Homme d'affaires",
+    "Dirigeant"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "FPS",
+    "RPG",
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "Q19977359",
+  "name": "Nicolette DuClare",
+  "aliases": [
+   "DuClare Nicolette",
+   "Nicolette",
+   "DuClare"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Terroriste"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "FPS",
+    "RPG",
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "Q19977360",
+  "name": "Paul Denton",
+  "aliases": [
+   "Denton Paul"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Dirigeant",
+    "Espion"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Ion Storm",
+   "genres": [
+    "FPS",
+    "RPG",
+    "Infiltration",
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "Q27300095",
+  "name": "David Sarif",
+  "aliases": [
+   "Sarif David",
+   "Sarif"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "États-Unis",
+   "occupation": [
+    "Dirigeant"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Eidos Montréal",
+   "genres": [
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2011
+  }
+ },
+ {
+  "id": "Q27300870",
+  "name": "Megan Reed",
+  "aliases": [
+   "Reed Megan",
+   "Megan"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": "États-Unis",
+   "occupation": [
+    "Dirigeant"
+   ],
+   "hair": null,
+   "franchise": "Deus Ex",
+   "developer": "Eidos Montréal",
+   "genres": [
+    "Action-RPG",
+    "Immersive sim"
+   ],
+   "year": 2011
   }
  },
  {
@@ -34358,8 +34625,7 @@
   "id": "Q109931569",
   "name": "Gavin Reed",
   "aliases": [
-   "Reed Gavin",
-   "Reed"
+   "Reed Gavin"
   ],
   "attributes": {
    "gender": "Homme",
@@ -35296,9 +35562,9 @@
   "name": "Hermione Granger",
   "aliases": [
    "Granger Hermione",
+   "Hermione",
    "Hermione Jean Granger",
    "Hermione Weasley",
-   "Hermione",
    "Granger"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermione%20Granger.jpg?width=400",
@@ -36923,6 +37189,28 @@
   }
  },
  {
+  "id": "Q1269082",
+  "name": "Alice",
+  "aliases": [],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alice%20drink%20me.jpg?width=400",
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "Royaume-Uni",
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
   "id": "Q730684",
   "name": "Doomguy",
   "aliases": [],
@@ -38229,6 +38517,7 @@
    "species": "Humain",
    "nationality": "United Kingdom of Euchronia",
    "occupation": [
+    "Religieux",
     "Politicien"
    ],
    "hair": null,
@@ -38254,7 +38543,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "United Kingdom of Euchronia",
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -38277,7 +38568,10 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "United Kingdom of Euchronia",
-   "occupation": null,
+   "occupation": [
+    "Religieux",
+    "Politicien"
+   ],
    "hair": null,
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -38300,7 +38594,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": "United Kingdom of Euchronia",
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -38539,12 +38835,257 @@
   }
  },
  {
+  "id": "Q115212346",
+  "name": "Amicia de Rune",
+  "aliases": [
+   "Rune de Amicia",
+   "Amicia",
+   "Rune"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-conrad-roth",
+  "name": "Conrad Roth",
+  "aliases": [
+   "Roth Conrad",
+   "Conrad Roth (Survivor Timeline)",
+   "Conrad",
+   "Roth"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": "Royaume-Uni",
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": [
+    "Gris",
+    "Noirs"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-winston",
+  "name": "Winston",
+  "aliases": [],
+  "attributes": {
+   "gender": null,
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-zip",
+  "name": "Zip",
+  "aliases": [
+   "Zip (Legend Timeline)"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": "États-Unis",
+   "occupation": [
+    "Informaticien"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-mathias",
+  "name": "Mathias",
+  "aliases": [
+   "Mathias (Survivor Timeline)"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Dirigeant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-konstantin",
+  "name": "Konstantin",
+  "aliases": [
+   "Konstantin (Survivor Timeline)"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-pedro-dominguez",
+  "name": "Pedro Dominguez",
+  "aliases": [
+   "Dominguez Pedro",
+   "Pedro",
+   "Dominguez"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": "Pérou",
+   "occupation": [
+    "Noble",
+    "Religieux",
+    "Dirigeant"
+   ],
+   "hair": [
+    "Noirs",
+    "Gris"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-anaya-imanu",
+  "name": "Anaya Imanu",
+  "aliases": [
+   "Imanu Anaya",
+   "Anaya Imanu (Legend Timeline)",
+   "Anaya",
+   "Imanu"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Scientifique"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-jacob",
+  "name": "Jacob",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": "Byzantine",
+   "occupation": [
+    "Religieux",
+    "Dirigeant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
+  "id": "wiki-tomb-raider-ana",
+  "name": "Ana",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Soldat",
+    "Archéologue"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Tomb Raider",
+   "developer": "Core Design",
+   "genres": [
+    "Action-aventure"
+   ],
+   "year": 1996
+  }
+ },
+ {
   "id": "wiki-god-of-war-atreus",
   "name": "Atreus",
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": "1",
+   "species": null,
    "nationality": "Norvège",
    "occupation": null,
    "hair": [
@@ -38564,10 +39105,11 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": "1",
+   "species": null,
    "nationality": "Norvège",
    "occupation": [
-    "Noble"
+    "Noble",
+    "Guerrier"
    ],
    "hair": [
     "Roux"
@@ -38676,7 +39218,8 @@
    "species": "Divinité",
    "nationality": "Norvège",
    "occupation": [
-    "Noble"
+    "Noble",
+    "Garde"
    ],
    "hair": [
     "Blonds"
@@ -39566,6 +40109,7 @@
    "nationality": null,
    "occupation": [
     "Serveur",
+    "Ouvrier",
     "Souverain"
    ],
    "hair": null,
@@ -39895,7 +40439,9 @@
    "gender": "Aucun",
    "species": "Pod",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Nier",
    "developer": "Cavia",
@@ -40079,7 +40625,9 @@
    "gender": "Femme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -40248,6 +40796,217 @@
     "Action-RPG"
    ],
    "year": 2011
+  }
+ },
+ {
+  "id": "wiki-borderlands-tiny-tina",
+  "name": "Tiny Tina",
+  "aliases": [
+   "Tina Tiny"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
+  }
+ },
+ {
+  "id": "wiki-borderlands-maya",
+  "name": "Maya",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "Athenas",
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2012
+  }
+ },
+ {
+  "id": "wiki-borderlands-axton",
+  "name": "Axton",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Hieronymous",
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2012
+  }
+ },
+ {
+  "id": "wiki-borderlands-salvador",
+  "name": "Salvador",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Pandora",
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2012
+  }
+ },
+ {
+  "id": "wiki-borderlands-krieg",
+  "name": "Krieg",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Human mutant",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2012
+  }
+ },
+ {
+  "id": "wiki-borderlands-mad-moxxi",
+  "name": "Mad Moxxi",
+  "aliases": [
+   "Moxxi Mad",
+   "Moxxi"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
+  }
+ },
+ {
+  "id": "wiki-borderlands-mr-torgue",
+  "name": "Mr. Torgue",
+  "aliases": [
+   "Torgue Mr.",
+   "Torgue"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Hephaestus",
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2012
+  }
+ },
+ {
+  "id": "wiki-borderlands-roland",
+  "name": "Roland",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Promethea",
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
+  }
+ },
+ {
+  "id": "wiki-borderlands-marcus-kincaid",
+  "name": "Marcus Kincaid",
+  "aliases": [
+   "Kincaid Marcus",
+   "Kincaid"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
+  }
+ },
+ {
+  "id": "wiki-borderlands-scooter",
+  "name": "Scooter",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
+  }
+ },
+ {
+  "id": "wiki-borderlands-helena-pierce",
+  "name": "Helena Pierce",
+  "aliases": [
+   "Pierce Helena"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Borderlands",
+   "developer": "Gearbox Software",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2009
   }
  },
  {
@@ -41423,7 +42182,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pirate"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -41599,7 +42360,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41624,7 +42386,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41648,7 +42411,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41672,7 +42436,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41697,7 +42462,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41722,7 +42488,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41747,7 +42514,8 @@
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41763,13 +42531,16 @@
    "gender": "Femme",
    "species": null,
    "nationality": "Gristol",
-   "occupation": null,
+   "occupation": [
+    "Homme d'affaires"
+   ],
    "hair": null,
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
   }
@@ -41786,15 +42557,324 @@
    "gender": "Homme",
    "species": null,
    "nationality": "Gristol",
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": null,
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
    "genres": [
     "Action-aventure",
-    "Infiltration"
+    "Infiltration",
+    "Immersive sim"
    ],
    "year": 2012
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-daniel-diaz",
+  "name": "Daniel Diaz",
+  "aliases": [
+   "Diaz Daniel"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Élève",
+    "Étudiant",
+    "Serveur"
+   ],
+   "hair": [
+    "Bruns",
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2018
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-kate-marsh",
+  "name": "Kate Marsh",
+  "aliases": [
+   "Marsh Kate",
+   "Marsh"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-nathan-prescott",
+  "name": "Nathan Prescott",
+  "aliases": [
+   "Prescott Nathan",
+   "Prescott"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-david-madsen",
+  "name": "David Madsen",
+  "aliases": [
+   "Madsen David",
+   "Madsen"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Soldat",
+    "Garde",
+    "Chauffeur"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-joyce-price",
+  "name": "Joyce Price",
+  "aliases": [
+   "Price Joyce",
+   "Joyce"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Serveur"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-steph-gingrich",
+  "name": "Steph Gingrich",
+  "aliases": [
+   "Gingrich Steph",
+   "Steph",
+   "Gingrich"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-gabe-chen",
+  "name": "Gabe Chen",
+  "aliases": [
+   "Chen Gabe"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Serveur"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-safiya-llewellyn-fayyad",
+  "name": "Safiya Llewellyn-Fayyad",
+  "aliases": [
+   "Llewellyn-Fayyad Safiya",
+   "Safiya",
+   "Llewellyn-Fayyad"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Étudiant",
+    "Conseiller",
+    "Écrivain"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-chris-eriksen",
+  "name": "Chris Eriksen",
+  "aliases": [
+   "Eriksen Chris",
+   "Eriksen"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Élève"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2018
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-frank-bowers",
+  "name": "Frank Bowers",
+  "aliases": [
+   "Bowers Frank",
+   "Bowers"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Étudiant",
+    "Criminel"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-karen-reynolds",
+  "name": "Karen Reynolds",
+  "aliases": [
+   "Reynolds Karen",
+   "Karen",
+   "Reynolds"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
+  }
+ },
+ {
+  "id": "wiki-life-is-strange-finn-mcnamara",
+  "name": "Finn McNamara",
+  "aliases": [
+   "McNamara Finn",
+   "Finn",
+   "McNamara"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Life Is Strange",
+   "developer": "Don't Nod",
+   "genres": [
+    "Aventure"
+   ],
+   "year": 2015
   }
  },
  {
@@ -41817,7 +42897,7 @@
    "developer": "Facepunch Studios",
    "genres": [
     "Action-aventure",
-    "jeu de tir",
+    "FPS",
     "Survie"
    ],
    "year": 2018
@@ -42073,7 +43153,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42096,7 +43176,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42120,7 +43200,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42143,7 +43223,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42166,7 +43246,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42190,7 +43270,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42214,7 +43294,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42237,7 +43317,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024
   }
@@ -42821,7 +43901,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -42843,7 +43923,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -42865,7 +43945,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -42888,7 +43968,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -42908,7 +43988,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -42931,7 +44011,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016
@@ -43171,6 +44251,7 @@
    "species": "Humain",
    "nationality": null,
    "occupation": [
+    "Religieux",
     "Mercenaire"
    ],
    "hair": null,
@@ -43363,33 +44444,6 @@
   }
  },
  {
-  "id": "wiki-kingdom-come-deliverance-master-voyta",
-  "name": "Master Voyta",
-  "aliases": [
-   "Voyta Master",
-   "Voyta"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "nationality": "Tchéquie",
-   "occupation": [
-    "Artiste"
-   ],
-   "hair": [
-    "Gris",
-    "Blonds"
-   ],
-   "franchise": "Kingdom Come: Deliverance",
-   "developer": "Warhorse Studios",
-   "genres": [
-    "RPG",
-    "Action-RPG"
-   ],
-   "year": 2018
-  }
- },
- {
   "id": "wiki-kingdom-come-deliverance-radzig-kobyla",
   "name": "Radzig Kobyla",
   "aliases": [
@@ -43546,6 +44600,31 @@
   }
  },
  {
+  "id": "wiki-kingdom-come-deliverance-divish-of-talmberg",
+  "name": "Divish of Talmberg",
+  "aliases": [
+   "Talmberg of Divish",
+   "Divish",
+   "Talmberg"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": "Tchéquie",
+   "occupation": null,
+   "hair": [
+    "Gris"
+   ],
+   "franchise": "Kingdom Come: Deliverance",
+   "developer": "Warhorse Studios",
+   "genres": [
+    "RPG",
+    "Action-RPG"
+   ],
+   "year": 2018
+  }
+ },
+ {
   "id": "wiki-the-long-dark-will-mackenzie",
   "name": "Will Mackenzie",
   "aliases": [
@@ -43632,7 +44711,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chasseur"
+   ],
    "hair": null,
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -44014,7 +45095,8 @@
    "species": null,
    "nationality": null,
    "occupation": [
-    "Sportif"
+    "Sportif",
+    "Chasseur"
    ],
    "hair": null,
    "franchise": "Mirror's Edge",
@@ -44281,30 +45363,151 @@
   }
  },
  {
-  "id": "wiki-alice-madness-returns-alice-liddell",
-  "name": "Alice Liddell",
+  "id": "wiki-alice-madness-returns-white-rabbit",
+  "name": "White Rabbit",
   "aliases": [
-   "Liddell Alice"
+   "Rabbit White",
+   "Rabbit"
   ],
   "attributes": {
-   "gender": "Femme",
+   "gender": "Homme",
    "species": null,
    "nationality": null,
    "occupation": [
-    "Domestique",
-    "Noble"
+    "Domestique"
    ],
-   "hair": [
-    "Bruns",
-    "Noirs"
-   ],
+   "hair": null,
    "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
+   "developer": "Rogue Entertainment",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
-   "year": 2011
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-caterpillar",
+  "name": "Caterpillar",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Oracle"
+   ],
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-jabberwock",
+  "name": "Jabberwock",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Garde"
+   ],
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-gryphon",
+  "name": "Gryphon",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-mock-turtle",
+  "name": "Mock Turtle",
+  "aliases": [
+   "Turtle Mock",
+   "Mock",
+   "Turtle"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-march-hare",
+  "name": "March Hare",
+  "aliases": [
+   "Hare March"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-dormouse",
+  "name": "Dormouse",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Rogue Entertainment",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2000
   }
  },
  {
@@ -44329,7 +45532,7 @@
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
    "year": 2011
@@ -44344,6 +45547,7 @@
    "species": null,
    "nationality": null,
    "occupation": [
+    "Criminel",
     "Chauffeur"
    ],
    "hair": [
@@ -44352,7 +45556,7 @@
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
    "year": 2011
@@ -44376,12 +45580,12 @@
     "Noirs"
    ],
    "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
+   "developer": "Rogue Entertainment",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
-   "year": 2011
+   "year": 2000
   }
  },
  {
@@ -44401,12 +45605,12 @@
    ],
    "hair": null,
    "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
+   "developer": "Rogue Entertainment",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
-   "year": 2011
+   "year": 2000
   }
  },
  {
@@ -44425,12 +45629,12 @@
    ],
    "hair": null,
    "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
+   "developer": "Rogue Entertainment",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
-   "year": 2011
+   "year": 2000
   }
  },
  {
@@ -44454,32 +45658,7 @@
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
-    "Action-aventure",
-    "Horreur"
-   ],
-   "year": 2011
-  }
- },
- {
-  "id": "wiki-alice-madness-returns-insane-child-leader",
-  "name": "Insane Child Leader",
-  "aliases": [
-   "Leader Child Insane",
-   "Insane",
-   "Child"
-  ],
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Bruns"
-   ],
-   "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
-   "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
    "year": 2011
@@ -44500,31 +45679,12 @@
     "Bruns"
    ],
    "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
+   "developer": "Rogue Entertainment",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
-   "year": 2011
-  }
- },
- {
-  "id": "wiki-alice-madness-returns-dress",
-  "name": "Dress",
-  "aliases": [],
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Alice: Madness Returns",
-   "developer": "Spicy Horse",
-   "genres": [
-    "Action-aventure",
-    "Horreur"
-   ],
-   "year": 2011
+   "year": 2000
   }
  },
  {
@@ -44544,7 +45704,7 @@
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
-    "Action-aventure",
+    "TPS",
     "Horreur"
    ],
    "year": 2011
@@ -44567,7 +45727,80 @@
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
-    "Action-aventure",
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2011
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-arthur-liddell",
+  "name": "Arthur Liddell",
+  "aliases": [
+   "Liddell Arthur"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Spicy Horse",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2011
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-nan-sharpe",
+  "name": "Nan Sharpe",
+  "aliases": [
+   "Sharpe Nan",
+   "Nan",
+   "Sharpe"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Prostitué",
+    "Homme d'affaires",
+    "Domestique"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "franchise": "Alice: Madness Returns",
+   "developer": "Spicy Horse",
+   "genres": [
+    "TPS",
+    "Horreur"
+   ],
+   "year": 2011
+  }
+ },
+ {
+  "id": "wiki-alice-madness-returns-walrus",
+  "name": "Walrus",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Acteur"
+   ],
+   "hair": null,
+   "franchise": "Alice: Madness Returns",
+   "developer": "Spicy Horse",
+   "genres": [
+    "TPS",
     "Horreur"
    ],
    "year": 2011
@@ -44641,7 +45874,6 @@
   "name": "Cornelius Pons",
   "aliases": [
    "Pons Cornelius",
-   "Cornelius",
    "Pons"
   ],
   "attributes": {
@@ -44763,7 +45995,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Avocat"
+   ],
    "hair": null,
    "franchise": "Syberia",
    "developer": "Microids",
@@ -44831,7 +46065,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Policier"
+   ],
    "hair": null,
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -44873,7 +46109,9 @@
    "gender": "Homme",
    "species": "Robot",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -44911,7 +46149,9 @@
    "gender": "Homme",
    "species": "Nakhti",
    "nationality": "Na'pt Bon",
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -44950,7 +46190,8 @@
    "species": "Necris",
    "nationality": "Mars",
    "occupation": [
-    "Garde"
+    "Garde",
+    "Combattant"
    ],
    "hair": null,
    "franchise": "Unreal",
@@ -44987,7 +46228,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "NeoChiba Research Creche 9",
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -45005,7 +46248,10 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "Terre",
-   "occupation": null,
+   "occupation": [
+    "Journaliste",
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -45049,7 +46295,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45068,7 +46314,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45089,7 +46335,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45111,7 +46357,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45134,7 +46380,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45153,7 +46399,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45172,7 +46418,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45191,7 +46437,7 @@
    "developer": "Campo Santo",
    "genres": [
     "Aventure",
-    "walking simulator"
+    "Walking simulator"
    ],
    "year": 2016
   }
@@ -45546,7 +46792,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Politicien"
+   ],
    "hair": null,
    "franchise": "XCOM",
    "developer": "Mythos Games",
@@ -45567,7 +46815,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "XCOM",
    "developer": "Mythos Games",
@@ -45782,7 +47032,8 @@
   "name": "Kendra Daniels",
   "aliases": [
    "Daniels Kendra",
-   "Kendra"
+   "Kendra",
+   "Daniels"
   ],
   "attributes": {
    "gender": "Femme",
@@ -45805,8 +47056,7 @@
   "id": "wiki-dead-space-gabe-weller",
   "name": "Gabe Weller",
   "aliases": [
-   "Weller Gabe",
-   "Gabe"
+   "Weller Gabe"
   ],
   "attributes": {
    "gender": "Homme",
@@ -46106,7 +47356,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chauffeur"
+   ],
    "hair": [
     "Gris",
     "Bruns"
@@ -46158,6 +47410,7 @@
    "species": null,
    "nationality": "États-Unis",
    "occupation": [
+    "Chauffeur",
     "Terroriste"
    ],
    "hair": [
@@ -46251,7 +47504,9 @@
    "gender": "Femme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chauffeur"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -46294,6 +47549,7 @@
    "species": null,
    "nationality": null,
    "occupation": [
+    "Survivant",
     "Scientifique"
    ],
    "hair": [
@@ -46396,9 +47652,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46421,9 +47675,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46443,9 +47695,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46467,9 +47717,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46489,9 +47737,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46511,9 +47757,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46535,9 +47779,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46561,9 +47803,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46583,9 +47823,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46605,9 +47843,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46627,9 +47863,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46649,9 +47883,7 @@
    "genres": [
     "Aventure",
     "Horreur",
-    "jeu vidéo de pêche",
-    "cozy game",
-    "inventory management video game"
+    "Simulation"
    ],
    "year": 2023
   }
@@ -46901,7 +48133,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": "Englander",
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": null,
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -47051,7 +48285,9 @@
    "gender": "Homme",
    "species": null,
    "nationality": "Japon",
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": null,
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -47308,7 +48544,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Prey",
    "developer": "Arkane Studios",
@@ -47355,7 +48593,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": null,
    "franchise": "Prey",
    "developer": "Arkane Studios",
@@ -47485,7 +48725,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -47592,7 +48834,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -48498,7 +49742,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Conseiller"
+   ],
    "hair": null,
    "franchise": "Wasteland",
    "developer": "Interplay Entertainment",
@@ -48907,6 +50153,7 @@
    "species": null,
    "nationality": "France",
    "occupation": [
+    "Acteur",
     "Informaticien"
    ],
    "hair": [
@@ -49274,8 +50521,7 @@
   "name": "Milton Pierce",
   "aliases": [
    "Pierce Milton",
-   "Milton",
-   "Pierce"
+   "Milton"
   ],
   "attributes": {
    "gender": "Homme",
@@ -49810,7 +51056,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -49832,7 +51080,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -49932,7 +51182,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -50060,7 +51312,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -50668,7 +51922,6 @@
   "name": "Frank \"Hitman\" Hennessy",
   "aliases": [
    "Hennessy \"Hitman\" Frank",
-   "Frank",
    "\"Hitman\"",
    "Hennessy"
   ],
@@ -50741,7 +51994,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50760,7 +52012,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50779,7 +52030,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50798,7 +52048,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50817,7 +52066,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50840,7 +52088,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50859,7 +52106,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50878,7 +52124,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50901,7 +52146,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50920,7 +52164,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50943,7 +52186,6 @@
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015
@@ -50960,7 +52202,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": "Royaume-Uni",
-   "occupation": null,
+   "occupation": [
+    "Chasseur de monstres"
+   ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -50982,7 +52226,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": "Cuba",
-   "occupation": null,
+   "occupation": [
+    "Chasseur de monstres"
+   ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -51028,6 +52274,7 @@
    "species": "Humain",
    "nationality": null,
    "occupation": [
+    "Serveur",
     "Commerçant"
    ],
    "hair": null,
@@ -51050,7 +52297,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -51117,7 +52366,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chasseur"
+   ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -51185,7 +52436,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chasseur"
+   ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -51233,8 +52486,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51260,8 +52513,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51277,7 +52530,8 @@
    "species": null,
    "nationality": null,
    "occupation": [
-    "Serveur"
+    "Serveur",
+    "Fermier"
    ],
    "hair": [
     "Blonds"
@@ -51285,8 +52539,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51303,15 +52557,17 @@
    "gender": "Femme",
    "species": null,
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Employé"
+   ],
    "hair": [
     "Roux"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51334,8 +52590,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51361,8 +52617,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51376,6 +52632,7 @@
    "species": null,
    "nationality": null,
    "occupation": [
+    "Commerçant",
     "Serveur"
    ],
    "hair": [
@@ -51384,8 +52641,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51411,8 +52668,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51430,8 +52687,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51449,8 +52706,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51472,8 +52729,8 @@
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
-    "jeu d'aventure à la troisième personne",
-    "jeu vidéo comprenant des éléments d'énigme"
+    "Aventure",
+    "Réflexion"
    ],
    "year": 2025
   }
@@ -51889,7 +53146,8 @@
    "species": "Humain",
    "nationality": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Serveur"
    ],
    "hair": [
     "Blonds"
@@ -51989,7 +53247,8 @@
    "species": "Humain",
    "nationality": "États-Unis",
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Criminel"
    ],
    "hair": [
     "Rouges"
@@ -52257,7 +53516,8 @@
    "species": null,
    "nationality": "Deponian",
    "occupation": [
-    "Commerçant"
+    "Commerçant",
+    "Soldat"
    ],
    "hair": [
     "Roux"
@@ -52722,6 +53982,7 @@
    "species": null,
    "nationality": null,
    "occupation": [
+    "Ouvrier",
     "Chef de clan"
    ],
    "hair": null,
@@ -53252,7 +54513,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -53342,7 +54605,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -53354,6 +54619,569 @@
     "FPS"
    ],
    "year": 2024
+  }
+ },
+ {
+  "id": "wiki-amnesia-daniel",
+  "name": "Daniel",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Royaume-Uni",
+   "occupation": [
+    "Conseiller"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-heinrich-cornelius-agrippa",
+  "name": "Heinrich Cornelius Agrippa",
+  "aliases": [
+   "Agrippa Cornelius Heinrich",
+   "Agrippa"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Imperial German",
+   "occupation": [
+    "Érudit",
+    "Mercenaire",
+    "Magicien"
+   ],
+   "hair": null,
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-oswald-mandus",
+  "name": "Oswald Mandus",
+  "aliases": [
+   "Mandus Oswald",
+   "Oswald",
+   "Mandus"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Royaume-Uni",
+   "occupation": [
+    "Homme d'affaires",
+    "Scientifique"
+   ],
+   "hair": [
+    "Gris"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-tasi-trianon",
+  "name": "Tasi Trianon",
+  "aliases": [
+   "Trianon Tasi",
+   "Tasi",
+   "Trianon"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Scientifique",
+    "Artiste"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-henri-clement",
+  "name": "Henri Clément",
+  "aliases": [
+   "Clément Henri",
+   "Henri",
+   "Clément"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-justine-florbelle",
+  "name": "Justine Florbelle",
+  "aliases": [
+   "Florbelle Justine",
+   "Justine",
+   "Florbelle"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-alexander-of-brennenburg",
+  "name": "Alexander of Brennenburg",
+  "aliases": [
+   "Brennenburg of Alexander",
+   "Alexander",
+   "Brennenburg"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Otherworldly",
+   "nationality": "Prussian",
+   "occupation": [
+    "Noble",
+    "Érudit",
+    "Garde"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-stephane-joubert",
+  "name": "Stéphane Joubert",
+  "aliases": [
+   "Joubert Stéphane",
+   "Stéphane",
+   "Joubert"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-empress-tihana",
+  "name": "Empress Tihana",
+  "aliases": [
+   "Tihana Empress",
+   "Empress",
+   "Tihana"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Otherworldly",
+   "nationality": "Other World Empire",
+   "occupation": [
+    "Souverain",
+    "Religieux"
+   ],
+   "hair": null,
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-leon-de-vries",
+  "name": "Leon De Vries",
+  "aliases": [
+   "Vries De Leon",
+   "Vries"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "\"British South African\"",
+   "occupation": [
+    "Dirigeant",
+    "Ouvrier"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-anton-metzier",
+  "name": "Anton Metzier",
+  "aliases": [
+   "Metzier Anton",
+   "Metzier"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "Suisse",
+   "occupation": [
+    "Médecin"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-amnesia-m-fournier",
+  "name": "M. Fournier",
+  "aliases": [
+   "Fournier M.",
+   "Fournier"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Amnesia",
+   "developer": "Frictional Games",
+   "genres": [
+    "Horreur"
+   ],
+   "year": 2010
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-hugo-de-rune",
+  "name": "Hugo de Rune",
+  "aliases": [
+   "Rune de Hugo"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-lucas",
+  "name": "Lucas",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-melie",
+  "name": "Mélie",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Voleur"
+   ],
+   "hair": [
+    "Rouges"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-arnaud-malpart",
+  "name": "Arnaud Malpart",
+  "aliases": [
+   "Malpart Arnaud",
+   "Arnaud",
+   "Malpart"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": null,
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-rodric",
+  "name": "Rodric",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Ouvrier"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-beatrice-de-rune",
+  "name": "Béatrice de Rune",
+  "aliases": [
+   "Rune de Béatrice",
+   "Béatrice"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-vitalis-benevent",
+  "name": "Vitalis Bénévent",
+  "aliases": [
+   "Bénévent Vitalis",
+   "Vitalis",
+   "Bénévent"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Religieux"
+   ],
+   "hair": [
+    "Gris"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-sophia",
+  "name": "Sophia",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": [
+    "Voleur"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2022
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-nicholas",
+  "name": "Nicholas",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2019
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-ariadne",
+  "name": "Ariadne",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Humain",
+   "nationality": "Minoan",
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2026
+  }
+ },
+ {
+  "id": "wiki-a-plague-tale-victor-de-arles",
+  "name": "Victor de Arles",
+  "aliases": [
+   "Arles de Victor",
+   "Arles"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": "France",
+   "occupation": [
+    "Souverain"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "franchise": "A Plague Tale",
+   "developer": "Asobo Studio",
+   "genres": [
+    "Action-aventure",
+    "Infiltration"
+   ],
+   "year": 2022
   }
  },
  {
@@ -53917,7 +55745,8 @@
    "hair": null,
    "developer": "Bethesda",
    "genres": [
-    "Action-RPG"
+    "Action-RPG",
+    "Immersive sim"
    ],
    "year": 2011,
    "franchise": "The Elder Scrolls"
@@ -54232,7 +56061,7 @@
    "genres": [
     "Action-aventure",
     "Survie",
-    "monster-taming game"
+    "Monster-taming"
    ],
    "year": 2024,
    "franchise": "Palworld"
@@ -54321,7 +56150,7 @@
    "developer": "Hello Games",
    "genres": [
     "Action-aventure",
-    "simulateur de vol spatial",
+    "Simulation",
     "Survie"
    ],
    "year": 2016,
@@ -54347,8 +56176,7 @@
    "developer": "Crytek",
    "genres": [
     "FPS",
-    "Survival horror",
-    "Extraction shooter"
+    "Survival horror"
    ],
    "year": 2019,
    "franchise": "Hunt: Showdown"
@@ -54395,7 +56223,7 @@
    "developer": "Facepunch Studios",
    "genres": [
     "Action-aventure",
-    "jeu de tir",
+    "FPS",
     "Survie"
    ],
    "year": 2018,
@@ -54492,7 +56320,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54513,7 +56340,8 @@
    "hair": null,
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2007,
    "franchise": "BioShock"
@@ -54537,7 +56365,8 @@
    "hair": null,
    "developer": "Irrational Games",
    "genres": [
-    "FPS"
+    "FPS",
+    "Immersive sim"
    ],
    "year": 2013,
    "franchise": "BioShock"
@@ -54708,7 +56537,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54726,7 +56554,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54744,7 +56571,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54768,7 +56594,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54788,7 +56613,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54808,7 +56632,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2015,
@@ -54828,7 +56651,6 @@
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
-    "simulateur de vol spatial",
     "Simulation"
    ],
    "year": 2019,
@@ -55489,6 +57311,30 @@
    ],
    "year": 2007,
    "franchise": "Portal"
+  }
+ },
+ {
+  "id": "avatar-among-us",
+  "name": "Crewmate",
+  "aliases": [
+   "Coéquipier",
+   "Among Us"
+  ],
+  "attributes": {
+   "gender": "Au choix",
+   "species": "Humanoïde",
+   "nationality": null,
+   "occupation": [
+    "Astronaute",
+    "Scientifique"
+   ],
+   "hair": null,
+   "developer": "InnerSloth",
+   "genres": [
+    "Party game"
+   ],
+   "year": 2018,
+   "franchise": "Among Us"
   }
  }
 ]

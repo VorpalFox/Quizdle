@@ -15,7 +15,7 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translateSpecies } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedYear, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -55,6 +55,8 @@ interface Franchise {
   title: string
   wikidataId: string
   source: string
+  // Les jeux que Wikidata ne relie pas à la franchise
+  games?: string[]
 }
 
 const manual = readManual(manualFile('pixeldle'))
@@ -326,6 +328,11 @@ function developer(game: Game | undefined, franchise: Franchise): string | null 
   return main ? translateDeveloper(label(main)!) : null
 }
 
+// Les genres du jeu, plus ceux que Wikidata oublie pour la franchise (FRANCHISE_GENRES)
+function genresOf(game: Game | undefined, franchise: Franchise): string[] | null {
+  return unique([...labelsOf(game?.genres).map(genre => translated('genres', genre, translateGenre(genre))), ...FRANCHISE_GENRES[franchise.title] ?? []])
+}
+
 // « http://commons.wikimedia.org/wiki/Special:FilePath/Mario.png » → la même en https, en 400 px de large
 const imageUrl = (file: string | undefined) => file ? `${file.replace(/^http:/, 'https:')}?width=${IMAGE_WIDTH}` : undefined
 
@@ -364,7 +371,7 @@ const generated: Entry[] = selections.flatMap(({ franchise, chosen }) => chosen.
   if (otherGender === undefined)
     untranslated.set('gender', [...untranslated.get('gender') ?? [], ...genders])
   const gender = wikidataGender(genders) ?? otherGender ?? null
-  const genres = unique(labelsOf(game?.genres).map(genre => translated('genres', genre, translateGenre(genre))))
+  const genres = genresOf(game, franchise)
   const occupations = unique((wikidataOccupation(labelsOf(claims.occupation)) ?? []).map(name => translated('occupation', name, translateOccupation(name))))
   const nationality = labelsOf(claims.nationality)[0]
   return {
@@ -460,7 +467,7 @@ const wikiEntries: Entry[] = fromWikis.flatMap(({ franchise, chosen }) => chosen
       ...character.values,
       franchise: franchise.title,
       developer: developer(game, franchise),
-      genres: unique(labelsOf(game?.genres).map(genre => translated('genres', genre, translateGenre(genre)))),
+      genres: genresOf(game, franchise),
       year: year ?? game?.year ?? null,
     },
   }
@@ -472,7 +479,7 @@ const completeAdded = (entry: Entry): Entry => {
   const game = franchise && firstGameOf(franchise)
   const defaults = franchise ? {
     developer: developer(game, franchise),
-    genres: unique(labelsOf(game?.genres).map(genre => translated('genres', genre, translateGenre(genre)))),
+    genres: genresOf(game, franchise),
     year: game?.year ?? null,
   } : {}
   return { ...entry, attributes: { gender: null, species: null, nationality: null, occupation: null, hair: null, ...defaults, ...entry.attributes } }

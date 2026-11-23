@@ -18,10 +18,15 @@ const GENDERS: Record<string, string | null> = {
   'intersex': 'Autre', 'non-binary': 'Autre', 'nonbinary': 'Autre', 'ambiguous': 'Autre', 'hermaphrodite': 'Autre',
   // Sans sexe : robots, objets, entités
   'genderless': 'Aucun', 'asexual': 'Aucun', 'asexué': 'Aucun', 'sans genre': 'Aucun', 'n/a': 'Aucun', 'unknown': null, 'varies': 'Au choix', 'variable': 'Au choix',
+  'yes': null,
 }
 
+// « Male (3) Female (4) », « Left 4 Dead, Male, Left 4 Dead 2, Male or Female » : plusieurs versions, on ne tranche pas
+const BOTH_SEXES = /\bmale\b.*\bfemale\b|\bfemale\b.*\bmale\b/
+
 export function translateGender(names: string[]): string | null | undefined {
-  const found = names.map(name => GENDERS[key(name)]).find(value => value !== undefined)
+  const gender = (name: string) => key(name) in GENDERS ? GENDERS[key(name)] : BOTH_SEXES.test(key(name)) ? null : undefined
+  const found = names.map(gender).find(value => value !== undefined)
   return found === undefined && names.length > 0 ? undefined : found ?? null
 }
 
@@ -95,14 +100,15 @@ const SPECIES: Record<string, string | null> = {
   'deutéragoniste': null, 'mascotte': null, 'roi': null, 'idole virtuelle': null, 'transgender person': null, 'persona': null,
   'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
   'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'IA',
-  'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null,
+  'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
 }
 
 // « hérisson de fiction », « anthropomorphic hedgehog », « fée dans une œuvre de fiction », « humain de Donjons et Dragons »
 const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans une œuvre de fiction|in a work of fiction|dans l'univers de harry potter|dans la littérature fantasy et le jeu de rôle|de donjons et dragons)$|^fictional\s+|^anthropomorphi(?:c|que)\s+|\s+anthropomorphiques?$|\s+anthropomorphes?$/g
 
 export function translateSpecies(label: string): string | null | undefined {
-  let name = key(label)
+  // « •Human » : sans la puce
+  let name = key(label).replace(/^[\s・*•·-]+/, '')
   for (let previous = ''; previous !== name;) {
     previous = name
     name = name.replace(SPECIES_QUALIFIERS, '').trim()
@@ -123,7 +129,7 @@ const NATIONALITIES: Record<string, string> = {
   'royaume ptolémaïque': 'Égypte', 'empire achéménide': 'Perse', 'sparte': 'Grèce', 'république florentine': 'Italie',
   'royaume de norvège (872-1397)': 'Norvège', 'troisième reich': 'Allemagne', 'lombax kingdom': 'Royaume lombax',
   'metro kingdom': 'Royaume Métro', 'mushroom kingdom': 'Royaume Champignon', 'écosse': 'Royaume-Uni', 'pays de galles': 'Royaume-Uni',
-  'angleterre': 'Royaume-Uni', 'irlande du nord': 'Royaume-Uni',
+  'angleterre': 'Royaume-Uni', 'irlande du nord': 'Royaume-Uni', 'royaume-uni de grande-bretagne et d\'irlande': 'Royaume-Uni',
   // En anglais, depuis les infobox des wikis : le pays ou l'adjectif
   'united states': 'États-Unis', 'united states of america': 'États-Unis', 'usa': 'États-Unis', 'us': 'États-Unis', 'america': 'États-Unis',
   'american': 'États-Unis', 'japan': 'Japon', 'japanese': 'Japon', 'united kingdom': 'Royaume-Uni', 'uk': 'Royaume-Uni', 'england': 'Royaume-Uni',
@@ -450,8 +456,68 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/^navigateur$/, 'Marin'],
 ]
 
+// L'occupation exacte (clés en minuscules, sans puces), avant les règles : les valeurs des infobox qu'aucune règle
+// ne range, ou mal. null : pas une occupation, on la retire.
+const OCCUPATIONS: Record<string, string | null> = {
+  // Artisans
+  'weaponsmith': 'Ouvrier', 'armorer': 'Ouvrier', 'bronzecaster': 'Ouvrier', 'glassblower': 'Ouvrier', 'cobbler': 'Ouvrier',
+  'forger': 'Ouvrier', 'logger': 'Ouvrier', 'mining expert': 'Ouvrier', 'foreman of gecko': 'Ouvrier', 'custodian': 'Ouvrier',
+  'maintenance android': 'Mécanicien',
+  // Death Stranding : les porteurs livrent
+  'porter': 'Chauffeur', 'porter in training': 'Chauffeur',
+  // Commerce, service
+  'barista': 'Serveur', 'alewife': 'Serveur', 'works at maxine\'s diner': 'Serveur', 'proprietor': 'Commerçant',
+  'proprieter of the mikaelsen ranch': 'Fermier', 'bookeeper at wren\'s nook': 'Employé',
+  'financial backer of hiram burrows': 'Homme d\'affaires', 'managing of the new vegas strip': 'Dirigeant',
+  // Chasse
+  'trapper': 'Chasseur', '3rd tier tracker': 'Chasseur', 'vampire huntress': 'Chasseur de monstres', 'banisher': 'Chasseur de monstres',
+  // Armée, police
+  'albion operations tactical adjutant': 'Soldat', 'demolitions expert': 'Soldat', 'executor of the koprulu expedition': 'Soldat',
+  'legionnaire': 'Soldat', 'recon trooper': 'Soldat', 'recruit': 'Soldat', 'the last minuteman': 'Soldat',
+  'trainee at rockfort island': 'Soldat', 'usstratcom\'s anti-umbrella pursuit': 'Soldat', 'yorha tactical support unit': 'Soldat',
+  'confederate marshal': 'Policier', 'marshal': 'Policier', 'swat specialist': 'Policier', 'watchman of the aesir': 'Garde',
+  // Combat
+  'blade of miquella': 'Guerrier', 'champion of the aesir': 'Guerrier', 'east-khan champion': 'Combattant',
+  'west-khan champion': 'Combattant', 'competitor': 'Combattant', 'chosen of sylvarant': 'Héros',
+  // Crime
+  'blackmailer': 'Criminel', 'loyalist conspirator': 'Criminel', 'mastermind': 'Criminel',
+  'freebooter': 'Pirate', 'plunderer': 'Pirate', 'privateers': 'Pirate',
+  // Religion, magie
+  'church crier': 'Religieux', 'grand inquisitor': 'Religieux', 'missionary': 'Religieux', 'prophet': 'Religieux', 'saint': 'Religieux',
+  'sanctifex': 'Religieux', 'sanctoress': 'Religieux', 'fire keeper': 'Religieux', 'right hand of the divine': 'Religieux',
+  'defender of the emerald dream': 'Magicien', 'astrologer': 'Érudit', 'interpreter': 'Érudit',
+  // Pouvoir
+  'sovereign': 'Souverain', 'mistress of castle dimitrescu': 'Noble', 'dracula\'s vassal': 'Domestique',
+  'public voice of the elders': 'Politicien', 'spokesperson': 'Politicien', 'judicator': 'Politicien', 'the notary': 'Avocat',
+  'second in command': 'Conseiller',
+  // Sciences, soins
+  'roboticist': 'Scientifique', 'architect': 'Scientifique', 'elerium expert': 'Scientifique', 'looking glass specialist': 'Scientifique',
+  'alpha a.i. psychologist': 'Médecin', 'tau radiologist': 'Médecin', 'therapist': 'Médecin', 'techie': 'Informaticien',
+  // Médias, spectacle
+  'acrobat': 'Artiste', 'color commentator': 'Journaliste', 'reality tv host': 'Acteur', 'prepper': 'Survivant',
+  'occultist': 'Magicien', 'polymath': 'Érudit', 'tech support for lara croft': 'Informaticien',
+  // Pas des occupations : rôles dans l'histoire, liens de famille, dieux (l'espèce le dit), phrases, valeurs vides
+  'antagonist': null, 'main antagonist': null, 'overarching antagonist': null, 'secondary antagonist': null,
+  'primary fallout antagonist': null, 'protagonist': null, 'ally': null, 'companion': null, 'temporary companion': null,
+  'minor character': null, 'neutral': null, 'determinant': null, 'colleague': null, 'father': null, 'mother': null,
+  'husband': null, 'wife': null, 'elder god': null, 'god of chaos': null, 'god of crossroads': null, 'treeminder deity': null,
+  'ghost': null, 'darkness': null, 'rebirth': null, 'solo': null, 'support': null, 'nuker': null, 'operating': null,
+  'supervision': null, 'satelite control': null, 'control of the supercarriers': null, 'control of magical creatures': null,
+  'explosive devices': null, 'corporate': null, 'uca': null, 'spi': null, '2nd tier': null, 'mount': null, 'bridge baby': null,
+  'walking enigma': null, 'feline demi-human': null, 'contracted demon': null, 'vessel for dominus': null, 'the blade': null,
+  'the \'will of high prophets\'': null, 'child of the full moon': null, 'promotional mascot': null, 'initiate': null,
+  'trickster': null, 'alien invader': null, 'dark mistress': null, 'mourner': null, 'volunteer': null, 'birdwatcher': null,
+  'vault resident': null, 'off-seer': null, 'leaper': null, 'puzzle keeper': null, 'torture specialist': null,
+  'torturer of souls': null, 'apas human interface': null, 'battle automaton': null, 'exploration robot': null,
+  'sentient assault vehicle': null, 'super fighting robot': null, 'timber felling robot': null, 'creator of chromatic dragonflight': null,
+  'creator of the chromatic dragonflight': null, 'creator of h3o': null, 'creator of sensen': null, 'creator of the ruin': null,
+}
+
 export function translateOccupation(label: string): string | null | undefined {
-  const value = key(label).replace(/^(?:former\s+|ex-|retired\s+)(?=\S)/, '')
+  // « ---- Confederate marshal », « · Weaponsmith », « "The Blade » → sans les puces ni les guillemets qui traînent
+  const value = key(label).replace(/^[\s・*•·"-]+|"+$/g, '').replace(/^(?:former\s+|ex-|retired\s+)(?=\S)/, '')
+  if (value in OCCUPATIONS)
+    return OCCUPATIONS[value]
   const french = firstRule(OCCUPATION_RULES, value)
   return french !== undefined ? french : firstRule(ENGLISH_OCCUPATION_RULES, value)
 }
@@ -497,7 +563,16 @@ export function translateDeveloper(label: string): string {
 const GENRE_RULES: [RegExp, string | null][] = [
   // Les thèmes ne sont pas des genres : retirés
   [/lgbt|science-fiction|science fiction(?! horror)|postapocalyptique|cyberpunk|fantasy|historique|comédie|christmas|halloween|zombie|time travel|space opera|fiction spéculative|milieu scolaire|cross-over|retro-style|eroge|erotic|chuunige|mystère|localisation|augmented reality|thriller/, null],
-  [/commerce/, 'Simulation'],
+  // Une ambiance ou une mécanique, pas un genre (Dredge, Among Us)
+  [/cozy game|inventory management|jeu occasionnel|déduction sociale/, null],
+  [/commerce|simulateur de vol|jeu vidéo de pêche/, 'Simulation'],
+  // Gardés tels quels, validé avec FX
+  [/immersive sim/, 'Immersive sim'],
+  [/monster-taming/, 'Monster-taming'],
+  [/walking simulator/, 'Walking simulator'],
+  [/^jeu de tir$|extraction shooter/, 'FPS'],
+  [/jeu d'aventure à la troisième personne/, 'Aventure'],
+  [/énigme/, 'Réflexion'],
   [/^action-rpg$|soulslike/, 'Action-RPG'],
   [/tactical rpg|tactique au tour par tour/, 'RPG tactique'],
   [/massivement multijoueur/, 'MMO'],
@@ -534,4 +609,14 @@ const GENRE_RULES: [RegExp, string | null][] = [
 
 export function translateGenre(label: string): string | null | undefined {
   return firstRule(GENRE_RULES, key(label))
+}
+
+// Les genres que Wikidata oublie pour une franchise, ajoutés à ceux de son jeu
+export const FRANCHISE_GENRES: Record<string, string[]> = {
+  // Les immersive sims cités par Wikipédia FR (Prey l'a déjà dans Wikidata), sur toute la franchise : validé avec FX
+  'Dishonored': ['Immersive sim'],
+  'Deus Ex': ['Immersive sim'],
+  'BioShock': ['Immersive sim'],
+  'The Elder Scrolls': ['Immersive sim'],
+  'Fallout': ['Immersive sim'],
 }
