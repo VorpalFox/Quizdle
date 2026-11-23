@@ -647,6 +647,21 @@ export function translateOccupation(label: string): string | null | undefined {
   return french !== undefined ? french : firstRule(ENGLISH_OCCUPATION_RULES, value)
 }
 
+// Les quasi-synonymes regroupés, validés avec FX (aussi ceux de la table commune scripts/translate.ts, et des corrections à la main)
+const OCCUPATION_MERGES: Record<string, string | null> = {
+  'Élève': 'Étudiant', 'Chef de clan': 'Dirigeant', 'Tueur': 'Assassin', 'Guerrier': 'Combattant',
+  // déjà dans l'espèce (Divinité)
+  'Dieu': null,
+}
+
+// Les occupations finales d'un personnage : regroupées, sans doublon
+export function mergeOccupations(value: unknown): string[] | null {
+  const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
+    .map(name => name in OCCUPATION_MERGES ? OCCUPATION_MERGES[name] : name)
+    .filter((name): name is string => name !== null)
+  return list.length > 0 ? [...new Set(list)] : null
+}
+
 // --- Développeur ---
 
 // Les divisions internes et les filiales ramenées au studio que les joueurs connaissent

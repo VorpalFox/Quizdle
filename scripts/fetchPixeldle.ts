@@ -15,7 +15,7 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, mergeOccupations, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedGame, pageGames, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -530,8 +530,8 @@ const withDefaults = (entry: Entry): Entry => {
 }
 const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 const warnings = manualApplied.warnings
-// L'espèce est un champ multiple : dépliée à la fin, corrections comprises (Demi-elfe → Humain + Elfe, Renard → Renard + Animal)
-const entries = manualApplied.entries.map(entry => ({ ...entry, attributes: { ...entry.attributes, species: expandSpecies(entry.attributes.species) } }))
+// À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations regroupées
+const entries = manualApplied.entries.map(entry => ({ ...entry, attributes: { ...entry.attributes, species: expandSpecies(entry.attributes.species), occupation: mergeOccupations(entry.attributes.occupation) } }))
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---

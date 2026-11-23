@@ -2981,7 +2981,8 @@
     ],
     "gender": "Au choix",
     "year": 2011,
-    "franchise": "The Elder Scrolls"
+    "franchise": "The Elder Scrolls",
+    "occupation": null
    }
   },
   {
@@ -2997,7 +2998,8 @@
     ],
     "gender": "Au choix",
     "year": 2022,
-    "franchise": "Elden Ring"
+    "franchise": "Elden Ring",
+    "occupation": null
    }
   },
   {
@@ -3012,7 +3014,8 @@
     ],
     "gender": "Au choix",
     "year": 2012,
-    "franchise": "Diablo"
+    "franchise": "Diablo",
+    "occupation": null
    }
   },
   {
@@ -3047,7 +3050,8 @@
     ],
     "gender": "Au choix",
     "year": 2023,
-    "franchise": "Baldur's Gate"
+    "franchise": "Baldur's Gate",
+    "occupation": null
    }
   },
   {
@@ -3063,7 +3067,7 @@
     ],
     "gender": "Au choix",
     "occupation": [
-     "Élève"
+     "Étudiant"
     ],
     "year": 2023,
     "franchise": "Hogwarts Legacy"
@@ -3082,7 +3086,8 @@
     ],
     "gender": "Au choix",
     "year": 2017,
-    "franchise": "Divinity: Original Sin"
+    "franchise": "Divinity: Original Sin",
+    "occupation": null
    }
   },
   {
@@ -3098,7 +3103,8 @@
     ],
     "gender": "Au choix",
     "year": 2015,
-    "franchise": "Pillars of Eternity"
+    "franchise": "Pillars of Eternity",
+    "occupation": null
    }
   },
   {
@@ -3193,7 +3199,8 @@
     ],
     "gender": "Au choix",
     "year": 2008,
-    "franchise": "Spore"
+    "franchise": "Spore",
+    "occupation": null
    }
   },
   {
@@ -3227,7 +3234,8 @@
     ],
     "gender": "Au choix",
     "year": 2024,
-    "franchise": "Palworld"
+    "franchise": "Palworld",
+    "occupation": null
    }
   },
   {
@@ -3261,7 +3269,8 @@
     ],
     "gender": "Au choix",
     "year": 2017,
-    "franchise": "We Were Here"
+    "franchise": "We Were Here",
+    "occupation": null
    }
   },
   {
@@ -3410,7 +3419,8 @@
     ],
     "gender": "Autre",
     "year": 2023,
-    "franchise": "Chants of Sennaar"
+    "franchise": "Chants of Sennaar",
+    "occupation": null
    },
    "_raison": "sexe laissé inconnu par le jeu, exprès (comme Frisk)"
   },
@@ -3445,7 +3455,8 @@
     ],
     "gender": "Homme",
     "year": 2007,
-    "franchise": "BioShock"
+    "franchise": "BioShock",
+    "occupation": null
    }
   },
   {
@@ -3622,7 +3633,8 @@
     ],
     "gender": "Homme",
     "year": 2015,
-    "franchise": "Rebel Galaxy"
+    "franchise": "Rebel Galaxy",
+    "occupation": null
    }
   },
   {
@@ -3634,7 +3646,8 @@
     ],
     "gender": "Femme",
     "year": 2015,
-    "franchise": "Rebel Galaxy"
+    "franchise": "Rebel Galaxy",
+    "occupation": null
    }
   },
   {
@@ -3783,7 +3796,7 @@
     "gender": "Homme",
     "year": 2006,
     "occupation": [
-     "Guerrier"
+     "Combattant"
     ],
     "franchise": "Age of Empires III"
    }
@@ -3815,7 +3828,8 @@
     ],
     "gender": "Femme",
     "year": 2005,
-    "franchise": "Age of Empires III"
+    "franchise": "Age of Empires III",
+    "occupation": null
    }
   },
   {
@@ -3832,7 +3846,7 @@
     "gender": "Homme",
     "year": 2005,
     "occupation": [
-     "Guerrier"
+     "Combattant"
     ],
     "franchise": "Age of Empires III"
    }
@@ -3925,7 +3939,7 @@
     "gender": "Homme",
     "year": 2005,
     "occupation": [
-     "Guerrier"
+     "Combattant"
     ],
     "franchise": "Age of Empires III"
    }
@@ -3963,7 +3977,8 @@
     "nationality": [
      "France"
     ],
-    "franchise": "Age of Empires III"
+    "franchise": "Age of Empires III",
+    "occupation": null
    }
   },
   {
@@ -3997,7 +4012,8 @@
     ],
     "gender": "Homme",
     "year": 2006,
-    "franchise": "Age of Empires III"
+    "franchise": "Age of Empires III",
+    "occupation": null
    }
   },
   {
@@ -4037,7 +4053,8 @@
     "nationality": [
      "China"
     ],
-    "franchise": "Age of Empires III"
+    "franchise": "Age of Empires III",
+    "occupation": null
    }
   },
   {
@@ -4056,7 +4073,8 @@
     "nationality": [
      "India"
     ],
-    "franchise": "Age of Empires III"
+    "franchise": "Age of Empires III",
+    "occupation": null
    }
   },
   {
@@ -4067,7 +4085,8 @@
      "Humain"
     ],
     "gender": "Homme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4078,7 +4097,8 @@
      "Humain"
     ],
     "gender": "Femme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4089,7 +4109,8 @@
      "Humain"
     ],
     "gender": "Homme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4100,7 +4121,8 @@
      "Humain"
     ],
     "gender": "Femme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4111,7 +4133,8 @@
      "Humain"
     ],
     "gender": "Femme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4122,7 +4145,8 @@
      "Humain"
     ],
     "gender": "Femme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4133,7 +4157,8 @@
      "Humain"
     ],
     "gender": "Femme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4144,7 +4169,8 @@
      "Humain"
     ],
     "gender": "Homme",
-    "franchise": "The First Descendant"
+    "franchise": "The First Descendant",
+    "occupation": null
    }
   },
   {
@@ -4174,7 +4200,8 @@
     ],
     "gender": "Aucun",
     "year": 2019,
-    "franchise": "Satisfactory"
+    "franchise": "Satisfactory",
+    "occupation": null
    }
   },
   {
@@ -4190,7 +4217,8 @@
     ],
     "gender": "Aucun",
     "year": 2019,
-    "franchise": "Satisfactory"
+    "franchise": "Satisfactory",
+    "occupation": null
    }
   },
   {

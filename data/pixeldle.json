@@ -2678,7 +2678,7 @@
     "Japan"
    ],
    "occupation": [
-    "Tueur"
+    "Assassin"
    ],
    "hair": [
     "Noirs",
@@ -2768,7 +2768,7 @@
     "Criminel",
     "Combattant",
     "Terroriste",
-    "Tueur"
+    "Assassin"
    ],
    "hair": [
     "Bruns",
@@ -3252,9 +3252,8 @@
    ],
    "occupation": [
     "Mercenaire",
-    "Guerrier",
-    "Justicier",
     "Combattant",
+    "Justicier",
     "Assassin",
     "Ninja"
    ],
@@ -3340,10 +3339,10 @@
    ],
    "occupation": [
     "Dirigeant",
-    "Guerrier",
+    "Combattant",
     "Soldat",
     "Magicien",
-    "Tueur"
+    "Assassin"
    ],
    "hair": null,
    "franchise": "Mortal Kombat",
@@ -3840,7 +3839,7 @@
     "Homme d'affaires",
     "Dirigeant",
     "Combattant",
-    "Tueur"
+    "Assassin"
    ],
    "hair": [
     "Bruns",
@@ -3871,7 +3870,7 @@
     "Monaco"
    ],
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Noble"
    ],
    "hair": [
@@ -4286,7 +4285,7 @@
    ],
    "occupation": [
     "Homme d'affaires",
-    "Tueur",
+    "Assassin",
     "Dirigeant",
     "Combattant"
    ],
@@ -4576,7 +4575,7 @@
     "Criminel",
     "Dirigeant",
     "Terroriste",
-    "Tueur",
+    "Assassin",
     "Chasseur de monstres"
    ],
    "hair": null,
@@ -12207,7 +12206,7 @@
    "nationality": null,
    "occupation": [
     "Chasseur de trésor",
-    "Élève"
+    "Étudiant"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -12231,7 +12230,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -12899,9 +12898,9 @@
    ],
    "occupation": [
     "Archer",
-    "Guerrier",
+    "Combattant",
     "Épéiste",
-    "Tueur",
+    "Assassin",
     "Chasseur de monstres"
    ],
    "hair": [
@@ -13724,7 +13723,7 @@
    "occupation": [
     "Mercenaire",
     "Garde",
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -14086,7 +14085,7 @@
     "Ferelden"
    ],
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -14111,7 +14110,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier",
+    "Combattant",
     "Noble"
    ],
    "hair": null,
@@ -14361,7 +14360,7 @@
    "nationality": null,
    "occupation": [
     "Magicien",
-    "Guerrier",
+    "Combattant",
     "Assassin"
    ],
    "hair": null,
@@ -14743,7 +14742,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -15098,8 +15097,7 @@
    "nationality": null,
    "occupation": [
     "Religieux",
-    "Dirigeant",
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": [
     "Bruns"
@@ -15156,7 +15154,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Tueur"
+    "Assassin"
    ],
    "hair": null,
    "franchise": "Fallout",
@@ -16167,7 +16165,7 @@
     "Vice City"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Criminel",
     "Soldat"
    ],
@@ -16196,7 +16194,7 @@
     "Canada"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Criminel",
     "Commerçant"
    ],
@@ -17065,7 +17063,6 @@
    "occupation": [
     "Criminel",
     "Assassin",
-    "Tueur",
     "Espion"
    ],
    "hair": null,
@@ -17124,7 +17121,7 @@
     "United States"
    ],
    "occupation": [
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Red Dead",
@@ -17151,7 +17148,7 @@
     "United States"
    ],
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "franchise": "Red Dead",
@@ -17626,7 +17623,7 @@
     "Norway"
    ],
    "occupation": [
-    "Guerrier",
+    "Combattant",
     "Justicier",
     "Assassin"
    ],
@@ -20905,7 +20902,6 @@
     "The Great Barrier"
    ],
    "occupation": [
-    "Guerrier",
     "Combattant"
    ],
    "hair": null,
@@ -21594,7 +21590,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Chef de clan",
+    "Dirigeant",
     "Soldat"
    ],
    "hair": null,
@@ -21800,7 +21796,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -21824,7 +21820,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -25386,7 +25382,7 @@
    "nationality": null,
    "occupation": [
     "Magicien",
-    "Tueur",
+    "Assassin",
     "Scientifique"
    ],
    "hair": [
@@ -25473,7 +25469,7 @@
     "Japan"
    ],
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Argentés"
@@ -25952,7 +25948,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": null,
    "franchise": "Silent Hill",
@@ -26037,7 +26033,7 @@
     "Ebisugaoka"
    ],
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -26064,7 +26060,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": null,
    "franchise": "Silent Hill",
@@ -26332,7 +26328,7 @@
    ],
    "occupation": [
     "Artiste",
-    "Élève",
+    "Étudiant",
     "Religieux"
    ],
    "hair": [
@@ -26366,7 +26362,7 @@
    ],
    "occupation": [
     "Détective",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Violets"
@@ -26398,7 +26394,7 @@
    ],
    "occupation": [
     "Mercenaire",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -26555,7 +26551,7 @@
    "nationality": null,
    "occupation": [
     "Informaticien",
-    "Élève"
+    "Étudiant"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -26951,7 +26947,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -27122,7 +27118,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Policier",
     "Criminel"
    ],
@@ -27180,7 +27176,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": [
     "Noirs"
@@ -29770,8 +29766,7 @@
    ],
    "occupation": [
     "Étudiant",
-    "Combattant",
-    "Élève"
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -32436,7 +32431,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "franchise": "Elden Ring",
@@ -33913,7 +33908,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Scientifique",
     "Homme d'affaires"
    ],
@@ -34018,7 +34013,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Garde",
     "Informaticien"
    ],
@@ -34462,7 +34457,7 @@
    "nationality": null,
    "occupation": [
     "Garde",
-    "Tueur"
+    "Assassin"
    ],
    "hair": null,
    "franchise": "BioShock",
@@ -37696,7 +37691,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "franchise": "Baldur's Gate",
@@ -38364,7 +38359,7 @@
    ],
    "occupation": [
     "Archer",
-    "Guerrier",
+    "Combattant",
     "Chasseur"
    ],
    "hair": [
@@ -39231,8 +39226,7 @@
    ],
    "occupation": [
     "Artiste",
-    "Étudiant",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Bleus"
@@ -39260,7 +39254,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Chômeur"
    ],
    "hair": [
@@ -39290,8 +39284,7 @@
     "United States"
    ],
    "occupation": [
-    "Étudiant",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -39380,8 +39373,7 @@
     "United States"
    ],
    "occupation": [
-    "Étudiant",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -39411,8 +39403,7 @@
     "United States"
    ],
    "occupation": [
-    "Étudiant",
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Bruns"
@@ -39442,7 +39433,7 @@
     "United States"
    ],
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Mécanicien"
    ],
    "hair": [
@@ -39475,7 +39466,7 @@
     "Commerçant",
     "Aventurier",
     "Musicien",
-    "Élève",
+    "Étudiant",
     "Chauffeur",
     "Sportif",
     "Informaticien"
@@ -39593,7 +39584,7 @@
     "Diamond City"
    ],
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Informaticien"
    ],
    "hair": [
@@ -39645,7 +39636,7 @@
    ],
    "occupation": [
     "Informaticien",
-    "Élève",
+    "Étudiant",
     "Ninja"
    ],
    "hair": [
@@ -40093,7 +40084,7 @@
     "United Kingdom"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Criminel",
     "Souverain"
    ],
@@ -40650,7 +40641,7 @@
     "Gaea"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Scientifique"
    ],
    "hair": [
@@ -41103,13 +41094,12 @@
     "United States"
    ],
    "occupation": [
-    "Élève",
+    "Étudiant",
     "Héros",
     "Serveur",
     "Justicier",
     "Médecin",
     "Assassin",
-    "Tueur",
     "Combattant",
     "Terroriste"
    ],
@@ -41142,7 +41132,7 @@
     "United States"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Combattant"
    ],
    "hair": null,
@@ -41298,7 +41288,7 @@
     "United States"
    ],
    "occupation": [
-    "Tueur",
+    "Assassin",
     "Scientifique",
     "Terroriste"
    ],
@@ -41731,7 +41721,7 @@
    ],
    "occupation": [
     "Criminel",
-    "Tueur",
+    "Assassin",
     "Scientifique",
     "Médecin"
    ],
@@ -42881,7 +42871,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Bruns"
@@ -42911,7 +42901,7 @@
     "Japan"
    ],
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Roses"
@@ -42938,7 +42928,7 @@
     "Japan"
    ],
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Roses"
@@ -42965,7 +42955,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Violets"
@@ -44034,7 +44024,7 @@
    ],
    "occupation": [
     "Noble",
-    "Guerrier"
+    "Combattant"
    ],
    "hair": [
     "Roux"
@@ -47791,9 +47781,7 @@
     "Divinité"
    ],
    "nationality": null,
-   "occupation": [
-    "Dieu"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
@@ -47992,7 +47980,6 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève",
     "Étudiant",
     "Serveur"
    ],
@@ -48023,7 +48010,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -48050,7 +48037,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Bruns"
@@ -48134,7 +48121,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Bruns"
@@ -48217,7 +48204,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -57321,7 +57308,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier",
+    "Combattant",
     "Garde"
    ],
    "hair": null,
@@ -60670,7 +60657,7 @@
    "nationality": null,
    "occupation": [
     "Révolutionnaire",
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Forgotton Anne",
@@ -60741,7 +60728,7 @@
    "nationality": null,
    "occupation": [
     "Ouvrier",
-    "Chef de clan"
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Forgotton Anne",
@@ -62846,7 +62833,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Élève"
+    "Étudiant"
    ],
    "hair": null,
    "developer": "KnowWonder",
@@ -63833,7 +63820,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -63901,7 +63888,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -64022,7 +64009,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Guerrier"
+    "Combattant"
    ],
    "hair": null,
    "developer": "Ensemble Studios",

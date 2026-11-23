@@ -31,7 +31,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
 1. **Sundered** : 0 personnage. FX remplit le wiki, puis on relance le script avec les bons réglages dans `wikis`.
 2. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
-   - les doublons d'écriture : espèces faites (Nomaï → Nomai), reste à passer les occupations ;
+   - les doublons d'écriture : faits pour les espèces (Nomaï → Nomai) et les occupations (quasi-synonymes regroupés par `mergeOccupations` : Élève → Étudiant, Chef de clan → Dirigeant, Tueur → Assassin, Guerrier → Combattant, Dieu retiré) ;
    - **nationalité** : fait, tout en anglais (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
 3. **Trous à combler** :
    - **sexe et espèce** : faits. Reste Liza (The World Next Door), à trancher ;

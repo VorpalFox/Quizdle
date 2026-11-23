@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { expandSpecies, mergeOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -20,6 +20,16 @@ describe('expandSpecies', () => {
   it('Vide_Null', () => {
     expect(expandSpecies(null)).toBeNull()
     expect(expandSpecies([])).toBeNull()
+  })
+})
+
+describe('mergeOccupations', () => {
+  it('QuasiSynonymes_Regroupes', () => {
+    expect(mergeOccupations(['Tueur', 'Assassin', 'Élève'])).toEqual(['Assassin', 'Étudiant'])
+  })
+
+  it('Dieu_Retire', () => {
+    expect(mergeOccupations(['Dieu'])).toBeNull()
   })
 })
 
