@@ -13,6 +13,9 @@ export interface Manual {
   add: Entry[]
   // Pixeldle : titre de la franchise → réglages de la recherche dans son wiki (voir scripts/pixeldleWikiCharacters.ts)
   wikis?: Record<string, WikiSettings>
+  // Pixeldle : titre de la franchise → valeurs par défaut des attributs vides (espèce « Humain » d'une franchise réaliste…),
+  // avant les corrections de « edit »
+  defaults?: Record<string, Record<string, AttributeValue>>
 }
 
 export interface WikiSettings {
@@ -46,7 +49,7 @@ export function manualFile(subjectId: string): URL {
 
 export function readManual(file: URL): Manual {
   const manual = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as Partial<Manual> : {}
-  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {} }
+  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {} }
 }
 
 // Écrit dans un fichier temporaire puis renomme : pas de fichier à moitié écrit si le bot s'arrête pile à ce moment

@@ -67,7 +67,12 @@
   "Q6030387",
   "Q114455",
   "Q57984075",
-  "Q119157699"
+  "Q119157699",
+  "Q135205835",
+  "Q139765713",
+  "Q136403141",
+  "Q17216707",
+  "Q139594797"
  ],
  "edit": {
   "Q2265837": {
@@ -510,8 +515,9 @@
    "gender": "Aucun"
   },
   "Q110906334": {
+   "_nom": "Emil",
    "_raison": "arme vivante, pas un objet",
-   "species": null
+   "species": "Humanoïde"
   },
   "Q125857256": {
    "_raison": "dieu ou divinité",
@@ -688,8 +694,10 @@
    "species": "Singe"
   },
   "wiki-bloons-tower-defense-psi": {
+   "_nom": "Psi",
    "_raison": "héros singe",
-   "species": "Singe"
+   "species": "Singe",
+   "gender": "Autre"
   },
   "wiki-bloons-tower-defense-corvus": {
    "_raison": "héros singe",
@@ -841,7 +849,8 @@
    "_nom": "Walrus",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
-   "developer": "Spicy Horse"
+   "developer": "Spicy Horse",
+   "species": "Morse"
   },
   "Q12379": {
    "_nom": "Mario",
@@ -855,7 +864,8 @@
   "wiki-god-of-war-atreus": {
    "_nom": "Atreus",
    "_raison": "année : God of War (2018) : même titre que celui de 2005",
-   "year": 2018
+   "year": 2018,
+   "species": "Divinité"
   },
   "wiki-god-of-war-mimir": {
    "_nom": "Mimir",
@@ -940,7 +950,8 @@
   "wiki-banjo-kazooie-old-king-coal": {
    "_nom": "Old King Coal",
    "_raison": "année : Banjo-Tooie",
-   "year": 2000
+   "year": 2000,
+   "species": "Charbon"
   },
   "wiki-mirror-s-edge-clarence-e-kreeg": {
    "_nom": "Clarence E. Kreeg",
@@ -1007,13 +1018,15 @@
    "_nom": "Asaru",
    "_raison": "année : The Bureau: XCOM Declassified",
    "year": 2013,
-   "developer": "2K Marin"
+   "developer": "2K Marin",
+   "species": "Extraterrestre"
   },
   "Q3717066": {
    "_nom": "E-105 Zeta",
    "_raison": "année : Sonic Adventure",
    "year": 1998,
-   "developer": "Sonic Team"
+   "developer": "Sonic Team",
+   "gender": "Aucun"
   },
   "Q6056655": {
    "_nom": "Pachacamac the Echidna",
@@ -1048,6 +1061,689 @@
     "RPG",
     "Immersive sim"
    ]
+  },
+  "wiki-dishonored-the-outsider": {
+   "_nom": "The Outsider",
+   "species": "Divinité"
+  },
+  "wiki-ark-hln-a": {
+   "_nom": "HLN-A",
+   "species": "IA"
+  },
+  "wiki-sons-of-the-forest-virginia": {
+   "_nom": "Virginia",
+   "species": "Mutant"
+  },
+  "wiki-kingdom-come-deliverance-mutt": {
+   "_nom": "Mutt",
+   "species": "Chien"
+  },
+  "wiki-the-long-dark-old-bear": {
+   "_nom": "Old Bear",
+   "species": "Ours"
+  },
+  "wiki-death-stranding-president": {
+   "_nom": "President",
+   "species": "IA"
+  },
+  "wiki-soma-robot-head": {
+   "_nom": "Robot Head",
+   "species": "Robot"
+  },
+  "wiki-remember-me-h3o": {
+   "_nom": "H3O",
+   "species": "IA"
+  },
+  "wiki-rebel-galaxy-spanner": {
+   "_nom": "Spanner",
+   "species": "Robot"
+  },
+  "wiki-lost-records-bloom-rage-gertie": {
+   "_nom": "Gertie",
+   "species": "Cerf"
+  },
+  "wiki-lost-records-bloom-rage-fuzzbutt": {
+   "_nom": "Fuzzbutt",
+   "species": "Chat"
+  },
+  "wiki-xcom-speaker": {
+   "_nom": "Speaker",
+   "species": "Extraterrestre"
+  },
+  "wiki-dark-souls-gwyn-lord-of-cinder": {
+   "_nom": "Gwyn, Lord of Cinder",
+   "species": "Divinité"
+  },
+  "wiki-dark-souls-gwynevere-princess-of-sunlight": {
+   "_nom": "Gwynevere, Princess of Sunlight",
+   "species": "Divinité"
+  },
+  "wiki-dark-souls-dark-sun-gwyndolin": {
+   "_nom": "Dark Sun Gwyndolin",
+   "species": "Divinité"
+  },
+  "wiki-dark-souls-witch-of-izalith": {
+   "_nom": "Witch of Izalith",
+   "species": "Divinité"
+  },
+  "wiki-dark-souls-gravelord-nito": {
+   "_nom": "Gravelord Nito",
+   "species": "Divinité"
+  },
+  "wiki-dark-souls-crossbreed-priscilla": {
+   "_nom": "Crossbreed Priscilla",
+   "species": "Demi-dragon"
+  },
+  "wiki-alice-madness-returns-white-rabbit": {
+   "_nom": "White Rabbit",
+   "species": "Lapin"
+  },
+  "wiki-alice-madness-returns-caterpillar": {
+   "_nom": "Caterpillar",
+   "species": "Insecte"
+  },
+  "wiki-alice-madness-returns-jabberwock": {
+   "_nom": "Jabberwock",
+   "species": "Dragon"
+  },
+  "wiki-alice-madness-returns-gryphon": {
+   "_nom": "Gryphon",
+   "species": "Griffon"
+  },
+  "wiki-alice-madness-returns-mock-turtle": {
+   "_nom": "Mock Turtle",
+   "species": "Tortue"
+  },
+  "wiki-alice-madness-returns-march-hare": {
+   "_nom": "March Hare",
+   "species": "Lièvre"
+  },
+  "wiki-alice-madness-returns-dormouse": {
+   "_nom": "Dormouse",
+   "species": "Loir"
+  },
+  "wiki-alice-madness-returns-cheshire-cat": {
+   "_nom": "Cheshire Cat",
+   "species": "Chat"
+  },
+  "wiki-myst-aitrus": {
+   "_nom": "Aitrus",
+   "species": "D'ni"
+  },
+  "wiki-myst-ahlsendar": {
+   "_nom": "Ahlsendar",
+   "species": "D'ni"
+  },
+  "wiki-myst-ri-neref": {
+   "_nom": "Ri'neref",
+   "species": "D'ni"
+  },
+  "wiki-myst-veovis": {
+   "_nom": "Veovis",
+   "species": "D'ni"
+  },
+  "wiki-myst-me-erta": {
+   "_nom": "Me'erta",
+   "species": "D'ni"
+  },
+  "wiki-myst-gehn": {
+   "_nom": "Gehn",
+   "species": "D'ni"
+  },
+  "wiki-myst-atrus": {
+   "_nom": "Atrus",
+   "species": "D'ni"
+  },
+  "wiki-myst-achenar": {
+   "_nom": "Achenar",
+   "species": "D'ni"
+  },
+  "wiki-myst-yeesha": {
+   "_nom": "Yeesha",
+   "species": "D'ni"
+  },
+  "wiki-forgotton-anne-bonku": {
+   "_nom": "Bonku",
+   "species": "Humain"
+  },
+  "Q3922017": {
+   "_nom": "Dark Prince",
+   "species": "Humain"
+  },
+  "Q4905533": {
+   "_nom": "Big Daddy",
+   "species": "Mutant"
+  },
+  "Q1085009": {
+   "_nom": "Pyramid Head",
+   "species": "Monstre"
+  },
+  "Q21193976": {
+   "_nom": "Valtiel",
+   "species": "Monstre",
+   "gender": "Aucun"
+  },
+  "Q517115": {
+   "_nom": "Nightmare",
+   "species": "Démon"
+  },
+  "Q9300594": {
+   "_nom": "Astaroth",
+   "species": "Golem"
+  },
+  "Q4386210": {
+   "_nom": "Frog",
+   "species": "Grenouille"
+  },
+  "Q84429703": {
+   "_nom": "Flea",
+   "species": "Démon"
+  },
+  "Q11325143": {
+   "_nom": "Nu",
+   "species": "Monstre",
+   "gender": "Aucun"
+  },
+  "Q9025748": {
+   "_nom": "Lynx",
+   "species": "Demi-humain"
+  },
+  "Q9002082": {
+   "_nom": "Harle",
+   "species": "Humanoïde"
+  },
+  "Q5736202": {
+   "_nom": "Buzz Buzz",
+   "species": "Insecte",
+   "gender": "Homme"
+  },
+  "wiki-god-of-war-thor": {
+   "_nom": "Thor",
+   "species": "Divinité"
+  },
+  "wiki-bayonetta-madama-butterfly": {
+   "_nom": "Madama Butterfly",
+   "species": "Démon"
+  },
+  "wiki-bayonetta-morgana": {
+   "_nom": "Morgana",
+   "species": "Humain"
+  },
+  "wiki-banjo-kazooie-klungo": {
+   "_nom": "Klungo",
+   "species": "Ogre"
+  },
+  "wiki-banjo-kazooie-hag-1": {
+   "_nom": "HAG-1",
+   "species": "Robot"
+  },
+  "Q2175370": {
+   "_nom": "Amp",
+   "species": "Monstre"
+  },
+  "Q9301789": {
+   "_nom": "Eggman Nega",
+   "species": "Humain"
+  },
+  "Q3189842": {
+   "_nom": "Red XIII",
+   "species": "Animal"
+  },
+  "Q3826584": {
+   "_nom": "Ramuh",
+   "species": "Divinité"
+  },
+  "Q5643403": {
+   "_nom": "Enigmatic Man",
+   "species": "Humain"
+  },
+  "Q5976741": {
+   "_nom": "Lingering Will",
+   "species": "Humain",
+   "gender": "Homme"
+  },
+  "Q10751211": {
+   "_nom": "Waddle Dee",
+   "species": "Waddle Dee",
+   "gender": "Aucun"
+  },
+  "Q16575005": {
+   "_nom": "Magolor",
+   "species": "Halcandrien"
+  },
+  "Q11233788": {
+   "_nom": "Mr. Frosty",
+   "species": "Morse"
+  },
+  "Q69894320": {
+   "_nom": "Prince Fluff",
+   "species": "Humain"
+  },
+  "Q121360326": {
+   "_nom": "Susie",
+   "species": "Humanoïde"
+  },
+  "Q128806865": {
+   "_nom": "Nightmare",
+   "species": "Démon"
+  },
+  "Q5996781": {
+   "_nom": "Marcus McCloud",
+   "species": "Renard"
+  },
+  "Q1188164": {
+   "_nom": "Dingodile",
+   "species": "Mutant"
+  },
+  "Q55234422": {
+   "_nom": "Alduin",
+   "species": "Dragon"
+  },
+  "Q18366971": {
+   "_nom": "Murfy",
+   "species": "Insecte"
+  },
+  "Q55571840": {
+   "_nom": "Dark Rayman",
+   "species": "Humanoïde",
+   "gender": "Homme"
+  },
+  "Q1072320": {
+   "_nom": "Crabe de tête",
+   "species": "Extraterrestre",
+   "gender": "Aucun"
+  },
+  "Q99671042": {
+   "_nom": "Boomer",
+   "species": "Infecté"
+  },
+  "Q134105270": {
+   "_nom": "Witch",
+   "species": "Infecté"
+  },
+  "Q117815576": {
+   "_nom": "Shinmyoumaru Sukuna",
+   "species": "Inchling"
+  },
+  "Q115868734": {
+   "_nom": "Eyeye",
+   "species": "Poisson",
+   "gender": "Aucun"
+  },
+  "Q115871174": {
+   "_nom": "Hoverfish",
+   "species": "Poisson",
+   "gender": "Aucun"
+  },
+  "Q10371215": {
+   "_nom": "Former Human",
+   "species": "Mort-vivant",
+   "gender": "Aucun"
+  },
+  "Q108324036": {
+   "_nom": "Mancubus",
+   "species": "Démon",
+   "gender": "Aucun"
+  },
+  "Q17194084": {
+   "_nom": "Ukiki",
+   "gender": "Aucun"
+  },
+  "Q115672257": {
+   "_nom": "Robirdo",
+   "gender": "Aucun"
+  },
+  "Q137528732": {
+   "_nom": "Majora's Incarnation",
+   "gender": "Aucun"
+  },
+  "Q3666249": {
+   "_nom": "Chaos",
+   "gender": "Aucun"
+  },
+  "Q116685435": {
+   "_nom": "Klaptrap",
+   "gender": "Aucun"
+  },
+  "Q6149649": {
+   "_nom": "Dark Matter",
+   "gender": "Aucun"
+  },
+  "Q135904431": {
+   "_nom": "Buzzybat",
+   "gender": "Aucun"
+  },
+  "Q3943381": {
+   "_nom": "SA-X",
+   "gender": "Aucun"
+  },
+  "Q50813723": {
+   "_nom": "T.O.M.",
+   "gender": "Aucun"
+  },
+  "Q3107878": {
+   "_nom": "Fossoyeur",
+   "gender": "Aucun"
+  },
+  "Q55571439": {
+   "_nom": "Henchman 800",
+   "gender": "Aucun"
+  },
+  "Q55571467": {
+   "_nom": "Henchman 1000",
+   "gender": "Aucun"
+  },
+  "Q21467911": {
+   "_nom": "Nihilanth",
+   "gender": "Aucun"
+  },
+  "Q5652159": {
+   "_nom": "Biomateria",
+   "gender": "Aucun"
+  },
+  "Q56377240": {
+   "_nom": "Corruptor",
+   "gender": "Aucun"
+  },
+  "Q434384": {
+   "_nom": "ATLAS",
+   "gender": "Aucun"
+  },
+  "Q125146181": {
+   "_nom": "Torrent",
+   "gender": "Aucun"
+  },
+  "Q135636079": {
+   "_nom": "Winged Sentry",
+   "gender": "Aucun"
+  },
+  "Q135682291": {
+   "_nom": "Tiktik",
+   "gender": "Aucun"
+  },
+  "Q11312104": {
+   "_nom": "Starman",
+   "gender": "Aucun"
+  },
+  "Q13164404": {
+   "_nom": "Creeper",
+   "gender": "Aucun"
+  },
+  "Q25591435": {
+   "_nom": "Enderman",
+   "gender": "Aucun"
+  },
+  "Q114353574": {
+   "_nom": "Pig",
+   "gender": "Aucun"
+  },
+  "Q114353670": {
+   "_nom": "Skeleton",
+   "gender": "Aucun"
+  },
+  "Q114353680": {
+   "_nom": "Wither Skeleton",
+   "gender": "Aucun"
+  },
+  "Q114353557": {
+   "_nom": "Chicken",
+   "gender": "Aucun"
+  },
+  "Q114353559": {
+   "_nom": "Cow",
+   "gender": "Aucun"
+  },
+  "Q114353571": {
+   "_nom": "Mooshroom",
+   "gender": "Aucun"
+  },
+  "Q114353579": {
+   "_nom": "sheep",
+   "gender": "Aucun"
+  },
+  "Q114353654": {
+   "_nom": "Ghast",
+   "gender": "Aucun"
+  },
+  "Q114353682": {
+   "_nom": "Zombie",
+   "gender": "Aucun"
+  },
+  "Q114351851": {
+   "_nom": "Bee",
+   "gender": "Aucun"
+  },
+  "Q114351862": {
+   "_nom": "Zombified Piglin",
+   "gender": "Aucun"
+  },
+  "Q114353558": {
+   "_nom": "Cod",
+   "gender": "Aucun"
+  },
+  "Q114353566": {
+   "_nom": "Glow Squid",
+   "gender": "Aucun"
+  },
+  "Q114353572": {
+   "_nom": "Ocelot",
+   "gender": "Aucun"
+  },
+  "Q114353585": {
+   "_nom": "Tropical Fish",
+   "gender": "Aucun"
+  },
+  "Q114353655": {
+   "_nom": "Guardian",
+   "gender": "Aucun"
+  },
+  "Q115856840": {
+   "_nom": "Reefback Léviathan",
+   "gender": "Aucun"
+  },
+  "Q115861035": {
+   "_nom": "Scrutine",
+   "gender": "Aucun"
+  },
+  "Q115943937": {
+   "_nom": "Sea Dragon Leviathan",
+   "gender": "Aucun"
+  },
+  "Q115943944": {
+   "_nom": "Sea Emperor Leviathan",
+   "gender": "Aucun"
+  },
+  "Q140166458": {
+   "_nom": "Collector Leviathan",
+   "gender": "Aucun"
+  },
+  "Q111015357": {
+   "_nom": "Spode",
+   "gender": "Aucun"
+  },
+  "Q125680235": {
+   "_nom": "The God That Will Come",
+   "gender": "Aucun"
+  },
+  "Q4219956": {
+   "_nom": "Cyberdemon",
+   "gender": "Aucun"
+  },
+  "Q108324133": {
+   "_nom": "Cacodemon",
+   "gender": "Aucun"
+  },
+  "Q10373741": {
+   "_nom": "Spider Mastermind",
+   "gender": "Aucun"
+  },
+  "Q108333052": {
+   "_nom": "Âme Perdue",
+   "gender": "Aucun"
+  },
+  "Q3027554": {
+   "_nom": "Dieu-machine",
+   "gender": "Aucun"
+  },
+  "Q3967463": {
+   "_nom": "Squig",
+   "gender": "Aucun"
+  },
+  "Q2333421": {
+   "_nom": "Metal Sonic",
+   "gender": "Homme"
+  },
+  "Q11302218": {
+   "_nom": "Chef Kawasaki",
+   "gender": "Homme"
+  },
+  "Q24034079": {
+   "_nom": "Madame Amberley",
+   "gender": "Femme"
+  },
+  "Q55946189": {
+   "_nom": "Mr. Zurkon",
+   "gender": "Homme"
+  },
+  "Q141161910": {
+   "_nom": "Lord Saltimatum",
+   "gender": "Autre"
+  },
+  "Q108466077": {
+   "_nom": "Azura",
+   "gender": "Femme"
+  },
+  "Q112601404": {
+   "_nom": "Molag Bal",
+   "gender": "Homme"
+  },
+  "Q112601430": {
+   "_nom": "Mehrunes Dagon",
+   "gender": "Homme"
+  },
+  "Q56363359": {
+   "_nom": "Pyro",
+   "gender": "Autre"
+  },
+  "Q65229988": {
+   "_nom": "Orisa",
+   "gender": "Femme"
+  },
+  "Q142189583": {
+   "_nom": "Clove",
+   "gender": "Autre"
+  },
+  "Q132855568": {
+   "_nom": "Sae Niijima",
+   "gender": "Femme"
+  },
+  "Q10750259": {
+   "_nom": "Lloyd Irving",
+   "gender": "Homme"
+  },
+  "Q137887326": {
+   "_nom": "Gaspard Boulay",
+   "gender": "Homme"
+  },
+  "Q50296411": {
+   "_nom": "Sif, the Great Grey Wolf",
+   "gender": "Homme"
+  },
+  "Q142190670": {
+   "_nom": "Jar-Bairn",
+   "gender": "Homme"
+  },
+  "Q116465298": {
+   "_nom": "Mettaton EX",
+   "gender": "Homme"
+  },
+  "Q16868728": {
+   "_nom": "Claptrap",
+   "gender": "Homme"
+  },
+  "Q9302554": {
+   "_nom": "Giygas",
+   "gender": "Homme"
+  },
+  "Q5676718": {
+   "_nom": "Angie",
+   "gender": "Femme"
+  },
+  "Q5815284": {
+   "_nom": "Duster",
+   "gender": "Homme"
+  },
+  "Q6011231": {
+   "_nom": "Meryl",
+   "gender": "Femme"
+  },
+  "Q6025538": {
+   "_nom": "Mr. Everdred",
+   "gender": "Homme"
+  },
+  "Q6163253": {
+   "_nom": "Violet",
+   "gender": "Femme"
+  },
+  "Q10404975": {
+   "_nom": "Alex Denton",
+   "gender": "Au choix"
+  },
+  "Q141915688": {
+   "_nom": "Alter",
+   "gender": "Femme"
+  },
+  "Q141915715": {
+   "_nom": "Sparrow",
+   "gender": "Homme"
+  },
+  "Q125685268": {
+   "_nom": "Bawb",
+   "gender": "Homme"
+  },
+  "Q139494225": {
+   "_nom": "Samuel Hayden (Doom)",
+   "gender": "Homme"
+  },
+  "Q3241098": {
+   "_nom": "Nurgle",
+   "gender": "Homme"
+  },
+  "Q12620555": {
+   "_nom": "Khorne",
+   "gender": "Homme"
+  },
+  "Q4148376": {
+   "_nom": "Gregor Eisenhorn",
+   "gender": "Homme"
+  },
+  "Q17429473": {
+   "_nom": "Ungrim Ironfist",
+   "gender": "Homme"
+  },
+  "Q20986877": {
+   "_nom": "Valaya",
+   "gender": "Femme"
+  },
+  "Q135975943": {
+   "_nom": "Saint Celestine",
+   "gender": "Femme"
+  },
+  "wiki-tomb-raider-winston": {
+   "_nom": "Winston",
+   "gender": "Homme"
+  },
+  "wiki-palworld-dr-brawn": {
+   "_nom": "Dr. Brawn",
+   "gender": "Homme"
+  },
+  "Q51885980": {
+   "_nom": "Zeus",
+   "species": "Divinité"
+  },
+  "Q71809189": {
+   "_nom": "Athena",
+   "species": "Divinité"
   }
  },
  "add": [
@@ -1627,7 +2323,7 @@
     "Skyrim"
    ],
    "attributes": {
-    "species": null,
+    "species": "Au choix",
     "gender": "Au choix",
     "year": 2011,
     "franchise": "The Elder Scrolls"
@@ -1685,7 +2381,7 @@
     "Baldur's Gate"
    ],
    "attributes": {
-    "species": null,
+    "species": "Au choix",
     "gender": "Au choix",
     "year": 2023,
     "franchise": "Baldur's Gate"
@@ -1716,7 +2412,7 @@
     "Divinity"
    ],
    "attributes": {
-    "species": null,
+    "species": "Au choix",
     "gender": "Au choix",
     "year": 2017,
     "franchise": "Divinity: Original Sin"
@@ -1730,7 +2426,7 @@
     "Pillars of Eternity"
    ],
    "attributes": {
-    "species": null,
+    "species": "Au choix",
     "gender": "Au choix",
     "year": 2015,
     "franchise": "Pillars of Eternity"
@@ -1815,7 +2511,7 @@
     "Spore"
    ],
    "attributes": {
-    "species": null,
+    "species": "Extraterrestre",
     "gender": "Au choix",
     "year": 2008,
     "franchise": "Spore"
@@ -3101,6 +3797,188 @@
     "Vitalis Bénévent",
     "Sophia"
    ]
+  }
+ },
+ "defaults": {
+  "Tomb Raider": {
+   "species": "Humain"
+  },
+  "Life Is Strange": {
+   "species": "Humain"
+  },
+  "Les Chevaliers de Baphomet": {
+   "species": "Humain"
+  },
+  "Far Cry": {
+   "species": "Humain"
+  },
+  "Horizon": {
+   "species": "Humain"
+  },
+  "Dishonored": {
+   "species": "Humain"
+  },
+  "ARK": {
+   "species": "Humain"
+  },
+  "Palworld": {
+   "species": "Humain"
+  },
+  "Dying Light": {
+   "species": "Humain"
+  },
+  "Sons Of The Forest": {
+   "species": "Humain"
+  },
+  "Kingdom Come: Deliverance": {
+   "species": "Humain"
+  },
+  "The Long Dark": {
+   "species": "Humain"
+  },
+  "Mirror's Edge": {
+   "species": "Humain"
+  },
+  "Firewatch": {
+   "species": "Humain"
+  },
+  "XCOM": {
+   "species": "Humain"
+  },
+  "Dead Space": {
+   "species": "Humain"
+  },
+  "Death Stranding": {
+   "species": "Humain"
+  },
+  "Dredge": {
+   "species": "Humain"
+  },
+  "SOMA": {
+   "species": "Humain"
+  },
+  "Prey": {
+   "species": "Humain"
+  },
+  "The Stanley Parable": {
+   "species": "Humain"
+  },
+  "Dead Island": {
+   "species": "Humain"
+  },
+  "Remember Me": {
+   "species": "Humain"
+  },
+  "The Sinking City": {
+   "species": "Humain"
+  },
+  "Blue Prince": {
+   "species": "Humain"
+  },
+  "Jagged Alliance": {
+   "species": "Humain"
+  },
+  "Rebel Galaxy": {
+   "species": "Humain"
+  },
+  "Lost Records: Bloom & Rage": {
+   "species": "Humain"
+  },
+  "Silent Hill": {
+   "species": "Humain"
+  },
+  "Soulcalibur": {
+   "species": "Humain"
+  },
+  "Call of Duty": {
+   "species": "Humain"
+  },
+  "Danganronpa": {
+   "species": "Humain"
+  },
+  "Ace Attorney": {
+   "species": "Humain"
+  },
+  "Persona": {
+   "species": "Humain"
+  },
+  "Metal Gear": {
+   "species": "Humain"
+  },
+  "Grand Theft Auto": {
+   "species": "Humain"
+  },
+  "Dark Souls": {
+   "species": "Humain"
+  },
+  "Deponia": {
+   "species": "Humain"
+  },
+  "EarthBound": {
+   "species": "Humain"
+  },
+  "Chrono": {
+   "species": "Humain"
+  },
+  "Alice: Madness Returns": {
+   "species": "Humain"
+  },
+  "Myst": {
+   "species": "Humain"
+  },
+  "Street Fighter": {
+   "species": "Humain"
+  },
+  "Team Fortress": {
+   "species": "Humain"
+  },
+  "Batman: Arkham": {
+   "species": "Humain"
+  },
+  "Warhammer": {
+   "species": "Humain"
+  },
+  "Deus Ex": {
+   "species": "Humain"
+  },
+  "Titanfall / Apex Legends": {
+   "species": "Humain"
+  },
+  "Spiritfarer": {
+   "species": "Humain"
+  },
+  "Doki Doki Literature Club": {
+   "species": "Humain"
+  },
+  "BioShock": {
+   "species": "Humain"
+  },
+  "Cyberpunk 2077": {
+   "species": "Humain"
+  },
+  "Halo": {
+   "species": "Humain"
+  },
+  "Valorant": {
+   "species": "Humain"
+  },
+  "Dragon Quest": {
+   "species": "Humain"
+  },
+  "Bloons Tower Defense": {
+   "species": "Humain"
+  },
+  "The First Descendant": {
+   "species": "Humain"
+  },
+  "We Were Here": {
+   "species": "Humain"
+  },
+  "Spore": {
+   "species": "Extraterrestre"
+  },
+  "Forgotton Anne": {
+   "species": "Forgotling"
   }
  }
 }

@@ -520,7 +520,15 @@ const completeAdded = (entry: Entry): Entry => {
   } : {}
   return { ...entry, attributes: { gender: null, species: null, nationality: null, occupation: null, hair: null, ...defaults, ...entry.attributes } }
 }
-const { entries, warnings } = applyManual([...wikidataEntries, ...wikiEntries], { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
+// Les valeurs par défaut de la franchise pour les attributs vides (espèce « Humain »…), avant les corrections de « edit »
+const withDefaults = (entry: Entry): Entry => {
+  const defaults = manual.defaults?.[String(entry.attributes.franchise)]
+  if (!defaults)
+    return entry
+  const empty = Object.entries(defaults).filter(([key]) => entry.attributes[key] === null || entry.attributes[key] === undefined)
+  return { ...entry, attributes: { ...entry.attributes, ...Object.fromEntries(empty) } }
+}
+const { entries, warnings } = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---

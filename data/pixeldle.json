@@ -440,7 +440,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Monstre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -457,7 +457,7 @@
   "name": "Ukiki",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Singe",
    "nationality": null,
    "occupation": null,
@@ -475,7 +475,7 @@
   "name": "Robirdo",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": [
     "Subcon"
@@ -900,7 +900,7 @@
    "Incarnation"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Objet",
    "nationality": null,
    "occupation": null,
@@ -1623,7 +1623,7 @@
    "Neo Metal Sonic"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -1780,7 +1780,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -1821,7 +1821,7 @@
   "name": "Chaos",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -1844,7 +1844,7 @@
    "Zeta"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -2249,7 +2249,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Animal",
    "nationality": [
     "Cosmo Canyon"
    ],
@@ -2382,7 +2382,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -2800,7 +2800,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mexico"
    ],
@@ -2904,7 +2904,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "China"
    ],
@@ -4977,7 +4977,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -5113,7 +5113,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Netherlands"
    ],
@@ -5140,7 +5140,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Soviet Union"
    ],
@@ -5446,7 +5446,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -5467,8 +5467,8 @@
    "Lingering"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": [
     "Keyblade Graveyard"
    ],
@@ -6098,7 +6098,7 @@
   "name": "Klaptrap",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Kremling",
    "nationality": [
     "Crocodile Isle",
@@ -6191,8 +6191,8 @@
    "Waddle"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Waddle Dee",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6210,7 +6210,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Halcandrien",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6230,7 +6230,7 @@
    "Matter"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Dark Matter",
    "nationality": null,
    "occupation": null,
@@ -6252,7 +6252,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Morse",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6293,7 +6293,7 @@
    "Kawasaki"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": null,
    "nationality": null,
    "occupation": [
@@ -6317,7 +6317,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6373,7 +6373,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humanoïde",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6392,7 +6392,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Démon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -6409,7 +6409,7 @@
   "name": "Buzzybat",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Chauve-souris",
    "nationality": null,
    "occupation": null,
@@ -6574,7 +6574,7 @@
   "name": "SA-X",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Parasite",
    "nationality": null,
    "occupation": null,
@@ -6810,7 +6810,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Renard",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -8407,7 +8407,7 @@
    "Saltimatum"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Autre",
    "species": "Salmonoïde",
    "nationality": null,
    "occupation": null,
@@ -8582,7 +8582,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Mutant",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -8839,7 +8839,7 @@
    "Amberley"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": "Humain",
    "nationality": null,
    "occupation": null,
@@ -9558,7 +9558,7 @@
    "Zurkon"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -10225,7 +10225,7 @@
   "name": "T.O.M.",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -10579,7 +10579,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -11843,7 +11843,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": "Humain",
+   "species": "Divinité",
    "nationality": [
     "Greece",
     "Island of Creation"
@@ -11864,7 +11864,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": "Humain",
+   "species": "Divinité",
    "nationality": [
     "Greece",
     "Olympus"
@@ -11939,7 +11939,7 @@
    "Gravemind"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Flood",
    "nationality": null,
    "occupation": null,
@@ -12064,7 +12064,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Tricode Village",
     "Mars"
@@ -12091,7 +12091,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Cygnus"
    ],
@@ -12495,6 +12495,30 @@
   }
  },
  {
+  "id": "Q16568495",
+  "name": "Kaidan Alenko",
+  "aliases": [
+   "Alenko Kaidan",
+   "Kaidan",
+   "Alenko"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": "Humain",
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Mass Effect",
+   "developer": "BioWare",
+   "genres": [
+    "TPS",
+    "RPG",
+    "Action-RPG"
+   ],
+   "year": 2007
+  }
+ },
+ {
   "id": "Q17007565",
   "name": "Mordin Solus",
   "aliases": [
@@ -12686,6 +12710,27 @@
   }
  },
  {
+  "id": "Q107133468",
+  "name": "Samara",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Asari",
+   "nationality": null,
+   "occupation": [
+    "Justicier"
+   ],
+   "hair": null,
+   "franchise": "Mass Effect",
+   "developer": "BioWare",
+   "genres": [
+    "TPS",
+    "RPG"
+   ],
+   "year": 2010
+  }
+ },
+ {
   "id": "Q113003179",
   "name": "Steve Cortez",
   "aliases": [
@@ -12705,28 +12750,6 @@
     "RPG"
    ],
    "year": 2012
-  }
- },
- {
-  "id": "Q135205835",
-  "name": "Galarien",
-  "aliases": [
-   "Salarian"
-  ],
-  "attributes": {
-   "gender": null,
-   "species": "Grenouille",
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Mass Effect",
-   "developer": "BioWare",
-   "genres": [
-    "TPS",
-    "RPG",
-    "Action-RPG"
-   ],
-   "year": 2007
   }
  },
  {
@@ -12754,26 +12777,6 @@
     "Action-RPG"
    ],
    "year": 2017
-  }
- },
- {
-  "id": "Q139765713",
-  "name": "Geth",
-  "aliases": [],
-  "attributes": {
-   "gender": null,
-   "species": "Robot",
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Mass Effect",
-   "developer": "BioWare",
-   "genres": [
-    "TPS",
-    "RPG",
-    "Action-RPG"
-   ],
-   "year": 2007
   }
  },
  {
@@ -13293,7 +13296,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Dragon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -13407,7 +13410,7 @@
   "name": "Azura",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": "Daedra",
    "nationality": null,
    "occupation": null,
@@ -13431,7 +13434,7 @@
    "Bal"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Daedra",
    "nationality": null,
    "occupation": null,
@@ -13454,7 +13457,7 @@
    "Dagon"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Daedra",
    "nationality": null,
    "occupation": null,
@@ -15186,7 +15189,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States",
     "Fern Ridge",
@@ -15244,7 +15247,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Bedford Point",
     "Staunton Island",
@@ -16567,7 +16570,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -16687,7 +16690,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Insecte",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -16707,8 +16710,8 @@
    "Bad Rayman"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humanoïde",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -16775,7 +16778,7 @@
    "800"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -16796,7 +16799,7 @@
    "1000"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -17025,8 +17028,8 @@
    "tête"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -17378,32 +17381,11 @@
   }
  },
  {
-  "id": "Q136403141",
-  "name": "Citizen",
-  "aliases": [],
-  "attributes": {
-   "gender": null,
-   "species": "Humain",
-   "nationality": [
-    "Earth"
-   ],
-   "occupation": null,
-   "hair": null,
-   "franchise": "Half-Life",
-   "developer": "Valve",
-   "genres": [
-    "FPS",
-    "Horreur"
-   ],
-   "year": 2004
-  }
- },
- {
   "id": "Q21467911",
   "name": "Nihilanth",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
@@ -17414,6 +17396,29 @@
     "FPS"
    ],
    "year": 1998
+  }
+ },
+ {
+  "id": "Q126488176",
+  "name": "Lamarr",
+  "aliases": [
+   "Hedy Lamarr"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": "Headcrab",
+   "nationality": [
+    "Xen"
+   ],
+   "occupation": null,
+   "hair": null,
+   "franchise": "Half-Life",
+   "developer": "Valve",
+   "genres": [
+    "FPS",
+    "Horreur"
+   ],
+   "year": 2004
   }
  },
  {
@@ -17649,7 +17654,7 @@
   "aliases": [],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20time%20traveler%20at%20the%20TRF%20%288195132306%29.jpg?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Autre",
    "species": "Humain",
    "nationality": null,
    "occupation": [
@@ -17885,7 +17890,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -18017,7 +18022,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -18219,7 +18224,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Infecté",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -18238,7 +18243,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Infecté",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -18631,7 +18636,7 @@
   "name": "Orisa",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": "Omniaque",
    "nationality": [
     "Numbani"
@@ -19610,8 +19615,8 @@
   "name": "Clove",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Autre",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -20304,7 +20309,7 @@
   "name": "Biomateria",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Zerg",
    "nationality": null,
    "occupation": null,
@@ -20322,7 +20327,7 @@
   "name": "Corruptor",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Zerg",
    "nationality": null,
    "occupation": null,
@@ -20340,7 +20345,7 @@
   "name": "ATLAS",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -20811,7 +20816,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -20972,7 +20977,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Japan"
    ],
@@ -21268,7 +21273,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -21362,7 +21367,7 @@
    "Sae"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": "Humain",
    "nationality": null,
    "occupation": [
@@ -21424,7 +21429,7 @@
    "Irving"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Humain",
    "nationality": null,
    "occupation": [
@@ -22408,7 +22413,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Ioka Village"
    ],
@@ -22450,7 +22455,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Truce"
    ],
@@ -22470,7 +22475,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Truce"
    ],
@@ -22490,7 +22495,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Grenouille",
    "nationality": [
     "Porre",
     "Cursed Woods"
@@ -22549,7 +22554,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Démon",
    "nationality": [
     "Fiendlord's Keep",
     "Ozzie's Fort"
@@ -22570,7 +22575,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Zeal"
    ],
@@ -22589,26 +22594,8 @@
   "name": "Nu",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Chrono",
-   "developer": "Square Enix",
-   "genres": [
-    "RPG"
-   ],
-   "year": 1995
-  }
- },
- {
-  "id": "Q17216707",
-  "name": "Epoch",
-  "aliases": [],
-  "attributes": {
-   "gender": null,
-   "species": "Robot",
+   "gender": "Aucun",
+   "species": "Monstre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -22626,7 +22613,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humanoïde",
    "nationality": null,
    "occupation": [
     "Acteur"
@@ -22646,7 +22633,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Demi-humain",
    "nationality": [
     "Arni"
    ],
@@ -22666,7 +22653,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Arni"
    ],
@@ -22686,7 +22673,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Aventurier"
@@ -23796,7 +23783,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Monstre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -23995,7 +23982,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Religieux"
@@ -24063,7 +24050,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -24086,7 +24073,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -24104,7 +24091,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -24124,7 +24111,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Artiste"
@@ -24172,7 +24159,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Détective"
@@ -24191,8 +24178,8 @@
   "name": "Valtiel",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Monstre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -24214,7 +24201,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Japan"
    ],
@@ -24544,7 +24531,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Japan"
    ],
@@ -24980,7 +24967,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Journaliste"
@@ -25089,7 +25076,7 @@
    "Boulay"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Humain",
    "nationality": null,
    "occupation": [
@@ -27774,7 +27761,7 @@
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Taki%20Soulcalibur%20VI.jpg?width=400",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Chasseur de monstres",
@@ -27818,7 +27805,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Épéiste"
@@ -27838,7 +27825,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -27857,7 +27844,7 @@
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nightmare%20%28Soul%20Calibur%20II%29.jpg?width=400",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Démon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -27879,7 +27866,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Épéiste"
@@ -27903,7 +27890,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Épéiste"
@@ -27923,7 +27910,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -27944,7 +27931,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Épéiste"
@@ -27964,7 +27951,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -27986,7 +27973,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28022,7 +28009,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Golem",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28044,7 +28031,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28066,7 +28053,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28107,7 +28094,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28128,7 +28115,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Beijing",
     "China"
@@ -28149,7 +28136,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -28167,7 +28154,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -29722,7 +29709,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humanoïde",
    "nationality": null,
    "occupation": [
     "Commerçant"
@@ -29749,7 +29736,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -29770,7 +29757,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Commerçant"
@@ -29794,7 +29781,7 @@
    "Sif,"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Loup",
    "nationality": null,
    "occupation": null,
@@ -29820,7 +29807,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Religieux"
@@ -29936,7 +29923,7 @@
   "name": "Torrent",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Cheval",
    "nationality": null,
    "occupation": null,
@@ -30004,7 +29991,7 @@
   "name": "Jar-Bairn",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Objet",
    "nationality": null,
    "occupation": null,
@@ -30374,7 +30361,7 @@
    "EX Mettaton"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -30398,29 +30385,6 @@
   "attributes": {
    "gender": "Homme",
    "species": "Darkner",
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Undertale",
-   "developer": "Toby Fox",
-   "genres": [
-    "Réflexion",
-    "RPG",
-    "Shoot 'em up"
-   ],
-   "year": 2015
-  }
- },
- {
-  "id": "Q139594797",
-  "name": "diegetic player",
-  "aliases": [
-   "player diegetic",
-   "diegetic"
-  ],
-  "attributes": {
-   "gender": null,
-   "species": null,
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -30685,7 +30649,7 @@
    "Sentry"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -30704,7 +30668,7 @@
   "name": "Tiktik",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Insecte",
    "nationality": null,
    "occupation": null,
@@ -30728,7 +30692,7 @@
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Creeper%20%28Crop%29.png?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30805,7 +30769,7 @@
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Enderman.png?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30831,7 +30795,7 @@
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Pig.png?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30856,7 +30820,7 @@
    "Skeleton mob"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30882,7 +30846,7 @@
    "Wither"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30906,7 +30870,7 @@
    "Minecraft Chicken"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30930,7 +30894,7 @@
    "Minecraft Cow"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30955,7 +30919,7 @@
    "Mooshroom mob"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -30979,7 +30943,7 @@
    "Sheep mob"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31005,7 +30969,7 @@
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Otakuthon%202014-%20Ghast%20%2815029688875%29.jpg?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31029,7 +30993,7 @@
    "Zombie mob"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31053,7 +31017,7 @@
    "Minecraft Bee"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31081,7 +31045,7 @@
    "Piglin"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31105,7 +31069,7 @@
    "Minecraft Cod"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31132,7 +31096,7 @@
    "Squid"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31154,7 +31118,7 @@
    "Ocelot mob"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31181,7 +31145,7 @@
    "Fish"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31205,7 +31169,7 @@
    "Minecraft Guardian"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Mob",
    "nationality": null,
    "occupation": null,
@@ -31757,7 +31721,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Mutant",
    "nationality": null,
    "occupation": [
     "Garde",
@@ -31783,7 +31747,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Germany",
     "Belarus"
@@ -31838,7 +31802,7 @@
   "name": "Claptrap",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Robot",
    "nationality": null,
    "occupation": null,
@@ -32323,7 +32287,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -32395,7 +32359,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -32810,7 +32774,7 @@
   "name": "Giygas",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Extraterrestre",
    "nationality": [
     "Outer Space"
@@ -32856,7 +32820,7 @@
   "name": "Starman",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
@@ -32919,8 +32883,8 @@
    "Buzz"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Insecte",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -32938,7 +32902,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Tazmily Village"
    ],
@@ -32957,8 +32921,8 @@
   "name": "Angie",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -32976,7 +32940,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Tazmily Village"
    ],
@@ -32995,8 +32959,8 @@
   "name": "Duster",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": [
     "Tazmily Village"
    ],
@@ -33016,7 +32980,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Sunshine Forest"
    ],
@@ -33036,7 +33000,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Osohe Castle"
    ],
@@ -33104,7 +33068,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Tazmily Village"
    ],
@@ -33128,7 +33092,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Winters"
    ],
@@ -33147,8 +33111,8 @@
   "name": "Meryl",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -33168,8 +33132,8 @@
    "Everdred"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": [
     "Twoson"
    ],
@@ -33188,8 +33152,8 @@
   "name": "Violet",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": "Humain",
    "nationality": [
     "Osohe Castle"
    ],
@@ -33828,7 +33792,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Inchling",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -34856,7 +34820,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Bronx",
     "United States",
@@ -35552,7 +35516,7 @@
    "Denton Alex"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Au choix",
    "species": "Humain",
    "nationality": [
     "United States"
@@ -35693,7 +35657,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -36238,7 +36202,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Serveur",
@@ -36660,7 +36624,7 @@
    "Reefback"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Léviathan",
    "nationality": null,
    "occupation": null,
@@ -36682,7 +36646,7 @@
    "Eye Stalk"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Plante",
    "nationality": null,
    "occupation": null,
@@ -36702,8 +36666,8 @@
   "name": "Eyeye",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Poisson",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -36722,8 +36686,8 @@
   "name": "Hoverfish",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Poisson",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -36745,7 +36709,7 @@
    "Sea Dragon"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Léviathan",
    "nationality": null,
    "occupation": null,
@@ -36769,7 +36733,7 @@
    "Emperor"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Léviathan",
    "nationality": null,
    "occupation": null,
@@ -36792,7 +36756,7 @@
    "Collector"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Léviathan",
    "nationality": null,
    "occupation": null,
@@ -37425,8 +37389,8 @@
   "name": "Alter",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -37749,8 +37713,8 @@
   "name": "Sparrow",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -38481,7 +38445,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Hungary"
    ],
@@ -38508,7 +38472,7 @@
   "name": "Spode",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -38533,7 +38497,7 @@
    "Come"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -38554,7 +38518,7 @@
   "name": "Bawb",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Plancton",
    "nationality": null,
    "occupation": null,
@@ -38652,7 +38616,7 @@
   "name": "Cyberdemon",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Démon",
    "nationality": null,
    "occupation": null,
@@ -38673,7 +38637,7 @@
   "aliases": [],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hissy.jpg?width=400",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Démon",
    "nationality": null,
    "occupation": null,
@@ -38697,7 +38661,7 @@
    "Mastermind"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Démon",
    "nationality": null,
    "occupation": null,
@@ -38720,7 +38684,7 @@
    "Hayden"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Robot",
    "nationality": null,
    "occupation": [
@@ -38744,8 +38708,8 @@
    "Human"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Mort-vivant",
    "nationality": null,
    "occupation": [
     "Chasseur"
@@ -38766,8 +38730,8 @@
   "name": "Mancubus",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Aucun",
+   "species": "Démon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -38791,7 +38755,7 @@
    "Perdue"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Démon",
    "nationality": null,
    "occupation": null,
@@ -39049,7 +39013,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -39114,7 +39078,7 @@
   "name": "Nurgle",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -39137,8 +39101,8 @@
    "Eisenhorn"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -39197,7 +39161,7 @@
    "Dieu-Machine (Warhammer 40,000)"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -39216,7 +39180,7 @@
   "name": "Khorne",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -39239,7 +39203,7 @@
    "Ironfist"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": "Nain",
    "nationality": null,
    "occupation": null,
@@ -39258,7 +39222,7 @@
   "name": "Valaya",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": "Divinité",
    "nationality": null,
    "occupation": null,
@@ -39306,8 +39270,8 @@
    "Celestine"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -39499,7 +39463,7 @@
   "name": "Squig",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "species": "Animal",
    "nationality": null,
    "occupation": null,
@@ -39641,7 +39605,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -40138,7 +40102,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -40353,7 +40317,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United Kingdom"
    ],
@@ -40377,8 +40341,8 @@
   "name": "Winston",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -40398,7 +40362,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -40424,7 +40388,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant"
@@ -40448,7 +40412,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Soldat"
@@ -40474,7 +40438,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Peru"
    ],
@@ -40509,7 +40473,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Scientifique"
@@ -40532,7 +40496,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Byzantine Empire"
    ],
@@ -40557,7 +40521,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Soldat",
@@ -40580,7 +40544,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": [
     "Wildwoods",
     "Midgard",
@@ -40604,7 +40568,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": [
     "Gladsheim",
     "Asgard",
@@ -41085,7 +41049,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant"
@@ -41111,7 +41075,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant",
@@ -41138,7 +41102,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "China"
    ],
@@ -41167,7 +41131,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -41191,7 +41155,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Religieux",
@@ -41217,7 +41181,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Tireur d'élite",
@@ -41244,7 +41208,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Rook Islands"
    ],
@@ -41272,7 +41236,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Avocat"
@@ -41298,7 +41262,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "South Africa"
    ],
@@ -41324,7 +41288,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Rook Islands",
     "Kyrat",
@@ -41354,7 +41318,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -41645,7 +41609,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Démon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -41786,7 +41750,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -42086,7 +42050,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42108,7 +42072,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42131,7 +42095,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Chevalier"
@@ -42154,7 +42118,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Ouvrier"
@@ -42178,7 +42142,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Religieux"
@@ -42226,7 +42190,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42249,7 +42213,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42272,7 +42236,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Demi-dragon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42295,7 +42259,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42317,7 +42281,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42340,7 +42304,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42630,7 +42594,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Ogre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42666,7 +42630,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Robot",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -42729,7 +42693,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Charbon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -43699,7 +43663,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -43723,7 +43687,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Sobeck Ranch",
     "United States"
@@ -43750,7 +43714,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -43777,7 +43741,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Meridian",
     "Sundom"
@@ -43808,7 +43772,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Pirate"
@@ -43835,7 +43799,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Thebes",
     "Isle of Spires",
@@ -43862,7 +43826,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "The Base",
     "Forbidden West",
@@ -43888,7 +43852,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Palace of the Sun",
     "Meridian",
@@ -43914,7 +43878,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -43939,7 +43903,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -43964,7 +43928,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States",
     "The Odyssey",
@@ -43994,7 +43958,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Gristol"
    ],
@@ -44021,7 +43985,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Gristol"
    ],
@@ -44049,7 +44013,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Divinité",
    "nationality": null,
    "occupation": [
     "Dieu"
@@ -44074,7 +44038,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Tyvia"
    ],
@@ -44102,7 +44066,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Morley"
    ],
@@ -44130,7 +44094,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Noble"
@@ -44156,7 +44120,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Scientifique"
@@ -44181,7 +44145,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Gristol"
    ],
@@ -44209,7 +44173,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Gristol"
    ],
@@ -44235,7 +44199,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Élève",
@@ -44264,7 +44228,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Élève"
@@ -44289,7 +44253,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Élève"
@@ -44314,7 +44278,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Soldat",
@@ -44341,7 +44305,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Serveur"
@@ -44367,7 +44331,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Élève"
@@ -44391,7 +44355,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Serveur"
@@ -44417,7 +44381,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Étudiant",
@@ -44444,7 +44408,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Élève"
@@ -44470,7 +44434,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Étudiant",
@@ -44497,7 +44461,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -44521,7 +44485,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -44570,7 +44534,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44591,7 +44555,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44613,7 +44577,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44632,7 +44596,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44655,7 +44619,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44674,7 +44638,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44693,7 +44657,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44717,7 +44681,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44739,7 +44703,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44761,7 +44725,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44780,7 +44744,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "IA",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44802,7 +44766,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44825,7 +44789,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44849,7 +44813,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44872,7 +44836,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44896,7 +44860,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44920,7 +44884,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44944,7 +44908,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44966,8 +44930,8 @@
    "Brawn"
   ],
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -44987,7 +44951,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -45013,7 +44977,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Turkey"
    ],
@@ -45040,7 +45004,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -45064,7 +45028,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Turkey"
    ],
@@ -45093,7 +45057,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Turkey"
    ],
@@ -45118,7 +45082,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -45142,7 +45106,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -45169,7 +45133,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -45190,7 +45154,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Turkey"
    ],
@@ -45218,7 +45182,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -45241,7 +45205,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Russia"
    ],
@@ -45455,7 +45419,7 @@
    "Psi (BTD6)"
   ],
   "attributes": {
-   "gender": null,
+   "gender": "Autre",
    "species": "Singe",
    "nationality": null,
    "occupation": null,
@@ -45476,7 +45440,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45684,7 +45648,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Mutant",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45706,7 +45670,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45724,7 +45688,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45744,7 +45708,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45765,7 +45729,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45786,7 +45750,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45807,7 +45771,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -45828,7 +45792,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46068,7 +46032,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Pirkstein Castle",
     "Rattay",
@@ -46095,7 +46059,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Chien",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46118,7 +46082,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Czech Republic"
    ],
@@ -46147,7 +46111,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Upper Castle",
     "Rattay",
@@ -46174,7 +46138,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Rattay",
     "Czech Republic",
@@ -46206,7 +46170,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Samopesh"
    ],
@@ -46233,7 +46197,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Germany"
    ],
@@ -46261,7 +46225,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Rattay",
     "Czech Republic"
@@ -46291,7 +46255,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Talmberg",
     "Czech Republic"
@@ -46318,7 +46282,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Black Creek",
     "Canada"
@@ -46348,7 +46312,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Médecin"
@@ -46372,7 +46336,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Criminel"
@@ -46397,7 +46361,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Chasseur"
@@ -46419,7 +46383,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46442,7 +46406,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Ours",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46464,7 +46428,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Religieux"
@@ -46486,7 +46450,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Étudiant"
@@ -46512,7 +46476,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Milton"
    ],
@@ -46536,7 +46500,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Criminel"
@@ -46558,7 +46522,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Fermier"
@@ -46582,7 +46546,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Criminel"
@@ -46606,7 +46570,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46624,7 +46588,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46642,7 +46606,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46664,7 +46628,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46683,7 +46647,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46703,7 +46667,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46723,7 +46687,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46741,7 +46705,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -46762,7 +46726,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Sportif",
@@ -46787,7 +46751,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Sportif",
@@ -46814,7 +46778,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Garde"
@@ -46837,7 +46801,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Sportif"
@@ -46864,7 +46828,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Ocean Glass View"
    ],
@@ -46892,7 +46856,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Ocean Glass View"
    ],
@@ -46917,7 +46881,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Criminel"
@@ -46943,7 +46907,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Zephyr Transit Hub"
    ],
@@ -46970,7 +46934,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Sky City in Glass"
    ],
@@ -47002,7 +46966,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "New Eden"
    ],
@@ -47025,7 +46989,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Anchor"
    ],
@@ -47053,7 +47017,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Lapin",
    "nationality": null,
    "occupation": [
     "Domestique"
@@ -47074,7 +47038,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Insecte",
    "nationality": null,
    "occupation": [
     "Oracle"
@@ -47095,7 +47059,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Dragon",
    "nationality": null,
    "occupation": [
     "Garde"
@@ -47116,7 +47080,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Griffon",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -47139,7 +47103,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Tortue",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -47160,7 +47124,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Lièvre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -47179,7 +47143,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Loir",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -47201,7 +47165,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Étudiant",
@@ -47226,7 +47190,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Criminel",
@@ -47253,7 +47217,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Souverain"
@@ -47279,7 +47243,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Commerçant",
@@ -47304,7 +47268,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Chat",
    "nationality": null,
    "occupation": [
     "Guide"
@@ -47329,7 +47293,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Médecin"
@@ -47352,7 +47316,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Noble"
@@ -47377,7 +47341,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -47398,7 +47362,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant"
@@ -47423,7 +47387,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Professeur"
@@ -47448,7 +47412,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Prostitué",
@@ -47473,7 +47437,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Morse",
    "nationality": null,
    "occupation": [
     "Acteur"
@@ -48010,7 +47974,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48031,7 +47995,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48053,7 +48017,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48076,7 +48040,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48095,7 +48059,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48114,7 +48078,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48133,7 +48097,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48440,7 +48404,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48487,7 +48451,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48505,7 +48469,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": [
     "Politicien"
@@ -48550,7 +48514,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -48636,7 +48600,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -48659,7 +48623,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mars"
    ],
@@ -48710,7 +48674,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Earth"
    ],
@@ -48736,7 +48700,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -48761,7 +48725,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -48784,7 +48748,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -48860,7 +48824,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Ganymede"
    ],
@@ -48884,7 +48848,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -49086,7 +49050,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Chauffeur"
@@ -49110,7 +49074,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -49141,7 +49105,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -49168,7 +49132,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant"
@@ -49191,7 +49155,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "IA",
    "nationality": [
     "United States"
    ],
@@ -49217,7 +49181,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Médecin"
@@ -49240,7 +49204,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Chauffeur"
@@ -49263,7 +49227,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -49284,7 +49248,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Survivant",
@@ -49312,7 +49276,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Soldat"
@@ -49336,7 +49300,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -49358,7 +49322,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Scientifique"
@@ -49381,7 +49345,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49404,7 +49368,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49424,7 +49388,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49446,7 +49410,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49466,7 +49430,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49486,7 +49450,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49508,7 +49472,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49532,7 +49496,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49552,7 +49516,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49572,7 +49536,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49592,7 +49556,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49612,7 +49576,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49841,7 +49805,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Toronto",
     "Canada"
@@ -49865,7 +49829,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Taiwan"
    ],
@@ -49890,7 +49854,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United Kingdom"
    ],
@@ -49915,7 +49879,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -49936,7 +49900,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Equo-American"
    ],
@@ -49959,7 +49923,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "South Korea"
    ],
@@ -49982,7 +49946,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Robot",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -50003,7 +49967,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Poland"
    ],
@@ -50027,7 +49991,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Médecin"
@@ -50050,7 +50014,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Japan"
    ],
@@ -50075,7 +50039,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Canada"
    ],
@@ -50100,7 +50064,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Greenland"
    ],
@@ -50239,7 +50203,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Garde"
@@ -50340,7 +50304,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Érudit"
@@ -50389,7 +50353,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant"
@@ -50660,7 +50624,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -50681,7 +50645,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -50699,7 +50663,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -50717,7 +50681,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -50839,7 +50803,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -50862,7 +50826,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -50885,7 +50849,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Australia"
    ],
@@ -50910,7 +50874,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Australia"
    ],
@@ -50934,7 +50898,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "China"
    ],
@@ -50959,7 +50923,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -50983,7 +50947,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Polynesia"
    ],
@@ -51007,7 +50971,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -51027,7 +50991,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United Kingdom"
    ],
@@ -51048,7 +51012,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Banoian",
     "Fore"
@@ -51070,7 +51034,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "South Africa"
    ],
@@ -51094,7 +51058,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Germany"
    ],
@@ -51848,7 +51812,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -51875,7 +51839,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -51900,7 +51864,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -51928,7 +51892,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Ukraine"
    ],
@@ -51954,7 +51918,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -51975,7 +51939,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -52003,7 +51967,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -52027,7 +51991,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "IA",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52048,7 +52012,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -52076,7 +52040,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -52103,7 +52067,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "France"
    ],
@@ -52197,7 +52161,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52218,7 +52182,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52238,7 +52202,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52258,7 +52222,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52279,7 +52243,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52300,7 +52264,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52320,7 +52284,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52341,7 +52305,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52362,7 +52326,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52383,7 +52347,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52401,7 +52365,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52422,7 +52386,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52445,7 +52409,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52468,7 +52432,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52490,7 +52454,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -52511,7 +52475,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mount Holly Estate"
    ],
@@ -52534,7 +52498,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Écrivain"
@@ -52555,7 +52519,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mount Holly Estate"
    ],
@@ -52582,7 +52546,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Informaticien",
@@ -52608,7 +52572,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Garde"
@@ -52631,7 +52595,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mount Holly Estate"
    ],
@@ -52658,7 +52622,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Mount Holly Estate"
    ],
@@ -52685,7 +52649,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Domestique"
@@ -52729,7 +52693,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Artiste",
@@ -53590,7 +53554,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53613,7 +53577,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Russia"
    ],
@@ -53636,7 +53600,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53660,7 +53624,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Cuba"
    ],
@@ -53684,7 +53648,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53709,7 +53673,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United Kingdom"
    ],
@@ -53731,7 +53695,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United Kingdom"
    ],
@@ -53755,7 +53719,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "New Zealand",
     "United Kingdom"
@@ -53780,7 +53744,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53804,7 +53768,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53828,7 +53792,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53850,7 +53814,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "United States"
    ],
@@ -53870,7 +53834,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53888,7 +53852,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53906,7 +53870,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53924,7 +53888,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53942,7 +53906,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53964,7 +53928,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -53982,7 +53946,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54000,7 +53964,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54022,7 +53986,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54040,7 +54004,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Robot",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54062,7 +54026,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54364,7 +54328,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54389,7 +54353,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Ouvrier"
@@ -54414,7 +54378,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Serveur",
@@ -54442,7 +54406,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Employé"
@@ -54465,7 +54429,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Érudit"
@@ -54492,7 +54456,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Artiste"
@@ -54516,7 +54480,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Commerçant",
@@ -54543,7 +54507,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Ouvrier"
@@ -54567,7 +54531,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Cerf",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54586,7 +54550,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Chat",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -54607,7 +54571,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Ouvrier"
@@ -54631,7 +54595,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54654,7 +54618,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54676,7 +54640,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54699,7 +54663,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54723,7 +54687,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54745,7 +54709,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54765,7 +54729,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54785,7 +54749,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54808,7 +54772,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -54832,7 +54796,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": [
@@ -55377,7 +55341,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Goal's Habitat",
     "Habitat Ring",
@@ -55427,7 +55391,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Kuvaq",
     "Deponia"
@@ -55453,7 +55417,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Kuvaq",
     "Deponia"
@@ -55481,7 +55445,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Goal's Habitat",
     "Habitat Ring",
@@ -55508,7 +55472,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": [
     "Elysium"
    ],
@@ -55554,7 +55518,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55572,7 +55536,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55591,7 +55555,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55613,7 +55577,7 @@
   ],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55632,7 +55596,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55651,7 +55615,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55670,7 +55634,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55689,7 +55653,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55708,7 +55672,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55726,7 +55690,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55745,7 +55709,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55764,7 +55728,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "D'ni",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55783,7 +55747,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Dirigeant",
@@ -55806,7 +55770,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55844,7 +55808,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": [
     "Révolutionnaire",
@@ -55866,7 +55830,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": [
     "Révolutionnaire",
@@ -55888,7 +55852,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55907,7 +55871,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": [
     "Révolutionnaire"
@@ -55928,7 +55892,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": [
     "Ouvrier",
@@ -55950,7 +55914,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -55972,7 +55936,7 @@
   ],
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": [
     "Souverain"
@@ -55993,7 +55957,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -56012,7 +55976,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Forgotling",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -56530,7 +56494,7 @@
   "aliases": [],
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": "Humain",
    "nationality": null,
    "occupation": [
     "Soldat"
@@ -57755,7 +57719,7 @@
   ],
   "attributes": {
    "gender": "Au choix",
-   "species": null,
+   "species": "Au choix",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -57842,7 +57806,7 @@
   ],
   "attributes": {
    "gender": "Au choix",
-   "species": null,
+   "species": "Au choix",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -57886,7 +57850,7 @@
   ],
   "attributes": {
    "gender": "Au choix",
-   "species": null,
+   "species": "Au choix",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -57907,7 +57871,7 @@
   ],
   "attributes": {
    "gender": "Au choix",
-   "species": null,
+   "species": "Au choix",
    "nationality": null,
    "occupation": null,
    "hair": null,
@@ -58024,7 +57988,7 @@
   ],
   "attributes": {
    "gender": "Au choix",
-   "species": null,
+   "species": "Extraterrestre",
    "nationality": null,
    "occupation": null,
    "hair": null,
