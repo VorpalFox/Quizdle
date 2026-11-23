@@ -79,7 +79,11 @@
   "wiki-unreal-sobek",
   "wiki-unreal-apophis",
   "wiki-unreal-devastation",
-  "wiki-unreal-anubis"
+  "wiki-unreal-anubis",
+  "Q308950",
+  "Q136504750",
+  "Q434384",
+  "Q6011231"
  ],
  "edit": {
   "Q2265837": {
@@ -2125,7 +2129,10 @@
   },
   "Q5676718": {
    "_nom": "Angie",
-   "gender": "Femme"
+   "gender": "Femme",
+   "_raison": "année : Mother 3",
+   "year": 2006,
+   "developer": "HAL Laboratory"
   },
   "Q5815284": {
    "_nom": "Duster",

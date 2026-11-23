@@ -1020,36 +1020,6 @@
   }
  },
  {
-  "id": "Q308950",
-  "name": "Sacha",
-  "aliases": [
-   "Ash Ketchum",
-   "Sacha Ketchum"
-  ],
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "nationality": [
-    "Pallet Town",
-    "Kanto"
-   ],
-   "occupation": [
-    "Dresseur"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "franchise": "Pokémon",
-   "developer": "Game Freak",
-   "genres": [
-    "RPG"
-   ],
-   "year": 1996
-  }
- },
- {
   "id": "Q17221976",
   "name": "Serena",
   "aliases": [],
@@ -1304,6 +1274,41 @@
     "RPG"
    ],
    "year": 2002
+  }
+ },
+ {
+  "id": "Q1201008",
+  "name": "Jacky Léon",
+  "aliases": [
+   "Tracey Sketchit",
+   "Léon Jacky",
+   "Jacky"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Tangelo Island",
+    "Orange Islands",
+    "Currently",
+    "Resides in Pallet Town"
+   ],
+   "occupation": [
+    "Dresseur",
+    "Conseiller"
+   ],
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
+   "franchise": "Pokémon",
+   "developer": "Game Freak",
+   "genres": [
+    "RPG"
+   ],
+   "year": 1996
   }
  },
  {
@@ -13306,30 +13311,6 @@
   }
  },
  {
-  "id": "Q136504750",
-  "name": "Kai-125",
-  "aliases": [],
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Soldat"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "franchise": "Halo",
-   "developer": "Bungie",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2001
-  }
- },
- {
   "id": "Q99472136",
   "name": "Kait Diaz",
   "aliases": [
@@ -22103,26 +22084,6 @@
    "gender": "Aucun",
    "species": [
     "Zerg"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "StarCraft",
-   "developer": "Blizzard",
-   "genres": [
-    "Stratégie"
-   ],
-   "year": 1998
-  }
- },
- {
-  "id": "Q434384",
-  "name": "ATLAS",
-  "aliases": [],
-  "attributes": {
-   "gender": "Aucun",
-   "species": [
-    "Robot"
    ],
    "nationality": null,
    "occupation": null,
@@ -35761,11 +35722,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -35957,26 +35918,6 @@
   }
  },
  {
-  "id": "Q6011231",
-  "name": "Meryl",
-  "aliases": [],
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "EarthBound",
-   "developer": "Nintendo",
-   "genres": [
-    "RPG"
-   ],
-   "year": 1989
-  }
- },
- {
   "id": "Q6025538",
   "name": "Mr. Everdred",
   "aliases": [
@@ -36035,6 +35976,29 @@
    "nationality": [
     "Twoson",
     "Eagleland"
+   ],
+   "occupation": null,
+   "hair": null,
+   "franchise": "EarthBound",
+   "developer": "HAL Laboratory",
+   "genres": [
+    "RPG"
+   ],
+   "year": 1994
+  }
+ },
+ {
+  "id": "Q17209231",
+  "name": "Poo",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Dalaam",
+    "Chommo"
    ],
    "occupation": null,
    "hair": null,
