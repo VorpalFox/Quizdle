@@ -69,7 +69,7 @@ Les personnages des animes conseillés sur le serveur, avec les mêmes indices q
 - **Anime** : l'anime de la liste auquel le personnage est attribué (son titre dans `recommendations.json`, sans « (TV) » ni « (2011) »). Genres, année et studio viennent de cet anime. Âge, occupation, cheveux, compléments Wikidata, Fandom et Wikipédia, traduction et noms acceptés comme pour l'Animedle.
 - **Récap** : à la fin, le script affiche et écrit dans `.cache/weebdle/weebdle-recap.md` le nombre de personnages par anime, ceux complétés par Wikidata, Fandom et Wikipédia, les animes sans wiki Fandom, les occupations pas traduites, ceux sans sexe, sans âge, sans occupation ou sans cheveux (à compléter à la main), les personnages présents dans plusieurs animes et les noms partagés par plusieurs personnages.
 
-### Corrections à la main (Animedle et Weebdle)
+### Corrections à la main (Animedle, Weebdle et Pixeldle)
 
 Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les scripts les réécrivent. Les corrections vont dans [data/anime-manual.json](data/anime-manual.json) et [data/weebdle-manual.json](data/weebdle-manual.json), à la main ou avec `/quizdebug remove` et `/quizdebug edit` (voir Debug). Les scripts les appliquent à chaque génération sans jamais les modifier, et le bot au démarrage :
 
@@ -97,7 +97,35 @@ Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les script
 
 ### Données Pixeldle
 
-Les personnages de jeu vidéo, tirés de [Wikidata](https://www.wikidata.org) : sexe, espèce, nationalité, occupation, couleur des cheveux, et les infos de leur 1er jeu (franchise, développeur, genres, année). La liste des franchises de départ est dans [data/pixeldle-franchises.json](data/pixeldle-franchises.json). Pour l'instant, [data/pixeldle.json](data/pixeldle.json) ne contient qu'un personnage factice : la récupération des vraies données est décrite dans [TODO-Pixeldle.md](TODO-Pixeldle.md).
+Les personnages de jeu vidéo : sexe, espèce, nationalité, occupation, cheveux, et les infos de leur 1er jeu (franchise, développeur, genres, année). Environ 2 500 personnages dans 172 franchises. `npm run fetch:pixeldle` régénère [data/pixeldle.json](data/pixeldle.json) ([scripts/fetchPixeldle.ts](scripts/fetchPixeldle.ts)). Tout est gardé dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
+
+- **Franchises** : [data/pixeldle-franchises.json](data/pixeldle-franchises.json). `source` : `top100` (le top 100 des franchises) ou `steam` (la liste de FX). `games` (optionnel) : les jeux que Wikidata ne relie pas à la série (American McGee's Alice, Divinity: Original Sin 1).
+- **Sources**, dans l'ordre :
+  - Wikidata pour les personnages et leurs jeux ([scripts/pixeldleWikidata.ts](scripts/pixeldleWikidata.ts)) ;
+  - l'infobox du wiki de la franchise pour compléter ([scripts/pixeldleEnrich.ts](scripts/pixeldleEnrich.ts)). Les wikis de chaque franchise sont trouvés par [scripts/pixeldleWikis.ts](scripts/pixeldleWikis.ts) ;
+  - le wiki ajoute aussi des personnages quand Wikidata en a moins de 4, ou si la franchise est réglée dans `wikis` du manuel ([scripts/pixeldleWikiCharacters.ts](scripts/pixeldleWikiCharacters.ts)) : jusqu'à 12, ou `limit`. Pages lues : celles de `pages`, puis `preferred`, puis la catégorie des personnages, les plus longues d'abord. Une page est gardée si on connaît le sexe (infobox, sinon pronoms).
+- **Traductions** : [scripts/pixeldleTranslate.ts](scripts/pixeldleTranslate.ts), des dictionnaires exacts puis des règles par mots-clés. Une valeur inconnue est listée dans le récap (« Pas traduits ») : à ajouter dans les tables.
+- **Récaps** (régénérés à chaque passage, dans `.cache/pixeldle/`) : `pixeldle-recap.md` (remplissage, valeurs par indice, années devinées, cheveux tirés du texte, persos sans sexe ou sans espèce, invités, noms partagés), `pixeldle-wikis.md` (les wikis de chaque franchise), `pixeldle-enrich.md` (ce que les wikis ont rempli, et une rubrique « À vérifier »).
+- **Ids** : le QID Wikidata, `wiki-<franchise>-<nom>` pour un personnage d'un wiki, `avatar-<jeu>` pour un avatar ajouté à la main. Un `exclude` laisse sa place au suivant.
+
+**Choix des personnages** (décidés avec FX) :
+
+- **4 à 20 personnages par franchise.** Moins de 4 pour les jeux qui n'ont que leur avatar (Deep Rock Galactic, Hunt: Showdown, Icarus…) ou 2 protagonistes (Green Hell, The Riftbreaker, The World Next Door).
+- **Le protagoniste est toujours là.** Muet ou personnalisable, c'est un **avatar** (un au plus par franchise) : son nom officiel (Dovahkiin, Sans-éclat, Tav…), sinon « Héros de &lt;jeu&gt; », avec le nom du jeu en alias et le sexe « Au choix » s'il est personnalisable. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
+- **Pas d'invités d'une autre licence** (Sally Acorn, Raiden dans Unreal). Un personnage né dans un autre média de la même licence est gardé s'il fait partie d'un jeu (J.D. Morrison, venu de l'anime DMC) ; idem pour les franchises tirées d'un autre média (Batman: Arkham, Hogwarts Legacy, The Witcher…).
+- **Pas de groupes, d'objets ni d'espèces** (« Necromorphs », Geth, Epoch), pas de doublons, pas de versions d'un autre média (Netflix, DmC, film).
+- **Pokémon** : seulement des humains (le Pokédle couvre les Pokémon). **Une franchise par licence** (Sons of the Forest plutôt que The Forest). **Unreal** : pas les personnages des seuls Unreal Championship.
+
+**Valeurs** :
+
+- **Sexe** : « Aucun » pour un robot, un objet ou une entité, « Autre » quand le jeu le laisse inconnu exprès (Frisk) ou dit « they », « Au choix » pour un avatar personnalisable.
+- **Espèce** (champ multiple) : dépliée à la fin par `expandSpecies`. Un animal a son espèce plus « Animal » (Renard, Animal), une espèce composée ses deux parts (Demi-elfe → Humain, Elfe ; Talos : Humain, Divinité), une IA est un Robot. « Inconnu » quand le jeu la cache exprès (Meta Knight), « Au choix » pour un avatar dont on choisit la race. `defaults` du manuel donne « Humain » aux franchises réalistes dont le wiki ne dit pas l'espèce.
+- **Nationalité** (champ multiple, 4 lieux au plus) : un max de lieux, de la ville au monde (« Pallet Town, Kanto », « Boston, Massachusetts, United States »), **tout en anglais**. Wikidata donne les pays, le 1er wiki y ajoute ses champs « pays » et « lieu ». Les tables ramènent chaque lieu à une seule écriture (`CITY_NAMES`, `PLACE_NAMES`, `FRENCH_PLACES`), donnent son pays à une ville réelle (`CITIES`), changent un gentilé en lieu, et retirent ce qui n'est pas un lieu (`NOT_PLACES` : âge, mythologie, logement).
+- **Occupation** : le dictionnaire `OCCUPATIONS` passe avant les règles. Pas les rôles dans l'histoire (Antagonist, Companion) ni les liens de famille. Quasi-synonymes regroupés à la fin (`mergeOccupations` : Élève → Étudiant, Tueur → Assassin…).
+- **Cheveux** : l'infobox, sinon le texte de la page entière (« long blonde hair », la section Appearance d'abord), à relire dans le récap. « N/A » pour un robot, un animal ou une créature sans cheveux (`hairOrNone`), « Chauve » pour un humain vraiment chauve.
+- **Développeur, genres, année** : ceux du jeu où le personnage apparaît en premier, cherché dans l'infobox, le modèle `{{Games}}`, puis l'introduction de la page ; sinon le 1er jeu de la franchise (listé dans le récap). Piège connu : un reboot au même titre (God of War, Tomb Raider), corrigé à la main. `FRANCHISE_DEVELOPERS` force le studio (Undertale → Toby Fox), `FRANCHISE_GENRES` ajoute un genre à toute la franchise (Immersive sim). Pas de thèmes dans les genres. L'année « Futur » (`FUTURE_YEAR`) est pour un jeu pas encore sorti (Meryl, de Mother 4, un jeu de fans).
+
+**Pistes abandonnées** : les Fandom FR (presque vides), le wiki officiel de LoL (que du gameplay). Gamicus (wiki de tous les jeux) a servi en dernier recours pour The World Next Door.
 
 ## Installation
 

@@ -2147,7 +2147,7 @@
    "gender": "Femme",
    "_raison": "Mother 4 : jeu de fans pas encore sorti",
    "year": 9999,
-   "developer": "Mother 4 Team"
+   "developer": "Jeu de fans"
   },
   "Q6025538": {
    "_nom": "Mr. Everdred",
@@ -2326,6 +2326,9 @@
     "Bandicoot",
     "Mutant",
     "Animal"
+   ],
+   "hair": [
+    "Blonds"
    ]
   },
   "Q1245404": {
@@ -2600,7 +2603,7 @@
   "Q59220438": {
    "_nom": "Marie",
    "hair": [
-    "N/A"
+    "Blonds"
    ]
   },
   "Q1087525": {
@@ -2684,6 +2687,12 @@
    "_nom": "Reisen Udongein Inaba",
    "hair": [
     "Violets"
+   ]
+  },
+  "Q6139333": {
+   "_nom": "Tawna",
+   "hair": [
+    "Blonds"
    ]
   }
  },
