@@ -292,8 +292,7 @@
     "Koopa"
    ],
    "nationality": [
-    "Koopa Kingdom",
-    "Magma Manor"
+    "Koopa Kingdom"
    ],
    "occupation": null,
    "hair": [
@@ -576,7 +575,8 @@
     "Hylien"
    ],
    "nationality": [
-    "Hyrule"
+    "Hyrule",
+    "Hateno"
    ],
    "occupation": [
     "Archer",
@@ -608,6 +608,7 @@
     "Hylien"
    ],
    "nationality": [
+    "Hyrule Castle",
     "Hyrule"
    ],
    "occupation": [
@@ -641,7 +642,9 @@
    "species": [
     "Gerudo"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hyrule"
+   ],
    "occupation": [
     "Souverain"
    ],
@@ -975,6 +978,7 @@
     "Zora"
    ],
    "nationality": [
+    "Zora Domain",
     "Hyrule"
    ],
    "occupation": null,
@@ -1048,7 +1052,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Skyloft"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Legend of Zelda",
@@ -1157,6 +1163,7 @@
     "Humain"
    ],
    "nationality": [
+    "Petalburg City",
     "Olivine City",
     "Littleroot Town",
     "Hoenn"
@@ -1737,11 +1744,11 @@
   "aliases": [
    "Dr. Eggman",
    "Eggman Doctor",
+   "Eggman",
+   "Doctor Ivo \"Eggman\" Robotnik",
    "Doctor Ivo Robotnik",
    "Doctor Robotnik",
-   "Docteur Eggman",
-   "Eggman",
-   "Doctor Ivo \"Eggman\" Robotnik"
+   "Docteur Eggman"
   ],
   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Docteur%20Robotnik%20%2826620641335%29.jpg?width=400",
   "attributes": {
@@ -2281,9 +2288,7 @@
    "species": [
     "Humain"
    ],
-   "nationality": [
-    "Icicle Inn"
-   ],
+   "nationality": null,
    "occupation": [
     "Commerçant",
     "Terroriste"
@@ -2873,6 +2878,7 @@
     "Humain"
    ],
    "nationality": [
+    "Barcelona",
     "Spain"
    ],
    "occupation": [
@@ -2981,6 +2987,7 @@
     "Humain"
    ],
    "nationality": [
+    "Russian Soviet Federative Socialist Republic",
     "Soviet Union",
     "Russia"
    ],
@@ -3068,6 +3075,7 @@
     "Humain"
    ],
    "nationality": [
+    "Los Angeles",
     "United States"
    ],
    "occupation": [
@@ -3512,6 +3520,7 @@
     "Humain"
    ],
    "nationality": [
+    "Henan",
     "China",
     "Earthrealm"
    ],
@@ -5197,6 +5206,8 @@
     "Humain"
    ],
    "nationality": [
+    "Normandy",
+    "France",
     "United States",
     "Russia"
    ],
@@ -5328,6 +5339,7 @@
     "Humain"
    ],
    "nationality": [
+    "Meridian",
     "United States"
    ],
    "occupation": [
@@ -5386,6 +5398,7 @@
     "Humain"
    ],
    "nationality": [
+    "California",
     "United States"
    ],
    "occupation": [
@@ -5791,8 +5804,8 @@
     "Humain"
    ],
    "nationality": [
-    "Destiny Islands",
-    "Radiant Garden"
+    "Radiant Garden",
+    "Destiny Islands"
    ],
    "occupation": null,
    "hair": null,
@@ -7268,7 +7281,10 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kraid's Lair",
+    "Zebes"
+   ],
    "occupation": [
     "Pirate"
    ],
@@ -7319,7 +7335,10 @@
    "species": [
     "Parasite"
    ],
-   "nationality": null,
+   "nationality": [
+    "Main Deck",
+    "Sector 2"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -7424,7 +7443,11 @@
     "Renard",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Papetoon",
+    "Sauria"
+   ],
    "occupation": [
     "Mercenaire",
     "Pilote"
@@ -7454,7 +7477,10 @@
     "Oiseau",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Zoness"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7482,7 +7508,10 @@
     "Grenouille",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Aquas"
+   ],
    "occupation": [
     "Mécanicien",
     "Pilote"
@@ -7511,7 +7540,9 @@
     "Lapin",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7539,7 +7570,10 @@
     "Singe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Venom",
+    "Corneria"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -7568,7 +7602,9 @@
     "Chien",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -7595,7 +7631,10 @@
     "Renard",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sauria",
+    "Corneria"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -7623,7 +7662,10 @@
     "Loup",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Venom"
+   ],
    "occupation": [
     "Pilote",
     "Voleur"
@@ -7653,7 +7695,10 @@
     "Cochon",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Venom"
+   ],
    "occupation": [
     "Mécanicien",
     "Pilote"
@@ -7681,7 +7726,11 @@
     "Renard",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Cerinia",
+    "Sauria",
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7708,7 +7757,9 @@
     "Renard",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7738,7 +7789,9 @@
     "Panthère",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7766,7 +7819,9 @@
     "Grenouille",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -7794,7 +7849,9 @@
     "Caméléon",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Venom"
+   ],
    "occupation": [
     "Tireur d'élite",
     "Pilote"
@@ -7822,7 +7879,10 @@
     "Chien",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Katina"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7851,7 +7911,9 @@
     "Chat",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7878,13 +7940,16 @@
     "Lapin",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Fichina"
+   ],
    "occupation": [
     "Professeur",
     "Pilote"
    ],
    "hair": [
-    "N/A"
+    "Roses"
    ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
@@ -7906,7 +7971,10 @@
     "Grenouille",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Aquas"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7936,7 +8004,10 @@
     "Singe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Corneria",
+    "Venom"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -7964,7 +8035,10 @@
     "Singe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Venom",
+    "Corneria"
+   ],
    "occupation": [
     "Pilote"
    ],
@@ -8254,9 +8328,9 @@
     "Humain"
    ],
    "nationality": [
+    "Sacae",
     "Lorca Tribe",
     "Caelin",
-    "Sacae",
     "Lycia"
    ],
    "occupation": [
@@ -9132,7 +9206,10 @@
    "species": [
     "Inkling"
    ],
-   "nationality": null,
+   "nationality": [
+    "Inkopolis Plaza",
+    "Octo Canyon"
+   ],
    "occupation": null,
    "hair": [
     "Noirs",
@@ -9155,7 +9232,10 @@
    "species": [
     "Inkling"
    ],
-   "nationality": null,
+   "nationality": [
+    "Inkopolis Plaza",
+    "Inkopolis Square"
+   ],
    "occupation": null,
    "hair": [
     "Gris",
@@ -9178,7 +9258,11 @@
    "species": [
     "Inkling"
    ],
-   "nationality": null,
+   "nationality": [
+    "Inkopolis Square",
+    "Order Sector",
+    "Deepsea Metro"
+   ],
    "occupation": null,
    "hair": [
     "Roses"
@@ -9204,7 +9288,9 @@
     "Anémone de mer",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Splatsville"
+   ],
    "occupation": null,
    "hair": [
     "Roses",
@@ -9228,7 +9314,10 @@
     "Limule",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Booyah Base",
+    "Inkopolis Galleria"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9251,7 +9340,11 @@
     "Pieuvre",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Inkopolis Square",
+    "Order Sector",
+    "Deepsea Metro"
+   ],
    "occupation": null,
    "hair": [
     "Bruns",
@@ -9278,7 +9371,10 @@
     "Poisson",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Splatsville",
+    "Alterna"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9302,7 +9398,10 @@
    "species": [
     "Inkling"
    ],
-   "nationality": null,
+   "nationality": [
+    "Splatsville",
+    "Alterna"
+   ],
    "occupation": null,
    "hair": [
     "Blonds",
@@ -9328,7 +9427,10 @@
     "Pieuvre",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Splatsville",
+    "Alterna"
+   ],
    "occupation": null,
    "hair": [
     "Bleus"
@@ -9354,7 +9456,9 @@
     "Crabe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Splatsville"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -9381,7 +9485,9 @@
     "Méduse",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Booyah Base"
+   ],
    "occupation": null,
    "hair": [
     "Bleus"
@@ -9406,7 +9512,10 @@
     "Oursin",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Inkopolis Square",
+    "Splatsville"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -10284,8 +10393,8 @@
     "Extraterrestre"
    ],
    "nationality": [
-    "Kyzil Plateau",
     "Veldin",
+    "Kyzil Plateau",
     "Megapolis",
     "Endako"
    ],
@@ -10975,8 +11084,8 @@
     "Humain"
    ],
    "nationality": [
-    "Haven City",
-    "Spargus"
+    "Spargus",
+    "Haven City"
    ],
    "occupation": [
     "Chasseur"
@@ -11074,6 +11183,7 @@
     "Humain"
    ],
    "nationality": [
+    "Haven City",
     "Spargus"
    ],
    "occupation": [
@@ -11381,6 +11491,7 @@
     "Animal"
    ],
    "nationality": [
+    "Kunlun Mountains",
     "China"
    ],
    "occupation": null,
@@ -11600,6 +11711,7 @@
     "Animal"
    ],
    "nationality": [
+    "Prague",
     "Czech Republic"
    ],
    "occupation": [
@@ -11628,6 +11740,7 @@
     "Animal"
    ],
    "nationality": [
+    "Kolkata",
     "India"
    ],
    "occupation": [
@@ -11792,6 +11905,7 @@
     "Humain"
    ],
    "nationality": [
+    "Wimbledon",
     "United Kingdom"
    ],
    "occupation": [
@@ -12009,8 +12123,8 @@
     "Humain"
    ],
    "nationality": [
-    "United States",
-    "New Zealand"
+    "New Zealand",
+    "United States"
    ],
    "occupation": [
     "Cuisinier"
@@ -12415,7 +12529,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Yugoslavia"
+   ],
    "occupation": [
     "Soldat",
     "Dirigeant"
@@ -12721,6 +12837,7 @@
     "Humain"
    ],
    "nationality": [
+    "Austin",
     "United States"
    ],
    "occupation": [
@@ -12752,6 +12869,7 @@
     "Humain"
    ],
    "nationality": [
+    "Austin",
     "United States"
    ],
    "occupation": [
@@ -12783,6 +12901,7 @@
     "Humain"
    ],
    "nationality": [
+    "Texas",
     "United States"
    ],
    "occupation": [
@@ -13219,6 +13338,7 @@
     "Humain"
    ],
    "nationality": [
+    "Boston",
     "United States"
    ],
    "occupation": null,
@@ -13274,8 +13394,8 @@
     "Humain"
    ],
    "nationality": [
-    "Greece",
-    "Sparta"
+    "Sparta",
+    "Greece"
    ],
    "occupation": [
     "Archer",
@@ -13328,8 +13448,8 @@
     "Divinité"
    ],
    "nationality": [
-    "Greece",
-    "Olympus"
+    "Olympus",
+    "Greece"
    ],
    "occupation": null,
    "hair": [
@@ -14379,7 +14499,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Pearl",
+    "Denerim"
+   ],
    "occupation": [
     "Pirate"
    ],
@@ -14401,7 +14524,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Korcari Wilds",
+    "Winter Palace"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -14426,7 +14552,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Redcliffe Chantry",
+    "Hinterlands"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -14449,7 +14578,9 @@
     "Humain"
    ],
    "nationality": [
-    "Ferelden"
+    "Ferelden",
+    "Castle Redcliffe",
+    "The Hanged Man"
    ],
    "occupation": [
     "Combattant"
@@ -14475,7 +14606,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kirkwall",
+    "Haven"
+   ],
    "occupation": [
     "Combattant",
     "Noble"
@@ -14542,7 +14676,10 @@
    "species": [
     "Nain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Hanged Man",
+    "Kirkwall"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dragon Age",
@@ -14562,7 +14699,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Haven",
+    "Skyhold"
+   ],
    "occupation": [
     "Révolutionnaire"
    ],
@@ -14584,7 +14724,10 @@
    "species": [
     "Elfe"
    ],
-   "nationality": null,
+   "nationality": [
+    "Val Royeaux",
+    "Haven"
+   ],
    "occupation": [
     "Justicier"
    ],
@@ -14611,7 +14754,9 @@
     "Humain"
    ],
    "nationality": [
-    "Ferelden"
+    "Ferelden",
+    "Ostagar",
+    "Denerim"
    ],
    "occupation": [
     "Révolutionnaire"
@@ -14638,7 +14783,10 @@
    "species": [
     "Qunari"
    ],
-   "nationality": null,
+   "nationality": [
+    "Storm Coast",
+    "Haven"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dragon Age",
@@ -14680,7 +14828,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vigil's Keep",
+    "Darktown"
+   ],
    "occupation": [
     "Magicien",
     "Médecin",
@@ -14704,7 +14855,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Haven",
+    "Skyhold"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dragon Age",
@@ -14775,7 +14929,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Final Seal"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dragon Age",
@@ -14800,7 +14956,8 @@
     "Humain"
    ],
    "nationality": [
-    "Ferelden"
+    "Ferelden",
+    "Castle Redcliffe"
    ],
    "occupation": null,
    "hair": null,
@@ -14821,7 +14978,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kinloch Hold"
+   ],
    "occupation": [
     "Magicien",
     "Érudit"
@@ -14894,7 +15053,9 @@
    "species": [
     "Breton"
    ],
-   "nationality": null,
+   "nationality": [
+    "Markarth"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -14924,6 +15085,7 @@
     "Humain"
    ],
    "nationality": [
+    "Windhelm",
     "Skyrim"
    ],
    "occupation": null,
@@ -14950,7 +15112,10 @@
    "species": [
     "Dragon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Throat of the World",
+    "Skyrim"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -15111,7 +15276,9 @@
    "species": [
     "Nordique"
    ],
-   "nationality": null,
+   "nationality": [
+    "Whiterun"
+   ],
    "occupation": [
     "Combattant"
    ],
@@ -15136,7 +15303,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ivarstead"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -15188,7 +15357,9 @@
    "species": [
     "Orque"
    ],
-   "nationality": null,
+   "nationality": [
+    "Shor's Stone"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -15274,7 +15445,9 @@
    "species": [
     "Nordique"
    ],
-   "nationality": null,
+   "nationality": [
+    "Riverwood"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -15336,7 +15509,10 @@
     "Chien",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Scrapyard",
+    "Vault 101"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -15362,7 +15538,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Diamond City",
+    "Publick Occurrences"
+   ],
    "occupation": [
     "Journaliste"
    ],
@@ -15416,7 +15595,10 @@
    "species": [
     "Androïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vault 114",
+    "Diamond City"
+   ],
    "occupation": [
     "Détective"
    ],
@@ -15443,7 +15625,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New California",
+    "Vault 13"
+   ],
    "occupation": [
     "Sportif"
    ],
@@ -15469,7 +15654,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Angel Cave"
+   ],
    "occupation": [
     "Religieux",
     "Dirigeant"
@@ -15499,7 +15686,8 @@
     "Goule"
    ],
    "nationality": [
-    "United States"
+    "United States",
+    "Los Angeles"
    ],
    "occupation": [
     "Chasseur de primes",
@@ -15527,7 +15715,10 @@
    "species": [
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Cathedral",
+    "Los Angeles Vault"
+   ],
    "occupation": [
     "Assassin"
    ],
@@ -15555,7 +15746,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Las Vegas",
+    "United States",
+    "Lucky 38 penthouse"
+   ],
    "occupation": [
     "Dirigeant",
     "Scientifique"
@@ -15584,7 +15779,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vault 21",
+    "Goodsprings"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -15610,7 +15808,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sanctuary Hills",
+    "Vault 111"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -15636,7 +15837,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sanctuary Hills",
+    "Vault 111"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -15660,7 +15864,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sanctuary Hills"
+   ],
    "occupation": [
     "Serveur"
    ],
@@ -15690,7 +15896,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Concord",
+    "Museum of Freedom"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -15716,7 +15925,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Tops"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -15747,7 +15958,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mojave Wasteland",
+    "United States"
+   ],
    "occupation": [
     "Chauffeur"
    ],
@@ -15796,7 +16010,10 @@
    "species": [
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vault 29",
+    "The Hub"
+   ],
    "occupation": [
     "Espion",
     "Ouvrier"
@@ -15824,7 +16041,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Darkwaters",
+    "Junktown"
+   ],
    "occupation": [
     "Politicien",
     "Commerçant"
@@ -15848,7 +16068,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Old Town",
+    "The Hub"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -15915,8 +16138,9 @@
     "Humain"
    ],
    "nationality": [
+    "Cintra",
     "Nilfgaard",
-    "Cintra"
+    "Belleteyn"
    ],
    "occupation": [
     "Noble",
@@ -15945,6 +16169,7 @@
     "Humain"
    ],
    "nationality": [
+    "Vengerberg",
     "Aedirn"
    ],
    "occupation": [
@@ -15978,6 +16203,7 @@
     "Humain"
    ],
    "nationality": [
+    "Maribor",
     "Temeria"
    ],
    "occupation": [
@@ -16074,6 +16300,7 @@
     "Humain"
    ],
    "nationality": [
+    "Ard Carraigh",
     "Kaedwen"
    ],
    "occupation": [
@@ -16103,6 +16330,7 @@
     "Humain"
    ],
    "nationality": [
+    "Vizima",
     "Temeria"
    ],
    "occupation": [
@@ -16192,7 +16420,9 @@
     "Humain",
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kaer Morhen"
+   ],
    "occupation": [
     "Sorceleur",
     "Chasseur de monstres"
@@ -16273,7 +16503,9 @@
     "Humain",
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kaer Morhen"
+   ],
    "occupation": [
     "Sorceleur",
     "Chasseur de monstres"
@@ -16391,6 +16623,7 @@
     "Humain"
    ],
    "nationality": [
+    "Ard Carraigh",
     "Kaedwen"
    ],
    "occupation": [
@@ -16477,8 +16710,9 @@
     "Humain"
    ],
    "nationality": [
-    "Serbia",
-    "Yugoslavia"
+    "Yugoslavia",
+    "Liberty City",
+    "Serbia"
    ],
    "occupation": [
     "Assassin",
@@ -16510,6 +16744,8 @@
     "Humain"
    ],
    "nationality": [
+    "Los Santos",
+    "Grove Street",
     "United States"
    ],
    "occupation": [
@@ -16540,9 +16776,9 @@
     "Humain"
    ],
    "nationality": [
+    "Liberty City",
     "United States",
     "Portland",
-    "Liberty City",
     "Vice City"
    ],
    "occupation": [
@@ -16637,6 +16873,7 @@
     "Humain"
    ],
    "nationality": [
+    "Los Santos",
     "United States"
    ],
    "occupation": [
@@ -16669,6 +16906,8 @@
     "Humain"
    ],
    "nationality": [
+    "Los Santos",
+    "Vinewood",
     "United States"
    ],
    "occupation": [
@@ -16701,6 +16940,7 @@
     "Humain"
    ],
    "nationality": [
+    "Liberty City",
     "United States"
    ],
    "occupation": [
@@ -16732,6 +16972,8 @@
     "Humain"
    ],
    "nationality": [
+    "Liberty City",
+    "Leonida",
     "United States"
    ],
    "occupation": [
@@ -16762,6 +17004,7 @@
     "Humain"
    ],
    "nationality": [
+    "Liberty City",
     "Dominican Republic"
    ],
    "occupation": [
@@ -16823,6 +17066,7 @@
     "Humain"
    ],
    "nationality": [
+    "Leonida",
     "United States"
    ],
    "occupation": [
@@ -16852,7 +17096,6 @@
     "Humain"
    ],
    "nationality": [
-    "Portland Beach",
     "Portland",
     "United States",
     "Liberty City"
@@ -16881,6 +17124,7 @@
     "Humain"
    ],
    "nationality": [
+    "Texas",
     "United States",
     "Vice City",
     "Florida"
@@ -17059,8 +17303,8 @@
     "Humain"
    ],
    "nationality": [
-    "Italy",
-    "Sicily"
+    "Sicily",
+    "Italy"
    ],
    "occupation": [
     "Criminel"
@@ -17281,8 +17525,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States",
-    "Ireland"
+    "Dublin",
+    "Ireland",
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -17426,6 +17671,7 @@
     "Humain"
    ],
    "nationality": [
+    "Saint Denis",
     "United States",
     "Italy"
    ],
@@ -17519,6 +17765,7 @@
     "Humain"
    ],
    "nationality": [
+    "Wapiti Indian Reservation",
     "United States"
    ],
    "occupation": [
@@ -17548,6 +17795,7 @@
     "Humain"
    ],
    "nationality": [
+    "Wapiti Indian Reservation",
     "United States"
    ],
    "occupation": [
@@ -17578,6 +17826,7 @@
     "Humain"
    ],
    "nationality": [
+    "New York",
     "United States"
    ],
    "occupation": [
@@ -17606,6 +17855,7 @@
     "Humain"
    ],
    "nationality": [
+    "Downes Ranch",
     "United States"
    ],
    "occupation": [
@@ -17637,6 +17887,8 @@
     "Humain"
    ],
    "nationality": [
+    "Annesburg",
+    "Downes Ranch",
     "United States"
    ],
    "occupation": [
@@ -17666,6 +17918,8 @@
     "Humain"
    ],
    "nationality": [
+    "Annesburg",
+    "Downes Ranch",
     "United States"
    ],
    "occupation": [
@@ -17698,7 +17952,9 @@
     "Humain"
    ],
    "nationality": [
-    "Italy"
+    "Florence",
+    "Italy",
+    "Republic of Florence"
    ],
    "occupation": [
     "Fermier",
@@ -17734,7 +17990,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Masyaf",
+    "Assassin state"
+   ],
    "occupation": [
     "Érudit",
     "Écrivain",
@@ -17766,7 +18025,10 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Black Hills",
+    "United States",
+    "The Farm",
+    "South Dakota"
    ],
    "occupation": [
     "Serveur",
@@ -17795,7 +18057,9 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "Swansea",
+    "United Kingdom",
+    "Kingdom of England"
    ],
    "occupation": [
     "Fermier",
@@ -17832,7 +18096,9 @@
     "Humain"
    ],
    "nationality": [
-    "Egypt"
+    "Egypt",
+    "Siwa",
+    "Ptolemaic Kingdom"
    ],
    "occupation": [
     "Combattant",
@@ -17862,7 +18128,10 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Mohawk Valley",
+    "United States",
+    "Kanatahséton",
+    "British America"
    ],
    "occupation": [
     "Pirate",
@@ -17898,7 +18167,9 @@
     "Humain"
    ],
    "nationality": [
-    "France"
+    "Versailles",
+    "France",
+    "Kingdom of France"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -17929,7 +18200,9 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "London",
+    "United Kingdom",
+    "Kingdom of Great Britain"
    ],
    "occupation": [
     "Écrivain",
@@ -17960,7 +18233,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "United States",
+    "New York",
+    "British America"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -17994,6 +18269,8 @@
     "Humain"
    ],
    "nationality": [
+    "New Orleans",
+    "United States",
     "France"
    ],
    "occupation": [
@@ -18054,7 +18331,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Portuguese Empire"
+   ],
    "occupation": [
     "Samouraï"
    ],
@@ -18139,7 +18418,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Bursa",
+    "Ottoman Empire"
+   ],
    "occupation": [
     "Dirigeant",
     "Voleur",
@@ -18166,7 +18448,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Masyaf",
+    "Assassin state"
+   ],
    "occupation": [
     "Assassin"
    ],
@@ -18193,6 +18478,7 @@
     "Humain"
    ],
    "nationality": [
+    "Crawley",
     "United Kingdom"
    ],
    "occupation": [
@@ -18226,7 +18512,9 @@
     "Humain"
    ],
    "nationality": [
-    "Egypt"
+    "Egypt",
+    "Alexandria",
+    "Ptolemaic Kingdom"
    ],
    "occupation": [
     "Professeur",
@@ -18251,7 +18539,9 @@
     "Humain"
    ],
    "nationality": [
-    "Greece"
+    "Greece",
+    "Sparta",
+    "Lakonia"
    ],
    "occupation": [
     "Mercenaire",
@@ -18282,7 +18572,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Iga",
+    "Japan"
+   ],
    "occupation": [
     "Ninja"
    ],
@@ -18794,9 +19087,9 @@
     "Humain"
    ],
    "nationality": [
-    "City 17",
     "Seattle",
     "United States",
+    "City 17",
     "Washington"
    ],
    "occupation": [
@@ -19081,6 +19374,7 @@
     "Humain"
    ],
    "nationality": [
+    "Ravenholm",
     "Earth"
    ],
    "occupation": [
@@ -19446,7 +19740,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Aperture Science Enrichment Center"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -19577,8 +19873,8 @@
     "Humain"
    ],
    "nationality": [
-    "United States",
     "Boston",
+    "United States",
     "Massachusetts"
    ],
    "occupation": [
@@ -19685,9 +19981,9 @@
     "Humain"
    ],
    "nationality": [
-    "Soviet Union",
     "Dzhugdzhur",
     "Russia",
+    "Soviet Union",
     "East Siberian Mountains"
    ],
    "occupation": [
@@ -19745,8 +20041,8 @@
     "Humain"
    ],
    "nationality": [
-    "Germany",
     "Stuttgart",
+    "Germany",
     "Baden-Württemberg"
    ],
    "occupation": [
@@ -20128,6 +20424,7 @@
     "Humain"
    ],
    "nationality": [
+    "Savannah",
     "United States"
    ],
    "occupation": [
@@ -20214,6 +20511,7 @@
     "Humain"
    ],
    "nationality": [
+    "Cleveland",
     "United States"
    ],
    "occupation": [
@@ -20319,7 +20617,8 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "United Kingdom",
+    "London"
    ],
    "occupation": [
     "Pilote",
@@ -20347,6 +20646,7 @@
     "Humain"
    ],
    "nationality": [
+    "Busan",
     "South Korea"
    ],
    "occupation": [
@@ -20377,6 +20677,7 @@
     "Humain"
    ],
    "nationality": [
+    "Zurich",
     "Switzerland"
    ],
    "occupation": [
@@ -20401,6 +20702,7 @@
     "Humain"
    ],
    "nationality": [
+    "Xi'an",
     "China"
    ],
    "occupation": [
@@ -20481,6 +20783,7 @@
     "Humain"
    ],
    "nationality": [
+    "Annecy",
     "France"
    ],
    "occupation": [
@@ -20507,6 +20810,7 @@
     "Humain"
    ],
    "nationality": [
+    "Oyo",
     "Nigeria"
    ],
    "occupation": [
@@ -20533,7 +20837,9 @@
     "Singe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gibraltar"
+   ],
    "occupation": [
     "Aventurier"
    ],
@@ -20834,6 +21140,7 @@
     "Humain"
    ],
    "nationality": [
+    "Glasgow",
     "United Kingdom"
    ],
    "occupation": [
@@ -21890,7 +22197,9 @@
    "species": [
     "Elfe"
    ],
-   "nationality": null,
+   "nationality": [
+    "Seat of the Pantheon"
+   ],
    "occupation": [
     "Révolutionnaire",
     "Chasseur de monstres"
@@ -21918,7 +22227,9 @@
    "species": [
     "Elfe"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Maw"
+   ],
    "occupation": [
     "Archer",
     "Révolutionnaire",
@@ -21942,7 +22253,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Twisting Nether"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -22051,7 +22364,9 @@
    "species": [
     "Orque"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ashenvale"
+   ],
    "occupation": [
     "Dirigeant",
     "Soldat"
@@ -22074,7 +22389,10 @@
    "species": [
     "Orque"
    ],
-   "nationality": null,
+   "nationality": [
+    "Apostate's Reach",
+    "Tomb of Sargeras"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -22265,7 +22583,10 @@
    "species": [
     "Orque"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Shattered Halls",
+    "Hellfire Citadel"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -22315,7 +22636,9 @@
    "species": [
     "Zerg"
    ],
-   "nationality": null,
+   "nationality": [
+    "TarKossia"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -22346,7 +22669,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Shiloh"
+   ],
    "occupation": [
     "Soldat",
     "Révolutionnaire"
@@ -22396,7 +22721,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Korhal",
+    "Korhal IV"
+   ],
    "occupation": [
     "Soldat",
     "Chasseur de trésor",
@@ -22423,7 +22751,9 @@
    "species": [
     "Protoss"
    ],
-   "nationality": null,
+   "nationality": [
+    "Aiur"
+   ],
    "occupation": [
     "Soldat",
     "Chevalier"
@@ -22505,7 +22835,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Tarsonis"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -22530,7 +22862,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Korhal"
+   ],
    "occupation": [
     "Politicien",
     "Dirigeant"
@@ -25087,7 +25421,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Cursed Woods",
+    "Hunting Grounds"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -25179,7 +25516,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Another World"
+   ],
    "occupation": [
     "Aventurier"
    ],
@@ -25378,7 +25717,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vigrid"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -25439,7 +25780,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wily Castle"
+   ],
    "occupation": [
     "Mécanicien",
     "Scientifique"
@@ -25597,7 +25940,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Troia Base"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -25928,7 +26273,10 @@
    "species": [
     "Vampire"
    ],
-   "nationality": null,
+   "nationality": [
+    "Romania",
+    "Dracula's Castle"
+   ],
    "occupation": [
     "Magicien",
     "Assassin",
@@ -26152,6 +26500,7 @@
     "Humain"
    ],
    "nationality": [
+    "Principality of Wallachia",
     "Romania"
    ],
    "occupation": [
@@ -26513,7 +26862,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -26600,8 +26951,8 @@
     "Humain"
    ],
    "nationality": [
-    "Japan",
-    "Ebisugaoka"
+    "Ebisugaoka",
+    "Japan"
    ],
    "occupation": [
     "Étudiant"
@@ -26704,7 +27055,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Silent Hill"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -28494,8 +28847,8 @@
     "Humain"
    ],
    "nationality": [
-    "Japan",
     "Yokohama",
+    "Japan",
     "Kanagawa Prefecture"
    ],
    "occupation": [
@@ -28713,8 +29066,8 @@
     "Humain"
    ],
    "nationality": [
-    "Japan",
     "Kamurocho",
+    "Japan",
     "Shinjuku",
     "Tokyo"
    ],
@@ -29628,6 +29981,8 @@
     "Humain"
    ],
    "nationality": [
+    "Night City",
+    "Moon",
     "Poland"
    ],
    "occupation": [
@@ -30348,8 +30703,8 @@
     "Humain"
    ],
    "nationality": [
-    "United States",
-    "Texas"
+    "Texas",
+    "United States"
    ],
    "occupation": [
     "Acteur",
@@ -31783,7 +32138,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Pteruges-V"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -31812,7 +32169,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Astral Express"
+   ],
    "occupation": null,
    "hair": [
     "Roses"
@@ -31843,7 +32202,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Starfroster",
+    "Punklorde"
+   ],
    "occupation": null,
    "hair": [
     "Argentés"
@@ -31871,7 +32233,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Starfroster",
+    "The Xianzhou Zhuming"
+   ],
    "occupation": null,
    "hair": [
     "Bleus"
@@ -31898,7 +32263,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Starfroster",
+    "Sigonia-IV"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -31925,7 +32293,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Glamoth"
+   ],
    "occupation": null,
    "hair": [
     "Gris"
@@ -31953,7 +32323,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Penacony"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -31980,7 +32352,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Astral Express"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32005,7 +32379,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Izumo"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32032,7 +32408,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Herta Space Station"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32055,7 +32433,10 @@
    "species": [
     "Entité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Amphoreus",
+    "Aedes Elysiae"
+   ],
    "occupation": null,
    "hair": [
     "Roses"
@@ -32084,7 +32465,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Astral Express"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -32115,7 +32498,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Xianzhou Luofu",
+    "Astral Express",
+    "Radiant Scarwood Grove of Epiphany"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -32140,7 +32527,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Penacony",
+    "Astral Express"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32163,7 +32553,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Amphoreus",
+    "Okhema"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -32188,7 +32581,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Amphoreus"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32211,7 +32606,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Amphoreus",
+    "Okhema"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32237,7 +32635,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Herta Space Station"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32262,7 +32662,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Jarilo-VI",
+    "Qlipoth Fort"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32285,7 +32688,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Amphoreus"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -32920,7 +33325,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Undead Parish",
+    "Anor Londo"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
@@ -32943,7 +33351,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Tomb of the Giants",
+    "Firelink Shrine"
+   ],
    "occupation": [
     "Commerçant"
    ],
@@ -33050,12 +33461,16 @@
    "Malenia",
    "Miquella"
   ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ProMixtheus%20as%20Malenia%20standing%2C%20front%20view%2020220813a.jpg?width=400",
   "attributes": {
    "gender": "Femme",
    "species": [
     "Numen"
    ],
-   "nationality": null,
+   "nationality": [
+    "Elphael",
+    "Brace of the Haligtree"
+   ],
    "occupation": [
     "Combattant"
    ],
@@ -33082,7 +33497,12 @@
    "species": [
     "Carian"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wailing Dunes",
+    "Gate of Divinity",
+    "Caelid",
+    "Land of Shadows"
+   ],
    "occupation": null,
    "hair": [
     "Rouges"
@@ -33109,7 +33529,10 @@
    "species": [
     "Carian"
    ],
-   "nationality": null,
+   "nationality": [
+    "Church of Elleh",
+    "Ranni's Rise"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Elden Ring",
@@ -33156,7 +33579,9 @@
    "species": [
     "Numen"
    ],
-   "nationality": null,
+   "nationality": [
+    "Stormveil Castle"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -33184,7 +33609,10 @@
    "species": [
     "Carian"
    ],
-   "nationality": null,
+   "nationality": [
+    "Raya Lucaria Grand Library",
+    "Academy of Raya Lucaria"
+   ],
    "occupation": [
     "Érudit"
    ],
@@ -33208,7 +33636,9 @@
    "species": [
     "Objet"
    ],
-   "nationality": null,
+   "nationality": [
+    "Jarburg"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -33233,7 +33663,11 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Snowdin",
+    "Hometown",
+    "Snowdin Forest"
+   ],
    "occupation": [
     "Commerçant",
     "Justicier",
@@ -33266,7 +33700,10 @@
    "species": [
     "Plante"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Underground",
+    "Ruins"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -33293,7 +33730,9 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ruins"
+   ],
    "occupation": [
     "Souverain",
     "Professeur",
@@ -33323,7 +33762,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Snowdin",
+    "Snowdin Forest"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -33350,7 +33792,9 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hometown"
+   ],
    "occupation": [
     "Souverain",
     "Commerçant"
@@ -33409,6 +33853,7 @@
     "Monstre"
    ],
    "nationality": [
+    "Hotland",
     "Underground"
    ],
    "occupation": [
@@ -33416,7 +33861,7 @@
     "Acteur"
    ],
    "hair": [
-    "N/A"
+    "Noirs"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -33439,7 +33884,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Waterfall",
+    "Hometown"
+   ],
    "occupation": [
     "Garde",
     "Policier"
@@ -33470,7 +33918,8 @@
     "Humain"
    ],
    "nationality": [
-    "Underground"
+    "Underground",
+    "Mt. Ebott"
    ],
    "occupation": null,
    "hair": [
@@ -33499,6 +33948,7 @@
     "Monstre"
    ],
    "nationality": [
+    "The Underground",
     "Underground"
    ],
    "occupation": null,
@@ -33527,7 +33977,10 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hotland",
+    "Hometown"
+   ],
    "occupation": [
     "Scientifique",
     "Professeur"
@@ -33554,7 +34007,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ruins"
+   ],
    "occupation": null,
    "hair": [
     "Rouges",
@@ -33580,6 +34035,7 @@
     "Monstre"
    ],
    "nationality": [
+    "Hotland",
     "Underground"
    ],
    "occupation": [
@@ -33607,7 +34063,11 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Waterfall",
+    "Hometown",
+    "Ruins"
+   ],
    "occupation": [
     "Policier"
    ],
@@ -33635,7 +34095,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hotland"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -33661,7 +34123,9 @@
    "species": [
     "Monstre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Waterfall"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -33770,7 +34234,9 @@
    "species": [
     "Réceptacle"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Abyss"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
@@ -33796,7 +34262,9 @@
    "species": [
     "Réceptacle"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Abyss"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
@@ -33821,7 +34289,9 @@
    "species": [
     "Tisseuse"
    ],
-   "nationality": null,
+   "nationality": [
+    "Beast's Den"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
@@ -33873,6 +34343,7 @@
     "Animal"
    ],
    "nationality": [
+    "Watcher's Spire",
     "Hallownest"
    ],
    "occupation": [
@@ -33905,6 +34376,7 @@
     "Animal"
    ],
    "nationality": [
+    "Fog Canyon",
     "Hallownest"
    ],
    "occupation": [
@@ -34420,7 +34892,9 @@
    "species": [
     "Mob"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Nether"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34591,7 +35065,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hurricane",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34619,7 +35097,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": [
     "Assassin",
     "Scientifique",
@@ -34650,7 +35132,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hurricane",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34676,7 +35162,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hurricane",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34702,7 +35192,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hurricane",
+    "Utah",
+    "United States"
+   ],
    "occupation": [
     "Musicien"
    ],
@@ -34756,7 +35250,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hurricane",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34782,7 +35280,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34808,7 +35310,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34856,7 +35362,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34882,7 +35392,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Freddy Fazbear's Mega Pizzaplex"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -34907,7 +35419,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34933,7 +35449,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Freddy Fazbear's Mega Pizzaplex"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34960,7 +35478,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -34983,7 +35505,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -35009,7 +35535,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -35061,7 +35591,11 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "New Harmony",
+    "Utah",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -35311,6 +35845,7 @@
     "Humain"
    ],
    "nationality": [
+    "Pandora",
     "Tantalus"
    ],
    "occupation": [
@@ -35337,6 +35872,8 @@
     "Humain"
    ],
    "nationality": [
+    "Pandora",
+    "Sanctuary",
     "Dionysus"
    ],
    "occupation": [
@@ -35363,6 +35900,8 @@
     "Humain"
    ],
    "nationality": [
+    "Pandora",
+    "Sanctuary",
     "Menoetius"
    ],
    "occupation": [
@@ -35388,6 +35927,8 @@
     "Humain"
    ],
    "nationality": [
+    "Pandora",
+    "Sanctuary",
     "Artemis"
    ],
    "occupation": [
@@ -35412,7 +35953,9 @@
    "species": [
     "Humanoïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Pandora"
+   ],
    "occupation": [
     "Tireur d'élite",
     "Assassin",
@@ -35438,6 +35981,7 @@
     "Humain"
    ],
    "nationality": [
+    "Pandora",
     "Eden-5"
    ],
    "occupation": [
@@ -35486,7 +36030,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Skag Gully"
+   ],
    "occupation": [
     "Voleur"
    ],
@@ -35604,7 +36150,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "United States",
+    "Fairbanks",
+    "Alaska"
    ],
    "occupation": [
     "Soldat"
@@ -35691,7 +36239,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Fairbanks",
+    "United States",
+    "Alaska"
    ],
    "occupation": [
     "Soldat",
@@ -35888,7 +36438,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "San Diego",
+    "United States",
+    "California"
    ],
    "occupation": null,
    "hair": [
@@ -35912,7 +36464,9 @@
     "Oiseau",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -35936,7 +36490,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain",
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banjo-Kazooie",
@@ -36969,7 +37526,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hakurei Shrine"
+   ],
    "occupation": [
     "Religieux"
    ],
@@ -37000,7 +37559,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -37087,7 +37648,9 @@
    "species": [
     "Fantôme"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hakugyokurou"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Touhou Project",
@@ -37111,7 +37674,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": [
     "Religieux"
    ],
@@ -37138,7 +37703,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -37167,7 +37734,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": [
     "Aventurier",
     "Guide",
@@ -37226,7 +37795,10 @@
     "Lapin",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Moon",
+    "Eientei"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -37248,7 +37820,9 @@
    "species": [
     "Fée"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Bleus"
@@ -37274,7 +37848,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -37300,7 +37876,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": [
     "Scientifique"
    ],
@@ -37328,7 +37906,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Verts"
@@ -37353,7 +37933,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Boundary of Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -37379,7 +37961,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -37405,7 +37989,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Bleus"
@@ -37453,7 +38039,11 @@
    "species": [
     "Fée"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hell",
+    "Mare Tranquillitatis",
+    "Gensokyo"
+   ],
    "occupation": [
     "Domestique"
    ],
@@ -37481,7 +38071,9 @@
    "species": [
     "Inchling"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gensokyo"
+   ],
    "occupation": null,
    "hair": [
     "Violets"
@@ -38123,7 +38715,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Candlekeep"
+   ],
    "occupation": [
     "Voleur",
     "Magicien"
@@ -38274,7 +38868,10 @@
    "species": [
     "Elfe"
    ],
-   "nationality": null,
+   "nationality": [
+    "Athkatla",
+    "Suldanessellar"
+   ],
    "occupation": [
     "Magicien"
    ],
@@ -38394,7 +38991,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Baldur's Gate"
+   ],
    "occupation": [
     "Combattant"
    ],
@@ -38511,9 +39110,9 @@
     "Humain"
    ],
    "nationality": [
+    "Night City",
     "United States",
-    "Watson",
-    "Night City"
+    "Watson"
    ],
    "occupation": [
     "Mercenaire"
@@ -38542,9 +39141,9 @@
     "Humain"
    ],
    "nationality": [
+    "College Station",
     "United States",
     "Night City",
-    "College Station",
     "Texas"
    ],
    "occupation": [
@@ -38705,8 +39304,7 @@
    ],
    "nationality": [
     "Badlands",
-    "NUSA",
-    "Nomad Camp"
+    "NUSA"
    ],
    "occupation": [
     "Dirigeant"
@@ -39127,10 +39725,10 @@
     "Humain"
    ],
    "nationality": [
-    "The Base",
-    "Forbidden West",
+    "All-Mother Mountain",
     "The Embrace",
-    "Sacred Lands"
+    "Sacred Lands",
+    "The Base"
    ],
    "occupation": [
     "Archer",
@@ -39610,6 +40208,7 @@
     "Humain"
    ],
    "nationality": [
+    "Detroit",
     "United States"
    ],
    "occupation": [
@@ -39997,7 +40596,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Arcadia Bay",
+    "United States",
+    "Oregon"
    ],
    "occupation": [
     "Artiste",
@@ -40027,7 +40628,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Arcadia Bay",
+    "Oregon",
+    "United States"
+   ],
    "occupation": [
     "Étudiant",
     "Chômeur"
@@ -40056,7 +40661,8 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "United States",
+    "California"
    ],
    "occupation": [
     "Étudiant"
@@ -40083,7 +40689,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Portland",
+    "United States",
+    "Oregon"
+   ],
    "occupation": [
     "Serveur",
     "Dirigeant",
@@ -40145,7 +40755,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Seattle",
+    "United States",
+    "Washington"
    ],
    "occupation": [
     "Étudiant"
@@ -40175,7 +40787,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Arcadia Bay",
+    "United States",
+    "Oregon"
    ],
    "occupation": [
     "Étudiant"
@@ -40441,6 +41055,7 @@
     "Humain"
    ],
    "nationality": [
+    "Chicago",
     "United States"
    ],
    "occupation": null,
@@ -40734,7 +41349,10 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "Godric's Hollow",
+    "United Kingdom",
+    "Hogwarts Castle",
+    "West Country"
    ],
    "occupation": [
     "Étudiant",
@@ -40771,6 +41389,7 @@
     "Humain"
    ],
    "nationality": [
+    "Mould-on-the-Wold",
     "United Kingdom"
    ],
    "occupation": [
@@ -40807,7 +41426,8 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "United Kingdom",
+    "Hogwarts Castle"
    ],
    "occupation": [
     "Étudiant",
@@ -40845,7 +41465,10 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "Devon",
+    "United Kingdom",
+    "The Burrow",
+    "Hogwarts Castle"
    ],
    "occupation": [
     "Étudiant",
@@ -40878,7 +41501,9 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "London",
+    "United Kingdom",
+    "Wool's Orphanage"
    ],
    "occupation": [
     "Assassin",
@@ -40913,6 +41538,9 @@
     "Humain"
    ],
    "nationality": [
+    "Spinner's End",
+    "Cokeworth",
+    "Midlands",
     "United Kingdom"
    ],
    "occupation": [
@@ -40946,7 +41574,9 @@
     "Géant"
    ],
    "nationality": [
-    "United Kingdom"
+    "Forest of Dean",
+    "United Kingdom",
+    "West Country"
    ],
    "occupation": [
     "Professeur",
@@ -41017,7 +41647,8 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "United Kingdom",
+    "Caithness"
    ],
    "occupation": [
     "Professeur",
@@ -41049,7 +41680,9 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "United Kingdom",
+    "Islington",
+    "London"
    ],
    "occupation": [
     "Justicier"
@@ -41080,7 +41713,9 @@
     "Humain"
    ],
    "nationality": [
-    "United Kingdom"
+    "United Kingdom",
+    "Godric's Hollow",
+    "West Country"
    ],
    "occupation": [
     "Professeur",
@@ -41689,6 +42324,7 @@
     "Humain"
    ],
    "nationality": [
+    "Págos",
     "Pagos"
    ],
    "occupation": [
@@ -41767,6 +42403,8 @@
     "Humain"
    ],
    "nationality": [
+    "Stříbrná Skalice",
+    "Silver Skalitz",
     "Czech Republic"
    ],
    "occupation": [
@@ -41799,6 +42437,7 @@
     "Humain"
    ],
    "nationality": [
+    "Banat",
     "Hungary"
    ],
    "occupation": [
@@ -41826,6 +42465,8 @@
     "Humain"
    ],
    "nationality": [
+    "Stříbrná Skalice",
+    "Rataje nad Sázavou",
     "Czech Republic"
    ],
    "occupation": [
@@ -41856,6 +42497,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -41892,6 +42534,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -41930,6 +42573,7 @@
     "Méta-humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -41983,6 +42627,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42018,6 +42663,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42052,6 +42698,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42086,6 +42733,7 @@
     "Méta-humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42117,7 +42765,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Arabian Peninsula"
+   ],
    "occupation": [
     "Combattant",
     "Épéiste",
@@ -42187,6 +42837,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42316,6 +42967,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42382,6 +43034,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42454,6 +43107,7 @@
     "Humain"
    ],
    "nationality": [
+    "Gotham City",
     "United States"
    ],
    "occupation": [
@@ -42514,6 +43168,7 @@
    "Pyg Professeur",
    "Pyg"
   ],
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyg%20%2844242777325%29.jpg?width=400",
   "attributes": {
    "gender": "Homme",
    "species": [
@@ -42889,8 +43544,8 @@
     "Humain"
    ],
    "nationality": [
-    "United States",
-    "New York"
+    "New York",
+    "United States"
    ],
    "occupation": [
     "Avocat"
@@ -42944,6 +43599,7 @@
     "Nomai"
    ],
    "nationality": [
+    "Ember Twin",
     "Quantum Moon"
    ],
    "occupation": null,
@@ -43192,7 +43848,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Anatolia",
+    "Golden Throne"
+   ],
    "occupation": [
     "Souverain"
    ],
@@ -44558,6 +45217,7 @@
     "Humain"
    ],
    "nationality": [
+    "Aquitaine",
     "France"
    ],
    "occupation": null,
@@ -44966,7 +45626,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Olympus"
+   ],
    "occupation": [
     "Souverain"
    ],
@@ -45019,7 +45681,10 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underworld",
+    "Olympus"
+   ],
    "occupation": [
     "Souverain"
    ],
@@ -45073,6 +45738,7 @@
     "Humain"
    ],
    "nationality": [
+    "Brume",
     "Ephyra",
     "Tyrus"
    ],
@@ -45405,7 +46071,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kyrat"
+   ],
    "occupation": [
     "Dirigeant",
     "Souverain"
@@ -45435,6 +46103,7 @@
     "Humain"
    ],
    "nationality": [
+    "British Hong Kong",
     "China"
    ],
    "occupation": [
@@ -45466,7 +46135,9 @@
     "Humain"
    ],
    "nationality": [
-    "United States"
+    "Los Angeles",
+    "United States",
+    "California"
    ],
    "occupation": null,
    "hair": [
@@ -45491,7 +46162,12 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Rome",
+    "Italy",
+    "Georgia",
+    "United States"
+   ],
    "occupation": [
     "Religieux",
     "Soldat",
@@ -45519,7 +46195,12 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Rome",
+    "Italy",
+    "Georgia",
+    "United States"
+   ],
    "occupation": [
     "Tireur d'élite",
     "Garde"
@@ -45578,7 +46259,12 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Rome",
+    "Italy",
+    "Georgia",
+    "United States"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -45607,6 +46293,7 @@
     "Humain"
    ],
    "nationality": [
+    "Johannesburg",
     "South Africa"
    ],
    "occupation": [
@@ -45635,10 +46322,10 @@
     "Humain"
    ],
    "nationality": [
-    "Rook Islands",
-    "Kyrat",
     "Hope County",
-    "United States"
+    "Montana",
+    "United States",
+    "Rook Islands"
    ],
    "occupation": null,
    "hair": [
@@ -45913,7 +46600,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vigrid"
+   ],
    "occupation": [
     "Homme d'affaires"
    ],
@@ -45940,7 +46629,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vigrid"
+   ],
    "occupation": [
     "Professeur",
     "Justicier"
@@ -45968,7 +46659,9 @@
    "species": [
     "Homoncule"
    ],
-   "nationality": null,
+   "nationality": [
+    "Alphaverse"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Bayonetta",
@@ -45993,7 +46686,9 @@
    "species": [
     "Démon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Human World"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Bayonetta",
@@ -46071,7 +46766,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "New York",
+    "United States"
+   ],
    "occupation": null,
    "hair": [
     "Blonds",
@@ -46122,7 +46820,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Vigrid"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -46526,7 +47226,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sen's Fortress",
+    "Anor Londo"
+   ],
    "occupation": [
     "Chevalier"
    ],
@@ -46551,7 +47254,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Undead Parish"
+   ],
    "occupation": [
     "Ouvrier"
    ],
@@ -46577,7 +47282,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Firelink Shrine"
+   ],
    "occupation": [
     "Religieux"
    ],
@@ -46604,7 +47311,9 @@
    "species": [
     "Serpent primordial"
    ],
-   "nationality": null,
+   "nationality": [
+    "Firelink Shrine"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
@@ -46629,7 +47338,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Anor Londo"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
@@ -46654,7 +47365,9 @@
    "species": [
     "Divinité"
    ],
-   "nationality": null,
+   "nationality": [
+    "Anor Londo"
+   ],
    "occupation": null,
    "hair": [
     "Rouges"
@@ -47029,7 +47742,10 @@
    "species": [
     "Humanoïde"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain",
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banjo-Kazooie",
@@ -47052,7 +47768,10 @@
    "species": [
     "Objet"
    ],
-   "nationality": null,
+   "nationality": [
+    "Showdown Town",
+    "Spiral Mountain"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -47076,7 +47795,10 @@
    "species": [
     "Ogre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain",
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banjo-Kazooie",
@@ -47097,7 +47819,9 @@
     "Ours",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -47119,7 +47843,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Cauldron Keep"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -47143,7 +47869,10 @@
     "Taupe",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain",
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -47169,7 +47898,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Isle o' Hags",
+    "Mayahem Temple"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Banjo-Kazooie",
@@ -47193,7 +47925,9 @@
    "species": [
     "Charbon"
    ],
-   "nationality": null,
+   "nationality": [
+    "Glitter Gulch Mine"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -47201,6 +47935,7 @@
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
+    "Action-aventure",
     "Plates-formes"
    ],
    "year": 2000
@@ -47216,7 +47951,10 @@
     "Ours",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Spiral Mountain",
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -47242,7 +47980,9 @@
    "species": [
     "Fée"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gruntilda's Lair"
+   ],
    "occupation": null,
    "hair": [
     "Blonds"
@@ -47472,7 +48212,9 @@
    "species": [
     "Yōkai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oni Island"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Okami",
@@ -48355,8 +49097,10 @@
     "Humain"
    ],
    "nationality": [
-    "Sobeck Ranch",
-    "United States"
+    "Carson City",
+    "Nevada",
+    "United States",
+    "Sobeck Ranch"
    ],
    "occupation": [
     "Scientifique"
@@ -48475,10 +49219,10 @@
     "Humain"
    ],
    "nationality": [
+    "Salt Lake City",
+    "United States",
     "Thebes",
-    "Isle of Spires",
-    "Forbidden West",
-    "Salt Lake City"
+    "Isle of Spires"
    ],
    "occupation": null,
    "hair": [
@@ -48504,9 +49248,9 @@
     "Humain"
    ],
    "nationality": [
+    "The Odyssey",
     "The Base",
-    "Forbidden West",
-    "The Odyssey"
+    "Forbidden West"
    ],
    "occupation": null,
    "hair": [
@@ -48791,7 +49535,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Royal Conservatory"
+   ],
    "occupation": [
     "Noble"
    ],
@@ -48934,7 +49680,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Arcadia Bay",
+    "Oregon",
+    "United States"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -48961,7 +49711,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fort Lauderdale",
+    "Florida",
+    "United States"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -49045,7 +49799,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakland",
+    "California",
+    "United States"
+   ],
    "occupation": [
     "Étudiant"
    ],
@@ -49071,7 +49829,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Portland",
+    "United States",
+    "Oregon"
+   ],
    "occupation": [
     "Serveur"
    ],
@@ -49156,7 +49918,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Arcadia Bay",
+    "Oregon",
+    "United States"
+   ],
    "occupation": [
     "Étudiant",
     "Criminel"
@@ -49788,7 +50554,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Jaffar's Wheelstation",
+    "Fisherman's Village"
+   ],
    "occupation": null,
    "hair": [
     "Bruns",
@@ -49872,7 +50641,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ferry Station",
+    "Harran University"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -49898,7 +50670,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Tower"
+   ],
    "occupation": null,
    "hair": [
     "Noirs"
@@ -49980,7 +50754,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Tower"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -50411,7 +51187,9 @@
    "species": [
     "Korvax"
    ],
-   "nationality": null,
+   "nationality": [
+    "Space Anomaly"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
@@ -50435,7 +51213,9 @@
    "species": [
     "Gek"
    ],
-   "nationality": null,
+   "nationality": [
+    "Space Anomaly"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
@@ -50781,7 +51561,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fort Joy",
+    "Temple of the Seven"
+   ],
    "occupation": [
     "Religieux",
     "Mercenaire"
@@ -50824,7 +51607,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Fort Joy",
+    "Temple of Tir-Cendelius"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -50844,7 +51630,10 @@
    "species": [
     "Éternel"
    ],
-   "nationality": null,
+   "nationality": [
+    "Temple of the Seven",
+    "The Arena of the One"
+   ],
    "occupation": [
     "Érudit"
    ],
@@ -50866,7 +51655,9 @@
    "species": [
     "Éternel"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ancient Temple"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -50886,7 +51677,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kemm's Vault",
+    "Black Ring encampment"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -50931,7 +51725,10 @@
     "Lézard",
     "Animal"
    ],
-   "nationality": null,
+   "nationality": [
+    "Temple of the Seven",
+    "The Arena of the One"
+   ],
    "occupation": [
     "Noble",
     "Soldat"
@@ -51140,6 +51937,7 @@
     "Humain"
    ],
    "nationality": [
+    "Aulitz",
     "Germany"
    ],
    "occupation": [
@@ -51339,7 +52137,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mountain Town",
+    "Broken Railroad"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Long Dark",
@@ -52615,7 +53416,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Barrockstadt"
+   ],
    "occupation": [
     "Professeur",
     "Dirigeant"
@@ -52644,7 +53447,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Komkolzgrad"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Syberia",
@@ -52743,7 +53548,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Valadilene"
+   ],
    "occupation": [
     "Avocat"
    ],
@@ -53240,7 +54047,9 @@
    "species": [
     "Nomai"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Interloper"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Outer Wilds",
@@ -53349,7 +54158,9 @@
    "species": [
     "Nomai"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Interloper"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Outer Wilds",
@@ -53393,7 +54204,9 @@
    "species": [
     "Nomai"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sun Station"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Outer Wilds",
@@ -53508,7 +54321,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Tulsa",
+    "Oklahoma",
+    "United States"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
@@ -53532,7 +54349,11 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Baltimore",
+    "United States",
+    "Maryland"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
@@ -54398,7 +55219,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Capital Knot City",
+    "United Cities of America"
+   ],
    "occupation": [
     "Médecin"
    ],
@@ -54423,7 +55247,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "DHV Magellan"
+   ],
    "occupation": [
     "Chauffeur"
    ],
@@ -54471,7 +55297,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Central Knot City",
+    "Mountain Knot City"
+   ],
    "occupation": [
     "Survivant",
     "Scientifique"
@@ -54501,7 +55330,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Beach"
+   ],
    "occupation": [
     "Soldat"
    ],
@@ -54623,7 +55454,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gale Cliffs"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54647,7 +55480,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Marrows"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54669,7 +55504,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Twisted Strand"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54691,7 +55528,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Devil's Spine"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54715,7 +55554,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Little Marrow"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54741,7 +55582,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gale Cliffs"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54763,7 +55606,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Greater Marrow"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54785,7 +55630,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Iron Rig"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54807,7 +55654,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Marrows"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -54829,7 +55678,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Little Marrow"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Dredge",
@@ -55133,6 +55984,7 @@
     "Humain"
    ],
    "nationality": [
+    "Taipei",
     "Taiwan"
    ],
    "occupation": [
@@ -55210,6 +56062,7 @@
     "Humain"
    ],
    "nationality": [
+    "Equo-America",
     "Equo-American"
    ],
    "occupation": null,
@@ -56845,7 +57698,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Base Cochise"
+   ],
    "occupation": [
     "Dirigeant"
    ],
@@ -56869,7 +57724,9 @@
    "species": [
     "Robot"
    ],
-   "nationality": null,
+   "nationality": [
+    "Union Station"
+   ],
    "occupation": null,
    "hair": [
     "N/A"
@@ -56895,7 +57752,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Wasteland",
+    "Las Vegas"
+   ],
    "occupation": [
     "Criminel"
    ],
@@ -56920,7 +57780,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Los Alamitos",
+    "The Warrens prison block"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
@@ -56966,7 +57829,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Bizarre"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
@@ -57010,7 +57875,10 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Hollywood",
+    "United States"
+   ],
    "occupation": [
     "Conseiller"
    ],
@@ -57062,7 +57930,10 @@
    "species": [
     "Mutant"
    ],
-   "nationality": null,
+   "nationality": [
+    "Darwin",
+    "Aspen"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
@@ -57087,7 +57958,10 @@
    "species": [
     "Godlike"
    ],
-   "nationality": null,
+   "nationality": [
+    "Ondra's Gift",
+    "Kahanga Palace"
+   ],
    "occupation": null,
    "hair": [
     "Bruns",
@@ -57114,7 +57988,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gilded Vale"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57138,7 +58014,10 @@
    "species": [
     "Elfe"
    ],
-   "nationality": null,
+   "nationality": [
+    "Gilded Vale",
+    "Engwithan Digsite"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -57160,7 +58039,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Magran's Fork"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57184,7 +58065,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sun in Shadow"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57206,7 +58089,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Dyrford Village"
+   ],
    "occupation": null,
    "hair": [
     "Bruns"
@@ -57231,7 +58116,9 @@
    "species": [
     "Aumaua"
    ],
-   "nationality": null,
+   "nationality": [
+    "Caed Nua"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57251,7 +58138,9 @@
    "species": [
     "Orlan"
    ],
-   "nationality": null,
+   "nationality": [
+    "Stormwall Gorge"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57271,7 +58160,9 @@
    "species": [
     "Nain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Woodend Plains"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57313,7 +58204,9 @@
    "species": [
     "Godlike"
    ],
-   "nationality": null,
+   "nationality": [
+    "Watershapers Guild"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -57738,7 +58631,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Oakmont Port"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -57921,7 +58816,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "The Shells"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -57941,7 +58838,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Underwater Lair"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
@@ -62366,7 +63265,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
@@ -62388,7 +63289,9 @@
    "species": [
     "Magister"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
@@ -62410,7 +63313,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
@@ -62458,7 +63363,9 @@
    "species": [
     "Humain"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
@@ -62829,7 +63736,7 @@
     "Humain"
    ],
    "nationality": [
-    "\"British South African\""
+    "South Africa"
    ],
    "occupation": [
     "Dirigeant",
@@ -62995,6 +63902,7 @@
     "Humain"
    ],
    "nationality": [
+    "Guyenne",
     "France"
    ],
    "occupation": null,

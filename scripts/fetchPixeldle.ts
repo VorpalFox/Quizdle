@@ -19,7 +19,7 @@ import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, merg
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedGame, fullPages, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
-import { fetchCharacters, fetchClasses, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
+import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
 const MIN_PER_FRANCHISE = 4
@@ -90,6 +90,10 @@ const labels = await fetchLabels([
   ...Object.values(characters).flatMap(({ claims }) => [claims.gender, claims.instanceOf, claims.nationality, claims.occupation, claims.hair, claims.firstAppearance].flat()),
   ...Object.values(games).flatMap(({ developers, genres }) => [...developers, ...genres]),
 ].filter((id): id is string => Boolean(id) && /^Q\d+$/.test(id!)))
+
+// Les lieux de naissance et de résidence : en anglais
+const englishLabels = await fetchEnglishLabels(Object.values(characters).flatMap(({ claims }) => [...claims.birthplace ?? [], ...claims.residence ?? []]).filter(id => /^Q\d+$/.test(id)))
+const englishLabelsOf = (ids: string[] | undefined) => (ids ?? []).map(id => englishLabels[id] ?? null).filter((name): name is string => Boolean(name))
 
 const label = (id: string) => labels[id] ?? null
 const labelsOf = (ids: string[] | undefined) => (ids ?? []).map(label).filter((name): name is string => Boolean(name))
@@ -381,8 +385,8 @@ const generated: Entry[] = selections.flatMap(({ franchise, chosen }) => chosen.
   const gender = wikidataGender(genders) ?? otherGender ?? null
   const genres = genresOf(game, franchise)
   const occupations = unique((wikidataOccupation(labelsOf(claims.occupation)) ?? []).map(name => translated('occupation', name, translateOccupation(name))))
-  // Tous les pays : le champ est multiple, les wikis y ajoutent la ville et la région
-  const nationality = unique(labelsOf(claims.nationality).flatMap(translatePlace))
+  // Le lieu de naissance, de résidence, puis les pays : le champ est multiple, les wikis y ajoutent la ville et la région
+  const nationality = unique([...englishLabelsOf(claims.birthplace), ...englishLabelsOf(claims.residence), ...labelsOf(claims.nationality)].flatMap(translatePlace))
   return {
     id: candidate.id,
     name: candidate.name,

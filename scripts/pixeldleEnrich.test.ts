@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
+import { birthPlaces, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {
@@ -33,6 +33,18 @@ describe('parseSpecies', () => {
   it('Anglais_Traduit', () => {
     expect(parseSpecies('Human / Nobody')).toBe('Humain')
     expect(parseSpecies('Dinosaur')).toBe('Dinosaure')
+  })
+})
+
+describe('birthPlaces', () => {
+  it('DateEtLieu_LeLieu', () => {
+    expect(birthPlaces('October 25, 1379, Vigrid')).toEqual(['Vigrid'])
+    expect(birthPlaces('2473, Tarsonis')).toEqual(['Tarsonis'])
+  })
+
+  it('DateSeule_Rien', () => {
+    expect(birthPlaces('circa, 1852')).toEqual([])
+    expect(birthPlaces('Mid to late 19th Century')).toEqual([])
   })
 })
 
@@ -73,5 +85,14 @@ describe('morePlaces', () => {
 describe('infoboxValues', () => {
   it('VilleEtRegion_LesDeux', () => {
     expect(infoboxValues({ hometown: 'Pallet Town', region: 'Kanto' }, new Map()).nationality).toEqual(['Pallet Town', 'Kanto'])
+  })
+
+  it('Naissance_LieuEnPremier', () => {
+    expect(infoboxValues({ born: 'October 25, 1379, Vigrid', region: 'Europe' }, new Map()).nationality).toEqual(['Vigrid', 'Europe'])
+  })
+
+  it('SeulementLocation_DernierRecours', () => {
+    expect(infoboxValues({ location: 'Diamond City, Sanctuary, Vault 111' }, new Map()).nationality).toEqual(['Diamond City', 'Sanctuary'])
+    expect(infoboxValues({ location: 'Diamond City', hometown: 'Boston' }, new Map()).nationality).toEqual(['Boston', 'United States'])
   })
 })

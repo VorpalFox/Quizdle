@@ -22,6 +22,9 @@ export const CHARACTER_PROPERTIES = {
   gender: 'P21',
   instanceOf: 'P31',
   nationality: 'P27',
+  // lieu de naissance et de résidence : des lieux de plus pour la nationalité (Gensokyo, Kaer Morhen)
+  birthplace: 'P19',
+  residence: 'P551',
   occupation: 'P106',
   hair: 'P1884',
   firstAppearance: 'P4584',
@@ -306,6 +309,22 @@ export function fetchLabels(ids: Iterable<string>): Promise<Record<string, strin
     const labels: Record<string, string | null> = Object.fromEntries(batch.map(id => [id, null]))
     for (const { item, fr, en, mul } of rows)
       labels[item!] = fr ?? en ?? mul ?? null
+    return labels
+  })
+}
+
+// Le nom anglais d'abord : pour les lieux de naissance et de résidence, que la nationalité garde en anglais (London, pas Londres)
+export function fetchEnglishLabels(ids: Iterable<string>): Promise<Record<string, string | null>> {
+  return cached('labels-en', ids, ITEMS_PER_REQUEST, async batch => {
+    const rows = await sparql(`SELECT ?item ?fr ?en ?mul WHERE {
+      VALUES ?item { ${values(batch)} }
+      OPTIONAL { ?item rdfs:label ?fr FILTER(LANG(?fr) = "fr") }
+      OPTIONAL { ?item rdfs:label ?en FILTER(LANG(?en) = "en") }
+      OPTIONAL { ?item rdfs:label ?mul FILTER(LANG(?mul) = "mul") }
+    }`)
+    const labels: Record<string, string | null> = Object.fromEntries(batch.map(id => [id, null]))
+    for (const { item, fr, en, mul } of rows)
+      labels[item!] = en ?? mul ?? fr ?? null
     return labels
   })
 }

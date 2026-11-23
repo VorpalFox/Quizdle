@@ -28,13 +28,20 @@ const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre', 'pronoun', 'pronouns'],
   species: ['species', 'race', 'espèce', 'species/race', 'kind', 'creature'],
   // Les champs « pays » : la nationalité, le pays, la région ou le monde d'origine
-  nationality: ['nationality', 'nation', 'citizenship', 'country', 'homeland', 'homeworld', 'home world', 'homeplanet', 'home planet', 'planet', 'nation of origin', 'country of origin', 'region'],
+  nationality: ['nationality', 'nation', 'citizenship', 'country', 'homeland', 'homeworld', 'home world', 'homeworlds', 'homeworld(s)', 'homeworld(s):', 'homeplanet', 'home planet', 'planet', 'nation of origin', 'country of origin', 'region'],
   // Les champs « lieu » : une ville réelle est ramenée à son pays (CITIES dans pixeldleTranslate.ts)
-  place: ['originplace', 'origin', 'hometown', 'home', 'birthplace', 'place of birth', 'born in', 'town', 'residence'],
+  place: ['originplace', 'origin', 'hometown', 'home', 'birthplace', 'place of birth', 'born in', 'town', 'residence', 'residency'],
+  // La naissance : une date, parfois suivie du lieu (« October 25, 1379, Vigrid »)
+  birth: ['born', 'birth'],
+  // Où on croise le personnage : en dernier recours, faute de mieux (« Diamond City », « Snowdin »)
+  location: ['location', 'located in', 'world'],
   occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location'>
+const MAX_LOCATIONS = 2
+// Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
+const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
 export const ENRICH_KEYS: EnrichKey[] = ['gender', 'species', 'nationality', 'occupation', 'hair']
 
 // Un champ en anglais sans valeur utile
@@ -164,14 +171,21 @@ export function parseSpecies(value: string): string | null | undefined {
 
 // Les lieux d'une valeur. « Dragon Age II: » (un jeu, sans lieu derrière) est retiré ; « Koopa Kingdom: 48 Lava
 // Cul-De-Sac » garde ce qui précède les « : »
+// « B-K: Spiral Mountain » (le jeu en abrégé devant) → Spiral Mountain ; « # Wailing Dunes » → Wailing Dunes
 const parts = (value: string) => value.replace(/\s*\([^)]*\)/g, '').split(/\s*(?:,|;|\/|\bor\b)\s*/)
-  .filter(part => !part.trim().endsWith(':')).map(part => part.split(':')[0]!.trim()).filter(Boolean)
+  .filter(part => !part.trim().endsWith(':'))
+  .map(part => part.replace(/^[\s#*]+/, '').replace(/^[A-Z0-9-]{1,5}:\s*/, '').split(':')[0]!.trim()).filter(Boolean)
 
 // Un champ « pays » ou « lieu » : tous ses lieux, pour donner un max d'indices (« Pallet Town, Kanto » : les deux ;
 // « Arcadia Bay, Oregon, United States » → Arcadia Bay, Oregon, États-Unis)
 export function parsePlaces(value: string): string[] {
   const places = parts(value).filter(place => place.length <= 40 && !EMPTY.test(place))
   return [...new Set(places.flatMap(translatePlace))]
+}
+
+// Le lieu d'une date de naissance : « October 25, 1379, Vigrid » → Vigrid, « circa, 1852 » → rien
+export function birthPlaces(value: string): string[] {
+  return parsePlaces(parts(value).filter(part => !NOT_BIRTHPLACE.test(part)).join(', '))
 }
 
 // Nos règles d'abord, sur la valeur anglaise (« Bartender » → Serveur), puis le dictionnaire du Weebdle, dont la
@@ -285,8 +299,10 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     }
   }
   // Tous les champs « pays » et « lieu » s'additionnent : « Pallet Town » (hometown) et « Kanto » (region)
+  // Le lieu de naissance d'abord, puis les champs « lieu » et « pays ». Sinon, en dernier recours, là où on le croise.
   const raw = [...present(fields, FIELDS.place), ...present(fields, FIELDS.nationality)]
-  const places = [...new Set(raw.flatMap(parsePlaces))].slice(0, MAX_PLACES)
+  const found = [...present(fields, FIELDS.birth).flatMap(birthPlaces), ...raw.flatMap(parsePlaces)]
+  const places = [...new Set(found.length > 0 ? found : present(fields, FIELDS.location).flatMap(parsePlaces).slice(0, MAX_LOCATIONS))].slice(0, MAX_PLACES)
   if (places.length > 0)
     result.nationality = places
   const occupation = first(fields, FIELDS.occupation)

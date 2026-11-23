@@ -317,7 +317,7 @@ const HISTORIC_COUNTRIES: Record<string, string> = {
   'russian empire': 'Russia', 'people\'s republic of china': 'China', 'ming empire': 'China', 'ukrainian soviet socialist republic': 'Ukraine',
   'belorussian ssr': 'Belarus', 'soviet russian': 'Soviet Union', 'royaume des pays-bas': 'Netherlands', 'liberia': 'Liberia', 'liberian': 'Liberia',
   'république fédérative socialiste de yougoslavie': 'Yugoslavia', 'byzantine': 'Byzantine Empire',
-  'u.s': 'United States', 'englander': 'United Kingdom', 'greenlander': 'Greenland', 'prussian': 'Germany', 'imperial german': 'Germany',
+  'u.s': 'United States', 'u.s.a': 'United States', 'englander': 'United Kingdom', 'greenlander': 'Greenland', 'prussian': 'Germany', 'imperial german': 'Germany',
   'rhenish': 'Germany', 'british south african': 'South Africa', 'minoan': 'Greece', 'bc': 'Canada', 'polynesian': 'Polynesia',
 }
 
@@ -332,7 +332,8 @@ const CITY_NAMES: Record<string, string> = {
 // qui donnent le lieu
 const PLACE_NAMES: Record<string, string> = {
   'mount olympus': 'Olympus', 'k. rool\'s mobile island fortress': 'Mobile Island Fortress', 'castle of talmberg': 'Talmberg',
-  'mare erythraeum': 'Mars',
+  'mare erythraeum': 'Mars', 'west country england': 'West Country', 'inkopolis square & octo canyon': 'Inkopolis Square',
+  'eternal holy city okhema': 'Okhema', 'hanged man': 'The Hanged Man', 'galleria': 'Inkopolis Galleria',
   // Les gentilés
   'deponian': 'Deponia', 'elysian': 'Elysium', 'adrestian': 'Adrestian Empire', 'plegian': 'Plegia', 'columbian': 'Columbia',
   'vigoorian': 'Holy Vigoor Empire', 'numbanian': 'Numbani', 'rook islander': 'Rook Islands',
@@ -341,11 +342,14 @@ const PLACE_NAMES: Record<string, string> = {
 // Ce que les wikis rangent dans les champs « pays » ou « lieu » sans que ce soit un lieu : entreprises, jeux, groupes
 const NOT_PLACES = new Set([
   'cyberlife', 'dr1', 'dr2', 'the world ends with you', 'celts', 'inc.', 'inc', 'possibly', 'ordinary', 'future', 'd.c',
+  // Des jeux, des époques et des bouts de phrase pris pour des lieux par les champs « location »
+  'mega man', 'mega man powered up', 'metroid', 'kraid', 'wasteland 2', 'wasteland 3', 'room_mysteryman', 'middle ages', 'mobile',
+  'beyond time', 'canada–united states border',
 ])
 // Pas un lieu : un âge, une mythologie, un endroit sans nom (« His keep », « Any place related to the Kremling Krew »),
 // une lettre seule. Ni le logement d'un personnage, qui ne se croise avec personne (« 1276 Fig Leaf Lane », « Jackie's
 // Garage », « Delamain Corp HQ ») : les champs « residence » en sont pleins.
-const NOT_PLACE = /years old|mythology|^(?:his|her|their|my|any|unknown|various|several)\b|^(?:hideout|safehouse|ranch|backyard|home|house|castle|village)$|^[^\p{L}]*$|^\p{L}$|^\d|\b(?:apartments?|house|home|garage|office|hq|mansion|hovel|hideout|lab|cabin|club|restaurante?|saloon|facility|warship|corp|inc)$/u
+const NOT_PLACE = /years old|mythology|^(?:his|her|their|my|any|unknown|various|several)\b|^(?:hideout|safehouse|ranch|backyard|home|house|castle|village)$|^[^\p{L}]*$|^\p{L}$|^\d|\b(?:apartments?|house|home|garage|office|hq|mansion|hovel|hideout|lab|cabin|club|restaurante?|saloon|facility|warship|corp|inc|clinic|chamber|control room|alcove|courtyard|camp|campsites?|laboratory|capsule|manor|hall|prison|dam|farmstead|homestead|department|plant|theat(?:er|re)|warehouse|storage|bunker|level|interior|car|inn|buffet|cure|mare)$|\bstage\b|\bcampsites?\b|\sbeach$|\bgas station$|^(?:in|on|at|buried|spirit|reborn|later|see|underneath|room|residence of|apartment of)\b|\b(?:during|childhood)\b|^(?:peripatetic|everywhen|deep in the wilds|l\d+)$/iu
 
 // « Likely Japan », « Created on Zebes », « Town of Onett », « Country of Eagleland » : le lieu seul
 const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|originally|created (?:on|in)|raised (?:on|in)|born (?:on|in))\s+|(?:the\s+)?(?:island country|country|town|region|province) of\s+)/i
@@ -355,7 +359,7 @@ const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|origin
 // un lieu de fiction tel quel. [] : pas un lieu.
 export function translatePlace(label: string): string[] {
   // Les caractères invisibles des drapeaux emoji (« 󠁧󠁢󠁳 Scottish »)
-  const clean = label.replace(/[\u{E0000}-\u{E007F}\p{Extended_Pictographic}]/gu, '').trim().replace(PLACE_PREFIX, '').replace(/[.\s]+$/, '')
+  const clean = label.replace(/[\u{E0000}-\u{E007F}\p{Extended_Pictographic}]/gu, '').trim().replace(PLACE_PREFIX, '').replace(/["?]/g, '').replace(/[.\s]+$/, '').trim()
   const name = key(clean).replace(/^the\s+/, '')
   if (NOT_PLACES.has(name) || NOT_PLACES.has(key(clean)) || NOT_PLACE.test(name))
     return []
