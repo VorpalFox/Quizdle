@@ -51874,7 +51874,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 1999
   }
  },
  {
@@ -51896,7 +51896,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2003
   }
  },
  {
@@ -51945,7 +51945,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2002
   }
  },
  {
@@ -51969,7 +51969,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2002
   }
  },
  {
@@ -51994,7 +51994,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 1999
   }
  },
  {
@@ -52043,6 +52043,30 @@
     "FPS"
    ],
    "year": 2003
+  }
+ },
+ {
+  "id": "wiki-unreal-sapphire",
+  "name": "Sapphire",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Paso Robles"
+   ],
+   "occupation": [
+    "Combattant"
+   ],
+   "hair": null,
+   "franchise": "Unreal",
+   "developer": "Epic Games",
+   "genres": [
+    "FPS"
+   ],
+   "year": 1998
   }
  },
  {

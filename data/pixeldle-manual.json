@@ -77,7 +77,6 @@
   "Q1072320",
   "wiki-unreal-selket",
   "wiki-unreal-sobek",
-  "wiki-unreal-sapphire",
   "wiki-unreal-apophis",
   "wiki-unreal-devastation",
   "wiki-unreal-anubis"
@@ -2304,6 +2303,31 @@
     "Divinité"
    ],
    "_raison": "dieu du tonnerre"
+  },
+  "wiki-unreal-ne-ban": {
+   "_nom": "Ne'Ban",
+   "_raison": "année : Unreal II",
+   "year": 2003
+  },
+  "wiki-unreal-malcolm": {
+   "_nom": "Malcolm",
+   "_raison": "année : Unreal Tournament",
+   "year": 1999
+  },
+  "wiki-unreal-xan-kriegor": {
+   "_nom": "Xan Kriegor",
+   "_raison": "année : Unreal Tournament",
+   "year": 1999
+  },
+  "wiki-unreal-brock": {
+   "_nom": "Brock",
+   "_raison": "année : Unreal Tournament 2003",
+   "year": 2002
+  },
+  "wiki-unreal-gorge": {
+   "_nom": "Gorge",
+   "_raison": "année : Unreal Tournament 2003",
+   "year": 2002
   }
  },
  "add": [
@@ -4557,7 +4581,7 @@
    ]
   },
   "Unreal": {
-   "limit": 10
+   "limit": 11
   }
  },
  "defaults": {
