@@ -11,8 +11,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Royaume Champignon"
+    "United States",
+    "Mushroom Kingdom"
    ],
    "occupation": [
     "Ouvrier",
@@ -44,8 +44,8 @@
    "nationality": [
     "Yoshi Island",
     "Brooklyn",
-    "États-Unis",
-    "Royaume Champignon"
+    "United States",
+    "Mushroom Kingdom"
    ],
    "occupation": [
     "Plombier"
@@ -113,7 +113,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume Champignon"
+    "Mushroom Kingdom"
    ],
    "occupation": [
     "Médecin"
@@ -232,7 +232,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume Champignon"
+    "Mushroom Kingdom"
    ],
    "occupation": [
     "Plombier",
@@ -1159,7 +1159,7 @@
    "nationality": [
     "Opelucid City",
     "Unova",
-    "Dragons"
+    "Village of Dragons"
    ],
    "occupation": [
     "Dresseur"
@@ -2463,7 +2463,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Tueur"
@@ -2490,7 +2490,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Combattant"
@@ -2514,7 +2514,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Journaliste",
@@ -2543,7 +2543,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Thaïlande"
+    "Thailand"
    ],
    "occupation": [
     "Dirigeant",
@@ -2572,7 +2572,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Espagne"
+    "Spain"
    ],
    "occupation": [
     "Combattant",
@@ -2602,8 +2602,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Japon"
+    "United States",
+    "Japan"
    ],
    "occupation": null,
    "hair": [
@@ -2625,7 +2625,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": [
     "Sportif"
@@ -2647,7 +2647,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Pilote"
@@ -2672,8 +2672,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS",
-    "Russie"
+    "Soviet Union",
+    "Russia"
    ],
    "occupation": [
     "Combattant"
@@ -2697,7 +2697,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Thaïlande"
+    "Thailand"
    ],
    "occupation": [
     "Combattant",
@@ -2726,7 +2726,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat",
@@ -2753,7 +2753,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant",
@@ -2779,7 +2779,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Justicier"
@@ -2810,7 +2810,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": null,
    "hair": [
@@ -2836,7 +2836,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Jamaïque"
+    "Jamaica"
    ],
    "occupation": [
     "Musicien",
@@ -2865,7 +2865,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Combattant"
@@ -2889,7 +2889,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Garde",
@@ -2914,7 +2914,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Assassin"
@@ -2942,7 +2942,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Combattant"
@@ -2968,7 +2968,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier"
@@ -2993,8 +2993,8 @@
    "gender": "Homme",
    "species": "Mort-vivant",
    "nationality": [
-    "Japon",
-    "Chine",
+    "Japan",
+    "China",
     "Earthrealm"
    ],
    "occupation": [
@@ -3047,7 +3047,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Australie",
+    "Australia",
     "Earthrealm"
    ],
    "occupation": [
@@ -3104,7 +3104,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine",
+    "China",
     "Earthrealm"
    ],
    "occupation": [
@@ -3134,7 +3134,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine",
+    "China",
     "Earthrealm",
     "Outworld"
    ],
@@ -3163,7 +3163,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine",
+    "China",
     "Earthrealm"
    ],
    "occupation": [
@@ -3192,7 +3192,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Earthrealm"
    ],
    "occupation": [
@@ -3287,7 +3287,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine",
+    "China",
     "Earthrealm",
     "Fengjian"
    ],
@@ -3315,7 +3315,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Earthrealm"
    ],
    "occupation": [
@@ -3388,7 +3388,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Mongolie",
+    "Mongolia",
     "Earthrealm"
    ],
    "occupation": [
@@ -3480,9 +3480,9 @@
    "species": "Humain",
    "nationality": [
     "Lampang",
-    "Thaïlande",
+    "Thailand",
     "Earthrealm",
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Ninja"
@@ -3507,7 +3507,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Étudiant",
@@ -3537,7 +3537,7 @@
    "gender": "Homme",
    "species": "Demi-démon",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -3597,7 +3597,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Irlande"
+    "Ireland"
    ],
    "occupation": [
     "Garde"
@@ -3623,7 +3623,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Garde"
@@ -3650,7 +3650,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Brésil"
+    "Brazil"
    ],
    "occupation": [
     "Artiste"
@@ -3674,7 +3674,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Samouraï",
@@ -3703,7 +3703,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Brésil"
+    "Brazil"
    ],
    "occupation": [
     "Étudiant"
@@ -3731,7 +3731,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -3763,7 +3763,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Cuisinier",
@@ -3788,7 +3788,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Corée du Sud"
+    "South Korea"
    ],
    "occupation": [
     "Étudiant",
@@ -3818,7 +3818,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Étudiant",
@@ -3847,7 +3847,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Justicier"
@@ -3875,7 +3875,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -3905,7 +3905,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Archéologue"
@@ -3955,7 +3955,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -3987,7 +3987,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Suède"
+    "Sweden"
    ],
    "occupation": [
     "Soldat",
@@ -4012,7 +4012,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Combattant",
@@ -4041,7 +4041,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Espion"
@@ -4069,8 +4069,8 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Chine"
+    "United States",
+    "China"
    ],
    "occupation": [
     "Assassin",
@@ -4102,7 +4102,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -4134,7 +4134,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -4160,7 +4160,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Soldat",
@@ -4192,7 +4192,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Révolutionnaire",
@@ -4220,7 +4220,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -4256,7 +4256,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Fermier"
@@ -4284,7 +4284,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique"
@@ -4328,7 +4328,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -4357,7 +4357,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Espion"
@@ -4382,7 +4382,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Espion"
@@ -4432,7 +4432,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Brésil"
+    "Brazil"
    ],
    "occupation": [
     "Soldat",
@@ -4459,7 +4459,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Italie"
+    "Italy"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -4487,7 +4487,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie",
+    "Russia",
     "Yabluchne",
     "Ukraine",
     "Sumy Oblast"
@@ -4517,7 +4517,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Serveur"
@@ -4542,7 +4542,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -4567,7 +4567,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant",
@@ -4596,7 +4596,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Ouvrier"
@@ -4624,7 +4624,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mercenaire",
@@ -4655,7 +4655,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Politicien",
@@ -4687,7 +4687,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Liberia"
    ],
    "occupation": [
@@ -4722,8 +4722,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Russie"
+    "United States",
+    "Russia"
    ],
    "occupation": [
     "Tireur d'élite",
@@ -4755,8 +4755,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Royaume-Uni"
+    "United States",
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat",
@@ -4786,7 +4786,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mercenaire",
@@ -4816,7 +4816,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -4845,7 +4845,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant",
@@ -4899,7 +4899,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mercenaire",
@@ -4931,7 +4931,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant"
@@ -4961,7 +4961,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Politicien"
@@ -4987,7 +4987,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -5013,7 +5013,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Soldat"
@@ -5037,7 +5037,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Mercenaire"
@@ -5066,7 +5066,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique"
@@ -5094,7 +5094,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Souverain",
@@ -5123,7 +5123,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Pays-Bas"
+    "Netherlands"
    ],
    "occupation": [
     "Mercenaire"
@@ -5150,7 +5150,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "URSS"
+    "Soviet Union"
    ],
    "occupation": [
     "Soldat"
@@ -5178,7 +5178,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS"
+    "Soviet Union"
    ],
    "occupation": [
     "Espion"
@@ -5500,10 +5500,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "The World Ends With You",
     "Traverse Town",
     "Shibuya",
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": [
@@ -5739,7 +5738,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume Métro",
+    "Metro Kingdom",
     "New Donk City of Metro Kingdom"
    ],
    "occupation": [
@@ -9314,7 +9313,7 @@
    "gender": "Homme",
    "species": "Extraterrestre",
    "nationality": [
-    "Royaume lombax",
+    "Lombax Kingdom",
     "Fastoon",
     "Volgram Pass",
     "Torren IV"
@@ -9343,7 +9342,7 @@
    "gender": "Homme",
    "species": "Extraterrestre",
    "nationality": [
-    "Royaume lombax",
+    "Lombax Kingdom",
     "First Cragmite Empire",
     "Second Cragmite Empire",
     "Dimension A2-66"
@@ -9588,7 +9587,7 @@
    "gender": "Homme",
    "species": "Extraterrestre",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Great Clock",
     "Zoni dimension"
    ],
@@ -9634,7 +9633,7 @@
    "gender": "Homme",
    "species": "Extraterrestre",
    "nationality": [
-    "Royaume lombax",
+    "Lombax Kingdom",
     "Fastoon"
    ],
    "occupation": null,
@@ -10011,7 +10010,7 @@
    "gender": "Homme",
    "species": "Raton laveur",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Justicier"
@@ -10121,7 +10120,7 @@
    "gender": "Homme",
    "species": "Panda",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -10142,7 +10141,7 @@
    "gender": "Homme",
    "species": "Chien",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -10279,7 +10278,7 @@
    "gender": "Homme",
    "species": "Oiseau",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -10302,7 +10301,7 @@
    "gender": "Femme",
    "species": "Araignée",
    "nationality": [
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Garde",
@@ -10325,7 +10324,7 @@
    "gender": "Homme",
    "species": "Tigre",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": [
     "Criminel"
@@ -10351,7 +10350,7 @@
    "gender": "Femme",
    "species": "Tigre",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": null,
    "hair": null,
@@ -10374,7 +10373,7 @@
    "gender": "Femme",
    "species": "Crocodile",
    "nationality": [
-    "Haïti"
+    "Haiti"
    ],
    "occupation": null,
    "hair": null,
@@ -10461,7 +10460,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Archer",
@@ -10492,7 +10491,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Autriche"
+    "Austria"
    ],
    "occupation": [
     "Professeur",
@@ -10565,7 +10564,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Archéologue"
@@ -10634,7 +10633,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Commerçant"
@@ -10662,8 +10661,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Nouvelle-Zélande"
+    "United States",
+    "New Zealand"
    ],
    "occupation": [
     "Cuisinier"
@@ -10690,7 +10689,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Archéologue"
@@ -10719,8 +10718,8 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon",
-    "États-Unis",
+    "Japan",
+    "United States",
     "Portugal"
    ],
    "occupation": [
@@ -10751,7 +10750,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Aventurier",
@@ -10779,7 +10778,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Journaliste",
@@ -10809,7 +10808,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Australie"
+    "Australia"
    ],
    "occupation": [
     "Aventurier",
@@ -10838,7 +10837,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -10868,7 +10867,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Voleur",
@@ -10895,7 +10894,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Chasseur de trésor"
@@ -10923,7 +10922,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Afrique du Sud"
+    "South Africa"
    ],
    "occupation": [
     "Mercenaire",
@@ -10978,7 +10977,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Chasseur de trésor"
@@ -11158,7 +11157,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": [
     "Commerçant"
@@ -11252,7 +11251,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Espion",
@@ -11279,7 +11278,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -11310,7 +11309,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Ouvrier",
@@ -11339,7 +11338,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -11368,7 +11367,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Ouvrier",
@@ -11399,7 +11398,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant",
@@ -11426,7 +11425,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant"
@@ -11452,7 +11451,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11478,7 +11477,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11504,7 +11503,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11530,7 +11529,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -11558,7 +11557,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11584,7 +11583,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11610,7 +11609,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11639,7 +11638,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -11664,7 +11663,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11691,7 +11690,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11718,7 +11717,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11745,7 +11744,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant"
@@ -11774,7 +11773,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -11800,7 +11799,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -11825,7 +11824,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Grèce",
+    "Greece",
     "Sparta"
    ],
    "occupation": [
@@ -11854,7 +11853,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Grèce",
+    "Greece",
     "Island of Creation"
    ],
    "occupation": null,
@@ -11875,7 +11874,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Grèce",
+    "Greece",
     "Olympus"
    ],
    "occupation": null,
@@ -12026,7 +12025,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Lune"
+    "Moon"
    ],
    "occupation": null,
    "hair": [
@@ -12050,7 +12049,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": [
@@ -12327,7 +12326,7 @@
    "species": "Humain",
    "nationality": [
     "Hanover",
-    "Allemagne",
+    "Germany",
     "Tyrus"
    ],
    "occupation": [
@@ -13876,7 +13875,7 @@
    "gender": "Homme",
    "species": "Goule",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Chasseur de primes",
@@ -14312,7 +14311,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Témérie"
+    "Temeria"
    ],
    "occupation": [
     "Magicien",
@@ -14340,7 +14339,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Rédanie"
+    "Redania"
    ],
    "occupation": [
     "Musicien"
@@ -14429,7 +14428,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Témérie"
+    "Temeria"
    ],
    "occupation": [
     "Dirigeant"
@@ -14773,8 +14772,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Serbie",
-    "Yougoslavie"
+    "Serbia",
+    "Yugoslavia"
    ],
    "occupation": [
     "Assassin",
@@ -14804,7 +14803,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -14832,7 +14831,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Portland",
     "Liberty City",
     "Vice City"
@@ -14891,7 +14890,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "San Fierro",
     "San Andreas",
     "Liberty City"
@@ -14919,7 +14918,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Acteur",
@@ -14949,7 +14948,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -14979,7 +14978,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -15006,7 +15005,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -15034,7 +15033,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "République dominicaine"
+    "Dominican Republic"
    ],
    "occupation": [
     "Garde",
@@ -15060,7 +15059,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15091,7 +15090,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -15120,7 +15119,7 @@
    "nationality": [
     "Portland Beach",
     "Portland",
-    "États-Unis",
+    "United States",
     "Liberty City"
    ],
    "occupation": null,
@@ -15145,7 +15144,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Vice City",
     "Florida"
    ],
@@ -15173,7 +15172,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Las Venturas",
     "San Andreas",
     "Saint Mark's"
@@ -15198,7 +15197,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "États-Unis",
+    "United States",
     "Fern Ridge",
     "Red County",
     "San Andreas"
@@ -15227,7 +15226,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Tierra Robada",
     "San Andreas"
    ],
@@ -15280,7 +15279,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Hepburn Heights",
     "Portland",
     "Liberty City"
@@ -15309,7 +15308,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Italie",
+    "Italy",
     "Sicily"
    ],
    "occupation": [
@@ -15334,7 +15333,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Fermier",
@@ -15365,7 +15364,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15396,7 +15395,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15424,7 +15423,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15454,7 +15453,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Criminel",
@@ -15482,7 +15481,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15511,8 +15510,8 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Irlande"
+    "United States",
+    "Ireland"
    ],
    "occupation": null,
    "hair": null,
@@ -15539,7 +15538,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Soldat"
@@ -15588,7 +15587,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Professeur",
@@ -15615,7 +15614,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires"
@@ -15642,8 +15641,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Italie"
+    "United States",
+    "Italy"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -15671,7 +15670,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -15700,7 +15699,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Espion"
@@ -15728,7 +15727,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Chef de clan"
@@ -15753,7 +15752,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Guerrier"
@@ -15781,7 +15780,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Religieux"
@@ -15805,7 +15804,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Fermier",
@@ -15832,7 +15831,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -15859,7 +15858,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -15889,7 +15888,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Italie"
+    "Italy"
    ],
    "occupation": [
     "Fermier",
@@ -15953,7 +15952,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Serveur",
@@ -15980,7 +15979,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Fermier",
@@ -16015,7 +16014,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Égypte"
+    "Egypt"
    ],
    "occupation": [
     "Combattant",
@@ -16043,7 +16042,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Pirate",
@@ -16106,7 +16105,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Écrivain",
@@ -16135,7 +16134,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -16198,7 +16197,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Norvège"
+    "Norway"
    ],
    "occupation": [
     "Guerrier",
@@ -16248,7 +16247,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -16276,7 +16275,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Chasseur",
@@ -16352,7 +16351,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -16383,7 +16382,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Égypte"
+    "Egypt"
    ],
    "occupation": [
     "Professeur",
@@ -16406,7 +16405,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Grèce"
+    "Greece"
    ],
    "occupation": [
     "Mercenaire",
@@ -16460,7 +16459,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Marin",
@@ -16485,7 +16484,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Perse"
+    "Persia"
    ],
    "occupation": [
     "Dirigeant",
@@ -16510,7 +16509,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": [
     "Archer"
@@ -16534,7 +16533,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Light"
+    "City of Light"
    ],
    "occupation": [
     "Dirigeant"
@@ -16597,7 +16596,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Perse"
+    "Persia"
    ],
    "occupation": [
     "Noble"
@@ -16619,7 +16618,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": [
     "Noble"
@@ -16891,10 +16890,10 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Cité 17",
+    "City 17",
     "Seattle",
-    "États-Unis",
-    "WA"
+    "United States",
+    "Washington"
    ],
    "occupation": [
     "Scientifique",
@@ -16944,7 +16943,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique",
@@ -16975,7 +16974,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Mécanicien",
@@ -17009,8 +17008,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Terre"
+    "United States",
+    "Earth"
    ],
    "occupation": [
     "Soldat"
@@ -17060,8 +17059,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Cité 17",
-    "Terre"
+    "City 17",
+    "Earth"
    ],
    "occupation": [
     "Garde",
@@ -17090,7 +17089,7 @@
    "gender": "Aucun",
    "species": "Robot",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": null,
@@ -17117,7 +17116,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Souverain",
@@ -17150,7 +17149,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique",
@@ -17182,7 +17181,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Religieux"
@@ -17211,7 +17210,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique",
@@ -17262,7 +17261,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": [
@@ -17289,7 +17288,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": [
@@ -17315,7 +17314,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique"
@@ -17343,7 +17342,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique"
@@ -17372,7 +17371,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": [
@@ -17395,7 +17394,7 @@
    "gender": null,
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": null,
@@ -17586,9 +17585,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Nouvelle-Zélande",
-    "Australie"
+    "United States",
+    "New Zealand",
+    "Australia"
    ],
    "occupation": [
     "Mercenaire"
@@ -17614,7 +17613,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Boston",
     "Massachusetts"
    ],
@@ -17639,7 +17638,7 @@
    "species": "Humain",
    "nationality": [
     "Midwest",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mercenaire"
@@ -17687,7 +17686,7 @@
    "species": "Humain",
    "nationality": [
     "Ullapool",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Mercenaire",
@@ -17712,9 +17711,9 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS",
+    "Soviet Union",
     "Dzhugdzhur",
-    "Russie",
+    "Russia",
     "East Siberian Mountains"
    ],
    "occupation": [
@@ -17740,7 +17739,7 @@
    "species": "Humain",
    "nationality": [
     "Bee Cave",
-    "États-Unis",
+    "United States",
     "Texas"
    ],
    "occupation": [
@@ -17768,7 +17767,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne",
+    "Germany",
     "Stuttgart",
     "Baden-Württemberg"
    ],
@@ -17793,8 +17792,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Nouvelle-Zélande",
-    "Australie"
+    "New Zealand",
+    "Australia"
    ],
    "occupation": [
     "Mercenaire",
@@ -17850,7 +17849,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -17874,7 +17873,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -17897,7 +17896,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Australie"
+    "Australia"
    ],
    "occupation": [
     "Homme d'affaires"
@@ -18010,7 +18009,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -18123,7 +18122,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mécanicien"
@@ -18151,7 +18150,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -18203,7 +18202,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Survivant",
@@ -18298,7 +18297,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Pilote",
@@ -18324,7 +18323,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Corée du Sud"
+    "South Korea"
    ],
    "occupation": [
     "Acteur",
@@ -18352,7 +18351,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Suisse"
+    "Switzerland"
    ],
    "occupation": [
     "Médecin"
@@ -18374,7 +18373,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Scientifique",
@@ -18401,7 +18400,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Mercenaire",
@@ -18426,7 +18425,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Ninja"
@@ -18516,7 +18515,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": [
     "Informaticien"
@@ -18541,7 +18540,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Suède"
+    "Sweden"
    ],
    "occupation": [
     "Soldat",
@@ -18569,7 +18568,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Égypte"
+    "Egypt"
    ],
    "occupation": [
     "Chasseur de primes",
@@ -18598,7 +18597,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Irlande"
+    "Ireland"
    ],
    "occupation": [
     "Scientifique"
@@ -18691,7 +18690,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Justicier"
@@ -18713,7 +18712,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Thaïlande"
+    "Thailand"
    ],
    "occupation": [
     "Scientifique",
@@ -18766,7 +18765,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -19255,7 +19254,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -19275,7 +19274,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Corée du Sud"
+    "South Korea"
    ],
    "occupation": null,
    "hair": null,
@@ -19295,7 +19294,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Mexique"
+    "Mexico"
    ],
    "occupation": null,
    "hair": null,
@@ -19315,7 +19314,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": null,
    "hair": null,
@@ -19335,7 +19334,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": null,
@@ -19375,7 +19374,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -19395,7 +19394,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -19469,7 +19468,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": null,
@@ -19489,7 +19488,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Brésil"
+    "Brazil"
    ],
    "occupation": null,
    "hair": null,
@@ -19509,7 +19508,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Suède"
+    "Sweden"
    ],
    "occupation": null,
    "hair": null,
@@ -19529,7 +19528,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Australie"
+    "Australia"
    ],
    "occupation": null,
    "hair": null,
@@ -20962,7 +20961,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Justicier"
@@ -20986,7 +20985,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": null,
@@ -21056,7 +21055,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": [
@@ -23381,7 +23380,7 @@
    "gender": "Homme",
    "species": "Dhampire",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Chasseur de monstres",
@@ -23434,7 +23433,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Élève"
@@ -23555,7 +23554,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Chasseur de monstres"
@@ -23581,7 +23580,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Pirate"
@@ -23607,7 +23606,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Scientifique",
@@ -23755,7 +23754,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Magicien"
@@ -23903,7 +23902,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Employé"
@@ -23955,7 +23954,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Ebisugaoka"
    ],
    "occupation": [
@@ -24159,7 +24158,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Domestique"
@@ -24227,7 +24226,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Artiste",
@@ -24259,7 +24258,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Détective",
@@ -24289,7 +24288,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Mercenaire",
@@ -24410,7 +24409,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -24531,7 +24530,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Musicien"
@@ -24557,7 +24556,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Médecin"
@@ -24582,8 +24581,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
-    "États-Unis"
+    "Japan",
+    "United States"
    ],
    "occupation": [
     "Avocat",
@@ -24855,7 +24854,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Avocat"
@@ -25072,8 +25071,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni",
-    "Pays-Bas"
+    "United Kingdom",
+    "Netherlands"
    ],
    "occupation": [
     "Avocat"
@@ -25134,7 +25133,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni",
+    "United Kingdom",
     "Stansbury",
     "London"
    ],
@@ -25163,7 +25162,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni",
+    "United Kingdom",
     "Misthallery",
     "London",
     "Steam Bison"
@@ -25279,7 +25278,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Musicien"
@@ -25335,7 +25334,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Professeur"
@@ -25363,7 +25362,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Archéologue"
@@ -25393,7 +25392,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Journaliste"
@@ -25423,7 +25422,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Scientifique"
@@ -25452,7 +25451,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Policier"
@@ -25506,7 +25505,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Détective"
@@ -25702,7 +25701,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Yokohama",
     "Kanagawa Prefecture"
    ],
@@ -25737,7 +25736,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Détective",
@@ -25765,7 +25764,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Dirigeant"
@@ -25793,7 +25792,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Musicien",
@@ -25821,7 +25820,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Avocat",
@@ -25850,7 +25849,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Criminel"
@@ -25878,7 +25877,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Criminel"
@@ -25907,7 +25906,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Kamurocho",
     "Shinjuku",
     "Tokyo"
@@ -25940,7 +25939,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Criminel"
@@ -25968,7 +25967,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Kansai"
    ],
    "occupation": [
@@ -25997,7 +25996,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Politicien"
@@ -26025,7 +26024,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Conseiller",
@@ -26055,7 +26054,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Détective"
@@ -26084,7 +26083,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Dirigeant"
@@ -26113,7 +26112,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Avocat"
@@ -26141,7 +26140,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Dirigeant"
@@ -26168,7 +26167,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Dirigeant"
@@ -26195,7 +26194,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Professeur",
@@ -26223,7 +26222,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Espion",
@@ -26253,7 +26252,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Policier",
@@ -26283,7 +26282,7 @@
    "gender": "Homme",
    "species": "Humanoïde",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Épéiste"
@@ -26361,7 +26360,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Cuisinier",
@@ -26384,7 +26383,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Chasseur de primes"
@@ -26435,7 +26434,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Assassin",
@@ -26458,7 +26457,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Criminel"
@@ -26572,7 +26571,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Suisse"
+    "Switzerland"
    ],
    "occupation": [
     "Chevalier"
@@ -26594,7 +26593,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Soldat"
@@ -26616,7 +26615,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -26638,7 +26637,7 @@
    "gender": "Homme",
    "species": "Vampire",
    "nationality": [
-    "Roumanie"
+    "Romania"
    ],
    "occupation": [
     "Assassin"
@@ -26663,7 +26662,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Chevalier",
@@ -26690,7 +26689,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Soldat",
@@ -26716,7 +26715,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Médecin"
@@ -26738,7 +26737,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Pologne"
+    "Poland"
    ],
    "occupation": [
     "Informaticien",
@@ -26766,7 +26765,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": null,
@@ -26790,7 +26789,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Justicier",
@@ -26822,7 +26821,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Nagoya"
    ],
    "occupation": [
@@ -26848,7 +26847,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": [
@@ -26873,7 +26872,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "South Town"
    ],
    "occupation": [
@@ -26900,7 +26899,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Corée du Sud"
+    "South Korea"
    ],
    "occupation": [
     "Combattant"
@@ -26927,7 +26926,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Combattant"
@@ -26970,7 +26969,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "South Town"
    ],
    "occupation": null,
@@ -26993,7 +26992,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Combattant"
@@ -27040,7 +27039,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Italie"
+    "Italy"
    ],
    "occupation": [
     "Combattant"
@@ -27090,7 +27089,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Combattant"
@@ -27117,7 +27116,7 @@
    "species": "Humain",
    "nationality": [
     "South Town",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Combattant"
@@ -27144,7 +27143,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -27164,7 +27163,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Jōkamachi",
     "Musashi Province"
    ],
@@ -27215,7 +27214,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -27238,7 +27237,7 @@
     "Kamui Kotan",
     "Ainu Moshiri",
     "Ezochi",
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Religieux"
@@ -27260,7 +27259,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Mugen Tenshin Village"
    ],
    "occupation": [
@@ -27285,7 +27284,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Mugen Tenshin Village"
    ],
    "occupation": [
@@ -27315,7 +27314,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Hayabusa Village"
    ],
    "occupation": [
@@ -27342,7 +27341,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Étudiant",
@@ -27397,7 +27396,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Texas"
    ],
    "occupation": [
@@ -27425,7 +27424,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Étudiant",
@@ -27451,7 +27450,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Garde",
@@ -27477,7 +27476,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Combattant"
@@ -27501,8 +27500,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS",
-    "Russie"
+    "Soviet Union",
+    "Russia"
    ],
    "occupation": [
     "Mercenaire"
@@ -27527,7 +27526,7 @@
    "species": "Humain",
    "nationality": [
     "Mugen Tenshin Village",
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Ninja"
@@ -27553,7 +27552,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Combattant"
@@ -27580,7 +27579,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Combattant"
@@ -27605,7 +27604,7 @@
    "species": "Humain",
    "nationality": [
     "Mugen Tenshin Village",
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Espion"
@@ -27632,7 +27631,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": [
@@ -27654,7 +27653,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant"
@@ -27678,7 +27677,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Hayabusa Village"
    ],
    "occupation": [
@@ -27735,7 +27734,7 @@
    "species": "Humain",
    "nationality": [
     "San Francisco",
-    "États-Unis",
+    "United States",
     "California"
    ],
    "occupation": [
@@ -27762,7 +27761,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Suède"
+    "Sweden"
    ],
    "occupation": [
     "Domestique"
@@ -28142,7 +28141,7 @@
    "species": null,
    "nationality": [
     "Beijing",
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -30192,7 +30191,7 @@
    "gender": "Homme",
    "species": "Monstre",
    "nationality": [
-    "L'Outremonde"
+    "Underground"
    ],
    "occupation": [
     "Artiste",
@@ -30247,7 +30246,7 @@
    "gender": "Autre",
    "species": "Humain",
    "nationality": [
-    "L'Outremonde"
+    "Underground"
    ],
    "occupation": null,
    "hair": null,
@@ -30272,7 +30271,7 @@
    "gender": "Homme",
    "species": "Lightner",
    "nationality": [
-    "L'Outremonde"
+    "Underground"
    ],
    "occupation": null,
    "hair": null,
@@ -30340,7 +30339,7 @@
    "gender": "Femme",
    "species": "Monstre",
    "nationality": [
-    "L'Outremonde"
+    "Underground"
    ],
    "occupation": [
     "Cuisinier"
@@ -31740,7 +31739,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -31796,8 +31795,8 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Allemagne",
-    "Biélorussie"
+    "Germany",
+    "Belarus"
    ],
    "occupation": null,
    "hair": [
@@ -31825,7 +31824,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Columbia"
    ],
    "occupation": [
@@ -32059,7 +32058,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Espion"
@@ -32090,7 +32089,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -32118,7 +32117,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -32144,7 +32143,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Soldat"
@@ -32171,7 +32170,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS"
+    "Soviet Union"
    ],
    "occupation": [
     "Soldat",
@@ -32201,7 +32200,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -32225,7 +32224,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Soldat",
@@ -32281,7 +32280,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": null,
    "hair": [
@@ -32307,7 +32306,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "URSS"
+    "Soviet Union"
    ],
    "occupation": [
     "Soldat"
@@ -32361,7 +32360,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Arabie saoudite"
+    "Saudi Arabia"
    ],
    "occupation": [
     "Politicien"
@@ -32383,7 +32382,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Astronaute"
@@ -32408,7 +32407,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -33073,7 +33072,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Podunk"
    ],
    "occupation": null,
@@ -33379,7 +33378,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33404,7 +33403,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Professeur",
@@ -33433,7 +33432,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33464,7 +33463,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33494,7 +33493,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33522,7 +33521,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33549,7 +33548,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33577,7 +33576,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33604,7 +33603,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33631,7 +33630,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33658,7 +33657,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33685,7 +33684,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif"
@@ -33712,7 +33711,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Sportif",
@@ -33739,7 +33738,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": null,
@@ -33763,7 +33762,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Médecin"
@@ -33789,7 +33788,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": null,
    "hair": null,
@@ -33813,7 +33812,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon",
+    "Japan",
     "Côte-Arles"
    ],
    "occupation": [
@@ -33868,7 +33867,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Professeur"
@@ -34903,7 +34902,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Rashéménie"
+    "Rashemen"
    ],
    "occupation": [
     "Garde",
@@ -35219,7 +35218,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Néthéril"
+    "Netheril"
    ],
    "occupation": null,
    "hair": null,
@@ -35326,7 +35325,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Watson",
     "Night City"
    ],
@@ -35355,7 +35354,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Night City",
     "College Station",
     "Texas"
@@ -35414,7 +35413,7 @@
    "species": null,
    "nationality": [
     "Bronx",
-    "États-Unis",
+    "United States",
     "New York",
     "Night City"
    ],
@@ -35447,7 +35446,7 @@
     "Watson",
     "Night City",
     "Pittsburgh",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Journaliste"
@@ -35479,7 +35478,7 @@
     "Badlands",
     "NUSA",
     "Arizona",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Mercenaire"
@@ -35657,7 +35656,7 @@
    "species": "Humain",
    "nationality": [
     "Santo Domingo",
-    "République dominicaine",
+    "Dominican Republic",
     "Night City"
    ],
    "occupation": [
@@ -35685,7 +35684,7 @@
    "nationality": [
     "Night City",
     "Mönchengladbach",
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -36019,7 +36018,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Informaticien",
@@ -36049,7 +36048,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant",
@@ -36110,7 +36109,7 @@
    "gender": null,
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant"
@@ -36194,7 +36193,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant",
@@ -36224,7 +36223,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant"
@@ -36250,7 +36249,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant"
@@ -36273,7 +36272,7 @@
    "gender": "Homme",
    "species": "Androïde",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective"
@@ -36298,7 +36297,7 @@
    "gender": "Femme",
    "species": "Androïde",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Domestique"
@@ -36323,7 +36322,7 @@
    "gender": "Homme",
    "species": "Androïde",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Domestique",
@@ -36353,7 +36352,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Policier",
@@ -36380,7 +36379,7 @@
    "gender": "Femme",
    "species": "Androïde",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -36406,7 +36405,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Artiste"
@@ -36431,7 +36430,7 @@
    "gender": "Femme",
    "species": "IA",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires"
@@ -36458,7 +36457,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective"
@@ -36487,7 +36486,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -36606,7 +36605,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Garde",
@@ -36637,7 +36636,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Serbie"
+    "Serbia"
    ],
    "occupation": null,
    "hair": [
@@ -36685,7 +36684,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -36712,7 +36711,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Artiste",
@@ -36768,7 +36767,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -36822,7 +36821,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Artiste"
@@ -36851,7 +36850,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -36880,7 +36879,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -36909,7 +36908,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Élève",
@@ -37126,7 +37125,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -37372,7 +37371,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant",
@@ -37407,7 +37406,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Professeur",
@@ -37441,7 +37440,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant",
@@ -37477,7 +37476,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant",
@@ -37508,7 +37507,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Tueur",
@@ -37541,7 +37540,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Espion",
@@ -37571,7 +37570,7 @@
    "gender": "Homme",
    "species": "Demi-géant",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Professeur",
@@ -37604,7 +37603,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant",
@@ -37638,7 +37637,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Professeur",
@@ -37669,7 +37668,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Justicier"
@@ -37698,7 +37697,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Professeur",
@@ -37752,7 +37751,7 @@
    "gender": "Homme",
    "species": "Elfe de maison",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Domestique",
@@ -37809,7 +37808,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Étudiant"
@@ -37885,8 +37884,8 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
-    "Royaume-Uni",
+    "United States",
+    "United Kingdom",
     "France"
    ],
    "occupation": [
@@ -38331,7 +38330,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Soldat",
@@ -38361,7 +38360,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Hongrie"
+    "Hungary"
    ],
    "occupation": [
     "Voleur"
@@ -38386,7 +38385,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Domestique"
@@ -38414,7 +38413,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -38448,7 +38447,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Élève",
@@ -38485,7 +38484,7 @@
    "gender": "Homme",
    "species": "Méta-humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Tueur",
@@ -38508,7 +38507,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -38534,7 +38533,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Justicier",
@@ -38567,7 +38566,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -38599,7 +38598,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective",
@@ -38631,7 +38630,7 @@
    "gender": "Femme",
    "species": "Méta-humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Tueur",
@@ -38726,7 +38725,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -38768,7 +38767,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Retraité",
@@ -38804,7 +38803,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Acteur",
@@ -38849,7 +38848,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -38876,7 +38875,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Assassin"
@@ -38911,7 +38910,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -38946,7 +38945,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel",
@@ -38979,7 +38978,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -39010,7 +39009,7 @@
    "gender": "Homme",
    "species": "Requin",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Criminel"
@@ -39038,7 +39037,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Hongrie"
+    "Hungary"
    ],
    "occupation": [
     "Criminel",
@@ -39162,7 +39161,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": [
@@ -39375,7 +39374,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "New York"
    ],
    "occupation": [
@@ -39448,7 +39447,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Scientifique",
@@ -39478,7 +39477,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Maine",
     "Cheyenne",
     "Wyoming"
@@ -39504,7 +39503,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Finlande"
+    "Finland"
    ],
    "occupation": [
     "Ouvrier"
@@ -39530,7 +39529,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis",
+    "United States",
     "Manhattan",
     "New York"
    ],
@@ -39586,7 +39585,7 @@
    "species": "Humain",
    "nationality": [
     "New York",
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -40124,7 +40123,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Élève"
@@ -40149,7 +40148,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Élève"
@@ -40748,7 +40747,7 @@
    "species": "Humain",
    "nationality": [
     "Canada",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective"
@@ -40795,7 +40794,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant"
@@ -40911,7 +40910,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -40956,7 +40955,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Informaticien"
@@ -41032,7 +41031,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Pérou"
+    "Peru"
    ],
    "occupation": [
     "Noble",
@@ -41086,7 +41085,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Empire byzantin"
+    "Byzantine Empire"
    ],
    "occupation": [
     "Religieux",
@@ -41136,7 +41135,7 @@
    "nationality": [
     "Wildwoods",
     "Midgard",
-    "Norvège"
+    "Norway"
    ],
    "occupation": null,
    "hair": [
@@ -41160,7 +41159,7 @@
    "nationality": [
     "Gladsheim",
     "Asgard",
-    "Norvège"
+    "Norway"
    ],
    "occupation": [
     "Noble",
@@ -41186,7 +41185,7 @@
    "species": "Divinité",
    "nationality": [
     "Ginnungagap",
-    "Norvège"
+    "Norway"
    ],
    "occupation": [
     "Souverain"
@@ -41212,7 +41211,7 @@
    "species": "Divinité",
    "nationality": [
     "Vanaheim",
-    "Norvège"
+    "Norway"
    ],
    "occupation": [
     "Souverain"
@@ -41282,7 +41281,7 @@
    "nationality": [
     "Gladsheim",
     "Asgard",
-    "Norvège"
+    "Norway"
    ],
    "occupation": [
     "Noble",
@@ -41692,7 +41691,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": [
     "Souverain",
@@ -41721,7 +41720,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -41852,7 +41851,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Afrique du Sud"
+    "South Africa"
    ],
    "occupation": [
     "Criminel",
@@ -41881,7 +41880,7 @@
     "Rook Islands",
     "Kyrat",
     "Hope County",
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": [
@@ -41908,7 +41907,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique"
@@ -43523,7 +43522,7 @@
    "gender": "Homme",
    "species": "Moon Tribe",
    "nationality": [
-    "Lune",
+    "Moon",
     "Nippon",
     "Celestial Plain"
    ],
@@ -44265,7 +44264,7 @@
    "species": null,
    "nationality": [
     "Sobeck Ranch",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique"
@@ -44506,7 +44505,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "États-Unis",
+    "United States",
     "The Odyssey",
     "Sirius"
    ],
@@ -45554,7 +45553,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Turquie"
+    "Turkey"
    ],
    "occupation": [
     "Sportif"
@@ -45605,7 +45604,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Turquie"
+    "Turkey"
    ],
    "occupation": null,
    "hair": [
@@ -45634,7 +45633,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Turquie"
+    "Turkey"
    ],
    "occupation": null,
    "hair": [
@@ -45735,7 +45734,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Turquie"
+    "Turkey"
    ],
    "occupation": null,
    "hair": [
@@ -45788,7 +45787,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": [
@@ -46619,7 +46618,7 @@
    "nationality": [
     "Pirkstein Castle",
     "Rattay",
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Noble"
@@ -46667,7 +46666,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Noble"
@@ -46698,7 +46697,7 @@
    "nationality": [
     "Upper Castle",
     "Rattay",
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Noble"
@@ -46724,7 +46723,7 @@
    "species": null,
    "nationality": [
     "Rattay",
-    "Tchéquie",
+    "Czech Republic",
     "Rovna"
    ],
    "occupation": [
@@ -46782,7 +46781,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": [
     "Soldat"
@@ -46811,7 +46810,7 @@
    "species": null,
    "nationality": [
     "Rattay",
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": [
     "Soldat"
@@ -46841,7 +46840,7 @@
    "species": null,
    "nationality": [
     "Talmberg",
-    "Tchéquie"
+    "Czech Republic"
    ],
    "occupation": null,
    "hair": [
@@ -48517,7 +48516,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": [
     "Journaliste",
@@ -49271,7 +49270,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Terre"
+    "Earth"
    ],
    "occupation": null,
    "hair": [
@@ -49469,7 +49468,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Dirigeant"
@@ -49495,7 +49494,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Scientifique",
@@ -49624,7 +49623,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Écrivain"
@@ -49671,7 +49670,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Espion",
@@ -49702,7 +49701,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Chauffeur",
@@ -49752,7 +49751,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Politicien",
@@ -50426,7 +50425,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Taïwan"
+    "Taiwan"
    ],
    "occupation": [
     "Scientifique"
@@ -50451,7 +50450,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Médecin"
@@ -50520,7 +50519,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Corée du Sud"
+    "South Korea"
    ],
    "occupation": null,
    "hair": null,
@@ -50564,7 +50563,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Pologne"
+    "Poland"
    ],
    "occupation": [
     "Scientifique"
@@ -50611,7 +50610,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Médecin"
@@ -50661,7 +50660,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Groenland"
+    "Greenland"
    ],
    "occupation": [
     "Informaticien"
@@ -51400,7 +51399,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -51423,7 +51422,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -51446,7 +51445,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Australie"
+    "Australia"
    ],
    "occupation": null,
    "hair": null,
@@ -51471,7 +51470,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Australie"
+    "Australia"
    ],
    "occupation": null,
    "hair": null,
@@ -51495,7 +51494,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -51520,7 +51519,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -51544,7 +51543,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Polynésie"
+    "Polynesia"
    ],
    "occupation": null,
    "hair": null,
@@ -51568,7 +51567,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -51589,7 +51588,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -51632,7 +51631,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Afrique du Sud"
+    "South Africa"
    ],
    "occupation": null,
    "hair": null,
@@ -51656,7 +51655,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Allemagne"
+    "Germany"
    ],
    "occupation": null,
    "hair": null,
@@ -51937,7 +51936,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Archer"
@@ -52725,7 +52724,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective"
@@ -54020,7 +54019,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": [
@@ -54045,7 +54044,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Scientifique"
@@ -54072,7 +54071,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": null,
@@ -54092,7 +54091,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": [
@@ -54117,7 +54116,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": null,
@@ -54141,7 +54140,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54164,7 +54163,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": null,
    "hair": null,
@@ -54187,7 +54186,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54235,7 +54234,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54260,7 +54259,7 @@
    "gender": "Femme",
    "species": null,
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -54282,7 +54281,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -54306,8 +54305,8 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "Nouvelle-Zélande",
-    "Royaume-Uni"
+    "New Zealand",
+    "United Kingdom"
    ],
    "occupation": null,
    "hair": null,
@@ -54331,7 +54330,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54355,7 +54354,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54379,7 +54378,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54401,7 +54400,7 @@
    "gender": "Homme",
    "species": null,
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": null,
    "hair": null,
@@ -54634,7 +54633,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Chasseur de monstres"
@@ -55409,7 +55408,7 @@
    "nationality": [
     "River Heights",
     "Illinois",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Avocat"
@@ -55485,7 +55484,7 @@
    "species": "Humain",
    "nationality": [
     "Topeka",
-    "États-Unis",
+    "United States",
     "Kansas"
    ],
    "occupation": [
@@ -55540,7 +55539,7 @@
    "species": "Humain",
    "nationality": [
     "Savannah",
-    "États-Unis",
+    "United States",
     "Georgia"
    ],
    "occupation": [
@@ -55570,7 +55569,7 @@
    "species": "Humain",
    "nationality": [
     "New York",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Espion"
@@ -55623,7 +55622,7 @@
    "species": "Humain",
    "nationality": [
     "San Francisco",
-    "États-Unis",
+    "United States",
     "California"
    ],
    "occupation": [
@@ -55651,7 +55650,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Écrivain",
@@ -55681,7 +55680,7 @@
    "species": "Humain",
    "nationality": [
     "London",
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Employé"
@@ -55708,7 +55707,7 @@
    "nationality": [
     "Paseo Del Mar",
     "Florida",
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Étudiant",
@@ -55759,7 +55758,7 @@
    "species": "Humain",
    "nationality": [
     "Chicago",
-    "États-Unis",
+    "United States",
     "Illinois"
    ],
    "occupation": [
@@ -57127,7 +57126,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Conseiller"
@@ -57154,7 +57153,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Allemagne",
+    "Germany",
     "Cologne"
    ],
    "occupation": [
@@ -57183,7 +57182,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Homme d'affaires",
@@ -57295,7 +57294,7 @@
    "gender": "Homme",
    "species": "Otherworldly",
    "nationality": [
-    "Allemagne",
+    "Germany",
     "Other World"
    ],
    "occupation": [
@@ -57406,7 +57405,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Suisse"
+    "Switzerland"
    ],
    "occupation": [
     "Médecin"
@@ -57683,7 +57682,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Grèce"
+    "Greece"
    ],
    "occupation": [
     "Noble"
@@ -57859,7 +57858,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Afrique du Sud"
+    "South Africa"
    ],
    "occupation": [
     "Mercenaire"
@@ -58000,7 +57999,7 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Révolutionnaire"
@@ -58024,7 +58023,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Guide"
@@ -58049,7 +58048,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Russie"
+    "Russia"
    ],
    "occupation": [
     "Soldat"
@@ -58074,7 +58073,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective",
@@ -58924,7 +58923,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "États-Unis"
+    "United States"
    ],
    "occupation": [
     "Détective",
@@ -59472,7 +59471,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Espagne"
+    "Spain"
    ],
    "occupation": [
     "Soldat"
@@ -59512,7 +59511,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Royaume-Uni"
+    "United Kingdom"
    ],
    "occupation": [
     "Soldat"
@@ -59602,7 +59601,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Japon"
+    "Japan"
    ],
    "occupation": [
     "Samouraï"
@@ -59626,7 +59625,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Chine"
+    "China"
    ],
    "occupation": null,
    "hair": null,
@@ -59649,7 +59648,7 @@
    "gender": "Homme",
    "species": "Humain",
    "nationality": [
-    "Inde"
+    "India"
    ],
    "occupation": null,
    "hair": null,

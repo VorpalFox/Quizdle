@@ -32,7 +32,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 1. **Sundered** : 0 personnage. FX remplit le wiki, puis on relance le script avec les bons réglages dans `wikis`.
 2. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
    - les doublons d'écriture, par exemple Nomaï / Nomai (Outer Wilds) ;
-   - **nationalité** : fait (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
+   - **nationalité** : fait, tout en anglais (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
 3. **Trous à combler** :
    - 106 personnages sans sexe et 475 sans espèce (listés dans le récap) ;
    - 283 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
@@ -80,6 +80,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
   - **Immersive sim** (`FRANCHISE_GENRES`, sur toute la franchise) : Dishonored, Deus Ex, BioShock, The Elder Scrolls, Fallout. Prey l'a par Wikidata.
 - **Nationalité** (champ multiple, validé avec FX) : un max de lieux, de la ville au monde (« Pallet Town, Kanto », « Boston, Massachusetts, États-Unis »), 4 au plus :
   - Wikidata donne ses pays, le 1er wiki y ajoute tous ses champs « pays » et « lieu » (`parsePlaces`) ;
+  - **tout en anglais**, comme la majorité des wikis : les tables donnent les noms anglais, et `FRENCH_PLACES` traduit les libellés français de Wikidata (Japon → Japan, Témérie → Temeria) ;
   - un lieu réel garde son nom et reçoit son pays (`CITIES`), ses écritures sont ramenées à une seule (`CITY_NAMES` : NYC → New York) ;
   - un gentilé devient le lieu, et les écritures d'un lieu de fiction sont ramenées à une seule (`PLACE_NAMES`) ;
   - retirés (`NOT_PLACES`, `NOT_PLACE`) : ce qui n'est pas un lieu (âge, mythologie, jeu), et les logements (« Jackie's Garage », une adresse) ;

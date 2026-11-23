@@ -122,22 +122,22 @@ describe('translateGenre', () => {
 
 describe('translateNationality', () => {
   it('PaysHistoriques_PaysActuel', () => {
-    expect(translateNationality('République populaire de Chine')).toBe('Chine')
+    expect(translateNationality('République populaire de Chine')).toBe('China')
     expect(translateNationality('royaume de France')).toBe('France')
     expect(translateNationality('Hyrule')).toBe('Hyrule')
   })
 
   it('Anglais_Traduit', () => {
-    expect(translateNationality('Swiss')).toBe('Suisse')
-    expect(translateNationality('Earth')).toBe('Terre')
+    expect(translateNationality('Swiss')).toBe('Switzerland')
+    expect(translateNationality('Earth')).toBe('Earth')
   })
 })
 
 describe('placeCountry', () => {
   it('VilleReelle_SonPays', () => {
-    expect(placeCountry('London')).toBe('Royaume-Uni')
-    expect(placeCountry('The Bronx')).toBe('États-Unis')
-    expect(placeCountry('Japanese')).toBe('Japon')
+    expect(placeCountry('London')).toBe('United Kingdom')
+    expect(placeCountry('The Bronx')).toBe('United States')
+    expect(placeCountry('Japanese')).toBe('Japan')
   })
 
   it('LieuDeFiction_Null', () => {
@@ -147,9 +147,9 @@ describe('placeCountry', () => {
 
 describe('translatePlace', () => {
   it('BruitAutourDuLieu_Retire', () => {
-    expect(translatePlace('Likely Japan')).toEqual(['Japon'])
+    expect(translatePlace('Likely Japan')).toEqual(['Japan'])
     expect(translatePlace('Raised on Zebes.')).toEqual(['Zebes'])
-    expect(translatePlace('\u{E0067}\u{E0062}\u{E0073} Scottish')).toEqual(['Royaume-Uni'])
+    expect(translatePlace('\u{E0067}\u{E0062}\u{E0073} Scottish')).toEqual(['United Kingdom'])
   })
 
   it('PasUnLieu_Retire', () => {
@@ -160,17 +160,17 @@ describe('translatePlace', () => {
   })
 
   it('PaysDHistoireEtGentiles_LeLieu', () => {
-    expect(translatePlace('Russian Empire')).toEqual(['Russie'])
-    expect(translatePlace('Japanese-Portuguese')).toEqual(['Japon', 'Portugal'])
+    expect(translatePlace('Russian Empire')).toEqual(['Russia'])
+    expect(translatePlace('Japanese-Portuguese')).toEqual(['Japan', 'Portugal'])
     expect(translatePlace('Plegian')).toEqual(['Plegia'])
   })
 })
 
 describe('translatePlace, harmonisation', () => {
   it('EcrituresDUneVille_UneSeule', () => {
-    expect(translatePlace('NYC')).toEqual(['New York', 'États-Unis'])
-    expect(translatePlace('New York City')).toEqual(['New York', 'États-Unis'])
-    expect(translatePlace('The Bronx')).toEqual(['Bronx', 'États-Unis'])
+    expect(translatePlace('NYC')).toEqual(['New York', 'United States'])
+    expect(translatePlace('New York City')).toEqual(['New York', 'United States'])
+    expect(translatePlace('The Bronx')).toEqual(['Bronx', 'United States'])
   })
 
   it('PrefixeOuLogement_LieuSeulOuRetire', () => {
@@ -178,5 +178,17 @@ describe('translatePlace, harmonisation', () => {
     expect(translatePlace('1276 Fig Leaf Lane')).toEqual([])
     expect(translatePlace('Jackie\'s Garage')).toEqual([])
     expect(translatePlace('Giant\'s Deep')).toEqual(['Giant\'s Deep'])
+  })
+})
+
+describe('translatePlace, noms à garder', () => {
+  it('VillageOuCiteDansLeNom_Garde', () => {
+    expect(translatePlace('Village of Dragons')).toEqual(['Village of Dragons'])
+    expect(translatePlace('City of Light')).toEqual(['City of Light'])
+  })
+
+  it('LibellesFrancaisDeWikidata_EnAnglais', () => {
+    expect(translatePlace('Japon')).toEqual(['Japan'])
+    expect(translatePlace('Témérie')).toEqual(['Temeria'])
   })
 })

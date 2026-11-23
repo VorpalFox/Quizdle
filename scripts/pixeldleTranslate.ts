@@ -123,110 +123,110 @@ export function translateSpecies(label: string): string | null | undefined {
 
 // Les pays historiques ramenés au pays d'aujourd'hui, et les noms anglais des pays de fiction
 const NATIONALITIES: Record<string, string> = {
-  'république populaire de chine': 'Chine', 'empire russe': 'Russie', 'union soviétique': 'URSS', 'royaume de grande-bretagne': 'Royaume-Uni',
-  'empire britannique': 'Royaume-Uni', "royaume d'angleterre": 'Royaume-Uni', 'royaume de france': 'France', 'nouvelle-france': 'France',
-  'royaume de hongrie': 'Hongrie', 'principauté de valachie': 'Roumanie', 'principauté de transylvanie': 'Roumanie',
-  'royaume ptolémaïque': 'Égypte', 'empire achéménide': 'Perse', 'sparte': 'Grèce', 'république florentine': 'Italie',
-  'royaume de norvège (872-1397)': 'Norvège', 'troisième reich': 'Allemagne', 'lombax kingdom': 'Royaume lombax',
-  'metro kingdom': 'Royaume Métro', 'mushroom kingdom': 'Royaume Champignon', 'écosse': 'Royaume-Uni', 'pays de galles': 'Royaume-Uni',
-  'angleterre': 'Royaume-Uni', 'irlande du nord': 'Royaume-Uni', 'royaume-uni de grande-bretagne et d\'irlande': 'Royaume-Uni',
+  'république populaire de chine': 'China', 'empire russe': 'Russia', 'union soviétique': 'Soviet Union', 'royaume de grande-bretagne': 'United Kingdom',
+  'empire britannique': 'United Kingdom', "royaume d'angleterre": 'United Kingdom', 'royaume de france': 'France', 'nouvelle-france': 'France',
+  'royaume de hongrie': 'Hungary', 'principauté de valachie': 'Romania', 'principauté de transylvanie': 'Romania',
+  'royaume ptolémaïque': 'Egypt', 'empire achéménide': 'Persia', 'sparte': 'Greece', 'république florentine': 'Italy',
+  'royaume de norvège (872-1397)': 'Norway', 'troisième reich': 'Germany', 'lombax kingdom': 'Lombax Kingdom',
+  'metro kingdom': 'Metro Kingdom', 'mushroom kingdom': 'Mushroom Kingdom', 'écosse': 'United Kingdom', 'pays de galles': 'United Kingdom',
+  'angleterre': 'United Kingdom', 'irlande du nord': 'United Kingdom', 'royaume-uni de grande-bretagne et d\'irlande': 'United Kingdom',
   // En anglais, depuis les infobox des wikis : le pays ou l'adjectif
-  'united states': 'États-Unis', 'united states of america': 'États-Unis', 'usa': 'États-Unis', 'us': 'États-Unis', 'america': 'États-Unis',
-  'american': 'États-Unis', 'japan': 'Japon', 'japanese': 'Japon', 'united kingdom': 'Royaume-Uni', 'uk': 'Royaume-Uni', 'england': 'Royaume-Uni',
-  'english': 'Royaume-Uni', 'british': 'Royaume-Uni', 'great britain': 'Royaume-Uni', 'britain': 'Royaume-Uni', 'scotland': 'Royaume-Uni',
-  'scottish': 'Royaume-Uni', 'wales': 'Royaume-Uni', 'welsh': 'Royaume-Uni', 'french': 'France', 'germany': 'Allemagne', 'german': 'Allemagne',
-  'russia': 'Russie', 'russian': 'Russie', 'soviet union': 'URSS', 'ussr': 'URSS', 'china': 'Chine', 'chinese': 'Chine', 'italy': 'Italie',
-  'italian': 'Italie', 'spain': 'Espagne', 'spanish': 'Espagne', 'mexico': 'Mexique', 'mexican': 'Mexique', 'brazil': 'Brésil',
-  'brazilian': 'Brésil', 'canadian': 'Canada', 'australia': 'Australie', 'australian': 'Australie', 'south korea': 'Corée du Sud',
-  'korea': 'Corée du Sud', 'korean': 'Corée du Sud', 'south korean': 'Corée du Sud', 'india': 'Inde', 'indian': 'Inde', 'ireland': 'Irlande',
-  'irish': 'Irlande', 'sweden': 'Suède', 'swedish': 'Suède', 'norway': 'Norvège', 'norwegian': 'Norvège', 'egypt': 'Égypte', 'egyptian': 'Égypte',
-  'greece': 'Grèce', 'greek': 'Grèce', 'poland': 'Pologne', 'polish': 'Pologne', 'netherlands': 'Pays-Bas', 'dutch': 'Pays-Bas',
-  'thailand': 'Thaïlande', 'thai': 'Thaïlande', 'turkey': 'Turquie', 'turkish': 'Turquie', 'argentina': 'Argentine', 'cuba': 'Cuba',
-  'cuban': 'Cuba', 'nigeria': 'Nigeria', 'kenya': 'Kenya', 'south africa': 'Afrique du Sud', 'israel': 'Israël', 'iran': 'Iran',
-  'iraq': 'Irak', 'afghanistan': 'Afghanistan', 'pakistan': 'Pakistan', 'vietnam': 'Viêt Nam', 'philippines': 'Philippines',
-  'czech republic': 'Tchéquie', 'bohemia': 'Tchéquie', 'hungary': 'Hongrie', 'romania': 'Roumanie', 'switzerland': 'Suisse',
-  'austria': 'Autriche', 'portugal': 'Portugal', 'finland': 'Finlande', 'denmark': 'Danemark', 'belgium': 'Belgique', 'colombia': 'Colombie',
-  'peru': 'Pérou', 'chile': 'Chili', 'jamaica': 'Jamaïque', 'mongolia': 'Mongolie', 'saudi arabia': 'Arabie saoudite',
-  'swiss': 'Suisse', 'austrian': 'Autriche', 'portuguese': 'Portugal', 'finnish': 'Finlande', 'appears finnish': 'Finlande',
-  'danish': 'Danemark', 'belgian': 'Belgique', 'colombian': 'Colombie', 'peruvian': 'Pérou', 'chilean': 'Chili',
-  'jamaican': 'Jamaïque', 'mongolian': 'Mongolie', 'saudi': 'Arabie saoudite', 'nigerian': 'Nigeria', 'kenyan': 'Kenya',
-  'south african': 'Afrique du Sud', 'israeli': 'Israël', 'iranian': 'Iran', 'persian': 'Perse', 'persia': 'Perse',
-  'iraqi': 'Irak', 'afghan': 'Afghanistan', 'pakistani': 'Pakistan', 'vietnamese': 'Viêt Nam', 'filipino': 'Philippines',
-  'czech': 'Tchéquie', 'bohemian': 'Tchéquie', 'hungarian': 'Hongrie', 'romanian': 'Roumanie', 'transylvania': 'Roumanie',
-  'serbia': 'Serbie', 'serbian': 'Serbie', 'croatia': 'Croatie', 'croatian': 'Croatie', 'ukraine': 'Ukraine', 'ukrainian': 'Ukraine',
-  'soviet': 'URSS', 'argentinian': 'Argentine', 'argentine': 'Argentine', 'venezuela': 'Venezuela', 'venezuelan': 'Venezuela',
-  'haiti': 'Haïti', 'haitian': 'Haïti', 'dominican republic': 'République dominicaine', 'dominican': 'République dominicaine',
-  'ghana': 'Ghana', 'ghanaian': 'Ghana', 'monaco': 'Monaco', 'monegasque': 'Monaco', 'new zealand': 'Nouvelle-Zélande',
-  'new zealander': 'Nouvelle-Zélande', 'canada': 'Canada', 'france': 'France', 'scottish highlands': 'Royaume-Uni',
-  'medieval germany': 'Allemagne', 'russian-american': 'Russie', 'icelandic': 'Islande', 'iceland': 'Islande',
-  'singapore': 'Singapour', 'indonesia': 'Indonésie', 'indonesian': 'Indonésie', 'malaysia': 'Malaisie', 'taiwan': 'Taïwan',
-  'taiwanese': 'Taïwan', 'hong kong': 'Chine', 'mexican-american': 'États-Unis', 'japanese-american': 'États-Unis',
-  'african-american': 'États-Unis', 'native american': 'États-Unis', 'lebanese': 'Liban', 'syrian': 'Syrie', 'turkish cypriot': 'Turquie',
-  'norse': 'Norvège', 'spartan': 'Grèce', 'roman': 'Italie', 'ancient egypt': 'Égypte', 'ancient greece': 'Grèce',
+  'united states': 'United States', 'united states of america': 'United States', 'usa': 'United States', 'us': 'United States', 'america': 'United States',
+  'american': 'United States', 'japan': 'Japan', 'japanese': 'Japan', 'united kingdom': 'United Kingdom', 'uk': 'United Kingdom', 'england': 'United Kingdom',
+  'english': 'United Kingdom', 'british': 'United Kingdom', 'great britain': 'United Kingdom', 'britain': 'United Kingdom', 'scotland': 'United Kingdom',
+  'scottish': 'United Kingdom', 'wales': 'United Kingdom', 'welsh': 'United Kingdom', 'french': 'France', 'germany': 'Germany', 'german': 'Germany',
+  'russia': 'Russia', 'russian': 'Russia', 'soviet union': 'Soviet Union', 'ussr': 'Soviet Union', 'china': 'China', 'chinese': 'China', 'italy': 'Italy',
+  'italian': 'Italy', 'spain': 'Spain', 'spanish': 'Spain', 'mexico': 'Mexico', 'mexican': 'Mexico', 'brazil': 'Brazil',
+  'brazilian': 'Brazil', 'canadian': 'Canada', 'australia': 'Australia', 'australian': 'Australia', 'south korea': 'South Korea',
+  'korea': 'South Korea', 'korean': 'South Korea', 'south korean': 'South Korea', 'india': 'India', 'indian': 'India', 'ireland': 'Ireland',
+  'irish': 'Ireland', 'sweden': 'Sweden', 'swedish': 'Sweden', 'norway': 'Norway', 'norwegian': 'Norway', 'egypt': 'Egypt', 'egyptian': 'Egypt',
+  'greece': 'Greece', 'greek': 'Greece', 'poland': 'Poland', 'polish': 'Poland', 'netherlands': 'Netherlands', 'dutch': 'Netherlands',
+  'thailand': 'Thailand', 'thai': 'Thailand', 'turkey': 'Turkey', 'turkish': 'Turkey', 'argentina': 'Argentina', 'cuba': 'Cuba',
+  'cuban': 'Cuba', 'nigeria': 'Nigeria', 'kenya': 'Kenya', 'south africa': 'South Africa', 'israel': 'Israel', 'iran': 'Iran',
+  'iraq': 'Iraq', 'afghanistan': 'Afghanistan', 'pakistan': 'Pakistan', 'vietnam': 'Vietnam', 'philippines': 'Philippines',
+  'czech republic': 'Czech Republic', 'bohemia': 'Czech Republic', 'hungary': 'Hungary', 'romania': 'Romania', 'switzerland': 'Switzerland',
+  'austria': 'Austria', 'portugal': 'Portugal', 'finland': 'Finland', 'denmark': 'Denmark', 'belgium': 'Belgium', 'colombia': 'Colombia',
+  'peru': 'Peru', 'chile': 'Chile', 'jamaica': 'Jamaica', 'mongolia': 'Mongolia', 'saudi arabia': 'Saudi Arabia',
+  'swiss': 'Switzerland', 'austrian': 'Austria', 'portuguese': 'Portugal', 'finnish': 'Finland', 'appears finnish': 'Finland',
+  'danish': 'Denmark', 'belgian': 'Belgium', 'colombian': 'Colombia', 'peruvian': 'Peru', 'chilean': 'Chile',
+  'jamaican': 'Jamaica', 'mongolian': 'Mongolia', 'saudi': 'Saudi Arabia', 'nigerian': 'Nigeria', 'kenyan': 'Kenya',
+  'south african': 'South Africa', 'israeli': 'Israel', 'iranian': 'Iran', 'persian': 'Persia', 'persia': 'Persia',
+  'iraqi': 'Iraq', 'afghan': 'Afghanistan', 'pakistani': 'Pakistan', 'vietnamese': 'Vietnam', 'filipino': 'Philippines',
+  'czech': 'Czech Republic', 'bohemian': 'Czech Republic', 'hungarian': 'Hungary', 'romanian': 'Romania', 'transylvania': 'Romania',
+  'serbia': 'Serbia', 'serbian': 'Serbia', 'croatia': 'Croatia', 'croatian': 'Croatia', 'ukraine': 'Ukraine', 'ukrainian': 'Ukraine',
+  'soviet': 'Soviet Union', 'argentinian': 'Argentina', 'argentine': 'Argentina', 'venezuela': 'Venezuela', 'venezuelan': 'Venezuela',
+  'haiti': 'Haiti', 'haitian': 'Haiti', 'dominican republic': 'Dominican Republic', 'dominican': 'Dominican Republic',
+  'ghana': 'Ghana', 'ghanaian': 'Ghana', 'monaco': 'Monaco', 'monegasque': 'Monaco', 'new zealand': 'New Zealand',
+  'new zealander': 'New Zealand', 'canada': 'Canada', 'france': 'France', 'scottish highlands': 'United Kingdom',
+  'medieval germany': 'Germany', 'russian-american': 'Russia', 'icelandic': 'Iceland', 'iceland': 'Iceland',
+  'singapore': 'Singapore', 'indonesia': 'Indonesia', 'indonesian': 'Indonesia', 'malaysia': 'Malaysia', 'taiwan': 'Taiwan',
+  'taiwanese': 'Taiwan', 'hong kong': 'China', 'mexican-american': 'United States', 'japanese-american': 'United States',
+  'african-american': 'United States', 'native american': 'United States', 'lebanese': 'Lebanon', 'syrian': 'Syria', 'turkish cypriot': 'Turkey',
+  'norse': 'Norway', 'spartan': 'Greece', 'roman': 'Italy', 'ancient egypt': 'Egypt', 'ancient greece': 'Greece',
   // Les planètes de notre système, en français
-  'earth': 'Terre', 'earthling': 'Terre', 'terran': 'Terre', 'mars': 'Mars', 'martian': 'Mars', 'luna': 'Lune', 'moon': 'Lune',
-  'the moon': 'Lune',
+  'earth': 'Earth', 'earthling': 'Earth', 'terran': 'Earth', 'mars': 'Mars', 'martian': 'Mars', 'luna': 'Moon', 'moon': 'Moon',
+  'the moon': 'Moon',
 }
 
 // Les villes, régions et états réels, ramenés à leur pays. Les lieux de fiction (Night City, Hyrule) n'y sont pas :
 // ils sont gardés tels quels.
 const CITIES: Record<string, string> = {
   // États-Unis
-  'new york': 'États-Unis', 'new york city': 'États-Unis', 'nyc': 'États-Unis', 'manhattan': 'États-Unis', 'brooklyn': 'États-Unis',
-  'the bronx': 'États-Unis', 'bronx': 'États-Unis', 'queens': 'États-Unis', 'harlem': 'États-Unis', 'los angeles': 'États-Unis',
-  'san francisco': 'États-Unis', 'san diego': 'États-Unis', 'chicago': 'États-Unis', 'boston': 'États-Unis', 'seattle': 'États-Unis',
-  'miami': 'États-Unis', 'detroit': 'États-Unis', 'las vegas': 'États-Unis', 'new orleans': 'États-Unis', 'houston': 'États-Unis',
-  'dallas': 'États-Unis', 'austin': 'États-Unis', 'atlanta': 'États-Unis', 'philadelphia': 'États-Unis', 'washington': 'États-Unis',
-  'washington, d.c.': 'États-Unis', 'washington d.c.': 'États-Unis', 'denver': 'États-Unis', 'phoenix': 'États-Unis',
-  'portland': 'États-Unis', 'baltimore': 'États-Unis', 'pittsburgh': 'États-Unis', 'cleveland': 'États-Unis', 'memphis': 'États-Unis',
-  'nashville': 'États-Unis', 'honolulu': 'États-Unis', 'anchorage': 'États-Unis', 'salt lake city': 'États-Unis', 'hollywood': 'États-Unis',
-  'jackson': 'États-Unis', 'kansas city': 'États-Unis', 'st. louis': 'États-Unis', 'minneapolis': 'États-Unis', 'milwaukee': 'États-Unis',
-  'california': 'États-Unis', 'texas': 'États-Unis', 'florida': 'États-Unis', 'alaska': 'États-Unis', 'hawaii': 'États-Unis',
-  'nevada': 'États-Unis', 'arizona': 'États-Unis', 'colorado': 'États-Unis', 'oregon': 'États-Unis', 'montana': 'États-Unis',
-  'wyoming': 'États-Unis', 'utah': 'États-Unis', 'new mexico': 'États-Unis', 'oklahoma': 'États-Unis', 'kansas': 'États-Unis',
-  'nebraska': 'États-Unis', 'iowa': 'États-Unis', 'missouri': 'États-Unis', 'illinois': 'États-Unis', 'ohio': 'États-Unis',
-  'michigan': 'États-Unis', 'wisconsin': 'États-Unis', 'minnesota': 'États-Unis', 'georgia': 'États-Unis', 'louisiana': 'États-Unis',
-  'mississippi': 'États-Unis', 'alabama': 'États-Unis', 'tennessee': 'États-Unis', 'kentucky': 'États-Unis', 'virginia': 'États-Unis',
-  'west virginia': 'États-Unis', 'pennsylvania': 'États-Unis', 'new jersey': 'États-Unis', 'massachusetts': 'États-Unis',
-  'maine': 'États-Unis', 'vermont': 'États-Unis', 'connecticut': 'États-Unis', 'maryland': 'États-Unis', 'carolina': 'États-Unis',
-  'north carolina': 'États-Unis', 'south carolina': 'États-Unis', 'indiana': 'États-Unis', 'idaho': 'États-Unis',
-  'appalachia': 'États-Unis', 'mojave desert': 'États-Unis', 'mojave wasteland': 'États-Unis', 'capital wasteland': 'États-Unis',
-  'commonwealth': 'États-Unis', 'new vegas': 'États-Unis', 'midwest': 'États-Unis', 'bee cave': 'États-Unis', 'college station': 'États-Unis',
-  'cheyenne': 'États-Unis', 'topeka': 'États-Unis', 'savannah': 'États-Unis', 'wa': 'États-Unis',
+  'new york': 'United States', 'new york city': 'United States', 'nyc': 'United States', 'manhattan': 'United States', 'brooklyn': 'United States',
+  'the bronx': 'United States', 'bronx': 'United States', 'queens': 'United States', 'harlem': 'United States', 'los angeles': 'United States',
+  'san francisco': 'United States', 'san diego': 'United States', 'chicago': 'United States', 'boston': 'United States', 'seattle': 'United States',
+  'miami': 'United States', 'detroit': 'United States', 'las vegas': 'United States', 'new orleans': 'United States', 'houston': 'United States',
+  'dallas': 'United States', 'austin': 'United States', 'atlanta': 'United States', 'philadelphia': 'United States', 'washington': 'United States',
+  'washington, d.c.': 'United States', 'washington d.c.': 'United States', 'denver': 'United States', 'phoenix': 'United States',
+  'portland': 'United States', 'baltimore': 'United States', 'pittsburgh': 'United States', 'cleveland': 'United States', 'memphis': 'United States',
+  'nashville': 'United States', 'honolulu': 'United States', 'anchorage': 'United States', 'salt lake city': 'United States', 'hollywood': 'United States',
+  'jackson': 'United States', 'kansas city': 'United States', 'st. louis': 'United States', 'minneapolis': 'United States', 'milwaukee': 'United States',
+  'california': 'United States', 'texas': 'United States', 'florida': 'United States', 'alaska': 'United States', 'hawaii': 'United States',
+  'nevada': 'United States', 'arizona': 'United States', 'colorado': 'United States', 'oregon': 'United States', 'montana': 'United States',
+  'wyoming': 'United States', 'utah': 'United States', 'new mexico': 'United States', 'oklahoma': 'United States', 'kansas': 'United States',
+  'nebraska': 'United States', 'iowa': 'United States', 'missouri': 'United States', 'illinois': 'United States', 'ohio': 'United States',
+  'michigan': 'United States', 'wisconsin': 'United States', 'minnesota': 'United States', 'georgia': 'United States', 'louisiana': 'United States',
+  'mississippi': 'United States', 'alabama': 'United States', 'tennessee': 'United States', 'kentucky': 'United States', 'virginia': 'United States',
+  'west virginia': 'United States', 'pennsylvania': 'United States', 'new jersey': 'United States', 'massachusetts': 'United States',
+  'maine': 'United States', 'vermont': 'United States', 'connecticut': 'United States', 'maryland': 'United States', 'carolina': 'United States',
+  'north carolina': 'United States', 'south carolina': 'United States', 'indiana': 'United States', 'idaho': 'United States',
+  'appalachia': 'United States', 'mojave desert': 'United States', 'mojave wasteland': 'United States', 'capital wasteland': 'United States',
+  'commonwealth': 'United States', 'new vegas': 'United States', 'midwest': 'United States', 'bee cave': 'United States', 'college station': 'United States',
+  'cheyenne': 'United States', 'topeka': 'United States', 'savannah': 'United States', 'wa': 'United States',
   // Royaume-Uni, Irlande
-  'london': 'Royaume-Uni', 'manchester': 'Royaume-Uni', 'liverpool': 'Royaume-Uni', 'birmingham': 'Royaume-Uni', 'oxford': 'Royaume-Uni',
-  'cambridge': 'Royaume-Uni', 'bristol': 'Royaume-Uni', 'leeds': 'Royaume-Uni', 'sheffield': 'Royaume-Uni', 'edinburgh': 'Royaume-Uni',
-  'glasgow': 'Royaume-Uni', 'cardiff': 'Royaume-Uni', 'belfast': 'Royaume-Uni', 'yorkshire': 'Royaume-Uni', 'cornwall': 'Royaume-Uni',
-  'kent': 'Royaume-Uni', 'surrey': 'Royaume-Uni', 'devon': 'Royaume-Uni', 'whitechapel': 'Royaume-Uni', 'hogsmeade': 'Royaume-Uni',
-  'godric\'s hollow': 'Royaume-Uni', 'little whinging': 'Royaume-Uni', 'dublin': 'Irlande',
+  'london': 'United Kingdom', 'manchester': 'United Kingdom', 'liverpool': 'United Kingdom', 'birmingham': 'United Kingdom', 'oxford': 'United Kingdom',
+  'cambridge': 'United Kingdom', 'bristol': 'United Kingdom', 'leeds': 'United Kingdom', 'sheffield': 'United Kingdom', 'edinburgh': 'United Kingdom',
+  'glasgow': 'United Kingdom', 'cardiff': 'United Kingdom', 'belfast': 'United Kingdom', 'yorkshire': 'United Kingdom', 'cornwall': 'United Kingdom',
+  'kent': 'United Kingdom', 'surrey': 'United Kingdom', 'devon': 'United Kingdom', 'whitechapel': 'United Kingdom', 'hogsmeade': 'United Kingdom',
+  'godric\'s hollow': 'United Kingdom', 'little whinging': 'United Kingdom', 'dublin': 'Ireland',
   // Europe
   'paris': 'France', 'marseille': 'France', 'lyon': 'France', 'bordeaux': 'France', 'normandy': 'France', 'brittany': 'France',
-  'berlin': 'Allemagne', 'munich': 'Allemagne', 'hamburg': 'Allemagne', 'hanover': 'Allemagne', 'frankfurt': 'Allemagne',
-  'cologne': 'Allemagne', 'bavaria': 'Allemagne', 'rome': 'Italie', 'milan': 'Italie', 'venice': 'Italie', 'florence': 'Italie',
-  'naples': 'Italie', 'sicily': 'Italie', 'tuscany': 'Italie', 'madrid': 'Espagne', 'barcelona': 'Espagne', 'seville': 'Espagne',
-  'lisbon': 'Portugal', 'amsterdam': 'Pays-Bas', 'brussels': 'Belgique', 'vienna': 'Autriche', 'zurich': 'Suisse', 'geneva': 'Suisse',
-  'prague': 'Tchéquie', 'kutná hora': 'Tchéquie', 'skalitz': 'Tchéquie', 'rattay': 'Tchéquie', 'suchdol': 'Tchéquie',
-  'budapest': 'Hongrie', 'warsaw': 'Pologne', 'krakow': 'Pologne', 'bucharest': 'Roumanie', 'athens': 'Grèce', 'sparta': 'Grèce',
-  'stockholm': 'Suède', 'oslo': 'Norvège', 'copenhagen': 'Danemark', 'helsinki': 'Finlande', 'reykjavik': 'Islande',
-  'moscow': 'Russie', 'saint petersburg': 'Russie', 'st. petersburg': 'Russie', 'siberia': 'Russie', 'kyiv': 'Ukraine', 'kiev': 'Ukraine',
+  'berlin': 'Germany', 'munich': 'Germany', 'hamburg': 'Germany', 'hanover': 'Germany', 'frankfurt': 'Germany',
+  'cologne': 'Germany', 'bavaria': 'Germany', 'rome': 'Italy', 'milan': 'Italy', 'venice': 'Italy', 'florence': 'Italy',
+  'naples': 'Italy', 'sicily': 'Italy', 'tuscany': 'Italy', 'madrid': 'Spain', 'barcelona': 'Spain', 'seville': 'Spain',
+  'lisbon': 'Portugal', 'amsterdam': 'Netherlands', 'brussels': 'Belgium', 'vienna': 'Austria', 'zurich': 'Switzerland', 'geneva': 'Switzerland',
+  'prague': 'Czech Republic', 'kutná hora': 'Czech Republic', 'skalitz': 'Czech Republic', 'rattay': 'Czech Republic', 'suchdol': 'Czech Republic',
+  'budapest': 'Hungary', 'warsaw': 'Poland', 'krakow': 'Poland', 'bucharest': 'Romania', 'athens': 'Greece', 'sparta': 'Greece',
+  'stockholm': 'Sweden', 'oslo': 'Norway', 'copenhagen': 'Denmark', 'helsinki': 'Finland', 'reykjavik': 'Iceland',
+  'moscow': 'Russia', 'saint petersburg': 'Russia', 'st. petersburg': 'Russia', 'siberia': 'Russia', 'kyiv': 'Ukraine', 'kiev': 'Ukraine',
   'chernobyl': 'Ukraine', 'pripyat': 'Ukraine', 'sumy oblast': 'Ukraine', 'yabluchne': 'Ukraine',
-  'dzhugdzhur': 'Russie', 'east siberian mountains': 'Russie', 'ullapool': 'Royaume-Uni', 'belgrade': 'Serbie', 'istanbul': 'Turquie', 'constantinople': 'Turquie',
+  'dzhugdzhur': 'Russia', 'east siberian mountains': 'Russia', 'ullapool': 'United Kingdom', 'belgrade': 'Serbia', 'istanbul': 'Turkey', 'constantinople': 'Turkey',
   // Asie
-  'tokyo': 'Japon', 'shibuya': 'Japon', 'shinjuku': 'Japon', 'kamurocho': 'Japon', 'kamurochō': 'Japon', 'sotenbori': 'Japon',
-  'kyoto': 'Japon', 'osaka': 'Japon', 'yokohama': 'Japon', 'kobe': 'Japon', 'nagoya': 'Japon', 'hiroshima': 'Japon',
-  'okinawa': 'Japon', 'hokkaido': 'Japon', 'sapporo': 'Japon', 'fukuoka': 'Japon', 'kanagawa': 'Japon', 'kanagawa prefecture': 'Japon', 'inaba': 'Japon',
-  'edo': 'Japon', 'tsushima': 'Japon', 'beijing': 'Chine', 'peking': 'Chine', 'shanghai': 'Chine', 'macau': 'Chine',
-  'seoul': 'Corée du Sud', 'busan': 'Corée du Sud', 'bangkok': 'Thaïlande', 'lampang': 'Thaïlande', 'mumbai': 'Inde',
-  'delhi': 'Inde', 'new delhi': 'Inde', 'calcutta': 'Inde', 'kolkata': 'Inde', 'manila': 'Philippines', 'masbate': 'Philippines', 'hanoi': 'Viêt Nam',
-  'saigon': 'Viêt Nam', 'singapore': 'Singapour', 'jakarta': 'Indonésie', 'tehran': 'Iran', 'baghdad': 'Irak', 'kabul': 'Afghanistan',
-  'jerusalem': 'Israël', 'tel aviv': 'Israël', 'dubai': 'Émirats arabes unis', 'riyadh': 'Arabie saoudite', 'ulaanbaatar': 'Mongolie',
+  'tokyo': 'Japan', 'shibuya': 'Japan', 'shinjuku': 'Japan', 'kamurocho': 'Japan', 'kamurochō': 'Japan', 'sotenbori': 'Japan',
+  'kyoto': 'Japan', 'osaka': 'Japan', 'yokohama': 'Japan', 'kobe': 'Japan', 'nagoya': 'Japan', 'hiroshima': 'Japan',
+  'okinawa': 'Japan', 'hokkaido': 'Japan', 'sapporo': 'Japan', 'fukuoka': 'Japan', 'kanagawa': 'Japan', 'kanagawa prefecture': 'Japan', 'inaba': 'Japan',
+  'edo': 'Japan', 'tsushima': 'Japan', 'beijing': 'China', 'peking': 'China', 'shanghai': 'China', 'macau': 'China',
+  'seoul': 'South Korea', 'busan': 'South Korea', 'bangkok': 'Thailand', 'lampang': 'Thailand', 'mumbai': 'India',
+  'delhi': 'India', 'new delhi': 'India', 'calcutta': 'India', 'kolkata': 'India', 'manila': 'Philippines', 'masbate': 'Philippines', 'hanoi': 'Vietnam',
+  'saigon': 'Vietnam', 'singapore': 'Singapore', 'jakarta': 'Indonesia', 'tehran': 'Iran', 'baghdad': 'Iraq', 'kabul': 'Afghanistan',
+  'jerusalem': 'Israel', 'tel aviv': 'Israel', 'dubai': 'United Arab Emirates', 'riyadh': 'Saudi Arabia', 'ulaanbaatar': 'Mongolia',
   // Amériques, Afrique, Océanie
   'toronto': 'Canada', 'montreal': 'Canada', 'montréal': 'Canada', 'vancouver': 'Canada', 'quebec': 'Canada', 'québec': 'Canada',
-  'ontario': 'Canada', 'mexico city': 'Mexique', 'havana': 'Cuba', 'santo domingo': 'République dominicaine', 'kingston': 'Jamaïque',
-  'rio de janeiro': 'Brésil', 'são paulo': 'Brésil', 'sao paulo': 'Brésil', 'buenos aires': 'Argentine', 'bogotá': 'Colombie',
-  'bogota': 'Colombie', 'lima': 'Pérou', 'caracas': 'Venezuela', 'cairo': 'Égypte', 'alexandria': 'Égypte', 'lagos': 'Nigeria',
-  'nairobi': 'Kenya', 'johannesburg': 'Afrique du Sud', 'cape town': 'Afrique du Sud', 'accra': 'Ghana', 'sydney': 'Australie',
-  'melbourne': 'Australie', 'brisbane': 'Australie', 'perth': 'Australie', 'auckland': 'Nouvelle-Zélande',
+  'ontario': 'Canada', 'mexico city': 'Mexico', 'havana': 'Cuba', 'santo domingo': 'Dominican Republic', 'kingston': 'Jamaica',
+  'rio de janeiro': 'Brazil', 'são paulo': 'Brazil', 'sao paulo': 'Brazil', 'buenos aires': 'Argentina', 'bogotá': 'Colombia',
+  'bogota': 'Colombia', 'lima': 'Peru', 'caracas': 'Venezuela', 'cairo': 'Egypt', 'alexandria': 'Egypt', 'lagos': 'Nigeria',
+  'nairobi': 'Kenya', 'johannesburg': 'South Africa', 'cape town': 'South Africa', 'accra': 'Ghana', 'sydney': 'Australia',
+  'melbourne': 'Australia', 'brisbane': 'Australia', 'perth': 'Australia', 'auckland': 'New Zealand',
 }
 
 // Le pays d'un lieu réel (« United States », « London », « Japanese »), null si on ne le connaît pas
@@ -240,18 +240,40 @@ export function translateNationality(label: string): string {
   return value[0]!.toUpperCase() + value.slice(1)
 }
 
+// Les libellés français de Wikidata (les pays, et les lieux de fiction qu'il traduit) : tous les lieux sont en anglais,
+// comme ceux des wikis, pour que les personnages se croisent
+const FRENCH_PLACES: Record<string, string> = {
+  'afrique du sud': 'South Africa', 'allemagne': 'Germany', 'arabie saoudite': 'Saudi Arabia', 'argentine': 'Argentina',
+  'australie': 'Australia', 'autriche': 'Austria', 'belgique': 'Belgium', 'biélorussie': 'Belarus', 'brésil': 'Brazil',
+  'chili': 'Chile', 'chine': 'China', 'colombie': 'Colombia', 'corée du sud': 'South Korea', 'croatie': 'Croatia',
+  'danemark': 'Denmark', 'empire byzantin': 'Byzantine Empire', 'espagne': 'Spain', 'finlande': 'Finland', 'grèce': 'Greece',
+  'groenland': 'Greenland', 'haïti': 'Haiti', 'hongrie': 'Hungary', 'inde': 'India', 'indonésie': 'Indonesia', 'irak': 'Iraq',
+  'irlande': 'Ireland', 'islande': 'Iceland', 'israël': 'Israel', 'italie': 'Italy', 'jamaïque': 'Jamaica', 'japon': 'Japan',
+  'liban': 'Lebanon', 'lune': 'Moon', 'malaisie': 'Malaysia', 'mexique': 'Mexico', 'mongolie': 'Mongolia', 'norvège': 'Norway',
+  'nouvelle-zélande': 'New Zealand', 'pays-bas': 'Netherlands', 'perse': 'Persia', 'pologne': 'Poland', 'polynésie': 'Polynesia',
+  'pérou': 'Peru', 'roumanie': 'Romania', 'royaume champignon': 'Mushroom Kingdom', 'royaume métro': 'Metro Kingdom',
+  'royaume lombax': 'Lombax Kingdom', 'royaume-uni': 'United Kingdom', 'russie': 'Russia',
+  'république dominicaine': 'Dominican Republic', 'serbie': 'Serbia', 'singapour': 'Singapore', 'suisse': 'Switzerland',
+  'suède': 'Sweden', 'syrie': 'Syria', 'taïwan': 'Taiwan', 'tchéquie': 'Czech Republic', 'terre': 'Earth',
+  'thaïlande': 'Thailand', 'turquie': 'Turkey', 'urss': 'Soviet Union', 'viêt nam': 'Vietnam', 'yougoslavie': 'Yugoslavia',
+  'égypte': 'Egypt', 'émirats arabes unis': 'United Arab Emirates', 'états-unis': 'United States',
+  // Lieux de fiction
+  'témérie': 'Temeria', 'rédanie': 'Redania', 'l\'outremonde': 'Underground', 'cité 17': 'City 17', 'néthéril': 'Netheril',
+  'rashéménie': 'Rashemen',
+}
+
 // Les pays d'histoire et les écritures des infobox qui manquent à NATIONALITIES
 const HISTORIC_COUNTRIES: Record<string, string> = {
-  'russian empire': 'Russie', 'people\'s republic of china': 'Chine', 'ming empire': 'Chine', 'ukrainian soviet socialist republic': 'Ukraine',
-  'belorussian ssr': 'Biélorussie', 'soviet russian': 'URSS', 'royaume des pays-bas': 'Pays-Bas', 'liberia': 'Liberia', 'liberian': 'Liberia',
-  'république fédérative socialiste de yougoslavie': 'Yougoslavie', 'byzantine': 'Empire byzantin',
-  'u.s': 'États-Unis', 'englander': 'Royaume-Uni', 'greenlander': 'Groenland', 'prussian': 'Allemagne', 'imperial german': 'Allemagne',
-  'rhenish': 'Allemagne', 'british south african': 'Afrique du Sud', 'minoan': 'Grèce', 'bc': 'Canada', 'polynesian': 'Polynésie',
+  'russian empire': 'Russia', 'people\'s republic of china': 'China', 'ming empire': 'China', 'ukrainian soviet socialist republic': 'Ukraine',
+  'belorussian ssr': 'Belarus', 'soviet russian': 'Soviet Union', 'royaume des pays-bas': 'Netherlands', 'liberia': 'Liberia', 'liberian': 'Liberia',
+  'république fédérative socialiste de yougoslavie': 'Yugoslavia', 'byzantine': 'Byzantine Empire',
+  'u.s': 'United States', 'englander': 'United Kingdom', 'greenlander': 'Greenland', 'prussian': 'Germany', 'imperial german': 'Germany',
+  'rhenish': 'Germany', 'british south african': 'South Africa', 'minoan': 'Greece', 'bc': 'Canada', 'polynesian': 'Polynesia',
 }
 
 // Les écritures d'une même ville réelle, ramenées à une seule pour que les personnages se croisent
 const CITY_NAMES: Record<string, string> = {
-  'nyc': 'New York', 'new york city': 'New York', 'washington, d.c.': 'Washington', 'washington d.c.': 'Washington',
+  'nyc': 'New York', 'wa': 'Washington', 'new york city': 'New York', 'washington, d.c.': 'Washington', 'washington d.c.': 'Washington',
   'kamurochō': 'Kamurocho', 'peking': 'Beijing', 'kiev': 'Kyiv', 'st. petersburg': 'Saint Petersburg', 'montréal': 'Montreal',
   'québec': 'Quebec', 'são paulo': 'Sao Paulo', 'bogotá': 'Bogota', 'the bronx': 'Bronx',
 }
@@ -276,7 +298,7 @@ const NOT_PLACES = new Set([
 const NOT_PLACE = /years old|mythology|^(?:his|her|their|my|any|unknown|various|several)\b|^(?:hideout|safehouse|ranch|backyard|home|house|castle|village)$|^[^\p{L}]*$|^\p{L}$|^\d|\b(?:apartments?|house|home|garage|office|hq|mansion|hovel|hideout|lab|cabin|club|restaurante?|saloon|facility|warship|corp|inc)$/u
 
 // « Likely Japan », « Created on Zebes », « Town of Onett », « Country of Eagleland » : le lieu seul
-const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|originally|created (?:on|in)|raised (?:on|in)|born (?:on|in))\s+|(?:the\s+)?(?:island country|country|town|city|region|province|village) of\s+)/i
+const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|originally|created (?:on|in)|raised (?:on|in)|born (?:on|in))\s+|(?:the\s+)?(?:island country|country|town|region|province) of\s+)/i
 
 // Les lieux qu'on tire d'un nom, pour donner un max d'indices : un pays en français (« American » → États-Unis), une
 // ville ou une région réelle avec son pays (Seattle → Seattle, États-Unis), le lieu d'un gentilé (Deponian → Deponia),
@@ -285,9 +307,9 @@ export function translatePlace(label: string): string[] {
   // Les caractères invisibles des drapeaux emoji (« 󠁧󠁢󠁳 Scottish »)
   const clean = label.replace(/[\u{E0000}-\u{E007F}\p{Extended_Pictographic}]/gu, '').trim().replace(PLACE_PREFIX, '').replace(/[.\s]+$/, '')
   const name = key(clean).replace(/^the\s+/, '')
-  if (NOT_PLACES.has(name) || NOT_PLACE.test(name))
+  if (NOT_PLACES.has(name) || NOT_PLACES.has(key(clean)) || NOT_PLACE.test(name))
     return []
-  const country = NATIONALITIES[key(clean)] ?? NATIONALITIES[name] ?? HISTORIC_COUNTRIES[name]
+  const country = NATIONALITIES[key(clean)] ?? NATIONALITIES[name] ?? HISTORIC_COUNTRIES[name] ?? FRENCH_PLACES[key(clean)]
   if (country)
     return [country]
   const cityName = CITY_NAMES[key(clean)] ?? CITY_NAMES[name] ?? translateNationality(clean)

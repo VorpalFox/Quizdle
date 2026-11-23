@@ -38,14 +38,14 @@ describe('parseSpecies', () => {
 
 describe('parsePlaces', () => {
   it('ChampPays_TelQuelOuTraduit', () => {
-    expect(parsePlaces('Japanese')).toEqual(['Japon'])
+    expect(parsePlaces('Japanese')).toEqual(['Japan'])
     expect(parsePlaces('Hyrule')).toEqual(['Hyrule'])
   })
 
   it('LieuReel_GardeAvecSonPays', () => {
-    expect(parsePlaces('Arcadia Bay, Oregon, United States')).toEqual(['Arcadia Bay', 'Oregon', 'États-Unis'])
-    expect(parsePlaces('London')).toEqual(['London', 'Royaume-Uni'])
-    expect(parsePlaces('American')).toEqual(['États-Unis'])
+    expect(parsePlaces('Arcadia Bay, Oregon, United States')).toEqual(['Arcadia Bay', 'Oregon', 'United States'])
+    expect(parsePlaces('London')).toEqual(['London', 'United Kingdom'])
+    expect(parsePlaces('American')).toEqual(['United States'])
   })
 
   it('LieuxDeFiction_TousGardes', () => {
@@ -61,7 +61,7 @@ describe('parsePlaces', () => {
 
 describe('morePlaces', () => {
   it('LieuxDuWiki_AjoutesAWikidata', () => {
-    expect(morePlaces(['Japon'], ['Kamurocho', 'Japon'])).toEqual([['nationality', ['Japon', 'Kamurocho']]])
+    expect(morePlaces(['Japan'], ['Kamurocho', 'Japan'])).toEqual([['nationality', ['Japan', 'Kamurocho']]])
     expect(morePlaces(null, ['Hyrule'])).toEqual([['nationality', ['Hyrule']]])
   })
 
