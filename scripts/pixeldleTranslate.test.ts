@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -30,6 +30,19 @@ describe('mergeOccupations', () => {
 
   it('Dieu_Retire', () => {
     expect(mergeOccupations(['Dieu'])).toBeNull()
+  })
+})
+
+describe('weaponOccupations', () => {
+  it('Armes_CommentIlSeBat', () => {
+    expect(weaponOccupations('Buster Sword')).toEqual(['Épéiste'])
+    expect(weaponOccupations('AK-47, Desert Eagle')).toEqual(['Tireur'])
+    expect(weaponOccupations('Gunblade')).toEqual(['Épéiste', 'Tireur'])
+    expect(weaponOccupations('Sniper rifle')).toEqual(["Tireur d'élite"])
+  })
+
+  it('PasUneArme_Rien', () => {
+    expect(weaponOccupations('See equipment')).toEqual([])
   })
 })
 

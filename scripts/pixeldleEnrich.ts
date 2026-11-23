@@ -10,7 +10,7 @@ import { sleep, splitOccupations } from './anilist.js'
 import { templateFields } from './fandom.js'
 import { translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
-import { translateGender, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -40,6 +40,8 @@ const FIELDS = {
   rank: ['rank', 'class', 'position'],
   // Le comportement d'une créature envers le joueur (« Hostile » sur le wiki Minecraft)
   behavior: ['behavior', 'behaviour', 'temperament', 'disposition', 'aggression', 'hostility'],
+  // Les armes : comment le personnage se bat (Épéiste, Tireur…), ajouté à son occupation
+  weapon: ['weapon', 'weapons', 'weapon(s)', 'equipment', 'armament'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
 export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior'>
@@ -330,6 +332,9 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const behavior = first(fields, FIELDS.behavior)
   if (!result.occupation && behavior && HOSTILE.test(firstItem(behavior)))
     result.occupation = [PREDATOR]
+  const weapons = [...new Set(present(fields, FIELDS.weapon).flatMap(weaponOccupations))]
+  if (weapons.length > 0)
+    result.weapon = weapons
   const hair = first(fields, FIELDS.hair)
   if (hair) {
     const parsed = wikiHair(hair)

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
+import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -66,6 +66,18 @@ describe('citedYear', () => {
 describe('pronounGender, groupes', () => {
   it('écarte un groupe dont le texte dit surtout « they »', () => {
     expect(pronounGender("'''Clockwork Soldiers''' are machines. They patrol. They were built by Jindosh, his finest work; he is proud of them and their power. He sells them.")).toBeNull()
+  })
+})
+
+describe('introFunction', () => {
+  it('CompagnonOuAssistant_Explicite', () => {
+    expect(introFunction("Epona is Link's horse in many games.")).toBe('Compagnon')
+    expect(introFunction('ADA is the AI assistant of the pioneer.')).toBe('Assistant')
+  })
+
+  it('RoleDHistoire_Null', () => {
+    expect(introFunction('Morrigan is a possible companion in Dragon Age.')).toBeNull()
+    expect(introFunction('Louis is an assistant manager at a store.')).toBeNull()
   })
 })
 

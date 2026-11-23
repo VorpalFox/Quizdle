@@ -99,6 +99,21 @@ export function introRoles(intro: string): string[] {
   }).filter(role => !NOT_A_JOB.test(role))
 }
 
+// Un compagnon ou un assistant, quand l'introduction le dit (« Epona is Link's horse », « Dog is Alyx's pet robot »,
+// « ADA is the AI assistant ») : la fonction du personnage, pas un rôle d'histoire comme « possible companion »
+const COMPANION = /'s\s+(?:[\w-]+\s+){0,3}(?:companion|sidekick|pet|steed|horse|mount|partner|dog|wolf|familiar)\b|\b(?:companion|sidekick|pet|steed|familiar) of\b/i
+const ASSISTANT = /\bassistant\b/i
+
+export function introFunction(intro: string): 'Compagnon' | 'Assistant' | null {
+  const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)
+  const roles = sentences.map(sentence => WHAT_HE_IS.exec(sentence)?.[1] ?? '')
+  if (roles.some(role => ASSISTANT.test(role) && !/\bassistant (?:manager|director|professor)/i.test(role)))
+    return 'Assistant'
+  if (roles.some(role => COMPANION.test(role) && !/\b(?:possible|potential|recruitable|romance)/i.test(role)))
+    return 'Compagnon'
+  return null
+}
+
 // Le camp d'une entité (dieu, démon, ange) d'après son introduction : le dernier indice du début du texte gagne
 // (« deuteragonist-turned-final antagonist » : hostile)
 const ALIGNMENT_LENGTH = 300

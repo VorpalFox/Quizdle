@@ -18,7 +18,7 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedGame, fullPages, introAlignment, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -564,6 +564,8 @@ const introsById = new Map([
 ])
 const occupationExcerpts: string[] = []
 const entityRoles: string[] = []
+// Les armes ajoutées à l'occupation, au plus
+const MAX_WEAPONS = 2
 const ENTITY_SPECIES = new Set(['Divinité', 'Démon', 'Ange'])
 const withIntroOccupation = (entry: Entry): Entry => {
   const empty = !(entry.attributes.occupation as string[] | null)?.length
@@ -583,9 +585,21 @@ const warnings = manualApplied.warnings
 // regroupées (Aucune ou Inconnu plutôt que vide), N/A pour les cheveux d'un robot ou d'un animal
 const entries = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
-  const occupation = mergeOccupations(entry.attributes.occupation) ?? entityRole(entry, species)
-  return { ...entry, attributes: { ...entry.attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
+  // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
+  const { weapon, ...attributes } = entry.attributes
+  const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
+  const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
+  return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
+
+// Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
+function functionRole(entry: Entry): string[] | null {
+  const role = introFunction(introsById.get(entry.id) ?? '')
+  if (!role)
+    return null
+  entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
+  return [role]
+}
 
 // Un dieu, un démon ou un ange sans métier : Destructeur s'il est hostile, Protecteur s'il est du côté du joueur
 // (d'après l'introduction de sa page), à relire dans le récap
@@ -625,7 +639,7 @@ lines.push(`## Franchises avec moins de 4 personnages (${few.length})`, ...few.m
 lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie « Characters », les plus longues pages avec une infobox qui donne le sexe`, '',
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
-lines.push(`## Dieux, démons et anges : Destructeur ou Protecteur d'après l'introduction (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
+lines.push(`## Rôles d'après l'introduction : Compagnon, Assistant, et Destructeur ou Protecteur pour les dieux, démons et anges (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
 lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année devinée (${yearGuesses.length}) : aucun jeu reconnu dans l'infobox, 1er jeu de la série pris par défaut`, ...yearGuesses.map(text => `- ${text}`), '')

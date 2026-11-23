@@ -156,6 +156,30 @@ export function hairOrNone(hair: unknown, species: unknown): unknown {
   return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
 }
 
+// --- Armes ---
+
+// L'arme du personnage (champ « weapon » des infobox) dit aussi comment il se bat : toutes les règles qui collent comptent
+// (une gunblade : Épéiste et Tireur). Les modèles d'armes à feu des jeux de tir (AK-47, MP5, M1911…) sont des fusils.
+const WEAPON_RULES: [RegExp, string][] = [
+  [/sniper|\bintervention\b|\br700\b|\bm21\b|m14 ebr|\brsass\b|\bosipr\b|longshot/, 'Tireur d\'élite'],
+  [/swords?\b|blades?\b|katana|rapier|\bsab(?:re|er)s?\b|cutlass|scimitar|claymore|zweih[äa]nder/, 'Épéiste'],
+  [/\bguns?\b|gunblade|pistol|revolver|rifle|shotgun|handgun|firearm|blaster|\bsmg\b|machine ?gun|minigun|chain ?gun|musket|carbine|repeater|magnum|\bak-?\d+|\bmp\d+k?\b|\bm\d{1,4}\b|\bp\d{2,3}\b|\bg\d{2}c?\b|\busp\b|glock|\buzi\b|desert eagle|\bspas|\bscar\b|\bacr\b|\bump\d*\b|enforcers?|\blancer\b|gnasher|hammerburst|boltok|mega buster|arm cannon/, 'Tireur'],
+  [/\bbows?\b|longbow|crossbow|\barrows?\b/, 'Archer'],
+  [/\bfists?\b|gauntlets?|knuckles\b|martial arts|bare hands/, 'Combattant'],
+  [/\bstaff\b|\bstaves\b|\bwands?\b|\bspells?\b|\btome\b|grimoire|\bcatalyst\b|\bmagic\b/, 'Magicien'],
+  [/\bspears?\b|\blances?\b|halberd|trident|polearm|naginata|glaive|\bpikes?\b/, 'Lancier'],
+  [/kunai|shuriken/, 'Ninja'],
+  [/microphone/, 'Musicien'],
+  [/scalpel/, 'Médecin'],
+]
+
+export function weaponOccupations(value: string): string[] {
+  const text = key(value)
+  const found = WEAPON_RULES.filter(([pattern]) => pattern.test(text)).map(([, occupation]) => occupation)
+  // Un sniper est déjà un tireur
+  return found.includes('Tireur d\'élite') ? found.filter(name => name !== 'Tireur') : found
+}
+
 // Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
 export const NO_OCCUPATION = 'Aucune'
 export const UNKNOWN_OCCUPATION = 'Inconnu'
