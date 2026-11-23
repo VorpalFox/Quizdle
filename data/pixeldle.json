@@ -93,7 +93,9 @@
     "Souverain",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -154,7 +156,9 @@
     "Dinosaur Land"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -199,12 +203,13 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Grenouille",
-    "Animal"
+    "Toad"
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -291,7 +296,9 @@
     "Magma Manor"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -345,7 +352,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -361,12 +370,13 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Grenouille",
-    "Animal"
+    "Toad"
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -390,7 +400,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -414,7 +426,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -437,7 +451,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -462,7 +478,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -482,7 +500,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -503,7 +523,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -525,7 +547,9 @@
     "Subcon"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
    "genres": [
@@ -593,7 +617,9 @@
     "Pirate",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -619,7 +645,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -686,7 +714,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -708,7 +738,9 @@
    "occupation": [
     "Domestique"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -753,7 +785,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -847,7 +881,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Capcom",
    "genres": [
@@ -871,7 +907,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -987,7 +1025,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
    "genres": [
@@ -1035,7 +1075,9 @@
    "occupation": [
     "Dresseur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
    "genres": [
@@ -1122,7 +1164,9 @@
    "occupation": [
     "Dresseur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
    "genres": [
@@ -1354,7 +1398,9 @@
    "occupation": [
     "Dresseur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
    "genres": [
@@ -1612,7 +1658,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1636,7 +1684,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Aspect Co.",
    "genres": [
@@ -1670,7 +1720,9 @@
     "Mécanicien",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1728,7 +1780,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1753,7 +1807,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1776,7 +1832,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1802,7 +1860,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1827,7 +1887,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1853,7 +1915,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1879,7 +1943,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1905,7 +1971,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Aspect Co.",
    "genres": [
@@ -1979,7 +2047,9 @@
     "North Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sega",
    "genres": [
@@ -2024,7 +2094,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -2097,7 +2169,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -2464,7 +2538,9 @@
     "Cosmo Canyon"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
    "genres": [
@@ -3286,7 +3362,9 @@
     "Earthrealm"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3408,7 +3486,9 @@
    "occupation": [
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3439,7 +3519,9 @@
     "Religieux",
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3469,7 +3551,9 @@
    "occupation": [
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3627,7 +3711,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3652,7 +3738,9 @@
    "occupation": [
     "Mercenaire"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3752,7 +3840,9 @@
     "Orderrealm"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -5654,7 +5744,9 @@
     "Twilight Town"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Jupiter",
    "genres": [
@@ -5677,7 +5769,9 @@
     "Destiny Islands"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5725,7 +5819,9 @@
     "Twilight Town"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Jupiter",
    "genres": [
@@ -5751,7 +5847,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5799,7 +5897,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5824,7 +5924,9 @@
     "Destiny Islands"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5848,7 +5950,9 @@
     "Castle Oblivion"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5874,7 +5978,9 @@
     "Keyblade Graveyard"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -5974,7 +6080,9 @@
     "The World That Never Was"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -6020,7 +6128,10 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Gris"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -6044,7 +6155,9 @@
     "The World That Never Was"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -6073,7 +6186,9 @@
     "Scala ad Caelum"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -6098,7 +6213,9 @@
     "The World That Never Was"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -6128,7 +6245,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6157,7 +6276,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Nintendo",
    "genres": [
@@ -6185,7 +6306,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6213,7 +6336,9 @@
     "Politicien",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Nintendo",
    "genres": [
@@ -6244,7 +6369,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6270,7 +6397,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6296,7 +6425,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6322,7 +6453,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6351,7 +6484,9 @@
     "Dirigeant",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6376,7 +6511,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6403,7 +6540,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6429,7 +6568,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6456,7 +6597,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6480,7 +6623,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6506,7 +6651,9 @@
     "Donkey Kong Island"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6531,7 +6678,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Nintendo",
    "genres": [
@@ -6555,7 +6704,9 @@
     "Crocodile Isle"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6580,7 +6731,9 @@
     "Spiral Mountain"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6602,7 +6755,9 @@
     "Crocodile Isle"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6625,7 +6780,9 @@
     "Mobile Island Fortress"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
    "genres": [
@@ -6701,7 +6858,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6724,7 +6883,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6767,7 +6928,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6791,7 +6954,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6882,7 +7047,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6903,7 +7070,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -6967,7 +7136,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7077,7 +7248,9 @@
     "Zebes"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Metroid",
    "developer": "Nintendo",
    "genres": [
@@ -7126,7 +7299,9 @@
     "Phaaze"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Metroid",
    "developer": "Retro Studios",
    "genres": [
@@ -7146,7 +7321,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Metroid",
    "developer": "Nintendo",
    "genres": [
@@ -7252,7 +7429,9 @@
     "Mercenaire",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7279,7 +7458,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7306,7 +7487,9 @@
     "Mécanicien",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7332,7 +7515,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7358,7 +7543,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7385,7 +7572,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7408,7 +7597,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7437,7 +7628,9 @@
     "Pilote",
     "Voleur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7465,7 +7658,9 @@
     "Mécanicien",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7490,7 +7685,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7515,7 +7712,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7543,7 +7742,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7569,7 +7770,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7596,7 +7799,9 @@
     "Tireur d'élite",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7621,7 +7826,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7648,7 +7855,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7674,7 +7883,9 @@
     "Professeur",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7699,7 +7910,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7727,7 +7940,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -7753,7 +7968,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
    "genres": [
@@ -8391,7 +8608,9 @@
     "Homme d'affaires",
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8416,7 +8635,9 @@
    "occupation": [
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8440,7 +8661,9 @@
     "Astronaute",
     "Marin"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8485,7 +8708,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8510,7 +8735,9 @@
    "occupation": [
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8536,7 +8763,9 @@
     "Commerçant",
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8561,7 +8790,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8587,7 +8818,9 @@
     "Politicien",
     "Guide"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8637,7 +8870,9 @@
    "occupation": [
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8663,7 +8898,9 @@
    "occupation": [
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8692,7 +8929,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8742,7 +8981,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8765,7 +9006,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8790,7 +9033,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8815,7 +9060,9 @@
    "occupation": [
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8840,7 +9087,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8863,7 +9112,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -8979,7 +9230,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
    "genres": [
@@ -9027,7 +9280,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
    "genres": [
@@ -9101,7 +9356,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
    "genres": [
@@ -9178,7 +9435,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
    "genres": [
@@ -9203,7 +9462,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9258,7 +9519,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9328,7 +9591,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9353,7 +9618,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9426,7 +9693,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9471,7 +9740,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9516,7 +9787,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9540,7 +9813,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Traveller's Tales",
    "genres": [
@@ -9565,7 +9840,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9586,7 +9863,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9637,7 +9916,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
@@ -9661,7 +9942,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Crash Bandicoot",
    "developer": "Traveller's Tales",
    "genres": [
@@ -9687,7 +9970,9 @@
     "Artisans"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9714,7 +9999,9 @@
    "occupation": [
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9739,7 +10026,9 @@
     "Artisans"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9766,7 +10055,9 @@
    "occupation": [
     "Archer"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9792,7 +10083,9 @@
    "occupation": [
     "Voleur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9869,7 +10162,9 @@
     "Midnight Mountain"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9893,7 +10188,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -9919,7 +10216,9 @@
     "Breeze Harbor"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
    "genres": [
@@ -10022,7 +10321,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10091,7 +10392,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10262,7 +10565,9 @@
     "Bolden 3"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10309,7 +10614,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10339,7 +10646,9 @@
     "Musicien",
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10446,7 +10755,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
    "genres": [
@@ -10543,7 +10854,10 @@
     "Spargus"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts",
+    "Blonds"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -10567,7 +10881,9 @@
     "Spargus"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -10735,7 +11051,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -10761,7 +11079,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -10904,7 +11224,9 @@
     "Power station"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -10932,7 +11254,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -10956,7 +11280,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11007,7 +11333,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11028,7 +11356,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11054,7 +11384,9 @@
     "China"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11080,7 +11412,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11110,7 +11444,9 @@
     "Artiste",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11134,7 +11470,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11161,7 +11499,9 @@
    "occupation": [
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11182,7 +11522,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11208,7 +11550,9 @@
    "occupation": [
     "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11231,7 +11575,9 @@
     "United Kingdom"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11260,7 +11606,9 @@
     "Garde",
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11285,7 +11633,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11312,7 +11662,9 @@
     "India"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11338,7 +11690,9 @@
     "Haiti"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11364,7 +11718,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11389,7 +11745,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11409,7 +11767,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
    "genres": [
@@ -11782,7 +12142,9 @@
     "Aventurier",
     "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -11875,7 +12237,9 @@
     "Voleur",
     "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -11903,7 +12267,9 @@
    "occupation": [
     "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -11934,7 +12300,9 @@
     "Mercenaire",
     "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -12080,7 +12448,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -12213,7 +12583,9 @@
     "Chasseur de trésor",
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -12237,7 +12609,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -12289,7 +12663,9 @@
     "Espion",
     "Politicien"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -13035,7 +13411,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Halo",
    "developer": "Bungie",
    "genres": [
@@ -13060,7 +13438,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Halo",
    "developer": "Bungie",
    "genres": [
@@ -13641,14 +14021,15 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Grenouille",
-    "Animal"
+    "Extraterrestre"
    ],
    "nationality": null,
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
    "genres": [
@@ -13738,7 +14119,10 @@
     "Espion",
     "Terroriste"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Gris"
+   ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
    "genres": [
@@ -13925,7 +14309,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
    "genres": [
@@ -14485,7 +14871,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
    "genres": [
@@ -14564,7 +14952,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
    "genres": [
@@ -14948,7 +15338,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
@@ -15001,7 +15393,9 @@
    "occupation": [
     "Survivant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
    "genres": [
@@ -15220,7 +15614,9 @@
    "occupation": [
     "Avocat"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Fallout",
    "developer": "Bethesda",
    "genres": [
@@ -15268,7 +15664,9 @@
    "occupation": [
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Fallout",
    "developer": "Bethesda",
    "genres": [
@@ -15376,7 +15774,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Fallout",
    "developer": "Bethesda",
    "genres": [
@@ -16150,7 +16550,9 @@
     "Criminel",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -16211,7 +16613,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -16302,7 +16706,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -16513,7 +16919,9 @@
    "occupation": [
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -16751,7 +17159,9 @@
     "Chasseur de primes",
     "Fermier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -16782,7 +17192,9 @@
     "Fermier",
     "Prostitué"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -16814,7 +17226,9 @@
     "Chasseur de primes",
     "Révolutionnaire"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -16871,7 +17285,9 @@
     "Ireland"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -16984,7 +17400,9 @@
    "occupation": [
     "Homme d'affaires"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -17015,7 +17433,9 @@
     "Homme d'affaires",
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -17104,7 +17524,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -17161,7 +17583,9 @@
    "occupation": [
     "Religieux"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -17188,7 +17612,9 @@
     "Fermier",
     "Révolutionnaire"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
    "genres": [
@@ -18126,7 +18552,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -18147,7 +18575,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -18221,7 +18651,9 @@
    "occupation": [
     "Pirate"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -18244,7 +18676,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -18267,7 +18701,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -18329,7 +18765,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft",
    "genres": [
@@ -18546,7 +18984,9 @@
     "Earth"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Half-Life",
    "developer": "Valve",
    "genres": [
@@ -18936,7 +19376,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -19008,7 +19450,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -19056,7 +19500,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -19077,7 +19523,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -19214,7 +19662,9 @@
     "Mercenaire",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Team Fortress",
    "developer": "Valve",
    "genres": [
@@ -19797,7 +20247,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
    "genres": [
@@ -20085,7 +20537,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -20225,7 +20679,9 @@
     "Mécanicien",
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -20249,7 +20705,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -20271,7 +20729,9 @@
    "occupation": [
     "Conseiller"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -20404,7 +20864,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20429,7 +20891,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20480,7 +20944,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20531,7 +20997,9 @@
     "Politicien",
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20556,7 +21024,9 @@
     "Musicien",
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20579,7 +21049,9 @@
     "Noxus"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20628,7 +21100,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20657,7 +21131,9 @@
     "Serveur",
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20762,7 +21238,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20835,7 +21313,9 @@
     "Shadow Isles"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -20861,7 +21341,9 @@
     "Dirigeant",
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -21642,7 +22124,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Warcraft",
    "developer": "Cyberlore Studios",
    "genres": [
@@ -21686,7 +22170,9 @@
    "occupation": [
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Warcraft",
    "developer": "Blizzard",
    "genres": [
@@ -21708,7 +22194,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Warcraft",
    "developer": "Blizzard",
    "genres": [
@@ -21730,7 +22218,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Warcraft",
    "developer": "Blizzard",
    "genres": [
@@ -22067,7 +22557,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
    "genres": [
@@ -22087,7 +22579,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
    "genres": [
@@ -22133,7 +22627,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
    "genres": [
@@ -22230,7 +22726,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Diablo",
    "developer": "Blizzard",
    "genres": [
@@ -22517,7 +23015,9 @@
    "occupation": [
     "Héros"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22541,7 +23041,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22561,7 +23063,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22621,7 +23125,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22689,7 +23195,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22713,7 +23221,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -22808,7 +23318,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -22832,7 +23344,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -22891,7 +23405,9 @@
     "Justicier",
     "Artiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -22941,7 +23457,9 @@
    "occupation": [
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -22967,7 +23485,9 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -22995,7 +23515,9 @@
     "Détective",
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -23075,7 +23597,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -23179,7 +23703,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -23204,7 +23730,9 @@
    "occupation": [
     "Avocat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -23247,7 +23775,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -23273,7 +23803,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
    "genres": [
@@ -23326,7 +23858,9 @@
     "Baticul"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
    "genres": [
@@ -23524,7 +24058,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
    "genres": [
@@ -23612,7 +24148,9 @@
     "Dirigeant",
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
    "genres": [
@@ -24364,7 +24902,9 @@
     "North Cape"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24386,7 +24926,9 @@
     "Truce"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24408,7 +24950,9 @@
     "Truce"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24432,7 +24976,9 @@
     "Cursed Woods"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24474,7 +25020,9 @@
     "Proto Dome"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24497,7 +25045,9 @@
     "Ozzie's Fort"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24539,7 +25089,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24583,7 +25135,9 @@
     "Arni"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24605,7 +25159,9 @@
     "Arni"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24627,7 +25183,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Chrono",
    "developer": "Square Enix",
    "genres": [
@@ -24724,7 +25282,9 @@
    "occupation": [
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -24935,7 +25495,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25037,7 +25599,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25061,7 +25625,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25084,7 +25650,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25107,7 +25675,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25130,7 +25700,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25154,7 +25726,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25177,7 +25751,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25202,7 +25778,9 @@
    "occupation": [
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25225,7 +25803,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25247,7 +25827,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25270,7 +25852,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25294,7 +25878,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25318,7 +25904,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Mega Man",
    "developer": "Capcom",
    "genres": [
@@ -25405,7 +25993,9 @@
    "occupation": [
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Castlevania",
    "developer": "Konami",
    "genres": [
@@ -25458,7 +26048,9 @@
    "occupation": [
     "Domestique"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Castlevania",
    "developer": "Eighting",
    "genres": [
@@ -25537,7 +26129,9 @@
     "Magicien",
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Castlevania",
    "developer": "Eighting",
    "genres": [
@@ -25563,7 +26157,9 @@
    "occupation": [
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Castlevania",
    "developer": "Konami",
    "genres": [
@@ -25591,7 +26187,9 @@
    "occupation": [
     "Pirate"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Castlevania",
    "developer": "Konami",
    "genres": [
@@ -25620,7 +26218,9 @@
     "Scientifique",
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Castlevania",
    "developer": "Konami",
    "genres": [
@@ -25832,7 +26432,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -25859,7 +26461,9 @@
    "occupation": [
     "Domestique"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -25884,7 +26488,9 @@
    "occupation": [
     "Écrivain"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -25911,7 +26517,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -25966,7 +26574,9 @@
     "Dirigeant",
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -26023,7 +26633,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -26190,7 +26802,9 @@
    "occupation": [
     "Artiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -26262,7 +26876,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -26382,7 +26998,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -26406,7 +27024,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -26514,7 +27134,9 @@
     "Informaticien",
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -26589,7 +27211,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -27480,7 +28104,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
    "genres": [
@@ -28523,7 +29149,9 @@
    "occupation": [
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28579,7 +29207,9 @@
     "Cuisinier",
     "Chasseur de primes"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28659,7 +29289,9 @@
     "Assassin",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28754,7 +29386,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28779,7 +29413,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28807,7 +29443,9 @@
    "occupation": [
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28855,7 +29493,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28879,7 +29519,9 @@
    "occupation": [
     "Assassin"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28907,7 +29549,9 @@
     "Chevalier",
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -28936,7 +29580,9 @@
     "Soldat",
     "Homme d'affaires"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -29133,7 +29779,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -29210,7 +29858,10 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blancs"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -29236,7 +29887,9 @@
     "South Town"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -29396,7 +30049,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -30386,7 +31041,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -31890,7 +32547,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
    "genres": [
@@ -32010,7 +32669,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
    "genres": [
@@ -32114,7 +32775,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
    "genres": [
@@ -32310,7 +32973,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
    "genres": [
@@ -32419,7 +33084,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
    "genres": [
@@ -32465,7 +33132,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
    "genres": [
@@ -32519,7 +33188,9 @@
    "occupation": [
     "Érudit"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
    "genres": [
@@ -32539,7 +33210,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
    "genres": [
@@ -32566,7 +33239,9 @@
     "Justicier",
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32593,7 +33268,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32622,7 +33299,9 @@
     "Professeur",
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32646,7 +33325,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32674,7 +33355,9 @@
     "Souverain",
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32732,7 +33415,9 @@
     "Artiste",
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32788,7 +33473,9 @@
     "Underground"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32815,7 +33502,9 @@
     "Underground"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32843,7 +33532,9 @@
     "Scientifique",
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32865,7 +33556,10 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Bruns"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32891,7 +33585,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32915,7 +33611,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32939,7 +33637,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32963,7 +33663,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -32991,7 +33693,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
    "genres": [
@@ -33014,7 +33718,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
    "genres": [
@@ -33172,7 +33878,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
    "genres": [
@@ -33204,7 +33912,9 @@
     "Employé",
     "Érudit"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
    "genres": [
@@ -33255,7 +33965,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
    "genres": [
@@ -33277,7 +33989,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
    "genres": [
@@ -33303,7 +34017,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33386,7 +34102,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33414,7 +34132,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33441,7 +34161,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33469,7 +34191,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33495,7 +34219,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33521,7 +34247,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33548,7 +34276,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33574,7 +34304,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33602,7 +34334,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33628,7 +34362,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33654,7 +34390,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33684,7 +34422,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33710,7 +34450,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33739,7 +34481,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33763,7 +34507,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33792,7 +34538,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33818,7 +34566,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -33843,7 +34593,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -33900,7 +34652,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -33924,7 +34678,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -33950,7 +34706,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34000,7 +34758,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34024,7 +34784,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34048,7 +34810,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34094,7 +34858,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
    "genres": [
@@ -34118,7 +34884,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
    "genres": [
@@ -34141,7 +34909,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
    "genres": [
@@ -34165,7 +34935,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
    "genres": [
@@ -34190,7 +34962,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34211,7 +34985,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34235,7 +35011,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34260,7 +35038,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
    "genres": [
@@ -34283,7 +35063,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
    "genres": [
@@ -34505,7 +35287,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
@@ -35130,7 +35914,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -35633,7 +36419,9 @@
    "occupation": [
     "Voyageur temporel"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35655,7 +36443,9 @@
     "Tazmily Village"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35678,7 +36468,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35742,7 +36534,9 @@
     "Tazmily Village"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35764,7 +36558,9 @@
     "Tazmily Village"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35786,7 +36582,9 @@
     "Sunshine Forest"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35835,7 +36633,9 @@
     "Podunk"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "EarthBound",
    "developer": "Nintendo",
    "genres": [
@@ -35860,7 +36660,9 @@
     "FoggyLand"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -35930,11 +36732,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "Mother 4 Team",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 9999
   }
  },
  {
@@ -35998,7 +36800,9 @@
     "Eagleland"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
    "genres": [
@@ -36072,7 +36876,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
    "genres": [
@@ -36119,7 +36925,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -36332,7 +37140,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
    "genres": [
@@ -36418,7 +37228,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
    "genres": [
@@ -36543,7 +37355,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
    "genres": [
@@ -39574,7 +40388,9 @@
    "occupation": [
     "Informaticien"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Wario",
    "developer": "Nintendo",
    "genres": [
@@ -39656,7 +40472,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -39679,7 +40497,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -39705,7 +40525,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -39728,7 +40550,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39752,7 +40576,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39775,7 +40601,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39798,7 +40626,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39823,7 +40653,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39849,7 +40681,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -39874,7 +40708,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Subnautica",
    "developer": "Unknown Worlds",
    "genres": [
@@ -40336,7 +41172,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
    "genres": [
@@ -40802,7 +41640,9 @@
     "Psamathe"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
    "genres": [
@@ -41653,7 +42493,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
    "genres": [
@@ -41760,7 +42602,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
@@ -41942,7 +42786,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Doom",
    "developer": "id Software",
    "genres": [
@@ -42049,7 +42895,9 @@
    "occupation": [
     "Avocat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Syberia",
    "developer": "Microids",
    "genres": [
@@ -42294,7 +43142,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -42316,7 +43166,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -42788,7 +43640,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
    "genres": [
@@ -42970,7 +43824,9 @@
     "Soldat",
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43028,7 +43884,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43059,7 +43917,9 @@
     "Chevalier",
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43113,7 +43973,9 @@
     "Noble",
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43141,7 +44003,9 @@
     "Musicien",
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43171,7 +44035,9 @@
     "Religieux",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43199,7 +44065,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43228,7 +44096,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43256,7 +44126,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43276,7 +44148,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43367,7 +44241,9 @@
     "Religieux",
     "Politicien"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43423,7 +44299,9 @@
     "United Kingdom of Euchronia"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -43611,7 +44489,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
    "genres": [
@@ -44835,7 +45715,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -44856,7 +45738,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -44877,7 +45761,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -44985,7 +45871,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -45416,7 +46304,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Nier",
    "developer": "Cavia",
    "genres": [
@@ -45488,7 +46378,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Nier",
    "developer": "Cavia",
    "genres": [
@@ -45764,7 +46656,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
    "genres": [
@@ -46160,7 +47054,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46203,7 +47099,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46223,7 +47121,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46245,7 +47145,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46293,7 +47195,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46314,7 +47218,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46338,7 +47244,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
@@ -46358,7 +47266,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
    "genres": [
@@ -46378,7 +47288,10 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Verts"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
    "genres": [
@@ -46401,7 +47314,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
    "genres": [
@@ -46421,7 +47336,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
    "genres": [
@@ -46441,7 +47358,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
    "genres": [
@@ -46510,7 +47429,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
    "genres": [
@@ -46577,7 +47498,9 @@
     "Celestial Plain"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -46645,7 +47568,9 @@
     "Celestial Plain"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -46692,7 +47617,9 @@
     "Celestial Plain"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -46740,7 +47667,9 @@
     "North Ryoshima Coast"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -46762,7 +47691,9 @@
     "Kamiki Village"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -46789,7 +47720,9 @@
     "Sakura Motomachi"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
    "genres": [
@@ -46816,7 +47749,9 @@
     "Springdale"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
    "genres": [
@@ -46856,7 +47791,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
    "genres": [
@@ -46922,7 +47859,9 @@
     "Springdale"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
    "genres": [
@@ -46945,7 +47884,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
    "genres": [
@@ -47030,7 +47971,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47051,7 +47994,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47072,7 +48017,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47093,7 +48040,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47115,7 +48064,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47136,7 +48087,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47157,7 +48110,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47241,7 +48196,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47262,7 +48219,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47304,7 +48263,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47346,7 +48307,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -47743,7 +48706,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
    "genres": [
@@ -48324,7 +49289,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
    "genres": [
@@ -48348,7 +49315,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
    "genres": [
@@ -48510,7 +49479,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
    "genres": [
@@ -48531,7 +49502,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
    "genres": [
@@ -48580,7 +49553,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -48606,7 +49581,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -49061,7 +50038,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49086,7 +50065,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49109,7 +50090,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49132,7 +50115,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49158,7 +50143,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49181,7 +50168,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49206,7 +50195,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49229,7 +50220,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49252,7 +50245,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49275,7 +50270,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49303,7 +50300,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2018
+   "year": 2007
   }
  },
  {
@@ -49320,7 +50317,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
@@ -49343,13 +50342,15 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
     "Stratégie"
    ],
-   "year": 2018
+   "year": 2007
   }
  },
  {
@@ -49366,13 +50367,15 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
    "genres": [
     "Stratégie"
    ],
-   "year": 2018
+   "year": 2007
   }
  },
  {
@@ -49529,7 +50532,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
    "genres": [
@@ -49553,7 +50558,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
    "genres": [
@@ -49929,7 +50936,9 @@
     "Noble",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
    "genres": [
@@ -49982,7 +50991,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
    "genres": [
@@ -50356,7 +51367,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
    "genres": [
@@ -51022,7 +52035,9 @@
    "occupation": [
     "Domestique"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51046,7 +52061,9 @@
    "occupation": [
     "Oracle"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51069,7 +52086,9 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51116,7 +52135,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51140,7 +52161,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51162,7 +52185,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51300,7 +52325,9 @@
    "occupation": [
     "Guide"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
    "genres": [
@@ -51484,7 +52511,9 @@
    "occupation": [
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
@@ -51563,7 +52592,9 @@
     "Valadilene"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Syberia",
    "developer": "Microids",
    "genres": [
@@ -51589,7 +52620,9 @@
     "Professeur",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Syberia",
    "developer": "Microids",
    "genres": [
@@ -51816,7 +52849,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Unreal",
    "developer": "Epic Games",
    "genres": [
@@ -53821,7 +54856,9 @@
     "Alt Harbor"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -53845,7 +54882,9 @@
     "Overbrook"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -53892,7 +54931,9 @@
     "Furogawa"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -53939,7 +54980,9 @@
     "Hummingberg"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -53963,7 +55006,9 @@
     "Overbrook"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -53985,7 +55030,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -54009,7 +55056,9 @@
     "Loneberg"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -54031,7 +55080,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
    "genres": [
@@ -54058,7 +55109,9 @@
     "Canada"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "SOMA",
    "developer": "Frictional Games",
    "genres": [
@@ -54208,7 +55261,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "SOMA",
    "developer": "Frictional Games",
    "genres": [
@@ -54463,7 +55518,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Prey",
    "developer": "Arkane Studios",
    "genres": [
@@ -54844,7 +55901,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
    "genres": [
@@ -54987,7 +56046,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "The Stanley Parable",
    "developer": "Crows Crows Crows",
    "genres": [
@@ -55027,7 +56088,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Talos Principle",
    "developer": "Croteam",
    "genres": [
@@ -55049,7 +56112,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Talos Principle",
    "developer": "Croteam",
    "genres": [
@@ -55119,7 +56184,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The Talos Principle",
    "developer": "Croteam",
    "genres": [
@@ -55168,7 +56235,9 @@
     "United States"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55193,7 +56262,9 @@
     "Australia"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55220,7 +56291,9 @@
     "Australia"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55246,7 +56319,9 @@
     "China"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55273,7 +56348,9 @@
     "United States"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55299,7 +56376,9 @@
     "Polynesia"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55371,7 +56450,9 @@
     "Fore"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55394,7 +56475,9 @@
     "South Africa"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55420,7 +56503,9 @@
     "Germany"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
@@ -55764,7 +56849,9 @@
    "occupation": [
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Wasteland",
    "developer": "Interplay Entertainment",
    "genres": [
@@ -55784,7 +56871,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Wasteland",
    "developer": "InXile Entertainment",
    "genres": [
@@ -56000,7 +57089,10 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns",
+    "Noirs"
+   ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
    "genres": [
@@ -56048,7 +57140,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
    "genres": [
@@ -56114,7 +57208,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
    "genres": [
@@ -56435,7 +57531,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
    "genres": [
@@ -56777,7 +57875,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "The Sinking City",
    "developer": "Frogwares",
    "genres": [
@@ -57179,7 +58279,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57249,7 +58351,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57316,7 +58420,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57362,7 +58468,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57388,7 +58496,9 @@
    "occupation": [
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57414,7 +58524,9 @@
    "occupation": [
     "Ouvrier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
    "genres": [
@@ -57795,7 +58907,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
    "genres": [
@@ -57859,7 +58973,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
    "genres": [
@@ -57919,7 +59035,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
    "genres": [
@@ -58629,7 +59747,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
    "genres": [
@@ -59201,7 +60321,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
@@ -59223,7 +60345,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
    "genres": [
@@ -60032,7 +61156,9 @@
    "occupation": [
     "Conseiller"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
    "genres": [
@@ -60356,7 +61482,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -60377,7 +61505,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -60440,7 +61570,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Myst",
    "developer": "Presto Studios",
    "genres": [
@@ -60527,7 +61659,9 @@
     "Souverain",
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60549,7 +61683,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60570,7 +61706,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60595,7 +61733,9 @@
     "Révolutionnaire",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60620,7 +61760,9 @@
     "Révolutionnaire",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60642,7 +61784,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60666,7 +61810,9 @@
    "occupation": [
     "Révolutionnaire"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60691,7 +61837,9 @@
     "Ouvrier",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60713,7 +61861,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60740,7 +61890,9 @@
    "occupation": [
     "Souverain"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60762,7 +61914,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60784,7 +61938,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
    "genres": [
@@ -60808,7 +61964,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
    "genres": [
@@ -61186,7 +62344,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -62111,7 +63271,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "Respawn Entertainment",
    "genres": [
     "FPS"
@@ -62650,7 +63812,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "EXOR Studios",
    "genres": [
     "Action",
@@ -63578,7 +64742,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "Double Damage Games",
    "genres": [
     "Simulation"
@@ -64354,7 +65520,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "Coffee Stain Studios",
    "genres": [
     "Simulation"
@@ -64377,7 +65545,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "Coffee Stain Studios",
    "genres": [
     "Simulation"
@@ -64400,7 +65570,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "developer": "Valve",
    "genres": [
     "Réflexion",

@@ -779,9 +779,14 @@
    ]
   },
   "wiki-kid-icarus-hades": {
+   "_nom": "Hades",
    "_raison": "divinité",
    "species": [
     "Divinité"
+   ],
+   "hair": [
+    "Rouges",
+    "Verts"
    ]
   },
   "wiki-kid-icarus-thanatos": {
@@ -1748,7 +1753,8 @@
    "_nom": "Susie",
    "species": [
     "Humanoïde"
-   ]
+   ],
+   "hair": null
   },
   "Q128806865": {
    "_nom": "Nightmare",
@@ -2131,11 +2137,17 @@
   },
   "Q5815284": {
    "_nom": "Duster",
-   "gender": "Homme"
+   "gender": "Homme",
+   "hair": [
+    "Bruns"
+   ]
   },
   "Q6011231": {
    "_nom": "Meryl",
-   "gender": "Femme"
+   "gender": "Femme",
+   "_raison": "Mother 4 : jeu de fans pas encore sorti",
+   "year": 9999,
+   "developer": "Mother 4 Team"
   },
   "Q6025538": {
    "_nom": "Mr. Everdred",
@@ -2456,7 +2468,10 @@
   "Q2663645": {
    "_nom": "Krystal",
    "_raison": "année : Star Fox Adventures",
-   "year": 2002
+   "year": 2002,
+   "hair": [
+    "Bleus"
+   ]
   },
   "Q21009638": {
    "_nom": "Beltino Toad",
@@ -2569,6 +2584,107 @@
    "_nom": "Kilik",
    "_raison": "année : Soulcalibur",
    "year": 1998
+  },
+  "Q845864": {
+   "_nom": "Bowser",
+   "hair": [
+    "Rouges"
+   ]
+  },
+  "Q11145920": {
+   "_nom": "Roxas",
+   "hair": [
+    "Blonds"
+   ]
+  },
+  "Q59220438": {
+   "_nom": "Marie",
+   "hair": [
+    "N/A"
+   ]
+  },
+  "Q1087525": {
+   "_nom": "Koala Kong",
+   "hair": [
+    "N/A"
+   ]
+  },
+  "Q100255105": {
+   "_nom": "Warwick",
+   "hair": [
+    "N/A"
+   ]
+  },
+  "Q819980": {
+   "_nom": "Rhonin",
+   "hair": [
+    "Rouges"
+   ]
+  },
+  "Q18199282": {
+   "_nom": "Cenarius",
+   "hair": null
+  },
+  "Q56363367": {
+   "_nom": "Demoman",
+   "hair": [
+    "Noirs"
+   ]
+  },
+  "Q3783512": {
+   "_nom": "Harry Mason",
+   "hair": [
+    "Bruns"
+   ]
+  },
+  "wiki-okami-nanami": {
+   "_nom": "Nanami",
+   "hair": null
+  },
+  "wiki-yo-kai-watch-komasan": {
+   "_nom": "Komasan",
+   "hair": [
+    "N/A"
+   ]
+  },
+  "Q65495741": {
+   "_nom": "Ann Takamaki",
+   "hair": [
+    "Blonds"
+   ]
+  },
+  "Q3268079": {
+   "_nom": "Luxord",
+   "hair": [
+    "Blonds"
+   ]
+  },
+  "Q17007565": {
+   "_nom": "Mordin Solus",
+   "species": [
+    "Extraterrestre"
+   ],
+   "hair": [
+    "N/A"
+   ]
+  },
+  "Q1061603": {
+   "_nom": "Toad",
+   "species": [
+    "Toad"
+   ]
+  },
+  "Q2609744": {
+   "_nom": "Toadette",
+   "species": [
+    "Toad"
+   ]
+  },
+  "Q131657016": {
+   "_nom": "Reisen Udongein Inaba",
+   "hair": [
+    "Violets"
+   ]
   }
  },
  "add": [

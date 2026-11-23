@@ -6,7 +6,7 @@ Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Côté 
 
 `npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 471 personnages, 172 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
 
-Remplissage : sexe 100 %, espèce 100 % (sauf Liza), nationalité 43 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
+Remplissage : sexe 100 %, espèce 100 %, nationalité 43 %, occupation 55 %, cheveux 58 %. Franchise, développeur, genres et année sont à 100 %.
 
 Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
@@ -71,6 +71,10 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
   - « Aucun » pour les robots, objets et entités sans sexe ;
   - « Autre » quand le jeu le laisse inconnu exprès (Frisk, le Traveler) ou quand le wiki dit « they » (No Man's Sky) ;
   - « Au choix » pour un avatar personnalisable.
+- **Cheveux** :
+  - l'infobox d'abord, sinon le texte de la page entière (section Appearance d'abord, « long blonde hair ») : extraits listés dans le récap, à relire ;
+  - « N/A » pour un robot, un animal, une créature sans cheveux (`hairOrNone`), « Chauve » seulement pour un humain vraiment chauve.
+- **1re apparition** : « Futur » (`FUTURE_YEAR`) pour un jeu pas encore sorti (Meryl, de Mother 4, un jeu de fans gardé exprès).
 - **Espèce** (champ multiple, validé avec FX) :
   - dépliée à la fin par `expandSpecies` : un animal a son espèce plus « Animal » (Renard, Animal), une espèce composée ses deux parts (Demi-elfe → Humain, Elfe ; Talos : Humain, Divinité), une IA est un Robot ;
   - « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon, Chack) : pas de case vide ;

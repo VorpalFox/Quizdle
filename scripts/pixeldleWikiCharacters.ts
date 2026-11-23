@@ -9,6 +9,7 @@ import { normalize } from '../src/engine/search.js'
 import type { AttributeValue } from '../src/engine/types.js'
 import { fetchPages, infobox, infoboxValues, request, type EnrichKey } from './pixeldleEnrich.js'
 import { cleanValue } from './wikipedia.js'
+import { HAIR_IN_TEXT, hairColors } from './anilist.js'
 import type { WikiSettings } from '../src/subjects/manual.js'
 import type { Wiki } from './pixeldleWikis.js'
 
@@ -69,6 +70,34 @@ export interface WikiCharacter {
 }
 
 const MAX_INTRO_LENGTH = 1500
+const MAX_HAIR_COLORS = 2
+
+// Le texte lisible d'une page : sans commentaires, références, balises ni gras, les liens réduits à leur texte
+const plainText = (wikitext: string) => wikitext
+  .replace(/<!--[\s\S]*?-->/g, '')
+  .replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
+  .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1')
+  .replace(/'{2,}/g, '')
+  .replace(/<[^>]+>/g, ' ')
+
+// La section « Appearance » (ou « Design », « Description ») : là où la page décrit le physique
+const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*==+\s*$([\s\S]*?)(?=^==[^=]|(?![\s\S]))/im
+
+// Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
+// Avec l'extrait, à relire dans le récap.
+export function textHair(wikitext: string): { colors: string[], excerpt: string } | null {
+  const section = APPEARANCE.exec(wikitext)?.[1]
+  for (const text of [section, wikitext]) {
+    if (!text)
+      continue
+    const plain = plainText(text)
+    const found = HAIR_IN_TEXT.exec(plain)
+    const colors = found ? hairColors(found[1]!).slice(0, MAX_HAIR_COLORS) : []
+    if (found && colors.length > 0)
+      return { colors, excerpt: plain.slice(Math.max(0, found.index - 60), found.index + found[0].length + 20).replace(/\s+/g, ' ').trim() }
+  }
+  return null
+}
 
 // L'introduction d'une page : le texte avant la 1re section, sans l'infobox ni les modèles
 export function introText(wikitext: string): string {
@@ -245,7 +274,7 @@ export function sameCharacter(a: string, b: string): boolean {
 // La page entière (le cache des pages n'a que le début) : pour compter les pronoms quand le début est trop court
 // (« Henry is the main character in Firewatch. », puis des sections)
 const MAX_FULL_LENGTH = 30_000
-async function fullPages(api: string, titles: string[]): Promise<Record<string, string | null>> {
+export async function fullPages(api: string, titles: string[]): Promise<Record<string, string | null>> {
   const file = new URL(cacheName(api).href.replace(/\.json$/, '.full.json'))
   const cache = JSON.parse(await readFile(file, 'utf8').catch(() => '{}')) as Record<string, string | null>
   const missing = titles.filter(title => !(title in cache))

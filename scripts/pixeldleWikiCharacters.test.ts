@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, pronounGender, sameCharacter } from './pixeldleWikiCharacters.js'
+import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -66,6 +66,21 @@ describe('citedYear', () => {
 describe('pronounGender, groupes', () => {
   it('écarte un groupe dont le texte dit surtout « they »', () => {
     expect(pronounGender("'''Clockwork Soldiers''' are machines. They patrol. They were built by Jindosh, his finest work; he is proud of them and their power. He sells them.")).toBeNull()
+  })
+})
+
+describe('textHair', () => {
+  it('SectionAppearance_Prioritaire', () => {
+    const page = ['Her rival has [[Black|black]] hair.', '== Appearance ==', "She has long '''blonde hair''' tied in a ponytail.", '== Story ==', 'Text'].join('\n')
+    expect(textHair(page)?.colors).toEqual(['Blonds'])
+  })
+
+  it('SansSection_ToutLeTexte', () => {
+    expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Bruns'])
+  })
+
+  it('PasDeCheveux_Null', () => {
+    expect(textHair('A robot made of steel.')).toBeNull()
   })
 })
 

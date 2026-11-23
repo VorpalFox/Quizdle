@@ -140,6 +140,22 @@ export function expandSpecies(value: unknown): string[] | null {
   return [...new Set(parts.some(name => ANIMALS.has(name)) ? [...parts, 'Animal'] : parts)]
 }
 
+// --- Cheveux ---
+
+// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Chauve », c'est pour les humains vraiment chauves)
+export const NO_HAIR = 'N/A'
+const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
+  'Zerg', 'Slime', 'Golem', 'Squelette', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
+  'Salmonoïde', 'Omniaque', 'Pod', 'Charbon', 'Toad'])
+
+// Les cheveux finaux : ceux trouvés, sinon N/A pour un robot, un animal, une créature (pas s'il est aussi humain)
+export function hairOrNone(hair: unknown, species: unknown): unknown {
+  if (Array.isArray(hair) ? hair.length > 0 : hair)
+    return hair
+  const list = Array.isArray(species) ? species.map(String) : []
+  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
+}
+
 export function translateSpecies(label: string): string | null | undefined {
   // « •Human » : sans la puce
   let name = key(label).replace(/^[\s・*•·-]+/, '')

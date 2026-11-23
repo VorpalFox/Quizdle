@@ -15,10 +15,10 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, mergeOccupations, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedGame, pageGames, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, fullPages, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -428,7 +428,7 @@ for (const [key, list] of enriched.untranslated)
 
 const slug = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const wikiId = (franchise: Franchise, name: string) => `wiki-${slug(franchise.title)}-${slug(name)}`
-const fromWikis: { franchise: Franchise, wiki: string, root: string | null, found: number, chosen: WikiCharacter[] }[] = []
+const fromWikis: { franchise: Franchise, wiki: string, api: string, root: string | null, found: number, chosen: WikiCharacter[] }[] = []
 const wikiUntranslated = new Map<string, string[]>()
 const yearGuesses: string[] = []
 const introYears: string[] = []
@@ -449,7 +449,7 @@ for (const franchise of franchises) {
     chosen.push(...result.chosen)
     for (const { name } of result.chosen)
       known.add(name)
-    fromWikis.push({ franchise, wiki: wiki.id.startsWith('http') ? new URL(wiki.url).host : wiki.id, ...result })
+    fromWikis.push({ franchise, wiki: wiki.id.startsWith('http') ? new URL(wiki.url).host : wiki.id, api: wiki.api, ...result })
     if (inFranchise.length + chosen.length >= target)
       break
   }
@@ -528,10 +528,37 @@ const withDefaults = (entry: Entry): Entry => {
   const empty = Object.entries(defaults).filter(([key]) => entry.attributes[key] === null || entry.attributes[key] === undefined)
   return { ...entry, attributes: { ...entry.attributes, ...Object.fromEntries(empty) } }
 }
-const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
+// Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (« long blonde hair »), à relire.
+// Pas ceux corrigés à la main.
+const pageRefs = new Map([...enriched.pageRefs, ...fromWikis.flatMap(({ franchise, api, chosen }) => chosen.map(({ name, title }) => [wikiId(franchise, name), { api, title }] as const))])
+const hairless = [...wikidataEntries, ...wikiEntries].filter(entry => entry.attributes.hair === null && pageRefs.has(entry.id) && !('hair' in (manual.edit[entry.id] ?? {})))
+const byApi = Map.groupBy(hairless, entry => pageRefs.get(entry.id)!.api)
+const textHairs = new Map<string, string[]>()
+const hairExcerpts: string[] = []
+let read = 0
+for (const [api, group] of byApi) {
+  process.stdout.write(`\rCheveux dans le texte : ${++read}/${byApi.size}`.padEnd(80))
+  const pages = await fullPages(api, group.map(entry => pageRefs.get(entry.id)!.title))
+  for (const entry of group) {
+    const text = pages[pageRefs.get(entry.id)!.title]
+    const found = text ? textHair(text) : null
+    if (!found)
+      continue
+    textHairs.set(entry.id, found.colors)
+    hairExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
+  }
+}
+console.log()
+const withTextHair = (entry: Entry): Entry => textHairs.has(entry.id) ? { ...entry, attributes: { ...entry.attributes, hair: textHairs.get(entry.id)! } } : entry
+
+const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults).map(withTextHair), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 const warnings = manualApplied.warnings
-// À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations regroupées
-const entries = manualApplied.entries.map(entry => ({ ...entry, attributes: { ...entry.attributes, species: expandSpecies(entry.attributes.species), occupation: mergeOccupations(entry.attributes.occupation) } }))
+// À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations
+// regroupées, N/A pour les cheveux d'un robot ou d'un animal
+const entries = manualApplied.entries.map(entry => {
+  const species = expandSpecies(entry.attributes.species)
+  return { ...entry, attributes: { ...entry.attributes, species, occupation: mergeOccupations(entry.attributes.occupation), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
+})
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---
@@ -558,6 +585,7 @@ lines.push(`## Franchises avec moins de 4 personnages (${few.length})`, ...few.m
 lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie « Characters », les plus longues pages avec une infobox qui donne le sexe`, '',
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
+lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année devinée (${yearGuesses.length}) : aucun jeu reconnu dans l'infobox, 1er jeu de la série pris par défaut`, ...yearGuesses.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année tirée de l'introduction (${introYears.length}) : le plus ancien jeu de la série cité, à relire`, ...introYears.map(text => `- ${text}`), '')
 lines.push(`## Wikidata, année devinée (${wikidataYearGuesses.length}) : ni 1re apparition ni jeu relié, 1er jeu de la franchise pris par défaut`, ...wikidataYearGuesses.map(text => `- ${text}`), '')
