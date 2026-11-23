@@ -2253,7 +2253,11 @@
   },
   "Q140166458": {
    "_nom": "Collector Leviathan",
-   "gender": "Aucun"
+   "_raison": "Subnautica 2 se passe sur Proteus, les autres sur la planète 4546B (défaut de la franchise)",
+   "gender": "Aucun",
+   "nationality": [
+    "Proteus"
+   ]
   },
   "Q111015357": {
    "_nom": "Spode",
@@ -3861,6 +3865,37 @@
    "_raison": "« the guide of that realm » (page pas lue par le script)",
    "occupation": [
     "Assistant"
+   ]
+  },
+  "wiki-blue-prince-mary-jones": {
+   "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
+   "nationality": [
+    "Reddington",
+    "Fenn Aries"
+   ]
+  },
+  "wiki-blue-prince-simon-jones": {
+   "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
+   "nationality": [
+    "Mount Holly Estate",
+    "Reddington",
+    "Fenn Aries"
+   ]
+  },
+  "wiki-blue-prince-clara-epsen": {
+   "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
+   "nationality": [
+    "Mount Holly Estate",
+    "Reddington",
+    "Fenn Aries",
+    "Eraja"
+   ]
+  },
+  "wiki-blue-prince-simon-sinclair": {
+   "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
+   "nationality": [
+    "Mount Holly Estate",
+    "Orinda"
    ]
   }
  },
@@ -6289,6 +6324,11 @@
     "Oakmont",
     "Massachusetts",
     "United States"
+   ]
+  },
+  "Subnautica": {
+   "nationality": [
+    "Planet 4546B"
    ]
   },
   "Blue Prince": {

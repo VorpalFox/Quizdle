@@ -391,7 +391,7 @@ const CITY_NAMES: Record<string, string> = {
 const PLACE_NAMES: Record<string, string> = {
   'mount olympus': 'Olympus', 'k. rool\'s mobile island fortress': 'Mobile Island Fortress', 'castle of talmberg': 'Talmberg',
   'mare erythraeum': 'Mars', 'west country england': 'West Country', 'inkopolis square & octo canyon': 'Inkopolis Square',
-  'eternal holy city okhema': 'Okhema', 'hanged man': 'The Hanged Man', 'galleria': 'Inkopolis Galleria',
+  'eternal holy city okhema': 'Okhema', 'hanged man': 'The Hanged Man', 'galleria': 'Inkopolis Galleria', 'pagos': 'Págos',
   // Les gentilés
   'deponian': 'Deponia', 'elysian': 'Elysium', 'adrestian': 'Adrestian Empire', 'plegian': 'Plegia', 'columbian': 'Columbia',
   'vigoorian': 'Holy Vigoor Empire', 'numbanian': 'Numbani', 'rook islander': 'Rook Islands',
@@ -434,6 +434,103 @@ export function translatePlace(label: string): string[] {
     return both as string[]
   return [PLACE_NAMES[name] ?? translateNationality(clean)]
 }
+
+// --- Monde ---
+
+// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, « Inconnu »
+// pour un personnage d'un autre monde, vide (le « ? ») quand on ne sait pas, à corriger à la main. « Monde réel » et pas
+// « Earth » : la science-fiction du système solaire (Mars, la Lune) est aussi notre monde. Plus loin (une planète d'une
+// autre étoile), ce n'est plus le monde réel. « Monde réel » s'ajoute aussi à tout personnage placé dans un lieu réel,
+// pour qu'il croise ceux qui n'ont que lui (United States face à Monde réel : partiel, pas faux). Les franchises qui se
+// passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES).
+// Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
+export const REAL_WORLD = 'Monde réel'
+export const OTHER_WORLD = 'Inconnu'
+export const SPACE = 'Lost in the Galaxy'
+export type World = 'real' | 'other'
+
+// Les pays d'aujourd'hui (noms anglais d'Intl), ceux d'histoire, et notre système solaire
+const REAL_PLACES = new Set([
+  ...(() => {
+    const names = new Intl.DisplayNames('en', { type: 'region' })
+    const letters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+    return letters.flatMap(a => letters.map(b => names.of(a + b))).filter((name): name is string => Boolean(name) && !/^[A-Z]{2}$/.test(name!))
+  })(),
+  'Czech Republic', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
+  'Kingdom of England', 'Kingdom of France', 'Kingdom of Great Britain', 'Ptolemaic Kingdom', 'Russian Soviet Federative Socialist Republic',
+  'Polynesia', 'Earth', 'Moon', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Titan', 'Europa', 'Ganymede', 'Callisto', 'Io',
+  'Phobos', 'Deimos', 'Pluto', 'Enceladus',
+])
+
+// Un lieu de notre monde : un pays, un astre du système solaire, ou une ville réelle connue (London → United Kingdom)
+export function isRealPlace(place: string): boolean {
+  const country = placeCountry(place)
+  return REAL_PLACES.has(place) || (country !== null && REAL_PLACES.has(country))
+}
+
+// Les espèces de notre monde : dans une franchise du monde réel, seules elles sont « Monde réel ». Les autres (dieux,
+// démons, extraterrestres, dont les espèces propres à une franchise : Sangheili, Asari…) sont « Inconnu ». Une liste
+// des espèces d'ailleurs raterait ces dernières. Espèce inconnue : comme un humain.
+const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', 'Au choix'])
+
+// Les personnages placés dont au moins cette part est dans le monde réel : franchise du monde réel
+const REAL_SHARE = 0.6
+// Une franchise dont aucun personnage placé n'est dans le monde réel, avec au moins ce nombre de placés : un autre monde
+const MIN_PLACED_OTHER = 3
+
+// Le monde d'une franchise d'après les lieux de ses personnages (vides compris), null quand c'est mêlé ou trop peu
+export function franchiseWorld(places: (string[] | null)[]): World | null {
+  const placed = places.filter(list => list && list.length > 0) as string[][]
+  if (placed.length === 0)
+    return null
+  const real = placed.filter(list => list.some(isRealPlace)).length
+  if (real / placed.length >= REAL_SHARE)
+    return 'real'
+  return real === 0 && placed.length >= MIN_PLACED_OTHER ? 'other' : null
+}
+
+// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, le monde
+// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Lost in the Galaxy en plus dans une
+// franchise de l'espace. null si on ne sait rien.
+export function withWorld(places: string[] | null, species: unknown, world: World | null, space = false): string[] | null {
+  const spaced = (list: string[]) => space && !list.includes(SPACE) ? [...list, SPACE] : list
+  if (places && places.length > 0)
+    return spaced(places.some(isRealPlace) && !places.includes(REAL_WORLD) ? [...places, REAL_WORLD] : places)
+  const list = Array.isArray(species) ? species.map(String) : []
+  const ours = list.length === 0 || list.some(name => OUR_WORLD_SPECIES.has(name))
+  const found = spaced(world ? [world === 'real' && ours ? REAL_WORLD : OTHER_WORLD] : [])
+  return found.length > 0 ? found : null
+}
+
+// Le monde des franchises que les lieux des personnages ne tranchent pas (personne de placé, ou mêlé), et les
+// corrections du calcul. null : on ne sait pas, les personnages sans lieu restent vides. La science-fiction avec des
+// humains venus de la Terre est le monde réel tant qu'elle reste dans le système solaire (Prey, Doom).
+export const FRANCHISE_WORLDS: Record<string, World | null> = {
+  // Monde réel
+  'Fallout': 'real', 'Mega Man': 'real', 'Cyberpunk 2077': 'real', 'Horizon': 'real', 'Dying Light': 'real', 'Doom': 'real',
+  'Syberia': 'real', 'The Stanley Parable': 'real', 'Sons Of The Forest': 'real', 'Death Stranding': 'real', 'Prey': 'real',
+  'The Talos Principle': 'real', 'Wasteland': 'real', 'Twelve Minutes': 'real', 'Hunt: Showdown': 'real', 'Rust': 'real',
+  // Un autre monde
+  'Super Mario': 'other', 'Kingdom Hearts': 'other', 'Kirby': 'other', 'Animal Crossing': 'other', 'Ratchet & Clank': 'other',
+  'Gears of War': 'other', 'Rayman': 'other', 'Dragon Quest': 'other', 'Xenoblade Chronicles': 'other', 'Zenless Zone Zero': 'other',
+  'Minecraft': 'other', 'Okami': 'other', 'Touhou Project': 'other', 'Stardew Valley': 'other', 'Bloons Tower Defense': 'other',
+  'Spore': 'other', 'Warhammer': 'other', 'Palworld': 'other', 'No Man\'s Sky': 'other', 'Solasta': 'other', 'Myst': 'other',
+  'Forgotton Anne': 'other', 'The World Next Door': 'other', 'Deep Rock Galactic': 'other', 'Chants of Sennaar': 'other',
+  'We Were Here': 'other', 'My Time at Portia / Sandrock': 'other', 'Mirror\'s Edge': 'other', 'Dredge': 'other',
+  'Blue Prince': 'other', 'Among Us': 'other',
+  // La science-fiction hors du système solaire, même avec des humains venus de la Terre
+  'Halo': 'other', 'Dead Space': 'other', 'Satisfactory': 'other', 'Icarus': 'other', 'The Riftbreaker': 'other',
+  'The Alters': 'other', 'Breathedge': 'other', 'Genesis Alpha One': 'other', 'Subnautica': 'other',
+  // Le calcul dit « autre monde », mais c'est (peut-être) le nôtre : on ne sait pas
+  'Devil May Cry': null, 'Yo-kai Watch': null,
+}
+
+// Les franchises qui se passent dans l'espace (vaisseaux, autres planètes) : Lost in the Galaxy pour tous
+export const SPACE_FRANCHISES = new Set([
+  'Mass Effect', 'Halo', 'Dead Space', 'Star Fox', 'Metroid', 'Ratchet & Clank', 'StarCraft', 'Borderlands', 'Outer Wilds',
+  'No Man\'s Sky', 'Rebel Galaxy', 'Among Us', 'Subnautica', 'Satisfactory', 'Icarus', 'The Riftbreaker', 'The Alters',
+  'Breathedge', 'Genesis Alpha One', 'Deep Rock Galactic', 'Titanfall / Apex Legends', 'Honkai: Star Rail', 'Pikmin', 'Prey',
+])
 
 // --- Occupation ---
 

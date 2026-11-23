@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { expandSpecies, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -266,5 +266,59 @@ describe('translatePlace, noms à garder', () => {
   it('LibellesFrancaisDeWikidata_EnAnglais', () => {
     expect(translatePlace('Japon')).toEqual(['Japan'])
     expect(translatePlace('Témérie')).toEqual(['Temeria'])
+  })
+})
+
+describe('isRealPlace', () => {
+  it('PaysVilleAstre_Reels', () => {
+    expect(isRealPlace('United States')).toBe(true)
+    expect(isRealPlace('Soviet Union')).toBe(true)
+    expect(isRealPlace('Mars')).toBe(true)
+  })
+
+  it('LieuDeFiction_PasReel', () => {
+    expect(isRealPlace('Hyrule')).toBe(false)
+    expect(isRealPlace('Night City')).toBe(false)
+  })
+})
+
+describe('franchiseWorld', () => {
+  it('MajoriteDansUnLieuReel_Reel', () => {
+    expect(franchiseWorld([['United States'], ['Japan'], ['Arcadia Bay'], null])).toBe('real')
+  })
+
+  it('AucunLieuReel_AutreMonde', () => {
+    expect(franchiseWorld([['Hyrule'], ['Termina'], ['Hyrule'], null])).toBe('other')
+  })
+
+  it('MelangeOuTropPeu_NeSaitPas', () => {
+    expect(franchiseWorld([['Mushroom Kingdom'], ['Brooklyn', 'United States'], ['Mushroom Kingdom']])).toBeNull()
+    expect(franchiseWorld([['Hyrule'], ['Termina']])).toBeNull()
+    expect(franchiseWorld([null, null])).toBeNull()
+  })
+})
+
+describe('withWorld', () => {
+  it('PlaceDansNotreMonde_AjouteMondeReel', () => {
+    expect(withWorld(['Boston', 'United States'], ['Humain'], null)).toEqual(['Boston', 'United States', 'Monde réel'])
+    expect(withWorld(['Hyrule'], ['Hylien'], 'other')).toEqual(['Hyrule'])
+  })
+
+  it('SansLieu_LeMondeDeLaFranchise', () => {
+    expect(withWorld(null, ['Humain'], 'real')).toEqual(['Monde réel'])
+    expect(withWorld([], ['Hylien'], 'other')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Humain'], null)).toBeNull()
+  })
+
+  it('VenuDAilleursDansLeMondeReel_Inconnu', () => {
+    expect(withWorld(null, ['Démon'], 'real')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Renard', 'Animal'], 'real')).toEqual(['Monde réel'])
+  })
+
+  it('FranchiseDeLEspace_AjouteLostInTheGalaxy', () => {
+    expect(withWorld(['Earth'], ['Humain'], 'other', true)).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Humain'], 'other', true)).toEqual(['Inconnu', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Humain'], null, true)).toEqual(['Lost in the Galaxy'])
   })
 })
