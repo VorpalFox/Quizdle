@@ -191,7 +191,8 @@ const CITIES: Record<string, string> = {
   'maine': 'États-Unis', 'vermont': 'États-Unis', 'connecticut': 'États-Unis', 'maryland': 'États-Unis', 'carolina': 'États-Unis',
   'north carolina': 'États-Unis', 'south carolina': 'États-Unis', 'indiana': 'États-Unis', 'idaho': 'États-Unis',
   'appalachia': 'États-Unis', 'mojave desert': 'États-Unis', 'mojave wasteland': 'États-Unis', 'capital wasteland': 'États-Unis',
-  'commonwealth': 'États-Unis', 'new vegas': 'États-Unis',
+  'commonwealth': 'États-Unis', 'new vegas': 'États-Unis', 'midwest': 'États-Unis', 'bee cave': 'États-Unis', 'college station': 'États-Unis',
+  'cheyenne': 'États-Unis', 'topeka': 'États-Unis', 'savannah': 'États-Unis', 'wa': 'États-Unis',
   // Royaume-Uni, Irlande
   'london': 'Royaume-Uni', 'manchester': 'Royaume-Uni', 'liverpool': 'Royaume-Uni', 'birmingham': 'Royaume-Uni', 'oxford': 'Royaume-Uni',
   'cambridge': 'Royaume-Uni', 'bristol': 'Royaume-Uni', 'leeds': 'Royaume-Uni', 'sheffield': 'Royaume-Uni', 'edinburgh': 'Royaume-Uni',
@@ -208,14 +209,15 @@ const CITIES: Record<string, string> = {
   'budapest': 'Hongrie', 'warsaw': 'Pologne', 'krakow': 'Pologne', 'bucharest': 'Roumanie', 'athens': 'Grèce', 'sparta': 'Grèce',
   'stockholm': 'Suède', 'oslo': 'Norvège', 'copenhagen': 'Danemark', 'helsinki': 'Finlande', 'reykjavik': 'Islande',
   'moscow': 'Russie', 'saint petersburg': 'Russie', 'st. petersburg': 'Russie', 'siberia': 'Russie', 'kyiv': 'Ukraine', 'kiev': 'Ukraine',
-  'chernobyl': 'Ukraine', 'pripyat': 'Ukraine', 'belgrade': 'Serbie', 'istanbul': 'Turquie', 'constantinople': 'Turquie',
+  'chernobyl': 'Ukraine', 'pripyat': 'Ukraine', 'sumy oblast': 'Ukraine', 'yabluchne': 'Ukraine',
+  'dzhugdzhur': 'Russie', 'east siberian mountains': 'Russie', 'ullapool': 'Royaume-Uni', 'belgrade': 'Serbie', 'istanbul': 'Turquie', 'constantinople': 'Turquie',
   // Asie
   'tokyo': 'Japon', 'shibuya': 'Japon', 'shinjuku': 'Japon', 'kamurocho': 'Japon', 'kamurochō': 'Japon', 'sotenbori': 'Japon',
   'kyoto': 'Japon', 'osaka': 'Japon', 'yokohama': 'Japon', 'kobe': 'Japon', 'nagoya': 'Japon', 'hiroshima': 'Japon',
-  'okinawa': 'Japon', 'hokkaido': 'Japon', 'sapporo': 'Japon', 'fukuoka': 'Japon', 'kanagawa': 'Japon', 'inaba': 'Japon',
+  'okinawa': 'Japon', 'hokkaido': 'Japon', 'sapporo': 'Japon', 'fukuoka': 'Japon', 'kanagawa': 'Japon', 'kanagawa prefecture': 'Japon', 'inaba': 'Japon',
   'edo': 'Japon', 'tsushima': 'Japon', 'beijing': 'Chine', 'peking': 'Chine', 'shanghai': 'Chine', 'macau': 'Chine',
   'seoul': 'Corée du Sud', 'busan': 'Corée du Sud', 'bangkok': 'Thaïlande', 'lampang': 'Thaïlande', 'mumbai': 'Inde',
-  'delhi': 'Inde', 'new delhi': 'Inde', 'calcutta': 'Inde', 'kolkata': 'Inde', 'manila': 'Philippines', 'hanoi': 'Viêt Nam',
+  'delhi': 'Inde', 'new delhi': 'Inde', 'calcutta': 'Inde', 'kolkata': 'Inde', 'manila': 'Philippines', 'masbate': 'Philippines', 'hanoi': 'Viêt Nam',
   'saigon': 'Viêt Nam', 'singapore': 'Singapour', 'jakarta': 'Indonésie', 'tehran': 'Iran', 'baghdad': 'Irak', 'kabul': 'Afghanistan',
   'jerusalem': 'Israël', 'tel aviv': 'Israël', 'dubai': 'Émirats arabes unis', 'riyadh': 'Arabie saoudite', 'ulaanbaatar': 'Mongolie',
   // Amériques, Afrique, Océanie
@@ -236,6 +238,67 @@ export function placeCountry(label: string): string | null {
 export function translateNationality(label: string): string {
   const value = NATIONALITIES[key(label)] ?? label
   return value[0]!.toUpperCase() + value.slice(1)
+}
+
+// Les pays d'histoire et les écritures des infobox qui manquent à NATIONALITIES
+const HISTORIC_COUNTRIES: Record<string, string> = {
+  'russian empire': 'Russie', 'people\'s republic of china': 'Chine', 'ming empire': 'Chine', 'ukrainian soviet socialist republic': 'Ukraine',
+  'belorussian ssr': 'Biélorussie', 'soviet russian': 'URSS', 'royaume des pays-bas': 'Pays-Bas', 'liberia': 'Liberia', 'liberian': 'Liberia',
+  'république fédérative socialiste de yougoslavie': 'Yougoslavie', 'byzantine': 'Empire byzantin',
+  'u.s': 'États-Unis', 'englander': 'Royaume-Uni', 'greenlander': 'Groenland', 'prussian': 'Allemagne', 'imperial german': 'Allemagne',
+  'rhenish': 'Allemagne', 'british south african': 'Afrique du Sud', 'minoan': 'Grèce', 'bc': 'Canada', 'polynesian': 'Polynésie',
+}
+
+// Les écritures d'une même ville réelle, ramenées à une seule pour que les personnages se croisent
+const CITY_NAMES: Record<string, string> = {
+  'nyc': 'New York', 'new york city': 'New York', 'washington, d.c.': 'Washington', 'washington d.c.': 'Washington',
+  'kamurochō': 'Kamurocho', 'peking': 'Beijing', 'kiev': 'Kyiv', 'st. petersburg': 'Saint Petersburg', 'montréal': 'Montreal',
+  'québec': 'Quebec', 'são paulo': 'Sao Paulo', 'bogotá': 'Bogota', 'the bronx': 'Bronx',
+}
+
+// Les autres écritures d'un lieu de fiction (gentilé, nom long) ramenées à une seule, pour croiser avec les personnages
+// qui donnent le lieu
+const PLACE_NAMES: Record<string, string> = {
+  'mount olympus': 'Olympus', 'k. rool\'s mobile island fortress': 'Mobile Island Fortress', 'castle of talmberg': 'Talmberg',
+  'mare erythraeum': 'Mars',
+  // Les gentilés
+  'deponian': 'Deponia', 'elysian': 'Elysium', 'adrestian': 'Adrestian Empire', 'plegian': 'Plegia', 'columbian': 'Columbia',
+  'vigoorian': 'Holy Vigoor Empire', 'numbanian': 'Numbani', 'rook islander': 'Rook Islands',
+}
+
+// Ce que les wikis rangent dans les champs « pays » ou « lieu » sans que ce soit un lieu : entreprises, jeux, groupes
+const NOT_PLACES = new Set([
+  'cyberlife', 'dr1', 'dr2', 'the world ends with you', 'celts', 'inc.', 'inc', 'possibly', 'ordinary', 'future', 'd.c',
+])
+// Pas un lieu : un âge, une mythologie, un endroit sans nom (« His keep », « Any place related to the Kremling Krew »),
+// une lettre seule. Ni le logement d'un personnage, qui ne se croise avec personne (« 1276 Fig Leaf Lane », « Jackie's
+// Garage », « Delamain Corp HQ ») : les champs « residence » en sont pleins.
+const NOT_PLACE = /years old|mythology|^(?:his|her|their|my|any|unknown|various|several)\b|^(?:hideout|safehouse|ranch|backyard|home|house|castle|village)$|^[^\p{L}]*$|^\p{L}$|^\d|\b(?:apartments?|house|home|garage|office|hq|mansion|hovel|hideout|lab|cabin|club|restaurante?|saloon|facility|warship|corp|inc)$/u
+
+// « Likely Japan », « Created on Zebes », « Town of Onett », « Country of Eagleland » : le lieu seul
+const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|originally|created (?:on|in)|raised (?:on|in)|born (?:on|in))\s+|(?:the\s+)?(?:island country|country|town|city|region|province|village) of\s+)/i
+
+// Les lieux qu'on tire d'un nom, pour donner un max d'indices : un pays en français (« American » → États-Unis), une
+// ville ou une région réelle avec son pays (Seattle → Seattle, États-Unis), le lieu d'un gentilé (Deponian → Deponia),
+// un lieu de fiction tel quel. [] : pas un lieu.
+export function translatePlace(label: string): string[] {
+  // Les caractères invisibles des drapeaux emoji (« 󠁧󠁢󠁳 Scottish »)
+  const clean = label.replace(/[\u{E0000}-\u{E007F}\p{Extended_Pictographic}]/gu, '').trim().replace(PLACE_PREFIX, '').replace(/[.\s]+$/, '')
+  const name = key(clean).replace(/^the\s+/, '')
+  if (NOT_PLACES.has(name) || NOT_PLACE.test(name))
+    return []
+  const country = NATIONALITIES[key(clean)] ?? NATIONALITIES[name] ?? HISTORIC_COUNTRIES[name]
+  if (country)
+    return [country]
+  const cityName = CITY_NAMES[key(clean)] ?? CITY_NAMES[name] ?? translateNationality(clean)
+  const city = CITIES[key(clean)] ?? CITIES[name] ?? CITIES[key(cityName)]
+  if (city)
+    return [cityName, city]
+  // « Japanese-Portuguese » : les deux pays
+  const both = name.split('-').map(part => NATIONALITIES[part])
+  if (both.length === 2 && both.every(Boolean))
+    return both as string[]
+  return [PLACE_NAMES[name] ?? translateNationality(clean)]
 }
 
 // --- Occupation ---

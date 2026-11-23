@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translateSpecies } from './pixeldleTranslate.js'
+import { placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 
 describe('translateSpecies', () => {
   it('ClassesDeFiction_NomCourt', () => {
@@ -142,5 +142,41 @@ describe('placeCountry', () => {
 
   it('LieuDeFiction_Null', () => {
     expect(placeCountry('Night City')).toBeNull()
+  })
+})
+
+describe('translatePlace', () => {
+  it('BruitAutourDuLieu_Retire', () => {
+    expect(translatePlace('Likely Japan')).toEqual(['Japon'])
+    expect(translatePlace('Raised on Zebes.')).toEqual(['Zebes'])
+    expect(translatePlace('\u{E0067}\u{E0062}\u{E0073} Scottish')).toEqual(['Royaume-Uni'])
+  })
+
+  it('PasUnLieu_Retire', () => {
+    expect(translatePlace('40-45 Years Old')).toEqual([])
+    expect(translatePlace('Hideout')).toEqual([])
+    expect(translatePlace('Abrahamic Mythology')).toEqual([])
+    expect(translatePlace('*')).toEqual([])
+  })
+
+  it('PaysDHistoireEtGentiles_LeLieu', () => {
+    expect(translatePlace('Russian Empire')).toEqual(['Russie'])
+    expect(translatePlace('Japanese-Portuguese')).toEqual(['Japon', 'Portugal'])
+    expect(translatePlace('Plegian')).toEqual(['Plegia'])
+  })
+})
+
+describe('translatePlace, harmonisation', () => {
+  it('EcrituresDUneVille_UneSeule', () => {
+    expect(translatePlace('NYC')).toEqual(['New York', 'États-Unis'])
+    expect(translatePlace('New York City')).toEqual(['New York', 'États-Unis'])
+    expect(translatePlace('The Bronx')).toEqual(['Bronx', 'États-Unis'])
+  })
+
+  it('PrefixeOuLogement_LieuSeulOuRetire', () => {
+    expect(translatePlace('Town of Onett')).toEqual(['Onett'])
+    expect(translatePlace('1276 Fig Leaf Lane')).toEqual([])
+    expect(translatePlace('Jackie\'s Garage')).toEqual([])
+    expect(translatePlace('Giant\'s Deep')).toEqual(['Giant\'s Deep'])
   })
 })

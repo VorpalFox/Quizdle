@@ -68,7 +68,9 @@
  "edit": {
   "Q2265837": {
    "_raison": "le wiki a pris la page de Terra-Xehanort",
-   "nationality": "Destiny Islands"
+   "nationality": [
+    "Destiny Islands"
+   ]
   },
   "Q107751147": {
    "_raison": "avatar personnalisable (le wiki a pris la page « Player »)",
@@ -171,7 +173,9 @@
    "occupation": [
     "Détective"
    ],
-   "nationality": "États-Unis"
+   "nationality": [
+    "États-Unis"
+   ]
   },
   "wiki-the-talos-principle-samsara-v72-39-0003": {
    "_raison": "numéro de version dans le nom",
@@ -863,7 +867,9 @@
    "attributes": {
     "gender": "Femme",
     "species": null,
-    "nationality": "Ermys",
+    "nationality": [
+     "Ermys"
+    ],
     "occupation": null,
     "hair": null,
     "franchise": "The World Next Door",
@@ -886,7 +892,9 @@
    "attributes": {
     "gender": "Aucun",
     "species": "Robot",
-    "nationality": "Harmony",
+    "nationality": [
+     "Harmony"
+    ],
     "occupation": [
      "Soldat"
     ],
@@ -934,7 +942,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Harmony",
+    "nationality": [
+     "Harmony"
+    ],
     "occupation": [
      "Soldat",
      "Pilote"
@@ -959,7 +969,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Afrique du Sud",
+    "nationality": [
+     "Afrique du Sud"
+    ],
     "occupation": [
      "Mercenaire"
     ],
@@ -1032,7 +1044,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Ukraine",
+    "nationality": [
+     "Ukraine"
+    ],
     "occupation": [
      "Scientifique"
     ],
@@ -1054,7 +1068,9 @@
    "attributes": {
     "gender": "Femme",
     "species": "Humain",
-    "nationality": "Ukraine",
+    "nationality": [
+     "Ukraine"
+    ],
     "occupation": [
      "Scientifique"
     ],
@@ -1073,7 +1089,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Canada",
+    "nationality": [
+     "Canada"
+    ],
     "occupation": [
      "Mercenaire"
     ],
@@ -1092,7 +1110,9 @@
    "attributes": {
     "gender": "Femme",
     "species": "Humain",
-    "nationality": "Russie",
+    "nationality": [
+     "Russie"
+    ],
     "occupation": [
      "Révolutionnaire"
     ],
@@ -1114,7 +1134,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Russie",
+    "nationality": [
+     "Russie"
+    ],
     "occupation": [
      "Guide"
     ],
@@ -1137,7 +1159,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "Russie",
+    "nationality": [
+     "Russie"
+    ],
     "occupation": [
      "Soldat"
     ],
@@ -1160,7 +1184,9 @@
    "attributes": {
     "gender": "Homme",
     "species": "Humain",
-    "nationality": "États-Unis",
+    "nationality": [
+     "États-Unis"
+    ],
     "occupation": [
      "Détective",
      "Soldat"
@@ -1815,7 +1841,9 @@
    "attributes": {
     "species": "Humain",
     "gender": "Homme",
-    "nationality": "États-Unis",
+    "nationality": [
+     "États-Unis"
+    ],
     "occupation": [
      "Détective",
      "Soldat"
@@ -2162,7 +2190,9 @@
     "occupation": [
      "Chevalier"
     ],
-    "nationality": "France",
+    "nationality": [
+     "France"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2210,7 +2240,9 @@
     "occupation": [
      "Soldat"
     ],
-    "nationality": "Espagne",
+    "nationality": [
+     "Espagne"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2237,7 +2269,9 @@
     "occupation": [
      "Soldat"
     ],
-    "nationality": "Royaume-Uni",
+    "nationality": [
+     "Royaume-Uni"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2251,7 +2285,9 @@
     "species": "Humain",
     "gender": "Homme",
     "year": 2005,
-    "nationality": "France",
+    "nationality": [
+     "France"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2299,7 +2335,9 @@
     "occupation": [
      "Samouraï"
     ],
-    "nationality": "Japon",
+    "nationality": [
+     "Japon"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2313,7 +2351,9 @@
     "species": "Humain",
     "gender": "Homme",
     "year": 2007,
-    "nationality": "Chine",
+    "nationality": [
+     "Chine"
+    ],
     "franchise": "Age of Empires III"
    }
   },
@@ -2328,7 +2368,9 @@
     "species": "Humain",
     "gender": "Homme",
     "year": 2007,
-    "nationality": "Inde",
+    "nationality": [
+     "Inde"
+    ],
     "franchise": "Age of Empires III"
    }
   },

@@ -10,7 +10,7 @@ import { sleep, splitOccupations } from './anilist.js'
 import { templateFields } from './fandom.js'
 import { translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
-import { placeCountry, translateGender, translateNationality, translateOccupation, translateSpecies } from './pixeldleTranslate.js'
+import { translateGender, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -20,15 +20,17 @@ const MAX_ATTEMPTS = 5
 // On ne garde que le début de la page : l'infobox est en haut
 const MAX_CACHED_LENGTH = 15_000
 const MAX_TITLES = 6
+// Les lieux d'un personnage : ville, région, pays, monde
+const MAX_PLACES = 4
 
 // Les noms des champs, en minuscules et sans « _ ». Dans l'ordre : le 1er présent gagne.
 const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre', 'pronoun', 'pronouns'],
   species: ['species', 'race', 'espèce', 'species/race', 'kind', 'creature'],
-  // Les champs « pays » : la nationalité, le pays ou le monde d'origine, pris tels quels
-  nationality: ['nationality', 'nation', 'citizenship', 'country', 'homeland', 'homeworld', 'home world', 'homeplanet', 'home planet', 'planet', 'nation of origin', 'country of origin'],
-  // Sinon, les champs « lieu » : une ville réelle est ramenée à son pays (CITIES dans pixeldleTranslate.ts)
-  place: ['originplace', 'origin', 'hometown', 'home', 'birthplace', 'place of birth', 'born in', 'town'],
+  // Les champs « pays » : la nationalité, le pays, la région ou le monde d'origine
+  nationality: ['nationality', 'nation', 'citizenship', 'country', 'homeland', 'homeworld', 'home world', 'homeplanet', 'home planet', 'planet', 'nation of origin', 'country of origin', 'region'],
+  // Les champs « lieu » : une ville réelle est ramenée à son pays (CITIES dans pixeldleTranslate.ts)
+  place: ['originplace', 'origin', 'hometown', 'home', 'birthplace', 'place of birth', 'born in', 'town', 'residence'],
   occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
@@ -119,8 +121,10 @@ export function stripTimelines(value: string): string {
   return value.replace(/[^,:]*timelines?\s*:\s*/gi, '').replace(/(?:\s*,\s*)+/g, ', ').replace(/^[\s,]+|[\s,]+$/g, '')
 }
 
-const first = (fields: Record<string, string>, names: readonly string[]) =>
-  names.map(name => fields[name] === undefined ? undefined : stripTimelines(fields[name]!)).find(value => value && !EMPTY.test(value)) ?? null
+const present = (fields: Record<string, string>, names: readonly string[]) =>
+  names.map(name => fields[name] === undefined ? undefined : stripTimelines(fields[name]!)).filter((value): value is string => Boolean(value) && !EMPTY.test(value!))
+
+const first = (fields: Record<string, string>, names: readonly string[]) => present(fields, names)[0] ?? null
 
 // Le 1er élément d'une liste, sans parenthèses : « Human (formerly), Vampire » → Human
 const firstItem = (value: string) => value.replace(/\s*\([^)]*\)/g, '').split(/\s*(?:,|;|\/|\bor\b)\s*/)[0]!.trim()
@@ -163,21 +167,11 @@ export function parseSpecies(value: string): string | null | undefined {
 const parts = (value: string) => value.replace(/\s*\([^)]*\)/g, '').split(/\s*(?:,|;|\/|\bor\b)\s*/)
   .filter(part => !part.trim().endsWith(':')).map(part => part.split(':')[0]!.trim()).filter(Boolean)
 
-// Un champ « pays » (« Japanese », « Hyrule », « American, Russian ») : la 1re valeur, traduite si on la connaît,
-// sinon gardée telle quelle (les pays de fiction)
-export function parseNationality(value: string): string | null {
-  const place = parts(value)[0]
-  if (!place || place.length > 40 || EMPTY.test(place))
-    return null
-  return placeCountry(place) ?? translateNationality(place)
-}
-
-// Un champ « lieu » (« Seattle, Washington, United States », « London », « Night City ») : le pays s'il est cité,
-// sinon le pays d'une ville réelle connue, sinon le 1er lieu tel quel (une ville de fiction)
-export function parsePlace(value: string): string | null {
+// Un champ « pays » ou « lieu » : tous ses lieux, pour donner un max d'indices (« Pallet Town, Kanto » : les deux ;
+// « Arcadia Bay, Oregon, United States » → Arcadia Bay, Oregon, États-Unis)
+export function parsePlaces(value: string): string[] {
   const places = parts(value).filter(place => place.length <= 40 && !EMPTY.test(place))
-  const country = places.map(placeCountry).find(Boolean)
-  return country ?? (places[0] ? translateNationality(places[0]) : null)
+  return [...new Set(places.flatMap(translatePlace))]
 }
 
 // Nos règles d'abord, sur la valeur anglaise (« Bartender » → Serveur), puis le dictionnaire du Weebdle, dont la
@@ -235,6 +229,15 @@ export function mentionsFranchise(page: string, franchise: string): boolean {
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
 
+// Les lieux déjà là, plus ceux du wiki qui manquent (sans tenir compte de la casse) : [["nationality", lieux]] s'il y
+// en a de nouveaux, [] sinon
+export function morePlaces(current: AttributeValue | undefined, found: string[]): [string, string[]][] {
+  const known = isEmpty(current) ? [] : Array.isArray(current) ? current as string[] : [String(current)]
+  const keys = new Set(known.map(normalize))
+  const added = found.filter(place => !keys.has(normalize(place)))
+  return added.length > 0 ? [['nationality', [...known, ...added].slice(0, MAX_PLACES)]] : []
+}
+
 const wikiLabel = (wiki: Wiki) => wiki.api.includes('.fandom.com') ? wiki.id : new URL(wiki.api).host
 
 // Le nom de la page sur ce wiki d'après les liens Fandom de Wikidata (« mario:Luigi » pour mario.fandom.com)
@@ -277,11 +280,11 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
       result.species = parsed
     }
   }
-  const nationality = first(fields, FIELDS.nationality)
-  const place = first(fields, FIELDS.place)
-  const parsedNationality = (nationality ? parseNationality(nationality) : null) ?? (place ? parsePlace(place) : null)
-  if (parsedNationality)
-    result.nationality = parsedNationality
+  // Tous les champs « pays » et « lieu » s'additionnent : « Pallet Town » (hometown) et « Kanto » (region)
+  const raw = [...present(fields, FIELDS.place), ...present(fields, FIELDS.nationality)]
+  const places = [...new Set(raw.flatMap(parsePlaces))].slice(0, MAX_PLACES)
+  if (places.length > 0)
+    result.nationality = places
   const occupation = first(fields, FIELDS.occupation)
   if (occupation) {
     const parsed = parseOccupations(occupation)
@@ -316,7 +319,8 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
     const byApi = new Map<string, { wiki: Wiki, targets: EnrichTarget[] }>()
     for (const target of targets) {
       const wiki = wikis.get(target.franchise)?.order[rank]
-      if (!wiki || !ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
+      // Au 1er wiki, toujours : la nationalité s'additionne (le pays de Wikidata, la ville et la région du wiki)
+      if (!wiki || rank > 0 && !ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
         continue
       const group = byApi.get(wiki.api) ?? { wiki, targets: [] }
       group.targets.push(target)
@@ -339,7 +343,13 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         for (const name of Object.keys(fields))
           fieldNames.set(name, (fieldNames.get(name) ?? 0) + 1)
         const entry = current.get(target)!
-        const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).filter(([key, value]) => isEmpty(entry.attributes[key]) && !isEmpty(value)))
+        const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).flatMap(([key, value]) => {
+          if (isEmpty(value))
+            return []
+          if (key === 'nationality')
+            return morePlaces(entry.attributes.nationality, value as string[])
+          return isEmpty(entry.attributes[key]) ? [[key, value]] : []
+        }))
         if (Object.keys(added).length === 0)
           continue
         for (const key of Object.keys(added))

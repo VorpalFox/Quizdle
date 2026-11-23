@@ -6,7 +6,7 @@ Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Côté 
 
 `npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 493 personnages, 173 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
 
-Remplissage : sexe 96 %, espèce 81 %, nationalité 41 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
+Remplissage : sexe 96 %, espèce 81 %, nationalité 43 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
 
 Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
@@ -32,7 +32,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 1. **Sundered** : 0 personnage. FX remplit le wiki, puis on relance le script avec les bons réglages dans `wikis`.
 2. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
    - les doublons d'écriture, par exemple Nomaï / Nomai (Outer Wilds) ;
-   - **nationalité** : les lieux de fiction sont gardés tels quels (332 valeurs). FX doit décider quoi en faire : les garder, les regrouper par monde, ou les retirer.
+   - **nationalité** : fait (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
 3. **Trous à combler** :
    - 106 personnages sans sexe et 475 sans espèce (listés dans le récap) ;
    - 283 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
@@ -78,6 +78,12 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 - **Genres** :
   - les valeurs inconnues de Wikidata ne restent pas brutes : un genre nouveau est ajouté à `GENRE_RULES` (ramené à un des nôtres, gardé, ou retiré) ;
   - **Immersive sim** (`FRANCHISE_GENRES`, sur toute la franchise) : Dishonored, Deus Ex, BioShock, The Elder Scrolls, Fallout. Prey l'a par Wikidata.
+- **Nationalité** (champ multiple, validé avec FX) : un max de lieux, de la ville au monde (« Pallet Town, Kanto », « Boston, Massachusetts, États-Unis »), 4 au plus :
+  - Wikidata donne ses pays, le 1er wiki y ajoute tous ses champs « pays » et « lieu » (`parsePlaces`) ;
+  - un lieu réel garde son nom et reçoit son pays (`CITIES`), ses écritures sont ramenées à une seule (`CITY_NAMES` : NYC → New York) ;
+  - un gentilé devient le lieu, et les écritures d'un lieu de fiction sont ramenées à une seule (`PLACE_NAMES`) ;
+  - retirés (`NOT_PLACES`, `NOT_PLACE`) : ce qui n'est pas un lieu (âge, mythologie, jeu), et les logements (« Jackie's Garage », une adresse) ;
+  - la rubrique « Lieux par franchise » du récap sert à repérer deux écritures du même lieu.
 - **Occupations** : le dictionnaire exact `OCCUPATIONS` passe avant les règles. Les rôles dans l'histoire (Antagonist, Ally, Companion), les liens de famille et les dieux sont retirés.
 
 ### Comment le script complète depuis les wikis

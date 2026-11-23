@@ -15,7 +15,7 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translateSpecies } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedYear, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -373,7 +373,8 @@ const generated: Entry[] = selections.flatMap(({ franchise, chosen }) => chosen.
   const gender = wikidataGender(genders) ?? otherGender ?? null
   const genres = genresOf(game, franchise)
   const occupations = unique((wikidataOccupation(labelsOf(claims.occupation)) ?? []).map(name => translated('occupation', name, translateOccupation(name))))
-  const nationality = labelsOf(claims.nationality)[0]
+  // Tous les pays : le champ est multiple, les wikis y ajoutent la ville et la région
+  const nationality = unique(labelsOf(claims.nationality).flatMap(translatePlace))
   return {
     id: candidate.id,
     name: candidate.name,
@@ -382,7 +383,7 @@ const generated: Entry[] = selections.flatMap(({ franchise, chosen }) => chosen.
     attributes: {
       gender,
       species: species(candidate.character, true),
-      nationality: nationality ? translateNationality(nationality) : null,
+      nationality,
       occupation: occupations,
       hair: wikidataHair(labelsOf(claims.hair)),
       franchise: franchise.title,
@@ -529,6 +530,17 @@ for (const key of ['species', 'nationality', 'occupation', 'hair', 'developer', 
   const list = frequencies(values)
   lines.push(`## Valeurs : ${pixeldle.attributes.find(attribute => attribute.key === key)!.label} (${list.length})`, ...list.map(([value, count]) => `- ${value} (${count})`), '')
 }
+
+// Les lieux par franchise : pour repérer deux écritures du même lieu (Koopa Kingdom / Royaume Koopa), qui ne se
+// croiseraient pas dans le jeu
+const placesByFranchise = new Map<string, string[]>()
+for (const entry of entries) {
+  const places = entry.attributes.nationality as string[] | null
+  const franchise = String(entry.attributes.franchise)
+  placesByFranchise.set(franchise, [...placesByFranchise.get(franchise) ?? [], ...places ?? []])
+}
+lines.push('## Lieux par franchise : deux écritures du même lieu ?', '', ...[...placesByFranchise].filter(([, places]) => places.length > 0)
+  .map(([franchise, places]) => `- ${franchise} : ${frequencies(places).map(([place, count]) => `${place} (${count})`).join(', ')}`), '')
 // Ce que les wikis ont apporté
 lines.push('## Compléments des wikis', '', ...[...enriched.byWiki].toSorted((a, b) => b[1].found - a[1].found)
   .map(([wiki, { found, filled }]) => `- ${wiki} : ${found} pages trouvées${Object.keys(filled).length > 0 ? `, remplis : ${Object.entries(filled).map(([key, count]) => `${key} ${count}`).join(', ')}` : ''}`), '')

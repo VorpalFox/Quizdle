@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { infobox, parseGender, parseNationality, parsePlace, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
+import { infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {
@@ -36,20 +36,42 @@ describe('parseSpecies', () => {
   })
 })
 
-describe('parseNationality', () => {
+describe('parsePlaces', () => {
   it('ChampPays_TelQuelOuTraduit', () => {
-    expect(parseNationality('Japanese')).toBe('Japon')
-    expect(parseNationality('Hyrule')).toBe('Hyrule')
+    expect(parsePlaces('Japanese')).toEqual(['Japon'])
+    expect(parsePlaces('Hyrule')).toEqual(['Hyrule'])
+  })
+
+  it('LieuReel_GardeAvecSonPays', () => {
+    expect(parsePlaces('Arcadia Bay, Oregon, United States')).toEqual(['Arcadia Bay', 'Oregon', 'États-Unis'])
+    expect(parsePlaces('London')).toEqual(['London', 'Royaume-Uni'])
+    expect(parsePlaces('American')).toEqual(['États-Unis'])
+  })
+
+  it('LieuxDeFiction_TousGardes', () => {
+    expect(parsePlaces('Night City')).toEqual(['Night City'])
+    expect(parsePlaces('Pallet Town, Kanto')).toEqual(['Pallet Town', 'Kanto'])
+  })
+
+  it('GentileOuPasUnLieu_LieuOuRetire', () => {
+    expect(parsePlaces('Deponian')).toEqual(['Deponia'])
+    expect(parsePlaces('CyberLife')).toEqual([])
   })
 })
 
-describe('parsePlace', () => {
-  it('Ville_SonPays', () => {
-    expect(parsePlace('Seattle, Washington, United States')).toBe('États-Unis')
-    expect(parsePlace('London')).toBe('Royaume-Uni')
+describe('morePlaces', () => {
+  it('LieuxDuWiki_AjoutesAWikidata', () => {
+    expect(morePlaces(['Japon'], ['Kamurocho', 'Japon'])).toEqual([['nationality', ['Japon', 'Kamurocho']]])
+    expect(morePlaces(null, ['Hyrule'])).toEqual([['nationality', ['Hyrule']]])
   })
 
-  it('LieuDeFiction_TelQuel', () => {
-    expect(parsePlace('Night City')).toBe('Night City')
+  it('RienDeNouveau_RienAjoute', () => {
+    expect(morePlaces(['Hyrule'], ['hyrule'])).toEqual([])
+  })
+})
+
+describe('infoboxValues', () => {
+  it('VilleEtRegion_LesDeux', () => {
+    expect(infoboxValues({ hometown: 'Pallet Town', region: 'Kanto' }, new Map()).nationality).toEqual(['Pallet Town', 'Kanto'])
   })
 })
