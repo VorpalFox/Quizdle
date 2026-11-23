@@ -899,12 +899,13 @@
   },
   "wiki-bloons-tower-defense-psi": {
    "_nom": "Psi",
-   "_raison": "héros singe",
+   "_raison": "année : Bloons TD 6",
    "species": [
     "Singe",
     "Animal"
    ],
-   "gender": "Autre"
+   "gender": "Autre",
+   "year": 2018
   },
   "wiki-bloons-tower-defense-corvus": {
    "_raison": "héros singe",
@@ -1568,7 +1569,9 @@
    "_nom": "Dark Prince",
    "species": [
     "Humain"
-   ]
+   ],
+   "_raison": "année : Prince of Persia: Les Deux Royaumes",
+   "year": 2005
   },
   "Q4905533": {
    "_nom": "Big Daddy",
@@ -1681,7 +1684,9 @@
    "_nom": "Eggman Nega",
    "species": [
     "Humain"
-   ]
+   ],
+   "_raison": "année : Sonic Rush",
+   "year": 2005
   },
   "Q3189842": {
    "_nom": "Red XIII",
@@ -1726,7 +1731,9 @@
    "species": [
     "Morse",
     "Animal"
-   ]
+   ],
+   "_raison": "année : Kirby's Adventure",
+   "year": 1993
   },
   "Q69894320": {
    "_nom": "Prince Fluff",
@@ -1865,7 +1872,9 @@
   },
   "Q3107878": {
    "_nom": "Fossoyeur",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "_raison": "année : Halo 2",
+   "year": 2004
   },
   "Q55571439": {
    "_nom": "Henchman 800",
@@ -1953,7 +1962,9 @@
   },
   "Q114351851": {
    "_nom": "Bee",
-   "gender": "Aucun"
+   "gender": "Aucun",
+   "_raison": "année : Minecraft 1.15 (abeilles)",
+   "year": 2019
   },
   "Q114351862": {
    "_nom": "Zombified Piglin",
@@ -2040,7 +2051,9 @@
    "gender": "Homme",
    "species": [
     "Inconnu"
-   ]
+   ],
+   "_raison": "année : Kirby's Adventure",
+   "year": 1993
   },
   "Q24034079": {
    "_nom": "Madame Amberley",
@@ -2347,6 +2360,213 @@
     "California",
     "United States"
    ]
+  },
+  "wiki-devil-may-cry-j-d-morrison": {
+   "_nom": "J.D. Morrison",
+   "_raison": "année : Devil May Cry 5 (vient de l'anime)",
+   "year": 2019
+  },
+  "wiki-dishonored-billie-lurk": {
+   "_nom": "Billie Lurk",
+   "_raison": "année : DLC The Knife of Dunwall",
+   "year": 2013
+  },
+  "wiki-dishonored-delilah-copperspoon": {
+   "_nom": "Delilah Copperspoon",
+   "_raison": "année : DLC The Knife of Dunwall",
+   "year": 2013
+  },
+  "Q1285892": {
+   "_nom": "Max",
+   "_raison": "année : Pokémon Rubis et Saphir",
+   "year": 2002
+  },
+  "Q3608082": {
+   "_nom": "Cathy",
+   "_raison": "année : Pokémon Émeraude",
+   "year": 2004
+  },
+  "Q3733414": {
+   "_nom": "Spectra",
+   "_raison": "année : Pokémon Rubis et Saphir",
+   "year": 2002
+  },
+  "Q3878458": {
+   "_nom": "Norman",
+   "_raison": "année : Pokémon Rubis et Saphir",
+   "year": 2002
+  },
+  "Q16549485": {
+   "_nom": "Dianthéa",
+   "_raison": "année : Pokémon X et Y",
+   "year": 2013
+  },
+  "Q10746511": {
+   "_nom": "Super Sonic",
+   "_raison": "année : Sonic the Hedgehog 2",
+   "year": 1992
+  },
+  "Q2632527": {
+   "_nom": "Cid",
+   "_raison": "année : Final Fantasy II",
+   "year": 1988
+  },
+  "Q11323425": {
+   "_nom": "Donkey Kong Jr.",
+   "_raison": "année : Donkey Kong Jr.",
+   "year": 1982
+  },
+  "Q2320215": {
+   "_nom": "Wolf O'Donnell",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q3222756": {
+   "_nom": "Pigma Dengar",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q3222748": {
+   "_nom": "James McCloud",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q8212419": {
+   "_nom": "Leon Powalski",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q14432243": {
+   "_nom": "Bill Grey",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q14432283": {
+   "_nom": "Katt Monroe",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q20948918": {
+   "_nom": "Andrew Oikonny",
+   "_raison": "année : Star Fox 64",
+   "year": 1997
+  },
+  "Q2663645": {
+   "_nom": "Krystal",
+   "_raison": "année : Star Fox Adventures",
+   "year": 2002
+  },
+  "Q21009638": {
+   "_nom": "Beltino Toad",
+   "_raison": "année : Star Fox Adventures",
+   "year": 2002
+  },
+  "Q14429586": {
+   "_nom": "Panther Caroso",
+   "_raison": "année : Star Fox: Assault",
+   "year": 2005
+  },
+  "Q14432320": {
+   "_nom": "Lucy Hare",
+   "_raison": "année : Star Fox Command",
+   "year": 2006
+  },
+  "Q14432360": {
+   "_nom": "Amanda",
+   "_raison": "année : Star Fox Command",
+   "year": 2006
+  },
+  "Q3848942": {
+   "_nom": "Werner Von Croy",
+   "_raison": "année : Tomb Raider: The Last Revelation",
+   "year": 1999
+  },
+  "Q12813133": {
+   "_nom": "Thomas Lasky",
+   "_raison": "année : Halo 4",
+   "year": 2012,
+   "developer": "343 Industries"
+  },
+  "Q12813135": {
+   "_nom": "Chyler Silva",
+   "_raison": "année : Halo 4",
+   "year": 2012,
+   "developer": "343 Industries"
+  },
+  "Q55704684": {
+   "_nom": "Bayek de Siwa",
+   "_raison": "année : Assassin's Creed Origins",
+   "year": 2017
+  },
+  "Q55699281": {
+   "_nom": "Aya of Alexandria",
+   "_raison": "année : Assassin's Creed Origins",
+   "year": 2017
+  },
+  "Q3687082": {
+   "_nom": "Ratonhnaké꞉ton",
+   "_raison": "année : Assassin's Creed III",
+   "year": 2012
+  },
+  "Q25407606": {
+   "_nom": "Haytham Kenway",
+   "_raison": "année : Assassin's Creed III",
+   "year": 2012
+  },
+  "Q3876923": {
+   "_nom": "Nikolai Orelov",
+   "_raison": "année : Assassin's Creed Chronicles: Russia",
+   "year": 2016
+  },
+  "Q16548632": {
+   "_nom": "Darim Ibn-La'Ahad",
+   "_raison": "année : Assassin's Creed Revelations",
+   "year": 2011
+  },
+  "Q139827323": {
+   "_nom": "Combine Soldier",
+   "_raison": "année : Half-Life 2",
+   "year": 2004
+  },
+  "Q24817330": {
+   "_nom": "Nova",
+   "_raison": "année : StarCraft II",
+   "year": 2010
+  },
+  "Q848540": {
+   "_nom": "Franziska von Karma",
+   "_raison": "année : Phoenix Wright: Justice for All",
+   "year": 2002
+  },
+  "Q16167007": {
+   "_nom": "Morgan Fey",
+   "_raison": "année : Phoenix Wright: Justice for All",
+   "year": 2002
+  },
+  "Q3807043": {
+   "_nom": "Janice Quatlane",
+   "_raison": "année : Professeur Layton et le Destin perdu",
+   "year": 2008
+  },
+  "Q3785618": {
+   "_nom": "Hildegard von Krone",
+   "_raison": "année : Soulcalibur IV",
+   "year": 2008
+  },
+  "Q1606932": {
+   "_nom": "Tira",
+   "_raison": "année : Soulcalibur III",
+   "year": 2005
+  },
+  "Q12013637": {
+   "_nom": "Amy Sorel",
+   "_raison": "année : Soulcalibur III",
+   "year": 2005
+  },
+  "Q114834241": {
+   "_nom": "Kilik",
+   "_raison": "année : Soulcalibur",
+   "year": 1998
   }
  },
  "add": [
