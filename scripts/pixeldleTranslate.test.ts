@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, hairOrNone, mergeOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -30,6 +30,21 @@ describe('mergeOccupations', () => {
 
   it('Dieu_Retire', () => {
     expect(mergeOccupations(['Dieu'])).toBeNull()
+  })
+})
+
+describe('occupationOrNone', () => {
+  it('CreatureSansMetier_Aucune', () => {
+    expect(occupationOrNone(null, ['Renard', 'Animal'])).toEqual(['Aucune'])
+  })
+
+  it('HumainSansMetier_Inconnu', () => {
+    expect(occupationOrNone(null, ['Humain'])).toEqual(['Inconnu'])
+    expect(occupationOrNone([], ['Elfe'])).toEqual(['Inconnu'])
+  })
+
+  it('MetierConnu_Garde', () => {
+    expect(occupationOrNone(['Plombier'], ['Humain'])).toEqual(['Plombier'])
   })
 })
 

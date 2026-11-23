@@ -3625,6 +3625,18 @@
     "Espion",
     "Survivant"
    ]
+  },
+  "Q507001": {
+   "_nom": "Princesse Peach",
+   "occupation": [
+    "Noble"
+   ]
+  },
+  "Q2208427": {
+   "_nom": "Harmonie",
+   "occupation": [
+    "Noble"
+   ]
   }
  },
  "add": [

@@ -15,7 +15,7 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedGame, fullPages, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -578,10 +578,10 @@ const withIntroOccupation = (entry: Entry): Entry => {
 const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults).map(withTextHair).map(withIntroOccupation), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 const warnings = manualApplied.warnings
 // À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations
-// regroupées, N/A pour les cheveux d'un robot ou d'un animal
+// regroupées (Aucune ou Inconnu plutôt que vide), N/A pour les cheveux d'un robot ou d'un animal
 const entries = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
-  return { ...entry, attributes: { ...entry.attributes, species, occupation: mergeOccupations(entry.attributes.occupation), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
+  return { ...entry, attributes: { ...entry.attributes, species, occupation: occupationOrNone(mergeOccupations(entry.attributes.occupation), species), hair: hairOrNone(entry.attributes.hair, species) as string[] | null } }
 })
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 

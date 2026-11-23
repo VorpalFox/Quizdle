@@ -156,6 +156,23 @@ export function hairOrNone(hair: unknown, species: unknown): unknown {
   return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
 }
 
+// Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
+export const NO_OCCUPATION = 'Aucune'
+export const UNKNOWN_OCCUPATION = 'Inconnu'
+
+// Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
+const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Divinité', 'Démon', 'Ange', 'Infecté', 'Griffon', 'Champignon', 'Basilic'])
+
+export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
+  if (occupation && occupation.length > 0)
+    return occupation
+  const list = Array.isArray(species) ? species.map(String) : []
+  // Un avatar dont on choisit la race choisit aussi sa classe
+  if (list.includes('Au choix'))
+    return ['Au choix']
+  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Humain') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+}
+
 export function translateSpecies(label: string): string | null | undefined {
   // « •Human » : sans la puce
   let name = key(label).replace(/^[\s・*•·-]+/, '')
