@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { compareEntries, compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
 import { dayKey, randomEntry } from './pick.js'
-import { findEntry, isOneTypoAway, searchEntries } from './search.js'
+import { displayName, findEntry, homonyms, isOneTypoAway, searchEntries } from './search.js'
 import type { Subject } from './types.js'
 
 // Sujet inventé : le moteur ne doit rien savoir des Pokémon
@@ -91,6 +91,42 @@ describe('recherche', () => {
   it('autocomplétion : préfixes avant les contenus, exclut les déjà proposés', () => {
     expect(searchEntries(fruits, 'c', 10).map(e => e.id)).toEqual(['citron', 'peche'])
     expect(searchEntries(fruits, '', 10, new Set(['pomme'])).map(e => e.id)).toEqual(['citron', 'peche', 'kiwi'])
+  })
+})
+
+describe('homonymes', () => {
+  const persos: Subject = {
+    id: 'persos', name: 'Persos', description: 'Trouve le perso', universeKey: 'univers',
+    attributes: [{ key: 'univers', label: 'Univers', kind: 'exact' }],
+    entries: [
+      { id: 'sam-tlou', name: 'Sam', attributes: { univers: 'The Last of Us' } },
+      { id: 'sam-sdv', name: 'Sam', attributes: { univers: 'Stardew Valley' } },
+      { id: 'elena', name: 'Elena Fisher', aliases: ['Elena'], attributes: { univers: 'Uncharted' } },
+      { id: 'elena-sf', name: 'Elena', attributes: { univers: 'Spiritfarer' } },
+      { id: 'joel', name: 'Joel', attributes: { univers: 'The Last of Us' } },
+    ],
+  }
+
+  it('un nom porté par plusieurs : aucun choisi, tous listés', () => {
+    expect(findEntry(persos, 'sam')).toBeUndefined()
+    expect(homonyms(persos, 'Sam').map(e => e.id)).toEqual(['sam-tlou', 'sam-sdv'])
+    expect(homonyms(persos, 'Elena').map(e => e.id)).toEqual(['elena', 'elena-sf'])
+    expect(homonyms(persos, 'Joel')).toEqual([])
+    expect(findEntry(persos, 'Elena Fisher')?.id).toBe('elena')
+    expect(findEntry(persos, 'sam-sdv')?.id).toBe('sam-sdv') // l'id, envoyé par l'autocomplétion
+  })
+
+  it("le nom affiché porte l'univers seulement s'il est partagé", () => {
+    expect(displayName(persos, persos.entries[0]!)).toBe('Sam (The Last of Us)')
+    expect(displayName(persos, persos.entries[4]!)).toBe('Joel')
+    expect(displayName(persos, persos.entries[4]!, true)).toBe('Joel (The Last of Us)')
+  })
+
+  it("une proposition ambiguë ne consomme pas d'essai", () => {
+    const game = new Game(persos, persos.entries[4]!, '2026-11-22')
+    expect(() => game.guess('Sam', 'p1')).toThrow(/Sam \(The Last of Us\) · Sam \(Stardew Valley\)/)
+    expect(game.guesses).toHaveLength(0)
+    expect(game.guess('sam-sdv', 'p1').entry.id).toBe('sam-sdv')
   })
 })
 

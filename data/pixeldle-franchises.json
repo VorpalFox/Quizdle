@@ -16,7 +16,7 @@
  },
  {
   "title": "Sonic the Hedgehog",
-  "wikidataId": null,
+  "wikidataId": "Q1046812",
   "source": "top100"
  },
  {
@@ -56,7 +56,7 @@
  },
  {
   "title": "Donkey Kong",
-  "wikidataId": null,
+  "wikidataId": "Q662004",
   "source": "top100"
  },
  {
@@ -66,7 +66,7 @@
  },
  {
   "title": "Metroid",
-  "wikidataId": null,
+  "wikidataId": "Q12397",
   "source": "top100"
  },
  {
@@ -116,7 +116,7 @@
  },
  {
   "title": "Tomb Raider",
-  "wikidataId": null,
+  "wikidataId": "Q270503",
   "source": "top100"
  },
  {
@@ -136,7 +136,7 @@
  },
  {
   "title": "Halo",
-  "wikidataId": null,
+  "wikidataId": "Q1747150",
   "source": "top100"
  },
  {
@@ -146,7 +146,7 @@
  },
  {
   "title": "Mass Effect",
-  "wikidataId": null,
+  "wikidataId": "Q953242",
   "source": "top100"
  },
  {
@@ -181,7 +181,7 @@
  },
  {
   "title": "Assassin's Creed",
-  "wikidataId": null,
+  "wikidataId": "Q420292",
   "source": "top100"
  },
  {
@@ -191,17 +191,12 @@
  },
  {
   "title": "Prince of Persia",
-  "wikidataId": null,
+  "wikidataId": "Q157387",
   "source": "top100"
  },
  {
   "title": "Rayman",
   "wikidataId": "Q13219467",
-  "source": "top100"
- },
- {
-  "title": "Raving Rabbids",
-  "wikidataId": "Q2746843",
   "source": "top100"
  },
  {
@@ -226,22 +221,17 @@
  },
  {
   "title": "Overwatch",
-  "wikidataId": null,
+  "wikidataId": "Q99569678",
   "source": "top100"
  },
  {
   "title": "League of Legends",
-  "wikidataId": null,
+  "wikidataId": "Q223341",
   "source": "top100"
  },
  {
   "title": "Valorant",
   "wikidataId": "Q86919275",
-  "source": "top100"
- },
- {
-  "title": "Apex Legends",
-  "wikidataId": "Q61478103",
   "source": "top100"
  },
  {
@@ -311,7 +301,7 @@
  },
  {
   "title": "Danganronpa",
-  "wikidataId": null,
+  "wikidataId": "Q15917310",
   "source": "top100"
  },
  {
@@ -376,7 +366,7 @@
  },
  {
   "title": "Elden Ring",
-  "wikidataId": null,
+  "wikidataId": "Q64826862",
   "source": "top100"
  },
  {
@@ -386,7 +376,7 @@
  },
  {
   "title": "Hollow Knight",
-  "wikidataId": null,
+  "wikidataId": "Q29300592",
   "source": "top100"
  },
  {
@@ -411,7 +401,7 @@
  },
  {
   "title": "Call of Duty",
-  "wikidataId": null,
+  "wikidataId": "Q192156",
   "source": "top100"
  },
  {
@@ -476,7 +466,7 @@
  },
  {
   "title": "Horizon",
-  "wikidataId": null,
+  "wikidataId": "Q96316244",
   "source": "top100"
  },
  {
@@ -516,14 +506,6 @@
    "ARK: Survival Evolved",
    "ARK: Survival Ascended",
    "ARK: Survival Of The Fittest"
-  ]
- },
- {
-  "title": "The Forest",
-  "wikidataId": "Q16267841",
-  "source": "steam",
-  "steamGames": [
-   "The Forest"
   ]
  },
  {
@@ -593,7 +575,7 @@
   ]
  },
  {
-  "title": "Titanfall",
+  "title": "Titanfall / Apex Legends",
   "wikidataId": "Q28678974",
   "source": "steam",
   "steamGames": [
@@ -634,14 +616,6 @@
   "steamGames": [
    "Kingdom Come: Deliverance II",
    "Kingdom Come: Deliverance"
-  ]
- },
- {
-  "title": "Astroneer",
-  "wikidataId": "Q28044889",
-  "source": "steam",
-  "steamGames": [
-   "ASTRONEER"
   ]
  },
  {
@@ -762,14 +736,6 @@
    "XCOM 2",
    "XCOM: Chimera Squad",
    "XCOM: Enemy Unknown"
-  ]
- },
- {
-  "title": "The Planet Crafter",
-  "wikidataId": "Q111371070",
-  "source": "steam",
-  "steamGames": [
-   "The Planet Crafter"
   ]
  },
  {
@@ -960,15 +926,6 @@
   "source": "steam",
   "steamGames": [
    "The Sinking City Remastered"
-  ]
- },
- {
-  "title": "L'Amerzone",
-  "wikidataId": "Q124784868",
-  "source": "steam",
-  "steamGames": [
-   "L'Amerzone - Le Testament de l'Explorateur",
-   "L'Amerzone - Le Testament de l'Explorateur (1999)"
   ]
  },
  {

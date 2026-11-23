@@ -89,6 +89,7 @@ Ne pas modifier `data/anime.json` ni `data/weebdle.json` à la main : les script
 - **`exclude`** : les ids des personnages à retirer. Au Weebdle, sa place revient au suivant du tirage ; à l'Animedle, il n'est pas remplacé.
 - **`edit`** : id → champs à remplacer, soit `name`, `aliases` ou `image`, soit un attribut (`gender`, `age`, `occupation`, `hair`, `anime`, `genres`, `year`, `studio`). Les autres champs gardent la valeur d'AniList. Les clés qui commencent par `_` sont ignorées : `_nom` sert juste à s'y retrouver. Au Weebdle, un personnage corrigé est **toujours gardé**, même s'il n'avait pas été tiré : pour ajouter un personnage AniList de la liste, il suffit de le corriger.
 - **`add`** : des personnages complets, absents d'AniList.
+- **`wikis`** (Pixeldle seulement) : titre de la franchise → réglages de la recherche de personnages dans son wiki (lue si Wikidata a moins de 4 personnages, ou dès que la franchise est réglée ici) : `pages` (pages à lire en plus de la catégorie, prises en premier), `preferred` (pages à prendre d'abord), `limit` (nombre de personnages au plus, 12 par défaut), `category` (catégorie des personnages, si ce n'est pas « Characters »).
 - Les ids sont ceux d'AniList (dans l'URL `anilist.co/character/<id>`, ou dans le récap). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
 - Le tirage du Weebdle est stable : chaque personnage a un rang « au sort » fixe. Retirer ou corriger un personnage ne change que la place concernée, pas le reste de la sélection.
 

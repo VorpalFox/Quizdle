@@ -35,4 +35,6 @@ export interface Subject {
   entries: readonly Entry[]
   // absent = essais illimités
   maxGuesses?: number
+  // L'attribut qui distingue deux personnages du même nom (franchise, anime) : « Sam (The Last of Us) »
+  universeKey?: string
 }

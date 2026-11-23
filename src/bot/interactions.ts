@@ -1,7 +1,7 @@
 import { type AutocompleteInteraction, type ChatInputCommandInteraction, type Interaction, type Message, MessageFlags } from 'discord.js'
 import { formatValue } from '../engine/compare.js'
-import { type Game, GameError } from '../engine/game.js'
-import { findEntry, searchEntries } from '../engine/search.js'
+import { ambiguityMessage, type Game, GameError } from '../engine/game.js'
+import { displayName, findEntry, homonyms, searchEntries } from '../engine/search.js'
 import type { Subject } from '../engine/types.js'
 import { hasManual, manualFileName } from '../subjects/manual.js'
 import { getSubject, subjects } from '../subjects/registry.js'
@@ -41,12 +41,20 @@ export async function handleInteraction(interaction: Interaction, store: GameSto
 }
 
 // Un nom tapé directement dans le salon pendant une partie. Tout ce qui n'est pas un nom du quiz
-// est de la discussion normale : on l'ignore sans rien dire.
+// est de la discussion normale : on l'ignore sans rien dire. Un nom porté par plusieurs personnages (« Sam ») n'est
+// pas joué : on liste les homonymes, à choisir dans /guess.
 export async function handleMessage(message: Message, store: GameStore): Promise<void> {
   if (message.author.bot || !message.inGuild() || message.content.length > MAX_MESSAGE_GUESS_LENGTH)
     return
   const game = store.get(message.channelId)
-  if (game?.status !== 'playing' || !findEntry(game.subject, message.content))
+  if (game?.status !== 'playing')
+    return
+  const same = homonyms(game.subject, message.content)
+  if (same.length > 0) {
+    await message.reply({ content: `🤔 ${ambiguityMessage(game.subject, message.content, same)}`, allowedMentions: { repliedUser: false } })
+    return
+  }
+  if (!findEntry(game.subject, message.content))
     return
   await inQueue(message.channelId, async () => {
     // la partie a pu finir pendant l'attente dans la file
@@ -159,17 +167,14 @@ function correctableSubject(id: string): Subject {
   return subject
 }
 
-// L'entrée à corriger : le nom, avec l'anime entre parenthèses pour ne pas confondre deux homonymes
+// L'entrée à corriger : le nom, avec l'univers (anime, franchise) entre parenthèses pour ne pas confondre deux homonymes
 async function handleDebugAutocomplete(interaction: AutocompleteInteraction): Promise<void> {
   const subjectId = interaction.options.getString('subject')
   const subject = subjectId ? getSubject(subjectId) : undefined
   if (!inDebugChannel(interaction) || !subject || !hasManual(subject.id))
     return interaction.respond([])
   const found = searchEntries(subject, interaction.options.getFocused(), 25)
-  await interaction.respond(found.map(entry => {
-    const anime = entry.attributes.anime
-    return { name: (typeof anime === 'string' ? `${entry.name} (${anime})` : entry.name).slice(0, 100), value: entry.id }
-  }))
+  await interaction.respond(found.map(entry => ({ name: displayName(subject, entry, true).slice(0, 100), value: entry.id })))
 }
 
 function playingGame(game: Game | undefined): Game {
@@ -183,5 +188,6 @@ async function handleAutocomplete(interaction: AutocompleteInteraction, store: G
   if (game?.status !== 'playing')
     return interaction.respond([])
   const found = searchEntries(game.subject, interaction.options.getFocused(), 25, game.guessedIds)
-  await interaction.respond(found.map(entry => ({ name: entry.name, value: entry.name })))
+  // L'id plutôt que le nom : deux homonymes (« Sam (The Last of Us) », « Sam (Stardew Valley) ») restent distincts
+  await interaction.respond(found.map(entry => ({ name: displayName(game.subject, entry).slice(0, 100), value: entry.id })))
 }

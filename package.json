@@ -14,6 +14,7 @@
     "fetch:pokemon": "tsx scripts/fetchPokemon.ts",
     "fetch:anime": "tsx scripts/fetchAnime.ts",
     "fetch:weebdle": "tsx scripts/fetchWeebdle.ts",
+    "fetch:pixeldle": "tsx scripts/fetchPixeldle.ts",
     "dump:recos": "tsx scripts/dumpRecommendations.ts",
     "test": "vitest run"
   },

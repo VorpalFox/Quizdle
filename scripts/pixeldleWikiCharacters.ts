@@ -1,0 +1,271 @@
+// Les personnages des franchises que Wikidata connaît mal (moins de 4 personnages) : pris dans la catégorie
+// « Characters » du wiki de la franchise (voir pixeldleWikis.ts), sous-catégories comprises.
+// Seules les pages dont on connaît le sexe sont gardées (pas les espèces, lieux, objets, jeux) : celui de l'infobox,
+// sinon celui des pronoms du texte (« he », « she »), beaucoup de petits wikis n'ayant pas de champ « gender ».
+// Classement : la longueur de la page, les personnages importants ont les plus longues.
+// Les listes de pages et leurs longueurs sont gardées dans .cache/pixeldle/categories/ (hors git).
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { normalize } from '../src/engine/search.js'
+import type { AttributeValue } from '../src/engine/types.js'
+import { fetchPages, infobox, infoboxValues, request, type EnrichKey } from './pixeldleEnrich.js'
+import type { WikiSettings } from '../src/subjects/manual.js'
+import type { Wiki } from './pixeldleWikis.js'
+
+// Les catégories essayées, dans l'ordre : la 1re qui existe est parcourue
+const ROOT_CATEGORIES = ['Characters', 'NPCs', 'Personnages', 'Character', 'People']
+const MAX_DEPTH = 2
+const MAX_CATEGORIES = 80
+const MAX_PAGES = 2000
+// Pages lues (les plus longues d'abord) pour trouver les personnages à garder : quelques-unes n'ont pas d'infobox
+const READ_FACTOR = 4
+const TITLES_PER_REQUEST = 50
+
+// Les sous-catégories qui ne sont pas des personnages : images, doubleurs, contenu coupé...
+const SKIPPED_CATEGORY = /image|\bart\b|artwork|concept|gallery|galleries|screenshot|stub|quote|audio|sound|voice|actor|cast\b|template|disambig|\bcut\b|unused|mentioned|cosmetic|skin|outfit|costume|stat|achievement|redirect|by (?:voice|actor)|real[- ]world|developer|crew/i
+// Les pages qui ne sont pas un personnage
+const SKIPPED_PAGE = /^(?:list of|characters?\b)|\bcharacters$|\((?:disambiguation|anime|manga|film|movie|tv series|comics?|netflix|dmc|reincarnation)\)$|\/|:/i
+// Les valeurs de sexe d'un personnage. Une autre (« Survival horror » : le champ « genre » d'un jeu) écarte la page.
+const GENDERS = new Set(['Homme', 'Femme', 'Autre', 'Aucun', 'Au choix'])
+// Assez de pronoms, et nettement plus de l'un que de l'autre
+const MIN_PRONOUNS = 3
+const PRONOUN_RATIO = 3
+const PRONOUN_TEXT_LENGTH = 3000
+
+// Les réglages propres à une franchise (pages prioritaires, plafond, catégorie) : « wikis » dans data/pixeldle-manual.json
+
+// L'infobox d'une espèce donne l'espèce du personnage (« {{Yo-kai » : un Yo-kai)
+const TEMPLATE_SPECIES: Record<string, string> = { 'yo-kai': 'Yōkai' }
+
+function templateSpecies(wikitext: string): string | null {
+  for (const [, name] of wikitext.matchAll(/\{\{\s*([^|{}\n]+?)\s*(?=[|\n}])/g)) {
+    const species = TEMPLATE_SPECIES[name!.toLowerCase()]
+    if (species)
+      return species
+    // L'infobox d'un personnage passe avant : un humain qui devient Yo-kai plus bas dans sa page reste humain
+    if (/infobox|character|char\b|npc|person/i.test(name!))
+      return null
+  }
+  return null
+}
+
+const cacheDir = new URL('../.cache/pixeldle/categories/', import.meta.url)
+const cacheName = (api: string) => new URL(`${api.replace(/^https?:\/\//, '').replace(/[^a-z0-9.-]+/gi, '_')}.json`, cacheDir)
+
+interface CategoryCache {
+  root: string | null
+  // page → longueur en octets
+  pages: Record<string, number>
+}
+
+export interface WikiCharacter {
+  title: string
+  name: string
+  length: number
+  values: Partial<Record<EnrichKey, AttributeValue>>
+  // les jeux cités par l'infobox : la 1re apparition d'abord, sinon toutes les apparitions
+  games: { first: string[], all: string[] }
+}
+
+const FIRST_GAME_FIELDS = ['first appearance', 'firstappearance', 'first appearances', 'first', 'debut', 'first game', 'introduced in', 'première apparition']
+const GAMES_FIELDS = ['appearances', 'appearance', 'appears in', 'appearsin', 'games', 'game', 'apparitions']
+
+const gameItems = (fields: Record<string, string> | null, names: string[]) =>
+  names.flatMap(name => fields?.[name]?.split(/\s*(?:,|;|\n|•)\s*/) ?? []).map(item => item.replace(/\s*\([^)]*\)/g, '').replace(/['"*]/g, '').trim()).filter(Boolean)
+
+// En minuscules, sans accents ni ponctuation sauf les « : » : « Dying Light 2: Stay Human » → « dying light 2: stay human »
+// Sans apostrophes : « Mirror's Edge » est souvent écrit « Mirrors Edge » une fois l'italique ('') retiré
+const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9:]+/g, ' ').replace(/\s*:/g, ':').trim()
+// Les abréviations des wikis pour les jeux (« WL3 » sur le wiki de Wasteland)
+const GAME_ABBREVIATIONS: Record<string, string> = { WL1: 'Wasteland', WL2: 'Wasteland 2', WL3: 'Wasteland 3' }
+const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+// L'année du 1er jeu cité parmi ceux de la franchise (`games` : leurs noms et leur année), null si aucun n'est reconnu.
+// Les titres sont cherchés dans le texte, souvent collés une fois les liens retirés (« Dying Light 2 Stay Human Dying
+// Light: The Beast ») : « Dying Light » ne compte pas suivi d'un numéro ou d'un sous-titre (« 2 », « : The Beast »).
+export function citedYear(cited: WikiCharacter['games'], games: { names: string[], year: number | null }[]): number | null {
+  // `subtitles` : en dernier recours, « XCOM 2 » compte dans « XCOM 2: War of the Chosen » (une extension)
+  const yearOf = (items: string[], subtitles: boolean) => {
+    let text = ` ${items.map(item => GAME_ABBREVIATIONS[item] ?? item).map(words).join(' , ')} `
+    const after = subtitles ? '(?![a-z0-9]|\\s+(?:\\d|[ivx]+\\b))' : '(?![a-z0-9]|:|\\s+(?:\\d|[ivx]+\\b))'
+    // Les titres les plus longs d'abord, retirés du texte une fois trouvés : « Mirror's Edge » ne compte pas dans
+    // « Mirror's Edge Catalyst »
+    const titles = games.flatMap(({ names, year }) => names.map(name => ({ key: words(name), year })))
+      .filter(({ key }) => key.length >= 3).toSorted((a, b) => b.key.length - a.key.length)
+    const years: number[] = []
+    for (const { key, year } of titles) {
+      const replaced = text.replace(new RegExp(`(?<![a-z0-9:])${escape(key)}${after}`, 'g'), ' , ')
+      if (replaced !== text && year)
+        years.push(year)
+      text = replaced
+    }
+    return years.length > 0 ? Math.min(...years) : null
+  }
+  return yearOf(cited.first, false) ?? yearOf(cited.all, false) ?? yearOf(cited.first, true) ?? yearOf(cited.all, true)
+}
+
+// « Bayonetta (character) » → Bayonetta
+// « BE2:Man » → Man (pages préfixées par le jeu, sur le wiki de Breathedge)
+export const characterName = (title: string) => title.replace(/^[A-Z0-9]{2,5}:(?=\S)/, '').replace(/\s*\([^)]*\)\s*$/, '').trim()
+
+export const isCharacterCategory = (title: string) => !SKIPPED_CATEGORY.test(title.replace(/^[^:]+:/, ''))
+export const isCharacterPage = (title: string) => !SKIPPED_PAGE.test(title)
+
+// Le sexe d'après les pronoms anglais du texte, sans les modèles, liens de fichiers et références
+export function pronounGender(wikitext: string): 'Homme' | 'Femme' | null {
+  let text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
+  for (let i = 0; i < 3; i++)
+    text = text.replace(/\{\{[^{}]*\}\}/g, '')
+  // Le début du texte seulement : plus loin, la page parle souvent d'autres personnages
+  text = text.replace(/\[\[(?:file|image):[^\]]*\]\]/gi, '').trim().slice(0, PRONOUN_TEXT_LENGTH)
+  const count = (pattern: RegExp) => text.match(pattern)?.length ?? 0
+  const male = count(/\b(?:he|him|his|himself)\b/gi)
+  const female = count(/\b(?:she|her|hers|herself)\b/gi)
+  // Un groupe (« The Employees are... they ») n'est pas un personnage
+  if (count(/\b(?:they|them|their|themselves)\b/gi) >= Math.max(male, female))
+    return null
+  if (male >= MIN_PRONOUNS && male >= female * PRONOUN_RATIO)
+    return 'Homme'
+  if (female >= MIN_PRONOUNS && female >= male * PRONOUN_RATIO)
+    return 'Femme'
+  return null
+}
+
+async function members(api: string, category: string): Promise<{ pages: string[], categories: string[] }> {
+  const pages: string[] = []
+  const categories: string[] = []
+  let next: string | undefined
+  do {
+    const data = await request(api, { action: 'query', list: 'categorymembers', cmtitle: `Category:${category}`, cmlimit: '500', cmnamespace: '0|14', ...next ? { cmcontinue: next } : {} })
+    for (const { ns, title } of data?.query?.categorymembers ?? [])
+      (ns === 14 ? categories : pages).push(title)
+    next = data?.continue?.cmcontinue
+  } while (next && pages.length < MAX_PAGES)
+  return { pages, categories }
+}
+
+async function lengths(api: string, titles: string[]): Promise<Record<string, number>> {
+  const result: Record<string, number> = {}
+  for (let i = 0; i < titles.length; i += TITLES_PER_REQUEST) {
+    const data = await request(api, { action: 'query', prop: 'info', titles: titles.slice(i, i + TITLES_PER_REQUEST).join('|') })
+    for (const page of data?.query?.pages ?? []) {
+      if (!page.missing)
+        result[page.title] = page.length ?? 0
+    }
+  }
+  return result
+}
+
+// Toutes les pages de la catégorie des personnages et de ses sous-catégories, avec leur longueur
+async function characterPages(wiki: Wiki, category?: string): Promise<CategoryCache> {
+  // Une catégorie choisie à la main a son propre cache
+  const file = category ? new URL(cacheName(wiki.api).href.replace(/\.json$/, `.${category.replace(/[^a-z0-9]+/gi, '_')}.json`)) : cacheName(wiki.api)
+  const cached = JSON.parse(await readFile(file, 'utf8').catch(() => 'null')) as CategoryCache | null
+  if (cached)
+    return cached
+  let root: string | null = null
+  const seen = new Set<string>()
+  const titles = new Set<string>()
+  for (const name of category ? [category] : ROOT_CATEGORIES) {
+    const first = await members(wiki.api, name)
+    if (first.pages.length === 0 && first.categories.length === 0)
+      continue
+    root = name
+    let level = [{ name, ...first }]
+    for (let depth = 0; level.length > 0 && depth <= MAX_DEPTH; depth++) {
+      const nextLevel: typeof level = []
+      for (const { pages, categories } of level) {
+        for (const page of pages)
+          titles.add(page)
+        for (const category of categories) {
+          const sub = category.replace(/^[^:]+:/, '')
+          if (depth === MAX_DEPTH || seen.has(sub) || seen.size >= MAX_CATEGORIES || !isCharacterCategory(category) || titles.size >= MAX_PAGES)
+            continue
+          seen.add(sub)
+          nextLevel.push({ name: sub, ...await members(wiki.api, sub) })
+        }
+      }
+      level = nextLevel
+    }
+    break
+  }
+  const result = { root, pages: await lengths(wiki.api, [...titles].filter(isCharacterPage)) }
+  await mkdir(cacheDir, { recursive: true })
+  await writeFile(file, JSON.stringify(result))
+  return result
+}
+
+// Le même personnage, nommé autrement par Wikidata ou un autre wiki : tous les mots de l'un sont dans l'autre
+// (« Rockwell » et « Edmund Rockwell », « Corvo » et « Corvo Attano »). Pas entre les pages d'un même wiki, où ce sont
+// des personnages différents (« Goal » et « Lady Goal » dans Deponia).
+export function sameCharacter(a: string, b: string): boolean {
+  const words = (name: string) => name.split(/[\s\-_.,'"]+/).map(normalize).filter(Boolean)
+  const [short, long] = [words(a), words(b)].toSorted((x, y) => x.length - y.length)
+  return short!.length > 0 && short!.every(word => long!.includes(word))
+}
+
+// La page entière (le cache des pages n'a que le début) : pour compter les pronoms quand le début est trop court
+// (« Henry is the main character in Firewatch. », puis des sections)
+const MAX_FULL_LENGTH = 30_000
+async function fullPages(api: string, titles: string[]): Promise<Record<string, string | null>> {
+  const file = new URL(cacheName(api).href.replace(/\.json$/, '.full.json'))
+  const cache = JSON.parse(await readFile(file, 'utf8').catch(() => '{}')) as Record<string, string | null>
+  const missing = titles.filter(title => !(title in cache))
+  for (let i = 0; i < missing.length; i += TITLES_PER_REQUEST) {
+    const batch = missing.slice(i, i + TITLES_PER_REQUEST)
+    const data = await request(api, { action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', titles: batch.join('|') })
+    const pages = new Map<string, string>((data?.query?.pages ?? []).map((page: any) => [page.title, page.revisions?.[0]?.slots?.main?.content ?? null]))
+    for (const title of batch)
+      cache[title] = pages.get(title)?.slice(0, MAX_FULL_LENGTH) ?? null
+  }
+  if (missing.length > 0) {
+    await mkdir(cacheDir, { recursive: true })
+    await writeFile(file, JSON.stringify(cache))
+  }
+  return cache
+}
+
+// Jusqu'à `max` personnages du wiki, les plus longues pages d'abord, sans ceux déjà là (`known` : leurs noms et alias)
+export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>, untranslated: Map<string, string[]>, skip: (name: string) => boolean = () => false, settings: WikiSettings = {}): Promise<{ root: string | null, found: number, chosen: WikiCharacter[] }> {
+  const { root, pages: categoryPages } = await characterPages(wiki, settings.category)
+  // Les pages données à la main (hors de la catégorie) passent en premier
+  const pages = { ...categoryPages, ...settings.pages?.length ? await lengths(wiki.api, settings.pages) : {} }
+  const preferred = [...settings.pages ?? [], ...settings.preferred ?? []]
+  const rank = (title: string) => preferred.includes(title) ? preferred.indexOf(title) : preferred.length
+  const sorted = Object.entries(pages).toSorted((a, b) => rank(a[0]) - rank(b[0]) || b[1] - a[1] || a[0].localeCompare(b[0]))
+    .filter(([title]) => ![...known].some(name => sameCharacter(name, characterName(title))))
+  const chosen: WikiCharacter[] = []
+  const names = new Set([...known].map(normalize))
+  for (let start = 0; start < sorted.length && chosen.length < max; start += max * READ_FACTOR) {
+    const batch = sorted.slice(start, start + max * READ_FACTOR)
+    const texts = await fetchPages(wiki.api, batch.map(([title]) => title))
+    // Les pages sans sexe dans l'infobox ni dans les pronoms du début : lues en entier. Un début vide (la page
+    // commence par une section, « == Introduction == ») aussi.
+    const short = batch.map(([title]) => title).filter(title => texts[title] !== undefined && !infobox(texts[title]!)?.gender && !pronounGender(texts[title]!))
+    const full = short.length > 0 ? await fullPages(wiki.api, short) : {}
+    for (const [title, length] of batch) {
+      const text = texts[title] || full[title]
+      const name = characterName(title)
+      if (!text || names.has(normalize(name)) || skip(name))
+        continue
+      const fields = infobox(text)
+      // Les valeurs non traduites ne comptent que pour les pages gardées (pas le « genre » d'un jeu)
+      const pageUntranslated = new Map<string, string[]>()
+      const values = fields ? infoboxValues(fields, pageUntranslated) : {}
+      // Un personnage a un sexe (« Aucun » pour un robot) ; une espèce, un lieu ou un objet non
+      if (values.gender !== undefined && !GENDERS.has(String(values.gender)))
+        continue
+      values.gender ??= pronounGender(text) ?? (full[title] ? pronounGender(full[title]!) : null)
+      values.species ??= templateSpecies(text)
+      // Une page choisie à la main est gardée même sans sexe trouvé (à compléter avec edit)
+      if (!values.gender && !preferred.includes(title))
+        continue
+      for (const [key, list] of pageUntranslated)
+        untranslated.set(key, [...untranslated.get(key) ?? [], ...list])
+      names.add(normalize(name))
+      chosen.push({ title, name, length, values, games: { first: gameItems(fields, FIRST_GAME_FIELDS), all: gameItems(fields, GAMES_FIELDS) } })
+      if (chosen.length === max)
+        break
+    }
+  }
+  return { root, found: Object.keys(pages).length, chosen }
+}

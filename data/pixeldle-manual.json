@@ -1,0 +1,2681 @@
+{
+ "exclude": [
+  "wiki-sons-of-the-forest-tim-leblanc",
+  "wiki-les-chevaliers-de-baphomet-receptionniste-de-l-hotel-ubu",
+  "wiki-palworld-zoe-and-grizzbolt",
+  "wiki-the-stanley-parable-settings-character",
+  "wiki-the-stanley-parable-watching-man",
+  "wiki-the-stanley-parable-bucket-destroyer",
+  "wiki-the-stanley-parable-tape-man",
+  "wiki-the-stanley-parable-baby",
+  "wiki-the-stanley-parable-boss",
+  "wiki-palworld-black-marketeer",
+  "wiki-palworld-expedition-survivor",
+  "wiki-palworld-lily-and-lyleen",
+  "wiki-palworld-marcus-and-faleris",
+  "wiki-palworld-victor-and-shadowbeak",
+  "wiki-palworld-saya-and-selyne",
+  "wiki-palworld-axel-and-orserk",
+  "wiki-raving-rabbids-professor-barranco-clone-3",
+  "wiki-remember-me-reconversion-project",
+  "Q2141803",
+  "wiki-mirror-s-edge-callaghan",
+  "wiki-mirror-s-edge-celeste",
+  "wiki-divinity-original-sin-original-sin-2-companions",
+  "wiki-divinity-original-sin-original-sin-companions",
+  "wiki-wasteland-wasteland-3-companions",
+  "wiki-ark-graduate-students",
+  "wiki-bayonetta-variants",
+  "Q4316668",
+  "Q112296371",
+  "Q63211930",
+  "Q64494845",
+  "Q3077151",
+  "wiki-syberia-rectors",
+  "wiki-kingdom-come-deliverance-skill-teacher",
+  "wiki-lost-records-bloom-rage-velvet-cove-online",
+  "wiki-deponia-future-goal",
+  "Q120986062",
+  "Q124985829",
+  "Q126164225",
+  "Q125259914",
+  "Q51761",
+  "Q4918886",
+  "Q3543951",
+  "Q127947780",
+  "Q3702332",
+  "wiki-hunt-showdown-ghostface",
+  "Q125981645",
+  "Q125981073",
+  "Q132638796",
+  "Q133467531",
+  "Q130270850",
+  "Q130303899",
+  "Q114999365",
+  "wiki-nancy-drew-tom-swift"
+ ],
+ "edit": {
+  "Q2265837": {
+   "_raison": "le wiki a pris la page de Terra-Xehanort",
+   "nationality": "Destiny Islands"
+  },
+  "Q107751147": {
+   "_raison": "avatar personnalisable (le wiki a pris la page « Player »)",
+   "gender": "Au choix"
+  },
+  "Q106744090": {
+   "_raison": "le dieu, pas Tiber Septim (le wiki redirige Talos vers sa page)",
+   "nationality": null,
+   "hair": null
+  },
+  "wiki-twelve-minutes-protagonist": {
+   "_raison": "le Mari, joué par le joueur (le wiki titre sa page « Protagonist »)",
+   "name": "Husband",
+   "aliases": [
+    "Protagonist",
+    "Mari",
+    "Le Mari"
+   ],
+   "species": "Humain"
+  },
+  "wiki-twelve-minutes-father": {
+   "_raison": "le père du Mari",
+   "aliases": [
+    "Père",
+    "Le Père"
+   ],
+   "species": "Humain"
+  },
+  "wiki-yo-kai-watch-nathan-adams": {
+   "_raison": "humain (le wiki ne donne pas l'espèce)",
+   "species": "Humain"
+  },
+  "wiki-yo-kai-watch-katie-forester": {
+   "_raison": "humain (le wiki ne donne pas l'espèce)",
+   "species": "Humain"
+  },
+  "wiki-yo-kai-watch-hailey-anne-thomas": {
+   "_raison": "humain (le wiki ne donne pas l'espèce)",
+   "species": "Humain"
+  },
+  "wiki-yo-kai-watch-summer-adams": {
+   "_raison": "humain (le wiki ne donne pas l'espèce)",
+   "species": "Humain"
+  },
+  "wiki-yo-kai-watch-usapyon": {
+   "_raison": "sexe absent du début de page (stats)",
+   "gender": "Homme"
+  },
+  "wiki-yo-kai-watch-shogunyan": {
+   "_raison": "sexe absent du début de page (stats)",
+   "gender": "Homme"
+  },
+  "wiki-yo-kai-watch-lord-enma": {
+   "_raison": "roi des Yo-kai",
+   "species": "Yōkai"
+  },
+  "Q24837041": {
+   "_raison": "chat devenu Yo-kai : même espèce que les autres Yo-kai",
+   "species": "Yōkai"
+  },
+  "wiki-firewatch-henry": {
+   "_raison": "le héros : sa page ne donne pas le sexe",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-palworld-bjorn-seligsson": {
+   "_raison": "sexe absent du wiki",
+   "gender": "Homme"
+  },
+  "Q3776297": {
+   "_raison": "dresseur (Wikidata ne donne pas l'espèce)",
+   "species": "Humain"
+  },
+  "wiki-the-sinking-city-joseph-joe-hill": {
+   "_raison": "nom de page « Joseph (Joe) Hill »",
+   "name": "Joe Hill",
+   "aliases": [
+    "Joseph Hill",
+    "Hill"
+   ]
+  },
+  "wiki-the-sinking-city-prof-george-cavendish": {
+   "_raison": "« Prof. » dans le nom",
+   "name": "George Cavendish",
+   "aliases": [
+    "Professeur Cavendish",
+    "Cavendish"
+   ]
+  },
+  "wiki-the-sinking-city-johannes-van-der-berg": {
+   "_raison": "alias inversé",
+   "aliases": [
+    "Johannes",
+    "van der Berg"
+   ]
+  },
+  "wiki-the-sinking-city-charles-reed": {
+   "_raison": "le héros, détective privé",
+   "species": "Humain",
+   "occupation": [
+    "Détective"
+   ],
+   "nationality": "États-Unis"
+  },
+  "wiki-the-talos-principle-samsara-v72-39-0003": {
+   "_raison": "numéro de version dans le nom",
+   "name": "Samsara",
+   "aliases": [],
+   "species": "IA"
+  },
+  "wiki-the-talos-principle-elohim": {
+   "_raison": "IA qui se prend pour un dieu",
+   "species": "IA"
+  },
+  "wiki-the-talos-principle-mla": {
+   "_raison": "Milton Library Assistant, une IA",
+   "gender": "Aucun",
+   "species": "IA",
+   "aliases": [
+    "Milton Library Assistant"
+   ]
+  },
+  "wiki-the-talos-principle-dr-arkady-chernyshevsky": {
+   "_raison": "sexe absent du wiki ; « Dr. » dans le nom",
+   "name": "Arkady Chernyshevsky",
+   "aliases": [
+    "Arkady",
+    "Chernyshevsky"
+   ],
+   "gender": "Homme",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "wiki-the-talos-principle-alexandra-drennan": {
+   "_raison": "chercheuse du projet",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "wiki-saturnalia-anita-giannini": {
+   "_raison": "humaine",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-paul-izem": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-claudia-mirai": {
+   "_raison": "humaine",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-sergio-aulas": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-green-hell-jake-higgins": {
+   "_raison": "anthropologue",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "wiki-green-hell-mia-higgins": {
+   "_raison": "linguiste",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "Q113954461": {
+   "_raison": "avatar personnalisable",
+   "gender": "Au choix"
+  },
+  "Q136405131": {
+   "_raison": "avatar : Caelus ou Stelle",
+   "gender": "Au choix",
+   "aliases": [
+    "Pionnier",
+    "Caelus",
+    "Stelle"
+   ]
+  },
+  "Q116252369": {
+   "_raison": "le jeu ne donne jamais son sexe",
+   "gender": "Autre"
+  },
+  "Q118669752": {
+   "_raison": "le héros de Nier (Replicant / Gestalt)",
+   "name": "Nier",
+   "aliases": [
+    "Protagonist"
+   ],
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "Q536138": {
+   "_raison": "héros de sa série (Wario Land, WarioWare), pas dans Super Mario",
+   "franchise": "Wario"
+  },
+  "Q1287363": {
+   "_raison": "protagoniste de Rubis et Saphir",
+   "year": 2002
+  },
+  "Q1155350": {
+   "_raison": "protagoniste de Diamant et Perle",
+   "year": 2006
+  },
+  "Q116792189": {
+   "_raison": "protagoniste de Noir et Blanc",
+   "year": 2010
+  },
+  "Q17221976": {
+   "_raison": "protagoniste de X et Y",
+   "year": 2013
+  },
+  "Q30900322": {
+   "year": 2013
+  },
+  "Q874152": {
+   "_raison": "nom en capitales",
+   "name": "Wheatley"
+  },
+  "Q126477102": {
+   "_raison": "robot de la coop",
+   "gender": "Aucun"
+  },
+  "Q126477106": {
+   "_raison": "robot de la coop",
+   "gender": "Aucun"
+  },
+  "wiki-saturnalia-the-creature": {
+   "_raison": "le monstre",
+   "name": "La Créature",
+   "aliases": [
+    "The Creature",
+    "Créature"
+   ],
+   "gender": "Aucun",
+   "species": "Monstre"
+  },
+  "wiki-saturnalia-gabriele-mirai": {
+   "_raison": "père de Claudia",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-umberto-aulas": {
+   "_raison": "père de Sergio",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-damiano-orsi": {
+   "_raison": "sacristain",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-bruno-bissani": {
+   "_raison": "seigneur du château",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-eliana-murgia": {
+   "_raison": "sœur de Tecla",
+   "gender": "Femme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-mara-mirai": {
+   "_raison": "tante de Claudia",
+   "gender": "Femme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-leone": {
+   "_raison": "mineur",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-saturnalia-rupert-crowley": {
+   "_raison": "pilote de la RAF",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "wiki-chernobylite-semonov": {
+   "_raison": "professeur",
+   "occupation": [
+    "Scientifique"
+   ],
+   "aliases": [
+    "Professeur Semonov",
+    "Dr. Semonov"
+   ],
+   "species": "Humain"
+  },
+  "wiki-chernobylite-locksmith": {
+   "_raison": "Yuriy Melnyk",
+   "aliases": [
+    "Yuriy Melnyk",
+    "Serrurier"
+   ],
+   "species": "Humain"
+  },
+  "wiki-breathedge-man": {
+   "_raison": "le héros (muet)",
+   "aliases": [
+    "L'Homme",
+    "Héros de Breathedge",
+    "Breathedge"
+   ]
+  },
+  "wiki-breathedge-chicken": {
+   "_raison": "le poulet immortel du grand-père",
+   "name": "Poulet",
+   "aliases": [
+    "Chicken",
+    "Poulet immortel"
+   ]
+  },
+  "wiki-breathedge-grandfather": {
+   "_raison": "le grand-père du héros",
+   "gender": "Homme",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique"
+   ],
+   "aliases": [
+    "Grand-père"
+   ]
+  },
+  "wiki-no-man-s-sky-priest-entity-nada": {
+   "_raison": "titre korvax dans le nom ; le wiki dit « they »",
+   "name": "Nada",
+   "aliases": [
+    "Priest Entity Nada"
+   ],
+   "species": "Korvax",
+   "gender": "Autre"
+  },
+  "wiki-no-man-s-sky-specialist-polo": {
+   "_raison": "titre gek dans le nom ; le wiki dit « they »",
+   "name": "Polo",
+   "aliases": [
+    "Specialist Polo"
+   ],
+   "species": "Gek",
+   "gender": "Autre"
+  },
+  "wiki-no-man-s-sky-null": {
+   "_raison": "nom de page « -null- » ; le wiki dit « they »",
+   "name": "Null",
+   "aliases": [
+    "-null-",
+    "The Stranger"
+   ],
+   "species": "Voyageur",
+   "gender": "Autre"
+  },
+  "wiki-no-man-s-sky-artemis": {
+   "_raison": "un Voyageur ; le wiki dit « they »",
+   "species": "Voyageur",
+   "gender": "Autre"
+  },
+  "wiki-no-man-s-sky-apollo": {
+   "_raison": "un Voyageur au corps robotisé ; le wiki dit « they »",
+   "species": "Voyageur",
+   "gender": "Autre"
+  },
+  "wiki-no-man-s-sky-the-atlas": {
+   "_raison": "entité cosmique",
+   "name": "L'Atlas",
+   "aliases": [
+    "The Atlas",
+    "Atlas"
+   ],
+   "gender": "Aucun",
+   "species": "Divinité"
+  },
+  "wiki-chernobylite-sashko": {
+   "species": "Humain"
+  },
+  "wiki-chernobylite-tarakan": {
+   "species": "Humain"
+  },
+  "wiki-chernobylite-black-stalker": {
+   "species": "Humain"
+  },
+  "wiki-chernobylite-anton": {
+   "species": "Humain"
+  },
+  "wiki-saturnalia-idir-izem": {
+   "species": "Humain"
+  },
+  "wiki-saturnalia-tecla-murgia": {
+   "species": "Humain"
+  },
+  "wiki-breathedge-bum": {
+   "_raison": "nommé Hobo dans l'infobox",
+   "aliases": [
+    "Hobo",
+    "Clochard"
+   ]
+  },
+  "wiki-rust-scientist": {
+   "_raison": "ennemi emblématique (les scientifiques de Cobalt)",
+   "name": "Scientifique",
+   "aliases": [
+    "Scientist",
+    "Scientifiques"
+   ],
+   "gender": "Homme",
+   "species": "Humain",
+   "occupation": [
+    "Scientifique",
+    "Soldat"
+   ]
+  },
+  "wiki-devil-may-cry-kyrie": {
+   "_raison": "sexe faux ou absent du wiki",
+   "gender": "Femme"
+  },
+  "wiki-devil-may-cry-nico": {
+   "_raison": "sexe faux ou absent du wiki",
+   "gender": "Femme"
+  },
+  "wiki-devil-may-cry-lucia": {
+   "_raison": "démone artificielle",
+   "species": "Démon"
+  },
+  "wiki-nier-pod-042": {
+   "_raison": "unité de soutien",
+   "gender": "Aucun"
+  },
+  "Q110906334": {
+   "_raison": "arme vivante, pas un objet",
+   "species": null
+  },
+  "Q125857256": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "Q125857288": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "Q126027875": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité",
+   "gender": "Homme"
+  },
+  "wiki-hades-nyx": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-hypnos": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-persephone": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-hades": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-hermes": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-charon": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-zeus": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-poseidon": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-melinoe": {
+   "_raison": "dieu ou divinité",
+   "species": "Divinité"
+  },
+  "wiki-hades-achilles": {
+   "_raison": "ombre d'un mortel",
+   "species": "Humain"
+  },
+  "wiki-hades-patroclus": {
+   "_raison": "ombre d'un mortel",
+   "species": "Humain"
+  },
+  "wiki-hades-orpheus": {
+   "_raison": "ombre d'un mortel",
+   "species": "Humain"
+  },
+  "wiki-hades-eurydice": {
+   "_raison": "ombre d'un mortel",
+   "species": "Humain"
+  },
+  "wiki-hades-sisyphus": {
+   "_raison": "ombre d'un mortel",
+   "species": "Humain"
+  },
+  "wiki-hades-cerberus": {
+   "_raison": "chien des Enfers",
+   "species": "Chien"
+  },
+  "Q126027906": {
+   "_raison": "gorgone",
+   "species": "Gorgone"
+  },
+  "wiki-hades-skelly": {
+   "_raison": "squelette d'entraînement",
+   "species": "Squelette"
+  },
+  "Q142103107": {
+   "_raison": "double de Pit",
+   "gender": "Homme",
+   "species": "Ange"
+  },
+  "Q5820357": {
+   "_raison": "monstre du 1er jeu",
+   "gender": "Homme",
+   "species": "Monstre"
+  },
+  "wiki-kid-icarus-medusa": {
+   "_raison": "divinité",
+   "species": "Divinité"
+  },
+  "wiki-kid-icarus-hades": {
+   "_raison": "divinité",
+   "species": "Divinité"
+  },
+  "wiki-kid-icarus-thanatos": {
+   "_raison": "divinité",
+   "species": "Divinité"
+  },
+  "wiki-kid-icarus-viridi": {
+   "_raison": "divinité",
+   "species": "Divinité"
+  },
+  "wiki-kid-icarus-pandora": {
+   "_raison": "divinité",
+   "species": "Divinité"
+  },
+  "wiki-kid-icarus-magnus": {
+   "_raison": "mercenaire humain",
+   "species": "Humain"
+  },
+  "wiki-kid-icarus-hewdraw": {
+   "_raison": "monstre",
+   "species": "Monstre"
+  },
+  "wiki-kid-icarus-chaos-kin": {
+   "_raison": "monstre",
+   "species": "Monstre"
+  },
+  "Q126033521": {
+   "_raison": "sexe absent",
+   "gender": "Homme",
+   "species": "Humain"
+  },
+  "Q113954944": {
+   "_raison": "sexe absent",
+   "gender": "Homme"
+  },
+  "wiki-gears-of-war-bernadette-mataki": {
+   "_raison": "humaine",
+   "species": "Humain"
+  },
+  "wiki-bloons-tower-defense-obyn-greenfoot": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-captain-churchill": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-benjamin": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-ezili": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-pat-fusty": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-adora": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-admiral-brickell": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-etienne": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-sauda": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-psi": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-corvus": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-rosalia": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-bloons-tower-defense-silas": {
+   "_raison": "héros singe",
+   "species": "Singe"
+  },
+  "wiki-nancy-drew-carson-drew": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-samantha-quick": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-professor-hotchkiss": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-prudence-rutherford": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-bridget-shaw": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-savannah-woodham": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-dwayne-powers": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-daryl-gray": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-lizzie-applegate": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-charleena-purcell": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-jamila-el-dine": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-jake-rogers": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-red-knott": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-tino-balducci": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-nancy-drew-mitch-dillon": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-helen-marshall": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-emily-pope": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-casper-darling": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-simon-arish": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-frederick-langston": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-kiran-estevez": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "wiki-control-alan-wake": {
+   "_raison": "humain",
+   "species": "Humain"
+  },
+  "Q126033828": {
+   "_raison": "humain",
+   "species": "Humain"
+  }
+ },
+ "add": [
+  {
+   "id": "twnd-jun",
+   "name": "Jun",
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": null,
+    "hair": [
+     "Bruns"
+    ],
+    "franchise": "The World Next Door",
+    "developer": "Rose City Games",
+    "genres": [
+     "Aventure",
+     "Réflexion",
+     "Visual novel",
+     "Plates-formes"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "twnd-liza",
+   "name": "Liza",
+   "attributes": {
+    "gender": "Femme",
+    "species": null,
+    "nationality": "Ermys",
+    "occupation": null,
+    "hair": null,
+    "franchise": "The World Next Door",
+    "developer": "Rose City Games",
+    "genres": [
+     "Aventure",
+     "Réflexion",
+     "Visual novel",
+     "Plates-formes"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "titanfall-bt-7274",
+   "name": "BT-7274",
+   "aliases": [
+    "BT"
+   ],
+   "attributes": {
+    "gender": "Aucun",
+    "species": "Robot",
+    "nationality": "Harmony",
+    "occupation": [
+     "Soldat"
+    ],
+    "hair": null,
+    "franchise": "Titanfall / Apex Legends",
+    "developer": "Respawn Entertainment",
+    "genres": [
+     "FPS"
+    ],
+    "year": 2016
+   }
+  },
+  {
+   "id": "titanfall-sarah-briggs",
+   "name": "Sarah Briggs",
+   "aliases": [
+    "Briggs"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Soldat",
+     "Pilote",
+     "Espion"
+    ],
+    "hair": [
+     "Bruns"
+    ],
+    "franchise": "Titanfall / Apex Legends",
+    "developer": "Respawn Entertainment",
+    "genres": [
+     "FPS"
+    ],
+    "year": 2014
+   }
+  },
+  {
+   "id": "titanfall-jack-cooper",
+   "name": "Jack Cooper",
+   "aliases": [
+    "Cooper"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Harmony",
+    "occupation": [
+     "Soldat",
+     "Pilote"
+    ],
+    "hair": [
+     "Noirs"
+    ],
+    "franchise": "Titanfall / Apex Legends",
+    "developer": "Respawn Entertainment",
+    "genres": [
+     "FPS"
+    ],
+    "year": 2016
+   }
+  },
+  {
+   "id": "titanfall-kuben-blisk",
+   "name": "Kuben Blisk",
+   "aliases": [
+    "Blisk"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Afrique du Sud",
+    "occupation": [
+     "Mercenaire"
+    ],
+    "hair": [
+     "Bruns",
+     "Gris"
+    ],
+    "franchise": "Titanfall / Apex Legends",
+    "developer": "Respawn Entertainment",
+    "genres": [
+     "FPS"
+    ],
+    "year": 2014
+   }
+  },
+  {
+   "id": "twelve-minutes-wife",
+   "name": "Wife",
+   "aliases": [
+    "Sarah",
+    "Femme",
+    "La Femme",
+    "Half-Sister"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "occupation": null,
+    "nationality": null,
+    "hair": null,
+    "franchise": "Twelve Minutes",
+    "developer": "Luis Antonio",
+    "genres": [
+     "Aventure"
+    ],
+    "year": 2021
+   }
+  },
+  {
+   "id": "twelve-minutes-cop",
+   "name": "Cop",
+   "aliases": [
+    "Flic",
+    "Le Flic",
+    "Policier"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "occupation": [
+     "Policier"
+    ],
+    "nationality": null,
+    "hair": null,
+    "franchise": "Twelve Minutes",
+    "developer": "Luis Antonio",
+    "genres": [
+     "Aventure"
+    ],
+    "year": 2021
+   }
+  },
+  {
+   "id": "chernobylite-igor-khymynuk",
+   "name": "Igor Khymynuk",
+   "aliases": [
+    "Igor",
+    "Khymynuk"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Ukraine",
+    "occupation": [
+     "Scientifique"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "chernobylite-tatyana",
+   "name": "Tatyana",
+   "aliases": [
+    "Tatyana Yanko"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": "Ukraine",
+    "occupation": [
+     "Scientifique"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "chernobylite-olivier",
+   "name": "Olivier",
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Canada",
+    "occupation": [
+     "Mercenaire"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "chernobylite-olga",
+   "name": "Olga",
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": "Russie",
+    "occupation": [
+     "Révolutionnaire"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   },
+   "aliases": [
+    "Olga Astapienia"
+   ]
+  },
+  {
+   "id": "chernobylite-mikhail",
+   "name": "Mikhail",
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Russie",
+    "occupation": [
+     "Guide"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "chernobylite-kozlov",
+   "name": "Kozlov",
+   "aliases": [
+    "Général Kozlov",
+    "General Kozlov"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "Russie",
+    "occupation": [
+     "Soldat"
+    ],
+    "hair": null,
+    "franchise": "Chernobylite",
+    "developer": "The Farm 51",
+    "genres": [
+     "Survival horror"
+    ],
+    "year": 2019
+   }
+  },
+  {
+   "id": "call-of-cthulhu-edward-pierce",
+   "name": "Edward Pierce",
+   "aliases": [
+    "Pierce",
+    "Edward"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": "États-Unis",
+    "occupation": [
+     "Détective",
+     "Soldat"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-cat-baker",
+   "name": "Cat Baker",
+   "aliases": [
+    "Cat"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Criminel"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-fitzroy",
+   "name": "Fitzroy",
+   "aliases": [
+    "Captain Fitzroy",
+    "Capitaine Fitzroy"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Marin"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-bradley",
+   "name": "Bradley",
+   "aliases": [
+    "Officer Bradley"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Policier"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-sarah-hawkins",
+   "name": "Sarah Hawkins",
+   "aliases": [
+    "Sarah"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Artiste"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-charles-hawkins",
+   "name": "Charles Hawkins",
+   "aliases": [
+    "Charles"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": null,
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "call-of-cthulhu-fuller",
+   "name": "Dr. Fuller",
+   "aliases": [
+    "Fuller",
+    "Docteur Fuller"
+   ],
+   "attributes": {
+    "gender": "Homme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Médecin"
+    ],
+    "hair": null,
+    "franchise": "Call of Cthulhu",
+    "developer": "Cyanide",
+    "genres": [
+     "Survival horror",
+     "RPG"
+    ],
+    "year": 2018
+   }
+  },
+  {
+   "id": "talos-athena",
+   "name": "Athena",
+   "aliases": [
+    "001"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Androïde",
+    "nationality": null,
+    "occupation": null,
+    "hair": null,
+    "franchise": "The Talos Principle",
+    "developer": "Croteam",
+    "genres": [
+     "Réflexion"
+    ],
+    "year": 2014
+   }
+  },
+  {
+   "id": "riftbreaker-ashley-nowak",
+   "name": "Ashley Nowak",
+   "aliases": [
+    "Ashley",
+    "Nowak"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": "Humain",
+    "nationality": null,
+    "occupation": [
+     "Scientifique"
+    ],
+    "hair": null,
+    "franchise": "The Riftbreaker",
+    "developer": "EXOR Studios",
+    "genres": [
+     "Action",
+     "Stratégie"
+    ],
+    "year": 2021
+   }
+  },
+  {
+   "id": "riftbreaker-mr-riggs",
+   "name": "Mr. Riggs",
+   "aliases": [
+    "Riggs",
+    "Mr Riggs"
+   ],
+   "attributes": {
+    "gender": "Aucun",
+    "species": "Robot",
+    "nationality": null,
+    "occupation": null,
+    "hair": null,
+    "franchise": "The Riftbreaker",
+    "developer": "EXOR Studios",
+    "genres": [
+     "Action",
+     "Stratégie"
+    ],
+    "year": 2021
+   }
+  },
+  {
+   "id": "avatar-elder-scrolls",
+   "name": "Dovahkiin",
+   "aliases": [
+    "Enfant de dragon",
+    "Dragonborn",
+    "The Elder Scrolls",
+    "Skyrim"
+   ],
+   "attributes": {
+    "species": null,
+    "gender": "Au choix",
+    "year": 2011,
+    "franchise": "The Elder Scrolls"
+   }
+  },
+  {
+   "id": "avatar-elden-ring",
+   "name": "Sans-éclat",
+   "aliases": [
+    "Tarnished",
+    "Elden Ring"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "year": 2022,
+    "franchise": "Elden Ring"
+   }
+  },
+  {
+   "id": "avatar-diablo",
+   "name": "Nephalem",
+   "aliases": [
+    "Diablo"
+   ],
+   "attributes": {
+    "species": "Nephalem",
+    "gender": "Au choix",
+    "year": 2012,
+    "franchise": "Diablo"
+   }
+  },
+  {
+   "id": "avatar-stardew-valley",
+   "name": "Fermier",
+   "aliases": [
+    "Farmer",
+    "Fermière",
+    "Stardew Valley"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Fermier"
+    ],
+    "year": 2016,
+    "franchise": "Stardew Valley"
+   }
+  },
+  {
+   "id": "avatar-baldurs-gate",
+   "name": "Tav",
+   "aliases": [
+    "Baldur's Gate"
+   ],
+   "attributes": {
+    "species": null,
+    "gender": "Au choix",
+    "year": 2023,
+    "franchise": "Baldur's Gate"
+   }
+  },
+  {
+   "id": "avatar-hogwarts-legacy",
+   "name": "Élève de cinquième année",
+   "aliases": [
+    "Hogwarts Legacy",
+    "Élève"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Élève"
+    ],
+    "year": 2023,
+    "franchise": "Hogwarts Legacy"
+   }
+  },
+  {
+   "id": "avatar-divinity",
+   "name": "Godwoken",
+   "aliases": [
+    "Élu des dieux",
+    "Divinity"
+   ],
+   "attributes": {
+    "species": null,
+    "gender": "Au choix",
+    "year": 2017,
+    "franchise": "Divinity: Original Sin"
+   }
+  },
+  {
+   "id": "avatar-pillars-of-eternity",
+   "name": "Veilleur",
+   "aliases": [
+    "Watcher",
+    "Pillars of Eternity"
+   ],
+   "attributes": {
+    "species": null,
+    "gender": "Au choix",
+    "year": 2015,
+    "franchise": "Pillars of Eternity"
+   }
+  },
+  {
+   "id": "avatar-xcom",
+   "name": "Commandant",
+   "aliases": [
+    "Commander",
+    "XCOM"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Soldat"
+    ],
+    "year": 2012,
+    "franchise": "XCOM"
+   }
+  },
+  {
+   "id": "avatar-portia",
+   "name": "Bâtisseur",
+   "aliases": [
+    "Builder",
+    "Bâtisseuse",
+    "My Time at Portia"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Ouvrier"
+    ],
+    "year": 2019,
+    "franchise": "My Time at Portia / Sandrock"
+   }
+  },
+  {
+   "id": "avatar-outer-wilds",
+   "name": "Hatchling",
+   "aliases": [
+    "Novice",
+    "Outer Wilds"
+   ],
+   "attributes": {
+    "species": "Âtrien",
+    "gender": "Au choix",
+    "occupation": [
+     "Astronaute"
+    ],
+    "year": 2019,
+    "franchise": "Outer Wilds"
+   }
+  },
+  {
+   "id": "avatar-wasteland",
+   "name": "Ranger du désert",
+   "aliases": [
+    "Desert Ranger",
+    "Ranger",
+    "Wasteland"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Soldat"
+    ],
+    "year": 1988,
+    "franchise": "Wasteland"
+   }
+  },
+  {
+   "id": "avatar-spore",
+   "name": "Créature",
+   "aliases": [
+    "Spore"
+   ],
+   "attributes": {
+    "species": null,
+    "gender": "Au choix",
+    "year": 2008,
+    "franchise": "Spore"
+   }
+  },
+  {
+   "id": "avatar-ark",
+   "name": "Survivant",
+   "aliases": [
+    "Survivor",
+    "ARK"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Survivant"
+    ],
+    "year": 2017,
+    "franchise": "ARK"
+   }
+  },
+  {
+   "id": "avatar-palworld",
+   "name": "Héros de Palworld",
+   "aliases": [
+    "Palworld"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "year": 2024,
+    "franchise": "Palworld"
+   }
+  },
+  {
+   "id": "avatar-splatoon",
+   "name": "Agent 3",
+   "aliases": [
+    "Splatoon"
+   ],
+   "attributes": {
+    "species": "Inkling",
+    "gender": "Au choix",
+    "occupation": [
+     "Soldat"
+    ],
+    "year": 2015,
+    "franchise": "Splatoon"
+   }
+  },
+  {
+   "id": "avatar-we-were-here",
+   "name": "Explorateur",
+   "aliases": [
+    "Explorer",
+    "We Were Here"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "year": 2017,
+    "franchise": "We Were Here"
+   }
+  },
+  {
+   "id": "avatar-deep-rock-galactic",
+   "name": "Nain de Deep Rock",
+   "aliases": [
+    "Dwarf",
+    "Nain",
+    "Deep Rock Galactic"
+   ],
+   "attributes": {
+    "species": "Nain",
+    "gender": "Homme",
+    "occupation": [
+     "Ouvrier"
+    ],
+    "year": 2020,
+    "franchise": "Deep Rock Galactic"
+   }
+  },
+  {
+   "id": "avatar-no-mans-sky",
+   "name": "Voyageur",
+   "aliases": [
+    "Traveller",
+    "No Man's Sky"
+   ],
+   "attributes": {
+    "species": "Voyageur",
+    "gender": "Au choix",
+    "occupation": null,
+    "year": 2016,
+    "franchise": "No Man's Sky"
+   }
+  },
+  {
+   "id": "avatar-hunt-showdown",
+   "name": "Chasseur",
+   "aliases": [
+    "Hunter",
+    "Hunt: Showdown",
+    "Hunt"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Chasseur de monstres"
+    ],
+    "year": 2019,
+    "franchise": "Hunt: Showdown"
+   }
+  },
+  {
+   "id": "avatar-satisfactory",
+   "name": "Pionnier",
+   "aliases": [
+    "Pioneer",
+    "Satisfactory"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Ouvrier"
+    ],
+    "year": 2019,
+    "franchise": "Satisfactory"
+   }
+  },
+  {
+   "id": "avatar-rust",
+   "name": "Héros de Rust",
+   "aliases": [
+    "Rust",
+    "Survivant"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Survivant"
+    ],
+    "year": 2018,
+    "franchise": "Rust"
+   }
+  },
+  {
+   "id": "avatar-icarus",
+   "name": "Prospecteur",
+   "aliases": [
+    "Prospector",
+    "Icarus"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Astronaute"
+    ],
+    "year": 2021,
+    "franchise": "Icarus"
+   }
+  },
+  {
+   "id": "avatar-genesis-alpha-one",
+   "name": "Capitaine",
+   "aliases": [
+    "Captain",
+    "Genesis Alpha One"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Astronaute"
+    ],
+    "year": 2019,
+    "franchise": "Genesis Alpha One"
+   }
+  },
+  {
+   "id": "avatar-chants-of-sennaar",
+   "name": "Traveler",
+   "aliases": [
+    "Voyageur",
+    "Chants of Sennaar"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Autre",
+    "year": 2023,
+    "franchise": "Chants of Sennaar"
+   },
+   "_raison": "sexe laissé inconnu par le jeu, exprès (comme Frisk)"
+  },
+  {
+   "id": "avatar-rebel-galaxy",
+   "name": "Héros de Rebel Galaxy",
+   "aliases": [
+    "Rebel Galaxy",
+    "The Player"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Au choix",
+    "occupation": [
+     "Pilote"
+    ],
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "bioshock-jack",
+   "name": "Jack",
+   "aliases": [
+    "Jack Ryan"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2007,
+    "franchise": "BioShock"
+   }
+  },
+  {
+   "id": "bioshock-booker-dewitt",
+   "name": "Booker DeWitt",
+   "aliases": [
+    "Booker",
+    "DeWitt"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "nationality": "États-Unis",
+    "occupation": [
+     "Détective",
+     "Soldat"
+    ],
+    "year": 2013,
+    "franchise": "BioShock"
+   }
+  },
+  {
+   "id": "fnaf-mike-schmidt",
+   "name": "Mike Schmidt",
+   "aliases": [
+    "Mike",
+    "Schmidt"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "occupation": [
+     "Garde"
+    ],
+    "year": 2014,
+    "franchise": "Five Nights at Freddy's"
+   }
+  },
+  {
+   "id": "nier-2b",
+   "name": "2B",
+   "aliases": [
+    "YoRHa No. 2 Type B"
+   ],
+   "attributes": {
+    "species": "Androïde",
+    "gender": "Femme",
+    "occupation": [
+     "Soldat"
+    ],
+    "hair": [
+     "Blancs"
+    ],
+    "year": 2017,
+    "franchise": "Nier"
+   }
+  },
+  {
+   "id": "nier-9s",
+   "name": "9S",
+   "aliases": [
+    "YoRHa No. 9 Type S"
+   ],
+   "attributes": {
+    "species": "Androïde",
+    "gender": "Homme",
+    "occupation": [
+     "Soldat"
+    ],
+    "hair": [
+     "Blancs"
+    ],
+    "year": 2017,
+    "franchise": "Nier"
+   }
+  },
+  {
+   "id": "nier-a2",
+   "name": "A2",
+   "aliases": [
+    "YoRHa Type A No. 2"
+   ],
+   "attributes": {
+    "species": "Androïde",
+    "gender": "Femme",
+    "occupation": [
+     "Soldat"
+    ],
+    "hair": [
+     "Blancs"
+    ],
+    "year": 2017,
+    "franchise": "Nier"
+   }
+  },
+  {
+   "id": "subnautica-ryley-robinson",
+   "name": "Ryley Robinson",
+   "aliases": [
+    "Ryley",
+    "Robinson"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "occupation": [
+     "Mécanicien"
+    ],
+    "hair": [
+     "Bruns"
+    ],
+    "year": 2018,
+    "franchise": "Subnautica"
+   }
+  },
+  {
+   "id": "subnautica-robin-goodall",
+   "name": "Robin Goodall",
+   "aliases": [
+    "Robin",
+    "Goodall"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "occupation": [
+     "Scientifique"
+    ],
+    "year": 2021,
+    "franchise": "Subnautica"
+   }
+  },
+  {
+   "id": "rebel-galaxy-juno-markev",
+   "name": "Juno Markev",
+   "aliases": [
+    "Juno"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "occupation": [
+     "Pilote",
+     "Criminel"
+    ],
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-orzu",
+   "name": "Orzu",
+   "attributes": {
+    "species": "Korian",
+    "gender": "Homme",
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-trell",
+   "name": "Trell",
+   "attributes": {
+    "species": "IA",
+    "gender": "Femme",
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-zenya-kerr",
+   "name": "Zenya Kerr",
+   "aliases": [
+    "Zenya",
+    "Kerr"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "occupation": [
+     "Soldat"
+    ],
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-cofax",
+   "name": "Cofax",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "occupation": [
+     "Mercenaire"
+    ],
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-juster",
+   "name": "Juster",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "occupation": [
+     "Pirate"
+    ],
+    "year": 2015,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "rebel-galaxy-durgan",
+   "name": "Durgan",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "occupation": [
+     "Pirate"
+    ],
+    "year": 2019,
+    "franchise": "Rebel Galaxy"
+   }
+  },
+  {
+   "id": "aoe3-morgan-black",
+   "name": "Morgan Black",
+   "aliases": [
+    "Morgan"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Chevalier"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-amelia-black",
+   "name": "Amelia Black",
+   "aliases": [
+    "Amelia"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "year": 2005,
+    "occupation": [
+     "Dirigeant"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-john-black",
+   "name": "John Black",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Mercenaire"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-stuart-black",
+   "name": "Stuart Black",
+   "aliases": [
+    "Stuart"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Mercenaire"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-nathaniel-black",
+   "name": "Nathaniel Black",
+   "aliases": [
+    "Nathaniel"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2006,
+    "occupation": [
+     "Guerrier"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-chayton-black",
+   "name": "Chayton Black",
+   "aliases": [
+    "Chayton"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2006,
+    "occupation": [
+     "Soldat"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-nonahkee",
+   "name": "Nonahkee",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "year": 2005,
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-kanien",
+   "name": "Ká:nien",
+   "aliases": [
+    "Kanyenke",
+    "Kanien"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Guerrier"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-alain-magnan",
+   "name": "Alain Magnan",
+   "aliases": [
+    "Alain",
+    "Magnan"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Chevalier"
+    ],
+    "nationality": "France",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-sahin",
+   "name": "Sahin le Faucon",
+   "aliases": [
+    "Sahin The Falcon",
+    "Sahin"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Espion"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-elisabet-ramsey",
+   "name": "Elisabet Ramsey",
+   "aliases": [
+    "Lizzie",
+    "Ramsey"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "year": 2005,
+    "occupation": [
+     "Pirate"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-delgado",
+   "name": "Delgado",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Soldat"
+    ],
+    "nationality": "Espagne",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-chilche",
+   "name": "Chilche",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Guerrier"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-warwick",
+   "name": "Warwick",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Soldat"
+    ],
+    "nationality": "Royaume-Uni",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-pierre-beaumont",
+   "name": "Pierre Beaumont",
+   "aliases": [
+    "Beaumont"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "nationality": "France",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-major-cooper",
+   "name": "Major Cooper",
+   "aliases": [
+    "Cooper"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2005,
+    "occupation": [
+     "Soldat"
+    ],
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-sven-kuechler",
+   "name": "Sven Kuechler",
+   "aliases": [
+    "Sven",
+    "Kuechler"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2006,
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-kichiro",
+   "name": "Général Kichiro",
+   "aliases": [
+    "Kichiro",
+    "General Kichiro"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2007,
+    "occupation": [
+     "Samouraï"
+    ],
+    "nationality": "Japon",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-lao-chen",
+   "name": "Lao Chen",
+   "aliases": [
+    "Chen"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2007,
+    "nationality": "Chine",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "aoe3-nanib-sahir",
+   "name": "Nanib Sahir",
+   "aliases": [
+    "Nanib",
+    "Sahir"
+   ],
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "year": 2007,
+    "nationality": "Inde",
+    "franchise": "Age of Empires III"
+   }
+  },
+  {
+   "id": "tfd-ajax",
+   "name": "Ajax",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-viessa",
+   "name": "Viessa",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-lepic",
+   "name": "Lepic",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-freyna",
+   "name": "Freyna",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-sharen",
+   "name": "Sharen",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-gley",
+   "name": "Gley",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-valby",
+   "name": "Valby",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "tfd-blair",
+   "name": "Blair",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Homme",
+    "franchise": "The First Descendant"
+   }
+  },
+  {
+   "id": "portal-caroline",
+   "name": "Caroline",
+   "attributes": {
+    "species": "Humain",
+    "gender": "Femme",
+    "occupation": [
+     "Employé"
+    ],
+    "year": 2011,
+    "franchise": "Portal"
+   }
+  },
+  {
+   "id": "satisfactory-ada",
+   "name": "ADA",
+   "aliases": [
+    "Artificial Directory and Assistant"
+   ],
+   "attributes": {
+    "species": "IA",
+    "gender": "Aucun",
+    "year": 2019,
+    "franchise": "Satisfactory"
+   }
+  },
+  {
+   "id": "satisfactory-lizard-doggo",
+   "name": "Lizard Doggo",
+   "aliases": [
+    "Doggo"
+   ],
+   "attributes": {
+    "species": "Lizard Doggo",
+    "gender": "Aucun",
+    "year": 2019,
+    "franchise": "Satisfactory"
+   }
+  },
+  {
+   "id": "portal-turret",
+   "name": "Tourelle",
+   "aliases": [
+    "Turret",
+    "Tourelle Aperture"
+   ],
+   "attributes": {
+    "gender": "Aucun",
+    "species": "Robot",
+    "nationality": null,
+    "occupation": null,
+    "hair": null,
+    "franchise": "Portal",
+    "year": 2007
+   }
+  }
+ ],
+ "wikis": {
+  "Firewatch": {
+   "_raison": "Henry : sa page ne donne pas le sexe",
+   "preferred": [
+    "Henry",
+    "Delilah"
+   ]
+  },
+  "Palworld": {
+   "_raison": "les 9 personnages nommés, le reste : des PNJ génériques",
+   "preferred": [
+    "Zoe Rayne",
+    "Marcus Dryden",
+    "Lily Everhart",
+    "Victor Ashford",
+    "Axel Travers",
+    "Saya Kurosaki",
+    "Bjorn Seligsson",
+    "Dr. Brawn",
+    "Messenger of Love"
+   ],
+   "limit": 9
+  },
+  "Yo-kai Watch": {
+   "_raison": "les pages des Yo-kai sont longues à cause des stats (Whisper n'arrivait que 46e)",
+   "preferred": [
+    "Nathan Adams",
+    "Katie Forester",
+    "Whisper",
+    "Komasan",
+    "Komajiro",
+    "Usapyon",
+    "Hailey Anne Thomas",
+    "Lord Enma",
+    "Summer Adams",
+    "Shogunyan",
+    "Kyubi"
+   ]
+  },
+  "The Stanley Parable": {
+   "_raison": "après 5 : des gags et des objets",
+   "limit": 5
+  },
+  "The Sinking City": {
+   "_raison": "« Characters » ne contient que des modèles",
+   "category": "The Sinking City Characters"
+  },
+  "The Talos Principle": {
+   "_raison": "MLA (une IA) et Arkady n'ont pas de sexe dans le wiki",
+   "preferred": [
+    "Elohim",
+    "MLA",
+    "Alexandra Drennan",
+    "Dr. Arkady Chernyshevsky",
+    "Samsara v72.39.0003"
+   ]
+  },
+  "Rebel Galaxy": {
+   "_raison": "tous les personnages de la page Characters : ajouts à la main + le wiki",
+   "limit": 20
+  },
+  "The First Descendant": {
+   "_raison": "moitié Descendants (jouables), moitié PNJ",
+   "limit": 20
+  },
+  "Saturnalia": {
+   "_raison": "la Créature hors de la catégorie ; les PNJ (fiches d'indices) n'ont pas de sexe dans le wiki",
+   "pages": [
+    "The Creature"
+   ],
+   "preferred": [
+    "Gabriele Mirai",
+    "Umberto Aulas",
+    "Damiano Orsi",
+    "Bruno Bissani",
+    "Eliana Murgia",
+    "Mara Mirai",
+    "Leone",
+    "Rupert Crowley"
+   ],
+   "limit": 15
+  },
+  "Chernobylite": {
+   "_raison": "la catégorie ne range que 2 personnages",
+   "pages": [
+    "Sashko",
+    "Tarakan",
+    "Semonov",
+    "Black Stalker",
+    "Anton",
+    "Locksmith"
+   ]
+  },
+  "Breathedge": {
+   "_raison": "pages dans l'espace de noms BE2: (le 2e jeu, plus complet)",
+   "pages": [
+    "BE2:Man",
+    "BE2:Chicken",
+    "BE1:Grandfather",
+    "BE2:Babe",
+    "BE2:Foreman",
+    "BE2:Gromov",
+    "BE2:Leader",
+    "BE2:Lelik",
+    "BE2:Bum",
+    "BE2:Chack"
+   ]
+  },
+  "No Man's Sky": {
+   "_raison": "pas de catégorie des personnages",
+   "pages": [
+    "Artemis",
+    "Priest Entity Nada",
+    "Specialist Polo",
+    "-null-",
+    "Apollo",
+    "The Atlas"
+   ]
+  },
+  "Rust": {
+   "_raison": "l'ennemi emblématique",
+   "pages": [
+    "Scientist"
+   ]
+  },
+  "Bloons Tower Defense": {
+   "_raison": "les héros de BTD6 (page Heroes du wiki)",
+   "pages": [
+    "Obyn Greenfoot (BTD6)",
+    "Captain Churchill (BTD6)",
+    "Benjamin (BTD6)",
+    "Ezili (BTD6)",
+    "Pat Fusty (BTD6)",
+    "Adora (BTD6)",
+    "Admiral Brickell (BTD6)",
+    "Etienne (BTD6)",
+    "Sauda (BTD6)",
+    "Psi (BTD6)",
+    "Geraldo (BTD6)",
+    "Corvus (BTD6)",
+    "Rosalia (BTD6)",
+    "Silas (BTD6)"
+   ],
+   "limit": 20
+  },
+  "Nancy Drew": {
+   "_raison": "les personnages d'au moins 2 jeux (appears_in + called_in de l'infobox), hors jeux dans le jeu et Hardy Boys (page commune)",
+   "pages": [
+    "Carson Drew (video game character)",
+    "Samantha Quick",
+    "Professor Hotchkiss",
+    "Prudence Rutherford",
+    "Bridget Shaw",
+    "Savannah Woodham",
+    "Dwayne Powers",
+    "Daryl Gray",
+    "Lizzie Applegate",
+    "Charleena Purcell",
+    "Jamila El-Dine",
+    "Jake Rogers",
+    "Red Knott",
+    "Tino Balducci",
+    "Mitch Dillon"
+   ],
+   "limit": 19
+  },
+  "Control": {
+   "_raison": "Wikidata trop maigre",
+   "category": "Control characters",
+   "limit": 12,
+   "preferred": [
+    "Helen Marshall",
+    "Emily Pope",
+    "Casper Darling",
+    "Simon Arish",
+    "Frederick Langston",
+    "Kiran Estevez",
+    "Alan Wake (character)"
+   ]
+  },
+  "Nier": {
+   "_raison": "Wikidata trop maigre ; personnages principaux de Replicant et Automata",
+   "limit": 18,
+   "preferred": [
+    "Yonah",
+    "Devola",
+    "Popola",
+    "Grimoire Weiss",
+    "Pascal",
+    "Adam",
+    "Eve",
+    "Pod 042",
+    "Commander White",
+    "Jackass",
+    "Anemone"
+   ]
+  },
+  "Hades": {
+   "_raison": "Wikidata trop maigre ; les dieux et habitants de la Maison",
+   "limit": 20,
+   "preferred": [
+    "Nyx",
+    "Achilles",
+    "Skelly",
+    "Hypnos",
+    "Cerberus",
+    "Persephone",
+    "Hades",
+    "Hermes",
+    "Charon",
+    "Zeus",
+    "Poseidon",
+    "Orpheus",
+    "Eurydice",
+    "Sisyphus",
+    "Patroclus",
+    "Melinoë"
+   ]
+  },
+  "Kid Icarus": {
+   "_raison": "Wikidata trop maigre",
+   "limit": 12
+  },
+  "Gears of War": {
+   "_raison": "Wikidata trop maigre ; Dom absent",
+   "limit": 16,
+   "preferred": [
+    "Dominic Santiago",
+    "Anya Stroud",
+    "Victor Hoffman",
+    "Myrrah",
+    "RAAM",
+    "Adam Jonathon Fenix",
+    "Delmont Walker",
+    "Clayton Carmine",
+    "Tai Kaliso",
+    "Bernadette Mataki",
+    "Skorge"
+   ]
+  },
+  "Dark Souls": {
+   "_raison": "Wikidata trop maigre ; personnages et boss du 1er jeu",
+   "limit": 17,
+   "preferred": [
+    "Gwyn, Lord of Cinder",
+    "Knight Artorias",
+    "Siegmeyer of Catarina",
+    "Andre of Astora",
+    "Anastacia of Astora",
+    "Kingseeker Frampt",
+    "Executioner Smough",
+    "Gwynevere, Princess of Sunlight",
+    "Crossbreed Priscilla",
+    "Gravelord Nito",
+    "Witch of Izalith",
+    "Dark Sun Gwyndolin"
+   ]
+  },
+  "Devil May Cry": {
+   "_raison": "Wikidata trop maigre",
+   "limit": 17,
+   "preferred": [
+    "Nico",
+    "Sparda",
+    "Kyrie",
+    "Lucia",
+    "Credo",
+    "J.D. Morrison",
+    "Eva",
+    "Arkham",
+    "V",
+    "Urizen",
+    "Agnus"
+   ]
+  }
+ }
+}

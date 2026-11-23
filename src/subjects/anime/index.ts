@@ -29,5 +29,6 @@ export const anime: Subject = {
   name: 'Animedle',
   description: 'Trouve le personnage d\'anime mystère',
   attributes: animedleAttributes,
+  universeKey: 'anime',
   entries: loadEntries('anime.json', { subjectId: 'animedle', attributes: animedleAttributes }),
 }
