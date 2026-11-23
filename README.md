@@ -125,6 +125,8 @@ Les personnages de jeu vidéo : sexe, espèce, nationalité, occupation, cheveux
 - **Cheveux** : l'infobox, sinon le texte de la page entière (« long blonde hair », la section Appearance d'abord), à relire dans le récap. « N/A » pour un robot, un animal ou une créature sans cheveux (`hairOrNone`), « Chauve » pour un humain vraiment chauve.
 - **Développeur, genres, année** : ceux du jeu où le personnage apparaît en premier, cherché dans l'infobox, le modèle `{{Games}}`, puis l'introduction de la page ; sinon le 1er jeu de la franchise (listé dans le récap). Piège connu : un reboot au même titre (God of War, Tomb Raider), corrigé à la main. `FRANCHISE_DEVELOPERS` force le studio (Undertale → Toby Fox), `FRANCHISE_GENRES` ajoute un genre à toute la franchise (Immersive sim). Pas de thèmes dans les genres. L'année « Futur » (`FUTURE_YEAR`) est pour un jeu pas encore sorti (Meryl, de Mother 4, un jeu de fans).
 
+**Reste à faire** : Sundered n'a aucun personnage (son wiki est presque vide) : une fois le wiki rempli, relancer le script avec les bons réglages dans `wikis`.
+
 **Pistes abandonnées** : les Fandom FR (presque vides), le wiki officiel de LoL (que du gameplay). Gamicus (wiki de tous les jeux) a servi en dernier recours pour The World Next Door.
 
 ## Installation

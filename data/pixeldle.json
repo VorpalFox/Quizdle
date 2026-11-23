@@ -19747,11 +19747,17 @@
   "name": "Houndeye",
   "aliases": [],
   "attributes": {
-   "gender": null,
-   "species": null,
-   "nationality": null,
+   "gender": "Aucun",
+   "species": [
+    "Extraterrestre"
+   ],
+   "nationality": [
+    "Xen"
+   ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Half-Life",
    "developer": "Valve",
    "genres": [

@@ -1,4 +1,4 @@
-// Le wiki de chaque franchise du Pixeldle, pour compléter les indices que Wikidata n'a pas (voir TODO-Pixeldle.md).
+// Le wiki de chaque franchise du Pixeldle, pour compléter les indices que Wikidata n'a pas (voir la section « Données Pixeldle » du README).
 // Trois sortes de wikis, tous avec l'API MediaWiki :
 // - Fandom : le P4073 de Wikidata sur la franchise ou ses jeux, sinon le wiki le plus cité par les liens Fandom (P6262)
 //   de ses personnages, sinon deviné d'après le titre. Et sa version française si elle existe.

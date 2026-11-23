@@ -636,7 +636,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'acrobat': 'Artiste', 'color commentator': 'Journaliste', 'reality tv host': 'Acteur', 'prepper': 'Survivant',
   'occultist': 'Magicien', 'polymath': 'Érudit', 'tech support for lara croft': 'Informaticien',
   'tactical adjutant': 'Soldat', 'climatologist': 'Scientifique', 'debt collector': 'Criminel', 'investment banker': 'Homme d\'affaires',
-  'jester': 'Artiste', 'mad gear goon': 'Criminel', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Ouvrier',
+  'jester': 'Artiste', 'pokémon watcher': 'Dresseur', 'mad gear goon': 'Criminel', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Ouvrier',
   'albion operations': null, 'last of the xel\'naga': null, 'various others': null,
   // Pas des occupations : rôles dans l'histoire, liens de famille, dieux (l'espèce le dit), phrases, valeurs vides
   'antagonist': null, 'main antagonist': null, 'overarching antagonist': null, 'secondary antagonist': null,
