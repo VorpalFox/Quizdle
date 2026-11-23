@@ -913,59 +913,91 @@
    ]
   },
   "wiki-bloons-tower-defense-obyn-greenfoot": {
+   "_nom": "Obyn Greenfoot",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Magicien"
    ]
   },
   "wiki-bloons-tower-defense-captain-churchill": {
+   "_nom": "Captain Churchill",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Soldat"
    ]
   },
   "wiki-bloons-tower-defense-benjamin": {
+   "_nom": "Benjamin",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Informaticien"
    ]
   },
   "wiki-bloons-tower-defense-ezili": {
+   "_nom": "Ezili",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Magicien"
    ]
   },
   "wiki-bloons-tower-defense-pat-fusty": {
+   "_nom": "Pat Fusty",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Combattant"
    ]
   },
   "wiki-bloons-tower-defense-adora": {
+   "_nom": "Adora",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Religieux"
    ]
   },
   "wiki-bloons-tower-defense-admiral-brickell": {
+   "_nom": "Admiral Brickell",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Soldat"
    ]
   },
   "wiki-bloons-tower-defense-etienne": {
+   "_nom": "Etienne",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Pilote"
    ]
   },
   "wiki-bloons-tower-defense-sauda": {
@@ -983,27 +1015,42 @@
     "Animal"
    ],
    "gender": "Autre",
-   "year": 2018
+   "year": 2018,
+   "occupation": [
+    "Magicien"
+   ]
   },
   "wiki-bloons-tower-defense-corvus": {
+   "_nom": "Corvus",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Magicien"
    ]
   },
   "wiki-bloons-tower-defense-rosalia": {
+   "_nom": "Rosalia",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Mécanicien"
    ]
   },
   "wiki-bloons-tower-defense-silas": {
+   "_nom": "Silas",
    "_raison": "héros singe",
    "species": [
     "Singe",
     "Animal"
+   ],
+   "occupation": [
+    "Magicien"
    ]
   },
   "wiki-nancy-drew-carson-drew": {
@@ -3332,6 +3379,251 @@
    "_nom": "Victor Hoffman",
    "occupation": [
     "Soldat"
+   ]
+  },
+  "Q66024032": {
+   "_nom": "Foxy",
+   "occupation": [
+    "Pirate",
+    "Artiste"
+   ]
+  },
+  "Q110748756": {
+   "_nom": "Freddy Fazbear",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116136856": {
+   "_nom": "Bonnie",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116142299": {
+   "_nom": "Golden Freddy",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116050790": {
+   "_nom": "Glamrock Freddy",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116050878": {
+   "_nom": "Glamrock Chica",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116050888": {
+   "_nom": "Montgomery Gator",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116050863": {
+   "_nom": "Roxanne Wolf",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q116136783": {
+   "_nom": "Mangle",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q116051003": {
+   "_nom": "Circus Baby",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q116051160": {
+   "_nom": "Ballora",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q116051169": {
+   "_nom": "Funtime Freddy",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q116052189": {
+   "_nom": "Funtime Foxy",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q116051401": {
+   "_nom": "Daycare Attendant",
+   "occupation": [
+    "Domestique"
+   ]
+  },
+  "Q134471684": {
+   "_nom": "Quincy",
+   "occupation": [
+    "Archer"
+   ]
+  },
+  "Q134476688": {
+   "_nom": "Striker Jones",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "wiki-bloons-tower-defense-geraldo": {
+   "_nom": "Geraldo",
+   "occupation": [
+    "Commerçant"
+   ]
+  },
+  "Q123510176": {
+   "_nom": "Kafka",
+   "occupation": [
+    "Criminel"
+   ]
+  },
+  "Q123396142": {
+   "_nom": "Louve d'argent",
+   "occupation": [
+    "Informaticien",
+    "Criminel"
+   ]
+  },
+  "Q123516191": {
+   "_nom": "Blade",
+   "occupation": [
+    "Criminel",
+    "Épéiste"
+   ]
+  },
+  "Q129264006": {
+   "_nom": "Aventurine",
+   "occupation": [
+    "Homme d'affaires"
+   ]
+  },
+  "Q130122068": {
+   "_nom": "Luciole",
+   "occupation": [
+    "Soldat",
+    "Criminel"
+   ]
+  },
+  "Q131838591": {
+   "_nom": "Robin",
+   "occupation": [
+    "Musicien"
+   ]
+  },
+  "Q136526548": {
+   "_nom": "Herta",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "Q136526542": {
+   "_nom": "Ruan Mei",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "Q123385199": {
+   "_nom": "Dan Heng",
+   "occupation": [
+    "Garde"
+   ]
+  },
+  "Q131457038": {
+   "_nom": "Sunday",
+   "occupation": [
+    "Religieux"
+   ]
+  },
+  "Q136526506": {
+   "_nom": "Bronya",
+   "occupation": [
+    "Souverain"
+   ]
+  },
+  "Q3174269": {
+   "_nom": "Mega Man",
+   "occupation": [
+    "Justicier"
+   ]
+  },
+  "Q88778361": {
+   "_nom": "Cut Man",
+   "occupation": [
+    "Ouvrier"
+   ]
+  },
+  "Q88777944": {
+   "_nom": "Ice Man",
+   "occupation": [
+    "Aventurier"
+   ]
+  },
+  "Q88778228": {
+   "_nom": "Elec Man",
+   "occupation": [
+    "Ouvrier"
+   ]
+  },
+  "Q88777894": {
+   "_nom": "Bubble Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88777907": {
+   "_nom": "Quick Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88777933": {
+   "_nom": "Wood Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88777965": {
+   "_nom": "Air Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88778108": {
+   "_nom": "Heat Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88778441": {
+   "_nom": "Metal Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q88778505": {
+   "_nom": "Crash Man",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q119167509": {
+   "_nom": "Kyle Crane",
+   "occupation": [
+    "Espion",
+    "Survivant"
    ]
   }
  },
@@ -5665,6 +5957,9 @@
   "Dying Light": {
    "species": [
     "Humain"
+   ],
+   "occupation": [
+    "Survivant"
    ]
   },
   "Sons Of The Forest": {
@@ -5768,6 +6063,9 @@
   "Rebel Galaxy": {
    "species": [
     "Humain"
+   ],
+   "occupation": [
+    "Pilote"
    ]
   },
   "Lost Records: Bloom & Rage": {
@@ -5792,6 +6090,9 @@
   "Soulcalibur": {
    "species": [
     "Humain"
+   ],
+   "occupation": [
+    "Combattant"
    ]
   },
   "Call of Duty": {
@@ -5927,6 +6228,9 @@
   "Valorant": {
    "species": [
     "Humain"
+   ],
+   "occupation": [
+    "Espion"
    ]
   },
   "Dragon Quest": {
@@ -6032,6 +6336,11 @@
   "Doom": {
    "nationality": [
     "Hell"
+   ]
+  },
+  "Outer Wilds": {
+   "occupation": [
+    "Scientifique"
    ]
   }
  }

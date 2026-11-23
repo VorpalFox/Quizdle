@@ -21969,7 +21969,9 @@
    "nationality": [
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -21991,7 +21993,9 @@
    "nationality": [
     "South Korea"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22013,7 +22017,9 @@
    "nationality": [
     "Mexico"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22035,7 +22041,9 @@
    "nationality": [
     "Germany"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22057,7 +22065,9 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22079,7 +22089,9 @@
    "nationality": [
     "Philippines"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22101,7 +22113,9 @@
    "nationality": [
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22123,7 +22137,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22143,7 +22159,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22163,7 +22181,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22183,7 +22203,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22205,7 +22227,9 @@
    "nationality": [
     "Russia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22227,7 +22251,9 @@
    "nationality": [
     "Brazil"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22249,7 +22275,9 @@
    "nationality": [
     "Sweden"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22271,7 +22299,9 @@
    "nationality": [
     "Australia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22293,7 +22323,9 @@
    "nationality": [
     "Ghana"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22313,7 +22345,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22335,7 +22369,9 @@
    "nationality": [
     "France"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22355,7 +22391,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -22375,7 +22413,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Valorant",
    "developer": "Riot Games",
@@ -26108,7 +26148,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Conseiller"
+    "Justicier"
    ],
    "hair": [
     "Noirs"
@@ -26300,7 +26340,9 @@
    "nationality": [
     "Troia Base"
    ],
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26326,7 +26368,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26351,7 +26395,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26376,7 +26422,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26401,7 +26449,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Aventurier"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26427,7 +26477,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26452,7 +26504,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26478,7 +26532,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Acteur"
+    "Ouvrier"
    ],
    "hair": [
     "N/A"
@@ -26504,7 +26558,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -26528,7 +26584,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -31628,7 +31686,9 @@
     "London",
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31678,7 +31738,9 @@
     "Venice",
     "Italy"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31699,7 +31761,9 @@
     "Démon"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31779,7 +31843,9 @@
    "nationality": [
     "Philippines"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31827,7 +31893,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31853,7 +31921,9 @@
    "nationality": [
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31875,7 +31945,9 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "SNK",
@@ -31895,7 +31967,9 @@
     "Golem"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -31924,7 +31998,9 @@
     "Bizen",
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31950,7 +32026,9 @@
    "nationality": [
     "Korea"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -31976,7 +32054,9 @@
     "Rouen",
     "France"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -32000,7 +32080,9 @@
    "nationality": [
     "France"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -32026,7 +32108,9 @@
     "Beijing",
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -32048,7 +32132,9 @@
    "nationality": [
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -32071,7 +32157,9 @@
     "Ryukyu",
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -32656,7 +32744,9 @@
    "nationality": [
     "Pteruges-V"
    ],
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": [
     "Violets"
    ],
@@ -32721,7 +32811,10 @@
     "Starfroster",
     "Punklorde"
    ],
-   "occupation": null,
+   "occupation": [
+    "Informaticien",
+    "Criminel"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -32752,7 +32845,10 @@
     "Starfroster",
     "The Xianzhou Zhuming"
    ],
-   "occupation": null,
+   "occupation": [
+    "Criminel",
+    "Épéiste"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -32782,7 +32878,9 @@
     "Starfroster",
     "Sigonia-IV"
    ],
-   "occupation": null,
+   "occupation": [
+    "Homme d'affaires"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -32811,7 +32909,10 @@
    "nationality": [
     "Glamoth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat",
+    "Criminel"
+   ],
    "hair": [
     "Gris"
    ],
@@ -32841,7 +32942,9 @@
    "nationality": [
     "Penacony"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -32926,7 +33029,9 @@
    "nationality": [
     "Herta Space Station"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -33018,7 +33123,9 @@
     "Astral Express",
     "Radiant Scarwood Grove of Epiphany"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -33046,7 +33153,9 @@
     "Penacony",
     "Astral Express"
    ],
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -33153,7 +33262,9 @@
    "nationality": [
     "Herta Space Station"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -33181,7 +33292,9 @@
     "Jarilo-VI",
     "Qlipoth Fort"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35599,7 +35712,10 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Pirate",
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35666,7 +35782,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35696,7 +35814,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35784,7 +35904,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35814,7 +35936,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35896,7 +36020,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35925,7 +36051,7 @@
     "Freddy Fazbear's Mega Pizzaplex"
    ],
    "occupation": [
-    "Dirigeant"
+    "Musicien"
    ],
    "hair": [
     "Violets"
@@ -35955,7 +36081,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35983,7 +36111,9 @@
    "nationality": [
     "Freddy Fazbear's Mega Pizzaplex"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -36014,7 +36144,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -36041,7 +36173,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -36071,7 +36205,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -36098,7 +36234,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Domestique"
+   ],
    "hair": [
     "N/A"
    ],
@@ -36127,7 +36265,9 @@
     "Utah",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -41636,7 +41776,10 @@
     "Chicago",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion",
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -41664,7 +41807,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Archer"
+   ],
    "hair": [
     "N/A"
    ],
@@ -41717,7 +41862,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -44200,7 +44347,9 @@
     "Ember Twin",
     "Quantum Moon"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -51312,7 +51461,9 @@
    "nationality": [
     "France"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -51370,7 +51521,9 @@
     "Jaffar's Wheelstation",
     "Fisherman's Village"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns",
     "Gris"
@@ -51398,7 +51551,9 @@
    "nationality": [
     "Turkey"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -51429,7 +51584,9 @@
    "nationality": [
     "Turkey"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -51457,7 +51614,9 @@
     "Ferry Station",
     "Harran University"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -51485,7 +51644,9 @@
    "nationality": [
     "The Tower"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -51514,7 +51675,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -51539,7 +51702,9 @@
    "nationality": [
     "Turkey"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Noirs",
     "Gris"
@@ -51569,7 +51734,9 @@
    "nationality": [
     "The Tower"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -51596,7 +51763,9 @@
    "nationality": [
     "Russia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Gris"
    ],
@@ -51625,7 +51794,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51652,7 +51823,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51677,7 +51850,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Informaticien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51702,7 +51877,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51730,7 +51907,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51755,7 +51934,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51782,7 +51963,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51807,7 +51990,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51859,7 +52044,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51883,7 +52070,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": null,
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
@@ -51906,7 +52095,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51931,7 +52122,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Mécanicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51956,7 +52149,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "N/A"
    ],
@@ -54987,7 +55182,9 @@
    "nationality": [
     "The Interloper"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55008,7 +55205,9 @@
     "Nomai"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55031,7 +55230,9 @@
    "nationality": [
     "Giant's Deep"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55054,7 +55255,9 @@
    "nationality": [
     "Brittle Hollow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55075,7 +55278,9 @@
     "Nomai"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55098,7 +55303,9 @@
    "nationality": [
     "The Interloper"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55121,7 +55328,9 @@
    "nationality": [
     "Ember Twin"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55144,7 +55353,9 @@
    "nationality": [
     "Sun Station"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55167,7 +55378,9 @@
    "nationality": [
     "Brittle Hollow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -55188,7 +55401,9 @@
     "Nomai"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "Outer Wilds",
    "developer": "Mobius Digital",
@@ -61524,7 +61739,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61544,7 +61761,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61564,7 +61783,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61584,7 +61805,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61604,7 +61827,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61628,7 +61853,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61648,7 +61875,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61668,7 +61897,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -61693,7 +61924,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Pirate"
+    "Pilote"
    ],
    "hair": null,
    "franchise": "Rebel Galaxy",
@@ -61714,7 +61945,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": [
     "N/A"
    ],
@@ -61740,7 +61973,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
