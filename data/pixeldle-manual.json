@@ -72,7 +72,8 @@
   "Q139765713",
   "Q136403141",
   "Q17216707",
-  "Q139594797"
+  "Q139594797",
+  "wiki-unreal-raiden"
  ],
  "edit": {
   "Q2265837": {
@@ -1341,6 +1342,7 @@
   "wiki-sons-of-the-forest-virginia": {
    "_nom": "Virginia",
    "species": [
+    "Humain",
     "Mutant"
    ]
   },
@@ -1770,7 +1772,6 @@
   "Q1072320": {
    "_nom": "Crabe de tête",
    "species": [
-    "Crabe de tête",
     "Extraterrestre"
    ],
    "gender": "Aucun"
@@ -2246,6 +2247,63 @@
    "species": [
     "Saurien"
    ]
+  },
+  "Q2492923": {
+   "_nom": "Geralt de Riv",
+   "species": [
+    "Humain",
+    "Mutant"
+   ],
+   "occupation": [
+    "Sorceleur",
+    "Épéiste",
+    "Chasseur de monstres"
+   ]
+  },
+  "Q9254974": {
+   "_nom": "Eskel",
+   "species": [
+    "Humain",
+    "Mutant"
+   ],
+   "occupation": [
+    "Sorceleur",
+    "Chasseur de monstres"
+   ]
+  },
+  "Q9368466": {
+   "_nom": "Vesemir",
+   "species": [
+    "Humain",
+    "Mutant"
+   ],
+   "occupation": [
+    "Sorceleur",
+    "Chasseur de monstres"
+   ]
+  },
+  "Q1063506": {
+   "_nom": "Crash Bandicoot",
+   "species": [
+    "Bandicoot",
+    "Mutant",
+    "Animal"
+   ]
+  },
+  "Q2617674": {
+   "_nom": "Coco Bandicoot",
+   "species": [
+    "Bandicoot",
+    "Mutant",
+    "Animal"
+   ]
+  },
+  "Q1245404": {
+   "_nom": "Raiden",
+   "species": [
+    "Divinité"
+   ],
+   "_raison": "dieu du tonnerre"
   }
  },
  "add": [

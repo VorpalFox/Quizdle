@@ -51,7 +51,7 @@ const SPECIES: Record<string, string | null> = {
   'elfe': 'Elfe', 'high elf': 'Elfe', 'blood elf': 'Elfe', 'elfe de la nuit': 'Elfe', 'drow': 'Elfe', 'avariel': 'Elfe',
   'demi-elfe': 'Demi-elfe', 'half-elf': 'Demi-elfe', 'elfe de maison': 'Elfe de maison', 'orc': 'Orque', 'orsimer': 'Orque',
   'dwarf': 'Nain', 'goblin': 'Gobelin', 'demi-géant': 'Demi-géant', 'dragonborn': 'Drakéide', 'tieffelin': 'Tieffelin',
-  'githyanki': 'Githyanki', 'witcher': 'Sorceleur',
+  'githyanki': 'Githyanki', 'witcher': 'Humain mutant',
   // Les peuples d'une franchise : gardés, en français quand le jeu les traduit
   'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Monstre',
   'darkners': 'Monstre', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
@@ -105,7 +105,7 @@ const SPECIES: Record<string, string | null> = {
   'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
   'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
   'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Tribu de la Lune', 'elder god': 'Divinité',
-  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Crabe de tête',
+  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Extraterrestre',
   'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Gluant', 'leftherian': 'Humain', 'memetic entity': 'Entité',
   'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Être d\'un autre monde',
   'nomaï': 'Nomai',
@@ -120,7 +120,7 @@ const SPECIES_PARTS: Record<string, string[]> = {
   'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
   'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Humain mutant': ['Humain', 'Mutant'],
   'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
-  'Hybride': ['Humain', 'Extraterrestre'], 'Crabe de tête': ['Crabe de tête', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
+  'Hybride': ['Humain', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
 }
 
 // Les animaux gardent leur espèce, plus « Animal » : un renard et un singe se rejoignent

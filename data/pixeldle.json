@@ -3275,7 +3275,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Divinité"
    ],
    "nationality": [
     "Heavens",
@@ -9193,7 +9193,9 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Mutant"
+    "Bandicoot",
+    "Mutant",
+    "Animal"
    ],
    "nationality": null,
    "occupation": null,
@@ -9246,7 +9248,9 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Mutant"
+    "Bandicoot",
+    "Mutant",
+    "Animal"
    ],
    "nationality": null,
    "occupation": null,
@@ -15497,10 +15501,12 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Sorceleur"
+    "Humain",
+    "Mutant"
    ],
    "nationality": null,
    "occupation": [
+    "Sorceleur",
     "Épéiste",
     "Chasseur de monstres"
    ],
@@ -15804,10 +15810,12 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Humain",
     "Mutant"
    ],
    "nationality": null,
    "occupation": [
+    "Sorceleur",
     "Chasseur de monstres"
    ],
    "hair": [
@@ -15883,10 +15891,12 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Humain",
     "Mutant"
    ],
    "nationality": null,
    "occupation": [
+    "Sorceleur",
     "Chasseur de monstres"
    ],
    "hair": [
@@ -18522,7 +18532,6 @@
   "attributes": {
    "gender": "Aucun",
    "species": [
-    "Crabe de tête",
     "Extraterrestre"
    ],
    "nationality": null,
@@ -18928,7 +18937,6 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Crabe de tête",
     "Extraterrestre"
    ],
    "nationality": [
@@ -45549,8 +45557,7 @@
   "id": "wiki-nier-commander-white",
   "name": "Commander White",
   "aliases": [
-   "White Commander",
-   "Commander"
+   "White Commander"
   ],
   "attributes": {
    "gender": "Femme",
@@ -49576,6 +49583,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Humain",
     "Mutant"
    ],
    "nationality": null,
@@ -51996,26 +52004,6 @@
   }
  },
  {
-  "id": "wiki-unreal-raiden",
-  "name": "Raiden",
-  "aliases": [],
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Unreal",
-   "developer": "Epic Games",
-   "genres": [
-    "FPS"
-   ],
-   "year": 2005
-  }
- },
- {
   "id": "wiki-unreal-gorge",
   "name": "Gorge",
   "aliases": [],
@@ -52070,6 +52058,32 @@
   "aliases": [],
   "attributes": {
    "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Unreal",
+   "developer": "Legend Entertainment",
+   "genres": [
+    "FPS"
+   ],
+   "year": 2003
+  }
+ },
+ {
+  "id": "wiki-unreal-sector-commander-hawkins",
+  "name": "Sector Commander Hawkins",
+  "aliases": [
+   "Hawkins Commander Sector",
+   "Sector",
+   "Hawkins"
+  ],
+  "attributes": {
+   "gender": "Homme",
    "species": [
     "Humain"
    ],
