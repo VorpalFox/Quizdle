@@ -35,10 +35,12 @@ const FIELDS = {
   birth: ['born', 'birth'],
   // Où on croise le personnage : en dernier recours, faute de mieux (« Diamond City », « Snowdin »)
   location: ['location', 'located in', 'world'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
+  occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
+  // Le grade ou la classe, faute d'occupation
+  rank: ['rank', 'class', 'position'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank'>
 const MAX_LOCATIONS = 2
 // Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
 const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
@@ -315,6 +317,11 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     if (parsed.length > 0)
       result.occupation = [...new Set(parsed)].slice(0, 3)
   }
+  // Sans champ occupation : le grade ou la classe (« Commander », « Mage »), seulement ce qu'on sait traduire
+  const rank = occupation ? null : first(fields, FIELDS.rank)
+  const ranks = rank ? parseOccupations(rank) : []
+  if (ranks.length > 0)
+    result.occupation = [...new Set(ranks)].slice(0, 2)
   const hair = first(fields, FIELDS.hair)
   if (hair) {
     const parsed = wikiHair(hair)

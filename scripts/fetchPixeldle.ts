@@ -18,7 +18,7 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, expandSpecies, hairOrNone, mergeOccupations, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedGame, fullPages, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, fullPages, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -555,7 +555,27 @@ for (const [api, group] of byApi) {
 console.log()
 const withTextHair = (entry: Entry): Entry => textHairs.has(entry.id) ? { ...entry, attributes: { ...entry.attributes, hair: textHairs.get(entry.id)! } } : entry
 
-const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults).map(withTextHair), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
+// L'occupation que l'infobox ne donne pas : tirée de l'introduction de la page (« X is a Vietnam veteran »), à relire.
+// Pas celles corrigées à la main.
+const MAX_INTRO_OCCUPATIONS = 2
+const introsById = new Map([
+  ...[...enriched.pageTexts].map(([id, text]) => [id, introText(text)] as const),
+  ...fromWikis.flatMap(({ franchise, chosen }) => chosen.map(({ name, games }) => [wikiId(franchise, name), games.intro?.[0] ?? ''] as const)),
+])
+const occupationExcerpts: string[] = []
+const withIntroOccupation = (entry: Entry): Entry => {
+  const empty = !(entry.attributes.occupation as string[] | null)?.length
+  if (!empty || 'occupation' in (manual.edit[entry.id] ?? {}))
+    return entry
+  const roles = introRoles(introsById.get(entry.id) ?? '')
+  const occupation = [...new Set(roles.map(translateOccupation).filter((name): name is string => Boolean(name)))].slice(0, MAX_INTRO_OCCUPATIONS)
+  if (occupation.length === 0)
+    return entry
+  occupationExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${occupation.join(', ')} ← « ${roles.join(' | ')} »`)
+  return { ...entry, attributes: { ...entry.attributes, occupation } }
+}
+
+const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults).map(withTextHair).map(withIntroOccupation), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 const warnings = manualApplied.warnings
 // À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations
 // regroupées, N/A pour les cheveux d'un robot ou d'un animal
@@ -589,6 +609,7 @@ lines.push(`## Franchises avec moins de 4 personnages (${few.length})`, ...few.m
 lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie « Characters », les plus longues pages avec une infobox qui donne le sexe`, '',
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
+lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année devinée (${yearGuesses.length}) : aucun jeu reconnu dans l'infobox, 1er jeu de la série pris par défaut`, ...yearGuesses.map(text => `- ${text}`), '')
 lines.push(`## Ajoutés depuis les wikis, année tirée de l'introduction (${introYears.length}) : le plus ancien jeu de la série cité, à relire`, ...introYears.map(text => `- ${text}`), '')

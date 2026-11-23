@@ -628,8 +628,12 @@
    ]
   },
   "wiki-devil-may-cry-nico": {
+   "_nom": "Nico",
    "_raison": "sexe faux ou absent du wiki",
-   "gender": "Femme"
+   "gender": "Femme",
+   "occupation": [
+    "Mécanicien"
+   ]
   },
   "wiki-devil-may-cry-lucia": {
    "_nom": "Lucia",
@@ -690,9 +694,13 @@
    ]
   },
   "wiki-hades-hades": {
+   "_nom": "Hades",
    "_raison": "dieu ou divinité",
    "species": [
     "Divinité"
+   ],
+   "occupation": [
+    "Souverain"
    ]
   },
   "wiki-hades-hermes": {
@@ -2293,7 +2301,10 @@
   },
   "Q135975943": {
    "_nom": "Saint Celestine",
-   "gender": "Femme"
+   "gender": "Femme",
+   "occupation": [
+    "Religieux"
+   ]
   },
   "wiki-tomb-raider-winston": {
    "_nom": "Winston",
@@ -2858,6 +2869,9 @@
    "_nom": "EDI",
    "nationality": [
     "Moon"
+   ],
+   "occupation": [
+    "Pilote"
    ]
   },
   "Q141491418": {
@@ -3186,6 +3200,138 @@
    ],
    "hair": [
     "N/A"
+   ]
+  },
+  "Q51340087": {
+   "_nom": "Panda King",
+   "occupation": [
+    "Artiste"
+   ]
+  },
+  "Q69997412": {
+   "_nom": "Carter-A259",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q126488176": {
+   "_nom": "Lamarr",
+   "occupation": null
+  },
+  "Q115802562": {
+   "_nom": "Louis",
+   "occupation": [
+    "Survivant",
+    "Employé"
+   ]
+  },
+  "Q65515926": {
+   "_nom": "Futaba Sakura",
+   "occupation": [
+    "Informaticien",
+    "Étudiant"
+   ]
+  },
+  "Q121355999": {
+   "_nom": "Alph",
+   "occupation": [
+    "Mécanicien"
+   ]
+  },
+  "Q121356011": {
+   "_nom": "Brittany",
+   "occupation": [
+    "Scientifique"
+   ]
+  },
+  "Q121356020": {
+   "_nom": "Charlie",
+   "occupation": [
+    "Pilote"
+   ]
+  },
+  "wiki-gears-of-war-delmont-walker": {
+   "_nom": "Delmont Walker",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "wiki-borderlands-marcus-kincaid": {
+   "_nom": "Marcus Kincaid",
+   "occupation": [
+    "Commerçant"
+   ]
+  },
+  "wiki-ark-diana-altaras": {
+   "_nom": "Diana Altaras",
+   "occupation": [
+    "Pilote"
+   ]
+  },
+  "wiki-firewatch-dave": {
+   "_nom": "Dave",
+   "occupation": [
+    "Garde"
+   ]
+  },
+  "wiki-dredge-last-fisherman": {
+   "_nom": "Last Fisherman",
+   "occupation": [
+    "Marin"
+   ]
+  },
+  "wiki-pillars-of-eternity-tekehu": {
+   "_nom": "Tekēhu",
+   "occupation": [
+    "Magicien"
+   ]
+  },
+  "Q135009934": {
+   "_nom": "Ralof",
+   "occupation": [
+    "Révolutionnaire",
+    "Soldat"
+   ]
+  },
+  "Q56707148": {
+   "_nom": "Muiri",
+   "occupation": [
+    "Médecin"
+   ]
+  },
+  "Q121315835": {
+   "_nom": "Wally",
+   "occupation": [
+    "Garde"
+   ]
+  },
+  "Q99472136": {
+   "_nom": "Kait Diaz",
+   "occupation": [
+    "Soldat"
+   ]
+  },
+  "Q56324424": {
+   "_nom": "Leliana",
+   "occupation": [
+    "Espion",
+    "Musicien"
+   ]
+  },
+  "Q85812805": {
+   "_nom": "Varric Tethras",
+   "occupation": [
+    "Écrivain"
+   ]
+  },
+  "Q114962186": {
+   "_nom": "The Last Dragonborn",
+   "occupation": null
+  },
+  "wiki-gears-of-war-victor-hoffman": {
+   "_nom": "Victor Hoffman",
+   "occupation": [
+    "Soldat"
    ]
   }
  },

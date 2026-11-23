@@ -91,6 +91,11 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ born: 'October 25, 1379, Vigrid', region: 'Europe' }, new Map()).nationality).toEqual(['Vigrid', 'Europe'])
   })
 
+  it('SansOccupation_GradeOuClasse', () => {
+    expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldat'])
+    expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientifique'])
+  })
+
   it('SeulementLocation_DernierRecours', () => {
     expect(infoboxValues({ location: 'Diamond City, Sanctuary, Vault 111' }, new Map()).nationality).toEqual(['Diamond City', 'Sanctuary'])
     expect(infoboxValues({ location: 'Diamond City', hometown: 'Boston' }, new Map()).nationality).toEqual(['Boston', 'United States'])

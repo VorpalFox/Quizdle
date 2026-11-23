@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
+import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -66,6 +66,18 @@ describe('citedYear', () => {
 describe('pronounGender, groupes', () => {
   it('écarte un groupe dont le texte dit surtout « they »', () => {
     expect(pronounGender("'''Clockwork Soldiers''' are machines. They patrol. They were built by Jindosh, his finest work; he is proud of them and their power. He sells them.")).toBeNull()
+  })
+})
+
+describe('introRoles', () => {
+  it('CeQuIlEst_SansLaSuite', () => {
+    expect(introRoles('William Overbeck is a Vietnam veteran who served in the Army.')).toEqual(['Vietnam veteran'])
+    expect(introRoles('Marle is the princess of Guardia.')).toEqual(['princess of Guardia'])
+  })
+
+  it('RoleDHistoireOuFamille_Ignore', () => {
+    expect(introRoles('Magolor is a major character in the Kirby franchise.')).toEqual([])
+    expect(introRoles('Marcus is the son of Fox McCloud.')).toEqual([])
   })
 })
 

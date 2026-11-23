@@ -762,7 +762,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -931,7 +933,9 @@
     "Gerudo"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Conseiller"
+   ],
    "hair": [
     "Roux"
    ],
@@ -1519,7 +1523,9 @@
     "Hoenn",
     "Littleroot Town"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dresseur"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -1546,7 +1552,9 @@
     "Icirrus City",
     "Unova"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dresseur"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -2001,7 +2009,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -6119,7 +6129,9 @@
    "nationality": [
     "Radiant Garden"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "Kingdom Hearts",
    "developer": "Jupiter",
@@ -7039,7 +7051,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "Kirby",
    "developer": "Good-Feel",
@@ -7106,7 +7120,10 @@
     "Humanoïde"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Politicien",
+    "Homme d'affaires"
+   ],
    "hair": null,
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
@@ -7635,7 +7652,9 @@
     "Sauria",
     "Corneria"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -9210,7 +9229,9 @@
     "Inkopolis Plaza",
     "Octo Canyon"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "Noirs",
     "Blonds"
@@ -9236,7 +9257,9 @@
     "Inkopolis Plaza",
     "Inkopolis Square"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "Gris",
     "Verts"
@@ -10109,7 +10132,9 @@
     "Wumpa Islands",
     "Australia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -10329,7 +10354,9 @@
    "nationality": [
     "Midnight Mountain"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": [
     "N/A"
    ],
@@ -10383,7 +10410,10 @@
    "nationality": [
     "Breeze Harbor"
    ],
-   "occupation": null,
+   "occupation": [
+    "Ouvrier",
+    "Domestique"
+   ],
    "hair": [
     "N/A"
    ],
@@ -10614,7 +10644,10 @@
    "nationality": [
     "DreadZone Station"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant",
+    "Homme d'affaires"
+   ],
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -10645,7 +10678,9 @@
     "Volgram Pass",
     "Torren IV"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -10676,7 +10711,9 @@
     "Second Cragmite Empire",
     "Dimension A2-66"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -10841,7 +10878,9 @@
    "nationality": [
     "Marcadia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Politicien"
+   ],
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11072,7 +11111,9 @@
    "nationality": [
     "Haven City"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11168,7 +11209,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11553,7 +11596,9 @@
     "Kunlun Mountains",
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -11744,7 +11789,10 @@
    "nationality": [
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique",
+    "Criminel"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -11916,7 +11964,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pirate"
+   ],
    "hair": [
     "N/A"
    ],
@@ -13428,7 +13478,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Révolutionnaire"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -13487,7 +13539,9 @@
     "Greece",
     "Island of Creation"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -13676,7 +13730,9 @@
    "nationality": [
     "Moon"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -13702,7 +13758,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Gris"
    ],
@@ -13730,7 +13788,10 @@
     "Tricode Village",
     "Mars"
    ],
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -13758,7 +13819,9 @@
    "nationality": [
     "Cygnus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -13786,7 +13849,9 @@
    "nationality": [
     "High Charity"
    ],
-   "occupation": null,
+   "occupation": [
+    "Politicien"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -13810,7 +13875,9 @@
    "nationality": [
     "Doisac"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -13835,7 +13902,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Halo",
    "developer": "Bungie",
@@ -13857,7 +13926,9 @@
    "nationality": [
     "Biko"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -13885,7 +13956,9 @@
     "Fort Umson",
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -14009,7 +14082,9 @@
     "Stroud Estate",
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -14191,7 +14266,9 @@
     "Canada",
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -14371,7 +14448,9 @@
    "nationality": [
     "Kahje"
    ],
-   "occupation": null,
+   "occupation": [
+    "Assassin"
+   ],
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -14394,7 +14473,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -14473,7 +14554,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -14527,7 +14610,9 @@
    "nationality": [
     "Moon"
    ],
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": [
     "N/A"
    ],
@@ -14554,7 +14639,9 @@
    "nationality": [
     "Tuchanka"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -14736,7 +14823,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Espion",
+    "Musicien"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -14756,7 +14846,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -14783,7 +14875,9 @@
     "The Hanged Man",
     "Kirkwall"
    ],
-   "occupation": null,
+   "occupation": [
+    "Écrivain"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -14890,7 +14984,9 @@
     "Storm Coast",
     "Haven"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -14962,7 +15058,9 @@
     "Haven",
     "Skyhold"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -15035,7 +15133,9 @@
    "nationality": [
     "Final Seal"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -15062,7 +15162,9 @@
     "Ferelden",
     "Castle Redcliffe"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -15159,7 +15261,9 @@
    "nationality": [
     "Markarth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": null,
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -15191,7 +15295,9 @@
     "Windhelm",
     "Skyrim"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -15219,7 +15325,10 @@
     "Throat of the World",
     "Skyrim"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat",
+    "Dirigeant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -15245,7 +15354,10 @@
     "Divinité"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat",
+    "Souverain"
+   ],
    "hair": null,
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -15551,7 +15663,10 @@
    "nationality": [
     "Riverwood"
    ],
-   "occupation": null,
+   "occupation": [
+    "Révolutionnaire",
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -19379,7 +19494,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "N/A"
    ],
@@ -19566,7 +19683,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Bruns",
     "Gris"
@@ -19595,7 +19714,9 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Révolutionnaire"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -19684,7 +19805,10 @@
    "nationality": [
     "Earth"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique",
+    "Révolutionnaire"
+   ],
    "hair": [
     "Blancs",
     "Bruns"
@@ -19707,7 +19831,9 @@
     "Extraterrestre"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20501,7 +20627,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Gris"
    ],
@@ -20528,7 +20656,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -20620,7 +20750,10 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant",
+    "Employé"
+   ],
    "hair": [
     "Bruns",
     "Chauve"
@@ -21494,7 +21627,9 @@
     "Ironspike Mountains",
     "Noxus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -22286,7 +22421,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Chevalier"
+   ],
    "hair": null,
    "franchise": "Warcraft",
    "developer": "Blizzard",
@@ -22580,7 +22717,9 @@
     "Dragon"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -23480,7 +23619,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Diablo",
    "developer": "Blizzard",
@@ -23687,7 +23828,9 @@
     "Démon"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Épéiste"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -23713,7 +23856,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -23930,7 +24075,10 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Informaticien",
+    "Étudiant"
+   ],
    "hair": [
     "Roux"
    ],
@@ -25304,7 +25452,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -25380,7 +25530,9 @@
    "nationality": [
     "Truce"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Violets"
    ],
@@ -25452,7 +25604,9 @@
    "nationality": [
     "Truce"
    ],
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -25502,7 +25656,9 @@
     "Porre",
     "Cursed Woods"
    ],
-   "occupation": null,
+   "occupation": [
+    "Chevalier"
+   ],
    "hair": [
     "Verts"
    ],
@@ -25868,7 +26024,9 @@
    "nationality": [
     "Hell"
    ],
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -27638,7 +27796,9 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -27695,7 +27855,9 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -27837,7 +27999,10 @@
    "nationality": [
     "Japan"
    ],
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Combattant"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -33450,7 +33615,9 @@
     "Thiren"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -34484,7 +34651,9 @@
    "nationality": [
     "Waterfall"
    ],
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -34539,7 +34708,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35753,7 +35924,9 @@
    "nationality": [
     "Freddy Fazbear's Mega Pizzaplex"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Violets"
    ],
@@ -36007,7 +36180,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Roux"
    ],
@@ -36032,7 +36207,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Roux"
    ],
@@ -36121,7 +36298,9 @@
     "Germany",
     "Belarus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Bruns",
     "Gris"
@@ -36661,7 +36840,9 @@
    "nationality": [
     "Germany"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Gris"
    ],
@@ -36718,7 +36899,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -36800,7 +36983,9 @@
     "United States",
     "California"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -36852,7 +37037,9 @@
     "Spiral Mountain",
     "Gruntilda's Lair"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -37061,7 +37248,9 @@
    "nationality": [
     "Ohri"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "Roux"
    ],
@@ -37085,7 +37274,9 @@
    "nationality": [
     "Ohri"
    ],
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": [
     "Verts"
    ],
@@ -37186,7 +37377,9 @@
    "nationality": [
     "Koppai"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mécanicien"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -37210,7 +37403,9 @@
    "nationality": [
     "Koppai"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Roses"
    ],
@@ -37236,7 +37431,9 @@
    "nationality": [
     "Koppai"
    ],
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -39074,7 +39271,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Aventurier",
+    "Écrivain"
+   ],
    "hair": null,
    "franchise": "Baldur's Gate",
    "developer": "BioWare",
@@ -42271,7 +42471,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44172,7 +44374,9 @@
     "New York",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Control",
    "developer": "Remedy Entertainment",
@@ -44483,7 +44687,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -45680,7 +45886,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Domestique"
+   ],
    "hair": null,
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -46178,7 +46386,10 @@
     "Jacinto City",
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Politicien",
+    "Soldat"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -46205,7 +46416,9 @@
    "nationality": [
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Gris",
     "Noirs"
@@ -46257,7 +46470,9 @@
     "Nexus",
     "Inner Hollow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -46315,7 +46530,9 @@
     "New Ephyra",
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -46344,7 +46561,9 @@
     "Corren",
     "Tyrus"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -46371,7 +46590,9 @@
     "Irohma",
     "South Islands"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -46425,7 +46646,10 @@
     "Nexus",
     "Inner Hollow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Religieux",
+    "Soldat"
+   ],
    "hair": [
     "Chauve"
    ],
@@ -46785,7 +47009,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Mécanicien"
+   ],
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -46808,7 +47034,9 @@
    "nationality": [
     "Hell"
    ],
-   "occupation": null,
+   "occupation": [
+    "Épéiste"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -46883,7 +47111,9 @@
    "nationality": [
     "Fortuna"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -46949,7 +47179,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Érudit"
+   ],
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -47185,7 +47417,9 @@
     "New York",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Blonds",
     "Violets"
@@ -47238,7 +47472,9 @@
    "nationality": [
     "Vigrid"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -47263,7 +47499,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Blancs",
     "Bleus"
@@ -48043,7 +48281,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Serveur"
+   ],
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -48114,7 +48354,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -48134,7 +48376,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Mécanicien"
+   ],
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -48183,7 +48427,9 @@
     "Spiral Mountain",
     "Gruntilda's Lair"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -48339,7 +48585,9 @@
     "Isle o' Hags",
     "Mayahem Temple"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -48542,7 +48790,9 @@
     "Divinité"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -48567,7 +48817,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
@@ -48615,7 +48867,9 @@
     "Monstre"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -48640,7 +48894,9 @@
     "Poncle"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Artiste"
+   ],
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -48711,7 +48967,9 @@
     "Kamui",
     "Wep'keer"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -48780,7 +49038,9 @@
    "nationality": [
     "Playhouse"
    ],
-   "occupation": null,
+   "occupation": [
+    "Acteur"
+   ],
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -48855,7 +49115,9 @@
     "Ryoshima Coast",
     "North Ryoshima Coast"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "N/A"
    ],
@@ -49319,7 +49581,9 @@
     "Underworld",
     "Greece"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -49443,7 +49707,9 @@
     "Underworld",
     "Greece"
    ],
-   "occupation": null,
+   "occupation": [
+    "Musicien"
+   ],
    "hair": [
     "Verts"
    ],
@@ -49493,7 +49759,9 @@
     "Underworld",
     "Greece"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -49519,7 +49787,9 @@
     "Underworld",
     "Greece"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -49566,7 +49836,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -49719,7 +49991,9 @@
     "Thebes",
     "Isle of Spires"
    ],
-   "occupation": null,
+   "occupation": [
+    "Homme d'affaires"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -49775,7 +50049,9 @@
     "Meridian",
     "Sundom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Souverain"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -49799,7 +50075,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -49826,7 +50104,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Homme d'affaires",
+    "Dirigeant"
+   ],
    "hair": [
     "Gris"
    ],
@@ -50528,7 +50809,9 @@
    "nationality": [
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -50551,7 +50834,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -50579,7 +50864,9 @@
    "nationality": [
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -50602,7 +50889,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Informaticien"
+   ],
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -50648,7 +50937,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -50669,7 +50960,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -50723,7 +51016,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Criminel"
+   ],
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -50747,7 +51042,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pilote"
+   ],
    "hair": [
     "Roux"
    ],
@@ -50796,7 +51093,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -50849,7 +51148,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -50876,7 +51177,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -50902,7 +51205,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -50928,7 +51233,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -50954,7 +51261,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -51523,7 +51832,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Épéiste"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51744,7 +52055,9 @@
     "Voyageur"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Aventurier"
+   ],
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -51840,7 +52153,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Avocat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -51862,7 +52177,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -51884,7 +52201,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant",
+    "Homme d'affaires"
+   ],
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -52021,7 +52341,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
@@ -52184,7 +52506,9 @@
     "Kemm's Vault",
     "Black Ring encampment"
    ],
-   "occupation": null,
+   "occupation": [
+    "Espion"
+   ],
    "hair": null,
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
@@ -52506,7 +52830,9 @@
     "Talmberg",
     "Czech Republic"
    ],
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Gris"
    ],
@@ -53006,7 +53332,9 @@
     "Extraterrestre"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -53026,7 +53354,9 @@
     "Extraterrestre"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -53475,7 +53805,9 @@
    "nationality": [
     "Wonderland"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "N/A"
    ],
@@ -54023,7 +54355,9 @@
    "nationality": [
     "Komkolzgrad"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Syberia",
    "developer": "Microids",
@@ -54471,7 +54805,9 @@
     "Wyoming",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -54600,7 +54936,9 @@
     "Wyoming",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -54624,7 +54962,9 @@
     "Wyoming",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -55196,7 +55536,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -55223,7 +55565,9 @@
    "nationality": [
     "Mars"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -55250,7 +55594,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -55304,7 +55650,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Survivant",
+    "Pilote"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -55384,7 +55733,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -55411,7 +55762,10 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Garde",
+    "Soldat"
+   ],
    "hair": [
     "Chauve"
    ],
@@ -55440,7 +55794,9 @@
    "nationality": [
     "Ganymede"
    ],
-   "occupation": null,
+   "occupation": [
+    "Journaliste"
+   ],
    "hair": null,
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -56086,7 +56442,9 @@
    "nationality": [
     "The Marrows"
    ],
-   "occupation": null,
+   "occupation": [
+    "Marin"
+   ],
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -56110,7 +56468,9 @@
    "nationality": [
     "Twisted Strand"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -56212,7 +56572,9 @@
    "nationality": [
     "Greater Marrow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -56533,7 +56895,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Ouvrier"
+   ],
    "hair": [
     "N/A"
    ],
@@ -56668,7 +57032,9 @@
     "Equo-America",
     "Equo-American"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -57543,7 +57909,9 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "N/A"
    ],
@@ -57665,7 +58033,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -57717,7 +58087,9 @@
    "nationality": [
     "Australia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -57746,7 +58118,9 @@
    "nationality": [
     "Australia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -57774,7 +58148,9 @@
    "nationality": [
     "China"
    ],
-   "occupation": null,
+   "occupation": [
+    "Assassin"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -57803,7 +58179,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -57831,7 +58209,10 @@
    "nationality": [
     "Polynesia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant",
+    "Garde"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -57905,7 +58286,9 @@
     "Banoian",
     "Fore"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -57930,7 +58313,9 @@
    "nationality": [
     "South Africa"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -57958,7 +58343,9 @@
    "nationality": [
     "Germany"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivant"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -58252,7 +58639,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -58565,7 +58954,9 @@
     "Ondra's Gift",
     "Kahanga Palace"
    ],
-   "occupation": null,
+   "occupation": [
+    "Chevalier"
+   ],
    "hair": [
     "Bruns",
     "Noirs"
@@ -58594,7 +58985,9 @@
    "nationality": [
     "Gilded Vale"
    ],
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58621,7 +59014,9 @@
     "Gilded Vale",
     "Engwithan Digsite"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -58645,7 +59040,9 @@
    "nationality": [
     "Magran's Fork"
    ],
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58671,7 +59068,9 @@
    "nationality": [
     "Sun in Shadow"
    ],
-   "occupation": null,
+   "occupation": [
+    "Religieux"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58744,7 +59143,9 @@
    "nationality": [
     "Stormwall Gorge"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58766,7 +59167,9 @@
    "nationality": [
     "Woodend Plains"
    ],
-   "occupation": null,
+   "occupation": [
+    "Archer"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58788,7 +59191,10 @@
     "Aumaua"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Archer",
+    "Éclaireur"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -58810,7 +59216,9 @@
    "nationality": [
     "Watershapers Guild"
    ],
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -59293,7 +59701,9 @@
     "Massachusetts",
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Dirigeant"
+   ],
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -59573,7 +59983,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Écrivain"
+   ],
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
@@ -60790,7 +61202,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60815,7 +61229,9 @@
    "nationality": [
     "Russia"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60866,7 +61282,9 @@
    "nationality": [
     "Cuba"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60892,7 +61310,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60919,7 +61339,9 @@
    "nationality": [
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60943,7 +61365,9 @@
    "nationality": [
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -60970,7 +61394,9 @@
     "New Zealand",
     "United Kingdom"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -61022,7 +61448,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -61048,7 +61476,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -61072,7 +61502,9 @@
    "nationality": [
     "United States"
    ],
-   "occupation": null,
+   "occupation": [
+    "Mercenaire"
+   ],
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -61260,7 +61692,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Pirate"
+   ],
    "hair": null,
    "franchise": "Rebel Galaxy",
    "developer": "Double Damage Games",
@@ -63041,7 +63475,9 @@
     "Humain"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -63217,7 +63653,9 @@
     "D'ni"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Écrivain"
+   ],
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -63238,7 +63676,9 @@
     "D'ni"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Écrivain"
+   ],
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -64153,7 +64593,9 @@
    "nationality": [
     "Albion"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -64692,7 +65134,9 @@
     "Guyenne",
     "France"
    ],
-   "occupation": null,
+   "occupation": [
+    "Chevalier"
+   ],
    "hair": [
     "Bruns"
    ],
