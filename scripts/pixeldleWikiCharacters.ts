@@ -8,6 +8,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue } from '../src/engine/types.js'
 import { fetchPages, infobox, infoboxValues, request, type EnrichKey } from './pixeldleEnrich.js'
+import { cleanValue } from './wikipedia.js'
 import type { WikiSettings } from '../src/subjects/manual.js'
 import type { Wiki } from './pixeldleWikis.js'
 
@@ -62,8 +63,17 @@ export interface WikiCharacter {
   name: string
   length: number
   values: Partial<Record<EnrichKey, AttributeValue>>
-  // les jeux cités par l'infobox : la 1re apparition d'abord, sinon toutes les apparitions
-  games: { first: string[], all: string[] }
+  // les jeux cités par l'infobox : la 1re apparition d'abord, sinon toutes les apparitions. En dernier recours,
+  // l'introduction de la page (« Skorge is the secondary antagonist of Gears of War 2 »).
+  games: { first: string[], all: string[], intro?: string[] }
+}
+
+const MAX_INTRO_LENGTH = 1500
+
+// L'introduction d'une page : le texte avant la 1re section, sans l'infobox ni les modèles
+export function introText(wikitext: string): string {
+  const body = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '').split(/\n==/)[0]!
+  return cleanValue(body).slice(0, MAX_INTRO_LENGTH)
 }
 
 const FIRST_GAME_FIELDS = ['first appearance', 'firstappearance', 'first appearances', 'first', 'debut', 'first game', 'introduced in', 'première apparition']
@@ -76,31 +86,60 @@ const gameItems = (fields: Record<string, string> | null, names: string[]) =>
 // Sans apostrophes : « Mirror's Edge » est souvent écrit « Mirrors Edge » une fois l'italique ('') retiré
 const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9:]+/g, ' ').replace(/\s*:/g, ':').trim()
 // Les abréviations des wikis pour les jeux (« WL3 » sur le wiki de Wasteland)
-const GAME_ABBREVIATIONS: Record<string, string> = { WL1: 'Wasteland', WL2: 'Wasteland 2', WL3: 'Wasteland 3' }
+const GAME_ABBREVIATIONS: Record<string, string> = {
+  WL1: 'Wasteland', WL2: 'Wasteland 2', WL3: 'Wasteland 3',
+  // Le modèle {{Games|…}} en haut des pages (les autres codes sont des romans et des BD)
+  GOW1: 'Gears of War', GOW2: 'Gears of War 2', GOW3: 'Gears of War 3', GOWJ: 'Gears of War: Judgment', GOW4: 'Gears of War 4',
+  G5: 'Gears 5', GOW5: 'Gears 5', TACTICS: 'Gears Tactics',
+  Bio: 'BioShock', Bio2: 'BioShock 2', BioI: 'BioShock Infinite',
+  III: 'Grand Theft Auto III', VC: 'Grand Theft Auto: Vice City', SA: 'Grand Theft Auto: San Andreas', LCS: 'Grand Theft Auto: Liberty City Stories',
+}
+
+// Les jeux du modèle {{Games|GOW1|GOW2}} ou {{Games|III=y|VC=y}}, en haut des pages de certains wikis
+export function templateGames(wikitext: string): string[] {
+  const items = wikitext.match(/\{\{\s*Games\s*\|([^}]*)\}\}/i)?.[1]?.split('|') ?? []
+  return items.map(item => item.split('=')[0]!.trim()).filter(code => GAME_ABBREVIATIONS[code])
+}
 const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
-// L'année du 1er jeu cité parmi ceux de la franchise (`games` : leurs noms et leur année), null si aucun n'est reconnu.
-// Les titres sont cherchés dans le texte, souvent collés une fois les liens retirés (« Dying Light 2 Stay Human Dying
-// Light: The Beast ») : « Dying Light » ne compte pas suivi d'un numéro ou d'un sous-titre (« 2 », « : The Beast »).
-export function citedYear(cited: WikiCharacter['games'], games: { names: string[], year: number | null }[]): number | null {
+// Le 1er jeu cité parmi ceux de la franchise (`games` : leurs noms et leur année), null si aucun n'est reconnu. Le jeu
+// entier, pour en prendre aussi le studio et les genres. Les titres sont cherchés dans le texte, souvent collés une fois
+// les liens retirés (« Dying Light 2 Stay Human Dying Light: The Beast ») : « Dying Light » ne compte pas suivi d'un
+// numéro ou d'un sous-titre (« 2 », « : The Beast »).
+export function citedGame<T extends { names: string[], year: number | null }>(cited: WikiCharacter['games'], games: T[]): T | null {
   // `subtitles` : en dernier recours, « XCOM 2 » compte dans « XCOM 2: War of the Chosen » (une extension)
-  const yearOf = (items: string[], subtitles: boolean) => {
+  const gameOf = (items: string[], subtitles: boolean) => {
     let text = ` ${items.map(item => GAME_ABBREVIATIONS[item] ?? item).map(words).join(' , ')} `
     const after = subtitles ? '(?![a-z0-9]|\\s+(?:\\d|[ivx]+\\b))' : '(?![a-z0-9]|:|\\s+(?:\\d|[ivx]+\\b))'
     // Les titres les plus longs d'abord, retirés du texte une fois trouvés : « Mirror's Edge » ne compte pas dans
     // « Mirror's Edge Catalyst »
-    const titles = games.flatMap(({ names, year }) => names.map(name => ({ key: words(name), year })))
+    const titles = games.flatMap(game => game.names.map(name => ({ key: words(name), game })))
       .filter(({ key }) => key.length >= 3).toSorted((a, b) => b.key.length - a.key.length)
-    const years: number[] = []
-    for (const { key, year } of titles) {
+    const found: T[] = []
+    for (const { key, game } of titles) {
       const replaced = text.replace(new RegExp(`(?<![a-z0-9:])${escape(key)}${after}`, 'g'), ' , ')
-      if (replaced !== text && year)
-        years.push(year)
+      if (replaced !== text && game.year)
+        found.push(game)
       text = replaced
     }
-    return years.length > 0 ? Math.min(...years) : null
+    return found.toSorted((a, b) => a.year! - b.year!)[0] ?? null
   }
-  return yearOf(cited.first, false) ?? yearOf(cited.all, false) ?? yearOf(cited.first, true) ?? yearOf(cited.all, true)
+  // L'introduction en dernier : le plus ancien jeu cité, jamais avant le 1er jeu de la série (l'année par défaut)
+  const intro = cited.intro ?? []
+  return gameOf(cited.first, false) ?? gameOf(cited.all, false) ?? gameOf(cited.first, true) ?? gameOf(cited.all, true) ?? gameOf(intro, false)
+}
+
+// Les jeux cités par une page : l'infobox (1re apparition, apparitions), le modèle {{Games}}, l'introduction
+export function pageGames(wikitext: string, fields: Record<string, string> | null = infobox(wikitext)): WikiCharacter['games'] {
+  return {
+    first: gameItems(fields, FIRST_GAME_FIELDS),
+    all: [...gameItems(fields, GAMES_FIELDS), ...templateGames(wikitext)],
+    intro: [introText(wikitext)],
+  }
+}
+
+export function citedYear(cited: WikiCharacter['games'], games: { names: string[], year: number | null }[]): number | null {
+  return citedGame(cited, games)?.year ?? null
 }
 
 // « Bayonetta (character) » → Bayonetta
@@ -264,7 +303,7 @@ export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>
       for (const [key, list] of pageUntranslated)
         untranslated.set(key, [...untranslated.get(key) ?? [], ...list])
       names.add(normalize(name))
-      chosen.push({ title, name, length, values, games: { first: gameItems(fields, FIRST_GAME_FIELDS), all: gameItems(fields, GAMES_FIELDS) } })
+      chosen.push({ title, name, length, values, games: { ...pageGames(text, fields), intro: [introText(full[title] || text)] } })
       if (chosen.length === max)
         break
     }

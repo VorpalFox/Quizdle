@@ -1175,7 +1175,7 @@
    "genres": [
     "RPG"
    ],
-   "year": 1996
+   "year": 2010
   }
  },
  {
@@ -1329,7 +1329,7 @@
    "genres": [
     "RPG"
    ],
-   "year": 1996
+   "year": 2010
   }
  },
  {
@@ -1378,7 +1378,7 @@
    "genres": [
     "RPG"
    ],
-   "year": 1996
+   "year": 2010
   }
  },
  {
@@ -1854,7 +1854,7 @@
    "genres": [
     "Plates-formes"
    ],
-   "year": 1991
+   "year": 1998
   }
  },
  {
@@ -1898,7 +1898,7 @@
    "genres": [
     "Plates-formes"
    ],
-   "year": 1991
+   "year": 1998
   }
  },
  {
@@ -2747,6 +2747,7 @@
     "United States"
    ],
    "occupation": [
+    "Criminel",
     "Dirigeant",
     "Domestique"
    ],
@@ -3391,7 +3392,7 @@
    "genres": [
     "Combat"
    ],
-   "year": 1992
+   "year": 2002
   }
  },
  {
@@ -5813,11 +5814,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1994
   }
  },
  {
@@ -5862,11 +5863,11 @@
    ],
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1994
   }
  },
  {
@@ -5908,11 +5909,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1995
   }
  },
  {
@@ -5976,11 +5977,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1996
   }
  },
  {
@@ -6085,11 +6086,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1994
   }
  },
  {
@@ -6106,11 +6107,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Donkey Kong",
-   "developer": "Nintendo",
+   "developer": "Rare",
    "genres": [
-    "Sport"
+    "Plates-formes"
    ],
-   "year": 1984
+   "year": 1994
   }
  },
  {
@@ -7101,7 +7102,7 @@
    "genres": [
     "Shoot 'em up"
    ],
-   "year": 1993
+   "year": 1997
   }
  },
  {
@@ -8699,9 +8700,9 @@
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
    "genres": [
-    "Plates-formes"
+    "Course"
    ],
-   "year": 1996
+   "year": 1999
   }
  },
  {
@@ -12636,10 +12637,9 @@
    "developer": "BioWare",
    "genres": [
     "TPS",
-    "RPG",
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2007
+   "year": 2010
   }
  },
  {
@@ -16531,11 +16531,11 @@
    ],
    "hair": null,
    "franchise": "Prince of Persia",
-   "developer": "Brøderbund Software",
+   "developer": "Ubisoft",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1989
+   "year": 2008
   }
  },
  {
@@ -16616,11 +16616,11 @@
    ],
    "hair": null,
    "franchise": "Prince of Persia",
-   "developer": "Brøderbund Software",
+   "developer": "Ubisoft",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1989
+   "year": 2008
   }
  },
  {
@@ -17260,11 +17260,11 @@
     "Gris"
    ],
    "franchise": "Half-Life",
-   "developer": "Valve",
+   "developer": "Gearbox Software",
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2001
   }
  },
  {
@@ -17346,7 +17346,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2001
   }
  },
  {
@@ -21436,7 +21436,7 @@
    "genres": [
     "RPG"
    ],
-   "year": 1995
+   "year": 2003
   }
  },
  {
@@ -21483,9 +21483,10 @@
    "franchise": "Tales of",
    "developer": "Bandai Namco",
    "genres": [
-    "RPG"
+    "RPG",
+    "Action-RPG"
    ],
-   "year": 1995
+   "year": 2005
   }
  },
  {
@@ -24180,10 +24181,9 @@
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
-    "Survival horror",
     "Horreur"
    ],
-   "year": 1999
+   "year": 2003
   }
  },
  {
@@ -32170,11 +32170,11 @@
     "Bruns"
    ],
    "franchise": "Call of Duty",
-   "developer": "Infinity Ward",
+   "developer": "Treyarch",
    "genres": [
     "FPS"
    ],
-   "year": 2003
+   "year": 2008
   }
  },
  {
@@ -32925,11 +32925,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 1994
   }
  },
  {
@@ -32945,11 +32945,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -33003,11 +33003,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -33023,11 +33023,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -33047,11 +33047,11 @@
     "Roses"
    ],
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -33176,11 +33176,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 1994
   }
  },
  {
@@ -33196,11 +33196,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
-   "developer": "Nintendo",
+   "developer": "HAL Laboratory",
    "genres": [
     "RPG"
    ],
-   "year": 1989
+   "year": 2006
   }
  },
  {
@@ -40365,11 +40365,11 @@
     "Noirs"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2013
   }
  },
  {
@@ -40413,7 +40413,7 @@
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2000
   }
  },
  {
@@ -40433,11 +40433,11 @@
     "Blonds"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2013
   }
  },
  {
@@ -40457,11 +40457,11 @@
     "Blonds"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2015
   }
  },
  {
@@ -40488,11 +40488,14 @@
     "Gris"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
-    "Action-aventure"
+    "Aventure",
+    "Action-aventure",
+    "RPG",
+    "Plates-formes"
    ],
-   "year": 1996
+   "year": 2018
   }
  },
  {
@@ -40515,11 +40518,12 @@
     "Noirs"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
-    "Action-aventure"
+    "Action-aventure",
+    "Plates-formes"
    ],
-   "year": 1996
+   "year": 2006
   }
  },
  {
@@ -40540,11 +40544,11 @@
     "Bruns"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2015
   }
  },
  {
@@ -40563,11 +40567,11 @@
     "Blonds"
    ],
    "franchise": "Tomb Raider",
-   "developer": "Core Design",
+   "developer": "Crystal Dynamics",
    "genres": [
     "Action-aventure"
    ],
-   "year": 1996
+   "year": 2015
   }
  },
  {
@@ -40591,7 +40595,7 @@
    "genres": [
     "Action-aventure"
    ],
-   "year": 2005
+   "year": 2018
   }
  },
  {
@@ -40786,7 +40790,7 @@
    "genres": [
     "Action-aventure"
    ],
-   "year": 2005
+   "year": 2018
   }
  },
  {
@@ -40942,7 +40946,7 @@
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2008
   }
  },
  {
@@ -40964,11 +40968,11 @@
     "Noirs"
    ],
    "franchise": "Gears of War",
-   "developer": "Epic Games",
+   "developer": "The Coalition",
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2016
   }
  },
  {
@@ -40993,7 +40997,7 @@
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2011
   }
  },
  {
@@ -41020,7 +41024,7 @@
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2008
   }
  },
  {
@@ -41047,7 +41051,7 @@
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2011
   }
  },
  {
@@ -41070,7 +41074,7 @@
    "genres": [
     "TPS"
    ],
-   "year": 2006
+   "year": 2008
   }
  },
  {
@@ -41422,7 +41426,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2008
   }
  },
  {
@@ -41441,7 +41445,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2003
   }
  },
  {
@@ -41460,7 +41464,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2008
   }
  },
  {
@@ -41520,7 +41524,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2005
   }
  },
  {
@@ -41539,7 +41543,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2019
   }
  },
  {
@@ -41558,7 +41562,7 @@
     "Action-aventure",
     "Beat them all"
    ],
-   "year": 2001
+   "year": 2019
   }
  },
  {
@@ -41625,9 +41629,7 @@
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
    "genres": [
-    "Action",
     "Action-aventure",
-    "TPS",
     "Beat them all"
    ],
    "year": 2022
@@ -41729,7 +41731,7 @@
     "TPS",
     "Beat them all"
    ],
-   "year": 2009
+   "year": 2022
   }
  },
  {
@@ -41752,7 +41754,7 @@
     "TPS",
     "Beat them all"
    ],
-   "year": 2009
+   "year": 2014
   }
  },
  {
@@ -41794,10 +41796,7 @@
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
    "genres": [
-    "Action",
-    "Action-aventure",
-    "TPS",
-    "Beat them all"
+    "Action-aventure"
    ],
    "year": 2023
   }
@@ -41823,10 +41822,7 @@
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
    "genres": [
-    "Action",
-    "Action-aventure",
-    "TPS",
-    "Beat them all"
+    "Action-aventure"
    ],
    "year": 2023
   }
@@ -42392,7 +42388,8 @@
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
-    "FPS"
+    "FPS",
+    "Action-RPG"
    ],
    "year": 2012
   }
@@ -42412,7 +42409,8 @@
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
-    "FPS"
+    "FPS",
+    "Action-RPG"
    ],
    "year": 2012
   }
@@ -42432,7 +42430,8 @@
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
-    "FPS"
+    "FPS",
+    "Action-RPG"
    ],
    "year": 2012
   }
@@ -42450,7 +42449,8 @@
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
-    "FPS"
+    "FPS",
+    "Action-RPG"
    ],
    "year": 2012
   }
@@ -42494,7 +42494,8 @@
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
    "genres": [
-    "FPS"
+    "FPS",
+    "Action-RPG"
    ],
    "year": 2012
   }
@@ -42616,7 +42617,9 @@
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
-    "Plates-formes"
+    "Action-aventure",
+    "Simulation",
+    "Course"
    ],
    "year": 2008
   }
@@ -42670,9 +42673,10 @@
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
+    "Action-aventure",
     "Plates-formes"
    ],
-   "year": 1998
+   "year": 2000
   }
  },
  {
@@ -42710,6 +42714,7 @@
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
    "genres": [
+    "Action-aventure",
     "Plates-formes"
    ],
    "year": 2000
@@ -42733,7 +42738,7 @@
    "genres": [
     "Plates-formes"
    ],
-   "year": 1998
+   "year": 2000
   }
  },
  {
@@ -42805,11 +42810,14 @@
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
-   "developer": "Nintendo",
+   "developer": "Sora Ltd.",
    "genres": [
-    "Action"
+    "Aventure",
+    "Action",
+    "Action-aventure",
+    "TPS"
    ],
-   "year": 1986
+   "year": 2012
   }
  },
  {
@@ -42859,11 +42867,14 @@
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
-   "developer": "Nintendo",
+   "developer": "Sora Ltd.",
    "genres": [
-    "Action"
+    "Aventure",
+    "Action",
+    "Action-aventure",
+    "TPS"
    ],
-   "year": 1986
+   "year": 2012
   }
  },
  {
@@ -42877,11 +42888,14 @@
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
-   "developer": "Nintendo",
+   "developer": "Sora Ltd.",
    "genres": [
-    "Action"
+    "Aventure",
+    "Action",
+    "Action-aventure",
+    "TPS"
    ],
-   "year": 1986
+   "year": 2012
   }
  },
  {
@@ -42916,11 +42930,14 @@
    "occupation": null,
    "hair": null,
    "franchise": "Kid Icarus",
-   "developer": "Nintendo",
+   "developer": "Sora Ltd.",
    "genres": [
-    "Action"
+    "Aventure",
+    "Action",
+    "Action-aventure",
+    "TPS"
    ],
-   "year": 1986
+   "year": 2012
   }
  },
  {
@@ -43164,9 +43181,9 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
    "year": 2013
   }
@@ -43189,9 +43206,9 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
    "year": 2013
   }
@@ -43207,11 +43224,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43225,11 +43242,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43243,11 +43260,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43261,11 +43278,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43285,9 +43302,9 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
    "year": 2016
   }
@@ -43306,11 +43323,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43329,11 +43346,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43347,11 +43364,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43365,11 +43382,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
-   "developer": "Ambrella",
+   "developer": "Level-5",
    "genres": [
-    "Action-RPG"
+    "RPG"
    ],
-   "year": 2009
+   "year": 2013
   }
  },
  {
@@ -43673,7 +43690,7 @@
     "Roguelike",
     "Action-RPG"
    ],
-   "year": 2020
+   "year": 2024
   }
  },
  {
@@ -43931,7 +43948,6 @@
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
    "genres": [
-    "Action",
     "Action-aventure",
     "Action-RPG"
    ],
@@ -43993,7 +44009,7 @@
     "Infiltration",
     "Immersive sim"
    ],
-   "year": 2012
+   "year": 2016
   }
  },
  {
@@ -44127,7 +44143,7 @@
     "Infiltration",
     "Immersive sim"
    ],
-   "year": 2012
+   "year": 2016
   }
  },
  {
@@ -44153,7 +44169,7 @@
     "Infiltration",
     "Immersive sim"
    ],
-   "year": 2012
+   "year": 2016
   }
  },
  {
@@ -44233,6 +44249,7 @@
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
    "genres": [
+    "Action-aventure",
     "Aventure"
    ],
    "year": 2018
@@ -44359,11 +44376,11 @@
     "Bruns"
    ],
    "franchise": "Life Is Strange",
-   "developer": "Don't Nod",
+   "developer": "Deck Nine",
    "genres": [
     "Aventure"
    ],
-   "year": 2015
+   "year": 2017
   }
  },
  {
@@ -44383,11 +44400,11 @@
     "Noirs"
    ],
    "franchise": "Life Is Strange",
-   "developer": "Don't Nod",
+   "developer": "Deck Nine",
    "genres": [
     "Aventure"
    ],
-   "year": 2015
+   "year": 2021
   }
  },
  {
@@ -44411,11 +44428,11 @@
     "Noirs"
    ],
    "franchise": "Life Is Strange",
-   "developer": "Don't Nod",
+   "developer": "Deck Nine",
    "genres": [
     "Aventure"
    ],
-   "year": 2015
+   "year": 2024
   }
  },
  {
@@ -44438,6 +44455,7 @@
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
    "genres": [
+    "Action-aventure",
     "Aventure"
    ],
    "year": 2018
@@ -44490,7 +44508,7 @@
    "genres": [
     "Aventure"
    ],
-   "year": 2015
+   "year": 2018
   }
  },
  {
@@ -44514,7 +44532,7 @@
    "genres": [
     "Aventure"
    ],
-   "year": 2015
+   "year": 2018
   }
  },
  {
@@ -44980,10 +44998,8 @@
    "franchise": "Dying Light",
    "developer": "Techland",
    "genres": [
-    "Action",
     "Survival horror",
-    "Action-aventure",
-    "RPG"
+    "Action-RPG"
    ],
    "year": 2022
   }
@@ -45111,10 +45127,8 @@
    "franchise": "Dying Light",
    "developer": "Techland",
    "genres": [
-    "Action",
     "Survival horror",
-    "Action-aventure",
-    "RPG"
+    "Action-RPG"
    ],
    "year": 2022
   }
@@ -45164,10 +45178,8 @@
    "franchise": "Dying Light",
    "developer": "Techland",
    "genres": [
-    "Action",
     "Survival horror",
-    "Action-aventure",
-    "RPG"
+    "Action-RPG"
    ],
    "year": 2022
   }
@@ -45190,10 +45202,8 @@
    "franchise": "Dying Light",
    "developer": "Techland",
    "genres": [
-    "Action",
     "Survival horror",
-    "Action-aventure",
-    "RPG"
+    "Action-RPG"
    ],
    "year": 2016
   }
@@ -45242,10 +45252,8 @@
    "franchise": "Dying Light",
    "developer": "Techland",
    "genres": [
-    "Action",
     "Survival horror",
-    "Action-aventure",
-    "RPG"
+    "Action-RPG"
    ],
    "year": 2022
   }
@@ -45270,7 +45278,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45292,7 +45300,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45312,7 +45320,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45332,7 +45340,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45355,7 +45363,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45375,7 +45383,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45397,7 +45405,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45417,7 +45425,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45437,7 +45445,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45477,7 +45485,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45497,7 +45505,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45517,7 +45525,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -45537,7 +45545,7 @@
    "genres": [
     "Stratégie"
    ],
-   "year": 2007
+   "year": 2018
   }
  },
  {
@@ -46603,14 +46611,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Spore",
-   "developer": "Maxis",
+   "developer": "EA Montréal",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Simulation"
    ],
-   "year": 2008
+   "year": 2009
   }
  },
  {
@@ -46624,14 +46629,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Spore",
-   "developer": "Maxis",
+   "developer": "EA Montréal",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Simulation"
    ],
-   "year": 2008
+   "year": 2009
   }
  },
  {
@@ -46647,12 +46649,9 @@
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Action-RPG"
    ],
-   "year": 2008
+   "year": 2011
   }
  },
  {
@@ -46670,12 +46669,10 @@
    "occupation": null,
    "hair": null,
    "franchise": "Spore",
-   "developer": "Maxis",
+   "developer": "EA Mobile",
    "genres": [
-    "Stratégie",
     "RPG",
-    "Simulation",
-    "Arcade"
+    "Simulation"
    ],
    "year": 2008
   }
@@ -46693,12 +46690,9 @@
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Action-RPG"
    ],
-   "year": 2008
+   "year": 2011
   }
  },
  {
@@ -46716,12 +46710,9 @@
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Action-RPG"
    ],
-   "year": 2008
+   "year": 2011
   }
  },
  {
@@ -46739,12 +46730,9 @@
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
-    "Stratégie",
-    "RPG",
-    "Simulation",
-    "Arcade"
+    "Action-RPG"
    ],
-   "year": 2008
+   "year": 2011
   }
  },
  {
@@ -47028,7 +47016,7 @@
     "Action-aventure",
     "Plates-formes"
    ],
-   "year": 2008
+   "year": 2016
   }
  },
  {
@@ -47522,7 +47510,7 @@
    ],
    "hair": null,
    "franchise": "Syberia",
-   "developer": "Microids",
+   "developer": "Microids Studio Paris",
    "genres": [
     "Aventure"
    ],
@@ -47774,11 +47762,11 @@
    ],
    "hair": null,
    "franchise": "Unreal",
-   "developer": "Epic Games",
+   "developer": "Legend Entertainment",
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2003
   }
  },
  {
@@ -47800,7 +47788,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2005
   }
  },
  {
@@ -47866,7 +47854,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2005
   }
  },
  {
@@ -47929,7 +47917,7 @@
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2005
   }
  },
  {
@@ -47990,11 +47978,11 @@
    ],
    "hair": null,
    "franchise": "Unreal",
-   "developer": "Epic Games",
+   "developer": "Legend Entertainment",
    "genres": [
     "FPS"
    ],
-   "year": 1998
+   "year": 2003
   }
  },
  {
@@ -48413,9 +48401,10 @@
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
-    "Stratégie"
+    "TPS",
+    "FPS"
    ],
    "year": 2013
   }
@@ -48434,9 +48423,10 @@
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
-    "Stratégie"
+    "TPS",
+    "FPS"
    ],
    "year": 2013
   }
@@ -48455,11 +48445,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
     "Stratégie"
    ],
-   "year": 1994
+   "year": 2013
   }
  },
  {
@@ -48479,9 +48469,10 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
-    "Stratégie"
+    "TPS",
+    "FPS"
    ],
    "year": 2013
   }
@@ -48501,11 +48492,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "Firaxis Games",
    "genres": [
     "Stratégie"
    ],
-   "year": 1994
+   "year": 2012
   }
  },
  {
@@ -48521,8 +48512,9 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "Firaxis Games",
    "genres": [
+    "RPG tactique",
     "Stratégie"
    ],
    "year": 2016
@@ -48544,9 +48536,10 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
-    "Stratégie"
+    "TPS",
+    "FPS"
    ],
    "year": 2013
   }
@@ -48562,11 +48555,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
     "Stratégie"
    ],
-   "year": 1994
+   "year": 2013
   }
  },
  {
@@ -48584,9 +48577,10 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "2K Marin",
    "genres": [
-    "Stratégie"
+    "TPS",
+    "FPS"
    ],
    "year": 2013
   }
@@ -48604,8 +48598,9 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "Firaxis Games",
    "genres": [
+    "RPG tactique",
     "Stratégie"
    ],
    "year": 2016
@@ -48624,8 +48619,9 @@
    ],
    "hair": null,
    "franchise": "XCOM",
-   "developer": "Mythos Games",
+   "developer": "Firaxis Games",
    "genres": [
+    "RPG tactique",
     "Stratégie"
    ],
    "year": 2016
@@ -48677,7 +48673,7 @@
     "TPS",
     "Horreur"
    ],
-   "year": 2008
+   "year": 2013
   }
  },
  {
@@ -48728,7 +48724,7 @@
     "TPS",
     "Horreur"
    ],
-   "year": 2008
+   "year": 2009
   }
  },
  {
@@ -48752,7 +48748,7 @@
     "TPS",
     "Horreur"
    ],
-   "year": 2008
+   "year": 2011
   }
  },
  {
@@ -48801,7 +48797,7 @@
     "TPS",
     "Horreur"
    ],
-   "year": 2008
+   "year": 2009
   }
  },
  {
@@ -48900,7 +48896,7 @@
     "TPS",
     "Horreur"
    ],
-   "year": 2008
+   "year": 2013
   }
  },
  {
@@ -51020,10 +51016,9 @@
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
-    "Survival horror",
     "Action-RPG"
    ],
-   "year": 2011
+   "year": 2013
   }
  },
  {
@@ -51039,12 +51034,12 @@
    "occupation": null,
    "hair": null,
    "franchise": "Dead Island",
-   "developer": "Techland",
+   "developer": "Dambuster Studios",
    "genres": [
     "Survival horror",
     "Action-RPG"
    ],
-   "year": 2011
+   "year": 2023
   }
  },
  {
@@ -51108,10 +51103,9 @@
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [
-    "Survival horror",
     "Action-RPG"
    ],
-   "year": 2011
+   "year": 2013
   }
  },
  {
@@ -51131,9 +51125,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51149,9 +51144,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51171,9 +51167,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51192,9 +51189,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51214,9 +51212,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51236,9 +51235,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51258,9 +51258,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51280,9 +51281,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51302,9 +51304,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51323,9 +51326,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51344,9 +51348,10 @@
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "RPG"
+    "Action-RPG",
+    "RPG tactique"
    ],
-   "year": 2020
+   "year": 2026
   }
  },
  {
@@ -51430,7 +51435,7 @@
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51475,7 +51480,7 @@
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51517,7 +51522,7 @@
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51539,7 +51544,7 @@
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51559,7 +51564,7 @@
    ],
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51583,7 +51588,7 @@
    ],
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -51605,7 +51610,7 @@
    "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
-   "developer": "Interplay Entertainment",
+   "developer": "InXile Entertainment",
    "genres": [
     "RPG"
    ],
@@ -52727,6 +52732,7 @@
    "species": null,
    "nationality": null,
    "occupation": [
+    "Artiste",
     "Conseiller"
    ],
    "hair": null,
@@ -55555,10 +55561,9 @@
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
-    "Aventure",
-    "Réflexion"
+    "Aventure"
    ],
-   "year": 1993
+   "year": 1997
   }
  },
  {
@@ -55708,12 +55713,11 @@
    "occupation": null,
    "hair": null,
    "franchise": "Myst",
-   "developer": "Cyan Worlds",
+   "developer": "Presto Studios",
    "genres": [
-    "Aventure",
-    "Réflexion"
+    "Aventure"
    ],
-   "year": 1993
+   "year": 2001
   }
  },
  {
@@ -56458,7 +56462,9 @@
    "gender": "Femme",
    "species": "Humain",
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -56638,11 +56644,11 @@
     "Gris"
    ],
    "franchise": "Amnesia",
-   "developer": "Frictional Games",
+   "developer": "The Chinese Room",
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2013
   }
  },
  {
@@ -56671,7 +56677,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2020
   }
  },
  {
@@ -56695,9 +56701,9 @@
    "franchise": "Amnesia",
    "developer": "Frictional Games",
    "genres": [
-    "Horreur"
+    "Survival horror"
    ],
-   "year": 2010
+   "year": 2023
   }
  },
  {
@@ -56725,7 +56731,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2011
   }
  },
  {
@@ -56782,7 +56788,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2023
   }
  },
  {
@@ -56809,7 +56815,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2020
   }
  },
  {
@@ -56837,7 +56843,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2020
   }
  },
  {
@@ -56864,7 +56870,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2020
   }
  },
  {
@@ -56889,7 +56895,7 @@
    "genres": [
     "Horreur"
    ],
-   "year": 2010
+   "year": 2023
   }
  },
  {
@@ -56989,7 +56995,7 @@
     "Action-aventure",
     "Infiltration"
    ],
-   "year": 2019
+   "year": 2022
   }
  },
  {
@@ -57139,8 +57145,7 @@
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
    "genres": [
-    "Action-aventure",
-    "Infiltration"
+    "Action-aventure"
    ],
    "year": 2026
   }

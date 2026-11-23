@@ -18,7 +18,7 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedYear, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, pageGames, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -307,11 +307,19 @@ const selections = franchises.map(franchise => ({ franchise, chosen: select(fran
 
 // --- Écriture ---
 
-// Le 1er jeu du personnage : sa 1re apparition (P4584), sinon le plus ancien de ses jeux dans la franchise, sinon le 1er de la franchise
-function firstGame(candidate: Candidate, franchise: Franchise): Game | undefined {
+// Le jeu du personnage selon Wikidata : sa 1re apparition (P4584), sinon le plus ancien de ses jeux dans la franchise
+function knownGame(candidate: Candidate, franchise: Franchise): Game | undefined {
   const dated = (ids: string[]) => ids.map(id => games[id]).filter((game): game is Game => Boolean(game?.isGame && game.year)).toSorted(byYear)
-  return dated(candidate.character.claims.firstAppearance ?? [])[0] ?? dated(gamesIn(candidate.id, franchise))[0] ?? firstGameOf(franchise)
+  return dated(candidate.character.claims.firstAppearance ?? [])[0] ?? dated(gamesIn(candidate.id, franchise))[0]
 }
+
+// Le 1er jeu du personnage, sinon le 1er de la franchise
+function firstGame(candidate: Candidate, franchise: Franchise): Game | undefined {
+  return knownGame(candidate, franchise) ?? firstGameOf(franchise)
+}
+
+// Les personnages de Wikidata sans jeu connu, qui ont l'année du 1er jeu de leur franchise : à relire (récap)
+const wikidataYearGuesses: string[] = []
 
 // Un seul développeur : celui de ce jeu qui revient le plus dans la franchise (Nintendo plutôt que Nintendo EAD)
 // Si ce jeu n'a pas de développeur sur Wikidata : celui qui revient le plus dans la franchise
@@ -423,6 +431,7 @@ const wikiId = (franchise: Franchise, name: string) => `wiki-${slug(franchise.ti
 const fromWikis: { franchise: Franchise, wiki: string, root: string | null, found: number, chosen: WikiCharacter[] }[] = []
 const wikiUntranslated = new Map<string, string[]>()
 const yearGuesses: string[] = []
+const introYears: string[] = []
 for (const franchise of franchises) {
   const inFranchise = [...enriched.entries, ...manual.add].filter(entry => entry.attributes.franchise === franchise.title && !excludedIds.has(entry.id))
   // Les ajouts à la main (add) prennent des places, mais ne dispensent pas du wiki : seul Wikidata compte ici.
@@ -449,16 +458,42 @@ console.log()
 for (const [key, list] of wikiUntranslated)
   untranslated.set(key, [...untranslated.get(key) ?? [], ...list])
 
-// Les noms des jeux de ces franchises, pour l'année de 1re apparition citée par l'infobox
-const gameNames = await fetchNames(fromWikis.flatMap(({ franchise }) => [...franchiseGames.get(franchise)!]))
+// Les noms des jeux des franchises, pour le jeu de 1re apparition cité par les pages des wikis
+const gameNames = await fetchNames(franchises.flatMap(franchise => [...franchiseGames.get(franchise)!]))
+const seriesGamesOf = (franchise: Franchise) => [...franchiseGames.get(franchise)!]
+  .map(id => ({ names: gameNames[id] ?? [], year: games[id]?.isGame ? games[id]!.year : null, game: games[id] }))
+
+// Les personnages de Wikidata sans jeu connu (ni 1re apparition ni jeu relié) : le jeu cité par leur page de wiki,
+// son année, son studio, ses genres. Sinon le 1er jeu de la franchise reste, à relire (récap).
+const candidates = new Map(selections.flatMap(({ franchise, chosen }) => chosen.map(candidate => [candidate.id, { franchise, candidate }] as const)))
+const wikidataEntries = enriched.entries.map(entry => {
+  const { franchise, candidate } = candidates.get(entry.id)!
+  if (knownGame(candidate, franchise) || franchiseGames.get(franchise)!.size <= 1 || manual.edit[entry.id]?.year !== undefined)
+    return entry
+  const text = enriched.pageTexts.get(entry.id)
+  const cited = text ? citedGame(pageGames(text), seriesGamesOf(franchise)) : null
+  if (!cited) {
+    wikidataYearGuesses.push(`${entry.name} (${franchise.title}, ${entry.id}) : ${entry.attributes.year ?? '?'}`)
+    return entry
+  }
+  return { ...entry, attributes: { ...entry.attributes, year: cited.year, developer: developer(cited.game, franchise), genres: genresOf(cited.game, franchise) } }
+})
 const wikiNames = (character: WikiCharacter): CharacterName => ({ full: character.name, native: null, alternative: character.title === character.name ? [] : [character.title] })
 const wikiUniqueParts = uniqueNameParts([...selections.flatMap(({ chosen }) => chosen.map(nameFor)), ...fromWikis.flatMap(({ chosen }) => chosen.map(wikiNames))])
 const wikiEntries: Entry[] = fromWikis.flatMap(({ franchise, chosen }) => chosen.map(character => {
-  const game = firstGameOf(franchise)
-  // Sinon le 1er jeu de la franchise : juste pour un jeu unique, souvent trop tôt pour une série (Far Cry)
-  const year = citedYear(character.games, [...franchiseGames.get(franchise)!].map(id => ({ names: gameNames[id] ?? [], year: games[id]?.isGame ? games[id]!.year : null })))
-  if (year === null && franchiseGames.get(franchise)!.size > 1)
-    yearGuesses.push(`${character.name} (${franchise.title}) : ${game?.year ?? '?'}, 1er jeu de la franchise${character.games.first.length + character.games.all.length > 0 ? ` (jeux cités non reconnus : ${[...character.games.first, ...character.games.all].slice(0, 4).join(', ')})` : ''}`)
+  const first = firstGameOf(franchise)
+  // Le jeu cité par la page : son année, son studio, ses genres. Sinon le 1er jeu de la franchise : juste pour un jeu
+  // unique, souvent trop tôt pour une série (Far Cry)
+  const seriesGames = seriesGamesOf(franchise)
+  const cited = citedGame(character.games, seriesGames)
+  const game = cited?.game ?? first
+  const year = cited?.year ?? null
+  // L'année tirée de l'introduction de la page : à relire. Pas celles déjà corrigées à la main.
+  const fixed = manual.edit[wikiId(franchise, character.name)]?.year !== undefined
+  if (!fixed && cited && citedGame({ ...character.games, intro: [] }, seriesGames) === null)
+    introYears.push(`${character.name} (${franchise.title}) : ${year} (1er jeu de la série : ${first?.year ?? '?'})`)
+  if (!fixed && !cited && franchiseGames.get(franchise)!.size > 1)
+    yearGuesses.push(`${character.name} (${franchise.title}) : ${first?.year ?? '?'}, 1er jeu de la franchise${character.games.first.length + character.games.all.length > 0 ? ` (jeux cités non reconnus : ${[...character.games.first, ...character.games.all].slice(0, 4).join(', ')})` : ''}`)
   return {
     id: wikiId(franchise, character.name),
     name: character.name,
@@ -485,7 +520,7 @@ const completeAdded = (entry: Entry): Entry => {
   } : {}
   return { ...entry, attributes: { gender: null, species: null, nationality: null, occupation: null, hair: null, ...defaults, ...entry.attributes } }
 }
-const { entries, warnings } = applyManual([...enriched.entries, ...wikiEntries], { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
+const { entries, warnings } = applyManual([...wikidataEntries, ...wikiEntries], { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---
@@ -513,6 +548,8 @@ lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie «
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
 lines.push(`## Ajoutés depuis les wikis, année devinée (${yearGuesses.length}) : aucun jeu reconnu dans l'infobox, 1er jeu de la série pris par défaut`, ...yearGuesses.map(text => `- ${text}`), '')
+lines.push(`## Ajoutés depuis les wikis, année tirée de l'introduction (${introYears.length}) : le plus ancien jeu de la série cité, à relire`, ...introYears.map(text => `- ${text}`), '')
+lines.push(`## Wikidata, année devinée (${wikidataYearGuesses.length}) : ni 1re apparition ni jeu relié, 1er jeu de la franchise pris par défaut`, ...wikidataYearGuesses.map(text => `- ${text}`), '')
 
 lines.push('## Personnages par franchise (gardés / attribués, jeux de la série, principaux)', '')
 for (const { franchise, total } of selections)

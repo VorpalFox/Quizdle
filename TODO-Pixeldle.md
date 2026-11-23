@@ -35,7 +35,7 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
    - **nationalité** : fait, tout en anglais (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
 3. **Trous à combler** :
    - 106 personnages sans sexe et 475 sans espèce (listés dans le récap) ;
-   - 283 personnages venus des wikis ont l'année du 1er jeu de la série, faute de jeu reconnu dans l'infobox (listés dans le récap) : à relire pour les longues séries.
+   - **années** : le jeu est cherché dans l'infobox, le modèle {{Games}}, puis l'introduction de la page (aussi pour les personnages de Wikidata sans jeu connu), et l'année, le studio et les genres sont ceux de ce jeu. Restent, dans le récap : 95 personnages des wikis et 99 de Wikidata à l'année du 1er jeu (souvent juste : jeux uniques, personnages du 1er jeu), et 233 années tirées de l'introduction, à relire. Piège connu : un reboot au même titre que le 1er jeu (God of War, Tomb Raider), corrigé à la main.
 4. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
 5. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
 6. **Wikipédia en dernier recours** : prévu au départ pour compléter les champs vides, pas encore fait.

@@ -581,6 +581,9 @@ const OCCUPATIONS: Record<string, string | null> = {
   // Médias, spectacle
   'acrobat': 'Artiste', 'color commentator': 'Journaliste', 'reality tv host': 'Acteur', 'prepper': 'Survivant',
   'occultist': 'Magicien', 'polymath': 'Érudit', 'tech support for lara croft': 'Informaticien',
+  'tactical adjutant': 'Soldat', 'climatologist': 'Scientifique', 'debt collector': 'Criminel', 'investment banker': 'Homme d\'affaires',
+  'jester': 'Artiste', 'mad gear goon': 'Criminel', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Ouvrier',
+  'albion operations': null, 'last of the xel\'naga': null, 'various others': null,
   // Pas des occupations : rôles dans l'histoire, liens de famille, dieux (l'espèce le dit), phrases, valeurs vides
   'antagonist': null, 'main antagonist': null, 'overarching antagonist': null, 'secondary antagonist': null,
   'primary fallout antagonist': null, 'protagonist': null, 'ally': null, 'companion': null, 'temporary companion': null,
@@ -601,6 +604,9 @@ const OCCUPATIONS: Record<string, string | null> = {
 export function translateOccupation(label: string): string | null | undefined {
   // « ---- Confederate marshal », « · Weaponsmith », « "The Blade » → sans les puces ni les guillemets qui traînent
   const value = key(label).replace(/^[\s・*•·"-]+|"+$/g, '').replace(/^(?:former\s+|ex-|retired\s+)(?=\S)/, '')
+  // « ---- » : rien
+  if (!value)
+    return null
   if (value in OCCUPATIONS)
     return OCCUPATIONS[value]
   const french = firstRule(OCCUPATION_RULES, value)
@@ -649,7 +655,8 @@ const GENRE_RULES: [RegExp, string | null][] = [
   // Les thèmes ne sont pas des genres : retirés
   [/lgbt|science-fiction|science fiction(?! horror)|postapocalyptique|cyberpunk|fantasy|historique|comédie|christmas|halloween|zombie|time travel|space opera|fiction spéculative|milieu scolaire|cross-over|retro-style|eroge|erotic|chuunige|mystère|localisation|augmented reality|thriller/, null],
   // Une ambiance ou une mécanique, pas un genre (Dredge, Among Us)
-  [/cozy game|inventory management|jeu occasionnel|déduction sociale/, null],
+  [/cozy game|inventory management|jeu occasionnel|déduction sociale|road movie|crime video game|univers parallèles/, null],
+  [/parkour/, 'Plates-formes'],
   [/commerce|simulateur de vol|jeu vidéo de pêche/, 'Simulation'],
   // Gardés tels quels, validé avec FX
   [/immersive sim/, 'Immersive sim'],

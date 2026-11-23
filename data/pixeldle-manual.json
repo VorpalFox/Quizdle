@@ -559,8 +559,10 @@
    "species": "Divinité"
   },
   "wiki-hades-melinoe": {
-   "_raison": "dieu ou divinité",
-   "species": "Divinité"
+   "_raison": "année : Hades II (son père s'appelle Hades, comme le 1er jeu)",
+   "species": "Divinité",
+   "_nom": "Melinoë",
+   "year": 2024
   },
   "wiki-hades-achilles": {
    "_raison": "ombre d'un mortel",
@@ -848,6 +850,203 @@
     "Brooklyn",
     "United States",
     "Mushroom Kingdom"
+   ]
+  },
+  "wiki-god-of-war-atreus": {
+   "_nom": "Atreus",
+   "_raison": "année : God of War (2018) : même titre que celui de 2005",
+   "year": 2018
+  },
+  "wiki-god-of-war-mimir": {
+   "_nom": "Mimir",
+   "_raison": "année : God of War (2018) : même titre que celui de 2005",
+   "year": 2018
+  },
+  "wiki-tomb-raider-conrad-roth": {
+   "_nom": "Conrad Roth",
+   "_raison": "année : Tomb Raider (2013) : même titre que celui de 1996",
+   "year": 2013,
+   "developer": "Crystal Dynamics"
+  },
+  "wiki-tomb-raider-mathias": {
+   "_nom": "Mathias",
+   "_raison": "année : Tomb Raider (2013) : même titre que celui de 1996",
+   "year": 2013,
+   "developer": "Crystal Dynamics"
+  },
+  "wiki-tomb-raider-jacob": {
+   "_nom": "Jacob",
+   "_raison": "année : Rise of the Tomb Raider",
+   "year": 2015,
+   "developer": "Crystal Dynamics"
+  },
+  "wiki-tomb-raider-zip": {
+   "_nom": "Zip",
+   "_raison": "année : Tomb Raider Chronicles, avant sa version de Legend",
+   "year": 2000
+  },
+  "wiki-life-is-strange-steph-gingrich": {
+   "_nom": "Steph Gingrich",
+   "_raison": "année : Before the Storm",
+   "year": 2017,
+   "developer": "Deck Nine"
+  },
+  "wiki-life-is-strange-gabe-chen": {
+   "_nom": "Gabe Chen",
+   "_raison": "année : True Colors",
+   "year": 2021,
+   "developer": "Deck Nine"
+  },
+  "wiki-life-is-strange-karen-reynolds": {
+   "_nom": "Karen Reynolds",
+   "_raison": "année : Life Is Strange 2",
+   "year": 2018
+  },
+  "wiki-life-is-strange-finn-mcnamara": {
+   "_nom": "Finn McNamara",
+   "_raison": "année : Life Is Strange 2",
+   "year": 2018
+  },
+  "wiki-dead-space-ellie-langford": {
+   "_nom": "Ellie Langford",
+   "_raison": "année : Dead Space 2",
+   "year": 2011
+  },
+  "wiki-dead-space-john-carver": {
+   "_nom": "John Carver",
+   "_raison": "année : Dead Space 3",
+   "year": 2013
+  },
+  "wiki-dead-space-jacob-arthur-danik": {
+   "_nom": "Jacob Arthur Danik",
+   "_raison": "année : Dead Space 3 (Tau Volantis)",
+   "year": 2013
+  },
+  "wiki-dead-space-gabe-weller": {
+   "_nom": "Gabe Weller",
+   "_raison": "année : Dead Space: Extraction",
+   "year": 2009
+  },
+  "wiki-dead-space-lexine-weller": {
+   "_nom": "Lexine Weller",
+   "_raison": "année : Dead Space: Extraction",
+   "year": 2009
+  },
+  "wiki-devil-may-cry-credo": {
+   "_nom": "Credo",
+   "_raison": "année : Devil May Cry 4",
+   "year": 2008
+  },
+  "wiki-banjo-kazooie-old-king-coal": {
+   "_nom": "Old King Coal",
+   "_raison": "année : Banjo-Tooie",
+   "year": 2000
+  },
+  "wiki-mirror-s-edge-clarence-e-kreeg": {
+   "_nom": "Clarence E. Kreeg",
+   "_raison": "année : Mirror's Edge Catalyst",
+   "year": 2016
+  },
+  "wiki-bayonetta-loki": {
+   "_nom": "Loki",
+   "_raison": "année : Bayonetta 2",
+   "year": 2014
+  },
+  "wiki-bayonetta-viola": {
+   "_nom": "Viola",
+   "_raison": "année : Bayonetta 3",
+   "year": 2022
+  },
+  "wiki-amnesia-justine-florbelle": {
+   "_nom": "Justine Florbelle",
+   "_raison": "année : Amnesia: Justine",
+   "year": 2011
+  },
+  "wiki-amnesia-tasi-trianon": {
+   "_nom": "Tasi Trianon",
+   "_raison": "année : Amnesia: Rebirth",
+   "year": 2020
+  },
+  "wiki-amnesia-empress-tihana": {
+   "_nom": "Empress Tihana",
+   "_raison": "année : Amnesia: Rebirth",
+   "year": 2020
+  },
+  "wiki-amnesia-leon-de-vries": {
+   "_nom": "Leon De Vries",
+   "_raison": "année : Amnesia: Rebirth (expédition de Sadiola)",
+   "year": 2020
+  },
+  "wiki-amnesia-anton-metzier": {
+   "_nom": "Anton Metzier",
+   "_raison": "année : Amnesia: Rebirth (expédition de Sadiola)",
+   "year": 2020
+  },
+  "wiki-amnesia-stephane-joubert": {
+   "_nom": "Stéphane Joubert",
+   "_raison": "année : Amnesia: The Bunker (1re Guerre mondiale)",
+   "year": 2023
+  },
+  "wiki-amnesia-m-fournier": {
+   "_nom": "M. Fournier",
+   "_raison": "année : Amnesia: The Bunker (1re Guerre mondiale)",
+   "year": 2023
+  },
+  "wiki-a-plague-tale-arnaud-malpart": {
+   "_nom": "Arnaud Malpart",
+   "_raison": "année : A Plague Tale: Requiem (la Cité rouge, en Provence)",
+   "year": 2022
+  },
+  "wiki-xcom-angela-weaver": {
+   "_nom": "Angela Weaver",
+   "_raison": "année : The Bureau: XCOM Declassified",
+   "year": 2013,
+   "developer": "2K Marin"
+  },
+  "wiki-xcom-asaru": {
+   "_nom": "Asaru",
+   "_raison": "année : The Bureau: XCOM Declassified",
+   "year": 2013,
+   "developer": "2K Marin"
+  },
+  "Q3717066": {
+   "_nom": "E-105 Zeta",
+   "_raison": "année : Sonic Adventure",
+   "year": 1998,
+   "developer": "Sonic Team"
+  },
+  "Q6056655": {
+   "_nom": "Pachacamac the Echidna",
+   "_raison": "année : Sonic Adventure",
+   "year": 1998,
+   "developer": "Sonic Team"
+  },
+  "Q16566983": {
+   "_nom": "Jaffar",
+   "_raison": "année : le Prince of Persia de 1989",
+   "year": 1989,
+   "developer": "Brøderbund Software",
+   "genres": [
+    "Action-aventure"
+   ]
+  },
+  "Q4024292": {
+   "_nom": "Zurvan",
+   "_raison": "année : le Prince of Persia de 2008, comme Elika",
+   "year": 2008,
+   "developer": "Ubisoft",
+   "genres": [
+    "Action-aventure"
+   ]
+  },
+  "Q108651368": {
+   "_nom": "Vault Boy",
+   "_raison": "année : le 1er Fallout",
+   "year": 1997,
+   "developer": "Black Isle Studios",
+   "genres": [
+    "RPG",
+    "Immersive sim"
    ]
   }
  },

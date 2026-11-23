@@ -208,6 +208,8 @@ export interface EnrichReport {
   details: string[]
   // les pages qui sont peut-être celles d'un autre personnage
   doubtful: string[]
+  // id → texte de la 1re page trouvée
+  pageTexts: Map<string, string>
 }
 
 // Les franchises dont le wiki couvre d'autres séries (Megami Tensei pour Persona) : un nom peut y être celui d'un
@@ -312,6 +314,7 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
   const fieldNames = new Map<string, number>()
   const details: string[] = []
   const doubtful: string[] = []
+  const pageTexts = new Map<string, string>()
 
   // Passe par passe : 1er wiki de chaque franchise, puis le 2e pour ce qui reste vide, etc.
   const maxOrder = Math.max(0, ...[...wikis.values()].map(({ order }) => order.length))
@@ -343,6 +346,9 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         for (const name of Object.keys(fields))
           fieldNames.set(name, (fieldNames.get(name) ?? 0) + 1)
         const entry = current.get(target)!
+        // La 1re page trouvée : pour y chercher le jeu du personnage quand Wikidata n'en donne pas
+        if (!pageTexts.has(entry.id))
+          pageTexts.set(entry.id, pages[title]!)
         const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).flatMap(([key, value]) => {
           if (isEmpty(value))
             return []
@@ -368,5 +374,5 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
     if (byApi.size > 0)
       console.log()
   }
-  return { entries: targets.map(target => current.get(target)!), byWiki, untranslated, fieldNames, details, doubtful }
+  return { entries: targets.map(target => current.get(target)!), byWiki, untranslated, fieldNames, details, doubtful, pageTexts }
 }

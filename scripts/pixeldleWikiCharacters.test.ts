@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, isCharacterCategory, isCharacterPage, pronounGender, sameCharacter } from './pixeldleWikiCharacters.js'
+import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, pronounGender, sameCharacter } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -66,5 +66,35 @@ describe('citedYear', () => {
 describe('pronounGender, groupes', () => {
   it('écarte un groupe dont le texte dit surtout « they »', () => {
     expect(pronounGender("'''Clockwork Soldiers''' are machines. They patrol. They were built by Jindosh, his finest work; he is proud of them and their power. He sells them.")).toBeNull()
+  })
+})
+
+describe('introText', () => {
+  it('TexteAvantLaPremiereSection_SansInfobox', () => {
+    const page = '{{Character|name = Skorge}}\n\'\'\'Skorge\'\'\' is the secondary antagonist of [[Gears of War 2]].\n== Biography ==\nIn [[Gears of War 3]]...'
+    expect(introText(page)).toBe('Skorge is the secondary antagonist of Gears of War 2.')
+  })
+})
+
+describe('citedYear, introduction', () => {
+  const games = [{ names: ['Gears of War'], year: 2006 }, { names: ['Gears of War 2'], year: 2008 }]
+  it('InfoboxMuette_PlusAncienJeuDeLIntroduction', () => {
+    expect(citedYear({ first: [], all: [], intro: ['Skorge is the secondary antagonist of Gears of War 2.'] }, games)).toBe(2008)
+  })
+
+  it('InfoboxCiteUnJeu_PasseAvantLIntroduction', () => {
+    expect(citedYear({ first: ['Gears of War'], all: [], intro: ['... of Gears of War 2.'] }, games)).toBe(2006)
+  })
+})
+
+describe('templateGames', () => {
+  it('CodesDesJeux_SansRomans', () => {
+    expect(templateGames('{{Games|GOW2|GOW3|ASPHO|QUICK}}\n{{Character')).toEqual(['GOW2', 'GOW3'])
+    expect(templateGames('{{Games|III=y|VC=y|O=<small>model</small>}}')).toEqual(['III', 'VC'])
+  })
+
+  it('CodesTraduits_AnneeDuJeu', () => {
+    const games = [{ names: ['Gears of War'], year: 2006 }, { names: ['Gears of War 2'], year: 2008 }]
+    expect(citedYear({ first: [], all: templateGames('{{Games|GOW2|GOW3}}') }, games)).toBe(2008)
   })
 })
