@@ -19,9 +19,36 @@ function keys(entry: Entry): string[] {
 // seraient pris pour des noms (« new » → Mew, « ami » → Abo)
 const MIN_TYPO_LENGTH = 4
 
+// « Sam (The Last of Us) », « chien (half-life) » : le nom, puis l'univers entre parenthèses
+const WITH_UNIVERSE = /^(.+?)\s*\(([^()]+)\)\s*$/
+// Un bout de l'univers suffit (« Sam (Last of Us) »), mais pas une ou deux lettres
+const MIN_UNIVERSE_LENGTH = 3
+
+// Le nom suivi de son univers : les entrées de ce nom dans cet univers. null si la saisie n'a pas cette forme.
+function matchesInUniverse(subject: Subject, query: string): { exact: boolean, entries: Entry[] } | null {
+  const parsed = WITH_UNIVERSE.exec(query.trim())
+  const universeKey = subject.universeKey
+  if (!parsed || !universeKey)
+    return null
+  const universe = normalize(parsed[2]!)
+  if (universe.length < MIN_UNIVERSE_LENGTH)
+    return null
+  const inUniverse = (entry: Entry) => normalize(String(entry.attributes[universeKey] ?? '')).includes(universe)
+  const { exact, entries } = matches(subject, parsed[1]!)
+  return { exact, entries: entries.filter(inUniverse) }
+}
+
 // Tous les noms exacts d'abord (plusieurs : des homonymes), sinon les noms à une faute de frappe près
-// (« roocool » → Roucool, « ratattac » → Rattatac)
+// (« roocool » → Roucool, « ratattac » → Rattatac). Un nom suivi de son univers entre parenthèses ne garde que celui-là.
 function matches(subject: Subject, query: string): { exact: boolean, entries: Entry[] } {
+  const whole = matchesByName(subject, query)
+  // Un nom qui contient lui-même des parenthèses (« Samuel Hayden (Doom) ») passe d'abord
+  if (whole.exact && whole.entries.length > 0)
+    return whole
+  return matchesInUniverse(subject, query) ?? whole
+}
+
+function matchesByName(subject: Subject, query: string): { exact: boolean, entries: Entry[] } {
   const wanted = normalize(query)
   if (!wanted)
     return { exact: true, entries: [] }

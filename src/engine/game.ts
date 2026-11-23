@@ -16,7 +16,7 @@ export interface Guess {
 
 // « Sam » désigne plusieurs personnages : on les liste, à choisir dans l'autocomplétion de /guess
 export function ambiguityMessage(subject: Subject, query: string, entries: readonly Entry[]): string {
-  return `« ${query.trim()} » désigne plusieurs personnages : ${entries.map(entry => displayName(subject, entry, true)).join(' · ')}. Choisis le bon dans la liste de \`/guess\`.`
+  return `« ${query.trim()} » désigne plusieurs personnages : ${entries.map(entry => displayName(subject, entry, true)).join(' · ')}. Écris-le comme dans la liste (« ${displayName(subject, entries[0]!, true)} ») ou choisis-le dans \`/guess\`.`
 }
 
 // Une partie : une cible à trouver, des propositions faites par un ou plusieurs joueurs (coop)

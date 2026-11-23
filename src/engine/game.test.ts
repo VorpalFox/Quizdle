@@ -116,6 +116,18 @@ describe('homonymes', () => {
     expect(findEntry(persos, 'sam-sdv')?.id).toBe('sam-sdv') // l'id, envoyé par l'autocomplétion
   })
 
+  it('un nom suivi de son univers entre parenthèses : celui-là', () => {
+    expect(findEntry(persos, 'Sam (The Last of Us)')?.id).toBe('sam-tlou')
+    expect(findEntry(persos, 'sam (stardew)')?.id).toBe('sam-sdv')
+    expect(findEntry(persos, 'Joel (The Last of Us)')?.id).toBe('joel')
+    expect(homonyms(persos, 'Sam (Stardew Valley)')).toEqual([])
+  })
+
+  it('un univers qui ne colle pas : rien', () => {
+    expect(findEntry(persos, 'Joel (Stardew Valley)')).toBeUndefined()
+    expect(findEntry(persos, 'Sam (xy)')).toBeUndefined() // trop court pour un univers
+  })
+
   it("le nom affiché porte l'univers seulement s'il est partagé", () => {
     expect(displayName(persos, persos.entries[0]!)).toBe('Sam (The Last of Us)')
     expect(displayName(persos, persos.entries[4]!)).toBe('Joel')
