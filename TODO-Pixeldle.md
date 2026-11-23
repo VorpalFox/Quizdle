@@ -6,7 +6,7 @@ Le Pixeldle (`/quiz pixeldle`) fait deviner un personnage de jeu vidéo. Côté 
 
 `npm run fetch:pixeldle` génère [data/pixeldle.json](data/pixeldle.json) : **2 471 personnages, 172 franchises**. Tout est en cache dans `.cache/pixeldle/` (hors git) : une relance prend 1 à 2 minutes, sauf pour les nouvelles pages de wiki.
 
-Remplissage : sexe 100 %, espèce 100 % (7 inconnues), nationalité 43 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
+Remplissage : sexe 100 %, espèce 100 % (sauf Liza), nationalité 43 %, occupation 55 %, cheveux 34 %. Franchise, développeur, genres et année sont à 100 %.
 
 Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
@@ -31,10 +31,10 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
 
 1. **Sundered** : 0 personnage. FX remplit le wiki, puis on relance le script avec les bons réglages dans `wikis`.
 2. **Valeurs à harmoniser** (rubriques « Valeurs : … » du récap) :
-   - les doublons d'écriture, par exemple Nomaï / Nomai (Outer Wilds) ;
+   - les doublons d'écriture : espèces faites (Nomaï → Nomai), reste à passer les occupations ;
    - **nationalité** : fait, tout en anglais (voir les règles). Reste, si les wikis ne suffisent pas, une table `FICTIONAL_PLACES` qui ajoute le lieu plus large (Pallet Town → Kanto) à côté de celui d'origine.
 3. **Trous à combler** :
-   - **sexe et espèce** : faits. Restent 7 espèces inconnues même dans les jeux (Meta Knight, Paimon, Chack…) ;
+   - **sexe et espèce** : faits. Reste Liza (The World Next Door), à trancher ;
    - **années** : le jeu est cherché dans l'infobox, le modèle {{Games}}, puis l'introduction de la page (aussi pour les personnages de Wikidata sans jeu connu), et l'année, le studio et les genres sont ceux de ce jeu. Restent, dans le récap : 95 personnages des wikis et 99 de Wikidata à l'année du 1er jeu (souvent juste : jeux uniques, personnages du 1er jeu), et 233 années tirées de l'introduction, à relire. Piège connu : un reboot au même titre que le 1er jeu (God of War, Tomb Raider), corrigé à la main.
 4. **La notion de « principal »** : peu fiable (voir la rubrique « Personnages par franchise » du récap). Elle ne sert plus qu'au tirage des franchises de plus de 20 personnages.
 5. **Noms partagés** (109, listés dans le récap) : le bot les gère déjà (voir plus bas). Il reste les mots courants reconnus comme des noms dans la discussion.
@@ -71,8 +71,11 @@ Tests : `npx vitest run`. Types : `npx tsc --noEmit -p .`
   - « Aucun » pour les robots, objets et entités sans sexe ;
   - « Autre » quand le jeu le laisse inconnu exprès (Frisk, le Traveler) ou quand le wiki dit « they » (No Man's Sky) ;
   - « Au choix » pour un avatar personnalisable.
-- **Espèce** :
-  - `defaults` donne « Humain » aux franchises réalistes dont le wiki ne dit pas l'espèce (Life is Strange, Far Cry…), Extraterrestre à Spore, Forgotling à Forgotton Anne ; les exceptions (animaux, IA, dieux) sont dans `edit` ;
+- **Espèce** (champ multiple, validé avec FX) :
+  - dépliée à la fin par `expandSpecies` : un animal a son espèce plus « Animal » (Renard, Animal), une espèce composée ses deux parts (Demi-elfe → Humain, Elfe ; Talos : Humain, Divinité), une IA est un Robot ;
+  - « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon, Chack) : pas de case vide ;
+  - les Forgotlings sont aussi des « Objet » (des objets oubliés qui ont pris vie) ;
+  - `defaults` donne « Humain » aux franchises réalistes dont le wiki ne dit pas l'espèce (Life is Strange, Far Cry…), Extraterrestre à Spore, Forgotling à Forgotton Anne ; les exceptions (animaux, IA, dieux, Anne qui est humaine) sont dans `edit` ;
   - « Au choix » pour un avatar dont on choisit la race (Dovahkiin, Tav…) ;
   - D'ni pour les D'ni de Myst, hybrides compris (Gehn, Atrus, ses enfants).
 - **Genres** : pas de thèmes (LGBT, science-fiction, post-apo…).

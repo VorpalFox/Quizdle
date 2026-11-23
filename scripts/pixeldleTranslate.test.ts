@@ -1,5 +1,27 @@
 import { describe, expect, it } from 'vitest'
-import { placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+import { expandSpecies, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies } from './pixeldleTranslate.js'
+
+describe('expandSpecies', () => {
+  it('Animal_AjouteAnimal', () => {
+    expect(expandSpecies('Renard')).toEqual(['Renard', 'Animal'])
+    expect(expandSpecies(['Divinité', 'Loup'])).toEqual(['Divinité', 'Loup', 'Animal'])
+  })
+
+  it('EspeceComposee_SesDeuxParts', () => {
+    expect(expandSpecies('Demi-elfe')).toEqual(['Humain', 'Elfe'])
+    expect(expandSpecies('IA')).toEqual(['Robot'])
+  })
+
+  it('DejaDepliee_Inchangee', () => {
+    expect(expandSpecies(['Renard', 'Animal'])).toEqual(['Renard', 'Animal'])
+    expect(expandSpecies(['Humain', 'Humain'])).toEqual(['Humain'])
+  })
+
+  it('Vide_Null', () => {
+    expect(expandSpecies(null)).toBeNull()
+    expect(expandSpecies([])).toBeNull()
+  })
+})
 
 describe('translateSpecies', () => {
   it('ClassesDeFiction_NomCourt', () => {

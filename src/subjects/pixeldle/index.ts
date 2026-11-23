@@ -5,7 +5,7 @@ import { loadEntries } from '../loadEntries.js'
 const attributes: readonly AttributeDef[] = [
   // Le personnage
   { key: 'gender', label: 'Sexe', kind: 'exact' },
-  { key: 'species', label: 'Espèce', kind: 'exact' },
+  { key: 'species', label: 'Espèce', kind: 'set' },
   { key: 'nationality', label: 'Nationalité', kind: 'set' },
   { key: 'occupation', label: 'Occupation', kind: 'set' },
   { key: 'hair', label: 'Cheveux', kind: 'set' },

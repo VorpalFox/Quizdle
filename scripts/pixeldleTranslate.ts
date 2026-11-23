@@ -41,7 +41,7 @@ const SPECIES: Record<string, string | null> = {
   'humanoïde': 'Humanoïde', 'extraterrestre': 'Extraterrestre', 'extraterrestre humanoïde': 'Extraterrestre',
   // Machines
   'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Androïde', 'gynoïde': 'Androïde',
-  'intelligence artificielle': 'IA', 'omnic': 'Omniaque', 'sentry': 'Robot',
+  'intelligence artificielle': 'Robot', 'omnic': 'Omniaque', 'sentry': 'Robot',
   // Surnaturel
   'déité': 'Divinité', 'daedric prince': 'Daedra', 'higher being': 'Être supérieur', 'ange': 'Ange', 'démon': 'Démon',
   'demon': 'Démon', 'half-demon': 'Demi-démon', 'yōkai': 'Yōkai', 'satori': 'Yōkai', 'kappa': 'Yōkai', 'komainu': 'Yōkai',
@@ -53,8 +53,8 @@ const SPECIES: Record<string, string | null> = {
   'dwarf': 'Nain', 'goblin': 'Gobelin', 'demi-géant': 'Demi-géant', 'dragonborn': 'Drakéide', 'tieffelin': 'Tieffelin',
   'githyanki': 'Githyanki', 'witcher': 'Sorceleur',
   // Les peuples d'une franchise : gardés, en français quand le jeu les traduit
-  'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Lightner',
-  'darkners': 'Darkner', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
+  'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Monstre',
+  'darkners': 'Monstre', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
   'pale being': 'Être pâle', 'vessel': 'Réceptacle', 'weaver': 'Tisseuse', 'rabbid': 'Lapin crétin', 'salmonid': 'Salmonoïde',
   'kong': 'Singe', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
   // Animaux
@@ -74,7 +74,7 @@ const SPECIES: Record<string, string | null> = {
   'objet': 'Objet', 'manchot': 'Manchot', 'zooplankton': 'Plancton',
   // En anglais, depuis les infobox des wikis
   'human': 'Humain', 'humans': 'Humain', 'human being': 'Humain', 'humanoid': 'Humanoïde', 'hume': 'Humain', 'homo sapiens': 'Humain',
-  'android': 'Androïde', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'IA', 'ai': 'IA',
+  'android': 'Androïde', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
   'alien': 'Extraterrestre', 'extraterrestrial': 'Extraterrestre', 'god': 'Divinité', 'goddess': 'Divinité', 'deity': 'Divinité',
   'demigod': 'Demi-dieu', 'titan': 'Titan', 'angel': 'Ange', 'devil': 'Démon', 'elf': 'Elfe', 'elves': 'Elfe', 'half-elf': 'Demi-elfe',
   'dwarves': 'Nain', 'orcs': 'Orque', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Géant', 'ogre': 'Ogre', 'tiefling': 'Tieffelin',
@@ -99,12 +99,46 @@ const SPECIES: Record<string, string | null> = {
   // Pas des espèces : on passe à la classe suivante
   'deutéragoniste': null, 'mascotte': null, 'roi': null, 'idole virtuelle': null, 'transgender person': null, 'persona': null,
   'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
-  'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'IA',
+  'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'Robot',
+  // Valeurs des wikis gardées brutes (majuscule), traduites au cas par cas
+  'honey bear': 'Ours', 'fallen angel': 'Ange', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
+  'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
+  'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
+  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Tribu de la Lune', 'elder god': 'Divinité',
+  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Crabe de tête',
+  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Gluant', 'leftherian': 'Humain', 'memetic entity': 'Entité',
+  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Être d\'un autre monde',
+  'nomaï': 'Nomai',
   'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
 }
 
 // « hérisson de fiction », « anthropomorphic hedgehog », « fée dans une œuvre de fiction », « humain de Donjons et Dragons »
 const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans une œuvre de fiction|in a work of fiction|dans l'univers de harry potter|dans la littérature fantasy et le jeu de rôle|de donjons et dragons)$|^fictional\s+|^anthropomorphi(?:c|que)\s+|\s+anthropomorphiques?$|\s+anthropomorphes?$/g
+
+// Champ multiple : une espèce composée vaut ses deux parts (Talos, humain devenu dieu), une IA est un robot
+const SPECIES_PARTS: Record<string, string[]> = {
+  'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
+  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Humain mutant': ['Humain', 'Mutant'],
+  'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
+  'Hybride': ['Humain', 'Extraterrestre'], 'Crabe de tête': ['Crabe de tête', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
+}
+
+// Les animaux gardent leur espèce, plus « Animal » : un renard et un singe se rejoignent
+const ANIMALS = new Set(['Singe', 'Chien', 'Grenouille', 'Chat', 'Hérisson', 'Insecte', 'Renard', 'Lapin', 'Ours', 'Loup', 'Oiseau',
+  'Raton laveur', 'Tortue', 'Poisson', 'Tigre', 'Chauve-souris', 'Cheval', 'Échidné', 'Morse', 'Cochon', 'Hibou', 'Taupe', 'Lama',
+  'Pieuvre', 'Marsupial', 'Panda', 'Lézard', 'Lion', 'Cerf', 'Rongeur', 'Rhinocéros', 'Écureuil', 'Manchot', 'Hamster', 'Panthère',
+  'Caméléon', 'Mouette', 'Moufette', 'Anémone de mer', 'Limule', 'Crabe', 'Méduse', 'Oursin', 'Kangourou', 'Bandicoot', 'Guépard',
+  'Pélican', 'Hippopotame', 'Araignée', 'Crocodile', 'Perroquet', 'Requin', 'Plancton', 'Poule', 'Lièvre', 'Loir', 'Hyène', 'Serpent',
+  'Lynx', 'Dinosaure', 'Souris', 'Rat', 'Canard', 'Vache', 'Chèvre', 'Mouton', 'Calmar', 'Reptile', 'Lizard Doggo'])
+
+// L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
+export function expandSpecies(value: unknown): string[] | null {
+  const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
+  if (list.length === 0)
+    return null
+  const parts = list.flatMap(name => SPECIES_PARTS[name] ?? [name])
+  return [...new Set(parts.some(name => ANIMALS.has(name)) ? [...parts, 'Animal'] : parts)]
+}
 
 export function translateSpecies(label: string): string | null | undefined {
   // « •Human » : sans la puce
