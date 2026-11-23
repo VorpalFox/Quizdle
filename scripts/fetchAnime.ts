@@ -1,6 +1,14 @@
 // Génère data/anime.json (personnages de l'Animedle) depuis AniList. Usage : npm run fetch:anime -- [nombre de personnages, 200 par défaut]
 // On prend les personnages les plus mis en favoris : ceux que les fans connaissent.
 // Les relations entre animes (pour l'univers) sont gardées dans .cache/anime/ (hors git).
+//
+// Les indices, comme au Weebdle :
+// - Univers : la plus ancienne série de la franchise (Jotaro → JoJo's Bizarre Adventure). Genres, année et studio
+//   viennent de la série où le personnage apparaît, pas de la 1re de l'univers.
+// - Âge : le 1er nombre d'AniList (« 17-18 » → 17), absent pour environ 15 % des personnages.
+// - Sexe, occupation, cheveux : AniList (champ, sinon description), puis ce qui manque dans l'ordre : Wikidata
+//   (wikidata.ts), l'infobox Fandom (fandom.ts), l'infobox Wikipédia (wikipedia.ts). Les occupations en anglais sont
+//   traduites à la fin (translate.ts).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'

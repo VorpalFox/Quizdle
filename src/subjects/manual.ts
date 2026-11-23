@@ -1,15 +1,21 @@
 // Les corrections faites à la main : data/anime-manual.json (Animedle), data/weebdle-manual.json (Weebdle) et data/pixeldle-manual.json (Pixeldle).
 // Appliquées par les scripts de récupération à chaque génération, et par le bot au chargement des données
-// (une correction faite avec /quizdebug survit donc à un redémarrage). Format dans le README.
+// (une correction faite avec /quizdebug survit donc à un redémarrage). Les scripts ne les modifient jamais.
+// Ne pas modifier data/<sujet>.json à la main : les scripts les réécrivent, les corrections vont ici.
+// Les ids : AniList (anilist.co/character/<id>) pour l'Animedle et le Weebdle, QID Wikidata ou « wiki-<franchise>-<nom> »
+// pour le Pixeldle (tous dans les récaps). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
 import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import type { AttributeValue, Entry } from '../engine/types.js'
 
 export interface Manual {
-  // ids des personnages à retirer
+  // ids des personnages à retirer. Au Weebdle et au Pixeldle, sa place revient au suivant du tirage ; à l'Animedle,
+  // il n'est pas remplacé.
   exclude: string[]
-  // id → champs à remplacer : name, aliases, image, ou un attribut (gender, hair...). Les clés en « _ » sont ignorées (« _nom » pour s'y retrouver).
+  // id → champs à remplacer : name, aliases, image, ou un attribut (gender, hair...). Les clés en « _ » sont ignorées
+  // (« _nom » pour s'y retrouver, « _raison » pour la retrouver). Un personnage corrigé est toujours gardé, même s'il
+  // n'avait pas été tiré : pour ajouter un personnage de la source, il suffit de le corriger.
   edit: Record<string, Record<string, unknown>>
-  // personnages complets à ajouter
+  // personnages complets à ajouter, absents de la source. « edit » ne s'applique pas à eux : les modifier ici.
   add: Entry[]
   // Pixeldle : titre de la franchise → réglages de la recherche dans son wiki (voir scripts/pixeldleWikiCharacters.ts)
   wikis?: Record<string, WikiSettings>

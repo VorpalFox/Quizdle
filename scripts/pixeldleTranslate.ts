@@ -10,6 +10,9 @@ const firstRule = (rules: [RegExp, string | null][], value: string) => rules.fin
 
 // --- Sexe ---
 
+// « Aucun » pour un robot, un objet ou une entité, « Autre » quand le jeu le laisse inconnu exprès (Frisk) ou que le
+// wiki dit « they », « Au choix » pour un avatar personnalisable.
+
 // Ce que wikidataGender (masculin, féminin...) ne reconnaît pas
 const GENDERS: Record<string, string | null> = {
   'genre déterminé par le joueur': 'Au choix', 'femme trans': 'Femme', 'homme trans': 'Homme',
@@ -31,6 +34,10 @@ export function translateGender(names: string[]): string | null | undefined {
 }
 
 // --- Espèce ---
+
+// Champ multiple, jamais vide. « defaults » du manuel donne « Humain » aux franchises réalistes dont le wiki ne dit pas
+// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Au choix »
+// pour un avatar dont on choisit la race. Les D'ni de Myst le sont même hybrides (Gehn, Atrus).
 
 // Après avoir retiré « de fiction », « anthropomorphe »... : le nom de l'espèce, en anglais ou en français
 const SPECIES: Record<string, string | null> = {
@@ -142,6 +149,9 @@ export function expandSpecies(value: unknown): string[] | null {
 
 // --- Cheveux ---
 
+// L'infobox, sinon le texte de la page entière (textHair : la section Appearance d'abord, « long blonde hair »), à relire
+// dans le récap. Un humain sans couleur trouvée reste vide : il a des cheveux, on ne sait juste pas leur couleur.
+
 // Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Chauve », c'est pour les humains vraiment chauves)
 export const NO_HAIR = 'N/A'
 const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
@@ -211,6 +221,13 @@ export function translateSpecies(label: string): string | null | undefined {
 }
 
 // --- Nationalité ---
+
+// Champ multiple (validé avec FX) : un max de lieux, de la ville au monde (« Pallet Town, Kanto », « Boston,
+// Massachusetts, United States »), 4 au plus, et TOUT EN ANGLAIS comme la majorité des wikis, pour que les
+// personnages se croisent. Sources : Wikidata (pays, lieu de naissance, résidence), puis les champs « pays » et « lieu »
+// du 1er wiki, le lieu d'une date de naissance, et en dernier recours le lieu où on croise le personnage (« location »).
+// « defaults » et « edit » du manuel ajoutent des lieux qui se croisent entre franchises (Japan, Earth, Hell,
+// Olympus…). Les franchises 100 % fictives restent vides exprès : un lieu par défaut y répéterait l'indice Franchise.
 
 // Les pays historiques ramenés au pays d'aujourd'hui, et les noms anglais des pays de fiction
 const NATIONALITIES: Record<string, string> = {
@@ -419,6 +436,15 @@ export function translatePlace(label: string): string[] {
 }
 
 // --- Occupation ---
+
+// Les sources, dans l'ordre (fetchPixeldle.ts, pixeldleEnrich.ts) : Wikidata, le champ occupation de l'infobox, sinon
+// son grade ou sa classe (« Commander », « Mage »), une créature hostile (« behavior: Hostile ») en Prédateur, puis
+// l'introduction de la page (« X is a Vietnam veteran » → Soldat, introRoles), « defaults » du manuel (le métier commun
+// d'une franchise : Valorant, Soulcalibur…). Les armes de l'infobox s'y ajoutent (weaponOccupations). Sans métier :
+// Compagnon ou Assistant si l'introduction le dit (introFunction), Destructeur ou Protecteur pour un dieu, un démon ou un
+// ange (introAlignment), puis Aucune, Au choix ou Inconnu (occupationOrNone). Les quasi-synonymes sont regroupés à la
+// fin (mergeOccupations). Pas d'occupation pour les rôles d'histoire (antagoniste, compagnon possible) ni les liens de
+// famille.
 
 // Déjà passée en français et au masculin par wikidataOccupation (« Pratiquant d'arts martiaux »). null : retirée.
 const OCCUPATION_RULES: [RegExp, string | null][] = [

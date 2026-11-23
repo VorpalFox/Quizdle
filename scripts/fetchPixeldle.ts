@@ -2,12 +2,42 @@
 // data/pixeldle-franchises.json. Usage : npm run fetch:pixeldle. Les réponses de Wikidata sont gardées dans
 // .cache/pixeldle/ (hors git) : si le script s'arrête en route, le relancer reprend où il en était.
 //
-// 1. Récupérer les jeux de chaque franchise et tous les personnages qui y sont reliés
+// 1. Récupérer les jeux de chaque franchise et tous les personnages qui y sont reliés (pixeldleWikidata.ts)
 // 2. Attribuer chaque personnage à une seule franchise
 // 3. Garder 4 à 20 personnages par franchise (voir select)
+// 4. Compléter avec l'infobox du wiki de la franchise (pixeldleEnrich.ts, wikis trouvés par pixeldleWikis.ts)
+// 5. Ajouter des personnages depuis le wiki quand Wikidata en a moins de 4, ou si la franchise est réglée dans « wikis »
+//    du manuel (pixeldleWikiCharacters.ts) : jusqu'à 12, ou « limit »
+// 6. Le jeu de 1re apparition (année, studio, genres), les cheveux et l'occupation tirés du texte des pages.
+//    Le jeu : celui que cite la page (infobox, modèle {{Games}}, puis introduction), sinon le 1er de la franchise.
+//    Piège connu : un reboot au même titre que le 1er jeu (God of War, Tomb Raider), corrigé à la main.
+//    FRANCHISE_DEVELOPERS force le studio, FRANCHISE_GENRES ajoute un genre à toute la franchise (pixeldleTranslate.ts).
+// 7. Les corrections à la main (data/pixeldle-manual.json : defaults, puis edit), puis les valeurs finales :
+//    espèce dépliée, occupations regroupées, jamais vides (voir la fin du script)
 //
 // Les valeurs de Wikidata (espèce, genres, développeur...) sont ramenées à nos listes par pixeldleTranslate.ts. Celles
-// qu'il ne sait pas traduire restent brutes et sont listées dans le récap (.cache/pixeldle/pixeldle-recap.md).
+// qu'il ne sait pas traduire restent brutes et sont listées dans le récap (.cache/pixeldle/pixeldle-recap.md). Le récap
+// liste aussi tout ce qui est deviné et à relire : années, cheveux et occupations tirés du texte, rôles des entités.
+// Autres récaps : pixeldle-wikis.md (le wiki de chaque franchise), pixeldle-enrich.md (ce que les wikis ont rempli).
+//
+// Choix des personnages (décidés avec FX) :
+// - Franchises : data/pixeldle-franchises.json, « top100 » (le top des franchises) ou « steam » (la liste de FX).
+//   « games » : les jeux que Wikidata ne relie pas à la série (American McGee's Alice, Divinity: Original Sin 1).
+// - Moins de 4 personnages : accepté pour les jeux qui n'ont que leur avatar (Deep Rock Galactic, Icarus…) ou
+//   deux protagonistes (Green Hell, The Riftbreaker, The World Next Door).
+// - Le protagoniste est toujours là. Muet ou personnalisable, c'est un avatar (un au plus par franchise, ajouté à la
+//   main, id « avatar-<jeu> ») : son nom officiel (Dovahkiin, Tav…) sinon « Héros de <jeu> », le jeu en alias, et
+//   « Au choix » pour ce que le joueur choisit. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
+// - Pas d'invités d'une autre licence (Sally Acorn, Raiden dans Unreal). Un personnage né dans un autre média de la
+//   même licence est gardé s'il fait partie d'un jeu (J.D. Morrison, de l'anime DMC), comme les franchises tirées
+//   d'un autre média (Batman: Arkham, Hogwarts Legacy, The Witcher…).
+// - Pas de groupes, d'objets ni d'espèces (Necromorphs, Geth, Epoch), ni de versions d'un autre média (DmC, film).
+// - Pokémon : seulement des humains, le Pokédle couvre les Pokémon. Une franchise par licence (Sons of the Forest
+//   plutôt que The Forest). Unreal : pas les personnages des seuls Unreal Championship.
+// - Meryl (Mother 4, un jeu de fans pas encore sorti) est gardée exprès : année « Futur », studio « Jeu de fans ».
+// - Reste à faire : Sundered n'a aucun personnage, son wiki est presque vide. Une fois rempli, le régler dans « wikis ».
+// - Pistes abandonnées : les Fandom FR (presque vides), le wiki officiel de LoL (que du gameplay). Gamicus (wiki de
+//   tous les jeux) a servi en dernier recours pour The World Next Door.
 import { readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
