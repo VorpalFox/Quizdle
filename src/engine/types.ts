@@ -33,8 +33,8 @@ export interface Entry {
   aliases?: readonly string[]
   image?: string
   attributes: Readonly<Record<string, AttributeValue>>
-  // les tags ajoutés par le script de récupération à un champ multiple (Monde réel, l'occupation tirée de l'arme...) :
-  // une correction à la main ne les retire pas
+  // les tags propres au personnage ajoutés par le script de récupération à un champ multiple (l'occupation tirée de
+  // l'arme au Pixeldle) : une correction à la main ne les retire pas
   added?: Readonly<Record<string, readonly string[]>>
 }
 

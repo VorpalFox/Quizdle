@@ -14,11 +14,18 @@ const asList = (value: AttributeValue) => Array.isArray(value) ? value.map(Strin
 
 // Une correction à la main (edit du manuel, /quizdebug) qui vide le champ garde sa valeur par défaut, comme le script
 // la remet à chaque génération : le bot, qui réapplique les corrections au chargement, retombe sur le fichier généré.
-// Les tags ajoutés par le script (Monde réel, Lost in the Galaxy, l'occupation tirée de l'arme) sont gardés à part,
-// pour tous les sujets : Entry.added.
+// Les tags ajoutés par le script à chaque personnage (l'occupation tirée de l'arme) sont gardés à part : Entry.added.
 export function keepDefault(edited: AttributeValue, previous: AttributeValue): AttributeValue {
   if (asList(edited).length > 0)
     return edited
   const defaults = asList(previous).filter(value => DEFAULTS.has(value))
   return defaults.length > 0 ? defaults : edited
+}
+
+// La nationalité garde aussi les mondes ajoutés par le script, les mêmes pour tous : pas besoin de les noter un par un
+const WORLDS = [REAL_WORLD, SPACE, CTHULHU_MYTHOS]
+export function keepWorlds(edited: AttributeValue, previous: AttributeValue): AttributeValue {
+  const places = asList(keepDefault(edited, previous))
+  const kept = [...places, ...WORLDS.filter(world => asList(previous).includes(world) && !places.includes(world))]
+  return kept.length > 0 ? kept : null
 }

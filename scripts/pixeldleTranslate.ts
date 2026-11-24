@@ -447,7 +447,7 @@ export function translatePlace(label: string): string[] {
 // passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES), et
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
-// Ces lieux sont gardés quand une correction à la main change la nationalité (Entry.added, appliqué par le bot).
+// Ces lieux sont gardés quand une correction à la main change la nationalité (keepWorlds, appliqué par le bot).
 export { CTHULHU_MYTHOS, OTHER_WORLD, REAL_WORLD, SPACE } from '../src/subjects/pixeldle/worlds.js'
 export type World = 'real' | 'other'
 

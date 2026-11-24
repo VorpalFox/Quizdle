@@ -667,7 +667,7 @@ const finished = manualApplied.entries.map(entry => {
 })
 
 // Les tags que le script ajoute à un champ multiple, gardés par le bot quand une correction à la main change le champ
-// (Entry.added : l'occupation tirée de l'arme, Monde réel et les univers partagés)
+// (Entry.added : l'occupation tirée de l'arme ; les mondes de la nationalité, les mêmes pour tous, sont dans keepWorlds)
 function withAddedTags(entry: Entry, key: string, tags: string[]): Entry {
   return tags.length > 0 ? { ...entry, added: { ...entry.added, [key]: tags } } : entry
 }
@@ -683,10 +683,7 @@ const entries = finished.map(entry => {
   const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
   if (!places?.length && nationality)
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
-  const added = (nationality ?? []).filter(place => !places?.includes(place) && place !== OTHER_WORLD)
-  // added après attributes dans le fichier, pour la lecture
-  const { added: before, ...rest } = withAddedTags(entry, 'nationality', added)
-  return { ...rest, attributes: { ...entry.attributes, nationality }, ...before ? { added: before } : {} }
+  return { ...entry, attributes: { ...entry.attributes, nationality } }
 })
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap

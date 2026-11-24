@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Entry } from '../engine/types.js'
 import { editEntry } from '../subjects/manual.js'
 import { pixeldle } from '../subjects/pixeldle/index.js'
-import { keepDefault } from '../subjects/pixeldle/worlds.js'
+import { keepDefault, keepWorlds } from '../subjects/pixeldle/worlds.js'
 
 describe('keepDefault', () => {
   it('ChampVide_GardeLaValeurParDefaut', () => {
@@ -18,11 +18,21 @@ describe('keepDefault', () => {
   })
 })
 
+describe('keepWorlds', () => {
+  it('GardeLesMondesAjoutesParLeScript', () => {
+    expect(keepWorlds(['Wasteland'], ['The Nether', 'Mythe de Cthulhu'])).toEqual(['Wasteland', 'Mythe de Cthulhu'])
+    expect(keepWorlds(['Japan'], ['Japan', 'Monde réel'])).toEqual(['Japan', 'Monde réel'])
+    expect(keepWorlds(null, ['Inconnu', 'Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
+    expect(keepWorlds(['Hyrule'], ['Inconnu'])).toEqual(['Hyrule'])
+    expect(keepWorlds(null, ['Hyrule'])).toBeNull()
+  })
+})
+
 describe('editEntry, tags ajoutés par le script', () => {
   const entry = (): Entry => ({
     id: 'x', name: 'X',
     attributes: { occupation: ['Garde', 'Magicien'], nationality: ['Inconnu', 'Lost in the Galaxy'] },
-    added: { occupation: ['Magicien'], nationality: ['Lost in the Galaxy'] },
+    added: { occupation: ['Magicien'] },
   })
 
   it('UneCorrectionNeRetirePasUnTag', () => {
