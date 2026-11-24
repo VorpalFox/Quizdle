@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
+import { expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -316,9 +316,18 @@ describe('withWorld', () => {
     expect(withWorld(null, ['Renard', 'Animal'], 'real')).toEqual(['Monde réel'])
   })
 
-  it('FranchiseDeLEspace_AjouteLostInTheGalaxy', () => {
-    expect(withWorld(['Earth'], ['Humain'], 'other', true)).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], 'other', true)).toEqual(['Inconnu', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], null, true)).toEqual(['Lost in the Galaxy'])
+  it('UniversPartages_AjoutesATous', () => {
+    expect(withWorld(['Earth'], ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Humain'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
+    expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Humain'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
+  })
+})
+
+describe('franchiseUniverses', () => {
+  it('EspaceEtMytheDeCthulhu', () => {
+    expect(franchiseUniverses('Mass Effect')).toEqual(['Lost in the Galaxy'])
+    expect(franchiseUniverses('Sundered')).toEqual(['Mythe de Cthulhu'])
+    expect(franchiseUniverses('The Legend of Zelda')).toEqual([])
   })
 })

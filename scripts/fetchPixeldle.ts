@@ -15,7 +15,8 @@
 //    FRANCHISE_DEVELOPERS force le studio, FRANCHISE_GENRES ajoute un genre à toute la franchise (pixeldleTranslate.ts).
 // 7. Les corrections à la main (data/pixeldle-manual.json : defaults, puis edit), puis les valeurs finales :
 //    espèce dépliée, occupations regroupées, jamais vides, et la nationalité vide remplie par le monde de la franchise
-//    (Monde réel, Inconnu, ou vide si on ne sait pas : FRANCHISE_WORLDS, sinon les lieux des autres personnages)
+//    (Monde réel, Inconnu, ou vide si on ne sait pas : FRANCHISE_WORLDS, sinon les lieux des autres personnages).
+//    Les corrections encore une fois à la fin : une valeur retirée à la main ne revient pas.
 //
 // Les valeurs de Wikidata (espèce, genres, développeur...) sont ramenées à nos listes par pixeldleTranslate.ts. Celles
 // qu'il ne sait pas traduire restent brutes et sont listées dans le récap (.cache/pixeldle/pixeldle-recap.md). Le récap
@@ -37,17 +38,18 @@
 // - Pokémon : seulement des humains, le Pokédle couvre les Pokémon. Une franchise par licence (Sons of the Forest
 //   plutôt que The Forest). Unreal : pas les personnages des seuls Unreal Championship.
 // - Meryl (Mother 4, un jeu de fans pas encore sorti) est gardée exprès : année « Futur », studio « Jeu de fans ».
-// - Reste à faire : Sundered n'a aucun personnage, son wiki est presque vide. Une fois rempli, le régler dans « wikis ».
+// - Sundered : tout le casting est sur une page de son wiki (« Characters », une infobox par personnage) : réglé dans
+//   « wikis » avec listPages.
 // - Pistes abandonnées : les Fandom FR (presque vides), le wiki officiel de LoL (que du gameplay). Gamicus (wiki de
 //   tous les jeux) a servi en dernier recours pour The World Next Door.
 import { readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { pixeldle } from '../src/subjects/pixeldle/index.js'
-import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
+import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, SPACE_FRANCHISES, expandSpecies, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -566,23 +568,28 @@ const withDefaults = (entry: Entry): Entry => {
 }
 // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (« long blonde hair »), à relire.
 // Pas ceux corrigés à la main.
-const pageRefs = new Map([...enriched.pageRefs, ...fromWikis.flatMap(({ franchise, api, chosen }) => chosen.map(({ name, title }) => [wikiId(franchise, name), { api, title }] as const))])
-const hairless = [...wikidataEntries, ...wikiEntries].filter(entry => entry.attributes.hair === null && pageRefs.has(entry.id) && !('hair' in (manual.edit[entry.id] ?? {})))
-const byApi = Map.groupBy(hairless, entry => pageRefs.get(entry.id)!.api)
+// Un personnage d'une page qui en présente plusieurs (listPages) : son morceau de la page, pas la page entière
+const sections = new Map(fromWikis.flatMap(({ franchise, chosen }) => chosen.flatMap(({ name, section }) => section ? [[wikiId(franchise, name), section] as const] : [])))
+const pageRefs = new Map([...enriched.pageRefs, ...fromWikis.flatMap(({ franchise, api, chosen }) => chosen.filter(({ section }) => !section).map(({ name, title }) => [wikiId(franchise, name), { api, title }] as const))])
+const hairless = [...wikidataEntries, ...wikiEntries].filter(entry => entry.attributes.hair === null && (pageRefs.has(entry.id) || sections.has(entry.id)) && !('hair' in (manual.edit[entry.id] ?? {})))
 const textHairs = new Map<string, string[]>()
 const hairExcerpts: string[] = []
+const hairFromText = (entry: Entry, text: string | null | undefined) => {
+  const found = text ? textHair(text) : null
+  if (!found)
+    return
+  textHairs.set(entry.id, found.colors)
+  hairExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
+}
+for (const entry of hairless.filter(entry => sections.has(entry.id)))
+  hairFromText(entry, sections.get(entry.id))
+const byApi = Map.groupBy(hairless.filter(entry => pageRefs.has(entry.id)), entry => pageRefs.get(entry.id)!.api)
 let read = 0
 for (const [api, group] of byApi) {
   process.stdout.write(`\rCheveux dans le texte : ${++read}/${byApi.size}`.padEnd(80))
   const pages = await fullPages(api, group.map(entry => pageRefs.get(entry.id)!.title))
-  for (const entry of group) {
-    const text = pages[pageRefs.get(entry.id)!.title]
-    const found = text ? textHair(text) : null
-    if (!found)
-      continue
-    textHairs.set(entry.id, found.colors)
-    hairExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
-  }
+  for (const entry of group)
+    hairFromText(entry, pages[pageRefs.get(entry.id)!.title])
 }
 console.log()
 
@@ -658,19 +665,21 @@ const finished = manualApplied.entries.map(entry => {
   return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
 
-// La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et Lost in the
-// Galaxy pour les franchises de l'espace, voir withWorld
+// La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et les univers
+// partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
 const worlds = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) => [franchise,
   franchise in FRANCHISE_WORLDS ? FRANCHISE_WORLDS[franchise]! : franchiseWorld(list.map(entry => entry.attributes.nationality as string[] | null))]))
 const worldFills: string[] = []
-const entries = finished.map(entry => {
+const placed = finished.map(entry => {
   const places = entry.attributes.nationality as string[] | null
   const franchise = String(entry.attributes.franchise)
-  const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, SPACE_FRANCHISES.has(franchise))
+  const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
   if (!places?.length && nationality)
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
   return { ...entry, attributes: { ...entry.attributes, nationality } }
 })
+// Les corrections encore une fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
+const entries = finishManual(placed, manual, pixeldle.attributes.map(({ key }) => key))
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
 function functionRole(entry: Entry): string[] | null {
@@ -722,7 +731,7 @@ lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie «
 lines.push(`## Rôles d'après l'introduction : Compagnon, Assistant, et Destructeur ou Protecteur pour les dieux, démons et anges (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
 const worldNames = { real: REAL_WORLD, other: OTHER_WORLD }
 lines.push(`## Monde des franchises (${worlds.size}) : FRANCHISE_WORLDS sinon les lieux des personnages, à relire`,
-  ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${SPACE_FRANCHISES.has(franchise) ? ', espace' : ''}`), '')
+  ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${franchiseUniverses(franchise).map(universe => `, ${universe}`).join('')}`), '')
 lines.push(`## Nationalité vide remplie par le monde de la franchise (${worldFills.length})`, ...worldFills.map(text => `- ${text}`), '')
 lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')

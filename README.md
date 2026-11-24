@@ -68,6 +68,6 @@ Dans le salon `DISCORD_DEBUG_CHANNEL_ID` :
 
 - `/quizdebug reset` : refait le tirage du jour et efface toutes les parties (sur tous les serveurs).
 - `/quizdebug remove subject:<sujet> name:<personnage>` : retire un personnage pour de bon (`exclude`, voir [Corrections à la main](scripts/README.md#corrections-à-la-main)). Si c'était la réponse du jour, nouveau tirage pour les parties suivantes.
-- `/quizdebug edit subject:<sujet> name:<personnage> attribute:<attribut> value:<valeur>` : change un attribut (`edit`), tout de suite, parties en cours comprises. Plusieurs valeurs : « Blancs, Noirs ». Vide : « - ». Le bot signale une valeur que personne d'autre n'a, pour garder la même écriture.
+- `/quizdebug edit subject:<sujet> name:<personnage> attribute:<attribut> value:<valeur>` : change un attribut (`edit`), tout de suite, parties en cours comprises. Pour un attribut à plusieurs valeurs : « Blancs, -Noirs » ajoute Blancs et retire Noirs, les autres valeurs restent. Vide : « - ». Le bot signale une valeur que personne d'autre n'a, pour garder la même écriture.
 
 Sur le Raspberry, ces corrections changent les fichiers de `data/` : penser à les commiter depuis le Raspberry pour ne pas les perdre au prochain `git pull`. Pour cacher `/quizdebug` des autres salons : *Paramètres du serveur* > *Intégrations* > le bot > `/quizdebug`.
