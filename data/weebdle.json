@@ -206,7 +206,9 @@
    "occupation": [
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -231,7 +233,9 @@
    "occupation": [
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -592,7 +596,9 @@
    "gender": "Femme",
    "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -644,7 +650,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 12,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -1244,7 +1252,7 @@
    "age": 40,
    "occupation": [
     "Artisan",
-    "Commerçant"
+    "Business Owner"
    ],
    "hair": null,
    "anime": "A Silent Voice",
@@ -2088,7 +2096,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Voyou",
+    "Criminel"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -2635,7 +2646,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -4686,7 +4699,9 @@
    "gender": null,
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -9857,7 +9872,11 @@
   "attributes": {
    "gender": "Femme",
    "age": 29,
-   "occupation": null,
+   "occupation": [
+    "Exorciste",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
    "hair": [
     "Bruns",
     "Blancs"
@@ -10114,7 +10133,9 @@
   "attributes": {
    "gender": null,
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -10342,7 +10363,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Blue Period",
    "genres": [
     "Drame",
@@ -10505,7 +10528,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Blue Period",
    "genres": [
     "Drame",
@@ -11186,7 +11211,7 @@
    "gender": "Homme",
    "age": 22,
    "occupation": [
-    "Commerçant"
+    "Former Club Owner"
    ],
    "hair": [
     "Noirs"
@@ -13063,7 +13088,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "ChäoS;HEAd",
    "genres": [
@@ -15484,7 +15511,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15512,7 +15541,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15620,7 +15651,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15729,7 +15762,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15757,7 +15792,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15785,7 +15822,10 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus",
+    "Gris"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15840,8 +15880,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Gris"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15868,7 +15912,9 @@
    "gender": null,
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15898,7 +15944,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -15958,7 +16006,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16041,7 +16091,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16069,7 +16121,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16094,8 +16148,13 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Scientifique"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16122,7 +16181,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16150,7 +16211,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16177,7 +16240,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16205,7 +16270,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16263,7 +16330,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16291,7 +16360,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -16319,7 +16390,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -17611,7 +17684,9 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17639,7 +17714,10 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17666,7 +17744,9 @@
    "occupation": [
     "Avocat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17691,8 +17771,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 28,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Espion"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17718,7 +17802,9 @@
    "gender": "Homme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17744,7 +17830,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17769,8 +17857,14 @@
   "attributes": {
    "gender": "Homme",
    "age": 34,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Policier",
+    "Détective",
+    "Deputy Commissioner"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17794,8 +17888,14 @@
   "attributes": {
    "gender": "Femme",
    "age": 18,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Journaliste",
+    "Kira's spokesperson"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17819,8 +17919,12 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17848,7 +17952,9 @@
     "Président",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17875,7 +17981,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17902,7 +18010,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17926,8 +18036,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 26,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Policier",
+    "Détective"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17952,7 +18067,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 33,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "anime": "Death Note",
    "genres": [
@@ -17978,8 +18095,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 32,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader",
+    "Planning"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -18005,7 +18127,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n23514-xhkKhgd0S5RJ.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 42,
    "occupation": [
     "Capitaine",
     "Leader"
@@ -18033,8 +18155,12 @@
   "attributes": {
    "gender": "Homme",
    "age": 32,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -19185,10 +19311,10 @@
    "gender": "Homme",
    "age": 60,
    "occupation": [
-    "Cultivator of Swordsmen",
+    "Épéiste",
     "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Combattant",
+    "Chasseur de monstres"
    ],
    "hair": [
     "Noirs",
@@ -20311,7 +20437,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Épéiste",
+    "Combattant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -21233,7 +21362,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 10,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -21259,7 +21390,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 10,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -24306,7 +24439,8 @@
    "gender": "Femme",
    "age": 18,
    "occupation": [
-    "Noble"
+    "Chevalier",
+    "Combattant"
    ],
    "hair": null,
    "anime": "Gate",
@@ -25421,7 +25555,10 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Voleur",
+    "Criminel"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -29520,7 +29657,7 @@
    "gender": "Homme",
    "age": 42,
    "occupation": [
-    "Commerçant"
+    "Gas Station Owner"
    ],
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -31235,7 +31372,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
     "Comédie",
@@ -31713,7 +31852,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -31734,8 +31875,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -31758,7 +31903,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Voyou",
+    "Criminel"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -37684,7 +37832,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Aventure",
@@ -37778,7 +37928,9 @@
    "gender": null,
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Aventure",
@@ -40548,7 +40700,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Paradise Kiss",
    "genres": [
@@ -40572,7 +40726,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Paradise Kiss",
    "genres": [
@@ -40598,7 +40754,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -40622,8 +40780,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comédie",
@@ -45758,8 +45920,13 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Officier",
+    "Soldat"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -47971,7 +48138,11 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Assassin",
+    "Criminel",
+    "Combattant"
+   ],
    "hair": null,
    "anime": "SPY x FAMILY",
    "genres": [
@@ -48058,7 +48229,9 @@
    "gender": "Homme",
    "age": 59,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
@@ -48316,7 +48489,7 @@
    "age": 17,
    "occupation": [
     "Étudiant",
-    "Commerçant",
+    "Owner of",
     "Serveur"
    ],
    "hair": [
@@ -48905,7 +49078,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -48991,7 +49166,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Commerçant"
+   ],
    "hair": null,
    "anime": "Summer Time Rendering",
    "genres": [
@@ -50637,7 +50814,9 @@
     "Domestique",
     "Apothicaire"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -50661,7 +50840,9 @@
     "Employé",
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -53324,7 +53505,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 20,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -54501,7 +54684,9 @@
    "gender": null,
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
     "Action",
@@ -54584,7 +54769,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
     "Action",
@@ -54676,10 +54863,12 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268338-hpkT7uTejI6R.png",
   "attributes": {
-   "gender": null,
-   "age": null,
+   "gender": "Femme",
+   "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
     "Action",
@@ -55870,7 +56059,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Voyou",
+    "Criminel"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -56061,8 +56253,9 @@
    "gender": "Homme",
    "age": 27,
    "occupation": [
-    "Officier",
-    "Soldat"
+    "Exorciste",
+    "Chasseur de monstres",
+    "Magicien"
    ],
    "hair": null,
    "anime": "Tokyo Ravens",
@@ -56908,7 +57101,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "anime": "Tower of God",
    "genres": [
@@ -56939,7 +57134,9 @@
     "Guide",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -58062,7 +58259,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Aventure",
@@ -60335,7 +60534,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Commerçant"
+    "Owner of BB Lounge"
    ],
    "hair": [
     "Blonds"

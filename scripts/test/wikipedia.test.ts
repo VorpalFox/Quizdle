@@ -141,3 +141,17 @@ describe('finishOccupations', () => {
     expect(finishOccupations([entry])[0]!.attributes.occupation).toEqual(['Épéiste', 'Combattant'])
   })
 })
+
+describe('translateOccupation, rôles des intros Fandom', () => {
+  it('Pluriels_EtNouveauxMotsCles', () => {
+    expect(translateOccupation('swordsmen')).toBe('Épéiste')
+    expect(translateOccupation('bodyguards')).toBe('Garde')
+    expect(translateOccupation('one of Satoru Fujinuma\'s classmates')).toBe('Élève')
+    expect(translateOccupation('Junior Second Class Exorcist of the True Cross Order')).toBe('Exorciste')
+  })
+
+  it('ProprietaireSansCommerce_PasCommercant', () => {
+    expect(translateOccupation('owner of the Giftia')).toBeUndefined()
+    expect(translateOccupation('previous owner of the Koba Mart convenience store')).toBe('Commerçant')
+  })
+})

@@ -247,13 +247,15 @@ async function fetchFullPages(wiki: string, titles: string[]): Promise<Pages> {
 
 // Les liens d'une page d'homonymie à ne pas suivre : pas le personnage de l'anime (film, jeu, chanson, épisode…)
 const NOT_THE_ANIME = /film|movie|novel|book|card|item|weapon|location|game|song|episode|chapter|arc|album|disambiguation/i
+const DISAMBIGUATION = /\{\{\s*disambig|may (?:also )?refer to/i
 
 // --- 3. L'infobox ---
 
-// Les champs du 1er modèle de la page qui ressemble à une infobox de personnage ({{Character Infobox, {{Infobox character...})
+// Les champs du 1er modèle de la page qui ressemble à une infobox de personnage : {{Character Infobox, {{Infobox character...,
+// mais aussi les noms maison ({{Human| sur le wiki de Death Note}}), reconnus à leurs champs (gender, occupation...)
 export function fandomInfobox(wikitext: string): Record<string, string> | null {
   const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
-  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|person)[^|{}\n]*/gi)) {
+  for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
     if (Object.values(FIELDS).flat().some(name => fields[name]))
       return fields
@@ -375,10 +377,15 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       character.titles = [...character.titles, ...character.titles.flatMap(title => firstPages[title] ? disambiguationLinks(firstPages[title]!, title, prefer, NOT_THE_ANIME) : [])]
     }
     const pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
-    // La page de chaque personnage : la 1re qui a une infobox
+    // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
+    // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
+    // pour l'occupation de l'intro et les cheveux
     const found = characters.flatMap(({ target, titles }) => {
       const title = titles.find(title => pages[title] && fandomInfobox(pages[title]!))
-      return title ? [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }] : []
+      if (title)
+        return [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }]
+      const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
+      return bare ? [{ target, title: bare, values: fandomValues({}) }] : []
     })
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
     const hairless = found.filter(({ target, values }) => isEmpty(target.entry.attributes.hair) && isEmpty(values.hair))

@@ -428,7 +428,9 @@
     "Domestique",
     "Apothicaire"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -3136,7 +3138,7 @@
    "age": 17,
    "occupation": [
     "Étudiant",
-    "Commerçant"
+    "Café co-owner"
    ],
    "hair": [
     "Roses"
@@ -3446,7 +3448,7 @@
    "occupation": [
     "Étudiant",
     "Petits boulots",
-    "Commerçant",
+    "Café co-owner",
     "Employé"
    ],
    "hair": [
@@ -3738,7 +3740,14 @@
   "attributes": {
    "gender": "Autre",
    "age": 300,
-   "occupation": null,
+   "occupation": [
+    "Scholar",
+    "Icebreaker",
+    "Combattant",
+    "Manga Spoiler",
+    "Leader",
+    "Prayer Machine"
+   ],
    "hair": null,
    "anime": "Land of the Lustrous",
    "genres": [
@@ -5976,7 +5985,9 @@
     "Criminel",
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",

@@ -196,6 +196,17 @@
     ]
    },
    "gender": "Aucun"
+  },
+  "275374": {
+   "_nom": "Bozes Ko Palesti",
+   "occupation": {
+    "plus": [
+     "Chevalier"
+    ],
+    "moins": [
+     "Noble"
+    ]
+   }
   }
  },
  "add": []

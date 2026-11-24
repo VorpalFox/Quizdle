@@ -46,3 +46,9 @@ describe('introOccupations', () => {
     expect(introOccupations("'''Beldia''' is one of the Devil King's Generals.").occupation).toEqual(['Officier'])
   })
 })
+
+describe('fandomInfobox, modèle maison', () => {
+  it('ModeleAuNomInconnu_ReconnuASesChamps', () => {
+    expect(fandomInfobox('{{Human\n|title = Hirokazu Ukita\n|gender = Male\n|occupation = Police officer\n}}')).toMatchObject({ gender: 'Male', occupation: 'Police officer' })
+  })
+})

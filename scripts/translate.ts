@@ -73,7 +73,7 @@ const OCCUPATIONS: Record<string, string | null> = {
 // Les cas précis d'abord, puis les grandes familles de métiers. null : pas une occupation, on la retire.
 const RULES: [RegExp, string | null][] = [
   // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
-  [/-class servant|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
+  [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
   [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker/, 'Mafieux'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
@@ -94,7 +94,8 @@ const RULES: [RegExp, string | null][] = [
   [/\bagent\b/, 'Agent secret'],
   [/magazine|journalist|reporter|announcer/, 'Journaliste'],
   [/\bmanager\b/, 'Gérant'],
-  [/\b(?:owner|shop|shopkeeper|store)\b/, 'Commerçant'],
+  // Le propriétaire d'un commerce seulement : pas « owner of the Giftia » (le maître d'un robot)
+  [/\b(?:shop|shopkeeper|store|mart|restaurant|café|cafe|inn|bar)\b|^owner$/, 'Commerçant'],
   // Les postes de Tower of God
   [/bearer|wave controller/, 'Combattant'],
   [/super-?h[ée]ro/, 'Super-héros'],
@@ -106,9 +107,12 @@ const RULES: [RegExp, string | null][] = [
   [/\bprince\b|\bheir\b/, 'Prince'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
+  [/swords(?:wo)?m[ae]n/, 'Épéiste'],
+  [/exorcist/, 'Exorciste'],
+  [/\bbull(?:y|ies)\b|delinquent/, 'Voyou'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)\b/, 'Combattant'],
   [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
-  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)\b/, 'Garde'],
+  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Garde'],
   [/butler/, 'Majordome'],
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
   [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
@@ -121,7 +125,7 @@ const RULES: [RegExp, string | null][] = [
   [/\b(?:slave|livestock)\b/, 'Esclave'],
   [/prisoner|inmate/, 'Prisonnier'],
   [/unemployed|\bneet\b|homeless/, 'Chômeur'],
-  [/con ?-?artist|conman|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
+  [/con ?-?artist|con ?man|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
   [/killer|murderer|assassin|hitman|hitwoman/, 'Assassin'],
   [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Magicien'],
   [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Religieux'],
@@ -144,7 +148,7 @@ const RULES: [RegExp, string | null][] = [
   [/game (?:designer|planner|tester)|producer|promoter/, 'Employé'],
   [/house ?wife|house spouse/, 'Femme au foyer'],
   [/[ée]tudiant/, 'Étudiant'],
-  [/\bstudent\b|schooler|freshman|pupil|high school|class representative|homeroom/, 'Élève'],
+  [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Élève'],
   // Pas des occupations : animaux, valeurs vides
   [/\bpet\b|housepet|familiar|^none$|^current$|^former$|^inc$|^npc$/, null],
   // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)
