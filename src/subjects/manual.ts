@@ -29,6 +29,8 @@ export interface WikiSettings {
   preferred?: string[]
   // pages à lire en plus de la catégorie (personnages qui n'y sont pas rangés), prises en premier
   pages?: string[]
+  // pages qui présentent plusieurs personnages, une infobox chacun (« Characters » de Sundered), prises en premier
+  listPages?: string[]
   // nombre de personnages au plus, quand le wiki n'en a pas plus de vrais
   limit?: number
   // catégorie des personnages, quand ce n'est ni « Characters » ni une des autres essayées

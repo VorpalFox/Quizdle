@@ -3914,6 +3914,52 @@
    "nationality": [
     "Zamoksva"
    ]
+  },
+  "wiki-sundered-eshe": {
+   "_nom": "Eshe",
+   "nationality": [
+    "Wasteland"
+   ]
+  },
+  "wiki-sundered-shining-trapezohedron": {
+   "_nom": "Shining Trapezohedron",
+   "gender": "Aucun",
+   "nationality": [
+    "The Nether"
+   ]
+  },
+  "wiki-sundered-krurhal-milarh": {
+   "_nom": "Krurhal Milarh",
+   "nationality": [
+    "Eschaton"
+   ]
+  },
+  "wiki-sundered-ishaela-bha-gor": {
+   "_nom": "Ishaela Bha'gor",
+   "nationality": [
+    "Eschaton"
+   ]
+  },
+  "wiki-sundered-leonard-waters": {
+   "_nom": "Leonard Waters",
+   "nationality": [
+    "Valkyries"
+   ]
+  },
+  "wiki-sundered-emmit-nelson": {
+   "_nom": "Emmit Nelson",
+   "nationality": [
+    "Valkyries"
+   ]
+  },
+  "wiki-sundered-nyarlathotep": {
+   "_nom": "Nyarlathotep",
+   "nationality": [
+    "The Nether"
+   ],
+   "occupation": [
+    "Aucune"
+   ]
   }
  },
  "add": [
@@ -6201,6 +6247,12 @@
   },
   "Unreal": {
    "limit": 11
+  },
+  "Sundered": {
+   "_raison": "tout le casting est sur la page Characters, une infobox par personnage",
+   "listPages": [
+    "Characters"
+   ]
   }
  },
  "defaults": {

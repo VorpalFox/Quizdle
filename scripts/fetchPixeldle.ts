@@ -37,7 +37,8 @@
 // - Pokémon : seulement des humains, le Pokédle couvre les Pokémon. Une franchise par licence (Sons of the Forest
 //   plutôt que The Forest). Unreal : pas les personnages des seuls Unreal Championship.
 // - Meryl (Mother 4, un jeu de fans pas encore sorti) est gardée exprès : année « Futur », studio « Jeu de fans ».
-// - Reste à faire : Sundered n'a aucun personnage, son wiki est presque vide. Une fois rempli, le régler dans « wikis ».
+// - Sundered : tout le casting est sur une page de son wiki (« Characters », une infobox par personnage) : réglé dans
+//   « wikis » avec listPages.
 // - Pistes abandonnées : les Fandom FR (presque vides), le wiki officiel de LoL (que du gameplay). Gamicus (wiki de
 //   tous les jeux) a servi en dernier recours pour The World Next Door.
 import { readFile, writeFile } from 'node:fs/promises'
@@ -566,23 +567,28 @@ const withDefaults = (entry: Entry): Entry => {
 }
 // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (« long blonde hair »), à relire.
 // Pas ceux corrigés à la main.
-const pageRefs = new Map([...enriched.pageRefs, ...fromWikis.flatMap(({ franchise, api, chosen }) => chosen.map(({ name, title }) => [wikiId(franchise, name), { api, title }] as const))])
-const hairless = [...wikidataEntries, ...wikiEntries].filter(entry => entry.attributes.hair === null && pageRefs.has(entry.id) && !('hair' in (manual.edit[entry.id] ?? {})))
-const byApi = Map.groupBy(hairless, entry => pageRefs.get(entry.id)!.api)
+// Un personnage d'une page qui en présente plusieurs (listPages) : son morceau de la page, pas la page entière
+const sections = new Map(fromWikis.flatMap(({ franchise, chosen }) => chosen.flatMap(({ name, section }) => section ? [[wikiId(franchise, name), section] as const] : [])))
+const pageRefs = new Map([...enriched.pageRefs, ...fromWikis.flatMap(({ franchise, api, chosen }) => chosen.filter(({ section }) => !section).map(({ name, title }) => [wikiId(franchise, name), { api, title }] as const))])
+const hairless = [...wikidataEntries, ...wikiEntries].filter(entry => entry.attributes.hair === null && (pageRefs.has(entry.id) || sections.has(entry.id)) && !('hair' in (manual.edit[entry.id] ?? {})))
 const textHairs = new Map<string, string[]>()
 const hairExcerpts: string[] = []
+const hairFromText = (entry: Entry, text: string | null | undefined) => {
+  const found = text ? textHair(text) : null
+  if (!found)
+    return
+  textHairs.set(entry.id, found.colors)
+  hairExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
+}
+for (const entry of hairless.filter(entry => sections.has(entry.id)))
+  hairFromText(entry, sections.get(entry.id))
+const byApi = Map.groupBy(hairless.filter(entry => pageRefs.has(entry.id)), entry => pageRefs.get(entry.id)!.api)
 let read = 0
 for (const [api, group] of byApi) {
   process.stdout.write(`\rCheveux dans le texte : ${++read}/${byApi.size}`.padEnd(80))
   const pages = await fullPages(api, group.map(entry => pageRefs.get(entry.id)!.title))
-  for (const entry of group) {
-    const text = pages[pageRefs.get(entry.id)!.title]
-    const found = text ? textHair(text) : null
-    if (!found)
-      continue
-    textHairs.set(entry.id, found.colors)
-    hairExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
-  }
+  for (const entry of group)
+    hairFromText(entry, pages[pageRefs.get(entry.id)!.title])
 }
 console.log()
 

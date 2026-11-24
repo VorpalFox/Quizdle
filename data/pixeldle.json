@@ -67419,6 +67419,200 @@
   }
  },
  {
+  "id": "wiki-sundered-eshe",
+  "name": "Eshe",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Wasteland"
+   ],
+   "occupation": [
+    "Mécanicien",
+    "Survivant"
+   ],
+   "hair": [
+    "Bruns",
+    "Rouges"
+   ],
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-shining-trapezohedron",
+  "name": "Shining Trapezohedron",
+  "aliases": [
+   "Trapezohedron Shining",
+   "Shining",
+   "Trapezohedron"
+  ],
+  "attributes": {
+   "gender": "Aucun",
+   "species": [
+    "Objet"
+   ],
+   "nationality": [
+    "The Nether"
+   ],
+   "occupation": [
+    "Guide"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-krurhal-milarh",
+  "name": "Krurhal Milarh",
+  "aliases": [
+   "Milarh Krurhal",
+   "Krurhal",
+   "Milarh"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Eschaton"
+   ],
+   "occupation": [
+    "Religieux"
+   ],
+   "hair": null,
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-ishaela-bha-gor",
+  "name": "Ishaela Bha'gor",
+  "aliases": [
+   "Bha'gor Ishaela",
+   "Ishaela",
+   "Bha'gor"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Eschaton"
+   ],
+   "occupation": [
+    "Religieux"
+   ],
+   "hair": null,
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-leonard-waters",
+  "name": "Leonard Waters",
+  "aliases": [
+   "Waters Leonard",
+   "Leonard",
+   "Waters"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Valkyries"
+   ],
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-emmit-nelson",
+  "name": "Emmit Nelson",
+  "aliases": [
+   "Nelson Emmit",
+   "Emmit",
+   "Nelson"
+  ],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Valkyries"
+   ],
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
+  "id": "wiki-sundered-nyarlathotep",
+  "name": "Nyarlathotep",
+  "aliases": [],
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Divinité"
+   ],
+   "nationality": [
+    "The Nether"
+   ],
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": null,
+   "franchise": "Sundered",
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017
+  }
+ },
+ {
   "id": "wiki-deponia-rufus",
   "name": "Rufus",
   "aliases": [],

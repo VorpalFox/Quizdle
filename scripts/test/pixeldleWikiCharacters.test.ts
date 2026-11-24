@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, DEVELOPMENT, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from '../pixeldleWikiCharacters.js'
+import { characterName, DEVELOPMENT, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, listedCharacters, pronounGender, sameCharacter, textHair } from '../pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -160,5 +160,47 @@ describe('templateGames', () => {
   it('CodesTraduits_AnneeDuJeu', () => {
     const games = [{ names: ['Gears of War'], year: 2006 }, { names: ['Gears of War 2'], year: 2008 }]
     expect(citedYear({ first: [], all: templateGames('{{Games|GOW2|GOW3}}') }, games)).toBe(2008)
+  })
+})
+
+describe('page qui présente plusieurs personnages', () => {
+  const page = `'''Sundered''' features a small cast.
+
+== Protagonist ==
+=== Eshe ===
+{{Character Infobox
+| name   = Eshe
+| gender = Female
+}}
+'''Eshe''' is the protagonist.
+
+==== Dark Eshe ====
+A ghost-like figure with red hair.
+
+== The Valkyries ==
+The Valkyries were founded by soldiers.
+
+=== Leonard Waters ===
+{{Character Infobox
+| name   = Leonard Waters
+| gender = Male
+}}
+'''General Leonard Waters''' led the expedition.
+
+== Minor characters ==
+{| class="wikitable"
+|}`
+
+  it('un personnage par infobox, avec le texte qui la suit jusqu’à la section suivante', () => {
+    const listed = listedCharacters(page)
+    expect(listed.map(({ name }) => name)).toEqual(['Eshe', 'Leonard Waters'])
+    expect(listed[0]!.text).toContain('Dark Eshe')
+    expect(listed[0]!.text).not.toContain('Valkyries were founded')
+    expect(listed[1]!.text).toContain('led the expedition')
+    expect(listed[1]!.text).not.toContain('Minor characters')
+  })
+
+  it('rien sans infobox', () => {
+    expect(listedCharacters("'''Bob''' is a character.")).toEqual([])
   })
 })

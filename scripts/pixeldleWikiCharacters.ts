@@ -3,6 +3,7 @@
 // Seules les pages dont on connaît le sexe sont gardées (pas les espèces, lieux, objets, jeux) : celui de l'infobox,
 // sinon celui des pronoms du texte (« he », « she »), beaucoup de petits wikis n'ayant pas de champ « gender ».
 // Classement : la longueur de la page, les personnages importants ont les plus longues.
+// Un wiki qui présente tous ses personnages sur une page (Sundered) : « listPages » dans les réglages, une infobox par personnage.
 // Les listes de pages et leurs longueurs sont gardées dans .cache/pixeldle/categories/ (hors git).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
@@ -67,6 +68,8 @@ export interface WikiCharacter {
   // les jeux cités par l'infobox : la 1re apparition d'abord, sinon toutes les apparitions. En dernier recours,
   // l'introduction de la page (« Skorge is the secondary antagonist of Gears of War 2 »).
   games: { first: string[], all: string[], intro?: string[] }
+  // Personnage d'une page qui en présente plusieurs (listPages) : son morceau de la page, à lire à la place de la page
+  section?: string
 }
 
 const MAX_INTRO_LENGTH = 1500
@@ -319,6 +322,20 @@ export async function fullPages(api: string, titles: string[]): Promise<Record<s
   return cache
 }
 
+// Une page qui présente plusieurs personnages, une infobox chacun (« Characters » du wiki de Sundered) : chaque infobox
+// avec le texte qui la suit, jusqu'à l'infobox suivante ou la prochaine section de 1er niveau (« == »). Le nom : celui
+// de l'infobox.
+export function listedCharacters(wikitext: string): { name: string, text: string }[] {
+  const starts = [...wikitext.matchAll(/\{\{\s*[^|{}\n]*infobox[^|{}\n]*\s*(?=\|)/gi)].map(match => match.index!)
+  return starts.flatMap((start, i) => {
+    const rest = wikitext.slice(start, starts[i + 1] ?? wikitext.length)
+    const end = rest.search(/\n==[^=]/)
+    const text = end === -1 ? rest : rest.slice(0, end)
+    const name = infobox(text)?.name?.trim()
+    return name ? [{ name, text }] : []
+  })
+}
+
 // Jusqu'à `max` personnages du wiki, les plus longues pages d'abord, sans ceux déjà là (`known` : leurs noms et alias)
 export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>, untranslated: Map<string, string[]>, skip: (name: string) => boolean = () => false, settings: WikiSettings = {}): Promise<{ root: string | null, found: number, chosen: WikiCharacter[] }> {
   const { root, pages: categoryPages } = await characterPages(wiki, settings.category)
@@ -332,6 +349,37 @@ export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>
     .filter(([title]) => preferred.includes(title) || ![...known].some(name => sameCharacter(name, characterName(title))))
   const chosen: WikiCharacter[] = []
   const names = new Set([...known].map(normalize))
+  // Gardé si c'est un personnage. `full` : la page entière quand `text` n'en est que le début.
+  const consider = (title: string, name: string, length: number, text: string, full: string | null, section?: string) => {
+    if (names.has(normalize(name)) || skip(name))
+      return
+    const fields = infobox(text)
+    // Les valeurs non traduites ne comptent que pour les pages gardées (pas le « genre » d'un jeu)
+    const pageUntranslated = new Map<string, string[]>()
+    const values = fields ? infoboxValues(fields, pageUntranslated) : {}
+    // Un personnage a un sexe (« Aucun » pour un robot) ; une espèce, un lieu ou un objet non
+    if (values.gender !== undefined && !GENDERS.has(String(values.gender)))
+      return
+    values.gender ??= pronounGender(text) ?? (full ? pronounGender(full) : null)
+    values.species ??= templateSpecies(text)
+    // Une page choisie à la main est gardée même sans sexe trouvé (à compléter avec edit)
+    if (!values.gender && !preferred.includes(title))
+      return
+    for (const [key, list] of pageUntranslated)
+      untranslated.set(key, [...untranslated.get(key) ?? [], ...list])
+    names.add(normalize(name))
+    chosen.push({ title, name, length, values, games: { ...pageGames(text, fields), intro: [introText(full || text)] }, ...section ? { section } : {} })
+  }
+  // Les pages qui présentent plusieurs personnages d'abord, lues en entier : un personnage par infobox
+  let listed = 0
+  for (const page of settings.listPages ?? []) {
+    const text = (await fullPages(wiki.api, [page]))[page]
+    for (const character of text ? listedCharacters(text) : []) {
+      listed++
+      if (chosen.length < max)
+        consider(character.name, character.name, character.text.length, character.text, null, character.text)
+    }
+  }
   for (let start = 0; start < sorted.length && chosen.length < max; start += max * READ_FACTOR) {
     const batch = sorted.slice(start, start + max * READ_FACTOR)
     const texts = await fetchPages(wiki.api, batch.map(([title]) => title))
@@ -341,28 +389,11 @@ export async function wikiCharacters(wiki: Wiki, max: number, known: Set<string>
     const full = short.length > 0 ? await fullPages(wiki.api, short) : {}
     for (const [title, length] of batch) {
       const text = texts[title] || full[title]
-      const name = characterName(title)
-      if (!text || names.has(normalize(name)) || skip(name))
-        continue
-      const fields = infobox(text)
-      // Les valeurs non traduites ne comptent que pour les pages gardées (pas le « genre » d'un jeu)
-      const pageUntranslated = new Map<string, string[]>()
-      const values = fields ? infoboxValues(fields, pageUntranslated) : {}
-      // Un personnage a un sexe (« Aucun » pour un robot) ; une espèce, un lieu ou un objet non
-      if (values.gender !== undefined && !GENDERS.has(String(values.gender)))
-        continue
-      values.gender ??= pronounGender(text) ?? (full[title] ? pronounGender(full[title]!) : null)
-      values.species ??= templateSpecies(text)
-      // Une page choisie à la main est gardée même sans sexe trouvé (à compléter avec edit)
-      if (!values.gender && !preferred.includes(title))
-        continue
-      for (const [key, list] of pageUntranslated)
-        untranslated.set(key, [...untranslated.get(key) ?? [], ...list])
-      names.add(normalize(name))
-      chosen.push({ title, name, length, values, games: { ...pageGames(text, fields), intro: [introText(full[title] || text)] } })
+      if (text)
+        consider(title, characterName(title), length, text, full[title] ?? null)
       if (chosen.length === max)
         break
     }
   }
-  return { root, found: Object.keys(pages).length, chosen }
+  return { root, found: Object.keys(pages).length + listed, chosen }
 }
