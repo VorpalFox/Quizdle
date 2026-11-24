@@ -1644,7 +1644,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 13,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -1671,7 +1673,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 13,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -1866,7 +1870,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -1920,7 +1926,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -3453,7 +3461,6 @@
     "Étudiant"
    ],
    "hair": [
-    "Chauve",
     "Bleus"
    ],
    "anime": "Angel Beats!",
@@ -4849,7 +4856,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126537-EDEeeiLkafXX.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": 28,
+   "age": 29,
    "occupation": [
     "Leader"
    ],
@@ -4874,8 +4881,7 @@
    "gender": "Femme",
    "age": 6,
    "occupation": [
-    "Artisan",
-    "Leherl at the Gilberta Company"
+    "Artisan"
    ],
    "hair": [
     "Bleus",
@@ -6431,7 +6437,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -7997,7 +8005,8 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
-    "Artisan"
+    "Artisan",
+    "Employé"
    ],
    "hair": [
     "Blonds"
@@ -17634,9 +17643,7 @@
    "occupation": [
     "Leader"
    ],
-   "hair": [
-    "Chauve"
-   ],
+   "hair": null,
    "anime": "Darwin's Game",
    "genres": [
     "Action",
@@ -22083,32 +22090,6 @@
   }
  },
  {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": null,
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "ufotable"
-  }
- },
- {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -22126,6 +22107,32 @@
    "hair": [
     "Bleus"
    ],
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -31098,32 +31105,6 @@
   }
  },
  {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 12000,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2012,
-   "studio": "david production"
-  }
- },
- {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -31141,6 +31122,32 @@
    "hair": [
     "Noirs",
     "Bruns"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "david production"
+  }
+ },
+ {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 12000,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Blonds"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -32119,7 +32126,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -32146,7 +32155,8 @@
    "gender": "Femme",
    "age": 15,
    "occupation": [
-    "Employé"
+    "Employé",
+    "Étudiant"
    ],
    "hair": [
     "Violets"
@@ -32200,7 +32210,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -32224,7 +32236,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -32302,6 +32316,7 @@
    "age": 15,
    "occupation": [
     "Voyou",
+    "Étudiant",
     "Criminel"
    ],
    "hair": [
@@ -47785,6 +47800,35 @@
   }
  },
  {
+  "id": "36125",
+  "name": "Nao Yasumori",
+  "aliases": [
+   "Yasumori Nao",
+   "安森奈緒",
+   "Yasumori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 24,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horreur",
+    "Mystère",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume"
+  }
+ },
+ {
   "id": "36127",
   "name": "Tomio Ookawa",
   "aliases": [
@@ -47802,35 +47846,6 @@
    ],
    "hair": [
     "Chauve"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horreur",
-    "Mystère",
-    "Surnaturel",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume"
-  }
- },
- {
-  "id": "36125",
-  "name": "Nao Yasumori",
-  "aliases": [
-   "Yasumori Nao",
-   "安森奈緒",
-   "Yasumori"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 24,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Bleus"
    ],
    "anime": "Shiki",
    "genres": [
@@ -50007,8 +50022,7 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Employé",
-    "Leader",
+    "Scientifique",
     "Chevalier",
     "Combattant"
    ],
@@ -57312,32 +57326,6 @@
   }
  },
  {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 29,
-   "occupation": [
-    "Professeur"
-   ],
-   "hair": null,
-   "anime": "Toradora!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF"
-  }
- },
- {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -57355,6 +57343,32 @@
    "hair": [
     "Bleus"
    ],
+   "anime": "Toradora!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF"
+  }
+ },
+ {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 29,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -57435,7 +57449,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Toradora!",
    "genres": [

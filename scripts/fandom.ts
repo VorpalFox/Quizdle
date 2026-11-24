@@ -343,11 +343,53 @@ export function templateFields(text: string, start: number): Record<string, stri
     const equal = part.indexOf('=')
     if (equal < 0)
       continue
-    const value = cleanValue(part.slice(equal + 1))
+    const key = part.slice(0, equal).trim().toLowerCase().replace(/_/g, ' ')
+    const raw = part.slice(equal + 1)
+    const value = cleanValue(UNHIDDEN_FIELDS.has(key) ? unhide(raw) : raw)
     if (value)
-      fields[part.slice(0, equal).trim().toLowerCase().replace(/_/g, ' ')] = value
+      fields[key] = value
   }
   return fields
+}
+
+// Le contenu des spoilers repliés ({{Hidden|Webcomic Spoiler|…}}, {{Hide|…}}) n'est lu que pour l'occupation, l'arme et
+// les titres : ce qu'ils cachent n'y spoile pas (Sonic : « Legendary Demon Blade », il se bat déjà au sabre dans l'anime),
+// la mort est lue à part et jamais affichée. Ailleurs (affiliation : Satoru chez les Neo Heroes), ils restent effacés.
+const UNHIDDEN_FIELDS = new Set([...FIELDS.occupation, ...FIELDS.weapon, ...FIELDS.titles].map(name => name.replace(/_/g, ' ')))
+const HIDDEN = /\{\{\s*(?:hidden|hide)\s*\|/gi
+
+// {{Hidden|titre|contenu}} → contenu, {{Hide|contenu}} → contenu
+export function unhide(text: string): string {
+  let result = ''
+  let last = 0
+  for (const match of text.matchAll(HIDDEN)) {
+    if (match.index! < last)
+      continue
+    // Les arguments du modèle, coupés sur les « | » de son 1er niveau, jusqu'à son « }} »
+    const args = ['']
+    let depth = 1
+    let i = match.index! + match[0].length
+    for (; i < text.length && depth > 0; i++) {
+      const pair = text.slice(i, i + 2)
+      if (pair === '{{' || pair === '[[') {
+        depth++
+        args[args.length - 1] += pair
+        i++
+      } else if (pair === '}}' || pair === ']]') {
+        depth--
+        if (depth > 0)
+          args[args.length - 1] += pair
+        i++
+      } else if (text[i] === '|' && depth === 1) {
+        args.push('')
+      } else {
+        args[args.length - 1] += text[i]
+      }
+    }
+    result += text.slice(last, match.index) + args[args.length - 1]
+    last = i
+  }
+  return result + text.slice(last)
 }
 
 const field = (fields: Record<string, string>, names: readonly string[]) =>
@@ -381,6 +423,15 @@ export function affiliationOccupations(value: string | null): string[] | null {
   const roles = (value ?? '').split(/\s*(?:,|;|\n|<br\s*\/?>)\s*/).map(item => item.replace(/\s*\([^)]*\)/g, '').trim())
     .filter(item => item && !NOT_A_ROLE.test(item) && !PROPER_NAME.test(item))
   return titleOccupations(roles.join(', ') || null)
+}
+
+// L'école de l'infobox, quand elle n'a pas d'occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
+// Pas une ancienne école (« (formerly) », « graduated »). Ni « class » (« 1-D », mais aussi « Warrior », « S-Class »), ni
+// « grade » (« A+ », « Grade 1 »), ni « year » : trop d'autres sens.
+const SCHOOL_FIELDS = ['school', 'schools', 'école']
+const FORMER_SCHOOL = /\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
+export function schoolOccupations(value: string | null): string[] | null {
+  return value && !FORMER_SCHOOL.test(value) ? titleOccupations('Student') : null
 }
 
 // Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
@@ -484,18 +535,20 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       if (hair)
         added.hair = hair.colors
       // Sans occupation : le rôle de l'affiliation de l'infobox (« Student (formerly) ») et ce que dit l'introduction,
-      // les deux ensemble (Shuichi Kagaya : élève et tueur)
+      // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
       const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
-      const affiliation = jobless ? affiliationOccupations(field(fandomInfobox(pages[title]!) ?? {}, AFFILIATION_FIELDS)) : null
+      const infobox = fandomInfobox(pages[title]!) ?? {}
+      const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
       const intro = jobless ? introOccupations(pages[title]!) : null
-      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? []])]
+      const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null
+      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
       if (jobs.length > 0)
         added.occupation = jobs
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

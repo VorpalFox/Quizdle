@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, sameName } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, sameName, schoolOccupations } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -108,5 +108,38 @@ describe('affiliation', () => {
     expect(affiliationOccupations('Demon Slayer Corps')).toBeNull()
     expect(affiliationOccupations("Souichirou Kuzuki's Servant")).toBeNull()
     expect(affiliationOccupations('Prince Bojji, Underworld Kingdom')).toBeNull()
+  })
+})
+
+describe('fandomInfobox, spoilers repliés', () => {
+  const SONIC = `{{Infobox character
+|race = [[Humans|Human]]
+|weapons = Ninja Equipment <br/>{{Hidden|Webcomic Spoiler|[[Legendary Demon Blades|Legendary Demon Blade]]}}
+|occupation = Bodyguard <small>(Formerly)</small>
+|affiliation = [[Hero Association]]<br/>{{Hidden|Webcomic Spoiler|[[Neo Heroes]]}}
+}}`
+
+  it('ArmeDansHidden_Lue', () => {
+    expect(fandomValues(fandomInfobox(SONIC)!).weapon).toEqual(['Épéiste'])
+  })
+
+  it('AffiliationDansHidden_ResteEffacee', () => {
+    expect(fandomInfobox(SONIC)!.affiliation).not.toContain('Neo Heroes')
+  })
+
+  it('OccupationDansHide_Lue', () => {
+    const fields = fandomInfobox('{{Character\n|gender = Female\n|previous occupation = {{Hide|Laundry maid of the [[Heathfield Manor#Heathfield Household|Heathfield household]]}}\n}}')!
+    expect(fields['previous occupation']).toContain('Laundry maid')
+  })
+})
+
+describe('schoolOccupations', () => {
+  it('Ecole_Eleve', () => {
+    expect(schoolOccupations('Hyakkaou Private Academy')).toEqual(['Élève'])
+  })
+
+  it('AncienneEcole_Rien', () => {
+    expect(schoolOccupations('Umesato Junior High School (formerly)')).toBeNull()
+    expect(schoolOccupations('Graduated from Ohashi High School')).toBeNull()
   })
 })
