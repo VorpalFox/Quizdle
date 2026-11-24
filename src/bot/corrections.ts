@@ -4,7 +4,7 @@
 import { GameError } from '../engine/game.js'
 import { findEntry } from '../engine/search.js'
 import { type AttributeDef, type AttributeValue, type Entry, NOT_APPLICABLE, type Subject } from '../engine/types.js'
-import { editEntry, manualFile, readManual, writeManual } from '../subjects/manual.js'
+import { editEntry, isSetEdit, manualFile, mergeSetEdits, readManual, type SetEdit, writeManual } from '../subjects/manual.js'
 import type { GameStore } from './store.js'
 
 // Valeur qui veut dire « vide » dans /quizdebug edit
@@ -43,6 +43,21 @@ export function parseValue(attribute: AttributeDef, input: string): AttributeVal
   }
 }
 
+// Un attribut à plusieurs valeurs : « Soldat, -Dirigeant » ajoute Soldat et retire Dirigeant, sans toucher aux autres
+// valeurs. « - » vide le champ, « n/a » le remplace par non applicable : toutes les valeurs actuelles sont retirées.
+export function parseSetEdit(input: string, current: AttributeValue): SetEdit {
+  const text = input.trim().toLowerCase()
+  const all = (Array.isArray(current) ? current : current === null ? [] : [current]).map(String)
+  if (EMPTY_VALUES.has(text))
+    return all.length > 0 ? { moins: all } : {}
+  if (NOT_APPLICABLE_VALUES.has(text))
+    return { plus: [NOT_APPLICABLE], ...all.length > 0 ? { moins: all.filter(value => value !== NOT_APPLICABLE) } : {} }
+  const items = [...new Set(input.split(/\s*[,/]\s*/).map(item => item.trim()).filter(Boolean))]
+  const plus = items.filter(item => !item.startsWith('-'))
+  const moins = items.filter(item => item.startsWith('-')).map(item => item.slice(1).trim()).filter(Boolean)
+  return { ...plus.length > 0 ? { plus } : {}, ...moins.length > 0 ? { moins } : {} }
+}
+
 // Les valeurs déjà utilisées par d'autres entrées, de la plus fréquente à la moins fréquente : pour repérer « blanc » au lieu de « Blancs »
 export function existingValues(subject: Subject, key: string): string[] {
   const counts = new Map<string, number>()
@@ -66,16 +81,22 @@ export function removeEntry(subject: Subject, entry: Entry, store: Pick<GameStor
   return { redrawn: store.redrawIfTarget(subject, entry.id) }
 }
 
+// Un attribut à plusieurs valeurs s'écrit en valeurs ajoutées et retirées (parseSetEdit), cumulées avec la correction
+// déjà faite. value : la valeur après la correction.
 export function editAttribute(subject: Subject, entry: Entry, attribute: AttributeDef, input: string, file: URL = manualFile(subject.id)): { value: AttributeValue, unseen: string[], known: string[] } {
-  const value = parseValue(attribute, input)
+  const change = attribute.kind === 'set' ? parseSetEdit(input, entry.attributes[attribute.key] ?? null) : parseValue(attribute, input)
   // avant la modif, pour que la valeur tapée ne se compte pas elle-même
   const known = attribute.kind === 'number' ? [] : existingValues(subject, attribute.key)
 
   const manual = readManual(file)
-  manual.edit[entry.id] = { _nom: entry.name, ...manual.edit[entry.id], [attribute.key]: value }
+  const before = manual.edit[entry.id]?.[attribute.key]
+  const saved = isSetEdit(change) ? mergeSetEdits(isSetEdit(before) ? before : undefined, change) : change
+  manual.edit[entry.id] = { _nom: entry.name, ...manual.edit[entry.id], [attribute.key]: saved }
   writeManual(file, manual)
 
-  editEntry(entry, { [attribute.key]: value }, subject.attributes)
-  const unseen = (Array.isArray(value) ? value : value === null ? [] : [value]).map(String).filter(item => attribute.kind !== 'number' && !known.includes(item))
+  editEntry(entry, { [attribute.key]: change }, subject.attributes.map(({ key }) => key))
+  const value = entry.attributes[attribute.key] ?? null
+  const typed = isSetEdit(change) ? change.plus ?? [] : (Array.isArray(change) ? change : change === null ? [] : [change]).map(String)
+  const unseen = typed.filter(item => attribute.kind !== 'number' && !known.includes(item))
   return { value, unseen, known }
 }

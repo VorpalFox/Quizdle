@@ -5,15 +5,16 @@
 // Les ids : AniList (anilist.co/character/<id>) pour l'Animedle et le Weebdle, QID Wikidata ou « wiki-<franchise>-<nom> »
 // pour le Pixeldle (tous dans les récaps). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
 import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
-import type { AttributeDef, AttributeValue, Entry } from '../engine/types.js'
+import { type AttributeValue, type Entry, NOT_APPLICABLE } from '../engine/types.js'
 
 export interface Manual {
   // ids des personnages à retirer. Au Weebdle et au Pixeldle, sa place revient au suivant du tirage ; à l'Animedle,
   // il n'est pas remplacé.
   exclude: string[]
-  // id → champs à remplacer : name, aliases, image, ou un attribut (gender, hair...). Les clés en « _ » sont ignorées
-  // (« _nom » pour s'y retrouver, « _raison » pour la retrouver). Un personnage corrigé est toujours gardé, même s'il
-  // n'avait pas été tiré : pour ajouter un personnage de la source, il suffit de le corriger.
+  // id → champs à corriger : name, aliases, image, ou un attribut (gender, hair...). Un attribut à plusieurs valeurs
+  // prend les valeurs à ajouter et à retirer ({ "plus": [...], "moins": [...] }, voir SetEdit), les autres sont remplacés.
+  // Les clés en « _ » sont ignorées (« _nom » pour s'y retrouver, « _raison » pour la retrouver). Un personnage corrigé
+  // est toujours gardé, même s'il n'avait pas été tiré : pour ajouter un personnage de la source, il suffit de le corriger.
   edit: Record<string, Record<string, unknown>>
   // personnages complets à ajouter, absents de la source. « edit » ne s'applique pas à eux : les modifier ici.
   add: Entry[]
@@ -69,21 +70,40 @@ export function writeManual(file: URL, manual: Manual): void {
 
 const ENTRY_FIELDS = new Set(['name', 'aliases', 'image'])
 
-// Une correction d'un champ multiple ne retire pas les tags ajoutés par le script (Entry.added) : ils s'ajoutent après
-function withAdded(value: AttributeValue, added: readonly string[] | undefined): AttributeValue {
-  if (!added?.length || (value !== null && !Array.isArray(value)))
-    return value
-  const list = (value ?? []) as readonly string[]
-  return [...list, ...added.filter(tag => !list.includes(tag))]
+// La correction d'un attribut à plusieurs valeurs : les valeurs à ajouter et celles à retirer. Les autres restent, dont
+// les tags ajoutés par les scripts (Monde réel, l'occupation tirée de l'arme...) : la liste n'a rien d'autre à retenir.
+export interface SetEdit {
+  plus?: string[]
+  moins?: string[]
+}
+
+// Les valeurs d'un champ vide (« Inconnu », « Aucune » pour l'occupation d'un animal, « N/A », « Au choix » pour un
+// avatar) : une vraie valeur ajoutée les remplace
+const PLACEHOLDERS = new Set(['Inconnu', 'Aucune', NOT_APPLICABLE, 'Au choix'])
+
+export const isSetEdit = (value: unknown): value is SetEdit => typeof value === 'object' && value !== null && !Array.isArray(value)
+
+const asList = (value: AttributeValue | undefined) => Array.isArray(value) ? value.map(String) : value === null || value === undefined ? [] : [String(value)]
+
+export function applySetEdit(current: AttributeValue | undefined, edit: SetEdit): AttributeValue {
+  const plus = edit.plus ?? []
+  const moins = new Set(edit.moins ?? [])
+  const kept = asList(current).filter(value => !moins.has(value) && !(plus.length > 0 && PLACEHOLDERS.has(value) && !plus.includes(value)))
+  const result = [...kept, ...plus.filter(value => !kept.includes(value))]
+  return result.length > 0 ? result : null
+}
+
+// Ajoute une correction à celle déjà faite : une valeur ajoutée n'est plus à retirer, et inversement
+export function mergeSetEdits(before: SetEdit | undefined, next: SetEdit): SetEdit {
+  const plus = [...new Set([...(before?.plus ?? []).filter(value => !next.moins?.includes(value)), ...next.plus ?? []])]
+  const moins = [...new Set([...(before?.moins ?? []).filter(value => !next.plus?.includes(value)), ...next.moins ?? []])]
+  return { ...plus.length > 0 ? { plus } : {}, ...moins.length > 0 ? { moins } : {} }
 }
 
 // Applique un jeu de champs (ceux d'une ligne de « edit ») à une entrée, sur place : une correction faite pendant
 // que le bot tourne touche aussi la réponse du jour et les parties en cours, qui pointent sur le même objet.
-// Les attributs : leurs clés, ou leurs définitions pour appliquer leur onEdit (le bot ; les scripts passent les clés,
-// ils recalculent eux-mêmes ce qu'ils ajoutent). Renvoie les clés qui ne sont ni un champ ni un attribut.
-export function editEntry(entry: Entry, changes: Record<string, unknown>, attributeList: readonly (string | AttributeDef)[]): string[] {
-  const defs: Pick<AttributeDef, 'key' | 'onEdit'>[] = attributeList.map(attribute => typeof attribute === 'string' ? { key: attribute } : attribute)
-  const attributeKeys = defs.map(({ key }) => key)
+// Renvoie les clés qui ne sont ni un champ ni un attribut.
+export function editEntry(entry: Entry, changes: Record<string, unknown>, attributeKeys: readonly string[]): string[] {
   const unknown: string[] = []
   const mutable = entry as { -readonly [K in keyof Entry]: Entry[K] }
   const attributes: Record<string, AttributeValue> = { ...entry.attributes }
@@ -92,10 +112,8 @@ export function editEntry(entry: Entry, changes: Record<string, unknown>, attrib
       continue
     if (ENTRY_FIELDS.has(key))
       (mutable as Record<string, unknown>)[key] = value
-    else if (attributeKeys.includes(key)) {
-      const onEdit = defs.find(def => def.key === key)?.onEdit
-      attributes[key] = withAdded(onEdit ? onEdit(value as AttributeValue, entry.attributes[key] ?? null) : value as AttributeValue, entry.added?.[key])
-    }
+    else if (attributeKeys.includes(key))
+      attributes[key] = isSetEdit(value) ? applySetEdit(attributes[key], value) : value as AttributeValue
     else
       unknown.push(key)
   }
@@ -105,9 +123,10 @@ export function editEntry(entry: Entry, changes: Record<string, unknown>, attrib
 
 // Applique les corrections à des entrées. Renvoie aussi ce qui ne colle pas (id inconnu, attribut inconnu...).
 // Sans effet si les corrections sont déjà appliquées : le bot peut repasser sur un fichier généré par les scripts.
-export function applyManual(entries: Entry[], manual: Manual, attributeList: readonly (string | AttributeDef)[]): { entries: Entry[], warnings: string[] } {
+// Les scripts l'appliquent avant leurs enrichissements (qui en profitent : « Japan » ajouté donne « Monde réel »), puis
+// à la fin (finishManual) : un enrichissement ne remet pas une valeur retirée.
+export function applyManual(entries: Entry[], manual: Manual, attributeKeys: readonly string[]): { entries: Entry[], warnings: string[] } {
   const warnings: string[] = []
-  const attributeKeys = attributeList.map(attribute => typeof attribute === 'string' ? attribute : attribute.key)
   const ids = new Set(entries.map(entry => entry.id))
   const excluded = new Set(manual.exclude)
 
@@ -123,8 +142,12 @@ export function applyManual(entries: Entry[], manual: Manual, attributeList: rea
     if (!changes)
       return entry
     const copy: Entry = { ...entry }
-    for (const key of editEntry(copy, changes, attributeList))
+    for (const key of editEntry(copy, changes, attributeKeys))
       warnings.push(`edit ${entry.id} (${entry.name}) : « ${key} » n'est pas un attribut (${attributeKeys.join(', ')})`)
+    for (const [key, value] of Object.entries(changes)) {
+      if (attributeKeys.includes(key) && Array.isArray(value))
+        warnings.push(`edit ${entry.id} (${entry.name}) : « ${key} » remplace toute la liste, à écrire { "plus": [...], "moins": [...] }`)
+    }
     return copy
   })
 
@@ -136,4 +159,9 @@ export function applyManual(entries: Entry[], manual: Manual, attributeList: rea
     }
   }
   return { entries: [...kept, ...added], warnings }
+}
+
+// La 2e passe des scripts, à la fin : les corrections seules (les retraits et les ajouts ont déjà été faits)
+export function finishManual(entries: Entry[], manual: Manual, attributeKeys: readonly string[]): Entry[] {
+  return applyManual(entries, { ...manual, exclude: [], add: [] }, attributeKeys).entries
 }

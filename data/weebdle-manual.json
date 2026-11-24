@@ -6,84 +6,136 @@
  "edit": {
   "80": {
    "_nom": "Light Yagami",
-   "occupation": [
-    "Étudiant",
-    "Tueur en série"
-   ]
+   "occupation": {
+    "plus": [
+     "Tueur en série"
+    ],
+    "moins": [
+     "Détective",
+     "Justicier",
+     "Tueur de masse",
+     "Gourou"
+    ]
+   }
   },
   "651": {
    "_nom": "Envy",
-   "occupation": null
+   "occupation": {
+    "moins": [
+     "Instigator for Father"
+    ]
+   }
   },
   "2074": {
    "_nom": "Mokona Modoki",
    "_raison": "créature : pas de cheveux",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "2378": {
    "_nom": "Viral",
-   "occupation": [
-    "Leader",
-    "Guerrier"
-   ]
+   "occupation": {
+    "plus": [
+     "Leader",
+     "Guerrier"
+    ],
+    "moins": [
+     "Vice Commander",
+     "Warrior",
+     "Team Dai-Gurren Member"
+    ]
+   }
   },
   "4700": {
    "_nom": "Boota",
    "_raison": "animal (cochon-taupe) : pas de cheveux",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "12531": {
    "_nom": "Ciel Phantomhive",
-   "occupation": [
-    "Comte"
-   ]
+   "occupation": {
+    "plus": [
+     "Comte"
+    ],
+    "moins": [
+     "Earl of Phantomhive",
+     "Watchdog of the Queen"
+    ]
+   }
   },
   "38566": {
    "_nom": "Kyuubey",
    "_raison": "créature (Incubator) : pas de cheveux",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "42663": {
    "_nom": "Nene Motoe",
-   "occupation": [
-    "Élève",
-    "Criminel"
-   ]
+   "occupation": {
+    "plus": [
+     "Élève",
+     "Criminel"
+    ],
+    "moins": [
+     "Student",
+     "Criminal",
+     "Former member of the Main Cast"
+    ]
+   }
   },
   "73235": {
    "_nom": "Monokuma",
    "_raison": "ours robot : pas de cheveux",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "120415": {
    "_nom": "Aria Kurenaino",
-   "occupation": [
-    "Magicienne"
-   ]
+   "occupation": {
+    "plus": [
+     "Magicienne"
+    ],
+    "moins": [
+     "Black magic agent"
+    ]
+   }
   },
   "126156": {
    "_nom": "Myne",
-   "occupation": null
+   "occupation": {
+    "moins": [
+     "Soldier's child"
+    ]
+   }
   },
   "129347": {
    "_nom": "Daikenja",
    "_raison": "compétence analytique de Rimuru, équivalent magique d'une IA compagnon (tensura.fandom.com/wiki/Great_Sage) : immatériel, ni sexe, ni âge, ni cheveux",
    "gender": "Aucun",
-   "occupation": [
-    "Assistant"
-   ],
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ]
+   },
    "age": "N/A",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "131041": {
    "_nom": "Gabiru"
@@ -91,41 +143,58 @@
   "170266": {
    "_nom": "Pochita",
    "_raison": "démon tronçonneuse (chien) : pas de cheveux",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "209902": {
    "_nom": "Matsumoto",
    "_raison": "IA venue du futur (AniList : it), sans corps humain : aucun sexe, pas de cheveux, assistant de Vivy",
-   "occupation": [
-    "Assistant"
-   ],
-   "hair": [
-    "N/A"
-   ],
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "gender": "Aucun"
   },
   "216426": {
    "_nom": "Navi",
    "_raison": "système de navigation de NiaLand (AniList), sans corps : ni sexe ni cheveux, assistant",
    "gender": "Aucun",
-   "occupation": [
-    "Assistant"
-   ],
-   "hair": [
-    "N/A"
-   ]
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "225837": {
    "_nom": "Antonio",
    "_raison": "IA partenaire d’Ophelia, sans corps (AniList : they) : aucun sexe, pas de cheveux, assistant",
-   "occupation": [
-    "Assistant"
-   ],
-   "hair": [
-    "N/A"
-   ],
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ],
+    "moins": [
+     "Partner AI"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "gender": "Aucun"
   }
  },

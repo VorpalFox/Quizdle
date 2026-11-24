@@ -88,9 +88,15 @@
  "edit": {
   "Q2265837": {
    "_raison": "le wiki a pris la page de Terra-Xehanort",
-   "nationality": [
-    "Destiny Islands"
-   ]
+   "nationality": {
+    "plus": [
+     "Destiny Islands"
+    ],
+    "moins": [
+     "Radiant Garden",
+     "Keyblade Graveyard"
+    ]
+   }
   },
   "Q107751147": {
    "_raison": "avatar personnalisable (le wiki a pris la page « Player »)",
@@ -99,12 +105,23 @@
   "Q106744090": {
    "_nom": "Talos",
    "_raison": "le dieu, pas Tiber Septim (le wiki redirige Talos vers sa page)",
-   "nationality": null,
-   "hair": null,
-   "species": [
-    "Humain",
-    "Divinité"
-   ]
+   "nationality": {
+    "moins": [
+     "High Rock",
+     "Atmora"
+    ]
+   },
+   "hair": {
+    "moins": [
+     "Bruns",
+     "Blancs"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-twelve-minutes-protagonist": {
    "_raison": "le Mari, joué par le joueur (le wiki titre sa page « Protagonist »)",
@@ -114,9 +131,11 @@
     "Mari",
     "Le Mari"
    ],
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-twelve-minutes-father": {
    "_raison": "le père du Mari",
@@ -124,33 +143,43 @@
     "Père",
     "Le Père"
    ],
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-yo-kai-watch-nathan-adams": {
    "_raison": "humain (le wiki ne donne pas l'espèce)",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-yo-kai-watch-katie-forester": {
    "_raison": "humain (le wiki ne donne pas l'espèce)",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-yo-kai-watch-hailey-anne-thomas": {
    "_raison": "humain (le wiki ne donne pas l'espèce)",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-yo-kai-watch-summer-adams": {
    "_raison": "humain (le wiki ne donne pas l'espèce)",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-yo-kai-watch-usapyon": {
    "_raison": "sexe absent du début de page (stats)",
@@ -162,22 +191,26 @@
   },
   "wiki-yo-kai-watch-lord-enma": {
    "_raison": "roi des Yo-kai",
-   "species": [
-    "Yōkai"
-   ]
+   "species": {
+    "plus": [
+     "Yōkai"
+    ]
+   }
   },
   "Q24837041": {
    "_raison": "chat devenu Yo-kai : même espèce que les autres Yo-kai",
-   "species": [
-    "Yōkai"
-   ]
+   "species": {
+    "plus": [
+     "Yōkai"
+    ],
+    "moins": [
+     "Chat"
+    ]
+   }
   },
   "wiki-firewatch-henry": {
    "_raison": "le héros : sa page ne donne pas le sexe",
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "gender": "Homme"
   },
   "wiki-palworld-bjorn-seligsson": {
    "_raison": "sexe absent du wiki",
@@ -185,9 +218,11 @@
   },
   "Q3776297": {
    "_raison": "dresseur (Wikidata ne donne pas l'espèce)",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-the-sinking-city-joseph-joe-hill": {
    "_raison": "nom de page « Joseph (Joe) Hill »",
@@ -214,36 +249,44 @@
   },
   "wiki-the-sinking-city-charles-reed": {
    "_raison": "le héros, détective privé",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Détective"
-   ],
-   "nationality": [
-    "United States"
-   ]
+   "occupation": {
+    "plus": [
+     "Détective"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Oakmont",
+     "Massachusetts"
+    ]
+   }
   },
   "wiki-the-talos-principle-samsara-v72-39-0003": {
    "_raison": "numéro de version dans le nom",
    "name": "Samsara",
    "aliases": [],
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ]
+   }
   },
   "wiki-the-talos-principle-elohim": {
    "_raison": "IA qui se prend pour un dieu",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ]
+   }
   },
   "wiki-the-talos-principle-mla": {
    "_raison": "Milton Library Assistant, une IA",
    "gender": "Aucun",
-   "species": [
-    "Robot"
-   ],
+   "species": {
+    "plus": [
+     "Robot"
+    ]
+   },
    "aliases": [
     "Milton Library Assistant"
    ]
@@ -256,73 +299,107 @@
     "Chernyshevsky"
    ],
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   }
   },
   "wiki-the-talos-principle-alexandra-drennan": {
    "_raison": "chercheuse du projet",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   }
   },
   "wiki-saturnalia-anita-giannini": {
    "_raison": "humaine",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-paul-izem": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-claudia-mirai": {
    "_raison": "humaine",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-sergio-aulas": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-green-hell-jake-higgins": {
    "_nom": "Jake Higgins",
    "_raison": "anthropologue",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique"
-   ],
-   "nationality": [
-    "United States",
-    "Amazon"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ],
+    "moins": [
+     "Archéologue"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "United States",
+     "Amazon"
+    ]
+   }
   },
   "wiki-green-hell-mia-higgins": {
    "_nom": "Mia Higgins",
    "_raison": "linguiste",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique"
-   ],
-   "nationality": [
-    "United States",
-    "Amazon"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ],
+    "moins": [
+     "Érudit"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "United States",
+     "Amazon"
+    ]
+   }
   },
   "Q113954461": {
    "_raison": "avatar personnalisable",
@@ -348,9 +425,11 @@
     "Protagonist"
    ],
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "Q536138": {
    "_raison": "héros de sa série (Wario Land, WarioWare), pas dans Super Mario",
@@ -395,78 +474,100 @@
     "Créature"
    ],
    "gender": "Aucun",
-   "species": [
-    "Monstre"
-   ]
+   "species": {
+    "plus": [
+     "Monstre"
+    ]
+   }
   },
   "wiki-saturnalia-gabriele-mirai": {
    "_raison": "père de Claudia",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-umberto-aulas": {
    "_raison": "père de Sergio",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-damiano-orsi": {
    "_raison": "sacristain",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-bruno-bissani": {
    "_raison": "seigneur du château",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-eliana-murgia": {
    "_raison": "sœur de Tecla",
    "gender": "Femme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-mara-mirai": {
    "_raison": "tante de Claudia",
    "gender": "Femme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-leone": {
    "_raison": "mineur",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-rupert-crowley": {
    "_raison": "pilote de la RAF",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-chernobylite-semonov": {
    "_raison": "professeur",
-   "occupation": [
-    "Scientifique"
-   ],
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   },
    "aliases": [
     "Professeur Semonov",
     "Dr. Semonov"
    ],
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-chernobylite-locksmith": {
    "_raison": "Yuriy Melnyk",
@@ -474,9 +575,11 @@
     "Yuriy Melnyk",
     "Serrurier"
    ],
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-breathedge-man": {
    "_raison": "le héros (muet)",
@@ -497,12 +600,16 @@
   "wiki-breathedge-grandfather": {
    "_raison": "le grand-père du héros",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique"
-   ],
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   },
    "aliases": [
     "Grand-père"
    ]
@@ -513,9 +620,11 @@
    "aliases": [
     "Priest Entity Nada"
    ],
-   "species": [
-    "Korvax"
-   ],
+   "species": {
+    "plus": [
+     "Korvax"
+    ]
+   },
    "gender": "Autre"
   },
   "wiki-no-man-s-sky-specialist-polo": {
@@ -524,9 +633,11 @@
    "aliases": [
     "Specialist Polo"
    ],
-   "species": [
-    "Gek"
-   ],
+   "species": {
+    "plus": [
+     "Gek"
+    ]
+   },
    "gender": "Autre"
   },
   "wiki-no-man-s-sky-null": {
@@ -536,23 +647,29 @@
     "-null-",
     "The Stranger"
    ],
-   "species": [
-    "Voyageur"
-   ],
+   "species": {
+    "plus": [
+     "Voyageur"
+    ]
+   },
    "gender": "Autre"
   },
   "wiki-no-man-s-sky-artemis": {
    "_raison": "un Voyageur ; le wiki dit « they »",
-   "species": [
-    "Voyageur"
-   ],
+   "species": {
+    "plus": [
+     "Voyageur"
+    ]
+   },
    "gender": "Autre"
   },
   "wiki-no-man-s-sky-apollo": {
    "_raison": "un Voyageur au corps robotisé ; le wiki dit « they »",
-   "species": [
-    "Voyageur"
-   ],
+   "species": {
+    "plus": [
+     "Voyageur"
+    ]
+   },
    "gender": "Autre"
   },
   "wiki-no-man-s-sky-the-atlas": {
@@ -563,39 +680,53 @@
     "Atlas"
    ],
    "gender": "Aucun",
-   "species": [
-    "Divinité"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   }
   },
   "wiki-chernobylite-sashko": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-chernobylite-tarakan": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-chernobylite-black-stalker": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-chernobylite-anton": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-idir-izem": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-saturnalia-tecla-murgia": {
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-breathedge-bum": {
    "_raison": "nommé Hobo dans l'infobox",
@@ -612,42 +743,59 @@
     "Scientifiques"
    ],
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "occupation": [
-    "Scientifique",
-    "Soldat"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Scientifique",
+     "Soldat"
+    ]
+   }
   },
   "wiki-devil-may-cry-kyrie": {
    "_nom": "Kyrie",
    "_raison": "sexe faux ou absent du wiki",
    "gender": "Femme",
-   "nationality": [
-    "Fortuna"
-   ]
+   "nationality": {
+    "plus": [
+     "Fortuna"
+    ]
+   }
   },
   "wiki-devil-may-cry-nico": {
    "_nom": "Nico",
    "_raison": "sexe faux ou absent du wiki",
    "gender": "Femme",
-   "occupation": [
-    "Mécanicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Mécanicien"
+    ]
+   }
   },
   "wiki-devil-may-cry-lucia": {
    "_nom": "Lucia",
    "_raison": "démone artificielle",
-   "species": [
-    "Démon"
-   ],
-   "nationality": [
-    "Dumary Island"
-   ],
-   "occupation": [
-    "Garde"
-   ]
+   "species": {
+    "plus": [
+     "Démon"
+    ],
+    "moins": [
+     "Artificial Demon"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Dumary Island"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "wiki-nier-pod-042": {
    "_raison": "unité de soutien",
@@ -656,306 +804,459 @@
   "Q110906334": {
    "_nom": "Emil",
    "_raison": "arme vivante, pas un objet",
-   "species": [
-    "Humanoïde"
-   ]
+   "species": {
+    "plus": [
+     "Humanoïde"
+    ],
+    "moins": [
+     "Objet"
+    ]
+   }
   },
   "Q125857256": {
    "_nom": "Zagreus",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Noble"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Noble"
+    ]
+   }
   },
   "Q125857288": {
    "_nom": "Megaera",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Garde"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "Q126027875": {
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
    "gender": "Homme"
   },
   "wiki-hades-nyx": {
    "_nom": "Nyx",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Conseiller"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Conseiller"
+    ]
+   }
   },
   "wiki-hades-hypnos": {
    "_nom": "Hypnos",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Employé"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Employé"
+    ]
+   }
   },
   "wiki-hades-persephone": {
    "_nom": "Persephone",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-hades-hades": {
    "_nom": "Hades",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-hades-hermes": {
    "_nom": "Hermes",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Olympus",
-    "Greece"
-   ],
-   "occupation": [
-    "Livreur"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Olympus"
+    ],
+    "moins": [
+     "Underworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Livreur"
+    ]
+   }
   },
   "wiki-hades-charon": {
    "_nom": "Charon",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Marin",
-    "Commerçant"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Marin",
+     "Commerçant"
+    ]
+   }
   },
   "wiki-hades-zeus": {
    "_nom": "Zeus",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Olympus",
-    "Greece"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Olympus"
+    ],
+    "moins": [
+     "Underworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-hades-poseidon": {
    "_nom": "Poseidon",
    "_raison": "dieu ou divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Olympus",
-    "Greece"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Olympus"
+    ],
+    "moins": [
+     "Underworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-hades-melinoe": {
    "_nom": "Melinoë",
    "_raison": "année : Hades II (son père s'appelle Hades, comme le 1er jeu)",
-   "species": [
-    "Divinité"
-   ],
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
    "year": 2024,
-   "occupation": [
-    "Magicien",
-    "Noble"
-   ]
+   "occupation": {
+    "plus": [
+     "Magicien",
+     "Noble"
+    ]
+   }
   },
   "wiki-hades-achilles": {
    "_raison": "ombre d'un mortel",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-hades-patroclus": {
    "_raison": "ombre d'un mortel",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-hades-orpheus": {
    "_raison": "ombre d'un mortel",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-hades-eurydice": {
    "_raison": "ombre d'un mortel",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-hades-sisyphus": {
    "_raison": "ombre d'un mortel",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-hades-cerberus": {
    "_raison": "chien des Enfers",
-   "species": [
-    "Chien",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Chien",
+     "Animal"
+    ]
+   }
   },
   "Q126027906": {
    "_raison": "gorgone",
-   "species": [
-    "Gorgone"
-   ]
+   "species": {
+    "plus": [
+     "Gorgone"
+    ]
+   }
   },
   "wiki-hades-skelly": {
    "_raison": "squelette d'entraînement",
-   "species": [
-    "Squelette"
-   ]
+   "species": {
+    "plus": [
+     "Squelette"
+    ]
+   }
   },
   "Q142103107": {
    "_nom": "Dark Pit",
    "_raison": "double de Pit",
    "gender": "Homme",
-   "species": [
-    "Ange"
-   ],
-   "occupation": [
-    "Soldat"
-   ]
+   "species": {
+    "plus": [
+     "Ange"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q5820357": {
    "_nom": "Eggplant Wizard",
    "_raison": "monstre du 1er jeu",
    "gender": "Homme",
-   "species": [
-    "Monstre"
-   ],
-   "nationality": [
-    "Underworld"
-   ]
+   "species": {
+    "plus": [
+     "Monstre"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "wiki-kid-icarus-medusa": {
    "_nom": "Medusa",
    "_raison": "divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Underworld"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-kid-icarus-hades": {
    "_nom": "Hades",
    "_raison": "divinité",
-   "species": [
-    "Divinité"
-   ],
-   "hair": [
-    "Rouges",
-    "Verts"
-   ],
-   "nationality": [
-    "Underworld"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Rouges",
+     "Verts"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-kid-icarus-thanatos": {
    "_nom": "Thanatos",
    "_raison": "divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Underworld"
-   ],
-   "occupation": [
-    "Soldat"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "wiki-kid-icarus-viridi": {
    "_nom": "Viridi",
    "_raison": "divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": null
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "wiki-kid-icarus-pandora": {
    "_nom": "Pandora",
    "_raison": "divinité",
-   "species": [
-    "Divinité"
-   ],
-   "nationality": [
-    "Underworld"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "wiki-kid-icarus-magnus": {
    "_nom": "Magnus",
    "_raison": "mercenaire humain",
-   "species": [
-    "Humain"
-   ],
-   "nationality": null
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "wiki-kid-icarus-hewdraw": {
    "_nom": "Hewdraw",
    "_raison": "monstre",
-   "species": [
-    "Monstre"
-   ],
-   "nationality": [
-    "Underworld"
-   ]
+   "species": {
+    "plus": [
+     "Monstre"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Underworld"
+    ],
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "wiki-kid-icarus-chaos-kin": {
    "_nom": "Chaos Kin",
    "_raison": "monstre",
-   "species": [
-    "Monstre"
-   ],
-   "nationality": null
+   "species": {
+    "plus": [
+     "Monstre"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Skyworld"
+    ]
+   }
   },
   "Q126033521": {
    "_raison": "sexe absent",
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "Q113954944": {
    "_raison": "sexe absent",
@@ -963,298 +1264,440 @@
   },
   "wiki-gears-of-war-bernadette-mataki": {
    "_raison": "humaine",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-obyn-greenfoot": {
    "_nom": "Obyn Greenfoot",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Magicien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-captain-churchill": {
    "_nom": "Captain Churchill",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Soldat"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-benjamin": {
    "_nom": "Benjamin",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Informaticien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Informaticien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-ezili": {
    "_nom": "Ezili",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Magicien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-pat-fusty": {
    "_nom": "Pat Fusty",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Combattant"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Combattant"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-adora": {
    "_nom": "Adora",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Religieux"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Religieux"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-admiral-brickell": {
    "_nom": "Admiral Brickell",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Soldat"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-etienne": {
    "_nom": "Etienne",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Pilote"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Pilote"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-sauda": {
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-psi": {
    "_nom": "Psi",
    "_raison": "année : Bloons TD 6",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
    "gender": "Autre",
    "year": 2018,
-   "occupation": [
-    "Magicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-corvus": {
    "_nom": "Corvus",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Magicien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-rosalia": {
    "_nom": "Rosalia",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Mécanicien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Mécanicien"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-silas": {
    "_nom": "Silas",
    "_raison": "héros singe",
-   "species": [
-    "Singe",
-    "Animal"
-   ],
-   "occupation": [
-    "Magicien"
-   ]
+   "species": {
+    "plus": [
+     "Singe",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "wiki-nancy-drew-carson-drew": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-samantha-quick": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-professor-hotchkiss": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-prudence-rutherford": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-bridget-shaw": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-savannah-woodham": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-dwayne-powers": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-daryl-gray": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-lizzie-applegate": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-charleena-purcell": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-jamila-el-dine": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-jake-rogers": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-red-knott": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-tino-balducci": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-nancy-drew-mitch-dillon": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-helen-marshall": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-emily-pope": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-casper-darling": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-simon-arish": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-frederick-langston": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-kiran-estevez": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-control-alan-wake": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "Q126033828": {
    "_raison": "humain",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-angus-bumby": {
    "_nom": "Angus Bumby",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Wonderland"
+    ]
+   }
   },
   "wiki-alice-madness-returns-dollmaker": {
    "_nom": "Dollmaker",
@@ -1267,40 +1710,60 @@
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Wonderland"
+    ]
+   }
   },
   "wiki-alice-madness-returns-lizzie-liddell": {
    "_nom": "Lizzie Liddell",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Wonderland"
+    ]
+   }
   },
   "wiki-alice-madness-returns-arthur-liddell": {
    "_nom": "Arthur Liddell",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Wonderland"
+    ]
+   }
   },
   "wiki-alice-madness-returns-nan-sharpe": {
    "_nom": "Nan Sharpe",
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Wonderland"
+    ]
+   }
   },
   "wiki-alice-madness-returns-carpenter": {
    "_nom": "Carpenter",
@@ -1313,30 +1776,39 @@
    "_raison": "seulement dans Madness Returns, pas dans le jeu de 2000",
    "year": 2011,
    "developer": "Spicy Horse",
-   "species": [
-    "Morse",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Morse",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q12379": {
    "_nom": "Mario",
    "_raison": "Brooklyn comme Luigi : validé avec FX",
-   "nationality": [
-    "Brooklyn",
-    "United States",
-    "Mushroom Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "Brooklyn"
+    ]
+   }
   },
   "wiki-god-of-war-atreus": {
    "_nom": "Atreus",
    "_raison": "année : God of War (2018) : même titre que celui de 2005",
    "year": 2018,
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Archer"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Archer"
+    ]
+   }
   },
   "wiki-god-of-war-mimir": {
    "_nom": "Mimir",
@@ -1417,17 +1889,21 @@
    "_nom": "Credo",
    "_raison": "année : Devil May Cry 4",
    "year": 2008,
-   "nationality": [
-    "Fortuna"
-   ]
+   "nationality": {
+    "plus": [
+     "Fortuna"
+    ]
+   }
   },
   "wiki-banjo-kazooie-old-king-coal": {
    "_nom": "Old King Coal",
    "_raison": "année : Banjo-Tooie",
    "year": 2000,
-   "species": [
-    "Charbon"
-   ]
+   "species": {
+    "plus": [
+     "Charbon"
+    ]
+   }
   },
   "wiki-mirror-s-edge-clarence-e-kreeg": {
    "_nom": "Clarence E. Kreeg",
@@ -1458,10 +1934,11 @@
    "_nom": "Empress Tihana",
    "_raison": "année : Amnesia: Rebirth",
    "year": 2020,
-   "nationality": [
-    "Other World Empire",
-    "Other World"
-   ]
+   "nationality": {
+    "plus": [
+     "Other World"
+    ]
+   }
   },
   "wiki-amnesia-leon-de-vries": {
    "_nom": "Leon De Vries",
@@ -1499,9 +1976,14 @@
    "_raison": "année : The Bureau: XCOM Declassified",
    "year": 2013,
    "developer": "2K Marin",
-   "species": [
-    "Extraterrestre"
-   ]
+   "species": {
+    "plus": [
+     "Extraterrestre"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q3717066": {
    "_nom": "E-105 Zeta",
@@ -1520,559 +2002,875 @@
    "_nom": "Jaffar",
    "_raison": "année : le Prince of Persia de 1989",
    "year": 1989,
-   "developer": "Brøderbund Software",
-   "genres": [
-    "Action-aventure"
-   ]
+   "developer": "Brøderbund Software"
   },
   "Q4024292": {
    "_nom": "Zurvan",
    "_raison": "année : le Prince of Persia de 2008, comme Elika",
    "year": 2008,
-   "developer": "Ubisoft",
-   "genres": [
-    "Action-aventure"
-   ]
+   "developer": "Ubisoft"
   },
   "Q108651368": {
    "_nom": "Vault Boy",
    "_raison": "année : le 1er Fallout",
    "year": 1997,
-   "developer": "Black Isle Studios",
-   "genres": [
-    "RPG",
-    "Immersive sim"
-   ]
+   "developer": "Black Isle Studios"
   },
   "wiki-dishonored-the-outsider": {
    "_nom": "The Outsider",
-   "species": [
-    "Divinité"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-ark-hln-a": {
    "_nom": "HLN-A",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-sons-of-the-forest-virginia": {
    "_nom": "Virginia",
-   "species": [
-    "Humain",
-    "Mutant"
-   ]
+   "species": {
+    "plus": [
+     "Mutant"
+    ]
+   }
   },
   "wiki-kingdom-come-deliverance-mutt": {
    "_nom": "Mutt",
-   "species": [
-    "Chien",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Chien",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-the-long-dark-old-bear": {
    "_nom": "Old Bear",
-   "species": [
-    "Ours",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Ours",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-death-stranding-president": {
    "_nom": "President",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-soma-robot-head": {
    "_nom": "Robot Head",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-remember-me-h3o": {
    "_nom": "H3O",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-rebel-galaxy-spanner": {
    "_nom": "Spanner",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-lost-records-bloom-rage-gertie": {
    "_nom": "Gertie",
-   "species": [
-    "Cerf",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Cerf",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-xcom-speaker": {
    "_nom": "Speaker",
-   "species": [
-    "Extraterrestre"
-   ]
+   "species": {
+    "plus": [
+     "Extraterrestre"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-dark-souls-gwyn-lord-of-cinder": {
    "_nom": "Gwyn, Lord of Cinder",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-dark-souls-gwynevere-princess-of-sunlight": {
    "_nom": "Gwynevere, Princess of Sunlight",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Noble"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Noble"
+    ]
+   }
   },
   "wiki-dark-souls-dark-sun-gwyndolin": {
    "_nom": "Dark Sun Gwyndolin",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Noble"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Noble"
+    ]
+   }
   },
   "wiki-dark-souls-witch-of-izalith": {
    "_nom": "Witch of Izalith",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Magicien",
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien",
+     "Souverain"
+    ]
+   }
   },
   "wiki-dark-souls-gravelord-nito": {
    "_nom": "Gravelord Nito",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-dark-souls-crossbreed-priscilla": {
    "_nom": "Crossbreed Priscilla",
-   "species": [
-    "Demi-dragon"
-   ]
+   "species": {
+    "plus": [
+     "Demi-dragon"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-white-rabbit": {
    "_nom": "White Rabbit",
-   "species": [
-    "Lapin",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Lapin",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-caterpillar": {
    "_nom": "Caterpillar",
-   "species": [
-    "Insecte",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Insecte",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-jabberwock": {
    "_nom": "Jabberwock",
-   "species": [
-    "Dragon"
-   ]
+   "species": {
+    "plus": [
+     "Dragon"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-gryphon": {
    "_nom": "Gryphon",
-   "species": [
-    "Griffon"
-   ]
+   "species": {
+    "plus": [
+     "Griffon"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-mock-turtle": {
    "_nom": "Mock Turtle",
-   "species": [
-    "Tortue",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Tortue",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-march-hare": {
    "_nom": "March Hare",
-   "species": [
-    "Lièvre",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Lièvre",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-dormouse": {
    "_nom": "Dormouse",
-   "species": [
-    "Loir",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Loir",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-alice-madness-returns-cheshire-cat": {
    "_nom": "Cheshire Cat",
-   "species": [
-    "Chat",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Chat",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-aitrus": {
    "_nom": "Aitrus",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-ahlsendar": {
    "_nom": "Ahlsendar",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-ri-neref": {
    "_nom": "Ri'neref",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-veovis": {
    "_nom": "Veovis",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-me-erta": {
    "_nom": "Me'erta",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-gehn": {
    "_nom": "Gehn",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-atrus": {
    "_nom": "Atrus",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-achenar": {
    "_nom": "Achenar",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-myst-yeesha": {
    "_nom": "Yeesha",
-   "species": [
-    "D'ni"
-   ]
+   "species": {
+    "plus": [
+     "D'ni"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "wiki-forgotton-anne-bonku": {
    "_nom": "Bonku",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Objet",
+     "Forgotling"
+    ]
+   }
   },
   "Q3922017": {
    "_nom": "Dark Prince",
-   "species": [
-    "Humain"
-   ],
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
    "_raison": "année : Prince of Persia: Les Deux Royaumes",
    "year": 2005
   },
   "Q4905533": {
    "_nom": "Big Daddy",
-   "species": [
-    "Mutant"
-   ]
+   "species": {
+    "plus": [
+     "Mutant"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q1085009": {
    "_nom": "Pyramid Head",
-   "species": [
-    "Monstre"
-   ]
+   "species": {
+    "plus": [
+     "Monstre"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q21193976": {
    "_nom": "Valtiel",
-   "species": [
-    "Monstre"
-   ],
+   "species": {
+    "plus": [
+     "Monstre"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
    "gender": "Aucun"
   },
   "Q517115": {
    "_nom": "Nightmare",
-   "species": [
-    "Démon"
-   ]
+   "species": {
+    "plus": [
+     "Démon"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q9300594": {
    "_nom": "Astaroth",
-   "species": [
-    "Golem"
-   ]
+   "species": {
+    "plus": [
+     "Golem"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q4386210": {
    "_nom": "Frog",
-   "species": [
-    "Grenouille",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Grenouille",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q84429703": {
    "_nom": "Flea",
-   "species": [
-    "Démon"
-   ],
-   "occupation": [
-    "Magicien"
-   ]
+   "species": {
+    "plus": [
+     "Démon"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
   },
   "Q11325143": {
    "_nom": "Nu",
-   "species": [
-    "Monstre"
-   ],
+   "species": {
+    "plus": [
+     "Monstre"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
    "gender": "Aucun"
   },
   "Q9025748": {
    "_nom": "Lynx",
-   "species": [
-    "Demi-humain"
-   ]
+   "species": {
+    "plus": [
+     "Demi-humain"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q9002082": {
    "_nom": "Harle",
-   "species": [
-    "Humanoïde"
-   ]
+   "species": {
+    "plus": [
+     "Humanoïde"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q5736202": {
    "_nom": "Buzz Buzz",
-   "species": [
-    "Insecte",
-    "Animal"
-   ],
+   "species": {
+    "plus": [
+     "Insecte",
+     "Animal"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
    "gender": "Homme"
   },
   "wiki-god-of-war-thor": {
    "_nom": "Thor",
-   "species": [
-    "Divinité"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   }
   },
   "wiki-bayonetta-madama-butterfly": {
    "_nom": "Madama Butterfly",
-   "species": [
-    "Démon"
-   ],
-   "nationality": [
-    "Hell"
-   ],
-   "occupation": [
-    "Protecteur"
-   ]
+   "species": {
+    "plus": [
+     "Démon"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Hell"
+    ],
+    "moins": [
+     "Human World"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Protecteur"
+    ]
+   }
   },
   "wiki-bayonetta-morgana": {
    "_nom": "Morgana",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "wiki-banjo-kazooie-klungo": {
    "_nom": "Klungo",
-   "species": [
-    "Ogre"
-   ]
+   "species": {
+    "plus": [
+     "Ogre"
+    ]
+   }
   },
   "wiki-banjo-kazooie-hag-1": {
    "_nom": "HAG-1",
-   "species": [
-    "Robot"
-   ]
+   "species": {
+    "plus": [
+     "Robot"
+    ]
+   }
   },
   "Q2175370": {
    "_nom": "Amp",
-   "species": [
-    "Monstre"
-   ]
+   "species": {
+    "plus": [
+     "Monstre"
+    ]
+   }
   },
   "Q9301789": {
    "_nom": "Eggman Nega",
-   "species": [
-    "Humain"
-   ],
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
    "_raison": "année : Sonic Rush",
    "year": 2005
   },
   "Q3189842": {
    "_nom": "Red XIII",
-   "species": [
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Animal"
+    ]
+   }
   },
   "Q3826584": {
    "_nom": "Ramuh",
-   "species": [
-    "Divinité"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   }
   },
   "Q5643403": {
    "_nom": "Enigmatic Man",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "Q5976741": {
    "_nom": "Lingering Will",
-   "species": [
-    "Humain"
-   ],
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
    "gender": "Homme"
   },
   "Q10751211": {
    "_nom": "Waddle Dee",
-   "species": [
-    "Waddle Dee"
-   ],
+   "species": {
+    "plus": [
+     "Waddle Dee"
+    ]
+   },
    "gender": "Aucun"
   },
   "Q16575005": {
    "_nom": "Magolor",
-   "species": [
-    "Halcandrien"
-   ]
+   "species": {
+    "plus": [
+     "Halcandrien"
+    ]
+   }
   },
   "Q11233788": {
    "_nom": "Mr. Frosty",
-   "species": [
-    "Morse",
-    "Animal"
-   ],
+   "species": {
+    "plus": [
+     "Morse",
+     "Animal"
+    ]
+   },
    "_raison": "année : Kirby's Adventure",
    "year": 1993
   },
   "Q69894320": {
    "_nom": "Prince Fluff",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
   },
   "Q121360326": {
    "_nom": "Susie",
-   "species": [
-    "Humanoïde"
-   ],
-   "hair": null
+   "species": {
+    "plus": [
+     "Humanoïde"
+    ]
+   },
+   "hair": {
+    "moins": [
+     "Blonds"
+    ]
+   }
   },
   "Q128806865": {
    "_nom": "Nightmare",
-   "species": [
-    "Démon"
-   ]
+   "species": {
+    "plus": [
+     "Démon"
+    ]
+   }
   },
   "Q5996781": {
    "_nom": "Marcus McCloud",
-   "species": [
-    "Renard",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Renard",
+     "Animal"
+    ]
+   }
   },
   "Q1188164": {
    "_nom": "Dingodile",
-   "species": [
-    "Mutant"
-   ]
+   "species": {
+    "plus": [
+     "Mutant"
+    ]
+   }
   },
   "Q55234422": {
    "_nom": "Alduin",
-   "species": [
-    "Dragon"
-   ]
+   "species": {
+    "plus": [
+     "Dragon"
+    ]
+   }
   },
   "Q18366971": {
    "_nom": "Murfy",
-   "species": [
-    "Insecte",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Insecte",
+     "Animal"
+    ]
+   }
   },
   "Q55571840": {
    "_nom": "Dark Rayman",
-   "species": [
-    "Humanoïde"
-   ],
+   "species": {
+    "plus": [
+     "Humanoïde"
+    ]
+   },
    "gender": "Homme"
   },
   "Q99671042": {
    "_nom": "Boomer",
-   "species": [
-    "Infecté"
-   ],
-   "occupation": [
-    "Prédateur"
-   ]
+   "species": {
+    "plus": [
+     "Infecté"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q134105270": {
    "_nom": "Witch",
-   "species": [
-    "Infecté"
-   ],
-   "occupation": [
-    "Prédateur"
-   ]
+   "species": {
+    "plus": [
+     "Infecté"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q117815576": {
    "_nom": "Shinmyoumaru Sukuna",
-   "species": [
-    "Inchling"
-   ]
+   "species": {
+    "plus": [
+     "Inchling"
+    ]
+   }
   },
   "Q115868734": {
    "_nom": "Eyeye",
-   "species": [
-    "Poisson",
-    "Animal"
-   ],
+   "species": {
+    "plus": [
+     "Poisson",
+     "Animal"
+    ]
+   },
    "gender": "Aucun"
   },
   "Q115871174": {
    "_nom": "Hoverfish",
-   "species": [
-    "Poisson",
-    "Animal"
-   ],
+   "species": {
+    "plus": [
+     "Poisson",
+     "Animal"
+    ]
+   },
    "gender": "Aucun"
   },
   "Q10371215": {
    "_nom": "Former Human",
-   "species": [
-    "Mort-vivant"
-   ],
+   "species": {
+    "plus": [
+     "Mort-vivant"
+    ]
+   },
    "gender": "Aucun",
-   "nationality": [
-    "Mars"
-   ],
-   "occupation": [
-    "Prédateur"
-   ]
+   "nationality": {
+    "plus": [
+     "Mars"
+    ],
+    "moins": [
+     "Hell"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ],
+    "moins": [
+     "Chasseur"
+    ]
+   }
   },
   "Q108324036": {
    "_nom": "Mancubus",
-   "species": [
-    "Démon"
-   ],
+   "species": {
+    "plus": [
+     "Démon"
+    ]
+   },
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q17194084": {
    "_nom": "Ukiki",
@@ -2237,9 +3035,11 @@
   "Q115943937": {
    "_nom": "Sea Dragon Leviathan",
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q115943944": {
    "_nom": "Sea Emperor Leviathan",
@@ -2249,9 +3049,14 @@
    "_nom": "Collector Leviathan",
    "_raison": "Subnautica 2 se passe sur Proteus, les autres sur la planète 4546B (défaut de la franchise)",
    "gender": "Aucun",
-   "nationality": [
-    "Proteus"
-   ]
+   "nationality": {
+    "plus": [
+     "Proteus"
+    ],
+    "moins": [
+     "Planet 4546B"
+    ]
+   }
   },
   "Q111015357": {
    "_nom": "Spode",
@@ -2264,30 +3069,38 @@
   "Q4219956": {
    "_nom": "Cyberdemon",
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q108324133": {
    "_nom": "Cacodemon",
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q10373741": {
    "_nom": "Spider Mastermind",
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q108333052": {
    "_nom": "Âme Perdue",
    "gender": "Aucun",
-   "occupation": [
-    "Prédateur"
-   ]
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q3027554": {
    "_nom": "Dieu-machine",
@@ -2304,9 +3117,11 @@
   "Q11302218": {
    "_nom": "Chef Kawasaki",
    "gender": "Homme",
-   "species": [
-    "Inconnu"
-   ],
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   },
    "_raison": "année : Kirby's Adventure",
    "year": 1993
   },
@@ -2325,23 +3140,29 @@
   "Q108466077": {
    "_nom": "Azura",
    "gender": "Femme",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q112601404": {
    "_nom": "Molag Bal",
    "gender": "Homme",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q112601430": {
    "_nom": "Mehrunes Dagon",
    "gender": "Homme",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q56363359": {
    "_nom": "Pyro",
@@ -2397,9 +3218,11 @@
   "Q5815284": {
    "_nom": "Duster",
    "gender": "Homme",
-   "hair": [
-    "Bruns"
-   ]
+   "hair": {
+    "plus": [
+     "Bruns"
+    ]
+   }
   },
   "Q6011231": {
    "_nom": "Meryl",
@@ -2435,23 +3258,32 @@
   "Q139494225": {
    "_nom": "Samuel Hayden (Doom)",
    "gender": "Homme",
-   "nationality": [
-    "Mars"
-   ]
+   "nationality": {
+    "plus": [
+     "Mars"
+    ],
+    "moins": [
+     "Hell"
+    ]
+   }
   },
   "Q3241098": {
    "_nom": "Nurgle",
    "gender": "Homme",
-   "occupation": [
-    "Destructeur"
-   ]
+   "occupation": {
+    "plus": [
+     "Destructeur"
+    ]
+   }
   },
   "Q12620555": {
    "_nom": "Khorne",
    "gender": "Homme",
-   "occupation": [
-    "Destructeur"
-   ]
+   "occupation": {
+    "plus": [
+     "Destructeur"
+    ]
+   }
   },
   "Q4148376": {
    "_nom": "Gregor Eisenhorn",
@@ -2468,9 +3300,11 @@
   "Q135975943": {
    "_nom": "Saint Celestine",
    "gender": "Femme",
-   "occupation": [
-    "Religieux"
-   ]
+   "occupation": {
+    "plus": [
+     "Religieux"
+    ]
+   }
   },
   "wiki-tomb-raider-winston": {
    "_nom": "Winston",
@@ -2482,142 +3316,202 @@
   },
   "Q51885980": {
    "_nom": "Zeus",
-   "species": [
-    "Divinité"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
   },
   "Q71809189": {
    "_nom": "Athena",
-   "species": [
-    "Divinité"
-   ],
-   "occupation": [
-    "Conseiller"
-   ]
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Conseiller"
+    ]
+   }
   },
   "Q1328424": {
    "_nom": "Meta Knight",
-   "species": [
-    "Inconnu"
-   ]
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   }
   },
   "Q141435323": {
    "_nom": "Mysterious girl",
-   "species": [
-    "Inconnu"
-   ]
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   }
   },
   "Q115320828": {
    "_nom": "Paimon",
-   "species": [
-    "Inconnu"
-   ],
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   },
    "_raison": "« as their guide » (page pas lue par le script)",
-   "occupation": [
-    "Assistant"
-   ]
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ]
+   }
   },
   "wiki-solasta-shadwyn": {
    "_nom": "Shadwyn",
-   "species": [
-    "Inconnu"
-   ]
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   }
   },
   "wiki-breathedge-chack": {
    "_nom": "Chack",
-   "species": [
-    "Inconnu"
-   ]
+   "species": {
+    "plus": [
+     "Inconnu"
+    ]
+   }
   },
   "wiki-forgotton-anne-anne": {
    "_nom": "Anne",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Forgotling"
+    ]
+   }
   },
   "Q102349614": {
    "_nom": "Corrin",
-   "species": [
-    "Humain",
-    "Dragon"
-   ]
+   "species": {
+    "plus": [
+     "Humain",
+     "Dragon"
+    ],
+    "moins": [
+     "Demi-humain"
+    ]
+   }
   },
   "Q16154143": {
    "_nom": "Amaterasu",
-   "species": [
-    "Divinité",
-    "Loup",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Divinité",
+     "Animal"
+    ]
+   }
   },
   "Q1825776": {
    "_nom": "Reptile",
-   "species": [
-    "Saurien"
-   ]
+   "species": {
+    "plus": [
+     "Saurien"
+    ],
+    "moins": [
+     "Reptile"
+    ]
+   }
   },
   "Q2492923": {
    "_nom": "Geralt de Riv",
-   "species": [
-    "Humain",
-    "Mutant"
-   ],
-   "occupation": [
-    "Sorceleur",
-    "Épéiste",
-    "Chasseur de monstres"
-   ]
+   "species": {
+    "plus": [
+     "Humain",
+     "Mutant"
+    ],
+    "moins": [
+     "Humain mutant"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Sorceleur"
+    ]
+   }
   },
   "Q9254974": {
    "_nom": "Eskel",
-   "species": [
-    "Humain",
-    "Mutant"
-   ],
-   "occupation": [
-    "Sorceleur",
-    "Chasseur de monstres"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Sorceleur"
+    ]
+   }
   },
   "Q9368466": {
    "_nom": "Vesemir",
-   "species": [
-    "Humain",
-    "Mutant"
-   ],
-   "occupation": [
-    "Sorceleur",
-    "Chasseur de monstres"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Sorceleur"
+    ]
+   }
   },
   "Q1063506": {
    "_nom": "Crash Bandicoot",
-   "species": [
-    "Bandicoot",
-    "Mutant",
-    "Animal"
-   ]
+   "species": {
+    "plus": [
+     "Bandicoot",
+     "Animal"
+    ]
+   }
   },
   "Q2617674": {
    "_nom": "Coco Bandicoot",
-   "species": [
-    "Bandicoot",
-    "Mutant",
-    "Animal"
-   ],
-   "hair": [
-    "Blonds"
-   ]
+   "species": {
+    "plus": [
+     "Bandicoot",
+     "Animal"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q1245404": {
    "_nom": "Raiden",
-   "species": [
-    "Divinité"
-   ],
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   },
    "_raison": "dieu du tonnerre",
-   "occupation": [
-    "Garde"
-   ]
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "wiki-unreal-ne-ban": {
    "_nom": "Ne'Ban",
@@ -2653,15 +3547,18 @@
    "_nom": "Sapphire",
    "_raison": "brune puis blonde",
    "year": 2002,
-   "nationality": [
-    "Paso Robles",
-    "California",
-    "United States"
-   ],
-   "hair": [
-    "Bruns",
-    "Blonds"
-   ]
+   "nationality": {
+    "plus": [
+     "California",
+     "United States"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Bruns",
+     "Blonds"
+    ]
+   }
   },
   "wiki-devil-may-cry-j-d-morrison": {
    "_nom": "J.D. Morrison",
@@ -2757,9 +3654,11 @@
    "_nom": "Krystal",
    "_raison": "année : Star Fox Adventures",
    "year": 2002,
-   "hair": [
-    "Bleus"
-   ]
+   "hair": {
+    "plus": [
+     "Bleus"
+    ]
+   }
   },
   "Q21009638": {
    "_nom": "Beltino Toad",
@@ -2842,10 +3741,11 @@
    "_nom": "Franziska von Karma",
    "_raison": "année : Phoenix Wright: Justice for All",
    "year": 2002,
-   "nationality": [
-    "Germany",
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Germany"
+    ]
+   }
   },
   "Q16167007": {
    "_nom": "Morgan Fey",
@@ -2861,10 +3761,12 @@
    "_nom": "Hildegard von Krone",
    "_raison": "année : Soulcalibur IV",
    "year": 2008,
-   "nationality": [
-    "Wolfkrone",
-    "Holy Roman Empire"
-   ]
+   "nationality": {
+    "plus": [
+     "Wolfkrone",
+     "Holy Roman Empire"
+    ]
+   }
   },
   "Q1606932": {
    "_nom": "Tira",
@@ -2875,1094 +3777,1562 @@
    "_nom": "Amy Sorel",
    "_raison": "année : Soulcalibur III",
    "year": 2005,
-   "nationality": [
-    "France"
-   ]
+   "nationality": {
+    "plus": [
+     "France"
+    ]
+   }
   },
   "Q114834241": {
    "_nom": "Kilik",
    "_raison": "année : Soulcalibur",
    "year": 1998,
-   "nationality": [
-    "China"
-   ]
+   "nationality": {
+    "plus": [
+     "China"
+    ]
+   }
   },
   "Q845864": {
    "_nom": "Bowser",
-   "hair": [
-    "Rouges"
-   ]
+   "hair": {
+    "plus": [
+     "Rouges"
+    ]
+   }
   },
   "Q11145920": {
    "_nom": "Roxas",
-   "hair": [
-    "Blonds"
-   ]
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q59220438": {
    "_nom": "Marie",
-   "hair": [
-    "Blonds"
-   ]
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q1087525": {
    "_nom": "Koala Kong",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "Q100255105": {
    "_nom": "Warwick",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "Q819980": {
    "_nom": "Rhonin",
-   "hair": [
-    "Rouges"
-   ]
+   "hair": {
+    "plus": [
+     "Rouges"
+    ]
+   }
   },
   "Q18199282": {
    "_nom": "Cenarius",
-   "hair": null
+   "hair": {
+    "moins": [
+     "Noirs"
+    ]
+   }
   },
   "Q56363367": {
    "_nom": "Demoman",
-   "hair": [
-    "Noirs"
-   ]
+   "hair": {
+    "plus": [
+     "Noirs"
+    ]
+   }
   },
   "Q3783512": {
    "_nom": "Harry Mason",
-   "hair": [
-    "Bruns"
-   ]
+   "hair": {
+    "plus": [
+     "Bruns"
+    ]
+   }
   },
   "wiki-okami-nanami": {
    "_nom": "Nanami",
-   "hair": null
+   "hair": {
+    "moins": [
+     "Blonds"
+    ]
+   }
   },
   "wiki-yo-kai-watch-komasan": {
    "_nom": "Komasan",
-   "hair": [
-    "N/A"
-   ]
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "Q65495741": {
    "_nom": "Ann Takamaki",
-   "hair": [
-    "Blonds"
-   ]
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q3268079": {
    "_nom": "Luxord",
-   "hair": [
-    "Blonds"
-   ]
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q17007565": {
    "_nom": "Mordin Solus",
-   "species": [
-    "Extraterrestre"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "nationality": [
-    "Sur'Kesh"
-   ]
+   "species": {
+    "plus": [
+     "Extraterrestre"
+    ],
+    "moins": [
+     "Grenouille"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Sur'Kesh"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q1061603": {
    "_nom": "Toad",
-   "species": [
-    "Toad"
-   ]
+   "species": {
+    "plus": [
+     "Toad"
+    ],
+    "moins": [
+     "Grenouille"
+    ]
+   }
   },
   "Q2609744": {
    "_nom": "Toadette",
-   "species": [
-    "Toad"
-   ]
+   "species": {
+    "plus": [
+     "Toad"
+    ],
+    "moins": [
+     "Grenouille"
+    ]
+   }
   },
   "Q131657016": {
    "_nom": "Reisen Udongein Inaba",
-   "hair": [
-    "Violets"
-   ]
+   "hair": {
+    "plus": [
+     "Violets"
+    ]
+   }
   },
   "Q6139333": {
    "_nom": "Tawna",
-   "hair": [
-    "Blonds"
-   ]
+   "hair": {
+    "plus": [
+     "Blonds"
+    ]
+   }
   },
   "Q5524087": {
    "_nom": "Garrus Vakarian",
-   "nationality": [
-    "Palaven"
-   ]
+   "nationality": {
+    "plus": [
+     "Palaven"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q13584579": {
    "_nom": "Tali'Zorah",
-   "nationality": [
-    "Rannoch"
-   ]
+   "nationality": {
+    "plus": [
+     "Rannoch"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q16572370": {
    "_nom": "Liara T'Soni",
-   "nationality": [
-    "Thessia"
-   ]
+   "nationality": {
+    "plus": [
+     "Thessia"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q21170274": {
    "_nom": "Urdnot Wrex",
-   "nationality": [
-    "Tuchanka"
-   ]
+   "nationality": {
+    "plus": [
+     "Tuchanka"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q140421452": {
    "_nom": "Grunt",
-   "nationality": [
-    "Tuchanka"
-   ]
+   "nationality": {
+    "plus": [
+     "Tuchanka"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q51955113": {
    "_nom": "Javik",
-   "nationality": [
-    "Eden Prime"
-   ]
+   "nationality": {
+    "plus": [
+     "Eden Prime"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q88459424": {
    "_nom": "Thane Krios",
-   "nationality": [
-    "Kahje"
-   ]
+   "nationality": {
+    "plus": [
+     "Kahje"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q107133468": {
    "_nom": "Samara",
-   "nationality": [
-    "Thessia"
-   ]
+   "nationality": {
+    "plus": [
+     "Thessia"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q140073387": {
    "_nom": "EDI",
-   "nationality": [
-    "Moon"
-   ],
-   "occupation": [
-    "Pilote"
-   ]
+   "nationality": {
+    "plus": [
+     "Moon"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Pilote"
+    ],
+    "moins": [
+     "Espion"
+    ]
+   }
   },
   "Q141491418": {
    "_nom": "Saren Arterius",
-   "nationality": [
-    "Palaven"
-   ]
+   "nationality": {
+    "plus": [
+     "Palaven"
+    ],
+    "moins": [
+     "Earth"
+    ]
+   }
   },
   "Q16568495": {
    "_nom": "Kaidan Alenko",
-   "nationality": [
-    "Vancouver",
-    "Canada",
-    "Earth"
-   ]
+   "nationality": {
+    "plus": [
+     "Vancouver",
+     "Canada"
+    ]
+   }
   },
   "Q18345485": {
    "_nom": "Miranda Lawson",
-   "nationality": [
-    "Sydney",
-    "Australia",
-    "Earth"
-   ]
+   "nationality": {
+    "plus": [
+     "Sydney",
+     "Australia"
+    ]
+   }
   },
   "Q730684": {
    "_nom": "Doomguy",
-   "nationality": [
-    "Earth",
-    "Mars"
-   ]
+   "nationality": {
+    "plus": [
+     "Earth",
+     "Mars"
+    ],
+    "moins": [
+     "Hell"
+    ]
+   }
   },
   "Q24206": {
    "_nom": "Taki",
-   "nationality": [
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Japan"
+    ]
+   }
   },
   "Q2306495": {
    "_nom": "Ivy Valentine",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ]
+   }
   },
   "Q2010349": {
    "_nom": "Sophitia",
-   "nationality": [
-    "Athens",
-    "Greece"
-   ]
+   "nationality": {
+    "plus": [
+     "Athens",
+     "Greece"
+    ]
+   }
   },
   "Q2337647": {
    "_nom": "Voldo",
-   "nationality": [
-    "Venice",
-    "Italy"
-   ]
+   "nationality": {
+    "plus": [
+     "Venice",
+     "Italy"
+    ]
+   }
   },
   "Q3661956": {
    "_nom": "Cassandra Alexandra",
-   "nationality": [
-    "Athens",
-    "Greece"
-   ]
+   "nationality": {
+    "plus": [
+     "Athens",
+     "Greece"
+    ]
+   }
   },
   "Q3980428": {
    "_nom": "Talim",
-   "nationality": [
-    "Philippines"
-   ]
+   "nationality": {
+    "plus": [
+     "Philippines"
+    ]
+   }
   },
   "Q1165490": {
    "_nom": "Cervantes de Leon",
-   "nationality": [
-    "Valencia",
-    "Spain"
-   ]
+   "nationality": {
+    "plus": [
+     "Valencia",
+     "Spain"
+    ]
+   }
   },
   "Q4021809": {
    "_nom": "Chai Xianghua",
-   "nationality": [
-    "China"
-   ]
+   "nationality": {
+    "plus": [
+     "China"
+    ]
+   }
   },
   "Q4922057": {
    "_nom": "Kuroko",
-   "nationality": [
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Japan"
+    ]
+   }
   },
   "Q60533066": {
    "_nom": "Heishiro Mitsurugi",
-   "nationality": [
-    "Bizen",
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Bizen",
+     "Japan"
+    ]
+   }
   },
   "Q138649808": {
    "_nom": "Seong Mi-na",
-   "nationality": [
-    "Korea"
-   ]
+   "nationality": {
+    "plus": [
+     "Korea"
+    ]
+   }
   },
   "Q6100401": {
    "_nom": "Raphael Sorel",
-   "nationality": [
-    "Rouen",
-    "France"
-   ]
+   "nationality": {
+    "plus": [
+     "Rouen",
+     "France"
+    ]
+   }
   },
   "Q121361716": {
    "_nom": "Maxi",
-   "nationality": [
-    "Ryukyu",
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Ryukyu",
+     "Japan"
+    ]
+   }
   },
   "Q140754030": {
    "_nom": "Lilith",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q5674967": {
    "_nom": "Andariel",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q17628767": {
    "_nom": "Diablo",
-   "nationality": [
-    "Hell"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q135320394": {
    "_nom": "Azmodan",
-   "nationality": [
-    "Hell"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q135320460": {
    "_nom": "Mephisto",
-   "nationality": [
-    "Hell"
-   ],
-   "occupation": [
-    "Souverain"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q135320511": {
    "_nom": "The Butcher",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q4810757": {
    "_nom": "Tyrael",
-   "nationality": [
-    "Heaven"
-   ]
+   "nationality": {
+    "plus": [
+     "Heaven"
+    ]
+   }
   },
   "Q135320363": {
    "_nom": "Auriel",
-   "nationality": [
-    "Heaven"
-   ],
-   "occupation": [
-    "Dirigeant"
-   ]
+   "nationality": {
+    "plus": [
+     "Heaven"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Dirigeant"
+    ]
+   }
   },
   "Q135320411": {
    "_nom": "Imperius",
-   "nationality": [
-    "Heaven"
-   ]
+   "nationality": {
+    "plus": [
+     "Heaven"
+    ]
+   }
   },
   "Q43974014": {
    "_nom": "Malthael",
-   "nationality": [
-    "Heaven"
-   ]
+   "nationality": {
+    "plus": [
+     "Heaven"
+    ]
+   }
   },
   "Q11343205": {
    "_nom": "Mundus",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "wiki-devil-may-cry-sparda": {
    "_nom": "Sparda",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q1324170": {
    "_nom": "Trish",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q1217094": {
    "_nom": "Nero",
-   "nationality": [
-    "Fortuna"
-   ]
+   "nationality": {
+    "plus": [
+     "Fortuna"
+    ]
+   }
   },
   "wiki-bayonetta-rodin": {
    "_nom": "Rodin",
-   "nationality": [
-    "Hell"
-   ]
+   "nationality": {
+    "plus": [
+     "Hell"
+    ]
+   }
   },
   "Q15726631": {
    "_nom": "Nitrous Oxide",
-   "nationality": [
-    "Gasmoxia"
-   ]
+   "nationality": {
+    "plus": [
+     "Gasmoxia"
+    ],
+    "moins": [
+     "Wumpa Islands",
+     "Australia"
+    ]
+   }
   },
   "Q3101952": {
    "_nom": "George Stobbart",
-   "nationality": [
-    "Idaho",
-    "United States"
-   ]
+   "nationality": {
+    "plus": [
+     "Idaho",
+     "United States"
+    ],
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-les-chevaliers-de-baphomet-duane-henderson": {
    "_nom": "Duane Henderson",
-   "nationality": [
-    "United States"
-   ]
+   "nationality": {
+    "plus": [
+     "United States"
+    ],
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-les-chevaliers-de-baphomet-pearl-henderson": {
    "_nom": "Pearl Henderson",
-   "nationality": [
-    "United States"
-   ]
+   "nationality": {
+    "plus": [
+     "United States"
+    ],
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-les-chevaliers-de-baphomet-lady-piermont": {
    "_nom": "Lady Piermont",
-   "nationality": [
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "United Kingdom"
+    ],
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-les-chevaliers-de-baphomet-flobbage": {
    "_nom": "Flobbage",
-   "nationality": [
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "United Kingdom"
+    ],
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-les-chevaliers-de-baphomet-bruno-ostvald": {
    "_nom": "Bruno Ostvald",
-   "nationality": null
+   "nationality": {
+    "moins": [
+     "France"
+    ]
+   }
   },
   "wiki-ark-mei-yin-li": {
    "_nom": "Mei Yin Li",
-   "nationality": [
-    "China"
-   ]
+   "nationality": {
+    "plus": [
+     "China"
+    ]
+   }
   },
   "wiki-ark-edmund-rockwell": {
    "_nom": "Edmund Rockwell",
-   "nationality": [
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "United Kingdom"
+    ]
+   }
   },
   "wiki-ark-gaius-marcellus-nerva": {
    "_nom": "Gaius Marcellus Nerva",
-   "nationality": [
-    "Roman Empire"
-   ]
+   "nationality": {
+    "plus": [
+     "Roman Empire"
+    ]
+   }
   },
   "wiki-ark-john-dahkeya": {
    "_nom": "John Dahkeya",
-   "nationality": [
-    "United States"
-   ]
+   "nationality": {
+    "plus": [
+     "United States"
+    ]
+   }
   },
   "Q1269082": {
    "_nom": "Alice",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London"
+    ]
+   }
   },
   "Q28669582": {
    "_nom": "Carmilla",
-   "nationality": [
-    "Styria",
-    "Austria"
-   ]
+   "nationality": {
+    "plus": [
+     "Styria",
+     "Austria"
+    ],
+    "moins": [
+     "Romania"
+    ]
+   }
   },
   "Q123701557": {
    "_nom": "Nathan Graves",
-   "nationality": [
-    "Austria"
-   ]
+   "nationality": {
+    "plus": [
+     "Austria"
+    ],
+    "moins": [
+     "Romania"
+    ]
+   }
   },
   "Q126947107": {
    "_nom": "Reinhardt Schneider",
-   "nationality": [
-    "Germany"
-   ]
+   "nationality": {
+    "plus": [
+     "Germany"
+    ],
+    "moins": [
+     "Romania"
+    ]
+   }
   },
   "Q1038163": {
    "_nom": "Phoenix Wright",
-   "nationality": [
-    "Japan"
-   ]
+   "nationality": {
+    "moins": [
+     "United States"
+    ]
+   }
   },
   "Q5576788": {
    "_nom": "Godot",
-   "nationality": [
-    "Japan"
-   ]
+   "nationality": {
+    "plus": [
+     "Japan"
+    ],
+    "moins": [
+     "United States"
+    ]
+   }
   },
   "Q106687047": {
    "_nom": "Herlock Sholmes",
-   "nationality": [
-    "London",
-    "United Kingdom"
-   ]
+   "nationality": {
+    "plus": [
+     "London",
+     "United Kingdom"
+    ],
+    "moins": [
+     "Japan"
+    ]
+   }
   },
   "Q135430461": {
    "_nom": "Houndeye",
    "gender": "Aucun",
-   "species": [
-    "Extraterrestre"
-   ],
-   "nationality": [
-    "Xen"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "occupation": [
-    "Prédateur"
-   ]
+   "species": {
+    "plus": [
+     "Extraterrestre"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Xen"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Prédateur"
+    ]
+   }
   },
   "Q51340087": {
    "_nom": "Panda King",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q69997412": {
-   "_nom": "Carter-A259",
-   "occupation": [
-    "Soldat"
-   ]
+   "_nom": "Carter-A259"
   },
   "Q126488176": {
-   "_nom": "Lamarr",
-   "occupation": null
+   "_nom": "Lamarr"
   },
   "Q115802562": {
    "_nom": "Louis",
-   "occupation": [
-    "Survivant",
-    "Employé"
-   ]
+   "occupation": {
+    "plus": [
+     "Survivant",
+     "Employé"
+    ]
+   }
   },
   "Q65515926": {
    "_nom": "Futaba Sakura",
-   "occupation": [
-    "Informaticien",
-    "Étudiant"
-   ]
+   "occupation": {
+    "plus": [
+     "Informaticien",
+     "Étudiant"
+    ]
+   }
   },
   "Q121355999": {
    "_nom": "Alph",
-   "occupation": [
-    "Mécanicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Mécanicien"
+    ]
+   }
   },
   "Q121356011": {
    "_nom": "Brittany",
-   "occupation": [
-    "Scientifique"
-   ]
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   }
   },
   "Q121356020": {
    "_nom": "Charlie",
-   "occupation": [
-    "Pilote"
-   ]
+   "occupation": {
+    "plus": [
+     "Pilote"
+    ]
+   }
   },
   "wiki-gears-of-war-delmont-walker": {
-   "_nom": "Delmont Walker",
-   "occupation": [
-    "Soldat"
-   ]
+   "_nom": "Delmont Walker"
   },
   "wiki-borderlands-marcus-kincaid": {
    "_nom": "Marcus Kincaid",
-   "occupation": [
-    "Commerçant"
-   ]
+   "occupation": {
+    "plus": [
+     "Commerçant"
+    ]
+   }
   },
   "wiki-ark-diana-altaras": {
    "_nom": "Diana Altaras",
-   "occupation": [
-    "Pilote"
-   ]
+   "occupation": {
+    "plus": [
+     "Pilote"
+    ]
+   }
   },
   "wiki-firewatch-dave": {
    "_nom": "Dave",
-   "occupation": [
-    "Garde"
-   ]
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "wiki-dredge-last-fisherman": {
    "_nom": "Last Fisherman",
-   "occupation": [
-    "Marin"
-   ]
+   "occupation": {
+    "plus": [
+     "Marin"
+    ]
+   }
   },
   "wiki-pillars-of-eternity-tekehu": {
-   "_nom": "Tekēhu",
-   "occupation": [
-    "Magicien"
-   ]
+   "_nom": "Tekēhu"
   },
   "Q135009934": {
    "_nom": "Ralof",
-   "occupation": [
-    "Révolutionnaire",
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Révolutionnaire"
+    ]
+   }
   },
   "Q56707148": {
    "_nom": "Muiri",
-   "occupation": [
-    "Médecin"
-   ]
+   "occupation": {
+    "plus": [
+     "Médecin"
+    ]
+   }
   },
   "Q121315835": {
    "_nom": "Wally",
-   "occupation": [
-    "Garde"
-   ]
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "Q99472136": {
    "_nom": "Kait Diaz",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "moins": [
+     "Souverain"
+    ]
+   }
   },
   "Q56324424": {
    "_nom": "Leliana",
-   "occupation": [
-    "Espion",
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Espion",
+     "Musicien"
+    ],
+    "moins": [
+     "Dirigeant"
+    ]
+   }
   },
   "Q85812805": {
    "_nom": "Varric Tethras",
-   "occupation": [
-    "Écrivain"
-   ]
+   "occupation": {
+    "plus": [
+     "Écrivain"
+    ],
+    "moins": [
+     "Voleur"
+    ]
+   }
   },
   "Q114962186": {
    "_nom": "The Last Dragonborn",
-   "occupation": null
+   "occupation": {
+    "moins": [
+     "Magicien",
+     "Noble"
+    ]
+   }
   },
   "wiki-gears-of-war-victor-hoffman": {
    "_nom": "Victor Hoffman",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ],
+    "moins": [
+     "Chef de clan",
+     "Dirigeant"
+    ]
+   }
   },
   "Q66024032": {
    "_nom": "Foxy",
-   "occupation": [
-    "Pirate",
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Pirate",
+     "Artiste"
+    ]
+   }
   },
   "Q110748756": {
    "_nom": "Freddy Fazbear",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116136856": {
    "_nom": "Bonnie",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116142299": {
    "_nom": "Golden Freddy",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116050790": {
    "_nom": "Glamrock Freddy",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116050878": {
    "_nom": "Glamrock Chica",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116050888": {
    "_nom": "Montgomery Gator",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q116050863": {
    "_nom": "Roxanne Wolf",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ],
+    "moins": [
+     "Dirigeant"
+    ]
+   }
   },
   "Q116136783": {
    "_nom": "Mangle",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q116051003": {
    "_nom": "Circus Baby",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q116051160": {
    "_nom": "Ballora",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q116051169": {
    "_nom": "Funtime Freddy",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q116052189": {
    "_nom": "Funtime Foxy",
-   "occupation": [
-    "Artiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Artiste"
+    ]
+   }
   },
   "Q116051401": {
    "_nom": "Daycare Attendant",
-   "occupation": [
-    "Domestique"
-   ]
+   "occupation": {
+    "plus": [
+     "Domestique"
+    ]
+   }
   },
   "Q134471684": {
    "_nom": "Quincy",
-   "occupation": [
-    "Archer"
-   ]
+   "occupation": {
+    "plus": [
+     "Archer"
+    ]
+   }
   },
   "Q134476688": {
    "_nom": "Striker Jones",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "wiki-bloons-tower-defense-geraldo": {
    "_nom": "Geraldo",
-   "occupation": [
-    "Commerçant"
-   ]
+   "occupation": {
+    "plus": [
+     "Commerçant"
+    ]
+   }
   },
   "Q123510176": {
    "_nom": "Kafka",
-   "occupation": [
-    "Criminel"
-   ]
+   "occupation": {
+    "plus": [
+     "Criminel"
+    ]
+   }
   },
   "Q123396142": {
    "_nom": "Louve d'argent",
-   "occupation": [
-    "Informaticien",
-    "Criminel"
-   ]
+   "occupation": {
+    "plus": [
+     "Informaticien",
+     "Criminel"
+    ]
+   }
   },
   "Q123516191": {
    "_nom": "Blade",
-   "occupation": [
-    "Criminel",
-    "Épéiste"
-   ]
+   "occupation": {
+    "plus": [
+     "Criminel",
+     "Épéiste"
+    ]
+   }
   },
   "Q129264006": {
    "_nom": "Aventurine",
-   "occupation": [
-    "Homme d'affaires"
-   ]
+   "occupation": {
+    "plus": [
+     "Homme d'affaires"
+    ]
+   }
   },
   "Q130122068": {
    "_nom": "Luciole",
-   "occupation": [
-    "Soldat",
-    "Criminel"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat",
+     "Criminel"
+    ]
+   }
   },
   "Q131838591": {
    "_nom": "Robin",
-   "occupation": [
-    "Musicien"
-   ]
+   "occupation": {
+    "plus": [
+     "Musicien"
+    ]
+   }
   },
   "Q136526548": {
    "_nom": "Herta",
-   "occupation": [
-    "Scientifique"
-   ]
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   }
   },
   "Q136526542": {
    "_nom": "Ruan Mei",
-   "occupation": [
-    "Scientifique"
-   ]
+   "occupation": {
+    "plus": [
+     "Scientifique"
+    ]
+   }
   },
   "Q123385199": {
    "_nom": "Dan Heng",
-   "occupation": [
-    "Garde"
-   ]
+   "occupation": {
+    "plus": [
+     "Garde"
+    ]
+   }
   },
   "Q131457038": {
    "_nom": "Sunday",
-   "occupation": [
-    "Religieux"
-   ]
+   "occupation": {
+    "plus": [
+     "Religieux"
+    ]
+   }
   },
   "Q136526506": {
    "_nom": "Bronya",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q3174269": {
    "_nom": "Mega Man",
-   "occupation": [
-    "Justicier"
-   ]
+   "occupation": {
+    "plus": [
+     "Justicier"
+    ],
+    "moins": [
+     "Conseiller"
+    ]
+   }
   },
   "Q88778361": {
    "_nom": "Cut Man",
-   "occupation": [
-    "Ouvrier"
-   ]
+   "occupation": {
+    "plus": [
+     "Ouvrier"
+    ]
+   }
   },
   "Q88777944": {
    "_nom": "Ice Man",
-   "occupation": [
-    "Aventurier"
-   ]
+   "occupation": {
+    "plus": [
+     "Aventurier"
+    ]
+   }
   },
   "Q88778228": {
    "_nom": "Elec Man",
-   "occupation": [
-    "Ouvrier"
-   ]
+   "occupation": {
+    "plus": [
+     "Ouvrier"
+    ],
+    "moins": [
+     "Acteur"
+    ]
+   }
   },
   "Q88777894": {
    "_nom": "Bubble Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88777907": {
    "_nom": "Quick Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88777933": {
    "_nom": "Wood Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88777965": {
    "_nom": "Air Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88778108": {
    "_nom": "Heat Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88778441": {
    "_nom": "Metal Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q88778505": {
    "_nom": "Crash Man",
-   "occupation": [
-    "Soldat"
-   ]
+   "occupation": {
+    "plus": [
+     "Soldat"
+    ]
+   }
   },
   "Q119167509": {
    "_nom": "Kyle Crane",
-   "occupation": [
-    "Espion",
-    "Survivant"
-   ]
+   "occupation": {
+    "plus": [
+     "Espion"
+    ]
+   }
   },
   "Q507001": {
    "_nom": "Princesse Peach",
-   "occupation": [
-    "Noble"
-   ]
+   "occupation": {
+    "plus": [
+     "Noble"
+    ],
+    "moins": [
+     "Médecin"
+    ]
+   }
   },
   "Q2208427": {
    "_nom": "Harmonie",
-   "occupation": [
-    "Noble"
-   ]
+   "occupation": {
+    "moins": [
+     "Médecin"
+    ]
+   }
   },
   "Q10343913": {
    "_nom": "Palutena",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-god-of-war-ares": {
    "_nom": "Ares",
-   "occupation": [
-    "Combattant"
-   ]
+   "occupation": {
+    "plus": [
+     "Combattant"
+    ]
+   }
   },
   "Q115123377": {
    "_nom": "Vaermina",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "wiki-devil-may-cry-urizen": {
    "_nom": "Urizen",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q3874510": {
    "_nom": "Nelo Angelo",
-   "occupation": [
-    "Chevalier"
-   ]
+   "occupation": {
+    "plus": [
+     "Chevalier"
+    ]
+   }
   },
   "Q110755596": {
    "_nom": "Ghirahim",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q1094005": {
    "_nom": "Sigmar",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q2024094": {
    "_nom": "Grimnir",
-   "occupation": [
-    "Combattant"
-   ]
+   "occupation": {
+    "plus": [
+     "Combattant"
+    ]
+   }
   },
   "Q2098458": {
    "_nom": "Grungni",
-   "occupation": [
-    "Ouvrier"
-   ]
+   "occupation": {
+    "plus": [
+     "Ouvrier"
+    ]
+   }
   },
   "Q3637127": {
    "_nom": "Be'lakor",
-   "occupation": [
-    "Souverain"
-   ]
+   "occupation": {
+    "plus": [
+     "Souverain"
+    ]
+   }
   },
   "Q2664991": {
    "_nom": "Devil Jin",
-   "occupation": [
-    "Destructeur"
-   ]
+   "occupation": {
+    "plus": [
+     "Destructeur"
+    ]
+   }
   },
   "Q137887405": {
    "_nom": "Hylia",
-   "occupation": [
-    "Protecteur"
-   ]
+   "occupation": {
+    "plus": [
+     "Protecteur"
+    ]
+   }
   },
   "Q137798536": {
    "_nom": "Elora",
    "_raison": "« the guide of that realm » (page pas lue par le script)",
-   "occupation": [
-    "Assistant"
-   ]
+   "occupation": {
+    "plus": [
+     "Assistant"
+    ]
+   }
   },
   "wiki-blue-prince-mary-jones": {
    "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
-   "nationality": [
-    "Reddington",
-    "Fenn Aries"
-   ]
+   "nationality": {
+    "plus": [
+     "Reddington",
+     "Fenn Aries"
+    ]
+   }
   },
   "wiki-blue-prince-simon-jones": {
    "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
-   "nationality": [
-    "Mount Holly Estate",
-    "Reddington",
-    "Fenn Aries"
-   ]
+   "nationality": {
+    "plus": [
+     "Reddington",
+     "Fenn Aries"
+    ]
+   }
   },
   "wiki-blue-prince-clara-epsen": {
    "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
-   "nationality": [
-    "Mount Holly Estate",
-    "Reddington",
-    "Fenn Aries",
-    "Eraja"
-   ]
+   "nationality": {
+    "plus": [
+     "Mount Holly Estate",
+     "Reddington",
+     "Fenn Aries",
+     "Eraja"
+    ]
+   }
   },
   "wiki-blue-prince-simon-sinclair": {
    "_raison": "lieux tirés du texte de la page (blue-prince.fandom.com)",
-   "nationality": [
-    "Mount Holly Estate",
-    "Orinda"
-   ]
+   "nationality": {
+    "plus": [
+     "Orinda"
+    ]
+   }
   },
   "Q47467669": {
    "_nom": "Chloe Price",
    "_raison": "cheveux châtains teints en bleu (pas roses)",
-   "hair": [
-    "Bruns",
-    "Bleus"
-   ]
+   "hair": {
+    "plus": [
+     "Bruns"
+    ],
+    "moins": [
+     "Roses"
+    ]
+   }
   },
   "Q125856191": {
    "_nom": "Alena",
    "_raison": "tsarevna de Zamoksva, artiste martiale (dragonquest.fandom.com/wiki/Alena_(Dragon_Quest_IV))",
-   "occupation": [
-    "Noble",
-    "Combattant"
-   ],
-   "nationality": [
-    "Zamoksva"
-   ]
+   "occupation": {
+    "plus": [
+     "Noble"
+    ]
+   },
+   "nationality": {
+    "plus": [
+     "Zamoksva"
+    ]
+   }
   },
   "wiki-sundered-eshe": {
    "_nom": "Eshe",
-   "nationality": [
-    "Wasteland"
-   ],
-   "hair": [
-    "Bruns"
-   ]
+   "nationality": {
+    "plus": [
+     "Wasteland"
+    ],
+    "moins": [
+     "The wasteland"
+    ]
+   },
+   "hair": {
+    "moins": [
+     "Rouges"
+    ]
+   }
   },
   "wiki-sundered-shining-trapezohedron": {
    "_nom": "Shining Trapezohedron",
    "gender": "Aucun",
-   "nationality": [
-    "The Nether"
-   ]
+   "nationality": {
+    "plus": [
+     "The Nether"
+    ],
+    "moins": [
+     "Gift of Nyarlathotep to the Eschaton"
+    ]
+   }
   },
   "wiki-sundered-krurhal-milarh": {
    "_nom": "Krurhal Milarh",
-   "nationality": [
-    "Eschaton"
-   ]
+   "nationality": {
+    "plus": [
+     "Eschaton"
+    ]
+   }
   },
   "wiki-sundered-ishaela-bha-gor": {
    "_nom": "Ishaela Bha'gor",
-   "nationality": [
-    "Eschaton"
-   ]
+   "nationality": {
+    "plus": [
+     "Eschaton"
+    ],
+    "moins": [
+     "The Cathedral"
+    ]
+   }
   },
   "wiki-sundered-leonard-waters": {
    "_nom": "Leonard Waters",
-   "nationality": [
-    "Valkyries"
-   ]
+   "nationality": {
+    "plus": [
+     "Valkyries"
+    ],
+    "moins": [
+     "The Cathedral"
+    ]
+   }
   },
   "wiki-sundered-emmit-nelson": {
    "_nom": "Emmit Nelson",
-   "nationality": [
-    "Valkyries"
-   ]
+   "nationality": {
+    "plus": [
+     "Valkyries"
+    ],
+    "moins": [
+     "Holy City of the Eschaton"
+    ]
+   }
   },
   "wiki-sundered-nyarlathotep": {
    "_nom": "Nyarlathotep",
-   "nationality": [
-    "The Nether"
-   ],
-   "occupation": [
-    "Aucune"
-   ]
+   "occupation": {
+    "plus": [
+     "Aucune"
+    ],
+    "moins": [
+     "Dirigeant"
+    ]
+   }
   }
  },
  "add": [

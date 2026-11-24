@@ -2,7 +2,6 @@
 // Analysis and Development », « jeu de plateforme en 3D ») ramenés à de courtes listes, pour que les indices se comparent.
 // Chaque fonction renvoie la valeur traduite, null si ce n'est pas une valeur à garder (on la retire), undefined si on
 // ne sait pas la traduire (gardée telle quelle et listée dans le récap : à ajouter ici).
-import { CTHULHU_MYTHOS, OTHER_WORLD, REAL_WORLD, SPACE } from '../src/subjects/pixeldle/worlds.js'
 
 const key = (value: string) => value.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim()
 
@@ -447,8 +446,10 @@ export function translatePlace(label: string): string[] {
 // passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES), et
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
-// Ces lieux sont gardés quand une correction à la main change la nationalité (keepWorlds, appliqué par le bot).
-export { CTHULHU_MYTHOS, OTHER_WORLD, REAL_WORLD, SPACE } from '../src/subjects/pixeldle/worlds.js'
+export const REAL_WORLD = 'Monde réel'
+export const OTHER_WORLD = 'Inconnu'
+export const SPACE = 'Lost in the Galaxy'
+export const CTHULHU_MYTHOS = 'Mythe de Cthulhu'
 export type World = 'real' | 'other'
 
 // Les pays d'aujourd'hui (noms anglais d'Intl), ceux d'histoire, et notre système solaire

@@ -21,9 +21,6 @@ export interface AttributeDef {
   kind: AttributeKind
   // affichage de la valeur (unité, séparateur...). Par défaut : valeur brute, « — » si vide
   format?: (value: AttributeValue) => string
-  // ce qu'une correction à la main garde de l'ancienne valeur (la valeur par défaut d'un champ vidé, au Pixeldle).
-  // Par défaut : la correction remplace tout, sauf les tags ajoutés par le script (Entry.added)
-  onEdit?: (edited: AttributeValue, previous: AttributeValue) => AttributeValue
 }
 
 export interface Entry {
@@ -33,9 +30,6 @@ export interface Entry {
   aliases?: readonly string[]
   image?: string
   attributes: Readonly<Record<string, AttributeValue>>
-  // les tags propres au personnage ajoutés par le script de récupération à un champ multiple (l'occupation tirée de
-  // l'arme au Pixeldle) : une correction à la main ne les retire pas
-  added?: Readonly<Record<string, readonly string[]>>
 }
 
 export interface Subject {

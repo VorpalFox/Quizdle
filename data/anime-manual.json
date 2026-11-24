@@ -3,23 +3,42 @@
  "edit": {
   "80": {
    "_nom": "Light Yagami",
-   "occupation": [
-    "Étudiant",
-    "Tueur en série"
-   ]
+   "occupation": {
+    "plus": [
+     "Tueur en série"
+    ],
+    "moins": [
+     "Détective",
+     "Justicier",
+     "Tueur de masse",
+     "Gourou"
+    ]
+   }
   },
   "127212": {
    "_nom": "Yuuji Itadori",
-   "occupation": [
-    "Exorciste",
-    "Élève"
-   ]
+   "occupation": {
+    "plus": [
+     "Exorciste",
+     "Élève"
+    ],
+    "moins": [
+     "Sorcerer",
+     "Student",
+     "Vessel"
+    ]
+   }
   },
   "133701": {
    "_nom": "Sukuna",
-   "occupation": [
-    "Fléau"
-   ]
+   "occupation": {
+    "plus": [
+     "Fléau"
+    ],
+    "moins": [
+     "Calamity"
+    ]
+   }
   }
  },
  "add": []

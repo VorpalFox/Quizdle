@@ -1,6 +1,5 @@
 import type { AttributeDef, AttributeValue, Subject } from '../../engine/types.js'
 import { loadEntries } from '../loadEntries.js'
-import { keepDefault, keepWorlds } from './worlds.js'
 
 // Un perso d'un jeu pas encore sorti (Meryl, de Mother 4) : plus récent que tous, affiché « Futur »
 export const FUTURE_YEAR = 9999
@@ -11,9 +10,9 @@ const attributes: readonly AttributeDef[] = [
   // Le personnage
   { key: 'gender', label: 'Sexe', kind: 'exact' },
   { key: 'species', label: 'Espèce', kind: 'set' },
-  { key: 'nationality', label: 'Nationalité', kind: 'set', onEdit: keepWorlds },
-  { key: 'occupation', label: 'Occupation', kind: 'set', onEdit: keepDefault },
-  { key: 'hair', label: 'Cheveux', kind: 'set', onEdit: keepDefault },
+  { key: 'nationality', label: 'Nationalité', kind: 'set' },
+  { key: 'occupation', label: 'Occupation', kind: 'set' },
+  { key: 'hair', label: 'Cheveux', kind: 'set' },
   // Son 1er jeu
   { key: 'franchise', label: 'Franchise', kind: 'exact' },
   { key: 'developer', label: 'Développeur', kind: 'exact' },

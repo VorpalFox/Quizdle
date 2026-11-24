@@ -15,7 +15,8 @@
 //    FRANCHISE_DEVELOPERS force le studio, FRANCHISE_GENRES ajoute un genre à toute la franchise (pixeldleTranslate.ts).
 // 7. Les corrections à la main (data/pixeldle-manual.json : defaults, puis edit), puis les valeurs finales :
 //    espèce dépliée, occupations regroupées, jamais vides, et la nationalité vide remplie par le monde de la franchise
-//    (Monde réel, Inconnu, ou vide si on ne sait pas : FRANCHISE_WORLDS, sinon les lieux des autres personnages)
+//    (Monde réel, Inconnu, ou vide si on ne sait pas : FRANCHISE_WORLDS, sinon les lieux des autres personnages).
+//    Les corrections encore une fois à la fin : une valeur retirée à la main ne revient pas.
 //
 // Les valeurs de Wikidata (espèce, genres, développeur...) sont ramenées à nos listes par pixeldleTranslate.ts. Celles
 // qu'il ne sait pas traduire restent brutes et sont listées dans le récap (.cache/pixeldle/pixeldle-recap.md). Le récap
@@ -45,7 +46,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { pixeldle } from '../src/subjects/pixeldle/index.js'
-import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
+import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
@@ -659,25 +660,17 @@ const finished = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
   // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
   const { weapon, ...attributes } = entry.attributes
-  const own = mergeOccupations(attributes.occupation) ?? []
-  const known = mergeOccupations([...own, ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
+  const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
   const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
-  const fromWeapon = (known ?? []).filter(name => !own.includes(name))
-  return { ...withAddedTags(entry, 'occupation', fromWeapon), attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
+  return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
-
-// Les tags que le script ajoute à un champ multiple, gardés par le bot quand une correction à la main change le champ
-// (Entry.added : l'occupation tirée de l'arme ; les mondes de la nationalité, les mêmes pour tous, sont dans keepWorlds)
-function withAddedTags(entry: Entry, key: string, tags: string[]): Entry {
-  return tags.length > 0 ? { ...entry, added: { ...entry.added, [key]: tags } } : entry
-}
 
 // La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et les univers
 // partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
 const worlds = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) => [franchise,
   franchise in FRANCHISE_WORLDS ? FRANCHISE_WORLDS[franchise]! : franchiseWorld(list.map(entry => entry.attributes.nationality as string[] | null))]))
 const worldFills: string[] = []
-const entries = finished.map(entry => {
+const placed = finished.map(entry => {
   const places = entry.attributes.nationality as string[] | null
   const franchise = String(entry.attributes.franchise)
   const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
@@ -685,6 +678,8 @@ const entries = finished.map(entry => {
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
   return { ...entry, attributes: { ...entry.attributes, nationality } }
 })
+// Les corrections encore une fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
+const entries = finishManual(placed, manual, pixeldle.attributes.map(({ key }) => key))
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
 function functionRole(entry: Entry): string[] | null {
