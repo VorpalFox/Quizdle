@@ -24,7 +24,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'demon slayer': 'Pourfendeur de démons', 'warrior': 'Guerrier', 'warrior captain': 'Guerrier', 'swordsman': 'Épéiste', 'swordswoman': 'Épéiste',
   'samurai': 'Samouraï', 'ninja': 'Ninja', 'archer': 'Archer', 'healer': 'Soigneur', 'cleric': 'Clerc', 'priest': 'Prêtre', 'priestess': 'Prêtresse',
   'nun': 'Religieuse', 'monk': 'Moine', 'shrine maiden': 'Miko', 'oracle': 'Oracle', 'fortune teller': 'Voyant',
-  'alchemist': 'Alchimiste', 'state alchemist': 'Alchimiste d\'État', 'herbalist': 'Herboriste', 'potion maker': 'Apothicaire',
+  'alchemist': 'Alchimiste', 'state alchemist': 'Alchimiste', 'herbalist': 'Herboriste', 'potion maker': 'Apothicaire',
   'hero': 'Héros', 'pro hero': 'Héros professionnel', 'villain': 'Méchant',
   'pirate': 'Pirate', 'space pirate': 'Pirate de l\'espace', 'thief': 'Voleur', 'criminal': 'Criminel', 'tueur en série': 'Tueur en série',
   'god': 'Dieu', 'goddess': 'Déesse', 'god of war': 'Dieu', 'delivery god': 'Dieu', 'god of calamity': 'Dieu',

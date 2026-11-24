@@ -11849,7 +11849,9 @@
     "Contract Devil",
     "Denji's Heart"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -15386,7 +15388,9 @@
    "gender": "Autre",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -22655,7 +22659,7 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Alchimiste d'État"
+    "Alchimiste"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -22858,7 +22862,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Alchimiste d'État"
+    "Alchimiste"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -23078,7 +23082,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Alchimiste d'État"
+    "Alchimiste"
    ],
    "hair": [
     "Bruns"
@@ -23110,31 +23114,6 @@
    "occupation": [
     "Mécanicien",
     "Spécialiste des communications"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist: Brotherhood",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2009,
-   "studio": "bones"
-  }
- },
- {
-  "id": "39241",
-  "name": "Raven",
-  "aliases": [
-   "レイブン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n39241-vN99rXLvBerw.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Général"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -26127,7 +26106,9 @@
     "Massive Spiral Engery Absorbed",
     "Stored"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -40581,7 +40562,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -48507,10 +48490,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129347-m1xftx27rHwl.jpg",
   "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
+   "gender": "Aucun",
+   "age": "N/A",
+   "occupation": [
+    "Assistant"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
@@ -55923,7 +55910,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Aventure",
@@ -56714,10 +56703,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209902-Ty8ihQLkX7EN.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Aucun",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Assistant"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -56954,12 +56947,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b225837-yZmBdvZogkTR.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Aucun",
    "age": null,
    "occupation": [
-    "Partner AI"
+    "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -56980,10 +56975,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b216426-rbkCds1QCWNy.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Aucun",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Assistant"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",

@@ -4,6 +4,11 @@
 // null = l'entrée n'a pas cette valeur (ex : pas de 2e type, habitat inconnu)
 export type AttributeValue = string | number | readonly string[] | null
 
+// L'entrée ne peut pas avoir cette valeur (l'âge ou les cheveux d'un personnage immatériel), à ne pas confondre
+// avec null (« ? », valeur inconnue). Une valeur comme une autre : juste si la cible l'a aussi, fausse sinon,
+// même pour un nombre (ni plus grand ni plus petit). Même valeur que les cheveux d'un robot au Pixeldle (NO_HAIR).
+export const NOT_APPLICABLE = 'N/A'
+
 // Comment on compare la proposition à la cible :
 // - exact  : juste ou faux (couleur, habitat...)
 // - set    : liste de valeurs, partiellement juste si au moins une en commun (types...)

@@ -3,7 +3,7 @@ import { compareEntries, compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
 import { dayKey, randomEntry } from './pick.js'
 import { displayName, findEntry, homonyms, isOneTypoAway, searchEntries } from './search.js'
-import type { Subject } from './types.js'
+import { NOT_APPLICABLE, type Subject } from './types.js'
 
 // Sujet inventé : le moteur ne doit rien savoir des Pokémon
 const fruits: Subject = {
@@ -35,6 +35,13 @@ describe('compareValues', () => {
     expect(compareValues('exact', 'Hiver', null)).toBe('unknown')
     expect(compareValues('set', ['Rouge'], [])).toBe('unknown')
     expect(compareValues('number', 150, null)).toBe('unknown')
+  })
+
+  it('non applicable : juste contre non applicable, faux contre tout le reste, même un nombre', () => {
+    expect(compareValues('number', NOT_APPLICABLE, NOT_APPLICABLE)).toBe('correct')
+    expect(compareValues('number', 17, NOT_APPLICABLE)).toBe('wrong')
+    expect(compareValues('number', NOT_APPLICABLE, 17)).toBe('wrong')
+    expect(compareValues('set', [NOT_APPLICABLE], ['Noirs'])).toBe('wrong')
   })
 
   it('bon perso : tout est juste, même ses indices vides', () => {

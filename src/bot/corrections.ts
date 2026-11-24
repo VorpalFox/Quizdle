@@ -3,12 +3,14 @@
 // et appliquées tout de suite aux données en mémoire.
 import { GameError } from '../engine/game.js'
 import { findEntry } from '../engine/search.js'
-import type { AttributeDef, AttributeValue, Entry, Subject } from '../engine/types.js'
+import { type AttributeDef, type AttributeValue, type Entry, NOT_APPLICABLE, type Subject } from '../engine/types.js'
 import { editEntry, manualFile, readManual, writeManual } from '../subjects/manual.js'
 import type { GameStore } from './store.js'
 
 // Valeur qui veut dire « vide » dans /quizdebug edit
 const EMPTY_VALUES = new Set(['-', 'vide', 'aucun', 'aucune', 'null'])
+// Valeur qui veut dire « non applicable » (personnage immatériel), acceptée aussi pour un nombre
+const NOT_APPLICABLE_VALUES = new Set(['na', 'n/a', 'non applicable'])
 
 // L'entrée choisie : l'autocomplétion donne son id, mais on accepte aussi un nom tapé à la main
 export function resolveEntry(subject: Subject, input: string): Entry {
@@ -23,11 +25,13 @@ export function parseValue(attribute: AttributeDef, input: string): AttributeVal
   const text = input.trim()
   if (EMPTY_VALUES.has(text.toLowerCase()))
     return null
+  if (NOT_APPLICABLE_VALUES.has(text.toLowerCase()))
+    return attribute.kind === 'set' ? [NOT_APPLICABLE] : NOT_APPLICABLE
   switch (attribute.kind) {
     case 'number': {
       const value = Number(text.replace(',', '.'))
       if (!Number.isFinite(value))
-        throw new GameError(`${attribute.label} attend un nombre (ou « - » pour vide), pas « ${text} ».`)
+        throw new GameError(`${attribute.label} attend un nombre (« - » pour vide, « n/a » pour non applicable), pas « ${text} ».`)
       return value
     }
     case 'set': {
