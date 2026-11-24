@@ -31,8 +31,8 @@ describe('fandomInfobox', () => {
 
 describe('fandomValues', () => {
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'] })
-    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'], titles: null })
+    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null, titles: null })
   })
 })
 
@@ -57,5 +57,12 @@ describe('fandomInfobox, nowiki', () => {
   it('CrochetsDansNowiki_ModeleLuJusquAuBout', () => {
     const page = "{{Character_information_real\n|gender=Male\n|dao=[[Cultivation | Eternal]]<nowiki>| Realm]]</nowiki>\n|current_occupation=Student at 60TH High\n}}"
     expect(fandomValues(fandomInfobox(page)!).occupation).toEqual(['Student at 60TH High'])
+  })
+})
+
+describe('fandomValues, titres', () => {
+  it('Titres_TraduitsSansLesSurnoms', () => {
+    const page = "{{Character Infobox\n|gender = Male\n|titles = «The Black Swordsman»<br>Beater\n}}"
+    expect(fandomValues(fandomInfobox(page)!).titles).toEqual(['Épéiste'])
   })
 })

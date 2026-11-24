@@ -105,6 +105,7 @@ const RULES: [RegExp, string | null][] = [
   [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
   [/princess|heiress/, 'Princesse'],
   [/\bprince\b|\bheir\b/, 'Prince'],
+  [/royal guard/, 'Garde'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
   [/swords(?:wo)?m[ae]n/, 'Épéiste'],
@@ -245,15 +246,17 @@ export function groupOccupations(values: readonly string[]): string[] | null {
   return grouped.length > 0 ? grouped : null
 }
 
-// Les armes ajoutées à l'occupation, au plus (comme au Pixeldle)
+// Les armes et les titres ajoutés à l'occupation, au plus (comme au Pixeldle)
 const MAX_WEAPONS = 2
+const MAX_TITLES = 2
 
-// À la fin, corrections comprises : les armes (comment le perso se bat, attribut de travail « weapon ») rejoignent
-// l'occupation, puis tout est regroupé
+// À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
+// « weapon » et « titles ») rejoignent l'occupation, puis tout est regroupé
 export function finishOccupations(entries: Entry[]): Entry[] {
   return entries.map(entry => {
-    const { weapon, ...attributes } = entry.attributes
-    const occupation = [...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | null | undefined) ?? []).slice(0, MAX_WEAPONS)]
+    const { weapon, titles, ...attributes } = entry.attributes
+    const extra = (value: unknown, max: number) => ((value as string[] | null | undefined) ?? []).slice(0, max)
+    const occupation = [...(attributes.occupation as string[] | null) ?? [], ...extra(weapon, MAX_WEAPONS), ...extra(titles, MAX_TITLES)]
     return { ...entry, attributes: { ...attributes, occupation: groupOccupations(occupation) } }
   })
 }

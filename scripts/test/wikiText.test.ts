@@ -30,13 +30,13 @@ describe('disambiguationLinks', () => {
 })
 
 describe('textHair, chauve', () => {
-  it('ChauveDansAppearance_Chauve', () => {
+  it('ChauveDansAppearance_ChauveEtAnciensCheveux', () => {
     const page = "Intro.\n==Appearance==\nSaitama is a bald, average-height man. His hairless head replaced his former short black hair.\n==Personality==\nCalm."
-    expect(textHair(page)?.colors).toEqual(['Chauve'])
+    expect(textHair(page)?.colors).toEqual(['Chauve', 'Noirs'])
   })
 
-  it('AnciensCheveux_Ignores', () => {
+  it('AnciensCheveux_GardesApresLesActuels', () => {
     const page = "==Appearance==\nHe used to have long red hair. Now he has short black hair.\n"
-    expect(textHair(page)?.colors).toEqual(['Noirs'])
+    expect(textHair(page)?.colors).toEqual(['Noirs', 'Rouges'])
   })
 })

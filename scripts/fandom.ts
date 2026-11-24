@@ -115,6 +115,8 @@ const FIELDS = {
   age: ['age', 'âge', 'ages'],
   // L'arme rejoint l'occupation à la fin (finishOccupations)
   weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
+  // Les titres (« Red King », « The Black Swordsman ») : ajoutés à l'occupation à la fin aussi, ceux qu'on sait traduire
+  titles: ['titles', 'title(s)', 'epithet', 'epithets'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -314,7 +316,15 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
+    titles: titleOccupations(field(fields, FIELDS.titles)),
   }
+}
+
+// Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
+// pas gardé en anglais : ce sont des surnoms, pas des métiers à corriger.
+function titleOccupations(value: string | null): string[] | null {
+  const found = (splitOccupations(value ?? '') ?? []).map(title => translateOccupation(title.replace(/[«»"]/g, '').trim())).filter((name): name is string => Boolean(name))
+  return found.length > 0 ? [...new Set(found)] : null
 }
 
 // --- L'introduction ---

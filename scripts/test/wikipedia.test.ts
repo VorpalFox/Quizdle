@@ -155,3 +155,17 @@ describe('translateOccupation, rôles des intros Fandom', () => {
     expect(translateOccupation('previous owner of the Koba Mart convenience store')).toBe('Commerçant')
   })
 })
+
+describe('finishOccupations, titres', () => {
+  it('Titres_AjoutesALOccupation', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+  })
+})
+
+describe('finishOccupations, titres', () => {
+  it('Titres_AjoutesALOccupation', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+  })
+})
