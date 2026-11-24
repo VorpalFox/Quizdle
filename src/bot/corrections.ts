@@ -75,7 +75,7 @@ export function editAttribute(subject: Subject, entry: Entry, attribute: Attribu
   manual.edit[entry.id] = { _nom: entry.name, ...manual.edit[entry.id], [attribute.key]: value }
   writeManual(file, manual)
 
-  editEntry(entry, { [attribute.key]: value }, subject.attributes.map(({ key }) => key))
+  editEntry(entry, { [attribute.key]: value }, subject.attributes)
   const unseen = (Array.isArray(value) ? value : value === null ? [] : [value]).map(String).filter(item => attribute.kind !== 'number' && !known.includes(item))
   return { value, unseen, known }
 }

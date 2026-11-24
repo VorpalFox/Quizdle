@@ -5,7 +5,7 @@
 // Les ids : AniList (anilist.co/character/<id>) pour l'Animedle et le Weebdle, QID Wikidata ou « wiki-<franchise>-<nom> »
 // pour le Pixeldle (tous dans les récaps). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
 import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
-import type { AttributeValue, Entry } from '../engine/types.js'
+import type { AttributeDef, AttributeValue, Entry } from '../engine/types.js'
 
 export interface Manual {
   // ids des personnages à retirer. Au Weebdle et au Pixeldle, sa place revient au suivant du tirage ; à l'Animedle,
@@ -71,8 +71,11 @@ const ENTRY_FIELDS = new Set(['name', 'aliases', 'image'])
 
 // Applique un jeu de champs (ceux d'une ligne de « edit ») à une entrée, sur place : une correction faite pendant
 // que le bot tourne touche aussi la réponse du jour et les parties en cours, qui pointent sur le même objet.
-// Renvoie les clés qui ne sont ni un champ ni un attribut.
-export function editEntry(entry: Entry, changes: Record<string, unknown>, attributeKeys: readonly string[]): string[] {
+// Les attributs : leurs clés, ou leurs définitions pour appliquer leur onEdit (le bot ; les scripts passent les clés,
+// ils recalculent eux-mêmes ce qu'ils ajoutent). Renvoie les clés qui ne sont ni un champ ni un attribut.
+export function editEntry(entry: Entry, changes: Record<string, unknown>, attributeList: readonly (string | AttributeDef)[]): string[] {
+  const defs: Pick<AttributeDef, 'key' | 'onEdit'>[] = attributeList.map(attribute => typeof attribute === 'string' ? { key: attribute } : attribute)
+  const attributeKeys = defs.map(({ key }) => key)
   const unknown: string[] = []
   const mutable = entry as { -readonly [K in keyof Entry]: Entry[K] }
   const attributes: Record<string, AttributeValue> = { ...entry.attributes }
@@ -81,8 +84,10 @@ export function editEntry(entry: Entry, changes: Record<string, unknown>, attrib
       continue
     if (ENTRY_FIELDS.has(key))
       (mutable as Record<string, unknown>)[key] = value
-    else if (attributeKeys.includes(key))
-      attributes[key] = value as AttributeValue
+    else if (attributeKeys.includes(key)) {
+      const onEdit = defs.find(def => def.key === key)?.onEdit
+      attributes[key] = onEdit ? onEdit(value as AttributeValue, entry.attributes[key] ?? null) : value as AttributeValue
+    }
     else
       unknown.push(key)
   }
@@ -92,8 +97,9 @@ export function editEntry(entry: Entry, changes: Record<string, unknown>, attrib
 
 // Applique les corrections à des entrées. Renvoie aussi ce qui ne colle pas (id inconnu, attribut inconnu...).
 // Sans effet si les corrections sont déjà appliquées : le bot peut repasser sur un fichier généré par les scripts.
-export function applyManual(entries: Entry[], manual: Manual, attributeKeys: readonly string[]): { entries: Entry[], warnings: string[] } {
+export function applyManual(entries: Entry[], manual: Manual, attributeList: readonly (string | AttributeDef)[]): { entries: Entry[], warnings: string[] } {
   const warnings: string[] = []
+  const attributeKeys = attributeList.map(attribute => typeof attribute === 'string' ? attribute : attribute.key)
   const ids = new Set(entries.map(entry => entry.id))
   const excluded = new Set(manual.exclude)
 
@@ -109,7 +115,7 @@ export function applyManual(entries: Entry[], manual: Manual, attributeKeys: rea
     if (!changes)
       return entry
     const copy: Entry = { ...entry }
-    for (const key of editEntry(copy, changes, attributeKeys))
+    for (const key of editEntry(copy, changes, attributeList))
       warnings.push(`edit ${entry.id} (${entry.name}) : « ${key} » n'est pas un attribut (${attributeKeys.join(', ')})`)
     return copy
   })

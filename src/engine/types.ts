@@ -21,6 +21,9 @@ export interface AttributeDef {
   kind: AttributeKind
   // affichage de la valeur (unité, séparateur...). Par défaut : valeur brute, « — » si vide
   format?: (value: AttributeValue) => string
+  // ce qu'une correction à la main garde de l'ancienne valeur (les lieux ajoutés par le script au Pixeldle).
+  // Par défaut : la correction remplace tout
+  onEdit?: (edited: AttributeValue, previous: AttributeValue) => AttributeValue
 }
 
 export interface Entry {

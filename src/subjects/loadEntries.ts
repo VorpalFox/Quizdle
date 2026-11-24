@@ -8,5 +8,5 @@ export function loadEntries(fileName: string, corrections?: { subjectId: string,
   const entries = JSON.parse(readFileSync(new URL(`../../data/${fileName}`, import.meta.url), 'utf8')) as Entry[]
   if (!corrections)
     return entries
-  return applyManual(entries, readManual(manualFile(corrections.subjectId)), corrections.attributes.map(({ key }) => key)).entries
+  return applyManual(entries, readManual(manualFile(corrections.subjectId)), corrections.attributes).entries
 }
