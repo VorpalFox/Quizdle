@@ -117,6 +117,8 @@ const FIELDS = {
   weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
   // Les titres (« Red King », « The Black Swordsman ») : ajoutés à l'occupation à la fin aussi, ceux qu'on sait traduire
   titles: ['titles', 'title(s)', 'epithet', 'epithets'],
+  // Mort : « Aucune » comme occupation s'il n'en a pas d'autre (finishOccupations). Jamais affiché tel quel : un spoil.
+  deceased: ['status', 'vital status'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -359,8 +361,15 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     age: infoboxAge(field(fields, FIELDS.age)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: titleOccupations(field(fields, FIELDS.titles)),
+    deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
   }
 }
+
+// Mort sans ambiguïté : « Deceased », « Killed in action », mais pas « Alive (resurrected) », « Active, Deceased »
+// ni « Deceased (vampire), Unknown (demon) » (selon la version ou la saison)
+export const DECEASED = 'deceased'
+const isDeceased = (status: string | null) =>
+  Boolean(status && /\b(?:deceased|dead|killed|died)\b/i.test(status) && !/\b(?:alive|living|active|resurrect\w*|reincarnated|revived|unknown)\b/i.test(status))
 
 // Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
 // pas gardé en anglais : ce sont des surnoms, pas des métiers à corriger.

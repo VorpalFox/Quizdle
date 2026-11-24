@@ -5300,7 +5300,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds",
     "Verts"

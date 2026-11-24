@@ -169,3 +169,15 @@ describe('finishOccupations, titres', () => {
     expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
   })
 })
+
+describe('finishOccupations, mort', () => {
+  it('MortSansOccupation_Aucune', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: null, deceased: 'deceased' } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Aucune'] })
+  })
+
+  it('MortAvecOccupation_PasDeAucune', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Soldat'], deceased: 'deceased' } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Soldat'] })
+  })
+})

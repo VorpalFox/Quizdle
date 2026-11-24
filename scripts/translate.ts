@@ -250,14 +250,19 @@ export function groupOccupations(values: readonly string[]): string[] | null {
 const MAX_WEAPONS = 2
 const MAX_TITLES = 2
 
+// Un perso mort sans aucune occupation : « Aucune » (validé avec FX). Seulement s'il n'a rien d'autre, et jamais
+// « Mort » ou « Défunt » : ce serait un spoil affiché à chaque proposition.
+const NO_OCCUPATION = 'Aucune'
+
 // À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
-// « weapon » et « titles ») rejoignent l'occupation, puis tout est regroupé
+// « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé
 export function finishOccupations(entries: Entry[]): Entry[] {
   return entries.map(entry => {
-    const { weapon, titles, ...attributes } = entry.attributes
+    const { weapon, titles, deceased, ...attributes } = entry.attributes
     const extra = (value: unknown, max: number) => ((value as string[] | null | undefined) ?? []).slice(0, max)
     const occupation = [...(attributes.occupation as string[] | null) ?? [], ...extra(weapon, MAX_WEAPONS), ...extra(titles, MAX_TITLES)]
-    return { ...entry, attributes: { ...attributes, occupation: groupOccupations(occupation) } }
+    const grouped = groupOccupations(occupation) ?? (deceased ? [NO_OCCUPATION] : null)
+    return { ...entry, attributes: { ...attributes, occupation: grouped } }
   })
 }
 

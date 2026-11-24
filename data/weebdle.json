@@ -3912,7 +3912,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -4140,7 +4142,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -5478,7 +5482,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -7164,7 +7170,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
    "genres": [
@@ -8890,7 +8898,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -9458,7 +9468,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -11396,7 +11408,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "BTOOOM!",
    "genres": [
@@ -13613,7 +13627,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -15706,7 +15722,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15762,7 +15780,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Gris"
    ],
@@ -15817,7 +15837,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
@@ -15845,7 +15867,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15872,7 +15896,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Gris"
    ],
@@ -15899,8 +15925,12 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Verts"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15927,8 +15957,12 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -15957,7 +15991,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -16013,7 +16049,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -16043,7 +16081,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bleus",
     "Gris"
@@ -16074,7 +16114,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
@@ -16133,7 +16175,9 @@
   "attributes": {
    "gender": null,
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -17479,7 +17523,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -20101,7 +20147,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Devilman Crybaby",
    "genres": [
@@ -20260,7 +20308,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -20572,7 +20622,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Dororo",
    "genres": [
@@ -22880,7 +22932,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 26,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -22955,7 +23009,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 100,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Verts"
    ],
@@ -23852,7 +23908,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "From the New World",
    "genres": [
@@ -25091,7 +25149,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -25248,7 +25308,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -25323,7 +25385,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Gleipnir",
    "genres": [
@@ -25371,7 +25435,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Gleipnir",
    "genres": [
@@ -25467,7 +25533,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Rouges",
     "Bruns"
@@ -28288,7 +28356,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -28343,7 +28413,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -28397,7 +28469,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -28421,7 +28495,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -28446,7 +28522,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -30883,7 +30961,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 20,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -31014,7 +31094,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 12000,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -31040,7 +31122,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 50,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs",
     "Bruns"
@@ -31122,7 +31206,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 12000,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bleus",
     "Blancs"
@@ -32319,7 +32405,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Kill la Kill",
    "genres": [
@@ -35269,7 +35357,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -36909,7 +36999,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 32,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Rouges"
    ],
@@ -38740,7 +38832,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -42324,7 +42418,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 27,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -42469,7 +42565,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -43009,7 +43107,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -45358,7 +45458,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -45978,7 +46080,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Violets",
     "Bruns"
@@ -46209,7 +46313,9 @@
   "attributes": {
    "gender": null,
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
@@ -47559,7 +47665,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 18,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -47584,7 +47692,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 29,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -47670,7 +47780,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 60,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Chauve"
    ],
@@ -47697,7 +47809,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 24,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -47803,7 +47917,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Shiki",
    "genres": [
@@ -47885,7 +48001,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Shiki",
    "genres": [
@@ -50201,7 +50319,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -50226,7 +50346,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -52510,7 +52632,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 8,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Violets"
    ],
@@ -52593,7 +52717,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 9,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -55869,7 +55995,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [
@@ -55892,7 +56020,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [
@@ -56069,7 +56199,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -56148,7 +56280,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 12,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -56200,7 +56334,9 @@
   "attributes": {
    "gender": null,
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -56300,7 +56436,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Roux"
    ],
@@ -56398,7 +56536,9 @@
   "attributes": {
    "gender": null,
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -56422,7 +56562,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -56470,7 +56612,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -59788,7 +59932,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -59814,7 +59960,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Roses"
    ],
@@ -59897,7 +60045,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],

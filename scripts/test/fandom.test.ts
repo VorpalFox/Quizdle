@@ -31,8 +31,8 @@ describe('fandomInfobox', () => {
 
 describe('fandomValues', () => {
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'], titles: null })
-    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null, titles: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'], titles: null, deceased: null })
+    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null, titles: null, deceased: null })
   })
 })
 
@@ -85,5 +85,16 @@ describe('introOccupations, intro dans l\'infobox', () => {
   it('ChampIntro_Lu', () => {
     const page = "{{Character\n|gender = Male\n|intro='''Kiyotaka''' is the main protagonist of the series. He is currently a third-year student of Advanced Nurturing High School.}}"
     expect(introOccupations(page).occupation).toEqual(['Élève'])
+  })
+})
+
+describe('fandomValues, mort', () => {
+  it('Deceased_Note', () => {
+    expect(fandomValues(fandomInfobox('{{Character Infobox\n|gender = Female\n|status = Deceased\n}}')!).deceased).toBe('deceased')
+  })
+
+  it('MortSelonLaVersion_PasNote', () => {
+    expect(fandomValues(fandomInfobox('{{Character Infobox\n|gender = Male\n|status = Alive (resurrected)\n}}')!).deceased).toBeNull()
+    expect(fandomValues(fandomInfobox('{{Character Infobox\n|gender = Male\n|status = Deceased (vampire), Unknown (demon)\n}}')!).deceased).toBeNull()
   })
 })
