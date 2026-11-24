@@ -67435,8 +67435,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns",
-    "Rouges"
+    "Bruns"
    ],
    "franchise": "Sundered",
    "developer": "Thunder Lotus Games",
@@ -72681,6 +72680,61 @@
    ],
    "year": 2018,
    "franchise": "Among Us"
+  }
+ },
+ {
+  "id": "wiki-sundered-dark-eshe",
+  "name": "Dark Eshe",
+  "aliases": [],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "nationality": [
+    "Wasteland"
+   ],
+   "occupation": [
+    "Dirigeant"
+   ],
+   "hair": [
+    "Rouges"
+   ],
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017,
+   "franchise": "Sundered"
+  }
+ },
+ {
+  "id": "wiki-sundered-humanity",
+  "name": "Humanity",
+  "aliases": [
+   "Eshe, Beacon of Hope",
+   "Beacon of Hope"
+  ],
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Monstre"
+   ],
+   "nationality": [
+    "The Nether"
+   ],
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "developer": "Thunder Lotus Games",
+   "genres": [
+    "Metroidvania"
+   ],
+   "year": 2017,
+   "franchise": "Sundered"
   }
  }
 ]

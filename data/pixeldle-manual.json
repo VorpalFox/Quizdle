@@ -3919,6 +3919,9 @@
    "_nom": "Eshe",
    "nationality": [
     "Wasteland"
+   ],
+   "hair": [
+    "Bruns"
    ]
   },
   "wiki-sundered-shining-trapezohedron": {
@@ -5874,6 +5877,61 @@
     "species": [
      "Humanoïde"
     ]
+   }
+  },
+  {
+   "id": "wiki-sundered-dark-eshe",
+   "name": "Dark Eshe",
+   "aliases": [],
+   "attributes": {
+    "gender": "Femme",
+    "species": [
+     "Humain"
+    ],
+    "nationality": [
+     "Wasteland"
+    ],
+    "occupation": [
+     "Dirigeant"
+    ],
+    "hair": [
+     "Rouges"
+    ],
+    "franchise": "Sundered",
+    "developer": "Thunder Lotus Games",
+    "genres": [
+     "Metroidvania"
+    ],
+    "year": 2017
+   }
+  },
+  {
+   "id": "wiki-sundered-humanity",
+   "name": "Humanity",
+   "aliases": [
+    "Eshe, Beacon of Hope",
+    "Beacon of Hope"
+   ],
+   "attributes": {
+    "gender": "Femme",
+    "species": [
+     "Monstre"
+    ],
+    "nationality": [
+     "The Nether"
+    ],
+    "occupation": [
+     "Aucune"
+    ],
+    "hair": [
+     "N/A"
+    ],
+    "franchise": "Sundered",
+    "developer": "Thunder Lotus Games",
+    "genres": [
+     "Metroidvania"
+    ],
+    "year": 2017
    }
   }
  ],
