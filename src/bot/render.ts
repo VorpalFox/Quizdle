@@ -50,7 +50,7 @@ export function renderGuess(game: Game, guess: Guess): EmbedBuilder {
   if (guess.correct)
     embed.addFields({ name: '🎉 Trouvé !', value: `En ${game.guesses.length} essai${game.guesses.length > 1 ? 's' : ''}.` })
   else if (game.status === 'lost')
-    embed.addFields({ name: '💀 Perdu', value: `C'était **${displayName(game.subject, game.target)}**.` })
+    embed.addFields({ name: '💀 Perdu', value: `C'était **${displayName(game.subject, game.target, true)}**.` })
   else if (game.remainingGuesses !== null)
     embed.setFooter({ text: `Encore ${game.remainingGuesses} essai${game.remainingGuesses > 1 ? 's' : ''}` })
   return embed
@@ -70,11 +70,12 @@ export function renderBoard(game: Game): EmbedBuilder {
     .setDescription(`*${header}*\n\n${description}`)
 }
 
+// La réponse donnée, toujours avec son univers (franchise, anime) : on sait d'où sort le perso
 export function renderReveal(game: Game): EmbedBuilder {
   const embed = new EmbedBuilder()
     .setColor(COLOR_LOST)
     .setTitle('🏳️ Abandon')
-    .setDescription(`C'était **${displayName(game.subject, game.target)}**, après ${game.guesses.length} proposition${game.guesses.length > 1 ? 's' : ''}.`)
+    .setDescription(`C'était **${displayName(game.subject, game.target, true)}**, après ${game.guesses.length} proposition${game.guesses.length > 1 ? 's' : ''}.`)
   if (game.target.image)
     embed.setThumbnail(game.target.image)
   return embed
