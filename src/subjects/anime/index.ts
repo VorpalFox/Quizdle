@@ -4,6 +4,10 @@ import { loadEntries } from '../loadEntries.js'
 const withUnit = (unit: string) => (value: AttributeValue) =>
   typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : value === NOT_APPLICABLE ? value : '—'
 
+// Aucun filtre anti-spoil (validé avec FX : un indice qui manque embrouille plus qu'il ne protège), seule la mort
+// n'est jamais dite. Affiché au lancement de l'Animedle et du Weebdle.
+export const ANIME_SPOILER_WARNING = 'Attention aux spoilers : les indices disent tout ce que les personnages sont dans l\'histoire, révélations comprises.'
+
 // Indices d'un personnage d'anime : partagés par l'Animedle et le Weebdle
 export const characterAttributes: readonly AttributeDef[] = [
   // Le personnage
@@ -30,5 +34,6 @@ export const anime: Subject = {
   description: 'Trouve le personnage d\'anime mystère',
   attributes: animedleAttributes,
   universeKey: 'anime',
+  warning: ANIME_SPOILER_WARNING,
   entries: loadEntries('anime.json', { subjectId: 'animedle', attributes: animedleAttributes }),
 }

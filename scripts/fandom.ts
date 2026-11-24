@@ -10,8 +10,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
-import { introRoles, introText } from './intro.js'
-import { translateOccupation } from './translate.js'
+import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
+import { exactSpecies, translateOccupation } from './translate.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
@@ -114,7 +114,9 @@ const FIELDS = {
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
-  species: ['species', 'race', 'races', 'species/race', 'espèce'],
+  // classification : DARLING in the FRANXX, Index ; type : Fate (« Servant, Human, Magus »), ailleurs souvent autre chose
+  // (le type de Nen à Hunter x Hunter), mis de côté comme tout ce qui n'est pas une espèce connue
+  species: ['species', 'race', 'races', 'species/race', 'espèce', 'classification', 'kind', 'type'],
   height: ['height', 'heights', 'taille'],
   // L'arme rejoint l'occupation à la fin (finishOccupations)
   weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
@@ -315,7 +317,9 @@ export function fandomInfobox(wikitext: string): Record<string, string> | null {
   return null
 }
 // Pas la taille : les onglets en haut de page ({{Tabs|height = 35px|tab1 = Overview}}) ont aussi un champ « height »
-const INFOBOX_FIELDS: readonly string[] = Object.entries(FIELDS).flatMap(([key, names]) => key === 'height' ? [] : names)
+// Ni les champs d'espèce trop courants dans d'autres modèles ({{Quote|type = …}})
+const NOT_INFOBOX_ONLY = new Set(['type', 'kind', 'classification'])
+const INFOBOX_FIELDS: readonly string[] = Object.entries(FIELDS).flatMap(([key, names]) => key === 'height' ? [] : names.filter(name => !NOT_INFOBOX_ONLY.has(name)))
 
 // Les champs « | clé = valeur » d'un modèle, en ne coupant que sur les « | » de son 1er niveau
 export function templateFields(text: string, start: number): Record<string, string> {
@@ -357,10 +361,10 @@ export function templateFields(text: string, start: number): Record<string, stri
   return fields
 }
 
-// Le contenu des spoilers repliés ({{Hidden|Webcomic Spoiler|…}}, {{Hide|…}}) n'est lu que pour l'occupation, l'arme et
-// les titres : ce qu'ils cachent n'y spoile pas (Sonic : « Legendary Demon Blade », il se bat déjà au sabre dans l'anime),
-// la mort est lue à part et jamais affichée. Ailleurs (affiliation : Satoru chez les Neo Heroes), ils restent effacés.
-const UNHIDDEN_FIELDS = new Set([...FIELDS.occupation, ...FIELDS.weapon, ...FIELDS.titles].map(name => name.replace(/_/g, ' ')))
+// Le contenu des spoilers repliés ({{Hidden|Webcomic Spoiler|…}}, {{Hide|…}}) est lu pour l'occupation, l'arme, les
+// titres et l'espèce : un indice vaut mieux qu'un spoil évité (Sonic : « Legendary Demon Blade »). Seule la mort n'est
+// jamais dite : le statut reste sans ses spoilers, comme l'affiliation (Satoru chez les Neo Heroes).
+const UNHIDDEN_FIELDS = new Set([...FIELDS.occupation, ...FIELDS.weapon, ...FIELDS.titles, ...FIELDS.species].map(name => name.replace(/_/g, ' ')))
 const HIDDEN = /\{\{\s*(?:hidden|hide)\s*\|/gi
 
 // {{Hidden|titre|contenu}} → contenu, {{Hide|contenu}} → contenu
@@ -473,6 +477,37 @@ export function introOccupations(wikitext: string): { roles: string[], occupatio
   return { roles, occupation: [...new Set(occupation)].slice(0, MAX_INTRO_OCCUPATIONS) }
 }
 
+// L'espèce dite par l'introduction, quand l'infobox n'en a pas : « Aqua is a goddess who… » → goddess, « a young elf
+// girl » → elf. Le dernier mot du rôle (sans « girl », « man »…), puis les deux derniers, et seulement un nom d'espèce
+// exact : « a Demon Slayer » n'est pas un démon. Ce qu'il devient compte aussi (« she later became a vampire ») : un
+// indice vaut mieux qu'un spoil évité. Pas ce qu'il fait semblant d'être (« disguised as a human »). Rendu en anglais,
+// traduit à la fin comme les autres (translateSpeciesEntries).
+const NOT_THE_START = /\b(?:disguised|disguises|posing|poses|pretends?|pretending|believed|thought to be|claims?|mistaken)\b/i
+const GENERIC_NOUN = /\s+(?:girl|boy|man|men|woman|women|child|children|kid|teen|teenager|lady|maiden|youth|being|creature|person|individual|female|male|princess|prince|king|queen|lord|knight|warrior|hybrid)$/i
+const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?:a|an|the|one of the|also)\s+)+([^.;:,()"]+)/i
+const END_OF_SPECIES = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|of|and|but|named|known|living|born)\b.*$/i
+export function introSpecies(wikitext: string): string | null {
+  const intro = fandomInfobox(wikitext)?.intro ?? introText(wikitext)
+  for (const sentence of intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)) {
+    if (NOT_THE_START.test(sentence))
+      continue
+    let role = SPECIES_ROLE.exec(sentence)?.[1]?.replace(END_OF_SPECIES, '').trim()
+    if (!role)
+      continue
+    for (let previous = ''; previous !== role;) {
+      previous = role
+      role = role.replace(GENERIC_NOUN, '')
+    }
+    const words = role.split(/\s+/)
+    for (const length of [1, 2]) {
+      const head = words.slice(-length).join(' ')
+      if (words.length >= length && exactSpecies(head))
+        return head
+    }
+  }
+  return null
+}
+
 // --- Complément ---
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
@@ -553,11 +588,15 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
       if (jobs.length > 0)
         added.occupation = jobs
+      // Sans espèce : celle que dit l'introduction (« Aqua is a goddess »)
+      const species = isEmpty(target.entry.attributes.species) && isEmpty(values.species) ? introSpecies(pages[title]!) : null
+      if (species)
+        added.species = [species]
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

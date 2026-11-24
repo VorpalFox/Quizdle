@@ -17,8 +17,9 @@
 //   anglais, presque toutes uniques (« Nudist Beach operative ») : dans translate.ts si c'est générique, sinon dans le
 //   fichier manual.
 // - Espèce, taille et source (novembre 2026), en plus des indices de l'Animedle. L'espèce : AniList (« Race: »),
-//   Wikidata (P31, les espèces de fiction), l'infobox Fandom (species, race), sans ses spoilers repliés, traduite en
-//   grandes familles (translateSpeciesEntries), et Humain par défaut dans un anime sans surnaturel (NOT_ONLY_HUMANS).
+//   Wikidata (P31, les espèces de fiction), l'infobox Fandom (species, race), spoilers repliés compris, traduite en
+//   grandes familles (translateSpeciesEntries), puis l'intro Fandom (« is a goddess »), et Humain par défaut dans un
+//   anime sans surnaturel ou à casting humain (HUMAN_CASTS).
 //   La taille : AniList (« Height: »), puis l'infobox Fandom, la 1re donnée (avant l'ellipse). La source : AniList.
 // - Piste abandonnée : les citations (Wikiquote presque vide, Animechan limité à 100 requêtes par jour et surtout les
 //   persos principaux).
@@ -55,6 +56,18 @@ const SOURCE_OVERRIDES: Record<number, string> = {
 // dont on connaît l'espèce n'y sont pas humains.
 const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Surnaturel', 'Science-fiction', 'Mecha', 'Horreur', 'Magical girl'])
 const HUMAN = 'Humain'
+// Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
+// espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à
+// repérer à la main : ChäoS;HEAd, Occultic;Nine,
+// Summer Time Rendering (les Ombres), ni Magi (Fanalis, Djinns).
+// Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
+// n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
+const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
+  'Darwin\'s Game', 'Guilty Crown', 'ERASED', 'Charlotte', 'Saga of Tanya the Evil', 'Rascal Does Not Dream of Bunny Girl Senpai',
+  'PSYCHO-PASS', 'Paprika', 'Now and Then, Here and There', 'Blast of Tempest', 'Mieruko-chan', 'Danganronpa: The Animation',
+  'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',
+  'Accel World', 'Akame ga Kill!', 'Angel Beats!', 'Ascendance of a Bookworm', 'Code Geass: Lelouch of the Rebellion', 'OSHI NO KO',
+  'Re:CREATORS', 'SPY x FAMILY', 'Steins;Gate', 'The Elusive Samurai', 'World Trigger', 'Ya Boy Kongming!', 'DARLING in the FRANXX', 'Death Parade'])
 
 const root = new URL('../', import.meta.url)
 const cacheDir = new URL('.cache/weebdle/', root)
@@ -323,9 +336,11 @@ const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit
 const withSpecies = translateSpeciesEntries(translated.entries)
 const defaultHumans: string[] = []
 const speciesEntries = withSpecies.entries.map(entry => {
-  if (entry.attributes.species !== null || (entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)))
+  const anime = String(entry.attributes.anime)
+  const human = !(entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)) || HUMAN_CASTS.has(anime)
+  if (entry.attributes.species !== null || !human)
     return entry
-  defaultHumans.push(entry.name)
+  defaultHumans.push(`${entry.name} (${anime})`)
   return { ...entry, attributes: { ...entry.attributes, species: [HUMAN] } }
 })
 const attributeKeys = weebdleAttributes.map(({ key }) => key)
@@ -358,7 +373,7 @@ const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1]
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Espèces pas traduites (${unknownSpecies.length}) : à ajouter dans ANIME_SPECIES (scripts/translate.ts)`, ...unknownSpecies.map(([value, count]) => `- ${value} (${count})`), '')
-lines.push(`## Humains par défaut, animes sans surnaturel (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
+lines.push(`## Humains par défaut : anime sans surnaturel ou à casting humain (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')
 for (const { anime, chosen, total } of selections) {

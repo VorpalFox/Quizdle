@@ -42,4 +42,6 @@ export interface Subject {
   maxGuesses?: number
   // L'attribut qui distingue deux personnages du même nom (franchise, anime) : « Sam (The Last of Us) »
   universeKey?: string
+  // Affiché au lancement de la partie (« les indices peuvent spoiler »)
+  warning?: string
 }

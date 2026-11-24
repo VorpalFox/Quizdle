@@ -296,6 +296,11 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'monster rat': 'Rat', 'filolial': 'Oiseau', 'crow': 'Oiseau', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
   'hobgoblin': 'Gobelin', 'ghast': 'Mort-vivant', 'kamui': 'Fibre de vie', 'boaz': 'Homme-bête', 'wanui': 'Homme-bête',
   'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
+  'shadow': 'Ombre', 'shadows': 'Ombre', 'nephilim': 'Demi-démon', 'elder bairn': 'Monstre', 'narehate': 'Narehate',
+  'michaela': null, 'familiar': null, 'neighbor': null,
+  // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
+  // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
+  'hybrid': 'Demi-démon', 'parasite': 'Humain',
   'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
@@ -308,6 +313,7 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\bdragon/, 'Dragon'],
   [/\b(?:elf|elves|alv)\b/, 'Elfe'],
   [/\b(?:angel|seraph)/, 'Ange'],
+  [/\bshadows?\b/, 'Ombre'],
   [/\b(?:werewolf|jinrou)\b/, 'Loup-garou'],
   [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yōkai'],
   [/\bspirit\b/, 'Esprit'],
@@ -316,25 +322,25 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\b(?:android|robot|ai)\b/, 'Robot'],
   [/\bhumans?\b/, 'Humain'],
 ]
-// Pas de spoil : l'espèce du début de l'histoire. Les infobox Fandom donnent souvent la suite (Mikaela, Seraph of the
-// End : « Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon »). Si une part est marquée « avant »
-// (formerly, previously…), on ne garde que celles-là ; sinon on retire celles marquées « après » (currently, by the end…).
-// Les peuples révélés tard ne sont pas traduits exprès : Nephilim (Blue Exorcist), Elder Bairn (Blood-C), Shadow.
-const EARLIER = /\b(?:former|formerly|previously|originally|initially|at first|born as|until)\b|\bpre-|^part\s*1\b/i
-const LATER = /\b(?:currently|later|now|inactive|true form|awakened|eventually|by the end|after|as of|since|temporary|temporarily|reincarnat\w*|original timeline)\b|\bpost-|^part\s*[2-9]\b/i
+// Un nom d'espèce exact, sans les règles par mot-clé : pour l'intro des pages, où « demon slayer » n'est pas un démon
+export function exactSpecies(name: string): string | null | undefined {
+  const key = name.toLowerCase().trim()
+  return key in ANIME_SPECIES ? ANIME_SPECIES[key] : translateSpecies(key)
+}
 
-// « Human (formerly), Demon » → Humain. Ce qu'on ne sait pas traduire est mis de côté (unknown), pas gardé en anglais :
-// souvent une phrase (« most possibly an absolute monad »), à ajouter ici si ça revient.
+// « Human (formerly), Demon » → Humain, Démon : toutes les espèces du perso, même celles qu'il prend plus tard dans
+// l'histoire (Mikaela, Seraph of the End : « Human (Formerly), Vampire (Formerly), Demon »). Un indice vaut mieux qu'un
+// spoil évité (validé avec FX) ; seule la mort n'est jamais dite. Ce qu'on ne sait pas traduire est mis de côté
+// (unknown), pas gardé en anglais : souvent une phrase (« most possibly an absolute monad »), à ajouter ici si ça revient.
 export function translateCharacterSpecies(raw: string): { species: string[], unknown: string[] } {
   const species: string[] = []
   const unknown: string[] = []
-  const parts = raw.split(/\s*(?:,|;|\/|\n|&|\band\b|\bor\b|→|・)\s*/i).filter(part => part.trim())
-  const earlier = parts.filter(part => EARLIER.test(part))
-  for (const part of earlier.length > 0 ? earlier : parts.filter(part => !LATER.test(part))) {
+  for (const part of raw.split(/\s*(?:,|;|\/|\n|&|\band\b|\bor\b|→|・)\s*/i).filter(part => part.trim())) {
     const key = part.toLowerCase().replace(/\s*\([^)]*\)?/g, '').replace(/\[[^\]]*\]/g, '').replace(/^[\s*•·-]+|[\s.:)]+$/g, '').trim()
     if (!key || /^\d+$/.test(key))
       continue
-    const name = key.replace(/^part\s*1\s*:\s*/, '')
+    // « Part 2: Vampire », « Elder Bairn by the end of the movie » : l'espèce seule
+    const name = key.replace(/^part\s*\d+\s*:\s*/, '').replace(/\s+(?:by the end|at the end|in the end)\b.*$/, '')
     const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1]
     if (french === undefined)
       unknown.push(part.trim())

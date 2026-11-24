@@ -70,93 +70,6 @@
     ]
    }
   },
-  "12960": {
-   "_nom": "Grell Sutcliff",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Shinigami"
-    ]
-   }
-  },
-  "14957": {
-   "_nom": "Undertaker",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Shinigami"
-    ]
-   }
-  },
-  "17751": {
-   "_nom": "Angela Blanc",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Ange",
-     "Démon"
-    ]
-   }
-  },
-  "20008": {
-   "_nom": "Ash Landers",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Ange",
-     "Démon"
-    ]
-   }
-  },
-  "30500": {
-   "_nom": "Ritsuko Kunihiro",
-   "species": {
-    "moins": [
-     "Vampire"
-    ]
-   }
-  },
-  "32724": {
-   "_nom": "Tatsumi",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Loup-garou"
-    ]
-   }
-  },
-  "33456": {
-   "_nom": "Masao Murasako",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Vampire"
-    ]
-   }
-  },
-  "36490": {
-   "_nom": "Kyouko Ozaki",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Vampire"
-    ]
-   }
-  },
   "38566": {
    "_nom": "Kyuubey",
    "_raison": "créature (Incubator) : pas de cheveux",
@@ -236,28 +149,86 @@
     ]
    }
   },
-  "46488": {
-   "_nom": "Bertolt Hoover",
-   "species": {
-    "moins": [
-     "Titan"
-    ]
-   }
-  },
-  "57575": {
-   "_nom": "Shun Aonuma",
-   "species": {
-    "moins": [
-     "Démon"
-    ]
-   }
-  },
   "73235": {
    "_nom": "Monokuma",
    "_raison": "ours robot : pas de cheveux",
    "hair": {
     "plus": [
      "N/A"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "81853": {
+   "_nom": "Decim",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88681": {
+   "_nom": "Nona",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88683": {
+   "_nom": "Ginti",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88780": {
+   "_nom": "Clavis",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88789": {
+   "_nom": "Castra",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88790": {
+   "_nom": "Oculus",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -272,11 +243,42 @@
     ]
    }
   },
+  "122637": {
+   "_nom": "Quin",
+   "species": {
+    "plus": [
+     "Homoncule"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "124381": {
+   "_nom": "Zero Two",
+   "species": {
+    "plus": [
+     "Humain",
+     "Hurleur"
+    ]
+   }
+  },
   "126156": {
    "_nom": "Myne",
    "occupation": {
     "moins": [
      "Soldier's child"
+    ]
+   }
+  },
+  "126290": {
+   "_nom": "Kyouryuu no Hime",
+   "species": {
+    "plus": [
+     "Klaxo-sapien"
+    ],
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -299,12 +301,58 @@
   "131041": {
    "_nom": "Gabiru"
   },
+  "135044": {
+   "_nom": "Sonzai X",
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "155704": {
+   "_nom": "Haine",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "155712": {
+   "_nom": "Ushio Kofune",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "161671": {
+   "_nom": "Alter Ego",
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
   "170266": {
    "_nom": "Pochita",
    "_raison": "démon tronçonneuse (chien) : pas de cheveux",
    "hair": {
     "plus": [
      "N/A"
+    ]
+   }
+  },
+  "180881": {
+   "_nom": "Shuseki",
+   "species": {
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -371,6 +419,17 @@
    },
    "gender": "Aucun"
   },
+  "251689": {
+   "_nom": "Nyansuke",
+   "species": {
+    "plus": [
+     "Chat"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
   "275374": {
    "_nom": "Bozes Ko Palesti",
    "occupation": {
@@ -379,6 +438,17 @@
     ],
     "moins": [
      "Noble"
+    ]
+   }
+  },
+  "297467": {
+   "_nom": "Asako Kobayakawa",
+   "species": {
+    "plus": [
+     "Ombre"
+    ],
+    "moins": [
+     "Humain"
     ]
    }
   }

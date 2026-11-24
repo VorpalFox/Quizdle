@@ -192,7 +192,7 @@ export function parseHeight(description: string | null): number | null {
 }
 
 // « 173 cm (5'8") » → 173, « 1.72 m » → 172, « 5' 10½" » → 179, « 178 (5' 10") » → 178. La 1re taille donnée, celle
-// du début de l'histoire (« 147 cm (pre-timeskip), 163 cm (post-timeskip) » → 147) : pas de spoil.
+// du début de l'histoire (« 147 cm (pre-timeskip), 163 cm (post-timeskip) » → 147), celle qu'on voit le plus.
 // Pas « (850), (854) » (les années des chapitres du wiki de L'Attaque des Titans), ni « Unknown ».
 const MIN_CM = 5
 const MAX_BARE_CM = 250

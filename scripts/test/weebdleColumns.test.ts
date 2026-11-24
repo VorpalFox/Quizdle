@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { animeSource, heightCm, parseHeight, parseSpecies } from '../anilist.js'
 import { translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
+import { introSpecies } from '../fandom.js'
 
 describe('heightCm', () => {
   it('Centimetres', () => {
@@ -44,21 +45,16 @@ describe('translateCharacterSpecies', () => {
     expect(translateCharacterSpecies('Sylph').species).toEqual(['Fée'])
   })
 
-  it('AvantMarque_SeulementLeDebut', () => {
-    expect(translateCharacterSpecies('Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon').species).toEqual(['Humain', 'Vampire'])
-    expect(translateCharacterSpecies('Part 1: Human, Part 2: Vampire').species).toEqual(['Humain'])
-    expect(translateCharacterSpecies('Human (Former), Chimera Ant').species).toEqual(['Humain'])
-    expect(translateCharacterSpecies('Human (until Episode 5), Shiki (as of Episode 5)').species).toEqual(['Humain'])
-    expect(translateCharacterSpecies('Human, Zombie (Temporary)').species).toEqual(['Humain'])
-  })
-
-  it('ApresMarque_Retire', () => {
-    expect(translateCharacterSpecies('Human, Elder Bairn by the end of the movie').species).toEqual(['Humain'])
-    expect(translateCharacterSpecies('Human (11th Loop), Shadow (original Timeline)').species).toEqual(['Humain'])
+  it('ToutesLesEspeces_MemePlusTard', () => {
+    expect(translateCharacterSpecies('Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon').species).toEqual(['Humain', 'Ange', 'Vampire', 'Démon'])
+    expect(translateCharacterSpecies('Part 1: Human, Part 2: Vampire').species).toEqual(['Humain', 'Vampire'])
+    expect(translateCharacterSpecies('Human (until Episode 5), Shiki (as of Episode 5)').species).toEqual(['Humain', 'Vampire'])
+    expect(translateCharacterSpecies('Human, Elder Bairn by the end of the movie').species).toEqual(['Humain', 'Monstre'])
+    expect(translateCharacterSpecies('Human (11th Loop), Shadow (original Timeline)').species).toEqual(['Humain', 'Ombre'])
   })
 
   it('Inconnue_MiseDeCote', () => {
-    expect(translateCharacterSpecies('Nephilim')).toEqual({ species: [], unknown: ['Nephilim'] })
+    expect(translateCharacterSpecies('Most Possibly an Absolute Monad')).toEqual({ species: [], unknown: ['Most Possibly an Absolute Monad'] })
     expect(translateCharacterSpecies('Unknown')).toEqual({ species: [], unknown: [] })
   })
 
@@ -78,5 +74,35 @@ describe('animeSource', () => {
     expect(animeSource('WEB_NOVEL')).toBe('Roman')
     expect(animeSource('OTHER')).toBeNull()
     expect(animeSource(null)).toBeNull()
+  })
+})
+
+describe('introSpecies', () => {
+  const page = (intro: string) => `{{Infobox character\n|gender = Female\n}}\n${intro}\n==Appearance==\nTall.`
+
+  it('EspeceDeLIntro', () => {
+    expect(introSpecies(page("'''Aqua''' is a goddess who was dragged to another world."))).toBe('goddess')
+    expect(introSpecies(page('Tuka is a young elf girl from the Coda village.'))).toBe('elf')
+  })
+
+  it('PasUnMetier', () => {
+    expect(introSpecies(page('Tanjiro is a Demon Slayer of the Demon Slayer Corps.'))).toBeNull()
+    expect(introSpecies(page('Van Hellsing is a vampire hunter.'))).toBeNull()
+  })
+
+  it('CeQuIlDevient_Compte', () => {
+    expect(introSpecies(page('Kyouko is a doctor. She later became a vampire.'))).toBe('vampire')
+  })
+
+  it('CeQuIlPretendEtre_PasCompte', () => {
+    expect(introSpecies(page('Alucard is disguised as a human.'))).toBeNull()
+  })
+})
+
+describe('translateCharacterSpecies, anime', () => {
+  it('HybrideEtParasite', () => {
+    const expand = (raw: string) => translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: [raw] } }]).entries[0]!.attributes.species
+    expect(expand('Human (formerly), Hybrid')).toEqual(['Humain', 'Démon'])
+    expect(expand('Parasite')).toEqual(['Humain'])
   })
 })

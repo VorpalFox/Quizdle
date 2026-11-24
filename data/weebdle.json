@@ -541,7 +541,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n19184-X7NbgnllS4mf.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 150,
    "occupation": null,
@@ -801,7 +803,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28986-nPIGAbl1syKt.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 163,
    "occupation": [
@@ -833,7 +837,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/20620.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -866,7 +872,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b26941-UiiSbaYLfTqO.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 163,
    "occupation": [
@@ -932,7 +940,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/29082.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1031,7 +1041,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/30481.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1063,7 +1075,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/27016.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1094,7 +1108,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/29827.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1126,7 +1142,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/31444.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -1153,7 +1171,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/31499.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1184,7 +1204,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b186811-DJzrB9YWXV0y.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1209,7 +1231,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/30237.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1235,7 +1259,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/37890.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -1266,7 +1292,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b42500-LlylAErHnklM.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Cyborg"
+   ],
    "age": null,
    "height": 170,
    "occupation": [
@@ -1876,7 +1904,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b49637-GlkoT7x40TAV.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 165,
    "occupation": [
@@ -1942,7 +1972,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/49631.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 170,
    "occupation": [
@@ -1973,7 +2005,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66893-aIlETuRqnscf.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 161,
    "occupation": [
@@ -2006,7 +2040,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/62607.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 11,
    "height": null,
    "occupation": [
@@ -2040,7 +2076,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/65013.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2071,7 +2109,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b58573-C5hsTBNxhCb5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2102,7 +2142,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61949-bJcVsuo9vJ3g.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -2129,7 +2171,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62609-w2N1s0d1EiWh.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2160,7 +2204,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68297-JLlsDnzCGYCQ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2191,7 +2237,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66615-axp4Q7idI8q5.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2222,7 +2270,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68299-gMS5tyh77KEr.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2255,7 +2305,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70325-U2jh3mMkV4Da.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -2283,7 +2335,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69449-IYl33EoQJXFG.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -2312,7 +2366,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65055-Ei7kVf15uXMz.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2345,7 +2401,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62983-aIvrKcjiL0sg.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2378,7 +2436,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65011-W685e12Cmdqs.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2411,7 +2471,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65053-zBq6CuA7miGV.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2440,7 +2502,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/49633.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2541,7 +2605,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65227-PWmfiEVJbCwQ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 170,
    "occupation": [
@@ -2577,7 +2643,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/64749-a2ZdRWW1D5TR.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 165,
    "occupation": [
@@ -2647,7 +2715,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163245-uZdzQXyuY9PP.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2681,7 +2751,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166794-FZNRsO767mx4.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -2713,7 +2785,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163218-rmBxBDF6KV0b.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2748,7 +2822,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163191-1axpEo6UCU6J.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 190,
    "occupation": [
@@ -2781,7 +2857,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163203-1NRtQtnP2y3O.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2816,7 +2894,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163228-Y6MEIOWXHoBB.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2851,7 +2931,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166788-GJg2pqDfCCH0.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -2883,7 +2965,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166795-TDmr977acwoH.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2916,7 +3000,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163205-RD0xtvQRJJOK.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2949,7 +3035,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163227-JPcbvg52nErN.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -2986,7 +3074,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163240-q3DDi6CLjBVw.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3019,7 +3109,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166786-yuJaZ13H4TLO.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3052,7 +3144,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166787-SNdn2yZNxldm.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3088,7 +3182,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166790-lqLQrhMbOXPt.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3121,7 +3217,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166807-d9JXKVdbobTK.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3157,7 +3255,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88173-9ahmvKutxcVO.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 164,
    "occupation": [
@@ -3191,7 +3291,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88174-QRY3Ayq8xVvZ.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 170,
    "occupation": [
@@ -3225,7 +3327,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88175.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 155,
    "occupation": [
@@ -3259,7 +3363,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88431-lHZ1BOg1pIKK.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 158,
    "occupation": [
@@ -3291,7 +3397,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135606-edJ9WNHvenmh.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": 168,
    "occupation": [
@@ -3322,7 +3430,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88442-loOLjc2QKZKO.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 165,
    "occupation": [
@@ -3357,7 +3467,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88432-cMFhS2g7kY4n.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 27,
    "height": 170,
    "occupation": [
@@ -3386,7 +3498,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88430-npcl0kFGtQfu.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 12,
    "height": 134,
    "occupation": [
@@ -3417,7 +3531,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88433.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 37,
    "height": 183,
    "occupation": [
@@ -3445,7 +3561,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88435.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 37,
    "height": 187,
    "occupation": [
@@ -3475,7 +3593,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88437-1PgAcMaOpUZt.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 43,
    "height": 190,
    "occupation": [
@@ -3506,7 +3626,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135826-AifcrZMWYKPa.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 158,
    "occupation": [
@@ -3537,7 +3659,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88434-msgymqy6UFFm.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 25,
    "height": 166,
    "occupation": [
@@ -3564,7 +3688,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88439.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 173,
    "occupation": [
@@ -3596,7 +3722,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88429.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 180,
    "occupation": [
@@ -3626,7 +3754,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88443.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 175,
    "occupation": [
@@ -3657,7 +3787,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88440.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 44,
    "height": 182,
    "occupation": [
@@ -3689,7 +3821,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88436.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 70,
    "height": 185,
    "occupation": [
@@ -3719,7 +3853,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88438.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 25,
    "height": 185,
    "occupation": [
@@ -3753,7 +3889,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88445-QT7DlN6tJQqV.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 170,
    "occupation": [
@@ -3886,7 +4024,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24502-TJE8JeOERvj0.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 176,
    "occupation": [
@@ -3920,7 +4060,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24503-aMw9BnXmEVrP.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -3954,7 +4096,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b32458-LTnU8CCcCaOu.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -3985,7 +4129,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24512-lXCO1P7u8RMO.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4018,7 +4164,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24509-5PH1LI0pluva.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4050,7 +4198,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24506.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4080,7 +4230,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24505.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4110,7 +4262,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24504.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4141,7 +4295,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24507.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4174,7 +4330,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24511.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4205,7 +4363,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24513-Ic4S0IrlPqSM.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4237,7 +4397,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24508.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 175,
    "occupation": [
@@ -4272,7 +4434,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/32965.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -4300,7 +4464,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24516-nDU14Vw4DjHK.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 155,
    "occupation": [
@@ -4332,7 +4498,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/32480.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4363,7 +4531,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24517-o0aohkn3Uzig.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -4399,7 +4569,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/24510.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -5747,7 +5919,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126539-x9eQ9cm1e4qj.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 35,
    "height": null,
    "occupation": [
@@ -5807,7 +5981,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126542-6kvAGjI4na7D.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -5869,7 +6045,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122753-Gju6BaiPS5o8.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 181,
    "occupation": [
@@ -5900,7 +6078,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122588-4VWbhwGEvzMo.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 162,
    "occupation": null,
@@ -5929,7 +6109,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139434-n1pDhZwqy57g.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 165,
    "occupation": null,
@@ -5957,7 +6139,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139432-Sw70ZEFxJE38.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 185,
    "occupation": [
@@ -5989,7 +6173,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122754-nYJowe4zws9W.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 157,
    "occupation": [
@@ -6020,7 +6206,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139437-84E5W3JMfzRU.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 162,
    "occupation": null,
@@ -6050,7 +6238,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139433-3EkocGifARrJ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 176,
    "occupation": null,
@@ -6079,7 +6269,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139436-1ehzIE6ALT9M.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 179,
    "occupation": null,
@@ -6109,7 +6301,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139435-NHAI4qXlid0r.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": 136,
    "occupation": null,
@@ -6138,7 +6332,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145668-nGWsIjvfw360.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 164,
    "occupation": [
@@ -6167,7 +6363,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180153-LqEJEwbxGzUF.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6196,7 +6394,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157839-hSNH5DKozSSE.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -6224,7 +6424,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b147499-dZvxFwPgYuq8.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6256,7 +6458,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157856-KWedSaU8ZbbW.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6287,7 +6491,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157848-KrnmNSUZ4fLX.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6320,7 +6526,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157840-C9JsoeUvAYE9.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6352,7 +6560,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180152-LwyNVqmNqYUk.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6382,7 +6592,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157841-EqFHCYroow6k.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6411,7 +6623,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157847-qONt11OzCn0F.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6443,7 +6657,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157849-l4Okz9iUAILd.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -6871,7 +7087,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Titan"
    ],
    "age": 16,
    "height": 192,
@@ -8252,7 +8469,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Zombie"
    ],
    "age": null,
    "height": null,
@@ -9083,7 +9301,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Shinigami"
    ],
    "age": 25,
    "height": 175,
@@ -9116,7 +9334,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Shinigami"
    ],
    "age": null,
    "height": null,
@@ -9537,7 +9755,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Ange",
+    "Démon"
    ],
    "age": null,
    "height": null,
@@ -9575,7 +9794,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Ange",
+    "Démon"
    ],
    "age": null,
    "height": null,
@@ -9713,7 +9933,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62581-VqyYG9m0MawE.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -9749,7 +9971,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62583-EAgOdW14zwCp.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": null,
    "occupation": [
@@ -9781,7 +10005,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43737-HrQAlYu7bb7W.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": null,
    "occupation": null,
@@ -9812,7 +10038,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b42202-xOe8jXuNcRow.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": null,
    "occupation": null,
@@ -9844,7 +10072,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68417-CCY5atoOXgAk.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": null,
    "occupation": [
@@ -9880,7 +10110,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/68419.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -9915,7 +10147,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68421-IFAtcRIHxKQU.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -9951,7 +10185,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/72471.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -9984,7 +10220,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/68425.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -10017,7 +10255,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68423-VATJOfrLTdSR.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -10049,7 +10289,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76886-diOCdWiAuI6F.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -10707,7 +10949,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b41966-dEgkJTt0ZR8A.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Monstre"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -10744,7 +10988,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": 180,
@@ -11050,7 +11295,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24482-E6087V4uAVqL.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": 15,
    "height": 173,
    "occupation": [
@@ -11085,7 +11333,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b24734-GgVZoNAPnxoc.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": 15,
    "height": 180,
    "occupation": [
@@ -11223,7 +11474,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30431-l5NMqfM82w4q.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": 51,
    "height": 177,
    "occupation": [
@@ -11260,7 +11514,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30430-LwO3yM6dg0HF.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": 15,
    "height": 165,
    "occupation": [
@@ -11595,7 +11852,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34758-XzvetamkXXVQ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": 30,
    "height": 185,
    "occupation": [
@@ -12420,6 +12680,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Homme-bête",
     "Humain"
    ],
    "age": 17,
@@ -12998,7 +13259,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b52941-nYPaKejydb63.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 161,
    "occupation": [
@@ -13028,7 +13291,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b49657-nzR3zSiM9Q2z.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 176,
    "occupation": [
@@ -13058,7 +13323,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/50949.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": null,
    "occupation": [
@@ -13089,7 +13356,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66325-pFT9jKuWAyq4.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 181,
    "occupation": [
@@ -13121,7 +13390,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67473-ZGOmIgLjGvf7.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 51,
    "height": 164,
    "occupation": [
@@ -13150,7 +13421,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74431-oYG3xAULgJLy.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": 166,
    "occupation": [
@@ -13180,7 +13453,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75878-L05woLa02VqW.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 39,
    "height": 165,
    "occupation": [
@@ -13209,7 +13484,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71973-j3SKCwuuLlzR.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -13240,7 +13517,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74936-mzASyv595IPf.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 40,
    "height": 187,
    "occupation": [
@@ -13272,7 +13551,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66323-TnuFktvA3UZ1.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 38,
    "height": 184,
    "occupation": [
@@ -13306,7 +13587,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75882-TAEtS7jL2853.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 25,
    "height": null,
    "occupation": [
@@ -13333,7 +13616,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84471-cWj5aaLd8weA.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -13364,7 +13649,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66321-pAY4yoKVMMKt.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 52,
    "height": 163,
    "occupation": [
@@ -13395,7 +13682,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84457-0wP4xRqbGCdi.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 179,
    "occupation": [
@@ -13426,7 +13715,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84463.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -13455,7 +13746,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84469-CR6HY9cp2Dtv.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -13485,7 +13778,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b49661-d2RWrATeEbA1.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 24,
    "height": 185,
    "occupation": [
@@ -13514,7 +13809,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75880-pghJ7UbBKqB1.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 45,
    "height": null,
    "occupation": [
@@ -13542,7 +13839,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84459.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 44,
    "height": 175,
    "occupation": [
@@ -13572,7 +13871,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84461.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 40,
    "height": 171,
    "occupation": [
@@ -13603,7 +13904,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89198-qKmRTw4Y3PRC.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 181,
    "occupation": [
@@ -13636,7 +13939,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89199-h8tHKG8vKPNZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 172,
    "occupation": [
@@ -13669,7 +13974,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89197-vB5kP72ruckV.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 170,
    "occupation": [
@@ -13702,7 +14009,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89200-mZJo7iEwJGzg.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 189,
    "occupation": [
@@ -13736,7 +14045,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89201-K0X5HNq88Oub.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 26,
    "height": 168,
    "occupation": [
@@ -13768,7 +14079,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89853-06qMPkrGlgP1.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 160,
    "occupation": [
@@ -13802,7 +14115,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n132222-Ue3zZMq9aqMg.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": 165,
    "occupation": [
@@ -13835,7 +14150,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89208-Zjsz22lCmrIE.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 25,
    "height": 166,
    "occupation": [
@@ -13866,7 +14183,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89856-GB3SOKXTBnrX.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 148,
    "occupation": [
@@ -13903,7 +14222,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89196-E2tIf6nIPKnW.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 45,
    "height": 186,
    "occupation": [
@@ -13939,7 +14260,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89207-i7pw9zNQqXpZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 158,
    "occupation": [
@@ -13970,7 +14293,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137512-5mJhKeyVdMB5.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -14002,7 +14327,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89205-69AfPXd4QmX3.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 174,
    "occupation": [
@@ -14035,7 +14362,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121168-XkWaYGESyQpZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 40,
    "height": 175,
    "occupation": [
@@ -14070,7 +14399,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136705-qd9sowaD7SKW.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": 176,
    "occupation": [
@@ -14103,7 +14434,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121164-JI5C2eMIQrSG.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 32,
    "height": 191,
    "occupation": [
@@ -14136,7 +14469,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138066-0cF5m4qGEOpY.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 50,
    "height": 178,
    "occupation": [
@@ -14169,7 +14504,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89854-OJkUYnorbaRZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 180,
    "occupation": [
@@ -14203,7 +14540,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138153-f36RZ0og4d9v.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -14231,7 +14570,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138144-quOn7F8Kjrpo.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -14363,7 +14704,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": null,
    "height": 182,
@@ -14398,7 +14740,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Démon"
+    "Démon",
+    "Humain"
    ],
    "age": null,
    "height": null,
@@ -14659,7 +15002,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": null,
    "height": 195,
@@ -15496,7 +15840,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88950-0ER2ke5pswxq.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 174,
    "occupation": [
@@ -15529,7 +15875,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 12,
    "height": 145,
    "occupation": [
@@ -15563,7 +15911,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88952-0wmPqlWytiRx.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 176,
    "occupation": [
@@ -15596,7 +15946,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88953-wAWVk2jOGZqf.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 158,
    "occupation": [
@@ -15628,7 +15980,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88954-Mc5TurYknYTn.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 158,
    "occupation": [
@@ -15661,7 +16015,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125388-USug5UNdEAHH.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 179,
    "occupation": null,
@@ -15693,7 +16049,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125382-DuWfjGKog4vU.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 182,
    "occupation": [
@@ -15726,7 +16084,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125389-Ct9EhweyHRGb.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -15756,7 +16116,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125384-jTjaeDbDgF4J.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 162,
    "occupation": null,
@@ -15783,7 +16145,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125392-tcP2FexI20Wk.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": null,
@@ -15812,7 +16176,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125386-HDE5KamUXin0.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 12,
    "height": null,
    "occupation": [
@@ -15844,7 +16210,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125390-vOueNppmy5uK.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 178,
    "occupation": [
@@ -15876,7 +16244,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125380-ghKw1LRI4YpP.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 12,
    "height": null,
    "occupation": [
@@ -15907,7 +16277,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125383-haEcfUrdhlw1.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 176,
    "occupation": null,
@@ -15939,7 +16311,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125391-KhKGzBAxhFkK.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 157,
    "occupation": [
@@ -15970,7 +16344,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125393-Vsf2gNziA1M2.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 175,
    "occupation": null,
@@ -16002,7 +16378,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125378-1ffmev7NJWtT.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16033,7 +16411,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b244264-YX5F19Z42SuD.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16067,7 +16447,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b244256-ZxpAXW6zDkvC.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -16102,7 +16484,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88264-v9VFbSWtQq2C.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -16135,7 +16519,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88265-2MlVZH85EPpR.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16167,7 +16553,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89340-EtOtef39IHr7.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": null,
@@ -16197,7 +16585,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143398-ktoGOYxyGim6.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -16229,7 +16619,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/126840-pmsaPfps6tK7.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": null,
@@ -16259,7 +16651,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89650-NJENPU6U0Izf.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -16291,7 +16685,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183648-olenpffv48Rd.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -16323,7 +16719,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329183-xlmadmGuJrKM.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -16356,7 +16754,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329186-o9aInPximYu8.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -16389,7 +16789,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329182-yDMBN8kIArSz.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": null,
    "occupation": [
@@ -16422,7 +16824,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329184-U1jLCLd4hMqH.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16455,7 +16859,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329185-3iOeyjLrsogY.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -16488,7 +16894,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b296792-0trgNuGAz1or.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16521,7 +16929,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329180-td7xFrF8nwuv.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -16554,7 +16964,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329181-2GDg3MUV6fzS.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -16587,7 +16999,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329187-8p02SGN1Lsf3.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -16620,7 +17034,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329188-rchzOthbInno.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -17547,7 +17963,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1130-0yBifno91R4e.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 29,
    "height": 183,
    "occupation": [
@@ -17658,7 +18076,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1121-Y3ye9sw1u3Eh.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 179,
    "occupation": [
@@ -17693,7 +18113,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1863-R3qPRdbXmLJ5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 182,
    "occupation": [
@@ -17726,7 +18148,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11166-FLEJh0viRLwm.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 24,
    "height": null,
    "occupation": [
@@ -17797,7 +18221,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1119.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 37,
    "height": null,
    "occupation": null,
@@ -17827,7 +18253,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1122-tzCSm261b2RP.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 164,
    "occupation": [
@@ -17862,7 +18290,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1124-TSD6Z8Vjy7Kn.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 165,
    "occupation": [
@@ -17896,7 +18326,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1129.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 30,
    "height": null,
    "occupation": [
@@ -17931,7 +18363,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/48471.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -17963,7 +18397,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1116-D3NpQEn8FLon.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 47,
    "height": 200,
    "occupation": [
@@ -17996,7 +18432,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131872-33qX7Gg1pyMB.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 186,
    "occupation": [
@@ -18030,7 +18468,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131870-XdhoqOi2W0RO.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 163,
    "occupation": null,
@@ -18063,7 +18503,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90005-amaPrni4bwZ8.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 160,
    "occupation": [
@@ -18095,7 +18537,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73237-w99yKcSulioC.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Lapin",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -18126,7 +18571,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90003-kDLqxram6G3E.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 161,
    "occupation": [
@@ -18158,7 +18605,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90000-XxHUqSWRqSaF.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 160,
    "occupation": null,
@@ -18191,7 +18640,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89999-5cxPJelK9gSd.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 190,
    "occupation": [
@@ -18223,7 +18674,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90248-AzgYKpveXUQN.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 134,
    "occupation": [
@@ -18258,7 +18711,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90006-FTLBsCtwsQRb.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -18292,7 +18747,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90001-CHdrJUvYuvHW.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -18326,7 +18783,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/120463-RSyysXjY3Faz.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 137,
    "occupation": null,
@@ -18359,7 +18818,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89998-EmSCesYfaaxX.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 162,
    "occupation": [
@@ -18394,7 +18855,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165525-LT1lMmxKj1fs.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 153,
    "occupation": [
@@ -18430,7 +18893,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/90002-dtpd3EcvDw0p.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -18463,7 +18928,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89997-HHe2cga08Q2F.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 140,
    "occupation": [
@@ -18497,7 +18964,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/90004-6Iu6dXEn6Mbs.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -18532,7 +19001,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b63845-43rWjycWhYFF.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 167,
    "occupation": [
@@ -18565,7 +19036,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65523-OztiX9PhydrG.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 169,
    "occupation": [
@@ -18600,7 +19073,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65525-BoB482T3oEoN.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 164,
    "occupation": [
@@ -18665,7 +19140,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73235-74a7Y1lzFnDv.jpg",
   "attributes": {
    "gender": "Autre",
-   "species": null,
+   "species": [
+    "Robot"
+   ],
    "age": null,
    "height": 75,
    "occupation": null,
@@ -18696,7 +19173,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65529-oy5acbdyUy4r.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 165,
    "occupation": [
@@ -18729,7 +19208,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65541-Nha4B0vJIkFA.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 185,
    "occupation": [
@@ -18762,7 +19243,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66573-a2VZm5cfacP5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 148,
    "occupation": [
@@ -18795,7 +19278,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65531-zem6Bi2RRK2Q.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 160,
    "occupation": [
@@ -18828,7 +19313,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b63849-wA9ddqRcEyug.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 165,
    "occupation": [
@@ -18860,7 +19347,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75434-KFXsL2xG9Ckm.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 192,
    "occupation": [
@@ -18893,7 +19382,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65543-eyfH7fv9FMw9.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 176,
    "occupation": [
@@ -18927,7 +19418,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65539-zX1oS4BXtgma.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 187,
    "occupation": [
@@ -18959,7 +19452,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65533-TTk8RyEQaoSe.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -18992,7 +19487,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65537-SwnvmZnRJlTa.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 175,
    "occupation": [
@@ -19025,7 +19522,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65535-4ilWWg0b012I.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 170,
    "occupation": [
@@ -19095,7 +19594,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161671-yVmxDXHBgsw5.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Robot"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19122,7 +19623,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 152,
    "occupation": [
@@ -19157,7 +19660,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Hurleur"
+   ],
    "age": 14,
    "height": 170,
    "occupation": [
@@ -19189,7 +19695,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124380-ct1wJHIl9BY1.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 168,
    "occupation": [
@@ -19221,7 +19729,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124386-vc248g43ap3m.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 160,
    "occupation": [
@@ -19254,7 +19764,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n124383-I6ZsEBQoETj3.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 178,
    "occupation": [
@@ -19287,7 +19799,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124389-iJY8frLNdK7Y.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 165,
    "occupation": [
@@ -19321,7 +19835,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124384-bsl6vVNhT2DR.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 160,
    "occupation": [
@@ -19356,7 +19872,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124385-wnvor7z83ZPt.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 161,
    "occupation": [
@@ -19389,7 +19907,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124388-KyJgGXFQEu6W.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 169,
    "occupation": [
@@ -19423,7 +19943,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124387-vJvVs0VT1B6r.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 177,
    "occupation": [
@@ -19459,7 +19981,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126290-v3aLCi4pQijJ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Klaxo-sapien"
+   ],
    "age": 60,
    "height": null,
    "occupation": null,
@@ -19487,7 +20011,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124852-Z1xlsGsdcKLd.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": null,
    "occupation": [
@@ -19522,7 +20048,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161730-rtTfEXIFgPh8.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19555,7 +20083,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124851-UtBTl6EnzIFO.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19583,7 +20113,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124853-pwqN60dHanD2.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": null,
    "occupation": [
@@ -19616,7 +20148,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144621-dRxn0RLmI1q4.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": null,
    "occupation": [
@@ -19650,7 +20184,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174777-NygUgoJBpKxA.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19679,7 +20215,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174778-1mGFsLUn3gNy.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19707,7 +20245,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180884-kCOnNjcSY043.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -19766,7 +20306,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138795-TlgJ4urjkUTN.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": null,
@@ -19795,7 +20337,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87219-MTH9EllXD115.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -19830,7 +20374,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120241-19B5ArbB6oYX.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 140,
    "occupation": [
@@ -19863,7 +20409,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145127-v5LboljOBnPJ.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": null,
@@ -19893,7 +20441,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145120-qUrVaNxxqHUH.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 21,
    "height": null,
    "occupation": [
@@ -19924,7 +20474,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157548-W2GALJGMGKpl.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": null,
@@ -19956,7 +20508,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145130-Ab433pkuY4Ue.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -19987,7 +20541,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145135-9Z2hi34vHZUC.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20017,7 +20573,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145136-kXkVlUZ1sL2q.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -20045,7 +20603,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145128-wutS9o2cbBTi.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20073,7 +20633,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87227.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 45,
    "height": null,
    "occupation": [
@@ -20103,7 +20665,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145123-82TNyisdykKD.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": null,
    "occupation": [
@@ -20133,7 +20697,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87221.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20163,7 +20729,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145121-nd8xhNtNPirw.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20191,7 +20759,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145133-TrFkpHBQHMF7.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20219,7 +20789,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158408-7rFC2fb5guaO.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -20249,7 +20821,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145124-GwyCwkfCtqCb.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 43,
    "height": null,
    "occupation": [
@@ -20281,7 +20855,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175681-3WfFTcbKeYLn.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -20310,7 +20886,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145134-CDz9dklwt9hX.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -20338,7 +20916,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181281-2k2szHmkm9WZ.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -21059,7 +21639,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81853-CY99xwoziDG4.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": 188,
    "occupation": [
@@ -21092,7 +21674,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b82037-xvKHWk4AE4df.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 21,
    "height": 170,
    "occupation": null,
@@ -21119,7 +21703,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88681-tTuJXN5ds3gy.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -21152,7 +21738,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88683-S0xJzL8QY3gI.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": 194,
    "occupation": [
@@ -21183,7 +21771,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88780-76uJe60Gkw70.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": 176,
    "occupation": [
@@ -21216,7 +21806,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122639-wLie2FSFb1Nf.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": 163,
    "occupation": [
@@ -21247,7 +21839,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88789-hPssZIZLIk5Z.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": 169,
    "occupation": [
@@ -21278,7 +21872,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122637-H9msJ0AHv3wl.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": 164,
    "occupation": [
@@ -21310,7 +21906,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181332-2YiKE2W82MhE.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Chat",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -21341,7 +21940,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88790-W1bTgBcjjZvk.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Homoncule"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -21370,7 +21971,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122638-ZLGQTmVYgdXp.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 176,
    "occupation": [
@@ -21406,7 +22009,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158572-G4Gw9eWBtyxy.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 21,
    "height": 167,
    "occupation": [
@@ -21440,7 +22045,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158783-vbbSN6EpnD3z.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 21,
    "height": 180,
    "occupation": [
@@ -21471,7 +22078,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162882-16aBuh1qxE3O.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -21504,7 +22113,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158220-HEGJeedD9tBX.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 21,
    "height": 170,
    "occupation": [
@@ -21539,7 +22150,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158518-KM7oKSEfTiPW.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 24,
    "height": 176,
    "occupation": [
@@ -21572,7 +22185,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161541-e5f63aRZ8SaN.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -21604,7 +22219,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n134077-rolZmBpcKoSj.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -21631,7 +22248,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158803-lQjVODqWshGi.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": null,
    "occupation": [
@@ -21663,7 +22282,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158623-ec5xpnKW0udL.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -23337,7 +23958,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": null,
    "height": null,
@@ -23617,7 +24239,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit"
    ],
    "age": null,
    "height": null,
@@ -23682,7 +24305,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": null,
    "height": null,
@@ -24497,7 +25121,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89357-E9erSMef5EJC.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -24529,7 +25155,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89326-zNVEqTuDt7kL.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 52,
    "height": null,
    "occupation": [
@@ -24563,7 +25191,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89355-w1xEKGHisGWE.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -24597,7 +25227,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89365-Esm33rYZ3x0s.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 184,
    "occupation": [
@@ -24631,7 +25263,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89359-xsqTQviyS5Ii.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 23,
    "height": null,
    "occupation": [
@@ -24664,7 +25298,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89360-C9pecRWkJExF.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": null,
    "occupation": [
@@ -24695,7 +25331,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89356-O2NYct6HMlYj.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": null,
    "occupation": [
@@ -24727,7 +25365,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129807-4AM8Oe3szyxL.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -24756,7 +25396,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89366-5KwJW3NNmmti.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": null,
    "occupation": [
@@ -24787,7 +25429,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89358-FA7IQL7z0MvL.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": null,
    "occupation": [
@@ -24818,7 +25462,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382886-QXMx72vtxGmZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -24847,7 +25493,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382880-lBvb1PKOoAiI.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -24879,7 +25527,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382885-Wvl27kuVoKnf.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 9,
    "height": null,
    "occupation": null,
@@ -24906,7 +25556,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382887-zeZRz20M1eRF.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -24936,7 +25588,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382888-wWk2cja1E8Hc.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 11,
    "height": null,
    "occupation": null,
@@ -25095,7 +25749,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b502-Nc5U3ghTR7Gy.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Esprit héroïque"
+   ],
    "age": null,
    "height": 172,
    "occupation": null,
@@ -25185,7 +25841,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2585-rWFs7LihpIFZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Esprit héroïque",
+    "Humain"
+   ],
    "age": null,
    "height": 176,
    "occupation": [
@@ -25274,7 +25933,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 162,
    "occupation": [
@@ -25301,7 +25962,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b44025-IxzAC5F26k9R.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Homoncule",
+    "Humain"
+   ],
    "age": 2,
    "height": 163,
    "occupation": null,
@@ -25329,7 +25993,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3439-N3HN8zxumCDP.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 25,
    "height": 180,
    "occupation": [
@@ -25358,7 +26024,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15937-WpiTqk0Wr6RP.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 170,
    "occupation": [
@@ -25387,7 +26055,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b142731-dkDrLSRe9a9o.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 157,
    "occupation": [
@@ -25417,7 +26087,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b142730-y01rktwTgUru.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 155,
    "occupation": [
@@ -25446,7 +26118,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b142729-so34r63d7PVs.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 163,
    "occupation": [
@@ -25679,7 +26353,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15164-BPfYcnNR3PwN.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Homoncule",
+    "Humain"
+   ],
    "age": 9,
    "height": 158,
    "occupation": null,
@@ -25712,7 +26389,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16022-rdonZr99a9XO.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Esprit héroïque",
+    "Humain"
+   ],
    "age": null,
    "height": 184,
    "occupation": [
@@ -25742,7 +26422,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16026-cicpiktY4SOs.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 173,
    "occupation": null,
@@ -25773,7 +26455,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16024-MZXEjshw6q6B.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Esprit héroïque",
+    "Humain"
+   ],
    "age": null,
    "height": 196,
    "occupation": null,
@@ -25803,7 +26488,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16019-nFljwebXHDqc.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": 174,
    "occupation": null,
@@ -25834,7 +26521,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16017-BgO5m4ZS2Mor.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 177,
    "occupation": null,
@@ -25866,7 +26555,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16028-ISNmfeK28uCj.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 181,
    "occupation": [
@@ -25964,7 +26655,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12732-yayxYNs1FQeF.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Esprit héroïque",
+    "Humain"
+   ],
    "age": null,
    "height": 191,
    "occupation": null,
@@ -25993,7 +26687,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16035-d63WNTgYUNIX.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Démon"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -26024,7 +26721,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16020-unVmGwhB9rhm.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 161,
    "occupation": null,
@@ -26080,7 +26779,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16029-DluHAqHQZmo1.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 80,
    "height": 179,
    "occupation": [
@@ -26812,7 +27513,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": 12,
    "height": null,
@@ -28719,7 +29421,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -28751,7 +29454,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -28789,7 +29493,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -28888,7 +29593,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -28947,7 +29653,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -28979,7 +29686,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29013,7 +29721,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": 19,
    "height": null,
@@ -29099,7 +29808,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29131,7 +29841,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29161,7 +29872,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29194,7 +29906,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29223,7 +29936,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29251,7 +29965,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -29316,7 +30031,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Monstre"
    ],
    "age": null,
    "height": null,
@@ -30738,7 +31454,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43280-dxRTpIioqSg7.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 166,
    "occupation": [
@@ -30775,7 +31493,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43278-qtyFTwAaLiLb.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 170,
    "occupation": [
@@ -30810,7 +31530,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43281-KRzz5zmmrcC5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 162,
    "occupation": [
@@ -30842,7 +31564,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43282-kYrfRKACKpkD.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": 160,
    "occupation": [
@@ -30875,7 +31599,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/46083.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 165,
    "occupation": [
@@ -30910,7 +31636,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43279-LFT3GGDngMoH.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 180,
    "occupation": [
@@ -30944,7 +31672,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b50707-ms1UUVI7zB2E.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 34,
    "height": null,
    "occupation": [
@@ -30977,7 +31707,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55165-wXoEw6nsH2kU.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": null,
    "occupation": null,
@@ -31010,7 +31742,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b50709-w6HcbAb8jsLt.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -31044,7 +31778,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48163-0EzBZfoUJNn9.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -31079,7 +31815,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46091-OnDX0DFwuVj4.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 170,
    "occupation": [
@@ -31112,7 +31850,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b51099-VzmtEMmbkLU2.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -31148,7 +31888,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48167-AA4dqgAoqu9q.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -31183,7 +31925,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46085-aLRBe7odTpBy.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 177,
    "occupation": [
@@ -31219,7 +31963,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/46089.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 162,
    "occupation": [
@@ -31249,7 +31995,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55167-XDadDLu0AMeD.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 1000,
    "height": null,
    "occupation": null,
@@ -31279,7 +32027,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48165-RqjFexE6xnSv.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 27,
    "height": null,
    "occupation": [
@@ -31311,7 +32061,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/58483.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -31345,7 +32097,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46087-6PgSkwrXuDOv.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -31376,7 +32130,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b59345-sI0h3MY1M141.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -33039,7 +33795,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fourmi-chimère"
    ],
    "age": null,
    "height": null,
@@ -35475,7 +36232,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 13,
    "height": 195,
@@ -35886,7 +36644,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 25,
    "height": null,
@@ -39178,7 +39937,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122445-5uDu8wMy8Jxi.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Narehate"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -39273,7 +40034,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125877-nFoMWC2T67Tx.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Narehate"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -39853,7 +40616,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/46500.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 23,
    "height": 158,
    "occupation": [
@@ -40761,7 +41526,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139631-JC76pYY2Q51Z.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 160,
    "occupation": [
@@ -40794,7 +41561,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139632-b95rh3VplAYY.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 156,
    "occupation": [
@@ -40828,7 +41597,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156860-P5bAY1m97tX7.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 140,
    "occupation": [
@@ -40860,7 +41631,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199022-DhMszO6OYyAH.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 175,
    "occupation": [
@@ -40888,7 +41661,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199023-1irbgMhSFHOr.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -40917,7 +41692,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199025-n9YLeaHPUzZQ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 163,
    "occupation": null,
@@ -40946,7 +41723,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199026-pdiaoi3idV9F.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 10,
    "height": 151,
    "occupation": null,
@@ -40977,7 +41756,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b190681-9EopKRJsIZxJ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 142,
    "occupation": [
@@ -41007,7 +41788,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251689-GOzrVCoMKX19.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Chat"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41034,7 +41817,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250703-yLFUyVbzB8aR.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 172,
    "occupation": null,
@@ -41062,7 +41847,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251684-lIYj1xWkt4oL.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -41092,7 +41879,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b258652-dWqsk3mO6zqx.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41119,7 +41908,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199024-ggtiHHNnzDBz.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41145,7 +41936,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250706-LXOtjpZSagtC.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41171,7 +41964,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199027-QfwsUa8PLqzA.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -41199,7 +41994,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250707-0NgScGk516uu.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41225,7 +42022,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41251,7 +42050,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41277,7 +42078,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -41303,7 +42106,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -43998,7 +44803,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1663.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44026,7 +44833,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1669.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44054,7 +44863,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1664.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44080,7 +44891,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1667.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -44108,7 +44921,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1668.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44134,7 +44949,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1665.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44162,7 +44979,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1666.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44188,7 +45007,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1671.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44212,7 +45033,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38443-iDilzmn5jxzV.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44238,7 +45061,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1670-1uP5xPcB1PeB.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44264,7 +45089,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251124-TNoW8FjbHVCd.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44290,7 +45117,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251125-r3BPevTxicOY.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44316,7 +45145,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251127-NQxqFb3V19ev.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -44342,7 +45173,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b262662-PUa3gjRwIq6L.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -45519,7 +46352,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183884-iyo3BmTuhJ0l.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 158,
    "occupation": [
@@ -45659,7 +46494,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b223870-60FglagpVtHe.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 167,
    "occupation": [
@@ -45694,7 +46531,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245519-yrjlimcCUdrk.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -45727,7 +46566,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b227579-OKrvb5rGnQrV.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 190,
    "occupation": [
@@ -45759,7 +46600,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b252073-eLFb2PHy1erO.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 163,
    "occupation": [
@@ -45793,7 +46636,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b223871-Yg32oIQlRkwH.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 163,
    "occupation": [
@@ -45826,7 +46671,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245515-0fmOfMnyxQiZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 172,
    "occupation": [
@@ -45858,7 +46705,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245524-Q4K2XHB76ikE.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 163,
    "occupation": [
@@ -45893,7 +46742,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b237577-suHCadWWmCT0.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 34,
    "height": 165,
    "occupation": [
@@ -45923,7 +46774,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245521-Kc8y3UYQ4JXs.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 165,
    "occupation": [
@@ -45957,7 +46810,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245513-48yZBsVDHpKh.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 35,
    "height": null,
    "occupation": [
@@ -45985,7 +46840,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b302911-Zb2uFApm3VY5.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46014,7 +46871,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282773-gsQoxIAsLuf2.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 180,
    "occupation": [
@@ -46048,7 +46907,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245523-gp5IvZ8l3cuh.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 23,
    "height": null,
    "occupation": [
@@ -46081,7 +46942,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b344774-CvUSHhO6HMqz.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -46780,7 +47643,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3797-PKb6L9RXcgdS.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46809,7 +47674,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3798-mzmC2IZ8RJlB.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 26,
    "height": null,
    "occupation": [
@@ -46843,7 +47710,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3801-QE1bQDRgQJBo.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46873,7 +47742,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3799-ONaZLxGYAD9w.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 26,
    "height": null,
    "occupation": [
@@ -46906,7 +47777,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3800-q9dpo8xKmDAn.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46933,7 +47806,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b170536-Nd7tjqrHr5tp.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46960,7 +47835,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b170537-9B73gAWSzUW7.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -46990,7 +47867,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3810-bANYXHoGzFu8.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -47019,7 +47898,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3802-TBr8urpZDavW.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -47047,7 +47928,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3803-HNnw6WSjeZxX.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -48345,7 +49228,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68315-f9RBjyJCoj95.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 180,
    "occupation": [
@@ -48379,7 +49264,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n69725-Seck1SZfwQiR.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -48447,7 +49334,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69057-491sAhqnEsFZ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 183,
    "occupation": [
@@ -48480,7 +49369,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n69055-tmF7uIwloFHc.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 22,
    "height": 165,
    "occupation": [
@@ -48514,7 +49405,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n69061-qPWM72rly4m4.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 175,
    "occupation": [
@@ -48549,7 +49442,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69059-yq881p8XWys6.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 170,
    "occupation": [
@@ -48586,7 +49481,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69063-NzXNgrLJgiwr.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 168,
    "occupation": [
@@ -48620,7 +49517,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74011-YFYdac7ItI1t.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 160,
    "occupation": [
@@ -48653,7 +49552,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75206-aWL8yEj0gSTe.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 178,
    "occupation": [
@@ -48687,7 +49588,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b147046-XHifXR4XQhOA.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -48722,7 +49625,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/74541.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": 180,
    "occupation": [
@@ -48756,7 +49661,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/74405.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Cyborg"
+   ],
    "age": 110,
    "height": null,
    "occupation": [
@@ -48789,7 +49696,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n73347-YyVGUK40UfFa.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 27,
    "height": null,
    "occupation": [
@@ -48821,7 +49730,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/74952.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 29,
    "height": null,
    "occupation": [
@@ -48855,7 +49766,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/73351.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 39,
    "height": null,
    "occupation": [
@@ -48888,7 +49801,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/73727.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 32,
    "height": null,
    "occupation": [
@@ -48919,7 +49834,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/73729.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": null,
    "occupation": [
@@ -48951,7 +49868,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n77755-HEWakRDr6xzd.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -48983,7 +49902,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b77757-N75YdsrweHLk.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 28,
    "height": null,
    "occupation": [
@@ -50132,7 +51053,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 172,
    "occupation": [
@@ -50168,7 +51091,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127633-FcCwWK5sQRhK.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 155,
    "occupation": [
@@ -50202,7 +51127,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127613-LBtFkMJfUWpg.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 162,
    "occupation": [
@@ -50237,7 +51164,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127840-z2LUox2R2Ivg.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 150,
    "occupation": [
@@ -50273,7 +51202,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127841-UY9wQq6dW9SY.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 158,
    "occupation": [
@@ -50310,7 +51241,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127843-nz8GbQ9rhB8R.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": 150,
    "occupation": [
@@ -50344,7 +51277,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130307-QbUIGjAiQbP9.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 178,
    "occupation": [
@@ -50381,7 +51316,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144797-4Wbf9gYygNNC.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 163,
    "occupation": [
@@ -50420,7 +51357,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130304-5VhLSgq1zYIQ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -50453,7 +51392,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b320165-NkQFxXq1VU3T.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -50481,7 +51422,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121561-rYgIQOeHzR63.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50515,7 +51458,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121563-jJjOltETxJ9D.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50551,7 +51496,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121560-6hSONiUnrHnb.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 19,
    "height": null,
    "occupation": [
@@ -50589,7 +51536,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122472-9Xtrhcy8F8OE.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50621,7 +51570,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122473-ztQ4IaTyDJFr.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -50653,7 +51604,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121559-Du5AksH2YUAz.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": null,
    "occupation": [
@@ -50757,7 +51710,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122474-Yd7yWEneN7Y4.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 176,
    "occupation": [
@@ -50791,7 +51746,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121562-30li35Mut1aL.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50823,7 +51780,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165327-RoaqoEnwd8wN.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50856,7 +51815,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126973-VPlc6LeOLVsG.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -50890,7 +51851,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165337-tmCRrnt4re1F.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": null,
@@ -50917,7 +51880,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165338-7GJldMJH6bbY.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -50946,7 +51911,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158480-OKNCXODNwyyr.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": null,
    "occupation": [
@@ -50977,7 +51944,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165334-vghhSU0TkrAK.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -51006,7 +51975,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165339-jfOPLLqsLd68.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 38,
    "height": null,
    "occupation": [
@@ -51038,7 +52009,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165330-YyAoqJADGmAo.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -51098,7 +52071,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165340-PKbiV2B7uFM4.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53321,7 +54296,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121057-xoaUSV1sO1CM.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53351,7 +54328,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121056-1f489EpsESd3.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53382,7 +54361,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121058-K1CDSG3os7Yb.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53413,7 +54394,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135052-HEGhtD0uSsUm.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53445,7 +54428,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135058-dZPLFV5RES9P.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53477,7 +54462,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121059-FSKjrAcZ4R7S.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53508,7 +54495,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135044-uoi8pqlghYgJ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Divinité"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53535,7 +54524,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135041-h12RTaL7PRTM.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53562,7 +54553,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135047-M6VcEM54azDv.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53592,7 +54585,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135046-JJkWsPJAIJto.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53623,7 +54618,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135057-miJNxrLFdXke.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53654,7 +54651,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135048-gEK7kAVZzmWk.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53686,7 +54685,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135053-H157bPibqoqT.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53712,7 +54713,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135055-4PUKMsOZ36nM.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53739,7 +54742,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135059-Kqq4cq7ZodYX.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -53766,7 +54771,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135040-uNO3G4ER75Vy.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53800,7 +54807,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135054-Xg6XsE23pLfg.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53828,7 +54837,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135050-ZKQAFvgBz3Pm.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53857,7 +54868,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135051-rUwrmge1ADaD.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -53922,7 +54935,9 @@
    "gender": "Homme",
    "species": [
     "Humain",
-    "Vampire"
+    "Ange",
+    "Vampire",
+    "Démon"
    ],
    "age": 8,
    "height": 173,
@@ -54143,7 +55158,8 @@
    "gender": "Femme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": null,
    "height": 145,
@@ -54217,7 +55233,8 @@
    "gender": "Homme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": null,
    "height": 182,
@@ -54251,7 +55268,8 @@
    "gender": "Homme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": null,
    "height": null,
@@ -54285,7 +55303,8 @@
    "gender": "Homme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": 825,
    "height": 190,
@@ -54322,7 +55341,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": null,
    "height": 151,
@@ -54466,7 +55486,8 @@
    "gender": "Femme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": null,
    "height": 167,
@@ -54639,7 +55660,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 13,
    "height": null,
@@ -54675,7 +55697,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 15,
    "height": null,
@@ -54710,7 +55733,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Loup-garou"
    ],
    "age": 32,
    "height": null,
@@ -54744,6 +55768,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Vampire",
     "Humain"
    ],
    "age": 15,
@@ -54778,7 +55803,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 18,
    "height": null,
@@ -54810,7 +55836,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Loup-garou"
    ],
    "age": 29,
    "height": null,
@@ -54845,7 +55871,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 25,
    "height": null,
@@ -54878,7 +55905,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 30,
    "height": null,
@@ -54912,6 +55940,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Vampire",
     "Humain"
    ],
    "age": 24,
@@ -55139,7 +56168,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 20,
    "height": null,
@@ -55174,7 +56204,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Vampire"
    ],
    "age": 17,
    "height": null,
@@ -55205,7 +56235,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Vampire"
    ],
    "age": 33,
    "height": null,
@@ -55490,7 +56520,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 27,
    "height": 170,
    "occupation": [
@@ -55563,7 +56595,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 32,
    "height": 187,
    "occupation": [
@@ -55596,7 +56630,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150424-4B4psF6I4dgO.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 6,
    "height": 110,
    "occupation": [
@@ -55631,7 +56667,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150425-mP852peLh9eS.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 20,
    "height": 179,
    "occupation": [
@@ -55665,7 +56703,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150423-RxXwrHzeLCss.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 6,
    "height": 104,
    "occupation": [
@@ -55735,7 +56775,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157887-P66pD0ilpmtZ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 173,
    "occupation": [
@@ -55803,7 +56845,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180191-N9bunu7GiTFy.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -55833,7 +56877,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b270959-HVflw5p1KQb5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -55867,7 +56913,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b278821-yK2ulLgK3KEM.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 6,
    "height": null,
    "occupation": [
@@ -55900,7 +56948,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b213882-BoEgxd5783eU.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 6,
    "height": null,
    "occupation": [
@@ -55933,7 +56983,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b213881-NrUwR51qHdkV.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 6,
    "height": null,
    "occupation": [
@@ -55966,7 +57018,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b270961-npwGDaryVj6Q.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -55998,7 +57052,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180192-nOvkTcotZyu0.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -56032,7 +57088,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b279677-VeVumWIwfdFi.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 36,
    "height": null,
    "occupation": [
@@ -56065,7 +57123,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274085-76olW4lNxegM.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 59,
    "height": null,
    "occupation": null,
@@ -56096,7 +57156,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274084-jbW7ZAfCK0u4.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 47,
    "height": null,
    "occupation": [
@@ -56129,7 +57191,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b279678-Q59PfmCFihrW.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 63,
    "height": null,
    "occupation": [
@@ -56501,7 +57565,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -56529,7 +57595,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/44274-GDkveusoWUqX.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 40,
    "height": null,
    "occupation": null,
@@ -56559,7 +57627,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b41897-qc6fWvsXdBVo.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 43,
    "height": 171,
    "occupation": [
@@ -56589,7 +57659,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42945-VOf3QD9mGJIq.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 50,
    "height": null,
    "occupation": [
@@ -56723,7 +57795,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155712-zMvjVpfc4WQN.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Ombre"
+   ],
    "age": 17,
    "height": 162,
    "occupation": null,
@@ -56752,7 +57826,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155704-2cdpcDFmNmXw.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Divinité",
+    "Ombre"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -56908,6 +57985,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Ombre",
     "Humain"
    ],
    "age": null,
@@ -57067,7 +58145,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Ombre"
    ],
    "age": null,
    "height": null,
@@ -57266,7 +58344,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43892-Ig6ZMdUbQDO2.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Robot"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59694,7 +60774,9 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée",
+    "Esprit"
    ],
    "age": 16,
    "height": 183,
@@ -60408,7 +61490,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300902-KUbST43hFFnH.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 8,
    "height": null,
    "occupation": [
@@ -60669,7 +61753,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b341165-Xn1gP1qfqILz.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -60732,7 +61818,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b341166-6MxIY74tLaGn.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -60761,7 +61849,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b341167-bDV5rWkNSOPp.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -60825,7 +61915,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b339814-HiknSRLrooAb.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -60887,7 +61979,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b341175-NL1pdsfZsjxh.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -60914,7 +62008,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b349870-AP5QLTtduqpr.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -60946,7 +62042,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b349878-Lfy9SkxRGESg.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -62456,7 +63554,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136790-6TkN3qYelIhk.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Oiseau",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -63689,6 +64790,10 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Vampire",
+    "Mort-vivant",
+    "Goule",
+    "Squelette",
     "Humain"
    ],
    "age": 25,
@@ -64216,7 +65321,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285315-HKDOxnboAgqi.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 120,
    "height": null,
    "occupation": [
@@ -65250,7 +66357,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42316-yoWt6U0dgenh.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Esprit"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -68170,7 +69279,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b524-sEu4mFKGJUVg.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Fantôme"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -69338,7 +70449,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81239-n1aMD2Jig1WP.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 15,
    "height": 141,
    "occupation": [
@@ -69465,7 +70578,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b140699-LyYGLHX2cf2m.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 171,
    "occupation": [
@@ -69530,7 +70645,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179780-cbIFkhnHCvPX.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 5,
    "height": 98,
    "occupation": [
@@ -70624,7 +71741,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277223-ibSL546Mkx7I.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -70653,7 +71772,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b271804-brP21yj6USK6.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -70716,7 +71837,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b277224-YeGfBEZKWnOk.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -70742,7 +71865,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b279503-DZKzQ7szcgBo.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -70768,7 +71893,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b271805-Sv1jvDntw7Ns.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -70901,7 +72028,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b278401-Z3rARmkENUr4.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
