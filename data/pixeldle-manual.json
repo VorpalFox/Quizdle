@@ -82,7 +82,8 @@
   "wiki-unreal-anubis",
   "Q308950",
   "Q136504750",
-  "Q434384"
+  "Q434384",
+  "wiki-lost-records-bloom-rage-fuzzbutt"
  ],
  "edit": {
   "Q2265837": {
@@ -1607,13 +1608,6 @@
     "Animal"
    ]
   },
-  "wiki-lost-records-bloom-rage-fuzzbutt": {
-   "_nom": "Fuzzbutt",
-   "species": [
-    "Chat",
-    "Animal"
-   ]
-  },
   "wiki-xcom-speaker": {
    "_nom": "Speaker",
    "species": [
@@ -2657,12 +2651,16 @@
   },
   "wiki-unreal-sapphire": {
    "_nom": "Sapphire",
-   "_raison": "année : Unreal Tournament 2003",
+   "_raison": "brune puis blonde",
    "year": 2002,
    "nationality": [
     "Paso Robles",
     "California",
     "United States"
+   ],
+   "hair": [
+    "Bruns",
+    "Blonds"
    ]
   },
   "wiki-devil-may-cry-j-d-morrison": {
@@ -3896,6 +3894,25 @@
    "nationality": [
     "Mount Holly Estate",
     "Orinda"
+   ]
+  },
+  "Q47467669": {
+   "_nom": "Chloe Price",
+   "_raison": "cheveux châtains teints en bleu (pas roses)",
+   "hair": [
+    "Bruns",
+    "Bleus"
+   ]
+  },
+  "Q125856191": {
+   "_nom": "Alena",
+   "_raison": "tsarevna de Zamoksva, artiste martiale (dragonquest.fandom.com/wiki/Alena_(Dragon_Quest_IV))",
+   "occupation": [
+    "Noble",
+    "Combattant"
+   ],
+   "nationality": [
+    "Zamoksva"
    ]
   }
  },

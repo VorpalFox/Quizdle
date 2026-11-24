@@ -1,11 +1,24 @@
 import { describe, expect, it } from 'vitest'
-import { birthPlaces, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
+import { birthPlaces, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {
     expect(infobox('{{Character|nationality = [[File:Flag of the United States.svg|border|20px]] American}}')?.nationality).toBe('American')
     expect(infobox('{{Character|species = [[File:Nobody.png|20px]] Human / [[Nobody]]}}')?.species).toBe('Human / Nobody')
     expect(infobox('{{Infobox|nationality = {{flag|ch}} Swiss}}')?.nationality).toBe('Swiss')
+  })
+})
+
+describe('disambiguationTitles', () => {
+  const alena = '{{Disambig}}\n*[[Alena (Princess Alena)]]\n*[[Alena (Dragon Quest IV)]]\n*[[Alena\'s dress]]\n*[[Alena (manga)|Alena]]'
+
+  it('suit les liens « Nom (…) », ceux qui citent la franchise d\'abord, sans les adaptations', () => {
+    expect(disambiguationTitles(alena, 'Alena', 'Dragon Quest')).toEqual(['Alena (Dragon Quest IV)', 'Alena (Princess Alena)'])
+    expect(disambiguationTitles('\'\'\'Psaro\'\'\' may refer to:\n*[[Psaro the Manslayer]]\n*[[Psaro (character)]]', 'Psaro', 'Dragon Quest')).toEqual(['Psaro (character)'])
+  })
+
+  it("rien si ce n'est pas une page d'homonymie", () => {
+    expect(disambiguationTitles('{{Character|Name = Alena}} [[Alena (Dragon Quest IV)]]', 'Alena', 'Dragon Quest')).toEqual([])
   })
 })
 

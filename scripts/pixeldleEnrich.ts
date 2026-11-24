@@ -274,6 +274,24 @@ function linkedTitle(wiki: Wiki, links: string[]): string | null {
   return link ? decodeURIComponent(link.split(':').slice(1).join(':')).replace(/_/g, ' ') : null
 }
 
+// Une page d'homonymie (« Alena » sur le wiki Dragon Quest) : ses liens « Alena (…) », ceux qui citent la franchise
+// d'abord (« Alena (Dragon Quest IV) »), puis « (character) », sans les adaptations (manga, anime, film…)
+const MAX_DISAMBIGUATION_TITLES = 3
+const ADAPTATION = /manga|anime|film|movie|tv|series|comic|novel|book|card|item|weapon|location/i
+export function disambiguationTitles(page: string, name: string, franchise: string): string[] {
+  if (!/\{\{\s*disambig|may refer to/i.test(page))
+    return []
+  const links = [...page.matchAll(/\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]/g)].map(match => match[1]!.trim().replace(/_/g, ' '))
+  const rank = (qualifier: string) => mentionsFranchise(qualifier, franchise) ? 0 : /character/i.test(qualifier) ? 1 : 2
+  return [...new Set(links)]
+    .map(title => ({ title, match: /^(.+?)\s*\(([^)]+)\)\s*$/.exec(title) }))
+    .filter(({ match }) => match !== null && normalize(match[1]!) === normalize(name) && !ADAPTATION.test(match[2]!))
+    .map(({ title, match }) => ({ title, qualifier: match![2]! }))
+    .sort((a, b) => rank(a.qualifier) - rank(b.qualifier))
+    .map(({ title }) => title)
+    .slice(0, MAX_DISAMBIGUATION_TITLES)
+}
+
 function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
   const linked = linkedTitle(wiki, target.fandomLinks)
   const names = target.names.filter(name => /[a-z]/i.test(name) && name.length >= 2 && !/[#<>[\]{}|]/.test(name))
@@ -371,11 +389,22 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
     let done = 0
     for (const { wiki, targets: group } of byApi.values()) {
       process.stdout.write(`\rWikis, passe ${rank + 1} : ${++done}/${byApi.size} (${wikiLabel(wiki)})`.padEnd(80))
-      const pages = await fetchPages(wiki.api, group.flatMap(target => titlesFor(target, wiki)))
+      const firstPages = await fetchPages(wiki.api, group.flatMap(target => titlesFor(target, wiki)))
+      // Pas d'infobox, mais une page d'homonymie : on essaie ses liens vers le bon personnage
+      const followed = new Map<EnrichTarget, string[]>()
+      for (const target of group) {
+        const titles = titlesFor(target, wiki)
+        if (titles.some(title => firstPages[title] && infobox(firstPages[title]!)))
+          continue
+        const more = titles.flatMap(title => firstPages[title] ? disambiguationTitles(firstPages[title]!, title, target.franchise) : [])
+        if (more.length > 0)
+          followed.set(target, more)
+      }
+      const pages = followed.size > 0 ? await fetchPages(wiki.api, [...followed.values()].flat()) : firstPages
       const stats = byWiki.get(wikiLabel(wiki)) ?? { found: 0, filled: {} }
       byWiki.set(wikiLabel(wiki), stats)
       for (const target of group) {
-        const titles = titlesFor(target, wiki)
+        const titles = [...titlesFor(target, wiki), ...followed.get(target) ?? []]
         const title = titles.find(title => pages[title] && infobox(pages[title]!))
         if (!title)
           continue

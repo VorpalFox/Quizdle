@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
+import { characterName, DEVELOPMENT, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {
@@ -124,6 +124,12 @@ describe('textHair', () => {
 
   it('PasDeCheveux_Null', () => {
     expect(textHair('A robot made of steel.')).toBeNull()
+  })
+
+  it('saute les phrases sur la conception (Wikipédia)', () => {
+    const page = 'The original design had him with white hair. Mercy is a Swiss woman with long blonde hair.'
+    expect(textHair(page, DEVELOPMENT)?.colors).toEqual(['Blonds'])
+    expect(textHair('The novel redesigns him with long red hair.', DEVELOPMENT)).toBeNull()
   })
 })
 

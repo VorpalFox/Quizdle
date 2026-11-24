@@ -1175,7 +1175,8 @@
     "Dresseur"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Noirs"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -2638,6 +2639,7 @@
     "Timber"
    ],
    "occupation": [
+    "Révolutionnaire",
     "Tireur"
    ],
    "hair": [
@@ -4796,7 +4798,9 @@
     "Combattant",
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
    "genres": [
@@ -4931,7 +4935,9 @@
     "Assassin",
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
    "genres": [
@@ -6024,7 +6030,9 @@
     "Aventurier",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -12784,7 +12792,10 @@
     "Professeur",
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds",
+    "Gris"
+   ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
    "genres": [
@@ -12807,12 +12818,16 @@
     "Humain"
    ],
    "nationality": [
+    "United States",
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Soldat",
+    "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
    "genres": [
@@ -12891,12 +12906,17 @@
     "Humain"
    ],
    "nationality": [
+    "Arkansas",
+    "United States",
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Soldat",
+    "Mercenaire"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
    "genres": [
@@ -12918,12 +12938,17 @@
     "Humain"
    ],
    "nationality": [
+    "Nantes",
+    "France",
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Mercenaire",
+    "Chasseur de trésor"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
    "genres": [
@@ -12985,7 +13010,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
    "genres": [
@@ -15461,7 +15488,9 @@
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
    "genres": [
@@ -15683,7 +15712,9 @@
     "Combattant",
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Dragon Age",
    "developer": "BioWare",
    "genres": [
@@ -18043,6 +18074,7 @@
    "nationality": [
     "Los Santos",
     "United States",
+    "San Andreas",
     "Monde réel"
    ],
    "occupation": [
@@ -22256,7 +22288,9 @@
     "Assassin",
     "Artiste"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -22337,7 +22371,9 @@
    "occupation": [
     "Informaticien"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -22428,7 +22464,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -25106,12 +25144,15 @@
     "Humain"
    ],
    "nationality": [
-    "Inconnu"
+    "Zamoksva"
    ],
    "occupation": [
-    "Inconnu"
+    "Noble",
+    "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
    "genres": [
@@ -25296,7 +25337,9 @@
    "occupation": [
     "Justicier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -25414,7 +25457,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Justicier"
    ],
    "hair": [
     "Bruns"
@@ -27478,7 +27521,9 @@
    "occupation": [
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -28912,7 +28957,9 @@
    "occupation": [
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Silent Hill",
    "developer": "Konami",
    "genres": [
@@ -32527,7 +32574,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -32787,7 +32836,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -33459,7 +33510,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33487,7 +33540,9 @@
    "occupation": [
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33538,7 +33593,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33622,7 +33679,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -34429,7 +34488,9 @@
    "occupation": [
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
    "genres": [
@@ -34928,7 +34989,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Dirigeant"
    ],
    "hair": [
     "Bruns"
@@ -35907,7 +35968,7 @@
     "Anor Londo"
    ],
    "occupation": [
-    "Inconnu"
+    "Chevalier"
    ],
    "hair": null,
    "franchise": "Dark Souls",
@@ -36061,7 +36122,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
    "genres": [
@@ -39835,7 +39898,9 @@
    "species": [
     "Extraterrestre"
    ],
-   "nationality": null,
+   "nationality": [
+    "Outer Space"
+   ],
    "occupation": [
     "Inconnu"
    ],
@@ -41125,7 +41190,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Domestique"
    ],
    "hair": null,
    "franchise": "Hades",
@@ -41870,7 +41935,9 @@
    "occupation": [
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "franchise": "Baldur's Gate",
    "developer": "Larian Studios",
    "genres": [
@@ -43763,8 +43830,8 @@
     "Chômeur"
    ],
    "hair": [
-    "Bleus",
-    "Roses"
+    "Bruns",
+    "Bleus"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -46563,7 +46630,9 @@
     "Révolutionnaire",
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
    "genres": [
@@ -46623,7 +46692,9 @@
     "Soldat",
     "Chasseur de monstres"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Doom",
    "developer": "id Software",
    "genres": [
@@ -48538,7 +48609,9 @@
    "occupation": [
     "Inconnu"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
    "genres": [
@@ -48567,7 +48640,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
    "genres": [
@@ -58245,7 +58320,10 @@
     "Épéiste",
     "Tireur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns",
+    "Blonds"
+   ],
    "franchise": "Unreal",
    "developer": "Epic Games",
    "genres": [
@@ -66536,37 +66614,6 @@
    "gender": "Femme",
    "species": [
     "Cerf",
-    "Animal"
-   ],
-   "nationality": [
-    "Velvet Cove",
-    "Michigan",
-    "United States",
-    "Monde réel"
-   ],
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Lost Records: Bloom & Rage",
-   "developer": "Don't Nod Montréal",
-   "genres": [
-    "Aventure",
-    "Réflexion"
-   ],
-   "year": 2025
-  }
- },
- {
-  "id": "wiki-lost-records-bloom-rage-fuzzbutt",
-  "name": "Fuzzbutt",
-  "aliases": [],
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Chat",
     "Animal"
    ],
    "nationality": [

@@ -86,7 +86,7 @@ const END_OF_ROLE = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|intr
 const MAX_INTRO_SENTENCES = 2
 // Pas un métier : un rôle dans l'histoire ou le jeu (« major character », « final boss »), un lien de famille (« son of »),
 // un mot qui en contient un autre (« genetically-engineered » n'est pas un ingénieur, « android model » pas un mannequin)
-const NOT_A_JOB = /\b(?:characters?|antagonists?|protagonists?|deuteragonists?|boss|bosses|villains?|companions?|npc|enem(?:y|ies)|all(?:y|ies)|sidekick|rival|romance|players?|skins?|heroe?s?|agent|member of the \w+ (?:clan|tribe)|(?:son|daughter|wife|husband|brother|sister|child|father|mother|friend|cousin|niece|nephew|grandson|granddaughter|clone) of|engineered|model\w*|mannequin|factor|animatronics?|king of the hill|threats?)\b|^(?:given|taught|seen|located|found|known|named|featured|released|voiced)\b/i
+const NOT_A_JOB = /\b(?:characters?|antagonists?|protagonists?|deuteragonists?|boss|bosses|villains?|companions?|npc|enem(?:y|ies)|all(?:y|ies)|sidekick|rival|romance|players?|skins?|heroe?s?|agent|member of the \w+ (?:clan|tribe)|(?:son|daughter|wife|husband|brother|sister|child|father|mother|friend|cousin|niece|nephew|grandson|granddaughter|clone|descendant|ancestor|reincarnation) of|engineered|model\w*|mannequin|factor|animatronics?|king of the hill|threats?)\b|^(?:given|taught|seen|located|found|known|named|featured|released|voiced)\b/i
 
 // Ce que l'introduction dit du personnage, phrase par phrase (« Vietnam veteran », « princess of Guardia »),
 // pour en tirer une occupation
@@ -135,18 +135,28 @@ export function introAlignment(intro: string): 'hostile' | 'friendly' | null {
 // La section « Appearance » (ou « Design », « Description ») : là où la page décrit le physique
 const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*==+\s*$([\s\S]*?)(?=^==[^=]|(?![\s\S]))/im
 
+// Ce que Wikipédia raconte de la conception du personnage, pas de ce qu'il est dans le jeu : « the original design »,
+// « the novel redesigns him with long red hair », « an outfit was considered to have black hair »
+export const DEVELOPMENT = /\b(?:original(?:ly)?|initial(?:ly)?|concepts?|early|considered|redesign\w*|prototypes?|novels?|films?|adaptations?|cosplay\w*|beta|corpse)\b/i
+const HAIR_IN_TEXT_ALL = new RegExp(HAIR_IN_TEXT.source, 'gi')
+
 // Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
-// Avec l'extrait, à relire dans le récap.
-export function textHair(wikitext: string): { colors: string[], excerpt: string } | null {
+// Sans les phrases qui correspondent à skip (DEVELOPMENT pour Wikipédia). Avec l'extrait, à relire dans le récap.
+export function textHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
   const section = APPEARANCE.exec(wikitext)?.[1]
   for (const text of [section, wikitext]) {
     if (!text)
       continue
     const plain = plainText(text)
-    const found = HAIR_IN_TEXT.exec(plain)
-    const colors = found ? hairColors(found[1]!).slice(0, MAX_HAIR_COLORS) : []
-    if (found && colors.length > 0)
-      return { colors, excerpt: plain.slice(Math.max(0, found.index - 60), found.index + found[0].length + 20).replace(/\s+/g, ' ').trim() }
+    for (const found of plain.matchAll(HAIR_IN_TEXT_ALL)) {
+      const end = plain.indexOf('.', found.index + found[0].length)
+      const sentence = plain.slice(plain.lastIndexOf('.', found.index) + 1, end < 0 ? undefined : end)
+      if (skip?.test(sentence))
+        continue
+      const colors = hairColors(found[1]!).slice(0, MAX_HAIR_COLORS)
+      if (colors.length > 0)
+        return { colors, excerpt: plain.slice(Math.max(0, found.index - 60), found.index + found[0].length + 20).replace(/\s+/g, ' ').trim() }
+    }
   }
   return null
 }

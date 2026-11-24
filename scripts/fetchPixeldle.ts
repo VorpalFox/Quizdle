@@ -9,6 +9,7 @@
 // 5. Ajouter des personnages depuis le wiki quand Wikidata en a moins de 4, ou si la franchise est réglée dans « wikis »
 //    du manuel (pixeldleWikiCharacters.ts) : jusqu'à 12, ou « limit »
 // 6. Le jeu de 1re apparition (année, studio, genres), les cheveux et l'occupation tirés du texte des pages.
+//    En dernier recours, les cheveux et l'occupation de la page Wikipédia anglaise (sans ce qui parle de la conception).
 //    Le jeu : celui que cite la page (infobox, modèle {{Games}}, puis introduction), sinon le 1er de la franchise.
 //    Piège connu : un reboot au même titre que le 1er jeu (God of War, Tomb Raider), corrigé à la main.
 //    FRANCHISE_DEVELOPERS force le studio, FRANCHISE_GENRES ajoute un genre à toute la franchise (pixeldleTranslate.ts).
@@ -49,7 +50,7 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, SPACE_FRANCHISES, expandSpecies, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
-import { citedGame, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
+import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
 const MAX_PER_FRANCHISE = 20
@@ -584,6 +585,31 @@ for (const [api, group] of byApi) {
   }
 }
 console.log()
+
+// En dernier recours, la page Wikipédia anglaise du personnage (lien de Wikidata), quand le wiki de la franchise ne
+// donne ni cheveux ni occupation (« Alena » y est une page d'homonymie, Jill Valentine n'a pas de couleur de cheveux) :
+// ses cheveux, sans ce qui parle de sa conception (DEVELOPMENT), et son introduction pour l'occupation. À relire.
+const WIKIPEDIA_API = 'https://en.wikipedia.org/w/api.php'
+const WIKIPEDIA = ' (Wikipédia)'
+const enwikiOf = (entry: Entry) => candidates.get(entry.id)?.candidate.character.enwiki
+const corrected = (entry: Entry, key: string) => key in (manual.edit[entry.id] ?? {})
+const wikipediaHairless = wikidataEntries.filter(entry => entry.attributes.hair === null && !textHairs.has(entry.id) && enwikiOf(entry) && !corrected(entry, 'hair'))
+const wikipediaJobless = wikidataEntries.filter(entry => !(entry.attributes.occupation as string[] | null)?.length && enwikiOf(entry) && !corrected(entry, 'occupation'))
+process.stdout.write('Wikipédia en dernier recours…')
+const wikipediaPages = await fullPages(WIKIPEDIA_API, [...new Set([...wikipediaHairless, ...wikipediaJobless].map(entry => enwikiOf(entry)!))])
+console.log()
+for (const entry of wikipediaHairless) {
+  const text = wikipediaPages[enwikiOf(entry)!]
+  const found = text ? textHair(text, DEVELOPMENT) : null
+  if (!found)
+    continue
+  textHairs.set(entry.id, found.colors)
+  hairExcerpts.push(`${entry.name} (${entry.attributes.franchise})${WIKIPEDIA} : ${found.colors.join(', ')} ← « ${found.excerpt} »`)
+}
+const wikipediaIntros = new Map(wikipediaJobless.flatMap(entry => {
+  const text = wikipediaPages[enwikiOf(entry)!]
+  return text ? [[entry.id, introText(text)] as const] : []
+}))
 const withTextHair = (entry: Entry): Entry => textHairs.has(entry.id) ? { ...entry, attributes: { ...entry.attributes, hair: textHairs.get(entry.id)! } } : entry
 
 // L'occupation que l'infobox ne donne pas : tirée de l'introduction de la page (« X is a Vietnam veteran »), à relire.
@@ -602,11 +628,20 @@ const withIntroOccupation = (entry: Entry): Entry => {
   const empty = !(entry.attributes.occupation as string[] | null)?.length
   if (!empty || 'occupation' in (manual.edit[entry.id] ?? {}))
     return entry
-  const roles = introRoles(introsById.get(entry.id) ?? '')
-  const occupation = [...new Set(roles.map(translateOccupation).filter((name): name is string => Boolean(name)))].slice(0, MAX_INTRO_OCCUPATIONS)
+  const fromIntro = (intro: string) => {
+    const roles = introRoles(intro)
+    return { roles, occupation: [...new Set(roles.map(translateOccupation).filter((name): name is string => Boolean(name)))].slice(0, MAX_INTRO_OCCUPATIONS) }
+  }
+  // L'introduction du wiki de la franchise, sinon celle de Wikipédia
+  let { roles, occupation } = fromIntro(introsById.get(entry.id) ?? '')
+  let source = ''
+  if (occupation.length === 0 && wikipediaIntros.has(entry.id)) {
+    ({ roles, occupation } = fromIntro(wikipediaIntros.get(entry.id)!))
+    source = WIKIPEDIA
+  }
   if (occupation.length === 0)
     return entry
-  occupationExcerpts.push(`${entry.name} (${entry.attributes.franchise}) : ${occupation.join(', ')} ← « ${roles.join(' | ')} »`)
+  occupationExcerpts.push(`${entry.name} (${entry.attributes.franchise})${source} : ${occupation.join(', ')} ← « ${roles.join(' | ')} »`)
   return { ...entry, attributes: { ...entry.attributes, occupation } }
 }
 
