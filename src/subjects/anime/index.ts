@@ -1,8 +1,8 @@
-import type { AttributeDef, AttributeValue, Subject } from '../../engine/types.js'
+import { type AttributeDef, type AttributeValue, NOT_APPLICABLE, type Subject } from '../../engine/types.js'
 import { loadEntries } from '../loadEntries.js'
 
 const withUnit = (unit: string) => (value: AttributeValue) =>
-  typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : '—'
+  typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : value === NOT_APPLICABLE ? value : '—'
 
 // Indices d'un personnage d'anime : partagés par l'Animedle et le Weebdle
 export const characterAttributes: readonly AttributeDef[] = [
@@ -29,5 +29,6 @@ export const anime: Subject = {
   name: 'Animedle',
   description: 'Trouve le personnage d\'anime mystère',
   attributes: animedleAttributes,
+  universeKey: 'anime',
   entries: loadEntries('anime.json', { subjectId: 'animedle', attributes: animedleAttributes }),
 }

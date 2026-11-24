@@ -1,0 +1,952 @@
+// Tables de traduction du Pixeldle : les noms bruts de Wikidata (« être humain de fiction », « Nintendo Entertainment
+// Analysis and Development », « jeu de plateforme en 3D ») ramenés à de courtes listes, pour que les indices se comparent.
+// Chaque fonction renvoie la valeur traduite, null si ce n'est pas une valeur à garder (on la retire), undefined si on
+// ne sait pas la traduire (gardée telle quelle et listée dans le récap : à ajouter ici).
+
+const key = (value: string) => value.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim()
+
+// Le 1er motif qui correspond. Les cas précis d'abord.
+const firstRule = (rules: [RegExp, string | null][], value: string) => rules.find(([pattern]) => pattern.test(value))?.[1]
+
+// --- Sexe ---
+
+// « Aucun » pour un robot, un objet ou une entité, « Autre » quand le jeu le laisse inconnu exprès (Frisk) ou que le
+// wiki dit « they », « Au choix » pour un avatar personnalisable.
+
+// Ce que wikidataGender (masculin, féminin...) ne reconnaît pas
+const GENDERS: Record<string, string | null> = {
+  'genre déterminé par le joueur': 'Au choix', 'femme trans': 'Femme', 'homme trans': 'Homme',
+  'agenre': 'Autre', 'intersexuation': 'Autre', 'non-binaire': 'Autre',
+  'sexe non divulgué dans œuvre': null, 'sexe inconnu': null, 'sexe ou genre non divulgué': null,
+  'intersex': 'Autre', 'non-binary': 'Autre', 'nonbinary': 'Autre', 'ambiguous': 'Autre', 'hermaphrodite': 'Autre',
+  // Sans sexe : robots, objets, entités
+  'genderless': 'Aucun', 'asexual': 'Aucun', 'asexué': 'Aucun', 'sans genre': 'Aucun', 'n/a': 'Aucun', 'unknown': null, 'varies': 'Au choix', 'variable': 'Au choix',
+  'yes': null,
+}
+
+// « Male (3) Female (4) », « Left 4 Dead, Male, Left 4 Dead 2, Male or Female » : plusieurs versions, on ne tranche pas
+const BOTH_SEXES = /\bmale\b.*\bfemale\b|\bfemale\b.*\bmale\b/
+
+export function translateGender(names: string[]): string | null | undefined {
+  const gender = (name: string) => key(name) in GENDERS ? GENDERS[key(name)] : BOTH_SEXES.test(key(name)) ? null : undefined
+  const found = names.map(gender).find(value => value !== undefined)
+  return found === undefined && names.length > 0 ? undefined : found ?? null
+}
+
+// --- Espèce ---
+
+// Champ multiple, jamais vide. « defaults » du manuel donne « Humain » aux franchises réalistes dont le wiki ne dit pas
+// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Au choix »
+// pour un avatar dont on choisit la race. Les D'ni de Myst le sont même hybrides (Gehn, Atrus).
+
+// Après avoir retiré « de fiction », « anthropomorphe »... : le nom de l'espèce, en anglais ou en français
+const SPECIES: Record<string, string | null> = {
+  // Humains, et ce qui n'est qu'une sorte d'humain
+  'être humain': 'Humain', 'humain': 'Humain', 'terran': 'Humain', 'homs': 'Humain', 'spartan': 'Humain', 'super soldat': 'Humain',
+  'sorcier ou sorcière': 'Humain', 'magicien': 'Humain', 'sang-pur': 'Humain', 'animagus': 'Humain', 'métamorphomage': 'Humain',
+  'siren': 'Humain', 'psyker': 'Humain', 'méta-humain': 'Méta-humain', 'mutant': 'Mutant', 'clone': 'Clone', 'nords': 'Nordique',
+  'humanoïde': 'Humanoïde', 'extraterrestre': 'Extraterrestre', 'extraterrestre humanoïde': 'Extraterrestre',
+  // Machines
+  'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Androïde', 'gynoïde': 'Androïde',
+  'intelligence artificielle': 'Robot', 'omnic': 'Omniaque', 'sentry': 'Robot',
+  // Surnaturel
+  'déité': 'Divinité', 'daedric prince': 'Daedra', 'higher being': 'Être supérieur', 'ange': 'Ange', 'démon': 'Démon',
+  'demon': 'Démon', 'half-demon': 'Demi-démon', 'yōkai': 'Yōkai', 'satori': 'Yōkai', 'kappa': 'Yōkai', 'komainu': 'Yōkai',
+  'vampire': 'Vampire', 'comte vampire': 'Vampire', 'dhampir': 'Dhampire', 'fantôme': 'Fantôme', 'revenant': 'Mort-vivant',
+  'undead': 'Mort-vivant', 'homunculus': 'Homoncule', 'fée': 'Fée', 'fairy': 'Fée', 'dragon': 'Dragon', 'monstres': 'Monstre',
+  // Fantasy
+  'elfe': 'Elfe', 'high elf': 'Elfe', 'blood elf': 'Elfe', 'elfe de la nuit': 'Elfe', 'drow': 'Elfe', 'avariel': 'Elfe',
+  'demi-elfe': 'Demi-elfe', 'half-elf': 'Demi-elfe', 'elfe de maison': 'Elfe de maison', 'orc': 'Orque', 'orsimer': 'Orque',
+  'dwarf': 'Nain', 'goblin': 'Gobelin', 'demi-géant': 'Demi-géant', 'dragonborn': 'Drakéide', 'tieffelin': 'Tieffelin',
+  'githyanki': 'Githyanki', 'witcher': 'Humain mutant',
+  // Les peuples d'une franchise : gardés, en français quand le jeu les traduit
+  'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Monstre',
+  'darkners': 'Monstre', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
+  'pale being': 'Être pâle', 'vessel': 'Réceptacle', 'weaver': 'Tisseuse', 'rabbid': 'Lapin crétin', 'salmonid': 'Salmonoïde',
+  'kong': 'Singe', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
+  // Animaux
+  'animal': 'Animal', 'mammifère': 'Animal', 'monkey': 'Singe', 'singe': 'Singe', 'gorille': 'Singe', 'chien': 'Chien',
+  'dog': 'Chien', 'renard': 'Renard', 'fox': 'Renard', 'loup': 'Loup', 'wolf': 'Loup', 'hedgehog': 'Hérisson', 'hérisson': 'Hérisson',
+  'echidna': 'Échidné', 'rabbit or hare': 'Lapin', 'lapin/lièvre': 'Lapin', 'chat': 'Chat', 'chat de fiction et autres félins': 'Chat',
+  'tigre': 'Tigre', 'lion': 'Lion', 'panther': 'Panthère', 'cheetah': 'Guépard', 'ours': 'Ours', 'ours blanc': 'Ours',
+  'polar bear': 'Ours', 'panda': 'Panda', 'giant panda': 'Panda', 'raton laveur': 'Raton laveur', 'raccoon': 'Raton laveur',
+  'écureuil': 'Écureuil', 'squirrel': 'Écureuil', 'hamster': 'Hamster', 'rodent': 'Rongeur', 'mole': 'Taupe', 'skunk': 'Moufette',
+  'camelid': 'Lama', 'cheval': 'Cheval', 'cochon': 'Cochon', 'rhinocéros': 'Rhinocéros', 'hippopotamus': 'Hippopotame',
+  'marsupial': 'Marsupial', 'bat': 'Chauve-souris', 'oiseau': 'Oiseau', 'parrot': 'Perroquet', 'seagull': 'Mouette',
+  'pélican': 'Pélican', 'hibou': 'Hibou', 'grenouille ou crapaud': 'Grenouille', 'amphibian': 'Grenouille', 'reptile': 'Reptile',
+  'lizard': 'Lézard', 'chameleon': 'Caméléon', 'crocodile or alligator': 'Crocodile', 'tortoise': 'Tortue', 'turtle': 'Tortue',
+  'dinosaure': 'Dinosaure', 'poisson': 'Poisson', 'shark': 'Requin', 'octopus': 'Pieuvre', 'jellyfish': 'Méduse',
+  'sea urchin': 'Oursin', 'crabe': 'Crabe', 'insecte': 'Insecte', 'insect': 'Insecte', 'araignée': 'Araignée',
+  'plante': 'Plante', 'plant species': 'Plante', 'flower': 'Plante', 'arbre': 'Plante', 'virus': 'Virus', 'parasite': 'Parasite',
+  'objet': 'Objet', 'manchot': 'Manchot', 'zooplankton': 'Plancton',
+  // En anglais, depuis les infobox des wikis
+  'human': 'Humain', 'humans': 'Humain', 'human being': 'Humain', 'humanoid': 'Humanoïde', 'hume': 'Humain', 'homo sapiens': 'Humain',
+  'android': 'Androïde', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
+  'alien': 'Extraterrestre', 'extraterrestrial': 'Extraterrestre', 'god': 'Divinité', 'goddess': 'Divinité', 'deity': 'Divinité',
+  'demigod': 'Demi-dieu', 'titan': 'Titan', 'angel': 'Ange', 'devil': 'Démon', 'elf': 'Elfe', 'elves': 'Elfe', 'half-elf': 'Demi-elfe',
+  'dwarves': 'Nain', 'orcs': 'Orque', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Géant', 'ogre': 'Ogre', 'tiefling': 'Tieffelin',
+  'ghost': 'Fantôme', 'spirit': 'Esprit', 'zombie': 'Zombie', 'skeleton': 'Squelette', 'mummy': 'Momie', 'werewolf': 'Loup-garou',
+  'witch': 'Humain', 'wizard': 'Humain', 'muggle': 'Humain', 'monster': 'Monstre', 'creature': null, 'beast': 'Bête',
+  'cat': 'Chat', 'feline': 'Chat', 'canine': 'Chien', 'bird': 'Oiseau', 'bear': 'Ours', 'rabbit': 'Lapin', 'mouse': 'Souris',
+  'rat': 'Rat', 'pig': 'Cochon', 'frog': 'Grenouille', 'toad': 'Grenouille', 'snake': 'Serpent', 'spider': 'Araignée', 'fish': 'Poisson',
+  'turtles': 'Tortue', 'koopa troopa': 'Koopa', 'ape': 'Singe', 'gorilla': 'Singe', 'chimpanzee': 'Singe', 'horse': 'Cheval',
+  'penguin': 'Manchot', 'owl': 'Hibou', 'duck': 'Canard', 'chicken': 'Poule', 'cow': 'Vache', 'goat': 'Chèvre', 'sheep': 'Mouton',
+  'deer': 'Cerf', 'lizardfolk': 'Lézard', 'plant': 'Plante', 'mushroom': 'Champignon', 'slime': 'Slime', 'golem': 'Golem',
+  'clone': 'Clone', 'mutant': 'Mutant', 'vampire': 'Vampire', 'dragon': 'Dragon', 'fairy': 'Fée', 'ghoul': 'Goule', 'undead': 'Mort-vivant',
+  'dinosaur': 'Dinosaure', 'dinosaurs': 'Dinosaure', 'hylian': 'Hylien', 'hylians': 'Hylien', 'demi-god': 'Demi-dieu', 'demigoddess': 'Demi-dieu',
+  'half-human': 'Demi-humain', 'demi-human': 'Demi-humain', 'faun': 'Faune', 'minotaur': 'Minotaure', 'kangaroo': 'Kangourou',
+  'maine coon cat': 'Chat', 'horseshoe crab': 'Limule', 'sea anemone': 'Anémone de mer', 'necromancer': 'Humain', 'fev mutant': 'Mutant',
+  'super mutant': 'Mutant', 'posthuman cybernetic fev mutant': 'Mutant', 'living jar': 'Objet', 'weapon': 'Objet',
+  'edenian': 'Édénien', 'saurian': 'Saurien', 'potoroo': 'Marsupial', 'bandicoot': 'Bandicoot',
+  'cryomancer': 'Humain', 'pyromancer': 'Humain', 'human (formerly)': 'Humain', 'synth': 'Synthétique', 'replicant': 'Réplicant',
+  'robotic': 'Robot', 'mech': 'Robot', 'cat-like': 'Chat', 'dog-like': 'Chien', 'squid': 'Calmar', 'kitsune': 'Yōkai', 'oni': 'Yōkai',
+  'tengu': 'Yōkai', 'youkai': 'Yōkai', 'yokai': 'Yōkai', 'magician': 'Humain', 'shapeshifter': 'Métamorphe', 'chimera': 'Chimère',
+  'mermaid': 'Sirène', 'merfolk': 'Sirène', 'lich': 'Liche', 'wraith': 'Spectre', 'specter': 'Spectre', 'spectre': 'Spectre',
+  'doll': 'Poupée', 'puppet': 'Poupée', 'animatronic': 'Animatronique', 'scarecrow': 'Épouvantail', 'snowman': 'Bonhomme de neige',
+  // Pas des espèces : on passe à la classe suivante
+  'deutéragoniste': null, 'mascotte': null, 'roi': null, 'idole virtuelle': null, 'transgender person': null, 'persona': null,
+  'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
+  'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'Robot',
+  // Valeurs des wikis gardées brutes (majuscule), traduites au cas par cas
+  'honey bear': 'Ours', 'fallen angel': 'Ange déchu', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
+  'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
+  'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
+  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Sélénite', 'elder god': 'Divinité',
+  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Extraterrestre',
+  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Slime', 'leftherian': 'Humain', 'memetic entity': 'Entité',
+  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Extraterrestre',
+  'nomaï': 'Nomai',
+  'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
+}
+
+// « hérisson de fiction », « anthropomorphic hedgehog », « fée dans une œuvre de fiction », « humain de Donjons et Dragons »
+const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans une œuvre de fiction|in a work of fiction|dans l'univers de harry potter|dans la littérature fantasy et le jeu de rôle|de donjons et dragons)$|^fictional\s+|^anthropomorphi(?:c|que)\s+|\s+anthropomorphiques?$|\s+anthropomorphes?$/g
+
+// Champ multiple : une espèce composée vaut ses deux parts (Talos, humain devenu dieu), une IA est un robot
+const SPECIES_PARTS: Record<string, string[]> = {
+  'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
+  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Ange déchu': ['Ange', 'Démon'], 'Humain mutant': ['Humain', 'Mutant'],
+  'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
+  'Hybride': ['Humain', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
+}
+
+// Les animaux gardent leur espèce, plus « Animal » : un renard et un singe se rejoignent
+const ANIMALS = new Set(['Singe', 'Chien', 'Grenouille', 'Chat', 'Hérisson', 'Insecte', 'Renard', 'Lapin', 'Ours', 'Loup', 'Oiseau',
+  'Raton laveur', 'Tortue', 'Poisson', 'Tigre', 'Chauve-souris', 'Cheval', 'Échidné', 'Morse', 'Cochon', 'Hibou', 'Taupe', 'Lama',
+  'Pieuvre', 'Marsupial', 'Panda', 'Lézard', 'Lion', 'Cerf', 'Rongeur', 'Rhinocéros', 'Écureuil', 'Manchot', 'Hamster', 'Panthère',
+  'Caméléon', 'Mouette', 'Moufette', 'Anémone de mer', 'Limule', 'Crabe', 'Méduse', 'Oursin', 'Kangourou', 'Bandicoot', 'Guépard',
+  'Pélican', 'Hippopotame', 'Araignée', 'Crocodile', 'Perroquet', 'Requin', 'Plancton', 'Poule', 'Lièvre', 'Loir', 'Hyène', 'Serpent',
+  'Lynx', 'Dinosaure', 'Souris', 'Rat', 'Canard', 'Vache', 'Chèvre', 'Mouton', 'Calmar', 'Reptile', 'Lizard Doggo'])
+
+// L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
+export function expandSpecies(value: unknown): string[] | null {
+  const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
+  if (list.length === 0)
+    return null
+  const parts = list.flatMap(name => SPECIES_PARTS[name] ?? [name])
+  return [...new Set(parts.some(name => ANIMALS.has(name)) ? [...parts, 'Animal'] : parts)]
+}
+
+// --- Cheveux ---
+
+// L'infobox, sinon le texte de la page entière (textHair : la section Appearance d'abord, « long blonde hair »), à relire
+// dans le récap. Un humain sans couleur trouvée reste vide : il a des cheveux, on ne sait juste pas leur couleur.
+
+// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Chauve », c'est pour les humains vraiment chauves)
+export const NO_HAIR = 'N/A' // = NOT_APPLICABLE du moteur
+const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
+  'Zerg', 'Slime', 'Golem', 'Squelette', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
+  'Salmonoïde', 'Omniaque', 'Pod', 'Charbon', 'Toad'])
+
+// Les cheveux finaux : ceux trouvés, sinon N/A pour un robot, un animal, une créature (pas s'il est aussi humain)
+export function hairOrNone(hair: unknown, species: unknown): unknown {
+  if (Array.isArray(hair) ? hair.length > 0 : hair)
+    return hair
+  const list = Array.isArray(species) ? species.map(String) : []
+  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
+}
+
+// --- Armes ---
+
+// L'arme du personnage (champ « weapon » des infobox) dit aussi comment il se bat : toutes les règles qui collent comptent
+// (une gunblade : Épéiste et Tireur). Les modèles d'armes à feu des jeux de tir (AK-47, MP5, M1911…) sont des fusils.
+const WEAPON_RULES: [RegExp, string][] = [
+  [/sniper|\bintervention\b|\br700\b|\bm21\b|m14 ebr|\brsass\b|\bosipr\b|longshot/, 'Tireur d\'élite'],
+  [/swords?\b|blades?\b|katana|rapier|\bsab(?:re|er)s?\b|cutlass|scimitar|claymore|zweih[äa]nder/, 'Épéiste'],
+  [/\bguns?\b|gunblade|pistol|revolver|rifle|shotgun|handgun|firearm|blaster|\bsmg\b|machine ?gun|minigun|chain ?gun|musket|carbine|repeater|magnum|\bak-?\d+|\bmp\d+k?\b|\bm\d{1,4}\b|\bp\d{2,3}\b|\bg\d{2}c?\b|\busp\b|glock|\buzi\b|desert eagle|\bspas|\bscar\b|\bacr\b|\bump\d*\b|enforcers?|\blancer\b|gnasher|hammerburst|boltok|mega buster|arm cannon/, 'Tireur'],
+  [/\bbows?\b|longbow|crossbow|\barrows?\b/, 'Archer'],
+  [/\bfists?\b|gauntlets?|knuckles\b|martial arts|bare hands/, 'Combattant'],
+  [/\bstaff\b|\bstaves\b|\bwands?\b|\bspells?\b|\btome\b|grimoire|\bcatalyst\b|\bmagic\b/, 'Magicien'],
+  [/\bspears?\b|\blances?\b|halberd|trident|polearm|naginata|glaive|\bpikes?\b/, 'Lancier'],
+  [/kunai|shuriken/, 'Ninja'],
+  [/microphone/, 'Musicien'],
+  [/scalpel/, 'Médecin'],
+]
+
+export function weaponOccupations(value: string): string[] {
+  const text = key(value)
+  const found = WEAPON_RULES.filter(([pattern]) => pattern.test(text)).map(([, occupation]) => occupation)
+  // Un sniper est déjà un tireur
+  return found.includes('Tireur d\'élite') ? found.filter(name => name !== 'Tireur') : found
+}
+
+// Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
+export const NO_OCCUPATION = 'Aucune'
+export const UNKNOWN_OCCUPATION = 'Inconnu'
+
+// Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
+const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Divinité', 'Démon', 'Ange', 'Infecté', 'Griffon', 'Champignon', 'Basilic'])
+
+export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
+  if (occupation && occupation.length > 0)
+    return occupation
+  const list = Array.isArray(species) ? species.map(String) : []
+  // Un avatar dont on choisit la race choisit aussi sa classe
+  if (list.includes('Au choix'))
+    return ['Au choix']
+  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Humain') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+}
+
+export function translateSpecies(label: string): string | null | undefined {
+  // « •Human » : sans la puce
+  let name = key(label).replace(/^[\s・*•·-]+/, '')
+  for (let previous = ''; previous !== name;) {
+    previous = name
+    name = name.replace(SPECIES_QUALIFIERS, '').trim()
+  }
+  if (name in SPECIES)
+    return SPECIES[name]
+  // Les peuples d'une franchise déjà bien écrits (Hylien, Koopa, Zerg, Asari) : gardés tels quels
+  return /^\p{Lu}/u.test(label) ? label : undefined
+}
+
+// --- Nationalité ---
+
+// Champ multiple (validé avec FX) : un max de lieux, de la ville au monde (« Pallet Town, Kanto », « Boston,
+// Massachusetts, United States »), 4 au plus, et TOUT EN ANGLAIS comme la majorité des wikis, pour que les
+// personnages se croisent. Sources : Wikidata (pays, lieu de naissance, résidence), puis les champs « pays » et « lieu »
+// du 1er wiki, le lieu d'une date de naissance, et en dernier recours le lieu où on croise le personnage (« location »).
+// « defaults » et « edit » du manuel ajoutent des lieux qui se croisent entre franchises (Japan, Earth, Hell,
+// Olympus…). Les franchises 100 % fictives restent vides exprès : un lieu par défaut y répéterait l'indice Franchise.
+
+// Les pays historiques ramenés au pays d'aujourd'hui, et les noms anglais des pays de fiction
+const NATIONALITIES: Record<string, string> = {
+  'république populaire de chine': 'China', 'empire russe': 'Russia', 'union soviétique': 'Soviet Union', 'royaume de grande-bretagne': 'United Kingdom',
+  'empire britannique': 'United Kingdom', "royaume d'angleterre": 'United Kingdom', 'royaume de france': 'France', 'nouvelle-france': 'France',
+  'royaume de hongrie': 'Hungary', 'principauté de valachie': 'Romania', 'principauté de transylvanie': 'Romania',
+  'royaume ptolémaïque': 'Egypt', 'empire achéménide': 'Persia', 'sparte': 'Greece', 'république florentine': 'Italy',
+  'royaume de norvège (872-1397)': 'Norway', 'troisième reich': 'Germany', 'lombax kingdom': 'Lombax Kingdom',
+  'metro kingdom': 'Metro Kingdom', 'mushroom kingdom': 'Mushroom Kingdom', 'écosse': 'United Kingdom', 'pays de galles': 'United Kingdom',
+  'angleterre': 'United Kingdom', 'irlande du nord': 'United Kingdom', 'royaume-uni de grande-bretagne et d\'irlande': 'United Kingdom',
+  // En anglais, depuis les infobox des wikis : le pays ou l'adjectif
+  'united states': 'United States', 'united states of america': 'United States', 'usa': 'United States', 'us': 'United States', 'america': 'United States',
+  'american': 'United States', 'japan': 'Japan', 'japanese': 'Japan', 'united kingdom': 'United Kingdom', 'uk': 'United Kingdom', 'england': 'United Kingdom',
+  'english': 'United Kingdom', 'british': 'United Kingdom', 'great britain': 'United Kingdom', 'britain': 'United Kingdom', 'scotland': 'United Kingdom',
+  'scottish': 'United Kingdom', 'wales': 'United Kingdom', 'welsh': 'United Kingdom', 'french': 'France', 'germany': 'Germany', 'german': 'Germany',
+  'russia': 'Russia', 'russian': 'Russia', 'soviet union': 'Soviet Union', 'ussr': 'Soviet Union', 'china': 'China', 'chinese': 'China', 'italy': 'Italy',
+  'italian': 'Italy', 'spain': 'Spain', 'spanish': 'Spain', 'mexico': 'Mexico', 'mexican': 'Mexico', 'brazil': 'Brazil',
+  'brazilian': 'Brazil', 'canadian': 'Canada', 'australia': 'Australia', 'australian': 'Australia', 'south korea': 'South Korea',
+  'korea': 'South Korea', 'korean': 'South Korea', 'south korean': 'South Korea', 'india': 'India', 'indian': 'India', 'ireland': 'Ireland',
+  'irish': 'Ireland', 'sweden': 'Sweden', 'swedish': 'Sweden', 'norway': 'Norway', 'norwegian': 'Norway', 'egypt': 'Egypt', 'egyptian': 'Egypt',
+  'greece': 'Greece', 'greek': 'Greece', 'poland': 'Poland', 'polish': 'Poland', 'netherlands': 'Netherlands', 'dutch': 'Netherlands',
+  'thailand': 'Thailand', 'thai': 'Thailand', 'turkey': 'Turkey', 'turkish': 'Turkey', 'argentina': 'Argentina', 'cuba': 'Cuba',
+  'cuban': 'Cuba', 'nigeria': 'Nigeria', 'kenya': 'Kenya', 'south africa': 'South Africa', 'israel': 'Israel', 'iran': 'Iran',
+  'iraq': 'Iraq', 'afghanistan': 'Afghanistan', 'pakistan': 'Pakistan', 'vietnam': 'Vietnam', 'philippines': 'Philippines',
+  'czech republic': 'Czech Republic', 'bohemia': 'Czech Republic', 'hungary': 'Hungary', 'romania': 'Romania', 'switzerland': 'Switzerland',
+  'austria': 'Austria', 'portugal': 'Portugal', 'finland': 'Finland', 'denmark': 'Denmark', 'belgium': 'Belgium', 'colombia': 'Colombia',
+  'peru': 'Peru', 'chile': 'Chile', 'jamaica': 'Jamaica', 'mongolia': 'Mongolia', 'saudi arabia': 'Saudi Arabia',
+  'swiss': 'Switzerland', 'austrian': 'Austria', 'portuguese': 'Portugal', 'finnish': 'Finland', 'appears finnish': 'Finland',
+  'danish': 'Denmark', 'belgian': 'Belgium', 'colombian': 'Colombia', 'peruvian': 'Peru', 'chilean': 'Chile',
+  'jamaican': 'Jamaica', 'mongolian': 'Mongolia', 'saudi': 'Saudi Arabia', 'nigerian': 'Nigeria', 'kenyan': 'Kenya',
+  'south african': 'South Africa', 'israeli': 'Israel', 'iranian': 'Iran', 'persian': 'Persia', 'persia': 'Persia',
+  'iraqi': 'Iraq', 'afghan': 'Afghanistan', 'pakistani': 'Pakistan', 'vietnamese': 'Vietnam', 'filipino': 'Philippines',
+  'czech': 'Czech Republic', 'bohemian': 'Czech Republic', 'hungarian': 'Hungary', 'romanian': 'Romania', 'transylvania': 'Romania',
+  'serbia': 'Serbia', 'serbian': 'Serbia', 'croatia': 'Croatia', 'croatian': 'Croatia', 'ukraine': 'Ukraine', 'ukrainian': 'Ukraine',
+  'soviet': 'Soviet Union', 'argentinian': 'Argentina', 'argentine': 'Argentina', 'venezuela': 'Venezuela', 'venezuelan': 'Venezuela',
+  'haiti': 'Haiti', 'haitian': 'Haiti', 'dominican republic': 'Dominican Republic', 'dominican': 'Dominican Republic',
+  'ghana': 'Ghana', 'ghanaian': 'Ghana', 'monaco': 'Monaco', 'monegasque': 'Monaco', 'new zealand': 'New Zealand',
+  'new zealander': 'New Zealand', 'canada': 'Canada', 'france': 'France', 'scottish highlands': 'United Kingdom',
+  'medieval germany': 'Germany', 'russian-american': 'Russia', 'icelandic': 'Iceland', 'iceland': 'Iceland',
+  'singapore': 'Singapore', 'indonesia': 'Indonesia', 'indonesian': 'Indonesia', 'malaysia': 'Malaysia', 'taiwan': 'Taiwan',
+  'taiwanese': 'Taiwan', 'hong kong': 'China', 'mexican-american': 'United States', 'japanese-american': 'United States',
+  'african-american': 'United States', 'native american': 'United States', 'lebanese': 'Lebanon', 'syrian': 'Syria', 'turkish cypriot': 'Turkey',
+  'norse': 'Norway', 'spartan': 'Greece', 'roman': 'Italy', 'ancient egypt': 'Egypt', 'ancient greece': 'Greece',
+  // Les planètes de notre système, en français
+  'earth': 'Earth', 'earthling': 'Earth', 'terran': 'Earth', 'mars': 'Mars', 'martian': 'Mars', 'luna': 'Moon', 'moon': 'Moon',
+  'the moon': 'Moon',
+}
+
+// Les villes, régions et états réels, ramenés à leur pays. Les lieux de fiction (Night City, Hyrule) n'y sont pas :
+// ils sont gardés tels quels.
+const CITIES: Record<string, string> = {
+  // États-Unis
+  'new york': 'United States', 'new york city': 'United States', 'nyc': 'United States', 'manhattan': 'United States', 'brooklyn': 'United States',
+  'the bronx': 'United States', 'bronx': 'United States', 'queens': 'United States', 'harlem': 'United States', 'los angeles': 'United States',
+  'san francisco': 'United States', 'san diego': 'United States', 'chicago': 'United States', 'boston': 'United States', 'seattle': 'United States',
+  'miami': 'United States', 'detroit': 'United States', 'las vegas': 'United States', 'new orleans': 'United States', 'houston': 'United States',
+  'dallas': 'United States', 'austin': 'United States', 'atlanta': 'United States', 'philadelphia': 'United States', 'washington': 'United States',
+  'washington, d.c.': 'United States', 'washington d.c.': 'United States', 'denver': 'United States', 'phoenix': 'United States',
+  'portland': 'United States', 'baltimore': 'United States', 'pittsburgh': 'United States', 'cleveland': 'United States', 'memphis': 'United States',
+  'nashville': 'United States', 'honolulu': 'United States', 'anchorage': 'United States', 'salt lake city': 'United States', 'hollywood': 'United States',
+  'jackson': 'United States', 'kansas city': 'United States', 'st. louis': 'United States', 'minneapolis': 'United States', 'milwaukee': 'United States',
+  'california': 'United States', 'texas': 'United States', 'florida': 'United States', 'alaska': 'United States', 'hawaii': 'United States',
+  'nevada': 'United States', 'arizona': 'United States', 'colorado': 'United States', 'oregon': 'United States', 'montana': 'United States',
+  'wyoming': 'United States', 'utah': 'United States', 'new mexico': 'United States', 'oklahoma': 'United States', 'kansas': 'United States',
+  'nebraska': 'United States', 'iowa': 'United States', 'missouri': 'United States', 'illinois': 'United States', 'ohio': 'United States',
+  'michigan': 'United States', 'wisconsin': 'United States', 'minnesota': 'United States', 'georgia': 'United States', 'louisiana': 'United States',
+  'mississippi': 'United States', 'alabama': 'United States', 'tennessee': 'United States', 'kentucky': 'United States', 'virginia': 'United States',
+  'west virginia': 'United States', 'pennsylvania': 'United States', 'new jersey': 'United States', 'massachusetts': 'United States',
+  'maine': 'United States', 'vermont': 'United States', 'connecticut': 'United States', 'maryland': 'United States', 'carolina': 'United States',
+  'north carolina': 'United States', 'south carolina': 'United States', 'indiana': 'United States', 'idaho': 'United States',
+  'appalachia': 'United States', 'mojave desert': 'United States', 'mojave wasteland': 'United States', 'capital wasteland': 'United States',
+  'commonwealth': 'United States', 'new vegas': 'United States', 'midwest': 'United States', 'bee cave': 'United States', 'college station': 'United States',
+  'cheyenne': 'United States', 'topeka': 'United States', 'savannah': 'United States', 'wa': 'United States',
+  // Royaume-Uni, Irlande
+  'london': 'United Kingdom', 'manchester': 'United Kingdom', 'liverpool': 'United Kingdom', 'birmingham': 'United Kingdom', 'oxford': 'United Kingdom',
+  'cambridge': 'United Kingdom', 'bristol': 'United Kingdom', 'leeds': 'United Kingdom', 'sheffield': 'United Kingdom', 'edinburgh': 'United Kingdom',
+  'glasgow': 'United Kingdom', 'cardiff': 'United Kingdom', 'belfast': 'United Kingdom', 'yorkshire': 'United Kingdom', 'cornwall': 'United Kingdom',
+  'kent': 'United Kingdom', 'surrey': 'United Kingdom', 'devon': 'United Kingdom', 'whitechapel': 'United Kingdom', 'hogsmeade': 'United Kingdom',
+  'godric\'s hollow': 'United Kingdom', 'little whinging': 'United Kingdom', 'dublin': 'Ireland',
+  // Europe
+  'paris': 'France', 'marseille': 'France', 'lyon': 'France', 'bordeaux': 'France', 'normandy': 'France', 'brittany': 'France',
+  'berlin': 'Germany', 'munich': 'Germany', 'hamburg': 'Germany', 'hanover': 'Germany', 'frankfurt': 'Germany',
+  'cologne': 'Germany', 'bavaria': 'Germany', 'rome': 'Italy', 'milan': 'Italy', 'venice': 'Italy', 'florence': 'Italy',
+  'naples': 'Italy', 'sicily': 'Italy', 'tuscany': 'Italy', 'madrid': 'Spain', 'barcelona': 'Spain', 'seville': 'Spain',
+  'lisbon': 'Portugal', 'amsterdam': 'Netherlands', 'brussels': 'Belgium', 'vienna': 'Austria', 'zurich': 'Switzerland', 'geneva': 'Switzerland',
+  'prague': 'Czech Republic', 'kutná hora': 'Czech Republic', 'skalitz': 'Czech Republic', 'rattay': 'Czech Republic', 'suchdol': 'Czech Republic',
+  'budapest': 'Hungary', 'warsaw': 'Poland', 'krakow': 'Poland', 'bucharest': 'Romania', 'athens': 'Greece', 'sparta': 'Greece',
+  'stockholm': 'Sweden', 'oslo': 'Norway', 'copenhagen': 'Denmark', 'helsinki': 'Finland', 'reykjavik': 'Iceland',
+  'moscow': 'Russia', 'saint petersburg': 'Russia', 'st. petersburg': 'Russia', 'siberia': 'Russia', 'kyiv': 'Ukraine', 'kiev': 'Ukraine',
+  'chernobyl': 'Ukraine', 'pripyat': 'Ukraine', 'sumy oblast': 'Ukraine', 'yabluchne': 'Ukraine',
+  'dzhugdzhur': 'Russia', 'east siberian mountains': 'Russia', 'ullapool': 'United Kingdom', 'belgrade': 'Serbia', 'istanbul': 'Turkey', 'constantinople': 'Turkey',
+  // Asie
+  'tokyo': 'Japan', 'shibuya': 'Japan', 'shinjuku': 'Japan', 'kamurocho': 'Japan', 'kamurochō': 'Japan', 'sotenbori': 'Japan',
+  'kyoto': 'Japan', 'osaka': 'Japan', 'yokohama': 'Japan', 'kobe': 'Japan', 'nagoya': 'Japan', 'hiroshima': 'Japan',
+  'okinawa': 'Japan', 'hokkaido': 'Japan', 'sapporo': 'Japan', 'fukuoka': 'Japan', 'kanagawa': 'Japan', 'kanagawa prefecture': 'Japan', 'inaba': 'Japan',
+  'edo': 'Japan', 'tsushima': 'Japan', 'beijing': 'China', 'peking': 'China', 'shanghai': 'China', 'macau': 'China',
+  'seoul': 'South Korea', 'busan': 'South Korea', 'bangkok': 'Thailand', 'lampang': 'Thailand', 'mumbai': 'India',
+  'delhi': 'India', 'new delhi': 'India', 'calcutta': 'India', 'kolkata': 'India', 'manila': 'Philippines', 'masbate': 'Philippines', 'hanoi': 'Vietnam',
+  'saigon': 'Vietnam', 'singapore': 'Singapore', 'jakarta': 'Indonesia', 'tehran': 'Iran', 'baghdad': 'Iraq', 'kabul': 'Afghanistan',
+  'jerusalem': 'Israel', 'tel aviv': 'Israel', 'dubai': 'United Arab Emirates', 'riyadh': 'Saudi Arabia', 'ulaanbaatar': 'Mongolia',
+  // Amériques, Afrique, Océanie
+  'toronto': 'Canada', 'montreal': 'Canada', 'montréal': 'Canada', 'vancouver': 'Canada', 'quebec': 'Canada', 'québec': 'Canada',
+  'ontario': 'Canada', 'mexico city': 'Mexico', 'havana': 'Cuba', 'santo domingo': 'Dominican Republic', 'kingston': 'Jamaica',
+  'rio de janeiro': 'Brazil', 'são paulo': 'Brazil', 'sao paulo': 'Brazil', 'buenos aires': 'Argentina', 'bogotá': 'Colombia',
+  'bogota': 'Colombia', 'lima': 'Peru', 'caracas': 'Venezuela', 'cairo': 'Egypt', 'alexandria': 'Egypt', 'lagos': 'Nigeria',
+  'nairobi': 'Kenya', 'johannesburg': 'South Africa', 'cape town': 'South Africa', 'accra': 'Ghana', 'sydney': 'Australia',
+  'melbourne': 'Australia', 'brisbane': 'Australia', 'perth': 'Australia', 'auckland': 'New Zealand',
+}
+
+// Le pays d'un lieu réel (« United States », « London », « Japanese »), null si on ne le connaît pas
+export function placeCountry(label: string): string | null {
+  const name = key(label).replace(/^the\s+/, '')
+  return NATIONALITIES[key(label)] ?? NATIONALITIES[name] ?? CITIES[key(label)] ?? CITIES[name] ?? null
+}
+
+export function translateNationality(label: string): string {
+  const value = NATIONALITIES[key(label)] ?? label
+  return value[0]!.toUpperCase() + value.slice(1)
+}
+
+// Les libellés français de Wikidata (les pays, et les lieux de fiction qu'il traduit) : tous les lieux sont en anglais,
+// comme ceux des wikis, pour que les personnages se croisent
+const FRENCH_PLACES: Record<string, string> = {
+  'afrique du sud': 'South Africa', 'allemagne': 'Germany', 'arabie saoudite': 'Saudi Arabia', 'argentine': 'Argentina',
+  'australie': 'Australia', 'autriche': 'Austria', 'belgique': 'Belgium', 'biélorussie': 'Belarus', 'brésil': 'Brazil',
+  'chili': 'Chile', 'chine': 'China', 'colombie': 'Colombia', 'corée du sud': 'South Korea', 'croatie': 'Croatia',
+  'danemark': 'Denmark', 'empire byzantin': 'Byzantine Empire', 'espagne': 'Spain', 'finlande': 'Finland', 'grèce': 'Greece',
+  'groenland': 'Greenland', 'haïti': 'Haiti', 'hongrie': 'Hungary', 'inde': 'India', 'indonésie': 'Indonesia', 'irak': 'Iraq',
+  'irlande': 'Ireland', 'islande': 'Iceland', 'israël': 'Israel', 'italie': 'Italy', 'jamaïque': 'Jamaica', 'japon': 'Japan',
+  'liban': 'Lebanon', 'lune': 'Moon', 'malaisie': 'Malaysia', 'mexique': 'Mexico', 'mongolie': 'Mongolia', 'norvège': 'Norway',
+  'nouvelle-zélande': 'New Zealand', 'pays-bas': 'Netherlands', 'perse': 'Persia', 'pologne': 'Poland', 'polynésie': 'Polynesia',
+  'pérou': 'Peru', 'roumanie': 'Romania', 'royaume champignon': 'Mushroom Kingdom', 'royaume métro': 'Metro Kingdom',
+  'royaume lombax': 'Lombax Kingdom', 'royaume-uni': 'United Kingdom', 'russie': 'Russia',
+  'république dominicaine': 'Dominican Republic', 'serbie': 'Serbia', 'singapour': 'Singapore', 'suisse': 'Switzerland',
+  'suède': 'Sweden', 'syrie': 'Syria', 'taïwan': 'Taiwan', 'tchéquie': 'Czech Republic', 'terre': 'Earth',
+  'thaïlande': 'Thailand', 'turquie': 'Turkey', 'urss': 'Soviet Union', 'viêt nam': 'Vietnam', 'yougoslavie': 'Yugoslavia',
+  'égypte': 'Egypt', 'émirats arabes unis': 'United Arab Emirates', 'états-unis': 'United States',
+  // Lieux de fiction
+  'témérie': 'Temeria', 'rédanie': 'Redania', 'l\'outremonde': 'Underground', 'cité 17': 'City 17', 'néthéril': 'Netheril',
+  'rashéménie': 'Rashemen',
+}
+
+// Les pays d'histoire et les écritures des infobox qui manquent à NATIONALITIES
+const HISTORIC_COUNTRIES: Record<string, string> = {
+  'russian empire': 'Russia', 'people\'s republic of china': 'China', 'ming empire': 'China', 'ukrainian soviet socialist republic': 'Ukraine',
+  'belorussian ssr': 'Belarus', 'soviet russian': 'Soviet Union', 'royaume des pays-bas': 'Netherlands', 'liberia': 'Liberia', 'liberian': 'Liberia',
+  'république fédérative socialiste de yougoslavie': 'Yugoslavia', 'byzantine': 'Byzantine Empire',
+  'u.s': 'United States', 'u.s.a': 'United States', 'englander': 'United Kingdom', 'greenlander': 'Greenland', 'prussian': 'Germany', 'imperial german': 'Germany',
+  'rhenish': 'Germany', 'british south african': 'South Africa', 'minoan': 'Greece', 'bc': 'Canada', 'polynesian': 'Polynesia',
+}
+
+// Les écritures d'une même ville réelle, ramenées à une seule pour que les personnages se croisent
+const CITY_NAMES: Record<string, string> = {
+  'nyc': 'New York', 'wa': 'Washington', 'new york city': 'New York', 'washington, d.c.': 'Washington', 'washington d.c.': 'Washington',
+  'kamurochō': 'Kamurocho', 'peking': 'Beijing', 'kiev': 'Kyiv', 'st. petersburg': 'Saint Petersburg', 'montréal': 'Montreal',
+  'québec': 'Quebec', 'são paulo': 'Sao Paulo', 'bogotá': 'Bogota', 'the bronx': 'Bronx',
+}
+
+// Les autres écritures d'un lieu de fiction (gentilé, nom long) ramenées à une seule, pour croiser avec les personnages
+// qui donnent le lieu
+const PLACE_NAMES: Record<string, string> = {
+  'mount olympus': 'Olympus', 'k. rool\'s mobile island fortress': 'Mobile Island Fortress', 'castle of talmberg': 'Talmberg',
+  'mare erythraeum': 'Mars', 'west country england': 'West Country', 'inkopolis square & octo canyon': 'Inkopolis Square',
+  'eternal holy city okhema': 'Okhema', 'hanged man': 'The Hanged Man', 'galleria': 'Inkopolis Galleria', 'pagos': 'Págos',
+  // Les gentilés
+  'deponian': 'Deponia', 'elysian': 'Elysium', 'adrestian': 'Adrestian Empire', 'plegian': 'Plegia', 'columbian': 'Columbia',
+  'vigoorian': 'Holy Vigoor Empire', 'numbanian': 'Numbani', 'rook islander': 'Rook Islands',
+}
+
+// Ce que les wikis rangent dans les champs « pays » ou « lieu » sans que ce soit un lieu : entreprises, jeux, groupes
+const NOT_PLACES = new Set([
+  'cyberlife', 'dr1', 'dr2', 'the world ends with you', 'celts', 'inc.', 'inc', 'possibly', 'ordinary', 'future', 'd.c',
+  // Des jeux, des époques et des bouts de phrase pris pour des lieux par les champs « location »
+  'mega man', 'mega man powered up', 'metroid', 'kraid', 'wasteland 2', 'wasteland 3', 'room_mysteryman', 'middle ages', 'mobile',
+  'beyond time', 'canada–united states border',
+])
+// Pas un lieu : un âge, une mythologie, un endroit sans nom (« His keep », « Any place related to the Kremling Krew »),
+// une lettre seule. Ni le logement d'un personnage, qui ne se croise avec personne (« 1276 Fig Leaf Lane », « Jackie's
+// Garage », « Delamain Corp HQ ») : les champs « residence » en sont pleins.
+const NOT_PLACE = /years old|mythology|^(?:his|her|their|my|any|unknown|various|several)\b|^(?:hideout|safehouse|ranch|backyard|home|house|castle|village)$|^[^\p{L}]*$|^\p{L}$|^\d|\b(?:apartments?|house|home|garage|office|hq|mansion|hovel|hideout|lab|cabin|club|restaurante?|saloon|facility|warship|corp|inc|clinic|chamber|control room|alcove|courtyard|camp|campsites?|laboratory|capsule|manor|hall|prison|dam|farmstead|homestead|department|plant|theat(?:er|re)|warehouse|storage|bunker|level|interior|car|inn|buffet|cure|mare)$|\bstage\b|\bcampsites?\b|\sbeach$|\bgas station$|^(?:in|on|at|buried|spirit|reborn|later|see|underneath|room|residence of|apartment of)\b|\b(?:during|childhood)\b|^(?:peripatetic|everywhen|deep in the wilds|l\d+)$/iu
+
+// « Likely Japan », « Created on Zebes », « Town of Onett », « Country of Eagleland » : le lieu seul
+const PLACE_PREFIX = /^(?:(?:likely|possibly|probably|presumably|formerly|originally|created (?:on|in)|raised (?:on|in)|born (?:on|in))\s+|(?:the\s+)?(?:island country|country|town|region|province) of\s+)/i
+
+// Les lieux qu'on tire d'un nom, pour donner un max d'indices : un pays en français (« American » → États-Unis), une
+// ville ou une région réelle avec son pays (Seattle → Seattle, États-Unis), le lieu d'un gentilé (Deponian → Deponia),
+// un lieu de fiction tel quel. [] : pas un lieu.
+export function translatePlace(label: string): string[] {
+  // Les caractères invisibles des drapeaux emoji (« 󠁧󠁢󠁳 Scottish »)
+  const clean = label.replace(/[\u{E0000}-\u{E007F}\p{Extended_Pictographic}]/gu, '').trim().replace(PLACE_PREFIX, '').replace(/["?]/g, '').replace(/[.\s]+$/, '').trim()
+  const name = key(clean).replace(/^the\s+/, '')
+  if (NOT_PLACES.has(name) || NOT_PLACES.has(key(clean)) || NOT_PLACE.test(name))
+    return []
+  const country = NATIONALITIES[key(clean)] ?? NATIONALITIES[name] ?? HISTORIC_COUNTRIES[name] ?? FRENCH_PLACES[key(clean)]
+  if (country)
+    return [country]
+  const cityName = CITY_NAMES[key(clean)] ?? CITY_NAMES[name] ?? translateNationality(clean)
+  const city = CITIES[key(clean)] ?? CITIES[name] ?? CITIES[key(cityName)]
+  if (city)
+    return [cityName, city]
+  // « Japanese-Portuguese » : les deux pays
+  const both = name.split('-').map(part => NATIONALITIES[part])
+  if (both.length === 2 && both.every(Boolean))
+    return both as string[]
+  return [PLACE_NAMES[name] ?? translateNationality(clean)]
+}
+
+// --- Monde ---
+
+// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, « Inconnu »
+// pour un personnage d'un autre monde, vide (le « ? ») quand on ne sait pas, à corriger à la main. « Monde réel » et pas
+// « Earth » : la science-fiction du système solaire (Mars, la Lune) est aussi notre monde. Plus loin (une planète d'une
+// autre étoile), ce n'est plus le monde réel. « Monde réel » s'ajoute aussi à tout personnage placé dans un lieu réel,
+// pour qu'il croise ceux qui n'ont que lui (United States face à Monde réel : partiel, pas faux). Les franchises qui se
+// passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES).
+// Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
+export const REAL_WORLD = 'Monde réel'
+export const OTHER_WORLD = 'Inconnu'
+export const SPACE = 'Lost in the Galaxy'
+export type World = 'real' | 'other'
+
+// Les pays d'aujourd'hui (noms anglais d'Intl), ceux d'histoire, et notre système solaire
+const REAL_PLACES = new Set([
+  ...(() => {
+    const names = new Intl.DisplayNames('en', { type: 'region' })
+    const letters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+    return letters.flatMap(a => letters.map(b => names.of(a + b))).filter((name): name is string => Boolean(name) && !/^[A-Z]{2}$/.test(name!))
+  })(),
+  'Czech Republic', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
+  'Kingdom of England', 'Kingdom of France', 'Kingdom of Great Britain', 'Ptolemaic Kingdom', 'Russian Soviet Federative Socialist Republic',
+  'Polynesia', 'Earth', 'Moon', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Titan', 'Europa', 'Ganymede', 'Callisto', 'Io',
+  'Phobos', 'Deimos', 'Pluto', 'Enceladus',
+])
+
+// Un lieu de notre monde : un pays, un astre du système solaire, ou une ville réelle connue (London → United Kingdom)
+export function isRealPlace(place: string): boolean {
+  const country = placeCountry(place)
+  return REAL_PLACES.has(place) || (country !== null && REAL_PLACES.has(country))
+}
+
+// Les espèces de notre monde : dans une franchise du monde réel, seules elles sont « Monde réel ». Les autres (dieux,
+// démons, extraterrestres, dont les espèces propres à une franchise : Sangheili, Asari…) sont « Inconnu ». Une liste
+// des espèces d'ailleurs raterait ces dernières. Espèce inconnue : comme un humain.
+const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', 'Au choix'])
+
+// Les personnages placés dont au moins cette part est dans le monde réel : franchise du monde réel
+const REAL_SHARE = 0.6
+// Une franchise dont aucun personnage placé n'est dans le monde réel, avec au moins ce nombre de placés : un autre monde
+const MIN_PLACED_OTHER = 3
+
+// Le monde d'une franchise d'après les lieux de ses personnages (vides compris), null quand c'est mêlé ou trop peu
+export function franchiseWorld(places: (string[] | null)[]): World | null {
+  const placed = places.filter(list => list && list.length > 0) as string[][]
+  if (placed.length === 0)
+    return null
+  const real = placed.filter(list => list.some(isRealPlace)).length
+  if (real / placed.length >= REAL_SHARE)
+    return 'real'
+  return real === 0 && placed.length >= MIN_PLACED_OTHER ? 'other' : null
+}
+
+// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, le monde
+// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Lost in the Galaxy en plus dans une
+// franchise de l'espace. null si on ne sait rien.
+export function withWorld(places: string[] | null, species: unknown, world: World | null, space = false): string[] | null {
+  const spaced = (list: string[]) => space && !list.includes(SPACE) ? [...list, SPACE] : list
+  if (places && places.length > 0)
+    return spaced(places.some(isRealPlace) && !places.includes(REAL_WORLD) ? [...places, REAL_WORLD] : places)
+  const list = Array.isArray(species) ? species.map(String) : []
+  const ours = list.length === 0 || list.some(name => OUR_WORLD_SPECIES.has(name))
+  const found = spaced(world ? [world === 'real' && ours ? REAL_WORLD : OTHER_WORLD] : [])
+  return found.length > 0 ? found : null
+}
+
+// Le monde des franchises que les lieux des personnages ne tranchent pas (personne de placé, ou mêlé), et les
+// corrections du calcul. null : on ne sait pas, les personnages sans lieu restent vides. La science-fiction avec des
+// humains venus de la Terre est le monde réel tant qu'elle reste dans le système solaire (Prey, Doom).
+export const FRANCHISE_WORLDS: Record<string, World | null> = {
+  // Monde réel
+  'Fallout': 'real', 'Mega Man': 'real', 'Cyberpunk 2077': 'real', 'Horizon': 'real', 'Dying Light': 'real', 'Doom': 'real',
+  'Syberia': 'real', 'The Stanley Parable': 'real', 'Sons Of The Forest': 'real', 'Death Stranding': 'real', 'Prey': 'real',
+  'The Talos Principle': 'real', 'Wasteland': 'real', 'Twelve Minutes': 'real', 'Hunt: Showdown': 'real', 'Rust': 'real',
+  // Un autre monde
+  'Super Mario': 'other', 'Kingdom Hearts': 'other', 'Kirby': 'other', 'Animal Crossing': 'other', 'Ratchet & Clank': 'other',
+  'Gears of War': 'other', 'Rayman': 'other', 'Dragon Quest': 'other', 'Xenoblade Chronicles': 'other', 'Zenless Zone Zero': 'other',
+  'Minecraft': 'other', 'Okami': 'other', 'Touhou Project': 'other', 'Stardew Valley': 'other', 'Bloons Tower Defense': 'other',
+  'Spore': 'other', 'Warhammer': 'other', 'Palworld': 'other', 'No Man\'s Sky': 'other', 'Solasta': 'other', 'Myst': 'other',
+  'Forgotton Anne': 'other', 'The World Next Door': 'other', 'Deep Rock Galactic': 'other', 'Chants of Sennaar': 'other',
+  'We Were Here': 'other', 'My Time at Portia / Sandrock': 'other', 'Mirror\'s Edge': 'other', 'Dredge': 'other',
+  'Blue Prince': 'other', 'Among Us': 'other',
+  // La science-fiction hors du système solaire, même avec des humains venus de la Terre
+  'Halo': 'other', 'Dead Space': 'other', 'Satisfactory': 'other', 'Icarus': 'other', 'The Riftbreaker': 'other',
+  'The Alters': 'other', 'Breathedge': 'other', 'Genesis Alpha One': 'other', 'Subnautica': 'other',
+  // Le calcul dit « autre monde », mais c'est (peut-être) le nôtre : on ne sait pas
+  'Devil May Cry': null, 'Yo-kai Watch': null,
+}
+
+// Les franchises qui se passent dans l'espace (vaisseaux, autres planètes) : Lost in the Galaxy pour tous
+export const SPACE_FRANCHISES = new Set([
+  'Mass Effect', 'Halo', 'Dead Space', 'Star Fox', 'Metroid', 'Ratchet & Clank', 'StarCraft', 'Borderlands', 'Outer Wilds',
+  'No Man\'s Sky', 'Rebel Galaxy', 'Among Us', 'Subnautica', 'Satisfactory', 'Icarus', 'The Riftbreaker', 'The Alters',
+  'Breathedge', 'Genesis Alpha One', 'Deep Rock Galactic', 'Titanfall / Apex Legends', 'Honkai: Star Rail', 'Pikmin', 'Prey',
+])
+
+// --- Occupation ---
+
+// Les sources, dans l'ordre (fetchPixeldle.ts, pixeldleEnrich.ts) : Wikidata, le champ occupation de l'infobox, sinon
+// son grade ou sa classe (« Commander », « Mage »), une créature hostile (« behavior: Hostile ») en Prédateur, puis
+// l'introduction de la page (« X is a Vietnam veteran » → Soldat, introRoles), « defaults » du manuel (le métier commun
+// d'une franchise : Valorant, Soulcalibur…). Les armes de l'infobox s'y ajoutent (weaponOccupations). Sans métier :
+// Compagnon ou Assistant si l'introduction le dit (introFunction), Destructeur ou Protecteur pour un dieu, un démon ou un
+// ange (introAlignment), puis Aucune, Au choix ou Inconnu (occupationOrNone). Les quasi-synonymes sont regroupés à la
+// fin (mergeOccupations). Pas d'occupation pour les rôles d'histoire (antagoniste, compagnon possible) ni les liens de
+// famille.
+
+// Déjà passée en français et au masculin par wikidataOccupation (« Pratiquant d'arts martiaux »). null : retirée.
+const OCCUPATION_RULES: [RegExp, string | null][] = [
+  // Les cas qui contiennent un mot d'une autre famille
+  [/military impostor/, null],
+  [/patron de bar/, 'Serveur'],
+  [/agent de sécurité|garde du corps|garde royale|videur|tower guard|sentinel|gatekeeper|^gardien$|directeur de prison/, 'Garde'],
+  [/agent immobilier/, 'Commerçant'],
+  [/directeur d'école|professeur|enseignant|instituteur|mentor|instructeur|chargé de cours|doyen|entraîneur/, 'Professeur'],
+  [/étudiant en médecine|médecin|chirurgien|infirmi|aide-soignant|psychiatre|guérisseur|personnel médical|intervenant d'urgence|sauveteur/, 'Médecin'],
+  [/joueur professionnel de jeux vidéo|^gamer$/, 'Gamer'],
+  [/développeur de jeux vidéo|testeur de jeux|programmeur|ingénieur logiciel|hacker/, 'Informaticien'],
+  [/pirate de l'air|criminel de guerre/, 'Criminel'],
+  [/voyageur dans le temps|dimension traveler/, 'Voyageur temporel'],
+  [/dresseur pokémon|champion d'arène|pokémon coordinator/, 'Dresseur'],
+  [/chasseur de primes|^fixeur$/, 'Chasseur de primes'],
+  [/chasseur de (?:vampires?|démons?|monstres?|zombies?)|dragonslayer|witcher|exorciste/, 'Chasseur de monstres'],
+  [/chasseur de trésor|vault hunter|prospecteur/, 'Chasseur de trésor'],
+  [/^chasseur$/, 'Chasseur'],
+  // Crime
+  [/tueur à gages|assassin/, 'Assassin'],
+  [/tueur|meurtrier/, 'Tueur'],
+  [/voleur|braqueur|escroc|brigand|bandit|^rogue$/, 'Voleur'],
+  [/pirate|corsaire/, 'Pirate'],
+  [/gangster|chef de bande|yakuza|trafiquant|dealer|contrebandier|proxénète|usurier|hors-la-loi|criminel|conspirateur|incendiaire/, 'Criminel'],
+  [/terroriste/, 'Terroriste'],
+  [/mercenaire/, 'Mercenaire'],
+  // Combat
+  [/justicier|super-héros|crime ?fighter/, 'Justicier'],
+  [/^hero$|antihéros/, 'Héros'],
+  [/révolutionnaire|militant|partisan|chef rebelle|combattant pour la liberté|freedom fighter|défenseur des droits|propagandiste/, 'Révolutionnaire'],
+  [/tireur|as de la gâchette/, 'Tireur d\'élite'],
+  [/pilote|aviateur|mech pilot|spacecraft pilot/, 'Pilote'],
+  [/espion|^agent|indicateur/, 'Espion'],
+  [/soldat|militaire|military|espace marin|officier|commandant|chef militaire|seigneur de guerre|aide de camp|sapeur|écuyer/, 'Soldat'],
+  [/arts martiaux|karatéka|nak muay|kick-boxeur|taekwondoïste|catcheur|wrestler|gladiateur|fighter|escrimeur|matador/, 'Combattant'],
+  [/chevalier|paladin/, 'Chevalier'],
+  [/samouraï|rōnin/, 'Samouraï'],
+  [/épéiste/, 'Épéiste'],
+  [/ninja|kunoichi/, 'Ninja'],
+  [/\barcher|rôdeur/, 'Archer'],
+  [/guerrier|barbare/, 'Guerrier'],
+  // Magie, religion
+  [/jedi/, 'Jedi'],
+  [/magicien|wizard|sorci|sorcerer|warlock|archimage|nécromancien|druide|auror|féticheur|médium|hypnotiseur/, 'Magicien'],
+  [/prêtre|clerc|moine|miko|gūji|chef religieux|gourou|prédicateur/, 'Religieux'],
+  // Pouvoir
+  [/\broi\b|\breine\b|souverain|monarque|empereur|impératrice|tyran|dictateur|chef d'état/, 'Souverain'],
+  [/prince|famille royale|^lord$|héritière|vizir/, 'Noble'],
+  [/chef de tribu|clan chief/, 'Chef de clan'],
+  [/personnalité politique|président|maire|gouverneur|diplomate|délégué|personne d'état/, 'Politicien'],
+  [/avocat|procureur|juge/, 'Avocat'],
+  [/personnalité du monde des affaires|entrepreneur|investisseur|philanthrope|magnat|négociant|propriétaire|conseil d'administration/, 'Homme d\'affaires'],
+  [/responsable|dirigeant|directeur|fondateur|patron|chef d'entreprise|manager/, 'Dirigeant'],
+  [/conseiller|consultant|tacticien|adjoint|assistant/, 'Conseiller'],
+  // Sciences
+  [/archéologue/, 'Archéologue'],
+  [/scientifique|chercheur|roboticien|ingénieur|inventeur|chimiste|physicien|généticien|virologue|toxicologue|biologiste|bioingénieur|botaniste|climatologue|cybernéticien|cybernétiste|technicien de laboratoire|magizoologist/, 'Scientifique'],
+  [/historien|érudit|archiviste|penseur|philosophe/, 'Érudit'],
+  [/détective|enquêteur|inspecteur/, 'Détective'],
+  [/policier|police|shérif|deputy sheriff|proctor/, 'Policier'],
+  // Aventure
+  [/survivant/, 'Survivant'],
+  [/explorateur|aventurier|voyageur|pionnier|ermite|musher/, 'Aventurier'],
+  [/astronaute/, 'Astronaute'],
+  [/\bmarin\b|capitaine de|membre d'équipage/, 'Marin'],
+  // École, sport
+  [/étudiant/, 'Étudiant'],
+  [/lycéen|collégien|élève|écolier|preschool/, 'Élève'],
+  [/footballeur|piqueuse|joueur|sportif|gymnaste|pom-pom|tennis|traceur|plongeur/, 'Sportif'],
+  // Arts, médias
+  [/chanteur|musicien|guitariste|bassiste|choriste|disc jockey|artiste lyrique|barde/, 'Musicien'],
+  [/acteur|cinéaste|réalisateur|producteur|animateur de télévision/, 'Acteur'],
+  [/journaliste|reporter|correspondant|rédacteur/, 'Journaliste'],
+  [/auteur|écrivain/, 'Écrivain'],
+  [/artiste|sculpteur|danseur|photographe|mannequin|mode|divertissement/, 'Artiste'],
+  // Métiers
+  [/plombier/, 'Plombier'],
+  [/mécanicien/, 'Mécanicien'],
+  [/cuisinier|boulanger/, 'Cuisinier'],
+  [/serveur|employé de bar|patron de bar|bouteiller/, 'Serveur'],
+  [/vendeur|commerçant|marchand|fleuriste/, 'Commerçant'],
+  [/herboriste|agriculteur|vacher|jardinier|vigneron|plantation|cow-boy|pêcheur/, 'Fermier'],
+  [/femme au foyer|domestique|femme de ménage|valet|nourrice|gardien d'enfants|majordome/, 'Domestique'],
+  [/chauffeur|conducteur|coursier|livreur|charretier/, 'Chauffeur'],
+  [/charpentier|forgeron|ouvrier|mineur|usineur|tapissier|modéliste|homme à tout faire|technicien de surface|janitor|travailleur|cireur/, 'Ouvrier'],
+  [/salarié|employé|secrétaire|commis|bibliothécaire/, 'Employé'],
+  [/guide/, 'Guide'],
+  [/prostitué/, 'Prostitué'],
+  [/pompes funèbres/, 'Croque-mort'],
+  [/chômeur/, 'Chômeur'],
+  [/retraité|pensionné/, 'Retraité'],
+  [/prisonnier/, 'Prisonnier'],
+  // Pas des occupations
+  [/partenaire sexuel|cobaye|bénévole|humanitaire/, null],
+]
+
+// Les valeurs anglaises des infobox (« Bartender », « Leader of the Horde », « CEO of Wayne Enterprises »), et les
+// traductions du dictionnaire du Weebdle qui ne sont pas dans nos familles (Leader, Mage, Serviteur...).
+// Après les règles françaises : les cas précis d'abord.
+const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
+  // Pas des occupations : des titres, des rôles d'histoire, des phrases
+  [/^legend$|^champion$|lesser evil|prime evil|^savior|^beast$|^predator$|^deity$|silent protagonist|she sleeps|making trouble|possibly other|^training$|^development$|^stabilizes|^search-|^catastrophes|pursuit of knowledge|rapid recovery|mow down|^africa$|^bowser's kingdom$|^burkes$|^calanthe$|^crach$|offices?$|uncloak|ultra guardians|^the army|^special forces$|research specimen|alchemilla hospital patient|detainee|devil gene|kindergartner|^aspect of|herald of|left eye|protector of|jailer of|soul devourer|^disciple of|sentinel of light|^primus|^ordermaster|hidden arcanum|^monitor|prime candidate|wandering orphan|^illuminator|^virtuoso|party animal|liquor connoisseur|independently wealthy|reclaiming|^ss of|shikigami|terraformer|sumpsnipe/, null],
+  // Les cas qui contiennent un mot d'une autre famille
+  [/cheerleader/, 'Sportif'],
+  [/medical officer/, 'Médecin'],
+  [/science officer/, 'Scientifique'],
+  [/assistant manager/, 'Employé'],
+  [/forest ranger|park ranger|fire lookout/, 'Garde'],
+  [/commando/, 'Soldat'],
+  [/gym leader|elite four|frontier brain|pokémon champion|pokemon champion|pokémon performer|trainer/, 'Dresseur'],
+  [/advisor|adviser|vizier to/, 'Conseiller'],
+  [/servant of/, 'Domestique'],
+  [/waiter|waitress|hostess|bartender/, 'Serveur'],
+  [/stage show|\bactor\b/, 'Acteur'],
+  [/con-?artist|gunrunner/, 'Criminel'],
+  [/freedom fighter/, 'Révolutionnaire'],
+  [/crime ?fighter/, 'Justicier'],
+  [/doctor of archaeology/, 'Archéologue'],
+  [/doctor of philosophy/, 'Érudit'],
+  [/purchasing agent|sales (?:agent|assistant)/, 'Commerçant'],
+  [/\bmarines?\b/, 'Soldat'],
+  [/law officer/, 'Policier'],
+  [/\bruler\b/, 'Souverain'],
+  [/fiend hunter/, 'Chasseur de monstres'],
+  [/fortune hunter/, 'Chasseur de trésor'],
+  [/student council|(?:elementary|middle|high) ?school student/, 'Élève'],
+  [/head of hogwarts/, 'Professeur'],
+  [/bodyguard|security|guard|bouncer|warden|gatekeeper|jailer|keeper of the keys|enforcer|sentry|sentinel/, 'Garde'],
+  [/video game developer|game developer|hacker|programmer|software|ripperdoc|technician/, 'Informaticien'],
+  [/bounty hunter|^fixer$/, 'Chasseur de primes'],
+  [/dragon ?slayer|monster hunter|demon hunter|vampire hunter|witcher/, 'Chasseur de monstres'],
+  [/treasure|salvager|prospector/, 'Chasseur de trésor'],
+  [/gamekeeper|^hunter$|^huntress$/, 'Chasseur'],
+  [/head of (?:\w+ )?house|head of transfiguration|potions master|professor|teacher|mentor|instructor|^dean\b|headmaster|headmistress/, 'Professeur'],
+  [/doctor|physician|surgeon|nurse|medic\b|first responder|paramedic|healer|caregiver/, 'Médecin'],
+  [/streamer|influencer|youtuber/, 'Artiste'],
+  // Crime
+  [/assassin|hitman|contract killer/, 'Assassin'],
+  [/serial killer|murderer|killer/, 'Tueur'],
+  [/thief|burglar|robber|pickpocket|fence|swindler|con artist|fraud/, 'Voleur'],
+  [/pirate|smuggler/, 'Pirate'],
+  [/terrorist|anarchist|insurgent/, 'Terroriste'],
+  [/gangster|mobster|crime (?:lord|boss)|criminal|outlaw|drug|racketeer|henchman|thug|gang|yakuza|mafia|patriarch|chairman of the tojo|fugitive|convict|bandit|rocket boss|super-?villain|villain/, 'Criminel'],
+  [/mercenar/, 'Mercenaire'],
+  // Combat
+  [/vigilante|superhero|super-hero|crime ?fighter/, 'Justicier'],
+  [/^hero$|^heroine$/, 'Héros'],
+  [/revolutionar|rebel|resistance|freedom fighter|activist|liberat|guerrilla|subversive/, 'Révolutionnaire'],
+  [/sniper|marksman|gunslinger/, 'Tireur d\'élite'],
+  [/pilot|aviator/, 'Pilote'],
+  [/sailor|navigator|boat captain|seaman|lord admiral/, 'Marin'],
+  [/\bspy\b|^agent|operative|informant|interrogator|mi6/, 'Espion'],
+  [/soldier|army|navy|marine|military|commander|^general$|general of|admiral|captain|corporal|sergeant|lieutenant|colonel|\bmajor\b|officer|warlord|warmonger|seals|s\.t\.a\.r\.s|u\.b\.c\.s|bsaa|tekken force|squire|serviceman/, 'Soldat'],
+  [/martial artist|fighter|boxer|wrestler|luchador|gladiator|brawler|karate|kung fu|thunderdome/, 'Combattant'],
+  [/knight|paladin|templar/, 'Chevalier'],
+  [/samurai|ronin/, 'Samouraï'],
+  [/swordsman|swordswoman|swordmaster|blademaster/, 'Épéiste'],
+  [/ninja|shinobi|kunoichi/, 'Ninja'],
+  [/\barcher|\branger/, 'Archer'],
+  [/warrior|barbarian|berserker/, 'Guerrier'],
+  // Magie, religion
+  [/jedi/, 'Jedi'],
+  [/archmage|\bmage\b|wizard|witch|sorcer|warlock|necromancer|druid|shaman|summoner|abjurer|transmuter|diviner|enchant|conjur|alchemist|auror|medium|magician/, 'Magicien'],
+  [/priest|cleric|\bmonks?\b|\bnun\b|clergy|bishop|archbishop|preacher|religious|cult leader|shrine|tekken grand high/, 'Religieux'],
+  // Pouvoir
+  [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Souverain'],
+  [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
+  [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Chef de clan'],
+  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier/, 'Politicien'],
+  [/lawyer|attorney|prosecutor|judge/, 'Avocat'],
+  [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Homme d\'affaires'],
+  [/leader|head of|director|executive|founder|manager|boss|overseer|matron|ringmaster|chairman|supervisor/, 'Dirigeant'],
+  [/advisor|adviser|tactician|second-in-command|consultant|assistant|protégé|associate/, 'Conseiller'],
+  // Sciences
+  [/archaeologist|anthropologist/, 'Archéologue'],
+  [/scientist|researcher|engineer|inventor|chemist|physicist|geneticist|biologist|cryogenicist|brain data|research/, 'Scientifique'],
+  [/scholar|historian|philosopher|librarian|archivist|translator/, 'Érudit'],
+  [/detective|investigator|inspector/, 'Détective'],
+  [/police|cop\b|sheriff|deputy|patrolman|constable/, 'Policier'],
+  // Aventure
+  [/survivor/, 'Survivant'],
+  [/explorer|adventurer|traveler|traveller|wanderer|rescues lost/, 'Aventurier'],
+  [/astronaut|cosmonaut/, 'Astronaute'],
+  // École, sport
+  [/student|pupil/, 'Étudiant'],
+  [/athlete|player|racer|racing|apex games|scout leader|yoga/, 'Sportif'],
+  // Arts, médias
+  [/singer|songstress|musician|guitarist|drummer|\bdj\b|rock ?star|punk|rocker|bard|idol/, 'Musicien'],
+  [/actor|actress|filmmaker|director of films|tv personality|entertainer|performer|harlequin|clown|stage show/, 'Acteur'],
+  [/journalist|reporter|correspondent|columnist|interviewer|editor/, 'Journaliste'],
+  [/writer|author|novelist|poet/, 'Écrivain'],
+  [/photographer|artist|painter|sculptor|dancer|ballet|model\b|designer/, 'Artiste'],
+  // Métiers
+  [/plumber/, 'Plombier'],
+  [/mechanic/, 'Mécanicien'],
+  [/^chef$|\bcook\b|baker|brewer|restaura|yakitori|confection/, 'Cuisinier'],
+  [/bartender|barmaid|waiter|waitress|dishwasher/, 'Serveur'],
+  [/merchant|vendor|shopkeeper|trader|seller|store|shop|florist|haberdasher|milliner/, 'Commerçant'],
+  [/farmer|farmhand|rancher|ranch hand|gardener|fisherman|cowboy|herbalist/, 'Fermier'],
+  [/\bmaid\b|butler|servant|housekeeper|house-elf|valet|nanny|house cleaning|cleaner|caretaker/, 'Domestique'],
+  [/driver|chauffeur|courier|delivery|conductor|mover/, 'Chauffeur'],
+  [/miner|blacksmith|carpenter|craftsman|artisan|builder|construction|handyman|laborer|labourer|worker|odd job|janitor|part-time/, 'Ouvrier'],
+  [/clerk|secretary|employee|office worker|receptionist/, 'Employé'],
+  [/guide/, 'Guide'],
+  [/prostitute|courtesan|escort/, 'Prostitué'],
+  [/unemployed/, 'Chômeur'],
+  [/retired/, 'Retraité'],
+  [/prisoner|inmate/, 'Prisonnier'],
+  // Les traductions du dictionnaire du Weebdle hors de nos familles
+  [/^leader$|^gérant$|^chef$/, 'Dirigeant'],
+  [/^mage$|^sorcier$|^sorcière$/, 'Magicien'],
+  [/^mafieux$/, 'Criminel'],
+  [/^actrice$/, 'Acteur'],
+  [/^serveuse$/, 'Serveur'],
+  [/^serviteur$|^servante$|^majordome$/, 'Domestique'],
+  [/^capitaine$/, 'Soldat'],
+  [/^célébrité$/, 'Artiste'],
+  [/^idole$/, 'Musicien'],
+  [/^navigateur$/, 'Marin'],
+]
+
+// L'occupation exacte (clés en minuscules, sans puces), avant les règles : les valeurs des infobox qu'aucune règle
+// ne range, ou mal. null : pas une occupation, on la retire.
+const OCCUPATIONS: Record<string, string | null> = {
+  // Artisans
+  'weaponsmith': 'Ouvrier', 'armorer': 'Ouvrier', 'bronzecaster': 'Ouvrier', 'glassblower': 'Ouvrier', 'cobbler': 'Ouvrier',
+  'forger': 'Ouvrier', 'logger': 'Ouvrier', 'mining expert': 'Ouvrier', 'foreman of gecko': 'Ouvrier', 'custodian': 'Ouvrier',
+  'maintenance android': 'Mécanicien',
+  // Death Stranding : les porteurs livrent
+  'porter': 'Livreur', 'porter in training': 'Livreur',
+  // Commerce, service
+  'barista': 'Serveur', 'alewife': 'Serveur', 'works at maxine\'s diner': 'Serveur', 'proprietor': 'Commerçant',
+  'proprieter of the mikaelsen ranch': 'Fermier', 'bookeeper at wren\'s nook': 'Employé',
+  'financial backer of hiram burrows': 'Homme d\'affaires', 'managing of the new vegas strip': 'Dirigeant',
+  // Chasse
+  'trapper': 'Chasseur', '3rd tier tracker': 'Chasseur', 'vampire huntress': 'Chasseur de monstres', 'banisher': 'Chasseur de monstres',
+  // Armée, police
+  'albion operations tactical adjutant': 'Soldat', 'demolitions expert': 'Soldat', 'executor of the koprulu expedition': 'Soldat',
+  'legionnaire': 'Soldat', 'recon trooper': 'Soldat', 'recruit': 'Soldat', 'the last minuteman': 'Soldat',
+  'trainee at rockfort island': 'Soldat', 'usstratcom\'s anti-umbrella pursuit': 'Soldat', 'yorha tactical support unit': 'Soldat',
+  'confederate marshal': 'Policier', 'marshal': 'Policier', 'swat specialist': 'Policier', 'watchman of the aesir': 'Garde',
+  // Combat
+  'blade of miquella': 'Guerrier', 'champion of the aesir': 'Guerrier', 'east-khan champion': 'Combattant',
+  'west-khan champion': 'Combattant', 'competitor': 'Combattant', 'chosen of sylvarant': 'Héros',
+  // Crime
+  'blackmailer': 'Criminel', 'loyalist conspirator': 'Criminel', 'mastermind': 'Criminel',
+  'freebooter': 'Pirate', 'plunderer': 'Pirate', 'privateers': 'Pirate',
+  // Religion, magie
+  'church crier': 'Religieux', 'grand inquisitor': 'Religieux', 'missionary': 'Religieux', 'prophet': 'Religieux', 'saint': 'Religieux',
+  'sanctifex': 'Religieux', 'sanctoress': 'Religieux', 'fire keeper': 'Religieux', 'right hand of the divine': 'Religieux',
+  'defender of the emerald dream': 'Magicien', 'astrologer': 'Érudit', 'interpreter': 'Érudit',
+  // Pouvoir
+  'sovereign': 'Souverain', 'mistress of castle dimitrescu': 'Noble', 'dracula\'s vassal': 'Domestique',
+  'public voice of the elders': 'Politicien', 'spokesperson': 'Politicien', 'judicator': 'Politicien', 'the notary': 'Avocat',
+  'second in command': 'Conseiller',
+  // Sciences, soins
+  'roboticist': 'Scientifique', 'architect': 'Scientifique', 'elerium expert': 'Scientifique', 'looking glass specialist': 'Scientifique',
+  'alpha a.i. psychologist': 'Médecin', 'tau radiologist': 'Médecin', 'therapist': 'Médecin', 'techie': 'Informaticien',
+  // Médias, spectacle
+  'acrobat': 'Artiste', 'color commentator': 'Journaliste', 'reality tv host': 'Acteur', 'prepper': 'Survivant',
+  'occultist': 'Magicien', 'polymath': 'Érudit', 'tech support for lara croft': 'Informaticien',
+  'tactical adjutant': 'Soldat', 'climatologist': 'Scientifique', 'debt collector': 'Criminel', 'investment banker': 'Homme d\'affaires',
+  'jester': 'Artiste', 'pokémon watcher': 'Dresseur', 'mad gear goon': 'Criminel', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Ouvrier',
+  'albion operations': null, 'last of the xel\'naga': null, 'various others': null,
+  // Pas des occupations : rôles dans l'histoire, liens de famille, dieux (l'espèce le dit), phrases, valeurs vides
+  'antagonist': null, 'main antagonist': null, 'overarching antagonist': null, 'secondary antagonist': null,
+  'primary fallout antagonist': null, 'protagonist': null, 'ally': null, 'companion': null, 'temporary companion': null,
+  'minor character': null, 'neutral': null, 'determinant': null, 'colleague': null, 'father': null, 'mother': null,
+  'husband': null, 'wife': null, 'elder god': null, 'god of chaos': null, 'god of crossroads': null, 'treeminder deity': null,
+  'ghost': null, 'darkness': null, 'rebirth': null, 'solo': null, 'support': null, 'nuker': null, 'operating': null,
+  'supervision': null, 'satelite control': null, 'control of the supercarriers': null, 'control of magical creatures': null,
+  'explosive devices': null, 'corporate': null, 'uca': null, 'spi': null, '2nd tier': null, 'mount': null, 'bridge baby': null,
+  'walking enigma': null, 'feline demi-human': null, 'contracted demon': null, 'vessel for dominus': null, 'the blade': null,
+  'the \'will of high prophets\'': null, 'child of the full moon': null, 'promotional mascot': null, 'initiate': null,
+  'trickster': null, 'alien invader': null, 'dark mistress': null, 'mourner': null, 'volunteer': null, 'birdwatcher': null,
+  'vault resident': null, 'off-seer': null, 'leaper': null, 'puzzle keeper': null, 'torture specialist': null,
+  'torturer of souls': null, 'apas human interface': null, 'battle automaton': null, 'exploration robot': null,
+  'sentient assault vehicle': null, 'super fighting robot': null, 'timber felling robot': null, 'creator of chromatic dragonflight': null,
+  'creator of the chromatic dragonflight': null, 'creator of h3o': null, 'creator of sensen': null, 'creator of the ruin': null,
+}
+
+export function translateOccupation(label: string): string | null | undefined {
+  // « ---- Confederate marshal », « · Weaponsmith », « "The Blade » → sans les puces ni les guillemets qui traînent
+  const value = key(label).replace(/^[\s・*•·"-]+|"+$/g, '').replace(/^(?:former\s+|ex-|retired\s+)(?=\S)/, '')
+  // « ---- » : rien
+  if (!value)
+    return null
+  if (value in OCCUPATIONS)
+    return OCCUPATIONS[value]
+  const french = firstRule(OCCUPATION_RULES, value)
+  return french !== undefined ? french : firstRule(ENGLISH_OCCUPATION_RULES, value)
+}
+
+// Les quasi-synonymes regroupés, validés avec FX (aussi ceux de la table commune scripts/translate.ts, et des corrections à la main)
+const OCCUPATION_MERGES: Record<string, string | null> = {
+  'Élève': 'Étudiant', 'Chef de clan': 'Dirigeant', 'Tueur': 'Assassin', 'Guerrier': 'Combattant',
+  // déjà dans l'espèce (Divinité)
+  'Dieu': null,
+}
+
+// Les occupations finales d'un personnage : regroupées, sans doublon
+export function mergeOccupations(value: unknown): string[] | null {
+  const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
+    .map(name => name in OCCUPATION_MERGES ? OCCUPATION_MERGES[name] : name)
+    .filter((name): name is string => name !== null)
+  return list.length > 0 ? [...new Set(list)] : null
+}
+
+// --- Développeur ---
+
+// Les divisions internes et les filiales ramenées au studio que les joueurs connaissent
+const DEVELOPERS: Record<string, string> = {
+  'nintendo entertainment analysis and development': 'Nintendo', 'nintendo entertainment planning & development': 'Nintendo',
+  'nintendo research and development 1': 'Nintendo', 'nintendo software technology': 'Nintendo',
+  'square': 'Square Enix', 'namco': 'Bandai Namco', 'namco tales studio': 'Bandai Namco', 'bandai namco entertainment': 'Bandai Namco',
+  'project soul': 'Bandai Namco', 'chunsoft': 'Spike Chunsoft', 'spike': 'Spike Chunsoft', 'blizzard entertainment': 'Blizzard',
+  'blizzard north': 'Blizzard', 'valve corporation': 'Valve', 'bungie studios': 'Bungie', 'bioware': 'BioWare',
+  'cd projekt red': 'CD Projekt Red', 'team silent': 'Konami', 'sega-am2': 'Sega', 'bethesda softworks': 'Bethesda',
+  'bethesda game studios': 'Bethesda', 'zenimax online studios': 'Bethesda', 'ubisoft montréal': 'Ubisoft', 'ubisoft québec': 'Ubisoft',
+  'ubisoft shanghai': 'Ubisoft', 'ubisoft paris': 'Ubisoft', 'ubisoft sofia': 'Ubisoft', 'eric barone': 'ConcernedApe',
+  'mojang studios': 'Mojang', 'midway games': 'Midway', 'mercurysteam entertainment': 'MercurySteam',
+  'digital illusions creative entertainment': 'DICE', 'don\'t nod entertainment': 'Don\'t Nod', 'sora': 'Sora Ltd.',
+  'unknown worlds entertainment': 'Unknown Worlds', 'atlus': 'Atlus', 'rockstar north': 'Rockstar', 'dma design': 'Rockstar',
+  'rockstar san diego': 'Rockstar', 'rockstar lincoln': 'Rockstar', 'p-studio': 'Atlus',
+}
+
+// Les franchises dont Wikidata donne le mauvais studio (8-4 a traduit Undertale, ne l'a pas fait)
+export const FRANCHISE_DEVELOPERS: Record<string, string> = {
+  'Undertale': 'Toby Fox',
+  // Absents de Wikidata
+  'Rebel Galaxy': 'Double Damage Games',
+  'Breathedge': 'RedRuins Softworks',
+  // Sanzaru n'a fait que le 4e jeu (et les portages)
+  'Sly Cooper': 'Sucker Punch Productions',
+  // Iron Galaxy n'a fait que le portage Switch d'Apex Legends
+  'Titanfall / Apex Legends': 'Respawn Entertainment',
+  // Développé seul par Luis Antonio (Annapurna l'édite) : Wikidata n'a pas de développeur
+  'Twelve Minutes': 'Luis Antonio',
+}
+
+export function translateDeveloper(label: string): string {
+  return DEVELOPERS[key(label)] ?? label
+}
+
+// --- Genres ---
+
+const GENRE_RULES: [RegExp, string | null][] = [
+  // Les thèmes ne sont pas des genres : retirés
+  [/lgbt|science-fiction|science fiction(?! horror)|postapocalyptique|cyberpunk|fantasy|historique|comédie|christmas|halloween|zombie|time travel|space opera|fiction spéculative|milieu scolaire|cross-over|retro-style|eroge|erotic|chuunige|mystère|localisation|augmented reality|thriller/, null],
+  // Une ambiance ou une mécanique, pas un genre (Dredge, Among Us)
+  [/cozy game|inventory management|jeu occasionnel|déduction sociale|road movie|crime video game|univers parallèles/, null],
+  [/parkour/, 'Plates-formes'],
+  [/commerce|simulateur de vol|jeu vidéo de pêche/, 'Simulation'],
+  // Gardés tels quels, validé avec FX
+  [/immersive sim/, 'Immersive sim'],
+  [/monster-taming/, 'Monster-taming'],
+  [/walking simulator/, 'Walking simulator'],
+  [/^jeu de tir$|extraction shooter/, 'FPS'],
+  [/jeu d'aventure à la troisième personne/, 'Aventure'],
+  [/énigme/, 'Réflexion'],
+  [/^action-rpg$|soulslike/, 'Action-RPG'],
+  [/tactical rpg|tactique au tour par tour/, 'RPG tactique'],
+  [/massivement multijoueur/, 'MMO'],
+  [/rôle|jrpg|dungeon crawler/, 'RPG'],
+  [/action-aventure/, 'Action-aventure'],
+  [/point'n click|aventure graphique|film interactif|^jeu d'aventure$/, 'Aventure'],
+  [/visual novel/, 'Visual novel'],
+  [/survival horror/, 'Survival horror'],
+  [/horreur|horror/, 'Horreur'],
+  [/battle royale/, 'Battle royale'],
+  [/tir en vue subjective|hero shooter|looter shooter|horde shooter|tir tactique/, 'FPS'],
+  [/tir à la troisième personne/, 'TPS'],
+  [/manic shooter|rail shooter|shoot 'em up/, 'Shoot \'em up'],
+  [/combat motorisé|course|mascot racer/, 'Course'],
+  [/combat|fighting|fighter|airdasher/, 'Combat'],
+  [/metroidvania|soulsvania|metroidbrainia/, 'Metroidvania'],
+  [/plates?-?formes?|platformer/, 'Plates-formes'],
+  [/infiltration/, 'Infiltration'],
+  [/stratégie|tactique en temps réel|tower defense|4x|god game/, 'Stratégie'],
+  [/arène de bataille/, 'MOBA'],
+  [/roguelike|roguelite/, 'Roguelike'],
+  [/hack and slash|character-action|beat them all/, 'Beat them all'],
+  [/réflexion/, 'Réflexion'],
+  [/gacha/, 'Gacha'],
+  [/survie/, 'Survie'],
+  [/sandbox/, 'Bac à sable'],
+  [/farm life|simulation|gestion|commerce/, 'Simulation'],
+  [/football|hockey|tennis|sport/, 'Sport'],
+  [/party game|minigame/, 'Party game'],
+  [/cartes/, 'Cartes'],
+  [/flipper|arcade/, 'Arcade'],
+  [/^jeu d'action$/, 'Action'],
+]
+
+export function translateGenre(label: string): string | null | undefined {
+  return firstRule(GENRE_RULES, key(label))
+}
+
+// Les genres que Wikidata oublie pour une franchise, ajoutés à ceux de son jeu
+export const FRANCHISE_GENRES: Record<string, string[]> = {
+  // Les immersive sims cités par Wikipédia FR (Prey l'a déjà dans Wikidata), sur toute la franchise : validé avec FX
+  'Dishonored': ['Immersive sim'],
+  'Deus Ex': ['Immersive sim'],
+  'BioShock': ['Immersive sim'],
+  'The Elder Scrolls': ['Immersive sim'],
+  'Fallout': ['Immersive sim'],
+}

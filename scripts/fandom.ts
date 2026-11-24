@@ -229,7 +229,7 @@ export function fandomInfobox(wikitext: string): Record<string, string> | null {
 }
 
 // Les champs « | clé = valeur » d'un modèle, en ne coupant que sur les « | » de son 1er niveau
-function templateFields(text: string, start: number): Record<string, string> {
+export function templateFields(text: string, start: number): Record<string, string> {
   const parts: string[] = []
   let depth = 0
   let current = ''

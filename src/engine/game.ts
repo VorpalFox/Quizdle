@@ -1,5 +1,5 @@
 import { type AttributeResult, compareEntries } from './compare.js'
-import { findEntry } from './search.js'
+import { displayName, findEntry, homonyms } from './search.js'
 import type { Entry, Subject } from './types.js'
 
 // Erreur « normale » de jeu (nom inconnu, déjà proposé...) : à afficher au joueur, pas un bug
@@ -12,6 +12,11 @@ export interface Guess {
   playerId: string
   results: AttributeResult[]
   correct: boolean
+}
+
+// « Sam » désigne plusieurs personnages : on les liste, à choisir dans l'autocomplétion de /guess
+export function ambiguityMessage(subject: Subject, query: string, entries: readonly Entry[]): string {
+  return `« ${query.trim()} » désigne plusieurs personnages : ${entries.map(entry => displayName(subject, entry, true)).join(' · ')}. Écris-le comme dans la liste (« ${displayName(subject, entries[0]!, true)} ») ou choisis-le dans \`/guess\`.`
 }
 
 // Une partie : une cible à trouver, des propositions faites par un ou plusieurs joueurs (coop)
@@ -38,6 +43,9 @@ export class Game {
     if (this._status !== 'playing')
       throw new GameError('La partie est terminée.')
     const entry = findEntry(this.subject, query)
+    const same = homonyms(this.subject, query)
+    if (same.length > 0)
+      throw new GameError(ambiguityMessage(this.subject, query, same))
     if (!entry)
       throw new GameError(`« ${query} » ne fait pas partie du quiz ${this.subject.name}.`)
     if (this.guessedIds.has(entry.id))

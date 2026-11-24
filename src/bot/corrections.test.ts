@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { GameError } from '../engine/game.js'
-import type { AttributeDef, Entry, Subject } from '../engine/types.js'
+import { type AttributeDef, type Entry, NOT_APPLICABLE, type Subject } from '../engine/types.js'
 import { applyManual, type Manual } from '../subjects/manual.js'
 import { editAttribute, parseValue, removeEntry, resolveEntry } from './corrections.js'
 
@@ -39,6 +39,11 @@ describe('parseValue', () => {
     expect(parseValue(gender, ' Femme ')).toBe('Femme')
     expect(parseValue(age, '-')).toBeNull()
     expect(parseValue(hair, 'vide')).toBeNull()
+  })
+
+  it('lit « n/a » comme non applicable, même pour un nombre', () => {
+    expect(parseValue(age, 'N/A')).toBe(NOT_APPLICABLE)
+    expect(parseValue(hair, 'non applicable')).toEqual([NOT_APPLICABLE])
   })
 
   it('refuse un nombre qui n\'en est pas un', () => {

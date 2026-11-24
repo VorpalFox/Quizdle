@@ -19,17 +19,77 @@ function keys(entry: Entry): string[] {
 // seraient pris pour des noms (« new » → Mew, « ami » → Abo)
 const MIN_TYPO_LENGTH = 4
 
-// Nom exact d'abord, sinon une faute de frappe tolérée (« roocool » → Roucool, « ratattac » → Rattatac),
-// mais seulement si une seule entrée colle : on ne devine pas entre deux noms proches
-export function findEntry(subject: Subject, query: string): Entry | undefined {
+// « Sam (The Last of Us) », « chien (half-life) » : le nom, puis l'univers entre parenthèses
+const WITH_UNIVERSE = /^(.+?)\s*\(([^()]+)\)\s*$/
+// Un bout de l'univers suffit (« Sam (Last of Us) »), mais pas une ou deux lettres
+const MIN_UNIVERSE_LENGTH = 3
+
+// Le nom suivi de son univers : les entrées de ce nom dans cet univers. null si la saisie n'a pas cette forme.
+function matchesInUniverse(subject: Subject, query: string): { exact: boolean, entries: Entry[] } | null {
+  const parsed = WITH_UNIVERSE.exec(query.trim())
+  const universeKey = subject.universeKey
+  if (!parsed || !universeKey)
+    return null
+  const universe = normalize(parsed[2]!)
+  if (universe.length < MIN_UNIVERSE_LENGTH)
+    return null
+  const inUniverse = (entry: Entry) => normalize(String(entry.attributes[universeKey] ?? '')).includes(universe)
+  const { exact, entries } = matches(subject, parsed[1]!)
+  return { exact, entries: entries.filter(inUniverse) }
+}
+
+// Tous les noms exacts d'abord (plusieurs : des homonymes), sinon les noms à une faute de frappe près
+// (« roocool » → Roucool, « ratattac » → Rattatac). Un nom suivi de son univers entre parenthèses ne garde que celui-là.
+function matches(subject: Subject, query: string): { exact: boolean, entries: Entry[] } {
+  const whole = matchesByName(subject, query)
+  // Un nom qui contient lui-même des parenthèses (« Samuel Hayden (Doom) ») passe d'abord
+  if (whole.exact && whole.entries.length > 0)
+    return whole
+  return matchesInUniverse(subject, query) ?? whole
+}
+
+function matchesByName(subject: Subject, query: string): { exact: boolean, entries: Entry[] } {
   const wanted = normalize(query)
   if (!wanted)
-    return undefined
-  const exact = subject.entries.find(entry => keys(entry).includes(wanted))
-  if (exact || wanted.length < MIN_TYPO_LENGTH)
-    return exact
-  const close = subject.entries.filter(entry => keys(entry).some(key => isOneTypoAway(wanted, key)))
-  return close.length === 1 ? close[0] : undefined
+    return { exact: true, entries: [] }
+  const exact = subject.entries.filter(entry => keys(entry).includes(wanted))
+  if (exact.length > 0 || wanted.length < MIN_TYPO_LENGTH)
+    return { exact: true, entries: exact }
+  return { exact: false, entries: subject.entries.filter(entry => keys(entry).some(key => isOneTypoAway(wanted, key))) }
+}
+
+// L'entrée tapée, seulement si une seule colle : on ne devine ni entre deux homonymes, ni entre deux noms proches
+export function findEntry(subject: Subject, query: string): Entry | undefined {
+  const { entries } = matches(subject, query)
+  return entries.length === 1 ? entries[0] : undefined
+}
+
+// Les homonymes que ce nom désigne exactement (« Sam » : celui de The Last of Us, de Stardew Valley...), [] sinon
+export function homonyms(subject: Subject, query: string): Entry[] {
+  const { exact, entries } = matches(subject, query)
+  return exact && entries.length > 1 ? entries : []
+}
+
+// Les noms portés par plusieurs entrées (nom ou alias), calculés une fois par sujet
+const sharedNames = new WeakMap<Subject, Set<string>>()
+function shared(subject: Subject): Set<string> {
+  let names = sharedNames.get(subject)
+  if (!names) {
+    const owners = new Map<string, number>()
+    for (const entry of subject.entries) {
+      for (const key of new Set([entry.name, ...entry.aliases ?? []].map(normalize)))
+        owners.set(key, (owners.get(key) ?? 0) + 1)
+    }
+    names = new Set([...owners].filter(([, count]) => count > 1).map(([key]) => key))
+    sharedNames.set(subject, names)
+  }
+  return names
+}
+
+// Le nom à afficher : avec son univers si un autre personnage porte le même nom (« Sam (The Last of Us) »), ou toujours
+export function displayName(subject: Subject, entry: Entry, always = false): string {
+  const universe = subject.universeKey ? entry.attributes[subject.universeKey] : null
+  return typeof universe === 'string' && (always || shared(subject).has(normalize(entry.name))) ? `${entry.name} (${universe})` : entry.name
 }
 
 // Une lettre changée, ajoutée, enlevée, ou deux lettres voisines inversées. Un seul passage sur le mot.

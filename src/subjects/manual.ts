@@ -1,20 +1,42 @@
-// Les corrections faites à la main : data/anime-manual.json (Animedle) et data/weebdle-manual.json (Weebdle).
+// Les corrections faites à la main : data/anime-manual.json (Animedle), data/weebdle-manual.json (Weebdle) et data/pixeldle-manual.json (Pixeldle).
 // Appliquées par les scripts de récupération à chaque génération, et par le bot au chargement des données
-// (une correction faite avec /quizdebug survit donc à un redémarrage). Format dans le README.
+// (une correction faite avec /quizdebug survit donc à un redémarrage). Les scripts ne les modifient jamais.
+// Ne pas modifier data/<sujet>.json à la main : les scripts les réécrivent, les corrections vont ici.
+// Les ids : AniList (anilist.co/character/<id>) pour l'Animedle et le Weebdle, QID Wikidata ou « wiki-<franchise>-<nom> »
+// pour le Pixeldle (tous dans les récaps). Ce qui ne colle pas (id inconnu, attribut mal écrit) est signalé à la fin du script.
 import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import type { AttributeValue, Entry } from '../engine/types.js'
 
 export interface Manual {
-  // ids des personnages à retirer
+  // ids des personnages à retirer. Au Weebdle et au Pixeldle, sa place revient au suivant du tirage ; à l'Animedle,
+  // il n'est pas remplacé.
   exclude: string[]
-  // id → champs à remplacer : name, aliases, image, ou un attribut (gender, hair...). Les clés en « _ » sont ignorées (« _nom » pour s'y retrouver).
+  // id → champs à remplacer : name, aliases, image, ou un attribut (gender, hair...). Les clés en « _ » sont ignorées
+  // (« _nom » pour s'y retrouver, « _raison » pour la retrouver). Un personnage corrigé est toujours gardé, même s'il
+  // n'avait pas été tiré : pour ajouter un personnage de la source, il suffit de le corriger.
   edit: Record<string, Record<string, unknown>>
-  // personnages complets à ajouter
+  // personnages complets à ajouter, absents de la source. « edit » ne s'applique pas à eux : les modifier ici.
   add: Entry[]
+  // Pixeldle : titre de la franchise → réglages de la recherche dans son wiki (voir scripts/pixeldleWikiCharacters.ts)
+  wikis?: Record<string, WikiSettings>
+  // Pixeldle : titre de la franchise → valeurs par défaut des attributs vides (espèce « Humain » d'une franchise réaliste…),
+  // avant les corrections de « edit »
+  defaults?: Record<string, Record<string, AttributeValue>>
+}
+
+export interface WikiSettings {
+  // pages à prendre d'abord, avant le classement par longueur
+  preferred?: string[]
+  // pages à lire en plus de la catégorie (personnages qui n'y sont pas rangés), prises en premier
+  pages?: string[]
+  // nombre de personnages au plus, quand le wiki n'en a pas plus de vrais
+  limit?: number
+  // catégorie des personnages, quand ce n'est ni « Characters » ni une des autres essayées
+  category?: string
 }
 
 // Le fichier de corrections de chaque sujet qui en a un (data/ à la racine, même chemin depuis src/subjects et dist/subjects)
-const MANUAL_FILES: Record<string, string> = { animedle: 'anime-manual.json', weebdle: 'weebdle-manual.json' }
+const MANUAL_FILES: Record<string, string> = { animedle: 'anime-manual.json', weebdle: 'weebdle-manual.json', pixeldle: 'pixeldle-manual.json' }
 
 export const hasManual = (subjectId: string) => subjectId in MANUAL_FILES
 export const manualSubjectIds = Object.keys(MANUAL_FILES)
@@ -33,7 +55,7 @@ export function manualFile(subjectId: string): URL {
 
 export function readManual(file: URL): Manual {
   const manual = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as Partial<Manual> : {}
-  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [] }
+  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {} }
 }
 
 // Écrit dans un fichier temporaire puis renomme : pas de fichier à moitié écrit si le bot s'arrête pile à ce moment

@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { compareEntries, compareValues } from './compare.js'
 import { Game, GameError } from './game.js'
 import { dayKey, randomEntry } from './pick.js'
-import { findEntry, isOneTypoAway, searchEntries } from './search.js'
-import type { Subject } from './types.js'
+import { displayName, findEntry, homonyms, isOneTypoAway, searchEntries } from './search.js'
+import { NOT_APPLICABLE, type Subject } from './types.js'
 
 // Sujet inventé : le moteur ne doit rien savoir des Pokémon
 const fruits: Subject = {
@@ -35,6 +35,13 @@ describe('compareValues', () => {
     expect(compareValues('exact', 'Hiver', null)).toBe('unknown')
     expect(compareValues('set', ['Rouge'], [])).toBe('unknown')
     expect(compareValues('number', 150, null)).toBe('unknown')
+  })
+
+  it('non applicable : juste contre non applicable, faux contre tout le reste, même un nombre', () => {
+    expect(compareValues('number', NOT_APPLICABLE, NOT_APPLICABLE)).toBe('correct')
+    expect(compareValues('number', 17, NOT_APPLICABLE)).toBe('wrong')
+    expect(compareValues('number', NOT_APPLICABLE, 17)).toBe('wrong')
+    expect(compareValues('set', [NOT_APPLICABLE], ['Noirs'])).toBe('wrong')
   })
 
   it('bon perso : tout est juste, même ses indices vides', () => {
@@ -91,6 +98,54 @@ describe('recherche', () => {
   it('autocomplétion : préfixes avant les contenus, exclut les déjà proposés', () => {
     expect(searchEntries(fruits, 'c', 10).map(e => e.id)).toEqual(['citron', 'peche'])
     expect(searchEntries(fruits, '', 10, new Set(['pomme'])).map(e => e.id)).toEqual(['citron', 'peche', 'kiwi'])
+  })
+})
+
+describe('homonymes', () => {
+  const persos: Subject = {
+    id: 'persos', name: 'Persos', description: 'Trouve le perso', universeKey: 'univers',
+    attributes: [{ key: 'univers', label: 'Univers', kind: 'exact' }],
+    entries: [
+      { id: 'sam-tlou', name: 'Sam', attributes: { univers: 'The Last of Us' } },
+      { id: 'sam-sdv', name: 'Sam', attributes: { univers: 'Stardew Valley' } },
+      { id: 'elena', name: 'Elena Fisher', aliases: ['Elena'], attributes: { univers: 'Uncharted' } },
+      { id: 'elena-sf', name: 'Elena', attributes: { univers: 'Spiritfarer' } },
+      { id: 'joel', name: 'Joel', attributes: { univers: 'The Last of Us' } },
+    ],
+  }
+
+  it('un nom porté par plusieurs : aucun choisi, tous listés', () => {
+    expect(findEntry(persos, 'sam')).toBeUndefined()
+    expect(homonyms(persos, 'Sam').map(e => e.id)).toEqual(['sam-tlou', 'sam-sdv'])
+    expect(homonyms(persos, 'Elena').map(e => e.id)).toEqual(['elena', 'elena-sf'])
+    expect(homonyms(persos, 'Joel')).toEqual([])
+    expect(findEntry(persos, 'Elena Fisher')?.id).toBe('elena')
+    expect(findEntry(persos, 'sam-sdv')?.id).toBe('sam-sdv') // l'id, envoyé par l'autocomplétion
+  })
+
+  it('un nom suivi de son univers entre parenthèses : celui-là', () => {
+    expect(findEntry(persos, 'Sam (The Last of Us)')?.id).toBe('sam-tlou')
+    expect(findEntry(persos, 'sam (stardew)')?.id).toBe('sam-sdv')
+    expect(findEntry(persos, 'Joel (The Last of Us)')?.id).toBe('joel')
+    expect(homonyms(persos, 'Sam (Stardew Valley)')).toEqual([])
+  })
+
+  it('un univers qui ne colle pas : rien', () => {
+    expect(findEntry(persos, 'Joel (Stardew Valley)')).toBeUndefined()
+    expect(findEntry(persos, 'Sam (xy)')).toBeUndefined() // trop court pour un univers
+  })
+
+  it("le nom affiché porte l'univers seulement s'il est partagé", () => {
+    expect(displayName(persos, persos.entries[0]!)).toBe('Sam (The Last of Us)')
+    expect(displayName(persos, persos.entries[4]!)).toBe('Joel')
+    expect(displayName(persos, persos.entries[4]!, true)).toBe('Joel (The Last of Us)')
+  })
+
+  it("une proposition ambiguë ne consomme pas d'essai", () => {
+    const game = new Game(persos, persos.entries[4]!, '2026-11-22')
+    expect(() => game.guess('Sam', 'p1')).toThrow(/Sam \(The Last of Us\) · Sam \(Stardew Valley\)/)
+    expect(game.guesses).toHaveLength(0)
+    expect(game.guess('sam-sdv', 'p1').entry.id).toBe('sam-sdv')
   })
 })
 

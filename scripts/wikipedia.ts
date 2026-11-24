@@ -102,7 +102,9 @@ export function infoboxFields(wikitext: string): Record<string, string> | null {
 // « [[Hikikomori]] », « {{Plainlist|* Pirate * Captain}} », « Male<br>Female » → texte simple, séparé par des virgules
 export function cleanValue(value: string): string {
   let text = value
-    .replace(/<br\s*\/?>/gi, ', ')
+    // Un saut de ligne sépare deux valeurs (« Twinleaf Town<hr />Sandgem Town », « New Zealand\nAustralia »)
+    .replace(/<(?:br|hr)\s*\/?>/gi, ', ')
+    .replace(/\s*\n+\s*(?=[^\s*])/g, ', ')
     .replace(/<[^>]+>/g, '')
     .replace(/\{\{\s*nihongo\s*\|([^|}]*)[^}]*\}\}/gi, '$1')
     .replace(/\{\{\s*(?:plainlist|flatlist|ubl|unbulleted list|hlist|liste horizontale)\s*\|/gi, '{{|')
