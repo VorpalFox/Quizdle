@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fandomInfobox, fandomValues, introOccupations, sameName } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, sameName } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -96,5 +96,17 @@ describe('fandomValues, mort', () => {
   it('MortSelonLaVersion_PasNote', () => {
     expect(fandomValues(fandomInfobox('{{Character Infobox\n|gender = Male\n|status = Alive (resurrected)\n}}')!).deceased).toBeNull()
     expect(fandomValues(fandomInfobox('{{Character Infobox\n|gender = Male\n|status = Deceased (vampire), Unknown (demon)\n}}')!).deceased).toBeNull()
+  })
+})
+
+describe('affiliation', () => {
+  it('RoleSimple_Garde', () => {
+    expect(affiliationOccupations('Student (formerly)')).toEqual(['Élève'])
+  })
+
+  it('OrganisationPossessifOuNomPropre_Ecarte', () => {
+    expect(affiliationOccupations('Demon Slayer Corps')).toBeNull()
+    expect(affiliationOccupations("Souichirou Kuzuki's Servant")).toBeNull()
+    expect(affiliationOccupations('Prince Bojji, Underworld Kingdom')).toBeNull()
   })
 })

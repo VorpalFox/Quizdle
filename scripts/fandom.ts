@@ -371,6 +371,18 @@ export const DECEASED = 'deceased'
 const isDeceased = (status: string | null) =>
   Boolean(status && /\b(?:deceased|dead|killed|died)\b/i.test(status) && !/\b(?:alive|living|active|resurrect\w*|reincarnated|revived|unknown)\b/i.test(status))
 
+// L'affiliation, quand l'infobox n'a pas d'occupation (« Student (formerly) » sur le wiki de Gleipnir) : seulement un
+// rôle simple qu'on sait traduire. Pas les organisations (« Demon Slayer Corps » pour Nezuko, un démon), les
+// possessifs (« Souichirou Kuzuki's Servant ») ni les noms propres (« Prince Bojji » pour Gigan, son serviteur).
+const AFFILIATION_FIELDS = ['affiliation', 'affiliations', 'current affiliation']
+const NOT_A_ROLE = /'s\b|’s\b|\b(?:corps|army|military|force|forces|federation|kingdom|empire|family|group|shop|association|guild|academy|school|order|organization|agency|club|society|team|party|clan|house|church|government|council|division|squad|unit|company|tribe|faction|alliance|union|league)\b/i
+const PROPER_NAME = /^\S+\s+[A-Z]/
+export function affiliationOccupations(value: string | null): string[] | null {
+  const roles = (value ?? '').split(/\s*(?:,|;|\n|<br\s*\/?>)\s*/).map(item => item.replace(/\s*\([^)]*\)/g, '').trim())
+    .filter(item => item && !NOT_A_ROLE.test(item) && !PROPER_NAME.test(item))
+  return titleOccupations(roles.join(', ') || null)
+}
+
 // Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
 // pas gardé en anglais : ce sont des surnoms, pas des métiers à corriger.
 function titleOccupations(value: string | null): string[] | null {
@@ -471,14 +483,19 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         added.hair = hair.colors
-      const intro = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation) ? introOccupations(pages[title]!) : null
-      if (intro?.occupation.length)
+      // Sans occupation : l'affiliation de l'infobox (« Student (formerly) », « Port Mafia »), sinon l'introduction
+      const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
+      const affiliation = jobless ? affiliationOccupations(field(fandomInfobox(pages[title]!) ?? {}, AFFILIATION_FIELDS)) : null
+      const intro = jobless && !affiliation ? introOccupations(pages[title]!) : null
+      if (affiliation)
+        added.occupation = affiliation
+      else if (intro?.occupation.length)
         added.occupation = intro.occupation
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

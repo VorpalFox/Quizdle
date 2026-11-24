@@ -22171,7 +22171,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 25,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
@@ -25122,9 +25124,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Assassin",
-    "Criminel",
-    "Combattant"
+    "Étudiant"
    ],
    "hair": [
     "Noirs",
@@ -25154,7 +25154,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Aucune"
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -25208,7 +25208,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -25313,7 +25315,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Aucune"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -25390,7 +25392,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Aucune"
+    "Étudiant"
    ],
    "hair": null,
    "anime": "Gleipnir",
@@ -25414,7 +25416,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -25464,7 +25468,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Gleipnir",
    "genres": [
