@@ -9,7 +9,9 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
-import { sleep, splitOccupations } from './anilist.js'
+import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
+import { introRoles, introText } from './intro.js'
+import { translateOccupation } from './translate.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
@@ -106,9 +108,20 @@ const WIKIS: Record<string, string[] | null> = {
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
 const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'métier', 'activité', 'fonction'],
+  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
+  occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
+  // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
+  species: ['species', 'race', 'races', 'species/race', 'espèce'],
+  height: ['height', 'heights', 'taille'],
+  // L'arme rejoint l'occupation à la fin (finishOccupations)
+  weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
+  // Les titres (« Red King », « The Black Swordsman ») : ajoutés à l'occupation à la fin aussi, ceux qu'on sait traduire
+  titles: ['titles', 'title(s)', 'epithet', 'epithets'],
+  // Mort : « Aucune » comme occupation s'il n'en a pas d'autre (finishOccupations). Jamais affiché tel quel : un spoil.
+  deceased: ['status', 'vital status'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -195,6 +208,48 @@ function characterTitles(target: WikiTarget, article: string | undefined): strin
     .filter(title => !/[#<>[\]{}|]/.test(title))
 }
 
+// Pas de page au nom du perso : la recherche du wiki, quand AniList et le wiki ne l'appellent pas pareil (« Pyoran »
+// → « Pioran », « Kansatsu-sha » → « The Beholder » sur le wiki de To Your Eternity). Sans les sous-pages (« Pioran/Plot »)
+// ni les épisodes ou chapitres ; le résultat ne compte que s'il a une infobox de perso (voir completeFromFandom).
+const SEARCH_RESULTS = 3
+async function searchTitles(wiki: string, names: string[]): Promise<Record<string, string[]>> {
+  const name = `search-${wiki.replace('/', '-')}`
+  const cache = await readJson<Record<string, string[]>>(name, {})
+  const missing = [...new Set(names)].filter(query => !(query in cache))
+  for (const query of missing) {
+    const data = await api(wiki, { action: 'query', list: 'search', srsearch: query, srlimit: String(SEARCH_RESULTS) })
+    cache[query] = (data?.query?.search ?? []).map(({ title }: { title: string }) => title).filter((title: string) => !title.includes('/') && !NOT_THE_ANIME.test(title))
+    await writeJson(name, cache)
+    await sleep(DELAY_MS)
+  }
+  return cache
+}
+
+// Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
+// transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »).
+// Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
+export function sameName(name: string, title: string): boolean {
+  const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
+  const titleWords = words(title)
+  const candidates = [...titleWords, titleWords.join('')]
+  return words(name).every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
+}
+
+// Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
+function distance(a: string, b: string): number {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => Array.from({ length: b.length + 1 }, (_, j) => i === 0 ? j : j === 0 ? i : 0))
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      d[i]![j] = Math.min(d[i - 1]![j]! + 1, d[i]![j - 1]! + 1, d[i - 1]![j - 1]! + cost)
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+        d[i]![j] = Math.min(d[i]![j]!, d[i - 2]![j - 2]! + 1)
+    }
+  }
+  return d[a.length]![b.length]!
+}
+
 type Pages = Record<string, string | null>
 
 // Le début (section 0) de ces pages, en suivant les redirections, depuis le cache ou par lots de 50
@@ -243,19 +298,24 @@ async function fetchFullPages(wiki: string, titles: string[]): Promise<Pages> {
 
 // Les liens d'une page d'homonymie à ne pas suivre : pas le personnage de l'anime (film, jeu, chanson, épisode…)
 const NOT_THE_ANIME = /film|movie|novel|book|card|item|weapon|location|game|song|episode|chapter|arc|album|disambiguation/i
+const DISAMBIGUATION = /\{\{\s*disambig|may (?:also )?refer to/i
 
 // --- 3. L'infobox ---
 
-// Les champs du 1er modèle de la page qui ressemble à une infobox de personnage ({{Character Infobox, {{Infobox character...})
+// Les champs du 1er modèle de la page qui ressemble à une infobox de personnage : {{Character Infobox, {{Infobox character...,
+// mais aussi les noms maison ({{Human| sur le wiki de Death Note}}), reconnus à leurs champs (gender, occupation...)
 export function fandomInfobox(wikitext: string): Record<string, string> | null {
-  const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
-  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|person)[^|{}\n]*/gi)) {
+  // Sans les <nowiki> : leur « ]] » fermerait le modèle trop tôt (Wang Ling, wiki d'Immortal King)
+  const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '').replace(/<nowiki>[\s\S]*?<\/nowiki>/gi, '')
+  for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
-    if (Object.values(FIELDS).flat().some(name => fields[name]))
+    if (INFOBOX_FIELDS.some(name => fields[name]))
       return fields
   }
   return null
 }
+// Pas la taille : les onglets en haut de page ({{Tabs|height = 35px|tab1 = Overview}}) ont aussi un champ « height »
+const INFOBOX_FIELDS: readonly string[] = Object.entries(FIELDS).flatMap(([key, names]) => key === 'height' ? [] : names)
 
 // Les champs « | clé = valeur » d'un modèle, en ne coupant que sur les « | » de son 1er niveau
 export function templateFields(text: string, start: number): Record<string, string> {
@@ -288,15 +348,59 @@ export function templateFields(text: string, start: number): Record<string, stri
     const equal = part.indexOf('=')
     if (equal < 0)
       continue
-    const value = cleanValue(part.slice(equal + 1))
+    const key = part.slice(0, equal).trim().toLowerCase().replace(/_/g, ' ')
+    const raw = part.slice(equal + 1)
+    const value = cleanValue(UNHIDDEN_FIELDS.has(key) ? unhide(raw) : raw)
     if (value)
-      fields[part.slice(0, equal).trim().toLowerCase().replace(/_/g, ' ')] = value
+      fields[key] = value
   }
   return fields
 }
 
+// Le contenu des spoilers repliés ({{Hidden|Webcomic Spoiler|…}}, {{Hide|…}}) n'est lu que pour l'occupation, l'arme et
+// les titres : ce qu'ils cachent n'y spoile pas (Sonic : « Legendary Demon Blade », il se bat déjà au sabre dans l'anime),
+// la mort est lue à part et jamais affichée. Ailleurs (affiliation : Satoru chez les Neo Heroes), ils restent effacés.
+const UNHIDDEN_FIELDS = new Set([...FIELDS.occupation, ...FIELDS.weapon, ...FIELDS.titles].map(name => name.replace(/_/g, ' ')))
+const HIDDEN = /\{\{\s*(?:hidden|hide)\s*\|/gi
+
+// {{Hidden|titre|contenu}} → contenu, {{Hide|contenu}} → contenu
+export function unhide(text: string): string {
+  let result = ''
+  let last = 0
+  for (const match of text.matchAll(HIDDEN)) {
+    if (match.index! < last)
+      continue
+    // Les arguments du modèle, coupés sur les « | » de son 1er niveau, jusqu'à son « }} »
+    const args = ['']
+    let depth = 1
+    let i = match.index! + match[0].length
+    for (; i < text.length && depth > 0; i++) {
+      const pair = text.slice(i, i + 2)
+      if (pair === '{{' || pair === '[[') {
+        depth++
+        args[args.length - 1] += pair
+        i++
+      } else if (pair === '}}' || pair === ']]') {
+        depth--
+        if (depth > 0)
+          args[args.length - 1] += pair
+        i++
+      } else if (text[i] === '|' && depth === 1) {
+        args.push('')
+      } else {
+        args[args.length - 1] += text[i]
+      }
+    }
+    result += text.slice(last, match.index) + args[args.length - 1]
+    last = i
+  }
+  return result + text.slice(last)
+}
+
 const field = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name.replace(/_/g, ' ')]).find(value => value !== undefined) ?? null
+
+const rawList = (value: string | null) => value ? [value] : null
 
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
@@ -304,7 +408,69 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
+    species: rawList(field(fields, FIELDS.species)),
+    height: heightCm(field(fields, FIELDS.height)),
+    weapon: weaponList(field(fields, FIELDS.weapon)),
+    titles: titleOccupations(field(fields, FIELDS.titles)),
+    deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
   }
+}
+
+// Mort sans ambiguïté : « Deceased », « Killed in action », mais pas « Alive (resurrected) », « Active, Deceased »
+// ni « Deceased (vampire), Unknown (demon) » (selon la version ou la saison)
+export const DECEASED = 'deceased'
+const isDeceased = (status: string | null) =>
+  Boolean(status && /\b(?:deceased|dead|killed|died)\b/i.test(status) && !/\b(?:alive|living|active|resurrect\w*|reincarnated|revived|unknown)\b/i.test(status))
+
+// L'affiliation, quand l'infobox n'a pas d'occupation (« Student (formerly) » sur le wiki de Gleipnir) : seulement un
+// rôle simple qu'on sait traduire. Pas les organisations (« Demon Slayer Corps » pour Nezuko, un démon), les
+// possessifs (« Souichirou Kuzuki's Servant ») ni les noms propres (« Prince Bojji » pour Gigan, son serviteur).
+const AFFILIATION_FIELDS = ['affiliation', 'affiliations', 'current affiliation']
+const NOT_A_ROLE = /'s\b|’s\b|\b(?:corps|army|military|force|forces|federation|kingdom|empire|family|group|shop|association|guild|academy|school|order|organization|agency|club|society|team|party|clan|house|church|government|council|division|squad|unit|company|tribe|faction|alliance|union|league)\b/i
+const PROPER_NAME = /^\S+\s+[A-Z]/
+export function affiliationOccupations(value: string | null): string[] | null {
+  const roles = (value ?? '').split(/\s*(?:,|;|\n|<br\s*\/?>)\s*/).map(item => item.replace(/\s*\([^)]*\)/g, '').trim())
+    .filter(item => item && !NOT_A_ROLE.test(item) && !PROPER_NAME.test(item))
+  return titleOccupations(roles.join(', ') || null)
+}
+
+// L'école de l'infobox, quand elle n'a pas d'occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
+// Pas une ancienne école (« (formerly) », « graduated »). Ni « class » (« 1-D », mais aussi « Warrior », « S-Class »), ni
+// « grade » (« A+ », « Grade 1 »), ni « year » : trop d'autres sens.
+const SCHOOL_FIELDS = ['school', 'schools', 'école']
+const FORMER_SCHOOL = /\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
+export function schoolOccupations(value: string | null): string[] | null {
+  return value && !FORMER_SCHOOL.test(value) ? titleOccupations('Student') : null
+}
+
+// Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
+// pas gardé en anglais : ce sont des surnoms, pas des métiers à corriger.
+function titleOccupations(value: string | null): string[] | null {
+  const found = (splitOccupations(value ?? '') ?? []).map(title => translateOccupation(title.replace(/[«»"]/g, '').trim())).filter((name): name is string => Boolean(name))
+  return found.length > 0 ? [...new Set(found)] : null
+}
+
+// --- L'introduction ---
+
+const MAX_INTRO_OCCUPATIONS = 2
+
+// Sans occupation dans l'infobox : ce que dit l'introduction de la page (« Tatsumi is a young swordsman » → Épéiste),
+// comme au Pixeldle. Chaque rôle est traduit tout de suite, en retirant les adjectifs de tête s'il le faut (« young
+// swordsman » → « swordsman ») : un rôle intraduisible est laissé de côté, pas gardé en anglais. Moins sûr que
+// l'infobox, donc listé dans le récap pour relecture. Certains wikis rangent l'intro dans l'infobox (« |intro= » sur
+// celui de Classroom of the Elite) : retirée avec elle par introText, on la prend dans le champ.
+export function introOccupations(wikitext: string): { roles: string[], occupation: string[] } {
+  const roles = introRoles(fandomInfobox(wikitext)?.intro ?? introText(wikitext))
+  const occupation = roles.flatMap(role => {
+    const words = role.split(/\s+/)
+    for (let start = 0; start < words.length; start++) {
+      const french = translateOccupation(words.slice(start).join(' '))
+      if (french !== undefined)
+        return french ? [french] : []
+    }
+    return []
+  })
+  return { roles, occupation: [...new Set(occupation)].slice(0, MAX_INTRO_OCCUPATIONS) }
 }
 
 // --- Complément ---
@@ -347,11 +513,23 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const prefer = (qualifier: string) => character.target.animeTitles.some(title => title && normalize(qualifier).includes(normalize(title)))
       character.titles = [...character.titles, ...character.titles.flatMap(title => firstPages[title] ? disambiguationLinks(firstPages[title]!, title, prefer, NOT_THE_ANIME) : [])]
     }
-    const pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
-    // La page de chaque personnage : la 1re qui a une infobox
+    let pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    // Aucune page à son nom : les résultats de la recherche du wiki
+    const lost = characters.filter(({ titles }) => !titles.some(title => pages[title]))
+    const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
+    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
+    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    if (lost.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values()].flat()) }
+    // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
+    // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
+    // pour l'occupation de l'intro et les cheveux. Un résultat de recherche ne compte qu'avec une infobox de perso.
     const found = characters.flatMap(({ target, titles }) => {
-      const title = titles.find(title => pages[title] && fandomInfobox(pages[title]!))
-      return title ? [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }] : []
+      const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && fandomInfobox(pages[title]!))
+      if (title)
+        return [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }]
+      const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
+      return bare ? [{ target, title: bare, values: fandomValues({}) }] : []
     })
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
     const hairless = found.filter(({ target, values }) => isEmpty(target.entry.attributes.hair) && isEmpty(values.hair))
@@ -365,11 +543,21 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         added.hair = hair.colors
+      // Sans occupation : le rôle de l'affiliation de l'infobox (« Student (formerly) ») et ce que dit l'introduction,
+      // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
+      const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
+      const infobox = fandomInfobox(pages[title]!) ?? {}
+      const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
+      const intro = jobless ? introOccupations(pages[title]!) : null
+      const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null
+      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
+      if (jobs.length > 0)
+        added.occupation = jobs
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

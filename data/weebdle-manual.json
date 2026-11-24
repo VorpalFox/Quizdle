@@ -40,7 +40,7 @@
    "occupation": {
     "plus": [
      "Leader",
-     "Guerrier"
+     "Combattant"
     ],
     "moins": [
      "Vice Commander",
@@ -70,6 +70,93 @@
     ]
    }
   },
+  "12960": {
+   "_nom": "Grell Sutcliff",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Shinigami"
+    ]
+   }
+  },
+  "14957": {
+   "_nom": "Undertaker",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Shinigami"
+    ]
+   }
+  },
+  "17751": {
+   "_nom": "Angela Blanc",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Ange",
+     "Démon"
+    ]
+   }
+  },
+  "20008": {
+   "_nom": "Ash Landers",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Ange",
+     "Démon"
+    ]
+   }
+  },
+  "30500": {
+   "_nom": "Ritsuko Kunihiro",
+   "species": {
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
+  "32724": {
+   "_nom": "Tatsumi",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Loup-garou"
+    ]
+   }
+  },
+  "33456": {
+   "_nom": "Masao Murasako",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
+  "36490": {
+   "_nom": "Kyouko Ozaki",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
   "38566": {
    "_nom": "Kyuubey",
    "_raison": "créature (Incubator) : pas de cheveux",
@@ -79,17 +166,89 @@
     ]
    }
   },
+  "40591": {
+   "_nom": "Jinta Yadomi",
+   "occupation": {
+    "plus": [
+     "Chômeur"
+    ]
+   }
+  },
+  "40593": {
+   "_nom": "Naruko Anjou",
+   "occupation": {
+    "plus": [
+     "Étudiant"
+    ]
+   }
+  },
+  "40594": {
+   "_nom": "Atsumu Matsuyuki",
+   "occupation": {
+    "plus": [
+     "Étudiant"
+    ]
+   }
+  },
+  "40595": {
+   "_nom": "Chiriko Tsurumi",
+   "occupation": {
+    "plus": [
+     "Étudiant"
+    ]
+   }
+  },
+  "40596": {
+   "_nom": "Tetsudo Hisakawa",
+   "occupation": {
+    "plus": [
+     "Aventurier"
+    ]
+   }
+  },
+  "41943": {
+   "_nom": "Haruna",
+   "occupation": {
+    "plus": [
+     "Étudiant"
+    ]
+   }
+  },
+  "41944": {
+   "_nom": "Aki",
+   "occupation": {
+    "plus": [
+     "Étudiant"
+    ]
+   }
+  },
   "42663": {
    "_nom": "Nene Motoe",
    "occupation": {
     "plus": [
-     "Élève",
+     "Étudiant",
      "Criminel"
     ],
     "moins": [
      "Student",
      "Criminal",
      "Former member of the Main Cast"
+    ]
+   }
+  },
+  "46488": {
+   "_nom": "Bertolt Hoover",
+   "species": {
+    "moins": [
+     "Titan"
+    ]
+   }
+  },
+  "57575": {
+   "_nom": "Shun Aonuma",
+   "species": {
+    "moins": [
+     "Démon"
     ]
    }
   },
@@ -106,7 +265,7 @@
    "_nom": "Aria Kurenaino",
    "occupation": {
     "plus": [
-     "Magicienne"
+     "Magicien"
     ],
     "moins": [
      "Black magic agent"
@@ -146,6 +305,21 @@
    "hair": {
     "plus": [
      "N/A"
+    ]
+   }
+  },
+  "188942": {
+   "_nom": "Wang Ling",
+   "_note": "Titres farfelus assumés par l anime",
+   "occupation": {
+    "plus": [
+     "Étudiant",
+     "Immortal King",
+     "Absolute One",
+     "The Anomaly"
+    ],
+    "moins": [
+     "Student at 60TH High"
     ]
    }
   },
@@ -196,6 +370,17 @@
     ]
    },
    "gender": "Aucun"
+  },
+  "275374": {
+   "_nom": "Bozes Ko Palesti",
+   "occupation": {
+    "plus": [
+     "Chevalier"
+    ],
+    "moins": [
+     "Noble"
+    ]
+   }
   }
  },
  "add": []

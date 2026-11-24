@@ -3628,7 +3628,9 @@
     "Assassin",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3841,7 +3843,9 @@
    "occupation": [
     "Ninja"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -4694,8 +4698,7 @@
    ],
    "occupation": [
     "Combattant",
-    "Religieux",
-    "Commerçant"
+    "Religieux"
    ],
    "hair": [
     "Noirs"
@@ -6541,6 +6544,7 @@
     "Épéiste"
    ],
    "hair": [
+    "Chauve",
     "Argentés"
    ],
    "franchise": "Kingdom Hearts",
@@ -9421,7 +9425,9 @@
     "Marin",
     "Chauffeur"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
    "genres": [
@@ -11875,7 +11881,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -11959,6 +11967,7 @@
     "Dirigeant"
    ],
    "hair": [
+    "Chauve",
     "Blancs"
    ],
    "franchise": "Jak and Daxter",
@@ -12010,7 +12019,9 @@
    "occupation": [
     "Criminel"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
    "genres": [
@@ -12976,7 +12987,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Commerçant"
+    "Inconnu"
    ],
    "hair": [
     "Blonds"
@@ -13434,7 +13445,9 @@
     "Soldat",
     "Dirigeant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -14958,7 +14971,8 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Chauve"
    ],
    "franchise": "Gears of War",
    "developer": "The Coalition",
@@ -28987,8 +29001,7 @@
    ],
    "occupation": [
     "Religieux",
-    "Dirigeant",
-    "Commerçant"
+    "Dirigeant"
    ],
    "hair": [
     "Gris"
@@ -30957,7 +30970,7 @@
     "Folsense"
    ],
    "occupation": [
-    "Commerçant"
+    "Inconnu"
    ],
    "hair": [
     "Bruns"
@@ -31981,7 +31994,9 @@
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -32244,7 +32259,9 @@
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
    "genres": [
@@ -50166,7 +50183,9 @@
    "occupation": [
     "Érudit"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -50300,7 +50319,9 @@
    "occupation": [
     "Inconnu"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
    "genres": [
@@ -52282,6 +52303,7 @@
     "Inconnu"
    ],
    "hair": [
+    "Chauve",
     "Noirs"
    ],
    "franchise": "Okami",
@@ -57501,7 +57523,6 @@
     "Wonderland"
    ],
    "occupation": [
-    "Commerçant",
     "Mécanicien"
    ],
    "hair": null,
@@ -61911,7 +61932,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "franchise": "Dead Island",
    "developer": "Techland",
    "genres": [

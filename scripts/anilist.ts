@@ -1,5 +1,6 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
+import { weaponOccupations } from './pixeldleTranslate.js'
 
 const API = 'https://graphql.anilist.co'
 // AniList limite à 30 requêtes par minute en ce moment : on y va doucement
@@ -62,6 +63,16 @@ export function gender(value: string | null, description: string | null = null):
   return null
 }
 export const genres = (values: string[]) => values.map(genre => GENRES[genre] ?? genre)
+
+// La source de l'anime (champ source d'AniList). Les adaptations d'une œuvre coréenne ou chinoise restent à part
+// (Manhwa, Manhua) ; un web novel, un one-shot ou un doujinshi rejoignent leur grande famille.
+const SOURCES: Record<string, string | null> = {
+  MANGA: 'Manga', ONE_SHOT: 'Manga', DOUJINSHI: 'Manga', WEB_MANGA: 'Manga', MANHWA: 'Manhwa', MANHUA: 'Manhua',
+  LIGHT_NOVEL: 'Light novel', NOVEL: 'Roman', WEB_NOVEL: 'Roman', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel',
+  VIDEO_GAME: 'Jeu vidéo', GAME: 'Jeu vidéo', MULTIMEDIA_PROJECT: 'Projet multimédia', PICTURE_BOOK: 'Livre illustré',
+  LIVE_ACTION: 'Film', COMIC: 'Comics', CARD_GAME: 'Jeu de cartes', MUSIC: 'Musique', OTHER: null,
+}
+export const animeSource = (source: string | null) => source ? SOURCES[source] ?? null : null
 
 // « JUJUTSU KAISEN Season 2 » → « JUJUTSU KAISEN », « Hunter x Hunter (2011) » → « Hunter x Hunter »
 export function cleanTitle(title: string): string {
@@ -145,7 +156,7 @@ const HAIR_COLORS: [RegExp, string][] = [
   [/black|raven|ebony|noir/i, 'Noirs'], [/white|snow|blanc/i, 'Blancs'], [/silver|platinum|argent/i, 'Argentés'], [/gr[ae]y|gris/i, 'Gris'],
   [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blonds'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Bruns'], [/orange|ginger|roux|rousse/i, 'Roux'],
   [/\bred|crimson|scarlet|rouge/i, 'Rouges'], [/pink|\brose/i, 'Roses'], [/blue|cyan|teal|turquoise|bleu/i, 'Bleus'], [/green|\bvert/i, 'Verts'],
-  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Violets'], [/bald|chauve/i, 'Chauve'],
+  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Violets'], [/bald|shaved|chauve/i, 'Chauve'],
 ]
 const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
@@ -168,6 +179,49 @@ export function parseHair(description: string | null): string[] | null {
   const found = HAIR_IN_TEXT.exec(withoutSpoilers(description))
   const fromText = found ? hairColors(found[1]!) : []
   return fromText.length > 0 ? fromText : null
+}
+
+// L'arme (ligne « Weapon: » de la description) dit comment le perso se bat : Épéiste, Tireur... (règles du Pixeldle)
+export function parseWeapon(description: string | null): string[] | null {
+  return weaponList(descriptionField(description, ['Weapons?', 'Armaments?']))
+}
+
+// La taille en cm : la ligne « Height: » de la description (« 173 cm (5'8") »)
+export function parseHeight(description: string | null): number | null {
+  return heightCm(descriptionField(description, ['Height']))
+}
+
+// « 173 cm (5'8") » → 173, « 1.72 m » → 172, « 5' 10½" » → 179, « 178 (5' 10") » → 178. La 1re taille donnée, celle
+// du début de l'histoire (« 147 cm (pre-timeskip), 163 cm (post-timeskip) » → 147) : pas de spoil.
+// Pas « (850), (854) » (les années des chapitres du wiki de L'Attaque des Titans), ni « Unknown ».
+const MIN_CM = 5
+const MAX_BARE_CM = 250
+export function heightCm(value: string | null): number | null {
+  // Une taille d'affichage (« 35px » : le champ height d'un modèle d'onglets), pas celle du perso
+  if (!value || /\d\s*(?:px|em|%)/i.test(value))
+    return null
+  const cm = /(\d+(?:[.,]\d+)?)\s*cm\b/i.exec(value)
+  if (cm)
+    return valid(Number(cm[1]!.replace(',', '.')))
+  const meters = /\b(\d(?:\.\d+)?)\s*m\b/.exec(value)
+  if (meters)
+    return valid(Number(meters[1]) * 100)
+  const feet = /(\d)\s*['’′]\s*(\d+(?:\.\d+)?)?\s*(½)?/.exec(value)
+  if (feet)
+    return valid(Number(feet[1]) * 30.48 + (Number(feet[2] ?? 0) + (feet[3] ? 0.5 : 0)) * 2.54)
+  const bare = /^\s*(?:around|about|approx\.?|~)?\s*(\d{2,3})\b(?!\))/i.exec(value)
+  return bare && Number(bare[1]) <= MAX_BARE_CM ? valid(Number(bare[1])) : null
+}
+const valid = (cm: number) => cm >= MIN_CM ? Math.round(cm) : null
+
+// L'espèce brute (« __Race:__ Human »), traduite plus tard (translateCharacterSpecies)
+export function parseSpecies(description: string | null): string | null {
+  return descriptionField(description, ['Race', 'Species'])
+}
+
+export function weaponList(value: string | null): string[] | null {
+  const found = value ? weaponOccupations(value) : []
+  return found.length > 0 ? found : null
 }
 
 // Les noms acceptés : nom complet dans les deux ordres, et les variantes qui contiennent son nom

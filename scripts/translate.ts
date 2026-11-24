@@ -2,8 +2,11 @@
 // de l'Animedle et du Weebdle. Le sexe et les cheveux sont déjà traduits à la lecture (GENDERS, hairColors) :
 // il reste les occupations, traduites avec un dictionnaire puis des règles par mot-clé. Celles qui ne passent
 // dans aucun restent telles quelles et sont listées à la fin du script : à ajouter ici si c'est générique,
-// sinon à corriger perso par perso dans le fichier de corrections (data/*-manual.json).
+// sinon à corriger perso par perso dans le fichier de corrections (data/*-manual.json). Après les corrections, l'arme
+// du perso s'ajoute et les synonymes sont regroupés en familles (finishOccupations) : les corrections s'écrivent donc
+// avec les valeurs regroupées (Étudiant, pas Lycéen).
 import type { Entry } from '../src/engine/types.js'
+import { expandSpecies, translateSpecies } from './pixeldleTranslate.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
@@ -64,12 +67,16 @@ const OCCUPATIONS: Record<string, string | null> = {
   'chasseur de fantômes': 'Exorciste', 'généticien': 'Scientifique', 'cosplayeur': 'Cosplayeur', 'boulanger': 'Boulanger',
   'chasseur de primes': 'Chasseur de primes', 'lutteur': 'Lutteur', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotiseur',
   // Pas des occupations
-  'unknown': null, 'test subject': null, 'sujet psi': null,
+  'test subject': null, 'sujet psi': null,
+  // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
+  'unknown': 'Inconnu', 'none': 'Aucune',
 }
 
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
 // Les cas précis d'abord, puis les grandes familles de métiers. null : pas une occupation, on la retire.
 const RULES: [RegExp, string | null][] = [
+  // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
+  [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
   [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker/, 'Mafieux'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
@@ -90,20 +97,26 @@ const RULES: [RegExp, string | null][] = [
   [/\bagent\b/, 'Agent secret'],
   [/magazine|journalist|reporter|announcer/, 'Journaliste'],
   [/\bmanager\b/, 'Gérant'],
-  [/\b(?:owner|shop|shopkeeper|store)\b/, 'Commerçant'],
+  // Le propriétaire d'un commerce seulement : pas « owner of the Giftia » (le maître d'un robot)
+  [/\b(?:shop|shopkeeper|store|mart|restaurant|café|cafe|inn|bar)\b|^owner$/, 'Commerçant'],
   // Les postes de Tower of God
   [/bearer|wave controller/, 'Combattant'],
   [/super-?h[ée]ro/, 'Super-héros'],
   [/\bknight|crusader|paladin/, 'Chevalier'],
-  [/\b(?:king|emperor|monarch|ruler|warlord)\b/, 'Roi'],
-  [/\b(?:queen|empress)\b/, 'Reine'],
+  // Pas « one of the Devil King's Generals » : au service du roi
+  [/\b(?:king|emperor|monarch|ruler|warlord)\b(?!'s)/, 'Roi'],
+  [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
   [/princess|heiress/, 'Princesse'],
   [/\bprince\b|\bheir\b/, 'Prince'],
+  [/royal guard/, 'Garde'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
+  [/swords(?:wo)?m[ae]n/, 'Épéiste'],
+  [/exorcist/, 'Exorciste'],
+  [/\bbull(?:y|ies)\b|delinquent/, 'Voyou'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)\b/, 'Combattant'],
-  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)\b/, 'Officier'],
-  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)\b/, 'Garde'],
+  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
+  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Garde'],
   [/butler/, 'Majordome'],
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
   [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
@@ -116,7 +129,7 @@ const RULES: [RegExp, string | null][] = [
   [/\b(?:slave|livestock)\b/, 'Esclave'],
   [/prisoner|inmate/, 'Prisonnier'],
   [/unemployed|\bneet\b|homeless/, 'Chômeur'],
-  [/con ?-?artist|conman|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
+  [/con ?-?artist|con ?man|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
   [/killer|murderer|assassin|hitman|hitwoman/, 'Assassin'],
   [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Magicien'],
   [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Religieux'],
@@ -139,7 +152,7 @@ const RULES: [RegExp, string | null][] = [
   [/game (?:designer|planner|tester)|producer|promoter/, 'Employé'],
   [/house ?wife|house spouse/, 'Femme au foyer'],
   [/[ée]tudiant/, 'Étudiant'],
-  [/\bstudent\b|schooler|freshman|pupil|high school|class representative|homeroom/, 'Élève'],
+  [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Élève'],
   // Pas des occupations : animaux, valeurs vides
   [/\bpet\b|housepet|familiar|^none$|^current$|^former$|^inc$|^npc$/, null],
   // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)
@@ -180,7 +193,171 @@ export function translateEntries(entries: Entry[], fixedIds: ReadonlySet<string>
   return { entries: translated, untranslated }
 }
 
+// --- Regroupement, après les corrections à la main ---
+
+// Les quasi-synonymes : une seule valeur, rien de perdu (Lycéen et Étudiant, c'est pareil pour deviner ; Reine, le sexe le dit déjà)
+const OCCUPATION_MERGES: Record<string, string> = {
+  'Élève': 'Étudiant', 'Lycéen': 'Étudiant', 'Collégien': 'Étudiant',
+  'Guerrier': 'Combattant', 'Tueur': 'Assassin', 'Tireur d\'élite': 'Tireur',
+  'Général': 'Officier', 'Lieutenant': 'Officier', 'Recrue': 'Soldat', 'Garde du corps': 'Garde', 'Agent secret': 'Espion',
+  'Mage': 'Magicien', 'Magicienne': 'Magicien', 'Sorcier': 'Magicien', 'Sorcière': 'Magicien', 'Magical Girl': 'Magical girl',
+  'Prêtre': 'Religieux', 'Prêtresse': 'Religieux', 'Religieuse': 'Religieux', 'Moine': 'Religieux', 'Clerc': 'Religieux',
+  'Roi': 'Souverain', 'Reine': 'Souverain', 'Empereur': 'Souverain', 'Impératrice': 'Souverain', 'Monarque': 'Souverain',
+  'Prince': 'Noble', 'Princesse': 'Noble', 'Comte': 'Noble', 'Seigneur': 'Noble', 'Dame': 'Noble', 'Déesse': 'Dieu',
+  'Héros professionnel': 'Super-héros', 'Pirate de l\'espace': 'Pirate',
+  'Infirmier': 'Médecin', 'Soigneur': 'Médecin', 'Chercheur': 'Scientifique', 'Explorateur': 'Aventurier', 'Voyageur': 'Aventurier',
+  'Instructeur': 'Professeur', 'Employé de bureau': 'Employé', 'Fonctionnaire': 'Employé', 'Marchand': 'Commerçant', 'Vendeur': 'Commerçant',
+  'Servante': 'Domestique', 'Serviteur': 'Domestique', 'Majordome': 'Domestique', 'Serveuse': 'Serveur', 'Boulanger': 'Cuisinier',
+  'Actrice': 'Acteur', 'Rappeur': 'Chanteur',
+}
+
+// Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
+// qui se battent se croisent en jaune même avec des armes différentes
+const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
+  // Combat
+  'Épéiste': ['Combattant'], 'Samouraï': ['Combattant'], 'Ninja': ['Combattant'], 'Chevalier': ['Combattant'], 'Archer': ['Combattant'],
+  'Tireur': ['Combattant'], 'Lancier': ['Combattant'], 'Mercenaire': ['Combattant'], 'Artiste martial': ['Combattant'],
+  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'],
+  // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
+  'Officier': ['Soldat'], 'Bataillon d\'exploration': ['Soldat'], 'Éclaireur': ['Soldat'],
+  'Pourfendeur de démons': ['Chasseur de monstres', 'Combattant'], 'Chasseur de démons': ['Chasseur de monstres', 'Combattant'],
+  'Chasseur de vampires': ['Chasseur de monstres', 'Combattant'], 'Exorciste': ['Chasseur de monstres', 'Magicien'],
+  'Super-héros': ['Héros', 'Combattant'], 'Justicier': ['Héros'],
+  // Crime
+  'Assassin': ['Criminel', 'Combattant'], 'Tueur en série': ['Criminel'], 'Mafieux': ['Criminel'], 'Voyou': ['Criminel'],
+  'Voleur': ['Criminel'], 'Pirate': ['Criminel'], 'Terroriste': ['Criminel'],
+  // Magie, religion
+  'Magical girl': ['Magicien'], 'Onmyouji': ['Magicien'], 'Utilisateur de fléaux': ['Magicien'], 'Miko': ['Religieux'], 'Oracle': ['Religieux'],
+  // Pouvoir
+  'Souverain': ['Noble', 'Leader'], 'Président': ['Leader'], 'Gérant': ['Leader'], 'Capitaine': ['Leader'],
+  'Directeur d\'école': ['Professeur', 'Leader'], 'Président du conseil des élèves': ['Étudiant', 'Leader'],
+  // Sciences, santé
+  'Chirurgien': ['Médecin'], 'Psychiatre': ['Médecin'], 'Ingénieur': ['Scientifique'], 'Inventeur': ['Scientifique'],
+  'Archéologue': ['Scientifique'], 'Océanographe': ['Scientifique'], 'Astronome': ['Scientifique'], 'Alchimiste': ['Scientifique'],
+  // Arts, spectacle
+  'Chanteur': ['Musicien', 'Artiste'], 'Musicien': ['Artiste'], 'Idole': ['Chanteur', 'Célébrité', 'Artiste'],
+  'Acteur': ['Célébrité', 'Artiste'], 'Mannequin': ['Célébrité', 'Artiste'], 'Youtubeur': ['Célébrité'], 'Doubleur': ['Artiste'],
+  'Mangaka': ['Artiste'], 'Écrivain': ['Artiste'], 'Cosplayeur': ['Artiste'], 'Couturier': ['Artisan'],
+  // Métiers, sport
+  'Forgeron': ['Artisan'], 'Fleuriste': ['Artisan'], 'Cuisinier': ['Artisan'], 'Petits boulots': ['Employé'], 'Volleyeur': ['Sportif'],
+}
+
+const NO_REAL_OCCUPATION = new Set(['Inconnu', 'Aucune'])
+
+// Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
+export function groupOccupations(values: readonly string[]): string[] | null {
+  // Inconnu et Aucune s'effacent devant une vraie occupation (une arme, un titre)
+  const real = values.filter(value => !NO_REAL_OCCUPATION.has(value))
+  const merged = (real.length > 0 ? real : values).map(value => OCCUPATION_MERGES[value] ?? value)
+  const grouped = [...new Set([...merged, ...merged.flatMap(value => OCCUPATION_FAMILIES[value] ?? [])])]
+  return grouped.length > 0 ? grouped : null
+}
+
+// Les armes et les titres ajoutés à l'occupation, au plus (comme au Pixeldle)
+const MAX_WEAPONS = 2
+const MAX_TITLES = 2
+
+// Un perso mort sans aucune occupation : « Aucune » (validé avec FX). Seulement s'il n'a rien d'autre, et jamais
+// « Mort » ou « Défunt » : ce serait un spoil affiché à chaque proposition.
+const NO_OCCUPATION = 'Aucune'
+
+// À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
+// « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé
+export function finishOccupations(entries: Entry[]): Entry[] {
+  return entries.map(entry => {
+    const { weapon, titles, deceased, ...attributes } = entry.attributes
+    const extra = (value: unknown, max: number) => ((value as string[] | null | undefined) ?? []).slice(0, max)
+    const occupation = [...(attributes.occupation as string[] | null) ?? [], ...extra(weapon, MAX_WEAPONS), ...extra(titles, MAX_TITLES)]
+    const grouped = groupOccupations(occupation) ?? (deceased ? [NO_OCCUPATION] : null)
+    return { ...entry, attributes: { ...attributes, occupation: grouped } }
+  })
+}
+
 // Les ids dont le fichier de corrections remplace l'occupation
 export function fixedOccupationIds(edit: Record<string, Record<string, unknown>>): Set<string> {
   return new Set(Object.entries(edit).filter(([, changes]) => 'occupation' in changes).map(([id]) => id))
+}
+
+// --- Espèce (Weebdle) ---
+
+// Les espèces des animes, clés en minuscules, par-dessus la table du Pixeldle (translateSpecies). Les peuples d'un seul
+// anime rejoignent une grande famille pour que les persos se croisent : les Spirals de Gurren Lagann sont des humains,
+// les Giftias de Plastic Memories des androïdes. null = pas une espèce.
+const ANIME_SPECIES: Record<string, string | null> = {
+  'new human': 'Humain', 'spiral': 'Humain', 'immanity': 'Humain', 'imanity': 'Humain', 'evolved human': 'Humain',
+  'divine human': 'Humain', 'caucasian': 'Humain', 'beyondian': 'Humain', 'gamer': 'Humain', 'amazoness': 'Humain',
+  'pallum': 'Humain', 'esper': 'Humain', 'magus': 'Humain', 'burst linker': 'Humain', 'master': null, 'magician': 'Humain',
+  'giftia': 'Androïde', 'humanoid ai': 'Androïde', 'cyber girl': 'Androïde',
+  'shiki': 'Vampire', 'real vampire': 'Vampire', 'artificial vampire': 'Vampire', 'lesser vampire': 'Vampire', 'vampiric thrall': 'Vampire',
+  'devilman': 'Démon', 'succubus': 'Démon', 'fiend': 'Démon', 'fiend host': 'Démon', 'karma demon': 'Démon', 'demons': 'Démon', 'daemon': 'Démon',
+  'grim reaper': 'Shinigami', 'shinigami': 'Shinigami', 'soul reaper': 'Shinigami',
+  'seraph': 'Ange', 'flügel': 'Ange', 'jinrou': 'Loup-garou', 'intelligent titan': 'Titan', 'titan': 'Titan',
+  'pillar man': 'Homme du pilier', 'life fibers': 'Fibre de vie', 'chimera ant': 'Fourmi-chimère',
+  'monster rat': 'Rat', 'filolial': 'Oiseau', 'crow': 'Oiseau', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
+  'hobgoblin': 'Gobelin', 'ghast': 'Mort-vivant', 'kamui': 'Fibre de vie', 'boaz': 'Homme-bête', 'wanui': 'Homme-bête',
+  'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
+  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
+}
+// La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
+const ANIME_SPECIES_RULES: [RegExp, string][] = [
+  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
+  [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
+  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
+  [/\bvampir/, 'Vampire'],
+  [/\b(?:demon|devil|oni)\b/, 'Démon'],
+  [/\bdragon/, 'Dragon'],
+  [/\b(?:elf|elves|alv)\b/, 'Elfe'],
+  [/\b(?:angel|seraph)/, 'Ange'],
+  [/\b(?:werewolf|jinrou)\b/, 'Loup-garou'],
+  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yōkai'],
+  [/\bspirit\b/, 'Esprit'],
+  [/\b(?:giant|gigantes)\b/, 'Géant'],
+  [/\b(?:god|goddess|deity|divine)\b/, 'Divinité'],
+  [/\b(?:android|robot|ai)\b/, 'Robot'],
+  [/\bhumans?\b/, 'Humain'],
+]
+// Pas de spoil : l'espèce du début de l'histoire. Les infobox Fandom donnent souvent la suite (Mikaela, Seraph of the
+// End : « Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon »). Si une part est marquée « avant »
+// (formerly, previously…), on ne garde que celles-là ; sinon on retire celles marquées « après » (currently, by the end…).
+// Les peuples révélés tard ne sont pas traduits exprès : Nephilim (Blue Exorcist), Elder Bairn (Blood-C), Shadow.
+const EARLIER = /\b(?:former|formerly|previously|originally|initially|at first|born as|until)\b|\bpre-|^part\s*1\b/i
+const LATER = /\b(?:currently|later|now|inactive|true form|awakened|eventually|by the end|after|as of|since|temporary|temporarily|reincarnat\w*|original timeline)\b|\bpost-|^part\s*[2-9]\b/i
+
+// « Human (formerly), Demon » → Humain. Ce qu'on ne sait pas traduire est mis de côté (unknown), pas gardé en anglais :
+// souvent une phrase (« most possibly an absolute monad »), à ajouter ici si ça revient.
+export function translateCharacterSpecies(raw: string): { species: string[], unknown: string[] } {
+  const species: string[] = []
+  const unknown: string[] = []
+  const parts = raw.split(/\s*(?:,|;|\/|\n|&|\band\b|\bor\b|→|・)\s*/i).filter(part => part.trim())
+  const earlier = parts.filter(part => EARLIER.test(part))
+  for (const part of earlier.length > 0 ? earlier : parts.filter(part => !LATER.test(part))) {
+    const key = part.toLowerCase().replace(/\s*\([^)]*\)?/g, '').replace(/\[[^\]]*\]/g, '').replace(/^[\s*•·-]+|[\s.:)]+$/g, '').trim()
+    if (!key || /^\d+$/.test(key))
+      continue
+    const name = key.replace(/^part\s*1\s*:\s*/, '')
+    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1]
+    if (french === undefined)
+      unknown.push(part.trim())
+    else if (french)
+      species.push(french)
+  }
+  return { species: [...new Set(species)], unknown }
+}
+
+// L'espèce des entrées (« species », les valeurs brutes des sources) traduite et dépliée (Demi-elfe = Humain + Elfe,
+// un chat est aussi un Animal), avec ce qui n'a pas pu l'être
+export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], untranslated: Map<string, number> } {
+  const untranslated = new Map<string, number>()
+  const translated = entries.map(entry => {
+    const raw = entry.attributes.species
+    if (!Array.isArray(raw))
+      return entry
+    const found = (raw as string[]).map(translateCharacterSpecies)
+    for (const value of found.flatMap(({ unknown }) => unknown))
+      untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
+    // Une seule source a rempli l'espèce (la 1re qui en a une : AniList, Wikidata, Fandom), parfois en plusieurs valeurs
+    const species = [...new Set(found.flatMap(({ species }) => species))]
+    return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
+  })
+  return { entries: translated, untranslated }
 }

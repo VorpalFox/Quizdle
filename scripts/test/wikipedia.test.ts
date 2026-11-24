@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fixedOccupationIds, translateEntries, translateOccupation } from '../translate.js'
+import { finishOccupations, fixedOccupationIds, groupOccupations, translateEntries, translateOccupation } from '../translate.js'
 import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from '../wikipedia.js'
 
 const SUBARU_FR = `{{Infobox Personnage (fiction)
@@ -104,7 +104,7 @@ describe('translateEntries', () => {
   it('Occupations_TraduitesEtInconnuesListees', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Student', 'Unknown', 'Jedi'] } }
     const { entries, untranslated } = translateEntries([entry])
-    expect(entries[0]!.attributes.occupation).toEqual(['Élève', 'Jedi'])
+    expect(entries[0]!.attributes.occupation).toEqual(['Élève', 'Inconnu', 'Jedi'])
     expect([...untranslated]).toEqual([['Jedi', 1]])
   })
 
@@ -112,5 +112,84 @@ describe('translateEntries', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Jedi'] } }
     const { untranslated } = translateEntries([entry], fixedOccupationIds({ '1': { occupation: ['Chevalier'] } }))
     expect(untranslated.size).toBe(0)
+  })
+})
+
+describe('groupOccupations', () => {
+  it('Synonymes_UneSeuleValeur', () => {
+    expect(groupOccupations(['Lycéen', 'Élève', 'Étudiant'])).toEqual(['Étudiant'])
+  })
+
+  it('ValeurPrecise_FamilleAjoutee', () => {
+    expect(groupOccupations(['Épéiste'])).toEqual(['Épéiste', 'Combattant'])
+    expect(groupOccupations(['Tueur'])).toEqual(['Assassin', 'Criminel', 'Combattant'])
+  })
+
+  it('Vide_Null', () => {
+    expect(groupOccupations([])).toBeNull()
+  })
+})
+
+describe('finishOccupations', () => {
+  it('Armes_AjouteesALOccupationPuisRetirees', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Mercenaire'], weapon: ['Épéiste', 'Tireur', 'Archer'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenaire', 'Épéiste', 'Tireur', 'Combattant'] })
+  })
+
+  it('SansOccupation_LArmeSuffit', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: null, weapon: ['Épéiste'] } }
+    expect(finishOccupations([entry])[0]!.attributes.occupation).toEqual(['Épéiste', 'Combattant'])
+  })
+})
+
+describe('translateOccupation, rôles des intros Fandom', () => {
+  it('Pluriels_EtNouveauxMotsCles', () => {
+    expect(translateOccupation('swordsmen')).toBe('Épéiste')
+    expect(translateOccupation('bodyguards')).toBe('Garde')
+    expect(translateOccupation('one of Satoru Fujinuma\'s classmates')).toBe('Élève')
+    expect(translateOccupation('Junior Second Class Exorcist of the True Cross Order')).toBe('Exorciste')
+  })
+
+  it('ProprietaireSansCommerce_PasCommercant', () => {
+    expect(translateOccupation('owner of the Giftia')).toBeUndefined()
+    expect(translateOccupation('previous owner of the Koba Mart convenience store')).toBe('Commerçant')
+  })
+})
+
+describe('finishOccupations, titres', () => {
+  it('Titres_AjoutesALOccupation', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+  })
+})
+
+describe('finishOccupations, titres', () => {
+  it('Titres_AjoutesALOccupation', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+  })
+})
+
+describe('finishOccupations, mort', () => {
+  it('MortSansOccupation_Aucune', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: null, deceased: 'deceased' } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Aucune'] })
+  })
+
+  it('MortAvecOccupation_PasDeAucune', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Soldat'], deceased: 'deceased' } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Soldat'] })
+  })
+})
+
+describe('groupOccupations, Inconnu et Aucune', () => {
+  it('AssumeParLaSource_Garde', () => {
+    expect(translateOccupation('Unknown')).toBe('Inconnu')
+    expect(translateOccupation('None')).toBe('Aucune')
+    expect(groupOccupations(['Inconnu'])).toEqual(['Inconnu'])
+  })
+
+  it('AvecUneVraieOccupation_Efface', () => {
+    expect(groupOccupations(['Inconnu', 'Épéiste'])).toEqual(['Épéiste', 'Combattant'])
   })
 })
