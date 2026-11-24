@@ -108,7 +108,9 @@ const WIKIS: Record<string, string[] | null> = {
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
 const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'métier', 'activité', 'fonction'],
+  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
+  occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'arme rejoint l'occupation à la fin (finishOccupations)
