@@ -203,6 +203,48 @@ function characterTitles(target: WikiTarget, article: string | undefined): strin
     .filter(title => !/[#<>[\]{}|]/.test(title))
 }
 
+// Pas de page au nom du perso : la recherche du wiki, quand AniList et le wiki ne l'appellent pas pareil (« Pyoran »
+// → « Pioran », « Kansatsu-sha » → « The Beholder » sur le wiki de To Your Eternity). Sans les sous-pages (« Pioran/Plot »)
+// ni les épisodes ou chapitres ; le résultat ne compte que s'il a une infobox de perso (voir completeFromFandom).
+const SEARCH_RESULTS = 3
+async function searchTitles(wiki: string, names: string[]): Promise<Record<string, string[]>> {
+  const name = `search-${wiki.replace('/', '-')}`
+  const cache = await readJson<Record<string, string[]>>(name, {})
+  const missing = [...new Set(names)].filter(query => !(query in cache))
+  for (const query of missing) {
+    const data = await api(wiki, { action: 'query', list: 'search', srsearch: query, srlimit: String(SEARCH_RESULTS) })
+    cache[query] = (data?.query?.search ?? []).map(({ title }: { title: string }) => title).filter((title: string) => !title.includes('/') && !NOT_THE_ANIME.test(title))
+    await writeJson(name, cache)
+    await sleep(DELAY_MS)
+  }
+  return cache
+}
+
+// Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
+// transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »).
+// Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
+export function sameName(name: string, title: string): boolean {
+  const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
+  const titleWords = words(title)
+  const candidates = [...titleWords, titleWords.join('')]
+  return words(name).every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
+}
+
+// Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
+function distance(a: string, b: string): number {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => Array.from({ length: b.length + 1 }, (_, j) => i === 0 ? j : j === 0 ? i : 0))
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      d[i]![j] = Math.min(d[i - 1]![j]! + 1, d[i]![j - 1]! + 1, d[i - 1]![j - 1]! + cost)
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+        d[i]![j] = Math.min(d[i]![j]!, d[i - 2]![j - 2]! + 1)
+    }
+  }
+  return d[a.length]![b.length]!
+}
+
 type Pages = Record<string, string | null>
 
 // Le début (section 0) de ces pages, en suivant les redirections, depuis le cache ou par lots de 50
@@ -334,9 +376,10 @@ const MAX_INTRO_OCCUPATIONS = 2
 // Sans occupation dans l'infobox : ce que dit l'introduction de la page (« Tatsumi is a young swordsman » → Épéiste),
 // comme au Pixeldle. Chaque rôle est traduit tout de suite, en retirant les adjectifs de tête s'il le faut (« young
 // swordsman » → « swordsman ») : un rôle intraduisible est laissé de côté, pas gardé en anglais. Moins sûr que
-// l'infobox, donc listé dans le récap pour relecture.
+// l'infobox, donc listé dans le récap pour relecture. Certains wikis rangent l'intro dans l'infobox (« |intro= » sur
+// celui de Classroom of the Elite) : retirée avec elle par introText, on la prend dans le champ.
 export function introOccupations(wikitext: string): { roles: string[], occupation: string[] } {
-  const roles = introRoles(introText(wikitext))
+  const roles = introRoles(fandomInfobox(wikitext)?.intro ?? introText(wikitext))
   const occupation = roles.flatMap(role => {
     const words = role.split(/\s+/)
     for (let start = 0; start < words.length; start++) {
@@ -389,12 +432,19 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const prefer = (qualifier: string) => character.target.animeTitles.some(title => title && normalize(qualifier).includes(normalize(title)))
       character.titles = [...character.titles, ...character.titles.flatMap(title => firstPages[title] ? disambiguationLinks(firstPages[title]!, title, prefer, NOT_THE_ANIME) : [])]
     }
-    const pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    let pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    // Aucune page à son nom : les résultats de la recherche du wiki
+    const lost = characters.filter(({ titles }) => !titles.some(title => pages[title]))
+    const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
+    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
+    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    if (lost.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values()].flat()) }
     // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
     // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
-    // pour l'occupation de l'intro et les cheveux
+    // pour l'occupation de l'intro et les cheveux. Un résultat de recherche ne compte qu'avec une infobox de perso.
     const found = characters.flatMap(({ target, titles }) => {
-      const title = titles.find(title => pages[title] && fandomInfobox(pages[title]!))
+      const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && fandomInfobox(pages[title]!))
       if (title)
         return [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }]
       const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))

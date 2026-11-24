@@ -1525,7 +1525,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -2059,7 +2061,9 @@
     "Leader",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",
@@ -2239,8 +2243,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 17,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Marine Biologist"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
@@ -3083,7 +3092,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 12,
-   "occupation": null,
+   "occupation": [
+    "Étudiant",
+    "Artisan"
+   ],
    "hair": null,
    "anime": "A Silent Voice",
    "genres": [
@@ -3359,8 +3371,13 @@
   "attributes": {
    "gender": "Homme",
    "age": 12,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Artisan"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -3482,7 +3499,9 @@
     "Volleyeur",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",
@@ -4379,7 +4398,9 @@
     "Volleyeur",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",

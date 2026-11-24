@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fandomInfobox, fandomValues, introOccupations } from '../fandom.js'
+import { fandomInfobox, fandomValues, introOccupations, sameName } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -64,5 +64,26 @@ describe('fandomValues, titres', () => {
   it('Titres_TraduitsSansLesSurnoms', () => {
     const page = "{{Character Infobox\n|gender = Male\n|titles = «The Black Swordsman»<br>Beater\n}}"
     expect(fandomValues(fandomInfobox(page)!).titles).toEqual(['Épéiste'])
+  })
+})
+
+describe('sameName', () => {
+  it('AutreTranscription_MemePerso', () => {
+    expect(sameName('Kiyotaka Ayanokouji', 'Kiyotaka Ayanokōji')).toBe(true)
+    expect(sameName('Pyoran', 'Pioran')).toBe(true)
+    expect(sameName('Yi Zhou', 'Zhuo Yi')).toBe(true)
+  })
+
+  it('AutrePersoQuiPartageUnMot_Ecarte', () => {
+    expect(sameName('Ling Wang Ma', 'Wang Ling')).toBe(false)
+    expect(sameName('Shin Sakai', 'Haruka Sakai')).toBe(false)
+    expect(sameName('A-ko', 'Chu-Chu')).toBe(false)
+  })
+})
+
+describe('introOccupations, intro dans l\'infobox', () => {
+  it('ChampIntro_Lu', () => {
+    const page = "{{Character\n|gender = Male\n|intro='''Kiyotaka''' is the main protagonist of the series. He is currently a third-year student of Advanced Nurturing High School.}}"
+    expect(introOccupations(page).occupation).toEqual(['Élève'])
   })
 })
