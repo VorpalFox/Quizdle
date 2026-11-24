@@ -1,4 +1,4 @@
-// Complète les indices qu'AniList n'a pas donnés (sexe, occupation, cheveux) avec l'infobox de la page Wikipédia
+// Complète les indices qu'AniList n'a pas donnés (sexe, âge, occupation, cheveux) avec l'infobox de la page Wikipédia
 // du personnage : FR d'abord (déjà en français), puis EN. Seuls les gros personnages ont une page, mais c'est gratuit :
 // 50 titres par requête, et les réponses sont gardées dans .cache/wikipedia/ (hors git).
 // Pour tout retélécharger : supprimer .cache/wikipedia/.
@@ -6,6 +6,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { hairColors, sleep, splitOccupations, type CharacterName } from './anilist.js'
+import { infoboxAge } from './wikiText.js'
 
 const LANGUAGES = ['fr', 'en'] as const
 type Language = typeof LANGUAGES[number]
@@ -30,6 +31,7 @@ const FIELDS = {
   gender: ['sexe', 'genre', 'gender', 'sex'],
   occupation: ['activité', 'profession', 'métier', 'occupation', 'occupations'],
   hair: ['cheveux', 'hair', 'hair color', 'hair colour', 'hair_color', 'haircolor'],
+  age: ['âge', 'age'],
 } as const
 
 const GENDERS: Record<string, string> = {
@@ -258,6 +260,7 @@ export async function completeFromWikipedia(targets: WikiTarget[]): Promise<Wiki
         gender: wikiGender(field(fields, FIELDS.gender)),
         occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
         hair: wikiHair(field(fields, FIELDS.hair)),
+        age: infoboxAge(field(fields, FIELDS.age)),
       }
       for (const [key, value] of Object.entries(values)) {
         if (isEmpty(entry.attributes[key]) && isEmpty(found[key]) && !isEmpty(value))

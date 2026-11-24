@@ -177,7 +177,9 @@
     "Agent secret",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -370,7 +372,10 @@
     "Élève",
     "Servante"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus",
+    "Noirs"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -668,7 +673,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -696,7 +703,9 @@
     "Chercheur",
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -723,7 +732,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -779,7 +790,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -861,7 +874,9 @@
     "Capitaine",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -887,7 +902,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -911,7 +928,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -962,7 +981,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -1032,7 +1053,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -1128,12 +1151,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124026-KcQmX7heg7im.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Élève",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1154,12 +1179,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89335-3fy5a7Qa9h9J.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Artisan",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1182,12 +1209,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124035-Il86uF1hboRA.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Leader",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1208,7 +1237,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124030-YoZ0Drg5cHXX.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 40,
    "occupation": [
     "Artisan",
     "Commerçant"
@@ -1234,11 +1263,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124031-ErVGKjxFH56V.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 5,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1261,12 +1292,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124038-tmsS0TUxwx87.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Mannequin",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1288,7 +1321,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124037-3KFDLRIT66Bn.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 46,
    "occupation": [
     "Infirmier"
    ],
@@ -1314,11 +1347,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124034-94AX4zhTaQZB.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1338,11 +1373,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135851-7gmFc8ZB594q.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 39,
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1363,12 +1400,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124039-gbt1fKyZRdBp.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Employé",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1390,9 +1429,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124036-smBYAumpnds2.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 69,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1413,11 +1454,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124033-UThOFdQGZjq7.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1439,7 +1482,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1461,7 +1506,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135854-UpPOO4l7YdUG.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Élève"
    ],
@@ -1489,7 +1534,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "A Silent Voice",
    "genres": [
     "Drame",
@@ -1541,7 +1588,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1593,7 +1642,9 @@
    "gender": "Homme",
    "age": 13,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1617,7 +1668,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1640,11 +1693,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/62607.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 11,
    "occupation": [
     "Reine"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1669,7 +1724,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1695,7 +1752,9 @@
    "occupation": [
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1745,7 +1804,9 @@
    "occupation": [
     "Garde du corps"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1769,7 +1830,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1793,7 +1856,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -1817,7 +1882,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -2000,7 +2067,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Accel World",
    "genres": [
     "Action",
@@ -2258,7 +2327,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163191-1axpEo6UCU6J.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Médecin"
    ],
@@ -2714,7 +2783,9 @@
     "Pilote",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ALDNOAH.ZERO",
    "genres": [
     "Action",
@@ -2799,7 +2870,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ALDNOAH.ZERO",
    "genres": [
     "Action",
@@ -3039,7 +3112,9 @@
     "Pilote",
     "Mécanicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ALDNOAH.ZERO",
    "genres": [
     "Action",
@@ -3260,7 +3335,9 @@
     "Médecin",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3288,7 +3365,9 @@
     "Sportif",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3314,7 +3393,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3343,7 +3424,10 @@
     "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Roses",
+    "Rouges"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3368,7 +3452,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3395,7 +3481,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3420,7 +3508,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3446,7 +3536,9 @@
     "Sportif",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3529,7 +3621,9 @@
     "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3556,7 +3650,9 @@
     "Élève",
     "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3609,7 +3705,9 @@
     "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3663,7 +3761,9 @@
     "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3692,7 +3792,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Angel Beats!",
    "genres": [
     "Action",
@@ -3715,7 +3817,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40592-mAEyaQyJu5oc.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Argentés"
@@ -3821,7 +3923,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40594-ZKnNeogrL2K0.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -3849,7 +3951,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40595-WWFvfCf4C8If.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Bleus"
@@ -3977,7 +4079,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/41943.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -4002,7 +4104,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/41944.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -4126,9 +4228,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121449-zePNc0SySKvR.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -4150,7 +4254,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121447-du1eMv8Jtz0V.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -4179,7 +4283,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -4201,7 +4307,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121446-TrmaeTxiMN95.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -4254,7 +4360,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121460-XqhHoJNpIGOU.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -4282,9 +4388,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121458-2IyCZSyvjXMh.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -4553,7 +4661,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126529-5BDbPIz2JbPE.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 5,
    "occupation": [
     "Marchand"
    ],
@@ -4578,7 +4686,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126544-DQzlrgyV6eR8.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Prêtre"
    ],
@@ -4603,7 +4711,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126537-EDEeeiLkafXX.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 29,
    "occupation": [
     "Leader"
    ],
@@ -4626,10 +4734,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126526-y4BdumWU3uDv.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 6,
    "occupation": [
-    "Artisan",
-    "Leherl at the Gilberta Company"
+    "Artisan"
    ],
    "hair": [
     "Bleus",
@@ -4678,7 +4785,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126528-OWdSG6sWkaga.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 32,
    "occupation": [
     "Soldat"
    ],
@@ -4703,7 +4810,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126534-LqeIgDc9494o.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Marchand",
     "Garde",
@@ -4730,7 +4837,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126541-2fSYjKk8u5Sa.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 6,
    "occupation": [
     "Marchand"
    ],
@@ -4755,7 +4862,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126538-A3Cp8nm7GfKB.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Volleyeur"
    ],
@@ -4780,7 +4887,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126539-x9eQ9cm1e4qj.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 35,
    "occupation": [
     "Marchand",
     "Assistant"
@@ -4806,7 +4913,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126540-9Yffl5nb24N8.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Marchand",
     "Leader"
@@ -4858,7 +4965,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126545-Nz2KqtePmc9w.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Religieux"
    ],
@@ -4887,7 +4994,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -4911,7 +5020,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -4935,7 +5046,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -4958,7 +5071,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -4985,7 +5100,9 @@
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5009,7 +5126,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5034,7 +5153,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5058,7 +5179,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5083,7 +5206,9 @@
    "gender": "Femme",
    "age": 10,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5153,7 +5278,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5176,7 +5303,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5200,7 +5329,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5226,7 +5357,9 @@
    "occupation": [
     "Chanteur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5252,7 +5385,10 @@
    "occupation": [
     "Chercheur"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blancs"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5278,7 +5414,9 @@
    "occupation": [
     "Chercheur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5325,7 +5463,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5348,7 +5488,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ASTRA LOST IN SPACE",
    "genres": [
     "Aventure",
@@ -5498,7 +5640,9 @@
     "Leader",
     "Bataillon d'exploration"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5527,7 +5671,9 @@
     "Chasseur",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5556,7 +5702,9 @@
     "Guerrier",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5585,7 +5733,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5613,7 +5763,9 @@
    "occupation": [
     "Guerrier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5670,7 +5822,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5727,7 +5881,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5755,7 +5911,9 @@
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5783,7 +5941,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5811,7 +5971,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5838,7 +6000,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5888,7 +6052,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5916,7 +6082,9 @@
    "occupation": [
     "Marchand"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -6119,7 +6287,9 @@
    "occupation": [
     "Mangaka"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Bakuman.",
    "genres": [
     "Comédie",
@@ -6263,7 +6433,9 @@
    "occupation": [
     "Mangaka"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Bakuman.",
    "genres": [
     "Comédie",
@@ -6374,7 +6546,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 50,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -6522,7 +6696,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6548,7 +6724,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6572,7 +6750,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6597,7 +6777,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6619,11 +6801,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b223323-kZffD820KegD.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6722,7 +6906,8 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Observer Participant"
+    "Observer",
+    "Participant"
    ],
    "hair": [
     "Bleus"
@@ -6749,7 +6934,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6822,7 +7009,9 @@
    "occupation": [
     "Marchand"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6846,7 +7035,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -6961,7 +7152,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -7068,7 +7261,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83523-4M96n5mmxRnm.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Leader",
     "Élève",
@@ -7100,7 +7293,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88336-yxxU5kiQkQuh.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Combattant"
    ],
@@ -7158,7 +7351,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88338.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": null,
    "hair": [
     "Blancs"
@@ -7185,7 +7378,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88339.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Combattant"
    ],
@@ -7243,7 +7436,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88343.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": null,
    "hair": [
     "Bleus",
@@ -7297,7 +7490,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88337-SGoTJp23NUzI.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Leader"
    ],
@@ -7326,7 +7519,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88340-3nsKbWvGux71.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Mannequin"
    ],
@@ -7447,7 +7640,9 @@
    "occupation": [
     "Majordome"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7475,7 +7670,10 @@
    "occupation": [
     "Comte"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus",
+    "Gris"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7526,7 +7724,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7548,11 +7748,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14952-8VoSzSodSMdO.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 24,
    "occupation": [
     "Servante"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7578,7 +7780,9 @@
    "occupation": [
     "Artisan"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7607,7 +7811,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7689,7 +7895,9 @@
    "occupation": [
     "Majordome"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7715,7 +7923,9 @@
    "occupation": [
     "Serviteur"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7740,7 +7950,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7822,7 +8034,10 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7850,7 +8065,9 @@
    "occupation": [
     "Reine"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7879,7 +8096,9 @@
    "occupation": [
     "Servante"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7930,11 +8149,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/20367.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 70,
    "occupation": [
     "Reine"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7960,7 +8181,9 @@
    "occupation": [
     "Artiste"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Black Butler",
    "genres": [
     "Action",
@@ -7984,7 +8207,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62581-VqyYG9m0MawE.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Mage",
     "Élève"
@@ -8015,7 +8238,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62583-EAgOdW14zwCp.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Mage"
    ],
@@ -8044,7 +8267,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43737-HrQAlYu7bb7W.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -8072,9 +8295,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b42202-xOe8jXuNcRow.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Blast of Tempest",
    "genres": [
     "Action",
@@ -8099,7 +8324,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68417-CCY5atoOXgAk.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Chômeur",
     "Government Volunteer"
@@ -8602,9 +8827,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135500-ztnv9jELgtSF.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Blood Blockade Battlefront",
    "genres": [
     "Action",
@@ -8646,7 +8873,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89133-G5aGGGhlxmhQ.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1000,
    "occupation": [
     "Méchant",
     "Mafieux"
@@ -8779,7 +9006,9 @@
    "gender": "Femme",
    "age": 23,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Blood Blockade Battlefront",
    "genres": [
     "Action",
@@ -8802,7 +9031,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124710-oBzeHjtMrAxl.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 23,
    "occupation": null,
    "hair": null,
    "anime": "Blood Blockade Battlefront",
@@ -9028,7 +9257,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42664.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève",
     "Criminel"
@@ -9088,7 +9317,8 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Chercheur"
    ],
    "hair": [
     "Blonds"
@@ -9206,7 +9436,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30432-I4KwsegOrzfq.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1000,
    "occupation": [
     "Chevalier"
    ],
@@ -9232,7 +9462,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b43187-uJySWMkmaWmZ.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 121,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -9258,7 +9488,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30431-l5NMqfM82w4q.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 51,
    "occupation": null,
    "hair": [
     "Gris"
@@ -9398,7 +9628,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30433-8YHbgfkBTn8P.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1000,
    "occupation": [
     "Élève"
    ],
@@ -9449,7 +9679,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48511-FfvuZ6i6Czep.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 29,
    "occupation": null,
    "hair": [
     "Bruns",
@@ -9474,7 +9704,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48449-LZibifWzcpoo.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 39,
    "occupation": [
     "Roi"
    ],
@@ -9588,7 +9818,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/43137.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 53,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -9850,7 +10080,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Blue Period",
    "genres": [
     "Drame",
@@ -10283,7 +10515,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168622-HX9J61JKcHHr.png",
   "attributes": {
    "gender": null,
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève",
     "Célébrité"
@@ -10360,7 +10592,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162791-sg420yaElXHL.png",
   "attributes": {
    "gender": null,
-   "age": null,
+   "age": 89,
    "occupation": [
     "Leader",
     "Scientifique"
@@ -10680,7 +10912,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10730,7 +10964,9 @@
    "gender": "Homme",
    "age": 14,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10756,7 +10992,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10805,7 +11043,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74431-oYG3xAULgJLy.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": null,
    "hair": null,
    "anime": "BTOOOM!",
@@ -10834,7 +11072,9 @@
    "occupation": [
     "Infirmier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10854,11 +11094,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71973-j3SKCwuuLlzR.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10880,11 +11122,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74936-mzASyv595IPf.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 40,
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10960,11 +11204,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84471-cWj5aaLd8weA.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -10990,7 +11236,9 @@
    "occupation": [
     "Avocat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -11016,7 +11264,9 @@
    "occupation": [
     "Chômeur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -11042,7 +11292,9 @@
    "occupation": [
     "Femme au foyer"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -11062,7 +11314,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84469-CR6HY9cp2Dtv.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Lycéen"
    ],
@@ -11093,7 +11345,9 @@
    "occupation": [
     "Chômeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -11113,7 +11367,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75880-pghJ7UbBKqB1.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 45,
    "occupation": [
     "Employé"
    ],
@@ -11169,7 +11423,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -11196,7 +11452,9 @@
     "Détective",
     "Mafieux"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -11506,7 +11764,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -11713,7 +11973,9 @@
    "occupation": [
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -11822,7 +12084,9 @@
     "Chasseur de démons",
     "Wild Fiend"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -11880,7 +12144,9 @@
     "Chasseur de démons",
     "Serveuse"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -11930,7 +12196,9 @@
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -11952,11 +12220,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144593-hdCTT9t54z0s.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -11981,7 +12251,9 @@
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12059,7 +12331,9 @@
     "Mafieux",
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12086,7 +12360,9 @@
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12139,7 +12415,9 @@
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12166,7 +12444,9 @@
    "occupation": [
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12216,7 +12496,9 @@
    "occupation": [
     "Chasseur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -12296,7 +12578,9 @@
    "occupation": [
     "Prisonnier"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12322,7 +12606,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12349,7 +12635,9 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12373,7 +12661,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12396,11 +12686,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12803-WftdKzy8y5CB.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12428,7 +12720,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12451,14 +12745,16 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14512-Y6bxaktxrBF1.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Anime Character",
     "Magical girl",
     "Lycéen",
     "Princesse"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12504,11 +12800,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14514-1pGcLXhlvuIR.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 32,
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12532,7 +12830,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14513-JhpqwqgFGL1r.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": null,
    "anime": "ChäoS;HEAd",
@@ -12558,11 +12856,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17799-yMU00JuVmXLm.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 42,
    "occupation": [
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12585,11 +12885,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17470-qrS68KCzNPNd.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Infirmier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12612,11 +12914,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18112-nWEkr2HdqcPm.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 36,
    "occupation": [
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12638,11 +12942,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14515-9D3SWBMFSGlg.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 24,
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystère",
@@ -12665,7 +12971,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17455-PJ0iu2wVSk44.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 39,
    "occupation": [
     "Chômeur",
     "Scientifique"
@@ -12751,7 +13057,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12777,7 +13085,9 @@
    "gender": "Femme",
    "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12802,9 +13112,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88952-0wmPqlWytiRx.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12828,11 +13140,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88953-wAWVk2jOGZqf.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12855,9 +13169,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88954-Mc5TurYknYTn.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12881,9 +13197,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125388-USug5UNdEAHH.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -12912,7 +13230,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13008,9 +13328,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125386-HDE5KamUXin0.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13033,9 +13355,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125390-vOueNppmy5uK.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13057,9 +13381,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125380-ghKw1LRI4YpP.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13081,9 +13407,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125383-haEcfUrdhlw1.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13108,9 +13436,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125391-KhKGzBAxhFkK.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13134,7 +13464,9 @@
    "gender": "Homme",
    "age": 20,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13159,11 +13491,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125378-1ffmev7NJWtT.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13189,7 +13523,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comédie",
@@ -13327,7 +13663,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b143398-ktoGOYxyGim6.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
@@ -13356,7 +13692,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/126840-pmsaPfps6tK7.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Violets"
@@ -13416,7 +13752,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Chivalry of a Failed Knight",
    "genres": [
     "Action",
@@ -13493,7 +13831,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329182-yDMBN8kIArSz.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -13521,7 +13859,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329184-U1jLCLd4hMqH.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Général"
    ],
@@ -13550,7 +13888,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329185-3iOeyjLrsogY.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -13578,7 +13916,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b296792-0trgNuGAz1or.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
@@ -13608,7 +13946,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329180-td7xFrF8nwuv.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -13636,7 +13974,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329181-2GDg3MUV6fzS.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": [
     "Blancs"
@@ -13664,7 +14002,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329187-8p02SGN1Lsf3.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": null,
    "anime": "Chivalry of a Failed Knight",
@@ -13839,7 +14177,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Classroom of the Elite",
    "genres": [
     "Drame",
@@ -14129,7 +14469,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b173450-3W4X5drCuO21.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
@@ -14590,7 +14930,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11166-FLEJh0viRLwm.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 24,
    "occupation": [
     "Pilote"
    ],
@@ -15364,7 +15704,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Danganronpa: The Animation",
    "genres": [
     "Horreur",
@@ -15780,7 +16122,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15806,7 +16150,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Pilote"
    ],
@@ -15839,7 +16183,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15867,7 +16213,9 @@
     "Pilote",
     "Artisan"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15890,12 +16238,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n124383-I6ZsEBQoETj3.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Voyageur",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15918,13 +16268,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124389-iJY8frLNdK7Y.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Pilote",
     "Artisan",
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15947,12 +16299,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124384-bsl6vVNhT2DR.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Professeur",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns",
+    "Rouges"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -15976,12 +16331,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124385-wnvor7z83ZPt.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Professeur",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16004,13 +16361,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124388-KyJgGXFQEu6W.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Scientifique",
     "Médecin",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16033,12 +16392,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124387-vJvVs0VT1B6r.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Artisan",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16089,13 +16450,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124852-Z1xlsGsdcKLd.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Professeur",
     "Parasite Caretaker",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16174,12 +16537,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/124853-pwqN60dHanD2.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Leader",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16202,12 +16567,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144621-dRxn0RLmI1q4.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Scientifique",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -16416,7 +16783,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145127-v5LboljOBnPJ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bleus"
@@ -16468,7 +16835,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157548-W2GALJGMGKpl.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bleus"
@@ -16596,7 +16963,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87227.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 45,
    "occupation": null,
    "hair": null,
    "anime": "Darwin's Game",
@@ -16619,7 +16986,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145123-82TNyisdykKD.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 28,
    "occupation": null,
    "hair": null,
    "anime": "Darwin's Game",
@@ -16742,7 +17109,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145124-GwyCwkfCtqCb.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 43,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -16849,7 +17216,9 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -17519,7 +17888,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122639-wLie2FSFb1Nf.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève"
    ],
@@ -17658,7 +18027,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122638-ZLGQTmVYgdXp.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Idole",
     "Musicien"
@@ -17688,7 +18057,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158572-G4Gw9eWBtyxy.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Étudiant",
     "Serviteur"
@@ -17719,7 +18088,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158783-vbbSN6EpnD3z.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Étudiant"
    ],
@@ -17777,7 +18146,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158220-HEGJeedD9tBX.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Sportif",
     "Assistant"
@@ -17809,7 +18178,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158518-KM7oKSEfTiPW.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 24,
    "occupation": [
     "Garde"
    ],
@@ -17891,7 +18260,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158803-lQjVODqWshGi.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 22,
    "occupation": [
     "Élève",
     "Employé"
@@ -18576,7 +18945,9 @@
     "Tueur",
     "Chasseur de démons"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18602,7 +18973,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18629,7 +19002,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18658,7 +19033,9 @@
     "Élève",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18682,7 +19059,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18709,7 +19088,9 @@
     "Label Cleaner",
     "Rappeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18757,7 +19138,10 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18786,7 +19170,9 @@
    "occupation": [
     "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18865,7 +19251,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18944,7 +19332,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -18973,7 +19363,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -19272,7 +19664,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -19550,7 +19944,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -19739,7 +20135,8 @@
    "gender": "Femme",
    "age": 15,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Artisan"
    ],
    "hair": [
     "Bruns"
@@ -19826,7 +20223,8 @@
    "gender": "Homme",
    "age": 60,
    "occupation": [
-    "Scientifique"
+    "Artisan",
+    "Ingénieur"
    ],
    "hair": [
     "Gris"
@@ -19852,7 +20250,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b149275-ghZG8Itl5Iz9.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 31,
    "occupation": [
     "Professeur",
     "Astronaute"
@@ -19932,7 +20330,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Garde",
+    "Officier"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -19985,7 +20386,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145065-NjHaMBBRg49I.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Sportif",
     "Assistant",
@@ -20070,8 +20471,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145095-5kvEF2XUhNui.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
-   "occupation": null,
+   "age": 22,
+   "occupation": [
+    "Officier"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -20128,7 +20531,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b150510-ajh3oNEkfZKe.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 27,
    "occupation": [
     "Astronaute",
     "NASA Personnel"
@@ -20311,7 +20714,8 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Politicien"
    ],
    "hair": [
     "Noirs"
@@ -20339,7 +20743,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89359-xsqTQviyS5Ii.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 23,
    "occupation": [
     "Employé"
    ],
@@ -20369,7 +20773,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89360-C9pecRWkJExF.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Médecin"
    ],
@@ -20397,7 +20801,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89356-O2NYct6HMlYj.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Élève"
    ],
@@ -20452,7 +20856,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89366-5KwJW3NNmmti.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -20478,7 +20882,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89358-FA7IQL7z0MvL.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 10,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -20609,7 +21013,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b382888-wWk2cja1E8Hc.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 11,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -20642,7 +21046,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -20789,7 +21195,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b505-QL0cNIE6Q0RI.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 24,
    "occupation": [
     "Professeur"
    ],
@@ -20852,30 +21258,6 @@
   }
  },
  {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "ufotable"
-  }
- },
- {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -20904,6 +21286,30 @@
   }
  },
  {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "ufotable"
+  }
+ },
+ {
   "id": "44025",
   "name": "Sella",
   "aliases": [
@@ -20912,7 +21318,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b44025-IxzAC5F26k9R.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 2,
    "occupation": null,
    "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
@@ -20937,7 +21343,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3439-N3HN8zxumCDP.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": null,
    "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
@@ -21070,7 +21476,9 @@
    "occupation": [
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21095,7 +21503,9 @@
    "occupation": [
     "Roi"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21119,7 +21529,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b10010-fNspzan5MzNk.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 29,
    "occupation": [
     "Justicier"
    ],
@@ -21146,7 +21556,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21176,7 +21588,9 @@
     "Executor",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21224,9 +21638,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15164-BPfYcnNR3PwN.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 9,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21279,7 +21695,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21305,7 +21723,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21328,9 +21748,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16019-nFljwebXHDqc.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21356,7 +21778,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21383,7 +21807,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21407,7 +21833,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21434,7 +21862,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -21455,7 +21885,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12732-yayxYNs1FQeF.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "age": null,
    "occupation": null,
    "hair": null,
@@ -21558,7 +21988,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16029-DluHAqHQZmo1.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 80,
    "occupation": [
     "Prêtre"
    ],
@@ -21609,7 +22039,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 9,
    "occupation": [
     "Mage"
    ],
@@ -21662,7 +22092,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184311-wQFySqYXEqf1.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 26,
    "occupation": null,
    "hair": [
     "Bleus"
@@ -21713,7 +22143,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184312-kxd5H6iOHIq4.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 100,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -21737,7 +22167,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184310-tiXvrq4FINXP.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 100,
    "occupation": null,
    "hair": [
     "Verts"
@@ -21840,7 +22270,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b246058-FOtuSIUBQ4WJ.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 77,
    "occupation": [
     "Mage"
    ],
@@ -21972,7 +22402,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b219110-LEB5T4oG0gel.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 500,
    "occupation": null,
    "hair": [
     "Roses"
@@ -22103,11 +22533,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b57569-nrl0laLbZVFM.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 12,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22132,7 +22564,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n57573-8pdTSyjphsNQ.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 12,
    "occupation": [
     "Élève"
    ],
@@ -22163,11 +22595,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n57575-pUFkwIj4HTEt.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 12,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22195,7 +22629,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22219,11 +22655,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b57589-sU7qJgGJwbfJ.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 12,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22303,11 +22741,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75840-y8ldJNs3yIXV.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 267,
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22362,7 +22802,10 @@
    "occupation": [
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns",
+    "Gris"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22391,7 +22834,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -22444,11 +22889,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75830-hBlCJU4nsJqu.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 12,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drame",
@@ -23128,6 +23575,31 @@
   }
  },
  {
+  "id": "250775",
+  "name": "Focker",
+  "aliases": [
+   "フォッカー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250775-xdvWrwS9tP00.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Soldat"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist: Brotherhood",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2009,
+   "studio": "bones"
+  }
+ },
+ {
   "id": "50123",
   "name": "Charlie",
   "aliases": [
@@ -23277,7 +23749,9 @@
    "gender": "Femme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Gate",
    "genres": [
     "Action",
@@ -23453,7 +23927,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b275372-CTWdWBY0cuWC.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 30,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -23558,7 +24032,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b332522-k9iiw7DU0mg5.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Journaliste"
    ],
@@ -23718,7 +24192,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23743,7 +24219,10 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23768,7 +24247,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23792,7 +24273,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23817,7 +24300,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23841,7 +24326,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23890,7 +24377,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23913,7 +24402,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -23961,7 +24452,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -24007,7 +24500,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -24126,7 +24621,10 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -24151,7 +24649,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -24252,7 +24752,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/43672.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Élève"
    ],
@@ -24280,7 +24780,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/56931.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève",
     "Serveur"
@@ -24332,7 +24832,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87748.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Élève"
    ],
@@ -24405,7 +24905,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87750.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Élève"
    ],
@@ -24502,7 +25002,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158450-8Tvl7X2VtHj0.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Voleur"
    ],
@@ -24530,7 +25030,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b158447-ZFkig12JOEWg.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Voleur"
    ],
@@ -24642,7 +25142,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174673-mEC2IvnJEyLi.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Pilote"
    ],
@@ -24751,7 +25251,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174220-LLGBIgRth5eA.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 11,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -24968,7 +25468,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b198698-staHFx4lcqIg.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Femme au foyer"
    ],
@@ -25020,7 +25520,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89313-uSvLfoxddA1K.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Leader",
     "Éclaireur",
@@ -25355,7 +25855,9 @@
     "Chanteur",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25385,7 +25887,9 @@
     "Élève",
     "Président du conseil des élèves"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25413,7 +25917,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25470,7 +25976,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25501,7 +26009,9 @@
     "Leader",
     "Adam of Da'ath"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25525,11 +26035,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b50707-ms1UUVI7zB2E.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 34,
    "occupation": [
     "Chercheur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25553,9 +26065,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55165-wXoEw6nsH2kU.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25615,7 +26129,9 @@
    "occupation": [
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25644,7 +26160,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25672,7 +26190,9 @@
    "occupation": [
     "Tueur en série"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25698,11 +26218,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b48167-AA4dqgAoqu9q.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25728,12 +26250,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46085-aLRBe7odTpBy.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève",
     "Marchand"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25786,9 +26310,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55167-XDadDLu0AMeD.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1000,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25843,7 +26369,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25900,7 +26428,9 @@
    "occupation": [
     "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Guilty Crown",
    "genres": [
     "Action",
@@ -25958,7 +26488,9 @@
     "Leader",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -25984,13 +26516,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2063-7BKqQbrhtDD2.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Tireur",
     "Professeur",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26020,7 +26554,9 @@
    "occupation": [
     "Cuisinier"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26048,7 +26584,10 @@
     "Leader",
     "Guerrier"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26078,7 +26617,9 @@
     "Pilote",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26196,7 +26737,9 @@
     "Leader",
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26276,7 +26819,9 @@
     "Control Room",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26336,7 +26881,9 @@
     "Pilote",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26451,7 +26998,9 @@
     "Pilote",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26481,7 +27030,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -26740,7 +27291,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/616.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Officier"
    ],
@@ -26896,7 +27447,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -26948,7 +27501,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -27020,7 +27575,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -27680,7 +28237,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285224-lfOr4GGtIqma.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Noble",
     "Élève",
@@ -27808,7 +28365,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269684-qEkI1X8puUNA.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève",
     "Chevalier",
@@ -27840,7 +28397,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269686-J9uj5fETtsks.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève",
     "Chevalier",
@@ -28038,7 +28595,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b290007-hKc78cy2BLBi.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève",
     "Serviteur",
@@ -28127,7 +28684,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285226-xwjQbzFrcjaL.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -28338,7 +28895,9 @@
    "occupation": [
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Initial D 1st Stage",
    "genres": [
     "Action",
@@ -28384,7 +28943,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17255-FyQe48duTmEW.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Serviteur",
     "Employé",
@@ -28411,7 +28970,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21175-t7hsvYvMYzow.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": null,
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -28458,7 +29017,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/37062.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 42,
    "occupation": [
     "Commerçant"
    ],
@@ -28484,7 +29043,9 @@
    "gender": "Homme",
    "age": 21,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Initial D 1st Stage",
    "genres": [
     "Action",
@@ -28555,7 +29116,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/37067.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": null,
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -28599,7 +29160,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b37083-dCLBGNbUnqcc.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Étudiant"
    ],
@@ -29393,7 +29954,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21938-7iTMOJ4i6ET8.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Homme d'affaires",
     "Philanthrope"
@@ -29421,7 +29982,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21960-3stfLc0uwgoT.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 50,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -29445,7 +30006,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21966-ZvYmd1Dwp613.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 102000,
    "occupation": null,
    "hair": [
     "Violets"
@@ -29490,18 +30051,21 @@
   }
  },
  {
-  "id": "21965",
-  "name": "Wamuu",
+  "id": "18062",
+  "name": "Will A. Zeppeli",
   "aliases": [
-   "ワムウ"
+   "Zeppeli A. Will",
+   "Baron Zeppeli",
+   "Will"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/18062-FjIMwcBJra9L.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 50,
    "occupation": null,
    "hair": [
-    "Blonds"
+    "Noirs",
+    "Bruns"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -29514,21 +30078,18 @@
   }
  },
  {
-  "id": "18062",
-  "name": "Will A. Zeppeli",
+  "id": "21965",
+  "name": "Wamuu",
   "aliases": [
-   "Zeppeli A. Will",
-   "Baron Zeppeli",
-   "Will"
+   "ワムウ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/18062-FjIMwcBJra9L.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 12000,
    "occupation": null,
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Blonds"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -29580,7 +30141,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21937-mwAbJAgxE8yP.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Professeur"
    ],
@@ -29606,7 +30167,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21964-nA0cw9XBwitK.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 12000,
    "occupation": null,
    "hair": [
     "Bleus",
@@ -29660,7 +30221,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21961-9JPMSyptHeWe.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Religieux"
    ],
@@ -29687,7 +30248,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21963-oQKcN4QHHOpK.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 10000,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -29711,7 +30272,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n74113-bwYgDlbf5oiY.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 300,
    "occupation": [
     "Assistant",
     "Noble"
@@ -30118,7 +30679,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134327-5tqYKvBaqRe2.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève"
    ],
@@ -30273,7 +30834,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30296,10 +30859,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": [
-    "Élève"
+   "occupation": null,
+   "hair": [
+    "Bruns"
    ],
-   "hair": null,
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30322,9 +30885,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122691-ze4qKEiCv2Lz.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30346,9 +30911,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122693-qg2NIaq5h1VD.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30369,11 +30936,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122777-pdh3z3WbnvlL.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30396,9 +30965,12 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/122698-8UvXcLs1LGYY.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30421,11 +30993,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122778-8WnPScfIvFfT.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Idole"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30446,11 +31020,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122696-Ap3xm4l14BPQ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30472,9 +31048,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122692-R27bMvrrWUAW.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30496,9 +31074,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122690-BgoAty3EQ2GW.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30520,9 +31100,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/122694-3jxZQhslUVLK.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30543,9 +31125,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/123178-WQQb7YKrk1zk.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30565,9 +31149,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136613-2Du0Maq9LEnI.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30633,9 +31219,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/123179-7LhyoD26QS6M.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -30798,7 +31386,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87604.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Élève",
     "Leader",
@@ -30889,7 +31477,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87612-jnXPJSksYrV1.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Leader",
     "Nudist Beach operative"
@@ -30940,7 +31528,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126061-lWC6xeiD4KxZ.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 45,
    "occupation": [
     "Leader"
    ],
@@ -30969,7 +31557,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87605.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève"
    ],
@@ -31140,7 +31728,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Employé"
+   ],
    "hair": [
     "Violets"
    ],
@@ -31274,7 +31864,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Déesse"
    ],
@@ -31355,7 +31945,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120658-SJ9YrXEluqaX.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Déesse"
    ],
@@ -31382,7 +31972,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120657-xT7lUbz4uk0k.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Employé"
    ],
@@ -31409,7 +31999,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/122424-hRsHYqmISnmG.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Avocat"
    ],
@@ -31536,7 +32126,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136044-VxljJJ3MAor8.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": [
     "Bruns",
@@ -31593,7 +32183,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b240105-qO8xrTa3Br8s.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -31764,7 +32354,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n81369-0vKZMoOH3NZT.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Étudiant"
    ],
@@ -31790,7 +32380,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/81371-03gxHpwaBbVL.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Marchand"
    ],
@@ -31816,7 +32406,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/81373-oG4Bngt03jKk.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 40,
    "occupation": null,
    "hair": [
     "Gris",
@@ -31869,7 +32459,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88394.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Leader"
    ],
@@ -31923,7 +32513,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88396-dK6epfuuie3v.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -31947,7 +32537,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88377.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Employé"
    ],
@@ -31973,7 +32563,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88389.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 27,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -31997,7 +32587,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88378.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
@@ -32076,7 +32666,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88393.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Chômeur"
    ],
@@ -32131,7 +32721,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88397-xBp3RKNnaHmn.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
@@ -32185,7 +32775,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88446.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève"
    ],
@@ -32294,7 +32884,9 @@
    "occupation": [
     "Explorateur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32373,7 +32965,10 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Blancs"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32400,7 +32995,9 @@
    "occupation": [
     "Companion"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32452,7 +33049,9 @@
    "occupation": [
     "Explorateur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32480,7 +33079,9 @@
     "Explorateur",
     "Instructeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32617,7 +33218,9 @@
    "occupation": [
     "Explorateur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -32701,7 +33304,9 @@
     "Prince",
     "Cart Driver"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32727,7 +33332,9 @@
     "Magicien",
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32751,7 +33358,9 @@
    "occupation": [
     "Roi"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32804,7 +33413,9 @@
     "Roi",
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32833,7 +33444,9 @@
     "Officier",
     "Assassin"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32862,7 +33475,9 @@
     "Princesse",
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32913,7 +33528,9 @@
     "Prince",
     "Roi"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32941,7 +33558,9 @@
     "Combattant",
     "Esclave"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -32963,11 +33582,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b54577-C8JNBj8XHrMp.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -33045,7 +33666,9 @@
     "Officier",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -33077,7 +33700,9 @@
     "Prince",
     "Roi"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -33103,7 +33728,9 @@
    "occupation": [
     "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -33123,11 +33750,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/54625.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Marchand"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -33147,7 +33776,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/65121.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 48,
    "occupation": [
     "Général"
    ],
@@ -33171,7 +33800,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/81821.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 46,
    "occupation": [
     "Marchand"
    ],
@@ -33199,7 +33828,9 @@
    "gender": "Femme",
    "age": 19,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33223,9 +33854,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67943-TaajkDcWrb5a.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33250,7 +33883,9 @@
    "gender": "Homme",
    "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33272,11 +33907,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67171-b2roF0zRyMMO.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33299,11 +33936,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67651-RrIIJkXq2DtQ.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33325,9 +33964,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67947-mx92JwzeezvO.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 140,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33349,9 +33990,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67945-RBks9Ij4VdRh.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33375,7 +34018,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33397,9 +34042,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67951-VdVmO4LfoePa.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 11,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33446,12 +34093,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67957-cje7Npn2J7TZ.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Leader",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33474,7 +34123,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33497,9 +34148,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67953-jGIfF5sCXe5o.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 11,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33548,7 +34201,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33598,7 +34253,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -33650,7 +34307,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139632-b95rh3VplAYY.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
@@ -33681,7 +34338,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156860-P5bAY1m97tX7.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
@@ -33783,7 +34440,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199026-pdiaoi3idV9F.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 10,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -34123,7 +34780,9 @@
    "gender": "Homme",
    "age": 28,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34152,7 +34811,9 @@
    "occupation": [
     "Collégien"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34205,7 +34866,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34261,7 +34924,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n132972-OMoDKqJSfLjs.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
@@ -34294,7 +34957,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34349,7 +35014,9 @@
    "gender": "Homme",
    "age": 13,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34406,7 +35073,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34431,12 +35100,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133204-KKsIZxLqX7vF.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 48,
    "occupation": [
     "Prisonnier",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34462,12 +35133,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133195-fF7tNKmv6Ejy.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 27,
    "occupation": [
     "Marchand",
     "Scar"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34492,11 +35165,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133389-a1LgX0kK4HmI.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34521,7 +35196,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133384-X8IqIvRj4kZB.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
@@ -34550,11 +35225,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133385-XLzFPShjaw9g.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34580,11 +35257,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135297-uveHB0flYv9B.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34612,7 +35291,9 @@
    "occupation": [
     "Président"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34635,11 +35316,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137017-lZgZCWErdgG2.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -34776,7 +35459,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88346-h8kCL93AXj4n.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 5,
    "occupation": [
     "Magicien"
    ],
@@ -34807,12 +35490,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88351-grqY44xz6bvP.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 566,
    "occupation": [
     "Guerrier",
     "Aventurier"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -34865,12 +35550,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88347-YtQTlChhN50m.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 35,
    "occupation": [
     "Aventurier",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -34891,7 +35578,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b187382-NBP6I5OKXHH9.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 2000,
    "occupation": [
     "Dieu"
    ],
@@ -34919,7 +35606,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145459-qCq1vKZtxkT3.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 6,
    "occupation": [
     "Étudiant",
     "Magicien",
@@ -34951,7 +35638,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179855-Tape2W456xwI.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Magicien",
     "Aventurier"
@@ -34981,11 +35668,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137816-ub5QE86fHD3C.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -35009,7 +35698,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b186490-XcaRQQOOrSwX.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 6500,
    "occupation": [
     "Guerrier"
    ],
@@ -35038,7 +35727,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145458-JG4FkAjUjw2l.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 6,
    "occupation": [
     "Étudiant",
     "Épéiste"
@@ -35096,7 +35785,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b186588-hooSSJ8S9Wcv.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 7000,
    "occupation": [
     "Impératrice"
    ],
@@ -35125,9 +35814,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208081-IkGyzIBSLI8H.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 32,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -35202,7 +35893,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209572-UqorSZ7Gf5aK.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 400,
    "occupation": [
     "Héros"
    ],
@@ -35236,7 +35927,9 @@
     "Landlord",
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Aventure",
@@ -35640,7 +36333,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125956-jzhb8Z4peLb8.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 121,
    "occupation": [
     "Méchant"
    ],
@@ -36118,7 +36811,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139371-lRwPC5Bmbhy5.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 98,
    "occupation": [
     "Politicien"
    ],
@@ -36708,7 +37401,9 @@
     "Élève",
     "Fortune-teller on NicoNico Video"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36737,7 +37432,9 @@
     "Élève",
     "Debating on Kirikiri Basara"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36792,7 +37489,9 @@
    "occupation": [
     "Magicienne"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36815,11 +37514,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/125000-BsVz9KkuturO.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36874,7 +37575,9 @@
     "Éditeur",
     "Journaliste"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36898,7 +37601,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36925,7 +37630,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystère",
@@ -36947,7 +37654,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/126210-oYAj62ObbOYC.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 43,
    "occupation": [
     "Gérant"
    ],
@@ -36977,7 +37684,9 @@
     "Professeur",
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37002,7 +37711,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37055,7 +37766,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37083,7 +37796,9 @@
    "occupation": [
     "Garde du corps"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37104,11 +37819,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81935-NGDgB9J4MMlF.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37160,7 +37877,9 @@
    "occupation": [
     "Héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37185,7 +37904,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37210,7 +37931,9 @@
    "occupation": [
     "Pirate de l'espace"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37240,7 +37963,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37289,11 +38014,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75460-ytg6vTtJNGOw.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 37,
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37318,7 +38045,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37345,7 +38074,9 @@
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37400,7 +38131,9 @@
    "occupation": [
     "Héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37425,11 +38158,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81943-Zbjr1W8O0lkl.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 28,
    "occupation": [
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37454,7 +38189,9 @@
    "occupation": [
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -37537,7 +38274,9 @@
    "occupation": [
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37566,7 +38305,9 @@
     "Célébrité",
     "Actrice"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37618,7 +38359,9 @@
    "occupation": [
     "Idole"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37675,7 +38418,9 @@
     "Leader",
     "Gérant"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37704,7 +38449,9 @@
     "Leader",
     "Acteur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37729,7 +38476,9 @@
    "occupation": [
     "Célébrité"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37785,7 +38534,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37836,11 +38587,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b245524-Q4K2XHB76ikE.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Mannequin"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -37864,7 +38617,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b237577-suHCadWWmCT0.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 34,
    "occupation": [
     "Mangaka"
    ],
@@ -37975,7 +38728,10 @@
    "occupation": [
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Gris"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drame",
@@ -38057,7 +38813,9 @@
     "Lycéen",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38085,7 +38843,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38111,7 +38871,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38191,7 +38953,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38218,7 +38982,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38271,11 +39037,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b25-EFSvaBRwzbNF.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38323,12 +39091,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1133.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Lycéen",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38377,9 +39147,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/19121.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 22,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38427,11 +39199,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1139.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 5,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comédie",
@@ -38606,7 +39380,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3798-mzmC2IZ8RJlB.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 26,
    "occupation": [
     "Psychotherapist"
    ],
@@ -38843,7 +39617,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b433-ZHcr4tPTGQqf.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Works for Happy Berry"
    ],
@@ -38901,7 +39675,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b430-xUq80OcVTNDS.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Fashion Designer"
    ],
@@ -38960,7 +39734,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b432-DeCme2RqDXbF.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": null,
    "hair": [
     "Blonds"
@@ -39390,7 +40164,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39417,7 +40193,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39469,7 +40247,9 @@
    "occupation": [
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39497,7 +40277,9 @@
    "occupation": [
     "Ingénieur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39522,7 +40304,9 @@
    "occupation": [
     "Tireur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39547,7 +40331,9 @@
    "occupation": [
     "Tireur"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39647,9 +40433,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214300-7fKUuWnCnFfQ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 81,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39722,9 +40510,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214301-ZsKiVgLllYFT.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 60,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39799,9 +40589,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214305-QAeX2KEMZGP3.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 48,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39824,9 +40616,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214306-3AtGNszfnpFO.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 49,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39847,9 +40641,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214307-uTolji836Nt1.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 81,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drame",
@@ -39988,7 +40784,9 @@
    "occupation": [
     "Mafieux"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40017,7 +40815,9 @@
     "Mafieux",
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40047,7 +40847,9 @@
     "Mafieux",
     "Chanteur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40075,7 +40877,9 @@
     "Scientifique",
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40103,7 +40907,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40159,7 +40965,9 @@
     "Employé",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40186,7 +40994,9 @@
    "occupation": [
     "Mafieux"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40215,7 +41025,9 @@
     "Leader",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40240,7 +41052,9 @@
    "gender": "Homme",
    "age": 27,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40319,7 +41133,9 @@
    "occupation": [
     "Célébrité"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40345,7 +41161,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40397,7 +41215,9 @@
    "gender": "Homme",
    "age": 28,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "PSYCHO-PASS",
    "genres": [
     "Action",
@@ -40508,7 +41328,9 @@
     "Élève",
     "Magical Girl"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -40592,7 +41414,9 @@
    "occupation": [
     "Marchand"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -40618,7 +41442,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39584-YxtWll1k1zRe.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 13,
    "occupation": [
     "Élève"
    ],
@@ -40676,7 +41500,9 @@
    "gender": "Homme",
    "age": 3,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -40705,7 +41531,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -40734,7 +41562,9 @@
    "occupation": [
     "Femme au foyer"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -40812,7 +41642,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40858,7 +41690,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40881,7 +41715,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40927,7 +41763,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40950,7 +41788,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40973,7 +41813,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -40998,7 +41840,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41092,7 +41936,10 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Blonds"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41115,7 +41962,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41138,7 +41987,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41161,7 +42012,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41209,7 +42062,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -41287,7 +42142,9 @@
     "Policier",
     "Chanteur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41318,7 +42175,9 @@
     "Professeur",
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41348,7 +42207,9 @@
     "Élève",
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41377,7 +42238,9 @@
     "Élève",
     "Serveuse"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41407,7 +42270,9 @@
     "Élève",
     "Serveuse"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41433,12 +42298,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127841-UY9wQq6dW9SY.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Chanteur",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41496,7 +42363,9 @@
     "Serveur",
     "Pompier"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41522,13 +42391,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b144797-4Wbf9gYygNNC.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Chanteur",
     "Élève",
     "Mannequin"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41557,7 +42428,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -41610,7 +42483,9 @@
    "occupation": [
     "Méchant"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Re:CREATORS",
    "genres": [
     "Action",
@@ -41641,7 +42516,9 @@
     "Aventurier",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Re:CREATORS",
    "genres": [
     "Action",
@@ -41672,7 +42549,10 @@
     "Aventurier",
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges",
+    "Roux"
+   ],
    "anime": "Re:CREATORS",
    "genres": [
     "Action",
@@ -41809,7 +42689,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122471-zMajyMYNsU1E.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Élève",
     "Magical girl"
@@ -42358,7 +43238,10 @@
    "occupation": [
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs",
+    "Bleus"
+   ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
@@ -42741,7 +43624,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b218202-zCXaFinepDRV.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 22,
    "occupation": null,
    "hair": [
     "Bleus"
@@ -42841,7 +43724,9 @@
     "ReLIFE experiment Subject No. 002",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "ReLIFE",
    "genres": [
     "Comédie",
@@ -42868,7 +43753,9 @@
    "occupation": [
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "ReLIFE",
    "genres": [
     "Comédie",
@@ -42921,12 +43808,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89427-1maEZa0szSC9.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 27,
    "occupation": [
     "Élève",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "ReLIFE",
    "genres": [
     "Comédie",
@@ -43276,7 +44165,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b749-Aq8jqC8BTwaT.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Leader",
     "Combattant",
@@ -43375,7 +44264,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6137-o7bIImUdi594.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Combattant",
     "Élève"
@@ -43610,7 +44499,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/6143.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Akio Ohtori's"
    ],
@@ -43641,7 +44530,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/6136.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
@@ -43673,7 +44562,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6139-nGGImjiPMyuD.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Élève",
     "Combattant"
@@ -43738,7 +44627,9 @@
    "gender": "Femme",
    "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
     "Action",
@@ -43762,9 +44653,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89079-Xj4l8G5I8v8R.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
     "Action",
@@ -43815,7 +44708,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89068-xshoSbvYJFmP.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Princesse"
    ],
@@ -43843,9 +44736,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89080-hhAlILYnVs8B.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 36,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
     "Action",
@@ -43869,7 +44764,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89083-x6iZKDqNZLA5.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": null,
    "hair": null,
    "anime": "Rokka -Braves of the Six Flowers-",
@@ -43895,9 +44790,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/89081-tLAZAV5HXYTc.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
     "Action",
@@ -44074,7 +44971,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -44221,7 +45120,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -44245,7 +45146,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -44368,7 +45271,9 @@
    "occupation": [
     "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -44466,7 +45371,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83017-XXdnbunnBdTd.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 7,
    "occupation": [
     "Mahiru's messenger",
     "Élève",
@@ -44496,12 +45401,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87287-cBUVUJNbvfvT.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 8,
    "occupation": [
     "Esclave",
     "Garde"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44529,7 +45436,9 @@
    "occupation": [
     "Lieutenant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44553,13 +45462,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83015-XmUdY42WSKRG.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 8,
    "occupation": [
     "Esclave",
     "Élève",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44583,12 +45494,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88988-ioriKKJJQNat.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44613,12 +45526,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88912-HVslXuJNgNQc.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44647,7 +45562,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44677,7 +45594,9 @@
    "occupation": [
     "Monarque"
    ],
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44731,7 +45650,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44755,7 +45676,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44779,11 +45702,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90238-30bYmZ1vqDzs.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 825,
    "occupation": [
     "Chevalier"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44841,7 +45766,9 @@
    "occupation": [
     "Lieutenant"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44899,7 +45826,9 @@
    "occupation": [
     "Lieutenant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44928,7 +45857,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -44955,7 +45886,9 @@
    "gender": "Homme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Seraph of the End: Vampire Reign",
    "genres": [
     "Action",
@@ -45039,7 +45972,9 @@
     "Médecin",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45068,7 +46003,9 @@
     "Leader",
     "Voyageur"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45096,7 +46033,9 @@
     "Lycéen",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45124,7 +46063,9 @@
    "occupation": [
     "Prêtre"
    ],
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45151,7 +46092,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45176,7 +46119,9 @@
    "gender": "Homme",
    "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45197,9 +46142,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n32724-R6koo4Abd5Jg.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 29,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45223,11 +46170,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/30500.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Infirmier"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45249,11 +46198,40 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30928-1sEWTIDd98y7.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 30,
    "occupation": [
     "Femme au foyer"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horreur",
+    "Mystère",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume"
+  }
+ },
+ {
+  "id": "36125",
+  "name": "Nao Yasumori",
+  "aliases": [
+   "Yasumori Nao",
+   "安森奈緒",
+   "Yasumori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 24,
+   "occupation": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45277,32 +46255,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/36127.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Shiki",
-   "genres": [
-    "Horreur",
-    "Mystère",
-    "Surnaturel",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume"
-  }
- },
- {
-  "id": "36125",
-  "name": "Nao Yasumori",
-  "aliases": [
-   "Yasumori Nao",
-   "安森奈緒",
-   "Yasumori"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
+   "age": 60,
    "occupation": null,
    "hair": null,
    "anime": "Shiki",
@@ -45326,7 +46279,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/7580.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 13,
    "occupation": null,
    "hair": null,
    "anime": "Shiki",
@@ -45350,7 +46303,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/30499.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": null,
    "hair": null,
    "anime": "Shiki",
@@ -45376,11 +46329,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39608-E6zTwm9mznqo.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 25,
    "occupation": [
+    "Femme au foyer",
     "Employé"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45428,7 +46384,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/37826.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 30,
    "occupation": [
     "Commerçant"
    ],
@@ -45455,12 +46411,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/37859.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Serviteur",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45507,7 +46465,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/36490.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 33,
    "occupation": [
     "Commerçant"
    ],
@@ -45534,9 +46492,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/41636.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 27,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roses"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -45636,7 +46596,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b315451-vfsspyz4f6Kt.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 26,
    "occupation": [
     "Leader"
    ],
@@ -45666,7 +46626,9 @@
    "occupation": [
     "Gérant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Smoking Behind the Supermarket with You",
    "genres": [
     "Comédie",
@@ -45805,7 +46767,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 32,
    "occupation": [
     "Psychiatre",
     "Espion"
@@ -46371,7 +47333,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -46398,7 +47362,9 @@
    "occupation": [
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -46539,7 +47505,9 @@
     "Journaliste",
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -46642,7 +47610,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/44274-GDkveusoWUqX.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 40,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -46669,7 +47637,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b41897-qc6fWvsXdBVo.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 43,
    "occupation": [
     "Professeur"
    ],
@@ -46696,11 +47664,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42945-VOf3QD9mGJIq.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -46724,7 +47694,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46753,7 +47725,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46778,9 +47752,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155711-VwaqEhjhI0FL.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 29,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46806,7 +47782,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46830,7 +47808,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46882,7 +47862,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46910,7 +47892,9 @@
    "occupation": [
     "Chasseur"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46936,7 +47920,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46964,7 +47950,9 @@
    "occupation": [
     "Prêtre"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -46993,7 +47981,9 @@
    "occupation": [
     "Officier"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -47069,7 +48059,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -47125,7 +48117,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -47179,7 +48173,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47207,7 +48203,9 @@
     "Justicier",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47231,8 +48229,13 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Collégien",
+    "Lycéen"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47399,10 +48402,11 @@
    "gender": "Homme",
    "age": 28,
    "occupation": [
-    "Employé",
-    "Leader"
+    "Scientifique"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47427,7 +48431,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47457,7 +48463,10 @@
     "Écrivain",
     "Chercheur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds",
+    "Bruns"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47484,7 +48493,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47510,7 +48521,9 @@
     "Noble",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47582,7 +48595,9 @@
    "gender": "Femme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47632,7 +48647,9 @@
    "occupation": [
     "Guerrier"
    ],
-   "hair": null,
+   "hair": [
+    "Verts"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47657,7 +48674,9 @@
    "occupation": [
     "Capitaine"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47682,7 +48701,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -47705,7 +48726,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Terror in Resonance",
    "genres": [
     "Drame",
@@ -47728,7 +48751,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Terror in Resonance",
    "genres": [
     "Drame",
@@ -47756,7 +48781,9 @@
    "occupation": [
     "Policier"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Terror in Resonance",
    "genres": [
     "Drame",
@@ -47780,9 +48807,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88095.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Terror in Resonance",
    "genres": [
     "Drame",
@@ -48382,7 +49411,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128037-kJ3HzX4s4iDl.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 72,
    "occupation": [
     "Professeur",
     "Aventurier"
@@ -48519,7 +49548,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131034-Xb6oPnWAbpZq.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 50,
    "occupation": [
     "Leader"
    ],
@@ -48546,7 +49575,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131043-AyEdKg1Xkjrd.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 300,
    "occupation": [
     "Professeur"
    ],
@@ -48631,7 +49660,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129919-EpaC3tWzCDpF.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Aventurier"
    ],
@@ -48938,7 +49967,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274186-lzElg0bbpo1O.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Serviteur"
    ],
@@ -49088,7 +50117,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274194-4VsxaaBBDz1p.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Dame"
    ],
@@ -49211,7 +50240,10 @@
     "Noble",
     "Impératrice"
    ],
-   "hair": null,
+   "hair": [
+    "Violets",
+    "Noirs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -49232,7 +50264,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188942-9ypZJN7MCFk2.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Noirs",
@@ -49261,7 +50293,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189230-CN5kUh1X79DO.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -49290,7 +50322,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189232-LBGe2nuoyHjX.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 42957,
    "occupation": null,
    "hair": null,
    "anime": "The Daily Life of the Immortal King",
@@ -49316,9 +50348,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b212565-GovSc38XAU6w.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -49342,7 +50376,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b212566-uQlmJp4ot2Pz.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -49448,7 +50482,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -49471,7 +50507,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165073-R4MsSlvW1GQj.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 3000,
    "occupation": null,
    "hair": null,
    "anime": "The Daily Life of the Immortal King",
@@ -49521,9 +50557,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 34,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -49701,9 +50739,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -49727,9 +50767,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 100,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -49999,7 +51041,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b339810-TXHqPSfbeFUR.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 9,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -50131,7 +51173,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300907-ABpFmB3ynGYA.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 27,
    "occupation": [
     "Moine",
     "Leader"
@@ -50481,7 +51523,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b215409-Y1Ti42451ivg.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 1000,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -50590,7 +51632,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b229656-fVc5WjlFefhD.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 100,
    "occupation": [
     "Épéiste"
    ],
@@ -50645,7 +51687,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b204204-wsPvzUwfdUwJ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Princesse"
    ],
@@ -50844,7 +51886,9 @@
     "Mage",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -50871,7 +51915,9 @@
     "Serviteur",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -50898,7 +51944,9 @@
     "Magic swordman",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -50922,7 +51970,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -50950,7 +52000,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -51001,7 +52053,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -51080,7 +52134,9 @@
    "occupation": [
     "Prince"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -51436,7 +52492,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129813-quaY4dr807yx.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 10,
    "occupation": [
     "Reine"
    ],
@@ -51463,7 +52519,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135198-ImEXzNG3srwI.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 36,
    "occupation": [
     "Reine"
    ],
@@ -51940,7 +52996,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b74653-XpMcsLVZBnkZ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 750,
    "occupation": [
     "Serveur",
     "Chevalier",
@@ -52003,6 +53059,7 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
+    "Cleaner of Boar Hat",
     "Roi"
    ],
    "hair": null,
@@ -52057,7 +53114,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86699-oRLKbh6x7ijB.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Chevalier"
    ],
@@ -52086,7 +53143,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n86665-ZbYVIjmbyfl9.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Chevalier"
    ],
@@ -52115,7 +53172,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86685-EVUJUHwElo95.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Chevalier"
    ],
@@ -52145,7 +53202,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b140918-r4nb9TM0r1qG.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1300,
    "occupation": [
     "Chevalier"
    ],
@@ -52206,7 +53263,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86691-juwtWAV3MumS.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": [
     "Princesse"
    ],
@@ -52235,7 +53292,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n86703-wzusHoQ4ZFQN.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 21,
    "occupation": [
     "Chevalier"
    ],
@@ -52264,7 +53321,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86677-TVr1h1HFTZ43.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 47,
    "occupation": [
     "Chevalier",
     "Professeur"
@@ -52350,7 +53407,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n131564-ZXykjCxYfwgL.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 29,
    "occupation": [
     "Chevalier"
    ],
@@ -52525,7 +53582,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161814-bzgXIIhDFt0x.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Aventurier"
    ],
@@ -52797,7 +53854,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -52820,7 +53879,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -52846,7 +53907,10 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -52869,7 +53933,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -52947,7 +54013,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -52968,9 +54036,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285315-HKDOxnboAgqi.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 120,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -53263,7 +54333,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136548-FjWExC5ScBqW.jpg",
   "attributes": {
    "gender": "Autre",
-   "age": null,
+   "age": 233,
    "occupation": null,
    "hair": [
     "Blancs"
@@ -53291,7 +54361,9 @@
    "gender": "Homme",
    "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53313,9 +54385,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136541-gXKd6OtbuffL.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 4,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53339,7 +54413,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53416,7 +54492,9 @@
    "gender": "Femme",
    "age": 12,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53486,9 +54564,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136545-KsqBpXbhEUCd.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53560,7 +54640,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -53775,7 +54857,8 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Combattant"
+    "Shikigami",
+    "Soldat"
    ],
    "hair": null,
    "anime": "Tokyo Ravens",
@@ -53801,9 +54884,12 @@
    "gender": "Homme",
    "age": 16,
    "occupation": [
+    "Onmyouji",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -53828,7 +54914,9 @@
    "gender": "Homme",
    "age": 17,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -53849,11 +54937,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84555-zIWMOBqahaZ0.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -53876,11 +54966,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84557-AiXDWbAGKRRS.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -53903,11 +54995,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84553.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
-    "Officier"
+    "Officier",
+    "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -53951,11 +55046,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84561-xfUXhx8yP0NR.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -54001,7 +55098,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191653-a7qy1srP0Ed0.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 27,
    "occupation": null,
    "hair": null,
    "anime": "Tokyo Ravens",
@@ -54051,7 +55148,8 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Onmyouji Shikigami"
+    "Onmyouji",
+    "Shikigami"
    ],
    "hair": null,
    "anime": "Tokyo Ravens",
@@ -54100,7 +55198,10 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Leader",
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Tokyo Ravens",
    "genres": [
@@ -54270,7 +55371,10 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus",
+    "Verts"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -54292,7 +55396,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12307-MfkPmovIGCm9.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 33,
    "occupation": [
     "Célébrité"
    ],
@@ -54341,37 +55445,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/16833.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
-   "anime": "Toradora!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
+   "hair": [
+    "Bleus"
    ],
-   "year": 2008,
-   "studio": "J.C.STAFF"
-  }
- },
- {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Professeur"
-   ],
-   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -54411,6 +55491,32 @@
   }
  },
  {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 29,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
+   "anime": "Toradora!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF"
+  }
+ },
+ {
   "id": "19153",
   "name": "Hisamitsu Noto",
   "aliases": [
@@ -54422,11 +55528,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19153-A8q9ieU9kEkr.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -54448,11 +55556,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/17319.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -54499,11 +55609,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/19863.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -54551,7 +55663,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/41719.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 34,
    "occupation": [
     "Professeur"
    ],
@@ -54877,7 +55989,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137948-NYeFyFDeIoHd.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 300,
    "occupation": [
     "2nd Floor Test Admin"
    ],
@@ -55062,9 +56174,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166496-altPHvQIN8D5.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 29,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -55285,7 +56399,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b152673-PXt43BGpEBbU.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
@@ -55392,8 +56506,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b278301-6WyXS4kWG26k.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
+    "Élève",
     "Professeur"
    ],
    "hair": [
@@ -55424,6 +56539,7 @@
    "gender": "Femme",
    "age": 19,
    "occupation": [
+    "Functionary",
     "Élève"
    ],
    "hair": [
@@ -55454,7 +56570,8 @@
    "gender": "Femme",
    "age": 18,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Élève"
    ],
    "hair": [
     "Roux",
@@ -55507,7 +56624,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274403-LSabOZtSl9pj.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 18,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -55535,7 +56652,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b274402-Ilhk2ifBisxC.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève"
    ],
@@ -55621,7 +56738,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b265074-JoEhXDlfZmzu.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève",
     "Aventurier",
@@ -55653,7 +56770,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b265075-J1S5KSqaZlMQ.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Élève",
     "Aventurier",
@@ -55685,7 +56802,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b265077-IQItHY5YXIK0.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": [
     "Élève",
     "Aventurier",
@@ -55776,6 +56893,7 @@
    "gender": "Homme",
    "age": 19,
    "occupation": [
+    "Racing Driver",
     "Élève"
    ],
    "hair": [
@@ -55808,7 +56926,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Aventure",
@@ -55879,7 +56999,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/129.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 25,
    "occupation": [
     "Professeur"
    ],
@@ -55984,7 +57104,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b235-TUmZb6fdlJmL.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": null,
    "hair": [
     "Noirs"
@@ -56063,7 +57183,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4713-633RJzJw5mMs.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": null,
    "hair": [
     "Bruns"
@@ -56139,7 +57259,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/435.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 17,
    "occupation": null,
    "hair": null,
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
@@ -56309,7 +57429,9 @@
     "Chômeur",
     "Célébrité"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Aventure",
@@ -56336,7 +57458,9 @@
    "occupation": [
     "Petits boulots"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Aventure",
@@ -56411,7 +57535,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Aventure",
@@ -56438,7 +57564,9 @@
     "Aventurier",
     "Magicien"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Aventure",
@@ -56530,7 +57658,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Rouges"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Aventure",
@@ -56900,7 +58030,9 @@
    "gender": "Femme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -57062,7 +58194,9 @@
     "Anti AI",
     "Assassin"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -57186,7 +58320,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
@@ -57849,7 +58985,9 @@
    "occupation": [
     "Employé de bureau"
    ],
-   "hair": null,
+   "hair": [
+    "Roux"
+   ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
     "Comédie",
@@ -58064,7 +59202,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b256379-iQtDQh1FZUkJ.jpg",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Chanteur",
     "Petits boulots"
@@ -58465,7 +59603,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b278399-IaDjPnZIV0Mo.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 63,
    "occupation": [
     "Empereur"
    ],
@@ -58524,7 +59662,9 @@
     "Musicien",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58552,7 +59692,9 @@
     "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58579,7 +59721,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58608,7 +59752,9 @@
     "Élève",
     "Sportif"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58637,7 +59783,9 @@
     "Musicien",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58664,7 +59812,9 @@
     "Musicien",
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58686,12 +59836,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/85839-lYYIkvS9I7wS.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Musicien",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58715,9 +59867,12 @@
    "gender": "Femme",
    "age": 13,
    "occupation": [
+    "Élève",
     "Musicien"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58739,11 +59894,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/81725-c42gacJ6ftGR.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58764,11 +59921,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/81723-sLxyCgxUGxiD.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -58795,7 +59954,9 @@
     "Musicien",
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
