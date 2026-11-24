@@ -9,7 +9,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
-import { sleep, splitOccupations, weaponList } from './anilist.js'
+import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
 import { introRoles, introText } from './intro.js'
 import { translateOccupation } from './translate.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
@@ -113,6 +113,9 @@ const FIELDS = {
     'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
+  // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
+  species: ['species', 'race', 'races', 'species/race', 'espèce'],
+  height: ['height', 'heights', 'taille'],
   // L'arme rejoint l'occupation à la fin (finishOccupations)
   weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
   // Les titres (« Red King », « The Black Swordsman ») : ajoutés à l'occupation à la fin aussi, ceux qu'on sait traduire
@@ -306,11 +309,13 @@ export function fandomInfobox(wikitext: string): Record<string, string> | null {
   const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '').replace(/<nowiki>[\s\S]*?<\/nowiki>/gi, '')
   for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
-    if (Object.values(FIELDS).flat().some(name => fields[name]))
+    if (INFOBOX_FIELDS.some(name => fields[name]))
       return fields
   }
   return null
 }
+// Pas la taille : les onglets en haut de page ({{Tabs|height = 35px|tab1 = Overview}}) ont aussi un champ « height »
+const INFOBOX_FIELDS: readonly string[] = Object.entries(FIELDS).flatMap(([key, names]) => key === 'height' ? [] : names)
 
 // Les champs « | clé = valeur » d'un modèle, en ne coupant que sur les « | » de son 1er niveau
 export function templateFields(text: string, start: number): Record<string, string> {
@@ -395,12 +400,16 @@ export function unhide(text: string): string {
 const field = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name.replace(/_/g, ' ')]).find(value => value !== undefined) ?? null
 
+const rawList = (value: string | null) => value ? [value] : null
+
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
     occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
+    species: rawList(field(fields, FIELDS.species)),
+    height: heightCm(field(fields, FIELDS.height)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: titleOccupations(field(fields, FIELDS.titles)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,

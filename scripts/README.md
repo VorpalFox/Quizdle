@@ -22,10 +22,10 @@ Les scripts suivent tous à peu près le même chemin :
 1. **Récupérer** les personnages de la liste de départ.
 2. **Attribuer** chaque personnage à un seul anime ou une seule franchise, puis **choisir** 4 à 20 personnages par anime ou franchise (Weebdle, Pixeldle).
 3. **Compléter** les indices que la source principale n'a pas. Chaque source ne remplit que ce qui est resté vide, dans l'ordre :
-   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN).
+   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN). Le Weebdle a trois indices de plus : l'espèce (AniList, Wikidata, l'infobox Fandom, sans spoil : l'espèce du début de l'histoire, et Humain par défaut dans un anime sans surnaturel), la taille (AniList, l'infobox Fandom) et la source de l'anime (AniList).
    - Pixeldle : [pixeldleWikidata.ts](pixeldleWikidata.ts), puis le wiki de chaque franchise ([pixeldleWikis.ts](pixeldleWikis.ts) le trouve, [pixeldleEnrich.ts](pixeldleEnrich.ts) lit l'infobox, [pixeldleWikiCharacters.ts](pixeldleWikiCharacters.ts) ajoute des personnages quand Wikidata en a trop peu), puis Wikipédia en dernier recours.
    - Pokédle : l'habitat officiel s'arrête à la 3e génération. Après, il est déduit des lieux de capture ([pokemonHabitat.ts](pokemonHabitat.ts)).
-4. **Traduire** les valeurs vers de courtes listes en français, pour que les indices se comparent : [translate.ts](translate.ts) (occupations de l'Animedle et du Weebdle), [pixeldleTranslate.ts](pixeldleTranslate.ts) (tout le Pixeldle).
+4. **Traduire** les valeurs vers de courtes listes en français, pour que les indices se comparent : [translate.ts](translate.ts) (occupations de l'Animedle et du Weebdle, espèces du Weebdle), [pixeldleTranslate.ts](pixeldleTranslate.ts) (tout le Pixeldle).
 5. **Appliquer les corrections à la main** (`data/<sujet>-manual.json`, voir plus bas).
 6. **Écrire** `data/<sujet>.json` et un récap dans `.cache/<sujet>/` : ce qui manque, ce qui est deviné et à relire, les valeurs pas traduites.
 

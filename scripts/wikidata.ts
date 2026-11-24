@@ -1,4 +1,4 @@
-// Complète le sexe, les cheveux et l'occupation qu'AniList n'a pas donnés, avec Wikidata : beaucoup de personnages
+// Complète le sexe, les cheveux, l'occupation et l'espèce qu'AniList n'a pas donnés, avec Wikidata : beaucoup de personnages
 // y ont leur ID AniList (propriété P11736), donc pas de recherche par nom. Une requête par propriété, puis les noms
 // des valeurs (FR, sinon EN). Réponses gardées dans .cache/wikidata/ (hors git) : supprimer le dossier pour les rafraîchir.
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
@@ -87,6 +87,30 @@ async function fetchCharacters(): Promise<Characters> {
   return characters
 }
 
+// L'espèce (P31, « nature de l'élément ») : seulement les classes qui sont des espèces de fiction (« être humain de
+// fiction », « Saiyan »), pas « personnage d'anime ». Gardée à part (.cache/wikidata/species.json) : le cache des autres
+// propriétés reste valable. Noms bruts, traduits à la fin (translateSpeciesEntries).
+const FICTIONAL_SPECIES = 'Q21192438'
+const speciesFile = new URL('../.cache/wikidata/species.json', import.meta.url)
+
+async function fetchSpecies(): Promise<Record<string, string[]>> {
+  const cached = await readFile(speciesFile, 'utf8').catch(() => null)
+  if (cached)
+    return JSON.parse(cached) as Record<string, string[]>
+  console.log('Wikidata : récupération des espèces des personnages qui ont un ID AniList')
+  const rows = await sparql(`SELECT ?anilist ?value WHERE { ?item wdt:P11736 ?anilist ; wdt:P31 ?value . ?value wdt:P31/wdt:P279* wd:${FICTIONAL_SPECIES} }`)
+  const names = await labels([...new Set(rows.map(row => row.value).filter(id => /^Q\d+$/.test(id)))])
+  const species: Record<string, string[]> = {}
+  for (const { anilist, value } of rows) {
+    const name = names.get(value)
+    if (name && !(species[anilist] ??= []).includes(name))
+      species[anilist]!.push(name)
+  }
+  await mkdir(new URL('./', speciesFile), { recursive: true })
+  await writeFile(speciesFile, JSON.stringify(species))
+  return species
+}
+
 // --- Valeurs Wikidata → nos valeurs ---
 
 export function wikidataGender(names: string[]): string | null {
@@ -110,18 +134,20 @@ export function wikidataOccupation(names: string[]): string[] | null {
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
 
-// Remplit les champs vides (sexe, cheveux, occupation) avec Wikidata. Renvoie les entrées complétées et le détail.
+// Remplit les champs vides (sexe, cheveux, occupation, espèce) avec Wikidata. Renvoie les entrées complétées et le détail.
 export async function completeFromWikidata(entries: Entry[]): Promise<{ entries: Entry[], filled: string[] }> {
   const characters = await fetchCharacters()
+  const allSpecies = await fetchSpecies()
   const filled: string[] = []
   const completed = entries.map(entry => {
-    const found = characters[entry.id]
-    if (!found)
+    const found = characters[entry.id] ?? {}
+    if (!characters[entry.id] && !allSpecies[entry.id])
       return entry
-    const values: Record<Key, AttributeValue> = {
+    const values: Record<Key | 'species', AttributeValue> = {
       gender: wikidataGender(found.gender ?? []),
       hair: wikidataHair(found.hair ?? []),
       occupation: wikidataOccupation(found.occupation ?? []),
+      species: allSpecies[entry.id] ?? null,
     }
     const added = Object.fromEntries(Object.entries(values).filter(([key, value]) => isEmpty(entry.attributes[key]) && !isEmpty(value)))
     if (Object.keys(added).length === 0)

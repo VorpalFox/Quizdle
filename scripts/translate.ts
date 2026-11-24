@@ -6,6 +6,7 @@
 // du perso s'ajoute et les synonymes sont regroupés en familles (finishOccupations) : les corrections s'écrivent donc
 // avec les valeurs regroupées (Étudiant, pas Lycéen).
 import type { Entry } from '../src/engine/types.js'
+import { expandSpecies, translateSpecies } from './pixeldleTranslate.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
@@ -275,4 +276,88 @@ export function finishOccupations(entries: Entry[]): Entry[] {
 // Les ids dont le fichier de corrections remplace l'occupation
 export function fixedOccupationIds(edit: Record<string, Record<string, unknown>>): Set<string> {
   return new Set(Object.entries(edit).filter(([, changes]) => 'occupation' in changes).map(([id]) => id))
+}
+
+// --- Espèce (Weebdle) ---
+
+// Les espèces des animes, clés en minuscules, par-dessus la table du Pixeldle (translateSpecies). Les peuples d'un seul
+// anime rejoignent une grande famille pour que les persos se croisent : les Spirals de Gurren Lagann sont des humains,
+// les Giftias de Plastic Memories des androïdes. null = pas une espèce.
+const ANIME_SPECIES: Record<string, string | null> = {
+  'new human': 'Humain', 'spiral': 'Humain', 'immanity': 'Humain', 'imanity': 'Humain', 'evolved human': 'Humain',
+  'divine human': 'Humain', 'caucasian': 'Humain', 'beyondian': 'Humain', 'gamer': 'Humain', 'amazoness': 'Humain',
+  'pallum': 'Humain', 'esper': 'Humain', 'magus': 'Humain', 'burst linker': 'Humain', 'master': null, 'magician': 'Humain',
+  'giftia': 'Androïde', 'humanoid ai': 'Androïde', 'cyber girl': 'Androïde',
+  'shiki': 'Vampire', 'real vampire': 'Vampire', 'artificial vampire': 'Vampire', 'lesser vampire': 'Vampire', 'vampiric thrall': 'Vampire',
+  'devilman': 'Démon', 'succubus': 'Démon', 'fiend': 'Démon', 'fiend host': 'Démon', 'karma demon': 'Démon', 'demons': 'Démon', 'daemon': 'Démon',
+  'grim reaper': 'Shinigami', 'shinigami': 'Shinigami', 'soul reaper': 'Shinigami',
+  'seraph': 'Ange', 'flügel': 'Ange', 'jinrou': 'Loup-garou', 'intelligent titan': 'Titan', 'titan': 'Titan',
+  'pillar man': 'Homme du pilier', 'life fibers': 'Fibre de vie', 'chimera ant': 'Fourmi-chimère',
+  'monster rat': 'Rat', 'filolial': 'Oiseau', 'crow': 'Oiseau', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
+  'hobgoblin': 'Gobelin', 'ghast': 'Mort-vivant', 'kamui': 'Fibre de vie', 'boaz': 'Homme-bête', 'wanui': 'Homme-bête',
+  'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
+  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
+}
+// La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
+const ANIME_SPECIES_RULES: [RegExp, string][] = [
+  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
+  [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
+  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
+  [/\bvampir/, 'Vampire'],
+  [/\b(?:demon|devil|oni)\b/, 'Démon'],
+  [/\bdragon/, 'Dragon'],
+  [/\b(?:elf|elves|alv)\b/, 'Elfe'],
+  [/\b(?:angel|seraph)/, 'Ange'],
+  [/\b(?:werewolf|jinrou)\b/, 'Loup-garou'],
+  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yōkai'],
+  [/\bspirit\b/, 'Esprit'],
+  [/\b(?:giant|gigantes)\b/, 'Géant'],
+  [/\b(?:god|goddess|deity|divine)\b/, 'Divinité'],
+  [/\b(?:android|robot|ai)\b/, 'Robot'],
+  [/\bhumans?\b/, 'Humain'],
+]
+// Pas de spoil : l'espèce du début de l'histoire. Les infobox Fandom donnent souvent la suite (Mikaela, Seraph of the
+// End : « Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon »). Si une part est marquée « avant »
+// (formerly, previously…), on ne garde que celles-là ; sinon on retire celles marquées « après » (currently, by the end…).
+// Les peuples révélés tard ne sont pas traduits exprès : Nephilim (Blue Exorcist), Elder Bairn (Blood-C), Shadow.
+const EARLIER = /\b(?:former|formerly|previously|originally|initially|at first|born as|until)\b|\bpre-|^part\s*1\b/i
+const LATER = /\b(?:currently|later|now|inactive|true form|awakened|eventually|by the end|after|as of|since|temporary|temporarily|reincarnat\w*|original timeline)\b|\bpost-|^part\s*[2-9]\b/i
+
+// « Human (formerly), Demon » → Humain. Ce qu'on ne sait pas traduire est mis de côté (unknown), pas gardé en anglais :
+// souvent une phrase (« most possibly an absolute monad »), à ajouter ici si ça revient.
+export function translateCharacterSpecies(raw: string): { species: string[], unknown: string[] } {
+  const species: string[] = []
+  const unknown: string[] = []
+  const parts = raw.split(/\s*(?:,|;|\/|\n|&|\band\b|\bor\b|→|・)\s*/i).filter(part => part.trim())
+  const earlier = parts.filter(part => EARLIER.test(part))
+  for (const part of earlier.length > 0 ? earlier : parts.filter(part => !LATER.test(part))) {
+    const key = part.toLowerCase().replace(/\s*\([^)]*\)?/g, '').replace(/\[[^\]]*\]/g, '').replace(/^[\s*•·-]+|[\s.:)]+$/g, '').trim()
+    if (!key || /^\d+$/.test(key))
+      continue
+    const name = key.replace(/^part\s*1\s*:\s*/, '')
+    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1]
+    if (french === undefined)
+      unknown.push(part.trim())
+    else if (french)
+      species.push(french)
+  }
+  return { species: [...new Set(species)], unknown }
+}
+
+// L'espèce des entrées (« species », les valeurs brutes des sources) traduite et dépliée (Demi-elfe = Humain + Elfe,
+// un chat est aussi un Animal), avec ce qui n'a pas pu l'être
+export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], untranslated: Map<string, number> } {
+  const untranslated = new Map<string, number>()
+  const translated = entries.map(entry => {
+    const raw = entry.attributes.species
+    if (!Array.isArray(raw))
+      return entry
+    const found = (raw as string[]).map(translateCharacterSpecies)
+    for (const value of found.flatMap(({ unknown }) => unknown))
+      untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
+    // Une seule source a rempli l'espèce (la 1re qui en a une : AniList, Wikidata, Fandom), parfois en plusieurs valeurs
+    const species = [...new Set(found.flatMap(({ species }) => species))]
+    return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
+  })
+  return { entries: translated, untranslated }
 }

@@ -16,15 +16,19 @@
 //   les 104 sans sexe, 1 035 sans âge, 860 sans occupation, 739 sans cheveux. Traduire les 76 occupations restées en
 //   anglais, presque toutes uniques (« Nudist Beach operative ») : dans translate.ts si c'est générique, sinon dans le
 //   fichier manual.
-// - Pistes abandonnées : la race (aucune source structurée : 5 % des descriptions AniList, quelques infobox), les
-//   citations (Wikiquote presque vide, Animechan limité à 100 requêtes par jour et surtout les persos principaux).
+// - Espèce, taille et source (novembre 2026), en plus des indices de l'Animedle. L'espèce : AniList (« Race: »),
+//   Wikidata (P31, les espèces de fiction), l'infobox Fandom (species, race), sans ses spoilers repliés, traduite en
+//   grandes familles (translateSpeciesEntries), et Humain par défaut dans un anime sans surnaturel (NOT_ONLY_HUMANS).
+//   La taille : AniList (« Height: »), puis l'infobox Fandom, la 1re donnée (avant l'ellipse). La source : AniList.
+// - Piste abandonnée : les citations (Wikiquote presque vide, Animechan limité à 100 requêtes par jour et surtout les
+//   persos principaux).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
-import { characterAttributes } from '../src/subjects/anime/index.js'
-import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
+import { aliases, anilist, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
+import { finishOccupations, fixedOccupationIds, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -37,6 +41,20 @@ const TOP_MAINS = 10
 const MAX_MAINS = 16
 // En dessous de ce nombre de places pour les secondaires, on les prend uniquement par popularité
 const MIN_SLOTS_FOR_RANDOM = 8
+
+// La source quand AniList dit « OTHER » (id AniList de l'anime)
+const SOURCE_OVERRIDES: Record<number, string> = {
+  114121: 'Roman', // The Daily Life of the Immortal King : un web novel chinois
+  13125: 'Roman', // From the New World
+  1943: 'Roman', // Paprika
+  20541: 'Musique', // Mekakucity Actors : les chansons du Kagerou Project
+  7724: 'Roman', // Shiki
+}
+
+// Sans espèce trouvée, un perso d'un anime sans rien de surnaturel est humain. Pas dans les autres : un quart des persos
+// dont on connaît l'espèce n'y sont pas humains.
+const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Surnaturel', 'Science-fiction', 'Mecha', 'Horreur', 'Magical girl'])
+const HUMAN = 'Humain'
 
 const root = new URL('../', import.meta.url)
 const cacheDir = new URL('.cache/weebdle/', root)
@@ -286,7 +304,10 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
       occupation: parseOccupation(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
+      species: (species => species ? [species] : null)(parseSpecies(character.description)),
+      height: parseHeight(character.description),
       anime: cleanTitle(anime.rec.title),
+      source: SOURCE_OVERRIDES[anime.rec.anilistId] ?? animeSource(anime.media.source),
       genres: genres(anime.media.genres),
       year: anime.media.startDate.year ?? anime.rec.year,
       studio: anime.media.studios.nodes[0]?.name ?? null,
@@ -299,12 +320,22 @@ const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
-const attributeKeys = characterAttributes.map(({ key }) => key)
-const manualApplied = applyManual(translated.entries, manual, attributeKeys)
+const withSpecies = translateSpeciesEntries(translated.entries)
+const defaultHumans: string[] = []
+const speciesEntries = withSpecies.entries.map(entry => {
+  if (entry.attributes.species !== null || (entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)))
+    return entry
+  defaultHumans.push(entry.name)
+  return { ...entry, attributes: { ...entry.attributes, species: [HUMAN] } }
+})
+const attributeKeys = weebdleAttributes.map(({ key }) => key)
+const manualApplied = applyManual(speciesEntries, manual, attributeKeys)
 const warnings = manualApplied.warnings
 // À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
 // corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// Les indices dans l'ordre de l'affichage
 const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+  .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
@@ -325,6 +356,9 @@ if (fandom.noWiki.length > 0)
 lines.push(`## Complétés par Wikipédia (${wiki.filled.length})`, ...wiki.filled.map(text => `- ${text}`), '')
 const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
+const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])
+lines.push(`## Espèces pas traduites (${unknownSpecies.length}) : à ajouter dans ANIME_SPECIES (scripts/translate.ts)`, ...unknownSpecies.map(([value, count]) => `- ${value} (${count})`), '')
+lines.push(`## Humains par défaut, animes sans surnaturel (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')
 for (const { anime, chosen, total } of selections) {
@@ -336,7 +370,7 @@ lines.push('')
 if (withBackground.length > 0)
   lines.push(`## Complétés avec des figurants (${withBackground.length})`, ...withBackground.map(text => `- ${text}`), '')
 
-for (const [label, key] of [['sexe', 'gender'], ['âge', 'age'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
+for (const [label, key] of [['sexe', 'gender'], ['espèce', 'species'], ['âge', 'age'], ['taille', 'height'], ['occupation', 'occupation'], ['cheveux', 'hair']] as const) {
   const missing = entries.filter(entry => entry.attributes[key] === null)
   lines.push(`## Sans ${label} (${missing.length})`, ...missing.map(entry => `- ${entry.name} (${entry.attributes.anime}, id ${entry.id})`), '')
 }

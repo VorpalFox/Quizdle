@@ -226,7 +226,9 @@ const manualApplied = applyManual(translated.entries, manual, attributeKeys)
 const warnings = manualApplied.warnings
 // À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
 // corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// Seulement les indices de l'Animedle, dans l'ordre (Wikidata et Fandom lisent aussi l'espèce et la taille du Weebdle)
 const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+  .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
 const keptIds = new Set(kept.map(character => String(character.id)))
 warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))
 

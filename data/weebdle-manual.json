@@ -70,6 +70,93 @@
     ]
    }
   },
+  "12960": {
+   "_nom": "Grell Sutcliff",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Shinigami"
+    ]
+   }
+  },
+  "14957": {
+   "_nom": "Undertaker",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Shinigami"
+    ]
+   }
+  },
+  "17751": {
+   "_nom": "Angela Blanc",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Ange",
+     "Démon"
+    ]
+   }
+  },
+  "20008": {
+   "_nom": "Ash Landers",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Ange",
+     "Démon"
+    ]
+   }
+  },
+  "30500": {
+   "_nom": "Ritsuko Kunihiro",
+   "species": {
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
+  "32724": {
+   "_nom": "Tatsumi",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Loup-garou"
+    ]
+   }
+  },
+  "33456": {
+   "_nom": "Masao Murasako",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
+  "36490": {
+   "_nom": "Kyouko Ozaki",
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Vampire"
+    ]
+   }
+  },
   "38566": {
    "_nom": "Kyuubey",
    "_raison": "créature (Incubator) : pas de cheveux",
@@ -146,6 +233,22 @@
      "Student",
      "Criminal",
      "Former member of the Main Cast"
+    ]
+   }
+  },
+  "46488": {
+   "_nom": "Bertolt Hoover",
+   "species": {
+    "moins": [
+     "Titan"
+    ]
+   }
+  },
+  "57575": {
+   "_nom": "Shun Aonuma",
+   "species": {
+    "moins": [
+     "Démon"
     ]
    }
   },
