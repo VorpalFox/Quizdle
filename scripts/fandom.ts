@@ -483,14 +483,14 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         added.hair = hair.colors
-      // Sans occupation : l'affiliation de l'infobox (« Student (formerly) », « Port Mafia »), sinon l'introduction
+      // Sans occupation : le rôle de l'affiliation de l'infobox (« Student (formerly) ») et ce que dit l'introduction,
+      // les deux ensemble (Shuichi Kagaya : élève et tueur)
       const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
       const affiliation = jobless ? affiliationOccupations(field(fandomInfobox(pages[title]!) ?? {}, AFFILIATION_FIELDS)) : null
-      const intro = jobless && !affiliation ? introOccupations(pages[title]!) : null
-      if (affiliation)
-        added.occupation = affiliation
-      else if (intro?.occupation.length)
-        added.occupation = intro.occupation
+      const intro = jobless ? introOccupations(pages[title]!) : null
+      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? []])]
+      if (jobs.length > 0)
+        added.occupation = jobs
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })

@@ -25124,7 +25124,10 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Assassin",
+    "Criminel",
+    "Combattant"
    ],
    "hair": [
     "Noirs",
