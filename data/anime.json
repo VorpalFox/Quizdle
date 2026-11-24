@@ -1049,7 +1049,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Violets"
    ],
@@ -2354,7 +2356,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 598,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -3228,7 +3232,10 @@
   "attributes": {
    "gender": "Homme",
    "age": 19,
-   "occupation": null,
+   "occupation": [
+    "Tueur en série",
+    "Criminel"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -3851,7 +3858,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -4117,7 +4126,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -4229,7 +4240,11 @@
   "attributes": {
    "gender": "Homme",
    "age": 40,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": null,
    "anime": "Hunter x Hunter",
    "genres": [

@@ -10,6 +10,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { sleep, splitOccupations, weaponList } from './anilist.js'
+import { introRoles, introText } from './intro.js'
+import { translateOccupation } from './translate.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
@@ -310,6 +312,28 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
   }
 }
 
+// --- L'introduction ---
+
+const MAX_INTRO_OCCUPATIONS = 2
+
+// Sans occupation dans l'infobox : ce que dit l'introduction de la page (« Tatsumi is a young swordsman » → Épéiste),
+// comme au Pixeldle. Chaque rôle est traduit tout de suite, en retirant les adjectifs de tête s'il le faut (« young
+// swordsman » → « swordsman ») : un rôle intraduisible est laissé de côté, pas gardé en anglais. Moins sûr que
+// l'infobox, donc listé dans le récap pour relecture.
+export function introOccupations(wikitext: string): { roles: string[], occupation: string[] } {
+  const roles = introRoles(introText(wikitext))
+  const occupation = roles.flatMap(role => {
+    const words = role.split(/\s+/)
+    for (let start = 0; start < words.length; start++) {
+      const french = translateOccupation(words.slice(start).join(' '))
+      if (french !== undefined)
+        return french ? [french] : []
+    }
+    return []
+  })
+  return { roles, occupation: [...new Set(occupation)].slice(0, MAX_INTRO_OCCUPATIONS) }
+}
+
 // --- Complément ---
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
@@ -368,11 +392,14 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         added.hair = hair.colors
+      const intro = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation) ? introOccupations(pages[title]!) : null
+      if (intro?.occupation.length)
+        added.occupation = intro.occupation
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

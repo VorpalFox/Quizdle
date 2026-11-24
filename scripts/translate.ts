@@ -72,6 +72,8 @@ const OCCUPATIONS: Record<string, string | null> = {
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
 // Les cas précis d'abord, puis les grandes familles de métiers. null : pas une occupation, on la retire.
 const RULES: [RegExp, string | null][] = [
+  // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
+  [/-class servant|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
   [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker/, 'Mafieux'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
@@ -97,14 +99,15 @@ const RULES: [RegExp, string | null][] = [
   [/bearer|wave controller/, 'Combattant'],
   [/super-?h[ée]ro/, 'Super-héros'],
   [/\bknight|crusader|paladin/, 'Chevalier'],
-  [/\b(?:king|emperor|monarch|ruler|warlord)\b/, 'Roi'],
-  [/\b(?:queen|empress)\b/, 'Reine'],
+  // Pas « one of the Devil King's Generals » : au service du roi
+  [/\b(?:king|emperor|monarch|ruler|warlord)\b(?!'s)/, 'Roi'],
+  [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
   [/princess|heiress/, 'Princesse'],
   [/\bprince\b|\bheir\b/, 'Prince'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)\b/, 'Combattant'],
-  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)\b/, 'Officier'],
+  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
   [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)\b/, 'Garde'],
   [/butler/, 'Majordome'],
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fandomInfobox, fandomValues } from '../fandom.js'
+import { fandomInfobox, fandomValues, introOccupations } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -33,5 +33,16 @@ describe('fandomValues', () => {
   it('ChampsVariables_NosValeurs', () => {
     expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'] })
     expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null })
+  })
+})
+
+describe('introOccupations', () => {
+  it('Intro_RoleTraduitSansLesAdjectifs', () => {
+    expect(introOccupations("{{Character Infobox|name = Mutsu}}\n'''Mutsu''' is a young archer who serves Tahoumaru.").occupation).toEqual(['Archer'])
+  })
+
+  it('RoleIntraduisibleOuServantDeFate_Ignore', () => {
+    expect(introOccupations("'''Iskandar''' is the Rider-class Servant of Waver Velvet.").occupation).toEqual([])
+    expect(introOccupations("'''Beldia''' is one of the Devil King's Generals.").occupation).toEqual(['Officier'])
   })
 })
