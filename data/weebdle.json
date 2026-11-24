@@ -3939,7 +3939,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns",
     "Roux"
@@ -3968,7 +3970,8 @@
    "gender": "Homme",
    "age": 15,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Chômeur"
    ],
    "hair": [
     "Noirs"
@@ -3997,7 +4000,9 @@
   "attributes": {
    "gender": "Homme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Aventurier"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -4025,7 +4030,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -4053,7 +4060,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -4183,7 +4192,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -4208,7 +4219,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
