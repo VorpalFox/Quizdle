@@ -48,7 +48,7 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, SPACE_FRANCHISES, expandSpecies, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
@@ -664,15 +664,15 @@ const finished = manualApplied.entries.map(entry => {
   return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
 
-// La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et Lost in the
-// Galaxy pour les franchises de l'espace, voir withWorld
+// La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et les univers
+// partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
 const worlds = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) => [franchise,
   franchise in FRANCHISE_WORLDS ? FRANCHISE_WORLDS[franchise]! : franchiseWorld(list.map(entry => entry.attributes.nationality as string[] | null))]))
 const worldFills: string[] = []
 const entries = finished.map(entry => {
   const places = entry.attributes.nationality as string[] | null
   const franchise = String(entry.attributes.franchise)
-  const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, SPACE_FRANCHISES.has(franchise))
+  const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
   if (!places?.length && nationality)
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
   return { ...entry, attributes: { ...entry.attributes, nationality } }
@@ -728,7 +728,7 @@ lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie «
 lines.push(`## Rôles d'après l'introduction : Compagnon, Assistant, et Destructeur ou Protecteur pour les dieux, démons et anges (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
 const worldNames = { real: REAL_WORLD, other: OTHER_WORLD }
 lines.push(`## Monde des franchises (${worlds.size}) : FRANCHISE_WORLDS sinon les lieux des personnages, à relire`,
-  ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${SPACE_FRANCHISES.has(franchise) ? ', espace' : ''}`), '')
+  ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${franchiseUniverses(franchise).map(universe => `, ${universe}`).join('')}`), '')
 lines.push(`## Nationalité vide remplie par le monde de la franchise (${worldFills.length})`, ...worldFills.map(text => `- ${text}`), '')
 lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')

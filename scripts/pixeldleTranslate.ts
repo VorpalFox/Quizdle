@@ -2,6 +2,7 @@
 // Analysis and Development », « jeu de plateforme en 3D ») ramenés à de courtes listes, pour que les indices se comparent.
 // Chaque fonction renvoie la valeur traduite, null si ce n'est pas une valeur à garder (on la retire), undefined si on
 // ne sait pas la traduire (gardée telle quelle et listée dans le récap : à ajouter ici).
+import { CTHULHU_MYTHOS, OTHER_WORLD, REAL_WORLD, SPACE } from '../src/subjects/pixeldle/worlds.js'
 
 const key = (value: string) => value.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim()
 
@@ -443,11 +444,11 @@ export function translatePlace(label: string): string[] {
 // « Earth » : la science-fiction du système solaire (Mars, la Lune) est aussi notre monde. Plus loin (une planète d'une
 // autre étoile), ce n'est plus le monde réel. « Monde réel » s'ajoute aussi à tout personnage placé dans un lieu réel,
 // pour qu'il croise ceux qui n'ont que lui (United States face à Monde réel : partiel, pas faux). Les franchises qui se
-// passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES).
+// passent dans l'espace ajoutent « Lost in the Galaxy » à tous leurs personnages, placés ou non (SPACE_FRANCHISES), et
+// celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
-export const REAL_WORLD = 'Monde réel'
-export const OTHER_WORLD = 'Inconnu'
-export const SPACE = 'Lost in the Galaxy'
+// Ces lieux sont gardés quand une correction à la main change la nationalité (keepWorlds, appliqué par le bot).
+export { CTHULHU_MYTHOS, OTHER_WORLD, REAL_WORLD, SPACE } from '../src/subjects/pixeldle/worlds.js'
 export type World = 'real' | 'other'
 
 // Les pays d'aujourd'hui (noms anglais d'Intl), ceux d'histoire, et notre système solaire
@@ -491,10 +492,10 @@ export function franchiseWorld(places: (string[] | null)[]): World | null {
 }
 
 // Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, le monde
-// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Lost in the Galaxy en plus dans une
-// franchise de l'espace. null si on ne sait rien.
-export function withWorld(places: string[] | null, species: unknown, world: World | null, space = false): string[] | null {
-  const spaced = (list: string[]) => space && !list.includes(SPACE) ? [...list, SPACE] : list
+// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Les univers partagés de la franchise en
+// plus (Lost in the Galaxy, Mythe de Cthulhu : franchiseUniverses). null si on ne sait rien.
+export function withWorld(places: string[] | null, species: unknown, world: World | null, universes: readonly string[] = []): string[] | null {
+  const spaced = (list: string[]) => [...list, ...universes.filter(universe => !list.includes(universe))]
   if (places && places.length > 0)
     return spaced(places.some(isRealPlace) && !places.includes(REAL_WORLD) ? [...places, REAL_WORLD] : places)
   const list = Array.isArray(species) ? species.map(String) : []
@@ -532,6 +533,16 @@ export const SPACE_FRANCHISES = new Set([
   'No Man\'s Sky', 'Rebel Galaxy', 'Among Us', 'Subnautica', 'Satisfactory', 'Icarus', 'The Riftbreaker', 'The Alters',
   'Breathedge', 'Genesis Alpha One', 'Deep Rock Galactic', 'Titanfall / Apex Legends', 'Honkai: Star Rail', 'Pikmin', 'Prey',
 ])
+
+// Les franchises du mythe de Cthulhu (Lovecraft) : le même univers, Mythe de Cthulhu pour tous. Seulement celles qui
+// reprennent le mythe lui-même (ses dieux, ses lieux : Nyarlathotep, Innsmouth), pas celles qui s'en inspirent avec leur
+// propre univers (Dredge, Amnesia, Dead Space). À compléter à la main, rien dans Wikidata ne les repère bien.
+export const MYTHOS_FRANCHISES = new Set(['Call of Cthulhu', 'The Sinking City', 'Sundered'])
+
+// Les univers partagés d'une franchise, ajoutés aux lieux de tous ses personnages
+export function franchiseUniverses(franchise: string): string[] {
+  return [...SPACE_FRANCHISES.has(franchise) ? [SPACE] : [], ...MYTHOS_FRANCHISES.has(franchise) ? [CTHULHU_MYTHOS] : []]
+}
 
 // --- Occupation ---
 
