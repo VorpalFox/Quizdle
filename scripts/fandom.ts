@@ -9,7 +9,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
-import { sleep, splitOccupations } from './anilist.js'
+import { sleep, splitOccupations, weaponList } from './anilist.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
@@ -109,6 +109,8 @@ const FIELDS = {
   occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'métier', 'activité', 'fonction'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
+  // L'arme rejoint l'occupation à la fin (finishOccupations)
+  weapon: ['weapon', 'weapons', 'weapon(s)', 'armament', 'armaments', 'arme', 'armes', 'equipment', 'equipment/s'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -304,6 +306,7 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
+    weapon: weaponList(field(fields, FIELDS.weapon)),
   }
 }
 

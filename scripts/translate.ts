@@ -2,7 +2,9 @@
 // de l'Animedle et du Weebdle. Le sexe et les cheveux sont déjà traduits à la lecture (GENDERS, hairColors) :
 // il reste les occupations, traduites avec un dictionnaire puis des règles par mot-clé. Celles qui ne passent
 // dans aucun restent telles quelles et sont listées à la fin du script : à ajouter ici si c'est générique,
-// sinon à corriger perso par perso dans le fichier de corrections (data/*-manual.json).
+// sinon à corriger perso par perso dans le fichier de corrections (data/*-manual.json). Après les corrections, l'arme
+// du perso s'ajoute et les synonymes sont regroupés en familles (finishOccupations) : les corrections s'écrivent donc
+// avec les valeurs regroupées (Étudiant, pas Lycéen).
 import type { Entry } from '../src/engine/types.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
@@ -178,6 +180,75 @@ export function translateEntries(entries: Entry[], fixedIds: ReadonlySet<string>
     return { ...entry, attributes: { ...entry.attributes, occupation: unique.length > 0 ? unique : null } }
   })
   return { entries: translated, untranslated }
+}
+
+// --- Regroupement, après les corrections à la main ---
+
+// Les quasi-synonymes : une seule valeur, rien de perdu (Lycéen et Étudiant, c'est pareil pour deviner ; Reine, le sexe le dit déjà)
+const OCCUPATION_MERGES: Record<string, string> = {
+  'Élève': 'Étudiant', 'Lycéen': 'Étudiant', 'Collégien': 'Étudiant',
+  'Guerrier': 'Combattant', 'Tueur': 'Assassin', 'Tireur d\'élite': 'Tireur',
+  'Général': 'Officier', 'Lieutenant': 'Officier', 'Recrue': 'Soldat', 'Garde du corps': 'Garde', 'Agent secret': 'Espion',
+  'Mage': 'Magicien', 'Magicienne': 'Magicien', 'Sorcier': 'Magicien', 'Sorcière': 'Magicien', 'Magical Girl': 'Magical girl',
+  'Prêtre': 'Religieux', 'Prêtresse': 'Religieux', 'Religieuse': 'Religieux', 'Moine': 'Religieux', 'Clerc': 'Religieux',
+  'Roi': 'Souverain', 'Reine': 'Souverain', 'Empereur': 'Souverain', 'Impératrice': 'Souverain', 'Monarque': 'Souverain',
+  'Prince': 'Noble', 'Princesse': 'Noble', 'Comte': 'Noble', 'Seigneur': 'Noble', 'Dame': 'Noble', 'Déesse': 'Dieu',
+  'Héros professionnel': 'Super-héros', 'Pirate de l\'espace': 'Pirate',
+  'Infirmier': 'Médecin', 'Soigneur': 'Médecin', 'Chercheur': 'Scientifique', 'Explorateur': 'Aventurier', 'Voyageur': 'Aventurier',
+  'Instructeur': 'Professeur', 'Employé de bureau': 'Employé', 'Fonctionnaire': 'Employé', 'Marchand': 'Commerçant', 'Vendeur': 'Commerçant',
+  'Servante': 'Domestique', 'Serviteur': 'Domestique', 'Majordome': 'Domestique', 'Serveuse': 'Serveur', 'Boulanger': 'Cuisinier',
+  'Actrice': 'Acteur', 'Rappeur': 'Chanteur',
+}
+
+// Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
+// qui se battent se croisent en jaune même avec des armes différentes
+const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
+  // Combat
+  'Épéiste': ['Combattant'], 'Samouraï': ['Combattant'], 'Ninja': ['Combattant'], 'Chevalier': ['Combattant'], 'Archer': ['Combattant'],
+  'Tireur': ['Combattant'], 'Lancier': ['Combattant'], 'Mercenaire': ['Combattant'], 'Artiste martial': ['Combattant'],
+  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'],
+  // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
+  'Officier': ['Soldat'], 'Bataillon d\'exploration': ['Soldat'], 'Éclaireur': ['Soldat'],
+  'Pourfendeur de démons': ['Chasseur de monstres', 'Combattant'], 'Chasseur de démons': ['Chasseur de monstres', 'Combattant'],
+  'Chasseur de vampires': ['Chasseur de monstres', 'Combattant'], 'Exorciste': ['Chasseur de monstres', 'Magicien'],
+  'Super-héros': ['Héros', 'Combattant'], 'Justicier': ['Héros'],
+  // Crime
+  'Assassin': ['Criminel', 'Combattant'], 'Tueur en série': ['Criminel'], 'Mafieux': ['Criminel'], 'Voyou': ['Criminel'],
+  'Voleur': ['Criminel'], 'Pirate': ['Criminel'], 'Terroriste': ['Criminel'],
+  // Magie, religion
+  'Magical girl': ['Magicien'], 'Onmyouji': ['Magicien'], 'Utilisateur de fléaux': ['Magicien'], 'Miko': ['Religieux'], 'Oracle': ['Religieux'],
+  // Pouvoir
+  'Souverain': ['Noble', 'Leader'], 'Président': ['Leader'], 'Gérant': ['Leader'], 'Capitaine': ['Leader'],
+  'Directeur d\'école': ['Professeur', 'Leader'], 'Président du conseil des élèves': ['Étudiant', 'Leader'],
+  // Sciences, santé
+  'Chirurgien': ['Médecin'], 'Psychiatre': ['Médecin'], 'Ingénieur': ['Scientifique'], 'Inventeur': ['Scientifique'],
+  'Archéologue': ['Scientifique'], 'Océanographe': ['Scientifique'], 'Astronome': ['Scientifique'], 'Alchimiste': ['Scientifique'],
+  // Arts, spectacle
+  'Chanteur': ['Musicien', 'Artiste'], 'Musicien': ['Artiste'], 'Idole': ['Chanteur', 'Célébrité', 'Artiste'],
+  'Acteur': ['Célébrité', 'Artiste'], 'Mannequin': ['Célébrité', 'Artiste'], 'Youtubeur': ['Célébrité'], 'Doubleur': ['Artiste'],
+  'Mangaka': ['Artiste'], 'Écrivain': ['Artiste'], 'Cosplayeur': ['Artiste'], 'Couturier': ['Artisan'],
+  // Métiers, sport
+  'Forgeron': ['Artisan'], 'Fleuriste': ['Artisan'], 'Cuisinier': ['Artisan'], 'Petits boulots': ['Employé'], 'Volleyeur': ['Sportif'],
+}
+
+// Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
+export function groupOccupations(values: readonly string[]): string[] | null {
+  const merged = values.map(value => OCCUPATION_MERGES[value] ?? value)
+  const grouped = [...new Set([...merged, ...merged.flatMap(value => OCCUPATION_FAMILIES[value] ?? [])])]
+  return grouped.length > 0 ? grouped : null
+}
+
+// Les armes ajoutées à l'occupation, au plus (comme au Pixeldle)
+const MAX_WEAPONS = 2
+
+// À la fin, corrections comprises : les armes (comment le perso se bat, attribut de travail « weapon ») rejoignent
+// l'occupation, puis tout est regroupé
+export function finishOccupations(entries: Entry[]): Entry[] {
+  return entries.map(entry => {
+    const { weapon, ...attributes } = entry.attributes
+    const occupation = [...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | null | undefined) ?? []).slice(0, MAX_WEAPONS)]
+    return { ...entry, attributes: { ...attributes, occupation: groupOccupations(occupation) } }
+  })
 }
 
 // Les ids dont le fichier de corrections remplace l'occupation

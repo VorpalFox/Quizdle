@@ -8,7 +8,7 @@
 // 4. Compléter, comme à l'Animedle : AniList (champ, sinon description), puis Wikidata, Fandom, Wikipédia. AniList renseigne
 //    surtout les personnages principaux, et presque jamais l'occupation et les cheveux.
 // 5. Traduire les occupations (translate.ts, sauf celles corrigées à la main), puis appliquer les corrections à la main
-//    (data/weebdle-manual.json)
+//    (data/weebdle-manual.json), et enfin ajouter l'arme et regrouper les occupations (finishOccupations)
 //
 // Le récap (.cache/weebdle/weebdle-recap.md) liste ce qui manque et ce qui est à relire. Les sexes déduits des
 // pronoms (0,8 % d'erreurs) et les occupations tirées du texte (« is a young nun » → Nun) sont à relire.
@@ -22,9 +22,9 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
-import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
-import { applyManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { fixedOccupationIds, translateEntries } from './translate.js'
+import { aliases, anilist, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
+import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -285,6 +285,7 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
       age: parseAge(character.age, character.description),
       occupation: parseOccupation(character.description),
       hair: parseHair(character.description),
+      weapon: parseWeapon(character.description),
       anime: cleanTitle(anime.rec.title),
       genres: genres(anime.media.genres),
       year: anime.media.startDate.year ?? anime.rec.year,
@@ -298,7 +299,12 @@ const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
-const { entries, warnings } = applyManual(translated.entries, manual, characterAttributes.map(({ key }) => key))
+const attributeKeys = characterAttributes.map(({ key }) => key)
+const manualApplied = applyManual(translated.entries, manual, attributeKeys)
+const warnings = manualApplied.warnings
+// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
+// corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)

@@ -8,6 +8,7 @@ const NANAMI = `{{Character Infobox
 |gender = Male
 |hair = Blond
 |occupation = [[Jujutsu Sorcerer]]
+|weapons = Bandaged [[Blade]]
 |affiliation = [[Tokyo Metropolitan Curse Technical College|Tokyo Jujutsu High]]
 }}
 '''Kento Nanami''' is a jujutsu sorcerer.`
@@ -30,7 +31,7 @@ describe('fandomInfobox', () => {
 
 describe('fandomValues', () => {
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27 })
-    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, weapon: ['Épéiste'] })
+    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, weapon: null })
   })
 })

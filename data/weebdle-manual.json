@@ -40,7 +40,7 @@
    "occupation": {
     "plus": [
      "Leader",
-     "Guerrier"
+     "Combattant"
     ],
     "moins": [
      "Vice Commander",
@@ -83,7 +83,7 @@
    "_nom": "Nene Motoe",
    "occupation": {
     "plus": [
-     "Élève",
+     "Étudiant",
      "Criminel"
     ],
     "moins": [
@@ -106,7 +106,7 @@
    "_nom": "Aria Kurenaino",
    "occupation": {
     "plus": [
-     "Magicienne"
+     "Magicien"
     ],
     "moins": [
      "Black magic agent"

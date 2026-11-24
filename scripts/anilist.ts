@@ -1,5 +1,6 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
+import { weaponOccupations } from './pixeldleTranslate.js'
 
 const API = 'https://graphql.anilist.co'
 // AniList limite à 30 requêtes par minute en ce moment : on y va doucement
@@ -168,6 +169,16 @@ export function parseHair(description: string | null): string[] | null {
   const found = HAIR_IN_TEXT.exec(withoutSpoilers(description))
   const fromText = found ? hairColors(found[1]!) : []
   return fromText.length > 0 ? fromText : null
+}
+
+// L'arme (ligne « Weapon: » de la description) dit comment le perso se bat : Épéiste, Tireur... (règles du Pixeldle)
+export function parseWeapon(description: string | null): string[] | null {
+  return weaponList(descriptionField(description, ['Weapons?', 'Armaments?']))
+}
+
+export function weaponList(value: string | null): string[] | null {
+  const found = value ? weaponOccupations(value) : []
+  return found.length > 0 ? found : null
 }
 
 // Les noms acceptés : nom complet dans les deux ordres, et les variantes qui contiennent son nom

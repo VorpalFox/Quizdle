@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fixedOccupationIds, translateEntries, translateOccupation } from '../translate.js'
+import { finishOccupations, fixedOccupationIds, groupOccupations, translateEntries, translateOccupation } from '../translate.js'
 import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from '../wikipedia.js'
 
 const SUBARU_FR = `{{Infobox Personnage (fiction)
@@ -112,5 +112,32 @@ describe('translateEntries', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Jedi'] } }
     const { untranslated } = translateEntries([entry], fixedOccupationIds({ '1': { occupation: ['Chevalier'] } }))
     expect(untranslated.size).toBe(0)
+  })
+})
+
+describe('groupOccupations', () => {
+  it('Synonymes_UneSeuleValeur', () => {
+    expect(groupOccupations(['Lycéen', 'Élève', 'Étudiant'])).toEqual(['Étudiant'])
+  })
+
+  it('ValeurPrecise_FamilleAjoutee', () => {
+    expect(groupOccupations(['Épéiste'])).toEqual(['Épéiste', 'Combattant'])
+    expect(groupOccupations(['Tueur'])).toEqual(['Assassin', 'Criminel', 'Combattant'])
+  })
+
+  it('Vide_Null', () => {
+    expect(groupOccupations([])).toBeNull()
+  })
+})
+
+describe('finishOccupations', () => {
+  it('Armes_AjouteesALOccupationPuisRetirees', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Mercenaire'], weapon: ['Épéiste', 'Tireur', 'Archer'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenaire', 'Épéiste', 'Tireur', 'Combattant'] })
+  })
+
+  it('SansOccupation_LArmeSuffit', () => {
+    const entry = { id: '1', name: 'X', attributes: { occupation: null, weapon: ['Épéiste'] } }
+    expect(finishOccupations([entry])[0]!.attributes.occupation).toEqual(['Épéiste', 'Combattant'])
   })
 })
