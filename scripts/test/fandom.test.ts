@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fandomInfobox, fandomValues } from './fandom.js'
+import { fandomInfobox, fandomValues } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami

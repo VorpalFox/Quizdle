@@ -5,6 +5,19 @@
 // 1. Récupérer tous les personnages de chaque anime de la liste
 // 2. Attribuer chaque personnage à un seul anime (là où il est principal, sinon le 1er sorti)
 // 3. Garder 4 à 20 personnages par anime (voir select)
+// 4. Compléter, comme à l'Animedle : AniList (champ, sinon description), puis Wikidata, Fandom, Wikipédia. AniList renseigne
+//    surtout les personnages principaux, et presque jamais l'occupation et les cheveux.
+// 5. Traduire les occupations (translate.ts, sauf celles corrigées à la main), puis appliquer les corrections à la main
+//    (data/weebdle-manual.json)
+//
+// Le récap (.cache/weebdle/weebdle-recap.md) liste ce qui manque et ce qui est à relire. Les sexes déduits des
+// pronoms (0,8 % d'erreurs) et les occupations tirées du texte (« is a young nun » → Nun) sont à relire.
+// - Reste à faire (novembre 2026, sur 2 187 personnages) : retirer les personnages trop inconnus et compléter à la main
+//   les 104 sans sexe, 1 035 sans âge, 860 sans occupation, 739 sans cheveux. Traduire les 76 occupations restées en
+//   anglais, presque toutes uniques (« Nudist Beach operative ») : dans translate.ts si c'est générique, sinon dans le
+//   fichier manual.
+// - Pistes abandonnées : la race (aucune source structurée : 5 % des descriptions AniList, quelques infobox), les
+//   citations (Wikiquote presque vide, Animechan limité à 100 requêtes par jour et surtout les persos principaux).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'

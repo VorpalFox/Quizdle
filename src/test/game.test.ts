@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest'
-import { compareEntries, compareValues } from './compare.js'
-import { Game, GameError } from './game.js'
-import { dayKey, randomEntry } from './pick.js'
-import { displayName, findEntry, homonyms, isOneTypoAway, searchEntries } from './search.js'
-import { NOT_APPLICABLE, type Subject } from './types.js'
+import { compareEntries, compareValues } from '../engine/compare.js'
+import { Game, GameError } from '../engine/game.js'
+import { dayKey, randomEntry } from '../engine/pick.js'
+import { displayName, findEntry, homonyms, isOneTypoAway, searchEntries } from '../engine/search.js'
+import { NOT_APPLICABLE, type Subject } from '../engine/types.js'
 
 // Sujet inventé : le moteur ne doit rien savoir des Pokémon
 const fruits: Subject = {

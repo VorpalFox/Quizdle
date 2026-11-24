@@ -20,7 +20,7 @@ const attributes: readonly AttributeDef[] = [
   { key: 'year', label: '1re apparition', kind: 'number', format: formatYear },
 ]
 
-// Données générées depuis Wikidata par npm run fetch:pixeldle (voir le README), corrections à la main dans data/pixeldle-manual.json
+// Données générées depuis Wikidata par npm run fetch:pixeldle (voir scripts/README.md), corrections à la main dans data/pixeldle-manual.json
 export const pixeldle: Subject = {
   // l'id sert aussi de nom de commande : /quiz pixeldle
   id: 'pixeldle',

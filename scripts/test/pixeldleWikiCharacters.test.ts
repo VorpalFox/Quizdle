@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { characterName, DEVELOPMENT, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from './pixeldleWikiCharacters.js'
+import { characterName, DEVELOPMENT, citedYear, introText, templateGames, isCharacterCategory, isCharacterPage, introAlignment, introFunction, introRoles, pronounGender, sameCharacter, textHair } from '../pixeldleWikiCharacters.js'
 
 describe('pages des personnages', () => {
   it('retire la précision entre parenthèses du nom', () => {

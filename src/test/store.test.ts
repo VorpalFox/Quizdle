@@ -5,8 +5,8 @@ import { pathToFileURL } from 'node:url'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { pokemon } from '../subjects/pokemon/index.js'
 import { subjects } from '../subjects/registry.js'
-import { DailyDraw } from './daily.js'
-import { GameStore } from './store.js'
+import { DailyDraw } from '../bot/daily.js'
+import { GameStore } from '../bot/store.js'
 
 describe('DailyDraw et GameStore', () => {
   let dir: string

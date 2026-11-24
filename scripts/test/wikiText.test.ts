@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { disambiguationLinks, infoboxAge } from './wikiText.js'
+import { disambiguationLinks, infoboxAge } from '../wikiText.js'
 
 describe('infoboxAge', () => {
   it('le 1er nombre, pas une décennie', () => {
