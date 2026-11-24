@@ -659,10 +659,18 @@ const finished = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
   // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
   const { weapon, ...attributes } = entry.attributes
-  const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
+  const own = mergeOccupations(attributes.occupation) ?? []
+  const known = mergeOccupations([...own, ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
   const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
-  return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
+  const fromWeapon = (known ?? []).filter(name => !own.includes(name))
+  return { ...withAddedTags(entry, 'occupation', fromWeapon), attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
+
+// Les tags que le script ajoute à un champ multiple, gardés par le bot quand une correction à la main change le champ
+// (Entry.added : l'occupation tirée de l'arme, Monde réel et les univers partagés)
+function withAddedTags(entry: Entry, key: string, tags: string[]): Entry {
+  return tags.length > 0 ? { ...entry, added: { ...entry.added, [key]: tags } } : entry
+}
 
 // La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et les univers
 // partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
@@ -675,7 +683,10 @@ const entries = finished.map(entry => {
   const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
   if (!places?.length && nationality)
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
-  return { ...entry, attributes: { ...entry.attributes, nationality } }
+  const added = (nationality ?? []).filter(place => !places?.includes(place) && place !== OTHER_WORLD)
+  // added après attributes dans le fichier, pour la lecture
+  const { added: before, ...rest } = withAddedTags(entry, 'nationality', added)
+  return { ...rest, attributes: { ...entry.attributes, nationality }, ...before ? { added: before } : {} }
 })
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap

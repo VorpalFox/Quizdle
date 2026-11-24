@@ -69,6 +69,14 @@ export function writeManual(file: URL, manual: Manual): void {
 
 const ENTRY_FIELDS = new Set(['name', 'aliases', 'image'])
 
+// Une correction d'un champ multiple ne retire pas les tags ajoutés par le script (Entry.added) : ils s'ajoutent après
+function withAdded(value: AttributeValue, added: readonly string[] | undefined): AttributeValue {
+  if (!added?.length || (value !== null && !Array.isArray(value)))
+    return value
+  const list = (value ?? []) as readonly string[]
+  return [...list, ...added.filter(tag => !list.includes(tag))]
+}
+
 // Applique un jeu de champs (ceux d'une ligne de « edit ») à une entrée, sur place : une correction faite pendant
 // que le bot tourne touche aussi la réponse du jour et les parties en cours, qui pointent sur le même objet.
 // Les attributs : leurs clés, ou leurs définitions pour appliquer leur onEdit (le bot ; les scripts passent les clés,
@@ -86,7 +94,7 @@ export function editEntry(entry: Entry, changes: Record<string, unknown>, attrib
       (mutable as Record<string, unknown>)[key] = value
     else if (attributeKeys.includes(key)) {
       const onEdit = defs.find(def => def.key === key)?.onEdit
-      attributes[key] = onEdit ? onEdit(value as AttributeValue, entry.attributes[key] ?? null) : value as AttributeValue
+      attributes[key] = withAdded(onEdit ? onEdit(value as AttributeValue, entry.attributes[key] ?? null) : value as AttributeValue, entry.added?.[key])
     }
     else
       unknown.push(key)
