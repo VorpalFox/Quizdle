@@ -52,3 +52,10 @@ describe('fandomInfobox, modèle maison', () => {
     expect(fandomInfobox('{{Human\n|title = Hirokazu Ukita\n|gender = Male\n|occupation = Police officer\n}}')).toMatchObject({ gender: 'Male', occupation: 'Police officer' })
   })
 })
+
+describe('fandomInfobox, nowiki', () => {
+  it('CrochetsDansNowiki_ModeleLuJusquAuBout', () => {
+    const page = "{{Character_information_real\n|gender=Male\n|dao=[[Cultivation | Eternal]]<nowiki>| Realm]]</nowiki>\n|current_occupation=Student at 60TH High\n}}"
+    expect(fandomValues(fandomInfobox(page)!).occupation).toEqual(['Student at 60TH High'])
+  })
+})

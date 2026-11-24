@@ -350,7 +350,9 @@
    "occupation": [
     "Médecin"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "A Certain Magical Index",
    "genres": [
     "Action",
@@ -2527,7 +2529,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Akame ga Kill!",
    "genres": [
     "Action",
@@ -14346,7 +14350,9 @@
     "Employé",
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Chivalry of a Failed Knight",
    "genres": [
     "Action",
@@ -14793,7 +14799,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Classroom of the Elite",
    "genres": [
     "Drame",
@@ -17409,7 +17417,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Darwin's Game",
    "genres": [
     "Action",
@@ -20104,7 +20114,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -27369,7 +27381,9 @@
     "Noble",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -31866,9 +31880,7 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": [
-    "Bruns"
-   ],
+   "hair": null,
    "anime": "Kakegurui",
    "genres": [
     "Drame",
@@ -35212,7 +35224,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Mieruko-chan",
    "genres": [
     "Comédie",
@@ -35718,7 +35732,9 @@
    "occupation": [
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -38544,7 +38560,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Chauve"
    ],
    "anime": "One-Punch Man",
    "genres": [
@@ -41560,7 +41576,7 @@
    "age": 49,
    "occupation": null,
    "hair": [
-    "Bruns"
+    "Chauve"
    ],
    "anime": "Plastic Memories",
    "genres": [
@@ -42697,7 +42713,9 @@
    "gender": "Homme",
    "age": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -47303,7 +47321,9 @@
    "gender": "Homme",
    "age": 60,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Shiki",
    "genres": [
     "Horreur",
@@ -48621,7 +48641,9 @@
     "Commerçant",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -49471,7 +49493,9 @@
    "occupation": [
     "Commerçant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -51380,7 +51404,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs",
     "Blancs"
@@ -53804,7 +53830,9 @@
     "Aventurier",
     "Artisan"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "The Rising of the Shield Hero",
    "genres": [
     "Action",

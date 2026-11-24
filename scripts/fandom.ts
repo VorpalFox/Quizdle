@@ -256,7 +256,8 @@ const DISAMBIGUATION = /\{\{\s*disambig|may (?:also )?refer to/i
 // Les champs du 1er modèle de la page qui ressemble à une infobox de personnage : {{Character Infobox, {{Infobox character...,
 // mais aussi les noms maison ({{Human| sur le wiki de Death Note}}), reconnus à leurs champs (gender, occupation...)
 export function fandomInfobox(wikitext: string): Record<string, string> | null {
-  const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
+  // Sans les <nowiki> : leur « ]] » fermerait le modèle trop tôt (Wang Ling, wiki d'Immortal King)
+  const text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '').replace(/<nowiki>[\s\S]*?<\/nowiki>/gi, '')
   for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
     if (Object.values(FIELDS).flat().some(name => fields[name]))

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { disambiguationLinks, infoboxAge } from '../wikiText.js'
+import { disambiguationLinks, infoboxAge, textHair } from '../wikiText.js'
 
 describe('infoboxAge', () => {
   it('le 1er nombre, pas une décennie', () => {
@@ -26,5 +26,17 @@ describe('disambiguationLinks', () => {
 
   it("rien si ce n'est pas une page d'homonymie", () => {
     expect(disambiguationLinks('{{Character|name = Rem}} [[Rem (Re:Zero)]]', 'Rem', () => true)).toEqual([])
+  })
+})
+
+describe('textHair, chauve', () => {
+  it('ChauveDansAppearance_Chauve', () => {
+    const page = "Intro.\n==Appearance==\nSaitama is a bald, average-height man. His hairless head replaced his former short black hair.\n==Personality==\nCalm."
+    expect(textHair(page)?.colors).toEqual(['Chauve'])
+  })
+
+  it('AnciensCheveux_Ignores', () => {
+    const page = "==Appearance==\nHe used to have long red hair. Now he has short black hair.\n"
+    expect(textHair(page)?.colors).toEqual(['Noirs'])
   })
 })

@@ -21,6 +21,10 @@ const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*=
 // « the novel redesigns him with long red hair », « an outfit was considered to have black hair »
 export const DEVELOPMENT = /\b(?:original(?:ly)?|initial(?:ly)?|concepts?|early|considered|redesign\w*|prototypes?|novels?|films?|adaptations?|cosplay\w*|beta|corpse)\b/i
 const HAIR_IN_TEXT_ALL = new RegExp(HAIR_IN_TEXT.source, 'gi')
+const BALD = /\bbald\b|\bhairless\b|shaved head|shaven head/i
+const BALD_HAIR = 'Chauve'
+const FORMER_HAIR = /\b(?:former|formerly|used to|previously|once had)\b/i
+const FORMER_WINDOW = 25
 
 // Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
 // Sans les phrases qui correspondent à skip (DEVELOPMENT pour Wikipédia). Avec l'extrait, à relire dans le récap.
@@ -30,10 +34,19 @@ export function textHair(wikitext: string, skip?: RegExp): { colors: string[], e
     if (!text)
       continue
     const plain = plainText(text)
+    // Chauve dans la section Appearance, avant toute couleur : « Saitama is a bald, average-height man »
+    // (seulement là : ailleurs, « bald » peut décrire un autre perso)
+    const bald = text === section ? BALD.exec(plain) : null
+    const first = plain.search(HAIR_IN_TEXT_ALL)
+    if (bald && (first < 0 || bald.index < first))
+      return { colors: [BALD_HAIR], excerpt: plain.slice(Math.max(0, bald.index - 60), bald.index + bald[0].length + 20).replace(/\s+/g, ' ').trim() }
     for (const found of plain.matchAll(HAIR_IN_TEXT_ALL)) {
       const end = plain.indexOf('.', found.index + found[0].length)
       const sentence = plain.slice(plain.lastIndexOf('.', found.index) + 1, end < 0 ? undefined : end)
-      if (skip?.test(sentence))
+      // Les anciens cheveux, annoncés juste avant : « which replaced his former short black hair », « She used to have
+      // long brown hair ». Pas « blue-grey hair (formerly blue-black) » : la couleur actuelle vient d'abord.
+      const before = plain.slice(Math.max(0, found.index - FORMER_WINDOW), found.index)
+      if (skip?.test(sentence) || FORMER_HAIR.test(before))
         continue
       const colors = hairColors(found[1]!).slice(0, MAX_HAIR_COLORS)
       if (colors.length > 0)
