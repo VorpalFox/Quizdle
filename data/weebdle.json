@@ -7665,7 +7665,9 @@
   "attributes": {
    "gender": "Femme",
    "age": null,
-   "occupation": null,
+   "occupation": [
+    "Inconnu"
+   ],
    "hair": [
     "Argentés"
    ],
@@ -11327,7 +11329,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -33560,7 +33564,9 @@
   "attributes": {
    "gender": "Femme",
    "age": 28,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": [
     "Verts"
    ],
@@ -38833,7 +38839,7 @@
    "gender": "Homme",
    "age": null,
    "occupation": [
-    "Aucune"
+    "Inconnu"
    ],
    "hair": [
     "Bruns"
@@ -42419,7 +42425,7 @@
    "gender": "Homme",
    "age": 27,
    "occupation": [
-    "Aucune"
+    "Inconnu"
    ],
    "hair": [
     "Noirs"
@@ -42566,7 +42572,7 @@
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Aucune"
+    "Inconnu"
    ],
    "hair": [
     "Bruns"
@@ -42594,7 +42600,9 @@
   "attributes": {
    "gender": "Homme",
    "age": 28,
-   "occupation": null,
+   "occupation": [
+    "Inconnu"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -56281,7 +56289,7 @@
    "gender": "Femme",
    "age": 12,
    "occupation": [
-    "Aucune"
+    "Inconnu"
    ],
    "hair": [
     "Blonds"

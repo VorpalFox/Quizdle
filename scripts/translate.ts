@@ -66,7 +66,9 @@ const OCCUPATIONS: Record<string, string | null> = {
   'chasseur de fantômes': 'Exorciste', 'généticien': 'Scientifique', 'cosplayeur': 'Cosplayeur', 'boulanger': 'Boulanger',
   'chasseur de primes': 'Chasseur de primes', 'lutteur': 'Lutteur', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotiseur',
   // Pas des occupations
-  'unknown': null, 'test subject': null, 'sujet psi': null,
+  'test subject': null, 'sujet psi': null,
+  // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
+  'unknown': 'Inconnu', 'none': 'Aucune',
 }
 
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
@@ -239,9 +241,13 @@ const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   'Forgeron': ['Artisan'], 'Fleuriste': ['Artisan'], 'Cuisinier': ['Artisan'], 'Petits boulots': ['Employé'], 'Volleyeur': ['Sportif'],
 }
 
+const NO_REAL_OCCUPATION = new Set(['Inconnu', 'Aucune'])
+
 // Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
 export function groupOccupations(values: readonly string[]): string[] | null {
-  const merged = values.map(value => OCCUPATION_MERGES[value] ?? value)
+  // Inconnu et Aucune s'effacent devant une vraie occupation (une arme, un titre)
+  const real = values.filter(value => !NO_REAL_OCCUPATION.has(value))
+  const merged = (real.length > 0 ? real : values).map(value => OCCUPATION_MERGES[value] ?? value)
   const grouped = [...new Set([...merged, ...merged.flatMap(value => OCCUPATION_FAMILIES[value] ?? [])])]
   return grouped.length > 0 ? grouped : null
 }
