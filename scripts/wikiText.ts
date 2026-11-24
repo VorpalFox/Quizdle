@@ -21,8 +21,25 @@ const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*=
 // « the novel redesigns him with long red hair », « an outfit was considered to have black hair »
 export const DEVELOPMENT = /\b(?:original(?:ly)?|initial(?:ly)?|concepts?|early|considered|redesign\w*|prototypes?|novels?|films?|adaptations?|cosplay\w*|beta|corpse)\b/i
 const HAIR_IN_TEXT_ALL = new RegExp(HAIR_IN_TEXT.source, 'gi')
-const BALD = /\bbald\b|\bhairless\b|shaved head|shaven head/i
+const BALD = /\bbald\b|\bhairless\b|shaved head|shaven head/gi
 const BALD_HAIR = 'Chauve'
+// Pas chauve aujourd'hui : il commence à l'être (Kano : « appears to be going bald », Scorpion : « graying hair, which
+// has begun to bald »), c'était avant (Hinata : « Before
+// his death, Hinata had a shaved head »), ou c'est une autre version du perso (Kung Lao : « Kung Lao's revenant form »,
+// Sub-Zero : « he seems to have aged greatly. He is completely bald »). Lu dans la phrase et celle d'avant.
+const NOT_BALD_NOW = /\b(?:going|begun to|beginning to|starting to|started to) bald|\b(?:past|before|younger|used to|once|formerly|revenant|(?<!middle-)aged|future|alternate|zombie|undead|costumes?|variants?)\b|\bhad (?:a )?(?:shaved|shaven|bald)\b/i
+
+// Le 1er « bald » qui décrit le perso tel qu'il est
+function currentBald(plain: string): RegExpMatchArray | null {
+  for (const found of plain.matchAll(BALD)) {
+    const start = plain.lastIndexOf('.', plain.lastIndexOf('.', found.index) - 1) + 1
+    const end = plain.indexOf('.', found.index + found[0].length)
+    const context = plain.slice(Math.max(start, plain.lastIndexOf('\n', found.index) + 1), end < 0 ? undefined : end)
+    if (!NOT_BALD_NOW.test(context))
+      return found
+  }
+  return null
+}
 const FORMER_HAIR = /\b(?:former|formerly|used to|previously|once had)\b/i
 const FORMER_WINDOW = 25
 
@@ -38,10 +55,10 @@ export function textHair(wikitext: string, skip?: RegExp): { colors: string[], e
       continue
     const plain = plainText(text)
     // Chauve, seulement dans la section Appearance : ailleurs, « bald » peut décrire un autre perso
-    const bald = text === section ? BALD.exec(plain) : null
+    const bald = text === section ? currentBald(plain) : null
     const current: string[] = bald ? [BALD_HAIR] : []
     const former: string[] = []
-    let excerpt = bald ? around(plain, bald.index, bald[0].length) : ''
+    let excerpt = bald ? around(plain, bald.index!, bald[0].length) : ''
     for (const found of plain.matchAll(HAIR_IN_TEXT_ALL)) {
       const end = plain.indexOf('.', found.index + found[0].length)
       const sentence = plain.slice(plain.lastIndexOf('.', found.index) + 1, end < 0 ? undefined : end)

@@ -35,6 +35,26 @@ describe('textHair, chauve', () => {
     expect(textHair(page)?.colors).toEqual(['Chauve', 'Noirs'])
   })
 
+  it('CalvitieQuiCommence_PasChauve', () => {
+    const page = "==Appearance==\nKano is depicted as a white male who appears to be going bald and has a five o'clock shadow.\n"
+    expect(textHair(page)).toBeNull()
+  })
+
+  it('ChauveAvant_PasChauve', () => {
+    const page = "==Appearance==\nHe has short brown hair. Before his death, Hinata had a shaved head shown in episode 4.\n"
+    expect(textHair(page)?.colors).toEqual(['Bruns'])
+  })
+
+  it('AutreVersionDuPerso_PasChauve', () => {
+    const page = "==Appearance==\nIn this future, he seems to have aged greatly. He is completely bald, outside of a gray beard.\nWhile completely bald, Kung Lao's revenant form has long sharp nails.\n"
+    expect(textHair(page)).toBeNull()
+  })
+
+  it('AgeMur_ResteChauve', () => {
+    const page = "==Appearance==\nSam is a middle-aged man with a shaved head.\n"
+    expect(textHair(page)?.colors).toEqual(['Chauve'])
+  })
+
   it('AnciensCheveux_GardesApresLesActuels', () => {
     const page = "==Appearance==\nHe used to have long red hair. Now he has short black hair.\n"
     expect(textHair(page)?.colors).toEqual(['Noirs', 'Rouges'])
