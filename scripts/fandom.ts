@@ -3,13 +3,15 @@
 // 1. Le wiki de chaque anime : la table WIKIS, sinon deviné à partir du titre (vérifié : le wiki doit exister)
 // 2. La page de chaque personnage : le lien direct de Wikidata (P6262) s'il existe, sinon son nom (les deux ordres,
 //    sans voyelles longues) et ses alias, 50 titres par requête
-// 3. Les champs de l'infobox : hair / Hair Color, occupation, gender...
+// 3. Les champs de l'infobox : hair / Hair Color, occupation, gender, age... Une page d'homonymie : ses liens suivis.
+// 4. Les cheveux que l'infobox ne donne pas : dans le texte de la page entière (section Appearance d'abord)
 // Réponses gardées dans .cache/fandom/ (hors git) : supprimer le dossier pour tout retélécharger.
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { sleep, splitOccupations } from './anilist.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
+import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
 const TITLES_PER_REQUEST = 50
@@ -106,6 +108,7 @@ const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
   occupation: ['occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'job', 'métier', 'activité', 'fonction'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
+  age: ['age', 'âge', 'ages'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -215,6 +218,32 @@ async function fetchPages(wiki: string, titles: string[]): Promise<Pages> {
   return cache
 }
 
+// La page entière (pour les cheveux décrits dans le texte), depuis le cache ou par lots de 50
+const MAX_FULL_LENGTH = 60_000
+async function fetchFullPages(wiki: string, titles: string[]): Promise<Pages> {
+  const name = `full-${wiki.replace('/', '-')}`
+  const cache = await readJson<Pages>(name, {})
+  const missing = [...new Set(titles)].filter(title => !(title in cache))
+  for (let i = 0; i < missing.length; i += TITLES_PER_REQUEST) {
+    const batch = missing.slice(i, i + TITLES_PER_REQUEST)
+    const data = await api(wiki, { action: 'query', prop: 'revisions', rvprop: 'content', rvslots: 'main', redirects: '1', titles: batch.join('|') })
+    const renamed = new Map<string, string>([...data?.query?.normalized ?? [], ...data?.query?.redirects ?? []].map(({ from, to }: { from: string, to: string }) => [from, to]))
+    const pages = new Map<string, string | null>((data?.query?.pages ?? []).map((page: any) => [page.title, page.revisions?.[0]?.slots?.main?.content ?? null]))
+    for (const title of batch) {
+      let current = title
+      for (let hops = 0; renamed.has(current) && hops < 3; hops++)
+        current = renamed.get(current)!
+      cache[title] = pages.get(current)?.slice(0, MAX_FULL_LENGTH) ?? null
+    }
+    await writeJson(name, cache)
+    await sleep(DELAY_MS)
+  }
+  return cache
+}
+
+// Les liens d'une page d'homonymie à ne pas suivre : pas le personnage de l'anime (film, jeu, chanson, épisode…)
+const NOT_THE_ANIME = /film|movie|novel|book|card|item|weapon|location|game|song|episode|chapter|arc|album|disambiguation/i
+
 // --- 3. L'infobox ---
 
 // Les champs du 1er modèle de la page qui ressemble à une infobox de personnage ({{Character Infobox, {{Infobox character...})
@@ -274,6 +303,7 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     gender: wikiGender(field(fields, FIELDS.gender)),
     occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
+    age: infoboxAge(field(fields, FIELDS.age)),
   }
 }
 
@@ -309,16 +339,37 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
   let done = 0
   for (const [wiki, characters] of byWiki) {
     process.stdout.write(`\rFandom : ${++done}/${byWiki.size} wikis (${wiki})`.padEnd(70))
-    const pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
-    for (const { target, titles } of characters) {
-      const fields = titles.map(title => pages[title]).filter((page): page is string => Boolean(page)).map(fandomInfobox).find(Boolean)
-      if (!fields)
+    const firstPages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    // Pas d'infobox, mais une page d'homonymie (« Rem ») : ses liens « Rem (…) », ceux qui citent l'anime d'abord
+    for (const character of characters) {
+      if (character.titles.some(title => firstPages[title] && fandomInfobox(firstPages[title]!)))
         continue
-      const added = Object.fromEntries(Object.entries(fandomValues(fields)).filter(([key, value]) => isEmpty(target.entry.attributes[key]) && !isEmpty(value)))
+      const prefer = (qualifier: string) => character.target.animeTitles.some(title => title && normalize(qualifier).includes(normalize(title)))
+      character.titles = [...character.titles, ...character.titles.flatMap(title => firstPages[title] ? disambiguationLinks(firstPages[title]!, title, prefer, NOT_THE_ANIME) : [])]
+    }
+    const pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    // La page de chaque personnage : la 1re qui a une infobox
+    const found = characters.flatMap(({ target, titles }) => {
+      const title = titles.find(title => pages[title] && fandomInfobox(pages[title]!))
+      return title ? [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }] : []
+    })
+    // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
+    const hairless = found.filter(({ target, values }) => isEmpty(target.entry.attributes.hair) && isEmpty(values.hair))
+    const full = hairless.length > 0 ? await fetchFullPages(wiki, hairless.map(({ title }) => title)) : {}
+    const textHairs = new Map(hairless.flatMap(({ target, title }) => {
+      const hair = full[title] ? textHair(full[title]!) : null
+      return hair ? [[target, hair] as const] : []
+    }))
+    for (const { target, title, values } of found) {
+      const added: Record<string, AttributeValue> = Object.fromEntries(Object.entries(values).filter(([key, value]) => isEmpty(target.entry.attributes[key]) && !isEmpty(value)))
+      const hair = textHairs.get(target)
+      if (hair)
+        added.hair = hair.colors
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
-      filled.push(`${target.entry.name} (${wiki}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}`)
+      const page = target.name.full === title ? '' : `, page « ${title} »`
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}`)
     }
   }
   console.log()

@@ -1,0 +1,28 @@
+# Ouvre une MR pour les corrections faites depuis Discord (/quizdebug) que le Raspberry n'a pas pu fusionner avec main
+# au déploiement (conflit sur un fichier data/*-manual.json). Le Raspberry les pousse sur une branche raspberry/... ;
+# la MR est ouverte par GitHub Actions, pas par Fx73, pour que l'assignation envoie bien une notification.
+# Réglage nécessaire : Settings > Actions > General > « Allow GitHub Actions to create and approve pull requests ».
+name: Corrections du Raspberry
+
+on:
+  push:
+    branches: ['raspberry/**']
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ouvrir la MR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          gh pr create --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --base main --assignee Fx73 \
+            --title "Corrections depuis Discord en conflit avec main ($BRANCH)" \
+            --body "Le Raspberry n'a pas pu fusionner ces corrections avec main au déploiement : un fichier \`data/*-manual.json\` a changé des deux côtés.
+
+          Le bot tourne sur main, sans ces corrections, jusqu'à ce que cette MR soit fusionnée puis redéployée (\`deploy quizdle\`)."

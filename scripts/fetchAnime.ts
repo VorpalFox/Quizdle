@@ -5,10 +5,10 @@
 // Les indices, comme au Weebdle :
 // - Univers : la plus ancienne série de la franchise (Jotaro → JoJo's Bizarre Adventure). Genres, année et studio
 //   viennent de la série où le personnage apparaît, pas de la 1re de l'univers.
-// - Âge : le 1er nombre d'AniList (« 17-18 » → 17), absent pour environ 15 % des personnages.
+// - Âge : le 1er nombre d'AniList (« 17-18 » → 17), sinon celui de l'infobox Fandom ou Wikipédia.
 // - Sexe, occupation, cheveux : AniList (champ, sinon description), puis ce qui manque dans l'ordre : Wikidata
-//   (wikidata.ts), l'infobox Fandom (fandom.ts), l'infobox Wikipédia (wikipedia.ts). Les occupations en anglais sont
-//   traduites à la fin (translate.ts).
+//   (wikidata.ts), Fandom (fandom.ts : l'infobox, pages d'homonymie suivies, puis les cheveux décrits dans le texte),
+//   l'infobox Wikipédia (wikipedia.ts). Les occupations en anglais sont traduites à la fin (translate.ts).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { fixedOccupationIds, translateEntries, translateOccupation } from './translate.js'
-import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from './wikipedia.js'
+import { fixedOccupationIds, translateEntries, translateOccupation } from '../translate.js'
+import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from '../wikipedia.js'
 
 const SUBARU_FR = `{{Infobox Personnage (fiction)
  | charte couleur      = animanga

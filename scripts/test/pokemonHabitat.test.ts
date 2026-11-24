@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { deduceHabitats, encounterHabitat, habitatVotes } from './pokemonHabitat.js'
+import { deduceHabitats, encounterHabitat, habitatVotes } from '../pokemonHabitat.js'
 
 describe('encounterHabitat', () => {
   it('Methode_PrimeSurLeLieu', () => {

@@ -18,8 +18,9 @@ src/
   engine/     moteur générique, sans Discord : comparaison, recherche, partie, tirage
   subjects/   un dossier par sujet (liste des attributs) + registry.ts qui les liste tous
   bot/        couche Discord : commandes, rendu des embeds, interactions
+  test/       tests du moteur et du bot
 data/         les données de chaque sujet (JSON) et leurs corrections à la main
-scripts/      scripts de génération des données
+scripts/      génération des données (voir scripts/README.md), avec ses tests dans scripts/test/
 ```
 
 Le bot ne passe que par le moteur, qui ne connaît que l'interface `Subject` ([src/engine/types.ts](src/engine/types.ts)).
@@ -28,35 +29,7 @@ Le bot ne passe que par le moteur, qui ne connaît que l'interface `Subject` ([s
 
 ## Données
 
-Les données sont générées par des scripts, puis commitées. Les choix faits (sources, règles, cas particuliers) sont expliqués en commentaire en tête de chaque script.
-
-| Sujet | Commande | Source | Script |
-|---|---|---|---|
-| Pokédle | `npm run fetch:pokemon` | PokeAPI | [fetchPokemon.ts](scripts/fetchPokemon.ts) |
-| Animedle | `npm run fetch:anime` | AniList (les 200 personnages les plus en favoris), Wikidata, Fandom, Wikipédia | [fetchAnime.ts](scripts/fetchAnime.ts) |
-| Weebdle | `npm run fetch:weebdle` | AniList, pour les animes de [data/recommendations.json](data/recommendations.json) | [fetchWeebdle.ts](scripts/fetchWeebdle.ts) |
-| Pixeldle | `npm run fetch:pixeldle` | Wikidata et les wikis des franchises de [data/pixeldle-franchises.json](data/pixeldle-franchises.json) | [fetchPixeldle.ts](scripts/fetchPixeldle.ts) |
-
-Les réponses des API sont gardées dans `.cache/` (hors git) : un script interrompu reprend où il en était, et une relance ne refait aucune requête. La 1re fois, compter de quelques minutes à une vingtaine. Chaque script écrit un récap dans `.cache/<sujet>/` : ce qui manque, ce qui est deviné et à relire, les valeurs pas traduites.
-
-La liste du Weebdle est recopiée à la main du salon #conseil-en-anime (`npm run dump:recos` écrit tous ses messages dans `.cache/discord/recos.txt`).
-
-### Corrections à la main
-
-Ne pas modifier `data/<sujet>.json` : les scripts le réécrivent. Les corrections vont dans `data/<sujet>-manual.json`, à la main ou avec `/quizdebug` (voir Debug), et sont appliquées à chaque génération et au démarrage du bot :
-
-```json
-{
- "exclude": ["307811"],
- "edit": { "27": { "_nom": "Killua Zoldyck", "hair": ["Blancs"], "occupation": ["Assassin"] } },
- "add": [{ "id": "manuel-1", "name": "Nom", "attributes": { "gender": "Homme", "...": "..." } }]
-}
-```
-
-- `exclude` : retire un personnage. `edit` : remplace des champs ou des attributs (les clés en `_` sont des notes). `add` : un personnage absent de la source.
-- Pixeldle seulement : `wikis` (réglages de la recherche de personnages dans le wiki d'une franchise) et `defaults` (valeurs des attributs vides d'une franchise, avant `edit`).
-
-Le détail est dans [src/subjects/manual.ts](src/subjects/manual.ts).
+Les données sont générées par les scripts de [scripts/](scripts/), puis commitées : sources, étapes, cache, récaps et corrections à la main (`data/<sujet>-manual.json`) sont expliqués dans [scripts/README.md](scripts/README.md).
 
 ## Installation
 
@@ -83,7 +56,7 @@ Variables du `.env` :
 - `DISCORD_GUILD_ID` : optionnel, l'ID du serveur de test. Les commandes y apparaissent tout de suite, avec `/quizdebug`. Sans lui, `/quiz` et `/guess` sont enregistrées en global, sans `/quizdebug`.
 - `DISCORD_DEBUG_CHANNEL_ID` : le salon du serveur de test où `/quizdebug` est accepté.
 
-Tests : `npm test`. Type-check : `npm run typecheck`. Dans VS Code, la config *Bot Discord* lance le bot avec le débogueur. Sur le Raspberry : `npm run build`, puis `pm2 start ecosystem.config.cjs`.
+Tests : `npm test`. Type-check : `npm run typecheck`. Sur le Raspberry : `npm run build`, puis `pm2 start ecosystem.config.cjs`.
 
 ### Fonctionnement
 
@@ -94,7 +67,7 @@ Le bot ne fait aucune requête réseau : tout est dans `data/`. Le tirage du jou
 Dans le salon `DISCORD_DEBUG_CHANNEL_ID` :
 
 - `/quizdebug reset` : refait le tirage du jour et efface toutes les parties (sur tous les serveurs).
-- `/quizdebug remove subject:<sujet> name:<personnage>` : retire un personnage pour de bon (`exclude`). Si c'était la réponse du jour, nouveau tirage pour les parties suivantes.
+- `/quizdebug remove subject:<sujet> name:<personnage>` : retire un personnage pour de bon (`exclude`, voir [Corrections à la main](scripts/README.md#corrections-à-la-main)). Si c'était la réponse du jour, nouveau tirage pour les parties suivantes.
 - `/quizdebug edit subject:<sujet> name:<personnage> attribute:<attribut> value:<valeur>` : change un attribut (`edit`), tout de suite, parties en cours comprises. Plusieurs valeurs : « Blancs, Noirs ». Vide : « - ». Le bot signale une valeur que personne d'autre n'a, pour garder la même écriture.
 
 Sur le Raspberry, ces corrections changent les fichiers de `data/` : penser à les commiter depuis le Raspberry pour ne pas les perdre au prochain `git pull`. Pour cacher `/quizdebug` des autres salons : *Paramètres du serveur* > *Intégrations* > le bot > `/quizdebug`.

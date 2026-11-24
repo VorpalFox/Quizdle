@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
+import { wikidataGender, wikidataHair, wikidataOccupation } from '../wikidata.js'
 
 describe('wikidataGender', () => {
   it('MasculinFeminin_HommeFemme', () => {

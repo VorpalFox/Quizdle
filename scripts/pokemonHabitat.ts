@@ -2,6 +2,7 @@
 // L'habitat officiel n'existe que dans Rouge Feu / Vert Feuille, donc jusqu'à la 3e génération.
 // Mesuré sur les 386 premiers (lieux des jeux de la 4G et après, famille entière) : le vrai habitat est
 // dans la liste déduite 62 % du temps. C'est approximatif : à relire si un Pokémon semble mal classé.
+// Les scripts qui ont servi à choisir et mesurer ces règles : scripts/analyses/habitat-pokemon/
 
 export interface Encounter {
   area: string

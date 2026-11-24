@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { birthPlaces, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from './pixeldleEnrich.js'
+import { birthPlaces, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from '../pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {

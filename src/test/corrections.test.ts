@@ -6,7 +6,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { GameError } from '../engine/game.js'
 import { type AttributeDef, type Entry, NOT_APPLICABLE, type Subject } from '../engine/types.js'
 import { applyManual, type Manual } from '../subjects/manual.js'
-import { editAttribute, parseValue, removeEntry, resolveEntry } from './corrections.js'
+import { editAttribute, parseValue, removeEntry, resolveEntry } from '../bot/corrections.js'
 
 const attributes: AttributeDef[] = [
   { key: 'gender', label: 'Sexe', kind: 'exact' },

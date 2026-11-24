@@ -8,6 +8,7 @@ import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { sleep, splitOccupations } from './anilist.js'
 import { templateFields } from './fandom.js'
+import { disambiguationLinks } from './wikiText.js'
 import { translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
 import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
@@ -274,23 +275,9 @@ function linkedTitle(wiki: Wiki, links: string[]): string | null {
   return link ? decodeURIComponent(link.split(':').slice(1).join(':')).replace(/_/g, ' ') : null
 }
 
-// Une page d'homonymie (« Alena » sur le wiki Dragon Quest) : ses liens « Alena (…) », ceux qui citent la franchise
-// d'abord (« Alena (Dragon Quest IV) »), puis « (character) », sans les adaptations (manga, anime, film…)
-const MAX_DISAMBIGUATION_TITLES = 3
-const ADAPTATION = /manga|anime|film|movie|tv|series|comic|novel|book|card|item|weapon|location/i
-export function disambiguationTitles(page: string, name: string, franchise: string): string[] {
-  if (!/\{\{\s*disambig|may refer to/i.test(page))
-    return []
-  const links = [...page.matchAll(/\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]/g)].map(match => match[1]!.trim().replace(/_/g, ' '))
-  const rank = (qualifier: string) => mentionsFranchise(qualifier, franchise) ? 0 : /character/i.test(qualifier) ? 1 : 2
-  return [...new Set(links)]
-    .map(title => ({ title, match: /^(.+?)\s*\(([^)]+)\)\s*$/.exec(title) }))
-    .filter(({ match }) => match !== null && normalize(match[1]!) === normalize(name) && !ADAPTATION.test(match[2]!))
-    .map(({ title, match }) => ({ title, qualifier: match![2]! }))
-    .sort((a, b) => rank(a.qualifier) - rank(b.qualifier))
-    .map(({ title }) => title)
-    .slice(0, MAX_DISAMBIGUATION_TITLES)
-}
+// Une page d'homonymie : ses liens qui citent la franchise d'abord (« Alena (Dragon Quest IV) »)
+export const disambiguationTitles = (page: string, name: string, franchise: string) =>
+  disambiguationLinks(page, name, qualifier => mentionsFranchise(qualifier, franchise))
 
 function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
   const linked = linkedTitle(wiki, target.fandomLinks)

@@ -27,7 +27,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -260,7 +260,9 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystère",
@@ -292,7 +294,9 @@
     "Roi",
     "Peacekeeper"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
@@ -351,7 +355,9 @@
    "gender": "Homme",
    "age": 28,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
@@ -374,7 +380,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b422-XTaiTuvRohsV.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Mercenaire"
    ],
@@ -416,7 +422,7 @@
     "Mystère"
    ],
    "year": 2023,
-   "studio": "Toho"
+   "studio": "OLM"
   }
  },
  {
@@ -442,7 +448,7 @@
     "Fantasy"
    ],
    "year": 2023,
-   "studio": "Toho"
+   "studio": "MADHOUSE"
   }
  },
  {
@@ -472,7 +478,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "Frontier Works"
+   "studio": "WHITE FOX"
   }
  },
  {
@@ -621,7 +627,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Steins;Gate",
    "genres": [
     "Drame",
@@ -630,7 +638,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "Frontier Works"
+   "studio": "WHITE FOX"
   }
  },
  {
@@ -661,7 +669,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -684,7 +692,9 @@
     "Policier",
     "Chanteur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -753,6 +763,37 @@
   }
  },
  {
+  "id": "89616",
+  "name": "Shigeo Kageyama",
+  "aliases": [
+   "Kageyama Shigeo",
+   "影山茂夫",
+   "Shigeo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Collégien"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Mob Psycho 100",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Psychologique",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "bones"
+  }
+ },
+ {
   "id": "80",
   "name": "Light Yagami",
   "aliases": [
@@ -782,35 +823,6 @@
    ],
    "year": 2006,
    "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "89616",
-  "name": "Shigeo Kageyama",
-  "aliases": [
-   "Kageyama Shigeo",
-   "影山茂夫",
-   "Shigeo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 14,
-   "occupation": [
-    "Collégien"
-   ],
-   "hair": null,
-   "anime": "Mob Psycho 100",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "bones"
   }
  },
  {
@@ -854,7 +866,10 @@
   "attributes": {
    "gender": "Femme",
    "age": 14,
-   "occupation": null,
+   "occupation": [
+    "Auto Memories Doll",
+    "Soldat"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -1002,7 +1017,9 @@
    "gender": "Femme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Violets"
+   ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
@@ -1040,7 +1057,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -1268,7 +1285,9 @@
     "Détective",
     "Mafieux"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -1313,40 +1332,6 @@
   }
  },
  {
-  "id": "121103",
-  "name": "Chika Fujiwara",
-  "aliases": [
-   "Fujiwara Chika",
-   "Love Detective Chika",
-   "Fortune Teller Chika",
-   "Secretary Fujiwara",
-   "藤原千花",
-   "Chika",
-   "Fujiwara"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": [
-    "Lycéen"
-   ],
-   "hair": [
-    "Roses",
-    "Argentés"
-   ],
-   "anime": "Kaguya-sama: Love is War",
-   "genres": [
-    "Comédie",
-    "Psychologique",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 2019,
-   "studio": "A-1 Pictures"
-  }
- },
- {
   "id": "88573",
   "name": "Subaru Natsuki",
   "aliases": [
@@ -1382,6 +1367,40 @@
    ],
    "year": 2016,
    "studio": "WHITE FOX"
+  }
+ },
+ {
+  "id": "121103",
+  "name": "Chika Fujiwara",
+  "aliases": [
+   "Fujiwara Chika",
+   "Love Detective Chika",
+   "Fortune Teller Chika",
+   "Secretary Fujiwara",
+   "藤原千花",
+   "Chika",
+   "Fujiwara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Lycéen"
+   ],
+   "hair": [
+    "Roses",
+    "Argentés"
+   ],
+   "anime": "Kaguya-sama: Love is War",
+   "genres": [
+    "Comédie",
+    "Psychologique",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2019,
+   "studio": "A-1 Pictures"
   }
  },
  {
@@ -1429,7 +1448,9 @@
    "occupation": [
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -1572,7 +1593,9 @@
     "Professeur",
     "Super-héros"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -1797,7 +1820,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Aniplex"
+   "studio": "Shaft"
   }
  },
  {
@@ -1817,7 +1840,9 @@
     "Chasseur de démons",
     "Wild Fiend"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -1841,7 +1866,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 14,
    "occupation": [
     "Pilote"
    ],
@@ -2212,7 +2237,9 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -2281,7 +2308,7 @@
     "Surnaturel"
    ],
    "year": 2012,
-   "studio": "Aniplex"
+   "studio": "Shaft"
   }
  },
  {
@@ -2341,7 +2368,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -2371,36 +2398,6 @@
    ],
    "year": 2018,
    "studio": "8-bit"
-  }
- },
- {
-  "id": "133700",
-  "name": "Nobara Kugisaki",
-  "aliases": [
-   "Kugisaki Nobara",
-   "釘崎野薔薇",
-   "Nobara",
-   "Kugisaki"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": [
-    "Exorciste",
-    "Élève"
-   ],
-   "hair": [
-    "Roux"
-   ],
-   "anime": "JUJUTSU KAISEN",
-   "genres": [
-    "Action",
-    "Drame",
-    "Surnaturel"
-   ],
-   "year": 2020,
-   "studio": "Toho"
   }
  },
  {
@@ -2434,6 +2431,36 @@
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "133700",
+  "name": "Nobara Kugisaki",
+  "aliases": [
+   "Kugisaki Nobara",
+   "釘崎野薔薇",
+   "Nobara",
+   "Kugisaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Exorciste",
+    "Élève"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA"
   }
  },
  {
@@ -2487,7 +2514,9 @@
     "Leader",
     "Bataillon d'exploration"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -2528,7 +2557,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -2540,7 +2569,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84677-PFmohzIXD1ud.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 1050,
    "occupation": [
     "Dieu"
    ],
@@ -2576,7 +2605,9 @@
    "occupation": [
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
@@ -2585,7 +2616,7 @@
     "Surnaturel"
    ],
    "year": 2006,
-   "studio": "NBCUniversal Entertainment Japan"
+   "studio": "Studio DEEN"
   }
  },
  {
@@ -2676,7 +2707,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Aniplex"
+   "studio": "Shaft"
   }
  },
  {
@@ -2695,7 +2726,9 @@
    "occupation": [
     "Volleyeur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",
@@ -2731,7 +2764,7 @@
     "Thriller"
    ],
    "year": 2011,
-   "studio": "Aniplex"
+   "studio": "Shaft"
   }
  },
  {
@@ -2762,7 +2795,7 @@
     "Surnaturel"
    ],
    "year": 2025,
-   "studio": "Aniplex"
+   "studio": "ufotable"
   }
  },
  {
@@ -2784,7 +2817,9 @@
    "occupation": [
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
@@ -2793,7 +2828,7 @@
     "Surnaturel"
    ],
    "year": 2006,
-   "studio": "NBCUniversal Entertainment Japan"
+   "studio": "Studio DEEN"
   }
  },
  {
@@ -2911,7 +2946,7 @@
     "Surnaturel"
    ],
    "year": 2026,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -3128,6 +3163,34 @@
   }
  },
  {
+  "id": "1111",
+  "name": "C.C.",
+  "aliases": [
+   "シー･ツー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 300,
+   "occupation": [
+    "Pilote"
+   ],
+   "hair": [
+    "Verts"
+   ],
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
   "id": "1259",
   "name": "Misato Katsuragi",
   "aliases": [
@@ -3157,34 +3220,6 @@
    ],
    "year": 1995,
    "studio": "GAINAX"
-  }
- },
- {
-  "id": "1111",
-  "name": "C.C.",
-  "aliases": [
-   "シー･ツー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Pilote"
-   ],
-   "hair": [
-    "Verts"
-   ],
-   "anime": "Code Geass: Lelouch of the Rebellion",
-   "genres": [
-    "Action",
-    "Drame",
-    "Mecha",
-    "Science-fiction",
-    "Thriller"
-   ],
-   "year": 2006,
-   "studio": "Sunrise"
   }
  },
  {
@@ -3289,7 +3324,9 @@
     "Professeur",
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
     "Comédie",
@@ -3402,7 +3439,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71933-HQ1TSjlrJ8Hv.jpg",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 15,
    "occupation": [
     "Élève"
    ],
@@ -3531,7 +3568,7 @@
     "Surnaturel"
    ],
    "year": 2026,
-   "studio": "Warner Bros. Japan"
+   "studio": "david production"
   }
  },
  {
@@ -3575,7 +3612,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 32,
    "occupation": [
     "Psychiatre",
     "Espion"
@@ -3635,7 +3672,9 @@
    "occupation": [
     "Lycéen"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -3644,7 +3683,7 @@
     "Romance"
    ],
    "year": 2012,
-   "studio": "Aniplex"
+   "studio": "A-1 Pictures"
   }
  },
  {
@@ -3722,7 +3761,9 @@
    "gender": "Homme",
    "age": 16,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",
@@ -3730,37 +3771,7 @@
     "Sport"
    ],
    "year": 2024,
-   "studio": "Toho"
-  }
- },
- {
-  "id": "174873",
-  "name": "Kurena Kukumila",
-  "aliases": [
-   "Kukumila Kurena",
-   "クレナ・ククミラ",
-   "Kurena",
-   "Kukumila"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 15,
-   "occupation": [
-    "Processor"
-   ],
-   "hair": [
-    "Roux"
-   ],
-   "anime": "86 EIGHTY-SIX",
-   "genres": [
-    "Action",
-    "Drame",
-    "Mecha",
-    "Science-fiction"
-   ],
-   "year": 2021,
-   "studio": "A-1 Pictures"
+   "studio": "Production I.G"
   }
  },
  {
@@ -3801,6 +3812,36 @@
   }
  },
  {
+  "id": "174873",
+  "name": "Kurena Kukumila",
+  "aliases": [
+   "Kukumila Kurena",
+   "クレナ・ククミラ",
+   "Kurena",
+   "Kukumila"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 15,
+   "occupation": [
+    "Processor"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "86 EIGHTY-SIX",
+   "genres": [
+    "Action",
+    "Drame",
+    "Mecha",
+    "Science-fiction"
+   ],
+   "year": 2021,
+   "studio": "A-1 Pictures"
+  }
+ },
+ {
   "id": "157115",
   "name": "Toge Inumaki",
   "aliases": [
@@ -3828,7 +3869,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -3982,7 +4023,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -4161,7 +4204,7 @@
     "Surnaturel"
    ],
    "year": 2025,
-   "studio": "Aniplex"
+   "studio": "ufotable"
   }
  },
  {
@@ -4181,7 +4224,9 @@
     "Musicien",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Your lie in April",
    "genres": [
     "Drame",
@@ -4357,7 +4402,9 @@
     "Justicier",
     "Épéiste"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -4366,7 +4413,7 @@
     "Romance"
    ],
    "year": 2012,
-   "studio": "Aniplex"
+   "studio": "A-1 Pictures"
   }
  },
  {
@@ -4378,7 +4425,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 9,
    "occupation": [
     "Mage"
    ],
@@ -4392,7 +4439,7 @@
     "Fantasy"
    ],
    "year": 2023,
-   "studio": "Toho"
+   "studio": "MADHOUSE"
   }
  },
  {
@@ -4475,7 +4522,9 @@
     "Chirurgien",
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Monster",
    "genres": [
     "Drame",
@@ -4617,7 +4666,9 @@
     "Leader",
     "Élève"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Toilet-bound Hanako-kun",
    "genres": [
     "Action",
@@ -4770,7 +4821,7 @@
     "Tranche de vie"
    ],
    "year": 2008,
-   "studio": "Genco"
+   "studio": "J.C.STAFF"
   }
  },
  {
@@ -4885,7 +4936,9 @@
     "Chasseur",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -4911,7 +4964,9 @@
     "Leader",
     "Pilote"
    ],
-   "hair": null,
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -4954,33 +5009,6 @@
   }
  },
  {
-  "id": "89362",
-  "name": "Aqua",
-  "aliases": [
-   "アクア"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Déesse"
-   ],
-   "hair": [
-    "Bleus"
-   ],
-   "anime": "KONOSUBA -God's blessing on this wonderful world!",
-   "genres": [
-    "Aventure",
-    "Comédie",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2016,
-   "studio": "Studio DEEN"
-  }
- },
- {
   "id": "83797",
   "name": "Ryuuko Matoi",
   "aliases": [
@@ -5008,7 +5036,34 @@
     "Ecchi"
    ],
    "year": 2013,
-   "studio": "Aniplex"
+   "studio": "TRIGGER"
+  }
+ },
+ {
+  "id": "89362",
+  "name": "Aqua",
+  "aliases": [
+   "アクア"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": [
+    "Déesse"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "KONOSUBA -God's blessing on this wonderful world!",
+   "genres": [
+    "Aventure",
+    "Comédie",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2016,
+   "studio": "Studio DEEN"
   }
  },
  {
@@ -5039,7 +5094,7 @@
     "Surnaturel"
    ],
    "year": 1998,
-   "studio": "TV Tokyo"
+   "studio": "Triangle Staff"
   }
  },
  {
@@ -5094,7 +5149,7 @@
     "Surnaturel"
    ],
    "year": 2021,
-   "studio": "Warner Bros. Japan"
+   "studio": "david production"
   }
  },
  {
@@ -5207,7 +5262,9 @@
    "occupation": [
     "Volleyeur"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "HAIKYU!!",
    "genres": [
     "Comédie",
@@ -5260,7 +5317,9 @@
    "gender": "Femme",
    "age": 15,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Love, Chunibyo & Other Delusions",
    "genres": [
     "Comédie",
@@ -5301,7 +5360,7 @@
     "Surnaturel"
    ],
    "year": 2009,
-   "studio": "Aniplex"
+   "studio": "Shaft"
   }
  },
  {
@@ -5320,7 +5379,9 @@
     "Guerrier",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -5406,7 +5467,9 @@
    "occupation": [
     "Roi"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
@@ -5415,7 +5478,7 @@
     "Surnaturel"
    ],
    "year": 2011,
-   "studio": "Aniplex"
+   "studio": "ufotable"
   }
  },
  {
@@ -5513,7 +5576,7 @@
     "Surnaturel"
    ],
    "year": 2026,
-   "studio": "Warner Bros. Japan"
+   "studio": "david production"
   }
  },
  {
@@ -5638,11 +5701,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
   "attributes": {
    "gender": "Homme",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
@@ -5668,7 +5733,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
   "attributes": {
    "gender": "Femme",
-   "age": null,
+   "age": 16,
    "occupation": [
     "Serveur",
     "Lycéen"
@@ -5745,7 +5810,7 @@
     "Surnaturel"
    ],
    "year": 2020,
-   "studio": "Toho"
+   "studio": "MAPPA"
   }
  },
  {
@@ -5876,7 +5941,9 @@
    "occupation": [
     "Shinigami"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Bleach",
    "genres": [
     "Action",
