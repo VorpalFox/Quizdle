@@ -266,24 +266,29 @@ function mix(pool: Candidate[], slots: number, seed: number, popularityOnly: boo
   return [...pool.slice(0, popular), ...draw(pool.slice(popular), seed).slice(0, slots - popular)]
 }
 
+// Le nombre de persos tirés pour un anime : 20, ou plus si les corrections le demandent (« limits »). En dessous de 20,
+// on en tire 20 et les moins remplis sortent à la fin (limitPerAnime), une fois toutes les sources passées.
+const drawSize = (anime: Anime) => Math.max(MAX_PER_ANIME, manual.limits?.[cleanTitle(anime.rec.title)] ?? 0)
+
 // Les personnages corrigés à la main sont toujours gardés : ils prennent la place des derniers du tirage
 function select(anime: Anime, candidates: Candidate[]): Candidate[] {
+  const max = drawSize(anime)
   const pinned = candidates.filter(({ character }) => editedIds.has(String(character.id)))
-  const drawn = selectWithoutPinned(anime, candidates).filter(candidate => !pinned.includes(candidate))
-  return [...pinned, ...drawn].slice(0, Math.max(MAX_PER_ANIME, pinned.length)).toSorted(byRoleThenPopularity)
+  const drawn = selectWithoutPinned(anime, candidates, max).filter(candidate => !pinned.includes(candidate))
+  return [...pinned, ...drawn].slice(0, Math.max(max, pinned.length)).toSorted(byRoleThenPopularity)
 }
 
-function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[] {
+function selectWithoutPinned(anime: Anime, candidates: Candidate[], max: number): Candidate[] {
   const sorted = candidates.toSorted(byRoleThenPopularity)
-  if (sorted.length <= MAX_PER_ANIME)
+  if (sorted.length <= max)
     return sorted
 
-  // On écarte ceux qui n'ont ni âge, ni occupation, ni cheveux, sauf s'il en faut pour arriver à 20
+  // On écarte ceux qui n'ont ni âge, ni occupation, ni cheveux, sauf s'il en faut pour arriver au nombre voulu
   const informed = sorted.filter(hasInfo)
-  const pool = informed.length >= MAX_PER_ANIME
+  const pool = informed.length >= max
     ? informed
-    : [...informed, ...sorted.filter(candidate => !hasInfo(candidate)).slice(0, MAX_PER_ANIME - informed.length)].toSorted(byRoleThenPopularity)
-  if (pool.length <= MAX_PER_ANIME)
+    : [...informed, ...sorted.filter(candidate => !hasInfo(candidate)).slice(0, max - informed.length)].toSorted(byRoleThenPopularity)
+  if (pool.length <= max)
     return pool
 
   const seed = anime.rec.anilistId
@@ -292,17 +297,17 @@ function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[]
   const chosenMains = mains.length < TOP_MAINS
     ? mains
     : [...mains.slice(0, TOP_MAINS), ...mix(mains.slice(TOP_MAINS), MAX_MAINS - TOP_MAINS, seed, false)]
-  const slots = MAX_PER_ANIME - chosenMains.length
+  const slots = max - chosenMains.length
   const chosen = [...chosenMains, ...mix(supporting, slots, seed, slots < MIN_SLOTS_FOR_RANDOM)]
 
   // Pas assez de secondaires : on complète avec les principaux restants
   const leftovers = pool.filter(candidate => !chosen.includes(candidate))
-  return [...chosen, ...leftovers.slice(0, MAX_PER_ANIME - chosen.length)].toSorted(byRoleThenPopularity)
+  return [...chosen, ...leftovers.slice(0, max - chosen.length)].toSorted(byRoleThenPopularity)
 }
 
 const selections = animes.map(anime => ({ anime, chosen: select(anime, assigned.get(anime)!), total: assigned.get(anime)!.length }))
 
-// Le plafond d'un anime (« limits » des corrections), à la fin, toutes les sources passées : sortent les persos les
+// Un nombre voulu sous 20 (« limits » des corrections), à la fin, toutes les sources passées : sortent les persos les
 // moins remplis (les derniers du tirage à égalité), jamais un perso corrigé à la main. Un figurant vide ne reprend
 // donc pas la place d'un perso utile, même si les favoris AniList changent (validé avec FX).
 const FILLED_KEYS = ['gender', 'species', 'age', 'height', 'occupation', 'hair']
