@@ -64570,12 +64570,12 @@
   }
  },
  {
-  "id": "327369",
-  "name": "Reinas",
+  "id": "327373",
+  "name": "Groud",
   "aliases": [
-   "レイナス"
+   "グルード"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327369-G68fwVPdvERs.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327373-VgxA1UEsrllO.png",
   "attributes": {
    "gender": "Homme",
    "species": null,
@@ -64597,14 +64597,14 @@
   }
  },
  {
-  "id": "327371",
-  "name": "Laviniere",
+  "id": "327375",
+  "name": "Curtis",
   "aliases": [
-   "ラビネール"
+   "カーティス"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327371-UMesPjhR0tZD.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327375-s9jikw1qe2ag.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Homme",
    "species": null,
    "age": null,
    "height": null,
