@@ -14576,6 +14576,7 @@
    "age": 28,
    "height": 180,
    "occupation": [
+    "Scientifique",
     "Mafieux",
     "Criminel"
    ],
@@ -18552,9 +18553,7 @@
    ],
    "age": null,
    "height": 186,
-   "occupation": [
-    "Étudiant"
-   ],
+   "occupation": null,
    "hair": [
     "Argentés"
    ],
@@ -19443,7 +19442,10 @@
    "age": null,
    "height": 165,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Chanteur",
+    "Musicien",
+    "Artiste"
    ],
    "hair": [
     "Bleus"
@@ -21261,7 +21263,8 @@
    "age": 27,
    "height": 175,
    "occupation": [
-    "Avocat"
+    "Avocat",
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -25888,7 +25891,9 @@
    ],
    "age": null,
    "height": 185,
-   "occupation": null,
+   "occupation": [
+    "Héros"
+   ],
    "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
@@ -26361,6 +26366,7 @@
    "height": 182,
    "occupation": [
     "Souverain",
+    "Héros",
     "Noble",
     "Leader"
    ],
@@ -36083,7 +36089,9 @@
    "age": 22,
    "height": 183,
    "occupation": [
-    "Aventurier"
+    "Aventurier",
+    "Capitaine",
+    "Leader"
    ],
    "hair": [
     "Gris"
@@ -36157,7 +36165,9 @@
    "age": 15,
    "height": 156,
    "occupation": [
-    "Aventurier"
+    "Aventurier",
+    "Magicien",
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -38296,7 +38306,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Domestique"
+   ],
    "hair": null,
    "anime": "Kaguya-sama: Love is War",
    "genres": [
@@ -38627,9 +38639,7 @@
    "age": 15,
    "height": 158,
    "occupation": [
-    "Président",
-    "Étudiant",
-    "Leader"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -41764,8 +41774,10 @@
    "height": 185,
    "occupation": [
     "Noble",
+    "Officier",
     "Souverain",
-    "Leader"
+    "Leader",
+    "Soldat"
    ],
    "hair": [
     "Rouges"
@@ -46094,7 +46106,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Officier",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [
@@ -46179,7 +46194,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [
@@ -64151,9 +64168,7 @@
    ],
    "age": null,
    "height": null,
-   "occupation": [
-    "Étudiant"
-   ],
+   "occupation": null,
    "hair": [
     "Bruns"
    ],
@@ -71988,6 +72003,7 @@
    "height": 160,
    "occupation": [
     "Étudiant",
+    "Héros",
     "Employé"
    ],
    "hair": [

@@ -88,6 +88,20 @@ describe('parseOccupationAtStart', () => {
     expect(parseOccupationAtStart('An elderly lady who sells flowers.')).toBeNull()
     expect(parseOccupationAtStart('A former drug lord.')).toBeNull()
     expect(parseOccupationAtStart('The hero of the first game.')).toBeNull()
+    expect(parseOccupationAtStart('One of the Four Ramen Emperors of Tokyo.')).toBeNull()
+  })
+
+  it('UnDesSoldats_Lu', () => {
+    expect(parseOccupationAtStart('One of the soldiers in Hamdo\'s army.')).toEqual(['Soldier'])
+  })
+
+  it('TousLesMetiersDuPerso_PasCeuxDesAutres', () => {
+    expect(parseOccupation('She\'s a first-year student. She is the lead singer. Her father is the president.')).toEqual(['Student', 'Singer'])
+    expect(parseOccupation('He often fights with Sharrkan, who is a swordsman.')).toBeNull()
+  })
+
+  it('ContractionShes_CommeIs', () => {
+    expect(parseOccupation('She\'s the commanding officer of Hamdo\'s army.')).toEqual(['Officer'])
   })
 
 })

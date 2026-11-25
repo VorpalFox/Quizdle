@@ -131,22 +131,30 @@ const OCCUPATIONS = [
 ]
 // « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
 // Pas « a model student » (élève modèle) ni « a lady killer ».
-const OCCUPATION_IN_TEXT = new RegExp(String.raw`\b(?:is|was|works as|worked as|serves as) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « She's the commanding officer » (Abelia) compte comme « she is ». Pas un autre perso : « Sharrkan, who is a
+// swordsman » (Yamuraiha), « Her father is the president » (Itsuki Sumeragi). Mais « a woman who works as a maid »
+// (sans virgule) parle bien du perso.
+const OCCUPATION_IN_TEXT = new RegExp(String.raw`(?<!,\s*who\s)(?<!\b(?:his|her|their)\s+\w+\s)(?:\b(?:is|was|works as|worked as|serves as)|\b(?:he|she)['’]s) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'gi')
 // Le métier en tout début de description, sans verbe : « A sergeant in the police force » (Jeff Enker). Pas « lady » ni
 // « lord », qui décrivent la personne (« An elderly lady who works as a clerk », « A former drug lord »), ni « hero »,
 // un rôle dans l'histoire (« The hero of the first game »).
 const NOT_AT_START = new Set(['lady', 'lord', 'hero'])
 const OCCUPATION_AT_START = new RegExp(String.raw`^\s*(?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_AT_START.has(job)).join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « One of the soldiers in Hamdo's army » (Tabool), au pluriel. Pas les titres : « One of the Four Ramen Emperors »
+// est un surnom de groupe (Saburo Odajima)
+const NOT_ONE_OF = new Set([...NOT_AT_START, 'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'president', 'god', 'goddess'])
+const ONE_OF_THE = new RegExp(String.raw`^\s*one of the (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_ONE_OF.has(job)).join('|')})s?\b`, 'i')
 
-// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon le 1er métier courant du texte
-// (« is a young nun » → ["Nun"]), moins sûr : à relire. En anglais, comme AniList : à trier à la main.
+// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon les métiers courants du texte, tous
+// (« She's a first-year student… is the president » → Student, President), moins sûrs : à relire. En anglais, comme
+// AniList : à trier à la main.
 export function parseOccupation(description: string | null): string[] | null {
   const value = descriptionField(description, DESCRIPTION_FIELDS.occupation)
   // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »).
   // « Unknown » : la marque d'anilistUnknowns, le texte peut encore dire mieux.
   if (!value || value.length > MAX_OCCUPATION_LINE || isUnknownValue(value)) {
-    const found = OCCUPATION_IN_TEXT.exec(withoutSpoilers(description))
-    return found ? [capitalize(found[1]!.toLowerCase())] : null
+    const found = [...withoutSpoilers(description).matchAll(OCCUPATION_IN_TEXT)].map(match => capitalize(match[1]!.toLowerCase()))
+    return found.length > 0 ? [...new Set(found)] : null
   }
   return splitOccupations(value)
 }
@@ -154,7 +162,8 @@ export function parseOccupation(description: string | null): string[] | null {
 // Sans occupation dans la description (parseOccupation) : moins sûr, il ne compte pas pour choisir les persos (hasInfo),
 // sinon des figurants prennent la place des persos connus. Les autres sources s'y ajoutent (addedValues).
 export function parseOccupationAtStart(description: string | null): string[] | null {
-  const found = OCCUPATION_AT_START.exec(withoutSpoilers(description))
+  const text = withoutSpoilers(description)
+  const found = OCCUPATION_AT_START.exec(text) ?? ONE_OF_THE.exec(text)
   return found ? [capitalize(found[1]!.toLowerCase())] : null
 }
 
