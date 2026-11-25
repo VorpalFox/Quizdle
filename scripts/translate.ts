@@ -5,7 +5,8 @@
 // sinon à corriger perso par perso dans le fichier de corrections (data/*-manual.json). Après les corrections, l'arme
 // du perso s'ajoute et les synonymes sont regroupés en familles (finishOccupations) : les corrections s'écrivent donc
 // avec les valeurs regroupées (Étudiant, pas Lycéen).
-import type { Entry } from '../src/engine/types.js'
+import type { AttributeValue, Entry } from '../src/engine/types.js'
+import { isSetEdit } from '../src/subjects/manual.js'
 import { expandSpecies, translateSpecies } from './pixeldleTranslate.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
@@ -66,6 +67,14 @@ const OCCUPATIONS: Record<string, string | null> = {
   'travailleur autonome': 'Indépendant', 'agriculteur': 'Fermier', 'modèle photo': 'Mannequin', 'clairvoyant': 'Voyant',
   'chasseur de fantômes': 'Exorciste', 'généticien': 'Scientifique', 'cosplayeur': 'Cosplayeur', 'boulanger': 'Boulanger',
   'chasseur de primes': 'Chasseur de primes', 'lutteur': 'Lutteur', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotiseur',
+  'militaire': 'Soldat', 'officier général': 'Général', 'procureur': 'Avocat', 'gourou': 'Religieux', 'dirigeant': 'Leader',
+  'personnalité du monde de la mode': 'Mannequin', 'orthésiste': 'Mécanicien', 'chauffeur de maître': 'Chauffeur',
+  'bouteiller': 'Serviteur', 'tortionnaire': 'Tortionnaire',
+  // Repérées en cumulant les sources (les valeurs intraduisibles d'une source suivante sont laissées de côté)
+  'courtesan': 'Courtisane', 'terrorist': 'Terroriste', 'fashion model': 'Mannequin', 'gravure model': 'Mannequin',
+  'apothecary': 'Apothicaire', 'dyer': 'Artisan', 'archeoligist': 'Archéologue', 'digger': 'Ouvrier', 'hermit': 'Ermite',
+  'martial artist': 'Artiste martial', 'tobacconist': 'Vendeur', 'barista': 'Serveur', 'strategist': 'Stratège',
+  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote',
   // Pas des occupations
   'test subject': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
@@ -77,14 +86,14 @@ const OCCUPATIONS: Record<string, string | null> = {
 const RULES: [RegExp, string | null][] = [
   // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
   [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
-  [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker/, 'Mafieux'],
+  [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker|underboss/, 'Mafieux'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
   [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
   [/serial killer|mass murderer/, 'Tueur en série'],
   [/magical ?☆?girl/, 'Magical girl'],
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
-  [/\b(?:leader|commander|master|chief|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
+  [/\b(?:leader|commander|master|chief|chieftain|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
   [/\bcaptain\b/, 'Capitaine'],
   [/\bguardian\b/, 'Gardien'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],
@@ -123,7 +132,8 @@ const RULES: [RegExp, string | null][] = [
   [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
   [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musicien'],
   // « TV personality », pas le caractère (« gained a different personality »)
-  [/\b(?:idol|celebrity|influencer|youtuber|streamer|(?:tv|television|radio|media|internet|online) personality|entertainer|actor|actress)\b/, 'Célébrité'],
+  [/\b(?:idol|celebrity|influencer|youtuber|tiktoker|streamer|(?:tv|television|radio|media|internet|online) personality|talk show host|radio host|entertainer|actor|actress)\b/, 'Célébrité'],
+  [/\bconsultant\b/, 'Conseiller'],
   [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Marchand'],
   [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientifique'],
   [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Médecin'],
@@ -175,17 +185,51 @@ export function translateOccupation(value: string): string | null | undefined {
   return RULES.find(([pattern]) => pattern.test(key))?.[1]
 }
 
+// --- Cumul des sources ---
+
+// Les sources passent dans l'ordre (AniList, Wikidata, Fandom, Wikipédia). Occupation, espèce, cheveux et arme : chacune
+// ajoute ses valeurs, on n'en a pas de plus fiable et ce sont des listes (validé avec FX). Venant d'une source suivante,
+// une occupation qu'on ne sait pas traduire est laissée de côté (« Aub Alexandria's First Husband ») : seule la 1re
+// garde la sienne, listée dans le récap pour être traduite. Sexe, âge et taille : la 1re source qui en a un.
+const CUMULATIVE_KEYS = new Set(['occupation', 'species', 'hair', 'weapon'])
+const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
+
+// Ce qu'une source ajoute aux attributs : les champs vides, et les valeurs en plus des champs cumulés
+export function addedValues(current: Readonly<Record<string, AttributeValue>>, values: Readonly<Record<string, AttributeValue>>): Record<string, AttributeValue> {
+  const added: Record<string, AttributeValue> = {}
+  for (const [key, value] of Object.entries(values)) {
+    const before = current[key]
+    if (isEmpty(value))
+      continue
+    if (isEmpty(before)) {
+      added[key] = value
+      continue
+    }
+    if (!CUMULATIVE_KEYS.has(key) || !Array.isArray(before) || !Array.isArray(value))
+      continue
+    const extra = (value as string[]).filter(item => !before.includes(item) && (key !== 'occupation' || translateOccupation(item) !== undefined))
+    if (extra.length > 0)
+      added[key] = [...before, ...extra]
+  }
+  return added
+}
+
 // Les occupations des entrées traduites, et celles qui ne sont pas dans le dictionnaire (avec leur nombre).
-// `fixedIds` : les personnages dont l'occupation est corrigée à la main, rien à traduire.
-export function translateEntries(entries: Entry[], fixedIds: ReadonlySet<string> = new Set()): { entries: Entry[], untranslated: Map<string, number> } {
+// `corrected` : les personnages dont l'occupation est corrigée à la main (manualOccupations). Les valeurs que la
+// correction retire restent telles quelles, pour qu'elle les trouve ; le reste est traduit (les sources cumulées
+// ajoutent des valeurs en anglais), sans lister ce qui ne l'est pas : c'est déjà relu.
+export function translateEntries(entries: Entry[], corrected: ReadonlyMap<string, ReadonlySet<string>> = new Map()): { entries: Entry[], untranslated: Map<string, number> } {
   const untranslated = new Map<string, number>()
   const translated = entries.map(entry => {
     const occupation = entry.attributes.occupation
-    if (!Array.isArray(occupation) || fixedIds.has(entry.id))
+    if (!Array.isArray(occupation))
       return entry
+    const removed = corrected.get(entry.id)
     const values = (occupation as string[]).flatMap(value => {
+      if (removed?.has(value))
+        return [value]
       const french = translateOccupation(value)
-      if (french === undefined)
+      if (french === undefined && !removed)
         untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
       return french === undefined ? [value] : french === null ? [] : [french]
     })
@@ -275,9 +319,10 @@ export function finishOccupations(entries: Entry[]): Entry[] {
   })
 }
 
-// Les ids dont le fichier de corrections remplace l'occupation
-export function fixedOccupationIds(edit: Record<string, Record<string, unknown>>): Set<string> {
-  return new Set(Object.entries(edit).filter(([, changes]) => 'occupation' in changes).map(([id]) => id))
+// Les ids dont le fichier de corrections touche l'occupation, avec les valeurs qu'il retire
+export function manualOccupations(edit: Record<string, Record<string, unknown>>): Map<string, Set<string>> {
+  return new Map(Object.entries(edit).filter(([, changes]) => 'occupation' in changes)
+    .map(([id, changes]) => [id, new Set(isSetEdit(changes.occupation) ? changes.occupation.moins ?? [] : [])]))
 }
 
 // --- Espèce (Weebdle) ---
@@ -363,7 +408,7 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
     const found = (raw as string[]).map(translateCharacterSpecies)
     for (const value of found.flatMap(({ unknown }) => unknown))
       untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
-    // Une seule source a rempli l'espèce (la 1re qui en a une : AniList, Wikidata, Fandom), parfois en plusieurs valeurs
+    // Les espèces de toutes les sources (addedValues), chacune parfois en plusieurs valeurs
     const species = [...new Set(found.flatMap(({ species }) => species))]
     return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
   })

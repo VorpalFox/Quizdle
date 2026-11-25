@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { finishOccupations, fixedOccupationIds, groupOccupations, translateEntries, translateOccupation } from '../translate.js'
+import { finishOccupations, manualOccupations, groupOccupations, translateEntries, translateOccupation } from '../translate.js'
 import { cleanValue, infoboxFields, mentionsAnime, pageTitles, wikiGender, wikiHair } from '../wikipedia.js'
 
 const SUBARU_FR = `{{Infobox Personnage (fiction)
@@ -110,8 +110,14 @@ describe('translateEntries', () => {
 
   it('CorrigeeALaMain_PasListee', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Jedi'] } }
-    const { untranslated } = translateEntries([entry], fixedOccupationIds({ '1': { occupation: ['Chevalier'] } }))
+    const { untranslated } = translateEntries([entry], manualOccupations({ '1': { occupation: { plus: ['Chevalier'] } } }))
     expect(untranslated.size).toBe(0)
+  })
+
+  it('CorrigeeALaMain_TraduiteSaufCeQuiEstRetire', () => {
+    const entry = { id: '1', name: 'Yuuji', attributes: { occupation: ['Sorcerer', 'Student', 'Jujutsu Sorcerer'] } }
+    const { entries } = translateEntries([entry], manualOccupations({ '1': { occupation: { plus: ['Exorciste'], moins: ['Sorcerer', 'Student'] } } }))
+    expect(entries[0]!.attributes.occupation).toEqual(['Sorcerer', 'Student', 'Exorciste'])
   })
 })
 

@@ -11,7 +11,7 @@ import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
-import { exactSpecies, translateOccupation } from './translate.js'
+import { addedValues, exactSpecies, translateOccupation } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
@@ -549,12 +549,12 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
   await mkdir(cacheDir, { recursive: true })
   const wikis = await readJson<Record<string, string | null>>('wikis', {})
   const articles = await wikidataArticles()
-  const incomplete = targets.filter(({ entry }) => Object.keys(FIELDS).some(key => isEmpty(entry.attributes[key])))
 
   // Les personnages de chaque wiki, avec les titres à essayer
   const byWiki = new Map<string, { target: WikiTarget, titles: string[] }[]>()
   const noWiki = new Set<string>()
-  for (const target of incomplete) {
+  // Tous les persos : même complets, Fandom ajoute à leurs listes (addedValues)
+  for (const target of targets) {
     const article = articles[target.entry.id]
     const anime = String(target.entry.attributes.anime ?? '')
     // Le lien Wikidata donne le wiki et la page ; sinon le wiki de l'anime
@@ -610,32 +610,34 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
       return bare ? [{ target, title: bare, values: fandomValues({}), unknowns: [] }] : []
     })
+    // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
-    const hairless = found.filter(({ target, values }) => isEmpty(target.entry.attributes.hair) && isEmpty(values.hair))
+    const hairless = found.filter(({ values }) => isEmpty(values.hair))
     const full = hairless.length > 0 ? await fetchFullPages(wiki, hairless.map(({ title }) => title)) : {}
     const textHairs = new Map(hairless.flatMap(({ target, title }) => {
       const hair = full[title] ? textHair(full[title]!) : null
       return hair ? [[target, hair] as const] : []
     }))
     for (const { target, title, values, unknowns } of found) {
-      const added: Record<string, AttributeValue> = Object.fromEntries(Object.entries(values).filter(([key, value]) => isEmpty(target.entry.attributes[key]) && !isEmpty(value)))
+      const own: Record<string, AttributeValue> = { ...values }
       const hair = textHairs.get(target)
       if (hair)
-        added.hair = hair.colors
-      // Sans occupation : le rôle de l'affiliation de l'infobox (« Student (formerly) ») et ce que dit l'introduction,
+        own.hair = hair.colors
+      // Sans occupation dans l'infobox : le rôle de l'affiliation (« Student (formerly) ») et ce que dit l'introduction,
       // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
-      const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
+      const jobless = isEmpty(values.occupation)
       const infobox = infoboxOf(title) ?? {}
       const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
       const intro = jobless ? introOccupations(pages[title]!) : null
       const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null
       const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
       if (jobs.length > 0)
-        added.occupation = jobs
-      // Sans espèce : celle que dit l'introduction (« Aqua is a goddess »)
-      const species = isEmpty(target.entry.attributes.species) && isEmpty(values.species) ? introSpecies(pages[title]!) : []
+        own.occupation = jobs
+      // Sans espèce dans l'infobox : celle que dit l'introduction (« Aqua is a goddess »)
+      const species = isEmpty(values.species) ? introSpecies(pages[title]!) : []
       if (species.length > 0)
-        added.species = species
+        own.species = species
+      const added = addedValues(target.entry.attributes, own)
       const unknown = addUnknowns(target.entry.attributes, unknowns)
       if (unknown)
         added[UNKNOWN_KEYS] = unknown

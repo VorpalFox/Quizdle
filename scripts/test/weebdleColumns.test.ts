@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { animeSource, heightCm, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, startOccupations } from '../anilist.js'
-import { translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
+import { animeSource, heightCm, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies } from '../anilist.js'
+import { addedValues, translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
 import { introSpecies } from '../fandom.js'
 
 describe('heightCm', () => {
@@ -90,10 +90,24 @@ describe('parseOccupationAtStart', () => {
     expect(parseOccupationAtStart('The hero of the first game.')).toBeNull()
   })
 
-  it('SeulementSansOccupation', () => {
-    const entries = [{ id: '1', name: 'A', attributes: { occupation: null } }, { id: '2', name: 'B', attributes: { occupation: ['Idole'] } }]
-    const { entries: done } = startOccupations(entries, ['A sergeant.', 'An actress.'])
-    expect(done.map(entry => entry.attributes.occupation)).toEqual([['Sergeant'], ['Idole']])
+})
+
+describe('addedValues', () => {
+  it('ChampVide_Rempli', () => {
+    expect(addedValues({ age: null, occupation: null }, { age: 17, occupation: ['Whatever job'] })).toEqual({ age: 17, occupation: ['Whatever job'] })
+  })
+
+  it('ChampAUneValeur_1reSourceGardee', () => {
+    expect(addedValues({ gender: 'Homme', age: 17 }, { gender: 'Femme', age: 20 })).toEqual({})
+  })
+
+  it('ListesCumulees', () => {
+    expect(addedValues({ occupation: ['Student'], hair: ['Noirs'], species: ['Human'] }, { occupation: ['Student', 'President'], hair: ['Bleus'], species: ['Vampire'] }))
+      .toEqual({ occupation: ['Student', 'President'], hair: ['Noirs', 'Bleus'], species: ['Human', 'Vampire'] })
+  })
+
+  it('OccupationIntraduisibleDUneSourceSuivante_LaisseeDeCote', () => {
+    expect(addedValues({ occupation: ['Student'] }, { occupation: ['Aub Alexandria\'s First Husband', 'Knight'] })).toEqual({ occupation: ['Student', 'Knight'] })
   })
 })
 

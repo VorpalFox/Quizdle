@@ -1,6 +1,5 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
-import type { Entry } from '../src/engine/types.js'
 import { weaponOccupations } from './pixeldleTranslate.js'
 import { isUnknownValue, unknownKeys } from './unknownValues.js'
 
@@ -152,25 +151,11 @@ export function parseOccupation(description: string | null): string[] | null {
   return splitOccupations(value)
 }
 
-// En dernier recours, après toutes les sources (startOccupations) : moins sûr, il ne doit ni bloquer Wikidata ou Fandom
-// (Kana Arima perdrait Idole), ni compter pour choisir les persos (hasInfo), sinon des figurants prennent la place des
-// persos connus
+// Sans occupation dans la description (parseOccupation) : moins sûr, il ne compte pas pour choisir les persos (hasInfo),
+// sinon des figurants prennent la place des persos connus. Les autres sources s'y ajoutent (addedValues).
 export function parseOccupationAtStart(description: string | null): string[] | null {
   const found = OCCUPATION_AT_START.exec(withoutSpoilers(description))
   return found ? [capitalize(found[1]!.toLowerCase())] : null
-}
-
-// Les entrées sans occupation, complétées par le début de leur description (même ordre que les descriptions)
-export function startOccupations(entries: Entry[], descriptions: (string | null)[]): { entries: Entry[], filled: string[] } {
-  const filled: string[] = []
-  const completed = entries.map((entry, index) => {
-    const occupation = entry.attributes.occupation === null || entry.attributes.occupation === undefined ? parseOccupationAtStart(descriptions[index] ?? null) : null
-    if (!occupation)
-      return entry
-    filled.push(`${entry.name} : ${occupation[0]} ← « ${(descriptions[index] ?? '').slice(0, 80).replace(/\s+/g, ' ')} »`)
-    return { ...entry, attributes: { ...entry.attributes, occupation } }
-  })
-  return { entries: completed, filled }
 }
 
 // « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et », « puis »).

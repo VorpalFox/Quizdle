@@ -6,6 +6,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { hairColors, sleep, splitOccupations, type CharacterName } from './anilist.js'
+import { addedValues } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { infoboxAge } from './wikiText.js'
 
@@ -239,19 +240,17 @@ async function fetchPages(language: Language, titles: string[]): Promise<Cache> 
 
 // --- Complément ---
 
-const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
-
-// Complète les champs vides de chaque personnage. Les valeurs d'AniList (et les corrections à la main, appliquées après) priment.
+// Complète les champs vides de chaque personnage et ajoute aux listes (addedValues). Les valeurs d'AniList (et les
+// corrections à la main, appliquées après) priment pour le sexe et l'âge.
 export async function completeFromWikipedia(targets: WikiTarget[]): Promise<WikiReport> {
   await mkdir(cacheDir, { recursive: true })
-  const incomplete = targets.filter(({ entry }) => Object.keys(FIELDS).some(key => isEmpty(entry.attributes[key])))
   const caches = new Map<Language, Cache>()
   for (const language of LANGUAGES)
-    caches.set(language, await fetchPages(language, incomplete.flatMap(({ name }) => pageTitles(name))))
+    caches.set(language, await fetchPages(language, targets.flatMap(({ name }) => pageTitles(name))))
 
   const filled: string[] = []
   const completed = new Map<Entry, Entry>()
-  for (const { entry, name, animeTitles } of incomplete) {
+  for (const { entry, name, animeTitles } of targets) {
     const found: Record<string, AttributeValue> = {}
     const unknowns: string[] = []
     for (const language of LANGUAGES) {
@@ -267,10 +266,7 @@ export async function completeFromWikipedia(targets: WikiTarget[]): Promise<Wiki
         hair: wikiHair(raw.hair),
         age: infoboxAge(raw.age),
       }
-      for (const [key, value] of Object.entries(values)) {
-        if (isEmpty(entry.attributes[key]) && isEmpty(found[key]) && !isEmpty(value))
-          found[key] = value
-      }
+      Object.assign(found, addedValues({ ...entry.attributes, ...found }, values))
     }
     const unknown = addUnknowns(entry.attributes, unknowns)
     if (unknown)

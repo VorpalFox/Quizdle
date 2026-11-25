@@ -6,16 +6,17 @@
 // - Univers : la plus ancienne série de la franchise (Jotaro → JoJo's Bizarre Adventure). Genres, année et studio
 //   viennent de la série où le personnage apparaît, pas de la 1re de l'univers.
 // - Âge : le 1er nombre d'AniList (« 17-18 » → 17), sinon celui de l'infobox Fandom ou Wikipédia.
-// - Sexe, occupation, cheveux : AniList (champ, sinon description), puis ce qui manque dans l'ordre : Wikidata
-//   (wikidata.ts), Fandom (fandom.ts : l'infobox, pages d'homonymie suivies, puis les cheveux décrits dans le texte),
-//   l'infobox Wikipédia (wikipedia.ts). Les occupations en anglais sont traduites à la fin (translate.ts).
+// - Sexe, occupation, cheveux : AniList (champ, sinon description), puis dans l'ordre : Wikidata (wikidata.ts), Fandom
+//   (fandom.ts : l'infobox, pages d'homonymie suivies, puis les cheveux décrits dans le texte), l'infobox Wikipédia
+//   (wikipedia.ts). L'occupation et les cheveux cumulent toutes les sources, le sexe vient de la 1re (addedValues).
+//   Les occupations en anglais sont traduites à la fin (translate.ts).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, startOccupations, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseOccupationAtStart, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
+import { finishOccupations, manualOccupations, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -205,7 +206,8 @@ const targets: WikiTarget[] = kept.map(character => {
     attributes: {
       gender: gender(character.gender, character.description),
       age: parseAge(character.age, character.description),
-      occupation: parseOccupation(character.description),
+      // Sinon le métier en début de description (« A sergeant in the police force »)
+      occupation: parseOccupation(character.description) ?? parseOccupationAtStart(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
       unknown: anilistUnknowns(character.age, character.description),
@@ -222,9 +224,7 @@ const targets: WikiTarget[] = kept.map(character => {
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-// En dernier recours, le métier en tout début de description AniList (« A sergeant in the police force »)
-const atStart = startOccupations(wiki.entries, kept.map(character => character.description))
-const translated = translateEntries(atStart.entries, fixedOccupationIds(manual.edit))
+const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const attributeKeys = characterAttributes.map(({ key }) => key)
 const manualApplied = applyManual(translated.entries, manual, attributeKeys)
 const warnings = manualApplied.warnings

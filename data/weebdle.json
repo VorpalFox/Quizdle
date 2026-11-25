@@ -53,7 +53,8 @@
     "Religieux"
    ],
    "hair": [
-    "Bleus"
+    "Bleus",
+    "Argentés"
    ],
    "anime": "A Certain Magical Index",
    "genres": [
@@ -114,7 +115,8 @@
     "Magicien"
    ],
    "hair": [
-    "Violets"
+    "Violets",
+    "Noirs"
    ],
    "anime": "A Certain Magical Index",
    "genres": [
@@ -277,7 +279,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Leader"
    ],
    "hair": [
     "Blancs"
@@ -613,7 +616,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -947,7 +951,9 @@
    "height": null,
    "occupation": [
     "Professeur",
+    "Officier",
     "Souverain",
+    "Soldat",
     "Noble",
     "Leader"
    ],
@@ -1238,6 +1244,7 @@
    "height": null,
    "occupation": [
     "Cuisinier",
+    "Professeur",
     "Artisan"
    ],
    "hair": null,
@@ -2686,6 +2693,8 @@
    "height": 170,
    "occupation": [
     "Officier",
+    "Chasseur",
+    "Tortionnaire",
     "Soldat"
    ],
    "hair": [
@@ -2792,6 +2801,7 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Leader",
     "Soldat"
    ],
    "hair": [
@@ -2828,7 +2838,8 @@
    "age": 28,
    "height": 190,
    "occupation": [
-    "Médecin"
+    "Médecin",
+    "Scientifique"
    ],
    "hair": [
     "Bruns"
@@ -2974,7 +2985,8 @@
     "Leader"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Blonds"
    ],
    "anime": "Akame ga Kill!",
    "genres": [
@@ -3223,7 +3235,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Espion"
+    "Espion",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -3266,7 +3279,8 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bruns"
    ],
    "anime": "ALDNOAH.ZERO",
    "genres": [
@@ -3403,7 +3417,8 @@
    "age": 19,
    "height": 168,
    "occupation": [
-    "Pilote"
+    "Pilote",
+    "Soldat"
    ],
    "hair": [
     "Noirs"
@@ -3599,7 +3614,9 @@
    "age": 43,
    "height": 190,
    "occupation": [
-    "Pilote"
+    "Pilote",
+    "Chevalier",
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -3930,7 +3947,8 @@
     "Leader"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Violets"
    ],
    "anime": "Angel Beats!",
    "genres": [
@@ -4101,7 +4119,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Verts"
    ],
@@ -5624,7 +5644,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -5683,7 +5705,9 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Religieux"
+    "Religieux",
+    "Magicien",
+    "Leader"
    ],
    "hair": [
     "Bleus"
@@ -5713,7 +5737,8 @@
    "age": 29,
    "height": null,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Commerçant"
    ],
    "hair": null,
    "anime": "Ascendance of a Bookworm",
@@ -5802,7 +5827,9 @@
    "age": 32,
    "height": null,
    "occupation": [
-    "Soldat"
+    "Soldat",
+    "Capitaine",
+    "Leader"
    ],
    "hair": [
     "Bleus"
@@ -5895,6 +5922,7 @@
    "height": null,
    "occupation": [
     "Volleyeur",
+    "Artisan",
     "Sportif"
    ],
    "hair": [
@@ -5988,6 +6016,8 @@
    "height": null,
    "occupation": [
     "Cuisinier",
+    "Leader",
+    "Commerçant",
     "Artisan"
    ],
    "hair": [
@@ -6022,7 +6052,8 @@
     "Religieux"
    ],
    "hair": [
-    "Argentés"
+    "Argentés",
+    "Blancs"
    ],
    "anime": "Ascendance of a Bookworm",
    "genres": [
@@ -6952,7 +6983,8 @@
    "age": 16,
    "height": 175,
    "occupation": [
-    "Soldat"
+    "Soldat",
+    "Politicien"
    ],
    "hair": [
     "Gris"
@@ -7058,7 +7090,8 @@
    "age": 15,
    "height": 158,
    "occupation": [
-    "Soldat"
+    "Soldat",
+    "Politicien"
    ],
    "hair": [
     "Bruns"
@@ -7158,7 +7191,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Titan"
    ],
    "age": 39,
    "height": null,
@@ -7432,6 +7466,7 @@
    "height": 175,
    "occupation": [
     "Écrivain",
+    "Mangaka",
     "Artiste"
    ],
    "hair": [
@@ -7504,7 +7539,9 @@
    "age": 26,
    "height": null,
    "occupation": [
-    "Employé"
+    "Employé",
+    "Mangaka",
+    "Artiste"
    ],
    "hair": [
     "Noirs"
@@ -7785,6 +7822,7 @@
    "height": 164,
    "occupation": [
     "Mangaka",
+    "Écrivain",
     "Artiste"
    ],
    "hair": [
@@ -7995,6 +8033,7 @@
    "height": null,
    "occupation": [
     "Musicien",
+    "Mangaka",
     "Artiste"
    ],
    "hair": [
@@ -8030,7 +8069,8 @@
    "height": null,
    "occupation": null,
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bruns"
    ],
    "anime": "Bakuman.",
    "genres": [
@@ -8742,7 +8782,11 @@
    "age": 16,
    "height": 174,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé",
+    "Combattant",
+    "Garde",
+    "Professeur"
    ],
    "hair": [
     "Bleus",
@@ -9090,6 +9134,7 @@
    "height": null,
    "occupation": [
     "Mannequin",
+    "Combattant",
     "Célébrité",
     "Artiste"
    ],
@@ -9125,8 +9170,9 @@
    "height": null,
    "occupation": [
     "Président",
-    "Tireur",
     "Leader",
+    "Employé",
+    "Tireur",
     "Combattant"
    ],
    "hair": [
@@ -9693,7 +9739,8 @@
     "Noble"
    ],
    "hair": [
-    "Rouges"
+    "Rouges",
+    "Noirs"
    ],
    "anime": "Black Butler",
    "genres": [
@@ -9978,6 +10025,7 @@
    "age": 19,
    "height": null,
    "occupation": [
+    "Noble",
     "Magicien"
    ],
    "hair": null,
@@ -10959,6 +11007,7 @@
    "occupation": [
     "Chasseur de vampires",
     "Épéiste",
+    "Étudiant",
     "Chasseur de monstres",
     "Combattant"
    ],
@@ -11169,7 +11218,8 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bleus"
    ],
    "anime": "Blood-C",
    "genres": [
@@ -11384,7 +11434,12 @@
    "height": 169,
    "occupation": [
     "Chevalier",
-    "Combattant"
+    "Exorciste",
+    "Professeur",
+    "Détective",
+    "Combattant",
+    "Chasseur de monstres",
+    "Magicien"
    ],
    "hair": [
     "Rouges",
@@ -11420,7 +11475,11 @@
    "height": 195,
    "occupation": [
     "Chevalier",
-    "Combattant"
+    "Exorciste",
+    "Professeur",
+    "Combattant",
+    "Chasseur de monstres",
+    "Magicien"
    ],
    "hair": [
     "Violets"
@@ -11561,7 +11620,10 @@
    "age": 15,
    "height": 164,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Exorciste",
+    "Chasseur de monstres",
+    "Magicien"
    ],
    "hair": [
     "Violets"
@@ -12377,7 +12439,7 @@
    "age": 16,
    "height": 178,
    "occupation": [
-    "Barista"
+    "Serveur"
    ],
    "hair": [
     "Verts"
@@ -12609,7 +12671,9 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Homme-bête",
+    "Tanuki"
    ],
    "age": 16,
    "height": null,
@@ -12619,7 +12683,8 @@
    ],
    "hair": [
     "Bruns",
-    "Bleus"
+    "Bleus",
+    "Noirs"
    ],
    "anime": "BNA",
    "genres": [
@@ -14579,6 +14644,7 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Policier",
     "Soldat"
    ],
    "hair": [
@@ -15211,7 +15277,10 @@
    "age": null,
    "height": 180,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Chasseur de démons",
+    "Chasseur de monstres",
+    "Combattant"
    ],
    "hair": [
     "Noirs"
@@ -15657,7 +15726,9 @@
    "age": 25,
    "height": 160,
    "occupation": [
-    "Médecin"
+    "Médecin",
+    "Officier",
+    "Soldat"
    ],
    "hair": [
     "Noirs"
@@ -15690,6 +15761,7 @@
    "height": 157,
    "occupation": [
     "Président",
+    "Détective",
     "Leader"
    ],
    "hair": [
@@ -15954,7 +16026,9 @@
    "age": 15,
    "height": 158,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Musicien",
+    "Artiste"
    ],
    "hair": [
     "Blonds"
@@ -16493,6 +16567,7 @@
    "height": null,
    "occupation": [
     "Chevalier",
+    "Noble",
     "Combattant"
    ],
    "hair": [
@@ -16531,7 +16606,8 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Bruns",
+    "Noirs"
    ],
    "anime": "Chivalry of a Failed Knight",
    "genres": [
@@ -16593,7 +16669,8 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -16693,7 +16770,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Chevalier",
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -16833,7 +16912,10 @@
    "height": null,
    "occupation": [
     "Officier",
-    "Soldat"
+    "Gérant",
+    "Étudiant",
+    "Soldat",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -16902,7 +16984,8 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Rouges"
@@ -17709,7 +17792,17 @@
    "age": 17,
    "height": 183,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Politicien",
+    "Justicier",
+    "Révolutionnaire",
+    "Terroriste",
+    "Pilote",
+    "Noble",
+    "Étudiant",
+    "Souverain",
+    "Héros",
+    "Criminel"
    ],
    "hair": [
     "Noirs"
@@ -17748,10 +17841,14 @@
     "Révolutionnaire",
     "Terroriste",
     "Pilote",
+    "Soldat",
+    "Étudiant",
     "Criminel"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Roses",
+    "Rouges"
    ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
@@ -17787,7 +17884,9 @@
     "Politicien",
     "Officier",
     "Pilote",
-    "Soldat"
+    "Chevalier",
+    "Soldat",
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -17937,7 +18036,11 @@
    "age": 27,
    "height": 180,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Officier",
+    "Pilote",
+    "Leader",
+    "Soldat"
    ],
    "hair": null,
    "anime": "Code Geass: Lelouch of the Rebellion",
@@ -18009,7 +18112,10 @@
    "age": 14,
    "height": 160,
    "occupation": [
-    "Politicien"
+    "Politicien",
+    "Étudiant",
+    "Noble",
+    "Assistant"
    ],
    "hair": [
     "Bruns"
@@ -18121,7 +18227,8 @@
    "age": 28,
    "height": 182,
    "occupation": [
-    "Scientifique"
+    "Scientifique",
+    "Ingénieur"
    ],
    "hair": [
     "Blonds"
@@ -18156,7 +18263,11 @@
    "age": 24,
    "height": null,
    "occupation": [
-    "Pilote"
+    "Pilote",
+    "Domestique",
+    "Officier",
+    "Leader",
+    "Soldat"
    ],
    "hair": [
     "Noirs"
@@ -18193,7 +18304,11 @@
    "height": 170,
    "occupation": [
     "Cuisinier",
-    "Artisan"
+    "Scientifique",
+    "Pilote",
+    "Officier",
+    "Artisan",
+    "Soldat"
    ],
    "hair": [
     "Violets"
@@ -18755,7 +18870,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Officier",
+    "Soldat"
    ],
    "hair": [
     "Blonds"
@@ -19044,7 +19161,11 @@
    "age": null,
    "height": 169,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Mannequin",
+    "Religieux",
+    "Célébrité",
+    "Artiste"
    ],
    "hair": [
     "Roux",
@@ -19115,7 +19236,8 @@
    "age": null,
    "height": 160,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Professeur"
    ],
    "hair": [
     "Bruns"
@@ -19357,7 +19479,9 @@
    "age": null,
    "height": 192,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Artiste martial",
+    "Combattant"
    ],
    "hair": [
     "Blancs"
@@ -19428,7 +19552,9 @@
    "age": null,
    "height": 187,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Mafieux",
+    "Criminel"
    ],
    "hair": null,
    "anime": "Danganronpa: The Animation",
@@ -19462,7 +19588,8 @@
    "age": null,
    "height": 180,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Voyant"
    ],
    "hair": [
     "Bruns"
@@ -19568,7 +19695,9 @@
    "age": null,
    "height": 169,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Mercenaire",
+    "Combattant"
    ],
    "hair": [
     "Noirs"
@@ -21027,6 +21156,7 @@
    "height": 152,
    "occupation": [
     "Mannequin",
+    "Acteur",
     "Célébrité",
     "Artiste"
    ],
@@ -21234,7 +21364,8 @@
    "age": 48,
    "height": 181,
    "occupation": [
-    "Policier"
+    "Policier",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -21410,7 +21541,8 @@
    "age": 30,
    "height": 188,
    "occupation": [
-    "Policier"
+    "Policier",
+    "Détective"
    ],
    "hair": [
     "Noirs"
@@ -21444,7 +21576,8 @@
    "age": 34,
    "height": 170,
    "occupation": [
-    "Policier"
+    "Policier",
+    "Détective"
    ],
    "hair": [
     "Noirs"
@@ -21547,8 +21680,8 @@
    "age": 32,
    "height": 169,
    "occupation": [
-    "Leader",
-    "Planning"
+    "Président",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -21816,7 +21949,8 @@
    "age": 18,
    "height": 163,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Célébrité"
    ],
    "hair": [
     "Bruns"
@@ -22328,6 +22462,8 @@
     "Mercenaire",
     "Épéiste",
     "Chasseur de démons",
+    "Charbonnier",
+    "Pourfendeur de démons",
     "Combattant",
     "Chasseur de monstres"
    ],
@@ -22368,7 +22504,8 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bleus"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -22515,7 +22652,10 @@
    "age": 20,
    "height": 177,
    "occupation": [
-    "Combattant"
+    "Combattant",
+    "Pourfendeur de démons",
+    "Épéiste",
+    "Chasseur de monstres"
    ],
    "hair": [
     "Blonds",
@@ -22669,10 +22809,16 @@
    "age": 16,
    "height": 156,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Chasseur de démons",
+    "Pourfendeur de démons",
+    "Médecin",
+    "Chasseur de monstres",
+    "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Roses"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
@@ -23067,7 +23213,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon"
    ],
    "age": 17,
    "height": 182,
@@ -23076,6 +23223,7 @@
     "Justicier",
     "Assassin",
     "Chasseur de démons",
+    "Leader",
     "Héros",
     "Criminel",
     "Combattant",
@@ -23718,7 +23866,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Scientifique"
+    "Scientifique",
+    "Archéologue"
    ],
    "hair": null,
    "anime": "Devilman Crybaby",
@@ -24377,7 +24526,12 @@
    "height": 171,
    "occupation": [
     "Scientifique",
-    "Leader"
+    "Leader",
+    "Étudiant",
+    "Inventeur",
+    "Astronome",
+    "Astronaute",
+    "Ingénieur"
    ],
    "hair": [
     "Blancs",
@@ -24442,7 +24596,8 @@
    "age": 16,
    "height": 170,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Scientifique"
    ],
    "hair": [
     "Bruns"
@@ -25063,8 +25218,8 @@
     "Petits boulots",
     "Livreur",
     "Voyageur temporel",
-    "Artiste",
-    "Employé"
+    "Employé",
+    "Artiste"
    ],
    "hair": [
     "Noirs"
@@ -25201,7 +25356,8 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé"
    ],
    "hair": [
     "Bruns"
@@ -25633,6 +25789,7 @@
    "height": 124,
    "occupation": [
     "Étudiant",
+    "Leader",
     "Épéiste",
     "Combattant"
    ],
@@ -25661,7 +25818,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Poupée"
    ],
    "age": 16,
    "height": 167,
@@ -25674,7 +25832,8 @@
     "Combattant"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Bruns"
    ],
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
@@ -25727,7 +25886,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque"
    ],
    "age": null,
    "height": 185,
@@ -25783,7 +25943,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque"
    ],
    "age": null,
    "height": 163,
@@ -25876,7 +26037,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque"
    ],
    "age": null,
    "height": 253,
@@ -26034,7 +26196,8 @@
    "age": null,
    "height": 170,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
@@ -26158,12 +26321,15 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque",
+    "Dragon"
    ],
    "age": 35,
    "height": 154,
    "occupation": [
     "Épéiste",
+    "Domestique",
     "Combattant"
    ],
    "hair": [
@@ -26191,7 +26357,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque"
    ],
    "age": null,
    "height": 182,
@@ -26234,6 +26401,7 @@
    "height": 175,
    "occupation": [
     "Justicier",
+    "Leader",
     "Héros"
    ],
    "hair": null,
@@ -26259,7 +26427,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Esprit héroïque"
    ],
    "age": null,
    "height": 212,
@@ -26627,7 +26796,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Homoncule"
    ],
    "age": 8,
    "height": 133,
@@ -26698,6 +26868,7 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Mercenaire",
     "Combattant"
    ],
    "hair": null,
@@ -26817,7 +26988,8 @@
    "age": 1000,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Aventurier"
    ],
    "hair": [
     "Blancs"
@@ -27038,6 +27210,7 @@
     "Magicien",
     "Fleuriste",
     "Chasseur",
+    "Professeur",
     "Artisan"
    ],
    "hair": [
@@ -27226,10 +27399,12 @@
    "height": null,
    "occupation": [
     "Capitaine",
+    "Magicien",
     "Leader"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Argentés"
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -27450,7 +27625,8 @@
    "age": 12,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -28188,7 +28364,10 @@
    "age": 29,
    "height": null,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Soldat",
+    "Alchimiste",
+    "Scientifique"
    ],
    "hair": [
     "Noirs"
@@ -28257,7 +28436,10 @@
    "age": 15,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Artiste martial",
+    "Épéiste",
+    "Combattant"
    ],
    "hair": [
     "Noirs"
@@ -28292,7 +28474,8 @@
    "age": 29,
    "height": null,
    "occupation": [
-    "Espion"
+    "Espion",
+    "Soldat"
    ],
    "hair": [
     "Noirs"
@@ -28328,8 +28511,9 @@
    "height": null,
    "occupation": [
     "Officier",
-    "Épéiste",
+    "Révolutionnaire",
     "Soldat",
+    "Épéiste",
     "Combattant"
    ],
    "hair": null,
@@ -28364,6 +28548,7 @@
    "height": null,
    "occupation": [
     "Alchimiste",
+    "Soldat",
     "Scientifique"
    ],
    "hair": null,
@@ -28433,7 +28618,8 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Gris"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -28499,6 +28685,7 @@
    "age": 11,
    "height": null,
    "occupation": [
+    "Noble",
     "Artiste martial",
     "Alchimiste",
     "Combattant",
@@ -28658,7 +28845,10 @@
    "height": null,
    "occupation": [
     "Mécanicien",
-    "Spécialiste des communications"
+    "Spécialiste des communications",
+    "Combattant",
+    "Officier",
+    "Soldat"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -28776,7 +28966,8 @@
    "age": 961,
    "height": 145,
    "occupation": [
-    "Religieux"
+    "Religieux",
+    "Conseiller"
    ],
    "hair": [
     "Noirs"
@@ -28809,6 +29000,7 @@
    "age": 33,
    "height": null,
    "occupation": [
+    "Leader",
     "Noble"
    ],
    "hair": [
@@ -28944,6 +29136,7 @@
    "age": 24,
    "height": null,
    "occupation": [
+    "Soldat",
     "Sergent"
    ],
    "hair": [
@@ -28976,7 +29169,8 @@
    "age": 23,
    "height": 190,
    "occupation": [
-    "Médecin"
+    "Médecin",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -29171,8 +29365,8 @@
    "age": 29,
    "height": null,
    "occupation": [
-    "Mangaka",
-    "Artiste"
+    "Artiste",
+    "Mangaka"
    ],
    "hair": [
     "Noirs"
@@ -29235,7 +29429,8 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Journaliste"
+    "Journaliste",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -29297,7 +29492,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Leader"
    ],
    "hair": [
     "Blancs"
@@ -29399,6 +29595,7 @@
    "height": null,
    "occupation": [
     "Président",
+    "Assistant",
     "Leader"
    ],
    "hair": null,
@@ -31104,7 +31301,10 @@
    "age": "Inconnu",
    "height": 159,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Éclaireur",
+    "Combattant",
+    "Soldat"
    ],
    "hair": [
     "Roux",
@@ -31370,7 +31570,9 @@
     "Soldat"
    ],
    "hair": [
-    "Rouges"
+    "Rouges",
+    "Verts",
+    "Roses"
    ],
    "anime": "Grimgar of Fantasy and Ash",
    "genres": [
@@ -32141,7 +32343,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Scientifique"
+    "Scientifique",
+    "Professeur"
    ],
    "hair": [
     "Bruns"
@@ -32211,7 +32414,9 @@
    "height": 156,
    "occupation": [
     "Leader",
-    "Pilote"
+    "Pilote",
+    "Ouvrier",
+    "Ermite"
    ],
    "hair": [
     "Bleus"
@@ -32289,6 +32494,7 @@
    "height": 162,
    "occupation": [
     "Cuisinier",
+    "Noble",
     "Artisan"
    ],
    "hair": [
@@ -32320,12 +32526,15 @@
    "species": [
     "Requin",
     "Homme-bête",
+    "Humain",
     "Animal"
    ],
    "age": null,
    "height": null,
    "occupation": [
     "Leader",
+    "Pilote",
+    "Capitaine",
     "Combattant"
    ],
    "hair": [
@@ -32469,8 +32678,11 @@
    "height": null,
    "occupation": [
     "Souverain",
+    "Leader",
+    "Combattant",
+    "Officier",
     "Noble",
-    "Leader"
+    "Soldat"
    ],
    "hair": [
     "Chauve"
@@ -32912,18 +33124,21 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": 19,
    "height": null,
    "occupation": [
     "Policier",
     "Chasseur de vampires",
+    "Domestique",
     "Chasseur de monstres",
     "Combattant"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Blonds"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -32995,11 +33210,13 @@
     "Religieux",
     "Chasseur de vampires",
     "Épéiste",
+    "Leader",
     "Chasseur de monstres",
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Argentés"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -33030,10 +33247,16 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Soldat"
+    "Soldat",
+    "Mercenaire",
+    "Chasseur de vampires",
+    "Leader",
+    "Combattant",
+    "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns"
+    "Bruns",
+    "Roux"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -33057,12 +33280,20 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Vampire"
    ],
    "age": null,
    "height": null,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Chauffeur",
+    "Garde",
+    "Chasseur de vampires",
+    "Espion",
+    "Assistant",
+    "Chasseur de monstres",
+    "Combattant"
    ],
    "hair": [
     "Noirs"
@@ -33133,7 +33364,8 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Argentés"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -33168,7 +33400,8 @@
     "Soldat"
    ],
    "hair": [
-    "Bleus"
+    "Bleus",
+    "Noirs"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -33318,7 +33551,8 @@
     "Leader"
    ],
    "hair": [
-    "Gris"
+    "Gris",
+    "Blonds"
    ],
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -33543,6 +33777,7 @@
    "height": 158,
    "occupation": [
     "Assassin",
+    "Chasseur",
     "Criminel",
     "Combattant"
    ],
@@ -33577,7 +33812,11 @@
    "occupation": [
     "Garde",
     "Épéiste",
-    "Combattant"
+    "Chasseur",
+    "Mafieux",
+    "Professeur",
+    "Combattant",
+    "Criminel"
    ],
    "hair": [
     "Blonds"
@@ -33714,7 +33953,9 @@
    "age": 26,
    "height": 177,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Voleur",
+    "Criminel"
    ],
    "hair": [
     "Noirs",
@@ -33778,6 +34019,8 @@
    "height": 185,
    "occupation": [
     "Assassin",
+    "Chasseur",
+    "Voleur",
     "Criminel",
     "Combattant"
    ],
@@ -33811,7 +34054,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Leader",
+    "Professeur"
    ],
    "hair": [
     "Bruns",
@@ -33915,7 +34160,9 @@
    "age": 31,
    "height": 176,
    "occupation": [
-    "Aventurier"
+    "Aventurier",
+    "Chasseur",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -33979,7 +34226,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Capitaine",
+    "Leader"
    ],
    "hair": [
     "Argentés"
@@ -34070,7 +34319,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Noble"
    ],
    "hair": [
     "Roses",
@@ -34598,8 +34848,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Noble",
-    "Étudiant"
+    "Étudiant",
+    "Noble"
    ],
    "hair": [
     "Roux"
@@ -34897,7 +35147,9 @@
    "age": 18,
    "height": 174,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé",
+    "Domestique"
    ],
    "hair": [
     "Bruns"
@@ -34929,7 +35181,8 @@
    "age": 18,
    "height": 162,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Domestique"
    ],
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -34990,7 +35243,8 @@
    "age": 23,
    "height": 183,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Médecin"
    ],
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -35021,7 +35275,9 @@
    "age": 43,
    "height": 172,
    "occupation": [
-    "Indépendant"
+    "Indépendant",
+    "Pilote",
+    "Commerçant"
    ],
    "hair": null,
    "anime": "Initial D 1st Stage",
@@ -35496,6 +35752,7 @@
    "height": 165,
    "occupation": [
     "Capitaine",
+    "Aventurier",
     "Leader"
    ],
    "hair": [
@@ -35575,7 +35832,8 @@
     "Combattant"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Rouges"
    ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
@@ -35649,7 +35907,8 @@
     "Serveur"
    ],
    "hair": [
-    "Verts"
+    "Verts",
+    "Blonds"
    ],
    "anime": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
    "genres": [
@@ -35865,7 +36124,8 @@
    "age": 22,
    "height": 164,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Aventurier"
    ],
    "hair": [
     "Bleus"
@@ -36007,6 +36267,7 @@
    "height": 210,
    "occupation": [
     "Capitaine",
+    "Aventurier",
     "Épéiste",
     "Leader",
     "Combattant"
@@ -36076,7 +36337,8 @@
    "age": null,
    "height": 176,
    "occupation": [
-    "Dieu"
+    "Dieu",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -36224,6 +36486,7 @@
    "height": 195,
    "occupation": [
     "Chasseur de vampires",
+    "Agent immobilier",
     "Chasseur de monstres",
     "Combattant"
    ],
@@ -36294,10 +36557,14 @@
    "height": 195,
    "occupation": [
     "Archéologue",
-    "Scientifique"
+    "Chasseur de vampires",
+    "Scientifique",
+    "Chasseur de monstres",
+    "Combattant"
    ],
    "hair": [
-    "Bleus"
+    "Bleus",
+    "Bruns"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -36800,6 +37067,8 @@
    "height": null,
    "occupation": [
     "Chevalier",
+    "Assistant",
+    "Noble",
     "Combattant"
    ],
    "hair": [
@@ -36865,7 +37134,9 @@
    "age": 17,
    "height": 158,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Artisan",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -36901,7 +37172,8 @@
    "age": 17,
    "height": 154,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé"
    ],
    "hair": [
     "Roses",
@@ -36971,7 +37243,11 @@
    "age": 17,
    "height": 175,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Petits boulots",
+    "Président du conseil des élèves",
+    "Employé",
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -37004,7 +37280,11 @@
    "age": 17,
    "height": 162,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Garde",
+    "Domestique",
+    "Employé",
+    "Chômeur"
    ],
    "hair": [
     "Blonds"
@@ -37143,7 +37423,8 @@
    "age": 14,
    "height": 150,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Argentés",
@@ -37530,7 +37811,8 @@
    "height": 166,
    "occupation": [
     "Président",
-    "Leader"
+    "Leader",
+    "Étudiant"
    ],
    "hair": [
     "Argentés"
@@ -37601,8 +37883,10 @@
    "height": 161,
    "occupation": [
     "Idole",
-    "Chanteur",
+    "Leader",
     "Célébrité",
+    "Étudiant",
+    "Chanteur",
     "Artiste"
    ],
    "hair": [
@@ -37636,6 +37920,7 @@
    "height": 158,
    "occupation": [
     "Président",
+    "Étudiant",
     "Leader"
    ],
    "hair": [
@@ -37924,7 +38209,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fibre de vie"
    ],
    "age": 17,
    "height": null,
@@ -37935,7 +38221,8 @@
    ],
    "hair": [
     "Roux",
-    "Noirs"
+    "Noirs",
+    "Bleus"
    ],
    "anime": "Kill la Kill",
    "genres": [
@@ -37999,6 +38286,8 @@
    "height": null,
    "occupation": [
     "Étudiant",
+    "Président du conseil des élèves",
+    "Leader",
     "Épéiste",
     "Combattant"
    ],
@@ -38176,8 +38465,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Scientifique",
     "Professeur",
+    "Scientifique",
     "Officier",
     "Soldat"
    ],
@@ -38314,7 +38603,8 @@
    "age": 18,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Bleus"
@@ -38452,8 +38742,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Leader",
-    "Nudist Beach operative"
+    "Président",
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -38589,8 +38879,8 @@
    "height": null,
    "occupation": [
     "Président",
-    "Tireur",
     "Leader",
+    "Tireur",
     "Combattant"
    ],
    "hair": [
@@ -38622,7 +38912,8 @@
    "age": 13,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Étudiant"
    ],
    "hair": [
     "Noirs",
@@ -38660,7 +38951,8 @@
     "Aventurier"
    ],
    "hair": [
-    "Bruns"
+    "Bruns",
+    "Noirs"
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
@@ -38722,11 +39014,13 @@
    "height": null,
    "occupation": [
     "Aventurier",
+    "Noble",
     "Épéiste",
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Roux"
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
@@ -38755,7 +39049,10 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Officier",
+    "Commerçant",
+    "Soldat"
    ],
    "hair": [
     "Bruns"
@@ -38943,10 +39240,10 @@
    "age": 18,
    "height": null,
    "occupation": [
+    "Combattant",
     "Noble",
     "Épéiste",
-    "Magicien",
-    "Combattant"
+    "Magicien"
    ],
    "hair": [
     "Blonds"
@@ -39265,7 +39562,8 @@
    "age": 23,
    "height": 177,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Bleus"
@@ -39843,7 +40141,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Employé"
+    "Employé",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -40392,7 +40691,8 @@
     "Esclave"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Rouges"
    ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
@@ -40485,8 +40785,9 @@
    "height": 183,
    "occupation": [
     "Souverain",
-    "Noble",
-    "Leader"
+    "Leader",
+    "Gardien",
+    "Noble"
    ],
    "hair": [
     "Violets"
@@ -40651,7 +40952,11 @@
    "age": 23,
    "height": 158,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Professeur",
+    "Officier",
+    "Politicien",
+    "Soldat"
    ],
    "hair": [
     "Bleus"
@@ -40750,7 +41055,9 @@
    "age": 28,
    "height": 185,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Souverain",
+    "Leader"
    ],
    "hair": [
     "Rouges"
@@ -40782,7 +41089,11 @@
    "height": 169,
    "occupation": [
     "Officier",
-    "Soldat"
+    "Souverain",
+    "Noble",
+    "Conseiller",
+    "Soldat",
+    "Leader"
    ],
    "hair": null,
    "anime": "Magi: The Labyrinth of Magic",
@@ -40941,7 +41252,9 @@
    "age": 18,
    "height": 164,
    "occupation": [
-    "Commerçant"
+    "Commerçant",
+    "Voleur",
+    "Criminel"
    ],
    "hair": [
     "Blonds"
@@ -40971,6 +41284,7 @@
    "height": 182,
    "occupation": [
     "Officier",
+    "Professeur",
     "Soldat"
    ],
    "hair": null,
@@ -41024,7 +41338,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Androïde"
    ],
    "age": 19,
    "height": 157,
@@ -42206,7 +42521,8 @@
    "age": 14,
    "height": 157,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Noirs"
@@ -42626,7 +42942,8 @@
    "age": 14,
    "height": 153,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Gris"
@@ -42769,6 +43086,8 @@
    "height": 159,
    "occupation": [
     "Président",
+    "Président du conseil des élèves",
+    "Étudiant",
     "Leader"
    ],
    "hair": [
@@ -42869,7 +43188,10 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Professeur",
+    "Étudiant",
+    "Aventurier"
    ],
    "hair": [
     "Bleus"
@@ -42907,8 +43229,8 @@
     "Magicien",
     "Aventurier",
     "Épéiste",
-    "Héros",
-    "Combattant"
+    "Combattant",
+    "Héros"
    ],
    "hair": [
     "Bruns"
@@ -42941,7 +43263,10 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Combattant",
+    "Aventurier",
+    "Épéiste"
    ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
@@ -42977,7 +43302,8 @@
    ],
    "hair": [
     "Blancs",
-    "Verts"
+    "Verts",
+    "Argentés"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -43010,7 +43336,9 @@
    "height": 190,
    "occupation": [
     "Combattant",
-    "Aventurier"
+    "Aventurier",
+    "Leader",
+    "Politicien"
    ],
    "hair": [
     "Chauve",
@@ -43118,7 +43446,10 @@
    "age": 2000,
    "height": null,
    "occupation": [
-    "Dieu"
+    "Dieu",
+    "Magicien",
+    "Combattant",
+    "Épéiste"
    ],
    "hair": [
     "Argentés"
@@ -43154,7 +43485,9 @@
     "Étudiant",
     "Magicien",
     "Domestique",
-    "Conseiller"
+    "Conseiller",
+    "Assistant",
+    "Combattant"
    ],
    "hair": [
     "Roux"
@@ -43259,10 +43592,15 @@
    "age": 6500,
    "height": 162,
    "occupation": [
-    "Combattant"
+    "Combattant",
+    "Étudiant",
+    "Magicien",
+    "Aventurier",
+    "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Blancs"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -43295,7 +43633,11 @@
    "occupation": [
     "Étudiant",
     "Épéiste",
-    "Combattant"
+    "Président du conseil des élèves",
+    "Écrivain",
+    "Combattant",
+    "Leader",
+    "Artiste"
    ],
    "hair": [
     "Blonds"
@@ -43327,10 +43669,13 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Combattant",
+    "Épéiste"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Bruns"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -43606,11 +43951,13 @@
    "occupation": [
     "Super-héros",
     "Étudiant",
+    "Professeur",
     "Héros",
     "Combattant"
    ],
    "hair": [
-    "Verts"
+    "Verts",
+    "Noirs"
    ],
    "anime": "My Hero Academia",
    "genres": [
@@ -43784,7 +44131,8 @@
    "age": 20,
    "height": 175,
    "occupation": [
-    "Méchant"
+    "Méchant",
+    "Leader"
    ],
    "hair": [
     "Noirs",
@@ -43999,7 +44347,10 @@
    "age": 31,
    "height": 175,
    "occupation": [
-    "Héros"
+    "Héros",
+    "Super-héros",
+    "Professeur",
+    "Combattant"
    ],
    "hair": [
     "Violets"
@@ -44034,7 +44385,8 @@
    "age": 121,
    "height": 225,
    "occupation": [
-    "Méchant"
+    "Méchant",
+    "Leader"
    ],
    "hair": [
     "Blancs",
@@ -44068,7 +44420,11 @@
    "age": 30,
    "height": 185,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Super-héros",
+    "Célébrité",
+    "Héros",
+    "Combattant"
    ],
    "hair": [
     "Blonds"
@@ -44102,7 +44458,12 @@
    "age": 15,
    "height": 108,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Super-héros",
+    "Serveur",
+    "Assistant",
+    "Héros",
+    "Combattant"
    ],
    "hair": [
     "Violets"
@@ -44198,7 +44559,10 @@
    "age": null,
    "height": 182,
    "occupation": [
-    "Héros"
+    "Héros",
+    "Super-héros",
+    "Professeur",
+    "Combattant"
    ],
    "hair": null,
    "anime": "My Hero Academia",
@@ -45374,7 +45738,8 @@
    "age": 26,
    "height": 156,
    "occupation": [
-    "Détective"
+    "Détective",
+    "Espion"
    ],
    "hair": null,
    "anime": "Occultic;Nine",
@@ -45405,6 +45770,7 @@
    "age": "Inconnu",
    "height": 145,
    "occupation": [
+    "Espion",
     "Magicien"
    ],
    "hair": [
@@ -45469,7 +45835,9 @@
    "age": 20,
    "height": 164,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Mangaka",
+    "Artiste"
    ],
    "hair": null,
    "anime": "Occultic;Nine",
@@ -45500,7 +45868,9 @@
    "height": 162,
    "occupation": [
     "Éditeur",
-    "Journaliste"
+    "Journaliste",
+    "Écrivain",
+    "Artiste"
    ],
    "hair": [
     "Bruns"
@@ -45656,7 +46026,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Cyborg"
+    "Cyborg",
+    "Humain"
    ],
    "age": 19,
    "height": 178,
@@ -45768,7 +46139,9 @@
    "height": 174,
    "occupation": [
     "Garde",
+    "Assassin",
     "Épéiste",
+    "Criminel",
     "Combattant"
    ],
    "hair": [
@@ -45802,8 +46175,8 @@
    "height": 170,
    "occupation": [
     "Super-héros",
-    "Combattant",
-    "Héros"
+    "Héros",
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -45900,6 +46273,7 @@
    "height": 165,
    "occupation": [
     "Super-héros",
+    "Professeur",
     "Héros",
     "Combattant"
    ],
@@ -46042,6 +46416,7 @@
    "occupation": [
     "Super-héros",
     "Héros",
+    "Artiste martial",
     "Combattant"
    ],
    "hair": [
@@ -46112,6 +46487,7 @@
    "occupation": [
     "Super-héros",
     "Héros",
+    "Scientifique",
     "Combattant"
    ],
    "hair": [
@@ -46254,6 +46630,7 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Leader",
     "Soldat"
    ],
    "hair": [
@@ -46322,8 +46699,9 @@
     "Acteur",
     "Idole",
     "Célébrité",
+    "Chanteur",
     "Artiste",
-    "Chanteur"
+    "Musicien"
    ],
    "hair": [
     "Rouges"
@@ -46358,7 +46736,10 @@
    "height": 172,
    "occupation": [
     "Acteur",
+    "Médecin",
     "Célébrité",
+    "Écrivain",
+    "Mannequin",
     "Artiste"
    ],
    "hair": [
@@ -46464,6 +46845,9 @@
    "height": 151,
    "occupation": [
     "Idole",
+    "Acteur",
+    "Mannequin",
+    "Journaliste",
     "Chanteur",
     "Célébrité",
     "Artiste"
@@ -46501,7 +46885,9 @@
     "Acteur",
     "Youtubeur",
     "Célébrité",
-    "Artiste"
+    "Idole",
+    "Artiste",
+    "Chanteur"
    ],
    "hair": [
     "Blonds",
@@ -46677,7 +47063,10 @@
    "age": 16,
    "height": 163,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Acteur",
+    "Célébrité",
+    "Artiste"
    ],
    "hair": [
     "Noirs"
@@ -46954,6 +47343,7 @@
    "height": null,
    "occupation": [
     "Idole",
+    "Employé",
     "Chanteur",
     "Célébrité",
     "Artiste"
@@ -47395,7 +47785,9 @@
    "age": null,
    "height": 175,
    "occupation": [
-    "Étudiant"
+    "Président",
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -48008,7 +48400,7 @@
    "age": 18,
    "height": null,
    "occupation": [
-    "Works for Happy Berry"
+    "Étudiant"
    ],
    "hair": [
     "Roses"
@@ -49284,7 +49676,11 @@
    "height": 180,
    "occupation": [
     "Officier",
-    "Soldat"
+    "Détective",
+    "Assistant",
+    "Mafieux",
+    "Soldat",
+    "Criminel"
    ],
    "hair": [
     "Bruns"
@@ -49572,7 +49968,9 @@
    "age": null,
    "height": 160,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader",
+    "Détective"
    ],
    "hair": [
     "Bruns"
@@ -50058,7 +50456,10 @@
    "height": 160,
    "occupation": [
     "Épéiste",
-    "Combattant"
+    "Étudiant",
+    "Magical girl",
+    "Combattant",
+    "Magicien"
    ],
    "hair": [
     "Bleus"
@@ -50705,7 +51106,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Souverain",
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -51767,8 +52170,8 @@
    "age": null,
    "height": 176,
    "occupation": [
-    "Combattant",
     "Noble",
+    "Combattant",
     "Héros",
     "Lancier"
    ],
@@ -51803,7 +52206,8 @@
    "age": "Inconnu",
    "height": "Inconnu",
    "occupation": [
-    "Chasseur"
+    "Chasseur",
+    "Détective"
    ],
    "hair": null,
    "anime": "Re:CREATORS",
@@ -52234,6 +52638,7 @@
     "Chevalier",
     "Religieux",
     "Leader",
+    "Chômeur",
     "Combattant"
    ],
    "hair": [
@@ -52304,7 +52709,9 @@
    "age": 20,
    "height": 177,
    "occupation": [
-    "Commerçant"
+    "Commerçant",
+    "Officier",
+    "Soldat"
    ],
    "hair": [
     "Gris"
@@ -52345,7 +52752,8 @@
     "Combattant"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Rouges"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -52543,7 +52951,9 @@
     "Combattant"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Gris",
+    "Bruns"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -52662,9 +53072,11 @@
    "age": 23,
    "height": null,
    "occupation": [
+    "Assassin",
     "Esclave",
     "Voleur",
-    "Criminel"
+    "Criminel",
+    "Combattant"
    ],
    "hair": [
     "Noirs"
@@ -52742,8 +53154,10 @@
    "height": 135,
    "occupation": [
     "Mercenaire",
+    "Capitaine",
     "Magicien",
-    "Combattant"
+    "Combattant",
+    "Leader"
    ],
    "hair": [
     "Roux"
@@ -52786,7 +53200,8 @@
     "Criminel"
    ],
    "hair": [
-    "Bleus"
+    "Bleus",
+    "Gris"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -52896,7 +53311,8 @@
     "Leader"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Gris"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -53143,6 +53559,7 @@
    "height": 155,
    "occupation": [
     "Capitaine",
+    "Étudiant",
     "Leader"
    ],
    "hair": null,
@@ -53317,7 +53734,8 @@
     "Combattant"
    ],
    "hair": [
-    "Roses"
+    "Roses",
+    "Blonds"
    ],
    "anime": "Revolutionary Girl Utena",
    "genres": [
@@ -53351,10 +53769,12 @@
    "age": 14,
    "height": 157,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Étudiant"
    ],
    "hair": [
-    "Violets"
+    "Violets",
+    "Noirs"
    ],
    "anime": "Revolutionary Girl Utena",
    "genres": [
@@ -53874,7 +54294,7 @@
    "age": 18,
    "height": null,
    "occupation": [
-    "Akio Ohtori's"
+    "Noble"
    ],
    "hair": [
     "Violets"
@@ -53910,7 +54330,9 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Épéiste",
+    "Étudiant",
+    "Combattant"
    ],
    "hair": [
     "Bleus"
@@ -54221,6 +54643,7 @@
    "age": 16,
    "height": null,
    "occupation": [
+    "Chevalier",
     "Leader",
     "Lancier",
     "Combattant"
@@ -54321,6 +54744,7 @@
    "height": 157,
    "occupation": [
     "Officier",
+    "Magicien",
     "Soldat"
    ],
    "hair": [
@@ -54830,6 +55254,7 @@
    "height": null,
    "occupation": [
     "Capitaine",
+    "Magicien",
     "Tireur",
     "Leader",
     "Combattant"
@@ -55031,6 +55456,7 @@
    "height": 183,
    "occupation": [
     "Officier",
+    "Étudiant",
     "Soldat"
    ],
    "hair": [
@@ -55061,7 +55487,9 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Démon",
+    "Ange"
    ],
    "age": 8,
    "height": 170,
@@ -55394,12 +55822,14 @@
    "gender": "Femme",
    "species": [
     "Humain",
-    "Vampire"
+    "Vampire",
+    "Démon"
    ],
    "age": null,
    "height": 151,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Assistant"
    ],
    "hair": null,
    "anime": "Seraph of the End: Vampire Reign",
@@ -55434,6 +55864,8 @@
    "height": 150,
    "occupation": [
     "Officier",
+    "Étudiant",
+    "Assistant",
     "Soldat"
    ],
    "hair": [
@@ -55471,6 +55903,8 @@
    "height": 160,
    "occupation": [
     "Officier",
+    "Étudiant",
+    "Assistant",
     "Soldat"
    ],
    "hair": null,
@@ -55506,6 +55940,7 @@
    "height": 187,
    "occupation": [
     "Officier",
+    "Étudiant",
     "Soldat"
    ],
    "hair": [
@@ -55544,7 +55979,8 @@
    "age": null,
    "height": 167,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Assistant"
    ],
    "hair": [
     "Blonds"
@@ -55613,6 +56049,7 @@
    "height": 180,
    "occupation": [
     "Officier",
+    "Étudiant",
     "Soldat"
    ],
    "hair": [
@@ -55791,7 +56228,10 @@
    "age": 32,
    "height": null,
    "occupation": [
-    "Religieux"
+    "Religieux",
+    "Écrivain",
+    "Aventurier",
+    "Artiste"
    ],
    "hair": [
     "Argentés"
@@ -56354,7 +56794,8 @@
    "age": 24,
    "height": null,
    "occupation": [
-    "Commerçant"
+    "Commerçant",
+    "Employé"
    ],
    "hair": [
     "Rouges",
@@ -56386,7 +56827,8 @@
    "age": 45,
    "height": null,
    "occupation": [
-    "Employé"
+    "Employé",
+    "Commerçant"
    ],
    "hair": [
     "Noirs"
@@ -56418,6 +56860,7 @@
    "height": null,
    "occupation": [
     "Gérant",
+    "Commerçant",
     "Leader"
    ],
    "hair": [
@@ -56655,6 +57098,7 @@
    "occupation": [
     "Psychiatre",
     "Espion",
+    "Sergent",
     "Médecin"
    ],
    "hair": [
@@ -56798,10 +57242,15 @@
    "occupation": [
     "Commerçant",
     "Informateur",
-    "Soldat"
+    "Soldat",
+    "Espion",
+    "Inventeur",
+    "Combattant",
+    "Scientifique"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bruns"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
@@ -56874,7 +57323,8 @@
     "Professeur"
    ],
    "hair": [
-    "Blancs"
+    "Blancs",
+    "Blonds"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
@@ -57111,6 +57561,7 @@
    "height": null,
    "occupation": [
     "Président",
+    "Politicien",
     "Leader"
    ],
    "hair": [
@@ -57147,6 +57598,8 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Espion",
+    "Employé",
     "Soldat"
    ],
    "hair": [
@@ -57321,7 +57774,10 @@
    "age": 18,
    "height": 177,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Voyageur temporel",
+    "Sportif",
+    "Scientifique"
    ],
    "hair": [
     "Noirs"
@@ -57355,7 +57811,10 @@
    "age": 16,
    "height": 151,
    "occupation": [
-    "Serveur"
+    "Serveur",
+    "Étudiant",
+    "Domestique",
+    "Employé"
    ],
    "hair": [
     "Noirs"
@@ -57593,7 +58052,8 @@
    "age": 11,
    "height": 137,
    "occupation": [
-    "Scientifique"
+    "Scientifique",
+    "Étudiant"
    ],
    "hair": null,
    "anime": "Steins;Gate",
@@ -57688,7 +58148,9 @@
    "age": 43,
    "height": 171,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Inventeur",
+    "Scientifique"
    ],
    "hair": null,
    "anime": "Steins;Gate",
@@ -58046,7 +58508,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Religieux"
+    "Religieux",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -58081,6 +58544,7 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Policier",
     "Soldat"
    ],
    "hair": [
@@ -58297,7 +58761,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 15,
    "height": 168,
@@ -58331,13 +58796,15 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 14,
    "height": 172,
    "occupation": [
     "Justicier",
     "Épéiste",
+    "Étudiant",
     "Héros",
     "Combattant"
    ],
@@ -58368,7 +58835,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 15,
    "height": null,
@@ -58436,7 +58904,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 22,
    "height": null,
@@ -58467,7 +58936,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 15,
    "height": null,
@@ -58477,7 +58947,8 @@
     "Artisan"
    ],
    "hair": [
-    "Roses"
+    "Roses",
+    "Bruns"
    ],
    "anime": "Sword Art Online",
    "genres": [
@@ -58503,7 +58974,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Fée"
    ],
    "age": 12,
    "height": null,
@@ -58924,7 +59396,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Leader"
    ],
    "hair": [
     "Rouges"
@@ -59023,6 +59496,7 @@
    "age": null,
    "height": 177,
    "occupation": [
+    "Détective",
     "Policier"
    ],
    "hair": [
@@ -59591,10 +60065,13 @@
    "age": 2000,
    "height": 135,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Souverain",
+    "Leader"
    ],
    "hair": [
-    "Roses"
+    "Roses",
+    "Argentés"
    ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
@@ -60071,6 +60548,7 @@
    "age": null,
    "height": 190,
    "occupation": [
+    "Capitaine",
     "Leader",
     "Combattant"
    ],
@@ -60136,7 +60614,8 @@
    "age": null,
    "height": 135,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Artisan"
    ],
    "hair": [
     "Bruns"
@@ -60327,7 +60806,8 @@
     "Noble"
    ],
    "hair": [
-    "Rouges"
+    "Rouges",
+    "Roses"
    ],
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -60508,6 +60988,8 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Politicien",
+    "Garde",
     "Soldat"
    ],
    "hair": [
@@ -60598,7 +61080,8 @@
    "age": 30,
    "height": null,
    "occupation": [
-    "Courtisane"
+    "Courtisane",
+    "Professeur"
    ],
    "hair": [
     "Violets"
@@ -60628,7 +61111,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Médecin"
+    "Médecin",
+    "Apothicaire"
    ],
    "hair": [
     "Gris"
@@ -60658,7 +61142,8 @@
    "age": 19,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Apothicaire"
    ],
    "hair": null,
    "anime": "The Apothecary Diaries",
@@ -60686,7 +61171,9 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Courtisane"
+    "Courtisane",
+    "Gérant",
+    "Leader"
    ],
    "hair": [
     "Violets"
@@ -61561,12 +62048,13 @@
    "age": 8,
    "height": null,
    "occupation": [
+    "Religieux",
     "Miko",
-    "Domestique",
-    "Religieux"
+    "Domestique"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Violets"
    ],
    "anime": "The Elusive Samurai",
    "genres": [
@@ -61661,7 +62149,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Strategist"
+    "Épéiste",
+    "Stratège",
+    "Combattant"
    ],
    "hair": [
     "Bleus"
@@ -62374,7 +62864,8 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Violets"
    ],
    "anime": "The Eminence in Shadow",
    "genres": [
@@ -62439,7 +62930,9 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Souverain",
+    "Leader"
    ],
    "hair": [
     "Blonds"
@@ -62506,7 +62999,8 @@
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blonds",
+    "Argentés"
    ],
    "anime": "The Eminence in Shadow",
    "genres": [
@@ -62568,10 +63062,12 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Leader"
    ],
    "hair": [
-    "Roux"
+    "Roux",
+    "Rouges"
    ],
    "anime": "The Eminence in Shadow",
    "genres": [
@@ -62609,7 +63105,8 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Blonds"
    ],
    "anime": "The Eminence in Shadow",
    "genres": [
@@ -62639,7 +63136,9 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Scientifique",
+    "Professeur"
    ],
    "hair": [
     "Roses"
@@ -62675,6 +63174,7 @@
    "height": null,
    "occupation": [
     "Chevalier",
+    "Épéiste",
     "Combattant"
    ],
    "hair": [
@@ -63484,6 +63984,7 @@
    "gender": "Femme",
    "species": [
     "Oiseau",
+    "Fée",
     "Animal"
    ],
    "age": null,
@@ -63525,9 +64026,9 @@
    "age": 10,
    "height": null,
    "occupation": [
+    "Noble",
     "Souverain",
     "Épéiste",
-    "Noble",
     "Leader",
     "Combattant"
    ],
@@ -63631,7 +64132,8 @@
     "Leader"
    ],
    "hair": [
-    "Argentés"
+    "Argentés",
+    "Bleus"
    ],
    "anime": "The Rising of the Shield Hero",
    "genres": [
@@ -63763,9 +64265,9 @@
    "age": 16,
    "height": 160,
    "occupation": [
+    "Étudiant",
     "Héros",
     "Leader",
-    "Étudiant",
     "Épéiste",
     "Combattant"
    ],
@@ -63832,8 +64334,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Esclave",
     "Noble",
+    "Esclave",
     "Épéiste",
     "Combattant"
    ],
@@ -63934,9 +64436,9 @@
    "age": 21,
    "height": 175,
    "occupation": [
+    "Étudiant",
     "Héros",
     "Sportif",
-    "Étudiant",
     "Lancier",
     "Combattant"
    ],
@@ -63971,9 +64473,9 @@
    "age": 17,
    "height": 155,
    "occupation": [
+    "Étudiant",
     "Héros",
     "Combattant",
-    "Étudiant",
     "Archer"
    ],
    "hair": [
@@ -64178,12 +64680,17 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Humain",
+    "Divinité"
    ],
    "age": 16,
    "height": 162,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Souverain",
+    "Serveur",
+    "Capitaine",
+    "Leader"
    ],
    "hair": [
     "Argentés"
@@ -64548,7 +65055,8 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Noirs",
+    "Bruns"
    ],
    "anime": "The Seven Deadly Sins",
    "genres": [
@@ -66444,7 +66952,9 @@
    "age": 27,
    "height": null,
    "occupation": [
+    "Officier",
     "Exorciste",
+    "Soldat",
     "Chasseur de monstres",
     "Magicien"
    ],
@@ -66594,6 +67104,7 @@
    "height": null,
    "occupation": [
     "Officier",
+    "Leader",
     "Soldat"
    ],
    "hair": null,
@@ -66694,6 +67205,7 @@
    "height": 165,
    "occupation": [
     "Mannequin",
+    "Étudiant",
     "Célébrité",
     "Artiste"
    ],
@@ -66730,6 +67242,8 @@
    "height": 163,
    "occupation": [
     "Capitaine",
+    "Étudiant",
+    "Employé",
     "Leader"
    ],
    "hair": [
@@ -67408,7 +67922,8 @@
    "age": 300,
    "height": 167,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Pêcheur"
    ],
    "hair": [
     "Bruns"
@@ -68728,7 +69243,15 @@
    "age": 25,
    "height": null,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Artiste martial",
+    "Épéiste",
+    "Assassin",
+    "Chasseur de démons",
+    "Ninja",
+    "Combattant",
+    "Criminel",
+    "Chasseur de monstres"
    ],
    "hair": [
     "Noirs"
@@ -69029,7 +69552,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Dragon"
    ],
    "age": 17,
    "height": null,
@@ -69387,6 +69911,7 @@
    "age": 20,
    "height": null,
    "occupation": [
+    "Religieux",
     "Aventurier",
     "Magicien"
    ],
@@ -69445,7 +69970,8 @@
    "height": null,
    "occupation": [
     "Aventurier",
-    "Martial Artist"
+    "Artiste martial",
+    "Combattant"
    ],
    "hair": [
     "Rouges"
@@ -70406,6 +70932,8 @@
    "height": 168,
    "occupation": [
     "Capitaine",
+    "Combattant",
+    "Étudiant",
     "Leader"
    ],
    "hair": [
@@ -70743,7 +71271,8 @@
    "age": 17,
    "height": 160,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé"
    ],
    "hair": [
     "Noirs",
@@ -71016,7 +71545,8 @@
     "Employé"
    ],
    "hair": [
-    "Bleus"
+    "Bleus",
+    "Noirs"
    ],
    "anime": "Wotakoi: Love is Hard for Otaku",
    "genres": [
@@ -71145,7 +71675,8 @@
    "age": 19,
    "height": 177,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Serveur"
    ],
    "hair": null,
    "anime": "Wotakoi: Love is Hard for Otaku",

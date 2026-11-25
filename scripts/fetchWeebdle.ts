@@ -6,7 +6,8 @@
 // 2. Attribuer chaque personnage à un seul anime (là où il est principal, sinon le 1er sorti)
 // 3. Garder 4 à 20 personnages par anime (voir select)
 // 4. Compléter, comme à l'Animedle : AniList (champ, sinon description), puis Wikidata, Fandom, Wikipédia. AniList renseigne
-//    surtout les personnages principaux, et presque jamais l'occupation et les cheveux.
+//    surtout les personnages principaux, et presque jamais l'occupation et les cheveux. Occupation, espèce et cheveux
+//    cumulent les valeurs de toutes les sources ; sexe, âge et taille viennent de la 1re qui en a (addedValues).
 // 5. Traduire les occupations (translate.ts, sauf celles corrigées à la main), puis appliquer les corrections à la main
 //    (data/weebdle-manual.json), et enfin ajouter l'arme et regrouper les occupations (finishOccupations)
 //
@@ -28,9 +29,9 @@ import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, startOccupations, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, fixedOccupationIds, translateEntries, translateSpeciesEntries } from './translate.js'
+import { finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -315,7 +316,8 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
     attributes: {
       gender: gender(character.gender, character.description),
       age: parseAge(character.age, character.description),
-      occupation: parseOccupation(character.description),
+      // Sinon le métier en début de description (« A sergeant in the police force »)
+      occupation: parseOccupation(character.description) ?? parseOccupationAtStart(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
       species: (species => species ? [species] : null)(parseSpecies(character.description)),
@@ -334,10 +336,7 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-// En dernier recours, le métier en tout début de description AniList (« A sergeant in the police force »)
-const descriptions = selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.description))
-const atStart = startOccupations(wiki.entries, descriptions)
-const translated = translateEntries(atStart.entries, fixedOccupationIds(manual.edit))
+const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
 const defaultHumans: string[] = []
 const speciesEntries = withSpecies.entries.map(entry => {
@@ -375,7 +374,6 @@ lines.push(`## Complétés par Fandom (${fandom.filled.length})`, ...fandom.fill
 if (fandom.noWiki.length > 0)
   lines.push(`## Animes sans wiki Fandom (${fandom.noWiki.length}) : à ajouter dans WIKIS (scripts/fandom.ts)`, ...fandom.noWiki.map(text => `- ${text}`), '')
 lines.push(`## Complétés par Wikipédia (${wiki.filled.length})`, ...wiki.filled.map(text => `- ${text}`), '')
-lines.push(`## Occupations tirées du début de la description AniList (${atStart.filled.length}) : à relire`, ...atStart.filled.map(text => `- ${text}`), '')
 const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])
