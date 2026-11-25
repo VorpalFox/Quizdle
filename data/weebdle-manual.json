@@ -1,5 +1,10 @@
 {
  "exclude": [
+  "313455",
+  "327365",
+  "313451",
+  "327368",
+  "327366",
   "251124",
   "251125",
   "251127",
@@ -548,12 +553,28 @@
   },
   "297467": {
    "_nom": "Asako Kobayakawa",
+   "_raison": "Fandom : « Human (11th Loop), Shadow (original Timeline) » : les deux (validé avec FX)",
    "species": {
     "plus": [
      "Ombre"
-    ],
+    ]
+   }
+  },
+  "36833": {
+   "_nom": "Midori Kirigaya",
+   "_raison": "la mère de Kirito et Suguha ne joue pas à ALO : pas la Fée de leurs avatars (espèce de la famille)",
+   "species": {
     "moins": [
-     "Humain"
+     "Fée"
+    ]
+   }
+  },
+  "36828": {
+   "_nom": "Asuna Yuuki",
+   "_raison": "Undine dans ALO ; « Sylph (Erika) » du champ Fandom est un autre perso",
+   "species": {
+    "moins": [
+     "Sylphe"
     ]
    }
   }

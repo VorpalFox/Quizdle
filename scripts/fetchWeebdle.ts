@@ -31,7 +31,7 @@ import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
 import { fillUnknowns } from './unknownValues.js'
 import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
+import { familySpecies, finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -338,8 +338,10 @@ const fandom = await completeFromFandom(targets.map((target, index) => ({ ...tar
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
+// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut
+const family = familySpecies(withSpecies.entries)
 const defaultHumans: string[] = []
-const speciesEntries = withSpecies.entries.map(entry => {
+const speciesEntries = family.entries.map(entry => {
   const anime = String(entry.attributes.anime)
   const human = !(entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)) || HUMAN_CASTS.has(anime)
   if (entry.attributes.species !== null || !human)
@@ -378,6 +380,7 @@ const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1]
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Espèces pas traduites (${unknownSpecies.length}) : à ajouter dans ANIME_SPECIES (scripts/translate.ts)`, ...unknownSpecies.map(([value, count]) => `- ${value} (${count})`), '')
+lines.push(`## Espèce de la famille (${family.filled.length})`, ...family.filled.map(text => `- ${text}`), '')
 lines.push(`## Humains par défaut : anime sans surnaturel ou à casting humain (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')

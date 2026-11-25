@@ -354,6 +354,10 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'incarnation': null,
   // The Reincarnation of the Strongest Exorcist : les Trieyes sont un peuple de démons (Pirisralia)
   'trieye': 'Démon',
+  // Les fées du folklore, gardées précises (les races d'ALO dans SAO, Kuro de Blue Exorcist, Ramiris) : Fée s'y ajoute
+  // pour recouper (FOLKLORE_FAIRIES)
+  'sylph': 'Sylphe', 'salamander': 'Salamandre', 'undine': 'Ondine', 'spriggan': 'Spriggan', 'leprechaun': 'Leprechaun',
+  'cait sith': 'Cait Sith', 'cat sídhe': 'Cait Sith', 'cat sidhe': 'Cait Sith', 'pixie': 'Pixie',
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
   'hybrid': 'Demi-démon', 'parasite': 'Humain',
@@ -409,8 +413,11 @@ export function translateCharacterSpecies(raw: string): { species: string[], unk
   return { species: [...new Set(species)], unknown }
 }
 
+// Les fées du folklore : l'espèce précise, plus Fée (une créature magique bienveillante) pour recouper
+const FOLKLORE_FAIRIES = new Set(['Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Pixie'])
+
 // L'espèce des entrées (« species », les valeurs brutes des sources) traduite et dépliée (Demi-elfe = Humain + Elfe,
-// un chat est aussi un Animal), avec ce qui n'a pas pu l'être
+// un chat est aussi un Animal, une sylphe aussi une Fée), avec ce qui n'a pas pu l'être
 export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], untranslated: Map<string, number> } {
   const untranslated = new Map<string, number>()
   const translated = entries.map(entry => {
@@ -421,8 +428,50 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
     for (const value of found.flatMap(({ unknown }) => unknown))
       untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
     // Les espèces de toutes les sources (addedValues), chacune parfois en plusieurs valeurs
-    const species = [...new Set(found.flatMap(({ species }) => species))]
+    const species = [...new Set(found.flatMap(({ species }) => species).flatMap(name => FOLKLORE_FAIRIES.has(name) ? [name, 'Fée'] : [name]))]
     return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
   })
   return { entries: translated, untranslated }
+}
+
+// --- Espèce de la famille ---
+
+// Pas des espèces qu'on hérite : une Ombre copie une seule personne (Summer Time Rendering), une race d'ALO est un avatar
+// de jeu (SAO). Fée reste héritable : c'est une famille d'espèces (une exception, comme la mère de Kirito, va à la main).
+const NOT_INHERITED = new Set(['Ombre', 'Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
+// Pas un nom de famille : « Miranjo no Haha » (la mère de Miranjo), « Kage Haha »
+const NOT_SURNAME = /^(?:haha|chichi|ani|ane|otouto|imouto|musume|musuko|sensei)$/i
+
+// Le nom de famille d'un perso, pour regrouper ceux d'un même anime : le dernier mot d'un nom en plusieurs mots
+function surname(name: string): string | null {
+  const words = name.split(/\s+/)
+  const last = words.at(-1)!
+  return words.length >= 2 && !words.includes('no') && last.length >= 3 && !NOT_SURNAME.test(last) ? last : null
+}
+
+// Un perso sans espèce prend celles que tous les membres connus de sa famille (même anime, même nom) ont en commun,
+// sauf celles qu'on n'hérite pas : Gly et Berta Lamprogue sont humains comme Blaise et Seika (validé avec FX)
+export function familySpecies(entries: Entry[]): { entries: Entry[], filled: string[] } {
+  const families = new Map<string, Entry[]>()
+  for (const entry of entries) {
+    const name = surname(entry.name)
+    if (name)
+      families.set(`${entry.attributes.anime}|${name}`, [...families.get(`${entry.attributes.anime}|${name}`) ?? [], entry])
+  }
+  const filled: string[] = []
+  const shared = new Map<Entry, string[]>()
+  for (const family of families.values()) {
+    const known = family.filter(entry => Array.isArray(entry.attributes.species))
+      .map(entry => (entry.attributes.species as string[]).filter(name => !NOT_INHERITED.has(name)))
+    if (known.length === 0)
+      continue
+    const common = known.reduce((a, b) => a.filter(name => b.includes(name)))
+    if (common.length === 0)
+      continue
+    for (const entry of family.filter(entry => !Array.isArray(entry.attributes.species))) {
+      shared.set(entry, common)
+      filled.push(`${entry.name} (${entry.attributes.anime}) : ${common.join(', ')} ← ${family.filter(other => other !== entry).map(other => other.name).join(', ')}`)
+    }
+  }
+  return { entries: entries.map(entry => shared.has(entry) ? { ...entry, attributes: { ...entry.attributes, species: shared.get(entry)! } } : entry), filled }
 }

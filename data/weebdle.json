@@ -5197,6 +5197,7 @@
   "aliases": [
    "Tamaba Satori",
    "眼目さとり",
+   "Satori",
    "Tamaba"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121457-Wgd9VURTkYsW.png",
@@ -11505,6 +11506,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Cait Sith",
     "Fée"
    ],
    "age": 121,
@@ -24026,7 +24028,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133823-RCrCyUxqgwy6.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -28335,7 +28339,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 14,
    "height": null,
    "occupation": [
@@ -28759,7 +28765,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4159-g0Q6tQ9SCq6R.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 5,
    "height": null,
    "occupation": null,
@@ -36788,7 +36796,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/18062-FjIMwcBJra9L.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 50,
    "height": null,
    "occupation": [
@@ -42538,7 +42548,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67959-E87aK6Bvffq7.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -43911,7 +43923,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88350-QU1iwgZ887U8.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Démon"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -51244,7 +51258,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n39742-v9wdkOMMW7oT.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 165,
    "occupation": [
@@ -51343,7 +51359,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b41851-dKtgQbvKOMS7.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 3,
    "height": 100,
    "occupation": null,
@@ -51409,7 +51427,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39784-fVO9u5JgwaIK.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 180,
    "occupation": [
@@ -54752,7 +54772,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b751-92Obn9RcdR19.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 13,
    "height": null,
    "occupation": [
@@ -55018,7 +55040,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6139-nGGImjiPMyuD.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 18,
    "height": null,
    "occupation": [
@@ -58968,6 +58992,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Humain",
     "Ombre"
    ],
    "age": 17,
@@ -59228,7 +59253,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155707-fmMAbx73fWXz.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -59285,7 +59312,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b265006-sVUhiCn089Jy.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59319,6 +59348,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Humain",
     "Ombre"
    ],
    "age": null,
@@ -59384,7 +59414,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297468-9b9dRtep4Q07.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59417,6 +59449,7 @@
    "gender": "Femme",
    "species": [
     "Humain",
+    "Ondine",
     "Fée"
    ],
    "age": 15,
@@ -59452,6 +59485,7 @@
    "gender": "Homme",
    "species": [
     "Humain",
+    "Spriggan",
     "Fée"
    ],
    "age": 14,
@@ -59490,6 +59524,7 @@
    "gender": "Femme",
    "species": [
     "Humain",
+    "Sylphe",
     "Fée"
    ],
    "age": 15,
@@ -59559,6 +59594,7 @@
    "gender": "Homme",
    "species": [
     "Humain",
+    "Salamandre",
     "Fée"
    ],
    "age": 22,
@@ -59591,6 +59627,7 @@
    "gender": "Femme",
    "species": [
     "Humain",
+    "Leprechaun",
     "Fée"
    ],
    "age": 15,
@@ -59629,6 +59666,7 @@
    "gender": "Femme",
    "species": [
     "Humain",
+    "Cait Sith",
     "Fée"
    ],
    "age": 12,
@@ -59804,6 +59842,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Cait Sith",
     "Fée"
    ],
    "age": null,
@@ -59836,6 +59875,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Sylphe",
     "Fée"
    ],
    "age": null,
@@ -59897,7 +59937,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36833-SeO3lEvZD9m5.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 38,
    "height": null,
    "occupation": null,
@@ -59981,6 +60023,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Sylphe",
     "Fée"
    ],
    "age": null,
@@ -60013,6 +60056,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Salamandre",
     "Fée"
    ],
    "age": null,
@@ -60046,6 +60090,7 @@
   "attributes": {
    "gender": "Homme",
    "species": [
+    "Salamandre",
     "Fée"
    ],
    "age": null,
@@ -61095,6 +61140,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
+    "Pixie",
     "Fée"
    ],
    "age": 50,
@@ -64215,7 +64261,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297770-tKOckOZRnIuV.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -64303,89 +64351,6 @@
   }
  },
  {
-  "id": "313451",
-  "name": "Karen",
-  "aliases": [
-   "カレン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b313451-XEqQ32pQTZKc.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "327366",
-  "name": "Haruyoshi Kuga",
-  "aliases": [
-   "Kuga Haruyoshi",
-   "玖峨晴嘉",
-   "Haruyoshi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327366-fFac0QGICzoD.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "327368",
-  "name": "Zecht",
-  "aliases": [
-   "ゼクト"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327368-L9Yh4oVQU2Yd.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
   "id": "313450",
   "name": "Gull Galeos",
   "aliases": [
@@ -64400,33 +64365,6 @@
    "species": [
     "Démon"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "313455",
-  "name": "Satori",
-  "aliases": [
-   "覚"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b313455-mfnMYYSKKsAu.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
    "age": null,
    "height": null,
    "occupation": null,
@@ -64507,14 +64445,77 @@
   }
  },
  {
-  "id": "327365",
-  "name": "Shikaisha",
+  "id": "297774",
+  "name": "Berta Lamprogue",
   "aliases": [
-   "司会者"
+   "Lamprogue Berta",
+   "ベルタ・ランプローグ",
+   "Berta"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327365-d1ijZ2r6Gkqq.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297774-THyy8XWwKIPz.jpg",
   "attributes": {
    "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "313454",
+  "name": "Zolmnem",
+  "aliases": [
+   "ゾルムネム"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b313454-Ivwfu8YgHUwG.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Démon"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Épéiste",
+    "Combattant"
+   ],
+   "hair": null,
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327360",
+  "name": "Beren",
+  "aliases": [
+   "ベレン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327360-Z3CTqepYJ3Tu.png",
+  "attributes": {
+   "gender": "Homme",
    "species": null,
    "age": null,
    "height": null,
@@ -64534,16 +64535,71 @@
   }
  },
  {
-  "id": "297774",
-  "name": "Berta Lamprogue",
+  "id": "327362",
+  "name": "Dennis Regan",
   "aliases": [
-   "Lamprogue Berta",
-   "ベルタ・ランプローグ",
-   "Berta"
+   "Regan Dennis",
+   "デニス・リーガン",
+   "Dennis",
+   "Regan"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297774-THyy8XWwKIPz.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327362-twwuQesVaovd.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Homme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327363",
+  "name": "Nyuudou",
+  "aliases": [
+   "入道"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327363-pUYXydX7v4qS.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327367",
+  "name": "Keedy",
+  "aliases": [
+   "キーディ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327367-V56WcJsxDMme.png",
+  "attributes": {
+   "gender": null,
    "species": null,
    "age": null,
    "height": null,
@@ -68580,7 +68636,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124138-2WCq8CD8FEsv.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 300,
    "height": 167,
    "occupation": [
@@ -68750,7 +68808,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135470-4glp1GObkU7P.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": 154,
    "occupation": [
@@ -69049,7 +69109,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175047-o2zQmdPwHPLu.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [

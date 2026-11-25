@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { animeSource, heightCm, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies } from '../anilist.js'
-import { addedValues, translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
+import { addedValues, familySpecies, translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
 import { introSpecies } from '../fandom.js'
 
 describe('heightCm', () => {
@@ -42,7 +42,9 @@ describe('translateCharacterSpecies', () => {
     expect(translateCharacterSpecies('Human, Spiral').species).toEqual(['Humain'])
     expect(translateCharacterSpecies('Giftia').species).toEqual(['Androïde'])
     expect(translateCharacterSpecies('Beastman - Wolf').species).toEqual(['Homme-bête'])
-    expect(translateCharacterSpecies('Sylph').species).toEqual(['Fée'])
+    // Une fée du folklore gardée précise, Fée s'ajoute au dépliage (translateSpeciesEntries)
+    expect(translateCharacterSpecies('Sylph').species).toEqual(['Sylphe'])
+    expect(translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: ['Sylph'] } }]).entries[0]!.attributes.species).toEqual(['Sylphe', 'Fée'])
   })
 
   it('ToutesLesEspeces_MemePlusTard', () => {
@@ -104,6 +106,27 @@ describe('parseOccupationAtStart', () => {
     expect(parseOccupation('She\'s the commanding officer of Hamdo\'s army.')).toEqual(['Officer'])
   })
 
+})
+
+describe('familySpecies', () => {
+  const entry = (id: string, name: string, species: string[] | null) => ({ id, name, attributes: { anime: 'A', species } })
+
+  it('SansEspece_CelleDeSaFamille', () => {
+    const { entries } = familySpecies([entry('1', 'Seika Lamprogue', ['Humain', 'Démon']), entry('2', 'Blaise Lamprogue', ['Humain']), entry('3', 'Gly Lamprogue', null)])
+    expect(entries[2]!.attributes.species).toEqual(['Humain'])
+  })
+
+  it('OmbreEtRaceALO_PasHeritees', () => {
+    const { entries } = familySpecies([entry('1', 'Asako Kobayakawa', ['Ombre']), entry('2', 'Shiori Kobayakawa', null),
+      entry('3', 'Kazuto Kirigaya', ['Humain', 'Spriggan', 'Fée']), entry('4', 'Midori Kirigaya', null)])
+    expect(entries[1]!.attributes.species).toBeNull()
+    expect(entries[3]!.attributes.species).toEqual(['Humain', 'Fée'])
+  })
+
+  it('PasUnNomDeFamille_Ignore', () => {
+    const { entries } = familySpecies([entry('1', 'Miranjo no Haha', ['Humain']), entry('2', 'Kage Haha', null)])
+    expect(entries[1]!.attributes.species).toBeNull()
+  })
 })
 
 describe('addedValues', () => {
