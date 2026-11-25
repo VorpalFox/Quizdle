@@ -6,7 +6,7 @@ Sur tout le quiz : sexe 4 %, espèce 13 %, âge 43 %, taille 58 %, occupation 21
 
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
-| [ ] | The Witch and the Beast | 19 | **62 %** | 11 % | 89 % | 74 % | 79 % | 58 % | 63 % |
+| [ ] | The Witch and the Beast | 19 | **58 %** | 11 % | 84 % | 68 % | 79 % | 47 % | 58 % |
 | [ ] | Now and Then, Here and There | 14 | **66 %** | 14 % | 0 % | 100 % | 100 % | 93 % | 86 % |
 | [ ] | The Reincarnation of the Strongest Exorcist in Another World | 20 | **63 %** | 5 % | 50 % | 95 % | 100 % | 65 % | 60 % |
 | [ ] | Paprika | 10 | **58 %** | 10 % | 0 % | 80 % | 100 % | 80 % | 80 % |
@@ -31,7 +31,7 @@ Sur tout le quiz : sexe 4 %, espèce 13 %, âge 43 %, taille 58 %, occupation 21
 | [ ] | Fullmetal Alchemist: Brotherhood | 20 | **43 %** | 0 % | 40 % | 40 % | 100 % | 20 % | 55 % |
 | [ ] | Devilman Crybaby | 20 | **42 %** | 0 % | 0 % | 95 % | 95 % | 25 % | 35 % |
 | [ ] | Gurren Lagann | 20 | **42 %** | 25 % | 15 % | 80 % | 80 % | 15 % | 35 % |
-| [ ] | Plastic Memories | 20 | **42 %** | 15 % | 15 % | 60 % | 90 % | 30 % | 40 % |
+| [ ] | Plastic Memories | 20 | **40 %** | 15 % | 10 % | 60 % | 90 % | 25 % | 40 % |
 | [ ] | Battle Game in 5 Seconds | 20 | **40 %** | 0 % | 20 % | 90 % | 45 % | 45 % | 40 % |
 | [ ] | No Game, No Life | 18 | **40 %** | 0 % | 39 % | 44 % | 78 % | 39 % | 39 % |
 
