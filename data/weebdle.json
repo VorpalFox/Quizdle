@@ -2949,7 +2949,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Bleus"
    ],
@@ -5045,11 +5047,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/42092.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Anohana: The Flower We Saw That Day",
    "genres": [
     "Drame",
@@ -10612,9 +10618,11 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174175-j1Hfa1Rmc2HN.png",
   "attributes": {
-   "gender": null,
-   "species": null,
-   "age": null,
+   "gender": "Homme",
+   "species": [
+    "Inconnu"
+   ],
+   "age": 1000,
    "height": null,
    "occupation": null,
    "hair": null,
@@ -14801,11 +14809,19 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b152231-xNV2YsTRzEcS.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Démon"
+   ],
    "age": null,
    "height": 155,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur de démons",
+    "Chasseur de monstres",
+    "Combattant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -14933,11 +14949,19 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157231-hV81SwGqxl2R.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Démon"
+   ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 178,
+   "occupation": [
+    "Chasseur de démons",
+    "Chasseur de monstres",
+    "Combattant"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
@@ -14959,7 +14983,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174271-iC0Ul9YfLOk6.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Chat",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -15062,11 +15089,16 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172887-qMCjXPXMSKRk.png",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Inconnu",
+   "species": [
+    "Démon"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Wild Devil",
+    "Contract Devil"
+   ],
    "hair": null,
    "anime": "Chainsaw Man",
    "genres": [
@@ -15164,10 +15196,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b290671-YaauAZvHLnyo.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Démon"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Wild Devil",
+    "Contract Devil"
+   ],
    "hair": null,
    "anime": "Chainsaw Man",
    "genres": [
@@ -18408,7 +18445,9 @@
    "occupation": [
     "Domestique"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -24073,12 +24112,17 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135646-Q8lRvqf2etex.png",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": [
+    "Goule"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs",
+    "Bruns"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -29763,11 +29807,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165846-9hvV3ivA8Y3V.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Extraterrestre"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -32923,10 +32971,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/8037.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Homme-bête"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Nia's caretaker"
+   ],
    "hair": null,
    "anime": "Gurren Lagann",
    "genres": [
@@ -33363,14 +33415,20 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/617-uJoZk3aKWPj9.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Loup-garou"
+   ],
    "age": null,
    "height": null,
    "occupation": [
     "Capitaine",
-    "Leader"
+    "Officier",
+    "Leader",
+    "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -39832,11 +39890,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/126854-AVwxFTMoGFMe.jpg",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
@@ -40093,11 +40155,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203544-VRqWI2UWx1SF.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Scientifique"
+   ],
+   "hair": [
+    "Gris",
+    "Noirs"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Aventure",
@@ -41185,11 +41254,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/123186-lgKM1zM7SB1F.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Assistant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Aventure",
@@ -42286,7 +42361,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b263914-SSfEO4UFXbrd.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Serpent",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -42409,12 +42487,17 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/127211-k9h5fCc8stqO.jpg",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": [
+    "Serpent",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comédie",
@@ -42913,7 +42996,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199024-ggtiHHNnzDBz.png",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": [
     "Humain"
    ],
@@ -46978,13 +47061,18 @@
     "Humain"
    ],
    "age": 27,
-   "height": null,
+   "height": 235,
    "occupation": [
     "Super-héros",
+    "Professeur",
     "Héros",
+    "Garde",
     "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Chauve",
+    "Noirs"
+   ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
@@ -61956,10 +62044,17 @@
    "species": [
     "Humain"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "age": 70,
+   "height": 175,
+   "occupation": [
+    "Courtisane",
+    "Gérant",
+    "Leader"
+   ],
+   "hair": [
+    "Gris",
+    "Blancs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
@@ -63992,10 +64087,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b295292-Eo3yIn4Qh8ND.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Elfe"
+   ],
    "age": 23,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Numbers",
+    "First Children"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -67315,7 +67415,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136548-FjWExC5ScBqW.jpg",
   "attributes": {
    "gender": "Autre",
-   "species": null,
+   "species": [
+    "Immortel"
+   ],
    "age": 233,
    "height": 167,
    "occupation": null,
@@ -67439,11 +67541,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b201555-goJeA6E0Xuww.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 14,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Blancs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -67626,11 +67734,16 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136553-9LprfeXY6qYP.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain",
+    "Divinité"
+   ],
+   "age": 11,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",
@@ -67653,10 +67766,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b202665-h4leOYg9URal.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -67742,10 +67859,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136555-q0JF1MY0Mo9r.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "To Your Eternity",
    "genres": [
@@ -67859,11 +67980,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136552-xiLFH6HRjLTE.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 11,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Aventure",

@@ -649,6 +649,22 @@
      "Sylphe"
     ]
    }
+  },
+  "136548": {
+   "_nom": "Fushi",
+   "species": {
+    "plus": [
+     "Immortel"
+    ]
+   }
+  },
+  "136553": {
+   "_nom": "Kansatsu-sha",
+   "species": {
+    "plus": [
+     "Divinité"
+    ]
+   }
   }
  },
  "add": [],
@@ -661,6 +677,7 @@
   "170537": "Kuga#Kuga",
   "264680": "Kage's Mother",
   "121452": "Nono Mozunono",
-  "121448": "Chouka U Baragasaki"
+  "121448": "Chouka U Baragasaki",
+  "201555": "The Nameless Boy"
  }
 }

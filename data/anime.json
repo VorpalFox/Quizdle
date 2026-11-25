@@ -1774,8 +1774,16 @@
   "attributes": {
    "gender": "Homme",
    "age": 23,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Chasseur",
+    "Leader",
+    "Souverain",
+    "Détective",
+    "Noble"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Solo Leveling",
    "genres": [
     "Action",

@@ -617,8 +617,11 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
     // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
     const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    // Et ses autres noms AniList (« Kansatsu-sha » → « The Beholder », « Upa » → « Oopa ») : des surnoms qu'on ne garde
+    // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
+    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
     if (lost.length > 0)
-      pages = { ...pages, ...await fetchPages(wiki, [...searched.values()].flat()) }
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs
     // sont dans la page du modèle
     const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])
@@ -637,7 +640,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // (sameName), et certains wikis n'en ont aucune (LaLa-Ru, wiki de Now and Then, Here and There).
     const found = characters.flatMap(({ target, titles }) => {
       const candidates = [...titles, ...searched.get(target) ?? []]
-      const title = candidates.find(title => pages[title] && infoboxOf(title))
+      const title = [...candidates, ...others.get(target) ?? []].find(title => pages[title] && infoboxOf(title))
       if (title)
         return [{ target, title, values: fandomValues(infoboxOf(title)!), unknowns: fandomUnknowns(infoboxOf(title)!) }]
       const bare = candidates.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
