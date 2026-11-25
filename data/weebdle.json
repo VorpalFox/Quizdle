@@ -48773,9 +48773,13 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Détective",
+    "Psychiatre",
+    "Médecin"
+   ],
    "hair": [
-    "Bruns"
+    "Rouges"
    ],
    "anime": "Paprika",
    "genres": [
