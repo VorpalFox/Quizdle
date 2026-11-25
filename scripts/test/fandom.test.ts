@@ -51,6 +51,13 @@ describe('fandomValues', () => {
     expect(translateOccupation('One of the Three Beasts')).toBeNull()
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
   })
+
+  it('DemonEtMentor', () => {
+    expect(translateOccupation('Contract Devil')).toBe('Démon')
+    expect(translateOccupation('Devil Hunter')).toBe('Chasseur de démons')
+    // « caretaker » : un mentor, donc un Professeur comme « mentor »
+    expect(translateOccupation("Nia's caretaker")).toBe('Professeur')
+  })
 })
 
 describe('introOccupations', () => {

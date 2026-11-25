@@ -97,6 +97,8 @@ const RULES: [RegExp, string | null][] = [
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
   [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
+  // Les démons de Chainsaw Man (« Wild Devil », « Contract Devil ») : ce qu'ils sont en guise de rôle (validé avec FX)
+  [/\bdevils?$/, 'Démon'],
   [/serial killer|mass murderer/, 'Tueur en série'],
   [/magical ?☆?girl/, 'Magical girl'],
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
@@ -107,7 +109,7 @@ const RULES: [RegExp, string | null][] = [
   // « Pilote d'EVA », « Stamen » et « Pistil » (les pilotes de DARLING in the FRANXX)
   [/\bpilot|stamen|pistil/, 'Pilote'],
   [/surgeon|chirurgien/, 'Chirurgien'],
-  [/teacher|professor|housemaster|headmaster|instructor|lecturer|mentor|tutor|\bcoach|trainer|principal/, 'Professeur'],
+  [/teacher|professor|housemaster|headmaster|instructor|lecturer|mentor|caretaker|tutor|\bcoach|trainer|principal/, 'Professeur'],
   [/detective|investigator|inspector/, 'Détective'],
   [/\bspy\b|espionage|counterintelligence|intelligence/, 'Espion'],
   [/\bagent\b/, 'Agent secret'],
@@ -373,6 +375,8 @@ const ANIME_SPECIES: Record<string, string | null> = {
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
   'hybrid': 'Demi-démon', 'parasite': 'Humain',
+  // To Your Eternity : l'ours Kermode, un vrai ours (« spirit bear ») et pas un esprit
+  'spirit bear': 'Ours',
   'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
@@ -400,6 +404,13 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\b(?:android|robot|ai)\b/, 'Robot'],
   [/\bhumans?\b/, 'Humain'],
 ]
+// « Reshy wolf », « Three-clawed owl » (To Your Eternity) : un animal précisé, lu sur son dernier mot (Loup, Hibou ; Animal
+// s'y ajoute avec expandSpecies). Seulement un animal : « giant » ou « mage » au bout ne disent pas l'espèce.
+function headAnimal(name: string): string | undefined {
+  const french = translateSpecies(name.split(/[\s-]+/).at(-1)!)
+  return french && expandSpecies(french)?.includes('Animal') ? french : undefined
+}
+
 // Un nom d'espèce exact, sans les règles par mot-clé : pour l'intro des pages, où « demon slayer » n'est pas un démon
 export function exactSpecies(name: string): string | null | undefined {
   const key = name.toLowerCase().trim()
@@ -419,7 +430,7 @@ export function translateCharacterSpecies(raw: string): { species: string[], unk
       continue
     // « Part 2: Vampire », « Elder Bairn by the end of the movie » : l'espèce seule
     const name = key.replace(/^part\s*\d+\s*:\s*/, '').replace(/\s+(?:by the end|at the end|in the end)\b.*$/, '')
-    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1]
+    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1] ?? headAnimal(name)
     if (french === undefined)
       unknown.push(part.trim())
     else if (french)

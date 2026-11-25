@@ -188,6 +188,13 @@ describe('introSpecies', () => {
 })
 
 describe('translateCharacterSpecies, anime', () => {
+  it('AnimalPrecise_LuSurSonDernierMot', () => {
+    expect(translateCharacterSpecies('Reshy wolf').species).toEqual(['Loup'])
+    expect(translateCharacterSpecies('Three-clawed owl').species).toEqual(['Hibou'])
+    expect(translateCharacterSpecies('Spirit bear').species).toEqual(['Ours'])
+    expect(translateCharacterSpecies('Frost giant').species).toEqual(['Géant'])
+  })
+
   it('HybrideEtParasite', () => {
     const expand = (raw: string) => translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: [raw] } }]).entries[0]!.attributes.species
     expect(expand('Human (formerly), Hybrid')).toEqual(['Humain', 'Démon'])

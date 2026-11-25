@@ -14741,8 +14741,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Wild Devil",
-    "Contract Devil",
+    "Démon",
     "Denji's Heart"
    ],
    "hair": [
@@ -15096,8 +15095,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Wild Devil",
-    "Contract Devil"
+    "Démon"
    ],
    "hair": null,
    "anime": "Chainsaw Man",
@@ -15202,8 +15200,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Wild Devil",
-    "Contract Devil"
+    "Démon"
    ],
    "hair": null,
    "anime": "Chainsaw Man",
@@ -20111,7 +20108,6 @@
    "height": null,
    "occupation": [
     "Professeur",
-    "Parasite Caretaker",
     "Pilote"
    ],
    "hair": [
@@ -32977,7 +32973,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Nia's caretaker"
+    "Professeur"
    ],
    "hair": null,
    "anime": "Gurren Lagann",
@@ -67672,7 +67668,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163694-USBey19xBAZH.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Loup",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -67738,11 +67737,12 @@
     "Humain",
     "Divinité"
    ],
-   "age": 11,
+   "age": null,
    "height": null,
    "occupation": null,
    "hair": [
-    "Noirs"
+    "Noirs",
+    "N/A"
    ],
    "anime": "To Your Eternity",
    "genres": [
@@ -67831,7 +67831,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Esprit"
+    "Ours",
+    "Animal"
    ],
    "age": null,
    "height": null,
@@ -67890,7 +67891,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b202668-7Mmi5s9mOaXa.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Hibou",
+    "Animal"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
