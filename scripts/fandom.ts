@@ -111,7 +111,7 @@ const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
   // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
   occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
-    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'previous occupation', 'former occupation', 'f. occupation'],
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion','previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)

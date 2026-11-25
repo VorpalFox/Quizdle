@@ -186,6 +186,8 @@ export function parseOccupationAtStart(description: string | null): string[] | n
 export function splitOccupations(value: string): string[] | null {
   const list = value
     .replace(/~!|!~/g, '')
+    // « Private Aichi Symbiosis Academy (Student) » : le rôle dans l'organisation, pas son nom
+    .replace(ORGANIZATION_ROLE, (match, role: string) => translateOccupation(role.trim()) ? role : match)
     .replace(/\s*\([^)]*\)/g, '')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
@@ -197,6 +199,8 @@ export function splitOccupations(value: string): string[] | null {
 }
 
 const MAX_OCCUPATION_LENGTH = 40
+// Le nom finit par le mot d'organisation, et la parenthèse est un rôle connu : pas « Middle School Student (Aincrad Arc) »
+const ORGANIZATION_ROLE = /[^,;/\n()]*\b(?:academy|school|institute|university|college|association|guild|agency|company|corps|army)\s*\(([^)]+)\)/gi
 
 function capitalize(text: string): string {
   return text[0]!.toUpperCase() + text.slice(1)

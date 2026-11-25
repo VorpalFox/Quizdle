@@ -177,6 +177,8 @@ const RULES: [RegExp, string | null][] = [
   [/house ?wife|house spouse/, 'Femme au foyer'],
   [/[ée]tudiant/, 'Étudiant'],
   [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Élève'],
+  // Le nom de l'école à la place du rôle (« Private Aichi Symbiosis Academy (Junior High Division) ») : un élève
+  [/\b(?:academy|school|gakuen|gakuin)$/, 'Élève'],
   // Pas des occupations : animaux, valeurs vides
   [/\bpet\b|housepet|familiar|\bspoilers?\b|^none$|^current$|^former$|^inc$|^npc$/, null],
   // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)

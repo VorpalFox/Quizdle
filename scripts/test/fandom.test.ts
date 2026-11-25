@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { translateOccupation } from '../translate.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -33,6 +34,17 @@ describe('fandomValues', () => {
   it('ChampsVariables_NosValeurs', () => {
     expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Épéiste'], titles: null, deceased: null })
     expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null })
+  })
+
+  it('EcoleSuivieDuRole_LeRolePasLEcole', () => {
+    expect(fandomValues(fandomInfobox('{{Character|Gender=Male|Postion=Private Aichi Symbiosis Academy (Student)}}')!).occupation).toEqual(['Student'])
+    expect(fandomValues(fandomInfobox('{{Character|position = Member of the Supreme Five Swords,Private Aichi Symbiosis Academy (Student)}}')!).occupation)
+      .toEqual(['Member of the Supreme Five Swords', 'Student'])
+  })
+
+  it('NomDeLEcoleSeul_Eleve', () => {
+    expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Élève')
+    expect(translateOccupation('Middle School Student')).toBe('Collégien')
   })
 })
 
