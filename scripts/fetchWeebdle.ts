@@ -302,6 +302,27 @@ function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[]
 
 const selections = animes.map(anime => ({ anime, chosen: select(anime, assigned.get(anime)!), total: assigned.get(anime)!.length }))
 
+// Le plafond d'un anime (« limits » des corrections), à la fin, toutes les sources passées : sortent les persos les
+// moins remplis (les derniers du tirage à égalité), jamais un perso corrigé à la main. Un figurant vide ne reprend
+// donc pas la place d'un perso utile, même si les favoris AniList changent (validé avec FX).
+const FILLED_KEYS = ['gender', 'species', 'age', 'height', 'occupation', 'hair']
+const removedByLimit: string[] = []
+function limitPerAnime(entries: Entry[], limits: Record<string, number>): Entry[] {
+  const removed = new Set<Entry>()
+  for (const [anime, limit] of Object.entries(limits)) {
+    const list = entries.filter(entry => entry.attributes.anime === anime)
+    const empties = (entry: Entry) => FILLED_KEYS.filter(key => entry.attributes[key] === null).length
+    const surplus = list.map((entry, index) => ({ entry, index })).filter(({ entry }) => !editedIds.has(entry.id))
+      .toSorted((a, b) => empties(b.entry) - empties(a.entry) || b.index - a.index)
+      .slice(0, Math.max(0, list.length - limit))
+    for (const { entry } of surplus) {
+      removed.add(entry)
+      removedByLimit.push(`${entry.name} (${anime}, id ${entry.id})`)
+    }
+  }
+  return entries.filter(entry => !removed.has(entry))
+}
+
 // --- Écriture ---
 
 const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.name)))
@@ -356,9 +377,12 @@ const warnings = manualApplied.warnings
 // dans les cases vides que la source disait inconnues (fillUnknowns), puis les corrections encore une fois : une famille
 // ne remet pas une valeur retirée à la main
 // Les indices dans l'ordre de l'affichage
-const entries = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), weebdleAttributes), manual, attributeKeys)
+const finished = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), weebdleAttributes), manual, attributeKeys)
   .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
+const entries = limitPerAnime(finished, manual.limits ?? {})
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
+const animeTitles = new Set(finished.map(entry => String(entry.attributes.anime)))
+warnings.push(...Object.keys(manual.limits ?? {}).filter(title => !animeTitles.has(title)).map(title => `limits : l'anime « ${title} » n'est pas dans la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
@@ -390,6 +414,8 @@ for (const { anime, chosen, total } of selections) {
   lines.push(`- ${anime.rec.title} : ${chosen.length} / ${total} (${mains} principaux)${flag}`)
 }
 lines.push('')
+if (removedByLimit.length > 0)
+  lines.push(`## Sortis par le plafond de leur anime (${removedByLimit.length}) : limits des corrections`, ...removedByLimit.map(text => `- ${text}`), '')
 if (withBackground.length > 0)
   lines.push(`## Complétés avec des figurants (${withBackground.length})`, ...withBackground.map(text => `- ${text}`), '')
 

@@ -64570,60 +64570,6 @@
   }
  },
  {
-  "id": "327373",
-  "name": "Groud",
-  "aliases": [
-   "グルード"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327373-VgxA1UEsrllO.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "327375",
-  "name": "Curtis",
-  "aliases": [
-   "カーティス"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327375-s9jikw1qe2ag.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
   "id": "88889",
   "name": "Raphtalia",
   "aliases": [

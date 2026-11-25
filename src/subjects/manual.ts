@@ -23,6 +23,9 @@ export interface Manual {
   // Pixeldle : titre de la franchise → valeurs par défaut des attributs vides (espèce « Humain » d'une franchise réaliste…),
   // avant les corrections de « edit »
   defaults?: Record<string, Record<string, AttributeValue>>
+  // Weebdle : titre de l'anime → nombre de personnages au plus, quand les derniers du tirage ne sont que des figurants
+  // sans infos (les moins remplis sortent, jamais un perso corrigé)
+  limits?: Record<string, number>
 }
 
 export interface WikiSettings {
@@ -58,7 +61,7 @@ export function manualFile(subjectId: string): URL {
 
 export function readManual(file: URL): Manual {
   const manual = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as Partial<Manual> : {}
-  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {} }
+  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {}, ...manual.limits ? { limits: manual.limits } : {} }
 }
 
 // Écrit dans un fichier temporaire puis renomme : pas de fichier à moitié écrit si le bot s'arrête pile à ce moment
