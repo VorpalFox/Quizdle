@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { animeSource, heightCm, parseHeight, parseSpecies } from '../anilist.js'
+import { animeSource, heightCm, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, startOccupations } from '../anilist.js'
 import { translateCharacterSpecies, translateSpeciesEntries } from '../translate.js'
 import { introSpecies } from '../fandom.js'
 
@@ -74,6 +74,26 @@ describe('animeSource', () => {
     expect(animeSource('WEB_NOVEL')).toBe('Roman')
     expect(animeSource('OTHER')).toBeNull()
     expect(animeSource(null)).toBeNull()
+  })
+})
+
+describe('parseOccupationAtStart', () => {
+  it('MetierSansVerbe_Lu', () => {
+    expect(parseOccupationAtStart('A sergeant in the police force in a certain city.')).toEqual(['Sergeant'])
+    // Pas dans parseOccupation : il compte pour choisir les persos
+    expect(parseOccupation('A sergeant in the police force in a certain city.')).toBeNull()
+  })
+
+  it('LadyOuLord_PasUnMetier', () => {
+    expect(parseOccupationAtStart('An elderly lady who sells flowers.')).toBeNull()
+    expect(parseOccupationAtStart('A former drug lord.')).toBeNull()
+    expect(parseOccupationAtStart('The hero of the first game.')).toBeNull()
+  })
+
+  it('SeulementSansOccupation', () => {
+    const entries = [{ id: '1', name: 'A', attributes: { occupation: null } }, { id: '2', name: 'B', attributes: { occupation: ['Idole'] } }]
+    const { entries: done } = startOccupations(entries, ['A sergeant.', 'An actress.'])
+    expect(done.map(entry => entry.attributes.occupation)).toEqual([['Sergeant'], ['Idole']])
   })
 })
 

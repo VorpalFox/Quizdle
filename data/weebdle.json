@@ -6464,7 +6464,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "Journaliste"
    ],
    "hair": [
     "Noirs"
@@ -27003,7 +27003,7 @@
    "age": 100,
    "height": null,
    "occupation": [
-    "Aucune"
+    "Religieux"
    ],
    "hair": [
     "Verts"
@@ -33193,7 +33193,10 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Capitaine",
+    "Leader"
+   ],
    "hair": null,
    "anime": "Hellsing Ultimate",
    "genres": [
@@ -34234,7 +34237,11 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": null,
    "anime": "I'm the Villainess, So I'm Taming the Final Boss",
    "genres": [
@@ -37328,7 +37335,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "Kaguya-sama: Love is War",
    "genres": [
@@ -44974,7 +44983,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -45198,7 +45211,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Médecin"
+   ],
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [
@@ -46865,7 +46880,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Idole",
+    "Chanteur",
+    "Célébrité",
+    "Artiste"
+   ],
    "hair": null,
    "anime": "OSHI NO KO",
    "genres": [
@@ -47735,7 +47755,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Détective"
+   ],
    "hair": null,
    "anime": "Paprika",
    "genres": [
@@ -48468,7 +48490,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Paradise Kiss",
    "genres": [
@@ -50235,7 +50259,9 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Puella Magi Madoka Magica",
    "genres": [
@@ -57154,7 +57180,9 @@
    ],
    "age": 59,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -59381,7 +59409,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Policier"
+   ],
    "hair": null,
    "anime": "Terror in Resonance",
    "genres": [
@@ -60744,7 +60774,11 @@
    ],
    "age": 35,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": null,
    "anime": "The Apothecary Diaries",
    "genres": [
@@ -60889,7 +60923,11 @@
    ],
    "age": 42957,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": null,
    "anime": "The Daily Life of the Immortal King",
    "genres": [
@@ -65376,7 +65414,9 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Sergent"
+   ],
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [
@@ -65406,35 +65446,6 @@
     "Chevalier",
     "Combattant"
    ],
-   "hair": null,
-   "anime": "The Witch and the Beast",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "Yokohama Animation Lab",
-   "source": "Manga"
-  }
- },
- {
-  "id": "319534",
-  "name": "Reuben Cole",
-  "aliases": [
-   "Cole Reuben",
-   "ルーベン・コール",
-   "Reuben",
-   "Cole"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319534-6zULIFVCBc4d.png",
-  "attributes": {
-   "gender": null,
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [
@@ -65491,90 +65502,6 @@
    "occupation": [
     "Aucune"
    ],
-   "hair": null,
-   "anime": "The Witch and the Beast",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "Yokohama Animation Lab",
-   "source": "Manga"
-  }
- },
- {
-  "id": "319538",
-  "name": "Shiryou Majutsushi",
-  "aliases": [
-   "Majutsushi Shiryou",
-   "死霊魔術師",
-   "Shiryou",
-   "Majutsushi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319538-2LJhQP1l5vSe.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Witch and the Beast",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "Yokohama Animation Lab",
-   "source": "Manga"
-  }
- },
- {
-  "id": "325561",
-  "name": "Farmus",
-  "aliases": [
-   "ファーマス"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325561-WWCQv5MxJRLs.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Witch and the Beast",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "Yokohama Animation Lab",
-   "source": "Manga"
-  }
- },
- {
-  "id": "325562",
-  "name": "Shokei Hito",
-  "aliases": [
-   "Hito Shokei",
-   "処刑人",
-   "Shokei",
-   "Hito"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": null,
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [

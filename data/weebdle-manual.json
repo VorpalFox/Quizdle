@@ -1,5 +1,9 @@
 {
  "exclude": [
+  "319534",
+  "319538",
+  "325561",
+  "325562",
   "134579",
   "39241",
   "325603",
@@ -359,6 +363,18 @@
    "species": {
     "plus": [
      "Objet"
+    ]
+   }
+  },
+  "42361": {
+   "_nom": "Walpurgis Night",
+   "_raison": "sorcière de Madoka = monstre, pas une magicienne (« The witch of stage settings ») : pas de métier",
+   "occupation": {
+    "plus": [
+     "Aucune"
+    ],
+    "moins": [
+     "Witch"
     ]
    }
   },

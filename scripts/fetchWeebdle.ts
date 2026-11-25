@@ -28,7 +28,7 @@ import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, startOccupations, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { finishOccupations, fixedOccupationIds, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -334,7 +334,10 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
+// En dernier recours, le métier en tout début de description AniList (« A sergeant in the police force »)
+const descriptions = selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.description))
+const atStart = startOccupations(wiki.entries, descriptions)
+const translated = translateEntries(atStart.entries, fixedOccupationIds(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
 const defaultHumans: string[] = []
 const speciesEntries = withSpecies.entries.map(entry => {
@@ -372,6 +375,7 @@ lines.push(`## Complétés par Fandom (${fandom.filled.length})`, ...fandom.fill
 if (fandom.noWiki.length > 0)
   lines.push(`## Animes sans wiki Fandom (${fandom.noWiki.length}) : à ajouter dans WIKIS (scripts/fandom.ts)`, ...fandom.noWiki.map(text => `- ${text}`), '')
 lines.push(`## Complétés par Wikipédia (${wiki.filled.length})`, ...wiki.filled.map(text => `- ${text}`), '')
+lines.push(`## Occupations tirées du début de la description AniList (${atStart.filled.length}) : à relire`, ...atStart.filled.map(text => `- ${text}`), '')
 const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])

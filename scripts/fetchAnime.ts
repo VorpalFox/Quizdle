@@ -13,7 +13,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, startOccupations, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -222,7 +222,9 @@ const targets: WikiTarget[] = kept.map(character => {
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
+// En dernier recours, le métier en tout début de description AniList (« A sergeant in the police force »)
+const atStart = startOccupations(wiki.entries, kept.map(character => character.description))
+const translated = translateEntries(atStart.entries, fixedOccupationIds(manual.edit))
 const attributeKeys = characterAttributes.map(({ key }) => key)
 const manualApplied = applyManual(translated.entries, manual, attributeKeys)
 const warnings = manualApplied.warnings

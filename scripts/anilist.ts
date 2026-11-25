@@ -1,5 +1,6 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
+import type { Entry } from '../src/engine/types.js'
 import { weaponOccupations } from './pixeldleTranslate.js'
 import { isUnknownValue, unknownKeys } from './unknownValues.js'
 
@@ -132,6 +133,11 @@ const OCCUPATIONS = [
 // « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
 // Pas « a model student » (élève modèle) ni « a lady killer ».
 const OCCUPATION_IN_TEXT = new RegExp(String.raw`\b(?:is|was|works as|worked as|serves as) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// Le métier en tout début de description, sans verbe : « A sergeant in the police force » (Jeff Enker). Pas « lady » ni
+// « lord », qui décrivent la personne (« An elderly lady who works as a clerk », « A former drug lord »), ni « hero »,
+// un rôle dans l'histoire (« The hero of the first game »).
+const NOT_AT_START = new Set(['lady', 'lord', 'hero'])
+const OCCUPATION_AT_START = new RegExp(String.raw`^\s*(?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_AT_START.has(job)).join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
 
 // « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon le 1er métier courant du texte
 // (« is a young nun » → ["Nun"]), moins sûr : à relire. En anglais, comme AniList : à trier à la main.
@@ -144,6 +150,27 @@ export function parseOccupation(description: string | null): string[] | null {
     return found ? [capitalize(found[1]!.toLowerCase())] : null
   }
   return splitOccupations(value)
+}
+
+// En dernier recours, après toutes les sources (startOccupations) : moins sûr, il ne doit ni bloquer Wikidata ou Fandom
+// (Kana Arima perdrait Idole), ni compter pour choisir les persos (hasInfo), sinon des figurants prennent la place des
+// persos connus
+export function parseOccupationAtStart(description: string | null): string[] | null {
+  const found = OCCUPATION_AT_START.exec(withoutSpoilers(description))
+  return found ? [capitalize(found[1]!.toLowerCase())] : null
+}
+
+// Les entrées sans occupation, complétées par le début de leur description (même ordre que les descriptions)
+export function startOccupations(entries: Entry[], descriptions: (string | null)[]): { entries: Entry[], filled: string[] } {
+  const filled: string[] = []
+  const completed = entries.map((entry, index) => {
+    const occupation = entry.attributes.occupation === null || entry.attributes.occupation === undefined ? parseOccupationAtStart(descriptions[index] ?? null) : null
+    if (!occupation)
+      return entry
+    filled.push(`${entry.name} : ${occupation[0]} ← « ${(descriptions[index] ?? '').slice(0, 80).replace(/\s+/g, ' ')} »`)
+    return { ...entry, attributes: { ...entry.attributes, occupation } }
+  })
+  return { entries: completed, filled }
 }
 
 // « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et », « puis »).
