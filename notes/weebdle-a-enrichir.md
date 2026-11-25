@@ -2,12 +2,13 @@
 
 Recalculé par `npx tsx notes/aEnrichir.ts weebdle` (`--seuil N`, `--min N` pour changer).
 Un univers d'au moins 5 persos apparaît au-dessus de 40 % de cases vides en moyenne, et sort en dessous.
+Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
 Sur tout le quiz : sexe 4 %, espèce 12 %, âge 43 %, taille 57 %, occupation 20 %, cheveux 26 %.
 
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
-| [ ] | The Witch and the Beast | 15 | **42 %** | 0 % | 67 % | 60 % | 73 % | 13 % | 40 % |
-| [ ] | Now and Then, Here and There | 11 | **53 %** | 18 % | 0 % | 100 % | 100 % | 27 % | 73 % |
+| [x] | The Witch and the Beast | 15 | **42 %** | 0 % | 67 % | 60 % | 73 % | 13 % | 40 % |
+| [-] | Now and Then, Here and There | 11 | **53 %** | 18 % | 0 % | 100 % | 100 % | 27 % | 73 % |
 | [ ] | The Reincarnation of the Strongest Exorcist in Another World | 20 | **63 %** | 5 % | 50 % | 95 % | 100 % | 70 % | 60 % |
 | [ ] | Paprika | 10 | **57 %** | 10 % | 0 % | 80 % | 100 % | 70 % | 80 % |
 | [ ] | Terror in Resonance | 20 | **58 %** | 35 % | 0 % | 85 % | 85 % | 60 % | 80 % |

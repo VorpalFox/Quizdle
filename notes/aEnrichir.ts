@@ -45,7 +45,10 @@ const stats = new Map([...byUniverse].map(([universe, list]) => {
 
 // L'ordre d'avant (titres coupés : « The Reincarnation of the Strongest Exorcist… »), puis les nouveaux, les pires d'abord
 const resolve = (label: string) => stats.has(label) ? label : [...stats.keys()].find(title => label.endsWith('…') && title.startsWith(label.slice(0, -1))) ?? label
-const listed = [...old.matchAll(/^\| \[[ x]\] \| (.+?) \| \d+ \|/gm)].map(match => resolve(match[1]!))
+const oldRows = [...old.matchAll(/^\| \[([ x-])\] \| (.+?) \| \d+ \|/gm)].map(match => ({ mark: match[1]!, universe: resolve(match[2]!) }))
+const listed = oldRows.map(({ universe }) => universe)
+// La coche de chaque univers est gardée : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire
+const marks = new Map(oldRows.map(({ mark, universe }) => [universe, mark]))
 const shown = (universe: string) => {
   const stat = stats.get(universe)
   return stat !== undefined && stat.count >= minimum && stat.average >= threshold
@@ -62,13 +65,14 @@ writeFileSync(file, `# ${name} : univers les moins remplis (à traiter dans l'or
 
 Recalculé par \`npx tsx notes/aEnrichir.ts ${name}\` (\`--seuil N\`, \`--min N\` pour changer).
 Un univers d'au moins ${minimum} persos apparaît au-dessus de ${threshold} % de cases vides en moyenne, et sort en dessous.
+Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
 Sur tout le quiz : ${keys.map(key => `${quiz.keys[key]!.toLowerCase()} ${rate(entries, key)} %`).join(', ')}.
 
 | ${header.join(' | ')} |
 |${header.map(() => '---').join('|')}|
 ${rows.map(universe => {
   const { count, rates, average } = stats.get(universe)!
-  return `| [ ] | ${universe} | ${count} | **${average} %** | ${rates.map(r => `${r} %`).join(' | ')} |`
+  return `| [${marks.get(universe) ?? ' '}] | ${universe} | ${count} | **${average} %** | ${rates.map(r => `${r} %`).join(' | ')} |`
 }).join('\n')}
 
 ## Sortis du tableau
