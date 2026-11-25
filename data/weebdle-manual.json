@@ -1,5 +1,7 @@
 {
  "exclude": [
+  "244200",
+  "303031",
   "327369",
   "327371",
   "327377",
@@ -559,6 +561,24 @@
     ]
    }
   },
+  "209533": {
+   "_nom": "Kage",
+   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX)",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "264680": {
+   "_nom": "Kage Haha",
+   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX)",
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
+  },
   "297467": {
    "_nom": "Asako Kobayakawa",
    "_raison": "Fandom : « Human (11th Loop), Shadow (original Timeline) » : les deux (validé avec FX)",
@@ -594,6 +614,7 @@
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
   "170536": "Jinnai#Jinnai",
-  "170537": "Kuga#Kuga"
+  "170537": "Kuga#Kuga",
+  "264680": "Kage's Mother"
  }
 }

@@ -376,6 +376,9 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\bcursed (?:spirit|womb)|^curses?$/, 'Fléau'],
   [/cursed corpse/, 'Poupée'],
   [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
+  // « Triple-Headed Snake » (Mitsumata, Ranking of Kings) : un serpent, donc aussi un Animal (expandSpecies). Après les
+  // hommes-bêtes : « Beastman - Snake » (Boris Cliff, BNA) en est un
+  [/\bsnakes?\b/, 'Serpent'],
   [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
   [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
   [/\bvampir/, 'Vampire'],

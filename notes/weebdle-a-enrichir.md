@@ -9,8 +9,7 @@ Sur tout le quiz : sexe 4 %, espèce 11 %, âge 43 %, taille 57 %, occupation 19
 |---|---|---|---|---|---|---|---|---|---|
 | [-] | Now and Then, Here and There | 11 | **53 %** | 18 % | 0 % | 100 % | 100 % | 27 % | 73 % |
 | [x] | The Reincarnation of the Strongest Exorcist in Another World | 18 | **51 %** | 0 % | 6 % | 94 % | 100 % | 56 % | 50 % |
-| [ ] | Terror in Resonance | 20 | **58 %** | 35 % | 0 % | 85 % | 85 % | 60 % | 80 % |
-| [ ] | Ranking of Kings | 20 | **54 %** | 15 % | 20 % | 100 % | 100 % | 55 % | 35 % |
+| [-] | Terror in Resonance | 20 | **58 %** | 35 % | 0 % | 85 % | 85 % | 60 % | 80 % |
 | [ ] | To Your Eternity | 20 | **53 %** | 10 % | 40 % | 55 % | 95 % | 60 % | 55 % |
 | [ ] | Armed Girl's Machiavellism | 16 | **53 %** | 56 % | 0 % | 63 % | 75 % | 69 % | 56 % |
 
@@ -42,3 +41,4 @@ Sur tout le quiz : sexe 4 %, espèce 11 %, âge 43 %, taille 57 %, occupation 19
 - Battle Game in 5 Seconds (40 %)
 - No Game, No Life (40 %)
 - Paprika (38 %)
+- Ranking of Kings (44 %)

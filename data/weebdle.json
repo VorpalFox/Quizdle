@@ -51616,7 +51616,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Humain"
+    "Humain",
+    "Ombre"
    ],
    "age": null,
    "height": null,
@@ -51680,7 +51681,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "Noble"
    ],
    "hair": [
     "Blonds"
@@ -51895,36 +51896,11 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b271149-O88IJGQJmx2M.png",
   "attributes": {
-   "gender": null,
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Ranking of Kings",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
+   "gender": "Homme",
+   "species": [
+    "Serpent",
+    "Animal"
    ],
-   "year": 2021,
-   "studio": "WIT STUDIO",
-   "source": "Manga"
-  }
- },
- {
-  "id": "244200",
-  "name": "Mahou no Kagami",
-  "aliases": [
-   "Kagami no Mahou",
-   "魔法の鏡",
-   "Mahou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b244200-Whh5DkoAnwuK.jpg",
-  "attributes": {
-   "gender": null,
-   "species": null,
    "age": null,
    "height": null,
    "occupation": null,
@@ -52144,10 +52120,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b264680-lUymPu0fsCU6.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Ombre",
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Aucune"
+   ],
    "hair": null,
    "anime": "Ranking of Kings",
    "genres": [
@@ -52162,19 +52143,61 @@
   }
  },
  {
-  "id": "303031",
-  "name": "Taichou",
+  "id": "260810",
+  "name": "Kingbo",
   "aliases": [
-   "隊長"
+   "キングボ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b303031-iWkqHoUzGQ3t.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260810-v8UnFH7lUssA.jpg",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Souverain",
+    "Criminel",
+    "Noble",
+    "Leader"
+   ],
+   "hair": [
+    "Gris"
+   ],
+   "anime": "Ranking of Kings",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2021,
+   "studio": "WIT STUDIO",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "260813",
+  "name": "Zokku",
+  "aliases": [
+   "ゾック"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260813-pRMU2PevosbN.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Voleur",
+    "Criminel"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
