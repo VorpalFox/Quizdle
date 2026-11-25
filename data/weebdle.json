@@ -5456,7 +5456,10 @@
     "Étudiant",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blonds",
+    "Noirs"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -5480,14 +5483,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/121463-aIK3V9g8YoyA.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": 15,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",

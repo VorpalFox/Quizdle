@@ -3,7 +3,7 @@
 Recalculé par `npx tsx notes/aEnrichir.ts weebdle` (`--seuil N`, `--min N` pour changer).
 Les univers d'au moins 5 persos au-dessus de 50 % de cases vides en moyenne, les pires d'abord.
 Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
-Sur tout le quiz : sexe 3 %, espèce 11 %, âge 43 %, taille 57 %, occupation 18 %, cheveux 25 %.
+Sur tout le quiz : sexe 3 %, espèce 11 %, âge 42 %, taille 57 %, occupation 18 %, cheveux 25 %.
 
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
