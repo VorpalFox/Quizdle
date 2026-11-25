@@ -64569,15 +64569,19 @@
   }
  },
  {
-  "id": "327372",
-  "name": "Hauro",
+  "id": "327374",
+  "name": "Luft Lamprogue",
   "aliases": [
-   "ハウロ"
+   "Lamprogue Luft",
+   "ルフト・ランプローグ",
+   "Luft"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327372-DncIniSeC0FK.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327374-WNr6OaR3U9Zq.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -64596,19 +64600,15 @@
   }
  },
  {
-  "id": "327374",
-  "name": "Luft Lamprogue",
+  "id": "327377",
+  "name": "Eddis",
   "aliases": [
-   "Lamprogue Luft",
-   "ルフト・ランプローグ",
-   "Luft"
+   "エディス"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327374-WNr6OaR3U9Zq.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327377-kXVpbKfICb5R.png",
   "attributes": {
    "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
+   "species": null,
    "age": null,
    "height": null,
    "occupation": null,
