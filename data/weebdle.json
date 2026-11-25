@@ -1884,7 +1884,8 @@
    "age": 14,
    "height": 159,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -7384,6 +7385,7 @@
    "occupation": [
     "Écrivain",
     "Mangaka",
+    "Étudiant",
     "Artiste"
    ],
    "hair": [
@@ -7633,6 +7635,7 @@
    "height": 166,
    "occupation": [
     "Mangaka",
+    "Étudiant",
     "Artiste"
    ],
    "hair": [
@@ -7740,6 +7743,7 @@
    "occupation": [
     "Mangaka",
     "Écrivain",
+    "Étudiant",
     "Artiste"
    ],
    "hair": [
@@ -37709,9 +37713,8 @@
    "age": 27,
    "height": null,
    "occupation": [
-    "Gérant",
-    "Chauffeur",
-    "Leader"
+    "Assistant",
+    "Chauffeur"
    ],
    "hair": [
     "Noirs"
@@ -47605,7 +47608,7 @@
    "occupation": [
     "Femme au foyer",
     "Leader",
-    "Gérant"
+    "Assistant"
    ],
    "hair": [
     "Blonds"
@@ -47886,8 +47889,7 @@
    "age": null,
    "height": 165,
    "occupation": [
-    "Gérant",
-    "Leader"
+    "Assistant"
    ],
    "hair": [
     "Blonds"
@@ -57702,8 +57704,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Gérant",
-    "Leader"
+    "Assistant"
    ],
    "hair": [
     "Bruns"
@@ -66854,7 +66855,9 @@
    "エリュシア・デ・ルート・イーマ",
    "Elucia",
    "Lute",
-   "Ima"
+   "Ima",
+   "Elsea",
+   "Elsie"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14015-7M804nDcgMd6.png",
   "attributes": {
@@ -66890,10 +66893,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22306-P4lmKWVMvMHa.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 158,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],
@@ -66919,11 +66926,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22322-K4Dt9jqxMhYP.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 161,
    "occupation": [
-    "Célébrité"
+    "Célébrité",
+    "Étudiant"
    ],
    "hair": [
     "Roses"
@@ -66950,10 +66960,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15449-50wNrBRPqVSM.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 157,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": null,
    "anime": "The World God Only Knows",
    "genres": [
@@ -66977,11 +66991,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15636-XnTaCYgqwMtI.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 158,
    "occupation": [
-    "Sportif"
+    "Sportif",
+    "Étudiant"
    ],
    "hair": [
     "Bruns"
@@ -67008,7 +67025,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15637-X83bwuBpj1VC.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 16,
    "height": 149,
    "occupation": [
@@ -67102,7 +67121,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/22309.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 300,
    "height": null,
    "occupation": [
@@ -67130,7 +67151,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34318-LLm7zNWJwlIO.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": 160,
    "occupation": null,
@@ -67157,7 +67180,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34317-PasfSd89xN5I.jpg",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 17,
    "height": null,
    "occupation": [
@@ -67187,7 +67212,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39121-yObuD7CnyznP.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -67216,7 +67243,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34316-lRlllZSGEYPX.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -67245,7 +67274,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73893-nR6vmNsJ6LsC.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -67270,7 +67301,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153490-Z9KiHKNkucxi.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -67297,12 +67330,13 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b37989-NoFG1CBFAIW9.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
-    "Gérant",
-    "Leader"
+    "Assistant"
    ],
    "hair": [
     "Noirs"
@@ -67327,11 +67361,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38910-SUXKJsaySJRJ.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Étudiant"
    ],
    "hair": null,
    "anime": "The World God Only Knows",
@@ -67356,7 +67393,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387259-wFtBnAahhk8H.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": "Inconnu",
    "height": null,
    "occupation": [
@@ -67383,7 +67422,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387261-6Fg4adD4hZGL.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": [

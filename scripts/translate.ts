@@ -121,6 +121,9 @@ const RULES: [RegExp, string | null][] = [
   [/\bspy\b|espionage|counterintelligence|intelligence/, 'Espion'],
   [/\bagent\b/, 'Agent secret'],
   [/magazine|journalist|reporter|announcer/, 'Journaliste'],
+  // Le manager de quelqu'un (« Kanon's Manager », « Talent Manager », Ijichi l'« Assistant Manager » des exorcistes de
+  // JUJUTSU KAISEN) l'assiste ; celui d'un lieu (« Store Manager ») le dirige
+  [/'s manager\b|\b(?:assistant|talent|personal) manager\b/, 'Assistant'],
   [/\bmanager\b/, 'Gérant'],
   // Le propriétaire d'un commerce seulement : pas « owner of the Giftia » (le maître d'un robot)
   [/\b(?:shop|shopkeeper|store|mart|restaurant|café|cafe|inn|bar)\b|^owner$/, 'Commerçant'],

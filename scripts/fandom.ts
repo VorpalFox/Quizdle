@@ -480,10 +480,12 @@ export function affiliationOccupations(value: string | null): string[] | null {
   return titleOccupations(roles.join(', ') || null)
 }
 
-// L'école de l'infobox, quand elle n'a pas d'occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
+// L'école de l'infobox, même avec une occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
 // Pas une ancienne école (« (formerly) », « graduated »). Ni « class » (« 1-D », mais aussi « Warrior », « S-Class »), ni
 // « grade » (« A+ », « Grade 1 »), ni « year » : trop d'autres sens.
 const SCHOOL_FIELDS = ['school', 'schools', 'école']
+// Ceux qui travaillent à l'école : son champ ne fait pas d'eux des élèves
+const SCHOOL_STAFF = new Set(['Professeur', 'Directeur d\'école', 'Instructeur', 'Médecin', 'Domestique', 'Gardien', 'Employé'])
 const FORMER_SCHOOL = /\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
 export function schoolOccupations(value: string | null): string[] | null {
   return value && !FORMER_SCHOOL.test(value) ? titleOccupations('Student') : null
@@ -662,15 +664,18 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       if (hair)
         own.hair = hair.colors
       // Sans occupation dans l'infobox : le rôle de l'affiliation (« Student (formerly) ») et ce que dit l'introduction,
-      // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
+      // les deux ensemble (Shuichi Kagaya : élève et tueur). Et élève s'il a une école, même avec un métier (Kanon, The
+      // World God Only Knows : idole et lycéenne), sauf s'il y travaille (professeur, directeur…)
       const jobless = isEmpty(values.occupation)
       const infobox = infoboxOf(title) ?? {}
       const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
       const intro = jobless ? introOccupations(pages[title]!) : null
-      const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null
-      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
-      if (jobs.length > 0)
-        own.occupation = jobs
+      const jobs = (Array.isArray(values.occupation) ? values.occupation : []).map(String)
+      const staff = jobs.some(job => SCHOOL_STAFF.has(translateOccupation(job) ?? ''))
+      const school = staff ? null : schoolOccupations(field(infobox, SCHOOL_FIELDS))
+      const occupation = [...new Set([...jobs, ...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
+      if (occupation.length > jobs.length)
+        own.occupation = occupation
       // Sans espèce dans l'infobox : celle que dit l'introduction (« Aqua is a goddess »)
       const species = isEmpty(values.species) ? introSpecies(pages[title]!) : []
       if (species.length > 0)

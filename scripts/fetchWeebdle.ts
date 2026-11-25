@@ -64,7 +64,7 @@ const HUMAN = 'Humain'
 // Summer Time Rendering (les Ombres), ni Magi (Fanalis, Djinns).
 // Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
 // n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
-const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
+const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
   'Darwin\'s Game', 'Guilty Crown', 'ERASED', 'Charlotte', 'Saga of Tanya the Evil', 'Rascal Does Not Dream of Bunny Girl Senpai',
   'PSYCHO-PASS', 'Paprika', 'Now and Then, Here and There', 'Blast of Tempest', 'Mieruko-chan', 'Danganronpa: The Animation',
   'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',
