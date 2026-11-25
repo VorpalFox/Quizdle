@@ -1,7 +1,34 @@
 {
  "exclude": [
+  "244200",
+  "303031",
+  "327369",
+  "327371",
+  "327377",
+  "327362",
+  "327372",
+  "327360",
+  "327363",
+  "327367",
+  "313455",
+  "327365",
+  "313451",
+  "327368",
+  "327366",
+  "251124",
+  "251125",
+  "251127",
+  "319534",
+  "319538",
+  "325561",
+  "325562",
   "134579",
-  "39241"
+  "39241",
+  "325603",
+  "325602",
+  "326047",
+  "161805",
+  "161806"
  ],
  "edit": {
   "80": {
@@ -67,93 +94,6 @@
     "moins": [
      "Earl of Phantomhive",
      "Watchdog of the Queen"
-    ]
-   }
-  },
-  "12960": {
-   "_nom": "Grell Sutcliff",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Shinigami"
-    ]
-   }
-  },
-  "14957": {
-   "_nom": "Undertaker",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Shinigami"
-    ]
-   }
-  },
-  "17751": {
-   "_nom": "Angela Blanc",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Ange",
-     "Démon"
-    ]
-   }
-  },
-  "20008": {
-   "_nom": "Ash Landers",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Ange",
-     "Démon"
-    ]
-   }
-  },
-  "30500": {
-   "_nom": "Ritsuko Kunihiro",
-   "species": {
-    "moins": [
-     "Vampire"
-    ]
-   }
-  },
-  "32724": {
-   "_nom": "Tatsumi",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Loup-garou"
-    ]
-   }
-  },
-  "33456": {
-   "_nom": "Masao Murasako",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Vampire"
-    ]
-   }
-  },
-  "36490": {
-   "_nom": "Kyouko Ozaki",
-   "species": {
-    "plus": [
-     "Humain"
-    ],
-    "moins": [
-     "Vampire"
     ]
    }
   },
@@ -236,28 +176,92 @@
     ]
    }
   },
-  "46488": {
-   "_nom": "Bertolt Hoover",
-   "species": {
-    "moins": [
-     "Titan"
-    ]
-   }
-  },
-  "57575": {
-   "_nom": "Shun Aonuma",
-   "species": {
-    "moins": [
-     "Démon"
-    ]
-   }
-  },
   "73235": {
    "_nom": "Monokuma",
    "_raison": "ours robot : pas de cheveux",
    "hair": {
     "plus": [
      "N/A"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "81853": {
+   "_nom": "Decim",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88681": {
+   "_nom": "Nona",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88683": {
+   "_nom": "Ginti",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88780": {
+   "_nom": "Clavis",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88789": {
+   "_nom": "Castra",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "88790": {
+   "_nom": "Oculus",
+   "_raison": "pas un arbitre (des « puppets ») : le créateur du système, « the closest being to God » (death-parade.fandom.com/wiki/Oculus)",
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -272,11 +276,43 @@
     ]
    }
   },
+  "122637": {
+   "_nom": "Quin",
+   "species": {
+    "plus": [
+     "Homoncule",
+     "Poupée"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "124381": {
+   "_nom": "Zero Two",
+   "species": {
+    "plus": [
+     "Humain",
+     "Hurleur"
+    ]
+   }
+  },
   "126156": {
    "_nom": "Myne",
    "occupation": {
     "moins": [
      "Soldier's child"
+    ]
+   }
+  },
+  "126290": {
+   "_nom": "Kyouryuu no Hime",
+   "species": {
+    "plus": [
+     "Klaxo-sapien"
+    ],
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -299,12 +335,144 @@
   "131041": {
    "_nom": "Gabiru"
   },
+  "135044": {
+   "_nom": "Sonzai X",
+   "species": {
+    "plus": [
+     "Divinité"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
+  "155704": {
+   "_nom": "Haine",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "155712": {
+   "_nom": "Ushio Kofune",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "161671": {
+   "_nom": "Alter Ego",
+   "species": {
+    "plus": [
+     "Robot"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
   "170266": {
    "_nom": "Pochita",
    "_raison": "démon tronçonneuse (chien) : pas de cheveux",
    "hair": {
     "plus": [
      "N/A"
+    ]
+   }
+  },
+  "87510": {
+   "_nom": "Senketsu",
+   "_raison": "uniforme vivant (Kamui) : un objet, comme Ashgan",
+   "species": {
+    "plus": [
+     "Objet"
+    ]
+   }
+  },
+  "127212": {
+   "_nom": "Yuuji Itadori",
+   "_raison": "comme à l'Animedle : exorciste et élève, pas « Vessel » (le réceptacle de Sukuna)",
+   "occupation": {
+    "plus": [
+     "Exorciste",
+     "Étudiant"
+    ],
+    "moins": [
+     "Sorcerer",
+     "Student",
+     "Vessel"
+    ]
+   }
+  },
+  "133701": {
+   "_nom": "Sukuna",
+   "_raison": "comme à l'Animedle : le Roi des Fléaux (« Calamity »). Espèce : un fléau, humain à l'origine (Fandom : Human, Incarnation)",
+   "occupation": {
+    "plus": [
+     "Fléau"
+    ],
+    "moins": [
+     "Calamity"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Fléau"
+    ]
+   }
+  },
+  "42361": {
+   "_nom": "Walpurgis Night",
+   "_raison": "sorcière de Madoka = monstre, pas une magicienne (« The witch of stage settings ») : pas de métier",
+   "occupation": {
+    "plus": [
+     "Aucune"
+    ],
+    "moins": [
+     "Witch"
+    ]
+   }
+  },
+  "285309": {
+   "_nom": "Angela-Ann Furr",
+   "_raison": "antagoniste principale sans page sur le wiki : la sorcière qui a maudit Guideau (witchandthebeast.fandom.com/wiki/Guideau). Sorcière = humaine qui a des pouvoirs, comme Ione",
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Magicien"
+    ]
+   }
+  },
+  "325560": {
+   "_nom": "Maken Ashgan",
+   "_raison": "épée maudite vivante (witchandthebeast.fandom.com/wiki/Demon_Sword_Ashgan) : un objet (pas Lame → Objet en général, les Lames de Xenoblade sont un peuple), pas de cheveux, pas de métier (Aucune, comme les objets du Pixeldle)",
+   "species": {
+    "plus": [
+     "Objet"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Aucune"
+    ]
+   }
+  },
+  "180881": {
+   "_nom": "Shuseki",
+   "species": {
+    "moins": [
+     "Humain"
     ]
    }
   },
@@ -371,6 +539,17 @@
    },
    "gender": "Aucun"
   },
+  "251689": {
+   "_nom": "Nyansuke",
+   "species": {
+    "plus": [
+     "Chat"
+    ],
+    "moins": [
+     "Humain"
+    ]
+   }
+  },
   "275374": {
    "_nom": "Bozes Ko Palesti",
    "occupation": {
@@ -381,7 +560,101 @@
      "Noble"
     ]
    }
+  },
+  "231131": {
+   "_nom": "Apeas",
+   "_raison": "un des Quatre Généraux de Bosse, « King's Spear… the spear master » (ousamaranking.fandom.com/wiki/Apeas)",
+   "occupation": {
+    "plus": [
+     "Lancier",
+     "Combattant"
+    ]
+   }
+  },
+  "231130": {
+   "_nom": "Domas",
+   "_raison": "un des Quatre Généraux de Bosse, « Swordmaster », l'instructeur d'escrime de Bojji (ousamaranking.fandom.com/wiki/Domas)",
+   "occupation": {
+    "plus": [
+     "Épéiste",
+     "Combattant"
+    ]
+   }
+  },
+  "231132": {
+   "_nom": "Dorshe",
+   "_raison": "un des Quatre Généraux de Bosse, « Queen's Shield », ancien « King's Spear » (ousamaranking.fandom.com/wiki/Dorshe)",
+   "occupation": {
+    "plus": [
+     "Combattant"
+    ]
+   }
+  },
+  "231133": {
+   "_nom": "Bebin",
+   "_raison": "un des Quatre Généraux de Bosse, « the kingdom's spymaster », maître du serpent Mitsumata (ousamaranking.fandom.com/wiki/Bebin)",
+   "occupation": {
+    "plus": [
+     "Espion",
+     "Dresseur",
+     "Combattant"
+    ]
+   }
+  },
+  "209533": {
+   "_nom": "Kage",
+   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX)",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "264680": {
+   "_nom": "Kage Haha",
+   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX)",
+   "species": {
+    "plus": [
+     "Humain"
+    ]
+   }
+  },
+  "297467": {
+   "_nom": "Asako Kobayakawa",
+   "_raison": "Fandom : « Human (11th Loop), Shadow (original Timeline) » : les deux (validé avec FX)",
+   "species": {
+    "plus": [
+     "Ombre"
+    ]
+   }
+  },
+  "36833": {
+   "_nom": "Midori Kirigaya",
+   "_raison": "la mère de Kirito et Suguha ne joue pas à ALO : pas la Fée de leurs avatars (espèce de la famille)",
+   "species": {
+    "moins": [
+     "Fée"
+    ]
+   }
+  },
+  "36828": {
+   "_nom": "Asuna Yuuki",
+   "_raison": "Undine dans ALO ; « Sylph (Erika) » du champ Fandom est un autre perso",
+   "species": {
+    "moins": [
+     "Sylphe"
+    ]
+   }
   }
  },
- "add": []
+ "add": [],
+ "limits": {
+  "The Reincarnation of the Strongest Exorcist in Another World": 18
+ },
+ "fandom": {
+  "3797": "Chiba Atsuko#Alter Ego: Paprika",
+  "170536": "Jinnai#Jinnai",
+  "170537": "Kuga#Kuga",
+  "264680": "Kage's Mother"
+ }
 }

@@ -109,6 +109,17 @@ describe('introRoles', () => {
   it('RoleDHistoireOuFamille_Ignore', () => {
     expect(introRoles('Magolor is a major character in the Kirby franchise.')).toEqual([])
     expect(introRoles('Marcus is the son of Fox McCloud.')).toEqual([])
+    expect(introRoles('Nunnally is the Eleventh Prince Lelouch vi Britannia\'s younger sister.')).toEqual([])
+    expect(introRoles('Mio is Ushio\'s younger sister and a first-year high school student.')).toEqual(['a first-year high school student'])
+  })
+
+  it('RoleApresLaCoupure_Garde', () => {
+    expect(introRoles('Marie is a young girl from the city of Sanguine Lotus and apprentice of the witch Ione.')).toEqual(['young girl', 'apprentice of the witch Ione'])
+  })
+
+  it('NomPropreApresLaCoupure_Ignore', () => {
+    expect(introRoles('Taki is a student from Tokyo and Osaka.')).toEqual(['student'])
+    expect(introRoles('The Knight is a vessel born from the Pale King and the White Lady.')).toEqual(['vessel born'])
   })
 })
 

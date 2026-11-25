@@ -6,15 +6,17 @@
 // - Univers : la plus ancienne série de la franchise (Jotaro → JoJo's Bizarre Adventure). Genres, année et studio
 //   viennent de la série où le personnage apparaît, pas de la 1re de l'univers.
 // - Âge : le 1er nombre d'AniList (« 17-18 » → 17), sinon celui de l'infobox Fandom ou Wikipédia.
-// - Sexe, occupation, cheveux : AniList (champ, sinon description), puis ce qui manque dans l'ordre : Wikidata
-//   (wikidata.ts), Fandom (fandom.ts : l'infobox, pages d'homonymie suivies, puis les cheveux décrits dans le texte),
-//   l'infobox Wikipédia (wikipedia.ts). Les occupations en anglais sont traduites à la fin (translate.ts).
+// - Sexe, occupation, cheveux : AniList (champ, sinon description), puis dans l'ordre : Wikidata (wikidata.ts), Fandom
+//   (fandom.ts : l'infobox, pages d'homonymie suivies, puis les cheveux décrits dans le texte), l'infobox Wikipédia
+//   (wikipedia.ts). L'occupation et les cheveux cumulent toutes les sources, le sexe vient de la 1re (addedValues).
+//   Les occupations en anglais sont traduites à la fin (translate.ts).
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
-import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { fillUnknowns } from './unknownValues.js'
+import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseOccupationAtStart, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
+import { finishOccupations, manualOccupations, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -204,30 +206,33 @@ const targets: WikiTarget[] = kept.map(character => {
     attributes: {
       gender: gender(character.gender, character.description),
       age: parseAge(character.age, character.description),
-      occupation: parseOccupation(character.description),
+      // Sinon le métier en début de description (« A sergeant in the police force »)
+      occupation: parseOccupation(character.description) ?? parseOccupationAtStart(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
+      unknown: anilistUnknowns(character.age, character.description),
       anime: universes.get(anime.id)!,
       genres: genres(anime.genres),
       year: anime.startDate.year,
       studio: anime.studios.nodes[0]?.name ?? null,
     },
   }
-  return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji, universes.get(anime.id)!] }
+  return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji, universes.get(anime.id)!], fandomPage: manual.fandom?.[String(character.id)] }
 })
 // Ce qu'AniList n'a pas donné : depuis Wikidata (lien par l'ID AniList), puis les wikis Fandom, puis Wikipédia, puis tout en français.
 // Les corrections à la main passent après.
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
+const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const attributeKeys = characterAttributes.map(({ key }) => key)
 const manualApplied = applyManual(translated.entries, manual, attributeKeys)
 const warnings = manualApplied.warnings
-// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
-// corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), « Inconnu »
+// dans les cases vides que la source disait inconnues (fillUnknowns), puis les corrections encore une fois : une famille
+// ne remet pas une valeur retirée à la main
 // Seulement les indices de l'Animedle, dans l'ordre (Wikidata et Fandom lisent aussi l'espèce et la taille du Weebdle)
-const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+const entries = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), characterAttributes), manual, attributeKeys)
   .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
 const keptIds = new Set(kept.map(character => String(character.id)))
 warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))

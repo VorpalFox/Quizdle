@@ -6,7 +6,8 @@
 // 2. Attribuer chaque personnage à un seul anime (là où il est principal, sinon le 1er sorti)
 // 3. Garder 4 à 20 personnages par anime (voir select)
 // 4. Compléter, comme à l'Animedle : AniList (champ, sinon description), puis Wikidata, Fandom, Wikipédia. AniList renseigne
-//    surtout les personnages principaux, et presque jamais l'occupation et les cheveux.
+//    surtout les personnages principaux, et presque jamais l'occupation et les cheveux. Occupation, espèce et cheveux
+//    cumulent les valeurs de toutes les sources ; sexe, âge et taille viennent de la 1re qui en a (addedValues).
 // 5. Traduire les occupations (translate.ts, sauf celles corrigées à la main), puis appliquer les corrections à la main
 //    (data/weebdle-manual.json), et enfin ajouter l'arme et regrouper les occupations (finishOccupations)
 //
@@ -17,8 +18,9 @@
 //   anglais, presque toutes uniques (« Nudist Beach operative ») : dans translate.ts si c'est générique, sinon dans le
 //   fichier manual.
 // - Espèce, taille et source (novembre 2026), en plus des indices de l'Animedle. L'espèce : AniList (« Race: »),
-//   Wikidata (P31, les espèces de fiction), l'infobox Fandom (species, race), sans ses spoilers repliés, traduite en
-//   grandes familles (translateSpeciesEntries), et Humain par défaut dans un anime sans surnaturel (NOT_ONLY_HUMANS).
+//   Wikidata (P31, les espèces de fiction), l'infobox Fandom (species, race), spoilers repliés compris, traduite en
+//   grandes familles (translateSpeciesEntries), puis l'intro Fandom (« is a goddess »), et Humain par défaut dans un
+//   anime sans surnaturel ou à casting humain (HUMAN_CASTS).
 //   La taille : AniList (« Height: »), puis l'infobox Fandom, la 1re donnée (avant l'ellipse). La source : AniList.
 // - Piste abandonnée : les citations (Wikiquote presque vide, Animechan limité à 100 requêtes par jour et surtout les
 //   persos principaux).
@@ -26,9 +28,10 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
-import { aliases, anilist, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { fillUnknowns } from './unknownValues.js'
+import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
-import { finishOccupations, fixedOccupationIds, translateEntries, translateSpeciesEntries } from './translate.js'
+import { familySpecies, finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
 import { completeFromWikidata } from './wikidata.js'
 import { completeFromWikipedia, type WikiTarget } from './wikipedia.js'
@@ -55,6 +58,18 @@ const SOURCE_OVERRIDES: Record<number, string> = {
 // dont on connaît l'espèce n'y sont pas humains.
 const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Surnaturel', 'Science-fiction', 'Mecha', 'Horreur', 'Magical girl'])
 const HUMAN = 'Humain'
+// Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
+// espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à
+// repérer à la main : ChäoS;HEAd, Occultic;Nine,
+// Summer Time Rendering (les Ombres), ni Magi (Fanalis, Djinns).
+// Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
+// n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
+const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
+  'Darwin\'s Game', 'Guilty Crown', 'ERASED', 'Charlotte', 'Saga of Tanya the Evil', 'Rascal Does Not Dream of Bunny Girl Senpai',
+  'PSYCHO-PASS', 'Paprika', 'Now and Then, Here and There', 'Blast of Tempest', 'Mieruko-chan', 'Danganronpa: The Animation',
+  'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',
+  'Accel World', 'Akame ga Kill!', 'Angel Beats!', 'Ascendance of a Bookworm', 'Code Geass: Lelouch of the Rebellion', 'OSHI NO KO',
+  'Re:CREATORS', 'SPY x FAMILY', 'Steins;Gate', 'The Elusive Samurai', 'World Trigger', 'Ya Boy Kongming!', 'DARLING in the FRANXX', 'Death Parade'])
 
 const root = new URL('../', import.meta.url)
 const cacheDir = new URL('.cache/weebdle/', root)
@@ -251,24 +266,29 @@ function mix(pool: Candidate[], slots: number, seed: number, popularityOnly: boo
   return [...pool.slice(0, popular), ...draw(pool.slice(popular), seed).slice(0, slots - popular)]
 }
 
+// Le nombre de persos tirés pour un anime : 20, ou plus si les corrections le demandent (« limits »). En dessous de 20,
+// on en tire 20 et les moins remplis sortent à la fin (limitPerAnime), une fois toutes les sources passées.
+const drawSize = (anime: Anime) => Math.max(MAX_PER_ANIME, manual.limits?.[cleanTitle(anime.rec.title)] ?? 0)
+
 // Les personnages corrigés à la main sont toujours gardés : ils prennent la place des derniers du tirage
 function select(anime: Anime, candidates: Candidate[]): Candidate[] {
+  const max = drawSize(anime)
   const pinned = candidates.filter(({ character }) => editedIds.has(String(character.id)))
-  const drawn = selectWithoutPinned(anime, candidates).filter(candidate => !pinned.includes(candidate))
-  return [...pinned, ...drawn].slice(0, Math.max(MAX_PER_ANIME, pinned.length)).toSorted(byRoleThenPopularity)
+  const drawn = selectWithoutPinned(anime, candidates, max).filter(candidate => !pinned.includes(candidate))
+  return [...pinned, ...drawn].slice(0, Math.max(max, pinned.length)).toSorted(byRoleThenPopularity)
 }
 
-function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[] {
+function selectWithoutPinned(anime: Anime, candidates: Candidate[], max: number): Candidate[] {
   const sorted = candidates.toSorted(byRoleThenPopularity)
-  if (sorted.length <= MAX_PER_ANIME)
+  if (sorted.length <= max)
     return sorted
 
-  // On écarte ceux qui n'ont ni âge, ni occupation, ni cheveux, sauf s'il en faut pour arriver à 20
+  // On écarte ceux qui n'ont ni âge, ni occupation, ni cheveux, sauf s'il en faut pour arriver au nombre voulu
   const informed = sorted.filter(hasInfo)
-  const pool = informed.length >= MAX_PER_ANIME
+  const pool = informed.length >= max
     ? informed
-    : [...informed, ...sorted.filter(candidate => !hasInfo(candidate)).slice(0, MAX_PER_ANIME - informed.length)].toSorted(byRoleThenPopularity)
-  if (pool.length <= MAX_PER_ANIME)
+    : [...informed, ...sorted.filter(candidate => !hasInfo(candidate)).slice(0, max - informed.length)].toSorted(byRoleThenPopularity)
+  if (pool.length <= max)
     return pool
 
   const seed = anime.rec.anilistId
@@ -277,15 +297,36 @@ function selectWithoutPinned(anime: Anime, candidates: Candidate[]): Candidate[]
   const chosenMains = mains.length < TOP_MAINS
     ? mains
     : [...mains.slice(0, TOP_MAINS), ...mix(mains.slice(TOP_MAINS), MAX_MAINS - TOP_MAINS, seed, false)]
-  const slots = MAX_PER_ANIME - chosenMains.length
+  const slots = max - chosenMains.length
   const chosen = [...chosenMains, ...mix(supporting, slots, seed, slots < MIN_SLOTS_FOR_RANDOM)]
 
   // Pas assez de secondaires : on complète avec les principaux restants
   const leftovers = pool.filter(candidate => !chosen.includes(candidate))
-  return [...chosen, ...leftovers.slice(0, MAX_PER_ANIME - chosen.length)].toSorted(byRoleThenPopularity)
+  return [...chosen, ...leftovers.slice(0, max - chosen.length)].toSorted(byRoleThenPopularity)
 }
 
 const selections = animes.map(anime => ({ anime, chosen: select(anime, assigned.get(anime)!), total: assigned.get(anime)!.length }))
+
+// Un nombre voulu sous 20 (« limits » des corrections), à la fin, toutes les sources passées : sortent les persos les
+// moins remplis (les derniers du tirage à égalité), jamais un perso corrigé à la main. Un figurant vide ne reprend
+// donc pas la place d'un perso utile, même si les favoris AniList changent (validé avec FX).
+const FILLED_KEYS = ['gender', 'species', 'age', 'height', 'occupation', 'hair']
+const removedByLimit: string[] = []
+function limitPerAnime(entries: Entry[], limits: Record<string, number>): Entry[] {
+  const removed = new Set<Entry>()
+  for (const [anime, limit] of Object.entries(limits)) {
+    const list = entries.filter(entry => entry.attributes.anime === anime)
+    const empties = (entry: Entry) => FILLED_KEYS.filter(key => entry.attributes[key] === null).length
+    const surplus = list.map((entry, index) => ({ entry, index })).filter(({ entry }) => !editedIds.has(entry.id))
+      .toSorted((a, b) => empties(b.entry) - empties(a.entry) || b.index - a.index)
+      .slice(0, Math.max(0, list.length - limit))
+    for (const { entry } of surplus) {
+      removed.add(entry)
+      removedByLimit.push(`${entry.name} (${anime}, id ${entry.id})`)
+    }
+  }
+  return entries.filter(entry => !removed.has(entry))
+}
 
 // --- Écriture ---
 
@@ -293,6 +334,7 @@ const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.ma
 const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
   name: character.name,
   animeTitles: [anime.rec.title, anime.rec.romaji, anime.media.title.english ?? '', anime.media.title.romaji],
+  fandomPage: manual.fandom?.[String(character.id)],
   entry: {
     id: String(character.id),
     name: character.name.full,
@@ -301,11 +343,13 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
     attributes: {
       gender: gender(character.gender, character.description),
       age: parseAge(character.age, character.description),
-      occupation: parseOccupation(character.description),
+      // Sinon le métier en début de description (« A sergeant in the police force »)
+      occupation: parseOccupation(character.description) ?? parseOccupationAtStart(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
       species: (species => species ? [species] : null)(parseSpecies(character.description)),
       height: parseHeight(character.description),
+      unknown: anilistUnknowns(character.age, character.description),
       anime: cleanTitle(anime.rec.title),
       source: SOURCE_OVERRIDES[anime.rec.anilistId] ?? animeSource(anime.media.source),
       genres: genres(anime.media.genres),
@@ -319,24 +363,32 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
 const wikidata = await completeFromWikidata(targets.map(({ entry }) => entry))
 const fandom = await completeFromFandom(targets.map((target, index) => ({ ...target, entry: wikidata.entries[index]! })))
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
-const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit))
+const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
+// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut
+const family = familySpecies(withSpecies.entries)
 const defaultHumans: string[] = []
-const speciesEntries = withSpecies.entries.map(entry => {
-  if (entry.attributes.species !== null || (entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)))
+const speciesEntries = family.entries.map(entry => {
+  const anime = String(entry.attributes.anime)
+  const human = !(entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)) || HUMAN_CASTS.has(anime)
+  if (entry.attributes.species !== null || !human)
     return entry
-  defaultHumans.push(entry.name)
+  defaultHumans.push(`${entry.name} (${anime})`)
   return { ...entry, attributes: { ...entry.attributes, species: [HUMAN] } }
 })
 const attributeKeys = weebdleAttributes.map(({ key }) => key)
 const manualApplied = applyManual(speciesEntries, manual, attributeKeys)
 const warnings = manualApplied.warnings
-// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
-// corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), « Inconnu »
+// dans les cases vides que la source disait inconnues (fillUnknowns), puis les corrections encore une fois : une famille
+// ne remet pas une valeur retirée à la main
 // Les indices dans l'ordre de l'affichage
-const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+const finished = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), weebdleAttributes), manual, attributeKeys)
   .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
+const entries = limitPerAnime(finished, manual.limits ?? {})
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
+const animeTitles = new Set(finished.map(entry => String(entry.attributes.anime)))
+warnings.push(...Object.keys(manual.limits ?? {}).filter(title => !animeTitles.has(title)).map(title => `limits : l'anime « ${title} » n'est pas dans la liste`))
 
 await writeFile(new URL('data/weebdle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
@@ -358,7 +410,8 @@ const untranslated = [...translated.untranslated].toSorted((a, b) => b[1] - a[1]
 lines.push(`## Occupations pas traduites (${untranslated.length}) : à ajouter dans scripts/translate.ts`, ...untranslated.map(([value, count]) => `- ${value} (${count})`), '')
 const unknownSpecies = [...withSpecies.untranslated].toSorted((a, b) => b[1] - a[1])
 lines.push(`## Espèces pas traduites (${unknownSpecies.length}) : à ajouter dans ANIME_SPECIES (scripts/translate.ts)`, ...unknownSpecies.map(([value, count]) => `- ${value} (${count})`), '')
-lines.push(`## Humains par défaut, animes sans surnaturel (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
+lines.push(`## Espèce de la famille (${family.filled.length})`, ...family.filled.map(text => `- ${text}`), '')
+lines.push(`## Humains par défaut : anime sans surnaturel ou à casting humain (${defaultHumans.length})`, ...defaultHumans.map(name => `- ${name}`), '')
 
 lines.push('## Personnages par anime (gardés / attribués à l\'anime)', '')
 for (const { anime, chosen, total } of selections) {
@@ -367,6 +420,8 @@ for (const { anime, chosen, total } of selections) {
   lines.push(`- ${anime.rec.title} : ${chosen.length} / ${total} (${mains} principaux)${flag}`)
 }
 lines.push('')
+if (removedByLimit.length > 0)
+  lines.push(`## Sortis par le plafond de leur anime (${removedByLimit.length}) : limits des corrections`, ...removedByLimit.map(text => `- ${text}`), '')
 if (withBackground.length > 0)
   lines.push(`## Complétés avec des figurants (${withBackground.length})`, ...withBackground.map(text => `- ${text}`), '')
 

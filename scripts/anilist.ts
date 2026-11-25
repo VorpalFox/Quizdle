@@ -1,6 +1,8 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
 import { weaponOccupations } from './pixeldleTranslate.js'
+import { translateOccupation } from './translate.js'
+import { isUnknownValue, unknownKeys } from './unknownValues.js'
 
 const API = 'https://graphql.anilist.co'
 // AniList limite à 30 requêtes par minute en ce moment : on y va doucement
@@ -101,9 +103,18 @@ export function descriptionField(description: string | null, names: string[]): s
   return null
 }
 
+// Les noms des lignes de la description, par indice
+const DESCRIPTION_FIELDS = {
+  age: ['Age'],
+  occupation: ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'],
+  hair: ['Hair Colou?rs?', 'Hair'],
+  species: ['Race', 'Species'],
+  height: ['Height'],
+}
+
 // « 17-18 » → 17, « 1000+ » → 1000, « 17- » → 17. Sinon la ligne « Age: » de la description.
 export function parseAge(age: string | null, description: string | null = null): number | null {
-  const found = /\d+/.exec(age ?? '') ?? /^\d+/.exec(descriptionField(description, ['Age']) ?? '')
+  const found = /\d+/.exec(age ?? '') ?? /^\d+/.exec(descriptionField(description, DESCRIPTION_FIELDS.age) ?? '')
   return found ? Number(found[0]) : null
 }
 
@@ -118,21 +129,57 @@ const OCCUPATIONS = [
   'captain', 'commander', 'general', 'lieutenant', 'sergeant', 'officer', 'guard', 'spy', 'thief', 'pirate', 'adventurer',
   'mage', 'witch', 'wizard', 'sorcerer', 'sorceress', 'priest', 'priestess', 'nun', 'shrine maiden', 'cleric', 'healer', 'archer',
   'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'lord', 'lady', 'president', 'hero', 'god', 'goddess',
+  // Paprika : « He's the bartender », « A gifted psychiatrist », « Chiba's research assistant »
+  'bartender', 'waiter', 'waitress', 'psychiatrist', 'psychotherapist', 'research assistant', 'bodyguard',
 ]
 // « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
 // Pas « a model student » (élève modèle) ni « a lady killer ».
-const OCCUPATION_IN_TEXT = new RegExp(String.raw`\b(?:is|was|works as|worked as|serves as) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « She's the commanding officer » (Abelia) compte comme « she is ». Pas un autre perso : « Sharrkan, who is a
+// swordsman » (Yamuraiha), « Her father is the president » (Itsuki Sumeragi). Mais « a woman who works as a maid »
+// (sans virgule) parle bien du perso.
+const OCCUPATION_IN_TEXT = new RegExp(String.raw`(?<!,\s*who\s)(?<!\b(?:his|her|their)\s+\w+\s)(?:\b(?:is|was|works as|worked as|serves as)|\b(?:he|she)['’]s) (?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'gi')
+// Le métier en tout début de description, sans verbe : « A sergeant in the police force » (Jeff Enker). Pas « lady » ni
+// « lord », qui décrivent la personne (« An elderly lady who works as a clerk », « A former drug lord »), ni « hero »,
+// un rôle dans l'histoire (« The hero of the first game »).
+const NOT_AT_START = new Set(['lady', 'lord', 'hero'])
+const OCCUPATION_AT_START = new RegExp(String.raw`^\s*(?:a|an|the) (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_AT_START.has(job)).join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « One of the soldiers in Hamdo's army » (Tabool), au pluriel. Pas les titres : « One of the Four Ramen Emperors »
+// est un surnom de groupe (Saburo Odajima)
+const NOT_ONE_OF = new Set([...NOT_AT_START, 'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'president', 'god', 'goddess'])
+const ONE_OF_THE = new RegExp(String.raw`^\s*one of the (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_ONE_OF.has(job)).join('|')})s?\b`, 'i')
+// « Hiling's bodyguard », « Kurapika's nen teacher » : un possessif en tout début, puis le métier. Pas « Hyakkimaru is
+// the central character of Tezuka's samurai story » (un verbe avant), ni « Shougen's Model Dolphin Initiator ».
+const POSSESSIVE = new RegExp(String.raw`^\s*([^.,;]{1,50}?)['’]s (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => job !== 'model').join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « King Bosse's second wife, current Queen » (Hiling) : « current / former X » après une virgule, dans la 1re phrase
+const CURRENT = new RegExp(String.raw`^[^.]*?,\s*(?:the\s+)?(?:current|former|reigning)\s+(${OCCUPATIONS.join('|')})\b`, 'i')
 
-// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon le 1er métier courant du texte
-// (« is a young nun » → ["Nun"]), moins sûr : à relire. En anglais, comme AniList : à trier à la main.
+// Ces tournures en début de description, sans les liens Markdown (« [Hiling](https://anilist.co/...)'s bodyguard »)
+function occupationAtStart(text: string): string | null {
+  const plainText = text.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+  const possessive = POSSESSIVE.exec(plainText)
+  const fromPossessive = possessive && !/\b(?:is|was|are|were)\b/i.test(possessive[1]!) ? possessive[2]! : null
+  return OCCUPATION_AT_START.exec(plainText)?.[1] ?? ONE_OF_THE.exec(plainText)?.[1] ?? fromPossessive ?? CURRENT.exec(plainText)?.[1] ?? null
+}
+
+// « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon les métiers courants du texte, tous
+// (« She's a first-year student… is the president » → Student, President), moins sûrs : à relire. En anglais, comme
+// AniList : à trier à la main.
 export function parseOccupation(description: string | null): string[] | null {
-  const value = descriptionField(description, ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'])
-  // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »)
-  if (!value || value.length > MAX_OCCUPATION_LINE) {
-    const found = OCCUPATION_IN_TEXT.exec(withoutSpoilers(description))
-    return found ? [capitalize(found[1]!.toLowerCase())] : null
+  const value = descriptionField(description, DESCRIPTION_FIELDS.occupation)
+  // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »).
+  // « Unknown » : la marque d'anilistUnknowns, le texte peut encore dire mieux.
+  if (!value || value.length > MAX_OCCUPATION_LINE || isUnknownValue(value)) {
+    const found = [...withoutSpoilers(description).matchAll(OCCUPATION_IN_TEXT)].map(match => capitalize(match[1]!.toLowerCase()))
+    return found.length > 0 ? [...new Set(found)] : null
   }
   return splitOccupations(value)
+}
+
+// Sans occupation dans la description (parseOccupation) : moins sûr, il ne compte pas pour choisir les persos (hasInfo),
+// sinon des figurants prennent la place des persos connus. Les autres sources s'y ajoutent (addedValues).
+export function parseOccupationAtStart(description: string | null): string[] | null {
+  const found = occupationAtStart(withoutSpoilers(description))
+  return found ? [capitalize(found.toLowerCase())] : null
 }
 
 // « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et », « puis »).
@@ -142,10 +189,14 @@ export function splitOccupations(value: string): string[] | null {
     .replace(/\s*\([^)]*\)/g, '')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
-    .filter(part => part.length > 1 && part.length <= 40)
+    // Au-delà de 40 caractères, une phrase plutôt qu'un métier, sauf si on sait la traduire (« Chairman of the Institute
+    // for Psychiatric Research », Inui dans Paprika)
+    .filter(part => part.length > 1 && (part.length <= MAX_OCCUPATION_LENGTH || translateOccupation(part) !== undefined))
     .map(capitalize)
   return list.length > 0 ? [...new Set(list)] : null
 }
+
+const MAX_OCCUPATION_LENGTH = 40
 
 function capitalize(text: string): string {
   return text[0]!.toUpperCase() + text.slice(1)
@@ -172,7 +223,7 @@ export const hairColors = (text: string) => HAIR_COLORS
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.
 export function parseHair(description: string | null): string[] | null {
-  const field = descriptionField(description, ['Hair Colou?rs?', 'Hair'])
+  const field = descriptionField(description, DESCRIPTION_FIELDS.hair)
   const fromField = field ? hairColors(field) : []
   if (fromField.length > 0)
     return fromField
@@ -188,11 +239,11 @@ export function parseWeapon(description: string | null): string[] | null {
 
 // La taille en cm : la ligne « Height: » de la description (« 173 cm (5'8") »)
 export function parseHeight(description: string | null): number | null {
-  return heightCm(descriptionField(description, ['Height']))
+  return heightCm(descriptionField(description, DESCRIPTION_FIELDS.height))
 }
 
 // « 173 cm (5'8") » → 173, « 1.72 m » → 172, « 5' 10½" » → 179, « 178 (5' 10") » → 178. La 1re taille donnée, celle
-// du début de l'histoire (« 147 cm (pre-timeskip), 163 cm (post-timeskip) » → 147) : pas de spoil.
+// du début de l'histoire (« 147 cm (pre-timeskip), 163 cm (post-timeskip) » → 147), celle qu'on voit le plus.
 // Pas « (850), (854) » (les années des chapitres du wiki de L'Attaque des Titans), ni « Unknown ».
 const MIN_CM = 5
 const MAX_BARE_CM = 250
@@ -214,9 +265,19 @@ export function heightCm(value: string | null): number | null {
 }
 const valid = (cm: number) => cm >= MIN_CM ? Math.round(cm) : null
 
-// L'espèce brute (« __Race:__ Human »), traduite plus tard (translateCharacterSpecies)
+// L'espèce brute (« __Race:__ Human »), traduite plus tard (translateCharacterSpecies). « Unknown » : la marque
+// d'anilistUnknowns, Wikidata ou Fandom peuvent encore la donner.
 export function parseSpecies(description: string | null): string | null {
-  return descriptionField(description, ['Race', 'Species'])
+  const value = descriptionField(description, DESCRIPTION_FIELDS.species)
+  return isUnknownValue(value) ? null : value
+}
+
+// Les lignes de la description qui disent « Unknown » (« __Age:__ Unknown ») : « Inconnu » à la fin, si aucune autre
+// source n'a mieux (unknownValues.ts)
+export function anilistUnknowns(age: string | null, description: string | null): string[] | null {
+  const raw = Object.fromEntries(Object.entries(DESCRIPTION_FIELDS).map(([key, names]) => [key, descriptionField(description, names)]))
+  const keys = unknownKeys({ ...raw, age: age ?? raw.age })
+  return keys.length > 0 ? keys : null
 }
 
 export function weaponList(value: string | null): string[] | null {

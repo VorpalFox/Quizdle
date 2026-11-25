@@ -1,5 +1,5 @@
 import type { AttributeDef, AttributeValue, Subject } from '../../engine/types.js'
-import { characterAttributes } from '../anime/index.js'
+import { ANIME_SPOILER_WARNING, characterAttributes } from '../anime/index.js'
 import { loadEntries } from '../loadEntries.js'
 
 const formatHeight = (value: AttributeValue) => typeof value === 'number' ? `${value} cm` : value === null ? '—' : String(value)
@@ -24,5 +24,6 @@ export const weebdle: Subject = {
   description: 'Trouve le personnage mystère, tiré des animes conseillés sur le serveur',
   attributes: weebdleAttributes,
   universeKey: 'anime',
+  warning: ANIME_SPOILER_WARNING,
   entries: loadEntries('weebdle.json', { subjectId: 'weebdle', attributes: weebdleAttributes }),
 }

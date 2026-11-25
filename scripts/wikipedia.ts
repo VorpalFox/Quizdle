@@ -6,6 +6,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { hairColors, sleep, splitOccupations, type CharacterName } from './anilist.js'
+import { addedValues } from './translate.js'
+import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { infoboxAge } from './wikiText.js'
 
 const LANGUAGES = ['fr', 'en'] as const
@@ -44,6 +46,8 @@ export interface WikiTarget {
   name: CharacterName
   // titres de l'anime (anglais, romaji...) : la page doit en citer un, sinon c'est un homonyme
   animeTitles: string[]
+  // la page Fandom imposée à la main (« fandom » des corrections), éventuellement avec une section
+  fandomPage?: string
 }
 
 export interface WikiReport {
@@ -104,6 +108,8 @@ export function infoboxFields(wikitext: string): Record<string, string> | null {
 // « [[Hikikomori]] », « {{Plainlist|* Pirate * Captain}} », « Male<br>Female » → texte simple, séparé par des virgules
 export function cleanValue(value: string): string {
   let text = value
+    // « Male[[Category:Male]] » (wiki de Ranking of Kings) : la catégorie n'est pas une valeur
+    .replace(/\[\[\s*category\s*:[^\]]*\]\]/gi, '')
     // Un saut de ligne sépare deux valeurs (« Twinleaf Town<hr />Sandgem Town », « New Zealand\nAustralia »)
     .replace(/<(?:br|hr)\s*\/?>/gi, ', ')
     .replace(/\s*\n+\s*(?=[^\s*])/g, ', ')
@@ -238,35 +244,37 @@ async function fetchPages(language: Language, titles: string[]): Promise<Cache> 
 
 // --- Complément ---
 
-const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
-
-// Complète les champs vides de chaque personnage. Les valeurs d'AniList (et les corrections à la main, appliquées après) priment.
+// Complète les champs vides de chaque personnage et ajoute aux listes (addedValues). Les valeurs d'AniList (et les
+// corrections à la main, appliquées après) priment pour le sexe et l'âge.
 export async function completeFromWikipedia(targets: WikiTarget[]): Promise<WikiReport> {
   await mkdir(cacheDir, { recursive: true })
-  const incomplete = targets.filter(({ entry }) => Object.keys(FIELDS).some(key => isEmpty(entry.attributes[key])))
   const caches = new Map<Language, Cache>()
   for (const language of LANGUAGES)
-    caches.set(language, await fetchPages(language, incomplete.flatMap(({ name }) => pageTitles(name))))
+    caches.set(language, await fetchPages(language, targets.flatMap(({ name }) => pageTitles(name))))
 
   const filled: string[] = []
   const completed = new Map<Entry, Entry>()
-  for (const { entry, name, animeTitles } of incomplete) {
+  for (const { entry, name, animeTitles } of targets) {
     const found: Record<string, AttributeValue> = {}
+    const unknowns: string[] = []
     for (const language of LANGUAGES) {
       const fields = infoboxOf(caches.get(language)!, pageTitles(name), animeTitles)
       if (!fields)
         continue
+      const raw = Object.fromEntries(Object.entries(FIELDS).map(([key, names]) => [key, field(fields, names)])) as Record<keyof typeof FIELDS, string | null>
+      // « Unknown » ne remplit rien : juste la marque, « Inconnu » à la fin si aucune source n'a mieux (unknownValues.ts)
+      unknowns.push(...unknownKeys(raw))
       const values: Record<keyof typeof FIELDS, AttributeValue> = {
-        gender: wikiGender(field(fields, FIELDS.gender)),
-        occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
-        hair: wikiHair(field(fields, FIELDS.hair)),
-        age: infoboxAge(field(fields, FIELDS.age)),
+        gender: wikiGender(raw.gender),
+        occupation: isUnknownValue(raw.occupation) ? null : splitOccupations(raw.occupation ?? ''),
+        hair: wikiHair(raw.hair),
+        age: infoboxAge(raw.age),
       }
-      for (const [key, value] of Object.entries(values)) {
-        if (isEmpty(entry.attributes[key]) && isEmpty(found[key]) && !isEmpty(value))
-          found[key] = value
-      }
+      Object.assign(found, addedValues({ ...entry.attributes, ...found }, values))
     }
+    const unknown = addUnknowns(entry.attributes, unknowns)
+    if (unknown)
+      found[UNKNOWN_KEYS] = unknown
     if (Object.keys(found).length === 0)
       continue
     completed.set(entry, { ...entry, attributes: { ...entry.attributes, ...found } })

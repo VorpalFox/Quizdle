@@ -4,6 +4,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { hairColors, sleep } from './anilist.js'
+import { addedValues } from './translate.js'
 
 const SPARQL = 'https://query.wikidata.org/sparql'
 const API = 'https://www.wikidata.org/w/api.php'
@@ -132,9 +133,7 @@ export function wikidataOccupation(names: string[]): string[] | null {
   return list.length > 0 ? [...new Set(list)] : null
 }
 
-const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
-
-// Remplit les champs vides (sexe, cheveux, occupation, espèce) avec Wikidata. Renvoie les entrées complétées et le détail.
+// Complète le sexe s'il manque, ajoute cheveux, occupation et espèce (addedValues). Renvoie les entrées complétées et le détail.
 export async function completeFromWikidata(entries: Entry[]): Promise<{ entries: Entry[], filled: string[] }> {
   const characters = await fetchCharacters()
   const allSpecies = await fetchSpecies()
@@ -149,7 +148,7 @@ export async function completeFromWikidata(entries: Entry[]): Promise<{ entries:
       occupation: wikidataOccupation(found.occupation ?? []),
       species: allSpecies[entry.id] ?? null,
     }
-    const added = Object.fromEntries(Object.entries(values).filter(([key, value]) => isEmpty(entry.attributes[key]) && !isEmpty(value)))
+    const added = addedValues(entry.attributes, values)
     if (Object.keys(added).length === 0)
       return entry
     filled.push(`${entry.name} : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}`)
