@@ -104,6 +104,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('DAN DA DAN')]: ['dandadan'],
   [normalize('Solo Leveling')]: ['solo-leveling', 'sololeveling'],
   [normalize('Black Lagoon')]: ['blacklagoon'],
+  [normalize('The World God Only Knows')]: ['kaminomi'],
 }
 
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)

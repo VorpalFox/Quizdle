@@ -12492,8 +12492,7 @@
   "name": "Sae Okada",
   "aliases": [
    "Okada Sae",
-   "岡田さえ",
-   "Okada"
+   "岡田さえ"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b244917-7Ozb94dwWVrI.png",
   "attributes": {
@@ -15867,8 +15866,7 @@
   "name": "Ayumi Otosaka",
   "aliases": [
    "Otosaka Ayumi",
-   "乙坂歩未",
-   "Ayumi"
+   "乙坂歩未"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
   "attributes": {
@@ -17573,8 +17571,7 @@
   "name": "Kouhei Katsuragi",
   "aliases": [
    "Katsuragi Kouhei",
-   "葛城康平",
-   "Katsuragi"
+   "葛城康平"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207026-M98kkCZdkIfP.png",
   "attributes": {
@@ -21560,8 +21557,7 @@
   "aliases": [
    "Hatori Arayoshi",
    "葉鳥新義",
-   "Arayoshi",
-   "Hatori"
+   "Arayoshi"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n1930-1ILYLHyqkMQb.png",
   "attributes": {
@@ -32109,7 +32105,6 @@
   "aliases": [
    "Kusama Kanon",
    "草間花音",
-   "Kanon",
    "Kusama"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/46089.jpg",
@@ -66717,6 +66712,596 @@
    ],
    "year": 2024,
    "studio": "Yokohama Animation Lab",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "13468",
+  "name": "Keima Katsuragi",
+  "aliases": [
+   "Katsuragi Keima",
+   "桂木桂馬",
+   "Keima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/13468-follPFjSTdME.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 17,
+   "height": 174,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "14015",
+  "name": "Elucia de Lute Ima",
+  "aliases": [
+   "Ima Lute de Elucia",
+   "エリュシア・デ・ルート・イーマ",
+   "Elucia",
+   "Lute",
+   "Ima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14015-7M804nDcgMd6.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Démon"
+   ],
+   "age": 300,
+   "height": 159,
+   "occupation": [
+    "Private Household Demon"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "22306",
+  "name": "Chihiro Kosaka",
+  "aliases": [
+   "Kosaka Chihiro",
+   "小阪ちひろ",
+   "Kosaka"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22306-P4lmKWVMvMHa.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 17,
+   "height": 158,
+   "occupation": [
+    "Normal Person"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "22322",
+  "name": "Kanon Nakagawa",
+  "aliases": [
+   "Nakagawa Kanon",
+   "中川かのん",
+   "Nakagawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22322-K4Dt9jqxMhYP.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 16,
+   "height": 161,
+   "occupation": [
+    "Célébrité"
+   ],
+   "hair": [
+    "Roses"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "15449",
+  "name": "Shiori Shiomiya",
+  "aliases": [
+   "Shiomiya Shiori",
+   "汐宮栞",
+   "Shiomiya"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15449-50wNrBRPqVSM.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 17,
+   "height": 157,
+   "occupation": null,
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "15636",
+  "name": "Ayumi Takahara",
+  "aliases": [
+   "Takahara Ayumi",
+   "高原歩美",
+   "Takahara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15636-XnTaCYgqwMtI.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 17,
+   "height": 158,
+   "occupation": [
+    "Track",
+    "Field Club Girl"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "15637",
+  "name": "Mio Aoyama",
+  "aliases": [
+   "Aoyama Mio",
+   "青山美生",
+   "Aoyama"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b15637-X83bwuBpj1VC.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 16,
+   "height": 149,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "34315",
+  "name": "Yuri Nikaido",
+  "aliases": [
+   "Nikaido Yuri",
+   "二階堂由梨",
+   "Nikaido"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34315-rIHM5838XfzA.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 23,
+   "height": 170,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "22308",
+  "name": "Mari Katsuragi",
+  "aliases": [
+   "Katsuragi Mari",
+   "桂木麻里"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22308-xjCwafrEA4b6.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": 168,
+   "occupation": [
+    "Café Owner"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "22309",
+  "name": "Dokurou Skull",
+  "aliases": [
+   "Skull Dokurou",
+   "ドクロウ・スカール",
+   "Dokurou",
+   "Skull"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/22309.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 300,
+   "height": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "34318",
+  "name": "Sora Asuka",
+  "aliases": [
+   "Asuka Sora",
+   "飛鳥空"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34318-LLm7zNWJwlIO.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 17,
+   "height": 160,
+   "occupation": null,
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "34317",
+  "name": "Miyako Terada",
+  "aliases": [
+   "Terada Miyako",
+   "寺田京",
+   "Terada"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34317-PasfSd89xN5I.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": 17,
+   "height": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "39121",
+  "name": "Yuu Hatori",
+  "aliases": [
+   "Hatori Yuu",
+   "羽鳥ゆう"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39121-yObuD7CnyznP.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": [
+    "Verts"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "34316",
+  "name": "Ichirou Kodama",
+  "aliases": [
+   "Kodama Ichirou",
+   "児玉一郎",
+   "Kodama"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34316-lRlllZSGEYPX.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "73893",
+  "name": "Yuri",
+  "aliases": [
+   "ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73893-nR6vmNsJ6LsC.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "153490",
+  "name": "Lime",
+  "aliases": [
+   "らいむ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153490-Z9KiHKNkucxi.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "37989",
+  "name": "Okada",
+  "aliases": [
+   "岡田"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b37989-NoFG1CBFAIW9.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Gérant",
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "38910",
+  "name": "Fujidera",
+  "aliases": [
+   "藤井寺"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38910-SUXKJsaySJRJ.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "387259",
+  "name": "Izumi Ishikiri",
+  "aliases": [
+   "Ishikiri Izumi",
+   "石切いづみ",
+   "Ishikiri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387259-wFtBnAahhk8H.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": null,
+   "age": "Inconnu",
+   "height": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "387261",
+  "name": "Morita",
+  "aliases": [
+   "森田"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387261-6Fg4adD4hZGL.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Chauffeur of Mio Aoyama"
+   ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
    "source": "Manga"
   }
  },
