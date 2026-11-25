@@ -64508,33 +64508,6 @@
   }
  },
  {
-  "id": "327360",
-  "name": "Beren",
-  "aliases": [
-   "ベレン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327360-Z3CTqepYJ3Tu.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
   "id": "327362",
   "name": "Dennis Regan",
   "aliases": [
@@ -64565,12 +64538,43 @@
   }
  },
  {
-  "id": "327363",
-  "name": "Nyuudou",
+  "id": "327370",
+  "name": "Muderev",
   "aliases": [
-   "入道"
+   "ムデレヴ"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327363-pUYXydX7v4qS.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327370-j3sttv6i0rnE.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Ogre"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327372",
+  "name": "Hauro",
+  "aliases": [
+   "ハウロ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327372-DncIniSeC0FK.png",
   "attributes": {
    "gender": "Homme",
    "species": null,
@@ -64592,15 +64596,19 @@
   }
  },
  {
-  "id": "327367",
-  "name": "Keedy",
+  "id": "327374",
+  "name": "Luft Lamprogue",
   "aliases": [
-   "キーディ"
+   "Lamprogue Luft",
+   "ルフト・ランプローグ",
+   "Luft"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327367-V56WcJsxDMme.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327374-WNr6OaR3U9Zq.png",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
    "occupation": null,

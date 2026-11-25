@@ -9,7 +9,7 @@ Sur tout le quiz : sexe 4 %, espèce 11 %, âge 43 %, taille 57 %, occupation 20
 |---|---|---|---|---|---|---|---|---|---|
 | [x] | The Witch and the Beast | 15 | **42 %** | 0 % | 67 % | 60 % | 73 % | 13 % | 40 % |
 | [-] | Now and Then, Here and There | 11 | **53 %** | 18 % | 0 % | 100 % | 100 % | 27 % | 73 % |
-| [ ] | The Reincarnation of the Strongest Exorcist in Another World | 20 | **58 %** | 5 % | 25 % | 95 % | 100 % | 60 % | 60 % |
+| [ ] | The Reincarnation of the Strongest Exorcist in Another World | 20 | **54 %** | 0 % | 15 % | 95 % | 100 % | 60 % | 55 % |
 | [ ] | Paprika | 10 | **57 %** | 10 % | 0 % | 80 % | 100 % | 70 % | 80 % |
 | [ ] | Terror in Resonance | 20 | **58 %** | 35 % | 0 % | 85 % | 85 % | 60 % | 80 % |
 | [ ] | Ranking of Kings | 20 | **54 %** | 15 % | 20 % | 100 % | 100 % | 55 % | 35 % |
