@@ -7,7 +7,7 @@ Sur tout le quiz : sexe 4 %, espèce 12 %, âge 43 %, taille 57 %, occupation 20
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
 | [ ] | The Witch and the Beast | 15 | **42 %** | 0 % | 67 % | 60 % | 73 % | 13 % | 40 % |
-| [ ] | Now and Then, Here and There | 14 | **63 %** | 14 % | 0 % | 100 % | 100 % | 79 % | 86 % |
+| [ ] | Now and Then, Here and There | 14 | **58 %** | 14 % | 0 % | 100 % | 100 % | 57 % | 79 % |
 | [ ] | The Reincarnation of the Strongest Exorcist in Another World | 20 | **63 %** | 5 % | 50 % | 95 % | 100 % | 65 % | 60 % |
 | [ ] | Paprika | 10 | **57 %** | 10 % | 0 % | 80 % | 100 % | 70 % | 80 % |
 | [ ] | Terror in Resonance | 20 | **58 %** | 35 % | 0 % | 85 % | 85 % | 60 % | 80 % |

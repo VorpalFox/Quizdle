@@ -602,12 +602,14 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     }
     // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
     // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
-    // pour l'occupation de l'intro et les cheveux. Un résultat de recherche ne compte qu'avec une infobox de perso.
+    // pour l'occupation de l'intro et les cheveux. Un résultat de recherche aussi, sans infobox : il porte déjà son nom
+    // (sameName), et certains wikis n'en ont aucune (LaLa-Ru, wiki de Now and Then, Here and There).
     const found = characters.flatMap(({ target, titles }) => {
-      const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && infoboxOf(title))
+      const candidates = [...titles, ...searched.get(target) ?? []]
+      const title = candidates.find(title => pages[title] && infoboxOf(title))
       if (title)
         return [{ target, title, values: fandomValues(infoboxOf(title)!), unknowns: fandomUnknowns(infoboxOf(title)!) }]
-      const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
+      const bare = candidates.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
       return bare ? [{ target, title: bare, values: fandomValues({}), unknowns: [] }] : []
     })
     // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)

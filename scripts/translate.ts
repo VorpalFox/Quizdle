@@ -114,7 +114,7 @@ const RULES: [RegExp, string | null][] = [
   // Pas les Knightmare Frames de Code Geass
   [/\bknight(?!mare)|crusader|paladin/, 'Chevalier'],
   // Pas « one of the Devil King's Generals » : au service du roi
-  [/\b(?:king|emperor|monarch|ruler|warlord)\b(?!'s)/, 'Roi'],
+  [/\b(?:king|emperor|monarch|ruler|warlord|dictator|tyrant)\b(?!'s)/, 'Roi'],
   [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
   [/princess|heiress/, 'Princesse'],
   [/\bprince\b|\bheir\b/, 'Prince'],
@@ -124,10 +124,12 @@ const RULES: [RegExp, string | null][] = [
   [/swords(?:wo)?m[ae]n/, 'Épéiste'],
   [/exorcist/, 'Exorciste'],
   [/\bbull(?:y|ies)\b|delinquent/, 'Voyou'],
-  [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)\b/, 'Combattant'],
+  [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Combattant'],
   [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
   [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Garde'],
   [/butler/, 'Majordome'],
+  // « the nanny of all the orphans of Zari Bars » (Sis)
+  [/\bnann(?:y|ies)\b|babysitter/, 'Nourrice'],
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
   [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
   [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musicien'],
@@ -263,7 +265,7 @@ const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   // Combat
   'Épéiste': ['Combattant'], 'Samouraï': ['Combattant'], 'Ninja': ['Combattant'], 'Chevalier': ['Combattant'], 'Archer': ['Combattant'],
   'Tireur': ['Combattant'], 'Lancier': ['Combattant'], 'Mercenaire': ['Combattant'], 'Artiste martial': ['Combattant'],
-  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'],
+  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'], 'Nourrice': ['Domestique'],
   // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
   'Officier': ['Soldat'], 'Bataillon d\'exploration': ['Soldat'], 'Éclaireur': ['Soldat'],
   'Pourfendeur de démons': ['Chasseur de monstres', 'Combattant'], 'Chasseur de démons': ['Chasseur de monstres', 'Combattant'],

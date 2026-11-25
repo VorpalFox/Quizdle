@@ -45968,8 +45968,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Aventure",
@@ -46026,7 +46030,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Combattant"
+   ],
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [
@@ -46116,7 +46122,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Nourrice",
+    "Domestique"
+   ],
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [
@@ -61482,7 +61491,9 @@
    "age": 18,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drame",
