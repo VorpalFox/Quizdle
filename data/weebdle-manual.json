@@ -366,6 +366,38 @@
     ]
    }
   },
+  "127212": {
+   "_nom": "Yuuji Itadori",
+   "_raison": "comme à l'Animedle : exorciste et élève, pas « Vessel » (le réceptacle de Sukuna)",
+   "occupation": {
+    "plus": [
+     "Exorciste",
+     "Étudiant"
+    ],
+    "moins": [
+     "Sorcerer",
+     "Student",
+     "Vessel"
+    ]
+   }
+  },
+  "133701": {
+   "_nom": "Sukuna",
+   "_raison": "comme à l'Animedle : le Roi des Fléaux (« Calamity »). Espèce : un fléau, humain à l'origine (Fandom : Human, Incarnation)",
+   "occupation": {
+    "plus": [
+     "Fléau"
+    ],
+    "moins": [
+     "Calamity"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Fléau"
+    ]
+   }
+  },
   "42361": {
    "_nom": "Walpurgis Night",
    "_raison": "sorcière de Madoka = monstre, pas une magicienne (« The witch of stage settings ») : pas de métier",

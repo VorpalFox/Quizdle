@@ -12111,8 +12111,7 @@
   "name": "Maki Kuwana",
   "aliases": [
    "Kuwana Maki",
-   "桑名マキ",
-   "Maki"
+   "桑名マキ"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b194201-yxhQI3TDOt46.png",
   "attributes": {
@@ -29260,7 +29259,7 @@
    "age": 21,
    "height": null,
    "occupation": [
-    "Driver"
+    "Chauffeur"
    ],
    "hair": [
     "Noirs"
@@ -37114,6 +37113,718 @@
   }
  },
  {
+  "id": "127691",
+  "name": "Satoru Gojou",
+  "aliases": [
+   "Gojou Satoru",
+   "Satoru Gojo",
+   "五条悟",
+   "Gojou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 28,
+   "height": 190,
+   "occupation": [
+    "Exorciste",
+    "Professeur",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Blancs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "127212",
+  "name": "Yuuji Itadori",
+  "aliases": [
+   "Itadori Yuuji",
+   "虎杖悠仁",
+   "Yuuji",
+   "Itadori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 15,
+   "height": 173,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Blonds",
+    "Noirs",
+    "Roses"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "126635",
+  "name": "Megumi Fushiguro",
+  "aliases": [
+   "Fushiguro Megumi",
+   "伏黒恵",
+   "Fushiguro"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 15,
+   "height": 175,
+   "occupation": [
+    "Magicien",
+    "Étudiant",
+    "Exorciste",
+    "Leader",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "133700",
+  "name": "Nobara Kugisaki",
+  "aliases": [
+   "Kugisaki Nobara",
+   "釘崎野薔薇",
+   "Nobara",
+   "Kugisaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 16,
+   "height": 160,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Roux"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "133704",
+  "name": "Kento Nanami",
+  "aliases": [
+   "Nanami Kento",
+   "七海建人",
+   "Kento"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 27,
+   "height": 184,
+   "occupation": [
+    "Magicien",
+    "Exorciste",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "134167",
+  "name": "Maki Zenin",
+  "aliases": [
+   "Zenin Maki",
+   "Miss Zenin",
+   "禪院真希"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 16,
+   "height": 170,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "133701",
+  "name": "Sukuna",
+  "aliases": [
+   "Ryoumen Sukuna (両面宿儺)",
+   "宿儺"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain",
+    "Fléau"
+   ],
+   "age": 1000,
+   "height": null,
+   "occupation": [
+    "Utilisateur de fléaux",
+    "Fléau",
+    "Magicien"
+   ],
+   "hair": [
+    "Roses",
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "157115",
+  "name": "Toge Inumaki",
+  "aliases": [
+   "Inumaki Toge",
+   "狗巻棘",
+   "Toge",
+   "Inumaki"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 17,
+   "height": 170,
+   "occupation": [
+    "Magicien",
+    "Étudiant",
+    "Exorciste",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Argentés",
+    "Blonds"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "133699",
+  "name": "Suguru Getou",
+  "aliases": [
+   "Getou Suguru",
+   "夏油傑",
+   "Getou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 27,
+   "height": 183,
+   "occupation": [
+    "Utilisateur de fléaux",
+    "Exorciste",
+    "Magicien",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "137975",
+  "name": "Aoi Toudou",
+  "aliases": [
+   "Toudou Aoi",
+   "Aoi Todo",
+   "東堂葵"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 18,
+   "height": 190,
+   "occupation": [
+    "Magicien",
+    "Étudiant",
+    "Exorciste",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "156848",
+  "name": "Kasumi Miwa",
+  "aliases": [
+   "Miwa Kasumi",
+   "三輪霞",
+   "Kasumi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 17,
+   "height": 170,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "137974",
+  "name": "Panda",
+  "aliases": [
+   "パンダ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Poupée"
+   ],
+   "age": null,
+   "height": 190,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": null,
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "157215",
+  "name": "Mei Mei",
+  "aliases": [
+   "Mei Mei",
+   "冥冥",
+   "Mei"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157215-I3TQJu8nkDwD.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 30,
+   "height": 173,
+   "occupation": [
+    "Exorciste",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Bleus"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "134168",
+  "name": "Mai Zenin",
+  "aliases": [
+   "Zenin Mai",
+   "禪院真依"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134168-FdWz5w2LqpeF.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 16,
+   "height": 170,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Noirs",
+    "Verts"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "210154",
+  "name": "Koukichi Muta",
+  "aliases": [
+   "Muta Koukichi",
+   "与幸吉",
+   "Koukichi",
+   "Muta"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210154-nIn9DX39GFKP.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 17,
+   "height": null,
+   "occupation": [
+    "Exorciste",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Magicien"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "157865",
+  "name": "Takuma Ino",
+  "aliases": [
+   "Ino Takuma",
+   "猪野琢真",
+   "Takuma"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157865-X9ENX9OzWevS.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 21,
+   "height": null,
+   "occupation": [
+    "Magicien",
+    "Exorciste",
+    "Chasseur de monstres"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "189238",
+  "name": "Kiyotaka Ijichi",
+  "aliases": [
+   "Ijichi Kiyotaka",
+   "伊地知潔高",
+   "Ijichi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189238-ItSLams6lRk9.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 27,
+   "height": null,
+   "occupation": [
+    "Gérant",
+    "Chauffeur",
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "157867",
+  "name": "Yoshinobu Gakuganji",
+  "aliases": [
+   "Gakuganji Yoshinobu",
+   "楽巌寺嘉伸",
+   "Yoshinobu",
+   "Gakuganji"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157867-dHdd8ZECuzHx.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 76,
+   "height": null,
+   "occupation": [
+    "Exorciste",
+    "Directeur d'école",
+    "Chasseur de monstres",
+    "Magicien",
+    "Professeur",
+    "Leader"
+   ],
+   "hair": [
+    "Gris"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "200765",
+  "name": "Setsuko Sasaki",
+  "aliases": [
+   "Sasaki Setsuko",
+   "佐々木せつこ",
+   "Setsuko"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b200765-xQLkNIRUGuQw.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns"
+   ],
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "210832",
+  "name": "Kechizu",
+  "aliases": [
+   "血塗"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210832-d1Fg0CePSU86.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Fléau"
+   ],
+   "age": 150,
+   "height": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": null,
+   "anime": "JUJUTSU KAISEN",
+   "genres": [
+    "Action",
+    "Drame",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "MAPPA",
+   "source": "Manga"
+  }
+ },
+ {
   "id": "120649",
   "name": "Kaguya Shinomiya",
   "aliases": [
@@ -44952,8 +45663,7 @@
   "name": "Ino Hatsuse",
   "aliases": [
    "Hatsuse Ino",
-   "初瀬いの",
-   "Ino"
+   "初瀬いの"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139371-lRwPC5Bmbhy5.png",
   "attributes": {
@@ -48840,8 +49550,7 @@
   "name": "Suguru Hayasaka",
   "aliases": [
    "Hayasaka Suguru",
-   "早坂卓",
-   "Suguru"
+   "早坂卓"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203433-2OcFz4mTrStN.png",
   "attributes": {

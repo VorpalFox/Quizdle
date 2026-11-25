@@ -74,7 +74,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'courtesan': 'Courtisane', 'terrorist': 'Terroriste', 'fashion model': 'Mannequin', 'gravure model': 'Mannequin',
   'apothecary': 'Apothicaire', 'dyer': 'Artisan', 'archeoligist': 'Archéologue', 'digger': 'Ouvrier', 'hermit': 'Ermite',
   'martial artist': 'Artiste martial', 'tobacconist': 'Vendeur', 'barista': 'Serveur', 'strategist': 'Stratège',
-  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote',
+  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote', 'driver': 'Chauffeur',
   // Pas des occupations
   'test subject': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
@@ -345,6 +345,8 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
   'shadow': 'Ombre', 'shadows': 'Ombre', 'nephilim': 'Demi-démon', 'elder bairn': 'Monstre', 'narehate': 'Narehate',
   'michaela': null, 'familiar': null, 'neighbor': null,
+  // JUJUTSU KAISEN : les Incarnations sont des fléaux ou des exorcistes réincarnés dans un corps, pas une espèce
+  'incarnation': null,
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
   'hybrid': 'Demi-démon', 'parasite': 'Humain',
@@ -352,6 +354,9 @@ const ANIME_SPECIES: Record<string, string | null> = {
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
 const ANIME_SPECIES_RULES: [RegExp, string][] = [
+  // JUJUTSU KAISEN : les fléaux et les Death Paintings (mi-fléaux), et les Cursed Corpses, des poupées animées (Panda)
+  [/\bcursed (?:spirit|womb)|^curses?$/, 'Fléau'],
+  [/cursed corpse/, 'Poupée'],
   [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
   [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
   [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
