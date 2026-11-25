@@ -4051,7 +4051,8 @@
    "occupation": [
     "Commerçant",
     "Médecin",
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Rouges"
@@ -4121,7 +4122,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Verts"
@@ -9282,7 +9284,8 @@
    "age": null,
    "height": 185,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Employé"
    ],
    "hair": [
     "Noirs"
@@ -9563,6 +9566,7 @@
    "height": 181,
    "occupation": [
     "Cuisinier",
+    "Employé",
     "Artisan"
    ],
    "hair": [
@@ -9629,7 +9633,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Employé"
    ],
    "hair": [
     "Gris"
@@ -15383,6 +15388,7 @@
    "age": 17,
    "height": 158,
    "occupation": [
+    "Étudiant",
     "Prisonnier"
    ],
    "hair": [
@@ -15446,6 +15452,7 @@
    "age": 16,
    "height": 168,
    "occupation": [
+    "Étudiant",
     "Musicien",
     "Artiste"
    ],
@@ -15477,7 +15484,9 @@
    "species": null,
    "age": 16,
    "height": 152,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -24887,7 +24896,9 @@
    ],
    "age": 20,
    "height": 189,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": [
     "Blancs"
    ],
@@ -29024,8 +29035,10 @@
    "age": 33,
    "height": null,
    "occupation": [
+    "Officier",
     "Leader",
-    "Noble"
+    "Noble",
+    "Soldat"
    ],
    "hair": [
     "Noirs"
@@ -29516,8 +29529,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Domestique",
-    "Leader"
+    "Domestique"
    ],
    "hair": [
     "Blancs"
@@ -34116,7 +34128,7 @@
     "Chasseur",
     "Leader",
     "Professeur",
-    "Noble"
+    "Garde"
    ],
    "hair": [
     "Bruns",
@@ -34344,7 +34356,7 @@
    "height": null,
    "occupation": [
     "Chasseur",
-    "Noble"
+    "Garde"
    ],
    "hair": [
     "Roses",
@@ -45481,6 +45493,7 @@
    "age": 18,
    "height": null,
    "occupation": [
+    "Leader",
     "Noble"
    ],
    "hair": [
@@ -45582,7 +45595,8 @@
    "age": 18,
    "height": 158,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Leader"
    ],
    "hair": [
     "Violets",
@@ -46318,6 +46332,7 @@
    "age": 17,
    "height": 170,
    "occupation": [
+    "Étudiant",
     "Leader"
    ],
    "hair": null,
@@ -49033,7 +49048,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Chauve"
    ],
@@ -52703,7 +52720,8 @@
    "age": "Inconnu",
    "height": "Inconnu",
    "occupation": [
-    "Leader"
+    "Leader",
+    "Capitaine"
    ],
    "hair": null,
    "anime": "Re:CREATORS",
@@ -53496,6 +53514,7 @@
    "height": 172,
    "occupation": [
     "Chevalier",
+    "Garde",
     "Épéiste",
     "Combattant"
    ],
@@ -53614,6 +53633,7 @@
    "height": 179,
    "occupation": [
     "Chevalier",
+    "Garde",
     "Épéiste",
     "Combattant"
    ],
@@ -53696,9 +53716,9 @@
    "height": null,
    "occupation": [
     "Souverain",
+    "Noble",
     "Political benefactor of Emilia",
     "Magicien",
-    "Noble",
     "Leader"
    ],
    "hair": [
@@ -57044,7 +57064,7 @@
    "age": 29,
    "height": null,
    "occupation": [
-    "Aucune"
+    "Domestique"
    ],
    "hair": [
     "Bleus"
@@ -59974,7 +59994,9 @@
    ],
    "age": 38,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Journaliste"
+   ],
    "hair": null,
    "anime": "Sword Art Online",
    "genres": [
@@ -63533,7 +63555,8 @@
    "age": 15,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Étudiant"
    ],
    "hair": [
     "Argentés"
@@ -63630,7 +63653,8 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Étudiant"
    ],
    "hair": [
     "Noirs"
@@ -63764,7 +63788,8 @@
    "height": null,
    "occupation": [
     "Numbers",
-    "Employé"
+    "Employé",
+    "Étudiant"
    ],
    "hair": [
     "Bruns"

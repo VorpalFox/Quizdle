@@ -1,6 +1,7 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
 import { weaponOccupations } from './pixeldleTranslate.js'
+import { translateOccupation } from './translate.js'
 import { isUnknownValue, unknownKeys } from './unknownValues.js'
 
 const API = 'https://graphql.anilist.co'
@@ -176,10 +177,14 @@ export function splitOccupations(value: string): string[] | null {
     .replace(/\s*\([^)]*\)/g, '')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
-    .filter(part => part.length > 1 && part.length <= 40)
+    // Au-delà de 40 caractères, une phrase plutôt qu'un métier, sauf si on sait la traduire (« Chairman of the Institute
+    // for Psychiatric Research », Inui dans Paprika)
+    .filter(part => part.length > 1 && (part.length <= MAX_OCCUPATION_LENGTH || translateOccupation(part) !== undefined))
     .map(capitalize)
   return list.length > 0 ? [...new Set(list)] : null
 }
+
+const MAX_OCCUPATION_LENGTH = 40
 
 function capitalize(text: string): string {
   return text[0]!.toUpperCase() + text.slice(1)

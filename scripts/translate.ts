@@ -89,6 +89,11 @@ const RULES: [RegExp, string | null][] = [
   // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
   [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
   [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker|underboss/, 'Mafieux'],
+  // L'élève d'une école, quelle qu'elle soit (« Student of Midgar Academy for Dark Knights » n'est pas un chevalier),
+  // le domestique en chef (« Head servant of the Kirishiki family »), le garde du corps d'un prince
+  [/^students? (?:of|at)\b/, 'Élève'],
+  [/^head (?:servant|maid|butler)\b/, 'Serviteur'],
+  [/\broyal (?:body)?guard/, 'Garde'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
   [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
