@@ -17801,7 +17801,6 @@
     "Noble",
     "Étudiant",
     "Souverain",
-    "Héros",
     "Criminel"
    ],
    "hair": [
@@ -23224,7 +23223,6 @@
     "Assassin",
     "Chasseur de démons",
     "Leader",
-    "Héros",
     "Criminel",
     "Combattant",
     "Chasseur de monstres"
@@ -26401,8 +26399,7 @@
    "height": 175,
    "occupation": [
     "Justicier",
-    "Leader",
-    "Héros"
+    "Leader"
    ],
    "hair": null,
    "anime": "Fate/Zero",
@@ -58805,7 +58802,6 @@
     "Justicier",
     "Épéiste",
     "Étudiant",
-    "Héros",
     "Combattant"
    ],
    "hair": [
