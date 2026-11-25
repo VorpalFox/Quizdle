@@ -64508,36 +64508,6 @@
   }
  },
  {
-  "id": "327362",
-  "name": "Dennis Regan",
-  "aliases": [
-   "Regan Dennis",
-   "デニス・リーガン",
-   "Dennis",
-   "Regan"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327362-twwuQesVaovd.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
   "id": "327370",
   "name": "Muderev",
   "aliases": [
@@ -64600,14 +64570,41 @@
   }
  },
  {
-  "id": "327377",
-  "name": "Eddis",
+  "id": "327369",
+  "name": "Reinas",
   "aliases": [
-   "エディス"
+   "レイナス"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327377-kXVpbKfICb5R.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327369-G68fwVPdvERs.png",
   "attributes": {
    "gender": "Homme",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Fantasy",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327371",
+  "name": "Laviniere",
+  "aliases": [
+   "ラビネール"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327371-UMesPjhR0tZD.png",
+  "attributes": {
+   "gender": "Femme",
    "species": null,
    "age": null,
    "height": null,
