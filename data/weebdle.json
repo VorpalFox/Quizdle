@@ -38017,7 +38017,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Fibre de vie"
+    "Fibre de vie",
+    "Objet"
    ],
    "age": null,
    "height": null,
