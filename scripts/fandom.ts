@@ -316,6 +316,18 @@ export function fandomInfobox(wikitext: string): Record<string, string> | null {
   }
   return null
 }
+// Le modèle d'infobox que la page appelle (« Template:Lorraine Vivie Infobox »), quand son nom le dit
+export function infoboxTemplate(wikitext: string): string | null {
+  const name = wikitext.match(/\{\{\s*([^|{}\n#:]*infobox[^|{}\n#:]*)/i)?.[1]?.trim()
+  return name ? `Template:${name}` : null
+}
+
+// Les champs d'un modèle propre au perso. Pas un modèle générique : une infobox portable (<infobox>) n'a que des
+// paramètres, et sa doc (<noinclude>) un exemple (« occupation = Example », wiki de The Elusive Samurai)
+export function templateInfobox(wikitext: string): Record<string, string> | null {
+  return /<infobox/i.test(wikitext) ? null : fandomInfobox(wikitext.replace(/<noinclude>[\s\S]*?(?:<\/noinclude>|$)/gi, ''))
+}
+
 // Pas la taille : les onglets en haut de page ({{Tabs|height = 35px|tab1 = Overview}}) ont aussi un champ « height »
 // Ni les champs d'espèce trop courants dans d'autres modèles ({{Quote|type = …}})
 const NOT_INFOBOX_ONLY = new Set(['type', 'kind', 'classification'])
@@ -556,13 +568,25 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
     if (lost.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, [...searched.values()].flat()) }
+    // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs
+    // sont dans la page du modèle
+    const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])
+    if (templates.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, templates) }
+    const infoboxOf = (title: string) => {
+      const template = pages[title] && infoboxTemplate(pages[title]!)
+      // Ceux de la page par-dessus ceux du modèle ({{Lorraine Vivie Infobox|status=Alive}}), sans les paramètres ({{{gender|}}})
+      const fields = { ...template && pages[template] ? templateInfobox(pages[template]!) : null, ...fandomInfobox(pages[title]!) }
+      const read = Object.entries(fields).filter(([, value]) => !value.includes('{{{'))
+      return read.length > 0 && INFOBOX_FIELDS.some(name => fields[name] && !fields[name].includes('{{{')) ? Object.fromEntries(read) : null
+    }
     // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
     // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
     // pour l'occupation de l'intro et les cheveux. Un résultat de recherche ne compte qu'avec une infobox de perso.
     const found = characters.flatMap(({ target, titles }) => {
-      const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && fandomInfobox(pages[title]!))
+      const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && infoboxOf(title))
       if (title)
-        return [{ target, title, values: fandomValues(fandomInfobox(pages[title]!)!) }]
+        return [{ target, title, values: fandomValues(infoboxOf(title)!) }]
       const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
       return bare ? [{ target, title: bare, values: fandomValues({}) }] : []
     })
@@ -581,7 +605,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       // Sans occupation : le rôle de l'affiliation de l'infobox (« Student (formerly) ») et ce que dit l'introduction,
       // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
       const jobless = isEmpty(target.entry.attributes.occupation) && isEmpty(values.occupation)
-      const infobox = fandomInfobox(pages[title]!) ?? {}
+      const infobox = infoboxOf(title) ?? {}
       const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
       const intro = jobless ? introOccupations(pages[title]!) : null
       const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null

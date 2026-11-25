@@ -30892,7 +30892,8 @@
   "name": "Isabelle Muller",
   "aliases": [
    "Muller Isabelle",
-   "イサベル・ミューラー"
+   "イサベル・ミューラー",
+   "Isabelle"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175353-0t0jren4CXb5.jpg",
   "attributes": {
@@ -57387,7 +57388,8 @@
   "name": "Luka Urushibara",
   "aliases": [
    "Urushibara Luka",
-   "漆原るか"
+   "漆原るか",
+   "Luka"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30919-5PjiA4ucfuuJ.png",
   "attributes": {
@@ -64757,11 +64759,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161812-B2n1w7QXcJ7a.png",
   "attributes": {
-   "gender": null,
-   "species": null,
-   "age": null,
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 24,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Scientifique"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -64826,11 +64832,16 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161811-oy2IppXGYEOz.png",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Officier",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
@@ -64856,8 +64867,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161813-VfID4R3OXII2.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 17,
    "height": null,
    "occupation": [
     "Aventurier"
@@ -64865,34 +64878,6 @@
    "hair": [
     "Blonds"
    ],
-   "anime": "The Unwanted Undead Adventurer",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "CONNECT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "326047",
-  "name": "Nazo no Josei",
-  "aliases": [
-   "Josei no Nazo",
-   "謎の女性",
-   "Nazo",
-   "Josei"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326047-zWarfM6zTGPT.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
     "Action",
@@ -64915,37 +64900,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161803-lPsOK7lD1BRY.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 15,
    "height": null,
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
-   "anime": "The Unwanted Undead Adventurer",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "CONNECT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "161805",
-  "name": "Luka",
-  "aliases": [
-   "ルカ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161805-jQpqJ0aPXvbD.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
@@ -64999,90 +64961,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161804-tcgQNX5D9M8V.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 15,
    "height": null,
    "occupation": [
     "Aventurier"
    ],
-   "hair": null,
-   "anime": "The Unwanted Undead Adventurer",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "CONNECT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "325603",
-  "name": "Isabelle Cariello",
-  "aliases": [
-   "Cariello Isabelle",
-   "イサベル・カリエッロ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325603-xJ8AqYkHzUb2.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Unwanted Undead Adventurer",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "CONNECT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "161806",
-  "name": "Clope",
-  "aliases": [
-   "クロープ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161806-RiMW4c3neeqZ.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Unwanted Undead Adventurer",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy"
-   ],
-   "year": 2024,
-   "studio": "CONNECT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "325602",
-  "name": "Loris Cariello",
-  "aliases": [
-   "Cariello Loris",
-   "ロリス・カリエッロ",
-   "Loris"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325602-iiGnBP6THAD6.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "The Unwanted Undead Adventurer",
    "genres": [
@@ -67513,9 +67399,13 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 164,
+   "occupation": [
+    "Combattant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -67546,7 +67436,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -67572,9 +67464,11 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84777-xeZZ3a9YM2Cn.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
-   "age": null,
-   "height": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 500,
+   "height": 180,
    "occupation": [
     "Noble"
    ],
@@ -67672,13 +67566,15 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": 29,
    "height": 167,
    "occupation": [
     "Éclaireur",
     "Soldat"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -67705,9 +67601,13 @@
    "gender": "Femme",
    "species": null,
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 154,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
@@ -67730,10 +67630,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137957-qvngtbgmEyGT.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
+   "species": [
+    "Humain"
+   ],
+   "age": 37,
+   "height": 177,
+   "occupation": [
+    "Éclaireur",
+    "Soldat"
+   ],
    "hair": null,
    "anime": "Tower of God",
    "genres": [
@@ -67796,11 +67701,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141286-BCNl8KMkVQ2j.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 500,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Leader"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",

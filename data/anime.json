@@ -1849,39 +1849,6 @@
   }
  },
  {
-  "id": "22037",
-  "name": "Hitagi Senjougahara",
-  "aliases": [
-   "Senjougahara Hitagi",
-   "戦場ヶ原ひたぎ",
-   "Hitagi",
-   "Senjougahara"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "age": 17,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": [
-    "Bruns",
-    "Violets"
-   ],
-   "anime": "Bakemonogatari",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2009,
-   "studio": "Shaft"
-  }
- },
- {
   "id": "137081",
   "name": "Aki Hayakawa",
   "aliases": [
@@ -1912,6 +1879,39 @@
    ],
    "year": 2022,
    "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "22037",
+  "name": "Hitagi Senjougahara",
+  "aliases": [
+   "Senjougahara Hitagi",
+   "戦場ヶ原ひたぎ",
+   "Hitagi",
+   "Senjougahara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "age": 17,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Bruns",
+    "Violets"
+   ],
+   "anime": "Bakemonogatari",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Psychologique",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2009,
+   "studio": "Shaft"
   }
  },
  {
@@ -2011,37 +2011,6 @@
   }
  },
  {
-  "id": "127518",
-  "name": "Nezuko Kamado",
-  "aliases": [
-   "Kamado Nezuko",
-   "竈門禰豆子",
-   "Nezuko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 12,
-   "occupation": [
-    "Femme au foyer"
-   ],
-   "hair": [
-    "Noirs",
-    "Roux"
-   ],
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2019,
-   "studio": "ufotable"
-  }
- },
- {
   "id": "64769",
   "name": "Shouyou Hinata",
   "aliases": [
@@ -2072,6 +2041,37 @@
    ],
    "year": 2014,
    "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "127518",
+  "name": "Nezuko Kamado",
+  "aliases": [
+   "Kamado Nezuko",
+   "竈門禰豆子",
+   "Nezuko"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 12,
+   "occupation": [
+    "Femme au foyer"
+   ],
+   "hair": [
+    "Noirs",
+    "Roux"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
   }
  },
  {
@@ -2231,36 +2231,6 @@
   }
  },
  {
-  "id": "4003",
-  "name": "Joutarou Kuujou",
-  "aliases": [
-   "Kuujou Joutarou",
-   "Professor Kuujou",
-   "空条承太郎",
-   "Joutarou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 17,
-   "occupation": [
-    "Étudiant",
-    "Marine Biologist"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "david production"
-  }
- },
- {
   "id": "46494",
   "name": "Armin Arlert",
   "aliases": [
@@ -2290,6 +2260,36 @@
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "4003",
+  "name": "Joutarou Kuujou",
+  "aliases": [
+   "Kuujou Joutarou",
+   "Professor Kuujou",
+   "空条承太郎",
+   "Joutarou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Étudiant",
+    "Marine Biologist"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "david production"
   }
  },
  {
@@ -2579,38 +2579,6 @@
   }
  },
  {
-  "id": "46496",
-  "name": "Erwin Smith",
-  "aliases": [
-   "Smith Erwin",
-   "エルヴィン・スミス",
-   "Erwin",
-   "Smith"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": null,
-   "occupation": [
-    "Leader",
-    "Bataillon d'exploration",
-    "Soldat"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "Attack on Titan",
-   "genres": [
-    "Action",
-    "Drame",
-    "Fantasy",
-    "Mystère"
-   ],
-   "year": 2018,
-   "studio": "WIT STUDIO"
-  }
- },
- {
   "id": "134167",
   "name": "Maki Zenin",
   "aliases": [
@@ -2642,6 +2610,38 @@
    ],
    "year": 2020,
    "studio": "MAPPA"
+  }
+ },
+ {
+  "id": "46496",
+  "name": "Erwin Smith",
+  "aliases": [
+   "Smith Erwin",
+   "エルヴィン・スミス",
+   "Erwin",
+   "Smith"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": null,
+   "occupation": [
+    "Leader",
+    "Bataillon d'exploration",
+    "Soldat"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "Attack on Titan",
+   "genres": [
+    "Action",
+    "Drame",
+    "Fantasy",
+    "Mystère"
+   ],
+   "year": 2018,
+   "studio": "WIT STUDIO"
   }
  },
  {
@@ -3761,10 +3761,9 @@
    "gender": "Autre",
    "age": 300,
    "occupation": [
-    "Scholar",
+    "Scientifique",
     "Icebreaker",
     "Combattant",
-    "Manga Spoiler",
     "Leader",
     "Prayer Machine"
    ],
@@ -3875,35 +3874,6 @@
   }
  },
  {
-  "id": "71267",
-  "name": "Kenma Kozume",
-  "aliases": [
-   "Kozume Kenma",
-   "孤爪研磨",
-   "Kenma",
-   "Kozume"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 16,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "HAIKYU!!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2024,
-   "studio": "Production I.G"
-  }
- },
- {
   "id": "246",
   "name": "Gokuu Son",
   "aliases": [
@@ -3939,6 +3909,35 @@
    ],
    "year": 1986,
    "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "71267",
+  "name": "Kenma Kozume",
+  "aliases": [
+   "Kozume Kenma",
+   "孤爪研磨",
+   "Kenma",
+   "Kozume"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2024,
+   "studio": "Production I.G"
   }
  },
  {
@@ -4808,35 +4807,6 @@
   }
  },
  {
-  "id": "128651",
-  "name": "Hanako",
-  "aliases": [
-   "花子"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 58,
-   "occupation": [
-    "Leader",
-    "Étudiant"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Toilet-bound Hanako-kun",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
-   ],
-   "year": 2020,
-   "studio": "Lerche"
-  }
- },
- {
   "id": "88348",
   "name": "Rudeus Greyrat",
   "aliases": [
@@ -4868,6 +4838,35 @@
    ],
    "year": 2021,
    "studio": "Studio Bind"
+  }
+ },
+ {
+  "id": "128651",
+  "name": "Hanako",
+  "aliases": [
+   "花子"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 58,
+   "occupation": [
+    "Leader",
+    "Étudiant"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Toilet-bound Hanako-kun",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Lerche"
   }
  },
  {
@@ -5727,6 +5726,34 @@
   }
  },
  {
+  "id": "88349",
+  "name": "Eris Boreas Greyrat",
+  "aliases": [
+   "Greyrat Boreas Eris",
+   "エリス・ボレアス・グレイラット",
+   "Eris",
+   "Boreas"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": null,
+   "anime": "Mushoku Tensei: Jobless Reincarnation",
+   "genres": [
+    "Aventure",
+    "Drame",
+    "Ecchi",
+    "Fantasy"
+   ],
+   "year": 2021,
+   "studio": "Studio Bind"
+  }
+ },
+ {
   "id": "19492",
   "name": "Johnny Joestar",
   "aliases": [
@@ -5760,34 +5787,6 @@
   }
  },
  {
-  "id": "88349",
-  "name": "Eris Boreas Greyrat",
-  "aliases": [
-   "Greyrat Boreas Eris",
-   "エリス・ボレアス・グレイラット",
-   "Eris",
-   "Boreas"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": null,
-   "occupation": [
-    "Noble"
-   ],
-   "hair": null,
-   "anime": "Mushoku Tensei: Jobless Reincarnation",
-   "genres": [
-    "Aventure",
-    "Drame",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2021,
-   "studio": "Studio Bind"
-  }
- },
- {
   "id": "434",
   "name": "Eikichi Onizuka",
   "aliases": [
@@ -5810,6 +5809,34 @@
    ],
    "year": 1999,
    "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "12",
+  "name": "Alphonse Elric",
+  "aliases": [
+   "Elric Alphonse",
+   "アルフォンス・エルリック",
+   "Alphonse"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Alchimiste",
+    "Scientifique"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy"
+   ],
+   "year": 2003,
+   "studio": "bones"
   }
  },
  {
@@ -5841,34 +5868,6 @@
    ],
    "year": 1989,
    "studio": "Toei Animation"
-  }
- },
- {
-  "id": "12",
-  "name": "Alphonse Elric",
-  "aliases": [
-   "Elric Alphonse",
-   "アルフォンス・エルリック",
-   "Alphonse"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 14,
-   "occupation": [
-    "Alchimiste",
-    "Scientifique"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy"
-   ],
-   "year": 2003,
-   "studio": "bones"
   }
  },
  {

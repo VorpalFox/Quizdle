@@ -36,7 +36,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'noble': 'Noble', 'lord': 'Seigneur', 'lady': 'Dame', 'earl of phantomhive': 'Comte', 'president': 'Président', 'diplomat': 'Diplomate',
   // Métiers
   'doctor': 'Médecin', 'psychiatrist': 'Psychiatre', 'nurse': 'Infirmier', 'veterinarian': 'Vétérinaire',
-  'scientist': 'Scientifique', 'researcher': 'Chercheur', 'archaeologist': 'Archéologue', 'oceanographer': 'Océanographe',
+  'scientist': 'Scientifique', 'researcher': 'Chercheur', 'scholar': 'Chercheur', 'archaeologist': 'Archéologue', 'oceanographer': 'Océanographe',
   'marine explorer': 'Explorateur', 'inventor': 'Inventeur', 'engineer': 'Ingénieur', 'astronomer': 'Astronome', 'astronaut': 'Astronaute',
   'mechanic': 'Mécanicien', 'mechanics': 'Mécanicien', 'automail mechanic': 'Mécanicien', 'automail technician': 'Mécanicien',
   'lawyer': 'Avocat', 'editorial staff': 'Éditeur', 'communication specialist': 'Spécialiste des communications',
@@ -154,7 +154,7 @@ const RULES: [RegExp, string | null][] = [
   [/[ée]tudiant/, 'Étudiant'],
   [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Élève'],
   // Pas des occupations : animaux, valeurs vides
-  [/\bpet\b|housepet|familiar|^none$|^current$|^former$|^inc$|^npc$/, null],
+  [/\bpet\b|housepet|familiar|\bspoilers?\b|^none$|^current$|^former$|^inc$|^npc$/, null],
   // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)
   [/\b(?:member|members|seat|crew|team|squad|council|cast|division|committee|corps|group)\b/, null],
 ]
