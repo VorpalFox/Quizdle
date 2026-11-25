@@ -2007,7 +2007,8 @@
   "aliases": [
    "Kurasaki Fuuko",
    "倉崎楓子",
-   "Fuuko"
+   "Fuuko",
+   "Kurasaki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66893-aIlETuRqnscf.png",
   "attributes": {
@@ -5379,7 +5380,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/121459-loSsqqKQcffI.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": [
     "Ours",
     "Animal"
@@ -5455,6 +5456,37 @@
     "Étudiant",
     "Leader"
    ],
+   "hair": null,
+   "anime": "Armed Girl's Machiavellism",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Ecchi",
+    "Romance"
+   ],
+   "year": 2017,
+   "studio": "SILVER LINK.",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "121463",
+  "name": "Kusuo Masukodera",
+  "aliases": [
+   "Masukodera Kusuo",
+   "増子寺楠男",
+   "Kusuo",
+   "Masukodera"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121463-aIK3V9g8YoyA.jpg",
+  "attributes": {
+   "gender": null,
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": null,
    "hair": null,
    "anime": "Armed Girl's Machiavellism",
    "genres": [
