@@ -128,6 +128,8 @@ const OCCUPATIONS = [
   'captain', 'commander', 'general', 'lieutenant', 'sergeant', 'officer', 'guard', 'spy', 'thief', 'pirate', 'adventurer',
   'mage', 'witch', 'wizard', 'sorcerer', 'sorceress', 'priest', 'priestess', 'nun', 'shrine maiden', 'cleric', 'healer', 'archer',
   'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'lord', 'lady', 'president', 'hero', 'god', 'goddess',
+  // Paprika : « He's the bartender », « A gifted psychiatrist », « Chiba's research assistant »
+  'bartender', 'waiter', 'waitress', 'psychiatrist', 'psychotherapist', 'research assistant',
 ]
 // « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
 // Pas « a model student » (élève modèle) ni « a lady killer ».

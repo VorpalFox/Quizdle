@@ -205,9 +205,12 @@ async function wikidataArticles(): Promise<Record<string, string>> {
 }
 
 // Les titres à essayer : le lien Wikidata, puis le nom et les alias en lettres latines
+// Avec les voyelles longues en macron aussi, comme beaucoup de wikis (« Shima Toratarō », « Tokita Kōsaku »)
 function characterTitles(target: WikiTarget, article: string | undefined): string[] {
   const aliases = (target.entry.aliases ?? []).filter(alias => /[a-z]/i.test(alias) && alias.length >= 3)
-  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...pageTitles(target.name), ...aliases])]
+  const names = pageTitles(target.name)
+  const macrons = names.map(title => title.replace(/ou/g, 'ō').replace(/uu/g, 'ū').replace(/oo/g, 'ō')).filter(title => !names.includes(title))
+  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases])]
     .filter(title => !/[#<>[\]{}|]/.test(title))
 }
 

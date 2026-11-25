@@ -2089,6 +2089,7 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Serveur",
     "Leader"
    ],
    "hair": [
@@ -10962,22 +10963,25 @@
   }
  },
  {
-  "id": "124710",
-  "name": "Deldro Brody",
+  "id": "174173",
+  "name": "Vivian",
   "aliases": [
-   "Brody Deldro",
-   "デルドロ・ブローディ",
-   "Deldro",
-   "Brody"
+   "ビビアン"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/124710-oBzeHjtMrAxl.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174173-gzY1b15kVl4r.png",
   "attributes": {
-   "gender": "Homme",
-   "species": null,
-   "age": 23,
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 20,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Serveur"
+   ],
+   "hair": [
+    "Blonds"
+   ],
    "anime": "Blood Blockade Battlefront",
    "genres": [
     "Action",
@@ -12093,7 +12097,8 @@
    "height": 175,
    "occupation": [
     "Host",
-    "Artisan"
+    "Barman",
+    "Serveur"
    ],
    "hair": [
     "Blonds"
@@ -18379,7 +18384,7 @@
    "height": 164,
    "occupation": [
     "Étudiant",
-    "Artisan",
+    "Barman",
     "Serveur"
    ],
    "hair": [
@@ -21787,7 +21792,9 @@
    "age": "Inconnu",
    "height": 188,
    "occupation": [
-    "Arbiter"
+    "Barman",
+    "Arbitre",
+    "Serveur"
    ],
    "hair": [
     "Blancs"
@@ -21853,7 +21860,7 @@
    "height": null,
    "occupation": [
     "Gérant",
-    "Arbiter",
+    "Arbitre",
     "Leader"
    ],
    "hair": [
@@ -21888,7 +21895,7 @@
    "age": "Inconnu",
    "height": 194,
    "occupation": [
-    "Arbiter"
+    "Arbitre"
    ],
    "hair": [
     "Rouges"
@@ -22027,7 +22034,7 @@
    "height": 164,
    "occupation": [
     "Memory Sorter",
-    "Arbiter"
+    "Arbitre"
    ],
    "hair": [
     "Bruns"
@@ -35920,8 +35927,8 @@
    "age": 21,
    "height": 165,
    "occupation": [
-    "Aventurier",
-    "Serveur"
+    "Serveur",
+    "Aventurier"
    ],
    "hair": [
     "Verts",
@@ -48385,8 +48392,9 @@
    "height": 181,
    "occupation": [
     "Célébrité",
-    "Artisan",
-    "Commerçant"
+    "Barman",
+    "Commerçant",
+    "Serveur"
    ],
    "hair": [
     "Bruns"
@@ -48782,7 +48790,8 @@
    "age": 26,
    "height": null,
    "occupation": [
-    "Psychotherapist"
+    "Psychiatre",
+    "Médecin"
    ],
    "hair": [
     "Noirs"
@@ -48820,7 +48829,9 @@
    "occupation": [
     "Détective"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -48886,8 +48897,14 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Psychiatre",
+    "Leader",
+    "Médecin"
+   ],
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -48915,7 +48932,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Barman",
+    "Serveur"
+   ],
    "hair": null,
    "anime": "Paprika",
    "genres": [
@@ -48944,7 +48964,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Serveur"
+   ],
    "hair": null,
    "anime": "Paprika",
    "genres": [
@@ -48970,14 +48992,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3810-bANYXHoGzFu8.png",
   "attributes": {
-   "gender": null,
+   "gender": "Homme",
    "species": [
     "Humain"
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Scientifique"
+   ],
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -49008,7 +49034,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Chauve"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -49037,8 +49065,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Scientifique"
+   ],
+   "hair": [
+    "Noirs"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",

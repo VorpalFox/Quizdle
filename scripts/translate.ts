@@ -74,7 +74,9 @@ const OCCUPATIONS: Record<string, string | null> = {
   'courtesan': 'Courtisane', 'terrorist': 'Terroriste', 'fashion model': 'Mannequin', 'gravure model': 'Mannequin',
   'apothecary': 'Apothicaire', 'dyer': 'Artisan', 'archeoligist': 'Archéologue', 'digger': 'Ouvrier', 'hermit': 'Ermite',
   'martial artist': 'Artiste martial', 'tobacconist': 'Vendeur', 'barista': 'Serveur', 'strategist': 'Stratège',
-  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote', 'driver': 'Chauffeur',
+  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote', 'driver': 'Chauffeur', 'psychotherapist': 'Psychiatre',
+  // Death Parade : les arbitres (Decim, Ginti, Quin…), barmans à leurs heures ; le barman sert, comme le serveur
+  'arbiter': 'Arbitre', 'bartender': 'Barman',
   // Pas des occupations
   'test subject': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
@@ -268,7 +270,7 @@ const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   // Combat
   'Épéiste': ['Combattant'], 'Samouraï': ['Combattant'], 'Ninja': ['Combattant'], 'Chevalier': ['Combattant'], 'Archer': ['Combattant'],
   'Tireur': ['Combattant'], 'Lancier': ['Combattant'], 'Mercenaire': ['Combattant'], 'Artiste martial': ['Combattant'],
-  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'], 'Nourrice': ['Domestique'],
+  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'], 'Nourrice': ['Domestique'], 'Barman': ['Serveur'],
   // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
   'Officier': ['Soldat'], 'Bataillon d\'exploration': ['Soldat'], 'Éclaireur': ['Soldat'],
   'Pourfendeur de démons': ['Chasseur de monstres', 'Combattant'], 'Chasseur de démons': ['Chasseur de monstres', 'Combattant'],
