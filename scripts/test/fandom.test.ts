@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { translateOccupation } from '../translate.js'
+import { splitOccupations } from '../anilist.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -52,7 +53,15 @@ describe('fandomValues', () => {
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
   })
 
-  it('DemonEtMentor', () => {
+  it('MetiersDeTheWorldGodOnlyKnows', () => {
+    expect(splitOccupations('Track and Field Club Girl')!.map(translateOccupation)).toEqual(['Sportif'])
+    expect(translateOccupation('Café Owner')).toBe('Barman')
+    expect(translateOccupation('Chauffeur of Mio Aoyama')).toBe('Chauffeur')
+    expect(translateOccupation('Private Household Demon')).toBe('Servante')
+    expect(translateOccupation('Normal Person')).toBeNull()
+  })
+
+  it('DemonEtCaretaker', () => {
     expect(translateOccupation('Contract Devil')).toBe('Démon')
     expect(translateOccupation('Devil Hunter')).toBe('Chasseur de démons')
     // « caretaker » : un mentor, donc un Professeur comme « mentor »

@@ -78,7 +78,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   // Death Parade : les arbitres (Decim, Ginti, Quin…), barmans à leurs heures ; le barman sert, comme le serveur
   'arbiter': 'Arbitre', 'bartender': 'Barman',
   // Pas des occupations
-  'test subject': null, 'sujet psi': null,
+  'test subject': null, 'normal person': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
   'unknown': 'Inconnu', 'none': 'Aucune',
 }
@@ -99,6 +99,13 @@ const RULES: [RegExp, string | null][] = [
   [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
   // Les démons de Chainsaw Man (« Wild Devil », « Contract Devil ») : ce qu'ils sont en guise de rôle (validé avec FX)
   [/\bdevils?$/, 'Démon'],
+  // The World God Only Knows : « Track and Field Club Girl » (Ayumi), « Café Owner » (Mari, un Barman, donc aussi Serveur),
+  // « Chauffeur of Mio Aoyama » (Morita), « Private Household Demon » (Elucia, qui tient la maison ; pas « household »
+  // seul, souvent la maison noble qu'on sert ou dirige)
+  [/\bathletics\b/, 'Sportif'],
+  [/\b(?:caf[ée]|bar) owner\b/, 'Barman'],
+  [/\bchauffeur\b/, 'Chauffeur'],
+  [/^private household demon$/, 'Servante'],
   [/serial killer|mass murderer/, 'Tueur en série'],
   [/magical ?☆?girl/, 'Magical girl'],
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »

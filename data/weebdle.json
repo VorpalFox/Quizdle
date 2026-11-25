@@ -59807,7 +59807,9 @@
    "age": 27,
    "height": 180,
    "occupation": [
-    "Commerçant"
+    "Barman",
+    "Commerçant",
+    "Serveur"
    ],
    "hair": [
     "Chauve"
@@ -66863,7 +66865,7 @@
    "age": 300,
    "height": 159,
    "occupation": [
-    "Private Household Demon"
+    "Domestique"
    ],
    "hair": null,
    "anime": "The World God Only Knows",
@@ -66891,9 +66893,7 @@
    "species": null,
    "age": 17,
    "height": 158,
-   "occupation": [
-    "Normal Person"
-   ],
+   "occupation": null,
    "hair": [
     "Bruns"
    ],
@@ -66981,8 +66981,7 @@
    "age": 17,
    "height": 158,
    "occupation": [
-    "Track",
-    "Field Club Girl"
+    "Sportif"
    ],
    "hair": [
     "Bruns"
@@ -67074,7 +67073,8 @@
    "age": null,
    "height": 168,
    "occupation": [
-    "Café Owner"
+    "Barman",
+    "Serveur"
    ],
    "hair": [
     "Roux"
@@ -67387,7 +67387,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Chauffeur of Mio Aoyama"
+    "Chauffeur"
    ],
    "hair": null,
    "anime": "The World God Only Knows",

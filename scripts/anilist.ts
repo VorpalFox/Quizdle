@@ -189,6 +189,8 @@ export function splitOccupations(value: string): string[] | null {
     // « Private Aichi Symbiosis Academy (Student) » : le rôle dans l'organisation, pas son nom
     .replace(ORGANIZATION_ROLE, (match, role: string) => translateOccupation(role.trim()) ? role : match)
     .replace(/\s*\([^)]*\)/g, '')
+    // « Track and Field Club Girl » (Ayumi, The World God Only Knows) : l'athlétisme, pas deux métiers
+    .replace(/\btrack and field\b/gi, 'athletics')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     .map(part => part.replace(/[.:!]+$/, '').trim())
     // Au-delà de 40 caractères, une phrase plutôt qu'un métier, sauf si on sait la traduire (« Chairman of the Institute
