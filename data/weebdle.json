@@ -67058,7 +67058,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34315-rIHM5838XfzA.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": 23,
    "height": 170,
    "occupation": [
