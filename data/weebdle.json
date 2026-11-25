@@ -5285,6 +5285,7 @@
     "Combattant"
    ],
    "hair": [
+    "Argentés",
     "Blancs"
    ],
    "anime": "Armed Girl's Machiavellism",
@@ -5380,7 +5381,8 @@
   "attributes": {
    "gender": null,
    "species": [
-    "Ours"
+    "Ours",
+    "Animal"
    ],
    "age": null,
    "height": null,
@@ -5482,7 +5484,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Bruns"
    ],

@@ -196,7 +196,10 @@ export function translateOccupation(value: string): string | null | undefined {
     return OCCUPATIONS[key]
   if (FRENCH.has(key))
     return value
-  return RULES.find(([pattern]) => pattern.test(key))?.[1]
+  const rule = RULES.find(([pattern]) => pattern.test(key))?.[1]
+  // « One of the Three Beasts » : une appartenance à un groupe, pas un métier, sauf si le groupe en est un (« One of the Generals »)
+  const group = key.match(/^one of the\s+(.+)$/)?.[1]
+  return group && rule === undefined ? translateOccupation(group) ?? null : rule
 }
 
 // --- Cumul des sources ---

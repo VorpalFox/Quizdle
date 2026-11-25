@@ -645,38 +645,6 @@
      "Sylphe"
     ]
    }
-  },
-  "121453": {
-   "_nom": "Tsukuyo Inaba",
-   "age": 14,
-   "height": 138,
-   "hair": {
-    "plus": [
-     "Blancs"
-    ]
-   },
-   "occupation": {
-    "plus": [
-     "Étudiant",
-     "Épéiste",
-     "Combattant"
-    ]
-   }
-  },
-  "121456": {
-   "_nom": "Nico Saruwatari",
-   "gender": "Femme"
-  },
-  "121459": {
-   "_nom": "Kyoubou",
-   "species": {
-    "plus": [
-     "Ours"
-    ],
-    "moins": [
-     "Humain"
-    ]
-   }
   }
  },
  "add": [],

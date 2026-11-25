@@ -46,6 +46,11 @@ describe('fandomValues', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Élève')
     expect(translateOccupation('Middle School Student')).toBe('Collégien')
   })
+
+  it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
+    expect(translateOccupation('One of the Three Beasts')).toBeNull()
+    expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
+  })
 })
 
 describe('introOccupations', () => {
