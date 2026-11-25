@@ -10,17 +10,30 @@ const END_OF_ROLE = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|intr
 export const MAX_INTRO_SENTENCES = 2
 // Pas un métier : un rôle dans l'histoire ou le jeu (« major character », « final boss »), un lien de famille (« son of »),
 // un mot qui en contient un autre (« genetically-engineered » n'est pas un ingénieur, « android model » pas un mannequin)
-const NOT_A_JOB = /\b(?:characters?|antagonists?|protagonists?|deuteragonists?|boss|bosses|villains?|companions?|npc|enem(?:y|ies)|all(?:y|ies)|sidekick|rival|romance|players?|skins?|heroe?s?|agent|member of the \w+ (?:clan|tribe)|(?:son|daughter|wife|husband|brother|sister|child|father|mother|friend|cousin|niece|nephew|grandson|granddaughter|clone|descendant|ancestor|reincarnation) of|engineered|model\w*|mannequin|factor|animatronics?|king of the hill|threats?)\b|^(?:given|taught|seen|located|found|known|named|featured|released|voiced)\b/i
+const FAMILY = 'son|daughter|wife|husband|brother|sister|child|father|mother|friend|cousin|niece|nephew|grandson|granddaughter|clone|descendant|ancestor|reincarnation'
+const NOT_A_JOB = new RegExp(String.raw`\b(?:characters?|antagonists?|protagonists?|deuteragonists?|boss|bosses|villains?|companions?|npc|enem(?:y|ies)|all(?:y|ies)|sidekick|rival|nemesis|arch-?enemy|romance|players?|skins?|heroe?s?|heroines?|agent|member of the \w+ (?:clan|tribe)|(?:${FAMILY}) of|engineered|model\w*|mannequin|factor|animatronics?|king of the hill|threats?)\b|^(?:given|taught|seen|located|found|known|named|featured|released|voiced)\b`, 'i')
+// Un lien de famille au possessif (« Prince Lelouch's younger sister » n'est pas un prince) : après le découpage,
+// « Ushio's younger sister and a high school student » garde l'élève
+const POSSESSIVE_FAMILY = new RegExp(String.raw`['’]s (?:(?:younger|older|elder|little|big|twin|half|step)[- ])?(?:${FAMILY})\b`, 'i')
+
+// Un 2e rôle, plus loin que la coupure : « a young girl from Sanguine Lotus and apprentice of the witch Ione » (Marie,
+// The Witch and the Beast). En minuscule seulement, articles passés : dans « from Tokyo and Osaka » ou « son of the Pale
+// King and the White Lady », Osaka et White Lady ne sont pas des rôles.
+const ROLE_AFTER_AND = /\sand\s+(?:(?:a|an|the|also|currently|formerly|now)\s+)*(?!(?:a|an|the|also|currently|formerly|now)\s)([a-z][^.;:,()"]*)/
 
 // Ce que l'introduction dit du personnage, phrase par phrase (« Vietnam veteran », « princess of Guardia »),
 // pour en tirer une occupation
 export function introRoles(intro: string): string[] {
   const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)
   return sentences.flatMap(sentence => {
-    const role = WHAT_HE_IS.exec(sentence)?.[1]?.replace(END_OF_ROLE, '').trim()
+    const raw = WHAT_HE_IS.exec(sentence)?.[1]
+    if (!raw)
+      return []
+    const role = raw.replace(END_OF_ROLE, '').trim()
+    const after = ROLE_AFTER_AND.exec(raw.slice(role.length))?.[1]?.replace(END_OF_ROLE, '').trim()
     // Le filtre avant le découpage : « son of King X and Queen Y » part en entier
-    return role && !NOT_A_JOB.test(role) ? role.split(/\s+and\s+/) : []
-  }).filter(role => !NOT_A_JOB.test(role))
+    return [role, after].filter((text): text is string => Boolean(text) && !NOT_A_JOB.test(text!)).flatMap(text => text.split(/\s+and\s+/))
+  }).filter(role => !NOT_A_JOB.test(role) && !POSSESSIVE_FAMILY.test(role))
 }
 
 // L'introduction d'une page : le texte avant la 1re section, sans l'infobox ni les modèles

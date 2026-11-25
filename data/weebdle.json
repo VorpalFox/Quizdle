@@ -2478,8 +2478,8 @@
    "height": null,
    "occupation": [
     "Souverain",
-    "Noble",
-    "Leader"
+    "Leader",
+    "Noble"
    ],
    "hair": null,
    "anime": "Accel World",
@@ -6663,7 +6663,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Noble"
+    "Noble",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -10296,6 +10297,7 @@
    "height": null,
    "occupation": [
     "Politicien",
+    "Leader",
     "Tireur",
     "Combattant"
    ],
@@ -37553,7 +37555,8 @@
    "age": 16,
    "height": 130,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Leader"
    ],
    "hair": [
     "Argentés",
@@ -39445,7 +39448,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Gardien"
+    "Gardien",
+    "Leader"
    ],
    "hair": [
     "Bruns"
@@ -54190,6 +54194,7 @@
    "age": 16,
    "height": null,
    "occupation": [
+    "Leader",
     "Lancier",
     "Combattant"
    ],
@@ -65267,7 +65272,9 @@
    "age": "Inconnu",
    "height": null,
    "occupation": [
-    "Magicien"
+    "Magicien",
+    "Chevalier",
+    "Combattant"
    ],
    "hair": [
     "Argentés"
@@ -65326,7 +65333,9 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [

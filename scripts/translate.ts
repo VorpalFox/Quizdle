@@ -102,7 +102,8 @@ const RULES: [RegExp, string | null][] = [
   // Les postes de Tower of God
   [/bearer|wave controller/, 'Combattant'],
   [/super-?h[ée]ro/, 'Super-héros'],
-  [/\bknight|crusader|paladin/, 'Chevalier'],
+  // Pas les Knightmare Frames de Code Geass
+  [/\bknight(?!mare)|crusader|paladin/, 'Chevalier'],
   // Pas « one of the Devil King's Generals » : au service du roi
   [/\b(?:king|emperor|monarch|ruler|warlord)\b(?!'s)/, 'Roi'],
   [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
@@ -121,7 +122,8 @@ const RULES: [RegExp, string | null][] = [
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
   [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
   [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musicien'],
-  [/\b(?:idol|celebrity|influencer|youtuber|streamer|personality|entertainer|actor|actress)\b/, 'Célébrité'],
+  // « TV personality », pas le caractère (« gained a different personality »)
+  [/\b(?:idol|celebrity|influencer|youtuber|streamer|(?:tv|television|radio|media|internet|online) personality|entertainer|actor|actress)\b/, 'Célébrité'],
   [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Marchand'],
   [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientifique'],
   [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Médecin'],
