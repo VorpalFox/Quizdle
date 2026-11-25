@@ -81,21 +81,27 @@ describe('introSpecies', () => {
   const page = (intro: string) => `{{Infobox character\n|gender = Female\n}}\n${intro}\n==Appearance==\nTall.`
 
   it('EspeceDeLIntro', () => {
-    expect(introSpecies(page("'''Aqua''' is a goddess who was dragged to another world."))).toBe('goddess')
-    expect(introSpecies(page('Tuka is a young elf girl from the Coda village.'))).toBe('elf')
+    expect(introSpecies(page("'''Aqua''' is a goddess who was dragged to another world."))).toEqual(['goddess'])
+    expect(introSpecies(page('Tuka is a young elf girl from the Coda village.'))).toEqual(['elf'])
   })
 
   it('PasUnMetier', () => {
-    expect(introSpecies(page('Tanjiro is a Demon Slayer of the Demon Slayer Corps.'))).toBeNull()
-    expect(introSpecies(page('Van Hellsing is a vampire hunter.'))).toBeNull()
+    expect(introSpecies(page('Tanjiro is a Demon Slayer of the Demon Slayer Corps.'))).toEqual([])
+    expect(introSpecies(page('Van Hellsing is a vampire hunter.'))).toEqual([])
+    expect(introSpecies(page('Sumi is a servant of the Butterfly Mansion.'))).toEqual([])
   })
 
   it('CeQuIlDevient_Compte', () => {
-    expect(introSpecies(page('Kyouko is a doctor. She later became a vampire.'))).toBe('vampire')
+    expect(introSpecies(page('Kyouko is a doctor. She later became a vampire.'))).toEqual(['vampire'])
+  })
+
+  it('EntreGuillemetsEtVraieForme_ToutesLesEspeces', () => {
+    const guideau = 'Guideau is the main protagonist of the story. She is a young "human" who travels with Ashaf.\n\nGuideau\'s true form is that of a Beast and is the only natural enemy witches have.'
+    expect(introSpecies(page(guideau))).toEqual(['human', 'Beast'])
   })
 
   it('CeQuIlPretendEtre_PasCompte', () => {
-    expect(introSpecies(page('Alucard is disguised as a human.'))).toBeNull()
+    expect(introSpecies(page('Alucard is disguised as a human.'))).toEqual([])
   })
 })
 

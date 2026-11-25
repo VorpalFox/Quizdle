@@ -72,12 +72,15 @@ describe('sameName', () => {
     expect(sameName('Kiyotaka Ayanokouji', 'Kiyotaka Ayanokōji')).toBe(true)
     expect(sameName('Pyoran', 'Pioran')).toBe(true)
     expect(sameName('Yi Zhou', 'Zhuo Yi')).toBe(true)
+    expect(sameName('Matt Kuga', 'Matt Cugat')).toBe(true)
+    expect(sameName('Mary', 'Marie')).toBe(true)
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {
     expect(sameName('Ling Wang Ma', 'Wang Ling')).toBe(false)
     expect(sameName('Shin Sakai', 'Haruka Sakai')).toBe(false)
     expect(sameName('A-ko', 'Chu-Chu')).toBe(false)
+    expect(sameName('Kai', 'Chi')).toBe(false)
   })
 })
 

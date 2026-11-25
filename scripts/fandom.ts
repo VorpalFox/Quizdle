@@ -229,11 +229,13 @@ async function searchTitles(wiki: string, names: string[]): Promise<Record<strin
 }
 
 // Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
-// transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »).
+// transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »), c et k
+// (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast).
 // Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
 export function sameName(name: string, title: string): boolean {
   const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i')
+    .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
   const candidates = [...titleWords, titleWords.join('')]
   return words(name).every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
@@ -498,35 +500,39 @@ export function introOccupations(wikitext: string): { roles: string[], occupatio
   return { roles, occupation: [...new Set(occupation)].slice(0, MAX_INTRO_OCCUPATIONS) }
 }
 
-// L'espèce dite par l'introduction, quand l'infobox n'en a pas : « Aqua is a goddess who… » → goddess, « a young elf
-// girl » → elf. Le dernier mot du rôle (sans « girl », « man »…), puis les deux derniers, et seulement un nom d'espèce
-// exact : « a Demon Slayer » n'est pas un démon. Ce qu'il devient compte aussi (« she later became a vampire ») : un
-// indice vaut mieux qu'un spoil évité. Pas ce qu'il fait semblant d'être (« disguised as a human »). Rendu en anglais,
-// traduit à la fin comme les autres (translateSpeciesEntries).
-const NOT_THE_START = /\b(?:disguised|disguises|posing|poses|pretends?|pretending|believed|thought to be|claims?|mistaken)\b/i
+// Les espèces dites par l'introduction, quand l'infobox n'en a pas : « Aqua is a goddess who… » → goddess, « a young
+// elf girl » → elf. Le dernier mot du rôle (sans « girl », « man »…), puis les deux derniers, et seulement un nom
+// d'espèce exact : « a Demon Slayer » n'est pas un démon. Mots-clés pris partout dans l'intro : 32 % de justes
+// seulement (« Seraph of the End », « Shadow Garden »…), contre 3 phrases en « is a … » : 77 %.
+// Ce qu'il devient compte aussi (« she later became a vampire »), et toutes les phrases : Guideau est « a young
+// "human" » dont « true form is that of a Beast ». Un indice vaut mieux qu'un spoil évité. Pas ce qu'il fait semblant
+// d'être (« disguised as a human »). Rendu en anglais, traduit à la fin comme les autres (translateSpeciesEntries).
+const SPECIES_SENTENCES = 3
+// Ni une image (Pip Bernadotte « was a dog of war »)
+const NOT_THE_START = /\b(?:disguised|disguises|posing|poses|pretends?|pretending|believed|thought to be|claims?|mistaken|dogs? of war|lone wolf|black sheep|guinea pig|social butterfly|night owl)\b/i
 const GENERIC_NOUN = /\s+(?:girl|boy|man|men|woman|women|child|children|kid|teen|teenager|lady|maiden|youth|being|creature|person|individual|female|male|princess|prince|king|queen|lord|knight|warrior|hybrid)$/i
-const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?:a|an|the|one of the|also)\s+)+([^.;:,()"]+)/i
+const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?:a|an|the|one of the|also|that of)\s+)+([^.;:,()"]+)/i
 const END_OF_SPECIES = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|of|and|but|named|known|living|born)\b.*$/i
-export function introSpecies(wikitext: string): string | null {
-  const intro = fandomInfobox(wikitext)?.intro ?? introText(wikitext)
-  for (const sentence of intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)) {
+// Une espèce de Fate seulement : ailleurs un domestique (les servantes du Domaine des Papillons de Demon Slayer)
+const NOT_SPECIES_IN_INTRO = new Set(['servant'])
+export function introSpecies(wikitext: string): string[] {
+  const intro = (fandomInfobox(wikitext)?.intro ?? introText(wikitext)).replace(/["“”]/g, '')
+  // « ., » : la fin d'un paragraphe, recollé au suivant par cleanValue
+  const found = intro.split(/(?<=[.!?]),?\s+/).slice(0, SPECIES_SENTENCES).map(sentence => {
     if (NOT_THE_START.test(sentence))
-      continue
+      return null
     let role = SPECIES_ROLE.exec(sentence)?.[1]?.replace(END_OF_SPECIES, '').trim()
     if (!role)
-      continue
+      return null
     for (let previous = ''; previous !== role;) {
       previous = role
       role = role.replace(GENERIC_NOUN, '')
     }
     const words = role.split(/\s+/)
-    for (const length of [1, 2]) {
-      const head = words.slice(-length).join(' ')
-      if (words.length >= length && exactSpecies(head))
-        return head
-    }
-  }
-  return null
+    return [1, 2].map(length => words.length >= length ? words.slice(-length).join(' ') : '')
+      .find(head => head && !NOT_SPECIES_IN_INTRO.has(head.toLowerCase()) && exactSpecies(head)) ?? null
+  })
+  return [...new Set(found.filter((head): head is string => head !== null))]
 }
 
 // --- Complément ---
@@ -622,9 +628,9 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       if (jobs.length > 0)
         added.occupation = jobs
       // Sans espèce : celle que dit l'introduction (« Aqua is a goddess »)
-      const species = isEmpty(target.entry.attributes.species) && isEmpty(values.species) ? introSpecies(pages[title]!) : null
-      if (species)
-        added.species = [species]
+      const species = isEmpty(target.entry.attributes.species) && isEmpty(values.species) ? introSpecies(pages[title]!) : []
+      if (species.length > 0)
+        added.species = species
       const unknown = addUnknowns(target.entry.attributes, unknowns)
       if (unknown)
         added[UNKNOWN_KEYS] = unknown
@@ -632,7 +638,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

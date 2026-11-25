@@ -19141,6 +19141,8 @@
   "attributes": {
    "gender": "Autre",
    "species": [
+    "Ours",
+    "Animal",
     "Robot"
    ],
    "age": null,
@@ -49022,10 +49024,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214299-qbiy5PsA6gRw.png",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Androïde"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Tireur",
+    "Combattant"
+   ],
    "hair": null,
    "anime": "Plastic Memories",
    "genres": [
@@ -65002,7 +65009,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b204807-V4xIUWxbTWsR.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain",
+    "Bête"
+   ],
    "age": "Inconnu",
    "height": 158,
    "occupation": null,
@@ -65254,10 +65264,14 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Magicien"
+   ],
+   "hair": [
+    "Argentés"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
