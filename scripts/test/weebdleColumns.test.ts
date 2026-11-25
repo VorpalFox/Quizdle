@@ -100,6 +100,10 @@ describe('introSpecies', () => {
     expect(introSpecies(page(guideau))).toEqual(['human', 'Beast'])
   })
 
+  it('AdjectifsSeparesParUneVirgule_EspeceLue', () => {
+    expect(introSpecies(page('The Demon Sword Ashgan is a malevolent, cursed blade of mass destruction.'))).toEqual(['blade'])
+  })
+
   it('CeQuIlPretendEtre_PasCompte', () => {
     expect(introSpecies(page('Alucard is disguised as a human.'))).toEqual([])
   })

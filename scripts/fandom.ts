@@ -511,7 +511,7 @@ const SPECIES_SENTENCES = 3
 // Ni une image (Pip Bernadotte « was a dog of war »)
 const NOT_THE_START = /\b(?:disguised|disguises|posing|poses|pretends?|pretending|believed|thought to be|claims?|mistaken|dogs? of war|lone wolf|black sheep|guinea pig|social butterfly|night owl)\b/i
 const GENERIC_NOUN = /\s+(?:girl|boy|man|men|woman|women|child|children|kid|teen|teenager|lady|maiden|youth|being|creature|person|individual|female|male|princess|prince|king|queen|lord|knight|warrior|hybrid)$/i
-const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?:a|an|the|one of the|also|that of)\s+)+([^.;:,()"]+)/i
+const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?:a|an|the|one of the|also|that of)\s+)+([^.;:()"]+)/i
 const END_OF_SPECIES = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|of|and|but|named|known|living|born)\b.*$/i
 // Une espèce de Fate seulement : ailleurs un domestique (les servantes du Domaine des Papillons de Demon Slayer)
 const NOT_SPECIES_IN_INTRO = new Set(['servant'])
@@ -521,18 +521,23 @@ export function introSpecies(wikitext: string): string[] {
   const found = intro.split(/(?<=[.!?]),?\s+/).slice(0, SPECIES_SENTENCES).map(sentence => {
     if (NOT_THE_START.test(sentence))
       return null
-    let role = SPECIES_ROLE.exec(sentence)?.[1]?.replace(END_OF_SPECIES, '').trim()
-    if (!role)
-      return null
-    for (let previous = ''; previous !== role;) {
-      previous = role
-      role = role.replace(GENERIC_NOUN, '')
-    }
-    const words = role.split(/\s+/)
-    return [1, 2].map(length => words.length >= length ? words.slice(-length).join(' ') : '')
-      .find(head => head && !NOT_SPECIES_IN_INTRO.has(head.toLowerCase()) && exactSpecies(head)) ?? null
+    const role = SPECIES_ROLE.exec(sentence)?.[1]?.replace(END_OF_SPECIES, '').trim()
+    // Des adjectifs séparés par une virgule (« a malevolent, cursed blade ») : le 1er morceau qui donne une espèce
+    return role?.split(/\s*,\s*/).map(speciesHead).find(Boolean) ?? null
   })
   return [...new Set(found.filter((head): head is string => head !== null))]
+}
+
+// L'espèce d'un morceau de rôle : son dernier mot (sans « girl », « man »…), puis ses deux derniers
+function speciesHead(part: string): string | null {
+  let role = part
+  for (let previous = ''; previous !== role;) {
+    previous = role
+    role = role.replace(GENERIC_NOUN, '')
+  }
+  const words = role.split(/\s+/)
+  return [1, 2].map(length => words.length >= length ? words.slice(-length).join(' ') : '')
+    .find(head => head && !NOT_SPECIES_IN_INTRO.has(head.toLowerCase()) && exactSpecies(head)) ?? null
 }
 
 // --- Complément ---

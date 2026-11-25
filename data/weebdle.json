@@ -65304,11 +65304,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325560-QBsSNIQ7RcGb.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Lame",
+    "Objet"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",

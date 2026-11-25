@@ -353,6 +353,25 @@
     ]
    }
   },
+  "325560": {
+   "_nom": "Maken Ashgan",
+   "_raison": "épée maudite vivante (witchandthebeast.fandom.com/wiki/Demon_Sword_Ashgan) : un objet (pas Lame → Objet en général, les Lames de Xenoblade sont un peuple), pas de cheveux, pas de métier (Aucune, comme les objets du Pixeldle)",
+   "species": {
+    "plus": [
+     "Objet"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Aucune"
+    ]
+   }
+  },
   "180881": {
    "_nom": "Shuseki",
    "species": {
