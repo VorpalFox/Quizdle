@@ -12,7 +12,8 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
-import { aliases, anilist, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { fillUnknowns } from './unknownValues.js'
+import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { finishOccupations, fixedOccupationIds, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -207,6 +208,7 @@ const targets: WikiTarget[] = kept.map(character => {
       occupation: parseOccupation(character.description),
       hair: parseHair(character.description),
       weapon: parseWeapon(character.description),
+      unknown: anilistUnknowns(character.age, character.description),
       anime: universes.get(anime.id)!,
       genres: genres(anime.genres),
       year: anime.startDate.year,
@@ -224,10 +226,11 @@ const translated = translateEntries(wiki.entries, fixedOccupationIds(manual.edit
 const attributeKeys = characterAttributes.map(({ key }) => key)
 const manualApplied = applyManual(translated.entries, manual, attributeKeys)
 const warnings = manualApplied.warnings
-// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
-// corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), « Inconnu »
+// dans les cases vides que la source disait inconnues (fillUnknowns), puis les corrections encore une fois : une famille
+// ne remet pas une valeur retirée à la main
 // Seulement les indices de l'Animedle, dans l'ordre (Wikidata et Fandom lisent aussi l'espèce et la taille du Weebdle)
-const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+const entries = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), characterAttributes), manual, attributeKeys)
   .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
 const keptIds = new Set(kept.map(character => String(character.id)))
 warnings.push(...manual.exclude.filter(id => !keptIds.has(id)).map(id => `exclude : l'id ${id} n'est pas dans les ${count} personnages récupérés`))

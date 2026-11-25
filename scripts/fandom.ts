@@ -12,6 +12,7 @@ import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
 import { exactSpecies, translateOccupation } from './translate.js'
+import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
 
@@ -416,21 +417,29 @@ export function unhide(text: string): string {
 const field = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name.replace(/_/g, ' ')]).find(value => value !== undefined) ?? null
 
+// « Unknown » ne remplit rien : c'est la marque de fandomUnknowns, une autre source peut encore donner la valeur
+const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
 
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
-    occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
+    occupation: splitOccupations(known(field(fields, FIELDS.occupation)) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
-    species: rawList(field(fields, FIELDS.species)),
+    species: rawList(known(field(fields, FIELDS.species))),
     height: heightCm(field(fields, FIELDS.height)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: titleOccupations(field(fields, FIELDS.titles)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
   }
 }
+
+// Les indices que l'infobox dit inconnus en toutes lettres (« |age = Unknown ») : « Inconnu » à la fin, si aucune
+// autre source n'a mieux (unknownValues.ts)
+const UNKNOWN_FIELDS = ['gender', 'occupation', 'hair', 'age', 'species', 'height'] as const
+export const fandomUnknowns = (fields: Record<string, string>) =>
+  unknownKeys(Object.fromEntries(UNKNOWN_FIELDS.map(key => [key, field(fields, FIELDS[key])])))
 
 // Mort sans ambiguïté : « Deceased », « Killed in action », mais pas « Alive (resurrected) », « Active, Deceased »
 // ni « Deceased (vampire), Unknown (demon) » (selon la version ou la saison)
@@ -586,9 +595,9 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const found = characters.flatMap(({ target, titles }) => {
       const title = [...titles, ...searched.get(target) ?? []].find(title => pages[title] && infoboxOf(title))
       if (title)
-        return [{ target, title, values: fandomValues(infoboxOf(title)!) }]
+        return [{ target, title, values: fandomValues(infoboxOf(title)!), unknowns: fandomUnknowns(infoboxOf(title)!) }]
       const bare = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
-      return bare ? [{ target, title: bare, values: fandomValues({}) }] : []
+      return bare ? [{ target, title: bare, values: fandomValues({}), unknowns: [] }] : []
     })
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
     const hairless = found.filter(({ target, values }) => isEmpty(target.entry.attributes.hair) && isEmpty(values.hair))
@@ -597,7 +606,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = full[title] ? textHair(full[title]!) : null
       return hair ? [[target, hair] as const] : []
     }))
-    for (const { target, title, values } of found) {
+    for (const { target, title, values, unknowns } of found) {
       const added: Record<string, AttributeValue> = Object.fromEntries(Object.entries(values).filter(([key, value]) => isEmpty(target.entry.attributes[key]) && !isEmpty(value)))
       const hair = textHairs.get(target)
       if (hair)
@@ -616,6 +625,9 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const species = isEmpty(target.entry.attributes.species) && isEmpty(values.species) ? introSpecies(pages[title]!) : null
       if (species)
         added.species = [species]
+      const unknown = addUnknowns(target.entry.attributes, unknowns)
+      if (unknown)
+        added[UNKNOWN_KEYS] = unknown
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })

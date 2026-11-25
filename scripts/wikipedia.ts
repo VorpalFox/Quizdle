@@ -6,6 +6,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { hairColors, sleep, splitOccupations, type CharacterName } from './anilist.js'
+import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { infoboxAge } from './wikiText.js'
 
 const LANGUAGES = ['fr', 'en'] as const
@@ -252,21 +253,28 @@ export async function completeFromWikipedia(targets: WikiTarget[]): Promise<Wiki
   const completed = new Map<Entry, Entry>()
   for (const { entry, name, animeTitles } of incomplete) {
     const found: Record<string, AttributeValue> = {}
+    const unknowns: string[] = []
     for (const language of LANGUAGES) {
       const fields = infoboxOf(caches.get(language)!, pageTitles(name), animeTitles)
       if (!fields)
         continue
+      const raw = Object.fromEntries(Object.entries(FIELDS).map(([key, names]) => [key, field(fields, names)])) as Record<keyof typeof FIELDS, string | null>
+      // « Unknown » ne remplit rien : juste la marque, « Inconnu » à la fin si aucune source n'a mieux (unknownValues.ts)
+      unknowns.push(...unknownKeys(raw))
       const values: Record<keyof typeof FIELDS, AttributeValue> = {
-        gender: wikiGender(field(fields, FIELDS.gender)),
-        occupation: splitOccupations(field(fields, FIELDS.occupation) ?? ''),
-        hair: wikiHair(field(fields, FIELDS.hair)),
-        age: infoboxAge(field(fields, FIELDS.age)),
+        gender: wikiGender(raw.gender),
+        occupation: isUnknownValue(raw.occupation) ? null : splitOccupations(raw.occupation ?? ''),
+        hair: wikiHair(raw.hair),
+        age: infoboxAge(raw.age),
       }
       for (const [key, value] of Object.entries(values)) {
         if (isEmpty(entry.attributes[key]) && isEmpty(found[key]) && !isEmpty(value))
           found[key] = value
       }
     }
+    const unknown = addUnknowns(entry.attributes, unknowns)
+    if (unknown)
+      found[UNKNOWN_KEYS] = unknown
     if (Object.keys(found).length === 0)
       continue
     completed.set(entry, { ...entry, attributes: { ...entry.attributes, ...found } })

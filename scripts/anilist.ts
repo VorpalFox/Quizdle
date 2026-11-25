@@ -1,6 +1,7 @@
 // Outils AniList partagés par les scripts de l'Animedle (fetchAnime.ts) et du Weebdle (fetchWeebdle.ts)
 import { normalize } from '../src/engine/search.js'
 import { weaponOccupations } from './pixeldleTranslate.js'
+import { isUnknownValue, unknownKeys } from './unknownValues.js'
 
 const API = 'https://graphql.anilist.co'
 // AniList limite à 30 requêtes par minute en ce moment : on y va doucement
@@ -101,9 +102,18 @@ export function descriptionField(description: string | null, names: string[]): s
   return null
 }
 
+// Les noms des lignes de la description, par indice
+const DESCRIPTION_FIELDS = {
+  age: ['Age'],
+  occupation: ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'],
+  hair: ['Hair Colou?rs?', 'Hair'],
+  species: ['Race', 'Species'],
+  height: ['Height'],
+}
+
 // « 17-18 » → 17, « 1000+ » → 1000, « 17- » → 17. Sinon la ligne « Age: » de la description.
 export function parseAge(age: string | null, description: string | null = null): number | null {
-  const found = /\d+/.exec(age ?? '') ?? /^\d+/.exec(descriptionField(description, ['Age']) ?? '')
+  const found = /\d+/.exec(age ?? '') ?? /^\d+/.exec(descriptionField(description, DESCRIPTION_FIELDS.age) ?? '')
   return found ? Number(found[0]) : null
 }
 
@@ -126,9 +136,10 @@ const OCCUPATION_IN_TEXT = new RegExp(String.raw`\b(?:is|was|works as|worked as|
 // « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon le 1er métier courant du texte
 // (« is a young nun » → ["Nun"]), moins sûr : à relire. En anglais, comme AniList : à trier à la main.
 export function parseOccupation(description: string | null): string[] | null {
-  const value = descriptionField(description, ['Occupations?', 'Professions?', 'Jobs?', 'Positions?'])
-  // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »)
-  if (!value || value.length > MAX_OCCUPATION_LINE) {
+  const value = descriptionField(description, DESCRIPTION_FIELDS.occupation)
+  // Au-delà, ce n'est plus une liste de métiers mais un paragraphe (« Position: Center, ... is insanely strong »).
+  // « Unknown » : la marque d'anilistUnknowns, le texte peut encore dire mieux.
+  if (!value || value.length > MAX_OCCUPATION_LINE || isUnknownValue(value)) {
     const found = OCCUPATION_IN_TEXT.exec(withoutSpoilers(description))
     return found ? [capitalize(found[1]!.toLowerCase())] : null
   }
@@ -172,7 +183,7 @@ export const hairColors = (text: string) => HAIR_COLORS
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.
 export function parseHair(description: string | null): string[] | null {
-  const field = descriptionField(description, ['Hair Colou?rs?', 'Hair'])
+  const field = descriptionField(description, DESCRIPTION_FIELDS.hair)
   const fromField = field ? hairColors(field) : []
   if (fromField.length > 0)
     return fromField
@@ -188,7 +199,7 @@ export function parseWeapon(description: string | null): string[] | null {
 
 // La taille en cm : la ligne « Height: » de la description (« 173 cm (5'8") »)
 export function parseHeight(description: string | null): number | null {
-  return heightCm(descriptionField(description, ['Height']))
+  return heightCm(descriptionField(description, DESCRIPTION_FIELDS.height))
 }
 
 // « 173 cm (5'8") » → 173, « 1.72 m » → 172, « 5' 10½" » → 179, « 178 (5' 10") » → 178. La 1re taille donnée, celle
@@ -214,9 +225,19 @@ export function heightCm(value: string | null): number | null {
 }
 const valid = (cm: number) => cm >= MIN_CM ? Math.round(cm) : null
 
-// L'espèce brute (« __Race:__ Human »), traduite plus tard (translateCharacterSpecies)
+// L'espèce brute (« __Race:__ Human »), traduite plus tard (translateCharacterSpecies). « Unknown » : la marque
+// d'anilistUnknowns, Wikidata ou Fandom peuvent encore la donner.
 export function parseSpecies(description: string | null): string | null {
-  return descriptionField(description, ['Race', 'Species'])
+  const value = descriptionField(description, DESCRIPTION_FIELDS.species)
+  return isUnknownValue(value) ? null : value
+}
+
+// Les lignes de la description qui disent « Unknown » (« __Age:__ Unknown ») : « Inconnu » à la fin, si aucune autre
+// source n'a mieux (unknownValues.ts)
+export function anilistUnknowns(age: string | null, description: string | null): string[] | null {
+  const raw = Object.fromEntries(Object.entries(DESCRIPTION_FIELDS).map(([key, names]) => [key, descriptionField(description, names)]))
+  const keys = unknownKeys({ ...raw, age: age ?? raw.age })
+  return keys.length > 0 ? keys : null
 }
 
 export function weaponList(value: string | null): string[] | null {

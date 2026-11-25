@@ -510,7 +510,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Magicien",
@@ -4438,7 +4438,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": null,
    "hair": null,
    "anime": "Angel Beats!",
@@ -7990,7 +7990,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Musicien",
@@ -10292,7 +10292,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Politicien",
@@ -10559,7 +10559,7 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Religieux"
@@ -11684,7 +11684,7 @@
   "attributes": {
    "gender": "Femme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": 7,
    "occupation": null,
    "hair": null,
@@ -12908,7 +12908,7 @@
     "Oiseau",
     "Animal"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Assistant"
@@ -12972,7 +12972,7 @@
    "species": [
     "Homme-bête"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Associate of Gram Grandma"
@@ -14707,7 +14707,7 @@
     "Humain",
     "Démon"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 182,
    "occupation": [
     "Chasseur de démons",
@@ -16052,7 +16052,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 182,
    "occupation": [
     "Étudiant"
@@ -21642,7 +21642,7 @@
    "species": [
     "Homoncule"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 188,
    "occupation": [
     "Arbiter"
@@ -21706,7 +21706,7 @@
    "species": [
     "Homoncule"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Gérant",
@@ -21741,7 +21741,7 @@
    "species": [
     "Homoncule"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 194,
    "occupation": [
     "Arbiter"
@@ -21842,7 +21842,7 @@
    "species": [
     "Homoncule"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 169,
    "occupation": [
     "Leader"
@@ -24144,7 +24144,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Pêcheur"
@@ -25890,6 +25890,37 @@
   }
  },
  {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": 162,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "ufotable",
+   "source": "Visual novel"
+  }
+ },
+ {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -25911,37 +25942,6 @@
    "hair": [
     "Bleus"
    ],
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "ufotable",
-   "source": "Visual novel"
-  }
- },
- {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": 162,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -26558,7 +26558,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 181,
    "occupation": [
     "Noble"
@@ -27093,7 +27093,7 @@
    "species": [
     "Elfe"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Magicien",
@@ -28021,7 +28021,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Leader"
@@ -28053,7 +28053,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -29196,7 +29196,7 @@
    "species": [
     "Gorgone"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Domestique"
@@ -31097,7 +31097,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 159,
    "occupation": [
     "Chasseur"
@@ -31130,7 +31130,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Médecin"
@@ -31163,7 +31163,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Combattant",
     "Leader"
@@ -31228,7 +31228,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 170,
    "occupation": [
     "Leader",
@@ -31746,7 +31746,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Officier",
@@ -33085,7 +33085,7 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Livreur",
@@ -33271,7 +33271,7 @@
    "species": [
     "Vampire"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -33338,7 +33338,7 @@
    "species": [
     "Vampire"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -33371,7 +33371,7 @@
    "species": [
     "Vampire"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Soldat"
@@ -33432,8 +33432,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/623.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
-   "age": null,
+   "species": [
+    "Inconnu"
+   ],
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -33465,7 +33467,7 @@
    "species": [
     "Vampire"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -33995,7 +33997,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35894-pIxaSDFr0oGe.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Inconnu"
+   ],
    "age": 13,
    "height": 164,
    "occupation": [
@@ -34085,7 +34089,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/84077.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Fourmi-chimère"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -34114,7 +34120,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b33285-n1K7KaTFVj5D.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Inconnu"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -34144,7 +34152,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b50847-XGj2qeYWkvIK.jpg",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Inconnu"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -36446,6 +36456,37 @@
   }
  },
  {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Homme du pilier"
+   ],
+   "age": 12000,
+   "height": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -36465,37 +36506,6 @@
    "hair": [
     "Noirs",
     "Bruns"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Homme du pilier"
-   ],
-   "age": 12000,
-   "height": null,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Blonds"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -39874,7 +39884,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122444-9rGUpcjwygHD.png",
   "attributes": {
    "gender": "Homme",
-   "species": null,
+   "species": [
+    "Robot"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -45368,7 +45380,7 @@
   "attributes": {
    "gender": "Femme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": 145,
    "occupation": [
     "Magicien"
@@ -45494,10 +45506,10 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
-   "height": null,
+   "age": "Inconnu",
+   "height": "Inconnu",
    "occupation": [
-    "Inconnu"
+    "Aucune"
    ],
    "hair": [
     "Bruns"
@@ -46570,7 +46582,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 190,
    "occupation": [
     "Célébrité"
@@ -49666,7 +49678,7 @@
     "Cyborg"
    ],
    "age": 110,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Leader",
     "Soldat"
@@ -49701,9 +49713,9 @@
     "Humain"
    ],
    "age": 27,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
-    "Inconnu"
+    "Aucune"
    ],
    "hair": [
     "Noirs"
@@ -49806,7 +49818,7 @@
     "Humain"
    ],
    "age": 32,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Célébrité"
    ],
@@ -49839,7 +49851,7 @@
     "Humain"
    ],
    "age": 14,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Étudiant"
    ],
@@ -49873,7 +49885,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Inconnu"
    ],
@@ -49907,9 +49919,9 @@
     "Humain"
    ],
    "age": 28,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
-    "Inconnu"
+    "Criminel"
    ],
    "hair": [
     "Bruns"
@@ -51427,7 +51439,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Méchant"
    ],
@@ -51463,7 +51475,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Noble",
     "Aventurier",
@@ -51501,7 +51513,7 @@
     "Humain"
    ],
    "age": 19,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Noble",
     "Aventurier",
@@ -51540,8 +51552,8 @@
    "species": [
     "Humain"
    ],
-   "age": null,
-   "height": null,
+   "age": "Inconnu",
+   "height": "Inconnu",
    "occupation": [
     "Leader"
    ],
@@ -51575,7 +51587,7 @@
     "Humain"
    ],
    "age": 16,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Pilote",
     "Héros"
@@ -51609,7 +51621,7 @@
     "Humain"
    ],
    "age": 16,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Étudiant"
    ],
@@ -51750,8 +51762,8 @@
    "species": [
     "Humain"
    ],
-   "age": null,
-   "height": null,
+   "age": "Inconnu",
+   "height": "Inconnu",
    "occupation": [
     "Chasseur"
    ],
@@ -51916,7 +51928,7 @@
     "Humain"
    ],
    "age": 20,
-   "height": null,
+   "height": "Inconnu",
    "occupation": [
     "Officier",
     "Soldat"
@@ -52076,7 +52088,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": "Inconnu",
    "occupation": null,
    "hair": null,
    "anime": "Re:CREATORS",
@@ -53407,7 +53419,7 @@
     "Singe",
     "Animal"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Anthy Himemiya's Friend"
@@ -55930,41 +55942,6 @@
   }
  },
  {
-  "id": "36125",
-  "name": "Nao Yasumori",
-  "aliases": [
-   "Yasumori Nao",
-   "安森奈緒",
-   "Yasumori"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Vampire",
-    "Humain"
-   ],
-   "age": 24,
-   "height": null,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Bleus"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horreur",
-    "Mystère",
-    "Surnaturel",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume",
-   "source": "Roman"
-  }
- },
- {
   "id": "36127",
   "name": "Tomio Ookawa",
   "aliases": [
@@ -55986,6 +55963,41 @@
    ],
    "hair": [
     "Chauve"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horreur",
+    "Mystère",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume",
+   "source": "Roman"
+  }
+ },
+ {
+  "id": "36125",
+  "name": "Nao Yasumori",
+  "aliases": [
+   "Yasumori Nao",
+   "安森奈緒",
+   "Yasumori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Vampire",
+    "Humain"
+   ],
+   "age": 24,
+   "height": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Bleus"
    ],
    "anime": "Shiki",
    "genres": [
@@ -64991,7 +65003,7 @@
   "attributes": {
    "gender": "Femme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": 158,
    "occupation": null,
    "hair": [
@@ -65019,7 +65031,7 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": 188,
    "occupation": [
     "Magicien"
@@ -65054,8 +65066,8 @@
    "species": [
     "Humain"
    ],
-   "age": null,
-   "height": null,
+   "age": "Inconnu",
+   "height": "Inconnu",
    "occupation": [
     "Magicien"
    ],
@@ -65085,7 +65097,7 @@
   "attributes": {
    "gender": "Homme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": null,
    "hair": [
@@ -66031,12 +66043,12 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b231456-SOepFGeYFMBn.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Inconnu",
    "species": [
     "Chien",
     "Animal"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Aucune"
@@ -66901,6 +66913,37 @@
   }
  },
  {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 29,
+   "height": null,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
+   "anime": "Toradora!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF",
+   "source": "Light novel"
+  }
+ },
+ {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -66922,37 +66965,6 @@
    "hair": [
     "Bleus"
    ],
-   "anime": "Toradora!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": 29,
-   "height": null,
-   "occupation": [
-    "Professeur"
-   ],
-   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comédie",
@@ -68783,7 +68795,7 @@
   "attributes": {
    "gender": "Femme",
    "species": null,
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": null,
    "hair": [
@@ -68815,7 +68827,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": null,
    "hair": [
@@ -71481,7 +71493,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Chanteur",
@@ -71551,7 +71563,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Owner of BB Lounge"
@@ -71586,7 +71598,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Chanteur",
@@ -71620,7 +71632,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "DJ",
@@ -71835,7 +71847,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Chanteur",
@@ -71872,7 +71884,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": null,
    "occupation": [
     "Employé"

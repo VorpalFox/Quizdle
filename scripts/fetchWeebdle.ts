@@ -27,7 +27,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
-import { aliases, anilist, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { fillUnknowns } from './unknownValues.js'
+import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { finishOccupations, fixedOccupationIds, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -319,6 +320,7 @@ const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.m
       weapon: parseWeapon(character.description),
       species: (species => species ? [species] : null)(parseSpecies(character.description)),
       height: parseHeight(character.description),
+      unknown: anilistUnknowns(character.age, character.description),
       anime: cleanTitle(anime.rec.title),
       source: SOURCE_OVERRIDES[anime.rec.anilistId] ?? animeSource(anime.media.source),
       genres: genres(anime.media.genres),
@@ -346,10 +348,11 @@ const speciesEntries = withSpecies.entries.map(entry => {
 const attributeKeys = weebdleAttributes.map(({ key }) => key)
 const manualApplied = applyManual(speciesEntries, manual, attributeKeys)
 const warnings = manualApplied.warnings
-// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), puis les
-// corrections encore une fois : une famille ne remet pas une valeur retirée à la main
+// À la fin, corrections comprises : les armes rejoignent l'occupation, tout est regroupé (finishOccupations), « Inconnu »
+// dans les cases vides que la source disait inconnues (fillUnknowns), puis les corrections encore une fois : une famille
+// ne remet pas une valeur retirée à la main
 // Les indices dans l'ordre de l'affichage
-const entries = finishManual(finishOccupations(manualApplied.entries), manual, attributeKeys)
+const entries = finishManual(fillUnknowns(finishOccupations(manualApplied.entries), weebdleAttributes), manual, attributeKeys)
   .map(entry => ({ ...entry, attributes: Object.fromEntries(attributeKeys.map(key => [key, entry.attributes[key] ?? null])) }))
 warnings.push(...unknownExcluded.map(id => `exclude : l'id ${id} n'est dans aucun anime de la liste`))
 
