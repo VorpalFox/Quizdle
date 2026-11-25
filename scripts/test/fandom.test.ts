@@ -74,6 +74,7 @@ describe('sameName', () => {
     expect(sameName('Yi Zhou', 'Zhuo Yi')).toBe(true)
     expect(sameName('Matt Kuga', 'Matt Cugat')).toBe(true)
     expect(sameName('Mary', 'Marie')).toBe(true)
+    expect(sameName('Ro Nny', 'Lo-Ny')).toBe(true)
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {

@@ -59635,7 +59635,8 @@
    "height": null,
    "occupation": [
     "Étudiant",
-    "Leader"
+    "Leader",
+    "Dresseur"
    ],
    "hair": null,
    "anime": "Sword Art Online",
@@ -64025,8 +64026,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Magic swordman",
-    "Étudiant"
+    "Épéiste",
+    "Étudiant",
+    "Combattant"
    ],
    "hair": [
     "Rouges"
@@ -64452,11 +64454,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327361-SpLHaA9tehUW.png",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Homme",
+   "species": [
+    "Homme-bête"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Dresseur"
+   ],
    "hair": null,
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
@@ -64480,7 +64486,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327364-vOkJRdm8sWEL.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Démon"
+   ],
    "age": null,
    "height": null,
    "occupation": null,

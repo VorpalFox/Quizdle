@@ -230,11 +230,12 @@ async function searchTitles(wiki: string, names: string[]): Promise<Record<strin
 
 // Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
 // transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »), c et k
-// (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast).
+// (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast),
+// r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »).
 // Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
 export function sameName(name: string, title: string): boolean {
   const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i')
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r')
     .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
   const candidates = [...titleWords, titleWords.join('')]

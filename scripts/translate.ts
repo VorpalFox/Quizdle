@@ -121,13 +121,16 @@ const RULES: [RegExp, string | null][] = [
   [/royal guard/, 'Garde'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
-  [/swords(?:wo)?m[ae]n/, 'Épéiste'],
+  // « Magic swordman » aussi, sans s (Amyu)
+  [/swords?(?:wo)?m[ae]n/, 'Épéiste'],
   [/exorcist/, 'Exorciste'],
   [/\bbull(?:y|ies)\b|delinquent/, 'Voyou'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Combattant'],
   [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
   [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Garde'],
   [/butler/, 'Majordome'],
+  // « Tamer », « Monster Tamer » (Ro Nny)
+  [/\btamer\b/, 'Dresseur'],
   // « the nanny of all the orphans of Zari Bars » (Sis)
   [/\bnann(?:y|ies)\b|babysitter/, 'Nourrice'],
   [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
@@ -349,6 +352,8 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'michaela': null, 'familiar': null, 'neighbor': null,
   // JUJUTSU KAISEN : les Incarnations sont des fléaux ou des exorcistes réincarnés dans un corps, pas une espèce
   'incarnation': null,
+  // The Reincarnation of the Strongest Exorcist : les Trieyes sont un peuple de démons (Pirisralia)
+  'trieye': 'Démon',
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
   'hybrid': 'Demi-démon', 'parasite': 'Humain',
