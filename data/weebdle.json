@@ -65175,10 +65175,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285309-cBJcnVxyL4ak.png",
   "attributes": {
    "gender": "Femme",
-   "species": null,
+   "species": [
+    "Humain"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Magicien"
+   ],
    "hair": null,
    "anime": "The Witch and the Beast",
    "genres": [
