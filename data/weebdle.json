@@ -13417,7 +13417,8 @@
   "aliases": [
    "Oda Nobutaka",
    "織田信隆",
-   "Nobutaka"
+   "Nobutaka",
+   "Oda"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66325-pFT9jKuWAyq4.png",
   "attributes": {
@@ -21778,7 +21779,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": "Inconnu",
    "height": 188,
@@ -21842,7 +21844,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": "Inconnu",
    "height": null,
@@ -21877,7 +21880,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": "Inconnu",
    "height": 194,
@@ -21910,7 +21914,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": null,
    "height": 176,
@@ -21979,7 +21984,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": "Inconnu",
    "height": 169,
@@ -22012,7 +22018,8 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": null,
    "height": 164,
@@ -22080,7 +22087,8 @@
   "attributes": {
    "gender": "Homme",
    "species": [
-    "Homoncule"
+    "Homoncule",
+    "Poupée"
    ],
    "age": null,
    "height": null,
@@ -46197,90 +46205,6 @@
    "occupation": [
     "Soldat"
    ],
-   "hair": null,
-   "anime": "Now and Then, Here and There",
-   "genres": [
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Science-fiction"
-   ],
-   "year": 1999,
-   "studio": "AIC",
-   "source": "Original"
-  }
- },
- {
-  "id": "251124",
-  "name": "Kazam",
-  "aliases": [
-   "カザム"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251124-TNoW8FjbHVCd.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Now and Then, Here and There",
-   "genres": [
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Science-fiction"
-   ],
-   "year": 1999,
-   "studio": "AIC",
-   "source": "Original"
-  }
- },
- {
-  "id": "251125",
-  "name": "Elamba",
-  "aliases": [
-   "エランバ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251125-r3BPevTxicOY.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Now and Then, Here and There",
-   "genres": [
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Science-fiction"
-   ],
-   "year": 1999,
-   "studio": "AIC",
-   "source": "Original"
-  }
- },
- {
-  "id": "251127",
-  "name": "Oda",
-  "aliases": [
-   "小田"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251127-NQxqFb3V19ev.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "Now and Then, Here and There",
    "genres": [

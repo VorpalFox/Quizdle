@@ -1,5 +1,8 @@
 {
  "exclude": [
+  "251124",
+  "251125",
+  "251127",
   "319534",
   "319538",
   "325561",
@@ -179,7 +182,8 @@
    "_nom": "Decim",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -190,7 +194,8 @@
    "_nom": "Nona",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -201,7 +206,8 @@
    "_nom": "Ginti",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -212,7 +218,8 @@
    "_nom": "Clavis",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -223,7 +230,8 @@
    "_nom": "Castra",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -234,7 +242,8 @@
    "_nom": "Oculus",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
@@ -256,7 +265,8 @@
    "_nom": "Quin",
    "species": {
     "plus": [
-     "Homoncule"
+     "Homoncule",
+     "Poupée"
     ],
     "moins": [
      "Humain"
