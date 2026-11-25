@@ -5175,7 +5175,7 @@
    "age": 15,
    "height": null,
    "occupation": [
-    "Private Aichi Symbiosis Academy",
+    "Étudiant",
     "Épéiste",
     "Combattant"
    ],
@@ -5212,7 +5212,7 @@
    "age": 16,
    "height": 156,
    "occupation": [
-    "Private Aichi Symbiosis Academy"
+    "Étudiant"
    ],
    "hair": [
     "Verts"
@@ -5244,7 +5244,9 @@
    ],
    "age": 15,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Étudiant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -5275,10 +5277,16 @@
    "species": [
     "Humain"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "age": 14,
+   "height": 138,
+   "occupation": [
+    "Étudiant",
+    "Épéiste",
+    "Combattant"
+   ],
+   "hair": [
+    "Blancs"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -5308,7 +5316,7 @@
    "age": 15,
    "height": 161,
    "occupation": [
-    "Private Aichi Symbiosis Academy",
+    "Étudiant",
     "Épéiste",
     "Combattant"
    ],
@@ -5345,7 +5353,7 @@
    "age": 15,
    "height": 140,
    "occupation": [
-    "Private Aichi Symbiosis Academy"
+    "Étudiant"
    ],
    "hair": [
     "Blonds"
@@ -5372,7 +5380,7 @@
   "attributes": {
    "gender": null,
    "species": [
-    "Humain"
+    "Ours"
    ],
    "age": null,
    "height": null,
@@ -5400,14 +5408,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/121452-b5mtc6EcoQtV.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": [
     "Humain"
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Étudiant",
+    "Leader"
+   ],
+   "hair": [
+    "Roses"
+   ],
    "anime": "Armed Girl's Machiavellism",
    "genres": [
     "Action",
@@ -5430,165 +5443,16 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/121448-y4fZQMV0z5sm.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": 13,
    "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Armed Girl's Machiavellism",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Ecchi",
-    "Romance"
+   "occupation": [
+    "Étudiant",
+    "Leader"
    ],
-   "year": 2017,
-   "studio": "SILVER LINK.",
-   "source": "Manga"
-  }
- },
- {
-  "id": "121450",
-  "name": "Sassa Kurasaki",
-  "aliases": [
-   "Kurasaki Sassa",
-   "倉崎佐々",
-   "Sassa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121450-4oKCtGGtsLVj.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Armed Girl's Machiavellism",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Ecchi",
-    "Romance"
-   ],
-   "year": 2017,
-   "studio": "SILVER LINK.",
-   "source": "Manga"
-  }
- },
- {
-  "id": "121462",
-  "name": "Kinue Tanukihara",
-  "aliases": [
-   "Tanukihara Kinue",
-   "狸原絹衣",
-   "Kinue",
-   "Tanukihara"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121462-pnrixQYIrocP.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Armed Girl's Machiavellism",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Ecchi",
-    "Romance"
-   ],
-   "year": 2017,
-   "studio": "SILVER LINK.",
-   "source": "Manga"
-  }
- },
- {
-  "id": "121461",
-  "name": "Ui Migii",
-  "aliases": [
-   "Migii Ui",
-   "右井右井",
-   "Migii"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121461-LDIaoPa38nbb.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Armed Girl's Machiavellism",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Ecchi",
-    "Romance"
-   ],
-   "year": 2017,
-   "studio": "SILVER LINK.",
-   "source": "Manga"
-  }
- },
- {
-  "id": "121463",
-  "name": "Kusuo Masukodera",
-  "aliases": [
-   "Masukodera Kusuo",
-   "増子寺楠男",
-   "Kusuo",
-   "Masukodera"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121463-aIK3V9g8YoyA.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Armed Girl's Machiavellism",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Ecchi",
-    "Romance"
-   ],
-   "year": 2017,
-   "studio": "SILVER LINK.",
-   "source": "Manga"
-  }
- },
- {
-  "id": "121451",
-  "name": "Tsunemi Touko",
-  "aliases": [
-   "Touko Tsunemi",
-   "東狐常美",
-   "Tsunemi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/121451-gZWEQhcXCTQB.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "Armed Girl's Machiavellism",
    "genres": [
@@ -5612,7 +5476,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/121456-iNnjQ8qMPyKf.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Femme",
    "species": [
     "Humain"
    ],
@@ -26087,37 +25951,6 @@
   }
  },
  {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": 162,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": null,
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "ufotable",
-   "source": "Visual novel"
-  }
- },
- {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -26139,6 +25972,37 @@
    "hair": [
     "Bleus"
    ],
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "ufotable",
+   "source": "Visual novel"
+  }
+ },
+ {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": 162,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -36776,37 +36640,6 @@
   }
  },
  {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Homme du pilier"
-   ],
-   "age": 12000,
-   "height": null,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -36828,6 +36661,37 @@
    "hair": [
     "Noirs",
     "Bruns"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Homme du pilier"
+   ],
+   "age": 12000,
+   "height": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Blonds"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -57214,41 +57078,6 @@
   }
  },
  {
-  "id": "36127",
-  "name": "Tomio Ookawa",
-  "aliases": [
-   "Ookawa Tomio",
-   "大川富雄",
-   "Tomio",
-   "Ookawa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36127.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": 60,
-   "height": null,
-   "occupation": [
-    "Aucune"
-   ],
-   "hair": [
-    "Chauve"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horreur",
-    "Mystère",
-    "Surnaturel",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume",
-   "source": "Roman"
-  }
- },
- {
   "id": "36125",
   "name": "Nao Yasumori",
   "aliases": [
@@ -57270,6 +57099,41 @@
    ],
    "hair": [
     "Bleus"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horreur",
+    "Mystère",
+    "Surnaturel",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume",
+   "source": "Roman"
+  }
+ },
+ {
+  "id": "36127",
+  "name": "Tomio Ookawa",
+  "aliases": [
+   "Ookawa Tomio",
+   "大川富雄",
+   "Tomio",
+   "Ookawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36127.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": 60,
+   "height": null,
+   "occupation": [
+    "Aucune"
+   ],
+   "hair": [
+    "Chauve"
    ],
    "anime": "Shiki",
    "genres": [
@@ -59857,6 +59721,8 @@
    "height": null,
    "occupation": [
     "Scientifique",
+    "Employé",
+    "Leader",
     "Chevalier",
     "Combattant"
    ],
@@ -68177,37 +68043,6 @@
   }
  },
  {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": 29,
-   "height": null,
-   "occupation": [
-    "Professeur"
-   ],
-   "hair": null,
-   "anime": "Toradora!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Romance",
-    "Tranche de vie"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF",
-   "source": "Light novel"
-  }
- },
- {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -68229,6 +68064,37 @@
    "hair": [
     "Bleus"
    ],
+   "anime": "Toradora!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Romance",
+    "Tranche de vie"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Femme",
+   "species": [
+    "Humain"
+   ],
+   "age": 29,
+   "height": null,
+   "occupation": [
+    "Professeur"
+   ],
+   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comédie",
