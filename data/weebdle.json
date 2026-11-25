@@ -51722,7 +51722,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Garde"
+    "Garde",
+    "Combattant"
    ],
    "hair": [
     "Chauve"
@@ -51753,7 +51754,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Espion",
+    "Dresseur",
+    "Combattant"
+   ],
    "hair": [
     "Noirs"
    ],
@@ -51885,7 +51890,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Lancier",
+    "Combattant"
+   ],
    "hair": null,
    "anime": "Ranking of Kings",
    "genres": [
@@ -51943,7 +51951,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Professeur"
+    "Professeur",
+    "Épéiste",
+    "Combattant"
    ],
    "hair": [
     "Rouges",
