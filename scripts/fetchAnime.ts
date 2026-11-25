@@ -217,7 +217,7 @@ const targets: WikiTarget[] = kept.map(character => {
       studio: anime.studios.nodes[0]?.name ?? null,
     },
   }
-  return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji, universes.get(anime.id)!] }
+  return { entry, name: character.name, animeTitles: [anime.title.english ?? '', anime.title.romaji, universes.get(anime.id)!], fandomPage: manual.fandom?.[String(character.id)] }
 })
 // Ce qu'AniList n'a pas donné : depuis Wikidata (lien par l'ID AniList), puis les wikis Fandom, puis Wikipédia, puis tout en français.
 // Les corrections à la main passent après.

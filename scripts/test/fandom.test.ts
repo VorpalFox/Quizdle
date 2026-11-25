@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, infoboxTemplate, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 
 const NANAMI = `{{Character Infobox
 |name = Kento Nanami
@@ -64,6 +64,18 @@ describe('fandomValues, titres', () => {
   it('Titres_TraduitsSansLesSurnoms', () => {
     const page = "{{Character Infobox\n|gender = Male\n|titles = «The Black Swordsman»<br>Beater\n}}"
     expect(fandomValues(fandomInfobox(page)!).titles).toEqual(['Épéiste'])
+  })
+})
+
+describe('pageSection', () => {
+  const page = "Intro.\n== Alter Ego: Paprika ==\n{{Character Box\n|hair = Red\n}}\nShe guides dreams.\n=== Powers ===\nFlying.\n== Trivia ==\nOther."
+
+  it('SectionEtSesSousSections', () => {
+    expect(pageSection(page, 'Alter Ego: Paprika')).toBe('{{Character Box\n|hair = Red\n}}\nShe guides dreams.\n=== Powers ===\nFlying.')
+  })
+
+  it('SectionAbsente_Null', () => {
+    expect(pageSection(page, 'Biography')).toBeNull()
   })
 })
 

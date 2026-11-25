@@ -334,6 +334,7 @@ const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.ma
 const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
   name: character.name,
   animeTitles: [anime.rec.title, anime.rec.romaji, anime.media.title.english ?? '', anime.media.title.romaji],
+  fandomPage: manual.fandom?.[String(character.id)],
   entry: {
     id: String(character.id),
     name: character.name.full,

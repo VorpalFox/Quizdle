@@ -46,6 +46,8 @@ export interface WikiTarget {
   name: CharacterName
   // titres de l'anime (anglais, romaji...) : la page doit en citer un, sinon c'est un homonyme
   animeTitles: string[]
+  // la page Fandom imposée à la main (« fandom » des corrections), éventuellement avec une section
+  fandomPage?: string
 }
 
 export interface WikiReport {

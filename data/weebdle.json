@@ -48774,7 +48774,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -48951,7 +48953,9 @@
     "Barman",
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Gris"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",
@@ -48982,7 +48986,9 @@
    "occupation": [
     "Serveur"
    ],
-   "hair": null,
+   "hair": [
+    "Bruns"
+   ],
    "anime": "Paprika",
    "genres": [
     "Fantasy",

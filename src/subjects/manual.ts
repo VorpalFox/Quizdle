@@ -26,6 +26,9 @@ export interface Manual {
   // Weebdle : titre de l'anime → nombre de personnages voulu, 20 sinon. Plus : le tirage en prend davantage. Moins, quand
   // les derniers ne sont que des figurants sans infos : les moins remplis sortent à la fin (jamais un perso corrigé).
   limits?: Record<string, number>
+  // Animedle, Weebdle : id → page de son wiki Fandom, quand le script ne la trouve pas seul, avec une section si besoin
+  // (« Chiba Atsuko#Alter Ego: Paprika ») : l'infobox et l'intro sont lues dans cette section
+  fandom?: Record<string, string>
 }
 
 export interface WikiSettings {
@@ -61,7 +64,7 @@ export function manualFile(subjectId: string): URL {
 
 export function readManual(file: URL): Manual {
   const manual = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as Partial<Manual> : {}
-  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {}, ...manual.limits ? { limits: manual.limits } : {} }
+  return { exclude: (manual.exclude ?? []).map(String), edit: manual.edit ?? {}, add: manual.add ?? [], ...manual.wikis ? { wikis: manual.wikis } : {}, ...manual.defaults ? { defaults: manual.defaults } : {}, ...manual.limits ? { limits: manual.limits } : {}, ...manual.fandom ? { fandom: manual.fandom } : {} }
 }
 
 // Écrit dans un fichier temporaire puis renomme : pas de fichier à moitié écrit si le bot s'arrête pile à ce moment

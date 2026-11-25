@@ -305,6 +305,20 @@ async function fetchFullPages(wiki: string, titles: string[]): Promise<Pages> {
   return cache
 }
 
+// Le texte d'une section (« == Alter Ego: Paprika == »), jusqu'au titre suivant de même niveau ou plus haut. null si
+// la section n'existe pas.
+export function pageSection(wikitext: string, section: string): string | null {
+  const wanted = normalize(section)
+  const headings = [...wikitext.matchAll(/^(={2,6})\s*(.+?)\s*\1\s*$/gm)]
+  const index = headings.findIndex(match => normalize(match[2]!) === wanted)
+  if (index < 0)
+    return null
+  const start = headings[index]!
+  const level = start[1]!.length
+  const end = headings.slice(index + 1).find(match => match[1]!.length <= level)
+  return wikitext.slice(start.index! + start[0].length, end?.index ?? wikitext.length).trim()
+}
+
 // Les liens d'une page d'homonymie à ne pas suivre : pas le personnage de l'anime (film, jeu, chanson, épisode…)
 const NOT_THE_ANIME = /film|movie|novel|book|card|item|weapon|location|game|song|episode|chapter|arc|album|disambiguation/i
 const DISAMBIGUATION = /\{\{\s*disambig|may (?:also )?refer to/i
@@ -567,26 +581,38 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       noWiki.add(anime)
       continue
     }
-    const titles = characterTitles(target, article?.split(':').slice(1).join(':'))
+    // La page imposée à la main (« fandom » des corrections) : seulement elle, ni homonymie ni recherche
+    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article?.split(':').slice(1).join(':'))
     byWiki.set(wiki, [...byWiki.get(wiki) ?? [], { target, titles }])
   }
+  // Les titres de page à demander à l'API : pas ceux avec une section, lus dans la page entière
+  const plain = (titles: string[]) => titles.filter(title => !title.includes('#'))
 
   const filled: string[] = []
   const completed = new Map<Entry, Entry>()
   let done = 0
   for (const [wiki, characters] of byWiki) {
     process.stdout.write(`\rFandom : ${++done}/${byWiki.size} wikis (${wiki})`.padEnd(70))
-    const firstPages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    const firstPages = await fetchPages(wiki, plain(characters.flatMap(({ titles }) => titles)))
     // Pas d'infobox, mais une page d'homonymie (« Rem ») : ses liens « Rem (…) », ceux qui citent l'anime d'abord
     for (const character of characters) {
-      if (character.titles.some(title => firstPages[title] && fandomInfobox(firstPages[title]!)))
+      if (character.target.fandomPage || character.titles.some(title => firstPages[title] && fandomInfobox(firstPages[title]!)))
         continue
       const prefer = (qualifier: string) => character.target.animeTitles.some(title => title && normalize(qualifier).includes(normalize(title)))
       character.titles = [...character.titles, ...character.titles.flatMap(title => firstPages[title] ? disambiguationLinks(firstPages[title]!, title, prefer, NOT_THE_ANIME) : [])]
     }
-    let pages = await fetchPages(wiki, characters.flatMap(({ titles }) => titles))
+    let pages = await fetchPages(wiki, plain(characters.flatMap(({ titles }) => titles)))
+    // Une section imposée à la main (« Chiba Atsuko#Alter Ego: Paprika ») : son texte, tiré de la page entière
+    const sectioned = [...new Set(characters.flatMap(({ titles }) => titles.filter(title => title.includes('#'))))]
+    if (sectioned.length > 0) {
+      const wholePages = await fetchFullPages(wiki, sectioned.map(title => title.split('#')[0]!))
+      pages = { ...pages, ...Object.fromEntries(sectioned.map(title => {
+        const [page, section] = title.split('#') as [string, string]
+        return [title, wholePages[page] ? pageSection(wholePages[page]!, section) : null]
+      })) }
+    }
     // Aucune page à son nom : les résultats de la recherche du wiki
-    const lost = characters.filter(({ titles }) => !titles.some(title => pages[title]))
+    const lost = characters.filter(({ target, titles }) => !target.fandomPage && !titles.some(title => pages[title]))
     const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
     // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
     const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
@@ -619,9 +645,11 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
     const hairless = found.filter(({ values }) => isEmpty(values.hair))
-    const full = hairless.length > 0 ? await fetchFullPages(wiki, hairless.map(({ title }) => title)) : {}
+    const full = hairless.length > 0 ? await fetchFullPages(wiki, plain(hairless.map(({ title }) => title))) : {}
     const textHairs = new Map(hairless.flatMap(({ target, title }) => {
-      const hair = full[title] ? textHair(full[title]!) : null
+      // Une section imposée : son texte seulement, pas toute la page (Paprika n'a pas les cheveux d'Atsuko)
+      const text = title.includes('#') ? pages[title] : full[title]
+      const hair = text ? textHair(text) : null
       return hair ? [[target, hair] as const] : []
     }))
     for (const { target, title, values, unknowns } of found) {
