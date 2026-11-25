@@ -31537,7 +31537,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Professeur"
+    "Voleur",
+    "Professeur",
+    "Criminel"
    ],
    "hair": [
     "Bruns"
@@ -43043,7 +43045,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Professeur"
+   ],
    "hair": null,
    "anime": "Mieruko-chan",
    "genres": [
@@ -49024,6 +49028,7 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Assistant",
     "Scientifique"
    ],
    "hair": [
@@ -51649,7 +51654,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Souverain",
+    "Noble",
+    "Leader"
+   ],
    "hair": [
     "Blonds"
    ],
@@ -51712,7 +51721,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Garde"
+   ],
    "hair": [
     "Chauve"
    ],
@@ -53162,7 +53173,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Acteur",
+    "Célébrité",
+    "Artiste"
+   ],
    "hair": null,
    "anime": "Re:CREATORS",
    "genres": [
@@ -53227,7 +53242,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Acteur",
+    "Célébrité",
+    "Artiste"
+   ],
    "hair": null,
    "anime": "Re:CREATORS",
    "genres": [
@@ -67618,8 +67637,8 @@
    "age": 27,
    "height": null,
    "occupation": [
-    "Détective",
     "Professeur",
+    "Détective",
     "Officier",
     "Soldat"
    ],

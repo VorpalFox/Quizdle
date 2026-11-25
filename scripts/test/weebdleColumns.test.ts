@@ -93,6 +93,13 @@ describe('parseOccupationAtStart', () => {
     expect(parseOccupationAtStart('One of the Four Ramen Emperors of Tokyo.')).toBeNull()
   })
 
+  it('PossessifEtCurrent_Lus', () => {
+    expect(parseOccupationAtStart('[Hiling](https://anilist.co/character/231129/)\'s bodyguard.')).toEqual(['Bodyguard'])
+    expect(parseOccupationAtStart('King Bosse\'s second wife, current Queen. She is Daida\'s mother.')).toEqual(['Queen'])
+    expect(parseOccupationAtStart('Hyakkimaru is the central character of Tezuka\'s best-known samurai story.')).toBeNull()
+    expect(parseOccupationAtStart('Kayo is Shougen\'s Model Dolphin Initiator.')).toBeNull()
+  })
+
   it('UnDesSoldats_Lu', () => {
     expect(parseOccupationAtStart('One of the soldiers in Hamdo\'s army.')).toEqual(['Soldier'])
   })

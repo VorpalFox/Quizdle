@@ -130,7 +130,7 @@ const OCCUPATIONS = [
   'mage', 'witch', 'wizard', 'sorcerer', 'sorceress', 'priest', 'priestess', 'nun', 'shrine maiden', 'cleric', 'healer', 'archer',
   'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'lord', 'lady', 'president', 'hero', 'god', 'goddess',
   // Paprika : « He's the bartender », « A gifted psychiatrist », « Chiba's research assistant »
-  'bartender', 'waiter', 'waitress', 'psychiatrist', 'psychotherapist', 'research assistant',
+  'bartender', 'waiter', 'waitress', 'psychiatrist', 'psychotherapist', 'research assistant', 'bodyguard',
 ]
 // « Tatsumi is a young swordsman », « She works as a nurse » : le métier seul, sans les adjectifs.
 // Pas « a model student » (élève modèle) ni « a lady killer ».
@@ -147,6 +147,19 @@ const OCCUPATION_AT_START = new RegExp(String.raw`^\s*(?:a|an|the) (?:[a-z-]+ ){
 // est un surnom de groupe (Saburo Odajima)
 const NOT_ONE_OF = new Set([...NOT_AT_START, 'king', 'queen', 'prince', 'princess', 'emperor', 'empress', 'noble', 'president', 'god', 'goddess'])
 const ONE_OF_THE = new RegExp(String.raw`^\s*one of the (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => !NOT_ONE_OF.has(job)).join('|')})s?\b`, 'i')
+// « Hiling's bodyguard », « Kurapika's nen teacher » : un possessif en tout début, puis le métier. Pas « Hyakkimaru is
+// the central character of Tezuka's samurai story » (un verbe avant), ni « Shougen's Model Dolphin Initiator ».
+const POSSESSIVE = new RegExp(String.raw`^\s*([^.,;]{1,50}?)['’]s (?:[a-z-]+ ){0,2}?(${OCCUPATIONS.filter(job => job !== 'model').join('|')})\b(?![ -](?:student|citizen|killer|luck))`, 'i')
+// « King Bosse's second wife, current Queen » (Hiling) : « current / former X » après une virgule, dans la 1re phrase
+const CURRENT = new RegExp(String.raw`^[^.]*?,\s*(?:the\s+)?(?:current|former|reigning)\s+(${OCCUPATIONS.join('|')})\b`, 'i')
+
+// Ces tournures en début de description, sans les liens Markdown (« [Hiling](https://anilist.co/...)'s bodyguard »)
+function occupationAtStart(text: string): string | null {
+  const plainText = text.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+  const possessive = POSSESSIVE.exec(plainText)
+  const fromPossessive = possessive && !/\b(?:is|was|are|were)\b/i.test(possessive[1]!) ? possessive[2]! : null
+  return OCCUPATION_AT_START.exec(plainText)?.[1] ?? ONE_OF_THE.exec(plainText)?.[1] ?? fromPossessive ?? CURRENT.exec(plainText)?.[1] ?? null
+}
 
 // « Jujutsu Sorcerer, Teacher » → ["Jujutsu Sorcerer", "Teacher"]. Sinon les métiers courants du texte, tous
 // (« She's a first-year student… is the president » → Student, President), moins sûrs : à relire. En anglais, comme
@@ -165,9 +178,8 @@ export function parseOccupation(description: string | null): string[] | null {
 // Sans occupation dans la description (parseOccupation) : moins sûr, il ne compte pas pour choisir les persos (hasInfo),
 // sinon des figurants prennent la place des persos connus. Les autres sources s'y ajoutent (addedValues).
 export function parseOccupationAtStart(description: string | null): string[] | null {
-  const text = withoutSpoilers(description)
-  const found = OCCUPATION_AT_START.exec(text) ?? ONE_OF_THE.exec(text)
-  return found ? [capitalize(found[1]!.toLowerCase())] : null
+  const found = occupationAtStart(withoutSpoilers(description))
+  return found ? [capitalize(found.toLowerCase())] : null
 }
 
 // « Pirate (Captain), Student and formerly Knight » → ["Pirate", "Student", "Knight"]. Sert aussi pour Wikipédia (« et », « puis »).
