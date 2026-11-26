@@ -69661,7 +69661,10 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Adventurer",
+    "Astronaut"
+   ],
    "hair": [
     "Player's choice"
    ],

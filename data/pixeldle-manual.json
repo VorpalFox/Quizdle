@@ -6165,7 +6165,10 @@
     "gender": "Player's choice",
     "year": 2008,
     "franchise": "Spore",
-    "occupation": null,
+    "occupation": [
+     "Adventurer",
+     "Astronaut"
+    ],
     "hair": [
      "Player's choice"
     ]
