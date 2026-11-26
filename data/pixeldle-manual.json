@@ -2971,11 +2971,21 @@
   },
   "Q111015357": {
    "_nom": "Spode",
-   "gender": "Genderless"
+   "gender": "Genderless",
+   "occupation": {
+    "plus": [
+     "Unknown"
+    ]
+   }
   },
   "Q125680235": {
    "_nom": "The God That Will Come",
-   "gender": "Genderless"
+   "gender": "Genderless",
+   "occupation": {
+    "plus": [
+     "Unknown"
+    ]
+   }
   },
   "Q4219956": {
    "_nom": "Cyberdemon",
@@ -3167,7 +3177,12 @@
   },
   "Q125685268": {
    "_nom": "Bawb",
-   "gender": "Male"
+   "gender": "Male",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   }
   },
   "Q139494225": {
    "_nom": "Samuel Hayden (Doom)",
@@ -3302,7 +3317,12 @@
   "wiki-spore-grox": {
    "_nom": "Grox",
    "_raison": "une espèce et un empire, pas un individu : le sexe ne s'applique pas",
-   "gender": "N/A"
+   "gender": "N/A",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   }
   },
   "wiki-solasta-rose-fairwind": {
    "_nom": "Rose Fairwind",
@@ -6145,7 +6165,10 @@
     "gender": "Player's choice",
     "year": 2008,
     "franchise": "Spore",
-    "occupation": null
+    "occupation": null,
+    "hair": [
+     "Player's choice"
+    ]
    }
   },
   {

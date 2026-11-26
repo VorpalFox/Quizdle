@@ -45913,7 +45913,9 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Unknown"
+   ],
    "hair": [
     "N/A"
    ],
@@ -45942,7 +45944,9 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Unknown"
+   ],
    "hair": [
     "N/A"
    ],
@@ -45968,7 +45972,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": [
     "N/A"
    ],
@@ -55893,7 +55899,9 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -69654,7 +69662,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Player's choice"
+   ],
    "developer": "Maxis",
    "genres": [
     "Strategy",
