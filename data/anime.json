@@ -5656,7 +5656,9 @@
   "attributes": {
    "gender": "Female",
    "age": 15,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],

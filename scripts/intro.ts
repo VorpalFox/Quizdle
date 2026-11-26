@@ -22,9 +22,10 @@ const POSSESSIVE_FAMILY = new RegExp(String.raw`['’]s (?:(?:younger|older|elde
 const ROLE_AFTER_AND = /\sand\s+(?:(?:a|an|the|also|currently|formerly|now)\s+)*(?!(?:a|an|the|also|currently|formerly|now)\s)([a-z][^.;:,()"]*)/
 
 // Ce que l'introduction dit du personnage, phrase par phrase (« Vietnam veteran », « princess of Guardia »),
-// pour en tirer une occupation
+// pour en tirer une occupation. « ., » : la fin d'un paragraphe, recollé au suivant par cleanValue (« Rasmus is a
+// character in Solasta II., He is a merchant in Tor Wen. »)
 export function introRoles(intro: string): string[] {
-  const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)
+  const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES).flatMap(sentence => sentence.split(/(?<=[.!?]),\s+/))
   return sentences.flatMap(sentence => {
     const raw = WHAT_HE_IS.exec(sentence)?.[1]
     if (!raw)

@@ -49418,7 +49418,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Companion"
+    "Mage"
    ],
    "hair": null,
    "franchise": "Nier",
@@ -50588,7 +50588,9 @@
    "nationality": [
     "Underworld"
    ],
-   "occupation": null,
+   "occupation": [
+    "Soldier"
+   ],
    "hair": [
     "N/A"
    ],
@@ -51168,7 +51170,9 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Royalty"
+   ],
    "hair": [
     "Blond"
    ],
@@ -60648,7 +60652,9 @@
     "Elf"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Merchant"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -60694,7 +60700,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Merchant"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -60843,7 +60851,9 @@
     "Halfling"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Politician"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -60891,7 +60901,9 @@
     "Dwarf"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Merchant"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -61933,7 +61945,9 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],
@@ -62048,7 +62062,9 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": null,
+   "occupation": [
+    "Guard"
+   ],
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -62077,7 +62093,9 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": null,
+   "occupation": [
+    "Police officer"
+   ],
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",

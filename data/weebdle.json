@@ -17169,7 +17169,9 @@
    ],
    "age": 15,
    "height": 156,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Black",
     "Blue"
@@ -18537,7 +18539,9 @@
    ],
    "age": null,
    "height": 186,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Silver"
    ],
@@ -18607,7 +18611,7 @@
    "age": null,
    "height": 160,
    "occupation": [
-    "None"
+    "Scientist"
    ],
    "hair": [
     "Grey"
@@ -18675,7 +18679,7 @@
    "age": null,
    "height": 161,
    "occupation": [
-    "None"
+    "Servant"
    ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
@@ -18744,7 +18748,7 @@
    "age": null,
    "height": 190,
    "occupation": [
-    "None"
+    "Athlete"
    ],
    "hair": [
     "Grey"
@@ -18815,7 +18819,7 @@
    "age": null,
    "height": 180,
    "occupation": [
-    "None"
+    "Artisan"
    ],
    "hair": [
     "Blond"
@@ -18852,8 +18856,7 @@
    "height": null,
    "occupation": [
     "Teacher",
-    "Officer",
-    "Soldier"
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -18999,7 +19002,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "None"
+    "Athlete"
    ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
@@ -19070,7 +19073,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "None"
+    "Artisan"
    ],
    "hair": [
     "Black"
@@ -33658,7 +33661,8 @@
    "age": "Unknown",
    "height": null,
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Officer"
    ],
    "hair": [
     "Ginger"
@@ -35565,7 +35569,9 @@
    ],
    "age": 21,
    "height": 173,
-   "occupation": null,
+   "occupation": [
+    "Driver"
+   ],
    "hair": [
     "Blond"
    ],
@@ -36742,7 +36748,9 @@
    ],
    "age": 102000,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Purple"
    ],
@@ -36804,7 +36812,7 @@
    "age": 12000,
    "height": null,
    "occupation": [
-    "None"
+    "Fighter"
    ],
    "hair": [
     "Blond"
