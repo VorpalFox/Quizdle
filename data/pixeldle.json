@@ -57911,8 +57911,7 @@
   "name": "Zach Hammond",
   "aliases": [
    "Hammond Zach",
-   "Zach",
-   "Hammond"
+   "Zach"
   ],
   "attributes": {
    "gender": "Male",
@@ -60639,261 +60638,281 @@
   }
  },
  {
-  "id": "wiki-solasta-rasmus-hamsworth",
-  "name": "Rasmus Hamsworth",
+  "id": "wiki-solasta-hammond",
+  "name": "Hammond",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-robar-sharp",
+  "name": "Robar Sharp",
   "aliases": [
-   "Hamsworth Rasmus",
-   "Rasmus",
-   "Hamsworth"
+   "Sharp Robar",
+   "Robar",
+   "Sharp"
   ],
   "attributes": {
    "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Soldier"
+   ],
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-carran",
+  "name": "Carran",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-beryl-stonebeard",
+  "name": "Beryl Stonebeard",
+  "aliases": [
+   "Stonebeard Beryl",
+   "Beryl",
+   "Stonebeard"
+  ],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Dwarf"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Soldier"
+   ],
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-ceiwad-silverflower",
+  "name": "Ceiwad Silverflower",
+  "aliases": [
+   "Silverflower Ceiwad",
+   "Ceiwad",
+   "Silverflower"
+  ],
+  "attributes": {
+   "gender": "Female",
    "species": [
     "Elf"
    ],
    "nationality": null,
    "occupation": [
-    "Merchant"
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "Action RPG",
-    "Tactical RPG"
+    "RPG"
    ],
-   "year": 2026
+   "year": 2020
   }
  },
  {
-  "id": "wiki-solasta-shadwyn",
-  "name": "Shadwyn",
+  "id": "wiki-solasta-galeafin-pureheart",
+  "name": "Galeafin Pureheart",
+  "aliases": [
+   "Pureheart Galeafin",
+   "Galeafin",
+   "Pureheart"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human",
+    "Elf"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Scholar"
+   ],
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-helia-fairblade",
+  "name": "Helia Fairblade",
+  "aliases": [
+   "Fairblade Helia",
+   "Helia",
+   "Fairblade"
+  ],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Police officer"
+   ],
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-rose-fairwind",
+  "name": "Rose Fairwind",
+  "aliases": [
+   "Fairwind Rose",
+   "Fairwind"
+  ],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Halfling"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Solasta",
+   "developer": "Tactical Adventures",
+   "genres": [
+    "RPG"
+   ],
+   "year": 2020
+  }
+ },
+ {
+  "id": "wiki-solasta-hasdrubal",
+  "name": "Hasdrubal",
   "aliases": [],
   "attributes": {
-   "gender": "Female",
-   "species": [
-    "Unknown"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-jaydon-towers",
-  "name": "Jaydon Towers",
-  "aliases": [
-   "Towers Jaydon",
-   "Jaydon",
-   "Towers"
-  ],
-  "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Elf"
    ],
    "nationality": null,
    "occupation": [
-    "Merchant"
+    "Leader"
    ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "Action RPG",
-    "Tactical RPG"
+    "RPG"
    ],
-   "year": 2026
+   "year": 2020
   }
  },
  {
-  "id": "wiki-solasta-ellie-sharpreef",
-  "name": "Ellie Sharpreef",
+  "id": "wiki-solasta-vigdis-kaikonnen",
+  "name": "Vigdis Kaikonnen",
   "aliases": [
-   "Sharpreef Ellie",
-   "Sharpreef"
+   "Kaikonnen Vigdis",
+   "Vigdis",
+   "Kaikonnen"
   ],
   "attributes": {
    "gender": "Female",
    "species": [
-    "Halfling"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-kyre-swifthands",
-  "name": "Kyre Swifthands",
-  "aliases": [
-   "Swifthands Kyre",
-   "Kyre",
-   "Swifthands"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-jabori-silentsong",
-  "name": "Jabori Silentsong",
-  "aliases": [
-   "Silentsong Jabori",
-   "Jabori",
-   "Silentsong"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Siklas"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-kelma-nodro",
-  "name": "Kelma Nodro",
-  "aliases": [
-   "Nodro Kelma",
-   "Kelma",
-   "Nodro"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-meven-cliffraven",
-  "name": "Meven Cliffraven",
-  "aliases": [
-   "Cliffraven Meven",
-   "Meven",
-   "Cliffraven"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Orc"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-rosie-badnot",
-  "name": "Rosie Badnot",
-  "aliases": [
-   "Badnot Rosie",
-   "Rosie",
-   "Badnot"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Halfling"
+    "Dwarf"
    ],
    "nationality": null,
    "occupation": [
-    "Politician"
+    "Leader"
    ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "Action RPG",
-    "Tactical RPG"
+    "RPG"
    ],
-   "year": 2026
+   "year": 2020
   }
  },
  {
-  "id": "wiki-solasta-dina-seaworth",
-  "name": "Dina Seaworth",
+  "id": "wiki-solasta-marduk-strongheart",
+  "name": "Marduk Strongheart",
   "aliases": [
-   "Seaworth Dina",
-   "Seaworth"
+   "Strongheart Marduk",
+   "Marduk",
+   "Strongheart"
   ],
   "attributes": {
-   "gender": "Female",
+   "gender": "Male",
    "species": [
-    "Human"
+    "Dwarf"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
    "genres": [
-    "Action RPG",
-    "Tactical RPG"
+    "RPG"
    ],
-   "year": 2026
+   "year": 2020
   }
  },
  {
-  "id": "wiki-solasta-ryan-fairson",
-  "name": "Ryan Fairson",
+  "id": "wiki-solasta-gilmar-goldentongue",
+  "name": "Gilmar Goldentongue",
   "aliases": [
-   "Fairson Ryan",
-   "Fairson"
+   "Goldentongue Gilmar",
+   "Gilmar",
+   "Goldentongue"
   ],
   "attributes": {
    "gender": "Male",
@@ -60903,33 +60922,6 @@
    "nationality": null,
    "occupation": [
     "Merchant"
-   ],
-   "hair": null,
-   "franchise": "Solasta",
-   "developer": "Tactical Adventures",
-   "genres": [
-    "Action RPG",
-    "Tactical RPG"
-   ],
-   "year": 2026
-  }
- },
- {
-  "id": "wiki-solasta-marin-ving",
-  "name": "Marin Ving",
-  "aliases": [
-   "Ving Marin",
-   "Marin",
-   "Ving"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Leader"
    ],
    "hair": null,
    "franchise": "Solasta",

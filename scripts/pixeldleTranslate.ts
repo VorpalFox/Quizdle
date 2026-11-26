@@ -86,7 +86,7 @@ const SPECIES: Record<string, string | null> = {
   'android': 'Android', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
   'alien': 'Alien', 'extraterrestrial': 'Alien', 'god': 'Deity', 'goddess': 'Deity', 'deity': 'Deity',
   'demigod': 'Demigod', 'titan': 'Titan', 'angel': 'Angel', 'devil': 'Demon', 'elf': 'Elf', 'elves': 'Elf', 'half-elf': 'Half-elf',
-  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling',
+  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling', 'thiefling': 'Tiefling',
   'ghost': 'Ghost', 'spirit': 'Spirit', 'zombie': 'Zombie', 'skeleton': 'Skeleton', 'mummy': 'Mummy', 'werewolf': 'Werewolf',
   'witch': 'Human', 'wizard': 'Human', 'muggle': 'Human', 'monster': 'Monster', 'creature': null, 'beast': 'Beast',
   'cat': 'Cat', 'feline': 'Cat', 'canine': 'Dog', 'bird': 'Bird', 'bear': 'Bear', 'rabbit': 'Rabbit', 'mouse': 'Mouse',

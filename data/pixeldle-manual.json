@@ -7352,6 +7352,24 @@
    "_raison": "« Characters » ne contient que des modèles",
    "category": "The Sinking City Characters"
   },
+  "Solasta": {
+   "_raison": "les persos de Crown of the Magister : « Characters » n'a que ceux de Solasta II, pas sorti ; les plus longues pages sont des marchands (inventaires), d'où les persos marquants choisis par FX",
+   "category": "Solasta: CotM characters",
+   "preferred": [
+    "Hammond",
+    "Robar Sharp",
+    "Carran",
+    "Beryl Stonebeard",
+    "Ceiwad Silverflower",
+    "Galeafin Pureheart",
+    "Helia Fairblade",
+    "Rose Fairwind",
+    "Hasdrubal",
+    "Vigdis Kaikonnen",
+    "Marduk Strongheart",
+    "Gilmar Goldentongue"
+   ]
+  },
   "The Talos Principle": {
    "_raison": "MLA (une IA) et Arkady n'ont pas de sexe dans le wiki",
    "preferred": [
