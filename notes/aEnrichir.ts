@@ -1,7 +1,6 @@
 // Les univers (animes, franchises) dont les persos ont le plus de cases vides, dans notes/<quiz>-a-enrichir.md.
-//   npx tsx notes/aEnrichir.ts weebdle               recalcule le tableau (seuil et minimum gardés du fichier)
+//   npx tsx notes/aEnrichir.ts weebdle               recalcule le tableau (seuil gardé du fichier)
 //   npx tsx notes/aEnrichir.ts pixeldle --seuil 40   seulement les univers au-dessus de 40 % de cases vides
-//   npx tsx notes/aEnrichir.ts animedle --min 3      seulement les univers d'au moins 3 persos
 // Tout est recalculé depuis data/ à chaque fois ; seules les coches [x] / [-] sont reprises de l'ancien fichier.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 
@@ -26,7 +25,6 @@ const option = (flag: string) => {
 const file = new URL(`./${name}-a-enrichir.md`, import.meta.url)
 const old = existsSync(file) ? readFileSync(file, 'utf8') : ''
 const threshold = option('--seuil') ?? Number(old.match(/au-dessus de (\d+) %/)?.[1] ?? 40)
-const minimum = option('--min') ?? Number(old.match(/au moins (\d+) persos/)?.[1] ?? 5)
 
 const entries: { attributes: Record<string, unknown> }[] = JSON.parse(readFileSync(new URL(`../data/${quiz.data}.json`, import.meta.url), 'utf8'))
 const keys = Object.keys(quiz.keys)
@@ -49,14 +47,14 @@ const stats = new Map([...byUniverse].map(([universe, list]) => {
 const resolve = (label: string) => stats.has(label) ? label : [...stats.keys()].find(title => label.endsWith('…') && title.startsWith(label.slice(0, -1))) ?? label
 const marks = new Map([...old.matchAll(/^\| \[([ x-])\] \| (.+?) \| \d+ \|/gm)].map(match => [resolve(match[2]!), match[1]!]))
 const rows = [...stats.keys()]
-  .filter(universe => stats.get(universe)!.count >= minimum && stats.get(universe)!.average >= threshold)
+  .filter(universe => stats.get(universe)!.average >= threshold)
   .sort((a, b) => stats.get(b)!.average - stats.get(a)!.average)
 
 const header = ['Fait', quiz.label, 'Persos', 'Vide (moy.)', ...Object.values(quiz.keys)]
 writeFileSync(file, `# ${name} : univers les moins remplis (à traiter dans l'ordre)
 
-Recalculé par \`npx tsx notes/aEnrichir.ts ${name}\` (\`--seuil N\`, \`--min N\` pour changer).
-Les univers d'au moins ${minimum} persos au-dessus de ${threshold} % de cases vides en moyenne, les pires d'abord.
+Recalculé par \`npx tsx notes/aEnrichir.ts ${name}\` (\`--seuil N\` pour changer).
+Les univers au-dessus de ${threshold} % de cases vides en moyenne, les pires d'abord.
 Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
 Sur tout le quiz : ${keys.map(key => `${quiz.keys[key]!.toLowerCase()} ${rate(entries, key)} %`).join(', ')}.
 
