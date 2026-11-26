@@ -53137,6 +53137,99 @@
   }
  },
  {
+  "id": "wiki-palworld-grizzbolt",
+  "name": "Grizzbolt",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Panda",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-faleris",
+  "name": "Faleris",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-lyleen",
+  "name": "Lyleen",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-shadowbeak",
+  "name": "Shadowbeak",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Griffin"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
   "id": "wiki-palworld-zoe-rayne",
   "name": "Zoe Rayne",
   "aliases": [
@@ -53308,87 +53401,8 @@
   "name": "Bjorn Seligsson",
   "aliases": [
    "Seligsson Bjorn",
+   "Bjorn",
    "Seligsson"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Fighter"
-   ],
-   "hair": null,
-   "franchise": "Palworld",
-   "developer": "Pocket Pair",
-   "genres": [
-    "Action-adventure",
-    "Survival",
-    "Monster-taming"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "wiki-palworld-dr-brawn",
-  "name": "Dr. Brawn",
-  "aliases": [
-   "Brawn Dr.",
-   "Brawn"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Scientist"
-   ],
-   "hair": null,
-   "franchise": "Palworld",
-   "developer": "Pocket Pair",
-   "genres": [
-    "Action-adventure",
-    "Survival",
-    "Monster-taming"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "wiki-palworld-messenger-of-love",
-  "name": "Messenger of Love",
-  "aliases": [
-   "Love of Messenger",
-   "Messenger"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Palworld",
-   "developer": "Pocket Pair",
-   "genres": [
-    "Action-adventure",
-    "Survival",
-    "Monster-taming"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "wiki-palworld-bjorn-and-bastigor",
-  "name": "Bjorn and Bastigor",
-  "aliases": [
-   "Bastigor and Bjorn",
-   "and",
-   "Bastigor"
   ],
   "attributes": {
    "gender": "Male",
@@ -53401,32 +53415,6 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
-   "franchise": "Palworld",
-   "developer": "Pocket Pair",
-   "genres": [
-    "Action-adventure",
-    "Survival",
-    "Monster-taming"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "wiki-palworld-reincarnated-guy",
-  "name": "Reincarnated Guy",
-  "aliases": [
-   "Guy Reincarnated",
-   "Reincarnated",
-   "Guy"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -53542,6 +53530,8 @@
    ],
    "nationality": [
     "Turkey",
+    "Jaffar's Wheelstation",
+    "Fisherman's Village",
     "Monde réel"
    ],
    "occupation": [
@@ -53576,6 +53566,7 @@
    ],
    "nationality": [
     "Turkey",
+    "Slums",
     "Monde réel"
    ],
    "occupation": [
@@ -53636,7 +53627,9 @@
     "Human"
    ],
    "nationality": [
-    "The Tower"
+    "The Tower",
+    "Turkey",
+    "Monde réel"
    ],
    "occupation": [
     "Survivor"
@@ -53732,7 +53725,7 @@
     "The Tower"
    ],
    "occupation": [
-    "Survivor"
+    "Teacher"
    ],
    "hair": [
     "Brown"
@@ -53759,6 +53752,8 @@
    ],
    "nationality": [
     "Russia",
+    "The Bazaar",
+    "Trinity",
     "Monde réel"
    ],
    "occupation": [
@@ -54332,7 +54327,9 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Blond"
    ],
@@ -54465,7 +54462,10 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Survivor",
+    "Writer"
+   ],
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -54490,7 +54490,11 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Journalist",
+    "Writer",
+    "Survivor"
+   ],
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -54515,7 +54519,9 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -54983,35 +54989,6 @@
   }
  },
  {
-  "id": "wiki-kingdom-come-deliverance-samopesh-blacksmith",
-  "name": "Samopesh Blacksmith",
-  "aliases": [
-   "Blacksmith Samopesh",
-   "Samopesh",
-   "Blacksmith"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": [
-    "Samopesh"
-   ],
-   "occupation": null,
-   "hair": [
-    "Brown"
-   ],
-   "franchise": "Kingdom Come: Deliverance",
-   "developer": "Warhorse Studios",
-   "genres": [
-    "RPG",
-    "Action RPG"
-   ],
-   "year": 2018
-  }
- },
- {
   "id": "wiki-kingdom-come-deliverance-markvart-von-aulitz",
   "name": "Markvart von Aulitz",
   "aliases": [
@@ -55066,6 +55043,39 @@
    ],
    "hair": [
     "Blond"
+   ],
+   "franchise": "Kingdom Come: Deliverance",
+   "developer": "Warhorse Studios",
+   "genres": [
+    "RPG",
+    "Action RPG"
+   ],
+   "year": 2018
+  }
+ },
+ {
+  "id": "wiki-kingdom-come-deliverance-divish-of-talmberg",
+  "name": "Divish of Talmberg",
+  "aliases": [
+   "Talmberg of Divish",
+   "Divish",
+   "Talmberg"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": [
+    "Talmberg",
+    "Czech Republic",
+    "Monde réel"
+   ],
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Grey"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",

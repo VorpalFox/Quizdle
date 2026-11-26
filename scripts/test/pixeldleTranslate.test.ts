@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrChoice, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
+import { expandSpecies, internalNameSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrChoice, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -347,5 +347,15 @@ describe('franchiseUniverses', () => {
     expect(franchiseUniverses('Mass Effect')).toEqual(['Lost in the Galaxy'])
     expect(franchiseUniverses('Sundered')).toEqual(['Mythe de Cthulhu'])
     expect(franchiseUniverses('The Legend of Zelda')).toEqual([])
+  })
+})
+
+describe('internalNameSpecies', () => {
+  it('NomInterne_EspecesConnues', () => {
+    expect(internalNameSpecies('SnowTigerBeastman')).toEqual(['Tiger'])
+    expect(internalNameSpecies('ElecPanda')).toEqual(['Panda'])
+    expect(internalNameSpecies('BlackGriffon')).toEqual(['Griffin'])
+    expect(internalNameSpecies('MoonQueen')).toEqual([])
+    expect(internalNameSpecies('')).toEqual([])
   })
 })

@@ -141,6 +141,15 @@ const ANIMALS = new Set(['Monkey', 'Dog', 'Frog', 'Cat', 'Hedgehog', 'Insect', '
   'Pelican', 'Hippopotamus', 'Spider', 'Crocodile', 'Parrot', 'Shark', 'Plankton', 'Chicken', 'Hare', 'Dormouse', 'Hyena', 'Snake',
   'Lynx', 'Dinosaur', 'Mouse', 'Rat', 'Duck', 'Cow', 'Goat', 'Sheep', 'Squid', 'Reptile', 'Lizard Doggo'])
 
+// Le nom interne d'une créature (« SnowTigerBeastman », « BlackGriffon » sur le wiki de Palworld) : les mots qui sont une
+// espèce connue (Tigre, Griffon), pas un astre (« MoonQueen » n'est pas une Lune)
+export function internalNameSpecies(name: string): string[] {
+  const words = name.split(/(?<=\p{Ll})(?=\p{Lu})|[\s_-]+/u).filter(Boolean)
+  const species = words.map(word => SPECIES[key(word)] ?? (ANIMALS.has(word) ? word : null))
+    .filter((value): value is string => Boolean(value) && !REAL_PLACES.has(value!))
+  return [...new Set(species)]
+}
+
 // L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
 export function expandSpecies(value: unknown): string[] | null {
   const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)

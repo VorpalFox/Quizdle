@@ -16,6 +16,11 @@
   "wiki-palworld-victor-and-shadowbeak",
   "wiki-palworld-saya-and-selyne",
   "wiki-palworld-axel-and-orserk",
+  "wiki-palworld-bjorn-and-bastigor",
+  "wiki-palworld-messenger-of-love",
+  "wiki-palworld-reincarnated-guy",
+  "wiki-palworld-dr-brawn",
+  "wiki-kingdom-come-deliverance-samopesh-blacksmith",
   "wiki-raving-rabbids-professor-barranco-clone-3",
   "wiki-remember-me-reconversion-project",
   "Q2141803",
@@ -3307,10 +3312,6 @@
   },
   "wiki-tomb-raider-winston": {
    "_nom": "Winston",
-   "gender": "Male"
-  },
-  "wiki-palworld-dr-brawn": {
-   "_nom": "Dr. Brawn",
    "gender": "Male"
   },
   "Q51885980": {
@@ -7361,7 +7362,13 @@
    ]
   },
   "Palworld": {
-   "_raison": "les 9 personnages nommés, le reste : des PNJ génériques",
+   "_raison": "les 7 boss de tour, puis les Pals des 4 premiers (le reste : des PNJ génériques)",
+   "pages": [
+    "Grizzbolt",
+    "Faleris",
+    "Lyleen",
+    "Shadowbeak"
+   ],
    "preferred": [
     "Zoe Rayne",
     "Marcus Dryden",
@@ -7369,9 +7376,7 @@
     "Victor Ashford",
     "Axel Travers",
     "Saya Kurosaki",
-    "Bjorn Seligsson",
-    "Dr. Brawn",
-    "Messenger of Love"
+    "Bjorn Seligsson"
    ]
   },
   "Yo-kai Watch": {

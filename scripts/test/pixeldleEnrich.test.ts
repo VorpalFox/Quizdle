@@ -149,3 +149,16 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ location: 'Diamond City', hometown: 'Boston' }, new Map()).nationality).toEqual(['Boston', 'United States'])
   })
 })
+
+describe('infoboxValues, créatures', () => {
+  it('TauxDeMales_Sexe', () => {
+    expect(infoboxValues({ malegender: '50' }, new Map()).gender).toBe('Other')
+    expect(infoboxValues({ malegender: '100' }, new Map()).gender).toBe('Male')
+    expect(infoboxValues({ malegender: '0' }, new Map()).gender).toBe('Female')
+    expect(infoboxValues({ gender: 'Female', malegender: '50' }, new Map()).gender).toBe('Female')
+  })
+
+  it('NomInterne_EspeceDeTravail', () => {
+    expect(infoboxValues({ 'internal name': 'ElecPanda' }, new Map()).internalSpecies).toEqual(['Panda'])
+  })
+})

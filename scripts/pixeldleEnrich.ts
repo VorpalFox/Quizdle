@@ -12,7 +12,7 @@ import { disambiguationLinks } from './wikiText.js'
 import { frenchOccupation, translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS } from './unknownValues.js'
-import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
+import { internalNameSpecies, translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -49,14 +49,20 @@ const FIELDS = {
   affiliation: ['affiliation', 'affiliations', 'allegiance', 'faction'],
   // Le nom complet, pour son titre de noblesse (NOBLE_TITLE)
   name: ['name', 'full name', 'fullname'],
+  // Une créature mâle ou femelle au hasard : le taux de mâles (« malegender = 50 », wiki de Palworld)
+  genderRatio: ['malegender', 'male ratio'],
+  // Le nom interne d'une créature (« SnowTigerBeastman ») : son espèce (internalNameSpecies)
+  internalName: ['internal name'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior' | 'affiliation' | 'name'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior' | 'affiliation' | 'name' | 'genderRatio' | 'internalName'>
 // Une nation, pas une faction : « Principality of Masgarth », « Kingdom of Hyrule », « Galactic Empire » non (sans « of »)
 const NATION = /^(?:the\s+)?(?:principality|kingdom|empire|republic|grand duchy|duchy|federation|commonwealth|dominion|confederacy|sultanate|khanate|theocracy|shogunate|tsardom|realm)\s+of\s+\S/i
 // Un titre de noblesse en tête du nom, avant le nom lui-même (« Lord Hammond », pas « Lord » tout seul)
 export const NAME_TITLE = 'nameTitle'
 // Les affiliations du perso, attribut de travail : ajoutées à sa nationalité seulement si elles en sont déjà une dans sa franchise
 export const AFFILIATIONS = 'affiliations'
+// Les espèces du nom interne, attribut de travail : ajoutées à l'espèce à la fin (« Pal » + Tigre)
+export const INTERNAL_SPECIES = 'internalSpecies'
 const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
@@ -136,7 +142,7 @@ export function infobox(wikitext: string): Record<string, string> | null {
       return fields
   }
   // Une infobox au nom propre au wiki (« {{Forgotling », « {{Yo-kai ») : reconnue à son champ sexe ou espèce
-  const core = [...FIELDS.gender, ...FIELDS.species].filter(name => name !== 'genre')
+  const core = [...FIELDS.gender, ...FIELDS.species, ...FIELDS.genderRatio, ...FIELDS.internalName].filter(name => name !== 'genre')
   for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
     if (core.some(name => fields[name]))
@@ -315,9 +321,9 @@ function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
 const rawField = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name]?.trim()).find(value => value) ?? null
 
-export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS, AttributeValue>> {
+export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS | typeof INTERNAL_SPECIES, AttributeValue>> {
   const note = (key: string, raw: string) => untranslated.set(key, [...untranslated.get(key) ?? [], raw])
-  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS, AttributeValue>> = {}
+  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS | typeof INTERNAL_SPECIES, AttributeValue>> = {}
 
   const gender = first(fields, FIELDS.gender)
   if (gender) {
@@ -330,6 +336,10 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
       result.gender = parsed
     }
   }
+  // Sans sexe : le taux de mâles (100 : mâle, 0 : femelle, entre les deux : au hasard, Autre)
+  const ratio = result.gender ? null : Number(first(fields, FIELDS.genderRatio) ?? NaN)
+  if (ratio !== null && !Number.isNaN(ratio))
+    result.gender = ratio >= 100 ? 'Male' : ratio <= 0 ? 'Female' : 'Other'
   const species = first(fields, FIELDS.species)
   if (species) {
     const parsed = parseSpecies(species)
@@ -353,6 +363,9 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const affiliations = [...new Set(present(fields, FIELDS.affiliation).flatMap(parts).flatMap(parsePlaces))]
   if (affiliations.length > 0)
     result[AFFILIATIONS] = affiliations
+  const internal = internalNameSpecies(first(fields, FIELDS.internalName) ?? '')
+  if (internal.length > 0)
+    result[INTERNAL_SPECIES] = internal
   const occupation = first(fields, FIELDS.occupation)
   if (occupation) {
     const parsed = parseOccupations(occupation)
@@ -479,7 +492,7 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         }))
         if (Object.keys(added).length === 0)
           continue
-        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE && key !== AFFILIATIONS))
+        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE && key !== AFFILIATIONS && key !== INTERNAL_SPECIES))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
         current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')

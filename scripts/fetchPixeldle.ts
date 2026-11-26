@@ -52,7 +52,7 @@ import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrChoice, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
-import { AFFILIATIONS, enrichFromWikis, NAME_TITLE } from './pixeldleEnrich.js'
+import { AFFILIATIONS, enrichFromWikis, INTERNAL_SPECIES, NAME_TITLE } from './pixeldleEnrich.js'
 import { fillUnknowns } from './unknownValues.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
@@ -520,7 +520,7 @@ const wikidataEntries = enriched.entries.map(entry => {
 })
 const wikiNames = (character: WikiCharacter): CharacterName => ({ full: character.name, native: null, alternative: character.title === character.name ? [] : [character.title] })
 const wikiUniqueParts = uniqueNameParts([...selections.flatMap(({ chosen }) => chosen.map(nameFor)), ...fromWikis.flatMap(({ chosen }) => chosen.map(wikiNames))])
-const wikiEntries: Entry[] = fromWikis.flatMap(({ franchise, chosen }) => chosen.map(character => {
+const wikiBase: Entry[] = fromWikis.flatMap(({ franchise, chosen }) => chosen.map(character => {
   const first = firstGameOf(franchise)
   // Le jeu cité par la page : son année, son studio, ses genres. Sinon le 1er jeu de la franchise : juste pour un jeu
   // unique, souvent trop tôt pour une série (Far Cry)
@@ -548,6 +548,20 @@ const wikiEntries: Entry[] = fromWikis.flatMap(({ franchise, chosen }) => chosen
     },
   }
 }))
+// Les persos des wikis complétés par les autres wikis de leur franchise (Palworld : le nom interne des Pals est sur wiki.gg)
+const OTHER_WIKI_OCCUPATION = 'otherWikiOccupation'
+const isEmptyValue = (value: unknown) => value === null || value === undefined || (Array.isArray(value) && value.length === 0)
+const sourceApis = new Map([...Map.groupBy(fromWikis, ({ franchise }) => franchise.title)].map(([title, list]) => [title, new Set(list.filter(({ chosen }) => chosen.length > 0).map(({ api }) => api))]))
+const otherWikis = new Map([...wikis].map(([title, found]) => [title, { ...found, order: found.order.filter(wiki => !sourceApis.get(title)?.has(wiki.api)) }]))
+const wikiEnriched = await enrichFromWikis(wikiBase.map(entry => ({ entry, franchise: String(entry.attributes.franchise), fandomLinks: [], names: [entry.name, ...entry.aliases ?? []] })), otherWikis)
+// L'occupation d'un autre wiki passe après l'intro de la page du perso (« former corporate lawyer » : Avocat), en attribut
+// de travail (voir withIntroOccupation)
+const wikiEntries = wikiEnriched.entries.map((entry, index) => {
+  const base = wikiBase[index]!.attributes.occupation
+  if (!isEmptyValue(entry.attributes.occupation) && isEmptyValue(base))
+    return { ...entry, attributes: { ...entry.attributes, occupation: base ?? null, [OTHER_WIKI_OCCUPATION]: entry.attributes.occupation } }
+  return entry
+})
 
 // Un personnage ajouté à la main sans développeur, genres, année ou attribut : ceux du 1er jeu de sa franchise, vide sinon
 const completeAdded = (entry: Entry): Entry => {
@@ -565,7 +579,9 @@ const withDefaults = (entry: Entry): Entry => {
   const defaults = manual.defaults?.[String(entry.attributes.franchise)]
   if (!defaults)
     return entry
-  const empty = Object.entries(defaults).filter(([key]) => entry.attributes[key] === null || entry.attributes[key] === undefined)
+  // Pas l'occupation commune quand un autre wiki en donne une (elle passe après l'intro, voir withIntroOccupation)
+  const empty = Object.entries(defaults).filter(([key]) => (entry.attributes[key] === null || entry.attributes[key] === undefined)
+    && !(key === 'occupation' && entry.attributes[OTHER_WIKI_OCCUPATION]))
   return { ...entry, attributes: { ...entry.attributes, ...Object.fromEntries(empty) } }
 }
 // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (« long blonde hair »), à relire.
@@ -644,6 +660,10 @@ const withIntroOccupation = (entry: Entry): Entry => {
   // L'introduction du wiki de la franchise, sinon celle de Wikipédia
   let { roles, occupation } = fromIntro(introsById.get(entry.id) ?? '')
   let source = ''
+  // Rien dans l'intro : l'occupation d'un autre wiki de la franchise
+  const otherWiki = (entry.attributes[OTHER_WIKI_OCCUPATION] as string[] | null | undefined) ?? []
+  if (occupation.length === 0 && otherWiki.length > 0)
+    return { ...entry, attributes: { ...entry.attributes, occupation: otherWiki } }
   if (occupation.length === 0 && wikipediaIntros.has(entry.id)) {
     ({ roles, occupation } = fromIntro(wikipediaIntros.get(entry.id)!))
     source = WIKIPEDIA
@@ -663,9 +683,10 @@ const warnings = manualApplied.warnings
 // À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations
 // regroupées, N/A pour les cheveux d'un robot ou d'un animal
 const finished = manualApplied.entries.map(entry => {
-  const species = expandSpecies(entry.attributes.species)
-  // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
-  const { weapon, [NAME_TITLE]: _title, ...attributes } = entry.attributes
+  // L'espèce du nom interne s'ajoute (« Pal » + Tigre), puis l'attribut de travail disparaît
+  const { weapon, [NAME_TITLE]: _title, [INTERNAL_SPECIES]: internal, [OTHER_WIKI_OCCUPATION]: _other, ...attributes } = entry.attributes
+  const species = expandSpecies([entry.attributes.species ?? []].flat().concat((internal as string[] | undefined) ?? []))
+  // Les armes s'ajoutent à l'occupation (Soldat + Tireur)
   const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
   const found = known ?? functionRole(entry) ?? entityRole(entry, species)
   const occupation = mergeOccupations([...found ?? [], ...doctorRole(entry) ?? []]) ?? null
@@ -798,10 +819,12 @@ const fieldList = [...enriched.fieldNames].toSorted((a, b) => b[1] - a[1]).slice
 lines.push('## Champs des infobox rencontrées (les 80 plus fréquents)', fieldList.map(([name, count]) => `${name} (${count})`).join(', '), '')
 const enrichLines = [
   `# Ce que les wikis ont rempli (${enriched.details.length} personnages)`, '',
-  `## À vérifier (${enriched.doubtful.length}) : peut-être la page d'un autre personnage (wiki partagé, ou alias), à corriger avec edit`, '',
-  ...enriched.doubtful.map(text => `- ${text}`), '',
+  `## À vérifier (${enriched.doubtful.length + wikiEnriched.doubtful.length}) : peut-être la page d'un autre personnage (wiki partagé, ou alias), à corriger avec edit`, '',
+  ...[...enriched.doubtful, ...wikiEnriched.doubtful].map(text => `- ${text}`), '',
   '## Tout', '',
-  ...enriched.details.map(text => `- ${text}`),
+  ...enriched.details.map(text => `- ${text}`), '',
+  `## Persos des wikis complétés par un autre wiki de leur franchise (${wikiEnriched.details.length})`, '',
+  ...wikiEnriched.details.map(text => `- ${text}`),
 ]
 await writeFile(new URL('pixeldle-enrich.md', cacheDir), `${enrichLines.join('\n')}\n`)
 
