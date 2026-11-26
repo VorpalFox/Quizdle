@@ -454,7 +454,8 @@ const REAL_PLACES = new Set([
     const letters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
     return letters.flatMap(a => letters.map(b => names.of(a + b))).filter((name): name is string => Boolean(name) && !/^[A-Z]{2}$/.test(name!))
   })(),
-  'Czech Republic', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
+  // Nos noms quand Intl en a un autre (Czechia, Türkiye)
+  'Czech Republic', 'Turkey', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
   'Kingdom of England', 'Kingdom of France', 'Kingdom of Great Britain', 'Ptolemaic Kingdom', 'Russian Soviet Federative Socialist Republic',
   'Polynesia', 'Earth', 'Moon', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Titan', 'Europa', 'Ganymede', 'Callisto', 'Io',
   'Phobos', 'Deimos', 'Pluto', 'Enceladus',

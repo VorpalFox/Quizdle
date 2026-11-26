@@ -290,6 +290,7 @@ describe('isRealPlace', () => {
   it('PaysVilleAstre_Reels', () => {
     expect(isRealPlace('United States')).toBe(true)
     expect(isRealPlace('Soviet Union')).toBe(true)
+    expect(isRealPlace('Turkey')).toBe(true)
     expect(isRealPlace('Mars')).toBe(true)
   })
 
