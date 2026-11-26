@@ -88,7 +88,10 @@
   "Q308950",
   "Q136504750",
   "Q434384",
-  "wiki-lost-records-bloom-rage-fuzzbutt"
+  "wiki-lost-records-bloom-rage-fuzzbutt",
+  "wiki-myst-ahlsendar",
+  "wiki-myst-me-erta",
+  "wiki-myst-veovis"
  ],
  "edit": {
   "Q2265837": {
@@ -2335,41 +2338,8 @@
     ]
    }
   },
-  "wiki-myst-ahlsendar": {
-   "_nom": "Ahlsendar",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
   "wiki-myst-ri-neref": {
    "_nom": "Ri'neref",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-veovis": {
-   "_nom": "Veovis",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-me-erta": {
-   "_nom": "Me'erta",
    "species": {
     "plus": [
      "D'ni"

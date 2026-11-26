@@ -63578,8 +63578,7 @@
   "id": "wiki-the-alters-jan-guard",
   "name": "Jan Guard",
   "aliases": [
-   "Guard Jan",
-   "Guard"
+   "Guard Jan"
   ],
   "attributes": {
    "gender": "Male",
@@ -66669,9 +66668,15 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "nationality": [
+    "D'ni"
+   ],
+   "occupation": [
+    "Writer"
+   ],
+   "hair": [
+    "White"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -66689,11 +66694,15 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
-   "occupation": [
-    "Student"
+   "nationality": [
+    "Riven"
    ],
-   "hair": null,
+   "occupation": [
+    "Writer"
+   ],
+   "hair": [
+    "Black"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -66712,9 +66721,16 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "nationality": [
+    "Myst"
+   ],
+   "occupation": [
+    "Writer",
+    "Prisoner"
+   ],
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -66757,10 +66773,14 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "D'ni"
+   ],
+   "occupation": [
+    "Adventurer"
+   ],
    "hair": [
-    "Black"
+    "White"
    ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -66780,7 +66800,10 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Earth",
+    "Monde réel"
+   ],
    "occupation": null,
    "hair": [
     "Grey"
@@ -66803,30 +66826,15 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Myst",
-   "developer": "Cyan Worlds",
-   "genres": [
-    "Adventure",
-    "Puzzle"
+   "nationality": [
+    "The Cleft"
    ],
-   "year": 1993
-  }
- },
- {
-  "id": "wiki-myst-ahlsendar",
-  "name": "Ahlsendar",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "D'ni"
+   "occupation": [
+    "Writer"
    ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -66845,10 +66853,15 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "Earth",
+    "Monde réel"
+   ],
+   "occupation": [
+    "Writer"
+   ],
    "hair": [
-    "Red"
+    "Brown"
    ],
    "franchise": "Myst",
    "developer": "Presto Studios",
@@ -66867,11 +66880,16 @@
    "species": [
     "D'ni"
    ],
-   "nationality": null,
-   "occupation": [
-    "Writer"
+   "nationality": [
+    "Garternay"
    ],
-   "hair": null,
+   "occupation": [
+    "Writer",
+    "Royalty"
+   ],
+   "hair": [
+    "Black"
+   ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
    "genres": [
@@ -66882,39 +66900,64 @@
   }
  },
  {
-  "id": "wiki-myst-veovis",
-  "name": "Veovis",
+  "id": "wiki-myst-demath",
+  "name": "Demath",
   "aliases": [],
   "attributes": {
    "gender": "Male",
    "species": [
-    "D'ni"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Writer"
-   ],
-   "hair": null,
-   "franchise": "Myst",
-   "developer": "Cyan Worlds",
-   "genres": [
-    "Adventure",
-    "Puzzle"
-   ],
-   "year": 1993
-  }
- },
- {
-  "id": "wiki-myst-me-erta",
-  "name": "Me'erta",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "D'ni"
+    "Human"
    ],
    "nationality": null,
    "occupation": null,
+   "hair": null,
+   "franchise": "Myst",
+   "developer": "Cyan Worlds",
+   "genres": [
+    "Adventure",
+    "Puzzle"
+   ],
+   "year": 1993
+  }
+ },
+ {
+  "id": "wiki-myst-gehn-s-guard",
+  "name": "Gehn's Guard",
+  "aliases": [
+   "Guard Gehn's",
+   "Gehn's"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Guard"
+   ],
+   "hair": null,
+   "franchise": "Myst",
+   "developer": "Cyan Worlds",
+   "genres": [
+    "Adventure"
+   ],
+   "year": 1997
+  }
+ },
+ {
+  "id": "wiki-myst-shomat",
+  "name": "Shomat",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Royalty"
+   ],
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
