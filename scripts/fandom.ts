@@ -494,7 +494,7 @@ export function affiliationOccupations(value: string | null): string[] | null {
 // « grade » (« A+ », « Grade 1 »), ni « year » : trop d'autres sens.
 const SCHOOL_FIELDS = ['school', 'schools', 'école']
 // Ceux qui travaillent à l'école : son champ ne fait pas d'eux des élèves
-const SCHOOL_STAFF = new Set(['Professeur', 'Directeur d\'école', 'Instructeur', 'Médecin', 'Domestique', 'Gardien', 'Employé'])
+const SCHOOL_STAFF = new Set(['Teacher', 'Principal', 'Instructor', 'Doctor', 'Servant', 'Guardian', 'Employee'])
 const SCHOOL_NAME = /school|academy|universit|college|institut|gakuen|gakuin|lyc[ée]e/i
 const FORMER_SCHOOL =/\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
 export function schoolOccupations(value: string | null): string[] | null {

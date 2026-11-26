@@ -105,12 +105,12 @@ describe('infoboxValues', () => {
   })
 
   it('SansOccupation_GradeOuClasse', () => {
-    expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldat'])
-    expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientifique'])
+    expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldier'])
+    expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientist'])
   })
 
   it('CreatureHostile_Predateur', () => {
-    expect(infoboxValues({ behavior: 'Hostile' }, new Map()).occupation).toEqual(['Prédateur'])
+    expect(infoboxValues({ behavior: 'Hostile' }, new Map()).occupation).toEqual(['Predator'])
     expect(infoboxValues({ behavior: 'Passive' }, new Map()).occupation).toBeUndefined()
   })
 

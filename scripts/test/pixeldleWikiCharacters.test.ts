@@ -71,7 +71,7 @@ describe('pronounGender, groupes', () => {
 
 describe('introFunction', () => {
   it('CompagnonOuAssistant_Explicite', () => {
-    expect(introFunction("Epona is Link's horse in many games.")).toBe('Compagnon')
+    expect(introFunction("Epona is Link's horse in many games.")).toBe('Companion')
     expect(introFunction('ADA is the AI assistant of the pioneer.')).toBe('Assistant')
     expect(introFunction('Paimon accompanies the Traveler as their guide.')).toBe('Assistant')
     expect(introFunction('MLA, short for Milton Library Assistant, is an AI.')).toBe('Assistant')

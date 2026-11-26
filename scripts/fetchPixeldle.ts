@@ -698,7 +698,7 @@ function entityRole(entry: Entry, species: string[] | null): string[] | null {
   const alignment = introAlignment(introsById.get(entry.id) ?? '')
   if (!alignment)
     return null
-  const role = alignment === 'hostile' ? 'Destructeur' : 'Protecteur'
+  const role = alignment === 'hostile' ? 'Destroyer' : 'Protector'
   entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
   return [role]
 }

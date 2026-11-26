@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { templateSpecies } from '../fandom.js'
 import { affiliationOccupations,fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
-import { translateOccupation } from '../translate.js'
+import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
 const NANAMI = `{{Character Infobox
@@ -38,7 +38,7 @@ describe('fandomValues', () => {
   })
 
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Épéiste'], titles: null, deceased: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Swordsman'], titles: null, deceased: null })
     expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Male', hair: ['Black'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null })
   })
 
@@ -49,8 +49,8 @@ describe('fandomValues', () => {
   })
 
   it('NomDeLEcoleSeul_Eleve', () => {
-    expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Élève')
-    expect(translateOccupation('Middle School Student')).toBe('Collégien')
+    expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
+    expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
   })
 
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
@@ -59,26 +59,26 @@ describe('fandomValues', () => {
   })
 
   it('MetiersDeTheWorldGodOnlyKnows', () => {
-    expect(splitOccupations('Track and Field Club Girl')!.map(translateOccupation)).toEqual(['Sportif'])
-    expect(translateOccupation('Café Owner')).toBe('Barman')
-    expect(translateOccupation('Chauffeur of Mio Aoyama')).toBe('Chauffeur')
-    expect(translateOccupation('Private Household Demon')).toBe('Servante')
+    expect(splitOccupations('Track and Field Club Girl')!.map(translateOccupation)).toEqual(['Athlete'])
+    expect(translateOccupation('Café Owner')).toBe('Bartender')
+    expect(translateOccupation('Chauffeur of Mio Aoyama')).toBe('Driver')
+    expect(translateOccupation('Private Household Demon')).toBe('Maid')
     expect(translateOccupation('Normal Person')).toBeNull()
   })
 
   it('IdoleChasseurBibliothecaire', () => {
-    expect(translateOccupation('Roller-coaster Idol')).toBe('Idole')
-    expect(translateOccupation('Runaway Spirit Squad Agent')).toBe('Chasseur de démons')
-    expect(translateOccupation('Demon Hunter')).toBe('Chasseur de démons')
-    expect(translateOccupation('Eloquent Library Committee Member')).toBe('Bibliothécaire')
-    expect(translateOccupation('Bakery Employee')).toBe('Employé')
+    expect(translateOccupation('Roller-coaster Idol')).toBe('Idol')
+    expect(translateOccupation('Runaway Spirit Squad Agent')).toBe('Demon hunter')
+    expect(translateOccupation('Demon Hunter')).toBe('Demon hunter')
+    expect(translateOccupation('Eloquent Library Committee Member')).toBe('Librarian')
+    expect(translateOccupation('Bakery Employee')).toBe('Employee')
   })
 
   it('DemonEtCaretaker', () => {
-    expect(translateOccupation('Contract Devil')).toBe('Démon')
-    expect(translateOccupation('Devil Hunter')).toBe('Chasseur de démons')
+    expect(translateOccupation('Contract Devil')).toBe('Demon')
+    expect(translateOccupation('Devil Hunter')).toBe('Demon hunter')
     // « caretaker » : un mentor, donc un Professeur comme « mentor »
-    expect(translateOccupation("Nia's caretaker")).toBe('Professeur')
+    expect(translateOccupation("Nia's caretaker")).toBe('Teacher')
   })
 })
 
@@ -89,7 +89,7 @@ describe('introOccupations', () => {
 
   it('RoleIntraduisibleOuServantDeFate_Ignore', () => {
     expect(introOccupations("'''Iskandar''' is the Rider-class Servant of Waver Velvet.").occupation).toEqual([])
-    expect(introOccupations("'''Beldia''' is one of the Devil King's Generals.").occupation).toEqual(['Officier'])
+    expect(introOccupations("'''Beldia''' is one of the Devil King's Generals.").occupation).toEqual(['Officer'])
   })
 })
 
@@ -109,7 +109,7 @@ describe('fandomInfobox, nowiki', () => {
 describe('fandomValues, titres', () => {
   it('Titres_TraduitsSansLesSurnoms', () => {
     const page = "{{Character Infobox\n|gender = Male\n|titles = «The Black Swordsman»<br>Beater\n}}"
-    expect(fandomValues(fandomInfobox(page)!).titles).toEqual(['Épéiste'])
+    expect(fandomValues(fandomInfobox(page)!).titles).toEqual(['Swordsman'])
   })
 })
 
@@ -146,7 +146,7 @@ describe('sameName', () => {
 describe('introOccupations, intro dans l\'infobox', () => {
   it('ChampIntro_Lu', () => {
     const page = "{{Character\n|gender = Male\n|intro='''Kiyotaka''' is the main protagonist of the series. He is currently a third-year student of Advanced Nurturing High School.}}"
-    expect(introOccupations(page).occupation).toEqual(['Élève'])
+    expect(introOccupations(page).occupation).toEqual(['Pupil'])
   })
 })
 
@@ -163,7 +163,7 @@ describe('fandomValues, mort', () => {
 
 describe('affiliation', () => {
   it('RoleSimple_Garde', () => {
-    expect(affiliationOccupations('Student (formerly)')).toEqual(['Élève'])
+    expect(affiliationOccupations('Student (formerly)')).toEqual(['Pupil'])
   })
 
   it('OrganisationPossessifOuNomPropre_Ecarte', () => {
@@ -182,7 +182,7 @@ describe('fandomInfobox, spoilers repliés', () => {
 }}`
 
   it('ArmeDansHidden_Lue', () => {
-    expect(fandomValues(fandomInfobox(SONIC)!).weapon).toEqual(['Épéiste'])
+    expect(fandomValues(fandomInfobox(SONIC)!).weapon).toEqual(['Swordsman'])
   })
 
   it('AffiliationDansHidden_ResteEffacee', () => {
@@ -197,7 +197,7 @@ describe('fandomInfobox, spoilers repliés', () => {
 
 describe('schoolOccupations', () => {
   it('Ecole_Eleve', () => {
-    expect(schoolOccupations('Hyakkaou Private Academy')).toEqual(['Élève'])
+    expect(schoolOccupations('Hyakkaou Private Academy')).toEqual(['Pupil'])
   })
 
   it('AncienneEcole_Rien', () => {
@@ -206,7 +206,7 @@ describe('schoolOccupations', () => {
   })
 
   it('PlusieursEcoles_UneActuelleSuffit', () => {
-    expect(schoolOccupations('Far East Devil High School (Graduate), Maijima Private High School')).toEqual(['Élève'])
+    expect(schoolOccupations('Far East Devil High School (Graduate), Maijima Private High School')).toEqual(['Pupil'])
     expect(schoolOccupations('Umesato Junior High School (expelled), Criminal')).toBeNull()
   })
 })
@@ -229,5 +229,24 @@ describe('templateSpecies', () => {
   it('ModeleDuPeuple_Espece', () => {
     expect(templateSpecies('{{Parent Tab Template|tab1=Outline}}{{Hell character\n|Gender = Female\n}}')).toEqual(['Demon'])
     expect(templateSpecies('{{Target character\n|Gender = Female\n}}')).toEqual([])
+  })
+})
+
+describe('translateOccupation, valeurs déjà traduites', () => {
+  it('AncienMotFrancais_SonAnglais', () => {
+    expect(translateOccupation('Collégien')).toBe('Middle schooler')
+    expect(translateOccupation('Soldat')).toBe('Soldier')
+  })
+  it('NotreValeur_GardeeTelleQuelle', () => {
+    expect(translateOccupation('Swordsman')).toBe('Swordsman')
+    expect(translateOccupation('Miko')).toBe('Miko')
+  })
+  it('MotBrutDUneSource_PasseParLesRegles', () => {
+    expect(translateOccupation('captain')).toBe('Captain')
+    expect(translateOccupation('Advisor')).toBe('Assistant')
+  })
+  it('NomFrancais_PourLesReglesDuPixeldle', () => {
+    expect(frenchOccupation('Psychiatrist')).toBe('psychiatre')
+    expect(frenchOccupation('Student')).toBe('étudiant')
   })
 })

@@ -133,7 +133,7 @@ describe('applyManual', () => {
 
 describe('applySetEdit', () => {
   it('ajoute et retire sans toucher aux autres valeurs (les tags des scripts restent)', () => {
-    expect(applySetEdit(['Garde', 'Magicien'], { plus: ['Soldat'], moins: ['Garde'] })).toEqual(['Magicien', 'Soldat'])
+    expect(applySetEdit(['Guard', 'Mage'], { plus: ['Soldier'], moins: ['Guard'] })).toEqual(['Mage', 'Soldier'])
     expect(applySetEdit(['Japan', 'Monde réel'], { plus: ['France'] })).toEqual(['Japan', 'Monde réel', 'France'])
   })
 
@@ -145,8 +145,8 @@ describe('applySetEdit', () => {
 
   it('vide si tout est retiré, et rien ne change la 2e fois', () => {
     expect(applySetEdit(['Brown'], { moins: ['Brown'] })).toBeNull()
-    const edit = { plus: ['Soldat'], moins: ['Garde'] }
-    const once = applySetEdit(['Garde', 'Inconnu'], edit)
+    const edit = { plus: ['Soldier'], moins: ['Guard'] }
+    const once = applySetEdit(['Guard', 'Inconnu'], edit)
     expect(applySetEdit(once, edit)).toEqual(once)
   })
 })

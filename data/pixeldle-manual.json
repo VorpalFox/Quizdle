@@ -251,7 +251,7 @@
    "_raison": "le héros, détective privé",
    "occupation": {
     "plus": [
-     "Détective"
+     "Detective"
     ]
    },
    "nationality": {
@@ -306,7 +306,7 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -319,7 +319,7 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -365,10 +365,10 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ],
     "moins": [
-     "Archéologue"
+     "Archaeologist"
     ]
    },
    "nationality": {
@@ -388,10 +388,10 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ],
     "moins": [
-     "Érudit"
+     "Scholar"
     ]
    },
    "nationality": {
@@ -556,7 +556,7 @@
    "_raison": "professeur",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    },
    "aliases": [
@@ -607,7 +607,7 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    },
    "aliases": [
@@ -750,8 +750,8 @@
    },
    "occupation": {
     "plus": [
-     "Scientifique",
-     "Soldat"
+     "Scientist",
+     "Soldier"
     ]
    }
   },
@@ -771,7 +771,7 @@
    "gender": "Female",
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -793,7 +793,7 @@
    },
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -837,7 +837,7 @@
    },
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -860,7 +860,7 @@
    },
    "occupation": {
     "plus": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -874,7 +874,7 @@
    },
    "occupation": {
     "plus": [
-     "Employé"
+     "Employee"
     ]
    }
   },
@@ -888,7 +888,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -902,7 +902,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -924,7 +924,7 @@
    },
    "occupation": {
     "plus": [
-     "Livreur"
+     "Courier"
     ]
    }
   },
@@ -938,8 +938,8 @@
    },
    "occupation": {
     "plus": [
-     "Marin",
-     "Commerçant"
+     "Sailor",
+     "Merchant"
     ]
    }
   },
@@ -961,7 +961,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -983,7 +983,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -998,7 +998,7 @@
    "year": 2024,
    "occupation": {
     "plus": [
-     "Magicien",
+     "Mage",
      "Noble"
     ]
    }
@@ -1079,7 +1079,7 @@
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1119,7 +1119,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -1147,7 +1147,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -1169,7 +1169,7 @@
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1284,7 +1284,7 @@
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1302,7 +1302,7 @@
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1320,7 +1320,7 @@
    },
    "occupation": {
     "plus": [
-     "Informaticien"
+     "Programmer"
     ]
    }
   },
@@ -1338,7 +1338,7 @@
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1356,7 +1356,7 @@
    },
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -1374,7 +1374,7 @@
    },
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
@@ -1392,7 +1392,7 @@
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1410,7 +1410,7 @@
    },
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -1442,7 +1442,7 @@
    "year": 2018,
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1460,7 +1460,7 @@
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1478,7 +1478,7 @@
    },
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -1496,7 +1496,7 @@
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -2149,7 +2149,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -2197,8 +2197,8 @@
    },
    "occupation": {
     "plus": [
-     "Magicien",
-     "Souverain"
+     "Mage",
+     "Royalty"
     ]
    }
   },
@@ -2214,7 +2214,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -2524,7 +2524,7 @@
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -2600,7 +2600,7 @@
    },
    "occupation": {
     "plus": [
-     "Protecteur"
+     "Protector"
     ]
    }
   },
@@ -2788,7 +2788,7 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -2801,7 +2801,7 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -2851,10 +2851,10 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ],
     "moins": [
-     "Chasseur"
+     "Hunter"
     ]
    }
   },
@@ -2868,7 +2868,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3037,7 +3037,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3071,7 +3071,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3080,7 +3080,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3089,7 +3089,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3098,7 +3098,7 @@
    "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -3142,7 +3142,7 @@
    "gender": "Female",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -3151,7 +3151,7 @@
    "gender": "Male",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -3160,7 +3160,7 @@
    "gender": "Male",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -3272,7 +3272,7 @@
    "gender": "Male",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
@@ -3281,7 +3281,7 @@
    "gender": "Male",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
@@ -3302,7 +3302,7 @@
    "gender": "Female",
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
@@ -3337,7 +3337,7 @@
    },
    "occupation": {
     "plus": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -3443,7 +3443,7 @@
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3456,7 +3456,7 @@
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3469,7 +3469,7 @@
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3509,7 +3509,7 @@
    "_raison": "dieu du tonnerre",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4059,10 +4059,10 @@
    },
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ],
     "moins": [
-     "Espion"
+     "Spy"
     ]
    }
   },
@@ -4244,7 +4244,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4257,7 +4257,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4270,7 +4270,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4299,7 +4299,7 @@
    },
    "occupation": {
     "plus": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4560,7 +4560,7 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -4568,7 +4568,7 @@
    "_nom": "Panda King",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4582,8 +4582,8 @@
    "_nom": "Louis",
    "occupation": {
     "plus": [
-     "Survivant",
-     "Employé"
+     "Survivor",
+     "Employee"
     ]
    }
   },
@@ -4591,8 +4591,8 @@
    "_nom": "Futaba Sakura",
    "occupation": {
     "plus": [
-     "Informaticien",
-     "Étudiant"
+     "Programmer",
+     "Student"
     ]
    }
   },
@@ -4600,7 +4600,7 @@
    "_nom": "Alph",
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -4608,7 +4608,7 @@
    "_nom": "Brittany",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4616,7 +4616,7 @@
    "_nom": "Charlie",
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -4627,7 +4627,7 @@
    "_nom": "Marcus Kincaid",
    "occupation": {
     "plus": [
-     "Commerçant"
+     "Merchant"
     ]
    }
   },
@@ -4635,7 +4635,7 @@
    "_nom": "Diana Altaras",
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -4643,7 +4643,7 @@
    "_nom": "Dave",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4651,7 +4651,7 @@
    "_nom": "Last Fisherman",
    "occupation": {
     "plus": [
-     "Marin"
+     "Sailor"
     ]
    }
   },
@@ -4662,7 +4662,7 @@
    "_nom": "Ralof",
    "occupation": {
     "plus": [
-     "Révolutionnaire"
+     "Revolutionary"
     ]
    }
   },
@@ -4670,7 +4670,7 @@
    "_nom": "Muiri",
    "occupation": {
     "plus": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -4678,7 +4678,7 @@
    "_nom": "Wally",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4686,7 +4686,7 @@
    "_nom": "Kait Diaz",
    "occupation": {
     "moins": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4694,11 +4694,11 @@
    "_nom": "Leliana",
    "occupation": {
     "plus": [
-     "Espion",
-     "Musicien"
+     "Spy",
+     "Musician"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4706,10 +4706,10 @@
    "_nom": "Varric Tethras",
    "occupation": {
     "plus": [
-     "Écrivain"
+     "Writer"
     ],
     "moins": [
-     "Voleur"
+     "Thief"
     ]
    }
   },
@@ -4717,7 +4717,7 @@
    "_nom": "The Last Dragonborn",
    "occupation": {
     "moins": [
-     "Magicien",
+     "Mage",
      "Noble"
     ]
    }
@@ -4726,11 +4726,11 @@
    "_nom": "Victor Hoffman",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ],
     "moins": [
-     "Chef de clan",
-     "Dirigeant"
+     "Clan leader",
+     "Leader"
     ]
    }
   },
@@ -4739,7 +4739,7 @@
    "occupation": {
     "plus": [
      "Pirate",
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4747,7 +4747,7 @@
    "_nom": "Freddy Fazbear",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4755,7 +4755,7 @@
    "_nom": "Bonnie",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4763,7 +4763,7 @@
    "_nom": "Golden Freddy",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4771,7 +4771,7 @@
    "_nom": "Glamrock Freddy",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4779,7 +4779,7 @@
    "_nom": "Glamrock Chica",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4787,7 +4787,7 @@
    "_nom": "Montgomery Gator",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4795,10 +4795,10 @@
    "_nom": "Roxanne Wolf",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4806,7 +4806,7 @@
    "_nom": "Mangle",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4814,7 +4814,7 @@
    "_nom": "Circus Baby",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4822,7 +4822,7 @@
    "_nom": "Ballora",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4830,7 +4830,7 @@
    "_nom": "Funtime Freddy",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4838,7 +4838,7 @@
    "_nom": "Funtime Foxy",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4846,7 +4846,7 @@
    "_nom": "Daycare Attendant",
    "occupation": {
     "plus": [
-     "Domestique"
+     "Servant"
     ]
    }
   },
@@ -4862,7 +4862,7 @@
    "_nom": "Striker Jones",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -4870,7 +4870,7 @@
    "_nom": "Geraldo",
    "occupation": {
     "plus": [
-     "Commerçant"
+     "Merchant"
     ]
    }
   },
@@ -4878,7 +4878,7 @@
    "_nom": "Kafka",
    "occupation": {
     "plus": [
-     "Criminel"
+     "Criminal"
     ]
    }
   },
@@ -4886,8 +4886,8 @@
    "_nom": "Louve d'argent",
    "occupation": {
     "plus": [
-     "Informaticien",
-     "Criminel"
+     "Programmer",
+     "Criminal"
     ]
    }
   },
@@ -4895,8 +4895,8 @@
    "_nom": "Blade",
    "occupation": {
     "plus": [
-     "Criminel",
-     "Épéiste"
+     "Criminal",
+     "Swordsman"
     ]
    }
   },
@@ -4904,7 +4904,7 @@
    "_nom": "Aventurine",
    "occupation": {
     "plus": [
-     "Homme d'affaires"
+     "Businessperson"
     ]
    }
   },
@@ -4912,8 +4912,8 @@
    "_nom": "Luciole",
    "occupation": {
     "plus": [
-     "Soldat",
-     "Criminel"
+     "Soldier",
+     "Criminal"
     ]
    }
   },
@@ -4921,7 +4921,7 @@
    "_nom": "Robin",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4929,7 +4929,7 @@
    "_nom": "Herta",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4937,7 +4937,7 @@
    "_nom": "Ruan Mei",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4945,7 +4945,7 @@
    "_nom": "Dan Heng",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4953,7 +4953,7 @@
    "_nom": "Sunday",
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
@@ -4961,7 +4961,7 @@
    "_nom": "Bronya",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4969,10 +4969,10 @@
    "_nom": "Mega Man",
    "occupation": {
     "plus": [
-     "Justicier"
+     "Vigilante"
     ],
     "moins": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -4980,7 +4980,7 @@
    "_nom": "Cut Man",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ]
    }
   },
@@ -4988,7 +4988,7 @@
    "_nom": "Ice Man",
    "occupation": {
     "plus": [
-     "Aventurier"
+     "Adventurer"
     ]
    }
   },
@@ -4996,10 +4996,10 @@
    "_nom": "Elec Man",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ],
     "moins": [
-     "Acteur"
+     "Actor"
     ]
    }
   },
@@ -5007,7 +5007,7 @@
    "_nom": "Bubble Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5015,7 +5015,7 @@
    "_nom": "Quick Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5023,7 +5023,7 @@
    "_nom": "Wood Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5031,7 +5031,7 @@
    "_nom": "Air Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5039,7 +5039,7 @@
    "_nom": "Heat Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5047,7 +5047,7 @@
    "_nom": "Metal Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5055,7 +5055,7 @@
    "_nom": "Crash Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5063,7 +5063,7 @@
    "_nom": "Kyle Crane",
    "occupation": {
     "plus": [
-     "Espion"
+     "Spy"
     ]
    }
   },
@@ -5074,7 +5074,7 @@
      "Noble"
     ],
     "moins": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -5082,7 +5082,7 @@
    "_nom": "Harmonie",
    "occupation": {
     "moins": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -5090,7 +5090,7 @@
    "_nom": "Palutena",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5098,7 +5098,7 @@
    "_nom": "Ares",
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -5106,7 +5106,7 @@
    "_nom": "Vaermina",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5114,7 +5114,7 @@
    "_nom": "Urizen",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5122,7 +5122,7 @@
    "_nom": "Nelo Angelo",
    "occupation": {
     "plus": [
-     "Chevalier"
+     "Knight"
     ]
    }
   },
@@ -5130,7 +5130,7 @@
    "_nom": "Ghirahim",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5138,7 +5138,7 @@
    "_nom": "Sigmar",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5146,7 +5146,7 @@
    "_nom": "Grimnir",
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -5154,7 +5154,7 @@
    "_nom": "Grungni",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ]
    }
   },
@@ -5162,7 +5162,7 @@
    "_nom": "Be'lakor",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5170,7 +5170,7 @@
    "_nom": "Devil Jin",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
@@ -5178,7 +5178,7 @@
    "_nom": "Hylia",
    "occupation": {
     "plus": [
-     "Protecteur"
+     "Protector"
     ]
    }
   },
@@ -5330,7 +5330,7 @@
      "Aucune"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   }
@@ -5401,7 +5401,7 @@
      "Harmony"
     ],
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Titanfall / Apex Legends",
@@ -5425,9 +5425,9 @@
     ],
     "nationality": null,
     "occupation": [
-     "Soldat",
-     "Pilote",
-     "Espion"
+     "Soldier",
+     "Pilot",
+     "Spy"
     ],
     "hair": [
      "Brown"
@@ -5455,8 +5455,8 @@
      "Harmony"
     ],
     "occupation": [
-     "Soldat",
-     "Pilote"
+     "Soldier",
+     "Pilot"
     ],
     "hair": [
      "Black"
@@ -5484,7 +5484,7 @@
      "South Africa"
     ],
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "hair": [
      "Brown",
@@ -5537,7 +5537,7 @@
      "Human"
     ],
     "occupation": [
-     "Policier"
+     "Police officer"
     ],
     "nationality": null,
     "hair": null,
@@ -5565,7 +5565,7 @@
      "Ukraine"
     ],
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5591,7 +5591,7 @@
      "Ukraine"
     ],
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5614,7 +5614,7 @@
      "Canada"
     ],
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5637,7 +5637,7 @@
      "Russia"
     ],
     "occupation": [
-     "Révolutionnaire"
+     "Revolutionary"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5690,7 +5690,7 @@
      "Russia"
     ],
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5717,8 +5717,8 @@
      "United States"
     ],
     "occupation": [
-     "Détective",
-     "Soldat"
+     "Detective",
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5743,7 +5743,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Criminel"
+     "Criminal"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5769,7 +5769,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Marin"
+     "Sailor"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5794,7 +5794,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Policier"
+     "Police officer"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5819,7 +5819,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Artiste"
+     "Artist"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5868,7 +5868,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Médecin"
+     "Doctor"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5916,7 +5916,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "The Riftbreaker",
@@ -5942,7 +5942,7 @@
     ],
     "nationality": null,
     "occupation": [
-     "Compagnon"
+     "Companion"
     ],
     "hair": null,
     "franchise": "The Riftbreaker",
@@ -6020,7 +6020,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Fermier"
+     "Farmer"
     ],
     "year": 2016,
     "franchise": "Stardew Valley"
@@ -6055,7 +6055,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Étudiant"
+     "Student"
     ],
     "year": 2023,
     "franchise": "Hogwarts Legacy"
@@ -6108,7 +6108,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2012,
     "franchise": "XCOM"
@@ -6128,7 +6128,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2019,
     "franchise": "My Time at Portia / Sandrock"
@@ -6149,7 +6149,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2019,
     "franchise": "Outer Wilds"
@@ -6169,7 +6169,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 1988,
     "franchise": "Wasteland"
@@ -6204,7 +6204,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Survivant"
+     "Survivor"
     ],
     "year": 2017,
     "franchise": "ARK"
@@ -6238,7 +6238,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2015,
     "franchise": "Splatoon"
@@ -6275,7 +6275,7 @@
     ],
     "gender": "Male",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2020,
     "franchise": "Deep Rock Galactic"
@@ -6312,7 +6312,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Chasseur de monstres"
+     "Monster hunter"
     ],
     "year": 2019,
     "franchise": "Hunt: Showdown"
@@ -6331,7 +6331,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2019,
     "franchise": "Satisfactory"
@@ -6350,7 +6350,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Survivant"
+     "Survivor"
     ],
     "year": 2018,
     "franchise": "Rust"
@@ -6369,7 +6369,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2021,
     "franchise": "Icarus"
@@ -6388,7 +6388,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2019,
     "franchise": "Genesis Alpha One"
@@ -6425,7 +6425,7 @@
     ],
     "gender": "Player's choice",
     "occupation": [
-     "Pilote"
+     "Pilot"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6463,8 +6463,8 @@
      "United States"
     ],
     "occupation": [
-     "Détective",
-     "Soldat"
+     "Detective",
+     "Soldier"
     ],
     "year": 2013,
     "franchise": "BioShock"
@@ -6483,7 +6483,7 @@
     ],
     "gender": "Male",
     "occupation": [
-     "Garde"
+     "Guard"
     ],
     "year": 2014,
     "franchise": "Five Nights at Freddy's"
@@ -6501,7 +6501,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
      "White"
@@ -6522,7 +6522,7 @@
     ],
     "gender": "Male",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
      "White"
@@ -6543,7 +6543,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
      "White"
@@ -6565,7 +6565,7 @@
     ],
     "gender": "Male",
     "occupation": [
-     "Mécanicien"
+     "Mechanic"
     ],
     "hair": [
      "Brown"
@@ -6587,7 +6587,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "year": 2021,
     "franchise": "Subnautica"
@@ -6605,8 +6605,8 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Pilote",
-     "Criminel"
+     "Pilot",
+     "Criminal"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6651,7 +6651,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6666,7 +6666,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6715,7 +6715,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Chevalier"
+     "Knight"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6733,7 +6733,7 @@
     "gender": "Female",
     "year": 2005,
     "occupation": [
-     "Dirigeant"
+     "Leader"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6748,7 +6748,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6766,7 +6766,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6784,7 +6784,7 @@
     "gender": "Male",
     "year": 2006,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6802,7 +6802,7 @@
     "gender": "Male",
     "year": 2006,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6834,7 +6834,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6853,7 +6853,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Chevalier"
+     "Knight"
     ],
     "nationality": [
      "France"
@@ -6875,7 +6875,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Espion"
+     "Spy"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6909,7 +6909,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "nationality": [
      "Spain"
@@ -6927,7 +6927,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6942,7 +6942,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "nationality": [
      "United Kingdom"
@@ -6982,7 +6982,7 @@
     "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "franchise": "Age of Empires III"
    }
@@ -7018,7 +7018,7 @@
     "gender": "Male",
     "year": 2007,
     "occupation": [
-     "Samouraï"
+     "Samurai"
     ],
     "nationality": [
      "Japan"
@@ -7170,7 +7170,7 @@
     ],
     "gender": "Female",
     "occupation": [
-     "Employé"
+     "Employee"
     ],
     "year": 2011,
     "franchise": "Portal"
@@ -7241,8 +7241,8 @@
     "gender": "Player's choice",
     "franchise": "Among Us",
     "occupation": [
-     "Astronaute",
-     "Scientifique"
+     "Astronaut",
+     "Scientist"
     ],
     "species": [
      "Humanoid"
@@ -7262,7 +7262,7 @@
      "Wasteland"
     ],
     "occupation": [
-     "Dirigeant"
+     "Leader"
     ],
     "hair": [
      "Red"
@@ -7732,7 +7732,7 @@
     "Human"
    ],
    "occupation": [
-    "Survivant"
+    "Survivor"
    ]
   },
   "Sons Of The Forest": {
@@ -7843,7 +7843,7 @@
     "Human"
    ],
    "occupation": [
-    "Pilote"
+    "Pilot"
    ]
   },
   "Lost Records: Bloom & Rage": {
@@ -7870,7 +7870,7 @@
     "Human"
    ],
    "occupation": [
-    "Combattant"
+    "Fighter"
    ]
   },
   "Call of Duty": {
@@ -8008,7 +8008,7 @@
     "Human"
    ],
    "occupation": [
-    "Espion"
+    "Spy"
    ]
   },
   "Dragon Quest": {
@@ -8118,7 +8118,7 @@
   },
   "Outer Wilds": {
    "occupation": [
-    "Scientifique"
+    "Scientist"
    ]
   }
  }

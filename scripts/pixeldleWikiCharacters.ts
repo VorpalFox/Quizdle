@@ -79,13 +79,13 @@ const COMPANION = /'s\s+(?:[\w-]+\s+){0,3}(?:companion|sidekick|pet|steed|horse|
 const ASSISTANT = /\b(?:a|an|the|their|his|her|its)\s+(?:[\w-]+\s+){0,2}["“]?(?:assistant|guide)\b|\b[A-Z]\w+ (?:Assistant|Guide)\b/
 const NOT_ASSISTANT = /\bassistant (?:manager|director|professor)|guidebook/i
 
-export function introFunction(intro: string, name = ''): 'Compagnon' | 'Assistant' | null {
+export function introFunction(intro: string, name = ''): 'Companion' | 'Assistant' | null {
   const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES)
   if (/^(?:assistant|guide)$/i.test(name) || sentences.some(sentence => ASSISTANT.test(sentence) && !NOT_ASSISTANT.test(sentence)))
     return 'Assistant'
   const roles = sentences.map(sentence => WHAT_HE_IS.exec(sentence)?.[1] ?? '')
   if (roles.some(role => COMPANION.test(role) && !/\b(?:possible|potential|recruitable|romance)/i.test(role)))
-    return 'Compagnon'
+    return 'Companion'
   return null
 }
 

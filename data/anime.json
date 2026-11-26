@@ -14,10 +14,10 @@
    "gender": "Male",
    "age": 28,
    "occupation": [
-    "Exorciste",
-    "Professeur",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Teacher",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
     "White"
@@ -45,9 +45,9 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Voyou",
-    "Soldat",
-    "Criminel"
+    "Thug",
+    "Soldier",
+    "Criminal"
    ],
    "hair": null,
    "anime": "Attack on Titan",
@@ -77,10 +77,10 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Pirate",
     "Leader",
-    "Criminel"
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -112,9 +112,9 @@
    "age": 11,
    "occupation": [
     "Assassin",
-    "Chasseur",
-    "Criminel",
-    "Combattant"
+    "Hunter",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
     "White"
@@ -145,10 +145,10 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Révolutionnaire",
-    "Soldat",
-    "Épéiste",
-    "Combattant"
+    "Revolutionary",
+    "Soldier",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Attack on Titan",
@@ -176,11 +176,11 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Épéiste",
-    "Chasseur de primes",
+    "Swordsman",
+    "Bounty hunter",
     "Pirate",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
     "Green"
@@ -212,15 +212,15 @@
    "age": 17,
    "occupation": [
     "Leader",
-    "Politicien",
-    "Justicier",
-    "Révolutionnaire",
-    "Terroriste",
-    "Pilote",
+    "Politician",
+    "Vigilante",
+    "Revolutionary",
+    "Terrorist",
+    "Pilot",
     "Noble",
-    "Étudiant",
-    "Souverain",
-    "Criminel"
+    "Student",
+    "Royalty",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -281,7 +281,7 @@
    "gender": "Male",
    "age": 24,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
     "Black"
@@ -311,10 +311,10 @@
    "gender": "Male",
    "age": 18,
    "occupation": [
-    "Étudiant",
-    "Serveur",
-    "Détective",
-    "Souverain",
+    "Student",
+    "Waiter",
+    "Detective",
+    "Royalty",
     "Peacekeeper",
     "Noble",
     "Leader"
@@ -349,8 +349,8 @@
    "gender": "Female",
    "age": 15,
    "occupation": [
-    "Soldat",
-    "Bataillon d'exploration"
+    "Soldier",
+    "Survey Corps"
    ],
    "hair": [
     "Black"
@@ -407,19 +407,19 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Mercenaire",
+    "Mercenary",
     "Archer",
-    "Justicier",
-    "Artiste martial",
-    "Épéiste",
+    "Vigilante",
+    "Martial artist",
+    "Swordsman",
     "Assassin",
-    "Chasseur de démons",
-    "Chevalier",
-    "Aventurier",
-    "Tireur",
-    "Combattant",
-    "Criminel",
-    "Chasseur de monstres"
+    "Demon hunter",
+    "Knight",
+    "Adventurer",
+    "Marksman",
+    "Fighter",
+    "Criminal",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -448,9 +448,9 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Courtisane",
-    "Domestique",
-    "Apothicaire"
+    "Courtesan",
+    "Servant",
+    "Apothecary"
    ],
    "hair": [
     "Black"
@@ -475,8 +475,8 @@
    "gender": "Female",
    "age": 1000,
    "occupation": [
-    "Magicien",
-    "Aventurier"
+    "Mage",
+    "Adventurer"
    ],
    "hair": [
     "White"
@@ -505,7 +505,7 @@
    "gender": "Female",
    "age": 18,
    "occupation": [
-    "Médecin"
+    "Doctor"
    ],
    "hair": [
     "Brown"
@@ -535,20 +535,20 @@
    "gender": "Male",
    "age": 6,
    "occupation": [
-    "Marin",
-    "Fermier",
-    "Mercenaire",
-    "Combattant",
-    "Éclaireur",
-    "Soldat",
+    "Sailor",
+    "Farmer",
+    "Mercenary",
+    "Fighter",
+    "Scout",
+    "Soldier",
     "Pirate",
-    "Épéiste",
-    "Aventurier",
+    "Swordsman",
+    "Adventurer",
     "Assassin",
-    "Commerçant",
+    "Merchant",
     "Leader",
-    "Esclave",
-    "Criminel"
+    "Slave",
+    "Criminal"
    ],
    "hair": [
     "Blond"
@@ -574,9 +574,9 @@
    "gender": "Female",
    "age": null,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Red"
@@ -608,10 +608,10 @@
    "age": 17,
    "occupation": [
     "Assassin",
-    "Épéiste",
+    "Swordsman",
     "Ninja",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
@@ -643,7 +643,7 @@
    "age": 25,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
@@ -673,10 +673,10 @@
    "gender": "Male",
    "age": 18,
    "occupation": [
-    "Étudiant",
-    "Voyageur temporel",
-    "Sportif",
-    "Scientifique"
+    "Student",
+    "Time traveler",
+    "Athlete",
+    "Scientist"
    ],
    "hair": [
     "Black"
@@ -706,10 +706,10 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Monster hunter",
+    "Mage",
+    "Student"
    ],
    "hair": [
     "Blond",
@@ -740,14 +740,14 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Acteur",
-    "Mannequin",
-    "Policier",
-    "Chanteur",
-    "Célébrité",
-    "Artiste",
-    "Musicien"
+    "Student",
+    "Actor",
+    "Model",
+    "Police officer",
+    "Singer",
+    "Celebrity",
+    "Artist",
+    "Musician"
    ],
    "hair": [
     "Black"
@@ -776,9 +776,9 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -805,13 +805,13 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Garde",
-    "Épéiste",
-    "Chasseur",
-    "Mafieux",
-    "Professeur",
-    "Combattant",
-    "Criminel"
+    "Guard",
+    "Swordsman",
+    "Hunter",
+    "Mobster",
+    "Teacher",
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
     "Blond"
@@ -841,9 +841,9 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Tueur en série",
-    "Criminel"
+    "Student",
+    "Serial killer",
+    "Criminal"
    ],
    "hair": [
     "Brown"
@@ -872,7 +872,7 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader"
    ],
    "hair": [
@@ -902,9 +902,9 @@
    "gender": "Female",
    "age": null,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Blond",
@@ -936,7 +936,7 @@
    "age": 14,
    "occupation": [
     "Auto Memories Doll",
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
     "Blond"
@@ -966,8 +966,8 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Président",
-    "Étudiant",
+    "President",
+    "Student",
     "Artisan",
     "Leader"
    ],
@@ -998,8 +998,8 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Alchimiste",
-    "Scientifique"
+    "Alchemist",
+    "Scientist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -1028,7 +1028,7 @@
    "age": 12,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -1059,13 +1059,13 @@
    "gender": "Male",
    "age": 13,
    "occupation": [
-    "Mercenaire",
-    "Épéiste",
-    "Chasseur de démons",
-    "Charbonnier",
-    "Pourfendeur de démons",
-    "Combattant",
-    "Chasseur de monstres"
+    "Mercenary",
+    "Swordsman",
+    "Demon hunter",
+    "Charcoal seller",
+    "Demon Slayer",
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
@@ -1123,11 +1123,11 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
+    "Mage",
+    "Student",
+    "Exorcist",
     "Leader",
-    "Chasseur de monstres"
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -1156,11 +1156,11 @@
    "gender": "Female",
    "age": 15,
    "occupation": [
-    "Mannequin",
-    "Étudiant",
-    "Cosplayeur",
-    "Célébrité",
-    "Artiste"
+    "Model",
+    "Student",
+    "Cosplayer",
+    "Celebrity",
+    "Artist"
    ],
    "hair": [
     "Blond",
@@ -1192,10 +1192,10 @@
    "gender": "Male",
    "age": 18,
    "occupation": [
-    "Chasseur de vampires",
-    "Agent immobilier",
-    "Chasseur de monstres",
-    "Combattant"
+    "Vampire hunter",
+    "Real estate agent",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Brown"
@@ -1226,10 +1226,10 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Student",
+    "Hero",
+    "Fighter"
    ],
    "hair": null,
    "anime": "My Hero Academia",
@@ -1254,14 +1254,14 @@
    "age": 33,
    "occupation": [
     "Leader",
-    "Mercenaire",
+    "Mercenary",
     "Pirate",
-    "Épéiste",
+    "Swordsman",
     "Assassin",
-    "Capitaine",
-    "Domestique",
-    "Combattant",
-    "Criminel"
+    "Captain",
+    "Servant",
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
     "Blond"
@@ -1287,8 +1287,8 @@
    "gender": "Female",
    "age": 13,
    "occupation": [
-    "Magicien",
-    "Étudiant"
+    "Mage",
+    "Student"
    ],
    "hair": [
     "Black",
@@ -1316,7 +1316,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Domestique"
+    "Servant"
    ],
    "hair": [
     "Blue"
@@ -1350,11 +1350,11 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
+    "Superhero",
+    "Student",
     "Assistant",
-    "Héros",
-    "Combattant"
+    "Hero",
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -1383,9 +1383,9 @@
    "gender": "Male",
    "age": 22,
    "occupation": [
-    "Détective",
-    "Mafieux",
-    "Criminel"
+    "Detective",
+    "Mobster",
+    "Criminal"
    ],
    "hair": [
     "Brown"
@@ -1416,9 +1416,9 @@
    "gender": "Male",
    "age": 27,
    "occupation": [
-    "Samouraï",
-    "Épéiste",
-    "Combattant"
+    "Samurai",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
     "Silver"
@@ -1449,13 +1449,13 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Domestique",
-    "Chevalier",
-    "Religieux",
+    "Student",
+    "Servant",
+    "Knight",
+    "Cleric",
     "Leader",
-    "Chômeur",
-    "Combattant"
+    "Unemployed",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -1491,8 +1491,8 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Employé"
+    "Student",
+    "Employee"
    ],
    "hair": [
     "Pink",
@@ -1522,9 +1522,9 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Food critic",
-    "Professeur"
+    "Teacher"
    ],
    "hair": [
     "Red",
@@ -1552,7 +1552,7 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
     "Blue"
@@ -1584,7 +1584,7 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -1612,7 +1612,7 @@
    "gender": "Male",
    "age": 11,
    "occupation": [
-    "Chasseur"
+    "Hunter"
    ],
    "hair": [
     "Green",
@@ -1641,13 +1641,13 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Scientifique",
+    "Scientist",
     "Leader",
-    "Étudiant",
-    "Inventeur",
-    "Astronome",
-    "Astronaute",
-    "Ingénieur"
+    "Student",
+    "Inventor",
+    "Astronomer",
+    "Astronaut",
+    "Engineer"
    ],
    "hair": [
     "White",
@@ -1675,13 +1675,13 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Cuisinier",
+    "Cook",
     "Pirate",
     "Artisan",
-    "Officier",
+    "Officer",
     "Noble",
-    "Criminel",
-    "Soldat"
+    "Criminal",
+    "Soldier"
    ],
    "hair": [
     "Blond"
@@ -1709,10 +1709,10 @@
    "gender": "Male",
    "age": 25,
    "occupation": [
-    "Professeur",
-    "Super-héros",
-    "Héros",
-    "Combattant"
+    "Teacher",
+    "Superhero",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
     "Bald",
@@ -1743,8 +1743,8 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Président du conseil des élèves",
-    "Étudiant",
+    "Student council president",
+    "Student",
     "Leader"
    ],
    "hair": [
@@ -1775,10 +1775,10 @@
    "gender": "Male",
    "age": 23,
    "occupation": [
-    "Chasseur",
+    "Hunter",
     "Leader",
-    "Souverain",
-    "Détective",
+    "Royalty",
+    "Detective",
     "Noble"
    ],
    "hair": [
@@ -1808,14 +1808,14 @@
    "gender": "Female",
    "age": 28,
    "occupation": [
-    "Archéologue",
+    "Archaeologist",
     "Pirate",
     "Assassin",
-    "Officier",
-    "Scientifique",
-    "Criminel",
-    "Combattant",
-    "Soldat"
+    "Officer",
+    "Scientist",
+    "Criminal",
+    "Fighter",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -1846,8 +1846,8 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Voyant",
-    "Étudiant"
+    "Seer",
+    "Student"
    ],
    "hair": [
     "Pink"
@@ -1875,13 +1875,13 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Épéiste",
-    "Étudiant",
-    "Chasseur",
-    "Chasseur de démons",
+    "Swordsman",
+    "Student",
+    "Hunter",
+    "Demon hunter",
     "Shinigami",
-    "Combattant",
-    "Chasseur de monstres"
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": [
     "Ginger"
@@ -1912,7 +1912,7 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Ginger",
@@ -1945,10 +1945,10 @@
    "gender": "Male",
    "age": "Inconnu",
    "occupation": [
-    "Chasseur de démons",
+    "Demon hunter",
     "Wild Fiend",
-    "Chasseur de monstres",
-    "Combattant"
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -1978,7 +1978,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown",
@@ -2011,7 +2011,7 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
     "Pink"
@@ -2043,8 +2043,8 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Cuisinier",
-    "Étudiant",
+    "Cook",
+    "Student",
     "Artisan"
    ],
    "hair": [
@@ -2074,9 +2074,9 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Black",
@@ -2107,7 +2107,7 @@
    "gender": "Female",
    "age": 12,
    "occupation": [
-    "Femme au foyer"
+    "Homemaker"
    ],
    "hair": [
     "Black",
@@ -2140,10 +2140,10 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Capitaine",
-    "Volleyeur",
+    "Captain",
+    "Volleyball player",
     "Leader",
-    "Sportif"
+    "Athlete"
    ],
    "hair": [
     "Ginger"
@@ -2173,9 +2173,9 @@
    "age": 29,
    "occupation": [
     "Leader",
-    "Soldat",
-    "Alchimiste",
-    "Scientifique"
+    "Soldier",
+    "Alchemist",
+    "Scientist"
    ],
    "hair": [
     "Black"
@@ -2204,7 +2204,7 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader"
    ],
    "hair": [
@@ -2236,10 +2236,10 @@
    "gender": "Female",
    "age": 27,
    "occupation": [
-    "Employé",
+    "Employee",
     "Assassin",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -2271,11 +2271,11 @@
    "age": 27,
    "occupation": [
     "Assassin",
-    "Tireur",
-    "Chasseur de primes",
-    "Pilote",
-    "Criminel",
-    "Combattant"
+    "Marksman",
+    "Bounty hunter",
+    "Pilot",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
     "Green",
@@ -2333,8 +2333,8 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Soldat",
-    "Bataillon d'exploration"
+    "Soldier",
+    "Survey Corps"
    ],
    "hair": [
     "Blond"
@@ -2364,7 +2364,7 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Marine Biologist"
    ],
    "hair": [
@@ -2395,7 +2395,7 @@
    "gender": null,
    "age": null,
    "occupation": [
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -2426,11 +2426,11 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
-    "Professeur",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Student",
+    "Teacher",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
     "Green",
@@ -2491,9 +2491,9 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Blond",
@@ -2524,9 +2524,9 @@
    "gender": "Male",
    "age": 27,
    "occupation": [
-    "Magicien",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
     "Blond"
@@ -2587,8 +2587,8 @@
    "age": 12,
    "occupation": [
     "Ninja",
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
@@ -2618,10 +2618,10 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Student",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
     "Ginger"
@@ -2654,7 +2654,7 @@
    "gender": "Female",
    "age": 6,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Pink"
@@ -2685,10 +2685,10 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Student",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
     "Black",
@@ -2719,8 +2719,8 @@
    "age": null,
    "occupation": [
     "Leader",
-    "Bataillon d'exploration",
-    "Soldat"
+    "Survey Corps",
+    "Soldier"
    ],
    "hair": [
     "Blond"
@@ -2747,7 +2747,7 @@
    "gender": "Male",
    "age": 1050,
    "occupation": [
-    "Dieu"
+    "God"
    ],
    "hair": [
     "Black"
@@ -2779,10 +2779,10 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader",
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -2813,7 +2813,7 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Pink"
@@ -2842,7 +2842,7 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Black"
@@ -2872,10 +2872,10 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres",
-    "Magicien"
+    "Student",
+    "Exorcist",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": null,
    "anime": "Bakemonogatari",
@@ -2905,8 +2905,8 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Volleyeur",
-    "Sportif"
+    "Volleyball player",
+    "Athlete"
    ],
    "hair": [
     "Black"
@@ -2935,8 +2935,8 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Puella Magi Madoka Magica",
@@ -2966,9 +2966,9 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -3002,9 +3002,9 @@
    "gender": "Female",
    "age": 35,
    "occupation": [
-    "Épéiste",
-    "Domestique",
-    "Combattant"
+    "Swordsman",
+    "Servant",
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -3032,9 +3032,9 @@
    "gender": "Male",
    "age": 1000,
    "occupation": [
-    "Utilisateur de fléaux",
-    "Fléau",
-    "Magicien"
+    "Curse user",
+    "Curse",
+    "Mage"
    ],
    "hair": [
     "Pink",
@@ -3064,12 +3064,12 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Acteur",
-    "Idole",
-    "Célébrité",
-    "Chanteur",
-    "Artiste",
-    "Musicien"
+    "Actor",
+    "Idol",
+    "Celebrity",
+    "Singer",
+    "Artist",
+    "Musician"
    ],
    "hair": [
     "Red"
@@ -3099,7 +3099,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -3129,10 +3129,10 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -3162,7 +3162,7 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
     "Blue"
@@ -3193,7 +3193,7 @@
    "gender": "Female",
    "age": 12,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Artisan"
    ],
    "hair": null,
@@ -3221,10 +3221,10 @@
    "gender": "Female",
    "age": null,
    "occupation": [
-    "Magicien",
-    "Professeur",
-    "Étudiant",
-    "Aventurier"
+    "Mage",
+    "Teacher",
+    "Student",
+    "Adventurer"
    ],
    "hair": [
     "Blue"
@@ -3253,7 +3253,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Café co-owner"
    ],
    "hair": [
@@ -3285,10 +3285,10 @@
    "gender": "Male",
    "age": 20,
    "occupation": [
-    "Combattant",
-    "Pourfendeur de démons",
-    "Épéiste",
-    "Chasseur de monstres"
+    "Fighter",
+    "Demon Slayer",
+    "Swordsman",
+    "Monster hunter"
    ],
    "hair": [
     "Blond",
@@ -3321,9 +3321,9 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Espion",
-    "Étudiant",
-    "Pilote"
+    "Spy",
+    "Student",
+    "Pilot"
    ],
    "hair": [
     "Brown"
@@ -3355,8 +3355,8 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Tueur en série",
-    "Criminel"
+    "Serial killer",
+    "Criminal"
    ],
    "hair": [
     "Blond",
@@ -3385,10 +3385,10 @@
    "gender": "Female",
    "age": 300,
    "occupation": [
-    "Pilote",
-    "Esclave",
-    "Terroriste",
-    "Criminel"
+    "Pilot",
+    "Slave",
+    "Terrorist",
+    "Criminal"
    ],
    "hair": [
     "Green"
@@ -3419,9 +3419,9 @@
    "gender": "Female",
    "age": 29,
    "occupation": [
-    "Officier",
+    "Officer",
     "Leader",
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
     "Purple"
@@ -3453,9 +3453,9 @@
    "gender": "Male",
    "age": 28,
    "occupation": [
-    "Chevalier",
-    "Capitaine",
-    "Combattant",
+    "Knight",
+    "Captain",
+    "Fighter",
     "Leader"
    ],
    "hair": [
@@ -3486,7 +3486,7 @@
    "gender": "Male",
    "age": 12,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Artisan"
    ],
    "hair": [
@@ -3515,11 +3515,11 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Garde",
-    "Domestique",
-    "Employé",
-    "Chômeur"
+    "Student",
+    "Guard",
+    "Servant",
+    "Employee",
+    "Unemployed"
    ],
    "hair": [
     "Blond"
@@ -3549,9 +3549,9 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant",
-    "Professeur",
-    "Serveur"
+    "Student",
+    "Teacher",
+    "Waiter"
    ],
    "hair": [
     "Brown"
@@ -3582,10 +3582,10 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Petits boulots",
+    "Student",
+    "Odd jobs",
     "Café co-owner",
-    "Employé"
+    "Employee"
    ],
    "hair": [
     "Pink"
@@ -3614,9 +3614,9 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
     "Black"
@@ -3643,8 +3643,8 @@
    "gender": "Female",
    "age": "Inconnu",
    "occupation": [
-    "Espion",
-    "Serveur"
+    "Spy",
+    "Waiter"
    ],
    "hair": [
     "Purple"
@@ -3675,7 +3675,7 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
@@ -3700,10 +3700,10 @@
    "gender": "Male",
    "age": 24,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Pirate",
     "Leader",
-    "Criminel"
+    "Criminal"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -3730,8 +3730,8 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant",
-    "Professeur"
+    "Student",
+    "Teacher"
    ],
    "hair": [
     "Ginger"
@@ -3759,12 +3759,12 @@
    "gender": "Female",
    "age": 18,
    "occupation": [
-    "Navigateur",
-    "Voleur",
+    "Navigator",
+    "Thief",
     "Pirate",
-    "Officier",
-    "Criminel",
-    "Soldat"
+    "Officer",
+    "Criminal",
+    "Soldier"
    ],
    "hair": [
     "Ginger",
@@ -3830,8 +3830,8 @@
    "age": 16,
    "occupation": [
     "Leader",
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
     "Silver"
@@ -3860,10 +3860,10 @@
    "gender": "Male",
    "age": 32,
    "occupation": [
-    "Psychiatre",
-    "Espion",
-    "Sergent",
-    "Médecin"
+    "Psychiatrist",
+    "Spy",
+    "Sergeant",
+    "Doctor"
    ],
    "hair": [
     "Blond"
@@ -3890,9 +3890,9 @@
    "gender": "Other",
    "age": 300,
    "occupation": [
-    "Scientifique",
+    "Scientist",
     "Icebreaker",
-    "Combattant",
+    "Fighter",
     "Leader",
     "Prayer Machine"
    ],
@@ -3924,7 +3924,7 @@
    "gender": "Female",
    "age": 15,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -3954,9 +3954,9 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Mafieux",
-    "Sportif",
-    "Criminel"
+    "Mobster",
+    "Athlete",
+    "Criminal"
    ],
    "hair": [
     "Blond",
@@ -4016,7 +4016,7 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Blond"
@@ -4046,12 +4046,12 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Fermier",
-    "Combattant",
-    "Artiste martial",
-    "Lutteur",
+    "Farmer",
+    "Fighter",
+    "Martial artist",
+    "Wrestler",
     "Artisan",
-    "Sportif"
+    "Athlete"
    ],
    "hair": [
     "Black",
@@ -4085,8 +4085,8 @@
    "age": 15,
    "occupation": [
     "Processor",
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
     "Ginger",
@@ -4117,10 +4117,10 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
     "Silver",
@@ -4150,7 +4150,7 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader"
    ],
    "hair": [
@@ -4178,10 +4178,10 @@
    "gender": "Male",
    "age": "Inconnu",
    "occupation": [
-    "Professeur",
+    "Teacher",
     "Assassin",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
@@ -4208,7 +4208,7 @@
    "gender": "Female",
    "age": 19,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Blond"
@@ -4238,8 +4238,8 @@
    "age": 26,
    "occupation": [
     "Leader",
-    "Voleur",
-    "Criminel"
+    "Thief",
+    "Criminal"
    ],
    "hair": [
     "Black",
@@ -4266,8 +4266,8 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Black Clover",
@@ -4294,7 +4294,7 @@
    "gender": "Female",
    "age": 15,
    "occupation": [
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -4324,7 +4324,7 @@
    "gender": "Male",
    "age": 13,
    "occupation": [
-    "Avocat"
+    "Lawyer"
    ],
    "hair": [
     "Blond"
@@ -4381,7 +4381,7 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Aventurier"
+    "Adventurer"
    ],
    "hair": [
     "Brown",
@@ -4409,7 +4409,7 @@
    "gender": "Male",
    "age": 40,
    "occupation": [
-    "Souverain",
+    "Royalty",
     "Noble",
     "Leader"
    ],
@@ -4436,7 +4436,7 @@
    "age": 18,
    "occupation": [
     "Leader",
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
     "Blue"
@@ -4467,9 +4467,9 @@
    "gender": "Female",
    "age": 18,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
     "Black",
@@ -4501,9 +4501,9 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Musicien",
-    "Étudiant",
-    "Artiste"
+    "Musician",
+    "Student",
+    "Artist"
    ],
    "hair": [
     "Blond"
@@ -4534,9 +4534,9 @@
    "gender": "Male",
    "age": 18,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
     "Brown"
@@ -4563,8 +4563,8 @@
    "age": 20,
    "occupation": [
     "Hacker",
-    "Mercenaire",
-    "Combattant"
+    "Mercenary",
+    "Fighter"
    ],
    "hair": [
     "White"
@@ -4594,10 +4594,10 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Petits boulots",
-    "Président du conseil des élèves",
-    "Employé",
+    "Student",
+    "Odd jobs",
+    "Student council president",
+    "Employee",
     "Leader"
    ],
    "hair": [
@@ -4630,7 +4630,7 @@
    "age": 20,
    "occupation": [
     "Pirate",
-    "Criminel"
+    "Criminal"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -4659,7 +4659,7 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -4690,10 +4690,10 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Justicier",
-    "Épéiste",
-    "Étudiant",
-    "Combattant"
+    "Vigilante",
+    "Swordsman",
+    "Student",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -4720,7 +4720,7 @@
    "gender": "Female",
    "age": 9,
    "occupation": [
-    "Magicien"
+    "Mage"
    ],
    "hair": [
     "Purple"
@@ -4749,11 +4749,11 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Médecin",
+    "Doctor",
     "Pirate",
-    "Officier",
-    "Criminel",
-    "Soldat"
+    "Officer",
+    "Criminal",
+    "Soldier"
    ],
    "hair": null,
    "anime": "ONE PIECE",
@@ -4783,7 +4783,7 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Black"
@@ -4843,9 +4843,9 @@
    "gender": "Male",
    "age": 28,
    "occupation": [
-    "Chirurgien",
-    "Détective",
-    "Médecin"
+    "Surgeon",
+    "Detective",
+    "Doctor"
    ],
    "hair": [
     "Black"
@@ -4877,10 +4877,10 @@
    "gender": "Male",
    "age": 30,
    "occupation": [
-    "Super-héros",
-    "Professeur",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Teacher",
+    "Hero",
+    "Fighter"
    ],
    "hair": null,
    "anime": "My Hero Academia",
@@ -4904,9 +4904,9 @@
    "gender": "Female",
    "age": 28,
    "occupation": [
-    "Super-héros",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
     "Green"
@@ -4937,7 +4937,7 @@
    "age": 13,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -4967,7 +4967,7 @@
    "age": 58,
    "occupation": [
     "Leader",
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Black"
@@ -4997,12 +4997,12 @@
    "gender": "Male",
    "age": 34,
    "occupation": [
-    "Étudiant",
-    "Magicien",
-    "Aventurier",
-    "Épéiste",
-    "Combattant",
-    "Héros"
+    "Student",
+    "Mage",
+    "Adventurer",
+    "Swordsman",
+    "Fighter",
+    "Hero"
    ],
    "hair": [
     "Brown"
@@ -5032,11 +5032,11 @@
    "gender": "Male",
    "age": 33,
    "occupation": [
-    "Tueur en série",
-    "Employé",
-    "Mercenaire",
-    "Criminel",
-    "Combattant"
+    "Serial killer",
+    "Employee",
+    "Mercenary",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
     "Blond",
@@ -5091,7 +5091,7 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Commerçant",
+    "Merchant",
     "Shinigami"
    ],
    "hair": null,
@@ -5119,7 +5119,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -5146,12 +5146,12 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Chevalier",
-    "Mercenaire",
-    "Épéiste",
+    "Knight",
+    "Mercenary",
+    "Swordsman",
     "Assassin",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
     "Silver"
@@ -5183,9 +5183,9 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Serveur",
-    "Étudiant",
-    "Gérant",
+    "Waiter",
+    "Student",
+    "Manager",
     "Leader"
    ],
    "hair": [
@@ -5218,10 +5218,10 @@
    "gender": "Male",
    "age": 27,
    "occupation": [
-    "Utilisateur de fléaux",
-    "Exorciste",
-    "Magicien",
-    "Chasseur de monstres"
+    "Curse user",
+    "Exorcist",
+    "Mage",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -5251,8 +5251,8 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Chasseur",
-    "Soldat"
+    "Hunter",
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -5280,9 +5280,9 @@
    "age": 14,
    "occupation": [
     "Leader",
-    "Pilote",
-    "Ouvrier",
-    "Ermite"
+    "Pilot",
+    "Worker",
+    "Hermit"
    ],
    "hair": [
     "Blue"
@@ -5312,8 +5312,8 @@
    "age": null,
    "occupation": [
     "Pirate",
-    "Voyou",
-    "Criminel"
+    "Thug",
+    "Criminal"
    ],
    "hair": [
     "Brown"
@@ -5344,9 +5344,9 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Épéiste",
-    "Combattant"
+    "Student",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
     "Ginger",
@@ -5374,7 +5374,7 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Dieu"
+    "God"
    ],
    "hair": [
     "Blue"
@@ -5404,7 +5404,7 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -5493,7 +5493,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Aventurier"
+    "Adventurer"
    ],
    "hair": [
     "Black"
@@ -5526,9 +5526,9 @@
    "age": 16,
    "occupation": [
     "Leader",
-    "Épéiste",
-    "Tireur",
-    "Combattant"
+    "Swordsman",
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -5558,9 +5558,9 @@
    "gender": "Male",
    "age": 15,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
     "Blond"
@@ -5589,10 +5589,10 @@
    "gender": "Male",
    "age": 23,
    "occupation": [
-    "Combattant",
-    "Pourfendeur de démons",
-    "Garde",
-    "Chasseur de monstres"
+    "Fighter",
+    "Demon Slayer",
+    "Guard",
+    "Monster hunter"
    ],
    "hair": [
     "White"
@@ -5621,8 +5621,8 @@
    "gender": "Female",
    "age": 15,
    "occupation": [
-    "Dieu",
-    "Étudiant"
+    "God",
+    "Student"
    ],
    "hair": [
     "Black"
@@ -5679,7 +5679,7 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Black"
@@ -5710,8 +5710,8 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Combattant",
-    "Soldat"
+    "Fighter",
+    "Soldier"
    ],
    "hair": [
     "Blond"
@@ -5771,7 +5771,7 @@
    "age": 12,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
     "Ginger",
@@ -5801,8 +5801,8 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Souverain",
-    "Héros",
+    "Royalty",
+    "Hero",
     "Noble",
     "Leader"
    ],
@@ -5834,11 +5834,11 @@
    "age": 43,
    "occupation": [
     "Artisan",
-    "Voleur",
-    "Chevalier",
-    "Souverain",
-    "Criminel",
-    "Combattant",
+    "Thief",
+    "Knight",
+    "Royalty",
+    "Criminal",
+    "Fighter",
     "Noble",
     "Leader"
    ],
@@ -5872,12 +5872,12 @@
    "gender": "Female",
    "age": null,
    "occupation": [
-    "Épéiste",
-    "Chasseur",
-    "Chasseur de démons",
+    "Swordsman",
+    "Hunter",
+    "Demon hunter",
     "Shinigami",
-    "Combattant",
-    "Chasseur de monstres"
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -5907,9 +5907,9 @@
    "age": null,
    "occupation": [
     "Noble",
-    "Combattant",
-    "Aventurier",
-    "Épéiste"
+    "Fighter",
+    "Adventurer",
+    "Swordsman"
    ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
@@ -5937,7 +5937,7 @@
    "age": 19,
    "occupation": [
     "Jockey",
-    "Professeur",
+    "Teacher",
     "Fruit Importer"
    ],
    "hair": [
@@ -5995,8 +5995,8 @@
    "gender": "Male",
    "age": 14,
    "occupation": [
-    "Alchimiste",
-    "Scientifique"
+    "Alchemist",
+    "Scientist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
@@ -6023,9 +6023,9 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Noble",
-    "Combattant",
+    "Fighter",
     "Leader"
    ],
    "hair": [
@@ -6059,7 +6059,7 @@
    "gender": "Male",
    "age": 19,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
     "White"
@@ -6091,8 +6091,8 @@
    "gender": "Female",
    "age": 16,
    "occupation": [
-    "Serveur",
-    "Étudiant"
+    "Waiter",
+    "Student"
    ],
    "hair": null,
    "anime": "DAN DA DAN",
@@ -6122,7 +6122,7 @@
    "gender": "Male",
    "age": 26,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
     "Black"
@@ -6153,10 +6153,10 @@
    "gender": "Male",
    "age": 18,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -6184,8 +6184,8 @@
    "occupation": [
     "Assassin",
     "Shinigami",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -6215,7 +6215,7 @@
    "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -6244,8 +6244,8 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
-    "Espion",
-    "Serveur"
+    "Spy",
+    "Waiter"
    ],
    "hair": [
     "Blond"
@@ -6273,13 +6273,13 @@
    "gender": "Male",
    "age": null,
    "occupation": [
-    "Scientifique",
-    "Épéiste",
+    "Scientist",
+    "Swordsman",
     "Assassin",
-    "Hypnotiseur",
+    "Hypnotist",
     "Shinigami",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": null,
    "anime": "Bleach",
@@ -6306,10 +6306,10 @@
    "gender": "Female",
    "age": null,
    "occupation": [
-    "Mannequin",
-    "Acteur",
-    "Célébrité",
-    "Artiste"
+    "Model",
+    "Actor",
+    "Celebrity",
+    "Artist"
    ],
    "hair": [
     "Blond"

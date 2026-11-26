@@ -25,20 +25,20 @@ describe('expandSpecies', () => {
 
 describe('mergeOccupations', () => {
   it('QuasiSynonymes_Regroupes', () => {
-    expect(mergeOccupations(['Tueur', 'Assassin', 'Élève'])).toEqual(['Assassin', 'Étudiant'])
+    expect(mergeOccupations(['Killer', 'Assassin', 'Pupil'])).toEqual(['Assassin', 'Student'])
   })
 
   it('Dieu_Retire', () => {
-    expect(mergeOccupations(['Dieu'])).toBeNull()
+    expect(mergeOccupations(['God'])).toBeNull()
   })
 })
 
 describe('weaponOccupations', () => {
   it('Armes_CommentIlSeBat', () => {
-    expect(weaponOccupations('Buster Sword')).toEqual(['Épéiste'])
-    expect(weaponOccupations('AK-47, Desert Eagle')).toEqual(['Tireur'])
-    expect(weaponOccupations('Gunblade')).toEqual(['Épéiste', 'Tireur'])
-    expect(weaponOccupations('Sniper rifle')).toEqual(["Tireur d'élite"])
+    expect(weaponOccupations('Buster Sword')).toEqual(['Swordsman'])
+    expect(weaponOccupations('AK-47, Desert Eagle')).toEqual(['Marksman'])
+    expect(weaponOccupations('Gunblade')).toEqual(['Swordsman', 'Marksman'])
+    expect(weaponOccupations('Sniper rifle')).toEqual(["Sniper"])
   })
 
   it('PasUneArme_Rien', () => {
@@ -57,7 +57,7 @@ describe('occupationOrNone', () => {
   })
 
   it('MetierConnu_Garde', () => {
-    expect(occupationOrNone(['Plombier'], ['Human'])).toEqual(['Plombier'])
+    expect(occupationOrNone(['Plumber'], ['Human'])).toEqual(['Plumber'])
   })
 })
 
@@ -116,10 +116,10 @@ describe('translateGender', () => {
 
 describe('translateOccupation', () => {
   it('ValeurExacteDesInfobox_Dictionnaire', () => {
-    expect(translateOccupation('Weaponsmith')).toBe('Ouvrier')
-    expect(translateOccupation('· Weaponsmith')).toBe('Ouvrier')
-    expect(translateOccupation('---- Confederate marshal')).toBe('Policier')
-    expect(translateOccupation('Proprieter of the Mikaelsen Ranch')).toBe('Fermier')
+    expect(translateOccupation('Weaponsmith')).toBe('Worker')
+    expect(translateOccupation('· Weaponsmith')).toBe('Worker')
+    expect(translateOccupation('---- Confederate marshal')).toBe('Police officer')
+    expect(translateOccupation('Proprieter of the Mikaelsen Ranch')).toBe('Farmer')
   })
 
   it('RoleDansLHistoire_Retire', () => {
@@ -129,33 +129,33 @@ describe('translateOccupation', () => {
   })
 
   it('OccupationsWikidata_NosFamilles', () => {
-    expect(translateOccupation('Pratiquant d\'arts martiaux')).toBe('Combattant')
-    expect(translateOccupation('Chasseur de primes')).toBe('Chasseur de primes')
-    expect(translateOccupation('Chasseur de vampires')).toBe('Chasseur de monstres')
-    expect(translateOccupation('Agent de sécurité')).toBe('Garde')
-    expect(translateOccupation('Agent double')).toBe('Espion')
-    expect(translateOccupation('Patron de bar')).toBe('Serveur')
-    expect(translateOccupation('Plombier')).toBe('Plombier')
+    expect(translateOccupation('Pratiquant d\'arts martiaux')).toBe('Fighter')
+    expect(translateOccupation('Chasseur de primes')).toBe('Bounty hunter')
+    expect(translateOccupation('Chasseur de vampires')).toBe('Monster hunter')
+    expect(translateOccupation('Agent de sécurité')).toBe('Guard')
+    expect(translateOccupation('Agent double')).toBe('Spy')
+    expect(translateOccupation('Patron de bar')).toBe('Waiter')
+    expect(translateOccupation('Plombier')).toBe('Plumber')
     expect(translateOccupation('Military impostor')).toBeNull()
   })
 
   it('OccupationsAnglaises_NosFamilles', () => {
-    expect(translateOccupation('Bartender')).toBe('Serveur')
-    expect(translateOccupation('Leader of the Horde')).toBe('Dirigeant')
-    expect(translateOccupation('CEO of Wayne Enterprises')).toBe("Homme d'affaires")
-    expect(translateOccupation('Gym Leader')).toBe('Dresseur')
-    expect(translateOccupation('Chieftain of the Warsong clan')).toBe('Chef de clan')
-    expect(translateOccupation('Charter Boat Captain')).toBe('Marin')
-    expect(translateOccupation('General Manager at Dondoko Island')).toBe('Dirigeant')
-    expect(translateOccupation('Ex-soldier')).toBe('Soldat')
-    expect(translateOccupation('Head of Slytherin House')).toBe('Professeur')
+    expect(translateOccupation('Bartender')).toBe('Waiter')
+    expect(translateOccupation('Leader of the Horde')).toBe('Leader')
+    expect(translateOccupation('CEO of Wayne Enterprises')).toBe("Businessperson")
+    expect(translateOccupation('Gym Leader')).toBe('Trainer')
+    expect(translateOccupation('Chieftain of the Warsong clan')).toBe('Clan leader')
+    expect(translateOccupation('Charter Boat Captain')).toBe('Sailor')
+    expect(translateOccupation('General Manager at Dondoko Island')).toBe('Leader')
+    expect(translateOccupation('Ex-soldier')).toBe('Soldier')
+    expect(translateOccupation('Head of Slytherin House')).toBe('Teacher')
     expect(translateOccupation('Legend')).toBeNull()
   })
 
   it('TraductionsDuWeebdle_NosFamilles', () => {
-    expect(translateOccupation('Leader')).toBe('Dirigeant')
-    expect(translateOccupation('Mage')).toBe('Magicien')
-    expect(translateOccupation('Serviteur')).toBe('Domestique')
+    expect(translateOccupation('Leader')).toBe('Leader')
+    expect(translateOccupation('Mage')).toBe('Mage')
+    expect(translateOccupation('Serviteur')).toBe('Servant')
   })
 })
 

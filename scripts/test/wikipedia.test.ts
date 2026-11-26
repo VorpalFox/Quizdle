@@ -81,21 +81,21 @@ describe('translateOccupation', () => {
     expect(translateOccupation('Leader of the Phantom Troupe')).toBe('Leader')
     expect(translateOccupation('Commander of the Secret Mobile Corps')).toBe('Leader')
     expect(translateOccupation('Gilberta company\'s master')).toBe('Leader')
-    expect(translateOccupation('Housemaster of Cecile Hall')).toBe('Professeur')
-    expect(translateOccupation('Area Guardian of the Treasury')).toBe('Gardien')
-    expect(translateOccupation('Captain of the Black Bulls')).toBe('Capitaine')
+    expect(translateOccupation('Housemaster of Cecile Hall')).toBe('Teacher')
+    expect(translateOccupation('Area Guardian of the Treasury')).toBe('Guardian')
+    expect(translateOccupation('Captain of the Black Bulls')).toBe('Captain')
     expect(translateOccupation('Dieu de la mort')).toBe('Shinigami')
-    expect(translateOccupation('Étudiant en secondaire')).toBe('Étudiant')
-    expect(translateOccupation('Student at U.A. High School')).toBe('Élève')
+    expect(translateOccupation('Étudiant en secondaire')).toBe('Student')
+    expect(translateOccupation('Student at U.A. High School')).toBe('Pupil')
   })
 
   it('DictionnairePrioritaire_PasLaRegle', () => {
-    expect(translateOccupation('Real estate agent')).toBe('Agent immobilier')
-    expect(translateOccupation('Lycoris Agent')).toBe('Agent secret')
+    expect(translateOccupation('Real estate agent')).toBe('Real estate agent')
+    expect(translateOccupation('Lycoris Agent')).toBe('Secret agent')
   })
 
   it('DejaEnFrancais_Garde', () => {
-    expect(translateOccupation('Guerrier')).toBe('Guerrier')
+    expect(translateOccupation('Guerrier')).toBe('Warrior')
     expect(translateOccupation('Jedi')).toBeUndefined()
   })
 })
@@ -104,7 +104,7 @@ describe('translateEntries', () => {
   it('Occupations_TraduitesEtInconnuesListees', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Student', 'Unknown', 'Jedi'] } }
     const { entries, untranslated } = translateEntries([entry])
-    expect(entries[0]!.attributes.occupation).toEqual(['Élève', 'Inconnu', 'Jedi'])
+    expect(entries[0]!.attributes.occupation).toEqual(['Pupil', 'Inconnu', 'Jedi'])
     expect([...untranslated]).toEqual([['Jedi', 1]])
   })
 
@@ -117,18 +117,18 @@ describe('translateEntries', () => {
   it('CorrigeeALaMain_TraduiteSaufCeQuiEstRetire', () => {
     const entry = { id: '1', name: 'Yuuji', attributes: { occupation: ['Sorcerer', 'Student', 'Jujutsu Sorcerer'] } }
     const { entries } = translateEntries([entry], manualOccupations({ '1': { occupation: { plus: ['Exorciste'], moins: ['Sorcerer', 'Student'] } } }))
-    expect(entries[0]!.attributes.occupation).toEqual(['Sorcerer', 'Student', 'Exorciste'])
+    expect(entries[0]!.attributes.occupation).toEqual(['Sorcerer', 'Student', 'Exorcist'])
   })
 })
 
 describe('groupOccupations', () => {
   it('Synonymes_UneSeuleValeur', () => {
-    expect(groupOccupations(['Lycéen', 'Élève', 'Étudiant'])).toEqual(['Étudiant'])
+    expect(groupOccupations(['High schooler', 'Pupil', 'Student'])).toEqual(['Student'])
   })
 
   it('ValeurPrecise_FamilleAjoutee', () => {
-    expect(groupOccupations(['Épéiste'])).toEqual(['Épéiste', 'Combattant'])
-    expect(groupOccupations(['Tueur'])).toEqual(['Assassin', 'Criminel', 'Combattant'])
+    expect(groupOccupations(['Swordsman'])).toEqual(['Swordsman', 'Fighter'])
+    expect(groupOccupations(['Killer'])).toEqual(['Assassin', 'Criminal', 'Fighter'])
   })
 
   it('Vide_Null', () => {
@@ -138,41 +138,41 @@ describe('groupOccupations', () => {
 
 describe('finishOccupations', () => {
   it('Armes_AjouteesALOccupationPuisRetirees', () => {
-    const entry = { id: '1', name: 'X', attributes: { occupation: ['Mercenaire'], weapon: ['Épéiste', 'Tireur', 'Archer'] } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenaire', 'Épéiste', 'Tireur', 'Combattant'] })
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Mercenary'], weapon: ['Swordsman', 'Marksman', 'Archer'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenary', 'Swordsman', 'Marksman', 'Fighter'] })
   })
 
   it('SansOccupation_LArmeSuffit', () => {
-    const entry = { id: '1', name: 'X', attributes: { occupation: null, weapon: ['Épéiste'] } }
-    expect(finishOccupations([entry])[0]!.attributes.occupation).toEqual(['Épéiste', 'Combattant'])
+    const entry = { id: '1', name: 'X', attributes: { occupation: null, weapon: ['Swordsman'] } }
+    expect(finishOccupations([entry])[0]!.attributes.occupation).toEqual(['Swordsman', 'Fighter'])
   })
 })
 
 describe('translateOccupation, rôles des intros Fandom', () => {
   it('Pluriels_EtNouveauxMotsCles', () => {
-    expect(translateOccupation('swordsmen')).toBe('Épéiste')
-    expect(translateOccupation('bodyguards')).toBe('Garde')
-    expect(translateOccupation('one of Satoru Fujinuma\'s classmates')).toBe('Élève')
-    expect(translateOccupation('Junior Second Class Exorcist of the True Cross Order')).toBe('Exorciste')
+    expect(translateOccupation('swordsmen')).toBe('Swordsman')
+    expect(translateOccupation('bodyguards')).toBe('Guard')
+    expect(translateOccupation('one of Satoru Fujinuma\'s classmates')).toBe('Pupil')
+    expect(translateOccupation('Junior Second Class Exorcist of the True Cross Order')).toBe('Exorcist')
   })
 
   it('ProprietaireSansCommerce_PasCommercant', () => {
     expect(translateOccupation('owner of the Giftia')).toBeUndefined()
-    expect(translateOccupation('previous owner of the Koba Mart convenience store')).toBe('Commerçant')
+    expect(translateOccupation('previous owner of the Koba Mart convenience store')).toBe('Merchant')
   })
 })
 
 describe('finishOccupations, titres', () => {
   it('Titres_AjoutesALOccupation', () => {
-    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Student'], titles: ['King'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Student', 'Royalty', 'Noble', 'Leader'] })
   })
 })
 
 describe('finishOccupations, titres', () => {
   it('Titres_AjoutesALOccupation', () => {
-    const entry = { id: '1', name: 'X', attributes: { occupation: ['Étudiant'], titles: ['Roi'] } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Étudiant', 'Souverain', 'Noble', 'Leader'] })
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Student'], titles: ['King'] } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Student', 'Royalty', 'Noble', 'Leader'] })
   })
 })
 
@@ -183,8 +183,8 @@ describe('finishOccupations, mort', () => {
   })
 
   it('MortAvecOccupation_PasDeAucune', () => {
-    const entry = { id: '1', name: 'X', attributes: { occupation: ['Soldat'], deceased: 'deceased' } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Soldat'] })
+    const entry = { id: '1', name: 'X', attributes: { occupation: ['Soldier'], deceased: 'deceased' } }
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Soldier'] })
   })
 })
 
@@ -196,6 +196,6 @@ describe('groupOccupations, Inconnu et Aucune', () => {
   })
 
   it('AvecUneVraieOccupation_Efface', () => {
-    expect(groupOccupations(['Inconnu', 'Épéiste'])).toEqual(['Épéiste', 'Combattant'])
+    expect(groupOccupations(['Inconnu', 'Swordsman'])).toEqual(['Swordsman', 'Fighter'])
   })
 })
