@@ -2935,7 +2935,9 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
+    "Magical girl",
     "Marksman",
+    "Mage",
     "Fighter"
    ],
    "hair": null,
@@ -4813,7 +4815,9 @@
   "attributes": {
    "gender": "Female",
    "age": 16,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Black"
    ],

@@ -145,7 +145,8 @@ const RULES: [RegExp, string | null][] = [
   [/princess|heiress/, 'Princess'],
   [/\bprince\b|\bheir\b/, 'Prince'],
   [/royal guard/, 'Guard'],
-  [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
+  // « Lady » en titre seulement (« Lady of the Night Castle ») : « a proper young lady » (Kirari, Kakegurui) n'est pas noble
+  [/\b(?:duke|duchess|lord|noble|royal|royalty|earl|baron|aristocrat)\b|^lady\b|\blady of\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Marksman'],
   // « Magic swordman » aussi, sans s (Amyu)
   [/swords?(?:wo)?m[ae]n/, 'Swordsman'],

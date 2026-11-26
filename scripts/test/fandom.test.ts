@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, templateSpecies } from '../fandom.js'
-import { affiliationOccupations,fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -56,6 +56,14 @@ describe('fandomValues', () => {
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
     expect(translateOccupation('One of the Three Beasts')).toBeNull()
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
+  })
+
+  it('RienDansLIntro_LeDebutDesSections', () => {
+    const page = "'''Muderev''' is a side character.\n== Appearance ==\nLong white hair.\n== History ==\n=== Origins ===\nMuderev is the mightest warrior of the ogre race."
+    expect(sectionOccupations(page).occupation).toEqual(['Fighter'])
+    expect(sectionOccupations("'''X''' is a side character.\n== History ==\nHe is arrogant.").occupation).toEqual([])
+    expect(sectionOccupations("'''X''' is a side character.\n== Personality ==\nShe is a proper young lady. Her real name is unknown.").occupation).toEqual([])
+    expect(translateOccupation('office lady')).toBe('Employee')
   })
 
   it('FamilleDeSang_SansConjointNiAdoption', () => {

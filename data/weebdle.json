@@ -713,7 +713,9 @@
    ],
    "age": 12,
    "height": 160,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Black"
    ],
@@ -2350,7 +2352,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "anime": "Accel World",
    "genres": [
@@ -8156,7 +8160,7 @@
    "age": null,
    "height": 165,
    "occupation": [
-    "Noble"
+    "Employee"
    ],
    "hair": [
     "Red"
@@ -12810,7 +12814,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Adventurer"
+   ],
    "hair": [
     "White"
    ],
@@ -26655,7 +26661,10 @@
    ],
    "age": 19,
    "height": 174,
-   "occupation": null,
+   "occupation": [
+    "Serial killer",
+    "Criminal"
+   ],
    "hair": [
     "Ginger"
    ],
@@ -26688,7 +26697,9 @@
    ],
    "age": null,
    "height": 177,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],
@@ -31036,7 +31047,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "President",
+    "Leader"
+   ],
    "hair": [
     "Brown"
    ],
@@ -31232,7 +31246,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Detective"
+   ],
    "hair": [
     "Brown"
    ],
@@ -33688,7 +33704,7 @@
    "age": "Unknown",
    "height": null,
    "occupation": [
-    "None"
+    "Scientist"
    ],
    "hair": null,
    "anime": "Hellsing Ultimate",
@@ -35088,7 +35104,9 @@
    ],
    "age": 16,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": [
     "Brown"
    ],
@@ -35315,7 +35333,9 @@
    ],
    "age": 21,
    "height": 182,
-   "occupation": null,
+   "occupation": [
+    "Teacher"
+   ],
    "hair": null,
    "anime": "Initial D 1st Stage",
    "genres": [
@@ -36641,7 +36661,10 @@
    "height": null,
    "occupation": [
     "Businessperson",
-    "Philanthropist"
+    "Philanthropist",
+    "Mobster",
+    "Merchant",
+    "Criminal"
    ],
    "hair": [
     "Blond"
@@ -36796,7 +36819,7 @@
    "age": 50,
    "height": null,
    "occupation": [
-    "None"
+    "Leader"
    ],
    "hair": [
     "Black",
@@ -38381,7 +38404,9 @@
    ],
    "age": 16,
    "height": 166,
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": [
     "Black"
    ],
@@ -51124,7 +51149,9 @@
    "age": 14,
    "height": 158,
    "occupation": [
+    "Magical girl",
     "Marksman",
+    "Mage",
     "Fighter"
    ],
    "hair": null,
@@ -52151,7 +52178,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "None"
+    "Assassin",
+    "Criminal",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Ranking of Kings",
@@ -56019,7 +56048,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Officer",
+    "Soldier"
+   ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
    "genres": [
@@ -64662,7 +64694,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "White"
    ],
@@ -70644,7 +70678,9 @@
    ],
    "age": "Unknown",
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Merchant"
+   ],
    "hair": [
     "Black"
    ],
@@ -72906,7 +72942,7 @@
    "age": 27,
    "height": 167,
    "occupation": [
-    "Noble"
+    "Employee"
    ],
    "hair": [
     "Green"
@@ -72939,7 +72975,7 @@
    "age": 26,
    "height": 154,
    "occupation": [
-    "Noble"
+    "Employee"
    ],
    "hair": [
     "Pink"
