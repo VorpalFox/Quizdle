@@ -7089,7 +7089,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7115,7 +7117,9 @@
     "Swordsman",
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7189,64 +7193,15 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
     "Platformer"
    ],
    "year": 2011
-  }
- },
- {
-  "id": "Q6149649",
-  "name": "Dark Matter",
-  "aliases": [
-   "Matter Dark",
-   "Matter"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Dark Matter"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1995
-  }
- },
- {
-  "id": "Q11233788",
-  "name": "Mr. Frosty",
-  "aliases": [
-   "Frosty Mr.",
-   "Frosty"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Walrus",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1993
   }
  },
  {
@@ -7290,7 +7245,9 @@
    "occupation": [
     "Cook"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7315,58 +7272,15 @@
    "occupation": [
     "Royalty"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "Good-Feel",
    "genres": [
     "Platformer"
    ],
    "year": 2010
-  }
- },
- {
-  "id": "Q93879965",
-  "name": "Gooey",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Dark Matter"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1997
-  }
- },
- {
-  "id": "Q93880242",
-  "name": "Rick",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Hamster",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1997
   }
  },
  {
@@ -7385,7 +7299,9 @@
     "Politician",
     "Businessperson"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7393,51 +7309,6 @@
     "Platformer"
    ],
    "year": 2016
-  }
- },
- {
-  "id": "Q128806865",
-  "name": "Nightmare",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Demon"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Destroyer"
-   ],
-   "hair": null,
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1993
-  }
- },
- {
-  "id": "Q135904431",
-  "name": "Buzzybat",
-  "aliases": [],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Bat",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2011
   }
  },
  {
@@ -7454,8 +7325,13 @@
     "Unknown"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Pink",
+    "White"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": null,
@@ -9560,7 +9436,7 @@
    ],
    "hair": [
     "Black",
-    "Blond"
+    "Pink"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",

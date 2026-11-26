@@ -4016,7 +4016,8 @@
     "Leader"
    ],
    "hair": [
-    "Purple"
+    "Purple",
+    "Pink"
    ],
    "anime": "Angel Beats!",
    "genres": [
@@ -16300,7 +16301,9 @@
     "Musician",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "anime": "Charlotte",
    "genres": [
     "Comedy",
@@ -17525,7 +17528,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "anime": "Classroom of the Elite",
    "genres": [
     "Drama",
@@ -18193,7 +18198,9 @@
     "Leader",
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -48276,7 +48283,9 @@
     "Celebrity",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drama",

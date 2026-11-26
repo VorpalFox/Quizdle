@@ -98,7 +98,13 @@
   "Q55571467",
   "Q55571551",
   "Q55571648",
-  "Q55571771"
+  "Q55571771",
+  "Q6149649",
+  "Q11233788",
+  "Q93879965",
+  "Q93880242",
+  "Q128806865",
+  "Q135904431"
  ],
  "edit": {
   "Q2265837": {
@@ -2828,6 +2834,11 @@
   },
   "Q16575005": {
    "_nom": "Magolor",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Halcandran"
@@ -2847,6 +2858,11 @@
   },
   "Q69894320": {
    "_nom": "Prince Fluff",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Human"
@@ -2861,6 +2877,9 @@
     ]
    },
    "hair": {
+    "plus": [
+     "Pink"
+    ],
     "moins": [
      "Blond"
     ]
@@ -3281,6 +3300,11 @@
   },
   "Q11302218": {
    "_nom": "Chef Kawasaki",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "gender": "Male",
    "species": {
     "plus": [
@@ -3503,8 +3527,21 @@
     ]
    }
   },
+  "Q613241": {
+   "_nom": "Kirby",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "Q1328424": {
    "_nom": "Meta Knight",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Unknown"
@@ -3513,6 +3550,17 @@
   },
   "Q141435323": {
    "_nom": "Mysterious girl",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Pink",
+     "White"
+    ]
+   },
    "species": {
     "plus": [
      "Unknown"

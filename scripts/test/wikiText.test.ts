@@ -73,6 +73,11 @@ describe('textHair : la couleur après « hair »', () => {
     expect(textHair(page("Her hair is a dark shade of purple (in the light novel it's often said her hair is black)."))?.colors).toEqual(['Purple'])
   })
 
+  it('lit le magenta et le fuchsia en rose', () => {
+    expect(textHair(page('She has straight magenta hair that falls on her back.'))?.colors).toEqual(['Pink'])
+    expect(textHair(page('He has short fuchsia hair.'))?.colors).toEqual(['Pink'])
+  })
+
   it("pas la couleur d'un accessoire ou d'autre chose", () => {
     expect(textHair(page('His hair is now longer, being tied into a tiny ponytail by a brown band.'))).toBeNull()
     expect(textHair(page('Her hair is worn open and she wears a blue tiara on top of it.'))).toBeNull()

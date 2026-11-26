@@ -219,10 +219,10 @@ function capitalize(text: string): string {
 const HAIR_COLORS: [RegExp, string][] = [
   [/black|raven|ebony|noir/i, 'Black'], [/white|snow|blanc/i, 'White'], [/silver|platinum|argent/i, 'Silver'], [/gr[ae]y|gris/i, 'Grey'],
   [/blond|golden|gold|yellow|flax|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
-  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
+  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose|magenta|fuchsia/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
   [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Purple'], [/bald|shaved|chauve/i, 'Bald'],
 ]
-export const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac|flax(?:en)?'
+export const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|magenta|fuchsia|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac|flax(?:en)?'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair ». Pas un accessoire (« a red hair
 // tie », Blaze the Cat). Entre la couleur et « hair », un mot quelconque, ou plusieurs s'ils décrivent des cheveux
 // (« a black and white wavy, shoulder length hair », Victor Ashford) : pas « black coat, long hair ».
