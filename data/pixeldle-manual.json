@@ -5293,8 +5293,12 @@
     "species": [
      "Human"
     ],
-    "nationality": null,
-    "occupation": null,
+    "nationality": [
+     "Earth"
+    ],
+    "occupation": [
+     "Swordsman"
+    ],
     "hair": [
      "Brown"
     ],
@@ -5322,8 +5326,12 @@
      "Emrys",
      "Other World"
     ],
-    "occupation": null,
-    "hair": null,
+    "occupation": [
+     "Noble"
+    ],
+    "hair": [
+     "Purple"
+    ],
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [

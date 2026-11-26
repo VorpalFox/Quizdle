@@ -7076,9 +7076,9 @@
   "id": "Q613241",
   "name": "Kirby",
   "aliases": [
-   "Kirby of the Stars",
    "Nintendo Kirby",
-   "Kirby des Étoiles"
+   "Kirby des Étoiles",
+   "Kirby of the Stars"
   ],
   "attributes": {
    "gender": "Male",
@@ -12732,9 +12732,9 @@
   "name": "Lord Richard Croft",
   "aliases": [
    "Croft Richard Lord",
+   "Richard James Croft",
    "Lord Richard James Croft, Ph.D",
-   "Richard Croft",
-   "Richard James Croft"
+   "Richard Croft"
   ],
   "attributes": {
    "gender": "Male",
@@ -21216,12 +21216,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
+   "The Spy",
    "Spy (Team Fortress 2)",
    "Spy (TF2)",
    "Blu Spy",
    "Red Spy",
-   "TF2 Spy",
-   "The Spy"
+   "TF2 Spy"
   ],
   "attributes": {
    "gender": "Male",
@@ -33937,7 +33937,9 @@
     "Politician",
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Ginger"
+   ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
    "genres": [
@@ -34862,7 +34864,9 @@
    "occupation": [
     "Royalty"
    ],
-   "hair": null,
+   "hair": [
+    "Silver"
+   ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
    "genres": [
@@ -45612,6 +45616,8 @@
     "Monde réel"
    ],
    "occupation": [
+    "Fighter",
+    "Servant",
     "Actor",
     "Employee",
     "Driver",
@@ -45620,9 +45626,7 @@
     "Spy",
     "Waiter",
     "Guard",
-    "Worker",
-    "Fighter",
-    "Servant"
+    "Worker"
    ],
    "hair": [
     "Grey"
@@ -68659,8 +68663,13 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "Earth",
+    "Monde réel"
+   ],
+   "occupation": [
+    "Swordsman"
+   ],
    "hair": [
     "Brown"
    ],
@@ -68688,8 +68697,12 @@
     "Emrys",
     "Other World"
    ],
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Purple"
+   ],
    "developer": "Rose City Games",
    "genres": [
     "Adventure",
