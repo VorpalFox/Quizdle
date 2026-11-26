@@ -92,7 +92,13 @@
   "wiki-myst-ahlsendar",
   "wiki-myst-me-erta",
   "wiki-myst-veovis",
-  "wiki-myst-gehn-s-guard"
+  "wiki-myst-gehn-s-guard",
+  "Q55188391",
+  "Q55571439",
+  "Q55571467",
+  "Q55571551",
+  "Q55571648",
+  "Q55571771"
  ],
  "edit": {
   "Q2265837": {
@@ -129,6 +135,58 @@
    "species": {
     "plus": [
      "Human"
+    ]
+   }
+  },
+  "Q1089230": {
+   "_nom": "Rayman",
+   "occupation": {
+    "plus": [
+     "Plunger Wielder"
+    ]
+   }
+  },
+  "Q71411834": {
+   "_nom": "Rabbid Peach",
+   "aliases": [
+    "Peach Rabbid"
+   ]
+  },
+  "wiki-rayman-rabbids": {
+   "_nom": "Rabbids",
+   "name": "Rabbid",
+   "aliases": [
+    "Rabbids",
+    "Raving Rabbids"
+   ],
+   "gender": "Other",
+   "species": {
+    "plus": [
+     "Rabbid"
+    ],
+    "moins": [
+     "Aliens"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Marksman",
+     "Swordsman",
+     "Plunger Wielder"
+    ]
+   },
+   "year": 2006,
+   "genres": {
+    "plus": [
+     "Party game"
+    ],
+    "moins": [
+     "Platformer"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
@@ -2852,7 +2910,17 @@
      "Humanoid"
     ]
    },
-   "gender": "Male"
+   "gender": "Male",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Purple"
+    ]
+   }
   },
   "Q99671042": {
    "_nom": "Boomer",
@@ -7468,6 +7536,13 @@
   }
  ],
  "wikis": {
+  "Rayman": {
+   "_raison": "5 persos de Wikidata (Rayman, Globox, Dark Rayman, Murfy, Rabbid Peach) et un Rabbid de base, pour les deux licences",
+   "pages": [
+    "Rabbids"
+   ],
+   "limit": 6
+  },
   "Firewatch": {
    "_raison": "Henry : sa page ne donne pas le sexe",
    "preferred": [

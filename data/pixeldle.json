@@ -19850,8 +19850,13 @@
     "Humanoid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Plunger Wielder",
+    "Marksman"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -19871,7 +19876,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -19890,11 +19897,14 @@
   "attributes": {
    "gender": "Male",
    "species": [
+    "Greenbottle",
     "Insect",
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Guide"
+   ],
    "hair": [
     "N/A"
    ],
@@ -19919,8 +19929,12 @@
     "Humanoid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Purple"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -19933,8 +19947,7 @@
   "id": "Q71411834",
   "name": "Rabbid Peach",
   "aliases": [
-   "Peach Rabbid",
-   "Rabbid"
+   "Peach Rabbid"
   ],
   "attributes": {
    "gender": "Female",
@@ -19942,8 +19955,12 @@
     "Rabbid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Marksman"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft",
    "genres": [
@@ -19952,148 +19969,6 @@
     "Strategy"
    ],
    "year": 2022
-  }
- },
- {
-  "id": "Q55188391",
-  "name": "Admiral Razorbeard",
-  "aliases": [
-   "Razorbeard Admiral",
-   "Razorbeard",
-   "Admiral"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Pirate"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571439",
-  "name": "Henchman 800",
-  "aliases": [
-   "800 Henchman",
-   "800"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571467",
-  "name": "Henchman 1000",
-  "aliases": [
-   "1000 Henchman",
-   "1000"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2001
-  }
- },
- {
-  "id": "Q55571551",
-  "name": "Ly",
-  "aliases": [
-   "Ly the Fairy"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Fairy"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571648",
-  "name": "Tily",
-  "aliases": [],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Fairy"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Rayman",
-   "developer": "Ubisoft",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2002
-  }
- },
- {
-  "id": "Q55571771",
-  "name": "Razorwife",
-  "aliases": [],
-  "attributes": {
-   "gender": "Other",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2002
   }
  },
  {
@@ -49305,6 +49180,35 @@
   }
  },
  {
+  "id": "wiki-rayman-rabbids",
+  "name": "Rabbid",
+  "aliases": [
+   "Rabbids",
+   "Raving Rabbids"
+  ],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Rabbid"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Marksman",
+    "Swordsman",
+    "Plunger Wielder"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Rayman",
+   "developer": "Ubisoft Montpellier",
+   "genres": [
+    "Party game"
+   ],
+   "year": 2006
+  }
+ },
+ {
   "id": "wiki-devil-may-cry-nico",
   "name": "Nico",
   "aliases": [],
@@ -54642,6 +54546,7 @@
   "aliases": [
    "Brickell Admiral",
    "Admiral Brickell (BTD6)",
+   "Admiral",
    "Brickell"
   ],
   "attributes": {

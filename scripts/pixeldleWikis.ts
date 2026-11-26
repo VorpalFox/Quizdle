@@ -23,7 +23,7 @@ const MIN_ARTICLES = 10
 const FANDOM_WIKIS: Record<string, string> = {
   // Le wiki de l'univers de Myst (D'ni), qui couvre tous les jeux
   'Myst': 'dni',
-  'Rayman': 'rayman-game',
+  'Rayman': 'rabbids',
   // Wikidata et les liens des personnages donnent gmod (Garry's Mod)
   'Left 4 Dead': 'left4dead',
   // Devinés d'après un bout du titre, vérifiés : ce sont bien ceux de la franchise
