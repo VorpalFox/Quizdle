@@ -66841,6 +66841,7 @@
    "height": 174,
    "occupation": [
     "Étudiant",
+    "Assistant",
     "Chasseur de démons",
     "Chasseur de monstres",
     "Combattant"
@@ -67296,36 +67297,6 @@
   }
  },
  {
-  "id": "38910",
-  "name": "Fujidera",
-  "aliases": [
-   "藤井寺"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38910-SUXKJsaySJRJ.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Bibliothécaire",
-    "Étudiant"
-   ],
-   "hair": null,
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
   "id": "387259",
   "name": "Izumi Ishikiri",
   "aliases": [
@@ -67373,61 +67344,6 @@
    "occupation": [
     "Chauffeur"
    ],
-   "hair": null,
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "387268",
-  "name": "Mio no Chichi",
-  "aliases": [
-   "Chichi no Mio",
-   "美生の父"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387268-cWA7XmK4pnYy.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "387277",
-  "name": "Roushinshi",
-  "aliases": [
-   "老紳士"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387277-v00TBoLhgyUz.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "The World God Only Knows",
    "genres": [

@@ -827,38 +827,6 @@
   }
  },
  {
-  "id": "89616",
-  "name": "Shigeo Kageyama",
-  "aliases": [
-   "Kageyama Shigeo",
-   "影山茂夫",
-   "Shigeo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 14,
-   "occupation": [
-    "Étudiant",
-    "Leader"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Mob Psycho 100",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "bones"
-  }
- },
- {
   "id": "80",
   "name": "Light Yagami",
   "aliases": [
@@ -889,6 +857,38 @@
    ],
    "year": 2006,
    "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "89616",
+  "name": "Shigeo Kageyama",
+  "aliases": [
+   "Kageyama Shigeo",
+   "影山茂夫",
+   "Shigeo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 14,
+   "occupation": [
+    "Étudiant",
+    "Leader"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Mob Psycho 100",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Psychologique",
+    "Tranche de vie",
+    "Surnaturel"
+   ],
+   "year": 2016,
+   "studio": "bones"
   }
  },
  {
@@ -2319,6 +2319,36 @@
   }
  },
  {
+  "id": "4003",
+  "name": "Joutarou Kuujou",
+  "aliases": [
+   "Kuujou Joutarou",
+   "Professor Kuujou",
+   "空条承太郎",
+   "Joutarou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Étudiant",
+    "Marine Biologist"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "david production"
+  }
+ },
+ {
   "id": "46494",
   "name": "Armin Arlert",
   "aliases": [
@@ -2348,36 +2378,6 @@
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
-  }
- },
- {
-  "id": "4003",
-  "name": "Joutarou Kuujou",
-  "aliases": [
-   "Kuujou Joutarou",
-   "Professor Kuujou",
-   "空条承太郎",
-   "Joutarou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 17,
-   "occupation": [
-    "Étudiant",
-    "Marine Biologist"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "david production"
   }
  },
  {
@@ -6293,34 +6293,36 @@
   }
  },
  {
-  "id": "908",
-  "name": "Yoruichi Shihouin",
+  "id": "835",
+  "name": "Misa Amane",
   "aliases": [
-   "Shihouin Yoruichi",
-   "四楓院夜一",
-   "Yoruichi",
-   "Shihouin"
+   "Amane Misa",
+   "弥海砂",
+   "Misa",
+   "Amane"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b908-JSYUkJLCw1f0.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
   "attributes": {
    "gender": "Femme",
    "age": null,
    "occupation": [
-    "Shinigami",
-    "Capitaine",
-    "Leader"
+    "Mannequin",
+    "Acteur",
+    "Célébrité",
+    "Artiste"
    ],
    "hair": [
-    "Noirs"
+    "Blonds"
    ],
-   "anime": "Bleach",
+   "anime": "Death Note",
    "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
+    "Mystère",
+    "Psychologique",
+    "Surnaturel",
+    "Thriller"
    ],
-   "year": 2004,
-   "studio": "Studio Pierrot"
+   "year": 2006,
+   "studio": "MADHOUSE"
   }
  }
 ]

@@ -177,7 +177,7 @@ const RULES: [RegExp, string | null][] = [
   [/athlete|player|runner|skater|gymnast|pitcher|racer|swimmer|boxer|wrestler/, 'Sportif'],
   [/farmer|farming|gardener|woodcutter|carpenter|\bbakers?\b|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
   [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|delivery|courier/, 'Employé'],
-  [/assistant|\baide\b|sidekick|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
+  [/assistant|\baide\b|sidekick|\bbuddy\b|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
   [/traveler|traveller|nomad|wanderer/, 'Voyageur'],
   [/\bpresident\b|representative|second-in-command/, 'Leader'],
   [/\bhunter\b/, 'Chasseur'],

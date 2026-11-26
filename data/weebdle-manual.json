@@ -1,5 +1,8 @@
 {
  "exclude": [
+  "38910",
+  "387268",
+  "387277",
   "39121",
   "153490",
   "73893",
@@ -690,7 +693,8 @@
  },
  "add": [],
  "limits": {
-  "The Reincarnation of the Strongest Exorcist in Another World": 18
+  "The Reincarnation of the Strongest Exorcist in Another World": 18,
+  "The World God Only Knows": 17
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",

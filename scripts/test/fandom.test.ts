@@ -33,7 +33,7 @@ describe('fandomInfobox', () => {
 
 describe('fandomValues', () => {
   it('ChampsNumerotes_TousLus', () => {
-    expect(fandomValues(fandomInfobox('{{Daily Character|Gender = Male|Job = Student|Job 2 = Buddy - Spirit Capturing}}')!).occupation).toEqual(['Student', 'Buddy - Spirit Capturing'])
+    expect(fandomValues(fandomInfobox('{{Daily Character|Gender = Male|Job = Student|Job 2 = Buddy - Spirit Capturing}}')!).occupation).toEqual(['Student', 'Buddy', 'Spirit Capturing'])
   })
 
   it('ChampsVariables_NosValeurs', () => {
