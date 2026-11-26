@@ -101,6 +101,23 @@ describe('introAlignment', () => {
 })
 
 describe('introRoles', () => {
+  it('LegendeDImageAvecUnLien_Retiree', () => {
+    const page = "[[File:King.jpg|thumb|An image of the King, from a defunct [[Uru website]].]]\n'''Ahlsendar''' is a merchant. He sells books."
+    expect(introRoles(introText(page))).toEqual(['merchant'])
+  })
+
+  it('ConsidereComme_CommeIs', () => {
+    expect(introRoles('Grimgor Ironhide is considered by many to be one of the greatest Black Orc warbosses.')).toEqual(['greatest Black Orc warbosses'])
+  })
+
+  it('NomPropreApresAnd_PasUnRole', () => {
+    expect(introRoles('The Machine God is the bestower of all knowledge and the Emperor of Mankind.')).toEqual(['bestower of all knowledge'])
+  })
+
+  it('ParagraphesRecolles_DeuxPhrases', () => {
+    expect(introRoles('Rasmus is a character in Solasta II., He is a merchant in Tor Wen.')).toEqual(['merchant'])
+  })
+
   it('CeQuIlEst_SansLaSuite', () => {
     expect(introRoles('William Overbeck is a Vietnam veteran who served in the Army.')).toEqual(['Vietnam veteran'])
     expect(introRoles('Marle is the princess of Guardia.')).toEqual(['princess of Guardia'])
@@ -131,6 +148,19 @@ describe('textHair', () => {
 
   it('SansSection_ToutLeTexte', () => {
     expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Brown'])
+  })
+
+  it('CheveuxSombres_Noirs', () => {
+    expect(textHair('He has dark hair and eyes with a stern voice.')?.colors).toEqual(['Black'])
+    expect(textHair('She has short, dark hair.')?.colors).toEqual(['Black'])
+    expect(textHair('A boy with dark brown hair.')?.colors).toEqual(['Brown'])
+    expect(textHair('A boy with medium length dark reddish hair.')).toBeNull()
+    expect(textHair('Pauline has dark hair. Later art gives her long brown hair.')?.colors).toEqual(['Brown'])
+  })
+
+  it('AccessoireOuCitation_PasLesCheveux', () => {
+    expect(textHair('Her fur is tied into a ponytail by a red hair tie.')).toBeNull()
+    expect(textHair('{{quote|1=I like blue hair... and blue fire!|2=Gwendolin}} Gwendolin wears goggles.')).toBeNull()
   })
 
   it('PasDeCheveux_Null', () => {

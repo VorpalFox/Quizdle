@@ -21,9 +21,21 @@ Les scripts suivent tous à peu près le même chemin :
 
 1. **Récupérer** les personnages de la liste de départ.
 2. **Attribuer** chaque personnage à un seul anime ou une seule franchise, puis **choisir** 4 à 20 personnages par anime ou franchise (Weebdle, Pixeldle).
-3. **Compléter** les indices que la source principale n'a pas. Chaque source ne remplit que ce qui est resté vide, dans l'ordre :
-   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN). Le Weebdle a trois indices de plus : l'espèce (AniList, Wikidata, l'infobox Fandom puis son intro, toutes les espèces du perso même celles d'un twist : seule la mort n'est jamais dite ; Humain par défaut dans un anime sans surnaturel ou à casting humain), la taille (AniList, l'infobox Fandom) et la source de l'anime (AniList).
-   - Pixeldle : [pixeldleWikidata.ts](pixeldleWikidata.ts), puis le wiki de chaque franchise ([pixeldleWikis.ts](pixeldleWikis.ts) le trouve, [pixeldleEnrich.ts](pixeldleEnrich.ts) lit l'infobox, [pixeldleWikiCharacters.ts](pixeldleWikiCharacters.ts) ajoute des personnages quand Wikidata en a trop peu), puis Wikipédia en dernier recours.
+3. **Compléter** les indices que la source principale n'a pas. Chaque source remplit ce qui est resté vide, dans l'ordre :
+   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN). Le Weebdle a trois indices de plus : l'espèce (AniList, Wikidata, l'infobox Fandom puis son intro, toutes les espèces du perso même celles d'un twist : seule la mort n'est jamais dite ; Humain par défaut dans un anime sans surnaturel ou à casting humain), la taille (AniList, l'infobox Fandom) et la source de l'anime (AniList). Occupation, espèce, cheveux et arme se cumulent sur toutes les sources (`addedValues` dans [translate.ts](translate.ts)). Pour l'occupation :
+     1. **AniList** : son champ, sinon sa description. Un pré-remplissage, qui ne bloque jamais les suivants.
+     2. **Wikidata** : ajoutée.
+     3. **L'infobox Fandom** : ajoutée. Si elle n'a pas d'occupation, l'intro de la page et l'affiliation s'ajoutent, et sans intro qui en parle, le début des sections du perso.
+     4. **L'infobox Wikipédia** : ajoutée.
+     5. **Tout le temps** : les armes, et Élève quand l'infobox donne une école.
+
+     Une occupation qu'on ne sait pas traduire n'est gardée que venant de la 1re source (listée dans le récap pour être traduite).
+   - Pixeldle : [pixeldleWikidata.ts](pixeldleWikidata.ts), puis le wiki de chaque franchise ([pixeldleWikis.ts](pixeldleWikis.ts) le trouve, [pixeldleEnrich.ts](pixeldleEnrich.ts) lit l'infobox, [pixeldleWikiCharacters.ts](pixeldleWikiCharacters.ts) ajoute des personnages quand Wikidata en a trop peu), puis les autres wikis de la franchise, puis Wikipédia en dernier recours. Sauf l'occupation, qui se cumule (champ multiple : plus on en a, plus on recoupe) :
+     1. **Wikidata** : un pré-remplissage, qui ne bloque jamais les wikis.
+     2. **Les infobox de tous les wikis** de la franchise : leur champ occupation, cumulé.
+     3. **L'intro du 1er wiki** (celui de la page du perso), ajoutée si son infobox n'a pas d'occupation.
+     4. **Si toujours rien** : l'intro de Wikipédia, puis le titre du nom (Lord Hammond : Noble), le rôle tiré de l'intro (Compagnon, Destructeur…), et enfin l'occupation par défaut de la franchise (`defaults`).
+     5. **Tout le temps** : les armes (Épéiste, Tireur…) et « Dr. » dans le nom (Scientifique).
    - Pokédle : l'habitat officiel s'arrête à la 3e génération. Après, il est déduit des lieux de capture ([pokemonHabitat.ts](pokemonHabitat.ts)).
 4. **Traduire** les valeurs vers de courtes listes en français, pour que les indices se comparent : [translate.ts](translate.ts) (occupations de l'Animedle et du Weebdle, espèces du Weebdle), [pixeldleTranslate.ts](pixeldleTranslate.ts) (tout le Pixeldle).
 5. **Appliquer les corrections à la main** (`data/<sujet>-manual.json`, voir plus bas).
@@ -31,9 +43,13 @@ Les scripts suivent tous à peu près le même chemin :
 
 Le code partagé : [anilist.ts](anilist.ts) (Animedle et Weebdle), [wikiText.ts](wikiText.ts) (cheveux dans le texte, pages d'homonymie, âge des infobox : Weebdle et Pixeldle).
 
+Unknown, None et N/A ne sont posés que quand la source le dit (règle commune en tête de [unknownValues.ts](unknownValues.ts)) : une case qu'on n'a pas réussi à remplir reste vide, pour la compléter à la main.
+
 ## Le cache
 
 Les réponses des API sont gardées dans `.cache/` (hors git) : un script interrompu reprend où il en était, et une relance ne refait aucune requête. La 1re fois, compter de quelques minutes à une vingtaine. Pour rafraîchir une source, supprimer son dossier (`.cache/weebdle/`, `.cache/fandom/`...).
+
+Pour ne reprendre que ce qui a changé sur les wikis (Fandom, wikis du Pixeldle, Wikipédia) : `npm run refresh:cache` ([refreshCache.ts](refreshCache.ts)) retire du cache les pages modifiées, créées ou supprimées depuis la dernière vérif, et les listes de persos des wikis où des pages ont été créées. Relancer ensuite les fetch.
 
 ## Mettre à jour les données
 

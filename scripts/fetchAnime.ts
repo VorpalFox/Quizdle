@@ -14,7 +14,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import type { Entry } from '../src/engine/types.js'
 import { characterAttributes } from '../src/subjects/anime/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseOccupationAtStart, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseOccupation, parseOccupationAtStart, parseWeapon, sleep, uniqueNameParts, withFamilyName, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { finishOccupations, manualOccupations, translateEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -194,7 +194,7 @@ for (const [index, character] of kept.entries()) {
     universes.set(id, await franchise(id))
 }
 console.log()
-const uniqueParts = uniqueNameParts(kept.map(character => character.name))
+const uniqueParts = withFamilyName(uniqueNameParts(kept.map(character => character.name)))
 
 const targets: WikiTarget[] = kept.map(character => {
   const anime = mainAnime(character)!

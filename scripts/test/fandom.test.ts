@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { templateSpecies } from '../fandom.js'
-import { affiliationOccupations,fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { bloodRelatives, pageGender, templateSpecies } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -38,8 +38,8 @@ describe('fandomValues', () => {
   })
 
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Swordsman'], titles: null, deceased: null })
-    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Male', hair: ['Black'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Swordsman'], titles: null, deceased: null, relatives: null })
+    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Male', hair: ['Black'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null, relatives: null })
   })
 
   it('EcoleSuivieDuRole_LeRolePasLEcole', () => {
@@ -56,6 +56,32 @@ describe('fandomValues', () => {
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
     expect(translateOccupation('One of the Three Beasts')).toBeNull()
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
+  })
+
+  it('PronomsDeLaPage_LeSexe', () => {
+    expect(pageGender('Hamdo is twisted. He will do anything. He is an impatient man who hates her excuses.')).toBe('Male')
+    expect(pageGender('They lead the squad. Their research is everything to them. He respects them.')).toBeNull()
+  })
+
+  it('RienDansLIntro_LeDebutDesSections', () => {
+    const page = "'''Muderev''' is a side character.\n== Appearance ==\nLong white hair.\n== History ==\n=== Origins ===\nMuderev is the mightest warrior of the ogre race."
+    expect(sectionOccupations(page).occupation).toEqual(['Fighter'])
+    expect(sectionOccupations("'''X''' is a side character.\n== History ==\nHe is arrogant.").occupation).toEqual([])
+    expect(sectionOccupations("'''X''' is a side character.\n== Personality ==\nShe is a proper young lady. Her real name is unknown.").occupation).toEqual([])
+    expect(translateOccupation('office lady')).toBe('Employee')
+  })
+
+  it('FamilleDeSang_SansConjointNiAdoption', () => {
+    expect(bloodRelatives('Mabel Crane (Sister)')).toEqual(['Mabel Crane'])
+    expect(bloodRelatives('Blaise Lamprogue (father), Grey Lamprogue (younger brother), Seika Lamprogue (Adoptive younger brother)')).toEqual(['Blaise Lamprogue', 'Grey Lamprogue'])
+    expect(bloodRelatives('Bertha Lamprogue (wife), Luft Lamprogue(son)')).toEqual(['Luft Lamprogue'])
+    expect(bloodRelatives('Unnamed Mother†')).toBeNull()
+    expect(bloodRelatives('Santana (his attempted god-child), Elizabeth Joestar (daughter in law)')).toBeNull()
+  })
+
+  it('EpeisteMagique_MageEtEpeiste', () => {
+    expect(splitOccupations('Magical swordsman')!.map(translateOccupation)).toEqual(['Mage', 'Swordsman'])
+    expect(splitOccupations('Magic swordman (Hero)')!.map(translateOccupation)).toEqual(['Mage', 'Swordsman'])
   })
 
   it('MetiersDeTheWorldGodOnlyKnows', () => {

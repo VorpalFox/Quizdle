@@ -16,6 +16,11 @@
   "wiki-palworld-victor-and-shadowbeak",
   "wiki-palworld-saya-and-selyne",
   "wiki-palworld-axel-and-orserk",
+  "wiki-palworld-bjorn-and-bastigor",
+  "wiki-palworld-messenger-of-love",
+  "wiki-palworld-reincarnated-guy",
+  "wiki-palworld-dr-brawn",
+  "wiki-kingdom-come-deliverance-samopesh-blacksmith",
   "wiki-raving-rabbids-professor-barranco-clone-3",
   "wiki-remember-me-reconversion-project",
   "Q2141803",
@@ -83,7 +88,11 @@
   "Q308950",
   "Q136504750",
   "Q434384",
-  "wiki-lost-records-bloom-rage-fuzzbutt"
+  "wiki-lost-records-bloom-rage-fuzzbutt",
+  "wiki-myst-ahlsendar",
+  "wiki-myst-me-erta",
+  "wiki-myst-veovis",
+  "wiki-myst-gehn-s-guard"
  ],
  "edit": {
   "Q2265837": {
@@ -413,10 +422,6 @@
     "Caelus",
     "Stelle"
    ]
-  },
-  "Q116252369": {
-   "_raison": "le jeu ne donne jamais son sexe",
-   "gender": "Other"
   },
   "Q118669752": {
    "_raison": "le héros de Nier (Replicant / Gestalt)",
@@ -2323,104 +2328,10 @@
     ]
    }
   },
-  "wiki-myst-aitrus": {
-   "_nom": "Aitrus",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-ahlsendar": {
-   "_nom": "Ahlsendar",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-ri-neref": {
-   "_nom": "Ri'neref",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-veovis": {
-   "_nom": "Veovis",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-me-erta": {
-   "_nom": "Me'erta",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-gehn": {
-   "_nom": "Gehn",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-atrus": {
-   "_nom": "Atrus",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-achenar": {
-   "_nom": "Achenar",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-yeesha": {
-   "_nom": "Yeesha",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
+  "wiki-myst-the-stranger": {
+   "_nom": "The Stranger",
+   "_raison": "le joueur : le jeu ne lui donne jamais de sexe, exprès (« he/she » sur le wiki)",
+   "gender": "Unknown"
   },
   "wiki-forgotton-anne-bonku": {
    "_nom": "Bonku",
@@ -3104,7 +3015,14 @@
   },
   "Q3027554": {
    "_nom": "Dieu-machine",
-   "gender": "Genderless"
+   "_raison": "occupation : une divinité sans métier, « other servants » et « the Emperor of Mankind » de son intro parlent d'autres",
+   "gender": "Genderless",
+   "occupation": {
+    "moins": [
+     "Servant",
+     "Royalty"
+    ]
+   }
   },
   "Q3967463": {
    "_nom": "Squig",
@@ -3132,10 +3050,6 @@
   "Q55946189": {
    "_nom": "Mr. Zurkon",
    "gender": "Male"
-  },
-  "Q141161910": {
-   "_nom": "Lord Saltimatum",
-   "gender": "Other"
   },
   "Q108466077": {
    "_nom": "Azura",
@@ -3310,10 +3224,6 @@
    "_nom": "Winston",
    "gender": "Male"
   },
-  "wiki-palworld-dr-brawn": {
-   "_nom": "Dr. Brawn",
-   "gender": "Male"
-  },
   "Q51885980": {
    "_nom": "Zeus",
    "species": {
@@ -3371,11 +3281,35 @@
     ]
    }
   },
-  "wiki-solasta-shadwyn": {
-   "_nom": "Shadwyn",
-   "species": {
+  "Q107976420": {
+   "_nom": "Archaon, Lord of the End Times",
+   "_raison": "« the last high king of Norsca » : sa page « Archaon » n'est trouvée que par alias, et son Infobox Monarch n'a aucun champ lu",
+   "occupation": {
     "plus": [
-     "Unknown"
+     "Royalty"
+    ]
+   }
+  },
+  "Q3776893": {
+   "_nom": "Grom the Paunch",
+   "_raison": "« among the greatest of Greenskin Warbosses »",
+   "occupation": {
+    "plus": [
+     "Leader"
+    ]
+   }
+  },
+  "wiki-spore-grox": {
+   "_nom": "Grox",
+   "_raison": "une espèce et un empire, pas un individu : le sexe ne s'applique pas",
+   "gender": "N/A"
+  },
+  "wiki-solasta-rose-fairwind": {
+   "_nom": "Rose Fairwind",
+   "_raison": "membre en vue de la faction The People : rôle politique",
+   "occupation": {
+    "plus": [
+     "Politician"
     ]
    }
   },
@@ -5325,12 +5259,27 @@
   },
   "wiki-sundered-nyarlathotep": {
    "_nom": "Nyarlathotep",
+   "_raison": "seulement allié de l'Eschaton (son affiliation), pas des leurs",
    "occupation": {
     "plus": [
      "None"
     ],
     "moins": [
      "Leader"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Eschaton"
+    ]
+   }
+  },
+  "Q1148659": {
+   "_nom": "Princesse Daisy",
+   "_raison": "princesse de Sarasaland, seulement alliée du Royaume Champignon (son affiliation)",
+   "nationality": {
+    "moins": [
+     "Mushroom Kingdom"
     ]
    }
   }
@@ -6403,14 +6352,23 @@
    ],
    "attributes": {
     "species": [
-     "Human"
+     "Human",
+     "Android"
     ],
-    "gender": "Other",
+    "gender": "Unknown",
+    "nationality": [
+     "The Tower"
+    ],
+    "hair": [
+     "Unknown"
+    ],
     "year": 2023,
     "franchise": "Chants of Sennaar",
-    "occupation": null
+    "occupation": [
+     "Adventurer"
+    ]
    },
-   "_raison": "sexe laissé inconnu par le jeu, exprès (comme Frisk)"
+   "_raison": "sexe et cheveux laissés inconnus par le jeu, exprès ; humain en apparence, mais un des êtres artificiels de la fin (spoiler)"
   },
   {
    "id": "avatar-rebel-galaxy",
@@ -7314,7 +7272,13 @@
    ]
   },
   "Palworld": {
-   "_raison": "les 9 personnages nommés, le reste : des PNJ génériques",
+   "_raison": "les 7 boss de tour, puis les Pals des 4 premiers (le reste : des PNJ génériques)",
+   "pages": [
+    "Grizzbolt",
+    "Faleris",
+    "Lyleen",
+    "Shadowbeak"
+   ],
    "preferred": [
     "Zoe Rayne",
     "Marcus Dryden",
@@ -7322,11 +7286,8 @@
     "Victor Ashford",
     "Axel Travers",
     "Saya Kurosaki",
-    "Bjorn Seligsson",
-    "Dr. Brawn",
-    "Messenger of Love"
-   ],
-   "limit": 9
+    "Bjorn Seligsson"
+   ]
   },
   "Yo-kai Watch": {
    "_raison": "les pages des Yo-kai sont longues à cause des stats (Whisper n'arrivait que 46e)",
@@ -7351,6 +7312,32 @@
   "The Sinking City": {
    "_raison": "« Characters » ne contient que des modèles",
    "category": "The Sinking City Characters"
+  },
+  "Spore": {
+   "_raison": "les persos du jeu Spore seulement (Wikidata, l'avatar, Steve et les Grox choisis par FX) : la catégorie du wiki mélange Darkspore, Spore Hero, Spore Creatures et des fictions de fans",
+   "pages": [
+    "Steve",
+    "Grox"
+   ],
+   "limit": 6
+  },
+  "Solasta": {
+   "_raison": "les persos de Crown of the Magister : « Characters » n'a que ceux de Solasta II, pas sorti ; les plus longues pages sont des marchands (inventaires), d'où les persos marquants choisis par FX",
+   "category": "Solasta: CotM characters",
+   "preferred": [
+    "Hammond",
+    "Robar Sharp",
+    "Carran",
+    "Beryl Stonebeard",
+    "Ceiwad Silverflower",
+    "Galeafin Pureheart",
+    "Helia Fairblade",
+    "Rose Fairwind",
+    "Hasdrubal",
+    "Vigdis Kaikonnen",
+    "Marduk Strongheart",
+    "Gilmar Goldentongue"
+   ]
   },
   "The Talos Principle": {
    "_raison": "MLA (une IA) et Arkady n'ont pas de sexe dans le wiki",
@@ -8034,6 +8021,9 @@
   "Spore": {
    "species": [
     "Alien"
+   ],
+   "hair": [
+    "N/A"
    ]
   },
   "Forgotton Anne": {

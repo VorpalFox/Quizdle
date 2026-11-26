@@ -11,7 +11,8 @@ import { templateFields } from './fandom.js'
 import { disambiguationLinks } from './wikiText.js'
 import { frenchOccupation, translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
-import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
+import { addUnknowns, isUnknownValue, UNKNOWN_KEYS } from './unknownValues.js'
+import { internalNameSpecies, translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -36,7 +37,7 @@ const FIELDS = {
   birth: ['born', 'birth'],
   // Où on croise le personnage : en dernier recours, faute de mieux (« Diamond City », « Snowdin »)
   location: ['location', 'located in', 'world'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
+  occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role', 'work'],
   // Le grade ou la classe, faute d'occupation
   rank: ['rank', 'class', 'position'],
   // Le comportement d'une créature envers le joueur (« Hostile » sur le wiki Minecraft)
@@ -44,14 +45,43 @@ const FIELDS = {
   // Les armes : comment le personnage se bat (Épéiste, Tireur…), ajouté à son occupation
   weapon: ['weapon', 'weapons', 'weapon(s)', 'equipment', 'armament'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
+  // L'affiliation : seulement une nation, ajoutée à la nationalité (NATION)
+  affiliation: ['affiliation', 'affiliations', 'allegiance', 'faction'],
+  // Le nom complet, pour son titre de noblesse (NOBLE_TITLE)
+  name: ['name', 'full name', 'fullname'],
+  // Une créature mâle ou femelle au hasard : le taux de mâles (« malegender = 50 », wiki de Palworld)
+  genderRatio: ['malegender', 'male ratio'],
+  // Le nom interne d'une créature (« SnowTigerBeastman ») : son espèce (internalNameSpecies)
+  internalName: ['internal name'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior' | 'affiliation' | 'name' | 'genderRatio' | 'internalName'>
+// Une nation, pas une faction : « Principality of Masgarth », « Kingdom of Hyrule », « Galactic Empire » non (sans « of »)
+const NATION = /^(?:the\s+)?(?:principality|kingdom|empire|republic|grand duchy|duchy|federation|commonwealth|dominion|confederacy|sultanate|khanate|theocracy|shogunate|tsardom|realm)\s+of\s+\S/i
+// Un titre de noblesse en tête du nom, avant le nom lui-même (« Lord Hammond », pas « Lord » tout seul)
+export const NAME_TITLE = 'nameTitle'
+// Les affiliations du perso, attribut de travail : ajoutées à sa nationalité seulement si elles en sont déjà une dans sa franchise
+export const AFFILIATIONS = 'affiliations'
+// Les espèces du nom interne, attribut de travail : ajoutées à l'espèce à la fin (« Pal » + Tigre)
+export const INTERNAL_SPECIES = 'internalSpecies'
+// Attribut de travail : le 1er wiki du perso a-t-il donné une occupation dans son infobox ? Sinon, l'intro de sa page s'ajoute
+// (voir withIntroOccupation). Wikidata ne compte pas : c'est un pré-remplissage, il ne bloque jamais les wikis.
+export const FIRST_WIKI_OCCUPATION = 'firstWikiOccupation'
+const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
 const MAX_LOCATIONS = 2
-// Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
-const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
+// Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année. Et la naissance d'une
+// machine (GLaDOS : « 1986: development start », « May 200-: activation »)
+const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|development|start|activat\w*|creat\w*|construct\w*|built|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
 export const ENRICH_KEYS: EnrichKey[] = ['gender', 'species', 'nationality', 'occupation', 'hair']
+
+// Les champs de chaque indice, pour voir si l'infobox le dit inconnu en toutes lettres (pas « born » : c'est la date)
+const RAW_FIELDS: Partial<Record<EnrichKey, readonly string[]>> = {
+  gender: FIELDS.gender, species: FIELDS.species, nationality: [...FIELDS.place, ...FIELDS.nationality],
+  occupation: FIELDS.occupation, hair: FIELDS.hair,
+}
+// « Aucune » en toutes lettres dans le champ occupation : None
+const NO_OCCUPATION = /^(?:none|n\/a|aucune?)\.?$/i
 
 // Un champ en anglais sans valeur utile
 const EMPTY = /^(?:unknown|none|n\/a|varies|various|unnamed|\?+|-+|—|tba|tbd)$/i
@@ -107,14 +137,15 @@ export async function fetchPages(api: string, titles: string[]): Promise<Pages> 
 // Les champs de la 1re infobox de la page qui a au moins un champ qu'on cherche
 export function infobox(wikitext: string): Record<string, string> | null {
   const text = stripImages(wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, ''))
-  const wanted = Object.values(FIELDS).flat() as string[]
-  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|charbox|charinfo|person|npc|champion|bio|hero|villain|summary)[^|{}\n]*/gi)) {
+  // Pas le nom ni l'affiliation : tout modèle en a (un épisode, une faction), ce n'est pas une infobox de perso
+  const wanted = Object.entries(FIELDS).filter(([key]) => key !== 'name' && key !== 'affiliation').flatMap(([, names]) => names) as string[]
+  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|charbox|charinfo|person|npc|champion|bio|hero|villain|villager|summary)[^|{}\n]*/gi)) {
     const fields = templateFields(text, match.index!)
     if (wanted.some(name => fields[name]))
       return fields
   }
   // Une infobox au nom propre au wiki (« {{Forgotling », « {{Yo-kai ») : reconnue à son champ sexe ou espèce
-  const core = [...FIELDS.gender, ...FIELDS.species].filter(name => name !== 'genre')
+  const core = [...FIELDS.gender, ...FIELDS.species, ...FIELDS.genderRatio, ...FIELDS.internalName].filter(name => name !== 'genre')
   for (const match of text.matchAll(/\{\{\s*[^|{}\n]+/g)) {
     const fields = templateFields(text, match.index!)
     if (core.some(name => fields[name]))
@@ -276,7 +307,10 @@ function linkedTitle(wiki: Wiki, links: string[]): string | null {
 }
 
 // Une page d'homonymie : ses liens qui citent la franchise d'abord (« Alena (Dragon Quest IV) »)
-export const disambiguationTitles = (page: string, name: string, franchise: string) =>
+// Une page sans infobox qui n'est pas celle d'un perso : une homonymie
+const BARE_NOT_CHARACTER = /\{\{\s*disambig|may (?:also )?refer to/i
+
+export const disambiguationTitles =(page: string, name: string, franchise: string) =>
   disambiguationLinks(page, name, qualifier => mentionsFranchise(qualifier, franchise))
 
 function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
@@ -286,9 +320,13 @@ function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
 }
 
 // Les valeurs trouvées dans une infobox, null si la valeur n'est pas utile, undefined si on ne sait pas la traduire
-export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey, AttributeValue>> {
+// Le 1er champ rempli de ces noms, brut (« Unknown », « None » compris)
+const rawField = (fields: Record<string, string>, names: readonly string[]) =>
+  names.map(name => fields[name]?.trim()).find(value => value) ?? null
+
+export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS | typeof INTERNAL_SPECIES, AttributeValue>> {
   const note = (key: string, raw: string) => untranslated.set(key, [...untranslated.get(key) ?? [], raw])
-  const result: Partial<Record<EnrichKey, AttributeValue>> = {}
+  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS | typeof INTERNAL_SPECIES, AttributeValue>> = {}
 
   const gender = first(fields, FIELDS.gender)
   if (gender) {
@@ -301,6 +339,10 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
       result.gender = parsed
     }
   }
+  // Sans sexe : le taux de mâles (100 : mâle, 0 : femelle, entre les deux : au hasard, Autre)
+  const ratio = result.gender ? null : Number(first(fields, FIELDS.genderRatio) ?? NaN)
+  if (ratio !== null && !Number.isNaN(ratio))
+    result.gender = ratio >= 100 ? 'Male' : ratio <= 0 ? 'Female' : 'Other'
   const species = first(fields, FIELDS.species)
   if (species) {
     const parsed = parseSpecies(species)
@@ -314,10 +356,19 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   // Tous les champs « pays » et « lieu » s'additionnent : « Pallet Town » (hometown) et « Kanto » (region)
   // Le lieu de naissance d'abord, puis les champs « lieu » et « pays ». Sinon, en dernier recours, là où on le croise.
   const raw = [...present(fields, FIELDS.place), ...present(fields, FIELDS.nationality)]
-  const found = [...present(fields, FIELDS.birth).flatMap(birthPlaces), ...raw.flatMap(parsePlaces)]
+  // Sans lieu, une nation dans l'affiliation (« Principality of Masgarth », Robar Sharp dans Solasta), pas une faction ni
+  // un groupe. Pas en plus d'un vrai lieu : « Kingdom of the Flies » de Liquid Snake est une organisation.
+  const listed = [...present(fields, FIELDS.birth).flatMap(birthPlaces), ...raw.flatMap(parsePlaces)]
+  const found = listed.length > 0 ? listed : present(fields, FIELDS.affiliation).flatMap(parts).filter(part => NATION.test(part)).flatMap(parsePlaces)
   const places = [...new Set(found.length > 0 ? found : present(fields, FIELDS.location).flatMap(parsePlaces).slice(0, MAX_LOCATIONS))].slice(0, MAX_PLACES)
   if (places.length > 0)
     result.nationality = places
+  const affiliations = [...new Set(present(fields, FIELDS.affiliation).flatMap(parts).flatMap(parsePlaces))]
+  if (affiliations.length > 0)
+    result[AFFILIATIONS] = affiliations
+  const internal = internalNameSpecies(first(fields, FIELDS.internalName) ?? '')
+  if (internal.length > 0)
+    result[INTERNAL_SPECIES] = internal
   const occupation = first(fields, FIELDS.occupation)
   if (occupation) {
     const parsed = parseOccupations(occupation)
@@ -328,8 +379,11 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     if (parsed.length > 0)
       result.occupation = [...new Set(parsed)].slice(0, 3)
   }
+  // Le wiki dit qu'il n'en a pas : None (ni le grade, ni Prédateur)
+  if (!result.occupation && NO_OCCUPATION.test(rawField(fields, FIELDS.occupation) ?? ''))
+    result.occupation = ['None']
   // Sans champ occupation : le grade ou la classe (« Commander », « Mage »), seulement ce qu'on sait traduire
-  const rank = occupation ? null : first(fields, FIELDS.rank)
+  const rank = occupation || result.occupation ? null : first(fields, FIELDS.rank)
   const ranks = rank ? parseOccupations(rank) : []
   if (ranks.length > 0)
     result.occupation = [...new Set(ranks)].slice(0, 2)
@@ -337,6 +391,12 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const behavior = first(fields, FIELDS.behavior)
   if (!result.occupation && behavior && HOSTILE.test(firstItem(behavior)))
     result.occupation = [PREDATOR]
+  // Un titre de noblesse en tête du nom (« name = Lord Hammond », Solasta) : Noble ou Royauté, mais en tout dernier
+  // recours, après l'intro (« full name = King Bowser Koopa » : son intro donne aussi Chef). Attribut de travail.
+  const title = NOBLE_TITLE.exec(rawField(fields, FIELDS.name) ?? '')?.[1]
+  const titled = !result.occupation && title ? parseOccupations(title) : []
+  if (titled.length > 0)
+    result[NAME_TITLE] = titled
   const weapons = [...new Set(present(fields, FIELDS.weapon).flatMap(weaponOccupations))]
   if (weapons.length > 0)
     result.weapon = weapons
@@ -346,7 +406,18 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     if (parsed)
       result.hair = parsed
   }
+  // Ce que l'infobox dit inconnu en toutes lettres (« |hair = Unknown ») : Unknown à la toute fin, si aucune autre source
+  // ne l'a rempli (fillUnknowns). Une case qu'on n'a juste pas trouvée reste vide.
+  const unknowns = ENRICH_KEYS.filter(key => isUnknownValue(rawField(fields, RAW_FIELDS[key] ?? [])))
+  if (unknowns.length > 0)
+    result[UNKNOWN_KEYS] = unknowns
   return result
+}
+
+// Les occupations cumulées : « Aucune » seulement si personne n'en donne une vraie
+export function cumulatedOccupations(before: readonly string[], more: readonly string[]): string[] {
+  const all = [...new Set([...before, ...more])]
+  return all.length > 1 ? all.filter(name => name !== 'None') : all
 }
 
 export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string, FranchiseWikis>): Promise<EnrichReport> {
@@ -360,15 +431,20 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
   const pageTexts = new Map<string, string>()
   const pageRefs = new Map<string, { api: string, title: string }>()
 
-  // Passe par passe : 1er wiki de chaque franchise, puis le 2e pour ce qui reste vide, etc.
+  // Passe par passe : 1er wiki de chaque franchise, puis le 2e pour ce qui reste vide, etc. L'occupation, elle, se cumule
+  // sur tous les wikis (champ multiple : plus on en a, plus on recoupe)
   const maxOrder = Math.max(0, ...[...wikis.values()].map(({ order }) => order.length))
   for (let rank = 0; rank < maxOrder; rank++) {
     const byApi = new Map<string, { wiki: Wiki, targets: EnrichTarget[] }>()
+    // Les persos lus pour une case vide ; les autres, seulement pour cumuler l'occupation
+    const lacking = new Set<EnrichTarget>()
     for (const target of targets) {
       const wiki = wikis.get(target.franchise)?.order[rank]
-      // Au 1er wiki, toujours : la nationalité s'additionne (le pays de Wikidata, la ville et la région du wiki)
-      if (!wiki || rank > 0 && !ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
+      if (!wiki)
         continue
+      // Au 1er wiki, toujours : la nationalité s'additionne (le pays de Wikidata, la ville et la région du wiki)
+      if (rank === 0 || ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
+        lacking.add(target)
       const group = byApi.get(wiki.api) ?? { wiki, targets: [] }
       group.targets.push(target)
       byApi.set(wiki.api, group)
@@ -393,8 +469,22 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
       for (const target of group) {
         const titles = [...titlesFor(target, wiki), ...followed.get(target) ?? []]
         const title = titles.find(title => pages[title] && infobox(pages[title]!))
-        if (!title)
+        // Une page sans infobox (wikis Warhammer : « Gregor Eisenhorn is an Inquisitor… ») : rien à lire dans ses champs,
+        // mais son intro et ses cheveux comptent (pageTexts). Seulement la page à son nom ou celle de Wikidata, pas un
+        // alias, ni une homonymie, ni une page qui ne cite pas la franchise sur un wiki partagé.
+        if (!title) {
+          const bare = titles.find(title => pages[title] && (title === linkedTitle(wiki, target.fandomLinks) || target.names.slice(0, 2).includes(title))
+            && !BARE_NOT_CHARACTER.test(pages[title]!) && (!(target.franchise in SHARED_WIKIS) || mentionsFranchise(pages[title]!, target.franchise)))
+          const id = current.get(target)!.id
+          if (bare && !pageTexts.has(id)) {
+            pageTexts.set(id, pages[bare]!)
+            pageRefs.set(id, { api: wiki.api, title: bare })
+          }
+          // Le 1er wiki n'a qu'une page sans infobox : son intro donnera l'occupation
+          if (bare && current.get(target)!.attributes[FIRST_WIKI_OCCUPATION] === undefined)
+            current.set(target, { ...current.get(target)!, attributes: { ...current.get(target)!.attributes, [FIRST_WIKI_OCCUPATION]: false } })
           continue
+        }
         const fields = infobox(pages[title]!)!
         const linked = title === linkedTitle(wiki, target.fandomLinks)
         stats.found++
@@ -406,18 +496,35 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
           pageTexts.set(entry.id, pages[title]!)
           pageRefs.set(entry.id, { api: wiki.api, title })
         }
-        const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).flatMap(([key, value]) => {
+        const values = infoboxValues(fields, untranslated)
+        const firstWiki = entry.attributes[FIRST_WIKI_OCCUPATION] === undefined ? { [FIRST_WIKI_OCCUPATION]: !isEmpty(values.occupation) } : {}
+        const added = Object.fromEntries(Object.entries(values).flatMap(([key, value]) => {
           if (isEmpty(value))
             return []
+          // Lu seulement pour cumuler l'occupation
+          if (!lacking.has(target) && key !== 'occupation')
+            return []
+          if (key === UNKNOWN_KEYS) {
+            const marks = addUnknowns(entry.attributes, value as string[])
+            return marks ? [[key, marks]] : []
+          }
           if (key === 'nationality')
             return morePlaces(entry.attributes.nationality, value as string[])
+          if (key === 'occupation') {
+            const before = (entry.attributes.occupation as string[] | null) ?? []
+            const merged = cumulatedOccupations(before, value as string[])
+            return merged.length > before.length || merged.some(name => !before.includes(name)) ? [[key, merged]] : []
+          }
           return isEmpty(entry.attributes[key]) ? [[key, value]] : []
         }))
-        if (Object.keys(added).length === 0)
+        if (Object.keys(added).length === 0) {
+          if (Object.keys(firstWiki).length > 0)
+            current.set(target, { ...entry, attributes: { ...entry.attributes, ...firstWiki } })
           continue
-        for (const key of Object.keys(added))
+        }
+        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE && key !== AFFILIATIONS && key !== INTERNAL_SPECIES))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
-        current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
+        current.set(target, { ...entry, attributes: { ...entry.attributes, ...firstWiki, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')
         details.push(`${entry.name} (${target.franchise}, ${wikiLabel(wiki)}, page « ${title} »${linked ? ', lien Wikidata' : ''}) : ${filled}`)
         // Peut-être un autre personnage : sur un wiki partagé, une page qui ne cite pas la franchise ; ailleurs, une page

@@ -86,7 +86,7 @@ const SPECIES: Record<string, string | null> = {
   'android': 'Android', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
   'alien': 'Alien', 'extraterrestrial': 'Alien', 'god': 'Deity', 'goddess': 'Deity', 'deity': 'Deity',
   'demigod': 'Demigod', 'titan': 'Titan', 'angel': 'Angel', 'devil': 'Demon', 'elf': 'Elf', 'elves': 'Elf', 'half-elf': 'Half-elf',
-  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling',
+  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling', 'thiefling': 'Tiefling',
   'ghost': 'Ghost', 'spirit': 'Spirit', 'zombie': 'Zombie', 'skeleton': 'Skeleton', 'mummy': 'Mummy', 'werewolf': 'Werewolf',
   'witch': 'Human', 'wizard': 'Human', 'muggle': 'Human', 'monster': 'Monster', 'creature': null, 'beast': 'Beast',
   'cat': 'Cat', 'feline': 'Cat', 'canine': 'Dog', 'bird': 'Bird', 'bear': 'Bear', 'rabbit': 'Rabbit', 'mouse': 'Mouse',
@@ -141,6 +141,15 @@ const ANIMALS = new Set(['Monkey', 'Dog', 'Frog', 'Cat', 'Hedgehog', 'Insect', '
   'Pelican', 'Hippopotamus', 'Spider', 'Crocodile', 'Parrot', 'Shark', 'Plankton', 'Chicken', 'Hare', 'Dormouse', 'Hyena', 'Snake',
   'Lynx', 'Dinosaur', 'Mouse', 'Rat', 'Duck', 'Cow', 'Goat', 'Sheep', 'Squid', 'Reptile', 'Lizard Doggo'])
 
+// Le nom interne d'une créature (« SnowTigerBeastman », « BlackGriffon » sur le wiki de Palworld) : les mots qui sont une
+// espèce connue (Tigre, Griffon), pas un astre (« MoonQueen » n'est pas une Lune)
+export function internalNameSpecies(name: string): string[] {
+  const words = name.split(/(?<=\p{Ll})(?=\p{Lu})|[\s_-]+/u).filter(Boolean)
+  const species = words.map(word => SPECIES[key(word)] ?? (ANIMALS.has(word) ? word : null))
+    .filter((value): value is string => Boolean(value) && !REAL_PLACES.has(value!))
+  return [...new Set(species)]
+}
+
 // L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
 export function expandSpecies(value: unknown): string[] | null {
   const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
@@ -193,21 +202,13 @@ export function weaponOccupations(value: string): string[] {
   return found.includes('Sniper') ? found.filter(name => name !== 'Marksman') : found
 }
 
-// Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
-export const NO_OCCUPATION = 'None'
-export const UNKNOWN_OCCUPATION = 'Unknown'
-
-// Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
-const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Deity', 'Demon', 'Angel', 'Infected', 'Griffin', 'Mushroom', 'Basilisk'])
-
-export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
+// L'occupation finale : vide si on ne l'a pas trouvée (None ou Unknown seulement si le wiki le dit, voir pixeldleEnrich.ts).
+// Un avatar dont on choisit la race choisit aussi sa classe.
+export function occupationOrChoice(occupation: string[] | null, species: unknown): string[] | null {
   if (occupation && occupation.length > 0)
     return occupation
   const list = Array.isArray(species) ? species.map(String) : []
-  // Un avatar dont on choisit la race choisit aussi sa classe
-  if (list.includes("Player's choice"))
-    return ["Player's choice"]
-  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Human') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+  return list.includes("Player's choice") ? ["Player's choice"] : null
 }
 
 export function translateSpecies(label: string): string | null | undefined {
@@ -243,6 +244,8 @@ const NATIONALITIES: Record<string, string> = {
   'angleterre': 'United Kingdom', 'irlande du nord': 'United Kingdom', 'royaume-uni de grande-bretagne et d\'irlande': 'United Kingdom',
   // En anglais, depuis les infobox des wikis : le pays ou l'adjectif
   'united states': 'United States', 'united states of america': 'United States', 'usa': 'United States', 'us': 'United States', 'america': 'United States',
+  // Les États-Unis de Cyberpunk 2077 : le même pays
+  'nusa': 'United States', 'new united states': 'United States', 'new united states of america': 'United States',
   'american': 'United States', 'japan': 'Japan', 'japanese': 'Japan', 'united kingdom': 'United Kingdom', 'uk': 'United Kingdom', 'england': 'United Kingdom',
   'english': 'United Kingdom', 'british': 'United Kingdom', 'great britain': 'United Kingdom', 'britain': 'United Kingdom', 'scotland': 'United Kingdom',
   'scottish': 'United Kingdom', 'wales': 'United Kingdom', 'welsh': 'United Kingdom', 'french': 'France', 'germany': 'Germany', 'german': 'Germany',
@@ -440,8 +443,8 @@ export function translatePlace(label: string): string[] {
 
 // --- Monde ---
 
-// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, « Inconnu »
-// pour un personnage d'un autre monde, vide (le « ? ») quand on ne sait pas, à corriger à la main. « Monde réel » et pas
+// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, vide sinon
+// (un autre monde sans lieu trouvé, ou on ne sait pas), à compléter à la main. Unknown seulement si le wiki le dit. « Monde réel » et pas
 // « Earth » : la science-fiction du système solaire (Mars, la Lune) est aussi notre monde. Plus loin (une planète d'une
 // autre étoile), ce n'est plus le monde réel. « Monde réel » s'ajoute aussi à tout personnage placé dans un lieu réel,
 // pour qu'il croise ceux qui n'ont que lui (United States face à Monde réel : partiel, pas faux). Les franchises qui se
@@ -449,7 +452,6 @@ export function translatePlace(label: string): string[] {
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
 export const REAL_WORLD = 'Monde réel'
-export const OTHER_WORLD = 'Unknown'
 export const SPACE = 'Lost in the Galaxy'
 export const CTHULHU_MYTHOS = 'Mythe de Cthulhu'
 export type World = 'real' | 'other'
@@ -461,7 +463,8 @@ const REAL_PLACES = new Set([
     const letters = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
     return letters.flatMap(a => letters.map(b => names.of(a + b))).filter((name): name is string => Boolean(name) && !/^[A-Z]{2}$/.test(name!))
   })(),
-  'Czech Republic', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
+  // Nos noms quand Intl en a un autre (Czechia, Türkiye)
+  'Czech Republic', 'Turkey', 'Soviet Union', 'Yugoslavia', 'Persia', 'Roman Empire', 'Byzantine Empire', 'Ottoman Empire', 'Portuguese Empire',
   'Kingdom of England', 'Kingdom of France', 'Kingdom of Great Britain', 'Ptolemaic Kingdom', 'Russian Soviet Federative Socialist Republic',
   'Polynesia', 'Earth', 'Moon', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Titan', 'Europa', 'Ganymede', 'Callisto', 'Io',
   'Phobos', 'Deimos', 'Pluto', 'Enceladus',
@@ -494,8 +497,8 @@ export function franchiseWorld(places: (string[] | null)[]): World | null {
   return real === 0 && placed.length >= MIN_PLACED_OTHER ? 'other' : null
 }
 
-// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, le monde
-// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Les univers partagés de la franchise en
+// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, Monde réel
+// si sa franchise s'y passe (pas pour un dieu ou un extraterrestre : vide). Les univers partagés de la franchise en
 // plus (Lost in the Galaxy, Mythe de Cthulhu : franchiseUniverses). null si on ne sait rien.
 export function withWorld(places: string[] | null, species: unknown, world: World | null, universes: readonly string[] = []): string[] | null {
   const spaced = (list: string[]) => [...list, ...universes.filter(universe => !list.includes(universe))]
@@ -503,7 +506,7 @@ export function withWorld(places: string[] | null, species: unknown, world: Worl
     return spaced(places.some(isRealPlace) && !places.includes(REAL_WORLD) ? [...places, REAL_WORLD] : places)
   const list = Array.isArray(species) ? species.map(String) : []
   const ours = list.length === 0 || list.some(name => OUR_WORLD_SPECIES.has(name))
-  const found = spaced(world ? [world === 'real' && ours ? REAL_WORLD : OTHER_WORLD] : [])
+  const found = spaced(world === 'real' && ours ? [REAL_WORLD] : [])
   return found.length > 0 ? found : null
 }
 
@@ -554,7 +557,7 @@ export function franchiseUniverses(franchise: string): string[] {
 // l'introduction de la page (« X is a Vietnam veteran » → Soldat, introRoles), « defaults » du manuel (le métier commun
 // d'une franchise : Valorant, Soulcalibur…). Les armes de l'infobox s'y ajoutent (weaponOccupations). Sans métier :
 // Compagnon ou Assistant si l'introduction le dit (introFunction), Destructeur ou Protecteur pour un dieu, un démon ou un
-// ange (introAlignment), puis Aucune, Au choix ou Inconnu (occupationOrNone). Les quasi-synonymes sont regroupés à la
+// ange (introAlignment), puis Au choix (occupationOrChoice), vide sinon. Les quasi-synonymes sont regroupés à la
 // fin (mergeOccupations). Pas d'occupation pour les rôles d'histoire (antagoniste, compagnon possible) ni les liens de
 // famille.
 
@@ -723,10 +726,12 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/archmage|\bmage\b|wizard|witch|sorcer|warlock|necromancer|druid|shaman|summoner|abjurer|transmuter|diviner|enchant|conjur|alchemist|auror|medium|magician/, 'Mage'],
   [/priest|cleric|\bmonks?\b|\bnun\b|clergy|bishop|archbishop|preacher|religious|cult leader|shrine|tekken grand high/, 'Cleric'],
   // Pouvoir
-  [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
+  // Au pluriel aussi : « the last of the Slayer Kings » (Ungrim Ironfist, Warhammer)
+  [/\bkings?\b|\bqueens?\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
   [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
-  [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Clan leader'],
-  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier/, 'Politician'],
+  // Le chef d'un clan ou d'une tribu, pas un simple membre (« Yo-kai of the Charming tribe », Jibanyan)
+  [/chieftain|warchief|chief of the|^(?:clan|tribe)$|\b(?:leader|head|chief|elder) of (?:the |a |his |her )?[\w' -]*\b(?:clan|tribe)\b/, 'Clan leader'],
+  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier|council+or/, 'Politician'],
   [/lawyer|attorney|prosecutor|judge/, 'Lawyer'],
   [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Businessperson'],
   [/leader|head of|director|executive|founder|manager|boss|overseer|matron|ringmaster|chairman|supervisor/, 'Leader'],
@@ -735,7 +740,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/archaeologist|anthropologist/, 'Archaeologist'],
   [/scientist|researcher|engineer|inventor|chemist|physicist|geneticist|biologist|cryogenicist|brain data|research/, 'Scientist'],
   [/scholar|historian|philosopher|librarian|archivist|translator/, 'Scholar'],
-  [/detective|investigator|inspector/, 'Detective'],
+  // L'Inquisiteur de Warhammer enquête (Gregor Eisenhorn)
+  [/detective|investigator|inspector|inquisitor/, 'Detective'],
   [/police|cop\b|sheriff|deputy|patrolman|constable/, 'Police officer'],
   // Aventure
   [/survivor/, 'Survivor'],
@@ -752,7 +758,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/photographer|artist|painter|sculptor|dancer|ballet|model\b|designer/, 'Artist'],
   // Métiers
   [/plumber/, 'Plumber'],
-  [/mechanic/, 'Mechanic'],
+  // Pas « Adeptus Mechanicus » (Warhammer)
+  [/\bmechanics?\b/, 'Mechanic'],
   [/^chef$|\bcook\b|baker|brewer|restaura|yakitori|confection/, 'Cook'],
   [/bartender|barmaid|waiter|waitress|dishwasher/, 'Waiter'],
   [/merchant|vendor|shopkeeper|trader|seller|store|shop|florist|haberdasher|milliner/, 'Merchant'],

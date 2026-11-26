@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { birthPlaces, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from '../pixeldleEnrich.js'
+import { birthPlaces, cumulatedOccupations, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from '../pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {
@@ -58,6 +58,7 @@ describe('birthPlaces', () => {
   it('DateSeule_Rien', () => {
     expect(birthPlaces('circa, 1852')).toEqual([])
     expect(birthPlaces('Mid to late 19th Century')).toEqual([])
+    expect(birthPlaces('1986: development start, May 200-: activation')).toEqual([])
   })
 })
 
@@ -104,6 +105,35 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ born: 'October 25, 1379, Vigrid', region: 'Europe' }, new Map()).nationality).toEqual(['Vigrid', 'Europe'])
   })
 
+  it('InconnuEnToutesLettres_Marque', () => {
+    expect(infoboxValues({ hair: 'Unknown', occupation: 'Scientist', origin: '?' }, new Map()).unknown).toEqual(['nationality', 'hair'])
+    expect(infoboxValues({ occupation: 'Scientist' }, new Map()).unknown).toBeUndefined()
+    expect(infoboxValues({ born: 'Unknown' }, new Map()).unknown).toBeUndefined()
+  })
+
+  it('AucuneOccupationEnToutesLettres_None', () => {
+    expect(infoboxValues({ occupation: 'None', rank: 'Commander' }, new Map()).occupation).toEqual(['None'])
+    expect(infoboxValues({ occupation: 'N/A', behavior: 'Hostile' }, new Map()).occupation).toEqual(['None'])
+  })
+
+  it('TitreDansLeNom_Noble', () => {
+    expect(infoboxValues({ name: 'Lord Hammond', gender: 'Male' }, new Map()).nameTitle).toEqual(['Noble'])
+    expect(infoboxValues({ name: 'Lord Hammond', occupation: 'Soldier' }, new Map()).nameTitle).toBeUndefined()
+    expect(infoboxValues({ name: 'Lord', gender: 'Male' }, new Map()).nameTitle).toBeUndefined()
+    expect(infoboxValues({ occupation: 'Councilor' }, new Map()).occupation).toEqual(['Politician'])
+  })
+
+  it('Affiliation_GardeePourLaFranchise', () => {
+    expect(infoboxValues({ gender: 'Male', affiliation: 'Humanity/Albion' }, new Map()).affiliations).toEqual(['Humanity', 'Albion'])
+    expect(infoboxValues({ gender: 'Male', affiliation: 'Albion', location: 'Kingston' }, new Map()).affiliations).toEqual(['Albion'])
+    expect(infoboxValues({ gender: 'Male' }, new Map()).affiliations).toBeUndefined()
+  })
+
+  it('NationDansLAffiliation_Nationalite', () => {
+    expect(infoboxValues({ affiliation: 'Principality of Masgarth' }, new Map()).nationality).toEqual(['Principality of Masgarth'])
+    expect(infoboxValues({ affiliation: 'The Legacy Council, Adventurers Guild' }, new Map()).nationality).toBeUndefined()
+  })
+
   it('SansOccupation_GradeOuClasse', () => {
     expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldier'])
     expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientist'])
@@ -117,5 +147,26 @@ describe('infoboxValues', () => {
   it('SeulementLocation_DernierRecours', () => {
     expect(infoboxValues({ location: 'Diamond City, Sanctuary, Vault 111' }, new Map()).nationality).toEqual(['Diamond City', 'Sanctuary'])
     expect(infoboxValues({ location: 'Diamond City', hometown: 'Boston' }, new Map()).nationality).toEqual(['Boston', 'United States'])
+  })
+})
+
+describe('infoboxValues, créatures', () => {
+  it('TauxDeMales_Sexe', () => {
+    expect(infoboxValues({ malegender: '50' }, new Map()).gender).toBe('Other')
+    expect(infoboxValues({ malegender: '100' }, new Map()).gender).toBe('Male')
+    expect(infoboxValues({ malegender: '0' }, new Map()).gender).toBe('Female')
+    expect(infoboxValues({ gender: 'Female', malegender: '50' }, new Map()).gender).toBe('Female')
+  })
+
+  it('NomInterne_EspeceDeTravail', () => {
+    expect(infoboxValues({ 'internal name': 'ElecPanda' }, new Map()).internalSpecies).toEqual(['Panda'])
+  })
+})
+
+describe('cumulatedOccupations', () => {
+  it('Cumul_SansDoublonNiAucune', () => {
+    expect(cumulatedOccupations(['Lawyer'], ['Advisor', 'Mercenary', 'Lawyer'])).toEqual(['Lawyer', 'Advisor', 'Mercenary'])
+    expect(cumulatedOccupations(['None'], ['Soldier'])).toEqual(['Soldier'])
+    expect(cumulatedOccupations([], ['None'])).toEqual(['None'])
   })
 })

@@ -191,6 +191,8 @@ export function splitOccupations(value: string): string[] | null {
     .replace(/\s*\([^)]*\)/g, '')
     // « Track and Field Club Girl » (Ayumi, The World God Only Knows) : l'athlétisme, pas deux métiers
     .replace(/\btrack and field\b/gi, 'athletics')
+    // « Magical swordsman », « Magic swordman » (Zolmnem et Amyu, The Reincarnation of the Strongest Exorcist) : mage et épéiste
+    .replace(/\bmagic(?:al)?\s+swords?(?:wo)?m[ae]n\b/gi, 'mage, swordsman')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     // « Buddy - Spirit Capturing » (Keima) : deux rôles, si chacun se traduit (pas « Student - Class C »)
     .flatMap(part => {
@@ -216,13 +218,20 @@ function capitalize(text: string): string {
 // Les mots anglais (AniList, Wikipédia EN) et français (Wikipédia FR)
 const HAIR_COLORS: [RegExp, string][] = [
   [/black|raven|ebony|noir/i, 'Black'], [/white|snow|blanc/i, 'White'], [/silver|platinum|argent/i, 'Silver'], [/gr[ae]y|gris/i, 'Grey'],
-  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
+  [/blond|golden|gold|yellow|flax|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
   [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
   [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Purple'], [/bald|shaved|chauve/i, 'Bald'],
 ]
-const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
-// « black hair », « long silver hair », « black and white hair », « red-colored hair »
-export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
+const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac|flax(?:en)?'
+// « black hair », « long silver hair », « black and white hair », « red-colored hair ». Pas un accessoire (« a red hair
+// tie », Blaze the Cat)
+const HAIR_ACCESSORY = String.raw`(?![- ]?(?:ties?|bands?|clips?|pins?|ornaments?|accessor(?:y|ies)|pieces?|bows?|ribbons?|dye)\b)`
+export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?[\s-]+hair\b${HAIR_ACCESSORY}`, 'i')
+// « dark hair », « short, dark hair » dans un texte : noirs (validé avec FX, quitte à compter quelques bruns foncés :
+// Nabuca, Reg, Bertolt…). En dernier recours, si le texte ne cite aucune vraie couleur (Pauline a « dark hair » avant
+// « brown hair »). Pas une nuance en « -ish » (« dark reddish hair »), ni un champ d'infobox (« Dark Gunmetal », Arata).
+export const DARK_HAIR_IN_TEXT = new RegExp(String.raw`\bdark,?(?:\s+(?![a-z]+ish\b)[a-z-]+)?\s+hair\b${HAIR_ACCESSORY}`, 'i')
+export const DARK_HAIR = 'Black'
 
 // Les couleurs citées, dans l'ordre du texte (« White with blue tips » → White, Blue)
 export const hairColors = (text: string) => HAIR_COLORS
@@ -238,9 +247,12 @@ export function parseHair(description: string | null): string[] | null {
   const fromField = field ? hairColors(field) : []
   if (fromField.length > 0)
     return fromField
-  const found = HAIR_IN_TEXT.exec(withoutSpoilers(description))
+  const text = withoutSpoilers(description)
+  const found = HAIR_IN_TEXT.exec(text)
   const fromText = found ? hairColors(found[1]!) : []
-  return fromText.length > 0 ? fromText : null
+  if (fromText.length > 0)
+    return fromText
+  return DARK_HAIR_IN_TEXT.test(text) ? [DARK_HAIR] : null
 }
 
 // L'arme (ligne « Weapon: » de la description) dit comment le perso se bat : Épéiste, Tireur... (règles du Pixeldle)
@@ -317,6 +329,15 @@ export function uniqueNameParts(names: CharacterName[]): (name: CharacterName) =
   return name => {
     const parts = name.full.split(' ')
     return parts.length > 1 ? parts.filter(part => owners.get(normalize(part)) === 1) : []
+  }
+}
+
+// Weebdle et Animedle : le nom de famille (le dernier des deux mots chez AniList, « Motoharu Tsuchimikado ») même partagé.
+// Plusieurs persos le portent : le bot liste les homonymes au lieu de jouer. Pas au-delà de deux mots (« Monkey D. Luffy »).
+export function withFamilyName(uniqueParts: (name: CharacterName) => string[]): (name: CharacterName) => string[] {
+  return name => {
+    const parts = name.full.split(' ')
+    return parts.length === 2 ? [...uniqueParts(name), parts[1]!] : uniqueParts(name)
   }
 }
 

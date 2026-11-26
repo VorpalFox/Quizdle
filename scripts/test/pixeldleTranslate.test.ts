@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrNone, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
+import { expandSpecies, internalNameSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPlace, mergeOccupations, occupationOrChoice, weaponOccupations, placeCountry, translateDeveloper, translateGender, translateGenre, translateNationality, translateOccupation, translatePlace, translateSpecies, withWorld } from '../pixeldleTranslate.js'
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
@@ -46,18 +46,19 @@ describe('weaponOccupations', () => {
   })
 })
 
-describe('occupationOrNone', () => {
-  it('CreatureSansMetier_Aucune', () => {
-    expect(occupationOrNone(null, ['Fox', 'Animal'])).toEqual(['None'])
+describe('occupationOrChoice', () => {
+  it('SansMetierTrouve_Vide', () => {
+    expect(occupationOrChoice(null, ['Fox', 'Animal'])).toBeNull()
+    expect(occupationOrChoice(null, ['Human'])).toBeNull()
+    expect(occupationOrChoice([], ['Elf'])).toBeNull()
   })
 
-  it('HumainSansMetier_Inconnu', () => {
-    expect(occupationOrNone(null, ['Human'])).toEqual(['Unknown'])
-    expect(occupationOrNone([], ['Elf'])).toEqual(['Unknown'])
+  it('RaceAuChoix_ClasseAuChoix', () => {
+    expect(occupationOrChoice(null, ["Player's choice"])).toEqual(["Player's choice"])
   })
 
   it('MetierConnu_Garde', () => {
-    expect(occupationOrNone(['Plumber'], ['Human'])).toEqual(['Plumber'])
+    expect(occupationOrChoice(['Plumber'], ['Human'])).toEqual(['Plumber'])
   })
 })
 
@@ -115,6 +116,22 @@ describe('translateGender', () => {
 })
 
 describe('translateOccupation', () => {
+  it('TitresAuPlurielEtInquisiteur', () => {
+    expect(translateOccupation('last of the Slayer Kings of Karak Kadrin')).toBe('Royalty')
+    expect(translateOccupation('Inquisitor of the Ordo Xenos')).toBe('Detective')
+  })
+
+  it('MembreDUneTribu_PasChef', () => {
+    expect(translateOccupation('Rank D Fire-attribute Yo-kai of the Charming tribe')).not.toBe('Clan leader')
+    expect(translateOccupation('Leader of the Drakebeard Clan')).toBe('Clan leader')
+    expect(translateOccupation('Chieftain')).toBe('Clan leader')
+  })
+
+  it('MotQuiEnContientUnAutre_PasLeMetier', () => {
+    expect(translateOccupation('servants of the Adeptus Mechanicus')).not.toBe('Mechanic')
+    expect(translateOccupation('Mechanic')).toBe('Mechanic')
+  })
+
   it('ValeurExacteDesInfobox_Dictionnaire', () => {
     expect(translateOccupation('Weaponsmith')).toBe('Worker')
     expect(translateOccupation('· Weaponsmith')).toBe('Worker')
@@ -273,6 +290,7 @@ describe('isRealPlace', () => {
   it('PaysVilleAstre_Reels', () => {
     expect(isRealPlace('United States')).toBe(true)
     expect(isRealPlace('Soviet Union')).toBe(true)
+    expect(isRealPlace('Turkey')).toBe(true)
     expect(isRealPlace('Mars')).toBe(true)
   })
 
@@ -306,19 +324,19 @@ describe('withWorld', () => {
 
   it('SansLieu_LeMondeDeLaFranchise', () => {
     expect(withWorld(null, ['Human'], 'real')).toEqual(['Monde réel'])
-    expect(withWorld([], ['Hylian'], 'other')).toEqual(['Unknown'])
+    expect(withWorld([], ['Hylian'], 'other')).toBeNull()
     expect(withWorld(null, ['Human'], null)).toBeNull()
   })
 
-  it('VenuDAilleursDansLeMondeReel_Inconnu', () => {
-    expect(withWorld(null, ['Demon'], 'real')).toEqual(['Unknown'])
-    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Unknown'])
+  it('VenuDAilleursDansLeMondeReel_Vide', () => {
+    expect(withWorld(null, ['Demon'], 'real')).toBeNull()
+    expect(withWorld(null, ['Sangheili'], 'real')).toBeNull()
     expect(withWorld(null, ['Fox', 'Animal'], 'real')).toEqual(['Monde réel'])
   })
 
   it('UniversPartages_AjoutesATous', () => {
     expect(withWorld(['Earth'], ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Unknown', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
     expect(withWorld(null, ['Human'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
     expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Human'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
   })
@@ -329,5 +347,15 @@ describe('franchiseUniverses', () => {
     expect(franchiseUniverses('Mass Effect')).toEqual(['Lost in the Galaxy'])
     expect(franchiseUniverses('Sundered')).toEqual(['Mythe de Cthulhu'])
     expect(franchiseUniverses('The Legend of Zelda')).toEqual([])
+  })
+})
+
+describe('internalNameSpecies', () => {
+  it('NomInterne_EspecesConnues', () => {
+    expect(internalNameSpecies('SnowTigerBeastman')).toEqual(['Tiger'])
+    expect(internalNameSpecies('ElecPanda')).toEqual(['Panda'])
+    expect(internalNameSpecies('BlackGriffon')).toEqual(['Griffin'])
+    expect(internalNameSpecies('MoonQueen')).toEqual([])
+    expect(internalNameSpecies('')).toEqual([])
   })
 })

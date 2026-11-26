@@ -45,7 +45,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'idol': 'Idol', 'singer': 'Singer', 'musician': 'Musician', 'rapper': 'Rapper', 'actor': 'Actor', 'actress': 'Actress',
   'model': 'Model', 'grand couturier': 'Tailor', 'dyeing craftsman': 'Artisan',
   'chef': 'Cook', 'cook': 'Cook', 'maid': 'Maid', 'butler': 'Butler', 'servant': 'Manservant',
-  'merchant': 'Trader', 'merchant apprentice': 'Trader', 'tobacco store clerk': 'Salesperson', 'waitress': 'Waitress', 'waiter': 'Waiter',
+  'merchant': 'Trader', 'merchant apprentice': 'Trader', 'leherl': 'Trader','tobacco store clerk': 'Salesperson', 'waitress': 'Waitress', 'waiter': 'Waiter',
   'office worker': 'Office worker', 'salaryman': 'Office worker', 'city hall clerk': 'Civil servant', 'clerk': 'Employee',
   'real estate agent': 'Real estate agent', 'truck driver': 'Trucker', 'housewife': 'Homemaker', 'guide': 'Guide',
   'part-time worker': 'Odd jobs', 'part-timer': 'Odd jobs', 'villager': 'Villager', 'farmer': 'Farmer',
@@ -145,7 +145,8 @@ const RULES: [RegExp, string | null][] = [
   [/princess|heiress/, 'Princess'],
   [/\bprince\b|\bheir\b/, 'Prince'],
   [/royal guard/, 'Guard'],
-  [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
+  // « Lady » en titre seulement (« Lady of the Night Castle ») : « a proper young lady » (Kirari, Kakegurui) n'est pas noble
+  [/\b(?:duke|duchess|lord|noble|royal|royalty|earl|baron|aristocrat)\b|^lady\b|\blady of\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Marksman'],
   // « Magic swordman » aussi, sans s (Amyu)
   [/swords?(?:wo)?m[ae]n/, 'Swordsman'],
@@ -284,7 +285,11 @@ export function translateOccupation(value: string): string | null | undefined {
     return plain
   // « One of the Three Beasts » : une appartenance à un groupe, pas un métier, sauf si le groupe en est un (« One of the Generals »)
   const group = key.match(/^one of the\s+(.+)$/)?.[1]
-  return group && rule === undefined ? translateOccupation(group) ?? null : rule
+  if (group && rule === undefined)
+    return translateOccupation(group) ?? null
+  // « Leherl at the Gilberta Company » (Tuuli) : le métier, sans l'endroit où il l'exerce
+  const job = key.match(/^(.+?)\s+at\s+(?:the\s+)?\S.*$/)?.[1]
+  return job && rule === undefined ? translateOccupation(job) : rule
 }
 
 // --- Cumul des sources ---
@@ -410,10 +415,11 @@ const MAX_TITLES = 2
 const NO_OCCUPATION = 'None'
 
 // À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
-// « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé
+// « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé. La famille liée par l'infobox
+// (« relatives », lue par familySpecies) disparaît aussi.
 export function finishOccupations(entries: Entry[]): Entry[] {
   return entries.map(entry => {
-    const { weapon, titles, deceased, ...attributes } = entry.attributes
+    const { weapon, titles, deceased, relatives: _relatives, ...attributes } = entry.attributes
     const extra = (value: unknown, max: number) => ((value as string[] | null | undefined) ?? []).slice(0, max)
     const occupation = [...(attributes.occupation as string[] | null) ?? [], ...extra(weapon, MAX_WEAPONS), ...extra(titles, MAX_TITLES)]
     const grouped = groupOccupations(occupation) ?? (deceased ? [NO_OCCUPATION] : null)
@@ -558,8 +564,22 @@ function surname(name: string): string | null {
   return words.length >= 2 && !words.includes('no') && last.length >= 3 && !NOT_SURNAME.test(last) ? last : null
 }
 
+// Les espèces que tous ces persos ont en commun, sans celles qu'on n'hérite pas. null si aucun n'en a.
+function commonSpecies(family: Entry[]): string[] | null {
+  const known = family.filter(entry => Array.isArray(entry.attributes.species))
+    .map(entry => (entry.attributes.species as string[]).filter(name => !NOT_INHERITED.has(name)))
+  if (known.length === 0)
+    return null
+  const common = known.reduce((a, b) => a.filter(name => b.includes(name)))
+  return common.length > 0 ? common : null
+}
+
+// Un nom comparable d'une source à l'autre : sans accents, mots dans le désordre (« Crane Mabel » = « Mabel Crane »)
+const nameKey = (name: string) => name.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean).sort().join(' ')
+
 // Un perso sans espèce prend celles que tous les membres connus de sa famille (même anime, même nom) ont en commun,
-// sauf celles qu'on n'hérite pas : Gly et Berta Lamprogue sont humains comme Blaise et Seika (validé avec FX)
+// sauf celles qu'on n'hérite pas : Gly et Berta Lamprogue sont humains comme Blaise et Seika (validé avec FX). Sans
+// nom de famille commun, la famille de sang que son infobox Fandom lie (« relatives » : Kyle et sa sœur Mabel Crane).
 export function familySpecies(entries: Entry[]): { entries: Entry[], filled: string[] } {
   const families = new Map<string, Entry[]>()
   for (const entry of entries) {
@@ -570,17 +590,24 @@ export function familySpecies(entries: Entry[]): { entries: Entry[], filled: str
   const filled: string[] = []
   const shared = new Map<Entry, string[]>()
   for (const family of families.values()) {
-    const known = family.filter(entry => Array.isArray(entry.attributes.species))
-      .map(entry => (entry.attributes.species as string[]).filter(name => !NOT_INHERITED.has(name)))
-    if (known.length === 0)
-      continue
-    const common = known.reduce((a, b) => a.filter(name => b.includes(name)))
-    if (common.length === 0)
+    const common = commonSpecies(family)
+    if (!common)
       continue
     for (const entry of family.filter(entry => !Array.isArray(entry.attributes.species))) {
       shared.set(entry, common)
       filled.push(`${entry.name} (${entry.attributes.anime}) : ${common.join(', ')} ← ${family.filter(other => other !== entry).map(other => other.name).join(', ')}`)
     }
+  }
+  const byName = new Map(entries.flatMap(entry => [entry.name, ...entry.aliases ?? []].map(name => [`${entry.attributes.anime}|${nameKey(name)}`, entry] as const)))
+  for (const entry of entries.filter(entry => !Array.isArray(entry.attributes.species) && !shared.has(entry))) {
+    const relatives = ((entry.attributes.relatives as string[] | null | undefined) ?? [])
+      .map(name => byName.get(`${entry.attributes.anime}|${nameKey(name)}`))
+      .filter((relative): relative is Entry => relative !== undefined && relative !== entry)
+    const common = commonSpecies(relatives)
+    if (!common)
+      continue
+    shared.set(entry, common)
+    filled.push(`${entry.name} (${entry.attributes.anime}) : ${common.join(', ')} ← ${relatives.map(other => other.name).join(', ')} (famille de l'infobox)`)
   }
   return { entries: entries.map(entry => shared.has(entry) ? { ...entry, attributes: { ...entry.attributes, species: shared.get(entry)! } } : entry), filled }
 }

@@ -134,6 +134,12 @@ describe('familySpecies', () => {
     const { entries } = familySpecies([entry('1', 'Miranjo no Haha', ['Human']), entry('2', 'Kage Haha', null)])
     expect(entries[1]!.attributes.species).toBeNull()
   })
+
+  it('FamilleDeLInfobox_SonEspece', () => {
+    const kyle = { id: '2', name: 'Kyle', attributes: { anime: 'A', species: null, relatives: ['Crane Mabel', 'Inconnu'] } }
+    const { entries } = familySpecies([entry('1', 'Mabel Crane', ['Human']), kyle])
+    expect(entries[1]!.attributes.species).toEqual(['Human'])
+  })
 })
 
 describe('addedValues', () => {

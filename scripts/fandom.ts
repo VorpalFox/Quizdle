@@ -9,12 +9,12 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
-import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
+import { gender as pronounGender, heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
 import { addedValues, exactSpecies, translateOccupation } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
-import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
+import { disambiguationLinks, infoboxAge, plainText, textHair } from './wikiText.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
 const TITLES_PER_REQUEST = 50
@@ -126,6 +126,8 @@ const FIELDS = {
   titles: ['titles', 'title(s)', 'epithet', 'epithets'],
   // Mort : « Aucune » comme occupation s'il n'en a pas d'autre (finishOccupations). Jamais affiché tel quel : un spoil.
   deceased: ['status', 'vital status'],
+  // La famille de sang liée (« [[Mabel Crane]] (Sister) ») : son espèce, faute de nom de famille commun (familySpecies)
+  relatives: ['relatives', 'relative', 'family', 'relations'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -462,7 +464,31 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: titleOccupations(field(fields, FIELDS.titles)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
+    relatives: bloodRelatives(field(fields, FIELDS.relatives)),
   }
+}
+
+// Le sexe d'après les pronoms de la page, comme pour la description AniList. Pas quand « they » l'emporte sur « he » et
+// « she » réunis : un perso non binaire (Hange, Attack on Titan), pas à deviner.
+const count = (text: string, pattern: RegExp) => (text.match(pattern) ?? []).length
+export function pageGender(text: string): string | null {
+  const they = count(text, /\b(?:they|them|their|theirs|themselves|themself)\b/gi)
+  const gendered = count(text, /\b(?:he|him|his|himself|she|her|hers|herself)\b/gi)
+  return they > gendered ? null : pronounGender(null, text)
+}
+
+// La famille de sang du champ, déjà nettoyé (« Blaise Lamprogue (father), Grey Lamprogue (younger brother) »). Pas les
+// conjoints, ni les liens adoptifs, par alliance ou les demi-frères : leur espèce peut être une autre (Seika,
+// « Adoptive younger brother » de Luft). Un nom qui n'est pas un perso du quiz (« Unknown Priestess ») ne trouvera personne.
+const BLOOD_RELATIVE = /\b(?:brothers?|sisters?|siblings?|twins?|father|mother|parents?|sons?|daughters?|child(?:ren)?|grand\w*|uncle|aunt|cousins?|nephew|niece)\b/i
+// Ni le parrain ou le filleul (« Santana (his attempted god-child) », Stroheim)
+const NOT_BLOOD = /adopt|step|foster|in[- ]law|half|surrogate|sworn|god/i
+export function bloodRelatives(value: string | null): string[] | null {
+  const names = (value ?? '').split(/\s*(?:,|;|\n)\s*/)
+    .map(part => part.match(/^(.+?)\s*\(([^)]*)\)/))
+    .filter((match): match is RegExpMatchArray => match !== null && BLOOD_RELATIVE.test(match[2]!) && !NOT_BLOOD.test(match[2]!))
+    .map(match => match[1]!.trim())
+  return names.length > 0 ? [...new Set(names)] : null
 }
 
 // Les indices que l'infobox dit inconnus en toutes lettres (« |age = Unknown ») : « Inconnu » à la fin, si aucune
@@ -523,10 +549,45 @@ const MAX_INTRO_OCCUPATIONS = 2
 // l'infobox, donc listé dans le récap pour relecture. Certains wikis rangent l'intro dans l'infobox (« |intro= » sur
 // celui de Classroom of the Elite) : retirée avec elle par introText, on la prend dans le champ.
 export function introOccupations(wikitext: string): { roles: string[], occupation: string[] } {
-  const roles = introRoles(fandomInfobox(wikitext)?.intro ?? introText(wikitext))
+  return roleOccupations(introRoles(fandomInfobox(wikitext)?.intro ?? introText(wikitext)))
+}
+
+// Rien dans l'intro (« X is a side character ») : le début des sections qui racontent le perso, avec les mêmes règles
+// (« == History == Muderev is the mightest warrior of the ogre race », The Reincarnation of the Strongest Exorcist).
+// La 1re section qui donne un métier, dans cet ordre. Lu sur la page entière, déjà téléchargée pour les cheveux.
+const STORY_SECTIONS = ['Background', 'History', 'Biography', 'Overview', 'Personality']
+// Plus loin que l'intro, seulement les phrases dont le perso est le sujet (son nom, ou il / elle) et le rôle un nom avec
+// son article (« Muderev is the mightest warrior ») : pas « Fremy was born when the commander… », ni un adjectif
+// (« He is well respected among staff and students »). Le rôle s'arrête au « of » ou au possessif (« the ultimate fate of
+// all Magical girls », « Kenjirou's students »), et pas de rôle qui commence par « her », « other »… (« her idol group »).
+// Inconnu et Aucune n'en sortent pas : rien ne le dit du perso.
+const SUBJECT_FIRST = /^\p{Lu}[\p{L}'’.-]*(?:\s+(?:\p{Lu}[\p{L}'’.-]*|von|van|de|du|no|of|the))*\s+(?:is|was|serves as|served as|works as|worked as)\s+(?:(?:also|currently|now|still)\s+)?(?:a|an|the|one of the)\s/u
+const NOT_A_HEAD = /^(?:her|his|their|its|my|our|other|all|some|many|most|each|every)\b/i
+const headRole = (role: string) => role.split(/\s+of\s+|['’]s\b/)[0]!.trim()
+export function sectionOccupations(wikitext: string): { roles: string[], occupation: string[] } {
+  for (const name of STORY_SECTIONS) {
+    const section = pageSection(wikitext, name)
+    if (!section)
+      continue
+    // Sans les titres des sous-sections (« === Early life === »), sinon introText s'arrêterait au 1er
+    const sentences = introText(section.replace(/^={2,6}.*={2,6}\s*$/gm, '')).split(/(?<=[.!?])\s+/).filter(sentence => SUBJECT_FIRST.test(sentence))
+    const found = roleOccupations(introRoles(sentences.join(' ')).map(headRole).filter(role => role && !NOT_A_HEAD.test(role)))
+    const occupation = found.occupation.filter(value => !NO_REAL_OCCUPATION.has(value))
+    if (occupation.length > 0)
+      return { roles: found.roles, occupation }
+  }
+  return { roles: [], occupation: [] }
+}
+const NO_REAL_OCCUPATION = new Set(['Unknown', 'None'])
+
+// Les rôles traduits, en retirant les adjectifs de tête s'il le faut (« young swordsman » → « swordsman »)
+function roleOccupations(roles: string[]): { roles: string[], occupation: string[] } {
   const occupation = roles.flatMap(role => {
     const words = role.split(/\s+/)
     for (let start = 0; start < words.length; start++) {
+      // « a proper young lady » : une dame, pas « Lady », le titre de noblesse
+      if (start > 0 && /^lady$/i.test(words.slice(start).join(' ')))
+        break
       const french = translateOccupation(words.slice(start).join(' '))
       if (french !== undefined)
         return french ? [french] : []
@@ -673,9 +734,16 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       return bare ? [{ target, title: bare, values: fandomValues({}), unknowns: [] }] : []
     })
     // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)
-    // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord)
+    // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord).
+    // Et l'occupation, sans infobox ni intro qui en parle : le début des sections du perso (sectionOccupations).
+    const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) ? introOccupations(pages[title]!) : null]))
     const hairless = found.filter(({ values }) => isEmpty(values.hair))
-    const full = hairless.length > 0 ? await fetchFullPages(wiki, plain(hairless.map(({ title }) => title))) : {}
+    const silent = found.filter(({ target, title }) => intros.get(target)?.occupation.length === 0 && !title.includes('#'))
+    // Et le sexe, que ni AniList ni l'infobox ne donnent : les pronoms de la page (Hamdo, Abelia, les persos de BNA)
+    // Pas si l'infobox le dit inconnu en toutes lettres (Mirai no Akuma) : la page ne se contredit pas
+    const genderless = found.filter(({ target, values, unknowns }) => isEmpty(values.gender) && isEmpty(target.entry.attributes.gender) && !unknowns.includes('gender'))
+    const wanted = [...hairless, ...silent, ...genderless]
+    const full = wanted.length > 0 ? await fetchFullPages(wiki, plain(wanted.map(({ title }) => title))) : {}
     const textHairs = new Map(hairless.flatMap(({ target, title }) => {
       // Une section imposée : son texte seulement, pas toute la page (Paprika n'a pas les cheveux d'Atsuko)
       const text = title.includes('#') ? pages[title] : full[title]
@@ -687,17 +755,23 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         own.hair = hair.colors
+      // Au moins deux fois plus de « he » que de « she » sur la page (ou l'inverse), comme pour la description AniList
+      const pageText = genderless.some(item => item.target === target) ? full[title] ?? pages[title] : null
+      const textGender = pageText ? pageGender(plainText(pageText)) : null
+      if (textGender)
+        own.gender = textGender
       // Sans occupation dans l'infobox : le rôle de l'affiliation (« Student (formerly) ») et ce que dit l'introduction,
       // les deux ensemble (Shuichi Kagaya : élève et tueur). Et élève s'il a une école, même avec un métier (Kanon, The
       // World God Only Knows : idole et lycéenne), sauf s'il y travaille (professeur, directeur…)
       const jobless = isEmpty(values.occupation)
       const infobox = infoboxOf(title) ?? {}
       const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
-      const intro = jobless ? introOccupations(pages[title]!) : null
+      const intro = intros.get(target) ?? null
+      const story = intro?.occupation.length === 0 && full[title] ? sectionOccupations(full[title]!) : null
       const jobs = (Array.isArray(values.occupation) ? values.occupation : []).map(String)
       const staff = jobs.some(job => SCHOOL_STAFF.has(translateOccupation(job) ?? ''))
       const school = staff ? null : schoolOccupations(field(infobox, SCHOOL_FIELDS))
-      const occupation = [...new Set([...jobs, ...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
+      const occupation = [...new Set([...jobs, ...affiliation ?? [], ...intro?.occupation ?? [], ...story?.occupation ?? [], ...school ?? []])]
       if (occupation.length > jobs.length)
         own.occupation = occupation
       // Sans espèce dans l'infobox : celle que dit son modèle ({{Hell character}}), sinon l'introduction (« Aqua is a goddess »)
@@ -713,7 +787,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${textGender ? ' (sexe des pronoms de la page)' : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}${story?.occupation.length ? ` (occupation d'une section : « ${story.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

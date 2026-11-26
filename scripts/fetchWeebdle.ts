@@ -29,7 +29,7 @@ import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
 import { fillUnknowns } from './unknownValues.js'
-import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, type CharacterName } from './anilist.js'
+import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, withFamilyName, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { familySpecies, finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
 import { completeFromFandom } from './fandom.js'
@@ -330,7 +330,7 @@ function limitPerAnime(entries: Entry[], limits: Record<string, number>): Entry[
 
 // --- Écriture ---
 
-const uniqueParts = uniqueNameParts(selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.name)))
+const uniqueParts = withFamilyName(uniqueNameParts(selections.flatMap(({ chosen }) => chosen.map(({ character }) => character.name))))
 const targets: WikiTarget[] = selections.flatMap(({ anime, chosen }) => chosen.map(({ character }) => ({
   name: character.name,
   animeTitles: [anime.rec.title, anime.rec.romaji, anime.media.title.english ?? '', anime.media.title.romaji],
