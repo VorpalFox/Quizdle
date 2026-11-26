@@ -2423,6 +2423,11 @@
     ]
    }
   },
+  "wiki-myst-the-stranger": {
+   "_nom": "The Stranger",
+   "_raison": "le joueur : le jeu ne lui donne jamais de sexe, exprès (« he/she » sur le wiki)",
+   "gender": "Unknown"
+  },
   "wiki-forgotton-anne-bonku": {
    "_nom": "Bonku",
    "species": {
