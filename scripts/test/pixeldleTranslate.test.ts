@@ -3,18 +3,18 @@ import { expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPl
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
-    expect(expandSpecies('Renard')).toEqual(['Renard', 'Animal'])
-    expect(expandSpecies(['Divinité', 'Loup'])).toEqual(['Divinité', 'Loup', 'Animal'])
+    expect(expandSpecies('Fox')).toEqual(['Fox', 'Animal'])
+    expect(expandSpecies(['Deity', 'Wolf'])).toEqual(['Deity', 'Wolf', 'Animal'])
   })
 
   it('EspeceComposee_SesDeuxParts', () => {
-    expect(expandSpecies('Demi-elfe')).toEqual(['Humain', 'Elfe'])
-    expect(expandSpecies('IA')).toEqual(['Robot'])
+    expect(expandSpecies('Half-elf')).toEqual(['Human', 'Elf'])
+    expect(expandSpecies('AI')).toEqual(['Robot'])
   })
 
   it('DejaDepliee_Inchangee', () => {
-    expect(expandSpecies(['Renard', 'Animal'])).toEqual(['Renard', 'Animal'])
-    expect(expandSpecies(['Humain', 'Humain'])).toEqual(['Humain'])
+    expect(expandSpecies(['Fox', 'Animal'])).toEqual(['Fox', 'Animal'])
+    expect(expandSpecies(['Human', 'Human'])).toEqual(['Human'])
   })
 
   it('Vide_Null', () => {
@@ -48,28 +48,28 @@ describe('weaponOccupations', () => {
 
 describe('occupationOrNone', () => {
   it('CreatureSansMetier_Aucune', () => {
-    expect(occupationOrNone(null, ['Renard', 'Animal'])).toEqual(['Aucune'])
+    expect(occupationOrNone(null, ['Fox', 'Animal'])).toEqual(['Aucune'])
   })
 
   it('HumainSansMetier_Inconnu', () => {
-    expect(occupationOrNone(null, ['Humain'])).toEqual(['Inconnu'])
-    expect(occupationOrNone([], ['Elfe'])).toEqual(['Inconnu'])
+    expect(occupationOrNone(null, ['Human'])).toEqual(['Inconnu'])
+    expect(occupationOrNone([], ['Elf'])).toEqual(['Inconnu'])
   })
 
   it('MetierConnu_Garde', () => {
-    expect(occupationOrNone(['Plombier'], ['Humain'])).toEqual(['Plombier'])
+    expect(occupationOrNone(['Plombier'], ['Human'])).toEqual(['Plombier'])
   })
 })
 
 describe('hairOrNone', () => {
   it('RobotSansCheveux_NA', () => {
     expect(hairOrNone(null, ['Robot'])).toEqual(['N/A'])
-    expect(hairOrNone(null, ['Renard', 'Animal'])).toEqual(['N/A'])
+    expect(hairOrNone(null, ['Fox', 'Animal'])).toEqual(['N/A'])
   })
 
   it('HumainSansCheveux_Vide', () => {
-    expect(hairOrNone(null, ['Humain'])).toBeNull()
-    expect(hairOrNone(null, ['Humain', 'Mutant'])).toBeNull()
+    expect(hairOrNone(null, ['Human'])).toBeNull()
+    expect(hairOrNone(null, ['Human', 'Mutant'])).toBeNull()
   })
 
   it('CheveuxConnus_Gardes', () => {
@@ -79,16 +79,16 @@ describe('hairOrNone', () => {
 
 describe('translateSpecies', () => {
   it('ClassesDeFiction_NomCourt', () => {
-    expect(translateSpecies('être humain de fiction')).toBe('Humain')
-    expect(translateSpecies('anthropomorphic hedgehog')).toBe('Hérisson')
-    expect(translateSpecies('renard anthropomorphe')).toBe('Renard')
-    expect(translateSpecies('fée dans une œuvre de fiction')).toBe('Fée')
-    expect(translateSpecies('elfe de la nuit')).toBe('Elfe')
-    expect(translateSpecies('•Human')).toBe('Humain')
+    expect(translateSpecies('être humain de fiction')).toBe('Human')
+    expect(translateSpecies('anthropomorphic hedgehog')).toBe('Hedgehog')
+    expect(translateSpecies('renard anthropomorphe')).toBe('Fox')
+    expect(translateSpecies('fée dans une œuvre de fiction')).toBe('Fairy')
+    expect(translateSpecies('elfe de la nuit')).toBe('Elf')
+    expect(translateSpecies('•Human')).toBe('Human')
   })
 
   it('PeupleDUneFranchise_GardeTelQuel', () => {
-    expect(translateSpecies('Hylien')).toBe('Hylien')
+    expect(translateSpecies('Hylien')).toBe('Hylian')
     expect(translateSpecies('Koopa')).toBe('Koopa')
   })
 
@@ -300,27 +300,27 @@ describe('franchiseWorld', () => {
 
 describe('withWorld', () => {
   it('PlaceDansNotreMonde_AjouteMondeReel', () => {
-    expect(withWorld(['Boston', 'United States'], ['Humain'], null)).toEqual(['Boston', 'United States', 'Monde réel'])
-    expect(withWorld(['Hyrule'], ['Hylien'], 'other')).toEqual(['Hyrule'])
+    expect(withWorld(['Boston', 'United States'], ['Human'], null)).toEqual(['Boston', 'United States', 'Monde réel'])
+    expect(withWorld(['Hyrule'], ['Hylian'], 'other')).toEqual(['Hyrule'])
   })
 
   it('SansLieu_LeMondeDeLaFranchise', () => {
-    expect(withWorld(null, ['Humain'], 'real')).toEqual(['Monde réel'])
-    expect(withWorld([], ['Hylien'], 'other')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Humain'], null)).toBeNull()
+    expect(withWorld(null, ['Human'], 'real')).toEqual(['Monde réel'])
+    expect(withWorld([], ['Hylian'], 'other')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Human'], null)).toBeNull()
   })
 
   it('VenuDAilleursDansLeMondeReel_Inconnu', () => {
-    expect(withWorld(null, ['Démon'], 'real')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Demon'], 'real')).toEqual(['Inconnu'])
     expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Renard', 'Animal'], 'real')).toEqual(['Monde réel'])
+    expect(withWorld(null, ['Fox', 'Animal'], 'real')).toEqual(['Monde réel'])
   })
 
   it('UniversPartages_AjoutesATous', () => {
-    expect(withWorld(['Earth'], ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
-    expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Humain'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
+    expect(withWorld(['Earth'], ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
+    expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Human'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
   })
 })
 

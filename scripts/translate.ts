@@ -367,59 +367,59 @@ export function manualOccupations(edit: Record<string, Record<string, unknown>>)
 // anime rejoignent une grande famille pour que les persos se croisent : les Spirals de Gurren Lagann sont des humains,
 // les Giftias de Plastic Memories des androïdes. null = pas une espèce.
 const ANIME_SPECIES: Record<string, string | null> = {
-  'new human': 'Humain', 'spiral': 'Humain', 'immanity': 'Humain', 'imanity': 'Humain', 'evolved human': 'Humain',
-  'divine human': 'Humain', 'caucasian': 'Humain', 'beyondian': 'Humain', 'gamer': 'Humain', 'amazoness': 'Humain',
-  'pallum': 'Humain', 'esper': 'Humain', 'magus': 'Humain', 'burst linker': 'Humain', 'master': null, 'magician': 'Humain',
-  'giftia': 'Androïde', 'humanoid ai': 'Androïde', 'cyber girl': 'Androïde',
+  'new human': 'Human', 'spiral': 'Human', 'immanity': 'Human', 'imanity': 'Human', 'evolved human': 'Human',
+  'divine human': 'Human', 'caucasian': 'Human', 'beyondian': 'Human', 'gamer': 'Human', 'amazoness': 'Human',
+  'pallum': 'Human', 'esper': 'Human', 'magus': 'Human', 'burst linker': 'Human', 'master': null, 'magician': 'Human',
+  'giftia': 'Android', 'humanoid ai': 'Android', 'cyber girl': 'Android',
   'shiki': 'Vampire', 'real vampire': 'Vampire', 'artificial vampire': 'Vampire', 'lesser vampire': 'Vampire', 'vampiric thrall': 'Vampire',
-  'devilman': 'Démon', 'succubus': 'Démon', 'fiend': 'Démon', 'fiend host': 'Démon', 'karma demon': 'Démon', 'demons': 'Démon', 'daemon': 'Démon',
+  'devilman': 'Demon', 'succubus': 'Demon', 'fiend': 'Demon', 'fiend host': 'Demon', 'karma demon': 'Demon', 'demons': 'Demon', 'daemon': 'Demon',
   'grim reaper': 'Shinigami', 'shinigami': 'Shinigami', 'soul reaper': 'Shinigami',
-  'seraph': 'Ange', 'flügel': 'Ange', 'jinrou': 'Loup-garou', 'intelligent titan': 'Titan', 'titan': 'Titan',
-  'pillar man': 'Homme du pilier', 'life fibers': 'Fibre de vie', 'chimera ant': 'Fourmi-chimère',
-  'monster rat': 'Rat', 'filolial': 'Oiseau', 'crow': 'Oiseau', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
-  'hobgoblin': 'Gobelin', 'ghast': 'Mort-vivant', 'kamui': 'Fibre de vie', 'boaz': 'Homme-bête', 'wanui': 'Homme-bête',
-  'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
-  'shadow': 'Ombre', 'shadows': 'Ombre', 'nephilim': 'Demi-démon', 'elder bairn': 'Monstre', 'narehate': 'Narehate',
+  'seraph': 'Angel', 'flügel': 'Angel', 'jinrou': 'Werewolf', 'intelligent titan': 'Titan', 'titan': 'Titan',
+  'pillar man': 'Pillar Man', 'life fibers': 'Life Fiber', 'chimera ant': 'Chimera Ant',
+  'monster rat': 'Rat', 'filolial': 'Bird', 'crow': 'Bird', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
+  'hobgoblin': 'Goblin', 'ghast': 'Undead', 'kamui': 'Life Fiber', 'boaz': 'Beastman', 'wanui': 'Beastman',
+  'gorgon': 'Gorgon', 'medusa': 'Gorgon', 'dullahan': 'Undead', 'divine fighter': 'Demon', 'divine wolf': 'Wolf', 'merman': 'Mermaid', 'servant': 'Heroic Spirit',
+  'shadow': 'Shadow', 'shadows': 'Shadow', 'nephilim': 'Half-demon', 'elder bairn': 'Monster', 'narehate': 'Narehate',
   'michaela': null, 'familiar': null, 'neighbor': null,
   // JUJUTSU KAISEN : les Incarnations sont des fléaux ou des exorcistes réincarnés dans un corps, pas une espèce
   'incarnation': null,
   // The Reincarnation of the Strongest Exorcist : les Trieyes sont un peuple de démons (Pirisralia)
-  'trieye': 'Démon',
+  'trieye': 'Demon',
   // Les fées du folklore, gardées précises (les races d'ALO dans SAO, Kuro de Blue Exorcist, Ramiris) : Fée s'y ajoute
   // pour recouper (FOLKLORE_FAIRIES)
-  'sylph': 'Sylphe', 'salamander': 'Salamandre', 'undine': 'Ondine', 'spriggan': 'Spriggan', 'leprechaun': 'Leprechaun',
+  'sylph': 'Sylph', 'salamander': 'Salamander', 'undine': 'Undine', 'spriggan': 'Spriggan', 'leprechaun': 'Leprechaun',
   'cait sith': 'Cait Sith', 'cat sídhe': 'Cait Sith', 'cat sidhe': 'Cait Sith', 'pixie': 'Pixie',
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
-  'hybrid': 'Demi-démon', 'parasite': 'Humain',
+  'hybrid': 'Half-demon', 'parasite': 'Human',
   // To Your Eternity : l'ours Kermode, un vrai ours (« spirit bear ») et pas un esprit
-  'spirit bear': 'Ours',
+  'spirit bear': 'Bear',
   'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
 const ANIME_SPECIES_RULES: [RegExp, string][] = [
   // JUJUTSU KAISEN : les fléaux et les Death Paintings (mi-fléaux), et les Cursed Corpses, des poupées animées (Panda)
-  [/\bcursed (?:spirit|womb)|^curses?$/, 'Fléau'],
-  [/cursed corpse/, 'Poupée'],
-  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
+  [/\bcursed (?:spirit|womb)|^curses?$/, 'Curse'],
+  [/cursed corpse/, 'Doll'],
+  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Beastman'],
   // « Triple-Headed Snake » (Mitsumata, Ranking of Kings) : un serpent, donc aussi un Animal (expandSpecies). Après les
   // hommes-bêtes : « Beastman - Snake » (Boris Cliff, BNA) en est un
-  [/\bsnakes?\b/, 'Serpent'],
-  [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
-  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
+  [/\bsnakes?\b/, 'Snake'],
+  [/\bhalf[- ]?(?:elf|alv)\b/, 'Half-elf'],
+  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fairy'],
   [/\bvampir/, 'Vampire'],
-  [/\b(?:demon|devil|oni)\b/, 'Démon'],
+  [/\b(?:demon|devil|oni)\b/, 'Demon'],
   [/\bdragon/, 'Dragon'],
-  [/\b(?:elf|elves|alv)\b/, 'Elfe'],
-  [/\b(?:angel|seraph)/, 'Ange'],
-  [/\bshadows?\b/, 'Ombre'],
-  [/\b(?:werewolf|jinrou)\b/, 'Loup-garou'],
-  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yōkai'],
-  [/\bspirit\b/, 'Esprit'],
-  [/\b(?:giant|gigantes)\b/, 'Géant'],
-  [/\b(?:god|goddess|deity|divine)\b/, 'Divinité'],
+  [/\b(?:elf|elves|alv)\b/, 'Elf'],
+  [/\b(?:angel|seraph)/, 'Angel'],
+  [/\bshadows?\b/, 'Shadow'],
+  [/\b(?:werewolf|jinrou)\b/, 'Werewolf'],
+  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yokai'],
+  [/\bspirit\b/, 'Spirit'],
+  [/\b(?:giant|gigantes)\b/, 'Giant'],
+  [/\b(?:god|goddess|deity|divine)\b/, 'Deity'],
   [/\b(?:android|robot|ai)\b/, 'Robot'],
-  [/\bhumans?\b/, 'Humain'],
+  [/\bhumans?\b/, 'Human'],
 ]
 // « Reshy wolf », « Three-clawed owl » (To Your Eternity) : un animal précisé, lu sur son dernier mot (Loup, Hibou ; Animal
 // s'y ajoute avec expandSpecies). Seulement un animal : « giant » ou « mage » au bout ne disent pas l'espèce.
@@ -457,7 +457,7 @@ export function translateCharacterSpecies(raw: string): { species: string[], unk
 }
 
 // Les fées du folklore : l'espèce précise, plus Fée (une créature magique bienveillante) pour recouper
-const FOLKLORE_FAIRIES = new Set(['Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Pixie'])
+const FOLKLORE_FAIRIES = new Set(['Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Pixie'])
 
 // L'espèce des entrées (« species », les valeurs brutes des sources) traduite et dépliée (Demi-elfe = Humain + Elfe,
 // un chat est aussi un Animal, une sylphe aussi une Fée), avec ce qui n'a pas pu l'être
@@ -471,7 +471,7 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
     for (const value of found.flatMap(({ unknown }) => unknown))
       untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
     // Les espèces de toutes les sources (addedValues), chacune parfois en plusieurs valeurs
-    const species = [...new Set(found.flatMap(({ species }) => species).flatMap(name => FOLKLORE_FAIRIES.has(name) ? [name, 'Fée'] : [name]))]
+    const species = [...new Set(found.flatMap(({ species }) => species).flatMap(name => FOLKLORE_FAIRIES.has(name) ? [name, 'Fairy'] : [name]))]
     return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
   })
   return { entries: translated, untranslated }
@@ -481,7 +481,7 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
 
 // Pas des espèces qu'on hérite : une Ombre copie une seule personne (Summer Time Rendering), une race d'ALO est un avatar
 // de jeu (SAO). Fée reste héritable : c'est une famille d'espèces (une exception, comme la mère de Kirito, va à la main).
-const NOT_INHERITED = new Set(['Ombre', 'Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
+const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
 // Pas un nom de famille : « Miranjo no Haha » (la mère de Miranjo), « Kage Haha »
 const NOT_SURNAME = /^(?:haha|chichi|ani|ane|otouto|imouto|musume|musuko|sensei)$/i
 

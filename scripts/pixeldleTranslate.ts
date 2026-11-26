@@ -41,83 +41,85 @@ export function translateGender(names: string[]): string | null | undefined {
 
 // Après avoir retiré « de fiction », « anthropomorphe »... : le nom de l'espèce, en anglais ou en français
 const SPECIES: Record<string, string | null> = {
+  // Les libellés français de Wikidata qu'on gardait tels quels, en anglais
+  'primarque': 'Primarch', 'voyageur': 'Traveller', 'griffon': 'Griffin', 'hylien': 'Hylian',
   // Humains, et ce qui n'est qu'une sorte d'humain
-  'être humain': 'Humain', 'humain': 'Humain', 'terran': 'Humain', 'homs': 'Humain', 'spartan': 'Humain', 'super soldat': 'Humain',
-  'sorcier ou sorcière': 'Humain', 'magicien': 'Humain', 'sang-pur': 'Humain', 'animagus': 'Humain', 'métamorphomage': 'Humain',
-  'siren': 'Humain', 'psyker': 'Humain', 'méta-humain': 'Méta-humain', 'mutant': 'Mutant', 'clone': 'Clone', 'nords': 'Nordique',
-  'humanoïde': 'Humanoïde', 'extraterrestre': 'Extraterrestre', 'extraterrestre humanoïde': 'Extraterrestre',
+  'être humain': 'Human', 'humain': 'Human', 'terran': 'Human', 'homs': 'Human', 'spartan': 'Human', 'super soldat': 'Human',
+  'sorcier ou sorcière': 'Human', 'magicien': 'Human', 'sang-pur': 'Human', 'animagus': 'Human', 'métamorphomage': 'Human',
+  'siren': 'Human', 'psyker': 'Human', 'méta-humain': 'Metahuman', 'mutant': 'Mutant', 'clone': 'Clone', 'nords': 'Nord',
+  'humanoïde': 'Humanoid', 'extraterrestre': 'Alien', 'extraterrestre humanoïde': 'Alien',
   // Machines
-  'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Androïde', 'gynoïde': 'Androïde',
-  'intelligence artificielle': 'Robot', 'omnic': 'Omniaque', 'sentry': 'Robot',
+  'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Android', 'gynoïde': 'Android',
+  'intelligence artificielle': 'Robot', 'omnic': 'Omnic', 'sentry': 'Robot',
   // Surnaturel
-  'déité': 'Divinité', 'daedric prince': 'Daedra', 'higher being': 'Être supérieur', 'ange': 'Ange', 'démon': 'Démon',
-  'demon': 'Démon', 'half-demon': 'Demi-démon', 'yōkai': 'Yōkai', 'satori': 'Yōkai', 'kappa': 'Yōkai', 'komainu': 'Yōkai',
-  'vampire': 'Vampire', 'comte vampire': 'Vampire', 'dhampir': 'Dhampire', 'fantôme': 'Fantôme', 'revenant': 'Mort-vivant',
-  'undead': 'Mort-vivant', 'homunculus': 'Homoncule', 'fée': 'Fée', 'fairy': 'Fée', 'dragon': 'Dragon', 'monstres': 'Monstre',
+  'déité': 'Deity', 'daedric prince': 'Daedra', 'higher being': 'Higher Being', 'ange': 'Angel', 'démon': 'Demon',
+  'demon': 'Demon', 'half-demon': 'Half-demon', 'yōkai': 'Yokai', 'satori': 'Yokai', 'kappa': 'Yokai', 'komainu': 'Yokai',
+  'vampire': 'Vampire', 'comte vampire': 'Vampire', 'dhampir': 'Dhampir', 'fantôme': 'Ghost', 'revenant': 'Undead',
+  'undead': 'Undead', 'homunculus': 'Homunculus', 'fée': 'Fairy', 'fairy': 'Fairy', 'dragon': 'Dragon', 'monstres': 'Monster',
   // Fantasy
-  'elfe': 'Elfe', 'high elf': 'Elfe', 'blood elf': 'Elfe', 'elfe de la nuit': 'Elfe', 'drow': 'Elfe', 'avariel': 'Elfe',
-  'demi-elfe': 'Demi-elfe', 'half-elf': 'Demi-elfe', 'elfe de maison': 'Elfe de maison', 'orc': 'Orque', 'orsimer': 'Orque',
-  'dwarf': 'Nain', 'goblin': 'Gobelin', 'demi-géant': 'Demi-géant', 'dragonborn': 'Drakéide', 'tieffelin': 'Tieffelin',
-  'githyanki': 'Githyanki', 'witcher': 'Humain mutant',
+  'elfe': 'Elf', 'high elf': 'Elf', 'blood elf': 'Elf', 'elfe de la nuit': 'Elf', 'drow': 'Elf', 'avariel': 'Elf',
+  'demi-elfe': 'Half-elf', 'half-elf': 'Half-elf', 'elfe de maison': 'House-elf', 'orc': 'Orc', 'orsimer': 'Orc',
+  'dwarf': 'Dwarf', 'goblin': 'Goblin', 'demi-géant': 'Half-giant', 'dragonborn': 'Dragonborn', 'tieffelin': 'Tiefling',
+  'githyanki': 'Githyanki', 'witcher': 'Mutant human',
   // Les peuples d'une franchise : gardés, en français quand le jeu les traduit
-  'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Monstre',
-  'darkners': 'Monstre', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
-  'pale being': 'Être pâle', 'vessel': 'Réceptacle', 'weaver': 'Tisseuse', 'rabbid': 'Lapin crétin', 'salmonid': 'Salmonoïde',
-  'kong': 'Singe', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
+  'mob minecraft': 'Mob', 'nobody': 'Nobody', 'heartless': 'Heartless', 'replica': 'Replica', 'lightners': 'Monster',
+  'darkners': 'Monster', 'espèce léviathan': 'Leviathan', 'shangheili': 'Sangheili', 'turian': 'Turian', 'blade': 'Blade',
+  'pale being': 'Pale Being', 'vessel': 'Vessel', 'weaver': 'Weaver', 'rabbid': 'Rabbid', 'salmonid': 'Salmonid',
+  'kong': 'Monkey', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
   // Animaux
-  'animal': 'Animal', 'mammifère': 'Animal', 'monkey': 'Singe', 'singe': 'Singe', 'gorille': 'Singe', 'chien': 'Chien',
-  'dog': 'Chien', 'renard': 'Renard', 'fox': 'Renard', 'loup': 'Loup', 'wolf': 'Loup', 'hedgehog': 'Hérisson', 'hérisson': 'Hérisson',
-  'echidna': 'Échidné', 'rabbit or hare': 'Lapin', 'lapin/lièvre': 'Lapin', 'chat': 'Chat', 'chat de fiction et autres félins': 'Chat',
-  'tigre': 'Tigre', 'lion': 'Lion', 'panther': 'Panthère', 'cheetah': 'Guépard', 'ours': 'Ours', 'ours blanc': 'Ours',
-  'polar bear': 'Ours', 'panda': 'Panda', 'giant panda': 'Panda', 'raton laveur': 'Raton laveur', 'raccoon': 'Raton laveur',
-  'écureuil': 'Écureuil', 'squirrel': 'Écureuil', 'hamster': 'Hamster', 'rodent': 'Rongeur', 'mole': 'Taupe', 'skunk': 'Moufette',
-  'camelid': 'Lama', 'cheval': 'Cheval', 'cochon': 'Cochon', 'rhinocéros': 'Rhinocéros', 'hippopotamus': 'Hippopotame',
-  'marsupial': 'Marsupial', 'bat': 'Chauve-souris', 'oiseau': 'Oiseau', 'parrot': 'Perroquet', 'seagull': 'Mouette',
-  'pélican': 'Pélican', 'hibou': 'Hibou', 'grenouille ou crapaud': 'Grenouille', 'amphibian': 'Grenouille', 'reptile': 'Reptile',
-  'lizard': 'Lézard', 'chameleon': 'Caméléon', 'crocodile or alligator': 'Crocodile', 'tortoise': 'Tortue', 'turtle': 'Tortue',
-  'dinosaure': 'Dinosaure', 'poisson': 'Poisson', 'shark': 'Requin', 'octopus': 'Pieuvre', 'jellyfish': 'Méduse',
-  'sea urchin': 'Oursin', 'crabe': 'Crabe', 'insecte': 'Insecte', 'insect': 'Insecte', 'araignée': 'Araignée',
-  'plante': 'Plante', 'plant species': 'Plante', 'flower': 'Plante', 'arbre': 'Plante', 'virus': 'Virus', 'parasite': 'Parasite',
-  'objet': 'Objet', 'manchot': 'Manchot', 'zooplankton': 'Plancton',
+  'animal': 'Animal', 'mammifère': 'Animal', 'monkey': 'Monkey', 'singe': 'Monkey', 'gorille': 'Monkey', 'chien': 'Dog',
+  'dog': 'Dog', 'renard': 'Fox', 'fox': 'Fox', 'loup': 'Wolf', 'wolf': 'Wolf', 'hedgehog': 'Hedgehog', 'hérisson': 'Hedgehog',
+  'echidna': 'Echidna', 'rabbit or hare': 'Rabbit', 'lapin/lièvre': 'Rabbit', 'chat': 'Cat', 'chat de fiction et autres félins': 'Cat',
+  'tigre': 'Tiger', 'lion': 'Lion', 'panther': 'Panther', 'cheetah': 'Cheetah', 'ours': 'Bear', 'ours blanc': 'Bear',
+  'polar bear': 'Bear', 'panda': 'Panda', 'giant panda': 'Panda', 'raton laveur': 'Raccoon', 'raccoon': 'Raccoon',
+  'écureuil': 'Squirrel', 'squirrel': 'Squirrel', 'hamster': 'Hamster', 'rodent': 'Rodent', 'mole': 'Mole', 'skunk': 'Skunk',
+  'camelid': 'Llama', 'cheval': 'Horse', 'cochon': 'Pig', 'rhinocéros': 'Rhinoceros', 'hippopotamus': 'Hippopotamus',
+  'marsupial': 'Marsupial', 'bat': 'Bat', 'oiseau': 'Bird', 'parrot': 'Parrot', 'seagull': 'Seagull',
+  'pélican': 'Pelican', 'hibou': 'Owl', 'grenouille ou crapaud': 'Frog', 'amphibian': 'Frog', 'reptile': 'Reptile',
+  'lizard': 'Lizard', 'chameleon': 'Chameleon', 'crocodile or alligator': 'Crocodile', 'tortoise': 'Turtle', 'turtle': 'Turtle',
+  'dinosaure': 'Dinosaur', 'poisson': 'Fish', 'shark': 'Shark', 'octopus': 'Octopus', 'jellyfish': 'Jellyfish',
+  'sea urchin': 'Sea urchin', 'crabe': 'Crab', 'insecte': 'Insect', 'insect': 'Insect', 'araignée': 'Spider',
+  'plante': 'Plant', 'plant species': 'Plant', 'flower': 'Plant', 'arbre': 'Plant', 'virus': 'Virus', 'parasite': 'Parasite',
+  'objet': 'Object', 'manchot': 'Penguin', 'zooplankton': 'Plankton',
   // En anglais, depuis les infobox des wikis
-  'human': 'Humain', 'humans': 'Humain', 'human being': 'Humain', 'humanoid': 'Humanoïde', 'hume': 'Humain', 'homo sapiens': 'Humain',
-  'android': 'Androïde', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
-  'alien': 'Extraterrestre', 'extraterrestrial': 'Extraterrestre', 'god': 'Divinité', 'goddess': 'Divinité', 'deity': 'Divinité',
-  'demigod': 'Demi-dieu', 'titan': 'Titan', 'angel': 'Ange', 'devil': 'Démon', 'elf': 'Elfe', 'elves': 'Elfe', 'half-elf': 'Demi-elfe',
-  'dwarves': 'Nain', 'orcs': 'Orque', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Géant', 'ogre': 'Ogre', 'tiefling': 'Tieffelin',
-  'ghost': 'Fantôme', 'spirit': 'Esprit', 'zombie': 'Zombie', 'skeleton': 'Squelette', 'mummy': 'Momie', 'werewolf': 'Loup-garou',
-  'witch': 'Humain', 'wizard': 'Humain', 'muggle': 'Humain', 'monster': 'Monstre', 'creature': null, 'beast': 'Bête',
-  'cat': 'Chat', 'feline': 'Chat', 'canine': 'Chien', 'bird': 'Oiseau', 'bear': 'Ours', 'rabbit': 'Lapin', 'mouse': 'Souris',
-  'rat': 'Rat', 'pig': 'Cochon', 'frog': 'Grenouille', 'toad': 'Grenouille', 'snake': 'Serpent', 'spider': 'Araignée', 'fish': 'Poisson',
-  'turtles': 'Tortue', 'koopa troopa': 'Koopa', 'ape': 'Singe', 'gorilla': 'Singe', 'chimpanzee': 'Singe', 'horse': 'Cheval',
-  'penguin': 'Manchot', 'owl': 'Hibou', 'duck': 'Canard', 'chicken': 'Poule', 'cow': 'Vache', 'goat': 'Chèvre', 'sheep': 'Mouton',
-  'deer': 'Cerf', 'lizardfolk': 'Lézard', 'plant': 'Plante', 'mushroom': 'Champignon', 'slime': 'Slime', 'golem': 'Golem',
-  'clone': 'Clone', 'mutant': 'Mutant', 'vampire': 'Vampire', 'dragon': 'Dragon', 'fairy': 'Fée', 'ghoul': 'Goule', 'undead': 'Mort-vivant',
-  'dinosaur': 'Dinosaure', 'dinosaurs': 'Dinosaure', 'hylian': 'Hylien', 'hylians': 'Hylien', 'demi-god': 'Demi-dieu', 'demigoddess': 'Demi-dieu',
-  'half-human': 'Demi-humain', 'demi-human': 'Demi-humain', 'faun': 'Faune', 'minotaur': 'Minotaure', 'kangaroo': 'Kangourou',
-  'maine coon cat': 'Chat', 'horseshoe crab': 'Limule', 'sea anemone': 'Anémone de mer', 'necromancer': 'Humain', 'fev mutant': 'Mutant',
-  'super mutant': 'Mutant', 'posthuman cybernetic fev mutant': 'Mutant', 'living jar': 'Objet', 'weapon': 'Objet',
-  'edenian': 'Édénien', 'saurian': 'Saurien', 'potoroo': 'Marsupial', 'bandicoot': 'Bandicoot',
-  'cryomancer': 'Humain', 'pyromancer': 'Humain', 'human (formerly)': 'Humain', 'synth': 'Synthétique', 'replicant': 'Réplicant',
-  'robotic': 'Robot', 'mech': 'Robot', 'cat-like': 'Chat', 'dog-like': 'Chien', 'squid': 'Calmar', 'kitsune': 'Yōkai', 'oni': 'Yōkai',
-  'tengu': 'Yōkai', 'youkai': 'Yōkai', 'yokai': 'Yōkai', 'magician': 'Humain', 'shapeshifter': 'Métamorphe', 'chimera': 'Chimère',
-  'mermaid': 'Sirène', 'merfolk': 'Sirène', 'lich': 'Liche', 'wraith': 'Spectre', 'specter': 'Spectre', 'spectre': 'Spectre',
-  'doll': 'Poupée', 'puppet': 'Poupée', 'animatronic': 'Animatronique', 'scarecrow': 'Épouvantail', 'snowman': 'Bonhomme de neige',
+  'human': 'Human', 'humans': 'Human', 'human being': 'Human', 'humanoid': 'Humanoid', 'hume': 'Human', 'homo sapiens': 'Human',
+  'android': 'Android', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
+  'alien': 'Alien', 'extraterrestrial': 'Alien', 'god': 'Deity', 'goddess': 'Deity', 'deity': 'Deity',
+  'demigod': 'Demigod', 'titan': 'Titan', 'angel': 'Angel', 'devil': 'Demon', 'elf': 'Elf', 'elves': 'Elf', 'half-elf': 'Half-elf',
+  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling',
+  'ghost': 'Ghost', 'spirit': 'Spirit', 'zombie': 'Zombie', 'skeleton': 'Skeleton', 'mummy': 'Mummy', 'werewolf': 'Werewolf',
+  'witch': 'Human', 'wizard': 'Human', 'muggle': 'Human', 'monster': 'Monster', 'creature': null, 'beast': 'Beast',
+  'cat': 'Cat', 'feline': 'Cat', 'canine': 'Dog', 'bird': 'Bird', 'bear': 'Bear', 'rabbit': 'Rabbit', 'mouse': 'Mouse',
+  'rat': 'Rat', 'pig': 'Pig', 'frog': 'Frog', 'toad': 'Frog', 'snake': 'Snake', 'spider': 'Spider', 'fish': 'Fish',
+  'turtles': 'Turtle', 'koopa troopa': 'Koopa', 'ape': 'Monkey', 'gorilla': 'Monkey', 'chimpanzee': 'Monkey', 'horse': 'Horse',
+  'penguin': 'Penguin', 'owl': 'Owl', 'duck': 'Duck', 'chicken': 'Chicken', 'cow': 'Cow', 'goat': 'Goat', 'sheep': 'Sheep',
+  'deer': 'Deer', 'lizardfolk': 'Lizard', 'plant': 'Plant', 'mushroom': 'Mushroom', 'slime': 'Slime', 'golem': 'Golem',
+  'clone': 'Clone', 'mutant': 'Mutant', 'vampire': 'Vampire', 'dragon': 'Dragon', 'fairy': 'Fairy', 'ghoul': 'Ghoul', 'undead': 'Undead',
+  'dinosaur': 'Dinosaur', 'dinosaurs': 'Dinosaur', 'hylian': 'Hylian', 'hylians': 'Hylian', 'demi-god': 'Demigod', 'demigoddess': 'Demigod',
+  'half-human': 'Demi-human', 'demi-human': 'Demi-human', 'faun': 'Faun', 'minotaur': 'Minotaur', 'kangaroo': 'Kangaroo',
+  'maine coon cat': 'Cat', 'horseshoe crab': 'Horseshoe crab', 'sea anemone': 'Sea anemone', 'necromancer': 'Human', 'fev mutant': 'Mutant',
+  'super mutant': 'Mutant', 'posthuman cybernetic fev mutant': 'Mutant', 'living jar': 'Object', 'weapon': 'Object',
+  'edenian': 'Edenian', 'saurian': 'Saurian', 'potoroo': 'Marsupial', 'bandicoot': 'Bandicoot',
+  'cryomancer': 'Human', 'pyromancer': 'Human', 'human (formerly)': 'Human', 'synth': 'Synthetic', 'replicant': 'Replicant',
+  'robotic': 'Robot', 'mech': 'Robot', 'cat-like': 'Cat', 'dog-like': 'Dog', 'squid': 'Squid', 'kitsune': 'Yokai', 'oni': 'Yokai',
+  'tengu': 'Yokai', 'youkai': 'Yokai', 'yokai': 'Yokai', 'magician': 'Human', 'shapeshifter': 'Shapeshifter', 'chimera': 'Chimera',
+  'mermaid': 'Mermaid', 'merfolk': 'Mermaid', 'lich': 'Lich', 'wraith': 'Spectre', 'specter': 'Spectre', 'spectre': 'Spectre',
+  'doll': 'Doll', 'puppet': 'Doll', 'animatronic': 'Animatronic', 'scarecrow': 'Scarecrow', 'snowman': 'Snowman',
   // Pas des espèces : on passe à la classe suivante
   'deutéragoniste': null, 'mascotte': null, 'roi': null, 'idole virtuelle': null, 'transgender person': null, 'persona': null,
   'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
   'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'Robot',
   // Valeurs des wikis gardées brutes (majuscule), traduites au cas par cas
-  'honey bear': 'Ours', 'fallen angel': 'Ange déchu', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
-  'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
-  'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
-  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Sélénite', 'elder god': 'Divinité',
-  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Extraterrestre',
-  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Slime', 'leftherian': 'Humain', 'memetic entity': 'Entité',
-  'eldritch artifact': 'Objet',
-  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Extraterrestre',
+  'honey bear': 'Bear', 'fallen angel': 'Fallen angel', 'supernatural being': 'Deity', 'human-faerie': 'Half-fairy',
+  'artificial human': 'Homunculus', 'demonic sword spirit': 'Demon', 'primordial serpent': 'Primordial Serpent',
+  'human mutant': 'Mutant human', 'sentient crt monitor': 'Object', 'mechanical flower ai': 'Robot flower', 'shaman': 'Humanoid',
+  'celestial brush god': 'Brush god', 'dragonian': 'Dragon', 'moon tribe': 'Moon Tribe', 'elder god': 'Deity',
+  'hybrid': 'Hybrid', 'hyena': 'Hyena', 'basilisk': 'Basilisk', 'operator': 'Robot', 'headcrab': 'Alien',
+  'locust drone': 'Locust', 'locust kantus': 'Locust', 'healslime': 'Slime', 'leftherian': 'Human', 'memetic entity': 'Entity',
+  'eldritch artifact': 'Object',
+  'voidborn': 'Voidborn', 'aspect host': 'Human', 'eternal': 'Eternal', 'halfling': 'Halfling', 'otherworldly': 'Alien',
   'nomaï': 'Nomai',
-  'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
+  'unknown': null, 'dinosaur unknown': 'Dinosaur', 'red xiii\'s species': null, 'various': null, '1': null,
 }
 
 // « hérisson de fiction », « anthropomorphic hedgehog », « fée dans une œuvre de fiction », « humain de Donjons et Dragons »
@@ -125,19 +127,19 @@ const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans
 
 // Champ multiple : une espèce composée vaut ses deux parts (Talos, humain devenu dieu), une IA est un robot
 const SPECIES_PARTS: Record<string, string[]> = {
-  'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
-  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Ange déchu': ['Ange', 'Démon'], 'Humain mutant': ['Humain', 'Mutant'],
-  'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
-  'Hybride': ['Humain', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
+  'AI': ['Robot'], 'Half-elf': ['Human', 'Elf'], 'Half-demon': ['Human', 'Demon'], 'Half-giant': ['Human', 'Giant'],
+  'Demigod': ['Human', 'Deity'], 'Half-fairy': ['Human', 'Fairy'], 'Fallen angel': ['Angel', 'Demon'], 'Mutant human': ['Human', 'Mutant'],
+  'Robot flower': ['Robot', 'Plant'], 'Brush god': ['Deity', 'Wolf'], 'Daedra': ['Daedra', 'Deity'],
+  'Hybrid': ['Human', 'Alien'], 'Forgotling': ['Object', 'Forgotling'],
 }
 
 // Les animaux gardent leur espèce, plus « Animal » : un renard et un singe se rejoignent
-const ANIMALS = new Set(['Singe', 'Chien', 'Grenouille', 'Chat', 'Hérisson', 'Insecte', 'Renard', 'Lapin', 'Ours', 'Loup', 'Oiseau',
-  'Raton laveur', 'Tortue', 'Poisson', 'Tigre', 'Chauve-souris', 'Cheval', 'Échidné', 'Morse', 'Cochon', 'Hibou', 'Taupe', 'Lama',
-  'Pieuvre', 'Marsupial', 'Panda', 'Lézard', 'Lion', 'Cerf', 'Rongeur', 'Rhinocéros', 'Écureuil', 'Manchot', 'Hamster', 'Panthère',
-  'Caméléon', 'Mouette', 'Moufette', 'Anémone de mer', 'Limule', 'Crabe', 'Méduse', 'Oursin', 'Kangourou', 'Bandicoot', 'Guépard',
-  'Pélican', 'Hippopotame', 'Araignée', 'Crocodile', 'Perroquet', 'Requin', 'Plancton', 'Poule', 'Lièvre', 'Loir', 'Hyène', 'Serpent',
-  'Lynx', 'Dinosaure', 'Souris', 'Rat', 'Canard', 'Vache', 'Chèvre', 'Mouton', 'Calmar', 'Reptile', 'Lizard Doggo'])
+const ANIMALS = new Set(['Monkey', 'Dog', 'Frog', 'Cat', 'Hedgehog', 'Insect', 'Fox', 'Rabbit', 'Bear', 'Wolf', 'Bird',
+  'Raccoon', 'Turtle', 'Fish', 'Tiger', 'Bat', 'Horse', 'Echidna', 'Walrus', 'Pig', 'Owl', 'Mole', 'Llama',
+  'Octopus', 'Marsupial', 'Panda', 'Lizard', 'Lion', 'Deer', 'Rodent', 'Rhinoceros', 'Squirrel', 'Penguin', 'Hamster', 'Panther',
+  'Chameleon', 'Seagull', 'Skunk', 'Sea anemone', 'Horseshoe crab', 'Crab', 'Jellyfish', 'Sea urchin', 'Kangaroo', 'Bandicoot', 'Cheetah',
+  'Pelican', 'Hippopotamus', 'Spider', 'Crocodile', 'Parrot', 'Shark', 'Plankton', 'Chicken', 'Hare', 'Dormouse', 'Hyena', 'Snake',
+  'Lynx', 'Dinosaur', 'Mouse', 'Rat', 'Duck', 'Cow', 'Goat', 'Sheep', 'Squid', 'Reptile', 'Lizard Doggo'])
 
 // L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
 export function expandSpecies(value: unknown): string[] | null {
@@ -155,16 +157,16 @@ export function expandSpecies(value: unknown): string[] | null {
 
 // Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Bald », c'est pour les humains vraiment chauves)
 export const NO_HAIR = 'N/A' // = NOT_APPLICABLE du moteur
-const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
-  'Zerg', 'Slime', 'Golem', 'Squelette', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
-  'Salmonoïde', 'Omniaque', 'Pod', 'Charbon', 'Toad'])
+const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monster', 'Mob', 'Insect', 'Plant', 'Object', 'Leviathan', 'Dragon', 'Fish',
+  'Zerg', 'Slime', 'Golem', 'Skeleton', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
+  'Salmonid', 'Omnic', 'Pod', 'Coal', 'Toad'])
 
 // Les cheveux finaux : ceux trouvés, sinon N/A pour un robot, un animal, une créature (pas s'il est aussi humain)
 export function hairOrNone(hair: unknown, species: unknown): unknown {
   if (Array.isArray(hair) ? hair.length > 0 : hair)
     return hair
   const list = Array.isArray(species) ? species.map(String) : []
-  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
+  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Human') ? [NO_HAIR] : null
 }
 
 // --- Armes ---
@@ -196,7 +198,7 @@ export const NO_OCCUPATION = 'Aucune'
 export const UNKNOWN_OCCUPATION = 'Inconnu'
 
 // Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
-const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Divinité', 'Démon', 'Ange', 'Infecté', 'Griffon', 'Champignon', 'Basilic'])
+const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Deity', 'Demon', 'Angel', 'Infected', 'Griffin', 'Mushroom', 'Basilisk'])
 
 export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
   if (occupation && occupation.length > 0)
@@ -205,7 +207,7 @@ export function occupationOrNone(occupation: string[] | null, species: unknown):
   // Un avatar dont on choisit la race choisit aussi sa classe
   if (list.includes("Player's choice"))
     return ["Player's choice"]
-  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Humain') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Human') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
 }
 
 export function translateSpecies(label: string): string | null | undefined {
@@ -217,7 +219,7 @@ export function translateSpecies(label: string): string | null | undefined {
   }
   if (name in SPECIES)
     return SPECIES[name]
-  // Les peuples d'une franchise déjà bien écrits (Hylien, Koopa, Zerg, Asari) : gardés tels quels
+  // Les peuples d'une franchise déjà bien écrits (Koopa, Zerg, Asari) : gardés tels quels
   return /^\p{Lu}/u.test(label) ? label : undefined
 }
 
@@ -474,7 +476,7 @@ export function isRealPlace(place: string): boolean {
 // Les espèces de notre monde : dans une franchise du monde réel, seules elles sont « Monde réel ». Les autres (dieux,
 // démons, extraterrestres, dont les espèces propres à une franchise : Sangheili, Asari…) sont « Inconnu ». Une liste
 // des espèces d'ailleurs raterait ces dernières. Espèce inconnue : comme un humain.
-const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', "Player's choice"])
+const OUR_WORLD_SPECIES = new Set(['Human', 'Animal', 'Robot', 'Android', 'Cyborg', 'Mutant', 'Infected', 'Undead', 'Vampire', 'Ghost', 'Replicant', "Player's choice"])
 
 // Les personnages placés dont au moins cette part est dans le monde réel : franchise du monde réel
 const REAL_SHARE = 0.6

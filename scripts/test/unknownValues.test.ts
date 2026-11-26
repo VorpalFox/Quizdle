@@ -68,8 +68,8 @@ describe('fillUnknowns', () => {
   })
 
   it('UneAutreSourceADonne_ValeurGardee', () => {
-    const [filled] = fillUnknowns([entry({ age: 17, species: ['Humain'], unknown: ['age', 'species'] })], weebdleAttributes)
-    expect(filled!.attributes).toEqual({ age: 17, species: ['Humain'] })
+    const [filled] = fillUnknowns([entry({ age: 17, species: ['Human'], unknown: ['age', 'species'] })], weebdleAttributes)
+    expect(filled!.attributes).toEqual({ age: 17, species: ['Human'] })
   })
 
   it('IndicePasDuQuiz_Ignore', () => {

@@ -37,7 +37,7 @@ const PRONOUN_TEXT_LENGTH = 3000
 // Les réglages propres à une franchise (pages prioritaires, plafond, catégorie) : « wikis » dans data/pixeldle-manual.json
 
 // L'infobox d'une espèce donne l'espèce du personnage (« {{Yo-kai » : un Yo-kai)
-const TEMPLATE_SPECIES: Record<string, string> = { 'yo-kai': 'Yōkai' }
+const TEMPLATE_SPECIES: Record<string, string> = { 'yo-kai': 'Yokai' }
 
 function templateSpecies(wikitext: string): string | null {
   for (const [, name] of wikitext.matchAll(/\{\{\s*([^|{}\n]+?)\s*(?=[|\n}])/g)) {

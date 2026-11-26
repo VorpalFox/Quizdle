@@ -44,8 +44,8 @@ describe('parseGender', () => {
 
 describe('parseSpecies', () => {
   it('Anglais_Traduit', () => {
-    expect(parseSpecies('Human / Nobody')).toBe('Humain')
-    expect(parseSpecies('Dinosaur')).toBe('Dinosaure')
+    expect(parseSpecies('Human / Nobody')).toBe('Human')
+    expect(parseSpecies('Dinosaur')).toBe('Dinosaur')
   })
 })
 

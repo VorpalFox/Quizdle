@@ -630,7 +630,7 @@ const occupationExcerpts: string[] = []
 const entityRoles: string[] = []
 // Les armes ajoutées à l'occupation, au plus
 const MAX_WEAPONS = 2
-const ENTITY_SPECIES = new Set(['Divinité', 'Démon', 'Ange'])
+const ENTITY_SPECIES = new Set(['Deity', 'Demon', 'Angel'])
 const withIntroOccupation = (entry: Entry): Entry => {
   const empty = !(entry.attributes.occupation as string[] | null)?.length
   if (!empty || 'occupation' in (manual.edit[entry.id] ?? {}))
