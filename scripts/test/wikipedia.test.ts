@@ -50,8 +50,8 @@ describe('cleanValue', () => {
 
 describe('wikiGender / wikiHair', () => {
   it('FrEtEn_Traduits', () => {
-    expect(wikiGender('Masculin')).toBe('Homme')
-    expect(wikiGender('Female')).toBe('Femme')
+    expect(wikiGender('Masculin')).toBe('Male')
+    expect(wikiGender('Female')).toBe('Female')
     expect(wikiGender('Inconnu')).toBeNull()
     expect(wikiHair('Noir')).toEqual(['Black'])
     expect(wikiHair('Châtain et blanc')).toEqual(['Brown', 'White'])

@@ -22,8 +22,8 @@ function makeSubject(): Subject {
     description: '',
     attributes,
     entries: [
-      { id: '27', name: 'Killua Zoldyck', attributes: { gender: 'Homme', age: 12, hair: null } },
-      { id: '30', name: 'Gon Freecss', attributes: { gender: 'Homme', age: 12, hair: ['Black'] } },
+      { id: '27', name: 'Killua Zoldyck', attributes: { gender: 'Male', age: 12, hair: null } },
+      { id: '30', name: 'Gon Freecss', attributes: { gender: 'Male', age: 12, hair: ['Black'] } },
       { id: '31', name: 'Biscuit Krueger', attributes: { gender: null, age: 57, hair: ['Blond'] } },
     ],
   }
@@ -36,7 +36,7 @@ describe('parseValue', () => {
     expect(parseValue(age, '17')).toBe(17)
     expect(parseValue(hair, 'White, Black')).toEqual(['White', 'Black'])
     expect(parseValue(hair, 'White/White')).toEqual(['White'])
-    expect(parseValue(gender, ' Femme ')).toBe('Femme')
+    expect(parseValue(gender, ' Female ')).toBe('Female')
     expect(parseValue(age, '-')).toBeNull()
     expect(parseValue(hair, 'vide')).toBeNull()
   })
@@ -111,7 +111,7 @@ describe('applyManual', () => {
   const manual: Manual = {
     exclude: ['30'],
     edit: { 27: { _nom: 'Killua', hair: { plus: ['White'] }, taille: 150 }, 999: { age: 1 } },
-    add: [{ id: 'manuel-1', name: 'Perso Manuel', attributes: { gender: 'Femme', age: 20, hair: ['Ginger'] } }],
+    add: [{ id: 'manuel-1', name: 'Perso Manuel', attributes: { gender: 'Female', age: 20, hair: ['Ginger'] } }],
   }
 
   it('retire, corrige, ajoute, et signale ce qui ne colle pas', () => {

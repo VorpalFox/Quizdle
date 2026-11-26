@@ -33,7 +33,7 @@ export async function anilist<T>(query: string, variables: Record<string, unknow
   }
 }
 
-export const GENDERS: Record<string, string> = { Male: 'Homme', Female: 'Femme' }
+export const GENDERS: Record<string, string> = { Male: 'Male', Female: 'Female' }
 export const GENRES: Record<string, string> = {
   'Action': 'Action', 'Adventure': 'Aventure', 'Comedy': 'Comédie', 'Drama': 'Drame', 'Ecchi': 'Ecchi',
   'Fantasy': 'Fantasy', 'Horror': 'Horreur', 'Mahou Shoujo': 'Magical girl', 'Mecha': 'Mecha', 'Music': 'Musique',
@@ -54,14 +54,14 @@ const count = (text: string, pattern: RegExp) => (text.match(pattern) ?? []).len
 // que ceux de l'autre sexe. Testé sur les personnages du Weebdle dont on connaît le sexe : 0,8 % d'erreurs.
 export function gender(value: string | null, description: string | null = null): string | null {
   if (value)
-    return GENDERS[value] ?? 'Autre'
+    return GENDERS[value] ?? 'Other'
   const text = withoutSpoilers(description)
   const he = count(text, /\b(he|him|his|himself)\b/gi)
   const she = count(text, /\b(she|her|hers|herself)\b/gi)
   if (he >= 1 && he >= 2 * she)
-    return 'Homme'
+    return 'Male'
   if (she >= 1 && she >= 2 * he)
-    return 'Femme'
+    return 'Female'
   return null
 }
 export const genres = (values: string[]) => values.map(genre => GENRES[genre] ?? genre)

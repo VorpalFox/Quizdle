@@ -11,16 +11,16 @@ const firstRule = (rules: [RegExp, string | null][], value: string) => rules.fin
 // --- Sexe ---
 
 // « Aucun » pour un robot, un objet ou une entité, « Autre » quand le jeu le laisse inconnu exprès (Frisk) ou que le
-// wiki dit « they », « Au choix » pour un avatar personnalisable.
+// wiki dit « they », « Player's choice » pour un avatar personnalisable.
 
 // Ce que wikidataGender (masculin, féminin...) ne reconnaît pas
 const GENDERS: Record<string, string | null> = {
-  'genre déterminé par le joueur': 'Au choix', 'femme trans': 'Femme', 'homme trans': 'Homme',
-  'agenre': 'Autre', 'intersexuation': 'Autre', 'non-binaire': 'Autre',
+  'genre déterminé par le joueur': "Player's choice", 'femme trans': 'Female', 'homme trans': 'Male',
+  'agenre': 'Other', 'intersexuation': 'Other', 'non-binaire': 'Other',
   'sexe non divulgué dans œuvre': null, 'sexe inconnu': null, 'sexe ou genre non divulgué': null,
-  'intersex': 'Autre', 'non-binary': 'Autre', 'nonbinary': 'Autre', 'ambiguous': 'Autre', 'hermaphrodite': 'Autre',
+  'intersex': 'Other', 'non-binary': 'Other', 'nonbinary': 'Other', 'ambiguous': 'Other', 'hermaphrodite': 'Other',
   // Sans sexe : robots, objets, entités
-  'genderless': 'Aucun', 'asexual': 'Aucun', 'asexué': 'Aucun', 'sans genre': 'Aucun', 'n/a': 'Aucun', 'unknown': null, 'varies': 'Au choix', 'variable': 'Au choix',
+  'genderless': 'Genderless', 'asexual': 'Genderless', 'asexué': 'Genderless', 'sans genre': 'Genderless', 'n/a': 'Genderless', 'unknown': null, 'varies': "Player's choice", 'variable': "Player's choice",
   'yes': null,
 }
 
@@ -36,7 +36,7 @@ export function translateGender(names: string[]): string | null | undefined {
 // --- Espèce ---
 
 // Champ multiple, jamais vide. « defaults » du manuel donne « Humain » aux franchises réalistes dont le wiki ne dit pas
-// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Au choix »
+// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Player's choice »
 // pour un avatar dont on choisit la race. Les D'ni de Myst le sont même hybrides (Gehn, Atrus).
 
 // Après avoir retiré « de fiction », « anthropomorphe »... : le nom de l'espèce, en anglais ou en français
@@ -203,8 +203,8 @@ export function occupationOrNone(occupation: string[] | null, species: unknown):
     return occupation
   const list = Array.isArray(species) ? species.map(String) : []
   // Un avatar dont on choisit la race choisit aussi sa classe
-  if (list.includes('Au choix'))
-    return ['Au choix']
+  if (list.includes("Player's choice"))
+    return ["Player's choice"]
   return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Humain') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
 }
 
@@ -474,7 +474,7 @@ export function isRealPlace(place: string): boolean {
 // Les espèces de notre monde : dans une franchise du monde réel, seules elles sont « Monde réel ». Les autres (dieux,
 // démons, extraterrestres, dont les espèces propres à une franchise : Sangheili, Asari…) sont « Inconnu ». Une liste
 // des espèces d'ailleurs raterait ces dernières. Espèce inconnue : comme un humain.
-const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', 'Au choix'])
+const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', "Player's choice"])
 
 // Les personnages placés dont au moins cette part est dans le monde réel : franchise du monde réel
 const REAL_SHARE = 0.6

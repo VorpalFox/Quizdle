@@ -24,8 +24,8 @@ describe('pages des personnages', () => {
 
 describe('pronounGender', () => {
   it('compte les pronoms du texte, sans les modèles', () => {
-    expect(pronounGender("'''Henry''' is the main character. He lives in a tower. His wife is ill, so he left.")).toBe('Homme')
-    expect(pronounGender("{{Quote|he said he was he}} '''Delilah''' is a lookout. She talks to Henry; her voice is all he hears. She drinks.")).toBe('Femme')
+    expect(pronounGender("'''Henry''' is the main character. He lives in a tower. His wife is ill, so he left.")).toBe('Male')
+    expect(pronounGender("{{Quote|he said he was he}} '''Delilah''' is a lookout. She talks to Henry; her voice is all he hears. She drinks.")).toBe('Female')
   })
 
   it('ne tranche pas sans assez de pronoms ou quand les deux se mélangent', () => {

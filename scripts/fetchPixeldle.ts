@@ -30,7 +30,7 @@
 //   deux protagonistes (Green Hell, The Riftbreaker, The World Next Door).
 // - Le protagoniste est toujours là. Muet ou personnalisable, c'est un avatar (un au plus par franchise, ajouté à la
 //   main, id « avatar-<jeu> ») : son nom officiel (Dovahkiin, Tav…) sinon « Héros de <jeu> », le jeu en alias, et
-//   « Au choix » pour ce que le joueur choisit. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
+//   « Player's choice » pour ce que le joueur choisit. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
 // - Pas d'invités d'une autre licence (Sally Acorn, Raiden dans Unreal). Un personnage né dans un autre média de la
 //   même licence est gardé s'il fait partie d'un jeu (J.D. Morrison, de l'anime DMC), comme les franchises tirées
 //   d'un autre média (Batman: Arkham, Hogwarts Legacy, The Witcher…).

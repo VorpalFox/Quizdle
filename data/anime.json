@@ -11,7 +11,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
     "Exorciste",
@@ -42,7 +42,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Voyou",
@@ -74,7 +74,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Capitaine",
@@ -108,7 +108,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b27-Z5O02kQUydpT.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
     "Assassin",
@@ -142,7 +142,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Révolutionnaire",
@@ -173,7 +173,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Épéiste",
@@ -208,7 +208,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b417-gVLmIJu9phcK.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Leader",
@@ -245,7 +245,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Noble",
@@ -278,7 +278,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
     "Détective"
@@ -308,7 +308,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87275-mb13EWZBdbh3.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Étudiant",
@@ -346,7 +346,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Soldat",
@@ -377,7 +377,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89334-OPj1hCzvrt7X.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": null,
    "hair": [
@@ -404,7 +404,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b422-XTaiTuvRohsV.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Mercenaire",
@@ -445,7 +445,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Courtisane",
@@ -472,7 +472,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 1000,
    "occupation": [
     "Magicien",
@@ -502,7 +502,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34470-Jw2LXZBL5R8i.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
     "Médecin"
@@ -532,7 +532,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b10138-zOPrka0ddZOR.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 6,
    "occupation": [
     "Marin",
@@ -571,7 +571,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Chasseur de démons",
@@ -604,7 +604,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Assassin",
@@ -639,7 +639,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 25,
    "occupation": [
     "Ninja",
@@ -670,7 +670,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35252-DY9TW6pusqeh.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Étudiant",
@@ -703,7 +703,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Exorciste",
@@ -737,7 +737,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -773,7 +773,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Chasseur de démons",
@@ -802,7 +802,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28-ivA7UGnfE40a.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Garde",
@@ -838,7 +838,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -869,7 +869,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Étudiant",
@@ -899,7 +899,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Chasseur de démons",
@@ -932,7 +932,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Auto Memories Doll",
@@ -963,7 +963,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120649-NPaWaIpWy60E.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Président",
@@ -995,7 +995,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Alchimiste",
@@ -1024,7 +1024,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
@@ -1056,7 +1056,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
     "Mercenaire",
@@ -1091,7 +1091,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Leader"
@@ -1120,7 +1120,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Magicien",
@@ -1153,7 +1153,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Mannequin",
@@ -1189,7 +1189,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6356-RImEfUfHpC58.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Chasseur de vampires",
@@ -1223,7 +1223,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Super-héros",
@@ -1250,7 +1250,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13020-ZdiYlNmpRUNS.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 33,
    "occupation": [
     "Leader",
@@ -1284,7 +1284,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 13,
    "occupation": [
     "Magicien",
@@ -1313,7 +1313,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Domestique"
@@ -1347,7 +1347,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Super-héros",
@@ -1380,7 +1380,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89198-qKmRTw4Y3PRC.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 22,
    "occupation": [
     "Détective",
@@ -1413,7 +1413,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b672-cP5VPriN67xJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
     "Samouraï",
@@ -1446,7 +1446,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -1488,7 +1488,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -1519,7 +1519,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -1549,7 +1549,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Pilote"
@@ -1581,7 +1581,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -1609,7 +1609,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30-lyFExKyDhefc.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
     "Chasseur"
@@ -1638,7 +1638,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124142-XUO1g7wRqkaT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Scientifique",
@@ -1672,7 +1672,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Cuisinier",
@@ -1706,7 +1706,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 25,
    "occupation": [
     "Professeur",
@@ -1740,7 +1740,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125886-TQbmqAaSgBLS.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Président du conseil des élèves",
@@ -1772,7 +1772,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 23,
    "occupation": [
     "Chasseur",
@@ -1805,7 +1805,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 28,
    "occupation": [
     "Archéologue",
@@ -1843,7 +1843,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90107-ZULW5HlPX1uU.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Voyant",
@@ -1872,7 +1872,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5-a7bkJgjhhigE.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Épéiste",
@@ -1909,7 +1909,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b94-d631a3Z2KPvd.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Étudiant"
@@ -1942,7 +1942,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": "Inconnu",
    "occupation": [
     "Chasseur de démons",
@@ -1975,7 +1975,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant"
@@ -2008,7 +2008,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Pilote"
@@ -2040,7 +2040,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66173-g8eU1LGWPB8O.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Cuisinier",
@@ -2071,7 +2071,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Pourfendeur de démons",
@@ -2104,7 +2104,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 12,
    "occupation": [
     "Femme au foyer"
@@ -2137,7 +2137,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Capitaine",
@@ -2169,7 +2169,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 29,
    "occupation": [
     "Leader",
@@ -2201,7 +2201,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121102-tiQFxnSEIAwm.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Étudiant",
@@ -2233,7 +2233,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 27,
    "occupation": [
     "Employé",
@@ -2267,7 +2267,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1-ChxaldmieFlQ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
     "Assassin",
@@ -2304,7 +2304,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b31-FZckOuu7L1un.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": null,
    "hair": null,
@@ -2330,7 +2330,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Soldat",
@@ -2361,7 +2361,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -2423,7 +2423,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Super-héros",
@@ -2456,7 +2456,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23602-Z4MDNYcoAWZu.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 598,
    "occupation": [
     "Noble"
@@ -2488,7 +2488,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Pourfendeur de démons",
@@ -2521,7 +2521,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
     "Magicien",
@@ -2553,7 +2553,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123962-eL9yGV0NLMF7.png",
   "attributes": {
-   "gender": "Autre",
+   "gender": "Other",
    "age": 37,
    "occupation": null,
    "hair": [
@@ -2583,7 +2583,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
@@ -2615,7 +2615,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Exorciste",
@@ -2651,7 +2651,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 6,
    "occupation": [
     "Étudiant"
@@ -2682,7 +2682,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Exorciste",
@@ -2715,7 +2715,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Leader",
@@ -2744,7 +2744,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84677-PFmohzIXD1ud.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 1050,
    "occupation": [
     "Dieu"
@@ -2776,7 +2776,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -2810,7 +2810,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b257562-Ru35NYPfsqhY.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -2839,7 +2839,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67065-Dhec6tE2yWA9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -2869,7 +2869,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22036-Ed3CjwPlDLp4.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -2902,7 +2902,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Volleyeur",
@@ -2932,7 +2932,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38005-T3NR8p2f021x.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Tireur",
@@ -2963,7 +2963,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Pourfendeur de démons",
@@ -2999,7 +2999,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 35,
    "occupation": [
     "Épéiste",
@@ -3029,7 +3029,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 1000,
    "occupation": [
     "Utilisateur de fléaux",
@@ -3061,7 +3061,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188783-77orwP7vNuNg.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Acteur",
@@ -3096,7 +3096,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66171-o2vk3689wWFK.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant"
@@ -3126,7 +3126,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Magicien",
@@ -3159,7 +3159,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86-cA1zL7fyls8E.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Pilote"
@@ -3190,7 +3190,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80243-RzxE51iUU5eq.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 12,
    "occupation": [
     "Étudiant",
@@ -3218,7 +3218,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88350-QU1iwgZ887U8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Magicien",
@@ -3250,7 +3250,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -3282,7 +3282,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 20,
    "occupation": [
     "Combattant",
@@ -3318,7 +3318,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89-ZtZhXkh1rITn.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Espion",
@@ -3352,7 +3352,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Tueur en série",
@@ -3382,7 +3382,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 300,
    "occupation": [
     "Pilote",
@@ -3416,7 +3416,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 29,
    "occupation": [
     "Officier",
@@ -3450,7 +3450,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124440-Lpdo6y8cljV6.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
     "Chevalier",
@@ -3483,7 +3483,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80491-NK6pxb6oH61P.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Étudiant",
@@ -3512,7 +3512,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121104-7TYRl3EEsDYU.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -3546,7 +3546,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant",
@@ -3579,7 +3579,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -3611,7 +3611,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Volleyeur",
@@ -3640,7 +3640,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": "Inconnu",
    "occupation": [
     "Espion",
@@ -3672,7 +3672,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71933-HQ1TSjlrJ8Hv.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Étudiant"
@@ -3697,7 +3697,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13767-U604OJN9dxCn.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
     "Capitaine",
@@ -3727,7 +3727,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209-NOAbiLvJt1QA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant",
@@ -3756,7 +3756,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
     "Navigateur",
@@ -3793,7 +3793,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
     "Neapolitan Executioner"
@@ -3826,7 +3826,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Leader",
@@ -3857,7 +3857,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 32,
    "occupation": [
     "Psychiatre",
@@ -3887,7 +3887,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123385-ild8gXk13xcO.png",
   "attributes": {
-   "gender": "Autre",
+   "gender": "Other",
    "age": 300,
    "occupation": [
     "Scientifique",
@@ -3921,7 +3921,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36828-j5ib0adAzGMx.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Étudiant"
@@ -3951,7 +3951,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Mafieux",
@@ -3981,7 +3981,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121724-SJTdODjeO7e6.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
     "Leader"
@@ -4013,7 +4013,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -4043,7 +4043,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Fermier",
@@ -4081,7 +4081,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Processor",
@@ -4114,7 +4114,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Magicien",
@@ -4147,7 +4147,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67067-gqhgjlni0Bcf.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Étudiant",
@@ -4175,7 +4175,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65643-jimrOw0RGtoB.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": "Inconnu",
    "occupation": [
     "Professeur",
@@ -4205,7 +4205,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b154224-7dJ09BKEnG3v.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 19,
    "occupation": [
     "Étudiant"
@@ -4234,7 +4234,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b58-USOmsz3nursi.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 26,
    "occupation": [
     "Leader",
@@ -4263,7 +4263,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123285-tKijiuQErDS0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Épéiste",
@@ -4291,7 +4291,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125659-O37MZQWibV7g.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Combattant"
@@ -4321,7 +4321,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4004-w0OtWuvjhftG.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
     "Avocat"
@@ -4350,7 +4350,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13580-1J7PwIB8kTpu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": null,
    "hair": [
@@ -4378,7 +4378,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Aventurier"
@@ -4406,7 +4406,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23277-EYmIxzL64Mji.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 40,
    "occupation": [
     "Souverain",
@@ -4432,7 +4432,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2075-sWb5Xz76JWdX.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Leader",
@@ -4464,7 +4464,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136070-MC9LLxJsHyHE.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
     "Pourfendeur de démons",
@@ -4498,7 +4498,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Musicien",
@@ -4531,7 +4531,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71611-cUZwVfzeNXD9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Volleyeur",
@@ -4559,7 +4559,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 20,
    "occupation": [
     "Hacker",
@@ -4591,7 +4591,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121101-Q8HzKP15At2d.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -4626,7 +4626,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2072-Lc6jEdsueJUK.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 20,
    "occupation": [
     "Pirate",
@@ -4656,7 +4656,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207-RQ4EUdTD0K62.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -4687,7 +4687,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36765-BnLbXg0Tzzh9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Justicier",
@@ -4717,7 +4717,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 9,
    "occupation": [
     "Magicien"
@@ -4746,7 +4746,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Médecin",
@@ -4780,7 +4780,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13085-CkmgXL7SSLxL.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -4811,7 +4811,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": null,
    "hair": [
@@ -4840,7 +4840,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
     "Chirurgien",
@@ -4874,7 +4874,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 30,
    "occupation": [
     "Super-héros",
@@ -4901,7 +4901,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 28,
    "occupation": [
     "Super-héros",
@@ -4933,7 +4933,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
     "Ninja",
@@ -4963,7 +4963,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 58,
    "occupation": [
     "Leader",
@@ -4994,7 +4994,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88348-bIe5XnXdRpmX.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 34,
    "occupation": [
     "Étudiant",
@@ -5029,7 +5029,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12055-eCEkIVV4qoCu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 33,
    "occupation": [
     "Tueur en série",
@@ -5062,7 +5062,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b507-g9yz1GTLtPla.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": null,
    "hair": null,
@@ -5088,7 +5088,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Commerçant",
@@ -5116,7 +5116,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12064-7PDN3ylIeAZn.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant"
@@ -5143,7 +5143,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b424-Jfrsf8I7zBps.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Chevalier",
@@ -5180,7 +5180,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87277-oUaqrI1iBzu6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Serveur",
@@ -5215,7 +5215,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
     "Utilisateur de fléaux",
@@ -5248,7 +5248,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Chasseur",
@@ -5276,7 +5276,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2257-jnalsdnIX1vN.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Leader",
@@ -5308,7 +5308,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b458-tlKqPcuR287U.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Pirate",
@@ -5341,7 +5341,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83797-ix0Cl5OMfV22.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant",
@@ -5371,7 +5371,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Dieu"
@@ -5401,7 +5401,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2219-K3wzEOVwdUhL.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Étudiant"
@@ -5432,7 +5432,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b702-qqO3zbj5hp1l.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": null,
    "hair": null,
@@ -5458,7 +5458,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11222-Se9QoJHDSeYY.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 19,
    "occupation": [
     "Aucune"
@@ -5490,7 +5490,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70069-DEV7X6o2L7oG.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Aventurier"
@@ -5522,7 +5522,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Leader",
@@ -5555,7 +5555,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
     "Volleyeur",
@@ -5586,7 +5586,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136071-99Kexnnn2PiV.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 23,
    "occupation": [
     "Combattant",
@@ -5618,7 +5618,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121956-5FbIbcd6gAZW.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Dieu",
@@ -5648,7 +5648,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65865-AC0ru7cDXUgK.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": null,
    "hair": [
@@ -5676,7 +5676,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22055-EaTsy30ihdgb.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Étudiant"
@@ -5707,7 +5707,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Combattant",
@@ -5739,7 +5739,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162722-btzdghBizxKS.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Non-Curse User"
@@ -5767,7 +5767,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
@@ -5798,7 +5798,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Souverain",
@@ -5830,7 +5830,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b77605-NrjhQwZwgJ3l.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 43,
    "occupation": [
     "Artisan",
@@ -5869,7 +5869,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6-25WoBeWMZXBc.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Épéiste",
@@ -5903,7 +5903,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Noble",
@@ -5933,7 +5933,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Jockey",
@@ -5968,7 +5968,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b434-Q0K9e4HukawA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 22,
    "occupation": null,
    "hair": null,
@@ -5992,7 +5992,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Alchimiste",
@@ -6020,7 +6020,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b913-NIFkKazWM8VO.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Capitaine",
@@ -6056,7 +6056,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Détective"
@@ -6088,7 +6088,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Serveur",
@@ -6119,7 +6119,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89201-K0X5HNq88Oub.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 26,
    "occupation": [
     "Détective"
@@ -6150,7 +6150,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Magicien",
@@ -6179,7 +6179,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Assassin",
@@ -6212,7 +6212,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Étudiant"
@@ -6241,7 +6241,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260329-1Z5n1QgViEBI.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
     "Espion",
@@ -6270,7 +6270,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1086-qR9218BjZTC0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Scientifique",
@@ -6303,7 +6303,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Mannequin",

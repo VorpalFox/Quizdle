@@ -152,23 +152,23 @@ export function parseGender(value: string): string | null | undefined {
     return known
   const key = value.toLowerCase().trim()
   if (/player|customi[sz]able|\bchoice\b|chosen|^determin|user[- ]defined/.test(key))
-    return 'Au choix'
+    return "Player's choice"
   if (/^unspecified|^not specified|^dependent/.test(key))
     return null
   // Sans sexe (robots, objets, entités) : « N/A (Programmed as male) », « Genderless, referred to as female », même si on
   // en parle au masculin ou au féminin. « Autre » est pour les personnages non-binaires.
   if (/^(?:n\/a|none|genderless|sexless|no gender|not applicable|asexual|it\b)/.test(key))
-    return 'Aucun'
+    return 'Genderless'
   if (/referred to as (?:female|"?she)|feminine programm?ing|female persona/.test(key))
-    return 'Femme'
+    return 'Female'
   if (/referred to as (?:male|"?he\b)|masculine personality|male programm?ing/.test(key))
-    return 'Homme'
+    return 'Male'
   if (/^(?:f|she|her|feminine|girl|lady)\b/.test(key))
-    return 'Femme'
+    return 'Female'
   if (/^(?:m|he|him|masculine|boy)\b/.test(key))
-    return 'Homme'
+    return 'Male'
   if (/^(?:they|agender|non-?binary|x\b|x-gender|intersex)\b/.test(key))
-    return 'Autre'
+    return 'Other'
   // La valeur entière d'abord : « Left 4 Dead, Male, Left 4 Dead 2, Male or Female » n'est pas tranché
   return translateGender([value, firstItem(value)])
 }

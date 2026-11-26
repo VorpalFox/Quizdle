@@ -28,7 +28,7 @@ const SKIPPED_CATEGORY = /image|\bart\b|artwork|concept|gallery|galleries|screen
 // Les pages qui ne sont pas un personnage
 const SKIPPED_PAGE = /^(?:list of|characters?\b)|\bcharacters$|\((?:disambiguation|anime|manga|film|movie|tv series|comics?|netflix|dmc|reincarnation)\)$|\/|:/i
 // Les valeurs de sexe d'un personnage. Une autre (« Survival horror » : le champ « genre » d'un jeu) écarte la page.
-const GENDERS = new Set(['Homme', 'Femme', 'Autre', 'Aucun', 'Au choix'])
+const GENDERS = new Set(['Male', 'Female', 'Other', 'Genderless', "Player's choice"])
 // Assez de pronoms, et nettement plus de l'un que de l'autre
 const MIN_PRONOUNS = 3
 const PRONOUN_RATIO = 3
@@ -182,7 +182,7 @@ export const isCharacterCategory = (title: string) => !SKIPPED_CATEGORY.test(tit
 export const isCharacterPage = (title: string) => !SKIPPED_PAGE.test(title)
 
 // Le sexe d'après les pronoms anglais du texte, sans les modèles, liens de fichiers et références
-export function pronounGender(wikitext: string): 'Homme' | 'Femme' | null {
+export function pronounGender(wikitext: string): 'Male' | 'Female' | null {
   let text = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
   for (let i = 0; i < 3; i++)
     text = text.replace(/\{\{[^{}]*\}\}/g, '')
@@ -195,9 +195,9 @@ export function pronounGender(wikitext: string): 'Homme' | 'Femme' | null {
   if (count(/\b(?:they|them|their|themselves)\b/gi) >= Math.max(male, female))
     return null
   if (male >= MIN_PRONOUNS && male >= female * PRONOUN_RATIO)
-    return 'Homme'
+    return 'Male'
   if (female >= MIN_PRONOUNS && female >= male * PRONOUN_RATIO)
-    return 'Femme'
+    return 'Female'
   return null
 }
 

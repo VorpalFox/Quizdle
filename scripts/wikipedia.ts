@@ -37,8 +37,8 @@ const FIELDS = {
 } as const
 
 const GENDERS: Record<string, string> = {
-  masculin: 'Homme', homme: 'Homme', male: 'Homme', garcon: 'Homme', man: 'Homme',
-  feminin: 'Femme', femme: 'Femme', female: 'Femme', femelle: 'Femme', fille: 'Femme', woman: 'Femme',
+  masculin: 'Male', homme: 'Male', male: 'Male', garcon: 'Male', man: 'Male',
+  feminin: 'Female', femme: 'Female', female: 'Female', femelle: 'Female', fille: 'Female', woman: 'Female',
 }
 
 export interface WikiTarget {

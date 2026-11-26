@@ -3,8 +3,8 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from '../wikidata.js
 
 describe('wikidataGender', () => {
   it('MasculinFeminin_HommeFemme', () => {
-    expect(wikidataGender(['masculin'])).toBe('Homme')
-    expect(wikidataGender(['féminin'])).toBe('Femme')
+    expect(wikidataGender(['masculin'])).toBe('Male')
+    expect(wikidataGender(['féminin'])).toBe('Female')
     expect(wikidataGender(['non-binarité'])).toBeNull()
   })
 })

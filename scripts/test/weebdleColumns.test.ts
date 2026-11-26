@@ -142,7 +142,7 @@ describe('addedValues', () => {
   })
 
   it('ChampAUneValeur_1reSourceGardee', () => {
-    expect(addedValues({ gender: 'Homme', age: 17 }, { gender: 'Femme', age: 20 })).toEqual({})
+    expect(addedValues({ gender: 'Male', age: 17 }, { gender: 'Female', age: 20 })).toEqual({})
   })
 
   it('ListesCumulees', () => {

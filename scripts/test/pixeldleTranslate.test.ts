@@ -106,8 +106,8 @@ describe('translateGender', () => {
   })
 
   it('AutresSexes_NosValeurs', () => {
-    expect(translateGender(['genre déterminé par le joueur'])).toBe('Au choix')
-    expect(translateGender(['femme trans'])).toBe('Femme')
+    expect(translateGender(['genre déterminé par le joueur'])).toBe("Player's choice")
+    expect(translateGender(['femme trans'])).toBe('Female')
     expect(translateGender(['sexe inconnu'])).toBeNull()
     expect(translateGender([])).toBeNull()
     expect(translateGender(['autre chose'])).toBeUndefined()

@@ -331,7 +331,7 @@
   "129347": {
    "_nom": "Daikenja",
    "_raison": "compétence analytique de Rimuru, équivalent magique d'une IA compagnon (tensura.fandom.com/wiki/Great_Sage) : immatériel, ni sexe, ni âge, ni cheveux",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
      "Assistant"
@@ -516,12 +516,12 @@
      "N/A"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "216426": {
    "_nom": "Navi",
    "_raison": "système de navigation de NiaLand (AniList), sans corps : ni sexe ni cheveux, assistant",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
      "Assistant"
@@ -549,7 +549,7 @@
      "N/A"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "251689": {
    "_nom": "Nyansuke",
