@@ -83,9 +83,9 @@ export interface SetEdit {
   moins?: string[]
 }
 
-// Les valeurs d'un champ vide (« Inconnu », « Aucune » pour l'occupation d'un animal, « N/A », « Au choix » pour un
+// Les valeurs d'un champ vide (« Inconnu », « Aucune » pour l'occupation d'un animal, « N/A », « Player's choice » pour un
 // avatar) : une vraie valeur ajoutée les remplace
-const PLACEHOLDERS = new Set(['Inconnu', 'Aucune', NOT_APPLICABLE, 'Au choix'])
+const PLACEHOLDERS = new Set(['Unknown', 'None', NOT_APPLICABLE, "Player's choice"])
 
 export const isSetEdit = (value: unknown): value is SetEdit => typeof value === 'object' && value !== null && !Array.isArray(value)
 

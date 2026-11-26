@@ -3,18 +3,18 @@ import { expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, isRealPl
 
 describe('expandSpecies', () => {
   it('Animal_AjouteAnimal', () => {
-    expect(expandSpecies('Renard')).toEqual(['Renard', 'Animal'])
-    expect(expandSpecies(['Divinité', 'Loup'])).toEqual(['Divinité', 'Loup', 'Animal'])
+    expect(expandSpecies('Fox')).toEqual(['Fox', 'Animal'])
+    expect(expandSpecies(['Deity', 'Wolf'])).toEqual(['Deity', 'Wolf', 'Animal'])
   })
 
   it('EspeceComposee_SesDeuxParts', () => {
-    expect(expandSpecies('Demi-elfe')).toEqual(['Humain', 'Elfe'])
-    expect(expandSpecies('IA')).toEqual(['Robot'])
+    expect(expandSpecies('Half-elf')).toEqual(['Human', 'Elf'])
+    expect(expandSpecies('AI')).toEqual(['Robot'])
   })
 
   it('DejaDepliee_Inchangee', () => {
-    expect(expandSpecies(['Renard', 'Animal'])).toEqual(['Renard', 'Animal'])
-    expect(expandSpecies(['Humain', 'Humain'])).toEqual(['Humain'])
+    expect(expandSpecies(['Fox', 'Animal'])).toEqual(['Fox', 'Animal'])
+    expect(expandSpecies(['Human', 'Human'])).toEqual(['Human'])
   })
 
   it('Vide_Null', () => {
@@ -25,20 +25,20 @@ describe('expandSpecies', () => {
 
 describe('mergeOccupations', () => {
   it('QuasiSynonymes_Regroupes', () => {
-    expect(mergeOccupations(['Tueur', 'Assassin', 'Élève'])).toEqual(['Assassin', 'Étudiant'])
+    expect(mergeOccupations(['Killer', 'Assassin', 'Pupil'])).toEqual(['Assassin', 'Student'])
   })
 
   it('Dieu_Retire', () => {
-    expect(mergeOccupations(['Dieu'])).toBeNull()
+    expect(mergeOccupations(['God'])).toBeNull()
   })
 })
 
 describe('weaponOccupations', () => {
   it('Armes_CommentIlSeBat', () => {
-    expect(weaponOccupations('Buster Sword')).toEqual(['Épéiste'])
-    expect(weaponOccupations('AK-47, Desert Eagle')).toEqual(['Tireur'])
-    expect(weaponOccupations('Gunblade')).toEqual(['Épéiste', 'Tireur'])
-    expect(weaponOccupations('Sniper rifle')).toEqual(["Tireur d'élite"])
+    expect(weaponOccupations('Buster Sword')).toEqual(['Swordsman'])
+    expect(weaponOccupations('AK-47, Desert Eagle')).toEqual(['Marksman'])
+    expect(weaponOccupations('Gunblade')).toEqual(['Swordsman', 'Marksman'])
+    expect(weaponOccupations('Sniper rifle')).toEqual(["Sniper"])
   })
 
   it('PasUneArme_Rien', () => {
@@ -48,47 +48,47 @@ describe('weaponOccupations', () => {
 
 describe('occupationOrNone', () => {
   it('CreatureSansMetier_Aucune', () => {
-    expect(occupationOrNone(null, ['Renard', 'Animal'])).toEqual(['Aucune'])
+    expect(occupationOrNone(null, ['Fox', 'Animal'])).toEqual(['None'])
   })
 
   it('HumainSansMetier_Inconnu', () => {
-    expect(occupationOrNone(null, ['Humain'])).toEqual(['Inconnu'])
-    expect(occupationOrNone([], ['Elfe'])).toEqual(['Inconnu'])
+    expect(occupationOrNone(null, ['Human'])).toEqual(['Unknown'])
+    expect(occupationOrNone([], ['Elf'])).toEqual(['Unknown'])
   })
 
   it('MetierConnu_Garde', () => {
-    expect(occupationOrNone(['Plombier'], ['Humain'])).toEqual(['Plombier'])
+    expect(occupationOrNone(['Plumber'], ['Human'])).toEqual(['Plumber'])
   })
 })
 
 describe('hairOrNone', () => {
   it('RobotSansCheveux_NA', () => {
     expect(hairOrNone(null, ['Robot'])).toEqual(['N/A'])
-    expect(hairOrNone(null, ['Renard', 'Animal'])).toEqual(['N/A'])
+    expect(hairOrNone(null, ['Fox', 'Animal'])).toEqual(['N/A'])
   })
 
   it('HumainSansCheveux_Vide', () => {
-    expect(hairOrNone(null, ['Humain'])).toBeNull()
-    expect(hairOrNone(null, ['Humain', 'Mutant'])).toBeNull()
+    expect(hairOrNone(null, ['Human'])).toBeNull()
+    expect(hairOrNone(null, ['Human', 'Mutant'])).toBeNull()
   })
 
   it('CheveuxConnus_Gardes', () => {
-    expect(hairOrNone(['Bleus'], ['Robot'])).toEqual(['Bleus'])
+    expect(hairOrNone(['Blue'], ['Robot'])).toEqual(['Blue'])
   })
 })
 
 describe('translateSpecies', () => {
   it('ClassesDeFiction_NomCourt', () => {
-    expect(translateSpecies('être humain de fiction')).toBe('Humain')
-    expect(translateSpecies('anthropomorphic hedgehog')).toBe('Hérisson')
-    expect(translateSpecies('renard anthropomorphe')).toBe('Renard')
-    expect(translateSpecies('fée dans une œuvre de fiction')).toBe('Fée')
-    expect(translateSpecies('elfe de la nuit')).toBe('Elfe')
-    expect(translateSpecies('•Human')).toBe('Humain')
+    expect(translateSpecies('être humain de fiction')).toBe('Human')
+    expect(translateSpecies('anthropomorphic hedgehog')).toBe('Hedgehog')
+    expect(translateSpecies('renard anthropomorphe')).toBe('Fox')
+    expect(translateSpecies('fée dans une œuvre de fiction')).toBe('Fairy')
+    expect(translateSpecies('elfe de la nuit')).toBe('Elf')
+    expect(translateSpecies('•Human')).toBe('Human')
   })
 
   it('PeupleDUneFranchise_GardeTelQuel', () => {
-    expect(translateSpecies('Hylien')).toBe('Hylien')
+    expect(translateSpecies('Hylien')).toBe('Hylian')
     expect(translateSpecies('Koopa')).toBe('Koopa')
   })
 
@@ -106,8 +106,8 @@ describe('translateGender', () => {
   })
 
   it('AutresSexes_NosValeurs', () => {
-    expect(translateGender(['genre déterminé par le joueur'])).toBe('Au choix')
-    expect(translateGender(['femme trans'])).toBe('Femme')
+    expect(translateGender(['genre déterminé par le joueur'])).toBe("Player's choice")
+    expect(translateGender(['femme trans'])).toBe('Female')
     expect(translateGender(['sexe inconnu'])).toBeNull()
     expect(translateGender([])).toBeNull()
     expect(translateGender(['autre chose'])).toBeUndefined()
@@ -116,10 +116,10 @@ describe('translateGender', () => {
 
 describe('translateOccupation', () => {
   it('ValeurExacteDesInfobox_Dictionnaire', () => {
-    expect(translateOccupation('Weaponsmith')).toBe('Ouvrier')
-    expect(translateOccupation('· Weaponsmith')).toBe('Ouvrier')
-    expect(translateOccupation('---- Confederate marshal')).toBe('Policier')
-    expect(translateOccupation('Proprieter of the Mikaelsen Ranch')).toBe('Fermier')
+    expect(translateOccupation('Weaponsmith')).toBe('Worker')
+    expect(translateOccupation('· Weaponsmith')).toBe('Worker')
+    expect(translateOccupation('---- Confederate marshal')).toBe('Police officer')
+    expect(translateOccupation('Proprieter of the Mikaelsen Ranch')).toBe('Farmer')
   })
 
   it('RoleDansLHistoire_Retire', () => {
@@ -129,33 +129,33 @@ describe('translateOccupation', () => {
   })
 
   it('OccupationsWikidata_NosFamilles', () => {
-    expect(translateOccupation('Pratiquant d\'arts martiaux')).toBe('Combattant')
-    expect(translateOccupation('Chasseur de primes')).toBe('Chasseur de primes')
-    expect(translateOccupation('Chasseur de vampires')).toBe('Chasseur de monstres')
-    expect(translateOccupation('Agent de sécurité')).toBe('Garde')
-    expect(translateOccupation('Agent double')).toBe('Espion')
-    expect(translateOccupation('Patron de bar')).toBe('Serveur')
-    expect(translateOccupation('Plombier')).toBe('Plombier')
+    expect(translateOccupation('Pratiquant d\'arts martiaux')).toBe('Fighter')
+    expect(translateOccupation('Chasseur de primes')).toBe('Bounty hunter')
+    expect(translateOccupation('Chasseur de vampires')).toBe('Monster hunter')
+    expect(translateOccupation('Agent de sécurité')).toBe('Guard')
+    expect(translateOccupation('Agent double')).toBe('Spy')
+    expect(translateOccupation('Patron de bar')).toBe('Waiter')
+    expect(translateOccupation('Plombier')).toBe('Plumber')
     expect(translateOccupation('Military impostor')).toBeNull()
   })
 
   it('OccupationsAnglaises_NosFamilles', () => {
-    expect(translateOccupation('Bartender')).toBe('Serveur')
-    expect(translateOccupation('Leader of the Horde')).toBe('Dirigeant')
-    expect(translateOccupation('CEO of Wayne Enterprises')).toBe("Homme d'affaires")
-    expect(translateOccupation('Gym Leader')).toBe('Dresseur')
-    expect(translateOccupation('Chieftain of the Warsong clan')).toBe('Chef de clan')
-    expect(translateOccupation('Charter Boat Captain')).toBe('Marin')
-    expect(translateOccupation('General Manager at Dondoko Island')).toBe('Dirigeant')
-    expect(translateOccupation('Ex-soldier')).toBe('Soldat')
-    expect(translateOccupation('Head of Slytherin House')).toBe('Professeur')
+    expect(translateOccupation('Bartender')).toBe('Waiter')
+    expect(translateOccupation('Leader of the Horde')).toBe('Leader')
+    expect(translateOccupation('CEO of Wayne Enterprises')).toBe("Businessperson")
+    expect(translateOccupation('Gym Leader')).toBe('Trainer')
+    expect(translateOccupation('Chieftain of the Warsong clan')).toBe('Clan leader')
+    expect(translateOccupation('Charter Boat Captain')).toBe('Sailor')
+    expect(translateOccupation('General Manager at Dondoko Island')).toBe('Leader')
+    expect(translateOccupation('Ex-soldier')).toBe('Soldier')
+    expect(translateOccupation('Head of Slytherin House')).toBe('Teacher')
     expect(translateOccupation('Legend')).toBeNull()
   })
 
   it('TraductionsDuWeebdle_NosFamilles', () => {
-    expect(translateOccupation('Leader')).toBe('Dirigeant')
-    expect(translateOccupation('Mage')).toBe('Magicien')
-    expect(translateOccupation('Serviteur')).toBe('Domestique')
+    expect(translateOccupation('Leader')).toBe('Leader')
+    expect(translateOccupation('Mage')).toBe('Mage')
+    expect(translateOccupation('Serviteur')).toBe('Servant')
   })
 })
 
@@ -169,11 +169,11 @@ describe('translateDeveloper', () => {
 
 describe('translateGenre', () => {
   it('GenresWikidata_NosGenres', () => {
-    expect(translateGenre('jeu de plateforme en 3D')).toBe('Plates-formes')
-    expect(translateGenre('action-RPG')).toBe('Action-RPG')
+    expect(translateGenre('jeu de plateforme en 3D')).toBe('Platformer')
+    expect(translateGenre('action-RPG')).toBe('Action RPG')
     expect(translateGenre('jeu de rôle en ligne massivement multijoueur')).toBe('MMO')
-    expect(translateGenre('jeu de combat motorisé')).toBe('Course')
-    expect(translateGenre('science fiction horror')).toBe('Horreur')
+    expect(translateGenre('jeu de combat motorisé')).toBe('Racing')
+    expect(translateGenre('science fiction horror')).toBe('Horror')
   })
 
   it('Themes_Retires', () => {
@@ -188,8 +188,8 @@ describe('translateGenre', () => {
     expect(translateGenre('jeu vidéo de pêche')).toBe('Simulation')
     expect(translateGenre('jeu de tir')).toBe('FPS')
     expect(translateGenre('Extraction shooter')).toBe('FPS')
-    expect(translateGenre('jeu d\'aventure à la troisième personne')).toBe('Aventure')
-    expect(translateGenre('jeu vidéo comprenant des éléments d\'énigme')).toBe('Réflexion')
+    expect(translateGenre('jeu d\'aventure à la troisième personne')).toBe('Adventure')
+    expect(translateGenre('jeu vidéo comprenant des éléments d\'énigme')).toBe('Puzzle')
     expect(translateGenre('Immersive sim')).toBe('Immersive sim')
     expect(translateGenre('monster-taming game')).toBe('Monster-taming')
     expect(translateGenre('walking simulator')).toBe('Walking simulator')
@@ -300,27 +300,27 @@ describe('franchiseWorld', () => {
 
 describe('withWorld', () => {
   it('PlaceDansNotreMonde_AjouteMondeReel', () => {
-    expect(withWorld(['Boston', 'United States'], ['Humain'], null)).toEqual(['Boston', 'United States', 'Monde réel'])
-    expect(withWorld(['Hyrule'], ['Hylien'], 'other')).toEqual(['Hyrule'])
+    expect(withWorld(['Boston', 'United States'], ['Human'], null)).toEqual(['Boston', 'United States', 'Monde réel'])
+    expect(withWorld(['Hyrule'], ['Hylian'], 'other')).toEqual(['Hyrule'])
   })
 
   it('SansLieu_LeMondeDeLaFranchise', () => {
-    expect(withWorld(null, ['Humain'], 'real')).toEqual(['Monde réel'])
-    expect(withWorld([], ['Hylien'], 'other')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Humain'], null)).toBeNull()
+    expect(withWorld(null, ['Human'], 'real')).toEqual(['Monde réel'])
+    expect(withWorld([], ['Hylian'], 'other')).toEqual(['Unknown'])
+    expect(withWorld(null, ['Human'], null)).toBeNull()
   })
 
   it('VenuDAilleursDansLeMondeReel_Inconnu', () => {
-    expect(withWorld(null, ['Démon'], 'real')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Renard', 'Animal'], 'real')).toEqual(['Monde réel'])
+    expect(withWorld(null, ['Demon'], 'real')).toEqual(['Unknown'])
+    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Unknown'])
+    expect(withWorld(null, ['Fox', 'Animal'], 'real')).toEqual(['Monde réel'])
   })
 
   it('UniversPartages_AjoutesATous', () => {
-    expect(withWorld(['Earth'], ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], 'other', ['Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Humain'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
-    expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Humain'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
+    expect(withWorld(['Earth'], ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Unknown', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
+    expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Human'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
   })
 })
 

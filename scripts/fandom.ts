@@ -104,6 +104,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('DAN DA DAN')]: ['dandadan'],
   [normalize('Solo Leveling')]: ['solo-leveling', 'sololeveling'],
   [normalize('Black Lagoon')]: ['blacklagoon'],
+  [normalize('The World God Only Knows')]: ['kaminomi'],
 }
 
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
@@ -111,7 +112,7 @@ const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
   // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
   occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
-    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'previous occupation', 'former occupation', 'f. occupation'],
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion','previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
@@ -437,6 +438,15 @@ export function unhide(text: string): string {
 const field = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name.replace(/_/g, ' ')]).find(value => value !== undefined) ?? null
 
+// Le champ et ses suites numérotées (« Job », « Job 2 » sur le wiki de The World God Only Knows)
+function numberedField(fields: Record<string, string>, names: readonly string[]): string | null {
+  const name = names.map(name => name.replace(/_/g, ' ')).find(name => fields[name] !== undefined)
+  if (name === undefined)
+    return null
+  const values = [fields[name]!, ...Array.from({ length: 9 }, (_, index) => fields[`${name} ${index + 2}`]).filter(value => value !== undefined)]
+  return values.filter(value => value.trim()).join(', ') || fields[name]!
+}
+
 // « Unknown » ne remplit rien : c'est la marque de fandomUnknowns, une autre source peut encore donner la valeur
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
@@ -444,7 +454,7 @@ const rawList = (value: string | null) => value ? [value] : null
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
-    occupation: splitOccupations(known(field(fields, FIELDS.occupation)) ?? ''),
+    occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
     species: rawList(known(field(fields, FIELDS.species))),
@@ -479,13 +489,21 @@ export function affiliationOccupations(value: string | null): string[] | null {
   return titleOccupations(roles.join(', ') || null)
 }
 
-// L'école de l'infobox, quand elle n'a pas d'occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
+// L'école de l'infobox, même avec une occupation (Ryota Suzui : « school = Hyakkaou Private Academy ») : élève.
 // Pas une ancienne école (« (formerly) », « graduated »). Ni « class » (« 1-D », mais aussi « Warrior », « S-Class »), ni
 // « grade » (« A+ », « Grade 1 »), ni « year » : trop d'autres sens.
 const SCHOOL_FIELDS = ['school', 'schools', 'école']
-const FORMER_SCHOOL = /\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
+// Ceux qui travaillent à l'école : son champ ne fait pas d'eux des élèves
+const SCHOOL_STAFF = new Set(['Teacher', 'Principal', 'Instructor', 'Doctor', 'Servant', 'Guardian', 'Employee'])
+const SCHOOL_NAME = /school|academy|universit|college|institut|gakuen|gakuin|lyc[ée]e/i
+const FORMER_SCHOOL =/\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
 export function schoolOccupations(value: string | null): string[] | null {
-  return value && !FORMER_SCHOOL.test(value) ? titleOccupations('Student') : null
+  // Chaque école à part : « Far East Devil High School (Graduate), Maijima Private High School » (Elucia) va encore à la 2e
+  // (seulement ce qui ressemble à une école : pas « Criminal » dans « Umesato Junior High School (expelled), Criminal », Araya)
+  const parts = (value ?? '').split(/\s*(?:,|;|\n|<br\s*\/?>)\s*/i).filter(part => part.trim())
+  const schools = parts.filter(part => SCHOOL_NAME.test(part))
+  const current = (schools.length > 0 ? schools : parts).some(school => !FORMER_SCHOOL.test(school))
+  return current ? titleOccupations('Student') : null
 }
 
 // Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,
@@ -533,6 +551,15 @@ const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?
 const END_OF_SPECIES = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|of|and|but|named|known|living|born)\b.*$/i
 // Une espèce de Fate seulement : ailleurs un domestique (les servantes du Domaine des Papillons de Demon Slayer)
 const NOT_SPECIES_IN_INTRO = new Set(['servant'])
+// Les wikis qui ont un modèle d'infobox par peuple, sans champ espèce : le nom du modèle la donne (en anglais, traduite
+// ensuite comme les autres). The World God Only Knows : {{Hell character}} pour les démons de l'Enfer (Elucia, Dokurou).
+const TEMPLATE_SPECIES: [RegExp, string][] = [
+  [/\{\{\s*Hell[ _]character\s*[|\n}]/i, 'Demon'],
+]
+export function templateSpecies(wikitext: string): string[] {
+  return TEMPLATE_SPECIES.filter(([pattern]) => pattern.test(wikitext)).map(([, species]) => species)
+}
+
 export function introSpecies(wikitext: string): string[] {
   const intro = (fandomInfobox(wikitext)?.intro ?? introText(wikitext)).replace(/["“”]/g, '')
   // « ., » : la fin d'un paragraphe, recollé au suivant par cleanValue
@@ -616,8 +643,11 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
     // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
     const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    // Et ses autres noms AniList (« Kansatsu-sha » → « The Beholder », « Upa » → « Oopa ») : des surnoms qu'on ne garde
+    // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
+    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
     if (lost.length > 0)
-      pages = { ...pages, ...await fetchPages(wiki, [...searched.values()].flat()) }
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs
     // sont dans la page du modèle
     const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])
@@ -636,7 +666,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // (sameName), et certains wikis n'en ont aucune (LaLa-Ru, wiki de Now and Then, Here and There).
     const found = characters.flatMap(({ target, titles }) => {
       const candidates = [...titles, ...searched.get(target) ?? []]
-      const title = candidates.find(title => pages[title] && infoboxOf(title))
+      const title = [...candidates, ...others.get(target) ?? []].find(title => pages[title] && infoboxOf(title))
       if (title)
         return [{ target, title, values: fandomValues(infoboxOf(title)!), unknowns: fandomUnknowns(infoboxOf(title)!) }]
       const bare = candidates.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
@@ -658,17 +688,21 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       if (hair)
         own.hair = hair.colors
       // Sans occupation dans l'infobox : le rôle de l'affiliation (« Student (formerly) ») et ce que dit l'introduction,
-      // les deux ensemble (Shuichi Kagaya : élève et tueur), et élève s'il a une école
+      // les deux ensemble (Shuichi Kagaya : élève et tueur). Et élève s'il a une école, même avec un métier (Kanon, The
+      // World God Only Knows : idole et lycéenne), sauf s'il y travaille (professeur, directeur…)
       const jobless = isEmpty(values.occupation)
       const infobox = infoboxOf(title) ?? {}
       const affiliation = jobless ? affiliationOccupations(field(infobox, AFFILIATION_FIELDS)) : null
       const intro = jobless ? introOccupations(pages[title]!) : null
-      const school = jobless ? schoolOccupations(field(infobox, SCHOOL_FIELDS)) : null
-      const jobs = [...new Set([...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
-      if (jobs.length > 0)
-        own.occupation = jobs
-      // Sans espèce dans l'infobox : celle que dit l'introduction (« Aqua is a goddess »)
-      const species = isEmpty(values.species) ? introSpecies(pages[title]!) : []
+      const jobs = (Array.isArray(values.occupation) ? values.occupation : []).map(String)
+      const staff = jobs.some(job => SCHOOL_STAFF.has(translateOccupation(job) ?? ''))
+      const school = staff ? null : schoolOccupations(field(infobox, SCHOOL_FIELDS))
+      const occupation = [...new Set([...jobs, ...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
+      if (occupation.length > jobs.length)
+        own.occupation = occupation
+      // Sans espèce dans l'infobox : celle que dit son modèle ({{Hell character}}), sinon l'introduction (« Aqua is a goddess »)
+      const template = templateSpecies(pages[title]!)
+      const species = !isEmpty(values.species) ? [] : template.length > 0 ? template : introSpecies(pages[title]!)
       if (species.length > 0)
         own.species = species
       const added = addedValues(target.entry.attributes, own)

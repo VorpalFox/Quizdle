@@ -49,12 +49,12 @@ Ne pas modifier `data/<sujet>.json` : les scripts le réécrivent. Les correctio
 ```json
 {
  "exclude": ["307811"],
- "edit": { "27": { "_nom": "Killua Zoldyck", "gender": "Homme", "hair": { "plus": ["Blancs"], "moins": ["Bruns"] } } },
- "add": [{ "id": "manuel-1", "name": "Nom", "attributes": { "gender": "Homme", "...": "..." } }]
+ "edit": { "27": { "_nom": "Killua Zoldyck", "gender": "Male", "hair": { "plus": ["White"], "moins": ["Brown"] } } },
+ "add": [{ "id": "manuel-1", "name": "Nom", "attributes": { "gender": "Male", "...": "..." } }]
 }
 ```
 
-- `exclude` : retire un personnage. `edit` : corrige des champs ou des attributs (les clés en `_` sont des notes). Un attribut à plusieurs valeurs prend les valeurs à ajouter (`plus`) et à retirer (`moins`), sans toucher aux autres : les tags ajoutés par les scripts (Monde réel, l'occupation tirée de l'arme...) restent, et une vraie valeur ajoutée remplace « Inconnu » (ou « Aucune », « N/A », « Au choix »). Les autres attributs sont remplacés. Les corrections passent avant les enrichissements des scripts, qui en profitent, puis encore une fois à la fin, pour avoir le dernier mot. `add` : un personnage absent de la source.
+- `exclude` : retire un personnage. `edit` : corrige des champs ou des attributs (les clés en `_` sont des notes). Un attribut à plusieurs valeurs prend les valeurs à ajouter (`plus`) et à retirer (`moins`), sans toucher aux autres : les tags ajoutés par les scripts (Monde réel, l'occupation tirée de l'arme...) restent, et une vraie valeur ajoutée remplace « Inconnu » (ou « Aucune », « N/A », « Player's choice »). Les autres attributs sont remplacés. Les corrections passent avant les enrichissements des scripts, qui en profitent, puis encore une fois à la fin, pour avoir le dernier mot. `add` : un personnage absent de la source.
 - Pixeldle seulement : `wikis` (réglages de la recherche de personnages dans le wiki d'une franchise) et `defaults` (valeurs des attributs vides d'une franchise, avant `edit`).
 
 Le détail est dans [src/subjects/manual.ts](../src/subjects/manual.ts).

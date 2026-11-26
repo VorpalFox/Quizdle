@@ -32,7 +32,7 @@ describe('disambiguationLinks', () => {
 describe('textHair, chauve', () => {
   it('ChauveDansAppearance_ChauveEtAnciensCheveux', () => {
     const page = "Intro.\n==Appearance==\nSaitama is a bald, average-height man. His hairless head replaced his former short black hair.\n==Personality==\nCalm."
-    expect(textHair(page)?.colors).toEqual(['Chauve', 'Noirs'])
+    expect(textHair(page)?.colors).toEqual(['Bald', 'Black'])
   })
 
   it('CalvitieQuiCommence_PasChauve', () => {
@@ -42,7 +42,7 @@ describe('textHair, chauve', () => {
 
   it('ChauveAvant_PasChauve', () => {
     const page = "==Appearance==\nHe has short brown hair. Before his death, Hinata had a shaved head shown in episode 4.\n"
-    expect(textHair(page)?.colors).toEqual(['Bruns'])
+    expect(textHair(page)?.colors).toEqual(['Brown'])
   })
 
   it('AutreVersionDuPerso_PasChauve', () => {
@@ -52,11 +52,11 @@ describe('textHair, chauve', () => {
 
   it('AgeMur_ResteChauve', () => {
     const page = "==Appearance==\nSam is a middle-aged man with a shaved head.\n"
-    expect(textHair(page)?.colors).toEqual(['Chauve'])
+    expect(textHair(page)?.colors).toEqual(['Bald'])
   })
 
   it('AnciensCheveux_GardesApresLesActuels', () => {
     const page = "==Appearance==\nHe used to have long red hair. Now he has short black hair.\n"
-    expect(textHair(page)?.colors).toEqual(['Noirs', 'Rouges'])
+    expect(textHair(page)?.colors).toEqual(['Black', 'Red'])
   })
 })

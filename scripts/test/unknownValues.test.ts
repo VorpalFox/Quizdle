@@ -64,12 +64,12 @@ describe('addUnknowns', () => {
 describe('fillUnknowns', () => {
   it('CaseVide_Inconnu', () => {
     const [filled] = fillUnknowns([entry({ age: null, occupation: null, species: null, unknown: ['age', 'occupation', 'species'] })], weebdleAttributes)
-    expect(filled!.attributes).toEqual({ age: 'Inconnu', occupation: ['Inconnu'], species: ['Inconnu'] })
+    expect(filled!.attributes).toEqual({ age: 'Unknown', occupation: ['Unknown'], species: ['Unknown'] })
   })
 
   it('UneAutreSourceADonne_ValeurGardee', () => {
-    const [filled] = fillUnknowns([entry({ age: 17, species: ['Humain'], unknown: ['age', 'species'] })], weebdleAttributes)
-    expect(filled!.attributes).toEqual({ age: 17, species: ['Humain'] })
+    const [filled] = fillUnknowns([entry({ age: 17, species: ['Human'], unknown: ['age', 'species'] })], weebdleAttributes)
+    expect(filled!.attributes).toEqual({ age: 17, species: ['Human'] })
   })
 
   it('IndicePasDuQuiz_Ignore', () => {

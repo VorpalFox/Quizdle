@@ -12,75 +12,75 @@ import { expandSpecies, translateSpecies } from './pixeldleTranslate.js'
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
   // École
-  'student': 'Élève', 'high school student': 'Lycéen', 'first-year high school student': 'Lycéen', 'middle school student': 'Collégien',
-  'university student': 'Étudiant', 'college student': 'Étudiant', 'seimei university junior': 'Étudiant',
-  'principal': 'Directeur d\'école', 'delving instructor': 'Instructeur', 'student council president': 'Président du conseil des élèves',
+  'student': 'Pupil', 'high school student': 'High schooler', 'first-year high school student': 'High schooler', 'middle school student': 'Middle schooler',
+  'university student': 'Student', 'college student': 'Student', 'seimei university junior': 'Student',
+  'principal': 'Principal', 'delving instructor': 'Instructor', 'student council president': 'Student council president',
   // Armée, police
-  'general': 'Général', 'briggs general': 'Général', 'lieutenant': 'Lieutenant', 'sergeant': 'Sergent', 'officer': 'Officier',
-  'military officer': 'Officier', 'soldier': 'Soldat', 'scout': 'Éclaireur', 'guard': 'Garde', 'bodyguard': 'Garde du corps',
-  'survey corps': 'Bataillon d\'exploration', '104th training corps': 'Recrue', '104th trainees squad': 'Recrue',
-  'police officer': 'Policier', 'policeman': 'Policier', 'spy': 'Espion', 'informant': 'Informateur',
-  'mercenary': 'Mercenaire', 'assassin': 'Assassin',
+  'general': 'General', 'briggs general': 'General', 'lieutenant': 'Lieutenant', 'sergeant': 'Sergeant', 'officer': 'Officer',
+  'military officer': 'Officer', 'soldier': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
+  'survey corps': 'Survey Corps', '104th training corps': 'Recruit', '104th trainees squad': 'Recruit',
+  'police officer': 'Police officer', 'policeman': 'Police officer', 'spy': 'Spy', 'informant': 'Informant',
+  'mercenary': 'Mercenary', 'assassin': 'Assassin',
   // Fantasy
-  'knight': 'Chevalier', 'mage': 'Mage', 'magi': 'Mage', 'magician': 'Magicien', 'wizard': 'Magicien', 'sorcerer': 'Sorcier',
-  'sorceress': 'Sorcière', 'witch': 'Sorcière', 'jujutsu sorcerer': 'Exorciste', 'exorcist': 'Exorciste', 'curse user': 'Utilisateur de fléaux',
-  'adventurer': 'Aventurier', 'delver': 'Explorateur', 'hunter': 'Chasseur', 'fang hunter': 'Chasseur', 'vampire hunter': 'Chasseur de vampires',
-  'demon slayer': 'Pourfendeur de démons', 'warrior': 'Guerrier', 'warrior captain': 'Guerrier', 'swordsman': 'Épéiste', 'swordswoman': 'Épéiste',
-  'samurai': 'Samouraï', 'ninja': 'Ninja', 'archer': 'Archer', 'healer': 'Soigneur', 'cleric': 'Clerc', 'priest': 'Prêtre', 'priestess': 'Prêtresse',
-  'nun': 'Religieuse', 'monk': 'Moine', 'shrine maiden': 'Miko', 'oracle': 'Oracle', 'fortune teller': 'Voyant',
-  'alchemist': 'Alchimiste', 'state alchemist': 'Alchimiste', 'herbalist': 'Herboriste', 'potion maker': 'Apothicaire',
-  'hero': 'Héros', 'pro hero': 'Héros professionnel', 'villain': 'Méchant',
-  'pirate': 'Pirate', 'space pirate': 'Pirate de l\'espace', 'thief': 'Voleur', 'criminal': 'Criminel', 'tueur en série': 'Tueur en série',
-  'god': 'Dieu', 'goddess': 'Déesse', 'god of war': 'Dieu', 'delivery god': 'Dieu', 'god of calamity': 'Dieu',
+  'knight': 'Knight', 'mage': 'Mage', 'magi': 'Mage', 'magician': 'Mage', 'wizard': 'Mage', 'sorcerer': 'Sorcerer',
+  'sorceress': 'Witch', 'witch': 'Witch', 'jujutsu sorcerer': 'Exorcist', 'exorcist': 'Exorcist', 'curse user': 'Curse user',
+  'adventurer': 'Adventurer', 'delver': 'Explorer', 'hunter': 'Hunter', 'fang hunter': 'Hunter', 'vampire hunter': 'Vampire hunter',
+  'demon slayer': 'Demon Slayer', 'warrior': 'Warrior', 'warrior captain': 'Warrior', 'swordsman': 'Swordsman', 'swordswoman': 'Swordsman',
+  'samurai': 'Samurai', 'ninja': 'Ninja', 'archer': 'Archer', 'healer': 'Healer', 'cleric': 'Cleric', 'priest': 'Priest', 'priestess': 'Priestess',
+  'nun': 'Nun', 'monk': 'Monk', 'shrine maiden': 'Miko', 'miko': 'Miko', 'oracle': 'Oracle', 'fortune teller': 'Seer',
+  'alchemist': 'Alchemist', 'state alchemist': 'Alchemist', 'herbalist': 'Herbalist', 'potion maker': 'Apothecary',
+  'hero': 'Hero', 'pro hero': 'Pro hero', 'villain': 'Villain',
+  'pirate': 'Pirate', 'space pirate': 'Space pirate', 'thief': 'Thief', 'criminal': 'Criminal', 'tueur en série': 'Serial killer',
+  'god': 'God', 'goddess': 'Goddess', 'god of war': 'God', 'delivery god': 'God', 'god of calamity': 'God',
   // Noblesse
-  'king': 'Roi', 'queen': 'Reine', 'prince': 'Prince', 'princess': 'Princesse', 'emperor': 'Empereur', 'empress': 'Impératrice',
-  'noble': 'Noble', 'lord': 'Seigneur', 'lady': 'Dame', 'earl of phantomhive': 'Comte', 'president': 'Président', 'diplomat': 'Diplomate',
+  'king': 'King', 'queen': 'Queen', 'prince': 'Prince', 'princess': 'Princess', 'emperor': 'Emperor', 'empress': 'Empress',
+  'noble': 'Noble', 'lord': 'Lord', 'lady': 'Lady', 'earl of phantomhive': 'Count', 'president': 'President', 'diplomat': 'Diplomat',
   // Métiers
-  'doctor': 'Médecin', 'psychiatrist': 'Psychiatre', 'nurse': 'Infirmier', 'veterinarian': 'Vétérinaire',
-  'scientist': 'Scientifique', 'researcher': 'Chercheur', 'scholar': 'Chercheur', 'archaeologist': 'Archéologue', 'oceanographer': 'Océanographe',
-  'marine explorer': 'Explorateur', 'inventor': 'Inventeur', 'engineer': 'Ingénieur', 'astronomer': 'Astronome', 'astronaut': 'Astronaute',
-  'mechanic': 'Mécanicien', 'mechanics': 'Mécanicien', 'automail mechanic': 'Mécanicien', 'automail technician': 'Mécanicien',
-  'lawyer': 'Avocat', 'editorial staff': 'Éditeur', 'communication specialist': 'Spécialiste des communications',
-  'writer': 'Écrivain', 'novelist': 'Écrivain', 'manga artist': 'Mangaka', 'mangaka': 'Mangaka', 'artist': 'Artiste',
-  'idol': 'Idole', 'singer': 'Chanteur', 'musician': 'Musicien', 'rapper': 'Rappeur', 'actor': 'Acteur', 'actress': 'Actrice',
-  'model': 'Mannequin', 'grand couturier': 'Couturier', 'dyeing craftsman': 'Artisan',
-  'chef': 'Cuisinier', 'cook': 'Cuisinier', 'maid': 'Servante', 'butler': 'Majordome', 'servant': 'Serviteur',
-  'merchant': 'Marchand', 'merchant apprentice': 'Marchand', 'tobacco store clerk': 'Vendeur', 'waitress': 'Serveuse', 'waiter': 'Serveur',
-  'office worker': 'Employé de bureau', 'salaryman': 'Employé de bureau', 'city hall clerk': 'Fonctionnaire', 'clerk': 'Employé',
-  'real estate agent': 'Agent immobilier', 'truck driver': 'Routier', 'housewife': 'Femme au foyer', 'guide': 'Guide',
-  'part-time worker': 'Petits boulots', 'part-timer': 'Petits boulots', 'villager': 'Villageois', 'farmer': 'Fermier',
-  'blacksmith': 'Forgeron', 'fisherman': 'Pêcheur', 'sailor': 'Marin', 'navigator': 'Navigateur', 'charcoal burner': 'Charbonnier',
-  'hikikomori': 'Chômeur',
+  'doctor': 'Doctor', 'psychiatrist': 'Psychiatrist', 'nurse': 'Nurse', 'veterinarian': 'Veterinarian',
+  'scientist': 'Scientist', 'researcher': 'Researcher', 'scholar': 'Researcher', 'archaeologist': 'Archaeologist', 'oceanographer': 'Oceanographer',
+  'marine explorer': 'Explorer', 'inventor': 'Inventor', 'engineer': 'Engineer', 'astronomer': 'Astronomer', 'astronaut': 'Astronaut',
+  'mechanic': 'Mechanic', 'mechanics': 'Mechanic', 'automail mechanic': 'Mechanic', 'automail technician': 'Mechanic',
+  'lawyer': 'Lawyer', 'editorial staff': 'Editor', 'communication specialist': 'Communications specialist',
+  'writer': 'Writer', 'novelist': 'Writer', 'manga artist': 'Mangaka', 'mangaka': 'Mangaka', 'artist': 'Artist',
+  'idol': 'Idol', 'singer': 'Singer', 'musician': 'Musician', 'rapper': 'Rapper', 'actor': 'Actor', 'actress': 'Actress',
+  'model': 'Model', 'grand couturier': 'Tailor', 'dyeing craftsman': 'Artisan',
+  'chef': 'Cook', 'cook': 'Cook', 'maid': 'Maid', 'butler': 'Butler', 'servant': 'Manservant',
+  'merchant': 'Trader', 'merchant apprentice': 'Trader', 'tobacco store clerk': 'Salesperson', 'waitress': 'Waitress', 'waiter': 'Waiter',
+  'office worker': 'Office worker', 'salaryman': 'Office worker', 'city hall clerk': 'Civil servant', 'clerk': 'Employee',
+  'real estate agent': 'Real estate agent', 'truck driver': 'Trucker', 'housewife': 'Homemaker', 'guide': 'Guide',
+  'part-time worker': 'Odd jobs', 'part-timer': 'Odd jobs', 'villager': 'Villager', 'farmer': 'Farmer',
+  'blacksmith': 'Blacksmith', 'fisherman': 'Fisher', 'sailor': 'Sailor', 'navigator': 'Navigator', 'charcoal burner': 'Charcoal seller',
+  'hikikomori': 'Unemployed',
   // Sport
-  'middle blocker': 'Volleyeur', 'outside hitter': 'Volleyeur', 'setter': 'Volleyeur', 'libero': 'Volleyeur', 'athlete': 'Athlète',
+  'middle blocker': 'Volleyball player', 'outside hitter': 'Volleyball player', 'setter': 'Volleyball player', 'libero': 'Volleyball player', 'athlete': 'Athlete',
   // Wikidata : déjà en français, ramené à notre vocabulaire
-  'idole japonaise': 'Idole', 'femme de ménage': 'Servante', 'dame de compagnie': 'Servante', 'domestique': 'Serviteur',
-  'devil hunter': 'Chasseur de démons', 'chasseur de démon': 'Chasseur de démons', 'chasseur de monstre': 'Chasseur',
-  'tueur': 'Tueur', 'meurtrier': 'Tueur', 'thug': 'Voyou', 'as de la gâchette': 'Tireur', 'terroriste': 'Terroriste',
-  'piqueuse': 'Volleyeur', 'seiyū': 'Doubleur', 'travail à temps partiel': 'Petits boulots', 'travailleur': 'Employé',
-  'livreur de pizza': 'Livreur', 'coursier': 'Livreur', 'écolier': 'Élève', 'enseignant': 'Professeur', 'floral designer': 'Fleuriste',
-  'caissier': 'Vendeur', 'cosplayer-server': 'Serveur', 'neurologue': 'Médecin', 'pratiquant d\'arts martiaux': 'Artiste martial',
-  'personnalité politique': 'Politicien', 'personnalité du monde des affaires': 'Homme d\'affaires', 'conseiller': 'Conseiller',
-  'monarque': 'Monarque', 'consort': 'Noble', 'membre de la famille royale': 'Noble', 'courtisane': 'Courtisane',
-  'révolutionnaire': 'Révolutionnaire', 'justicier': 'Justicier', 'philanthrope': 'Philanthrope', 'youtubeur': 'Youtubeur',
-  'voyageur dans le temps': 'Voyageur temporel', 'tueur de masse': 'Tueur', 'tueur à gages': 'Assassin', 'mob enforcer': 'Voyou',
-  'travailleur autonome': 'Indépendant', 'agriculteur': 'Fermier', 'modèle photo': 'Mannequin', 'clairvoyant': 'Voyant',
-  'chasseur de fantômes': 'Exorciste', 'généticien': 'Scientifique', 'cosplayeur': 'Cosplayeur', 'boulanger': 'Boulanger',
-  'chasseur de primes': 'Chasseur de primes', 'lutteur': 'Lutteur', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotiseur',
-  'militaire': 'Soldat', 'officier général': 'Général', 'procureur': 'Avocat', 'gourou': 'Religieux', 'dirigeant': 'Leader',
-  'personnalité du monde de la mode': 'Mannequin', 'orthésiste': 'Mécanicien', 'chauffeur de maître': 'Chauffeur',
-  'bouteiller': 'Serviteur', 'tortionnaire': 'Tortionnaire',
+  'idole japonaise': 'Idol', 'femme de ménage': 'Maid', 'dame de compagnie': 'Maid', 'domestique': 'Manservant',
+  'devil hunter': 'Demon hunter', 'chasseur de démon': 'Demon hunter', 'chasseur de monstre': 'Hunter',
+  'tueur': 'Killer', 'meurtrier': 'Killer', 'thug': 'Thug', 'as de la gâchette': 'Marksman', 'terroriste': 'Terrorist',
+  'piqueuse': 'Volleyball player', 'seiyū': 'Voice actor', 'travail à temps partiel': 'Odd jobs', 'travailleur': 'Employee',
+  'livreur de pizza': 'Courier', 'coursier': 'Courier', 'écolier': 'Pupil', 'enseignant': 'Teacher', 'floral designer': 'Florist',
+  'caissier': 'Salesperson', 'cosplayer-server': 'Waiter', 'neurologue': 'Doctor', 'pratiquant d\'arts martiaux': 'Martial artist',
+  'personnalité politique': 'Politician', 'personnalité du monde des affaires': 'Businessperson', 'conseiller': 'Advisor',
+  'monarque': 'Monarch', 'consort': 'Noble', 'membre de la famille royale': 'Noble', 'courtisane': 'Courtesan',
+  'révolutionnaire': 'Revolutionary', 'justicier': 'Vigilante', 'philanthrope': 'Philanthropist', 'youtubeur': 'YouTuber',
+  'voyageur dans le temps': 'Time traveler', 'tueur de masse': 'Killer', 'tueur à gages': 'Assassin', 'mob enforcer': 'Thug',
+  'travailleur autonome': 'Freelancer', 'agriculteur': 'Farmer', 'modèle photo': 'Model', 'clairvoyant': 'Seer',
+  'chasseur de fantômes': 'Exorcist', 'généticien': 'Scientist', 'cosplayeur': 'Cosplayer', 'boulanger': 'Baker',
+  'chasseur de primes': 'Bounty hunter', 'lutteur': 'Wrestler', 'hacker': 'Hacker', 'hypnotiseur': 'Hypnotist',
+  'militaire': 'Soldier', 'officier général': 'General', 'procureur': 'Lawyer', 'gourou': 'Cleric', 'dirigeant': 'Leader',
+  'personnalité du monde de la mode': 'Model', 'orthésiste': 'Mechanic', 'chauffeur de maître': 'Driver',
+  'bouteiller': 'Manservant', 'tortionnaire': 'Torturer',
   // Repérées en cumulant les sources (les valeurs intraduisibles d'une source suivante sont laissées de côté)
-  'courtesan': 'Courtisane', 'terrorist': 'Terroriste', 'fashion model': 'Mannequin', 'gravure model': 'Mannequin',
-  'apothecary': 'Apothicaire', 'dyer': 'Artisan', 'archeoligist': 'Archéologue', 'digger': 'Ouvrier', 'hermit': 'Ermite',
-  'martial artist': 'Artiste martial', 'tobacconist': 'Vendeur', 'barista': 'Serveur', 'strategist': 'Stratège',
-  'serving woman': 'Servante', 'sales position': 'Vendeur', 'rallyist': 'Pilote', 'driver': 'Chauffeur', 'psychotherapist': 'Psychiatre',
+  'courtesan': 'Courtesan', 'terrorist': 'Terrorist', 'fashion model': 'Model', 'gravure model': 'Model',
+  'apothecary': 'Apothecary', 'dyer': 'Artisan', 'archeoligist': 'Archaeologist', 'digger': 'Worker', 'hermit': 'Hermit',
+  'martial artist': 'Martial artist', 'tobacconist': 'Salesperson', 'barista': 'Waiter', 'strategist': 'Strategist',
+  'serving woman': 'Maid', 'sales position': 'Salesperson', 'rallyist': 'Pilot', 'driver': 'Driver', 'psychotherapist': 'Psychiatrist',
   // Death Parade : les arbitres (Decim, Ginti, Quin…), barmans à leurs heures ; le barman sert, comme le serveur
-  'arbiter': 'Arbitre', 'bartender': 'Barman',
+  'arbiter': 'Arbiter', 'bartender': 'Bartender',
   // Pas des occupations
-  'test subject': null, 'sujet psi': null,
+  'test subject': null, 'normal person': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
-  'unknown': 'Inconnu', 'none': 'Aucune',
+  'unknown': 'Unknown', 'none': 'None',
 }
 
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
@@ -88,103 +88,187 @@ const OCCUPATIONS: Record<string, string | null> = {
 const RULES: [RegExp, string | null][] = [
   // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
   [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
-  [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker|underboss/, 'Mafieux'],
+  [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker|underboss/, 'Mobster'],
   // L'élève d'une école, quelle qu'elle soit (« Student of Midgar Academy for Dark Knights » n'est pas un chevalier),
   // le domestique en chef (« Head servant of the Kirishiki family »), le garde du corps d'un prince
-  [/^students? (?:of|at)\b/, 'Élève'],
-  [/^head (?:servant|maid|butler)\b/, 'Serviteur'],
-  [/\broyal (?:body)?guard/, 'Garde'],
+  [/^students? (?:of|at)\b/, 'Pupil'],
+  [/^head (?:servant|maid|butler)\b/, 'Manservant'],
+  [/\broyal (?:body)?guard/, 'Guard'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
-  [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
-  [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
-  [/serial killer|mass murderer/, 'Tueur en série'],
+  [/hashira|tsuguko|demon slayer/, 'Demon Slayer'],
+  // Et les chasseurs d'esprits de The World God Only Knows (« Runaway Spirit Squad Agent », « Buddy - Spirit Capturing »)
+  [/(?:devil|demon) hunter|chasseur de d[ée]mon|runaway spirit|spirit captur/, 'Demon hunter'],
+  // « Idol » partout (« Roller-coaster Idol », Kanon) : une idole, pas seulement une célébrité
+  [/\bidols?\b/, 'Idol'],
+  // Les bibliothécaires, et le comité de la bibliothèque des lycées (Shiori, The World God Only Knows)
+  [/librarian|library committee/, 'Librarian'],
+  // Le club d'art du lycée (« Loop Art Club Member », Sora, The World God Only Knows) : une artiste
+  [/\bart club\b/, 'Artist'],
+  // Les démons de Chainsaw Man (« Wild Devil », « Contract Devil ») : ce qu'ils sont en guise de rôle (validé avec FX)
+  [/\bdevils?$/, 'Demon'],
+  // The World God Only Knows : « Track and Field Club Girl » (Ayumi), « Café Owner » (Mari, un Barman, donc aussi Serveur),
+  // « Chauffeur of Mio Aoyama » (Morita), « Private Household Demon » (Elucia, qui tient la maison ; pas « household »
+  // seul, souvent la maison noble qu'on sert ou dirige)
+  [/\bathletics\b/, 'Athlete'],
+  [/\b(?:caf[ée]|bar) owner\b/, 'Bartender'],
+  [/\bchauffeur\b/, 'Driver'],
+  [/^private household demon$/, 'Maid'],
+  [/serial killer|mass murderer/, 'Serial killer'],
   [/magical ?☆?girl/, 'Magical girl'],
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
   [/\b(?:leader|commander|master|chief|chieftain|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
-  [/\bcaptain\b/, 'Capitaine'],
-  [/\bguardian\b/, 'Gardien'],
+  [/\bcaptain\b/, 'Captain'],
+  [/\bguardian\b/, 'Guardian'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],
   // « Pilote d'EVA », « Stamen » et « Pistil » (les pilotes de DARLING in the FRANXX)
-  [/\bpilot|stamen|pistil/, 'Pilote'],
-  [/surgeon|chirurgien/, 'Chirurgien'],
-  [/teacher|professor|housemaster|headmaster|instructor|lecturer|mentor|tutor|\bcoach|trainer|principal/, 'Professeur'],
-  [/detective|investigator|inspector/, 'Détective'],
-  [/\bspy\b|espionage|counterintelligence|intelligence/, 'Espion'],
-  [/\bagent\b/, 'Agent secret'],
-  [/magazine|journalist|reporter|announcer/, 'Journaliste'],
-  [/\bmanager\b/, 'Gérant'],
+  [/\bpilot|stamen|pistil/, 'Pilot'],
+  [/surgeon|chirurgien/, 'Surgeon'],
+  [/teacher|professor|housemaster|headmaster|instructor|lecturer|mentor|caretaker|tutor|\bcoach|trainer|principal/, 'Teacher'],
+  [/detective|investigator|inspector/, 'Detective'],
+  [/\bspy\b|espionage|counterintelligence|intelligence/, 'Spy'],
+  [/\bagent\b/, 'Secret agent'],
+  [/magazine|journalist|reporter|announcer/, 'Journalist'],
+  // Le manager de quelqu'un (« Kanon's Manager », « Talent Manager », Ijichi l'« Assistant Manager » des exorcistes de
+  // JUJUTSU KAISEN) l'assiste ; celui d'un lieu (« Store Manager ») le dirige
+  [/'s manager\b|\b(?:assistant|talent|personal) manager\b/, 'Assistant'],
+  [/\bmanager\b/, 'Manager'],
   // Le propriétaire d'un commerce seulement : pas « owner of the Giftia » (le maître d'un robot)
-  [/\b(?:shop|shopkeeper|store|mart|restaurant|café|cafe|inn|bar)\b|^owner$/, 'Commerçant'],
+  [/\b(?:shop|shopkeeper|store|mart|restaurant|café|cafe|inn|bar)\b|^owner$/, 'Merchant'],
   // Les postes de Tower of God
-  [/bearer|wave controller/, 'Combattant'],
-  [/super-?h[ée]ro/, 'Super-héros'],
+  [/bearer|wave controller/, 'Fighter'],
+  [/super-?h[ée]ro/, 'Superhero'],
   // Pas les Knightmare Frames de Code Geass
-  [/\bknight(?!mare)|crusader|paladin/, 'Chevalier'],
+  [/\bknight(?!mare)|crusader|paladin/, 'Knight'],
   // Pas « one of the Devil King's Generals » : au service du roi
-  [/\b(?:king|emperor|monarch|ruler|warlord|dictator|tyrant)\b(?!'s)/, 'Roi'],
-  [/\b(?:queen|empress)\b(?!'s)/, 'Reine'],
-  [/princess|heiress/, 'Princesse'],
+  [/\b(?:king|emperor|monarch|ruler|warlord|dictator|tyrant)\b(?!'s)/, 'King'],
+  [/\b(?:queen|empress)\b(?!'s)/, 'Queen'],
+  [/princess|heiress/, 'Princess'],
   [/\bprince\b|\bheir\b/, 'Prince'],
-  [/royal guard/, 'Garde'],
+  [/royal guard/, 'Guard'],
   [/\b(?:duke|duchess|lord|lady|noble|royal|royalty|earl|baron|aristocrat)\b/, 'Noble'],
-  [/sniper|marksman|gunman|shooter|gâchette/, 'Tireur'],
+  [/sniper|marksman|gunman|shooter|gâchette/, 'Marksman'],
   // « Magic swordman » aussi, sans s (Amyu)
-  [/swords?(?:wo)?m[ae]n/, 'Épéiste'],
-  [/exorcist/, 'Exorciste'],
-  [/\bbull(?:y|ies)\b|delinquent/, 'Voyou'],
-  [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Combattant'],
-  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officier'],
-  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Garde'],
-  [/butler/, 'Majordome'],
+  [/swords?(?:wo)?m[ae]n/, 'Swordsman'],
+  [/exorcist/, 'Exorcist'],
+  [/\bbull(?:y|ies)\b|delinquent/, 'Thug'],
+  [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Fighter'],
+  [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officer'],
+  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Guard'],
+  [/butler/, 'Butler'],
   // « Tamer », « Monster Tamer » (Ro Nny)
-  [/\btamer\b/, 'Dresseur'],
+  [/\btamer\b/, 'Trainer'],
   // « the nanny of all the orphans of Zari Bars » (Sis)
-  [/\bnann(?:y|ies)\b|babysitter/, 'Nourrice'],
-  [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Servante'],
-  [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Serviteur'],
-  [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musicien'],
+  [/\bnann(?:y|ies)\b|babysitter/, 'Nanny'],
+  [/\bmaid|handmaiden|lady-in-waiting|housekeeper/, 'Maid'],
+  [/\b(?:servant|steward|retainer|attendant|valet)\b/, 'Manservant'],
+  [/musician|vocalist|guitarist|drummer|bassist|pianist|composer|violinist|\bband\b|beatbox/, 'Musician'],
   // « TV personality », pas le caractère (« gained a different personality »)
-  [/\b(?:idol|celebrity|influencer|youtuber|tiktoker|streamer|(?:tv|television|radio|media|internet|online) personality|talk show host|radio host|entertainer|actor|actress)\b/, 'Célébrité'],
-  [/\bconsultant\b/, 'Conseiller'],
-  [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Marchand'],
-  [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientifique'],
-  [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Médecin'],
-  [/writer|author|editor|novelist|poet|mangaka/, 'Écrivain'],
-  [/\b(?:slave|livestock)\b/, 'Esclave'],
-  [/prisoner|inmate/, 'Prisonnier'],
-  [/unemployed|\bneet\b|homeless/, 'Chômeur'],
-  [/con ?-?artist|con ?man|hustler|thief|robber|swindler|pickpocket/, 'Voleur'],
+  [/\b(?:idol|celebrity|influencer|youtuber|tiktoker|streamer|(?:tv|television|radio|media|internet|online) personality|talk show host|radio host|entertainer|actor|actress)\b/, 'Celebrity'],
+  [/\bconsultant\b/, 'Advisor'],
+  [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Trader'],
+  [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientist'],
+  [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Doctor'],
+  [/writer|author|editor|novelist|poet|mangaka/, 'Writer'],
+  [/\b(?:slave|livestock)\b/, 'Slave'],
+  [/prisoner|inmate/, 'Prisoner'],
+  [/unemployed|\bneet\b|homeless/, 'Unemployed'],
+  [/con ?-?artist|con ?man|hustler|thief|robber|swindler|pickpocket/, 'Thief'],
   [/killer|murderer|assassin|hitman|hitwoman/, 'Assassin'],
-  [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Magicien'],
-  [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Religieux'],
-  [/athlete|player|runner|skater|gymnast|pitcher|racer|swimmer|boxer|wrestler/, 'Sportif'],
-  [/farmer|farming|gardener|woodcutter|carpenter|baker|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
-  [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|librarian|delivery|courier/, 'Employé'],
-  [/assistant|\baide\b|sidekick|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
-  [/traveler|traveller|nomad|wanderer/, 'Voyageur'],
+  [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Mage'],
+  [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Cleric'],
+  [/athlete|player|runner|skater|gymnast|pitcher|racer|swimmer|boxer|wrestler/, 'Athlete'],
+  [/farmer|farming|gardener|woodcutter|carpenter|\bbakers?\b|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
+  [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|delivery|courier/, 'Employee'],
+  [/assistant|\baide\b|sidekick|\bbuddy\b|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
+  [/traveler|traveller|nomad|wanderer/, 'Traveler'],
   [/\bpresident\b|representative|second-in-command/, 'Leader'],
-  [/\bhunter\b/, 'Chasseur'],
-  [/\bhero(?:ine)?\b|vassal weapon/, 'Héros'],
-  [/supervillain|villain/, 'Méchant'],
-  [/waitress|waiter|hostess/, 'Serveur'],
-  [/singer|vocals/, 'Chanteur'],
-  [/astronaut|cosmonaut/, 'Astronaute'],
-  [/politician|senator|ambassador|diplomat|chancellor|official|prelate/, 'Politicien'],
-  [/attorney|prosecutor|lawyer/, 'Avocat'],
-  [/firefighter/, 'Pompier'],
-  [/bandit/, 'Voleur'],
-  [/game (?:designer|planner|tester)|producer|promoter/, 'Employé'],
-  [/house ?wife|house spouse/, 'Femme au foyer'],
-  [/[ée]tudiant/, 'Étudiant'],
-  [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Élève'],
+  [/\bhunter\b/, 'Hunter'],
+  [/\bhero(?:ine)?\b|vassal weapon/, 'Hero'],
+  [/supervillain|villain/, 'Villain'],
+  [/waitress|waiter|hostess/, 'Waiter'],
+  [/singer|vocals/, 'Singer'],
+  [/astronaut|cosmonaut/, 'Astronaut'],
+  [/politician|senator|ambassador|diplomat|chancellor|official|prelate/, 'Politician'],
+  [/attorney|prosecutor|lawyer/, 'Lawyer'],
+  [/firefighter/, 'Firefighter'],
+  [/bandit/, 'Thief'],
+  [/game (?:designer|planner|tester)|producer|promoter/, 'Employee'],
+  [/house ?wife|house spouse/, 'Homemaker'],
+  [/[ée]tudiant/, 'Student'],
+  [/\bstudents?\b|schooler|freshman|pupil|high school|class representative|homeroom|classmates?/, 'Pupil'],
+  // Le nom de l'école à la place du rôle (« Private Aichi Symbiosis Academy (Junior High Division) ») : un élève
+  [/\b(?:academy|school|gakuen|gakuin)$/, 'Pupil'],
   // Pas des occupations : animaux, valeurs vides
   [/\bpet\b|housepet|familiar|\bspoilers?\b|^none$|^current$|^former$|^inc$|^npc$/, null],
   // Une appartenance à un groupe, pas un métier (« Member of the SSS », « 3rd Seat of the Seven Shadows »)
   [/\b(?:member|members|seat|crew|team|squad|council|cast|division|committee|corps|group)\b/, null],
 ]
 
-// Les occupations déjà en français (Wikipédia FR, corrections à la main) : on les garde telles quelles
-const FRENCH = new Set([...Object.values(OCCUPATIONS), ...RULES.map(([, french]) => french)].flatMap(french => french ? [french.toLowerCase()] : []))
+// Nos anciennes valeurs françaises, que Wikipédia FR donne telles quelles (« Collégien », « Soldat ») : leur anglais
+const FROM_FRENCH: Record<string, string> = {
+  'étudiant': 'Student', 'combattant': 'Fighter', 'soldat': 'Soldier', 'magicien': 'Mage', 'épéiste': 'Swordsman',
+  'scientifique': 'Scientist', 'criminel': 'Criminal', 'dirigeant': 'Leader', 'souverain': 'Royalty',
+  'professeur': 'Teacher', 'artiste': 'Artist', 'chasseur de monstres': 'Monster hunter', 'tireur': 'Marksman',
+  'pilote': 'Pilot', 'garde': 'Guard', 'aventurier': 'Adventurer', 'domestique': 'Servant', 'employé': 'Employee',
+  'espion': 'Spy', 'commerçant': 'Merchant', 'musicien': 'Musician', 'médecin': 'Doctor', 'officier': 'Officer',
+  'mercenaire': 'Mercenary', 'religieux': 'Cleric', 'chevalier': 'Knight', 'détective': 'Detective',
+  'politicien': 'Politician', 'serveur': 'Waiter', 'justicier': 'Vigilante', 'héros': 'Hero',
+  'révolutionnaire': 'Revolutionary', 'ouvrier': 'Worker', 'célébrité': 'Celebrity', 'chasseur': 'Hunter',
+  "homme d'affaires": 'Businessperson', 'sportif': 'Athlete', 'voleur': 'Thief', 'policier': 'Police officer',
+  'acteur': 'Actor', 'exorciste': 'Exorcist', 'survivant': 'Survivor', 'capitaine': 'Captain', 'chanteur': 'Singer',
+  'conseiller': 'Advisor', 'super-héros': 'Superhero', 'écrivain': 'Writer', 'journaliste': 'Journalist',
+  'chasseur de démons': 'Demon hunter', 'informaticien': 'Programmer', "tireur d'élite": 'Sniper', 'avocat': 'Lawyer',
+  'mécanicien': 'Mechanic', 'mafieux': 'Mobster', 'lancier': 'Lancer', 'pourfendeur de démons': 'Demon Slayer',
+  'cuisinier': 'Cook', 'chauffeur': 'Driver', 'président': 'President', 'terroriste': 'Terrorist', 'fermier': 'Farmer',
+  'dresseur': 'Trainer', 'chasseur de primes': 'Bounty hunter', 'chasseur de trésor': 'Treasure hunter',
+  'mannequin': 'Model', 'astronaute': 'Astronaut', 'chômeur': 'Unemployed', 'prédateur': 'Predator', 'idole': 'Idol',
+  'érudit': 'Scholar', 'archéologue': 'Archaeologist', 'esclave': 'Slave', 'compagnon': 'Companion', 'marin': 'Sailor',
+  'chasseur de vampires': 'Vampire hunter', 'femme au foyer': 'Homemaker', 'dieu': 'God', 'gérant': 'Manager',
+  'alchimiste': 'Alchemist', 'voyou': 'Thug', 'artiste martial': 'Martial artist', 'éclaireur': 'Scout',
+  'président du conseil des élèves': 'Student council president', 'barman': 'Bartender', 'ingénieur': 'Engineer',
+  'petits boulots': 'Odd jobs', 'voyageur temporel': 'Time traveler', 'courtisane': 'Courtesan',
+  'destructeur': 'Destroyer', 'tueur en série': 'Serial killer', 'volleyeur': 'Volleyball player',
+  "bataillon d'exploration": 'Survey Corps', 'livreur': 'Courier', 'samouraï': 'Samurai', 'protecteur': 'Protector',
+  'méchant': 'Villain', 'prisonnier': 'Prisoner', 'gardien': 'Guardian', 'psychiatre': 'Psychiatrist',
+  'apothicaire': 'Apothecary', 'prostitué': 'Prostitute', 'voyant': 'Seer', 'arbitre': 'Arbiter',
+  'inventeur': 'Inventor', 'sergent': 'Sergeant', 'utilisateur de fléaux': 'Curse user', 'informateur': 'Informant',
+  'agent immobilier': 'Real estate agent', 'chirurgien': 'Surgeon', 'démon': 'Demon', 'pêcheur': 'Fisher',
+  'bibliothécaire': 'Librarian', 'forgeron': 'Blacksmith', 'plombier': 'Plumber', 'sorceleur': 'Witcher',
+  'charbonnier': 'Charcoal seller', 'astronome': 'Astronomer', 'diplomate': 'Diplomat',
+  'philanthrope': 'Philanthropist', 'ermite': 'Hermit', 'navigateur': 'Navigator', 'fléau': 'Curse',
+  "directeur d'école": 'Principal', 'vétérinaire': 'Veterinarian', 'retraité': 'Retiree', 'comte': 'Count',
+  'tortionnaire': 'Torturer', 'doubleur': 'Voice actor', 'routier': 'Trucker', 'fleuriste': 'Florist',
+  'spécialiste des communications': 'Communications specialist', 'indépendant': 'Freelancer', 'couturier': 'Tailor',
+  'nourrice': 'Nanny', 'éditeur': 'Editor', 'youtubeur': 'YouTuber', 'pompier': 'Firefighter',
+  'stratège': 'Strategist', 'cosplayeur': 'Cosplayer', 'lutteur': 'Wrestler', 'hypnotiseur': 'Hypnotist',
+  'croque-mort': 'Undertaker', 'actrice': 'Actress', 'agent secret': 'Secret agent', 'athlète': 'Athlete',
+  'boulanger': 'Baker', 'chef de clan': 'Clan leader', 'chercheur': 'Researcher', 'clerc': 'Cleric',
+  'collégien': 'Middle schooler', 'dame': 'Lady', 'déesse': 'Goddess', 'empereur': 'Emperor',
+  'employé de bureau': 'Office worker', 'explorateur': 'Explorer', 'fonctionnaire': 'Civil servant',
+  'garde du corps': 'Bodyguard', 'guerrier': 'Warrior', 'général': 'General', 'herboriste': 'Herbalist',
+  'héros professionnel': 'Pro hero', 'impératrice': 'Empress', 'infirmier': 'Nurse', 'instructeur': 'Instructor',
+  'lycéen': 'High schooler', 'magicienne': 'Magician', 'majordome': 'Butler', 'marchand': 'Trader', 'moine': 'Monk',
+  'monarque': 'Monarch', 'océanographe': 'Oceanographer', 'princesse': 'Princess', 'prêtre': 'Priest',
+  'prêtresse': 'Priestess', 'rappeur': 'Rapper', 'recrue': 'Recruit', 'reine': 'Queen', 'religieuse': 'Nun',
+  'roi': 'King', 'seigneur': 'Lord', 'servante': 'Maid', 'serveuse': 'Waitress', 'serviteur': 'Manservant',
+  'soigneur': 'Healer', 'sorcier': 'Sorcerer', 'sorcière': 'Witch', 'tueur': 'Killer', 'vendeur': 'Salesperson',
+  'inconnu': 'Unknown', 'aucune': 'None', 'villageois': 'Villager', 'voyageur': 'Traveler', 'élève': 'Pupil', "pirate de l'espace": 'Space pirate',
+}
+
+// Le nom français d'une de nos valeurs (la 1re de la table : la valeur finale plutôt qu'un synonyme regroupé). Pour les
+// règles du Pixeldle, qui lisent le français de Wikidata : « Psychiatrist » → « psychiatre » → Doctor, comme avant
+let frenchNames: Map<string, string> | undefined
+export function frenchOccupation(english: string): string | undefined {
+  frenchNames ??= new Map(Object.entries(FROM_FRENCH).reverse().map(([french, value]) => [value, french]))
+  return frenchNames.get(english)
+}
+
+// Les occupations déjà traduites (corrections à la main, école, armes, titres) : gardées telles quelles si aucune règle
+// ne les prend, et écrites exactement comme nos valeurs, majuscule comprise. Les sources aussi sont en anglais : leur
+// « Editor » ou leur « Advisor » passent par les règles comme avant (Writer, Assistant)
+let outputs: Set<string> | undefined
+const isOurs = (value: string) => (outputs ??= new Set([...Object.values(OCCUPATIONS), ...RULES.map(([, english]) => english),
+  ...Object.values(OCCUPATION_MERGES), ...Object.values(OCCUPATION_FAMILIES).flat()].flatMap(english => english ? [english] : []))).has(value)
 
 // La traduction, null si ce n'est pas une occupation, undefined si on ne sait pas la traduire
 export function translateOccupation(value: string): string | null | undefined {
@@ -192,9 +276,15 @@ export function translateOccupation(value: string): string | null | undefined {
   const key = value.toLowerCase().replace(/^[\s・*•-]+/, '').replace(/^former\s+|\s+former$/, '').trim()
   if (key in OCCUPATIONS)
     return OCCUPATIONS[key]
-  if (FRENCH.has(key))
-    return value
-  return RULES.find(([pattern]) => pattern.test(key))?.[1]
+  if (key in FROM_FRENCH)
+    return FROM_FRENCH[key]
+  const rule = RULES.find(([pattern]) => pattern.test(key))?.[1]
+  const plain = value.replace(/^[\s・*•-]+/, '').trim()
+  if (rule === undefined && isOurs(plain))
+    return plain
+  // « One of the Three Beasts » : une appartenance à un groupe, pas un métier, sauf si le groupe en est un (« One of the Generals »)
+  const group = key.match(/^one of the\s+(.+)$/)?.[1]
+  return group && rule === undefined ? translateOccupation(group) ?? null : rule
 }
 
 // --- Cumul des sources ---
@@ -255,52 +345,52 @@ export function translateEntries(entries: Entry[], corrected: ReadonlyMap<string
 
 // Les quasi-synonymes : une seule valeur, rien de perdu (Lycéen et Étudiant, c'est pareil pour deviner ; Reine, le sexe le dit déjà)
 const OCCUPATION_MERGES: Record<string, string> = {
-  'Élève': 'Étudiant', 'Lycéen': 'Étudiant', 'Collégien': 'Étudiant',
-  'Guerrier': 'Combattant', 'Tueur': 'Assassin', 'Tireur d\'élite': 'Tireur',
-  'Général': 'Officier', 'Lieutenant': 'Officier', 'Recrue': 'Soldat', 'Garde du corps': 'Garde', 'Agent secret': 'Espion',
-  'Mage': 'Magicien', 'Magicienne': 'Magicien', 'Sorcier': 'Magicien', 'Sorcière': 'Magicien', 'Magical Girl': 'Magical girl',
-  'Prêtre': 'Religieux', 'Prêtresse': 'Religieux', 'Religieuse': 'Religieux', 'Moine': 'Religieux', 'Clerc': 'Religieux',
-  'Roi': 'Souverain', 'Reine': 'Souverain', 'Empereur': 'Souverain', 'Impératrice': 'Souverain', 'Monarque': 'Souverain',
-  'Prince': 'Noble', 'Princesse': 'Noble', 'Comte': 'Noble', 'Seigneur': 'Noble', 'Dame': 'Noble', 'Déesse': 'Dieu',
-  'Héros professionnel': 'Super-héros', 'Pirate de l\'espace': 'Pirate',
-  'Infirmier': 'Médecin', 'Soigneur': 'Médecin', 'Chercheur': 'Scientifique', 'Explorateur': 'Aventurier', 'Voyageur': 'Aventurier',
-  'Instructeur': 'Professeur', 'Employé de bureau': 'Employé', 'Fonctionnaire': 'Employé', 'Marchand': 'Commerçant', 'Vendeur': 'Commerçant',
-  'Servante': 'Domestique', 'Serviteur': 'Domestique', 'Majordome': 'Domestique', 'Serveuse': 'Serveur', 'Boulanger': 'Cuisinier',
-  'Actrice': 'Acteur', 'Rappeur': 'Chanteur',
+  'Pupil': 'Student', 'High schooler': 'Student', 'Middle schooler': 'Student',
+  'Warrior': 'Fighter', 'Killer': 'Assassin', 'Sniper': 'Marksman',
+  'General': 'Officer', 'Lieutenant': 'Officer', 'Recruit': 'Soldier', 'Bodyguard': 'Guard', 'Secret agent': 'Spy',
+  'Mage': 'Mage', 'Magician': 'Mage', 'Sorcerer': 'Mage', 'Witch': 'Mage', 'Magical Girl': 'Magical girl',
+  'Priest': 'Cleric', 'Priestess': 'Cleric', 'Nun': 'Cleric', 'Monk': 'Cleric', 'Cleric': 'Cleric',
+  'King': 'Royalty', 'Queen': 'Royalty', 'Emperor': 'Royalty', 'Empress': 'Royalty', 'Monarch': 'Royalty',
+  'Prince': 'Noble', 'Princess': 'Noble', 'Count': 'Noble', 'Lord': 'Noble', 'Lady': 'Noble', 'Goddess': 'God',
+  'Pro hero': 'Superhero', 'Space pirate': 'Pirate',
+  'Nurse': 'Doctor', 'Healer': 'Doctor', 'Researcher': 'Scientist', 'Explorer': 'Adventurer', 'Traveler': 'Adventurer',
+  'Instructor': 'Teacher', 'Office worker': 'Employee', 'Civil servant': 'Employee', 'Trader': 'Merchant', 'Salesperson': 'Merchant',
+  'Maid': 'Servant', 'Manservant': 'Servant', 'Butler': 'Servant', 'Waitress': 'Waiter', 'Baker': 'Cook',
+  'Actress': 'Actor', 'Rapper': 'Singer',
 }
 
 // Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
 // qui se battent se croisent en jaune même avec des armes différentes
 const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   // Combat
-  'Épéiste': ['Combattant'], 'Samouraï': ['Combattant'], 'Ninja': ['Combattant'], 'Chevalier': ['Combattant'], 'Archer': ['Combattant'],
-  'Tireur': ['Combattant'], 'Lancier': ['Combattant'], 'Mercenaire': ['Combattant'], 'Artiste martial': ['Combattant'],
-  'Lutteur': ['Combattant', 'Sportif'], 'Chasseur de primes': ['Combattant'], 'Nourrice': ['Domestique'], 'Barman': ['Serveur'],
+  'Swordsman': ['Fighter'], 'Samurai': ['Fighter'], 'Ninja': ['Fighter'], 'Knight': ['Fighter'], 'Archer': ['Fighter'],
+  'Marksman': ['Fighter'], 'Lancer': ['Fighter'], 'Mercenary': ['Fighter'], 'Martial artist': ['Fighter'],
+  'Wrestler': ['Fighter', 'Athlete'], 'Bounty hunter': ['Fighter'], 'Nanny': ['Servant'], 'Bartender': ['Waiter'],
   // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
-  'Officier': ['Soldat'], 'Bataillon d\'exploration': ['Soldat'], 'Éclaireur': ['Soldat'],
-  'Pourfendeur de démons': ['Chasseur de monstres', 'Combattant'], 'Chasseur de démons': ['Chasseur de monstres', 'Combattant'],
-  'Chasseur de vampires': ['Chasseur de monstres', 'Combattant'], 'Exorciste': ['Chasseur de monstres', 'Magicien'],
-  'Super-héros': ['Héros', 'Combattant'],
+  'Officer': ['Soldier'], 'Survey Corps': ['Soldier'], 'Scout': ['Soldier'],
+  'Demon Slayer': ['Monster hunter', 'Fighter'], 'Demon hunter': ['Monster hunter', 'Fighter'],
+  'Vampire hunter': ['Monster hunter', 'Fighter'], 'Exorcist': ['Monster hunter', 'Mage'],
+  'Superhero': ['Hero', 'Fighter'],
   // Crime
-  'Assassin': ['Criminel', 'Combattant'], 'Tueur en série': ['Criminel'], 'Mafieux': ['Criminel'], 'Voyou': ['Criminel'],
-  'Voleur': ['Criminel'], 'Pirate': ['Criminel'], 'Terroriste': ['Criminel'],
+  'Assassin': ['Criminal', 'Fighter'], 'Serial killer': ['Criminal'], 'Mobster': ['Criminal'], 'Thug': ['Criminal'],
+  'Thief': ['Criminal'], 'Pirate': ['Criminal'], 'Terrorist': ['Criminal'],
   // Magie, religion
-  'Magical girl': ['Magicien'], 'Onmyouji': ['Magicien'], 'Utilisateur de fléaux': ['Magicien'], 'Miko': ['Religieux'], 'Oracle': ['Religieux'],
+  'Magical girl': ['Mage'], 'Onmyouji': ['Mage'], 'Curse user': ['Mage'], 'Miko': ['Cleric'], 'Oracle': ['Cleric'],
   // Pouvoir
-  'Souverain': ['Noble', 'Leader'], 'Président': ['Leader'], 'Gérant': ['Leader'], 'Capitaine': ['Leader'],
-  'Directeur d\'école': ['Professeur', 'Leader'], 'Président du conseil des élèves': ['Étudiant', 'Leader'],
+  'Royalty': ['Noble', 'Leader'], 'President': ['Leader'], 'Manager': ['Leader'], 'Captain': ['Leader'],
+  'Principal': ['Teacher', 'Leader'], 'Student council president': ['Student', 'Leader'],
   // Sciences, santé
-  'Chirurgien': ['Médecin'], 'Psychiatre': ['Médecin'], 'Ingénieur': ['Scientifique'], 'Inventeur': ['Scientifique'],
-  'Archéologue': ['Scientifique'], 'Océanographe': ['Scientifique'], 'Astronome': ['Scientifique'], 'Alchimiste': ['Scientifique'],
+  'Surgeon': ['Doctor'], 'Psychiatrist': ['Doctor'], 'Engineer': ['Scientist'], 'Inventor': ['Scientist'],
+  'Archaeologist': ['Scientist'], 'Oceanographer': ['Scientist'], 'Astronomer': ['Scientist'], 'Alchemist': ['Scientist'],
   // Arts, spectacle
-  'Chanteur': ['Musicien', 'Artiste'], 'Musicien': ['Artiste'], 'Idole': ['Chanteur', 'Célébrité', 'Artiste'],
-  'Acteur': ['Célébrité', 'Artiste'], 'Mannequin': ['Célébrité', 'Artiste'], 'Youtubeur': ['Célébrité'], 'Doubleur': ['Artiste'],
-  'Mangaka': ['Artiste'], 'Écrivain': ['Artiste'], 'Cosplayeur': ['Artiste'], 'Couturier': ['Artisan'],
+  'Singer': ['Musician', 'Artist'], 'Musician': ['Artist'], 'Idol': ['Singer', 'Celebrity', 'Artist'],
+  'Actor': ['Celebrity', 'Artist'], 'Model': ['Celebrity', 'Artist'], 'YouTuber': ['Celebrity'], 'Voice actor': ['Artist'],
+  'Mangaka': ['Artist'], 'Writer': ['Artist'], 'Cosplayer': ['Artist'], 'Tailor': ['Artisan'],
   // Métiers, sport
-  'Forgeron': ['Artisan'], 'Fleuriste': ['Artisan'], 'Cuisinier': ['Artisan'], 'Petits boulots': ['Employé'], 'Volleyeur': ['Sportif'],
+  'Blacksmith': ['Artisan'], 'Florist': ['Artisan'], 'Cook': ['Artisan'], 'Odd jobs': ['Employee'], 'Volleyball player': ['Athlete'],
 }
 
-const NO_REAL_OCCUPATION = new Set(['Inconnu', 'Aucune'])
+const NO_REAL_OCCUPATION = new Set(['Unknown', 'None'])
 
 // Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
 export function groupOccupations(values: readonly string[]): string[] | null {
@@ -317,7 +407,7 @@ const MAX_TITLES = 2
 
 // Un perso mort sans aucune occupation : « Aucune » (validé avec FX). Seulement s'il n'a rien d'autre, et jamais
 // « Mort » ou « Défunt » : ce serait un spoil affiché à chaque proposition.
-const NO_OCCUPATION = 'Aucune'
+const NO_OCCUPATION = 'None'
 
 // À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
 // « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé
@@ -343,58 +433,67 @@ export function manualOccupations(edit: Record<string, Record<string, unknown>>)
 // anime rejoignent une grande famille pour que les persos se croisent : les Spirals de Gurren Lagann sont des humains,
 // les Giftias de Plastic Memories des androïdes. null = pas une espèce.
 const ANIME_SPECIES: Record<string, string | null> = {
-  'new human': 'Humain', 'spiral': 'Humain', 'immanity': 'Humain', 'imanity': 'Humain', 'evolved human': 'Humain',
-  'divine human': 'Humain', 'caucasian': 'Humain', 'beyondian': 'Humain', 'gamer': 'Humain', 'amazoness': 'Humain',
-  'pallum': 'Humain', 'esper': 'Humain', 'magus': 'Humain', 'burst linker': 'Humain', 'master': null, 'magician': 'Humain',
-  'giftia': 'Androïde', 'humanoid ai': 'Androïde', 'cyber girl': 'Androïde',
+  'new human': 'Human', 'spiral': 'Human', 'immanity': 'Human', 'imanity': 'Human', 'evolved human': 'Human',
+  'divine human': 'Human', 'caucasian': 'Human', 'beyondian': 'Human', 'gamer': 'Human', 'amazoness': 'Human',
+  'pallum': 'Human', 'esper': 'Human', 'magus': 'Human', 'burst linker': 'Human', 'master': null, 'magician': 'Human',
+  'giftia': 'Android', 'humanoid ai': 'Android', 'cyber girl': 'Android',
   'shiki': 'Vampire', 'real vampire': 'Vampire', 'artificial vampire': 'Vampire', 'lesser vampire': 'Vampire', 'vampiric thrall': 'Vampire',
-  'devilman': 'Démon', 'succubus': 'Démon', 'fiend': 'Démon', 'fiend host': 'Démon', 'karma demon': 'Démon', 'demons': 'Démon', 'daemon': 'Démon',
+  'devilman': 'Demon', 'succubus': 'Demon', 'fiend': 'Demon', 'fiend host': 'Demon', 'karma demon': 'Demon', 'demons': 'Demon', 'daemon': 'Demon',
   'grim reaper': 'Shinigami', 'shinigami': 'Shinigami', 'soul reaper': 'Shinigami',
-  'seraph': 'Ange', 'flügel': 'Ange', 'jinrou': 'Loup-garou', 'intelligent titan': 'Titan', 'titan': 'Titan',
-  'pillar man': 'Homme du pilier', 'life fibers': 'Fibre de vie', 'chimera ant': 'Fourmi-chimère',
-  'monster rat': 'Rat', 'filolial': 'Oiseau', 'crow': 'Oiseau', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
-  'hobgoblin': 'Gobelin', 'ghast': 'Mort-vivant', 'kamui': 'Fibre de vie', 'boaz': 'Homme-bête', 'wanui': 'Homme-bête',
-  'gorgon': 'Gorgone', 'medusa': 'Gorgone', 'dullahan': 'Mort-vivant', 'divine fighter': 'Démon', 'divine wolf': 'Loup', 'merman': 'Sirène', 'servant': 'Esprit héroïque',
-  'shadow': 'Ombre', 'shadows': 'Ombre', 'nephilim': 'Demi-démon', 'elder bairn': 'Monstre', 'narehate': 'Narehate',
+  'seraph': 'Angel', 'flügel': 'Angel', 'jinrou': 'Werewolf', 'intelligent titan': 'Titan', 'titan': 'Titan',
+  'pillar man': 'Pillar Man', 'life fibers': 'Life Fiber', 'chimera ant': 'Chimera Ant',
+  'monster rat': 'Rat', 'filolial': 'Bird', 'crow': 'Bird', 'tanuki': 'Tanuki', 'japanese raccoon': 'Tanuki',
+  'hobgoblin': 'Goblin', 'ghast': 'Undead', 'kamui': 'Life Fiber', 'boaz': 'Beastman', 'wanui': 'Beastman',
+  'gorgon': 'Gorgon', 'medusa': 'Gorgon', 'dullahan': 'Undead', 'divine fighter': 'Demon', 'divine wolf': 'Wolf', 'merman': 'Mermaid', 'servant': 'Heroic Spirit',
+  'shadow': 'Shadow', 'shadows': 'Shadow', 'nephilim': 'Half-demon', 'elder bairn': 'Monster', 'narehate': 'Narehate',
   'michaela': null, 'familiar': null, 'neighbor': null,
   // JUJUTSU KAISEN : les Incarnations sont des fléaux ou des exorcistes réincarnés dans un corps, pas une espèce
   'incarnation': null,
   // The Reincarnation of the Strongest Exorcist : les Trieyes sont un peuple de démons (Pirisralia)
-  'trieye': 'Démon',
+  'trieye': 'Demon',
   // Les fées du folklore, gardées précises (les races d'ALO dans SAO, Kuro de Blue Exorcist, Ramiris) : Fée s'y ajoute
   // pour recouper (FOLKLORE_FAIRIES)
-  'sylph': 'Sylphe', 'salamander': 'Salamandre', 'undine': 'Ondine', 'spriggan': 'Spriggan', 'leprechaun': 'Leprechaun',
+  'sylph': 'Sylph', 'salamander': 'Salamander', 'undine': 'Undine', 'spriggan': 'Spriggan', 'leprechaun': 'Leprechaun',
   'cait sith': 'Cait Sith', 'cat sídhe': 'Cait Sith', 'cat sidhe': 'Cait Sith', 'pixie': 'Pixie',
   // Les hybrides de Chainsaw Man sont des humains-démons (au Pixeldle, un hybride est mi-extraterrestre). Les Parasites de
   // DARLING in the FRANXX sont les pilotes, des humains (Parasyte n'est pas dans la liste du Weebdle).
-  'hybrid': 'Demi-démon', 'parasite': 'Humain',
+  'hybrid': 'Half-demon', 'parasite': 'Human',
+  // To Your Eternity : l'ours Kermode, un vrai ours (« spirit bear ») et pas un esprit
+  'spirit bear': 'Bear',
   'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
 const ANIME_SPECIES_RULES: [RegExp, string][] = [
   // JUJUTSU KAISEN : les fléaux et les Death Paintings (mi-fléaux), et les Cursed Corpses, des poupées animées (Panda)
-  [/\bcursed (?:spirit|womb)|^curses?$/, 'Fléau'],
-  [/cursed corpse/, 'Poupée'],
-  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Homme-bête'],
+  [/\bcursed (?:spirit|womb)|^curses?$/, 'Curse'],
+  [/cursed corpse/, 'Doll'],
+  [/beast ?m[ae]n|beastkin|beast human|beast race|beast hybrid|therianthrope|werebeast|werecat|cat people|kitten human|felinoid/, 'Beastman'],
   // « Triple-Headed Snake » (Mitsumata, Ranking of Kings) : un serpent, donc aussi un Animal (expandSpecies). Après les
   // hommes-bêtes : « Beastman - Snake » (Boris Cliff, BNA) en est un
-  [/\bsnakes?\b/, 'Serpent'],
-  [/\bhalf[- ]?(?:elf|alv)\b/, 'Demi-elfe'],
-  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fée'],
+  [/\bsnakes?\b/, 'Snake'],
+  [/\bhalf[- ]?(?:elf|alv)\b/, 'Half-elf'],
+  [/\b(?:fairy|fairies|pixie|sylph|salamander|undine|spriggan|leprechaun|cait sith|cat s[ií]dhe)\b/, 'Fairy'],
   [/\bvampir/, 'Vampire'],
-  [/\b(?:demon|devil|oni)\b/, 'Démon'],
+  [/\b(?:demon|devil|oni)\b/, 'Demon'],
   [/\bdragon/, 'Dragon'],
-  [/\b(?:elf|elves|alv)\b/, 'Elfe'],
-  [/\b(?:angel|seraph)/, 'Ange'],
-  [/\bshadows?\b/, 'Ombre'],
-  [/\b(?:werewolf|jinrou)\b/, 'Loup-garou'],
-  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yōkai'],
-  [/\bspirit\b/, 'Esprit'],
-  [/\b(?:giant|gigantes)\b/, 'Géant'],
-  [/\b(?:god|goddess|deity|divine)\b/, 'Divinité'],
+  [/\b(?:elf|elves|alv)\b/, 'Elf'],
+  [/\b(?:angel|seraph)/, 'Angel'],
+  [/\bshadows?\b/, 'Shadow'],
+  [/\b(?:werewolf|jinrou)\b/, 'Werewolf'],
+  [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yokai'],
+  [/\bspirit\b/, 'Spirit'],
+  [/\b(?:giant|gigantes)\b/, 'Giant'],
+  [/\b(?:god|goddess|deity|divine)\b/, 'Deity'],
   [/\b(?:android|robot|ai)\b/, 'Robot'],
-  [/\bhumans?\b/, 'Humain'],
+  [/\bhumans?\b/, 'Human'],
 ]
+// « Reshy wolf », « Three-clawed owl » (To Your Eternity) : un animal précisé, lu sur son dernier mot (Loup, Hibou ; Animal
+// s'y ajoute avec expandSpecies). Seulement un animal : « giant » ou « mage » au bout ne disent pas l'espèce.
+function headAnimal(name: string): string | undefined {
+  const french = translateSpecies(name.split(/[\s-]+/).at(-1)!)
+  return french && expandSpecies(french)?.includes('Animal') ? french : undefined
+}
+
 // Un nom d'espèce exact, sans les règles par mot-clé : pour l'intro des pages, où « demon slayer » n'est pas un démon
 export function exactSpecies(name: string): string | null | undefined {
   const key = name.toLowerCase().trim()
@@ -414,7 +513,7 @@ export function translateCharacterSpecies(raw: string): { species: string[], unk
       continue
     // « Part 2: Vampire », « Elder Bairn by the end of the movie » : l'espèce seule
     const name = key.replace(/^part\s*\d+\s*:\s*/, '').replace(/\s+(?:by the end|at the end|in the end)\b.*$/, '')
-    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1]
+    const french = name in ANIME_SPECIES ? ANIME_SPECIES[name] : translateSpecies(name) ?? ANIME_SPECIES_RULES.find(([pattern]) => pattern.test(name))?.[1] ?? headAnimal(name)
     if (french === undefined)
       unknown.push(part.trim())
     else if (french)
@@ -424,7 +523,7 @@ export function translateCharacterSpecies(raw: string): { species: string[], unk
 }
 
 // Les fées du folklore : l'espèce précise, plus Fée (une créature magique bienveillante) pour recouper
-const FOLKLORE_FAIRIES = new Set(['Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Pixie'])
+const FOLKLORE_FAIRIES = new Set(['Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Pixie'])
 
 // L'espèce des entrées (« species », les valeurs brutes des sources) traduite et dépliée (Demi-elfe = Humain + Elfe,
 // un chat est aussi un Animal, une sylphe aussi une Fée), avec ce qui n'a pas pu l'être
@@ -438,7 +537,7 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
     for (const value of found.flatMap(({ unknown }) => unknown))
       untranslated.set(value, (untranslated.get(value) ?? 0) + 1)
     // Les espèces de toutes les sources (addedValues), chacune parfois en plusieurs valeurs
-    const species = [...new Set(found.flatMap(({ species }) => species).flatMap(name => FOLKLORE_FAIRIES.has(name) ? [name, 'Fée'] : [name]))]
+    const species = [...new Set(found.flatMap(({ species }) => species).flatMap(name => FOLKLORE_FAIRIES.has(name) ? [name, 'Fairy'] : [name]))]
     return { ...entry, attributes: { ...entry.attributes, species: expandSpecies(species) } }
   })
   return { entries: translated, untranslated }
@@ -448,7 +547,7 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
 
 // Pas des espèces qu'on hérite : une Ombre copie une seule personne (Summer Time Rendering), une race d'ALO est un avatar
 // de jeu (SAO). Fée reste héritable : c'est une famille d'espèces (une exception, comme la mère de Kirito, va à la main).
-const NOT_INHERITED = new Set(['Ombre', 'Sylphe', 'Salamandre', 'Ondine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
+const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
 // Pas un nom de famille : « Miranjo no Haha » (la mère de Miranjo), « Kage Haha »
 const NOT_SURNAME = /^(?:haha|chichi|ani|ane|otouto|imouto|musume|musuko|sensei)$/i
 

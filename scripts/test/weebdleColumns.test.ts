@@ -39,20 +39,20 @@ describe('heightCm', () => {
 
 describe('translateCharacterSpecies', () => {
   it('GrandesFamilles', () => {
-    expect(translateCharacterSpecies('Human, Spiral').species).toEqual(['Humain'])
-    expect(translateCharacterSpecies('Giftia').species).toEqual(['Androïde'])
-    expect(translateCharacterSpecies('Beastman - Wolf').species).toEqual(['Homme-bête'])
+    expect(translateCharacterSpecies('Human, Spiral').species).toEqual(['Human'])
+    expect(translateCharacterSpecies('Giftia').species).toEqual(['Android'])
+    expect(translateCharacterSpecies('Beastman - Wolf').species).toEqual(['Beastman'])
     // Une fée du folklore gardée précise, Fée s'ajoute au dépliage (translateSpeciesEntries)
-    expect(translateCharacterSpecies('Sylph').species).toEqual(['Sylphe'])
-    expect(translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: ['Sylph'] } }]).entries[0]!.attributes.species).toEqual(['Sylphe', 'Fée'])
+    expect(translateCharacterSpecies('Sylph').species).toEqual(['Sylph'])
+    expect(translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: ['Sylph'] } }]).entries[0]!.attributes.species).toEqual(['Sylph', 'Fairy'])
   })
 
   it('ToutesLesEspeces_MemePlusTard', () => {
-    expect(translateCharacterSpecies('Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon').species).toEqual(['Humain', 'Ange', 'Vampire', 'Démon'])
-    expect(translateCharacterSpecies('Part 1: Human, Part 2: Vampire').species).toEqual(['Humain', 'Vampire'])
-    expect(translateCharacterSpecies('Human (until Episode 5), Shiki (as of Episode 5)').species).toEqual(['Humain', 'Vampire'])
-    expect(translateCharacterSpecies('Human, Elder Bairn by the end of the movie').species).toEqual(['Humain', 'Monstre'])
-    expect(translateCharacterSpecies('Human (11th Loop), Shadow (original Timeline)').species).toEqual(['Humain', 'Ombre'])
+    expect(translateCharacterSpecies('Human (Formerly), Seraph (Inactive), Michaela, Vampire (Formerly), Demon').species).toEqual(['Human', 'Angel', 'Vampire', 'Demon'])
+    expect(translateCharacterSpecies('Part 1: Human, Part 2: Vampire').species).toEqual(['Human', 'Vampire'])
+    expect(translateCharacterSpecies('Human (until Episode 5), Shiki (as of Episode 5)').species).toEqual(['Human', 'Vampire'])
+    expect(translateCharacterSpecies('Human, Elder Bairn by the end of the movie').species).toEqual(['Human', 'Monster'])
+    expect(translateCharacterSpecies('Human (11th Loop), Shadow (original Timeline)').species).toEqual(['Human', 'Shadow'])
   })
 
   it('Inconnue_MiseDeCote', () => {
@@ -61,19 +61,19 @@ describe('translateCharacterSpecies', () => {
   })
 
   it('WikidataEnFrancais', () => {
-    expect(translateCharacterSpecies('être humain de fiction').species).toEqual(['Humain'])
+    expect(translateCharacterSpecies('être humain de fiction').species).toEqual(['Human'])
   })
 
   it('Entrees_DepliÉes', () => {
     const entry = { id: '1', name: 'Tako', attributes: { species: ['Cat (formerly), Devilcat'] } }
-    expect(translateSpeciesEntries([entry]).entries[0]!.attributes.species).toEqual(['Chat', 'Animal'])
+    expect(translateSpeciesEntries([entry]).entries[0]!.attributes.species).toEqual(['Cat', 'Animal'])
   })
 })
 
 describe('animeSource', () => {
   it('Familles', () => {
     expect(animeSource('LIGHT_NOVEL')).toBe('Light novel')
-    expect(animeSource('WEB_NOVEL')).toBe('Roman')
+    expect(animeSource('WEB_NOVEL')).toBe('Novel')
     expect(animeSource('OTHER')).toBeNull()
     expect(animeSource(null)).toBeNull()
   })
@@ -119,19 +119,19 @@ describe('familySpecies', () => {
   const entry = (id: string, name: string, species: string[] | null) => ({ id, name, attributes: { anime: 'A', species } })
 
   it('SansEspece_CelleDeSaFamille', () => {
-    const { entries } = familySpecies([entry('1', 'Seika Lamprogue', ['Humain', 'Démon']), entry('2', 'Blaise Lamprogue', ['Humain']), entry('3', 'Gly Lamprogue', null)])
-    expect(entries[2]!.attributes.species).toEqual(['Humain'])
+    const { entries } = familySpecies([entry('1', 'Seika Lamprogue', ['Human', 'Demon']), entry('2', 'Blaise Lamprogue', ['Human']), entry('3', 'Gly Lamprogue', null)])
+    expect(entries[2]!.attributes.species).toEqual(['Human'])
   })
 
   it('OmbreEtRaceALO_PasHeritees', () => {
-    const { entries } = familySpecies([entry('1', 'Asako Kobayakawa', ['Ombre']), entry('2', 'Shiori Kobayakawa', null),
-      entry('3', 'Kazuto Kirigaya', ['Humain', 'Spriggan', 'Fée']), entry('4', 'Midori Kirigaya', null)])
+    const { entries } = familySpecies([entry('1', 'Asako Kobayakawa', ['Shadow']), entry('2', 'Shiori Kobayakawa', null),
+      entry('3', 'Kazuto Kirigaya', ['Human', 'Spriggan', 'Fairy']), entry('4', 'Midori Kirigaya', null)])
     expect(entries[1]!.attributes.species).toBeNull()
-    expect(entries[3]!.attributes.species).toEqual(['Humain', 'Fée'])
+    expect(entries[3]!.attributes.species).toEqual(['Human', 'Fairy'])
   })
 
   it('PasUnNomDeFamille_Ignore', () => {
-    const { entries } = familySpecies([entry('1', 'Miranjo no Haha', ['Humain']), entry('2', 'Kage Haha', null)])
+    const { entries } = familySpecies([entry('1', 'Miranjo no Haha', ['Human']), entry('2', 'Kage Haha', null)])
     expect(entries[1]!.attributes.species).toBeNull()
   })
 })
@@ -142,12 +142,12 @@ describe('addedValues', () => {
   })
 
   it('ChampAUneValeur_1reSourceGardee', () => {
-    expect(addedValues({ gender: 'Homme', age: 17 }, { gender: 'Femme', age: 20 })).toEqual({})
+    expect(addedValues({ gender: 'Male', age: 17 }, { gender: 'Female', age: 20 })).toEqual({})
   })
 
   it('ListesCumulees', () => {
-    expect(addedValues({ occupation: ['Student'], hair: ['Noirs'], species: ['Human'] }, { occupation: ['Student', 'President'], hair: ['Bleus'], species: ['Vampire'] }))
-      .toEqual({ occupation: ['Student', 'President'], hair: ['Noirs', 'Bleus'], species: ['Human', 'Vampire'] })
+    expect(addedValues({ occupation: ['Student'], hair: ['Black'], species: ['Human'] }, { occupation: ['Student', 'President'], hair: ['Blue'], species: ['Vampire'] }))
+      .toEqual({ occupation: ['Student', 'President'], hair: ['Black', 'Blue'], species: ['Human', 'Vampire'] })
   })
 
   it('OccupationIntraduisibleDUneSourceSuivante_LaisseeDeCote', () => {
@@ -188,9 +188,16 @@ describe('introSpecies', () => {
 })
 
 describe('translateCharacterSpecies, anime', () => {
+  it('AnimalPrecise_LuSurSonDernierMot', () => {
+    expect(translateCharacterSpecies('Reshy wolf').species).toEqual(['Wolf'])
+    expect(translateCharacterSpecies('Three-clawed owl').species).toEqual(['Owl'])
+    expect(translateCharacterSpecies('Spirit bear').species).toEqual(['Bear'])
+    expect(translateCharacterSpecies('Frost giant').species).toEqual(['Giant'])
+  })
+
   it('HybrideEtParasite', () => {
     const expand = (raw: string) => translateSpeciesEntries([{ id: '1', name: 'X', attributes: { species: [raw] } }]).entries[0]!.attributes.species
-    expect(expand('Human (formerly), Hybrid')).toEqual(['Humain', 'Démon'])
-    expect(expand('Parasite')).toEqual(['Humain'])
+    expect(expand('Human (formerly), Hybrid')).toEqual(['Human', 'Demon'])
+    expect(expand('Parasite')).toEqual(['Human'])
   })
 })

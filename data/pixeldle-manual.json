@@ -100,7 +100,7 @@
   },
   "Q107751147": {
    "_raison": "avatar personnalisable (le wiki a pris la page « Player »)",
-   "gender": "Au choix"
+   "gender": "Player's choice"
   },
   "Q106744090": {
    "_nom": "Talos",
@@ -113,13 +113,13 @@
    },
    "hair": {
     "moins": [
-     "Bruns",
-     "Blancs"
+     "Brown",
+     "White"
     ]
    },
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -133,7 +133,7 @@
    ],
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -145,7 +145,7 @@
    ],
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -153,7 +153,7 @@
    "_raison": "humain (le wiki ne donne pas l'espèce)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -161,7 +161,7 @@
    "_raison": "humain (le wiki ne donne pas l'espèce)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -169,7 +169,7 @@
    "_raison": "humain (le wiki ne donne pas l'espèce)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -177,23 +177,23 @@
    "_raison": "humain (le wiki ne donne pas l'espèce)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-yo-kai-watch-usapyon": {
    "_raison": "sexe absent du début de page (stats)",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-yo-kai-watch-shogunyan": {
    "_raison": "sexe absent du début de page (stats)",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-yo-kai-watch-lord-enma": {
    "_raison": "roi des Yo-kai",
    "species": {
     "plus": [
-     "Yōkai"
+     "Yokai"
     ]
    }
   },
@@ -201,26 +201,26 @@
    "_raison": "chat devenu Yo-kai : même espèce que les autres Yo-kai",
    "species": {
     "plus": [
-     "Yōkai"
+     "Yokai"
     ],
     "moins": [
-     "Chat"
+     "Cat"
     ]
    }
   },
   "wiki-firewatch-henry": {
    "_raison": "le héros : sa page ne donne pas le sexe",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-palworld-bjorn-seligsson": {
    "_raison": "sexe absent du wiki",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q3776297": {
    "_raison": "dresseur (Wikidata ne donne pas l'espèce)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -251,7 +251,7 @@
    "_raison": "le héros, détective privé",
    "occupation": {
     "plus": [
-     "Détective"
+     "Detective"
     ]
    },
    "nationality": {
@@ -281,7 +281,7 @@
   },
   "wiki-the-talos-principle-mla": {
    "_raison": "Milton Library Assistant, une IA",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "species": {
     "plus": [
      "Robot"
@@ -298,15 +298,15 @@
     "Arkady",
     "Chernyshevsky"
    ],
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -314,12 +314,12 @@
    "_raison": "chercheuse du projet",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -327,7 +327,7 @@
    "_raison": "humaine",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -335,7 +335,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -343,7 +343,7 @@
    "_raison": "humaine",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -351,7 +351,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -360,15 +360,15 @@
    "_raison": "anthropologue",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ],
     "moins": [
-     "Archéologue"
+     "Archaeologist"
     ]
    },
    "nationality": {
@@ -383,15 +383,15 @@
    "_raison": "linguiste",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ],
     "moins": [
-     "Érudit"
+     "Scholar"
     ]
    },
    "nationality": {
@@ -403,11 +403,11 @@
   },
   "Q113954461": {
    "_raison": "avatar personnalisable",
-   "gender": "Au choix"
+   "gender": "Player's choice"
   },
   "Q136405131": {
    "_raison": "avatar : Caelus ou Stelle",
-   "gender": "Au choix",
+   "gender": "Player's choice",
    "aliases": [
     "Pionnier",
     "Caelus",
@@ -416,7 +416,7 @@
   },
   "Q116252369": {
    "_raison": "le jeu ne donne jamais son sexe",
-   "gender": "Autre"
+   "gender": "Other"
   },
   "Q118669752": {
    "_raison": "le héros de Nier (Replicant / Gestalt)",
@@ -424,10 +424,10 @@
    "aliases": [
     "Protagonist"
    ],
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -460,11 +460,11 @@
   },
   "Q126477102": {
    "_raison": "robot de la coop",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q126477106": {
    "_raison": "robot de la coop",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "wiki-saturnalia-the-creature": {
    "_raison": "le monstre",
@@ -473,82 +473,82 @@
     "The Creature",
     "Créature"
    ],
-   "gender": "Aucun",
+   "gender": "Genderless",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ]
    }
   },
   "wiki-saturnalia-gabriele-mirai": {
    "_raison": "père de Claudia",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-umberto-aulas": {
    "_raison": "père de Sergio",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-damiano-orsi": {
    "_raison": "sacristain",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-bruno-bissani": {
    "_raison": "seigneur du château",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-eliana-murgia": {
    "_raison": "sœur de Tecla",
-   "gender": "Femme",
+   "gender": "Female",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-mara-mirai": {
    "_raison": "tante de Claudia",
-   "gender": "Femme",
+   "gender": "Female",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-leone": {
    "_raison": "mineur",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-rupert-crowley": {
    "_raison": "pilote de la RAF",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -556,7 +556,7 @@
    "_raison": "professeur",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    },
    "aliases": [
@@ -565,7 +565,7 @@
    ],
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -577,7 +577,7 @@
    ],
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -599,15 +599,15 @@
   },
   "wiki-breathedge-grandfather": {
    "_raison": "le grand-père du héros",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    },
    "aliases": [
@@ -625,7 +625,7 @@
      "Korvax"
     ]
    },
-   "gender": "Autre"
+   "gender": "Other"
   },
   "wiki-no-man-s-sky-specialist-polo": {
    "_raison": "titre gek dans le nom ; le wiki dit « they »",
@@ -638,7 +638,7 @@
      "Gek"
     ]
    },
-   "gender": "Autre"
+   "gender": "Other"
   },
   "wiki-no-man-s-sky-null": {
    "_raison": "nom de page « -null- » ; le wiki dit « they »",
@@ -649,28 +649,28 @@
    ],
    "species": {
     "plus": [
-     "Voyageur"
+     "Traveller"
     ]
    },
-   "gender": "Autre"
+   "gender": "Other"
   },
   "wiki-no-man-s-sky-artemis": {
    "_raison": "un Voyageur ; le wiki dit « they »",
    "species": {
     "plus": [
-     "Voyageur"
+     "Traveller"
     ]
    },
-   "gender": "Autre"
+   "gender": "Other"
   },
   "wiki-no-man-s-sky-apollo": {
    "_raison": "un Voyageur au corps robotisé ; le wiki dit « they »",
    "species": {
     "plus": [
-     "Voyageur"
+     "Traveller"
     ]
    },
-   "gender": "Autre"
+   "gender": "Other"
   },
   "wiki-no-man-s-sky-the-atlas": {
    "_raison": "entité cosmique",
@@ -679,52 +679,52 @@
     "The Atlas",
     "Atlas"
    ],
-   "gender": "Aucun",
+   "gender": "Genderless",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    }
   },
   "wiki-chernobylite-sashko": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-chernobylite-tarakan": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-chernobylite-black-stalker": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-chernobylite-anton": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-idir-izem": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "wiki-saturnalia-tecla-murgia": {
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -742,23 +742,23 @@
     "Scientist",
     "Scientifiques"
    ],
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Scientifique",
-     "Soldat"
+     "Scientist",
+     "Soldier"
     ]
    }
   },
   "wiki-devil-may-cry-kyrie": {
    "_nom": "Kyrie",
    "_raison": "sexe faux ou absent du wiki",
-   "gender": "Femme",
+   "gender": "Female",
    "nationality": {
     "plus": [
      "Fortuna"
@@ -768,10 +768,10 @@
   "wiki-devil-may-cry-nico": {
    "_nom": "Nico",
    "_raison": "sexe faux ou absent du wiki",
-   "gender": "Femme",
+   "gender": "Female",
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -780,7 +780,7 @@
    "_raison": "démone artificielle",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ],
     "moins": [
      "Artificial Demon"
@@ -793,23 +793,23 @@
    },
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
   "wiki-nier-pod-042": {
    "_raison": "unité de soutien",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q110906334": {
    "_nom": "Emil",
    "_raison": "arme vivante, pas un objet",
    "species": {
     "plus": [
-     "Humanoïde"
+     "Humanoid"
     ],
     "moins": [
-     "Objet"
+     "Object"
     ]
    }
   },
@@ -818,7 +818,7 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
@@ -832,12 +832,12 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -845,22 +845,22 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-hades-nyx": {
    "_nom": "Nyx",
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -869,12 +869,12 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Employé"
+     "Employee"
     ]
    }
   },
@@ -883,12 +883,12 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -897,12 +897,12 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -911,7 +911,7 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -924,7 +924,7 @@
    },
    "occupation": {
     "plus": [
-     "Livreur"
+     "Courier"
     ]
    }
   },
@@ -933,13 +933,13 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
     "plus": [
-     "Marin",
-     "Commerçant"
+     "Sailor",
+     "Merchant"
     ]
    }
   },
@@ -948,7 +948,7 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -961,7 +961,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -970,7 +970,7 @@
    "_raison": "dieu ou divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -983,7 +983,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -992,13 +992,13 @@
    "_raison": "année : Hades II (son père s'appelle Hades, comme le 1er jeu)",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "year": 2024,
    "occupation": {
     "plus": [
-     "Magicien",
+     "Mage",
      "Noble"
     ]
    }
@@ -1007,7 +1007,7 @@
    "_raison": "ombre d'un mortel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1015,7 +1015,7 @@
    "_raison": "ombre d'un mortel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1023,7 +1023,7 @@
    "_raison": "ombre d'un mortel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1031,7 +1031,7 @@
    "_raison": "ombre d'un mortel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1039,7 +1039,7 @@
    "_raison": "ombre d'un mortel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1047,7 +1047,7 @@
    "_raison": "chien des Enfers",
    "species": {
     "plus": [
-     "Chien",
+     "Dog",
      "Animal"
     ]
    }
@@ -1056,7 +1056,7 @@
    "_raison": "gorgone",
    "species": {
     "plus": [
-     "Gorgone"
+     "Gorgon"
     ]
    }
   },
@@ -1064,32 +1064,32 @@
    "_raison": "squelette d'entraînement",
    "species": {
     "plus": [
-     "Squelette"
+     "Skeleton"
     ]
    }
   },
   "Q142103107": {
    "_nom": "Dark Pit",
    "_raison": "double de Pit",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Ange"
+     "Angel"
     ]
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
   "Q5820357": {
    "_nom": "Eggplant Wizard",
    "_raison": "monstre du 1er jeu",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ]
    },
    "nationality": {
@@ -1106,7 +1106,7 @@
    "_raison": "divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -1119,7 +1119,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -1128,13 +1128,13 @@
    "_raison": "divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "hair": {
     "plus": [
-     "Rouges",
-     "Verts"
+     "Red",
+     "Green"
     ]
    },
    "nationality": {
@@ -1147,7 +1147,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -1156,7 +1156,7 @@
    "_raison": "divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -1169,7 +1169,7 @@
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1178,7 +1178,7 @@
    "_raison": "divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -1192,7 +1192,7 @@
    "_raison": "divinité",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "nationality": {
@@ -1209,7 +1209,7 @@
    "_raison": "mercenaire humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "nationality": {
@@ -1223,7 +1223,7 @@
    "_raison": "monstre",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ]
    },
    "nationality": {
@@ -1240,7 +1240,7 @@
    "_raison": "monstre",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ]
    },
    "nationality": {
@@ -1251,22 +1251,22 @@
   },
   "Q126033521": {
    "_raison": "sexe absent",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "Q113954944": {
    "_raison": "sexe absent",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-gears-of-war-bernadette-mataki": {
    "_raison": "humaine",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1275,16 +1275,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1293,16 +1293,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1311,16 +1311,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Informaticien"
+     "Programmer"
     ]
    }
   },
@@ -1329,16 +1329,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1347,16 +1347,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -1365,16 +1365,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
@@ -1383,16 +1383,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -1401,16 +1401,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -1418,11 +1418,11 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1431,18 +1431,18 @@
    "_raison": "année : Bloons TD 6",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
-   "gender": "Autre",
+   "gender": "Other",
    "year": 2018,
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1451,16 +1451,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1469,16 +1469,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -1487,16 +1487,16 @@
    "_raison": "héros singe",
    "species": {
     "plus": [
-     "Singe",
+     "Monkey",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -1504,7 +1504,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1512,7 +1512,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1520,7 +1520,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1528,7 +1528,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1536,7 +1536,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1544,7 +1544,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1552,7 +1552,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1560,7 +1560,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1568,7 +1568,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1576,7 +1576,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1584,7 +1584,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1592,7 +1592,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1600,7 +1600,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1608,7 +1608,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1616,7 +1616,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1624,7 +1624,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1632,7 +1632,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1640,7 +1640,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1648,7 +1648,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1656,7 +1656,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1664,7 +1664,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1672,7 +1672,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1680,7 +1680,7 @@
    "_raison": "humain",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1778,11 +1778,11 @@
    "developer": "Spicy Horse",
    "species": {
     "plus": [
-     "Morse",
+     "Walrus",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1801,7 +1801,7 @@
    "year": 2018,
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    },
    "occupation": {
@@ -1901,7 +1901,7 @@
    "year": 2000,
    "species": {
     "plus": [
-     "Charbon"
+     "Coal"
     ]
    }
   },
@@ -1978,10 +1978,10 @@
    "developer": "2K Marin",
    "species": {
     "plus": [
-     "Extraterrestre"
+     "Alien"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -1990,7 +1990,7 @@
    "_raison": "année : Sonic Adventure",
    "year": 1998,
    "developer": "Sonic Team",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q6056655": {
    "_nom": "Pachacamac the Echidna",
@@ -2020,10 +2020,10 @@
    "_nom": "The Outsider",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2034,7 +2034,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2050,11 +2050,11 @@
    "_nom": "Mutt",
    "species": {
     "plus": [
-     "Chien",
+     "Dog",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2062,11 +2062,11 @@
    "_nom": "Old Bear",
    "species": {
     "plus": [
-     "Ours",
+     "Bear",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2077,7 +2077,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2088,7 +2088,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2099,7 +2099,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2110,7 +2110,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2118,11 +2118,11 @@
    "_nom": "Gertie",
    "species": {
     "plus": [
-     "Cerf",
+     "Deer",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2130,10 +2130,10 @@
    "_nom": "Speaker",
    "species": {
     "plus": [
-     "Extraterrestre"
+     "Alien"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2141,15 +2141,15 @@
    "_nom": "Gwyn, Lord of Cinder",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -2157,10 +2157,10 @@
    "_nom": "Gwynevere, Princess of Sunlight",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
@@ -2173,10 +2173,10 @@
    "_nom": "Dark Sun Gwyndolin",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
@@ -2189,16 +2189,16 @@
    "_nom": "Witch of Izalith",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien",
-     "Souverain"
+     "Mage",
+     "Royalty"
     ]
    }
   },
@@ -2206,15 +2206,15 @@
    "_nom": "Gravelord Nito",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -2222,10 +2222,10 @@
    "_nom": "Crossbreed Priscilla",
    "species": {
     "plus": [
-     "Demi-dragon"
+     "Half-dragon"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2233,11 +2233,11 @@
    "_nom": "White Rabbit",
    "species": {
     "plus": [
-     "Lapin",
+     "Rabbit",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2245,11 +2245,11 @@
    "_nom": "Caterpillar",
    "species": {
     "plus": [
-     "Insecte",
+     "Insect",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2260,7 +2260,7 @@
      "Dragon"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2268,10 +2268,10 @@
    "_nom": "Gryphon",
    "species": {
     "plus": [
-     "Griffon"
+     "Griffin"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2279,11 +2279,11 @@
    "_nom": "Mock Turtle",
    "species": {
     "plus": [
-     "Tortue",
+     "Turtle",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2291,11 +2291,11 @@
    "_nom": "March Hare",
    "species": {
     "plus": [
-     "Lièvre",
+     "Hare",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2303,11 +2303,11 @@
    "_nom": "Dormouse",
    "species": {
     "plus": [
-     "Loir",
+     "Dormouse",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2315,11 +2315,11 @@
    "_nom": "Cheshire Cat",
    "species": {
     "plus": [
-     "Chat",
+     "Cat",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2330,7 +2330,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2341,7 +2341,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2352,7 +2352,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2363,7 +2363,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2374,7 +2374,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2385,7 +2385,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2396,7 +2396,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2407,7 +2407,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2418,7 +2418,7 @@
      "D'ni"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2426,10 +2426,10 @@
    "_nom": "Bonku",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ],
     "moins": [
-     "Objet",
+     "Object",
      "Forgotling"
     ]
    }
@@ -2438,7 +2438,7 @@
    "_nom": "Dark Prince",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "_raison": "année : Prince of Persia: Les Deux Royaumes",
@@ -2451,7 +2451,7 @@
      "Mutant"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2459,10 +2459,10 @@
    "_nom": "Pyramid Head",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2470,22 +2470,22 @@
    "_nom": "Valtiel",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q517115": {
    "_nom": "Nightmare",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2496,7 +2496,7 @@
      "Golem"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2504,11 +2504,11 @@
    "_nom": "Frog",
    "species": {
     "plus": [
-     "Grenouille",
+     "Frog",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2516,15 +2516,15 @@
    "_nom": "Flea",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -2532,22 +2532,22 @@
    "_nom": "Nu",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q9025748": {
    "_nom": "Lynx",
    "species": {
     "plus": [
-     "Demi-humain"
+     "Demi-human"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2555,10 +2555,10 @@
    "_nom": "Harle",
    "species": {
     "plus": [
-     "Humanoïde"
+     "Humanoid"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2566,20 +2566,20 @@
    "_nom": "Buzz Buzz",
    "species": {
     "plus": [
-     "Insecte",
+     "Insect",
      "Animal"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-god-of-war-thor": {
    "_nom": "Thor",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    }
   },
@@ -2587,7 +2587,7 @@
    "_nom": "Madama Butterfly",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ]
    },
    "nationality": {
@@ -2600,7 +2600,7 @@
    },
    "occupation": {
     "plus": [
-     "Protecteur"
+     "Protector"
     ]
    }
   },
@@ -2608,7 +2608,7 @@
    "_nom": "Morgana",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2632,7 +2632,7 @@
    "_nom": "Amp",
    "species": {
     "plus": [
-     "Monstre"
+     "Monster"
     ]
    }
   },
@@ -2640,7 +2640,7 @@
    "_nom": "Eggman Nega",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "_raison": "année : Sonic Rush",
@@ -2658,7 +2658,7 @@
    "_nom": "Ramuh",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ]
    }
   },
@@ -2666,7 +2666,7 @@
    "_nom": "Enigmatic Man",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2674,10 +2674,10 @@
    "_nom": "Lingering Will",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q10751211": {
    "_nom": "Waddle Dee",
@@ -2686,13 +2686,13 @@
      "Waddle Dee"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q16575005": {
    "_nom": "Magolor",
    "species": {
     "plus": [
-     "Halcandrien"
+     "Halcandran"
     ]
    }
   },
@@ -2700,7 +2700,7 @@
    "_nom": "Mr. Frosty",
    "species": {
     "plus": [
-     "Morse",
+     "Walrus",
      "Animal"
     ]
    },
@@ -2711,7 +2711,7 @@
    "_nom": "Prince Fluff",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -2719,12 +2719,12 @@
    "_nom": "Susie",
    "species": {
     "plus": [
-     "Humanoïde"
+     "Humanoid"
     ]
    },
    "hair": {
     "moins": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -2732,7 +2732,7 @@
    "_nom": "Nightmare",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ]
    }
   },
@@ -2740,7 +2740,7 @@
    "_nom": "Marcus McCloud",
    "species": {
     "plus": [
-     "Renard",
+     "Fox",
      "Animal"
     ]
    }
@@ -2765,7 +2765,7 @@
    "_nom": "Murfy",
    "species": {
     "plus": [
-     "Insecte",
+     "Insect",
      "Animal"
     ]
    }
@@ -2774,21 +2774,21 @@
    "_nom": "Dark Rayman",
    "species": {
     "plus": [
-     "Humanoïde"
+     "Humanoid"
     ]
    },
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q99671042": {
    "_nom": "Boomer",
    "species": {
     "plus": [
-     "Infecté"
+     "Infected"
     ]
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -2796,12 +2796,12 @@
    "_nom": "Witch",
    "species": {
     "plus": [
-     "Infecté"
+     "Infected"
     ]
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -2817,30 +2817,30 @@
    "_nom": "Eyeye",
    "species": {
     "plus": [
-     "Poisson",
+     "Fish",
      "Animal"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q115871174": {
    "_nom": "Hoverfish",
    "species": {
     "plus": [
-     "Poisson",
+     "Fish",
      "Animal"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q10371215": {
    "_nom": "Former Human",
    "species": {
     "plus": [
-     "Mort-vivant"
+     "Undead"
     ]
    },
-   "gender": "Aucun",
+   "gender": "Genderless",
    "nationality": {
     "plus": [
      "Mars"
@@ -2851,10 +2851,10 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ],
     "moins": [
-     "Chasseur"
+     "Hunter"
     ]
    }
   },
@@ -2862,193 +2862,193 @@
    "_nom": "Mancubus",
    "species": {
     "plus": [
-     "Démon"
+     "Demon"
     ]
    },
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q17194084": {
    "_nom": "Ukiki",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q115672257": {
    "_nom": "Robirdo",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q137528732": {
    "_nom": "Majora's Incarnation",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q3666249": {
    "_nom": "Chaos",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q116685435": {
    "_nom": "Klaptrap",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q6149649": {
    "_nom": "Dark Matter",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q135904431": {
    "_nom": "Buzzybat",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q3943381": {
    "_nom": "SA-X",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q50813723": {
    "_nom": "T.O.M.",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q3107878": {
    "_nom": "Fossoyeur",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "_raison": "année : Halo 2",
    "year": 2004
   },
   "Q55571439": {
    "_nom": "Henchman 800",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q55571467": {
    "_nom": "Henchman 1000",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q21467911": {
    "_nom": "Nihilanth",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q5652159": {
    "_nom": "Biomateria",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q56377240": {
    "_nom": "Corruptor",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q125146181": {
    "_nom": "Torrent",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q135636079": {
    "_nom": "Winged Sentry",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q135682291": {
    "_nom": "Tiktik",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q11312104": {
    "_nom": "Starman",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q13164404": {
    "_nom": "Creeper",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q25591435": {
    "_nom": "Enderman",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353574": {
    "_nom": "Pig",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353670": {
    "_nom": "Skeleton",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353680": {
    "_nom": "Wither Skeleton",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353557": {
    "_nom": "Chicken",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353559": {
    "_nom": "Cow",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353571": {
    "_nom": "Mooshroom",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353579": {
    "_nom": "sheep",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353654": {
    "_nom": "Ghast",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353682": {
    "_nom": "Zombie",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114351851": {
    "_nom": "Bee",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "_raison": "année : Minecraft 1.15 (abeilles)",
    "year": 2019
   },
   "Q114351862": {
    "_nom": "Zombified Piglin",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353558": {
    "_nom": "Cod",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353566": {
    "_nom": "Glow Squid",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353572": {
    "_nom": "Ocelot",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353585": {
    "_nom": "Tropical Fish",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q114353655": {
    "_nom": "Guardian",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q115856840": {
    "_nom": "Reefback Léviathan",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q115861035": {
    "_nom": "Scrutine",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q115943937": {
    "_nom": "Sea Dragon Leviathan",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q115943944": {
    "_nom": "Sea Emperor Leviathan",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q140166458": {
    "_nom": "Collector Leviathan",
    "_raison": "Subnautica 2 se passe sur Proteus, les autres sur la planète 4546B (défaut de la franchise)",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "nationality": {
     "plus": [
      "Proteus"
@@ -3060,66 +3060,66 @@
   },
   "Q111015357": {
    "_nom": "Spode",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q125680235": {
    "_nom": "The God That Will Come",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q4219956": {
    "_nom": "Cyberdemon",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q108324133": {
    "_nom": "Cacodemon",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q10373741": {
    "_nom": "Spider Mastermind",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q108333052": {
    "_nom": "Âme Perdue",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
   "Q3027554": {
    "_nom": "Dieu-machine",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q3967463": {
    "_nom": "Squig",
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "Q2333421": {
    "_nom": "Metal Sonic",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q11302218": {
    "_nom": "Chef Kawasaki",
-   "gender": "Homme",
+   "gender": "Male",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    },
    "_raison": "année : Kirby's Adventure",
@@ -3127,137 +3127,137 @@
   },
   "Q24034079": {
    "_nom": "Madame Amberley",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q55946189": {
    "_nom": "Mr. Zurkon",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q141161910": {
    "_nom": "Lord Saltimatum",
-   "gender": "Autre"
+   "gender": "Other"
   },
   "Q108466077": {
    "_nom": "Azura",
-   "gender": "Femme",
+   "gender": "Female",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
   "Q112601404": {
    "_nom": "Molag Bal",
-   "gender": "Homme",
+   "gender": "Male",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
   "Q112601430": {
    "_nom": "Mehrunes Dagon",
-   "gender": "Homme",
+   "gender": "Male",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
   "Q56363359": {
    "_nom": "Pyro",
-   "gender": "Autre"
+   "gender": "Other"
   },
   "Q65229988": {
    "_nom": "Orisa",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q142189583": {
    "_nom": "Clove",
-   "gender": "Autre"
+   "gender": "Other"
   },
   "Q132855568": {
    "_nom": "Sae Niijima",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q10750259": {
    "_nom": "Lloyd Irving",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q137887326": {
    "_nom": "Gaspard Boulay",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q50296411": {
    "_nom": "Sif, the Great Grey Wolf",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q142190670": {
    "_nom": "Jar-Bairn",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q116465298": {
    "_nom": "Mettaton EX",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q16868728": {
    "_nom": "Claptrap",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q9302554": {
    "_nom": "Giygas",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q5676718": {
    "_nom": "Angie",
-   "gender": "Femme",
+   "gender": "Female",
    "_raison": "année : Mother 3",
    "year": 2006,
    "developer": "HAL Laboratory"
   },
   "Q5815284": {
    "_nom": "Duster",
-   "gender": "Homme",
+   "gender": "Male",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ]
    }
   },
   "Q6011231": {
    "_nom": "Meryl",
-   "gender": "Femme",
+   "gender": "Female",
    "_raison": "Mother 4 : jeu de fans pas encore sorti",
    "year": 9999,
    "developer": "Jeu de fans"
   },
   "Q6025538": {
    "_nom": "Mr. Everdred",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q6163253": {
    "_nom": "Violet",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q10404975": {
    "_nom": "Alex Denton",
-   "gender": "Au choix"
+   "gender": "Player's choice"
   },
   "Q141915688": {
    "_nom": "Alter",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q141915715": {
    "_nom": "Sparrow",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q125685268": {
    "_nom": "Bawb",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q139494225": {
    "_nom": "Samuel Hayden (Doom)",
-   "gender": "Homme",
+   "gender": "Male",
    "nationality": {
     "plus": [
      "Mars"
@@ -3269,59 +3269,59 @@
   },
   "Q3241098": {
    "_nom": "Nurgle",
-   "gender": "Homme",
+   "gender": "Male",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
   "Q12620555": {
    "_nom": "Khorne",
-   "gender": "Homme",
+   "gender": "Male",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
   "Q4148376": {
    "_nom": "Gregor Eisenhorn",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q17429473": {
    "_nom": "Ungrim Ironfist",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q20986877": {
    "_nom": "Valaya",
-   "gender": "Femme"
+   "gender": "Female"
   },
   "Q135975943": {
    "_nom": "Saint Celestine",
-   "gender": "Femme",
+   "gender": "Female",
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
   "wiki-tomb-raider-winston": {
    "_nom": "Winston",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "wiki-palworld-dr-brawn": {
    "_nom": "Dr. Brawn",
-   "gender": "Homme"
+   "gender": "Male"
   },
   "Q51885980": {
    "_nom": "Zeus",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -3329,15 +3329,15 @@
    "_nom": "Athena",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -3345,7 +3345,7 @@
    "_nom": "Meta Knight",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3353,7 +3353,7 @@
    "_nom": "Mysterious girl",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3361,7 +3361,7 @@
    "_nom": "Paimon",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    },
    "_raison": "« as their guide » (page pas lue par le script)",
@@ -3375,7 +3375,7 @@
    "_nom": "Shadwyn",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3383,7 +3383,7 @@
    "_nom": "Chack",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3391,7 +3391,7 @@
    "_nom": "Anne",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ],
     "moins": [
      "Forgotling"
@@ -3402,11 +3402,11 @@
    "_nom": "Corrin",
    "species": {
     "plus": [
-     "Humain",
+     "Human",
      "Dragon"
     ],
     "moins": [
-     "Demi-humain"
+     "Demi-human"
     ]
    }
   },
@@ -3414,7 +3414,7 @@
    "_nom": "Amaterasu",
    "species": {
     "plus": [
-     "Divinité",
+     "Deity",
      "Animal"
     ]
    }
@@ -3423,7 +3423,7 @@
    "_nom": "Reptile",
    "species": {
     "plus": [
-     "Saurien"
+     "Saurian"
     ],
     "moins": [
      "Reptile"
@@ -3434,16 +3434,16 @@
    "_nom": "Geralt de Riv",
    "species": {
     "plus": [
-     "Humain",
+     "Human",
      "Mutant"
     ],
     "moins": [
-     "Humain mutant"
+     "Mutant human"
     ]
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3451,12 +3451,12 @@
    "_nom": "Eskel",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3464,12 +3464,12 @@
    "_nom": "Vesemir",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Sorceleur"
+     "Witcher"
     ]
    }
   },
@@ -3492,7 +3492,7 @@
    },
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3500,16 +3500,16 @@
    "_nom": "Raiden",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    },
    "_raison": "dieu du tonnerre",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -3555,8 +3555,8 @@
    },
    "hair": {
     "plus": [
-     "Bruns",
-     "Blonds"
+     "Brown",
+     "Blond"
     ]
    }
   },
@@ -3656,7 +3656,7 @@
    "year": 2002,
    "hair": {
     "plus": [
-     "Bleus"
+     "Blue"
     ]
    }
   },
@@ -3797,7 +3797,7 @@
    "_nom": "Bowser",
    "hair": {
     "plus": [
-     "Rouges"
+     "Red"
     ]
    }
   },
@@ -3805,7 +3805,7 @@
    "_nom": "Roxas",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3813,7 +3813,7 @@
    "_nom": "Marie",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3837,7 +3837,7 @@
    "_nom": "Rhonin",
    "hair": {
     "plus": [
-     "Rouges"
+     "Red"
     ]
    }
   },
@@ -3845,7 +3845,7 @@
    "_nom": "Cenarius",
    "hair": {
     "moins": [
-     "Noirs"
+     "Black"
     ]
    }
   },
@@ -3853,7 +3853,7 @@
    "_nom": "Demoman",
    "hair": {
     "plus": [
-     "Noirs"
+     "Black"
     ]
    }
   },
@@ -3861,7 +3861,7 @@
    "_nom": "Harry Mason",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ]
    }
   },
@@ -3869,7 +3869,7 @@
    "_nom": "Nanami",
    "hair": {
     "moins": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3885,7 +3885,7 @@
    "_nom": "Ann Takamaki",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3893,7 +3893,7 @@
    "_nom": "Luxord",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3901,10 +3901,10 @@
    "_nom": "Mordin Solus",
    "species": {
     "plus": [
-     "Extraterrestre"
+     "Alien"
     ],
     "moins": [
-     "Grenouille"
+     "Frog"
     ]
    },
    "hair": {
@@ -3928,7 +3928,7 @@
      "Toad"
     ],
     "moins": [
-     "Grenouille"
+     "Frog"
     ]
    }
   },
@@ -3939,7 +3939,7 @@
      "Toad"
     ],
     "moins": [
-     "Grenouille"
+     "Frog"
     ]
    }
   },
@@ -3947,7 +3947,7 @@
    "_nom": "Reisen Udongein Inaba",
    "hair": {
     "plus": [
-     "Violets"
+     "Purple"
     ]
    }
   },
@@ -3955,7 +3955,7 @@
    "_nom": "Tawna",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -4059,10 +4059,10 @@
    },
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ],
     "moins": [
-     "Espion"
+     "Spy"
     ]
    }
   },
@@ -4244,7 +4244,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4257,7 +4257,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4270,7 +4270,7 @@
    },
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4299,7 +4299,7 @@
    },
    "occupation": {
     "plus": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4542,10 +4542,10 @@
   },
   "Q135430461": {
    "_nom": "Houndeye",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "species": {
     "plus": [
-     "Extraterrestre"
+     "Alien"
     ]
    },
    "nationality": {
@@ -4560,7 +4560,7 @@
    },
    "occupation": {
     "plus": [
-     "Prédateur"
+     "Predator"
     ]
    }
   },
@@ -4568,7 +4568,7 @@
    "_nom": "Panda King",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4582,8 +4582,8 @@
    "_nom": "Louis",
    "occupation": {
     "plus": [
-     "Survivant",
-     "Employé"
+     "Survivor",
+     "Employee"
     ]
    }
   },
@@ -4591,8 +4591,8 @@
    "_nom": "Futaba Sakura",
    "occupation": {
     "plus": [
-     "Informaticien",
-     "Étudiant"
+     "Programmer",
+     "Student"
     ]
    }
   },
@@ -4600,7 +4600,7 @@
    "_nom": "Alph",
    "occupation": {
     "plus": [
-     "Mécanicien"
+     "Mechanic"
     ]
    }
   },
@@ -4608,7 +4608,7 @@
    "_nom": "Brittany",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4616,7 +4616,7 @@
    "_nom": "Charlie",
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -4627,7 +4627,7 @@
    "_nom": "Marcus Kincaid",
    "occupation": {
     "plus": [
-     "Commerçant"
+     "Merchant"
     ]
    }
   },
@@ -4635,7 +4635,7 @@
    "_nom": "Diana Altaras",
    "occupation": {
     "plus": [
-     "Pilote"
+     "Pilot"
     ]
    }
   },
@@ -4643,7 +4643,7 @@
    "_nom": "Dave",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4651,7 +4651,7 @@
    "_nom": "Last Fisherman",
    "occupation": {
     "plus": [
-     "Marin"
+     "Sailor"
     ]
    }
   },
@@ -4662,7 +4662,7 @@
    "_nom": "Ralof",
    "occupation": {
     "plus": [
-     "Révolutionnaire"
+     "Revolutionary"
     ]
    }
   },
@@ -4670,7 +4670,7 @@
    "_nom": "Muiri",
    "occupation": {
     "plus": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -4678,7 +4678,7 @@
    "_nom": "Wally",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4686,7 +4686,7 @@
    "_nom": "Kait Diaz",
    "occupation": {
     "moins": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4694,11 +4694,11 @@
    "_nom": "Leliana",
    "occupation": {
     "plus": [
-     "Espion",
-     "Musicien"
+     "Spy",
+     "Musician"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4706,10 +4706,10 @@
    "_nom": "Varric Tethras",
    "occupation": {
     "plus": [
-     "Écrivain"
+     "Writer"
     ],
     "moins": [
-     "Voleur"
+     "Thief"
     ]
    }
   },
@@ -4717,7 +4717,7 @@
    "_nom": "The Last Dragonborn",
    "occupation": {
     "moins": [
-     "Magicien",
+     "Mage",
      "Noble"
     ]
    }
@@ -4726,11 +4726,11 @@
    "_nom": "Victor Hoffman",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ],
     "moins": [
-     "Chef de clan",
-     "Dirigeant"
+     "Clan leader",
+     "Leader"
     ]
    }
   },
@@ -4739,7 +4739,7 @@
    "occupation": {
     "plus": [
      "Pirate",
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4747,7 +4747,7 @@
    "_nom": "Freddy Fazbear",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4755,7 +4755,7 @@
    "_nom": "Bonnie",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4763,7 +4763,7 @@
    "_nom": "Golden Freddy",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4771,7 +4771,7 @@
    "_nom": "Glamrock Freddy",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4779,7 +4779,7 @@
    "_nom": "Glamrock Chica",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4787,7 +4787,7 @@
    "_nom": "Montgomery Gator",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4795,10 +4795,10 @@
    "_nom": "Roxanne Wolf",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   },
@@ -4806,7 +4806,7 @@
    "_nom": "Mangle",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4814,7 +4814,7 @@
    "_nom": "Circus Baby",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4822,7 +4822,7 @@
    "_nom": "Ballora",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4830,7 +4830,7 @@
    "_nom": "Funtime Freddy",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4838,7 +4838,7 @@
    "_nom": "Funtime Foxy",
    "occupation": {
     "plus": [
-     "Artiste"
+     "Artist"
     ]
    }
   },
@@ -4846,7 +4846,7 @@
    "_nom": "Daycare Attendant",
    "occupation": {
     "plus": [
-     "Domestique"
+     "Servant"
     ]
    }
   },
@@ -4862,7 +4862,7 @@
    "_nom": "Striker Jones",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -4870,7 +4870,7 @@
    "_nom": "Geraldo",
    "occupation": {
     "plus": [
-     "Commerçant"
+     "Merchant"
     ]
    }
   },
@@ -4878,7 +4878,7 @@
    "_nom": "Kafka",
    "occupation": {
     "plus": [
-     "Criminel"
+     "Criminal"
     ]
    }
   },
@@ -4886,8 +4886,8 @@
    "_nom": "Louve d'argent",
    "occupation": {
     "plus": [
-     "Informaticien",
-     "Criminel"
+     "Programmer",
+     "Criminal"
     ]
    }
   },
@@ -4895,8 +4895,8 @@
    "_nom": "Blade",
    "occupation": {
     "plus": [
-     "Criminel",
-     "Épéiste"
+     "Criminal",
+     "Swordsman"
     ]
    }
   },
@@ -4904,7 +4904,7 @@
    "_nom": "Aventurine",
    "occupation": {
     "plus": [
-     "Homme d'affaires"
+     "Businessperson"
     ]
    }
   },
@@ -4912,8 +4912,8 @@
    "_nom": "Luciole",
    "occupation": {
     "plus": [
-     "Soldat",
-     "Criminel"
+     "Soldier",
+     "Criminal"
     ]
    }
   },
@@ -4921,7 +4921,7 @@
    "_nom": "Robin",
    "occupation": {
     "plus": [
-     "Musicien"
+     "Musician"
     ]
    }
   },
@@ -4929,7 +4929,7 @@
    "_nom": "Herta",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4937,7 +4937,7 @@
    "_nom": "Ruan Mei",
    "occupation": {
     "plus": [
-     "Scientifique"
+     "Scientist"
     ]
    }
   },
@@ -4945,7 +4945,7 @@
    "_nom": "Dan Heng",
    "occupation": {
     "plus": [
-     "Garde"
+     "Guard"
     ]
    }
   },
@@ -4953,7 +4953,7 @@
    "_nom": "Sunday",
    "occupation": {
     "plus": [
-     "Religieux"
+     "Cleric"
     ]
    }
   },
@@ -4961,7 +4961,7 @@
    "_nom": "Bronya",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -4969,10 +4969,10 @@
    "_nom": "Mega Man",
    "occupation": {
     "plus": [
-     "Justicier"
+     "Vigilante"
     ],
     "moins": [
-     "Conseiller"
+     "Advisor"
     ]
    }
   },
@@ -4980,7 +4980,7 @@
    "_nom": "Cut Man",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ]
    }
   },
@@ -4988,7 +4988,7 @@
    "_nom": "Ice Man",
    "occupation": {
     "plus": [
-     "Aventurier"
+     "Adventurer"
     ]
    }
   },
@@ -4996,10 +4996,10 @@
    "_nom": "Elec Man",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ],
     "moins": [
-     "Acteur"
+     "Actor"
     ]
    }
   },
@@ -5007,7 +5007,7 @@
    "_nom": "Bubble Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5015,7 +5015,7 @@
    "_nom": "Quick Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5023,7 +5023,7 @@
    "_nom": "Wood Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5031,7 +5031,7 @@
    "_nom": "Air Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5039,7 +5039,7 @@
    "_nom": "Heat Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5047,7 +5047,7 @@
    "_nom": "Metal Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5055,7 +5055,7 @@
    "_nom": "Crash Man",
    "occupation": {
     "plus": [
-     "Soldat"
+     "Soldier"
     ]
    }
   },
@@ -5063,7 +5063,7 @@
    "_nom": "Kyle Crane",
    "occupation": {
     "plus": [
-     "Espion"
+     "Spy"
     ]
    }
   },
@@ -5074,7 +5074,7 @@
      "Noble"
     ],
     "moins": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -5082,7 +5082,7 @@
    "_nom": "Harmonie",
    "occupation": {
     "moins": [
-     "Médecin"
+     "Doctor"
     ]
    }
   },
@@ -5090,7 +5090,7 @@
    "_nom": "Palutena",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5098,7 +5098,7 @@
    "_nom": "Ares",
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -5106,7 +5106,7 @@
    "_nom": "Vaermina",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5114,7 +5114,7 @@
    "_nom": "Urizen",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5122,7 +5122,7 @@
    "_nom": "Nelo Angelo",
    "occupation": {
     "plus": [
-     "Chevalier"
+     "Knight"
     ]
    }
   },
@@ -5130,7 +5130,7 @@
    "_nom": "Ghirahim",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5138,7 +5138,7 @@
    "_nom": "Sigmar",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5146,7 +5146,7 @@
    "_nom": "Grimnir",
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -5154,7 +5154,7 @@
    "_nom": "Grungni",
    "occupation": {
     "plus": [
-     "Ouvrier"
+     "Worker"
     ]
    }
   },
@@ -5162,7 +5162,7 @@
    "_nom": "Be'lakor",
    "occupation": {
     "plus": [
-     "Souverain"
+     "Royalty"
     ]
    }
   },
@@ -5170,7 +5170,7 @@
    "_nom": "Devil Jin",
    "occupation": {
     "plus": [
-     "Destructeur"
+     "Destroyer"
     ]
    }
   },
@@ -5178,7 +5178,7 @@
    "_nom": "Hylia",
    "occupation": {
     "plus": [
-     "Protecteur"
+     "Protector"
     ]
    }
   },
@@ -5233,10 +5233,10 @@
    "_raison": "cheveux châtains teints en bleu (pas roses)",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ],
     "moins": [
-     "Roses"
+     "Pink"
     ]
    }
   },
@@ -5266,13 +5266,13 @@
    },
    "hair": {
     "moins": [
-     "Rouges"
+     "Red"
     ]
    }
   },
   "wiki-sundered-shining-trapezohedron": {
    "_nom": "Shining Trapezohedron",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "nationality": {
     "plus": [
      "The Nether"
@@ -5327,10 +5327,10 @@
    "_nom": "Nyarlathotep",
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ],
     "moins": [
-     "Dirigeant"
+     "Leader"
     ]
    }
   }
@@ -5340,22 +5340,22 @@
    "id": "twnd-jun",
    "name": "Jun",
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": null,
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [
-     "Aventure",
-     "Réflexion",
+     "Adventure",
+     "Puzzle",
      "Visual novel",
-     "Plates-formes"
+     "Platformer"
     ],
     "year": 2019
    }
@@ -5364,10 +5364,10 @@
    "id": "twnd-liza",
    "name": "Liza",
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Démon",
-     "Esprit"
+     "Demon",
+     "Spirit"
     ],
     "nationality": [
      "Emrys",
@@ -5378,10 +5378,10 @@
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [
-     "Aventure",
-     "Réflexion",
+     "Adventure",
+     "Puzzle",
      "Visual novel",
-     "Plates-formes"
+     "Platformer"
     ],
     "year": 2019
    }
@@ -5393,7 +5393,7 @@
     "BT"
    ],
    "attributes": {
-    "gender": "Aucun",
+    "gender": "Genderless",
     "species": [
      "Robot"
     ],
@@ -5401,7 +5401,7 @@
      "Harmony"
     ],
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Titanfall / Apex Legends",
@@ -5419,18 +5419,18 @@
     "Briggs"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Soldat",
-     "Pilote",
-     "Espion"
+     "Soldier",
+     "Pilot",
+     "Spy"
     ],
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -5447,19 +5447,19 @@
     "Cooper"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Harmony"
     ],
     "occupation": [
-     "Soldat",
-     "Pilote"
+     "Soldier",
+     "Pilot"
     ],
     "hair": [
-     "Noirs"
+     "Black"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -5476,19 +5476,19 @@
     "Blisk"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "South Africa"
     ],
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "hair": [
-     "Bruns",
-     "Gris"
+     "Brown",
+     "Grey"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -5503,14 +5503,14 @@
    "name": "Wife",
    "aliases": [
     "Sarah",
-    "Femme",
+    "Female",
     "La Femme",
     "Half-Sister"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "occupation": null,
     "nationality": null,
@@ -5518,7 +5518,7 @@
     "franchise": "Twelve Minutes",
     "developer": "Luis Antonio",
     "genres": [
-     "Aventure"
+     "Adventure"
     ],
     "year": 2021
    }
@@ -5532,19 +5532,19 @@
     "Policier"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "occupation": [
-     "Policier"
+     "Police officer"
     ],
     "nationality": null,
     "hair": null,
     "franchise": "Twelve Minutes",
     "developer": "Luis Antonio",
     "genres": [
-     "Aventure"
+     "Adventure"
     ],
     "year": 2021
    }
@@ -5557,15 +5557,15 @@
     "Khymynuk"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Ukraine"
     ],
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5583,15 +5583,15 @@
     "Tatyana Yanko"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Ukraine"
     ],
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5606,15 +5606,15 @@
    "id": "chernobylite-olivier",
    "name": "Olivier",
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Canada"
     ],
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5629,15 +5629,15 @@
    "id": "chernobylite-olga",
    "name": "Olga",
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Russia"
     ],
     "occupation": [
-     "Révolutionnaire"
+     "Revolutionary"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5655,9 +5655,9 @@
    "id": "chernobylite-mikhail",
    "name": "Mikhail",
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Russia"
@@ -5682,15 +5682,15 @@
     "General Kozlov"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Russia"
     ],
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Chernobylite",
@@ -5709,16 +5709,16 @@
     "Edward"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "United States"
     ],
     "occupation": [
-     "Détective",
-     "Soldat"
+     "Detective",
+     "Soldier"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5737,13 +5737,13 @@
     "Cat"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Criminel"
+     "Criminal"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5763,13 +5763,13 @@
     "Capitaine Fitzroy"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Marin"
+     "Sailor"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5788,13 +5788,13 @@
     "Officer Bradley"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Policier"
+     "Police officer"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5813,13 +5813,13 @@
     "Sarah"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Artiste"
+     "Artist"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5838,9 +5838,9 @@
     "Charles"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": null,
@@ -5862,13 +5862,13 @@
     "Docteur Fuller"
    ],
    "attributes": {
-    "gender": "Homme",
+    "gender": "Male",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Médecin"
+     "Doctor"
     ],
     "hair": null,
     "franchise": "Call of Cthulhu",
@@ -5887,9 +5887,9 @@
     "001"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Androïde"
+     "Android"
     ],
     "nationality": null,
     "occupation": null,
@@ -5897,7 +5897,7 @@
     "franchise": "The Talos Principle",
     "developer": "Croteam",
     "genres": [
-     "Réflexion"
+     "Puzzle"
     ],
     "year": 2014
    }
@@ -5910,20 +5910,20 @@
     "Nowak"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": null,
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "hair": null,
     "franchise": "The Riftbreaker",
     "developer": "EXOR Studios",
     "genres": [
      "Action",
-     "Stratégie"
+     "Strategy"
     ],
     "year": 2021
    }
@@ -5936,20 +5936,20 @@
     "Mr Riggs"
    ],
    "attributes": {
-    "gender": "Aucun",
+    "gender": "Genderless",
     "species": [
      "Robot"
     ],
     "nationality": null,
     "occupation": [
-     "Compagnon"
+     "Companion"
     ],
     "hair": null,
     "franchise": "The Riftbreaker",
     "developer": "EXOR Studios",
     "genres": [
      "Action",
-     "Stratégie"
+     "Strategy"
     ],
     "year": 2021
    }
@@ -5965,9 +5965,9 @@
    ],
    "attributes": {
     "species": [
-     "Au choix"
+     "Player's choice"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2011,
     "franchise": "The Elder Scrolls",
     "occupation": null
@@ -5982,9 +5982,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2022,
     "franchise": "Elden Ring",
     "occupation": null
@@ -6000,7 +6000,7 @@
     "species": [
      "Nephalem"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2012,
     "franchise": "Diablo",
     "occupation": null
@@ -6016,11 +6016,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Fermier"
+     "Farmer"
     ],
     "year": 2016,
     "franchise": "Stardew Valley"
@@ -6034,9 +6034,9 @@
    ],
    "attributes": {
     "species": [
-     "Au choix"
+     "Player's choice"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2023,
     "franchise": "Baldur's Gate",
     "occupation": null
@@ -6051,11 +6051,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Étudiant"
+     "Student"
     ],
     "year": 2023,
     "franchise": "Hogwarts Legacy"
@@ -6070,9 +6070,9 @@
    ],
    "attributes": {
     "species": [
-     "Au choix"
+     "Player's choice"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2017,
     "franchise": "Divinity: Original Sin",
     "occupation": null
@@ -6087,9 +6087,9 @@
    ],
    "attributes": {
     "species": [
-     "Au choix"
+     "Player's choice"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2015,
     "franchise": "Pillars of Eternity",
     "occupation": null
@@ -6104,11 +6104,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2012,
     "franchise": "XCOM"
@@ -6124,11 +6124,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2019,
     "franchise": "My Time at Portia / Sandrock"
@@ -6145,11 +6145,11 @@
    ],
    "attributes": {
     "species": [
-     "Âtrien"
+     "Hearthian"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2019,
     "franchise": "Outer Wilds"
@@ -6165,11 +6165,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 1988,
     "franchise": "Wasteland"
@@ -6183,9 +6183,9 @@
    ],
    "attributes": {
     "species": [
-     "Extraterrestre"
+     "Alien"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2008,
     "franchise": "Spore",
     "occupation": null
@@ -6200,11 +6200,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Survivant"
+     "Survivor"
     ],
     "year": 2017,
     "franchise": "ARK"
@@ -6218,9 +6218,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2024,
     "franchise": "Palworld",
     "occupation": null
@@ -6236,9 +6236,9 @@
     "species": [
      "Inkling"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2015,
     "franchise": "Splatoon"
@@ -6253,9 +6253,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "year": 2017,
     "franchise": "We Were Here",
     "occupation": null
@@ -6271,11 +6271,11 @@
    ],
    "attributes": {
     "species": [
-     "Nain"
+     "Dwarf"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2020,
     "franchise": "Deep Rock Galactic"
@@ -6290,9 +6290,9 @@
    ],
    "attributes": {
     "species": [
-     "Voyageur"
+     "Traveller"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": null,
     "year": 2016,
     "franchise": "No Man's Sky"
@@ -6308,11 +6308,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Chasseur de monstres"
+     "Monster hunter"
     ],
     "year": 2019,
     "franchise": "Hunt: Showdown"
@@ -6327,11 +6327,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Ouvrier"
+     "Worker"
     ],
     "year": 2019,
     "franchise": "Satisfactory"
@@ -6346,11 +6346,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Survivant"
+     "Survivor"
     ],
     "year": 2018,
     "franchise": "Rust"
@@ -6365,11 +6365,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2021,
     "franchise": "Icarus"
@@ -6384,11 +6384,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Astronaute"
+     "Astronaut"
     ],
     "year": 2019,
     "franchise": "Genesis Alpha One"
@@ -6403,9 +6403,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Autre",
+    "gender": "Other",
     "year": 2023,
     "franchise": "Chants of Sennaar",
     "occupation": null
@@ -6421,11 +6421,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "occupation": [
-     "Pilote"
+     "Pilot"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6439,9 +6439,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2007,
     "franchise": "BioShock",
     "occupation": null
@@ -6456,15 +6456,15 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "nationality": [
      "United States"
     ],
     "occupation": [
-     "Détective",
-     "Soldat"
+     "Detective",
+     "Soldier"
     ],
     "year": 2013,
     "franchise": "BioShock"
@@ -6479,11 +6479,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
-     "Garde"
+     "Guard"
     ],
     "year": 2014,
     "franchise": "Five Nights at Freddy's"
@@ -6497,14 +6497,14 @@
    ],
    "attributes": {
     "species": [
-     "Androïde"
+     "Android"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6518,14 +6518,14 @@
    ],
    "attributes": {
     "species": [
-     "Androïde"
+     "Android"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6539,14 +6539,14 @@
    ],
    "attributes": {
     "species": [
-     "Androïde"
+     "Android"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6561,14 +6561,14 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
-     "Mécanicien"
+     "Mechanic"
     ],
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "year": 2018,
     "franchise": "Subnautica"
@@ -6583,11 +6583,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Scientifique"
+     "Scientist"
     ],
     "year": 2021,
     "franchise": "Subnautica"
@@ -6601,12 +6601,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Pilote",
-     "Criminel"
+     "Pilot",
+     "Criminal"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6619,7 +6619,7 @@
     "species": [
      "Korian"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2015,
     "franchise": "Rebel Galaxy",
     "occupation": null
@@ -6632,7 +6632,7 @@
     "species": [
      "Robot"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "year": 2015,
     "franchise": "Rebel Galaxy",
     "occupation": null
@@ -6647,11 +6647,11 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6662,11 +6662,11 @@
    "name": "Cofax",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "year": 2015,
     "franchise": "Rebel Galaxy"
@@ -6677,9 +6677,9 @@
    "name": "Juster",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
      "Pirate"
     ],
@@ -6692,9 +6692,9 @@
    "name": "Durgan",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "occupation": [
      "Pirate"
     ],
@@ -6710,12 +6710,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Chevalier"
+     "Knight"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6728,12 +6728,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "year": 2005,
     "occupation": [
-     "Dirigeant"
+     "Leader"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6743,12 +6743,12 @@
    "name": "John Black",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6761,12 +6761,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Mercenaire"
+     "Mercenary"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6779,12 +6779,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2006,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6797,12 +6797,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2006,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6812,9 +6812,9 @@
    "name": "Nonahkee",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "year": 2005,
     "franchise": "Age of Empires III",
     "occupation": null
@@ -6829,12 +6829,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6848,12 +6848,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Chevalier"
+     "Knight"
     ],
     "nationality": [
      "France"
@@ -6870,12 +6870,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Espion"
+     "Spy"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6889,9 +6889,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "year": 2005,
     "occupation": [
      "Pirate"
@@ -6904,12 +6904,12 @@
    "name": "Delgado",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "nationality": [
      "Spain"
@@ -6922,12 +6922,12 @@
    "name": "Chilche",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Combattant"
+     "Fighter"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6937,12 +6937,12 @@
    "name": "Warwick",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "nationality": [
      "United Kingdom"
@@ -6958,9 +6958,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "nationality": [
      "France"
@@ -6977,12 +6977,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2005,
     "occupation": [
-     "Soldat"
+     "Soldier"
     ],
     "franchise": "Age of Empires III"
    }
@@ -6996,9 +6996,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2006,
     "franchise": "Age of Empires III",
     "occupation": null
@@ -7013,12 +7013,12 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2007,
     "occupation": [
-     "Samouraï"
+     "Samurai"
     ],
     "nationality": [
      "Japan"
@@ -7034,9 +7034,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2007,
     "nationality": [
      "China"
@@ -7054,9 +7054,9 @@
    ],
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "year": 2007,
     "nationality": [
      "India"
@@ -7070,9 +7070,9 @@
    "name": "Ajax",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7082,9 +7082,9 @@
    "name": "Viessa",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7094,9 +7094,9 @@
    "name": "Lepic",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7106,9 +7106,9 @@
    "name": "Freyna",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7118,9 +7118,9 @@
    "name": "Sharen",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7130,9 +7130,9 @@
    "name": "Gley",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7142,9 +7142,9 @@
    "name": "Valby",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7154,9 +7154,9 @@
    "name": "Blair",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Homme",
+    "gender": "Male",
     "franchise": "The First Descendant",
     "occupation": null
    }
@@ -7166,11 +7166,11 @@
    "name": "Caroline",
    "attributes": {
     "species": [
-     "Humain"
+     "Human"
     ],
-    "gender": "Femme",
+    "gender": "Female",
     "occupation": [
-     "Employé"
+     "Employee"
     ],
     "year": 2011,
     "franchise": "Portal"
@@ -7186,7 +7186,7 @@
     "species": [
      "Robot"
     ],
-    "gender": "Aucun",
+    "gender": "Genderless",
     "year": 2019,
     "franchise": "Satisfactory",
     "occupation": [
@@ -7205,7 +7205,7 @@
      "Lizard Doggo",
      "Animal"
     ],
-    "gender": "Aucun",
+    "gender": "Genderless",
     "year": 2019,
     "franchise": "Satisfactory",
     "occupation": null
@@ -7219,7 +7219,7 @@
     "Tourelle Aperture"
    ],
    "attributes": {
-    "gender": "Aucun",
+    "gender": "Genderless",
     "species": [
      "Robot"
     ],
@@ -7238,14 +7238,14 @@
     "Among Us"
    ],
    "attributes": {
-    "gender": "Au choix",
+    "gender": "Player's choice",
     "franchise": "Among Us",
     "occupation": [
-     "Astronaute",
-     "Scientifique"
+     "Astronaut",
+     "Scientist"
     ],
     "species": [
-     "Humanoïde"
+     "Humanoid"
     ]
    }
   },
@@ -7254,18 +7254,18 @@
    "name": "Dark Eshe",
    "aliases": [],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Humain"
+     "Human"
     ],
     "nationality": [
      "Wasteland"
     ],
     "occupation": [
-     "Dirigeant"
+     "Leader"
     ],
     "hair": [
-     "Rouges"
+     "Red"
     ],
     "franchise": "Sundered",
     "developer": "Thunder Lotus Games",
@@ -7283,15 +7283,15 @@
     "Beacon of Hope"
    ],
    "attributes": {
-    "gender": "Femme",
+    "gender": "Female",
     "species": [
-     "Monstre"
+     "Monster"
     ],
     "nationality": [
      "The Nether"
     ],
     "occupation": [
-     "Aucune"
+     "None"
     ],
     "hair": [
      "N/A"
@@ -7686,17 +7686,17 @@
  "defaults": {
   "Tomb Raider": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Life Is Strange": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Les Chevaliers de Baphomet": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "France"
@@ -7704,50 +7704,50 @@
   },
   "Far Cry": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Horizon": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dishonored": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "ARK": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Palworld": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dying Light": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "occupation": [
-    "Survivant"
+    "Survivor"
    ]
   },
   "Sons Of The Forest": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Kingdom Come: Deliverance": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "The Long Dark": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Great Bear Island",
@@ -7756,12 +7756,12 @@
   },
   "Mirror's Edge": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Firewatch": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Wyoming",
@@ -7770,52 +7770,52 @@
   },
   "XCOM": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dead Space": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Death Stranding": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dredge": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "SOMA": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Prey": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "The Stanley Parable": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dead Island": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Remember Me": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "The Sinking City": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Oakmont",
@@ -7830,25 +7830,25 @@
   },
   "Blue Prince": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Jagged Alliance": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Rebel Galaxy": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "occupation": [
-    "Pilote"
+    "Pilot"
    ]
   },
   "Lost Records: Bloom & Rage": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Velvet Cove",
@@ -7858,7 +7858,7 @@
   },
   "Silent Hill": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Silent Hill",
@@ -7867,20 +7867,20 @@
   },
   "Soulcalibur": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "occupation": [
-    "Combattant"
+    "Fighter"
    ]
   },
   "Call of Duty": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Danganronpa": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Japan"
@@ -7888,7 +7888,7 @@
   },
   "Ace Attorney": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Japan"
@@ -7896,7 +7896,7 @@
   },
   "Persona": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Japan"
@@ -7904,37 +7904,37 @@
   },
   "Metal Gear": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Grand Theft Auto": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Dark Souls": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Deponia": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "EarthBound": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Chrono": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Alice: Madness Returns": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Wonderland"
@@ -7942,47 +7942,47 @@
   },
   "Myst": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Street Fighter": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Team Fortress": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Batman: Arkham": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Warhammer": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Deus Ex": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Titanfall / Apex Legends": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Spiritfarer": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Doki Doki Literature Club": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "nationality": [
     "Japan"
@@ -7990,55 +7990,55 @@
   },
   "BioShock": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Cyberpunk 2077": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Halo": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Valorant": {
    "species": [
-    "Humain"
+    "Human"
    ],
    "occupation": [
-    "Espion"
+    "Spy"
    ]
   },
   "Dragon Quest": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Bloons Tower Defense": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "The First Descendant": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "We Were Here": {
    "species": [
-    "Humain"
+    "Human"
    ]
   },
   "Spore": {
    "species": [
-    "Extraterrestre"
+    "Alien"
    ]
   },
   "Forgotton Anne": {
    "species": [
-    "Objet",
+    "Object",
     "Forgotling"
    ]
   },
@@ -8118,7 +8118,7 @@
   },
   "Outer Wilds": {
    "occupation": [
-    "Scientifique"
+    "Scientist"
    ]
   }
  }

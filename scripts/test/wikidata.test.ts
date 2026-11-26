@@ -3,17 +3,17 @@ import { wikidataGender, wikidataHair, wikidataOccupation } from '../wikidata.js
 
 describe('wikidataGender', () => {
   it('MasculinFeminin_HommeFemme', () => {
-    expect(wikidataGender(['masculin'])).toBe('Homme')
-    expect(wikidataGender(['féminin'])).toBe('Femme')
+    expect(wikidataGender(['masculin'])).toBe('Male')
+    expect(wikidataGender(['féminin'])).toBe('Female')
     expect(wikidataGender(['non-binarité'])).toBeNull()
   })
 })
 
 describe('wikidataHair', () => {
   it('NomsFrEtEn_NosCouleurs', () => {
-    expect(wikidataHair(['cheveux noirs'])).toEqual(['Noirs'])
-    expect(wikidataHair(['cheveux châtains clairs', 'light blue hair'])).toEqual(['Bruns', 'Bleus'])
-    expect(wikidataHair(['pourpre'])).toEqual(['Violets'])
+    expect(wikidataHair(['cheveux noirs'])).toEqual(['Black'])
+    expect(wikidataHair(['cheveux châtains clairs', 'light blue hair'])).toEqual(['Brown', 'Blue'])
+    expect(wikidataHair(['pourpre'])).toEqual(['Purple'])
   })
 })
 

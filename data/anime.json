@@ -11,22 +11,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
-    "Exorciste",
-    "Professeur",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Teacher",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -42,20 +42,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Voyou",
-    "Soldat",
-    "Criminel"
+    "Thug",
+    "Soldier",
+    "Criminal"
    ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2018,
    "studio": "WIT STUDIO"
@@ -74,23 +74,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Pirate",
     "Leader",
-    "Criminel"
+    "Criminal"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -108,21 +108,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b27-Z5O02kQUydpT.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
     "Assassin",
-    "Chasseur",
-    "Criminel",
-    "Combattant"
+    "Hunter",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -142,21 +142,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Révolutionnaire",
-    "Soldat",
-    "Épéiste",
-    "Combattant"
+    "Revolutionary",
+    "Soldier",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -173,24 +173,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Épéiste",
-    "Chasseur de primes",
+    "Swordsman",
+    "Bounty hunter",
     "Pirate",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -208,29 +208,29 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b417-gVLmIJu9phcK.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Leader",
-    "Politicien",
-    "Justicier",
-    "Révolutionnaire",
-    "Terroriste",
-    "Pilote",
+    "Politician",
+    "Vigilante",
+    "Revolutionary",
+    "Terrorist",
+    "Pilot",
     "Noble",
-    "Étudiant",
-    "Souverain",
-    "Criminel"
+    "Student",
+    "Royalty",
+    "Criminal"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2006,
@@ -245,22 +245,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Noble",
     "Leader"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -278,19 +278,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
@@ -308,28 +308,28 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87275-mb13EWZBdbh3.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
-    "Étudiant",
-    "Serveur",
-    "Détective",
-    "Souverain",
+    "Student",
+    "Waiter",
+    "Detective",
+    "Royalty",
     "Peacekeeper",
     "Noble",
     "Leader"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -346,21 +346,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
-    "Soldat",
-    "Bataillon d'exploration"
+    "Soldier",
+    "Survey Corps"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -377,20 +377,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89334-OPj1hCzvrt7X.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": null,
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Psychological",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "bones"
@@ -404,34 +404,34 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b422-XTaiTuvRohsV.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Mercenaire",
+    "Mercenary",
     "Archer",
-    "Justicier",
-    "Artiste martial",
-    "Épéiste",
+    "Vigilante",
+    "Martial artist",
+    "Swordsman",
     "Assassin",
-    "Chasseur de démons",
-    "Chevalier",
-    "Aventurier",
-    "Tireur",
-    "Combattant",
-    "Criminel",
-    "Chasseur de monstres"
+    "Demon hunter",
+    "Knight",
+    "Adventurer",
+    "Marksman",
+    "Fighter",
+    "Criminal",
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Berserk",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Surnaturel"
+    "Horror",
+    "Supernatural"
    ],
    "year": 1997,
    "studio": "OLM"
@@ -445,20 +445,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Courtisane",
-    "Domestique",
-    "Apothicaire"
+    "Courtesan",
+    "Servant",
+    "Apothecary"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "The Apothecary Diaries",
    "genres": [
-    "Drame",
-    "Mystère"
+    "Drama",
+    "Mystery"
    ],
    "year": 2023,
    "studio": "OLM"
@@ -472,19 +472,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 1000,
    "occupation": [
-    "Magicien",
-    "Aventurier"
+    "Mage",
+    "Adventurer"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2023,
@@ -502,19 +502,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b34470-Jw2LXZBL5R8i.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
-    "Médecin"
+    "Doctor"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Steins;Gate",
    "genres": [
-    "Drame",
-    "Psychologique",
-    "Science-fiction",
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2011,
@@ -532,32 +532,32 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b10138-zOPrka0ddZOR.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 6,
    "occupation": [
-    "Marin",
-    "Fermier",
-    "Mercenaire",
-    "Combattant",
-    "Éclaireur",
-    "Soldat",
+    "Sailor",
+    "Farmer",
+    "Mercenary",
+    "Fighter",
+    "Scout",
+    "Soldier",
     "Pirate",
-    "Épéiste",
-    "Aventurier",
+    "Swordsman",
+    "Adventurer",
     "Assassin",
-    "Commerçant",
+    "Merchant",
     "Leader",
-    "Esclave",
-    "Criminel"
+    "Slave",
+    "Criminal"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Vinland Saga",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame"
+    "Adventure",
+    "Drama"
    ],
    "year": 2019,
    "studio": "WIT STUDIO"
@@ -571,22 +571,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -604,24 +604,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
     "Assassin",
-    "Épéiste",
+    "Swordsman",
     "Ninja",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -639,21 +639,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 25,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -670,22 +670,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b35252-DY9TW6pusqeh.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
-    "Étudiant",
-    "Voyageur temporel",
-    "Sportif",
-    "Scientifique"
+    "Student",
+    "Time traveler",
+    "Athlete",
+    "Scientist"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Steins;Gate",
    "genres": [
-    "Drame",
-    "Psychologique",
-    "Science-fiction",
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2011,
@@ -703,24 +703,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Monster hunter",
+    "Mage",
+    "Student"
    ],
    "hair": [
-    "Blonds",
-    "Noirs",
-    "Roses"
+    "Blond",
+    "Black",
+    "Pink"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -737,29 +737,29 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Acteur",
-    "Mannequin",
-    "Policier",
-    "Chanteur",
-    "Célébrité",
-    "Artiste",
-    "Musicien"
+    "Student",
+    "Actor",
+    "Model",
+    "Police officer",
+    "Singer",
+    "Celebrity",
+    "Artist",
+    "Musician"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "CloverWorks"
@@ -773,22 +773,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -802,60 +802,28 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b28-ivA7UGnfE40a.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Garde",
-    "Épéiste",
-    "Chasseur",
-    "Mafieux",
-    "Professeur",
-    "Combattant",
-    "Criminel"
+    "Guard",
+    "Swordsman",
+    "Hunter",
+    "Mobster",
+    "Teacher",
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
    "studio": "Nippon Animation"
-  }
- },
- {
-  "id": "89616",
-  "name": "Shigeo Kageyama",
-  "aliases": [
-   "Kageyama Shigeo",
-   "影山茂夫",
-   "Shigeo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 14,
-   "occupation": [
-    "Étudiant",
-    "Leader"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Mob Psycho 100",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
-   ],
-   "year": 2016,
-   "studio": "bones"
   }
  },
  {
@@ -870,25 +838,57 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Tueur en série",
-    "Criminel"
+    "Student",
+    "Serial killer",
+    "Criminal"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
    "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "89616",
+  "name": "Shigeo Kageyama",
+  "aliases": [
+   "Kageyama Shigeo",
+   "影山茂夫",
+   "Shigeo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89616-dXmdOc7L6SDi.png",
+  "attributes": {
+   "gender": "Male",
+   "age": 14,
+   "occupation": [
+    "Student",
+    "Leader"
+   ],
+   "hair": [
+    "Black"
+   ],
+   "anime": "Mob Psycho 100",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Psychological",
+    "Slice of Life",
+    "Supernatural"
+   ],
+   "year": 2016,
+   "studio": "bones"
   }
  },
  {
@@ -899,23 +899,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
-    "Chasseur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon hunter",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Blonds",
-    "Roses"
+    "Blond",
+    "Pink"
    ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -932,20 +932,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
     "Auto Memories Doll",
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Violet Evergarden",
    "genres": [
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2018,
    "studio": "Kyoto Animation"
@@ -963,23 +963,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120649-NPaWaIpWy60E.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Président",
-    "Étudiant",
+    "President",
+    "Student",
     "Artisan",
     "Leader"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -995,18 +995,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Alchimiste",
-    "Scientifique"
+    "Alchemist",
+    "Scientist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -1024,23 +1024,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -1056,25 +1056,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
-    "Mercenaire",
-    "Épéiste",
-    "Chasseur de démons",
-    "Charbonnier",
-    "Pourfendeur de démons",
-    "Combattant",
-    "Chasseur de monstres"
+    "Mercenary",
+    "Swordsman",
+    "Demon hunter",
+    "Charcoal seller",
+    "Demon Slayer",
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": null,
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -1091,20 +1091,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Leader"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
     "Fantasy",
-    "Psychologique",
-    "Surnaturel"
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2017,
    "studio": "ufotable"
@@ -1120,23 +1120,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
+    "Mage",
+    "Student",
+    "Exorcist",
     "Leader",
-    "Chasseur de monstres"
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -1153,25 +1153,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
-    "Mannequin",
-    "Étudiant",
-    "Cosplayeur",
-    "Célébrité",
-    "Artiste"
+    "Model",
+    "Student",
+    "Cosplayer",
+    "Celebrity",
+    "Artist"
    ],
    "hair": [
-    "Blonds",
-    "Roses"
+    "Blond",
+    "Pink"
    ],
    "anime": "My Dress-Up Darling",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Ecchi",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -1189,22 +1189,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6356-RImEfUfHpC58.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
-    "Chasseur de vampires",
-    "Agent immobilier",
-    "Chasseur de monstres",
-    "Combattant"
+    "Vampire hunter",
+    "Real estate agent",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "david production"
@@ -1223,20 +1223,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Student",
+    "Hero",
+    "Fighter"
    ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2017,
    "studio": "bones"
@@ -1250,27 +1250,27 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13020-ZdiYlNmpRUNS.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 33,
    "occupation": [
     "Leader",
-    "Mercenaire",
+    "Mercenary",
     "Pirate",
-    "Épéiste",
+    "Swordsman",
     "Assassin",
-    "Capitaine",
-    "Domestique",
-    "Combattant",
-    "Criminel"
+    "Captain",
+    "Servant",
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Vinland Saga",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame"
+    "Adventure",
+    "Drama"
    ],
    "year": 2019,
    "studio": "WIT STUDIO"
@@ -1284,20 +1284,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 13,
    "occupation": [
-    "Magicien",
-    "Étudiant"
+    "Mage",
+    "Student"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -1313,21 +1313,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Domestique"
+    "Servant"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -1347,23 +1347,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
+    "Superhero",
+    "Student",
     "Assistant",
-    "Héros",
-    "Combattant"
+    "Hero",
+    "Fighter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -1380,22 +1380,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89198-qKmRTw4Y3PRC.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 22,
    "occupation": [
-    "Détective",
-    "Mafieux",
-    "Criminel"
+    "Detective",
+    "Mobster",
+    "Criminal"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
-    "Comédie",
-    "Mystère",
-    "Surnaturel"
+    "Comedy",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "bones"
@@ -1413,22 +1413,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b672-cP5VPriN67xJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
-    "Samouraï",
-    "Épéiste",
-    "Combattant"
+    "Samurai",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "anime": "Gintama",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Science-fiction"
+    "Comedy",
+    "Drama",
+    "Sci-Fi"
    ],
    "year": 2006,
    "studio": "Sunrise"
@@ -1446,27 +1446,27 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Domestique",
-    "Chevalier",
-    "Religieux",
+    "Student",
+    "Servant",
+    "Knight",
+    "Cleric",
     "Leader",
-    "Chômeur",
-    "Combattant"
+    "Unemployed",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -1488,22 +1488,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121103-UGLxT8utLPnq.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Employé"
+    "Student",
+    "Employee"
    ],
    "hair": [
-    "Roses",
-    "Argentés"
+    "Pink",
+    "Silver"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -1519,23 +1519,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Food critic",
-    "Professeur"
+    "Teacher"
    ],
    "hair": [
-    "Rouges",
-    "Roses"
+    "Red",
+    "Pink"
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -1549,22 +1549,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Psychologique",
+    "Psychological",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2018,
    "studio": "TRIGGER"
@@ -1581,18 +1581,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Classroom of the Elite",
    "genres": [
-    "Drame",
-    "Psychologique"
+    "Drama",
+    "Psychological"
    ],
    "year": 2017,
    "studio": "Lerche"
@@ -1609,19 +1609,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b30-lyFExKyDhefc.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
-    "Chasseur"
+    "Hunter"
    ],
    "hair": [
-    "Verts",
-    "Noirs"
+    "Green",
+    "Black"
    ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -1638,27 +1638,27 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124142-XUO1g7wRqkaT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Scientifique",
+    "Scientist",
     "Leader",
-    "Étudiant",
-    "Inventeur",
-    "Astronome",
-    "Astronaute",
-    "Ingénieur"
+    "Student",
+    "Inventor",
+    "Astronomer",
+    "Astronaut",
+    "Engineer"
    ],
    "hair": [
-    "Blancs",
-    "Verts"
+    "White",
+    "Green"
    ],
    "anime": "Dr. STONE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Science-fiction"
+    "Adventure",
+    "Comedy",
+    "Sci-Fi"
    ],
    "year": 2019,
    "studio": "TMS Entertainment"
@@ -1672,26 +1672,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Cuisinier",
+    "Cook",
     "Pirate",
     "Artisan",
-    "Officier",
+    "Officer",
     "Noble",
-    "Criminel",
-    "Soldat"
+    "Criminal",
+    "Soldier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -1706,24 +1706,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 25,
    "occupation": [
-    "Professeur",
-    "Super-héros",
-    "Héros",
-    "Combattant"
+    "Teacher",
+    "Superhero",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
-    "Chauve",
-    "Noirs"
+    "Bald",
+    "Black"
    ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
+    "Comedy",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "MADHOUSE"
@@ -1740,22 +1740,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125886-TQbmqAaSgBLS.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Président du conseil des élèves",
-    "Étudiant",
+    "Student council president",
+    "Student",
     "Leader"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2020,
    "studio": "A-1 Pictures"
@@ -1772,14 +1772,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 23,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Hunter",
+    "Leader",
+    "Royalty",
+    "Detective",
+    "Noble"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Solo Leveling",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2024,
@@ -1797,27 +1805,27 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 28,
    "occupation": [
-    "Archéologue",
+    "Archaeologist",
     "Pirate",
     "Assassin",
-    "Officier",
-    "Scientifique",
-    "Criminel",
-    "Combattant",
-    "Soldat"
+    "Officer",
+    "Scientist",
+    "Criminal",
+    "Fighter",
+    "Soldier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -1835,20 +1843,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b90107-ZULW5HlPX1uU.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Voyant",
-    "Étudiant"
+    "Seer",
+    "Student"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "anime": "The Disastrous Life of Saiki K.",
    "genres": [
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "J.C.STAFF"
@@ -1864,25 +1872,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5-a7bkJgjhhigE.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Épéiste",
-    "Étudiant",
-    "Chasseur",
-    "Chasseur de démons",
+    "Swordsman",
+    "Student",
+    "Hunter",
+    "Demon hunter",
     "Shinigami",
-    "Combattant",
-    "Chasseur de monstres"
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -1901,23 +1909,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b94-d631a3Z2KPvd.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Roux",
-    "Bruns"
+    "Ginger",
+    "Brown"
    ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -1934,23 +1942,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
   "attributes": {
-   "gender": "Homme",
-   "age": "Inconnu",
+   "gender": "Male",
+   "age": "Unknown",
    "occupation": [
-    "Chasseur de démons",
+    "Demon hunter",
     "Wild Fiend",
-    "Chasseur de monstres",
-    "Combattant"
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -1967,23 +1975,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22037-sY7GWSKYr2Nl.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns",
-    "Violets"
+    "Brown",
+    "Purple"
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -2000,22 +2008,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Psychologique",
+    "Psychological",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2018,
    "studio": "TRIGGER"
@@ -2032,21 +2040,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66173-g8eU1LGWPB8O.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Cuisinier",
-    "Étudiant",
+    "Cook",
+    "Student",
     "Artisan"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Horimiya",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "CloverWorks"
@@ -2063,24 +2071,55 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Noirs",
-    "Bleus"
+    "Black",
+    "Blue"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
+  "id": "127518",
+  "name": "Nezuko Kamado",
+  "aliases": [
+   "Kamado Nezuko",
+   "竈門禰豆子",
+   "Nezuko"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 12,
+   "occupation": [
+    "Homemaker"
+   ],
+   "hair": [
+    "Black",
+    "Ginger"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -2098,56 +2137,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Capitaine",
-    "Volleyeur",
+    "Captain",
+    "Volleyball player",
     "Leader",
-    "Sportif"
+    "Athlete"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
-  }
- },
- {
-  "id": "127518",
-  "name": "Nezuko Kamado",
-  "aliases": [
-   "Kamado Nezuko",
-   "竈門禰豆子",
-   "Nezuko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 12,
-   "occupation": [
-    "Femme au foyer"
-   ],
-   "hair": [
-    "Noirs",
-    "Roux"
-   ],
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2019,
-   "studio": "ufotable"
   }
  },
  {
@@ -2161,22 +2169,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 29,
    "occupation": [
     "Leader",
-    "Soldat",
-    "Alchimiste",
-    "Scientifique"
+    "Soldier",
+    "Alchemist",
+    "Scientist"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -2193,22 +2201,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121102-tiQFxnSEIAwm.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader"
    ],
    "hair": [
-    "Bleus",
-    "Noirs"
+    "Blue",
+    "Black"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -2225,23 +2233,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138102-ZOAu9jI2d5ke.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 27,
    "occupation": [
-    "Employé",
+    "Employee",
     "Assassin",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2259,26 +2267,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1-ChxaldmieFlQ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
     "Assassin",
-    "Tireur",
-    "Chasseur de primes",
-    "Pilote",
-    "Criminel",
-    "Combattant"
+    "Marksman",
+    "Bounty hunter",
+    "Pilot",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
-    "Verts",
-    "Noirs"
+    "Green",
+    "Black"
    ],
    "anime": "Cowboy Bebop",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Science-fiction"
+    "Adventure",
+    "Drama",
+    "Sci-Fi"
    ],
    "year": 1998,
    "studio": "Sunrise"
@@ -2296,14 +2304,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b31-FZckOuu7L1un.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": null,
    "hair": null,
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2011,
@@ -2322,21 +2330,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Soldat",
-    "Bataillon d'exploration"
+    "Soldier",
+    "Survey Corps"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -2353,20 +2361,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Marine Biologist"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "david production"
@@ -2387,17 +2395,17 @@
    "gender": null,
    "age": null,
    "occupation": [
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -2415,24 +2423,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
-    "Super-héros",
-    "Étudiant",
-    "Professeur",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Student",
+    "Teacher",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
-    "Verts",
-    "Noirs"
+    "Green",
+    "Black"
    ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -2448,22 +2456,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23602-Z4MDNYcoAWZu.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 598,
    "occupation": [
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Ecchi",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "Shaft"
@@ -2480,24 +2488,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Blonds",
-    "Roux"
+    "Blond",
+    "Ginger"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -2513,21 +2521,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
-    "Magicien",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2545,17 +2553,17 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123962-eL9yGV0NLMF7.png",
   "attributes": {
-   "gender": "Autre",
+   "gender": "Other",
    "age": 37,
    "occupation": null,
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2018,
@@ -2575,22 +2583,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -2607,22 +2615,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Student",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2643,20 +2651,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138100-4Li0tWRCa5bQ.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 6,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2674,23 +2682,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Exorciste",
-    "Étudiant",
-    "Chasseur de monstres",
-    "Magicien"
+    "Exorcist",
+    "Student",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": [
-    "Noirs",
-    "Verts"
+    "Black",
+    "Green"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2707,22 +2715,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Leader",
-    "Bataillon d'exploration",
-    "Soldat"
+    "Survey Corps",
+    "Soldier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2018,
    "studio": "WIT STUDIO"
@@ -2736,20 +2744,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84677-PFmohzIXD1ud.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 1050,
    "occupation": [
-    "Dieu"
+    "God"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Noragami",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Surnaturel"
+    "Adventure",
+    "Comedy",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "bones"
@@ -2768,23 +2776,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader",
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
     "Fantasy",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2006,
    "studio": "Studio DEEN"
@@ -2802,19 +2810,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b257562-Ru35NYPfsqhY.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "anime": "BOCCHI THE ROCK!",
    "genres": [
-    "Comédie",
-    "Musique",
-    "Tranche de vie"
+    "Comedy",
+    "Music",
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2831,20 +2839,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67065-Dhec6tE2yWA9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2013,
    "studio": "Brain's Base"
@@ -2861,23 +2869,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22036-Ed3CjwPlDLp4.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres",
-    "Magicien"
+    "Student",
+    "Exorcist",
+    "Monster hunter",
+    "Mage"
    ],
    "hair": null,
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -2894,20 +2902,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Volleyeur",
-    "Sportif"
+    "Volleyball player",
+    "Athlete"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -2924,20 +2932,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b38005-T3NR8p2f021x.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
     "Magical girl",
-    "Psychologique",
+    "Psychological",
     "Thriller"
    ],
    "year": 2011,
@@ -2955,23 +2963,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "ufotable"
@@ -2991,22 +2999,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 35,
    "occupation": [
-    "Épéiste",
-    "Domestique",
-    "Combattant"
+    "Swordsman",
+    "Servant",
+    "Fighter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
     "Fantasy",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2006,
    "studio": "Studio DEEN"
@@ -3021,22 +3029,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 1000,
    "occupation": [
-    "Utilisateur de fléaux",
-    "Fléau",
-    "Magicien"
+    "Curse user",
+    "Curse",
+    "Mage"
    ],
    "hair": [
-    "Roses",
-    "Noirs"
+    "Pink",
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "MAPPA"
@@ -3053,25 +3061,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188783-77orwP7vNuNg.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Acteur",
-    "Idole",
-    "Célébrité",
-    "Chanteur",
-    "Artiste",
-    "Musicien"
+    "Actor",
+    "Idol",
+    "Celebrity",
+    "Singer",
+    "Artist",
+    "Musician"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "anime": "OSHI NO KO",
    "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "Doga Kobo"
@@ -3088,19 +3096,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b66171-o2vk3689wWFK.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Horimiya",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "CloverWorks"
@@ -3118,22 +3126,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "MAPPA"
@@ -3151,22 +3159,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/86-cA1zL7fyls8E.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3182,18 +3190,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80243-RzxE51iUU5eq.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 12,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Artisan"
    ],
    "hair": null,
    "anime": "A Silent Voice",
    "genres": [
-    "Drame",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2016,
    "studio": "Kyoto Animation"
@@ -3210,21 +3218,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88350-QU1iwgZ887U8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
-    "Magicien",
-    "Professeur",
-    "Étudiant",
-    "Aventurier"
+    "Mage",
+    "Teacher",
+    "Student",
+    "Adventurer"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
@@ -3242,22 +3250,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Café co-owner"
    ],
    "hair": [
-    "Roses",
-    "Bruns"
+    "Pink",
+    "Brown"
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -3274,26 +3282,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 20,
    "occupation": [
-    "Combattant",
-    "Pourfendeur de démons",
-    "Épéiste",
-    "Chasseur de monstres"
+    "Fighter",
+    "Demon Slayer",
+    "Swordsman",
+    "Monster hunter"
    ],
    "hair": [
-    "Blonds",
-    "Rouges"
+    "Blond",
+    "Red"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Mystère",
-    "Surnaturel"
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "ufotable"
@@ -3310,24 +3318,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89-ZtZhXkh1rITn.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
-    "Espion",
-    "Étudiant",
-    "Pilote"
+    "Spy",
+    "Student",
+    "Pilot"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3344,22 +3352,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Tueur en série",
-    "Criminel"
+    "Serial killer",
+    "Criminal"
    ],
    "hair": [
-    "Blonds",
-    "Argentés"
+    "Blond",
+    "Silver"
    ],
    "anime": "Monster",
    "genres": [
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2004,
@@ -3374,23 +3382,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 300,
    "occupation": [
-    "Pilote",
-    "Esclave",
-    "Terroriste",
-    "Criminel"
+    "Pilot",
+    "Slave",
+    "Terrorist",
+    "Criminal"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2006,
@@ -3408,24 +3416,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 29,
    "occupation": [
-    "Officier",
+    "Officer",
     "Leader",
-    "Soldat"
+    "Soldier"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3442,22 +3450,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124440-Lpdo6y8cljV6.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
-    "Chevalier",
-    "Capitaine",
-    "Combattant",
+    "Knight",
+    "Captain",
+    "Fighter",
     "Leader"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Black Clover",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2017,
@@ -3475,20 +3483,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80491-NK6pxb6oH61P.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Artisan"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "A Silent Voice",
    "genres": [
-    "Drame",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2016,
    "studio": "Kyoto Animation"
@@ -3504,24 +3512,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121104-7TYRl3EEsDYU.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Garde",
-    "Domestique",
-    "Employé",
-    "Chômeur"
+    "Student",
+    "Guard",
+    "Servant",
+    "Employee",
+    "Unemployed"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -3538,24 +3546,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant",
-    "Professeur",
-    "Serveur"
+    "Student",
+    "Teacher",
+    "Waiter"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "CloverWorks"
@@ -3571,23 +3579,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Petits boulots",
+    "Student",
+    "Odd jobs",
     "Café co-owner",
-    "Employé"
+    "Employee"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -3603,21 +3611,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -3632,22 +3640,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png",
   "attributes": {
-   "gender": "Femme",
-   "age": "Inconnu",
+   "gender": "Female",
+   "age": "Unknown",
    "occupation": [
-    "Espion",
-    "Serveur"
+    "Spy",
+    "Waiter"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
+    "Drama",
+    "Horror",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "MAPPA"
@@ -3664,15 +3672,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71933-HQ1TSjlrJ8Hv.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
-    "Comédie"
+    "Comedy"
    ],
    "year": 2016,
    "studio": "Lerche"
@@ -3689,20 +3697,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13767-U604OJN9dxCn.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Pirate",
     "Leader",
-    "Criminel"
+    "Criminal"
    ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "Toei Animation"
@@ -3719,22 +3727,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209-NOAbiLvJt1QA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant",
-    "Professeur"
+    "Student",
+    "Teacher"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "anime": "Fruits Basket",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie",
-    "Surnaturel"
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2001,
    "studio": "Studio DEEN"
@@ -3748,26 +3756,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
-    "Navigateur",
-    "Voleur",
+    "Navigator",
+    "Thief",
     "Pirate",
-    "Officier",
-    "Criminel",
-    "Soldat"
+    "Officer",
+    "Criminal",
+    "Soldier"
    ],
    "hair": [
-    "Roux",
-    "Noirs"
+    "Ginger",
+    "Black"
    ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -3785,23 +3793,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 24,
    "occupation": [
     "Neapolitan Executioner"
    ],
    "hair": [
-    "Blonds",
-    "Verts"
+    "Blond",
+    "Green"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Sport",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "david production"
@@ -3818,22 +3826,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
     "Leader",
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
@@ -3849,23 +3857,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138101-7NCB0Md8zA6G.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 32,
    "occupation": [
-    "Psychiatre",
-    "Espion",
-    "Sergent",
-    "Médecin"
+    "Psychiatrist",
+    "Spy",
+    "Sergeant",
+    "Doctor"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -3879,12 +3887,12 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123385-ild8gXk13xcO.png",
   "attributes": {
-   "gender": "Autre",
+   "gender": "Other",
    "age": 300,
    "occupation": [
-    "Scientifique",
+    "Scientist",
     "Icebreaker",
-    "Combattant",
+    "Fighter",
     "Leader",
     "Prayer Machine"
    ],
@@ -3892,10 +3900,10 @@
    "anime": "Land of the Lustrous",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère",
-    "Psychologique"
+    "Mystery",
+    "Psychological"
    ],
    "year": 2017,
    "studio": "Orange"
@@ -3913,18 +3921,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36828-j5ib0adAzGMx.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy",
     "Romance"
    ],
@@ -3943,23 +3951,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Mafieux",
-    "Sportif",
-    "Criminel"
+    "Mobster",
+    "Athlete",
+    "Criminal"
    ],
    "hair": [
-    "Blonds",
-    "Noirs"
+    "Blond",
+    "Black"
    ],
    "anime": "Tokyo Revengers",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "LIDENFILMS"
@@ -3973,25 +3981,54 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121724-SJTdODjeO7e6.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 11,
    "occupation": [
     "Leader"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "The Promised Neverland",
    "genres": [
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2019,
    "studio": "CloverWorks"
+  }
+ },
+ {
+  "id": "71267",
+  "name": "Kenma Kozume",
+  "aliases": [
+   "Kozume Kenma",
+   "孤爪研磨",
+   "Kenma",
+   "Kozume"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+  "attributes": {
+   "gender": "Male",
+   "age": 16,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Blond"
+   ],
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Sports"
+   ],
+   "year": 2024,
+   "studio": "Production I.G"
   }
  },
  {
@@ -4006,60 +4043,31 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/246-wsRRr6z1kii8.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Fermier",
-    "Combattant",
-    "Artiste martial",
-    "Lutteur",
+    "Farmer",
+    "Fighter",
+    "Martial artist",
+    "Wrestler",
     "Artisan",
-    "Sportif"
+    "Athlete"
    ],
    "hair": [
-    "Noirs",
-    "Blonds"
+    "Black",
+    "Blond"
    ],
    "anime": "Dragon Ball",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy",
-    "Science-fiction",
-    "Surnaturel"
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 1986,
    "studio": "Toei Animation"
-  }
- },
- {
-  "id": "71267",
-  "name": "Kenma Kozume",
-  "aliases": [
-   "Kozume Kenma",
-   "孤爪研磨",
-   "Kenma",
-   "Kozume"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 16,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "HAIKYU!!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2024,
-   "studio": "Production I.G"
   }
  },
  {
@@ -4073,23 +4081,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
     "Processor",
-    "Tireur",
-    "Combattant"
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
-    "Roux",
-    "Bruns"
+    "Ginger",
+    "Brown"
    ],
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
@@ -4106,23 +4114,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -4139,21 +4147,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67067-gqhgjlni0Bcf.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant",
+    "Student",
     "Leader"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2013,
    "studio": "Brain's Base"
@@ -4167,21 +4175,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65643-jimrOw0RGtoB.png",
   "attributes": {
-   "gender": "Homme",
-   "age": "Inconnu",
+   "gender": "Male",
+   "age": "Unknown",
    "occupation": [
-    "Professeur",
+    "Teacher",
     "Assassin",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "Lerche"
@@ -4197,18 +4205,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b154224-7dJ09BKEnG3v.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 19,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Rent-a-Girlfriend",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance"
    ],
    "year": 2020,
@@ -4226,21 +4234,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b58-USOmsz3nursi.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 26,
    "occupation": [
     "Leader",
-    "Voleur",
-    "Criminel"
+    "Thief",
+    "Criminal"
    ],
    "hair": [
-    "Noirs",
-    "Violets"
+    "Black",
+    "Purple"
    ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -4255,18 +4263,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123285-tKijiuQErDS0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Épéiste",
-    "Combattant"
+    "Swordsman",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Black Clover",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2017,
@@ -4283,20 +4291,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125659-O37MZQWibV7g.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -4313,19 +4321,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4004-w0OtWuvjhftG.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
-    "Avocat"
+    "Lawyer"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "david production"
@@ -4342,17 +4350,17 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13580-1J7PwIB8kTpu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": null,
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "BANANA FISH",
    "genres": [
     "Action",
-    "Drame",
-    "Psychologique",
+    "Drama",
+    "Psychological",
     "Thriller"
    ],
    "year": 2018,
@@ -4370,19 +4378,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Aventurier"
+    "Adventurer"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -4398,10 +4406,10 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23277-EYmIxzL64Mji.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 40,
    "occupation": [
-    "Souverain",
+    "Royalty",
     "Noble",
     "Leader"
    ],
@@ -4409,7 +4417,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2011,
@@ -4424,23 +4432,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2075-sWb5Xz76JWdX.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
     "Leader",
-    "Pilote"
+    "Pilot"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2007,
    "studio": "GAINAX"
@@ -4456,24 +4464,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136070-MC9LLxJsHyHE.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 18,
    "occupation": [
-    "Pourfendeur de démons",
-    "Chasseur de monstres",
-    "Combattant"
+    "Demon Slayer",
+    "Monster hunter",
+    "Fighter"
    ],
    "hair": [
-    "Noirs",
-    "Violets"
+    "Black",
+    "Purple"
    ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "ufotable"
@@ -4490,22 +4498,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Musicien",
-    "Étudiant",
-    "Artiste"
+    "Musician",
+    "Student",
+    "Artist"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Your lie in April",
    "genres": [
-    "Drame",
-    "Musique",
+    "Drama",
+    "Music",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2014,
    "studio": "A-1 Pictures"
@@ -4523,21 +4531,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71611-cUZwVfzeNXD9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -4551,22 +4559,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 20,
    "occupation": [
     "Hacker",
-    "Mercenaire",
-    "Combattant"
+    "Mercenary",
+    "Fighter"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "anime": "Cyberpunk: Edgerunners",
    "genres": [
     "Action",
-    "Drame",
-    "Psychologique",
-    "Science-fiction"
+    "Drama",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 2022,
    "studio": "TRIGGER"
@@ -4583,24 +4591,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121101-Q8HzKP15At2d.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Petits boulots",
-    "Président du conseil des élèves",
-    "Employé",
+    "Student",
+    "Odd jobs",
+    "Student council president",
+    "Employee",
     "Leader"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -4618,19 +4626,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2072-Lc6jEdsueJUK.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 20,
    "occupation": [
     "Pirate",
-    "Criminel"
+    "Criminal"
    ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -4648,21 +4656,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b207-RQ4EUdTD0K62.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Fruits Basket",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie",
-    "Surnaturel"
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2001,
    "studio": "Studio DEEN"
@@ -4679,21 +4687,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b36765-BnLbXg0Tzzh9.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
-    "Justicier",
-    "Épéiste",
-    "Étudiant",
-    "Combattant"
+    "Vigilante",
+    "Swordsman",
+    "Student",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy",
     "Romance"
    ],
@@ -4709,18 +4717,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 9,
    "occupation": [
-    "Magicien"
+    "Mage"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2023,
@@ -4738,22 +4746,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Médecin",
+    "Doctor",
     "Pirate",
-    "Officier",
-    "Criminel",
-    "Soldat"
+    "Officer",
+    "Criminal",
+    "Soldier"
    ],
    "hair": null,
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -4772,24 +4780,51 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13085-CkmgXL7SSLxL.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "david production"
+  }
+ },
+ {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 16,
+   "occupation": null,
+   "hair": [
+    "Black"
+   ],
+   "anime": "Kakegurui",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
   }
  },
  {
@@ -4805,53 +4840,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 28,
    "occupation": [
-    "Chirurgien",
-    "Détective",
-    "Médecin"
+    "Surgeon",
+    "Detective",
+    "Doctor"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Monster",
    "genres": [
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2004,
    "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "121889",
-  "name": "Yumeko Jabami",
-  "aliases": [
-   "Jabami Yumeko",
-   "蛇喰夢子",
-   "Yumeko",
-   "Jabami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": null,
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Kakegurui",
-   "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "MAPPA"
   }
  },
  {
@@ -4866,20 +4874,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 30,
    "occupation": [
-    "Super-héros",
-    "Professeur",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Teacher",
+    "Hero",
+    "Fighter"
    ],
    "hair": null,
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -4893,22 +4901,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 28,
    "occupation": [
-    "Super-héros",
-    "Héros",
-    "Combattant"
+    "Superhero",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "anime": "One-Punch Man",
    "genres": [
     "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
+    "Comedy",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "MADHOUSE"
@@ -4925,26 +4933,55 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 13,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2005,
    "studio": "Studio Pierrot"
+  }
+ },
+ {
+  "id": "128651",
+  "name": "Hanako",
+  "aliases": [
+   "花子"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
+  "attributes": {
+   "gender": "Male",
+   "age": 58,
+   "occupation": [
+    "Leader",
+    "Student"
+   ],
+   "hair": [
+    "Black"
+   ],
+   "anime": "Toilet-bound Hanako-kun",
+   "genres": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Supernatural"
+   ],
+   "year": 2020,
+   "studio": "Lerche"
   }
  },
  {
@@ -4957,57 +4994,28 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88348-bIe5XnXdRpmX.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 34,
    "occupation": [
-    "Étudiant",
-    "Magicien",
-    "Aventurier",
-    "Épéiste",
-    "Combattant",
-    "Héros"
+    "Student",
+    "Mage",
+    "Adventurer",
+    "Swordsman",
+    "Fighter",
+    "Hero"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
    "year": 2021,
    "studio": "Studio Bind"
-  }
- },
- {
-  "id": "128651",
-  "name": "Hanako",
-  "aliases": [
-   "花子"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 58,
-   "occupation": [
-    "Leader",
-    "Étudiant"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Toilet-bound Hanako-kun",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
-   ],
-   "year": 2020,
-   "studio": "Lerche"
   }
  },
  {
@@ -5021,26 +5029,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12055-eCEkIVV4qoCu.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 33,
    "occupation": [
-    "Tueur en série",
-    "Employé",
-    "Mercenaire",
-    "Criminel",
-    "Combattant"
+    "Serial killer",
+    "Employee",
+    "Mercenary",
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
-    "Blonds",
-    "Noirs"
+    "Blond",
+    "Black"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "david production"
@@ -5054,14 +5062,14 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b507-g9yz1GTLtPla.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": null,
    "hair": null,
    "anime": "Howl‘s Moving Castle",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
     "Romance"
    ],
@@ -5080,18 +5088,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Commerçant",
+    "Merchant",
     "Shinigami"
    ],
    "hair": null,
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -5108,20 +5116,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12064-7PDN3ylIeAZn.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Toradora!",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2008,
    "studio": "J.C.STAFF"
@@ -5135,27 +5143,27 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b424-Jfrsf8I7zBps.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Chevalier",
-    "Mercenaire",
-    "Épéiste",
+    "Knight",
+    "Mercenary",
+    "Swordsman",
     "Assassin",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "anime": "Berserk",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Surnaturel"
+    "Horror",
+    "Supernatural"
    ],
    "year": 1997,
    "studio": "OLM"
@@ -5172,25 +5180,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b87277-oUaqrI1iBzu6.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Serveur",
-    "Étudiant",
-    "Gérant",
+    "Waiter",
+    "Student",
+    "Manager",
     "Leader"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -5207,22 +5215,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 27,
    "occupation": [
-    "Utilisateur de fléaux",
-    "Exorciste",
-    "Magicien",
-    "Chasseur de monstres"
+    "Curse user",
+    "Exorcist",
+    "Mage",
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "MAPPA"
@@ -5240,21 +5248,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b45887-QPtJH0KwqthW.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Chasseur",
-    "Soldat"
+    "Hunter",
+    "Soldier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -5268,25 +5276,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2257-jnalsdnIX1vN.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
     "Leader",
-    "Pilote",
-    "Ouvrier",
-    "Ermite"
+    "Pilot",
+    "Worker",
+    "Hermit"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2007,
    "studio": "GAINAX"
@@ -5300,21 +5308,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b458-tlKqPcuR287U.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Pirate",
-    "Voyou",
-    "Criminel"
+    "Thug",
+    "Criminal"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Black Lagoon",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Thriller"
    ],
    "year": 2006,
@@ -5333,22 +5341,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b83797-ix0Cl5OMfV22.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant",
-    "Épéiste",
-    "Combattant"
+    "Student",
+    "Swordsman",
+    "Fighter"
    ],
    "hair": [
-    "Roux",
-    "Noirs",
-    "Bleus"
+    "Ginger",
+    "Black",
+    "Blue"
    ],
    "anime": "Kill la Kill",
    "genres": [
     "Action",
-    "Comédie",
+    "Comedy",
     "Ecchi"
    ],
    "year": 2013,
@@ -5363,18 +5371,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Dieu"
+    "God"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -5393,21 +5401,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2219-K3wzEOVwdUhL.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 14,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Serial Experiments Lain",
    "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction",
-    "Surnaturel"
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 1998,
    "studio": "Triangle Staff"
@@ -5424,16 +5432,16 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b702-qqO3zbj5hp1l.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": null,
    "hair": null,
    "anime": "NANA",
    "genres": [
-    "Drame",
-    "Musique",
+    "Drama",
+    "Music",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2006,
    "studio": "MADHOUSE"
@@ -5450,22 +5458,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11222-Se9QoJHDSeYY.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 19,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
-    "Blonds",
-    "Verts",
-    "Bleus"
+    "Blond",
+    "Green",
+    "Blue"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "david production"
@@ -5482,22 +5490,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70069-DEV7X6o2L7oG.jpg",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Aventurier"
+    "Adventurer"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Date A Live",
    "genres": [
     "Action",
-    "Comédie",
+    "Comedy",
     "Ecchi",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2022,
    "studio": "GEEKTOYS"
@@ -5514,59 +5522,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
     "Leader",
-    "Épéiste",
-    "Tireur",
-    "Combattant"
+    "Swordsman",
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
-  }
- },
- {
-  "id": "136071",
-  "name": "Tengen Uzui",
-  "aliases": [
-   "Uzui Tengen",
-   "宇髄天元",
-   "Tengen",
-   "Uzui"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136071-99Kexnnn2PiV.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 23,
-   "occupation": [
-    "Combattant",
-    "Pourfendeur de démons",
-    "Garde",
-    "Chasseur de monstres"
-   ],
-   "hair": [
-    "Blancs"
-   ],
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2021,
-   "studio": "ufotable"
   }
  },
  {
@@ -5580,24 +5555,57 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 15,
    "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
+    "Volleyball player",
+    "Student",
+    "Athlete"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
+  }
+ },
+ {
+  "id": "136071",
+  "name": "Tengen Uzui",
+  "aliases": [
+   "Uzui Tengen",
+   "宇髄天元",
+   "Tengen",
+   "Uzui"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136071-99Kexnnn2PiV.png",
+  "attributes": {
+   "gender": "Male",
+   "age": 23,
+   "occupation": [
+    "Fighter",
+    "Demon Slayer",
+    "Guard",
+    "Monster hunter"
+   ],
+   "hair": [
+    "White"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "year": 2021,
+   "studio": "ufotable"
   }
  },
  {
@@ -5610,20 +5618,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121956-5FbIbcd6gAZW.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": [
-    "Dieu",
-    "Étudiant"
+    "God",
+    "Student"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Komi Can’t Communicate",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "OLM"
@@ -5640,18 +5648,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65865-AC0ru7cDXUgK.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 15,
    "occupation": null,
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Love, Chunibyo & Other Delusions",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2012,
    "studio": "Kyoto Animation"
@@ -5668,22 +5676,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22055-EaTsy30ihdgb.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -5699,21 +5707,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b46484-P6A2GjNQn49F.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 17,
    "occupation": [
-    "Combattant",
-    "Soldat"
+    "Fighter",
+    "Soldier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2017,
    "studio": "WIT STUDIO"
@@ -5731,19 +5739,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162722-btzdghBizxKS.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Non-Curse User"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "MAPPA"
@@ -5759,24 +5767,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 12,
    "occupation": [
     "Ninja",
-    "Combattant"
+    "Fighter"
    ],
    "hair": [
-    "Roux",
-    "Bruns"
+    "Ginger",
+    "Brown"
    ],
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -5790,23 +5798,23 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Souverain",
-    "Héros",
+    "Royalty",
+    "Hero",
     "Noble",
     "Leader"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Fate/stay night",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2011,
    "studio": "ufotable"
@@ -5822,29 +5830,29 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b77605-NrjhQwZwgJ3l.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 43,
    "occupation": [
     "Artisan",
-    "Voleur",
-    "Chevalier",
-    "Souverain",
-    "Criminel",
-    "Combattant",
+    "Thief",
+    "Knight",
+    "Royalty",
+    "Criminal",
+    "Fighter",
     "Noble",
     "Leader"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "anime": "The Seven Deadly Sins",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "A-1 Pictures"
@@ -5861,24 +5869,24 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6-25WoBeWMZXBc.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
-    "Épéiste",
-    "Chasseur",
-    "Chasseur de démons",
+    "Swordsman",
+    "Hunter",
+    "Demon hunter",
     "Shinigami",
-    "Combattant",
-    "Chasseur de monstres"
+    "Fighter",
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -5895,19 +5903,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
     "Noble",
-    "Combattant",
-    "Aventurier",
-    "Épéiste"
+    "Fighter",
+    "Adventurer",
+    "Swordsman"
    ],
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
@@ -5925,25 +5933,25 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b19492-gvMnKxhUhT9V.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
     "Jockey",
-    "Professeur",
+    "Teacher",
     "Fruit Importer"
    ],
    "hair": [
-    "Blonds",
-    "Bruns"
+    "Blond",
+    "Brown"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Sport",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "david production"
@@ -5960,15 +5968,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b434-Q0K9e4HukawA.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 22,
    "occupation": null,
    "hair": null,
    "anime": "GTO: Great Teacher Onizuka",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Tranche de vie"
+    "Comedy",
+    "Drama",
+    "Slice of Life"
    ],
    "year": 1999,
    "studio": "Studio Pierrot"
@@ -5984,18 +5992,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 14,
    "occupation": [
-    "Alchimiste",
-    "Scientifique"
+    "Alchemist",
+    "Scientist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -6012,26 +6020,26 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b913-NIFkKazWM8VO.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Capitaine",
+    "Captain",
     "Noble",
-    "Combattant",
+    "Fighter",
     "Leader"
    ],
    "hair": [
-    "Noirs",
-    "Bruns",
-    "Blonds"
+    "Black",
+    "Brown",
+    "Blond"
    ],
    "anime": "Dragon Ball",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 1989,
    "studio": "Toei Animation"
@@ -6048,22 +6056,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 19,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -6080,21 +6088,21 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 16,
    "occupation": [
-    "Serveur",
-    "Étudiant"
+    "Waiter",
+    "Student"
    ],
    "hair": null,
    "anime": "DAN DA DAN",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Science-fiction",
-    "Surnaturel"
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2024,
    "studio": "Science SARU"
@@ -6111,20 +6119,20 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89201-K0X5HNq88Oub.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 26,
    "occupation": [
-    "Détective"
+    "Detective"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
-    "Comédie",
-    "Mystère",
-    "Surnaturel"
+    "Comedy",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "bones"
@@ -6142,22 +6150,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 18,
    "occupation": [
-    "Magicien",
-    "Étudiant",
-    "Exorciste",
-    "Chasseur de monstres"
+    "Mage",
+    "Student",
+    "Exorcist",
+    "Monster hunter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -6171,22 +6179,22 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
     "Assassin",
     "Shinigami",
-    "Criminel",
-    "Combattant"
+    "Criminal",
+    "Fighter"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
@@ -6204,19 +6212,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": 16,
    "occupation": [
-    "Étudiant"
+    "Student"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "anime": "Hyouka",
    "genres": [
-    "Mystère",
+    "Mystery",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2012,
    "studio": "Kyoto Animation"
@@ -6233,19 +6241,19 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260329-1Z5n1QgViEBI.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": 17,
    "occupation": [
-    "Espion",
-    "Serveur"
+    "Spy",
+    "Waiter"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "anime": "Lycoris Recoil",
    "genres": [
     "Action",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "A-1 Pictures"
@@ -6262,57 +6270,59 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1086-qR9218BjZTC0.png",
   "attributes": {
-   "gender": "Homme",
+   "gender": "Male",
    "age": null,
    "occupation": [
-    "Scientifique",
-    "Épéiste",
+    "Scientist",
+    "Swordsman",
     "Assassin",
-    "Hypnotiseur",
+    "Hypnotist",
     "Shinigami",
-    "Combattant",
-    "Criminel"
+    "Fighter",
+    "Criminal"
    ],
    "hair": null,
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
   }
  },
  {
-  "id": "908",
-  "name": "Yoruichi Shihouin",
+  "id": "835",
+  "name": "Misa Amane",
   "aliases": [
-   "Shihouin Yoruichi",
-   "四楓院夜一",
-   "Yoruichi",
-   "Shihouin"
+   "Amane Misa",
+   "弥海砂",
+   "Misa",
+   "Amane"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b908-JSYUkJLCw1f0.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
   "attributes": {
-   "gender": "Femme",
+   "gender": "Female",
    "age": null,
    "occupation": [
-    "Shinigami",
-    "Capitaine",
-    "Leader"
+    "Model",
+    "Actor",
+    "Celebrity",
+    "Artist"
    ],
    "hair": [
-    "Noirs"
+    "Blond"
    ],
-   "anime": "Bleach",
+   "anime": "Death Note",
    "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
+    "Mystery",
+    "Psychological",
+    "Supernatural",
+    "Thriller"
    ],
-   "year": 2004,
-   "studio": "Studio Pierrot"
+   "year": 2006,
+   "studio": "MADHOUSE"
   }
  }
 ]

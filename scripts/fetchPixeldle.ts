@@ -30,7 +30,7 @@
 //   deux protagonistes (Green Hell, The Riftbreaker, The World Next Door).
 // - Le protagoniste est toujours là. Muet ou personnalisable, c'est un avatar (un au plus par franchise, ajouté à la
 //   main, id « avatar-<jeu> ») : son nom officiel (Dovahkiin, Tav…) sinon « Héros de <jeu> », le jeu en alias, et
-//   « Au choix » pour ce que le joueur choisit. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
+//   « Player's choice » pour ce que le joueur choisit. Personnalisable mais nommé par le jeu (Shepard, V) : un vrai personnage.
 // - Pas d'invités d'une autre licence (Sally Acorn, Raiden dans Unreal). Un personnage né dans un autre média de la
 //   même licence est gardé s'il fait partie d'un jeu (J.D. Morrison, de l'anime DMC), comme les franchises tirées
 //   d'un autre média (Batman: Arkham, Hogwarts Legacy, The Witcher…).
@@ -630,7 +630,7 @@ const occupationExcerpts: string[] = []
 const entityRoles: string[] = []
 // Les armes ajoutées à l'occupation, au plus
 const MAX_WEAPONS = 2
-const ENTITY_SPECIES = new Set(['Divinité', 'Démon', 'Ange'])
+const ENTITY_SPECIES = new Set(['Deity', 'Demon', 'Angel'])
 const withIntroOccupation = (entry: Entry): Entry => {
   const empty = !(entry.attributes.occupation as string[] | null)?.length
   if (!empty || 'occupation' in (manual.edit[entry.id] ?? {}))
@@ -698,7 +698,7 @@ function entityRole(entry: Entry, species: string[] | null): string[] | null {
   const alignment = introAlignment(introsById.get(entry.id) ?? '')
   if (!alignment)
     return null
-  const role = alignment === 'hostile' ? 'Destructeur' : 'Protecteur'
+  const role = alignment === 'hostile' ? 'Destroyer' : 'Protector'
   entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
   return [role]
 }

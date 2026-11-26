@@ -33,12 +33,12 @@ export async function anilist<T>(query: string, variables: Record<string, unknow
   }
 }
 
-export const GENDERS: Record<string, string> = { Male: 'Homme', Female: 'Femme' }
+export const GENDERS: Record<string, string> = { Male: 'Male', Female: 'Female' }
 export const GENRES: Record<string, string> = {
-  'Action': 'Action', 'Adventure': 'Aventure', 'Comedy': 'Comédie', 'Drama': 'Drame', 'Ecchi': 'Ecchi',
-  'Fantasy': 'Fantasy', 'Horror': 'Horreur', 'Mahou Shoujo': 'Magical girl', 'Mecha': 'Mecha', 'Music': 'Musique',
-  'Mystery': 'Mystère', 'Psychological': 'Psychologique', 'Romance': 'Romance', 'Sci-Fi': 'Science-fiction',
-  'Slice of Life': 'Tranche de vie', 'Sports': 'Sport', 'Supernatural': 'Surnaturel', 'Thriller': 'Thriller', 'Hentai': 'Hentai',
+  'Action': 'Action', 'Adventure': 'Adventure', 'Comedy': 'Comedy', 'Drama': 'Drama', 'Ecchi': 'Ecchi',
+  'Fantasy': 'Fantasy', 'Horror': 'Horror', 'Mahou Shoujo': 'Magical girl', 'Mecha': 'Mecha', 'Music': 'Music',
+  'Mystery': 'Mystery', 'Psychological': 'Psychological', 'Romance': 'Romance', 'Sci-Fi': 'Sci-Fi',
+  'Slice of Life': 'Slice of Life', 'Sports': 'Sports', 'Supernatural': 'Supernatural', 'Thriller': 'Thriller', 'Hentai': 'Hentai',
 }
 
 export interface CharacterName {
@@ -54,14 +54,14 @@ const count = (text: string, pattern: RegExp) => (text.match(pattern) ?? []).len
 // que ceux de l'autre sexe. Testé sur les personnages du Weebdle dont on connaît le sexe : 0,8 % d'erreurs.
 export function gender(value: string | null, description: string | null = null): string | null {
   if (value)
-    return GENDERS[value] ?? 'Autre'
+    return GENDERS[value] ?? 'Other'
   const text = withoutSpoilers(description)
   const he = count(text, /\b(he|him|his|himself)\b/gi)
   const she = count(text, /\b(she|her|hers|herself)\b/gi)
   if (he >= 1 && he >= 2 * she)
-    return 'Homme'
+    return 'Male'
   if (she >= 1 && she >= 2 * he)
-    return 'Femme'
+    return 'Female'
   return null
 }
 export const genres = (values: string[]) => values.map(genre => GENRES[genre] ?? genre)
@@ -70,9 +70,9 @@ export const genres = (values: string[]) => values.map(genre => GENRES[genre] ??
 // (Manhwa, Manhua) ; un web novel, un one-shot ou un doujinshi rejoignent leur grande famille.
 const SOURCES: Record<string, string | null> = {
   MANGA: 'Manga', ONE_SHOT: 'Manga', DOUJINSHI: 'Manga', WEB_MANGA: 'Manga', MANHWA: 'Manhwa', MANHUA: 'Manhua',
-  LIGHT_NOVEL: 'Light novel', NOVEL: 'Roman', WEB_NOVEL: 'Roman', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel',
-  VIDEO_GAME: 'Jeu vidéo', GAME: 'Jeu vidéo', MULTIMEDIA_PROJECT: 'Projet multimédia', PICTURE_BOOK: 'Livre illustré',
-  LIVE_ACTION: 'Film', COMIC: 'Comics', CARD_GAME: 'Jeu de cartes', MUSIC: 'Musique', OTHER: null,
+  LIGHT_NOVEL: 'Light novel', NOVEL: 'Novel', WEB_NOVEL: 'Novel', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel',
+  VIDEO_GAME: 'Video game', GAME: 'Video game', MULTIMEDIA_PROJECT: 'Multimedia project', PICTURE_BOOK: 'Picture book',
+  LIVE_ACTION: 'Live action', COMIC: 'Comic', CARD_GAME: 'Card game', MUSIC: 'Music', OTHER: null,
 }
 export const animeSource = (source: string | null) => source ? SOURCES[source] ?? null : null
 
@@ -186,8 +186,17 @@ export function parseOccupationAtStart(description: string | null): string[] | n
 export function splitOccupations(value: string): string[] | null {
   const list = value
     .replace(/~!|!~/g, '')
+    // « Private Aichi Symbiosis Academy (Student) » : le rôle dans l'organisation, pas son nom
+    .replace(ORGANIZATION_ROLE, (match, role: string) => translateOccupation(role.trim()) ? role : match)
     .replace(/\s*\([^)]*\)/g, '')
+    // « Track and Field Club Girl » (Ayumi, The World God Only Knows) : l'athlétisme, pas deux métiers
+    .replace(/\btrack and field\b/gi, 'athletics')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
+    // « Buddy - Spirit Capturing » (Keima) : deux rôles, si chacun se traduit (pas « Student - Class C »)
+    .flatMap(part => {
+      const roles = part.split(/\s+-\s+/)
+      return roles.length > 1 && roles.every(role => translateOccupation(role.trim())) ? roles : [part]
+    })
     .map(part => part.replace(/[.:!]+$/, '').trim())
     // Au-delà de 40 caractères, une phrase plutôt qu'un métier, sauf si on sait la traduire (« Chairman of the Institute
     // for Psychiatric Research », Inui dans Paprika)
@@ -197,6 +206,8 @@ export function splitOccupations(value: string): string[] | null {
 }
 
 const MAX_OCCUPATION_LENGTH = 40
+// Le nom finit par le mot d'organisation, et la parenthèse est un rôle connu : pas « Middle School Student (Aincrad Arc) »
+const ORGANIZATION_ROLE = /[^,;/\n()]*\b(?:academy|school|institute|university|college|association|guild|agency|company|corps|army)\s*\(([^)]+)\)/gi
 
 function capitalize(text: string): string {
   return text[0]!.toUpperCase() + text.slice(1)
@@ -204,16 +215,16 @@ function capitalize(text: string): string {
 
 // Les mots anglais (AniList, Wikipédia EN) et français (Wikipédia FR)
 const HAIR_COLORS: [RegExp, string][] = [
-  [/black|raven|ebony|noir/i, 'Noirs'], [/white|snow|blanc/i, 'Blancs'], [/silver|platinum|argent/i, 'Argentés'], [/gr[ae]y|gris/i, 'Gris'],
-  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blonds'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Bruns'], [/orange|ginger|roux|rousse/i, 'Roux'],
-  [/\bred|crimson|scarlet|rouge/i, 'Rouges'], [/pink|\brose/i, 'Roses'], [/blue|cyan|teal|turquoise|bleu/i, 'Bleus'], [/green|\bvert/i, 'Verts'],
-  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Violets'], [/bald|shaved|chauve/i, 'Chauve'],
+  [/black|raven|ebony|noir/i, 'Black'], [/white|snow|blanc/i, 'White'], [/silver|platinum|argent/i, 'Silver'], [/gr[ae]y|gris/i, 'Grey'],
+  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
+  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
+  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Purple'], [/bald|shaved|chauve/i, 'Bald'],
 ]
 const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
 export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
 
-// Les couleurs citées, dans l'ordre du texte (« White with blue tips » → Blancs, Bleus)
+// Les couleurs citées, dans l'ordre du texte (« White with blue tips » → White, Blue)
 export const hairColors = (text: string) => HAIR_COLORS
   .map(([pattern, color]) => ({ color, index: text.search(pattern) }))
   .filter(({ index }) => index >= 0)

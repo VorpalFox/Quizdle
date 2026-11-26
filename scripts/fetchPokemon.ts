@@ -13,23 +13,23 @@ if (lastId > MAX_ID)
 const CONCURRENCY = 10
 
 const TYPES: Record<string, string> = {
-  normal: 'Normal', fire: 'Feu', water: 'Eau', grass: 'Plante', electric: 'Électrik', ice: 'Glace',
-  fighting: 'Combat', poison: 'Poison', ground: 'Sol', flying: 'Vol', psychic: 'Psy', bug: 'Insecte',
-  rock: 'Roche', ghost: 'Spectre', dragon: 'Dragon', dark: 'Ténèbres', steel: 'Acier', fairy: 'Fée',
+  normal: 'Normal', fire: 'Fire', water: 'Water', grass: 'Grass', electric: 'Electric', ice: 'Ice',
+  fighting: 'Fighting', poison: 'Poison', ground: 'Ground', flying: 'Flying', psychic: 'Psychic', bug: 'Bug',
+  rock: 'Rock', ghost: 'Ghost', dragon: 'Dragon', dark: 'Dark', steel: 'Steel', fairy: 'Fairy',
 }
 const HABITATS: Record<string, string> = {
-  'cave': 'Grotte', 'forest': 'Forêt', 'grassland': 'Prairie', 'mountain': 'Montagne', 'rare': 'Rare',
-  'rough-terrain': 'Terrain accidenté', 'sea': 'Mer', 'urban': 'Ville', 'waters-edge': "Bord de l'eau",
+  'cave': 'Cave', 'forest': 'Forest', 'grassland': 'Grassland', 'mountain': 'Mountain', 'rare': 'Rare',
+  'rough-terrain': 'Rough terrain', 'sea': 'Sea', 'urban': 'Urban', 'waters-edge': "Water's edge",
 }
-// Noms officiels français (ceux de PokeAPI)
+// Noms officiels anglais (ceux de PokeAPI). « Undiscovered » est un vrai groupe (les légendaires), pas une case vide
 const EGG_GROUPS: Record<string, string> = {
-  'monster': 'Monstrueux', 'water1': 'Aquatique 1', 'bug': 'Insectoïde', 'flying': 'Aérien', 'ground': 'Terrestre',
-  'fairy': 'Féerique', 'plant': 'Végétal', 'humanshape': 'Humanoïde', 'water3': 'Aquatique 3', 'mineral': 'Minéral',
-  'indeterminate': 'Amorphe', 'water2': 'Aquatique 2', 'ditto': 'Métamorph', 'dragon': 'Draconique', 'no-eggs': 'Inconnu',
+  'monster': 'Monster', 'water1': 'Water 1', 'bug': 'Bug', 'flying': 'Flying', 'ground': 'Field',
+  'fairy': 'Fairy', 'plant': 'Grass', 'humanshape': 'Human-Like', 'water3': 'Water 3', 'mineral': 'Mineral',
+  'indeterminate': 'Amorphous', 'water2': 'Water 2', 'ditto': 'Ditto', 'dragon': 'Dragon', 'no-eggs': 'Undiscovered',
 }
 const COLORS: Record<string, string> = {
-  black: 'Noir', blue: 'Bleu', brown: 'Marron', gray: 'Gris', green: 'Vert',
-  pink: 'Rose', purple: 'Violet', red: 'Rouge', white: 'Blanc', yellow: 'Jaune',
+  black: 'Black', blue: 'Blue', brown: 'Brown', gray: 'Grey', green: 'Green',
+  pink: 'Pink', purple: 'Purple', red: 'Red', white: 'White', yellow: 'Yellow',
 }
 const GENERATIONS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix']
 

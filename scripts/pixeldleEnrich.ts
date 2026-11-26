@@ -9,7 +9,7 @@ import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { sleep, splitOccupations } from './anilist.js'
 import { templateFields } from './fandom.js'
 import { disambiguationLinks } from './wikiText.js'
-import { translateOccupation as englishOccupation } from './translate.js'
+import { frenchOccupation, translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
 import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
@@ -46,7 +46,7 @@ const FIELDS = {
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
 } as const
 export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior'>
-const PREDATOR = 'Prédateur'
+const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
 const MAX_LOCATIONS = 2
 // Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
@@ -152,23 +152,23 @@ export function parseGender(value: string): string | null | undefined {
     return known
   const key = value.toLowerCase().trim()
   if (/player|customi[sz]able|\bchoice\b|chosen|^determin|user[- ]defined/.test(key))
-    return 'Au choix'
+    return "Player's choice"
   if (/^unspecified|^not specified|^dependent/.test(key))
     return null
   // Sans sexe (robots, objets, entités) : « N/A (Programmed as male) », « Genderless, referred to as female », même si on
   // en parle au masculin ou au féminin. « Autre » est pour les personnages non-binaires.
   if (/^(?:n\/a|none|genderless|sexless|no gender|not applicable|asexual|it\b)/.test(key))
-    return 'Aucun'
+    return 'Genderless'
   if (/referred to as (?:female|"?she)|feminine programm?ing|female persona/.test(key))
-    return 'Femme'
+    return 'Female'
   if (/referred to as (?:male|"?he\b)|masculine personality|male programm?ing/.test(key))
-    return 'Homme'
+    return 'Male'
   if (/^(?:f|she|her|feminine|girl|lady)\b/.test(key))
-    return 'Femme'
+    return 'Female'
   if (/^(?:m|he|him|masculine|boy)\b/.test(key))
-    return 'Homme'
+    return 'Male'
   if (/^(?:they|agender|non-?binary|x\b|x-gender|intersex)\b/.test(key))
-    return 'Autre'
+    return 'Other'
   // La valeur entière d'abord : « Left 4 Dead, Male, Left 4 Dead 2, Male or Female » n'est pas tranché
   return translateGender([value, firstItem(value)])
 }
@@ -197,14 +197,14 @@ export function birthPlaces(value: string): string[] {
   return parsePlaces(parts(value).filter(part => !NOT_BIRTHPLACE.test(part)).join(', '))
 }
 
-// Nos règles d'abord, sur la valeur anglaise (« Bartender » → Serveur), puis le dictionnaire du Weebdle, dont la
-// traduction repasse par nos règles pour rejoindre nos familles. undefined : pas traduite (laissée de côté).
+// Nos règles d'abord, sur la valeur anglaise (« Bartender » → Waiter), puis le dictionnaire du Weebdle, dont la
+// traduction repasse par nos règles (sous son nom français, qu'elles lisent) pour rejoindre nos familles. undefined : pas traduite (laissée de côté).
 export function parseOccupation(raw: string): string | null | undefined {
   const ours = translateOccupation(raw)
   if (ours !== undefined)
     return ours
   const french = englishOccupation(raw)
-  return french === null || french === undefined ? french : translateOccupation(french) ?? french
+  return french === null || french === undefined ? french : translateOccupation(frenchOccupation(french) ?? french) ?? french
 }
 
 export function parseOccupations(value: string): string[] {

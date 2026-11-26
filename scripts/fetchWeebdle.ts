@@ -47,24 +47,24 @@ const MIN_SLOTS_FOR_RANDOM = 8
 
 // La source quand AniList dit « OTHER » (id AniList de l'anime)
 const SOURCE_OVERRIDES: Record<number, string> = {
-  114121: 'Roman', // The Daily Life of the Immortal King : un web novel chinois
-  13125: 'Roman', // From the New World
-  1943: 'Roman', // Paprika
-  20541: 'Musique', // Mekakucity Actors : les chansons du Kagerou Project
-  7724: 'Roman', // Shiki
+  114121: 'Novel', // The Daily Life of the Immortal King : un web novel chinois
+  13125: 'Novel', // From the New World
+  1943: 'Novel', // Paprika
+  20541: 'Music', // Mekakucity Actors : les chansons du Kagerou Project
+  7724: 'Novel', // Shiki
 }
 
 // Sans espèce trouvée, un perso d'un anime sans rien de surnaturel est humain. Pas dans les autres : un quart des persos
 // dont on connaît l'espèce n'y sont pas humains.
-const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Surnaturel', 'Science-fiction', 'Mecha', 'Horreur', 'Magical girl'])
-const HUMAN = 'Humain'
+const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Supernatural', 'Sci-Fi', 'Mecha', 'Horror', 'Magical girl'])
+const HUMAN = 'Human'
 // Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
 // espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à
 // repérer à la main : ChäoS;HEAd, Occultic;Nine,
 // Summer Time Rendering (les Ombres), ni Magi (Fanalis, Djinns).
 // Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
 // n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
-const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
+const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
   'Darwin\'s Game', 'Guilty Crown', 'ERASED', 'Charlotte', 'Saga of Tanya the Evil', 'Rascal Does Not Dream of Bunny Girl Senpai',
   'PSYCHO-PASS', 'Paprika', 'Now and Then, Here and There', 'Blast of Tempest', 'Mieruko-chan', 'Danganronpa: The Animation',
   'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',

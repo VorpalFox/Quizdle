@@ -5,7 +5,7 @@
 // fin ce qui est resté vide.
 import type { AttributeDef, AttributeValue, Entry } from '../src/engine/types.js'
 
-export const UNKNOWN = 'Inconnu'
+export const UNKNOWN = 'Unknown'
 export const UNKNOWN_KEYS = 'unknown'
 
 // « Unknown », « Unknown. », « Unknown (never stated) », « Inconnu », « ? »

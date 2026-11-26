@@ -1,5 +1,13 @@
 {
  "exclude": [
+  "387259",
+  "387261",
+  "38910",
+  "387268",
+  "387277",
+  "39121",
+  "153490",
+  "73893",
   "244200",
   "303031",
   "327369",
@@ -28,18 +36,22 @@
   "325602",
   "326047",
   "161805",
-  "161806"
+  "161806",
+  "121450",
+  "121462",
+  "121461",
+  "121451"
  ],
  "edit": {
   "80": {
    "_nom": "Light Yagami",
    "occupation": {
     "plus": [
-     "Tueur en série"
+     "Serial killer"
     ],
     "moins": [
-     "Détective",
-     "Justicier",
+     "Detective",
+     "Vigilante",
      "Tueur de masse",
      "Gourou"
     ]
@@ -67,7 +79,7 @@
    "occupation": {
     "plus": [
      "Leader",
-     "Combattant"
+     "Fighter"
     ],
     "moins": [
      "Vice Commander",
@@ -89,7 +101,7 @@
    "_nom": "Ciel Phantomhive",
    "occupation": {
     "plus": [
-     "Comte"
+     "Count"
     ],
     "moins": [
      "Earl of Phantomhive",
@@ -110,7 +122,7 @@
    "_nom": "Jinta Yadomi",
    "occupation": {
     "plus": [
-     "Chômeur"
+     "Unemployed"
     ]
    }
   },
@@ -118,7 +130,7 @@
    "_nom": "Naruko Anjou",
    "occupation": {
     "plus": [
-     "Étudiant"
+     "Student"
     ]
    }
   },
@@ -126,7 +138,7 @@
    "_nom": "Atsumu Matsuyuki",
    "occupation": {
     "plus": [
-     "Étudiant"
+     "Student"
     ]
    }
   },
@@ -134,7 +146,7 @@
    "_nom": "Chiriko Tsurumi",
    "occupation": {
     "plus": [
-     "Étudiant"
+     "Student"
     ]
    }
   },
@@ -142,7 +154,7 @@
    "_nom": "Tetsudo Hisakawa",
    "occupation": {
     "plus": [
-     "Aventurier"
+     "Adventurer"
     ]
    }
   },
@@ -150,7 +162,7 @@
    "_nom": "Haruna",
    "occupation": {
     "plus": [
-     "Étudiant"
+     "Student"
     ]
    }
   },
@@ -158,7 +170,7 @@
    "_nom": "Aki",
    "occupation": {
     "plus": [
-     "Étudiant"
+     "Student"
     ]
    }
   },
@@ -166,8 +178,8 @@
    "_nom": "Nene Motoe",
    "occupation": {
     "plus": [
-     "Étudiant",
-     "Criminel"
+     "Student",
+     "Criminal"
     ],
     "moins": [
      "Student",
@@ -189,7 +201,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -197,11 +209,11 @@
    "_nom": "Decim",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -209,11 +221,11 @@
    "_nom": "Nona",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -221,11 +233,11 @@
    "_nom": "Ginti",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -233,11 +245,11 @@
    "_nom": "Clavis",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -245,11 +257,11 @@
    "_nom": "Castra",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -258,10 +270,10 @@
    "_raison": "pas un arbitre (des « puppets ») : le créateur du système, « the closest being to God » (death-parade.fandom.com/wiki/Oculus)",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -269,7 +281,7 @@
    "_nom": "Aria Kurenaino",
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ],
     "moins": [
      "Black magic agent"
@@ -280,11 +292,11 @@
    "_nom": "Quin",
    "species": {
     "plus": [
-     "Homoncule",
-     "Poupée"
+     "Homunculus",
+     "Doll"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -292,8 +304,8 @@
    "_nom": "Zero Two",
    "species": {
     "plus": [
-     "Humain",
-     "Hurleur"
+     "Human",
+     "Howler"
     ]
    }
   },
@@ -309,17 +321,17 @@
    "_nom": "Kyouryuu no Hime",
    "species": {
     "plus": [
-     "Klaxo-sapien"
+     "Klaxo Sapiens"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
   "129347": {
    "_nom": "Daikenja",
    "_raison": "compétence analytique de Rimuru, équivalent magique d'une IA compagnon (tensura.fandom.com/wiki/Great_Sage) : immatériel, ni sexe, ni âge, ni cheveux",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
      "Assistant"
@@ -339,10 +351,10 @@
    "_nom": "Sonzai X",
    "species": {
     "plus": [
-     "Divinité"
+     "Deity"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -350,7 +362,7 @@
    "_nom": "Haine",
    "species": {
     "plus": [
-     "Ombre"
+     "Shadow"
     ]
    }
   },
@@ -358,7 +370,7 @@
    "_nom": "Ushio Kofune",
    "species": {
     "plus": [
-     "Ombre"
+     "Shadow"
     ]
    }
   },
@@ -369,7 +381,7 @@
      "Robot"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -387,7 +399,7 @@
    "_raison": "uniforme vivant (Kamui) : un objet, comme Ashgan",
    "species": {
     "plus": [
-     "Objet"
+     "Object"
     ]
    }
   },
@@ -396,8 +408,8 @@
    "_raison": "comme à l'Animedle : exorciste et élève, pas « Vessel » (le réceptacle de Sukuna)",
    "occupation": {
     "plus": [
-     "Exorciste",
-     "Étudiant"
+     "Exorcist",
+     "Student"
     ],
     "moins": [
      "Sorcerer",
@@ -411,7 +423,7 @@
    "_raison": "comme à l'Animedle : le Roi des Fléaux (« Calamity »). Espèce : un fléau, humain à l'origine (Fandom : Human, Incarnation)",
    "occupation": {
     "plus": [
-     "Fléau"
+     "Curse"
     ],
     "moins": [
      "Calamity"
@@ -419,7 +431,7 @@
    },
    "species": {
     "plus": [
-     "Fléau"
+     "Curse"
     ]
    }
   },
@@ -428,7 +440,7 @@
    "_raison": "sorcière de Madoka = monstre, pas une magicienne (« The witch of stage settings ») : pas de métier",
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ],
     "moins": [
      "Witch"
@@ -440,12 +452,12 @@
    "_raison": "antagoniste principale sans page sur le wiki : la sorcière qui a maudit Guideau (witchandthebeast.fandom.com/wiki/Guideau). Sorcière = humaine qui a des pouvoirs, comme Ione",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    },
    "occupation": {
     "plus": [
-     "Magicien"
+     "Mage"
     ]
    }
   },
@@ -454,7 +466,7 @@
    "_raison": "épée maudite vivante (witchandthebeast.fandom.com/wiki/Demon_Sword_Ashgan) : un objet (pas Lame → Objet en général, les Lames de Xenoblade sont un peuple), pas de cheveux, pas de métier (Aucune, comme les objets du Pixeldle)",
    "species": {
     "plus": [
-     "Objet"
+     "Object"
     ]
    },
    "hair": {
@@ -464,7 +476,7 @@
    },
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ]
    }
   },
@@ -472,7 +484,7 @@
    "_nom": "Shuseki",
    "species": {
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -481,7 +493,7 @@
    "_note": "Titres farfelus assumés par l anime",
    "occupation": {
     "plus": [
-     "Étudiant",
+     "Student",
      "Immortal King",
      "Absolute One",
      "The Anomaly"
@@ -504,12 +516,12 @@
      "N/A"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "216426": {
    "_nom": "Navi",
    "_raison": "système de navigation de NiaLand (AniList), sans corps : ni sexe ni cheveux, assistant",
-   "gender": "Aucun",
+   "gender": "Genderless",
    "occupation": {
     "plus": [
      "Assistant"
@@ -537,16 +549,16 @@
      "N/A"
     ]
    },
-   "gender": "Aucun"
+   "gender": "Genderless"
   },
   "251689": {
    "_nom": "Nyansuke",
    "species": {
     "plus": [
-     "Chat"
+     "Cat"
     ],
     "moins": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -554,7 +566,7 @@
    "_nom": "Bozes Ko Palesti",
    "occupation": {
     "plus": [
-     "Chevalier"
+     "Knight"
     ],
     "moins": [
      "Noble"
@@ -566,8 +578,8 @@
    "_raison": "un des Quatre Généraux de Bosse, « King's Spear… the spear master » (ousamaranking.fandom.com/wiki/Apeas)",
    "occupation": {
     "plus": [
-     "Lancier",
-     "Combattant"
+     "Lancer",
+     "Fighter"
     ]
    }
   },
@@ -576,8 +588,8 @@
    "_raison": "un des Quatre Généraux de Bosse, « Swordmaster », l'instructeur d'escrime de Bojji (ousamaranking.fandom.com/wiki/Domas)",
    "occupation": {
     "plus": [
-     "Épéiste",
-     "Combattant"
+     "Swordsman",
+     "Fighter"
     ]
    }
   },
@@ -586,7 +598,7 @@
    "_raison": "un des Quatre Généraux de Bosse, « Queen's Shield », ancien « King's Spear » (ousamaranking.fandom.com/wiki/Dorshe)",
    "occupation": {
     "plus": [
-     "Combattant"
+     "Fighter"
     ]
    }
   },
@@ -595,9 +607,9 @@
    "_raison": "un des Quatre Généraux de Bosse, « the kingdom's spymaster », maître du serpent Mitsumata (ousamaranking.fandom.com/wiki/Bebin)",
    "occupation": {
     "plus": [
-     "Espion",
-     "Dresseur",
-     "Combattant"
+     "Spy",
+     "Trainer",
+     "Fighter"
     ]
    }
   },
@@ -606,7 +618,7 @@
    "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX)",
    "species": {
     "plus": [
-     "Ombre"
+     "Shadow"
     ]
    }
   },
@@ -615,7 +627,7 @@
    "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX)",
    "species": {
     "plus": [
-     "Humain"
+     "Human"
     ]
    }
   },
@@ -624,7 +636,7 @@
    "_raison": "Fandom : « Human (11th Loop), Shadow (original Timeline) » : les deux (validé avec FX)",
    "species": {
     "plus": [
-     "Ombre"
+     "Shadow"
     ]
    }
   },
@@ -633,7 +645,7 @@
    "_raison": "la mère de Kirito et Suguha ne joue pas à ALO : pas la Fée de leurs avatars (espèce de la famille)",
    "species": {
     "moins": [
-     "Fée"
+     "Fairy"
     ]
    }
   },
@@ -642,19 +654,68 @@
    "_raison": "Undine dans ALO ; « Sylph (Erika) » du champ Fandom est un autre perso",
    "species": {
     "moins": [
-     "Sylphe"
+     "Sylph"
+    ]
+   }
+  },
+  "136548": {
+   "_nom": "Fushi",
+   "species": {
+    "plus": [
+     "Immortal"
+    ]
+   }
+  },
+  "136553": {
+   "_nom": "Kansatsu-sha",
+   "species": {
+    "plus": [
+     "Deity"
+    ]
+   },
+   "age": null,
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "14015": {
+   "_nom": "Elucia de Lute Ima",
+   "aliases": [
+    "Ima Lute de Elucia",
+    "エリュシア・デ・ルート・イーマ",
+    "Elucia",
+    "Lute",
+    "Ima",
+    "Elsea",
+    "Elsie"
+   ]
+  },
+  "34315": {
+   "_nom": "Yuri Nikaido",
+   "species": {
+    "plus": [
+     "Human"
+    ],
+    "moins": [
+     "Demon"
     ]
    }
   }
  },
  "add": [],
  "limits": {
-  "The Reincarnation of the Strongest Exorcist in Another World": 18
+  "The Reincarnation of the Strongest Exorcist in Another World": 18,
+  "The World God Only Knows": 15
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
   "170536": "Jinnai#Jinnai",
   "170537": "Kuga#Kuga",
-  "264680": "Kage's Mother"
+  "264680": "Kage's Mother",
+  "121452": "Nono Mozunono",
+  "121448": "Chouka U Baragasaki",
+  "201555": "The Nameless Boy"
  }
 }

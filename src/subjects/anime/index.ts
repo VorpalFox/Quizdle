@@ -12,20 +12,20 @@ export const ANIME_SPOILER_WARNING = 'Attention aux spoilers : les indices disen
 // Indices d'un personnage d'anime : partagés par l'Animedle et le Weebdle
 export const characterAttributes: readonly AttributeDef[] = [
   // Le personnage
-  { key: 'gender', label: 'Sexe', kind: 'exact' },
-  { key: 'age', label: 'Âge', kind: 'number', format: withUnit('ans') },
+  { key: 'gender', label: 'Gender', kind: 'exact' },
+  { key: 'age', label: 'Age', kind: 'number', format: withUnit('years') },
   { key: 'occupation', label: 'Occupation', kind: 'set' },
-  { key: 'hair', label: 'Cheveux', kind: 'set' },
+  { key: 'hair', label: 'Hair', kind: 'set' },
   // Son anime
   { key: 'anime', label: 'Anime', kind: 'exact' },
   { key: 'genres', label: 'Genres', kind: 'set' },
-  { key: 'year', label: 'Année', kind: 'number' },
+  { key: 'year', label: 'Year', kind: 'number' },
   { key: 'studio', label: 'Studio', kind: 'exact' },
 ]
 
 // À l'Animedle, l'anime est l'univers du perso, la 1re série de sa franchise (JoJo plutôt que Diamond is Unbreakable).
 // Même clé « anime » : les corrections à la main ne changent pas.
-const animedleAttributes = characterAttributes.map(attribute => attribute.key === 'anime' ? { ...attribute, label: 'Univers' } : attribute)
+const animedleAttributes = characterAttributes.map(attribute => attribute.key === 'anime' ? { ...attribute, label: 'Universe' } : attribute)
 
 // Personnages d'anime : données générées depuis AniList par npm run fetch:anime
 export const anime: Subject = {

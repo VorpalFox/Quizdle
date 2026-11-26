@@ -31,21 +31,21 @@ describe('stripTimelines', () => {
 
 describe('parseGender', () => {
   it('PronomsEtChoix_NosValeurs', () => {
-    expect(parseGender('She/Her')).toBe('Femme')
-    expect(parseGender('he/him')).toBe('Homme')
-    expect(parseGender('They/Them')).toBe('Autre')
-    expect(parseGender('Player\'s choice')).toBe('Au choix')
-    expect(parseGender('Genderless, referred to as female')).toBe('Aucun')
-    expect(parseGender('N/A (Programmed as male)')).toBe('Aucun')
-    expect(parseGender('Feminine Programming')).toBe('Femme')
+    expect(parseGender('She/Her')).toBe('Female')
+    expect(parseGender('he/him')).toBe('Male')
+    expect(parseGender('They/Them')).toBe('Other')
+    expect(parseGender('Player\'s choice')).toBe("Player's choice")
+    expect(parseGender('Genderless, referred to as female')).toBe('Genderless')
+    expect(parseGender('N/A (Programmed as male)')).toBe('Genderless')
+    expect(parseGender('Feminine Programming')).toBe('Female')
     expect(parseGender('Unspecified')).toBeNull()
   })
 })
 
 describe('parseSpecies', () => {
   it('Anglais_Traduit', () => {
-    expect(parseSpecies('Human / Nobody')).toBe('Humain')
-    expect(parseSpecies('Dinosaur')).toBe('Dinosaure')
+    expect(parseSpecies('Human / Nobody')).toBe('Human')
+    expect(parseSpecies('Dinosaur')).toBe('Dinosaur')
   })
 })
 
@@ -105,12 +105,12 @@ describe('infoboxValues', () => {
   })
 
   it('SansOccupation_GradeOuClasse', () => {
-    expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldat'])
-    expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientifique'])
+    expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldier'])
+    expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientist'])
   })
 
   it('CreatureHostile_Predateur', () => {
-    expect(infoboxValues({ behavior: 'Hostile' }, new Map()).occupation).toEqual(['Prédateur'])
+    expect(infoboxValues({ behavior: 'Hostile' }, new Map()).occupation).toEqual(['Predator'])
     expect(infoboxValues({ behavior: 'Passive' }, new Map()).occupation).toBeUndefined()
   })
 

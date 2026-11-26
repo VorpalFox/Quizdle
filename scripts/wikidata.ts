@@ -16,7 +16,7 @@ const DELAY_MS = 500
 const PROPERTIES = { gender: 'P21', hair: 'P1884', occupation: 'P106' } as const
 type Key = keyof typeof PROPERTIES
 
-const GENDERS: Record<string, string> = { masculin: 'Homme', mâle: 'Homme', male: 'Homme', féminin: 'Femme', femelle: 'Femme', female: 'Femme' }
+const GENDERS: Record<string, string> = { masculin: 'Male', mâle: 'Male', male: 'Male', féminin: 'Female', femelle: 'Female', female: 'Female' }
 
 const cacheFile = new URL('../.cache/wikidata/characters.json', import.meta.url)
 

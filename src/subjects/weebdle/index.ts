@@ -7,8 +7,8 @@ const formatHeight = (value: AttributeValue) => typeof value === 'number' ? `${v
 // Les indices de l'Animedle, plus l'espèce, la taille et la source de l'anime : le Weebdle a beaucoup de persos peu
 // connus, il lui faut des indices qui se croisent d'un anime à l'autre (comme l'espèce et la nationalité du Pixeldle)
 const extra: Record<string, AttributeDef> = {
-  species: { key: 'species', label: 'Espèce', kind: 'set' },
-  height: { key: 'height', label: 'Taille', kind: 'number', format: formatHeight },
+  species: { key: 'species', label: 'Species', kind: 'set' },
+  height: { key: 'height', label: 'Height', kind: 'number', format: formatHeight },
   source: { key: 'source', label: 'Source', kind: 'exact' },
 }
 // Chaque nouvel indice juste après celui-ci

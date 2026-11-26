@@ -20,7 +20,7 @@ export function resolveEntry(subject: Subject, input: string): Entry {
   return entry
 }
 
-// « Blancs, Noirs » → ["Blancs", "Noirs"] pour un attribut à plusieurs valeurs, « 17 » → 17 pour un nombre, « - » → vide
+// « White, Black » → ["White", "Black"] pour un attribut à plusieurs valeurs, « 17 » → 17 pour un nombre, « - » → vide
 export function parseValue(attribute: AttributeDef, input: string): AttributeValue {
   const text = input.trim()
   if (EMPTY_VALUES.has(text.toLowerCase()))
@@ -58,7 +58,7 @@ export function parseSetEdit(input: string, current: AttributeValue): SetEdit {
   return { ...plus.length > 0 ? { plus } : {}, ...moins.length > 0 ? { moins } : {} }
 }
 
-// Les valeurs déjà utilisées par d'autres entrées, de la plus fréquente à la moins fréquente : pour repérer « blanc » au lieu de « Blancs »
+// Les valeurs déjà utilisées par d'autres entrées, de la plus fréquente à la moins fréquente : pour repérer « white » au lieu de « White »
 export function existingValues(subject: Subject, key: string): string[] {
   const counts = new Map<string, number>()
   for (const entry of subject.entries) {

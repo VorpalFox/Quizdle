@@ -24,8 +24,8 @@ describe('pages des personnages', () => {
 
 describe('pronounGender', () => {
   it('compte les pronoms du texte, sans les modèles', () => {
-    expect(pronounGender("'''Henry''' is the main character. He lives in a tower. His wife is ill, so he left.")).toBe('Homme')
-    expect(pronounGender("{{Quote|he said he was he}} '''Delilah''' is a lookout. She talks to Henry; her voice is all he hears. She drinks.")).toBe('Femme')
+    expect(pronounGender("'''Henry''' is the main character. He lives in a tower. His wife is ill, so he left.")).toBe('Male')
+    expect(pronounGender("{{Quote|he said he was he}} '''Delilah''' is a lookout. She talks to Henry; her voice is all he hears. She drinks.")).toBe('Female')
   })
 
   it('ne tranche pas sans assez de pronoms ou quand les deux se mélangent', () => {
@@ -71,7 +71,7 @@ describe('pronounGender, groupes', () => {
 
 describe('introFunction', () => {
   it('CompagnonOuAssistant_Explicite', () => {
-    expect(introFunction("Epona is Link's horse in many games.")).toBe('Compagnon')
+    expect(introFunction("Epona is Link's horse in many games.")).toBe('Companion')
     expect(introFunction('ADA is the AI assistant of the pioneer.')).toBe('Assistant')
     expect(introFunction('Paimon accompanies the Traveler as their guide.')).toBe('Assistant')
     expect(introFunction('MLA, short for Milton Library Assistant, is an AI.')).toBe('Assistant')
@@ -126,11 +126,11 @@ describe('introRoles', () => {
 describe('textHair', () => {
   it('SectionAppearance_Prioritaire', () => {
     const page = ['Her rival has [[Black|black]] hair.', '== Appearance ==', "She has long '''blonde hair''' tied in a ponytail.", '== Story ==', 'Text'].join('\n')
-    expect(textHair(page)?.colors).toEqual(['Blonds'])
+    expect(textHair(page)?.colors).toEqual(['Blond'])
   })
 
   it('SansSection_ToutLeTexte', () => {
-    expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Bruns'])
+    expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Brown'])
   })
 
   it('PasDeCheveux_Null', () => {
@@ -139,7 +139,7 @@ describe('textHair', () => {
 
   it('saute les phrases sur la conception (Wikipédia)', () => {
     const page = 'The original design had him with white hair. Mercy is a Swiss woman with long blonde hair.'
-    expect(textHair(page, DEVELOPMENT)?.colors).toEqual(['Blonds'])
+    expect(textHair(page, DEVELOPMENT)?.colors).toEqual(['Blond'])
     expect(textHair('The novel redesigns him with long red hair.', DEVELOPMENT)).toBeNull()
   })
 })

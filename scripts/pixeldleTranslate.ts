@@ -11,16 +11,16 @@ const firstRule = (rules: [RegExp, string | null][], value: string) => rules.fin
 // --- Sexe ---
 
 // « Aucun » pour un robot, un objet ou une entité, « Autre » quand le jeu le laisse inconnu exprès (Frisk) ou que le
-// wiki dit « they », « Au choix » pour un avatar personnalisable.
+// wiki dit « they », « Player's choice » pour un avatar personnalisable.
 
 // Ce que wikidataGender (masculin, féminin...) ne reconnaît pas
 const GENDERS: Record<string, string | null> = {
-  'genre déterminé par le joueur': 'Au choix', 'femme trans': 'Femme', 'homme trans': 'Homme',
-  'agenre': 'Autre', 'intersexuation': 'Autre', 'non-binaire': 'Autre',
+  'genre déterminé par le joueur': "Player's choice", 'femme trans': 'Female', 'homme trans': 'Male',
+  'agenre': 'Other', 'intersexuation': 'Other', 'non-binaire': 'Other',
   'sexe non divulgué dans œuvre': null, 'sexe inconnu': null, 'sexe ou genre non divulgué': null,
-  'intersex': 'Autre', 'non-binary': 'Autre', 'nonbinary': 'Autre', 'ambiguous': 'Autre', 'hermaphrodite': 'Autre',
+  'intersex': 'Other', 'non-binary': 'Other', 'nonbinary': 'Other', 'ambiguous': 'Other', 'hermaphrodite': 'Other',
   // Sans sexe : robots, objets, entités
-  'genderless': 'Aucun', 'asexual': 'Aucun', 'asexué': 'Aucun', 'sans genre': 'Aucun', 'n/a': 'Aucun', 'unknown': null, 'varies': 'Au choix', 'variable': 'Au choix',
+  'genderless': 'Genderless', 'asexual': 'Genderless', 'asexué': 'Genderless', 'sans genre': 'Genderless', 'n/a': 'Genderless', 'unknown': null, 'varies': "Player's choice", 'variable': "Player's choice",
   'yes': null,
 }
 
@@ -36,88 +36,90 @@ export function translateGender(names: string[]): string | null | undefined {
 // --- Espèce ---
 
 // Champ multiple, jamais vide. « defaults » du manuel donne « Humain » aux franchises réalistes dont le wiki ne dit pas
-// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Au choix »
+// l'espèce, « edit » corrige les exceptions. « Inconnu » quand le jeu la cache exprès (Meta Knight, Paimon), « Player's choice »
 // pour un avatar dont on choisit la race. Les D'ni de Myst le sont même hybrides (Gehn, Atrus).
 
 // Après avoir retiré « de fiction », « anthropomorphe »... : le nom de l'espèce, en anglais ou en français
 const SPECIES: Record<string, string | null> = {
+  // Les libellés français de Wikidata qu'on gardait tels quels, en anglais
+  'primarque': 'Primarch', 'voyageur': 'Traveller', 'griffon': 'Griffin', 'hylien': 'Hylian',
   // Humains, et ce qui n'est qu'une sorte d'humain
-  'être humain': 'Humain', 'humain': 'Humain', 'terran': 'Humain', 'homs': 'Humain', 'spartan': 'Humain', 'super soldat': 'Humain',
-  'sorcier ou sorcière': 'Humain', 'magicien': 'Humain', 'sang-pur': 'Humain', 'animagus': 'Humain', 'métamorphomage': 'Humain',
-  'siren': 'Humain', 'psyker': 'Humain', 'méta-humain': 'Méta-humain', 'mutant': 'Mutant', 'clone': 'Clone', 'nords': 'Nordique',
-  'humanoïde': 'Humanoïde', 'extraterrestre': 'Extraterrestre', 'extraterrestre humanoïde': 'Extraterrestre',
+  'être humain': 'Human', 'humain': 'Human', 'terran': 'Human', 'homs': 'Human', 'spartan': 'Human', 'super soldat': 'Human',
+  'sorcier ou sorcière': 'Human', 'magicien': 'Human', 'sang-pur': 'Human', 'animagus': 'Human', 'métamorphomage': 'Human',
+  'siren': 'Human', 'psyker': 'Human', 'méta-humain': 'Metahuman', 'mutant': 'Mutant', 'clone': 'Clone', 'nords': 'Nord',
+  'humanoïde': 'Humanoid', 'extraterrestre': 'Alien', 'extraterrestre humanoïde': 'Alien',
   // Machines
-  'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Androïde', 'gynoïde': 'Androïde',
-  'intelligence artificielle': 'Robot', 'omnic': 'Omniaque', 'sentry': 'Robot',
+  'robot': 'Robot', 'robot master': 'Robot', 'sentient machine': 'Robot', 'androïde': 'Android', 'gynoïde': 'Android',
+  'intelligence artificielle': 'Robot', 'omnic': 'Omnic', 'sentry': 'Robot',
   // Surnaturel
-  'déité': 'Divinité', 'daedric prince': 'Daedra', 'higher being': 'Être supérieur', 'ange': 'Ange', 'démon': 'Démon',
-  'demon': 'Démon', 'half-demon': 'Demi-démon', 'yōkai': 'Yōkai', 'satori': 'Yōkai', 'kappa': 'Yōkai', 'komainu': 'Yōkai',
-  'vampire': 'Vampire', 'comte vampire': 'Vampire', 'dhampir': 'Dhampire', 'fantôme': 'Fantôme', 'revenant': 'Mort-vivant',
-  'undead': 'Mort-vivant', 'homunculus': 'Homoncule', 'fée': 'Fée', 'fairy': 'Fée', 'dragon': 'Dragon', 'monstres': 'Monstre',
+  'déité': 'Deity', 'daedric prince': 'Daedra', 'higher being': 'Higher Being', 'ange': 'Angel', 'démon': 'Demon',
+  'demon': 'Demon', 'half-demon': 'Half-demon', 'yōkai': 'Yokai', 'satori': 'Yokai', 'kappa': 'Yokai', 'komainu': 'Yokai',
+  'vampire': 'Vampire', 'comte vampire': 'Vampire', 'dhampir': 'Dhampir', 'fantôme': 'Ghost', 'revenant': 'Undead',
+  'undead': 'Undead', 'homunculus': 'Homunculus', 'fée': 'Fairy', 'fairy': 'Fairy', 'dragon': 'Dragon', 'monstres': 'Monster',
   // Fantasy
-  'elfe': 'Elfe', 'high elf': 'Elfe', 'blood elf': 'Elfe', 'elfe de la nuit': 'Elfe', 'drow': 'Elfe', 'avariel': 'Elfe',
-  'demi-elfe': 'Demi-elfe', 'half-elf': 'Demi-elfe', 'elfe de maison': 'Elfe de maison', 'orc': 'Orque', 'orsimer': 'Orque',
-  'dwarf': 'Nain', 'goblin': 'Gobelin', 'demi-géant': 'Demi-géant', 'dragonborn': 'Drakéide', 'tieffelin': 'Tieffelin',
-  'githyanki': 'Githyanki', 'witcher': 'Humain mutant',
+  'elfe': 'Elf', 'high elf': 'Elf', 'blood elf': 'Elf', 'elfe de la nuit': 'Elf', 'drow': 'Elf', 'avariel': 'Elf',
+  'demi-elfe': 'Half-elf', 'half-elf': 'Half-elf', 'elfe de maison': 'House-elf', 'orc': 'Orc', 'orsimer': 'Orc',
+  'dwarf': 'Dwarf', 'goblin': 'Goblin', 'demi-géant': 'Half-giant', 'dragonborn': 'Dragonborn', 'tieffelin': 'Tiefling',
+  'githyanki': 'Githyanki', 'witcher': 'Mutant human',
   // Les peuples d'une franchise : gardés, en français quand le jeu les traduit
-  'mob minecraft': 'Mob', 'nobody': 'Simili', 'heartless': 'Sans-cœur', 'replica': 'Réplique', 'lightners': 'Monstre',
-  'darkners': 'Monstre', 'espèce léviathan': 'Léviathan', 'shangheili': 'Sangheili', 'turian': 'Turien', 'blade': 'Lame',
-  'pale being': 'Être pâle', 'vessel': 'Réceptacle', 'weaver': 'Tisseuse', 'rabbid': 'Lapin crétin', 'salmonid': 'Salmonoïde',
-  'kong': 'Singe', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
+  'mob minecraft': 'Mob', 'nobody': 'Nobody', 'heartless': 'Heartless', 'replica': 'Replica', 'lightners': 'Monster',
+  'darkners': 'Monster', 'espèce léviathan': 'Leviathan', 'shangheili': 'Sangheili', 'turian': 'Turian', 'blade': 'Blade',
+  'pale being': 'Pale Being', 'vessel': 'Vessel', 'weaver': 'Weaver', 'rabbid': 'Rabbid', 'salmonid': 'Salmonid',
+  'kong': 'Monkey', 'vastaya': 'Vastaya', 'yordle': 'Yordle', 'metal head': 'Metal Head',
   // Animaux
-  'animal': 'Animal', 'mammifère': 'Animal', 'monkey': 'Singe', 'singe': 'Singe', 'gorille': 'Singe', 'chien': 'Chien',
-  'dog': 'Chien', 'renard': 'Renard', 'fox': 'Renard', 'loup': 'Loup', 'wolf': 'Loup', 'hedgehog': 'Hérisson', 'hérisson': 'Hérisson',
-  'echidna': 'Échidné', 'rabbit or hare': 'Lapin', 'lapin/lièvre': 'Lapin', 'chat': 'Chat', 'chat de fiction et autres félins': 'Chat',
-  'tigre': 'Tigre', 'lion': 'Lion', 'panther': 'Panthère', 'cheetah': 'Guépard', 'ours': 'Ours', 'ours blanc': 'Ours',
-  'polar bear': 'Ours', 'panda': 'Panda', 'giant panda': 'Panda', 'raton laveur': 'Raton laveur', 'raccoon': 'Raton laveur',
-  'écureuil': 'Écureuil', 'squirrel': 'Écureuil', 'hamster': 'Hamster', 'rodent': 'Rongeur', 'mole': 'Taupe', 'skunk': 'Moufette',
-  'camelid': 'Lama', 'cheval': 'Cheval', 'cochon': 'Cochon', 'rhinocéros': 'Rhinocéros', 'hippopotamus': 'Hippopotame',
-  'marsupial': 'Marsupial', 'bat': 'Chauve-souris', 'oiseau': 'Oiseau', 'parrot': 'Perroquet', 'seagull': 'Mouette',
-  'pélican': 'Pélican', 'hibou': 'Hibou', 'grenouille ou crapaud': 'Grenouille', 'amphibian': 'Grenouille', 'reptile': 'Reptile',
-  'lizard': 'Lézard', 'chameleon': 'Caméléon', 'crocodile or alligator': 'Crocodile', 'tortoise': 'Tortue', 'turtle': 'Tortue',
-  'dinosaure': 'Dinosaure', 'poisson': 'Poisson', 'shark': 'Requin', 'octopus': 'Pieuvre', 'jellyfish': 'Méduse',
-  'sea urchin': 'Oursin', 'crabe': 'Crabe', 'insecte': 'Insecte', 'insect': 'Insecte', 'araignée': 'Araignée',
-  'plante': 'Plante', 'plant species': 'Plante', 'flower': 'Plante', 'arbre': 'Plante', 'virus': 'Virus', 'parasite': 'Parasite',
-  'objet': 'Objet', 'manchot': 'Manchot', 'zooplankton': 'Plancton',
+  'animal': 'Animal', 'mammifère': 'Animal', 'monkey': 'Monkey', 'singe': 'Monkey', 'gorille': 'Monkey', 'chien': 'Dog',
+  'dog': 'Dog', 'renard': 'Fox', 'fox': 'Fox', 'loup': 'Wolf', 'wolf': 'Wolf', 'hedgehog': 'Hedgehog', 'hérisson': 'Hedgehog',
+  'echidna': 'Echidna', 'rabbit or hare': 'Rabbit', 'lapin/lièvre': 'Rabbit', 'chat': 'Cat', 'chat de fiction et autres félins': 'Cat',
+  'tigre': 'Tiger', 'lion': 'Lion', 'panther': 'Panther', 'cheetah': 'Cheetah', 'ours': 'Bear', 'ours blanc': 'Bear',
+  'polar bear': 'Bear', 'panda': 'Panda', 'giant panda': 'Panda', 'raton laveur': 'Raccoon', 'raccoon': 'Raccoon',
+  'écureuil': 'Squirrel', 'squirrel': 'Squirrel', 'hamster': 'Hamster', 'rodent': 'Rodent', 'mole': 'Mole', 'skunk': 'Skunk',
+  'camelid': 'Llama', 'cheval': 'Horse', 'cochon': 'Pig', 'rhinocéros': 'Rhinoceros', 'hippopotamus': 'Hippopotamus',
+  'marsupial': 'Marsupial', 'bat': 'Bat', 'oiseau': 'Bird', 'parrot': 'Parrot', 'seagull': 'Seagull',
+  'pélican': 'Pelican', 'hibou': 'Owl', 'grenouille ou crapaud': 'Frog', 'amphibian': 'Frog', 'reptile': 'Reptile',
+  'lizard': 'Lizard', 'chameleon': 'Chameleon', 'crocodile or alligator': 'Crocodile', 'tortoise': 'Turtle', 'turtle': 'Turtle',
+  'dinosaure': 'Dinosaur', 'poisson': 'Fish', 'shark': 'Shark', 'octopus': 'Octopus', 'jellyfish': 'Jellyfish',
+  'sea urchin': 'Sea urchin', 'crabe': 'Crab', 'insecte': 'Insect', 'insect': 'Insect', 'araignée': 'Spider',
+  'plante': 'Plant', 'plant species': 'Plant', 'flower': 'Plant', 'arbre': 'Plant', 'virus': 'Virus', 'parasite': 'Parasite',
+  'objet': 'Object', 'manchot': 'Penguin', 'zooplankton': 'Plankton',
   // En anglais, depuis les infobox des wikis
-  'human': 'Humain', 'humans': 'Humain', 'human being': 'Humain', 'humanoid': 'Humanoïde', 'hume': 'Humain', 'homo sapiens': 'Humain',
-  'android': 'Androïde', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
-  'alien': 'Extraterrestre', 'extraterrestrial': 'Extraterrestre', 'god': 'Divinité', 'goddess': 'Divinité', 'deity': 'Divinité',
-  'demigod': 'Demi-dieu', 'titan': 'Titan', 'angel': 'Ange', 'devil': 'Démon', 'elf': 'Elfe', 'elves': 'Elfe', 'half-elf': 'Demi-elfe',
-  'dwarves': 'Nain', 'orcs': 'Orque', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Géant', 'ogre': 'Ogre', 'tiefling': 'Tieffelin',
-  'ghost': 'Fantôme', 'spirit': 'Esprit', 'zombie': 'Zombie', 'skeleton': 'Squelette', 'mummy': 'Momie', 'werewolf': 'Loup-garou',
-  'witch': 'Humain', 'wizard': 'Humain', 'muggle': 'Humain', 'monster': 'Monstre', 'creature': null, 'beast': 'Bête',
-  'cat': 'Chat', 'feline': 'Chat', 'canine': 'Chien', 'bird': 'Oiseau', 'bear': 'Ours', 'rabbit': 'Lapin', 'mouse': 'Souris',
-  'rat': 'Rat', 'pig': 'Cochon', 'frog': 'Grenouille', 'toad': 'Grenouille', 'snake': 'Serpent', 'spider': 'Araignée', 'fish': 'Poisson',
-  'turtles': 'Tortue', 'koopa troopa': 'Koopa', 'ape': 'Singe', 'gorilla': 'Singe', 'chimpanzee': 'Singe', 'horse': 'Cheval',
-  'penguin': 'Manchot', 'owl': 'Hibou', 'duck': 'Canard', 'chicken': 'Poule', 'cow': 'Vache', 'goat': 'Chèvre', 'sheep': 'Mouton',
-  'deer': 'Cerf', 'lizardfolk': 'Lézard', 'plant': 'Plante', 'mushroom': 'Champignon', 'slime': 'Slime', 'golem': 'Golem',
-  'clone': 'Clone', 'mutant': 'Mutant', 'vampire': 'Vampire', 'dragon': 'Dragon', 'fairy': 'Fée', 'ghoul': 'Goule', 'undead': 'Mort-vivant',
-  'dinosaur': 'Dinosaure', 'dinosaurs': 'Dinosaure', 'hylian': 'Hylien', 'hylians': 'Hylien', 'demi-god': 'Demi-dieu', 'demigoddess': 'Demi-dieu',
-  'half-human': 'Demi-humain', 'demi-human': 'Demi-humain', 'faun': 'Faune', 'minotaur': 'Minotaure', 'kangaroo': 'Kangourou',
-  'maine coon cat': 'Chat', 'horseshoe crab': 'Limule', 'sea anemone': 'Anémone de mer', 'necromancer': 'Humain', 'fev mutant': 'Mutant',
-  'super mutant': 'Mutant', 'posthuman cybernetic fev mutant': 'Mutant', 'living jar': 'Objet', 'weapon': 'Objet',
-  'edenian': 'Édénien', 'saurian': 'Saurien', 'potoroo': 'Marsupial', 'bandicoot': 'Bandicoot',
-  'cryomancer': 'Humain', 'pyromancer': 'Humain', 'human (formerly)': 'Humain', 'synth': 'Synthétique', 'replicant': 'Réplicant',
-  'robotic': 'Robot', 'mech': 'Robot', 'cat-like': 'Chat', 'dog-like': 'Chien', 'squid': 'Calmar', 'kitsune': 'Yōkai', 'oni': 'Yōkai',
-  'tengu': 'Yōkai', 'youkai': 'Yōkai', 'yokai': 'Yōkai', 'magician': 'Humain', 'shapeshifter': 'Métamorphe', 'chimera': 'Chimère',
-  'mermaid': 'Sirène', 'merfolk': 'Sirène', 'lich': 'Liche', 'wraith': 'Spectre', 'specter': 'Spectre', 'spectre': 'Spectre',
-  'doll': 'Poupée', 'puppet': 'Poupée', 'animatronic': 'Animatronique', 'scarecrow': 'Épouvantail', 'snowman': 'Bonhomme de neige',
+  'human': 'Human', 'humans': 'Human', 'human being': 'Human', 'humanoid': 'Humanoid', 'hume': 'Human', 'homo sapiens': 'Human',
+  'android': 'Android', 'cyborg': 'Cyborg', 'machine': 'Robot', 'automaton': 'Robot', 'artificial intelligence': 'Robot', 'ai': 'Robot',
+  'alien': 'Alien', 'extraterrestrial': 'Alien', 'god': 'Deity', 'goddess': 'Deity', 'deity': 'Deity',
+  'demigod': 'Demigod', 'titan': 'Titan', 'angel': 'Angel', 'devil': 'Demon', 'elf': 'Elf', 'elves': 'Elf', 'half-elf': 'Half-elf',
+  'dwarves': 'Dwarf', 'orcs': 'Orc', 'troll': 'Troll', 'gnome': 'Gnome', 'giant': 'Giant', 'ogre': 'Ogre', 'tiefling': 'Tiefling',
+  'ghost': 'Ghost', 'spirit': 'Spirit', 'zombie': 'Zombie', 'skeleton': 'Skeleton', 'mummy': 'Mummy', 'werewolf': 'Werewolf',
+  'witch': 'Human', 'wizard': 'Human', 'muggle': 'Human', 'monster': 'Monster', 'creature': null, 'beast': 'Beast',
+  'cat': 'Cat', 'feline': 'Cat', 'canine': 'Dog', 'bird': 'Bird', 'bear': 'Bear', 'rabbit': 'Rabbit', 'mouse': 'Mouse',
+  'rat': 'Rat', 'pig': 'Pig', 'frog': 'Frog', 'toad': 'Frog', 'snake': 'Snake', 'spider': 'Spider', 'fish': 'Fish',
+  'turtles': 'Turtle', 'koopa troopa': 'Koopa', 'ape': 'Monkey', 'gorilla': 'Monkey', 'chimpanzee': 'Monkey', 'horse': 'Horse',
+  'penguin': 'Penguin', 'owl': 'Owl', 'duck': 'Duck', 'chicken': 'Chicken', 'cow': 'Cow', 'goat': 'Goat', 'sheep': 'Sheep',
+  'deer': 'Deer', 'lizardfolk': 'Lizard', 'plant': 'Plant', 'mushroom': 'Mushroom', 'slime': 'Slime', 'golem': 'Golem',
+  'clone': 'Clone', 'mutant': 'Mutant', 'vampire': 'Vampire', 'dragon': 'Dragon', 'fairy': 'Fairy', 'ghoul': 'Ghoul', 'undead': 'Undead',
+  'dinosaur': 'Dinosaur', 'dinosaurs': 'Dinosaur', 'hylian': 'Hylian', 'hylians': 'Hylian', 'demi-god': 'Demigod', 'demigoddess': 'Demigod',
+  'half-human': 'Demi-human', 'demi-human': 'Demi-human', 'faun': 'Faun', 'minotaur': 'Minotaur', 'kangaroo': 'Kangaroo',
+  'maine coon cat': 'Cat', 'horseshoe crab': 'Horseshoe crab', 'sea anemone': 'Sea anemone', 'necromancer': 'Human', 'fev mutant': 'Mutant',
+  'super mutant': 'Mutant', 'posthuman cybernetic fev mutant': 'Mutant', 'living jar': 'Object', 'weapon': 'Object',
+  'edenian': 'Edenian', 'saurian': 'Saurian', 'potoroo': 'Marsupial', 'bandicoot': 'Bandicoot',
+  'cryomancer': 'Human', 'pyromancer': 'Human', 'human (formerly)': 'Human', 'synth': 'Synthetic', 'replicant': 'Replicant',
+  'robotic': 'Robot', 'mech': 'Robot', 'cat-like': 'Cat', 'dog-like': 'Dog', 'squid': 'Squid', 'kitsune': 'Yokai', 'oni': 'Yokai',
+  'tengu': 'Yokai', 'youkai': 'Yokai', 'yokai': 'Yokai', 'magician': 'Human', 'shapeshifter': 'Shapeshifter', 'chimera': 'Chimera',
+  'mermaid': 'Mermaid', 'merfolk': 'Mermaid', 'lich': 'Lich', 'wraith': 'Spectre', 'specter': 'Spectre', 'spectre': 'Spectre',
+  'doll': 'Doll', 'puppet': 'Doll', 'animatronic': 'Animatronic', 'scarecrow': 'Scarecrow', 'snowman': 'Snowman',
   // Pas des espèces : on passe à la classe suivante
   'deutéragoniste': null, 'mascotte': null, 'roi': null, 'idole virtuelle': null, 'transgender person': null, 'persona': null,
   'organisme': null, 'créature surnaturelle': null, 'ennemis récurrents de the legend of zelda': null,
   'mk. ii mobile robotic versatile entity automated assistant': 'Robot', 'unique organic supercomputer': 'Robot',
   // Valeurs des wikis gardées brutes (majuscule), traduites au cas par cas
-  'honey bear': 'Ours', 'fallen angel': 'Ange déchu', 'supernatural being': 'Divinité', 'human-faerie': 'Humain-fée',
-  'artificial human': 'Homoncule', 'demonic sword spirit': 'Démon', 'primordial serpent': 'Serpent primordial',
-  'human mutant': 'Humain mutant', 'sentient crt monitor': 'Objet', 'mechanical flower ai': 'Fleur robot', 'shaman': 'Humanoïde',
-  'celestial brush god': 'Dieu pinceau', 'dragonian': 'Dragon', 'moon tribe': 'Sélénite', 'elder god': 'Divinité',
-  'hybrid': 'Hybride', 'hyena': 'Hyène', 'basilisk': 'Basilic', 'operator': 'Robot', 'headcrab': 'Extraterrestre',
-  'locust drone': 'Locuste', 'locust kantus': 'Locuste', 'healslime': 'Slime', 'leftherian': 'Humain', 'memetic entity': 'Entité',
-  'eldritch artifact': 'Objet',
-  'voidborn': 'Créature du Néant', 'aspect host': 'Humain', 'eternal': 'Éternel', 'halfling': 'Halfelin', 'otherworldly': 'Extraterrestre',
+  'honey bear': 'Bear', 'fallen angel': 'Fallen angel', 'supernatural being': 'Deity', 'human-faerie': 'Half-fairy',
+  'artificial human': 'Homunculus', 'demonic sword spirit': 'Demon', 'primordial serpent': 'Primordial Serpent',
+  'human mutant': 'Mutant human', 'sentient crt monitor': 'Object', 'mechanical flower ai': 'Robot flower', 'shaman': 'Humanoid',
+  'celestial brush god': 'Brush god', 'dragonian': 'Dragon', 'moon tribe': 'Moon Tribe', 'elder god': 'Deity',
+  'hybrid': 'Hybrid', 'hyena': 'Hyena', 'basilisk': 'Basilisk', 'operator': 'Robot', 'headcrab': 'Alien',
+  'locust drone': 'Locust', 'locust kantus': 'Locust', 'healslime': 'Slime', 'leftherian': 'Human', 'memetic entity': 'Entity',
+  'eldritch artifact': 'Object',
+  'voidborn': 'Voidborn', 'aspect host': 'Human', 'eternal': 'Eternal', 'halfling': 'Halfling', 'otherworldly': 'Alien',
   'nomaï': 'Nomai',
-  'unknown': null, 'dinosaur unknown': 'Dinosaure', 'red xiii\'s species': null, 'various': null, '1': null,
+  'unknown': null, 'dinosaur unknown': 'Dinosaur', 'red xiii\'s species': null, 'various': null, '1': null,
 }
 
 // « hérisson de fiction », « anthropomorphic hedgehog », « fée dans une œuvre de fiction », « humain de Donjons et Dragons »
@@ -125,19 +127,19 @@ const SPECIES_QUALIFIERS = /\s*\b(?:de fiction|fictif|fictive|fictionnelle?|dans
 
 // Champ multiple : une espèce composée vaut ses deux parts (Talos, humain devenu dieu), une IA est un robot
 const SPECIES_PARTS: Record<string, string[]> = {
-  'IA': ['Robot'], 'Demi-elfe': ['Humain', 'Elfe'], 'Demi-démon': ['Humain', 'Démon'], 'Demi-géant': ['Humain', 'Géant'],
-  'Demi-dieu': ['Humain', 'Divinité'], 'Humain-fée': ['Humain', 'Fée'], 'Ange déchu': ['Ange', 'Démon'], 'Humain mutant': ['Humain', 'Mutant'],
-  'Fleur robot': ['Robot', 'Plante'], 'Dieu pinceau': ['Divinité', 'Loup'], 'Daedra': ['Daedra', 'Divinité'],
-  'Hybride': ['Humain', 'Extraterrestre'], 'Forgotling': ['Objet', 'Forgotling'],
+  'AI': ['Robot'], 'Half-elf': ['Human', 'Elf'], 'Half-demon': ['Human', 'Demon'], 'Half-giant': ['Human', 'Giant'],
+  'Demigod': ['Human', 'Deity'], 'Half-fairy': ['Human', 'Fairy'], 'Fallen angel': ['Angel', 'Demon'], 'Mutant human': ['Human', 'Mutant'],
+  'Robot flower': ['Robot', 'Plant'], 'Brush god': ['Deity', 'Wolf'], 'Daedra': ['Daedra', 'Deity'],
+  'Hybrid': ['Human', 'Alien'], 'Forgotling': ['Object', 'Forgotling'],
 }
 
 // Les animaux gardent leur espèce, plus « Animal » : un renard et un singe se rejoignent
-const ANIMALS = new Set(['Singe', 'Chien', 'Grenouille', 'Chat', 'Hérisson', 'Insecte', 'Renard', 'Lapin', 'Ours', 'Loup', 'Oiseau',
-  'Raton laveur', 'Tortue', 'Poisson', 'Tigre', 'Chauve-souris', 'Cheval', 'Échidné', 'Morse', 'Cochon', 'Hibou', 'Taupe', 'Lama',
-  'Pieuvre', 'Marsupial', 'Panda', 'Lézard', 'Lion', 'Cerf', 'Rongeur', 'Rhinocéros', 'Écureuil', 'Manchot', 'Hamster', 'Panthère',
-  'Caméléon', 'Mouette', 'Moufette', 'Anémone de mer', 'Limule', 'Crabe', 'Méduse', 'Oursin', 'Kangourou', 'Bandicoot', 'Guépard',
-  'Pélican', 'Hippopotame', 'Araignée', 'Crocodile', 'Perroquet', 'Requin', 'Plancton', 'Poule', 'Lièvre', 'Loir', 'Hyène', 'Serpent',
-  'Lynx', 'Dinosaure', 'Souris', 'Rat', 'Canard', 'Vache', 'Chèvre', 'Mouton', 'Calmar', 'Reptile', 'Lizard Doggo'])
+const ANIMALS = new Set(['Monkey', 'Dog', 'Frog', 'Cat', 'Hedgehog', 'Insect', 'Fox', 'Rabbit', 'Bear', 'Wolf', 'Bird',
+  'Raccoon', 'Turtle', 'Fish', 'Tiger', 'Bat', 'Horse', 'Echidna', 'Walrus', 'Pig', 'Owl', 'Mole', 'Llama',
+  'Octopus', 'Marsupial', 'Panda', 'Lizard', 'Lion', 'Deer', 'Rodent', 'Rhinoceros', 'Squirrel', 'Penguin', 'Hamster', 'Panther',
+  'Chameleon', 'Seagull', 'Skunk', 'Sea anemone', 'Horseshoe crab', 'Crab', 'Jellyfish', 'Sea urchin', 'Kangaroo', 'Bandicoot', 'Cheetah',
+  'Pelican', 'Hippopotamus', 'Spider', 'Crocodile', 'Parrot', 'Shark', 'Plankton', 'Chicken', 'Hare', 'Dormouse', 'Hyena', 'Snake',
+  'Lynx', 'Dinosaur', 'Mouse', 'Rat', 'Duck', 'Cow', 'Goat', 'Sheep', 'Squid', 'Reptile', 'Lizard Doggo'])
 
 // L'espèce finale d'un personnage : une valeur ou une liste, dépliée (parts, « Animal »), sans doublon
 export function expandSpecies(value: unknown): string[] | null {
@@ -153,18 +155,18 @@ export function expandSpecies(value: unknown): string[] | null {
 // L'infobox, sinon le texte de la page entière (textHair : la section Appearance d'abord, « long blonde hair »), à relire
 // dans le récap. Un humain sans couleur trouvée reste vide : il a des cheveux, on ne sait juste pas leur couleur.
 
-// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Chauve », c'est pour les humains vraiment chauves)
+// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Bald », c'est pour les humains vraiment chauves)
 export const NO_HAIR = 'N/A' // = NOT_APPLICABLE du moteur
-const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
-  'Zerg', 'Slime', 'Golem', 'Squelette', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
-  'Salmonoïde', 'Omniaque', 'Pod', 'Charbon', 'Toad'])
+const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monster', 'Mob', 'Insect', 'Plant', 'Object', 'Leviathan', 'Dragon', 'Fish',
+  'Zerg', 'Slime', 'Golem', 'Skeleton', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',
+  'Salmonid', 'Omnic', 'Pod', 'Coal', 'Toad'])
 
 // Les cheveux finaux : ceux trouvés, sinon N/A pour un robot, un animal, une créature (pas s'il est aussi humain)
 export function hairOrNone(hair: unknown, species: unknown): unknown {
   if (Array.isArray(hair) ? hair.length > 0 : hair)
     return hair
   const list = Array.isArray(species) ? species.map(String) : []
-  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Humain') ? [NO_HAIR] : null
+  return list.some(name => HAIRLESS_SPECIES.has(name)) && !list.includes('Human') ? [NO_HAIR] : null
 }
 
 // --- Armes ---
@@ -172,40 +174,40 @@ export function hairOrNone(hair: unknown, species: unknown): unknown {
 // L'arme du personnage (champ « weapon » des infobox) dit aussi comment il se bat : toutes les règles qui collent comptent
 // (une gunblade : Épéiste et Tireur). Les modèles d'armes à feu des jeux de tir (AK-47, MP5, M1911…) sont des fusils.
 const WEAPON_RULES: [RegExp, string][] = [
-  [/sniper|\bintervention\b|\br700\b|\bm21\b|m14 ebr|\brsass\b|\bosipr\b|longshot/, 'Tireur d\'élite'],
-  [/swords?\b|blades?\b|katana|rapier|\bsab(?:re|er)s?\b|cutlass|scimitar|claymore|zweih[äa]nder/, 'Épéiste'],
-  [/\bguns?\b|gunblade|pistol|revolver|rifle|shotgun|handgun|firearm|blaster|\bsmg\b|machine ?gun|minigun|chain ?gun|musket|carbine|repeater|magnum|\bak-?\d+|\bmp\d+k?\b|\bm\d{1,4}\b|\bp\d{2,3}\b|\bg\d{2}c?\b|\busp\b|glock|\buzi\b|desert eagle|\bspas|\bscar\b|\bacr\b|\bump\d*\b|enforcers?|\blancer\b|gnasher|hammerburst|boltok|mega buster|arm cannon/, 'Tireur'],
+  [/sniper|\bintervention\b|\br700\b|\bm21\b|m14 ebr|\brsass\b|\bosipr\b|longshot/, 'Sniper'],
+  [/swords?\b|blades?\b|katana|rapier|\bsab(?:re|er)s?\b|cutlass|scimitar|claymore|zweih[äa]nder/, 'Swordsman'],
+  [/\bguns?\b|gunblade|pistol|revolver|rifle|shotgun|handgun|firearm|blaster|\bsmg\b|machine ?gun|minigun|chain ?gun|musket|carbine|repeater|magnum|\bak-?\d+|\bmp\d+k?\b|\bm\d{1,4}\b|\bp\d{2,3}\b|\bg\d{2}c?\b|\busp\b|glock|\buzi\b|desert eagle|\bspas|\bscar\b|\bacr\b|\bump\d*\b|enforcers?|\blancer\b|gnasher|hammerburst|boltok|mega buster|arm cannon/, 'Marksman'],
   [/\bbows?\b|longbow|crossbow|\barrows?\b/, 'Archer'],
-  [/\bfists?\b|gauntlets?|knuckles\b|martial arts|bare hands/, 'Combattant'],
-  [/\bstaff\b|\bstaves\b|\bwands?\b|\bspells?\b|\btome\b|grimoire|\bcatalyst\b|\bmagic\b/, 'Magicien'],
-  [/\bspears?\b|\blances?\b|halberd|trident|polearm|naginata|glaive|\bpikes?\b/, 'Lancier'],
+  [/\bfists?\b|gauntlets?|knuckles\b|martial arts|bare hands/, 'Fighter'],
+  [/\bstaff\b|\bstaves\b|\bwands?\b|\bspells?\b|\btome\b|grimoire|\bcatalyst\b|\bmagic\b/, 'Mage'],
+  [/\bspears?\b|\blances?\b|halberd|trident|polearm|naginata|glaive|\bpikes?\b/, 'Lancer'],
   [/kunai|shuriken/, 'Ninja'],
-  [/microphone/, 'Musicien'],
-  [/scalpel/, 'Médecin'],
+  [/microphone/, 'Musician'],
+  [/scalpel/, 'Doctor'],
 ]
 
 export function weaponOccupations(value: string): string[] {
   const text = key(value)
   const found = WEAPON_RULES.filter(([pattern]) => pattern.test(text)).map(([, occupation]) => occupation)
   // Un sniper est déjà un tireur
-  return found.includes('Tireur d\'élite') ? found.filter(name => name !== 'Tireur') : found
+  return found.includes('Sniper') ? found.filter(name => name !== 'Marksman') : found
 }
 
 // Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
-export const NO_OCCUPATION = 'Aucune'
-export const UNKNOWN_OCCUPATION = 'Inconnu'
+export const NO_OCCUPATION = 'None'
+export const UNKNOWN_OCCUPATION = 'Unknown'
 
 // Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
-const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Divinité', 'Démon', 'Ange', 'Infecté', 'Griffon', 'Champignon', 'Basilic'])
+const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Deity', 'Demon', 'Angel', 'Infected', 'Griffin', 'Mushroom', 'Basilisk'])
 
 export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
   if (occupation && occupation.length > 0)
     return occupation
   const list = Array.isArray(species) ? species.map(String) : []
   // Un avatar dont on choisit la race choisit aussi sa classe
-  if (list.includes('Au choix'))
-    return ['Au choix']
-  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Humain') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+  if (list.includes("Player's choice"))
+    return ["Player's choice"]
+  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Human') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
 }
 
 export function translateSpecies(label: string): string | null | undefined {
@@ -217,7 +219,7 @@ export function translateSpecies(label: string): string | null | undefined {
   }
   if (name in SPECIES)
     return SPECIES[name]
-  // Les peuples d'une franchise déjà bien écrits (Hylien, Koopa, Zerg, Asari) : gardés tels quels
+  // Les peuples d'une franchise déjà bien écrits (Koopa, Zerg, Asari) : gardés tels quels
   return /^\p{Lu}/u.test(label) ? label : undefined
 }
 
@@ -447,7 +449,7 @@ export function translatePlace(label: string): string[] {
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
 export const REAL_WORLD = 'Monde réel'
-export const OTHER_WORLD = 'Inconnu'
+export const OTHER_WORLD = 'Unknown'
 export const SPACE = 'Lost in the Galaxy'
 export const CTHULHU_MYTHOS = 'Mythe de Cthulhu'
 export type World = 'real' | 'other'
@@ -474,7 +476,7 @@ export function isRealPlace(place: string): boolean {
 // Les espèces de notre monde : dans une franchise du monde réel, seules elles sont « Monde réel ». Les autres (dieux,
 // démons, extraterrestres, dont les espèces propres à une franchise : Sangheili, Asari…) sont « Inconnu ». Une liste
 // des espèces d'ailleurs raterait ces dernières. Espèce inconnue : comme un humain.
-const OUR_WORLD_SPECIES = new Set(['Humain', 'Animal', 'Robot', 'Androïde', 'Cyborg', 'Mutant', 'Infecté', 'Mort-vivant', 'Vampire', 'Fantôme', 'Réplicant', 'Au choix'])
+const OUR_WORLD_SPECIES = new Set(['Human', 'Animal', 'Robot', 'Android', 'Cyborg', 'Mutant', 'Infected', 'Undead', 'Vampire', 'Ghost', 'Replicant', "Player's choice"])
 
 // Les personnages placés dont au moins cette part est dans le monde réel : franchise du monde réel
 const REAL_SHARE = 0.6
@@ -560,94 +562,94 @@ export function franchiseUniverses(franchise: string): string[] {
 const OCCUPATION_RULES: [RegExp, string | null][] = [
   // Les cas qui contiennent un mot d'une autre famille
   [/military impostor/, null],
-  [/patron de bar/, 'Serveur'],
-  [/agent de sécurité|garde du corps|garde royale|videur|tower guard|sentinel|gatekeeper|^gardien$|directeur de prison/, 'Garde'],
-  [/agent immobilier/, 'Commerçant'],
-  [/directeur d'école|professeur|enseignant|instituteur|mentor|instructeur|chargé de cours|doyen|entraîneur/, 'Professeur'],
-  [/étudiant en médecine|médecin|chirurgien|infirmi|aide-soignant|psychiatre|guérisseur|personnel médical|intervenant d'urgence|sauveteur/, 'Médecin'],
+  [/patron de bar/, 'Waiter'],
+  [/agent de sécurité|garde du corps|garde royale|videur|tower guard|sentinel|gatekeeper|^gardien$|directeur de prison/, 'Guard'],
+  [/agent immobilier/, 'Merchant'],
+  [/directeur d'école|professeur|enseignant|instituteur|mentor|instructeur|chargé de cours|doyen|entraîneur/, 'Teacher'],
+  [/étudiant en médecine|médecin|chirurgien|infirmi|aide-soignant|psychiatre|guérisseur|personnel médical|intervenant d'urgence|sauveteur/, 'Doctor'],
   [/joueur professionnel de jeux vidéo|^gamer$/, 'Gamer'],
-  [/développeur de jeux vidéo|testeur de jeux|programmeur|ingénieur logiciel|hacker/, 'Informaticien'],
-  [/pirate de l'air|criminel de guerre/, 'Criminel'],
-  [/voyageur dans le temps|dimension traveler/, 'Voyageur temporel'],
-  [/dresseur pokémon|champion d'arène|pokémon coordinator/, 'Dresseur'],
-  [/chasseur de primes|^fixeur$/, 'Chasseur de primes'],
-  [/chasseur de (?:vampires?|démons?|monstres?|zombies?)|dragonslayer|witcher|exorciste/, 'Chasseur de monstres'],
-  [/chasseur de trésor|vault hunter|prospecteur/, 'Chasseur de trésor'],
-  [/^chasseur$/, 'Chasseur'],
+  [/développeur de jeux vidéo|testeur de jeux|programmeur|ingénieur logiciel|hacker/, 'Programmer'],
+  [/pirate de l'air|criminel de guerre/, 'Criminal'],
+  [/voyageur dans le temps|dimension traveler/, 'Time traveler'],
+  [/dresseur pokémon|champion d'arène|pokémon coordinator/, 'Trainer'],
+  [/chasseur de primes|^fixeur$/, 'Bounty hunter'],
+  [/chasseur de (?:vampires?|démons?|monstres?|zombies?)|dragonslayer|witcher|exorciste/, 'Monster hunter'],
+  [/chasseur de trésor|vault hunter|prospecteur/, 'Treasure hunter'],
+  [/^chasseur$/, 'Hunter'],
   // Crime
   [/tueur à gages|assassin/, 'Assassin'],
-  [/tueur|meurtrier/, 'Tueur'],
-  [/voleur|braqueur|escroc|brigand|bandit|^rogue$/, 'Voleur'],
+  [/tueur|meurtrier/, 'Killer'],
+  [/voleur|braqueur|escroc|brigand|bandit|^rogue$/, 'Thief'],
   [/pirate|corsaire/, 'Pirate'],
-  [/gangster|chef de bande|yakuza|trafiquant|dealer|contrebandier|proxénète|usurier|hors-la-loi|criminel|conspirateur|incendiaire/, 'Criminel'],
-  [/terroriste/, 'Terroriste'],
-  [/mercenaire/, 'Mercenaire'],
+  [/gangster|chef de bande|yakuza|trafiquant|dealer|contrebandier|proxénète|usurier|hors-la-loi|criminel|conspirateur|incendiaire/, 'Criminal'],
+  [/terroriste/, 'Terrorist'],
+  [/mercenaire/, 'Mercenary'],
   // Combat
-  [/justicier|super-héros|crime ?fighter/, 'Justicier'],
-  [/^hero$|antihéros/, 'Héros'],
-  [/révolutionnaire|militant|partisan|chef rebelle|combattant pour la liberté|freedom fighter|défenseur des droits|propagandiste/, 'Révolutionnaire'],
-  [/tireur|as de la gâchette/, 'Tireur d\'élite'],
-  [/pilote|aviateur|mech pilot|spacecraft pilot/, 'Pilote'],
-  [/espion|^agent|indicateur/, 'Espion'],
-  [/soldat|militaire|military|espace marin|officier|commandant|chef militaire|seigneur de guerre|aide de camp|sapeur|écuyer/, 'Soldat'],
-  [/arts martiaux|karatéka|nak muay|kick-boxeur|taekwondoïste|catcheur|wrestler|gladiateur|fighter|escrimeur|matador/, 'Combattant'],
-  [/chevalier|paladin/, 'Chevalier'],
-  [/samouraï|rōnin/, 'Samouraï'],
-  [/épéiste/, 'Épéiste'],
+  [/justicier|super-héros|crime ?fighter/, 'Vigilante'],
+  [/^hero$|antihéros/, 'Hero'],
+  [/révolutionnaire|militant|partisan|chef rebelle|combattant pour la liberté|freedom fighter|défenseur des droits|propagandiste/, 'Revolutionary'],
+  [/tireur|as de la gâchette/, 'Sniper'],
+  [/pilote|aviateur|mech pilot|spacecraft pilot/, 'Pilot'],
+  [/espion|^agent|indicateur/, 'Spy'],
+  [/soldat|militaire|military|espace marin|officier|commandant|chef militaire|seigneur de guerre|aide de camp|sapeur|écuyer/, 'Soldier'],
+  [/arts martiaux|karatéka|nak muay|kick-boxeur|taekwondoïste|catcheur|wrestler|gladiateur|fighter|escrimeur|matador/, 'Fighter'],
+  [/chevalier|paladin/, 'Knight'],
+  [/samouraï|rōnin/, 'Samurai'],
+  [/épéiste/, 'Swordsman'],
   [/ninja|kunoichi/, 'Ninja'],
   [/\barcher|rôdeur/, 'Archer'],
-  [/guerrier|barbare/, 'Guerrier'],
+  [/guerrier|barbare/, 'Warrior'],
   // Magie, religion
   [/jedi/, 'Jedi'],
-  [/magicien|wizard|sorci|sorcerer|warlock|archimage|nécromancien|druide|auror|féticheur|médium|hypnotiseur/, 'Magicien'],
-  [/prêtre|clerc|moine|miko|gūji|chef religieux|gourou|prédicateur/, 'Religieux'],
+  [/magicien|wizard|sorci|sorcerer|warlock|archimage|nécromancien|druide|auror|féticheur|médium|hypnotiseur/, 'Mage'],
+  [/prêtre|clerc|moine|miko|gūji|chef religieux|gourou|prédicateur/, 'Cleric'],
   // Pouvoir
-  [/\broi\b|\breine\b|souverain|monarque|empereur|impératrice|tyran|dictateur|chef d'état/, 'Souverain'],
+  [/\broi\b|\breine\b|souverain|monarque|empereur|impératrice|tyran|dictateur|chef d'état/, 'Royalty'],
   [/prince|famille royale|^lord$|héritière|vizir/, 'Noble'],
-  [/chef de tribu|clan chief/, 'Chef de clan'],
-  [/personnalité politique|président|maire|gouverneur|diplomate|délégué|personne d'état/, 'Politicien'],
-  [/avocat|procureur|juge/, 'Avocat'],
-  [/personnalité du monde des affaires|entrepreneur|investisseur|philanthrope|magnat|négociant|propriétaire|conseil d'administration/, 'Homme d\'affaires'],
-  [/responsable|dirigeant|directeur|fondateur|patron|chef d'entreprise|manager/, 'Dirigeant'],
-  [/conseiller|consultant|tacticien|adjoint|assistant/, 'Conseiller'],
+  [/chef de tribu|clan chief/, 'Clan leader'],
+  [/personnalité politique|président|maire|gouverneur|diplomate|délégué|personne d'état/, 'Politician'],
+  [/avocat|procureur|juge/, 'Lawyer'],
+  [/personnalité du monde des affaires|entrepreneur|investisseur|philanthrope|magnat|négociant|propriétaire|conseil d'administration/, 'Businessperson'],
+  [/responsable|dirigeant|directeur|fondateur|patron|chef d'entreprise|manager/, 'Leader'],
+  [/conseiller|consultant|tacticien|adjoint|assistant/, 'Advisor'],
   // Sciences
-  [/archéologue/, 'Archéologue'],
-  [/scientifique|chercheur|roboticien|ingénieur|inventeur|chimiste|physicien|généticien|virologue|toxicologue|biologiste|bioingénieur|botaniste|climatologue|cybernéticien|cybernétiste|technicien de laboratoire|magizoologist/, 'Scientifique'],
-  [/historien|érudit|archiviste|penseur|philosophe/, 'Érudit'],
-  [/détective|enquêteur|inspecteur/, 'Détective'],
-  [/policier|police|shérif|deputy sheriff|proctor/, 'Policier'],
+  [/archéologue/, 'Archaeologist'],
+  [/scientifique|chercheur|roboticien|ingénieur|inventeur|chimiste|physicien|généticien|virologue|toxicologue|biologiste|bioingénieur|botaniste|climatologue|cybernéticien|cybernétiste|technicien de laboratoire|magizoologist/, 'Scientist'],
+  [/historien|érudit|archiviste|penseur|philosophe/, 'Scholar'],
+  [/détective|enquêteur|inspecteur/, 'Detective'],
+  [/policier|police|shérif|deputy sheriff|proctor/, 'Police officer'],
   // Aventure
-  [/survivant/, 'Survivant'],
-  [/explorateur|aventurier|voyageur|pionnier|ermite|musher/, 'Aventurier'],
-  [/astronaute/, 'Astronaute'],
-  [/\bmarin\b|capitaine de|membre d'équipage/, 'Marin'],
+  [/survivant/, 'Survivor'],
+  [/explorateur|aventurier|voyageur|pionnier|ermite|musher/, 'Adventurer'],
+  [/astronaute/, 'Astronaut'],
+  [/\bmarin\b|capitaine de|membre d'équipage/, 'Sailor'],
   // École, sport
-  [/étudiant/, 'Étudiant'],
-  [/lycéen|collégien|élève|écolier|preschool/, 'Élève'],
-  [/footballeur|piqueuse|joueur|sportif|gymnaste|pom-pom|tennis|traceur|plongeur/, 'Sportif'],
+  [/étudiant/, 'Student'],
+  [/lycéen|collégien|élève|écolier|preschool/, 'Pupil'],
+  [/footballeur|piqueuse|joueur|sportif|gymnaste|pom-pom|tennis|traceur|plongeur/, 'Athlete'],
   // Arts, médias
-  [/chanteur|musicien|guitariste|bassiste|choriste|disc jockey|artiste lyrique|barde/, 'Musicien'],
-  [/acteur|cinéaste|réalisateur|producteur|animateur de télévision/, 'Acteur'],
-  [/journaliste|reporter|correspondant|rédacteur/, 'Journaliste'],
-  [/auteur|écrivain/, 'Écrivain'],
-  [/artiste|sculpteur|danseur|photographe|mannequin|mode|divertissement/, 'Artiste'],
+  [/chanteur|musicien|guitariste|bassiste|choriste|disc jockey|artiste lyrique|barde/, 'Musician'],
+  [/acteur|cinéaste|réalisateur|producteur|animateur de télévision/, 'Actor'],
+  [/journaliste|reporter|correspondant|rédacteur/, 'Journalist'],
+  [/auteur|écrivain/, 'Writer'],
+  [/artiste|sculpteur|danseur|photographe|mannequin|mode|divertissement/, 'Artist'],
   // Métiers
-  [/plombier/, 'Plombier'],
-  [/mécanicien/, 'Mécanicien'],
-  [/cuisinier|boulanger/, 'Cuisinier'],
-  [/serveur|employé de bar|patron de bar|bouteiller/, 'Serveur'],
-  [/vendeur|commerçant|marchand|fleuriste/, 'Commerçant'],
-  [/herboriste|agriculteur|vacher|jardinier|vigneron|plantation|cow-boy|pêcheur/, 'Fermier'],
-  [/femme au foyer|domestique|femme de ménage|valet|nourrice|gardien d'enfants|majordome/, 'Domestique'],
-  [/chauffeur|conducteur|coursier|livreur|charretier/, 'Chauffeur'],
-  [/charpentier|forgeron|ouvrier|mineur|usineur|tapissier|modéliste|homme à tout faire|technicien de surface|janitor|travailleur|cireur/, 'Ouvrier'],
-  [/salarié|employé|secrétaire|commis|bibliothécaire/, 'Employé'],
+  [/plombier/, 'Plumber'],
+  [/mécanicien/, 'Mechanic'],
+  [/cuisinier|boulanger/, 'Cook'],
+  [/serveur|employé de bar|patron de bar|bouteiller/, 'Waiter'],
+  [/vendeur|commerçant|marchand|fleuriste/, 'Merchant'],
+  [/herboriste|agriculteur|vacher|jardinier|vigneron|plantation|cow-boy|pêcheur/, 'Farmer'],
+  [/femme au foyer|domestique|femme de ménage|valet|nourrice|gardien d'enfants|majordome/, 'Servant'],
+  [/chauffeur|conducteur|coursier|livreur|charretier/, 'Driver'],
+  [/charpentier|forgeron|ouvrier|mineur|usineur|tapissier|modéliste|homme à tout faire|technicien de surface|janitor|travailleur|cireur/, 'Worker'],
+  [/salarié|employé|secrétaire|commis|bibliothécaire/, 'Employee'],
   [/guide/, 'Guide'],
-  [/prostitué/, 'Prostitué'],
-  [/pompes funèbres/, 'Croque-mort'],
-  [/chômeur/, 'Chômeur'],
-  [/retraité|pensionné/, 'Retraité'],
-  [/prisonnier/, 'Prisonnier'],
+  [/prostitué/, 'Prostitute'],
+  [/pompes funèbres/, 'Undertaker'],
+  [/chômeur/, 'Unemployed'],
+  [/retraité|pensionné/, 'Retiree'],
+  [/prisonnier/, 'Prisoner'],
   // Pas des occupations
   [/partenaire sexuel|cobaye|bénévole|humanitaire/, null],
 ]
@@ -659,166 +661,166 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   // Pas des occupations : des titres, des rôles d'histoire, des phrases
   [/^legend$|^champion$|lesser evil|prime evil|^savior|^beast$|^predator$|^deity$|silent protagonist|she sleeps|making trouble|possibly other|^training$|^development$|^stabilizes|^search-|^catastrophes|pursuit of knowledge|rapid recovery|mow down|^africa$|^bowser's kingdom$|^burkes$|^calanthe$|^crach$|offices?$|uncloak|ultra guardians|^the army|^special forces$|research specimen|alchemilla hospital patient|detainee|devil gene|kindergartner|^aspect of|herald of|left eye|protector of|jailer of|soul devourer|^disciple of|sentinel of light|^primus|^ordermaster|hidden arcanum|^monitor|prime candidate|wandering orphan|^illuminator|^virtuoso|party animal|liquor connoisseur|independently wealthy|reclaiming|^ss of|shikigami|terraformer|sumpsnipe/, null],
   // Les cas qui contiennent un mot d'une autre famille
-  [/cheerleader/, 'Sportif'],
-  [/medical officer/, 'Médecin'],
-  [/science officer/, 'Scientifique'],
-  [/assistant manager/, 'Employé'],
-  [/forest ranger|park ranger|fire lookout/, 'Garde'],
-  [/commando/, 'Soldat'],
-  [/gym leader|elite four|frontier brain|pokémon champion|pokemon champion|pokémon performer|trainer/, 'Dresseur'],
-  [/advisor|adviser|vizier to/, 'Conseiller'],
-  [/servant of/, 'Domestique'],
-  [/waiter|waitress|hostess|bartender/, 'Serveur'],
-  [/stage show|\bactor\b/, 'Acteur'],
-  [/con-?artist|gunrunner/, 'Criminel'],
-  [/freedom fighter/, 'Révolutionnaire'],
-  [/crime ?fighter/, 'Justicier'],
-  [/doctor of archaeology/, 'Archéologue'],
-  [/doctor of philosophy/, 'Érudit'],
-  [/purchasing agent|sales (?:agent|assistant)/, 'Commerçant'],
-  [/\bmarines?\b/, 'Soldat'],
-  [/law officer/, 'Policier'],
-  [/\bruler\b/, 'Souverain'],
-  [/fiend hunter/, 'Chasseur de monstres'],
-  [/fortune hunter/, 'Chasseur de trésor'],
-  [/student council|(?:elementary|middle|high) ?school student/, 'Élève'],
-  [/head of hogwarts/, 'Professeur'],
-  [/bodyguard|security|guard|bouncer|warden|gatekeeper|jailer|keeper of the keys|enforcer|sentry|sentinel/, 'Garde'],
-  [/video game developer|game developer|hacker|programmer|software|ripperdoc|technician/, 'Informaticien'],
-  [/bounty hunter|^fixer$/, 'Chasseur de primes'],
-  [/dragon ?slayer|monster hunter|demon hunter|vampire hunter|witcher/, 'Chasseur de monstres'],
-  [/treasure|salvager|prospector/, 'Chasseur de trésor'],
-  [/gamekeeper|^hunter$|^huntress$/, 'Chasseur'],
-  [/head of (?:\w+ )?house|head of transfiguration|potions master|professor|teacher|mentor|instructor|^dean\b|headmaster|headmistress/, 'Professeur'],
-  [/doctor|physician|surgeon|nurse|medic\b|first responder|paramedic|healer|caregiver/, 'Médecin'],
-  [/streamer|influencer|youtuber/, 'Artiste'],
+  [/cheerleader/, 'Athlete'],
+  [/medical officer/, 'Doctor'],
+  [/science officer/, 'Scientist'],
+  [/assistant manager/, 'Employee'],
+  [/forest ranger|park ranger|fire lookout/, 'Guard'],
+  [/commando/, 'Soldier'],
+  [/gym leader|elite four|frontier brain|pokémon champion|pokemon champion|pokémon performer|trainer/, 'Trainer'],
+  [/advisor|adviser|vizier to/, 'Advisor'],
+  [/servant of/, 'Servant'],
+  [/waiter|waitress|hostess|bartender/, 'Waiter'],
+  [/stage show|\bactor\b/, 'Actor'],
+  [/con-?artist|gunrunner/, 'Criminal'],
+  [/freedom fighter/, 'Revolutionary'],
+  [/crime ?fighter/, 'Vigilante'],
+  [/doctor of archaeology/, 'Archaeologist'],
+  [/doctor of philosophy/, 'Scholar'],
+  [/purchasing agent|sales (?:agent|assistant)/, 'Merchant'],
+  [/\bmarines?\b/, 'Soldier'],
+  [/law officer/, 'Police officer'],
+  [/\bruler\b/, 'Royalty'],
+  [/fiend hunter/, 'Monster hunter'],
+  [/fortune hunter/, 'Treasure hunter'],
+  [/student council|(?:elementary|middle|high) ?school student/, 'Pupil'],
+  [/head of hogwarts/, 'Teacher'],
+  [/bodyguard|security|guard|bouncer|warden|gatekeeper|jailer|keeper of the keys|enforcer|sentry|sentinel/, 'Guard'],
+  [/video game developer|game developer|hacker|programmer|software|ripperdoc|technician/, 'Programmer'],
+  [/bounty hunter|^fixer$/, 'Bounty hunter'],
+  [/dragon ?slayer|monster hunter|demon hunter|vampire hunter|witcher/, 'Monster hunter'],
+  [/treasure|salvager|prospector/, 'Treasure hunter'],
+  [/gamekeeper|^hunter$|^huntress$/, 'Hunter'],
+  [/head of (?:\w+ )?house|head of transfiguration|potions master|professor|teacher|mentor|instructor|^dean\b|headmaster|headmistress/, 'Teacher'],
+  [/doctor|physician|surgeon|nurse|medic\b|first responder|paramedic|healer|caregiver/, 'Doctor'],
+  [/streamer|influencer|youtuber/, 'Artist'],
   // Crime
   [/assassin|hitman|contract killer/, 'Assassin'],
-  [/serial killer|murderer|killer/, 'Tueur'],
-  [/thief|burglar|robber|pickpocket|fence|swindler|con artist|fraud/, 'Voleur'],
+  [/serial killer|murderer|killer/, 'Killer'],
+  [/thief|burglar|robber|pickpocket|fence|swindler|con artist|fraud/, 'Thief'],
   [/pirate|smuggler/, 'Pirate'],
-  [/terrorist|anarchist|insurgent/, 'Terroriste'],
-  [/gangster|mobster|crime (?:lord|boss)|criminal|outlaw|drug|racketeer|henchman|thug|gang|yakuza|mafia|patriarch|chairman of the tojo|fugitive|convict|bandit|rocket boss|super-?villain|villain/, 'Criminel'],
-  [/mercenar/, 'Mercenaire'],
+  [/terrorist|anarchist|insurgent/, 'Terrorist'],
+  [/gangster|mobster|crime (?:lord|boss)|criminal|outlaw|drug|racketeer|henchman|thug|gang|yakuza|mafia|patriarch|chairman of the tojo|fugitive|convict|bandit|rocket boss|super-?villain|villain/, 'Criminal'],
+  [/mercenar/, 'Mercenary'],
   // Combat
-  [/vigilante|superhero|super-hero|crime ?fighter/, 'Justicier'],
-  [/^hero$|^heroine$/, 'Héros'],
-  [/revolutionar|rebel|resistance|freedom fighter|activist|liberat|guerrilla|subversive/, 'Révolutionnaire'],
-  [/sniper|marksman|gunslinger/, 'Tireur d\'élite'],
-  [/pilot|aviator/, 'Pilote'],
-  [/sailor|navigator|boat captain|seaman|lord admiral/, 'Marin'],
-  [/\bspy\b|^agent|operative|informant|interrogator|mi6/, 'Espion'],
-  [/soldier|army|navy|marine|military|commander|^general$|general of|admiral|captain|corporal|sergeant|lieutenant|colonel|\bmajor\b|officer|warlord|warmonger|seals|s\.t\.a\.r\.s|u\.b\.c\.s|bsaa|tekken force|squire|serviceman/, 'Soldat'],
-  [/martial artist|fighter|boxer|wrestler|luchador|gladiator|brawler|karate|kung fu|thunderdome/, 'Combattant'],
-  [/knight|paladin|templar/, 'Chevalier'],
-  [/samurai|ronin/, 'Samouraï'],
-  [/swordsman|swordswoman|swordmaster|blademaster/, 'Épéiste'],
+  [/vigilante|superhero|super-hero|crime ?fighter/, 'Vigilante'],
+  [/^hero$|^heroine$/, 'Hero'],
+  [/revolutionar|rebel|resistance|freedom fighter|activist|liberat|guerrilla|subversive/, 'Revolutionary'],
+  [/sniper|marksman|gunslinger/, 'Sniper'],
+  [/pilot|aviator/, 'Pilot'],
+  [/sailor|navigator|boat captain|seaman|lord admiral/, 'Sailor'],
+  [/\bspy\b|^agent|operative|informant|interrogator|mi6/, 'Spy'],
+  [/soldier|army|navy|marine|military|commander|^general$|general of|admiral|captain|corporal|sergeant|lieutenant|colonel|\bmajor\b|officer|warlord|warmonger|seals|s\.t\.a\.r\.s|u\.b\.c\.s|bsaa|tekken force|squire|serviceman/, 'Soldier'],
+  [/martial artist|fighter|boxer|wrestler|luchador|gladiator|brawler|karate|kung fu|thunderdome/, 'Fighter'],
+  [/knight|paladin|templar/, 'Knight'],
+  [/samurai|ronin/, 'Samurai'],
+  [/swordsman|swordswoman|swordmaster|blademaster/, 'Swordsman'],
   [/ninja|shinobi|kunoichi/, 'Ninja'],
   [/\barcher|\branger/, 'Archer'],
-  [/warrior|barbarian|berserker/, 'Guerrier'],
+  [/warrior|barbarian|berserker/, 'Warrior'],
   // Magie, religion
   [/jedi/, 'Jedi'],
-  [/archmage|\bmage\b|wizard|witch|sorcer|warlock|necromancer|druid|shaman|summoner|abjurer|transmuter|diviner|enchant|conjur|alchemist|auror|medium|magician/, 'Magicien'],
-  [/priest|cleric|\bmonks?\b|\bnun\b|clergy|bishop|archbishop|preacher|religious|cult leader|shrine|tekken grand high/, 'Religieux'],
+  [/archmage|\bmage\b|wizard|witch|sorcer|warlock|necromancer|druid|shaman|summoner|abjurer|transmuter|diviner|enchant|conjur|alchemist|auror|medium|magician/, 'Mage'],
+  [/priest|cleric|\bmonks?\b|\bnun\b|clergy|bishop|archbishop|preacher|religious|cult leader|shrine|tekken grand high/, 'Cleric'],
   // Pouvoir
-  [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Souverain'],
+  [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
   [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
-  [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Chef de clan'],
-  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier/, 'Politicien'],
-  [/lawyer|attorney|prosecutor|judge/, 'Avocat'],
-  [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Homme d\'affaires'],
-  [/leader|head of|director|executive|founder|manager|boss|overseer|matron|ringmaster|chairman|supervisor/, 'Dirigeant'],
-  [/advisor|adviser|tactician|second-in-command|consultant|assistant|protégé|associate/, 'Conseiller'],
+  [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Clan leader'],
+  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier/, 'Politician'],
+  [/lawyer|attorney|prosecutor|judge/, 'Lawyer'],
+  [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Businessperson'],
+  [/leader|head of|director|executive|founder|manager|boss|overseer|matron|ringmaster|chairman|supervisor/, 'Leader'],
+  [/advisor|adviser|tactician|second-in-command|consultant|assistant|protégé|associate/, 'Advisor'],
   // Sciences
-  [/archaeologist|anthropologist/, 'Archéologue'],
-  [/scientist|researcher|engineer|inventor|chemist|physicist|geneticist|biologist|cryogenicist|brain data|research/, 'Scientifique'],
-  [/scholar|historian|philosopher|librarian|archivist|translator/, 'Érudit'],
-  [/detective|investigator|inspector/, 'Détective'],
-  [/police|cop\b|sheriff|deputy|patrolman|constable/, 'Policier'],
+  [/archaeologist|anthropologist/, 'Archaeologist'],
+  [/scientist|researcher|engineer|inventor|chemist|physicist|geneticist|biologist|cryogenicist|brain data|research/, 'Scientist'],
+  [/scholar|historian|philosopher|librarian|archivist|translator/, 'Scholar'],
+  [/detective|investigator|inspector/, 'Detective'],
+  [/police|cop\b|sheriff|deputy|patrolman|constable/, 'Police officer'],
   // Aventure
-  [/survivor/, 'Survivant'],
-  [/explorer|adventurer|traveler|traveller|wanderer|rescues lost/, 'Aventurier'],
-  [/astronaut|cosmonaut/, 'Astronaute'],
+  [/survivor/, 'Survivor'],
+  [/explorer|adventurer|traveler|traveller|wanderer|rescues lost/, 'Adventurer'],
+  [/astronaut|cosmonaut/, 'Astronaut'],
   // École, sport
-  [/student|pupil/, 'Étudiant'],
-  [/athlete|player|racer|racing|apex games|scout leader|yoga/, 'Sportif'],
+  [/student|pupil/, 'Student'],
+  [/athlete|player|racer|racing|apex games|scout leader|yoga/, 'Athlete'],
   // Arts, médias
-  [/singer|songstress|musician|guitarist|drummer|\bdj\b|rock ?star|punk|rocker|bard|idol/, 'Musicien'],
-  [/actor|actress|filmmaker|director of films|tv personality|entertainer|performer|harlequin|clown|stage show/, 'Acteur'],
-  [/journalist|reporter|correspondent|columnist|interviewer|editor/, 'Journaliste'],
-  [/writer|author|novelist|poet/, 'Écrivain'],
-  [/photographer|artist|painter|sculptor|dancer|ballet|model\b|designer/, 'Artiste'],
+  [/singer|songstress|musician|guitarist|drummer|\bdj\b|rock ?star|punk|rocker|bard|idol/, 'Musician'],
+  [/actor|actress|filmmaker|director of films|tv personality|entertainer|performer|harlequin|clown|stage show/, 'Actor'],
+  [/journalist|reporter|correspondent|columnist|interviewer|editor/, 'Journalist'],
+  [/writer|author|novelist|poet/, 'Writer'],
+  [/photographer|artist|painter|sculptor|dancer|ballet|model\b|designer/, 'Artist'],
   // Métiers
-  [/plumber/, 'Plombier'],
-  [/mechanic/, 'Mécanicien'],
-  [/^chef$|\bcook\b|baker|brewer|restaura|yakitori|confection/, 'Cuisinier'],
-  [/bartender|barmaid|waiter|waitress|dishwasher/, 'Serveur'],
-  [/merchant|vendor|shopkeeper|trader|seller|store|shop|florist|haberdasher|milliner/, 'Commerçant'],
-  [/farmer|farmhand|rancher|ranch hand|gardener|fisherman|cowboy|herbalist/, 'Fermier'],
-  [/\bmaid\b|butler|servant|housekeeper|house-elf|valet|nanny|house cleaning|cleaner|caretaker/, 'Domestique'],
-  [/driver|chauffeur|courier|delivery|conductor|mover/, 'Chauffeur'],
-  [/miner|blacksmith|carpenter|craftsman|artisan|builder|construction|handyman|laborer|labourer|worker|odd job|janitor|part-time/, 'Ouvrier'],
-  [/clerk|secretary|employee|office worker|receptionist/, 'Employé'],
+  [/plumber/, 'Plumber'],
+  [/mechanic/, 'Mechanic'],
+  [/^chef$|\bcook\b|baker|brewer|restaura|yakitori|confection/, 'Cook'],
+  [/bartender|barmaid|waiter|waitress|dishwasher/, 'Waiter'],
+  [/merchant|vendor|shopkeeper|trader|seller|store|shop|florist|haberdasher|milliner/, 'Merchant'],
+  [/farmer|farmhand|rancher|ranch hand|gardener|fisherman|cowboy|herbalist/, 'Farmer'],
+  [/\bmaid\b|butler|servant|housekeeper|house-elf|valet|nanny|house cleaning|cleaner|caretaker/, 'Servant'],
+  [/driver|chauffeur|courier|delivery|conductor|mover/, 'Driver'],
+  [/miner|blacksmith|carpenter|craftsman|artisan|builder|construction|handyman|laborer|labourer|worker|odd job|janitor|part-time/, 'Worker'],
+  [/clerk|secretary|employee|office worker|receptionist/, 'Employee'],
   [/guide/, 'Guide'],
-  [/prostitute|courtesan|escort/, 'Prostitué'],
-  [/unemployed/, 'Chômeur'],
-  [/retired/, 'Retraité'],
-  [/prisoner|inmate/, 'Prisonnier'],
+  [/prostitute|courtesan|escort/, 'Prostitute'],
+  [/unemployed/, 'Unemployed'],
+  [/retired/, 'Retiree'],
+  [/prisoner|inmate/, 'Prisoner'],
   // Les traductions du dictionnaire du Weebdle hors de nos familles
-  [/^leader$|^gérant$|^chef$/, 'Dirigeant'],
-  [/^mage$|^sorcier$|^sorcière$/, 'Magicien'],
-  [/^mafieux$/, 'Criminel'],
-  [/^actrice$/, 'Acteur'],
-  [/^serveuse$/, 'Serveur'],
-  [/^serviteur$|^servante$|^majordome$/, 'Domestique'],
-  [/^capitaine$/, 'Soldat'],
-  [/^célébrité$/, 'Artiste'],
-  [/^idole$/, 'Musicien'],
-  [/^navigateur$/, 'Marin'],
+  [/^leader$|^gérant$|^chef$/, 'Leader'],
+  [/^mage$|^sorcier$|^sorcière$/, 'Mage'],
+  [/^mafieux$/, 'Criminal'],
+  [/^actrice$/, 'Actor'],
+  [/^serveuse$/, 'Waiter'],
+  [/^serviteur$|^servante$|^majordome$/, 'Servant'],
+  [/^capitaine$/, 'Soldier'],
+  [/^célébrité$/, 'Artist'],
+  [/^idole$/, 'Musician'],
+  [/^navigateur$/, 'Sailor'],
 ]
 
 // L'occupation exacte (clés en minuscules, sans puces), avant les règles : les valeurs des infobox qu'aucune règle
 // ne range, ou mal. null : pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
   // Artisans
-  'weaponsmith': 'Ouvrier', 'armorer': 'Ouvrier', 'bronzecaster': 'Ouvrier', 'glassblower': 'Ouvrier', 'cobbler': 'Ouvrier',
-  'forger': 'Ouvrier', 'logger': 'Ouvrier', 'mining expert': 'Ouvrier', 'foreman of gecko': 'Ouvrier', 'custodian': 'Ouvrier',
-  'maintenance android': 'Mécanicien',
+  'weaponsmith': 'Worker', 'armorer': 'Worker', 'bronzecaster': 'Worker', 'glassblower': 'Worker', 'cobbler': 'Worker',
+  'forger': 'Worker', 'logger': 'Worker', 'mining expert': 'Worker', 'foreman of gecko': 'Worker', 'custodian': 'Worker',
+  'maintenance android': 'Mechanic',
   // Death Stranding : les porteurs livrent
-  'porter': 'Livreur', 'porter in training': 'Livreur',
+  'porter': 'Courier', 'porter in training': 'Courier',
   // Commerce, service
-  'barista': 'Serveur', 'alewife': 'Serveur', 'works at maxine\'s diner': 'Serveur', 'proprietor': 'Commerçant',
-  'proprieter of the mikaelsen ranch': 'Fermier', 'bookeeper at wren\'s nook': 'Employé',
-  'financial backer of hiram burrows': 'Homme d\'affaires', 'managing of the new vegas strip': 'Dirigeant',
+  'barista': 'Waiter', 'alewife': 'Waiter', 'works at maxine\'s diner': 'Waiter', 'proprietor': 'Merchant',
+  'proprieter of the mikaelsen ranch': 'Farmer', 'bookeeper at wren\'s nook': 'Employee',
+  'financial backer of hiram burrows': 'Businessperson', 'managing of the new vegas strip': 'Leader',
   // Chasse
-  'trapper': 'Chasseur', '3rd tier tracker': 'Chasseur', 'vampire huntress': 'Chasseur de monstres', 'banisher': 'Chasseur de monstres',
+  'trapper': 'Hunter', '3rd tier tracker': 'Hunter', 'vampire huntress': 'Monster hunter', 'banisher': 'Monster hunter',
   // Armée, police
-  'albion operations tactical adjutant': 'Soldat', 'demolitions expert': 'Soldat', 'executor of the koprulu expedition': 'Soldat',
-  'legionnaire': 'Soldat', 'recon trooper': 'Soldat', 'recruit': 'Soldat', 'the last minuteman': 'Soldat',
-  'trainee at rockfort island': 'Soldat', 'usstratcom\'s anti-umbrella pursuit': 'Soldat', 'yorha tactical support unit': 'Soldat',
-  'confederate marshal': 'Policier', 'marshal': 'Policier', 'swat specialist': 'Policier', 'watchman of the aesir': 'Garde',
+  'albion operations tactical adjutant': 'Soldier', 'demolitions expert': 'Soldier', 'executor of the koprulu expedition': 'Soldier',
+  'legionnaire': 'Soldier', 'recon trooper': 'Soldier', 'recruit': 'Soldier', 'the last minuteman': 'Soldier',
+  'trainee at rockfort island': 'Soldier', 'usstratcom\'s anti-umbrella pursuit': 'Soldier', 'yorha tactical support unit': 'Soldier',
+  'confederate marshal': 'Police officer', 'marshal': 'Police officer', 'swat specialist': 'Police officer', 'watchman of the aesir': 'Guard',
   // Combat
-  'blade of miquella': 'Guerrier', 'champion of the aesir': 'Guerrier', 'east-khan champion': 'Combattant',
-  'west-khan champion': 'Combattant', 'competitor': 'Combattant', 'chosen of sylvarant': 'Héros',
+  'blade of miquella': 'Warrior', 'champion of the aesir': 'Warrior', 'east-khan champion': 'Fighter',
+  'west-khan champion': 'Fighter', 'competitor': 'Fighter', 'chosen of sylvarant': 'Hero',
   // Crime
-  'blackmailer': 'Criminel', 'loyalist conspirator': 'Criminel', 'mastermind': 'Criminel',
+  'blackmailer': 'Criminal', 'loyalist conspirator': 'Criminal', 'mastermind': 'Criminal',
   'freebooter': 'Pirate', 'plunderer': 'Pirate', 'privateers': 'Pirate',
   // Religion, magie
-  'church crier': 'Religieux', 'grand inquisitor': 'Religieux', 'missionary': 'Religieux', 'prophet': 'Religieux', 'saint': 'Religieux',
-  'sanctifex': 'Religieux', 'sanctoress': 'Religieux', 'fire keeper': 'Religieux', 'right hand of the divine': 'Religieux',
-  'defender of the emerald dream': 'Magicien', 'astrologer': 'Érudit', 'interpreter': 'Érudit',
+  'church crier': 'Cleric', 'grand inquisitor': 'Cleric', 'missionary': 'Cleric', 'prophet': 'Cleric', 'saint': 'Cleric',
+  'sanctifex': 'Cleric', 'sanctoress': 'Cleric', 'fire keeper': 'Cleric', 'right hand of the divine': 'Cleric',
+  'defender of the emerald dream': 'Mage', 'astrologer': 'Scholar', 'interpreter': 'Scholar',
   // Pouvoir
-  'sovereign': 'Souverain', 'mistress of castle dimitrescu': 'Noble', 'dracula\'s vassal': 'Domestique',
-  'public voice of the elders': 'Politicien', 'spokesperson': 'Politicien', 'judicator': 'Politicien', 'the notary': 'Avocat',
-  'second in command': 'Conseiller',
+  'sovereign': 'Royalty', 'mistress of castle dimitrescu': 'Noble', 'dracula\'s vassal': 'Servant',
+  'public voice of the elders': 'Politician', 'spokesperson': 'Politician', 'judicator': 'Politician', 'the notary': 'Lawyer',
+  'second in command': 'Advisor',
   // Sciences, soins
-  'roboticist': 'Scientifique', 'architect': 'Scientifique', 'elerium expert': 'Scientifique', 'looking glass specialist': 'Scientifique',
-  'alpha a.i. psychologist': 'Médecin', 'tau radiologist': 'Médecin', 'therapist': 'Médecin', 'techie': 'Informaticien',
+  'roboticist': 'Scientist', 'architect': 'Scientist', 'elerium expert': 'Scientist', 'looking glass specialist': 'Scientist',
+  'alpha a.i. psychologist': 'Doctor', 'tau radiologist': 'Doctor', 'therapist': 'Doctor', 'techie': 'Programmer',
   // Médias, spectacle
-  'acrobat': 'Artiste', 'color commentator': 'Journaliste', 'reality tv host': 'Acteur', 'prepper': 'Survivant',
-  'occultist': 'Magicien', 'polymath': 'Érudit', 'tech support for lara croft': 'Informaticien',
-  'tactical adjutant': 'Soldat', 'climatologist': 'Scientifique', 'debt collector': 'Criminel', 'investment banker': 'Homme d\'affaires',
-  'scavenger': 'Survivant', 'jester': 'Artiste', 'pokémon watcher': 'Dresseur', 'mad gear goon': 'Criminel', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Ouvrier',
+  'acrobat': 'Artist', 'color commentator': 'Journalist', 'reality tv host': 'Actor', 'prepper': 'Survivor',
+  'occultist': 'Mage', 'polymath': 'Scholar', 'tech support for lara croft': 'Programmer',
+  'tactical adjutant': 'Soldier', 'climatologist': 'Scientist', 'debt collector': 'Criminal', 'investment banker': 'Businessperson',
+  'scavenger': 'Survivor', 'jester': 'Artist', 'pokémon watcher': 'Trainer', 'mad gear goon': 'Criminal', 'nukenin': 'Ninja', 'professional gamer': 'Gamer', 'yooper scooper': 'Worker',
   'albion operations': null, 'last of the xel\'naga': null, 'various others': null,
   // Pas des occupations : rôles dans l'histoire, liens de famille, dieux (l'espèce le dit), phrases, valeurs vides
   'antagonist': null, 'main antagonist': null, 'overarching antagonist': null, 'secondary antagonist': null,
@@ -852,9 +854,9 @@ export function translateOccupation(label: string): string | null | undefined {
 
 // Les quasi-synonymes regroupés, validés avec FX (aussi ceux de la table commune scripts/translate.ts, et des corrections à la main)
 const OCCUPATION_MERGES: Record<string, string | null> = {
-  'Élève': 'Étudiant', 'Chef de clan': 'Dirigeant', 'Tueur': 'Assassin', 'Guerrier': 'Combattant',
+  'Pupil': 'Student', 'Clan leader': 'Leader', 'Killer': 'Assassin', 'Warrior': 'Fighter',
   // déjà dans l'espèce (Divinité)
-  'Dieu': null,
+  'God': null,
 }
 
 // Les occupations finales d'un personnage : regroupées, sans doublon
@@ -908,45 +910,45 @@ const GENRE_RULES: [RegExp, string | null][] = [
   [/lgbt|science-fiction|science fiction(?! horror)|postapocalyptique|cyberpunk|fantasy|historique|comédie|christmas|halloween|zombie|time travel|space opera|fiction spéculative|milieu scolaire|cross-over|retro-style|eroge|erotic|chuunige|mystère|localisation|augmented reality|thriller/, null],
   // Une ambiance ou une mécanique, pas un genre (Dredge, Among Us)
   [/cozy game|inventory management|jeu occasionnel|déduction sociale|road movie|crime video game|univers parallèles/, null],
-  [/parkour/, 'Plates-formes'],
+  [/parkour/, 'Platformer'],
   [/commerce|simulateur de vol|jeu vidéo de pêche/, 'Simulation'],
   // Gardés tels quels, validé avec FX
   [/immersive sim/, 'Immersive sim'],
   [/monster-taming/, 'Monster-taming'],
   [/walking simulator/, 'Walking simulator'],
   [/^jeu de tir$|extraction shooter/, 'FPS'],
-  [/jeu d'aventure à la troisième personne/, 'Aventure'],
-  [/énigme/, 'Réflexion'],
-  [/^action-rpg$|soulslike/, 'Action-RPG'],
-  [/tactical rpg|tactique au tour par tour/, 'RPG tactique'],
+  [/jeu d'aventure à la troisième personne/, 'Adventure'],
+  [/énigme/, 'Puzzle'],
+  [/^action-rpg$|soulslike/, 'Action RPG'],
+  [/tactical rpg|tactique au tour par tour/, 'Tactical RPG'],
   [/massivement multijoueur/, 'MMO'],
   [/rôle|jrpg|dungeon crawler/, 'RPG'],
-  [/action-aventure/, 'Action-aventure'],
-  [/point'n click|aventure graphique|film interactif|^jeu d'aventure$/, 'Aventure'],
+  [/action-aventure/, 'Action-adventure'],
+  [/point'n click|aventure graphique|film interactif|^jeu d'aventure$/, 'Adventure'],
   [/visual novel/, 'Visual novel'],
   [/survival horror/, 'Survival horror'],
-  [/horreur|horror/, 'Horreur'],
+  [/horreur|horror/, 'Horror'],
   [/battle royale/, 'Battle royale'],
   [/tir en vue subjective|hero shooter|looter shooter|horde shooter|tir tactique/, 'FPS'],
   [/tir à la troisième personne/, 'TPS'],
-  [/manic shooter|rail shooter|shoot 'em up/, 'Shoot \'em up'],
-  [/combat motorisé|course|mascot racer/, 'Course'],
-  [/combat|fighting|fighter|airdasher/, 'Combat'],
+  [/manic shooter|rail shooter|shoot 'em up/, "Shoot 'em up"],
+  [/combat motorisé|course|mascot racer/, 'Racing'],
+  [/combat|fighting|fighter|airdasher/, 'Fighting'],
   [/metroidvania|soulsvania|metroidbrainia/, 'Metroidvania'],
-  [/plates?-?formes?|platformer/, 'Plates-formes'],
-  [/infiltration/, 'Infiltration'],
-  [/stratégie|tactique en temps réel|tower defense|4x|god game/, 'Stratégie'],
+  [/plates?-?formes?|platformer/, 'Platformer'],
+  [/infiltration/, 'Stealth'],
+  [/stratégie|tactique en temps réel|tower defense|4x|god game/, 'Strategy'],
   [/arène de bataille/, 'MOBA'],
   [/roguelike|roguelite/, 'Roguelike'],
-  [/hack and slash|character-action|beat them all/, 'Beat them all'],
-  [/réflexion/, 'Réflexion'],
+  [/hack and slash|character-action|beat them all/, "Beat 'em up"],
+  [/réflexion/, 'Puzzle'],
   [/gacha/, 'Gacha'],
-  [/survie/, 'Survie'],
-  [/sandbox/, 'Bac à sable'],
+  [/survie/, 'Survival'],
+  [/sandbox/, 'Sandbox'],
   [/farm life|simulation|gestion|commerce/, 'Simulation'],
-  [/football|hockey|tennis|sport/, 'Sport'],
+  [/football|hockey|tennis|sport/, 'Sports'],
   [/party game|minigame/, 'Party game'],
-  [/cartes/, 'Cartes'],
+  [/cartes/, 'Card game'],
   [/flipper|arcade/, 'Arcade'],
   [/^jeu d'action$/, 'Action'],
 ]
