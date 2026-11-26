@@ -2,7 +2,7 @@ import type { AttributeValue, Subject } from '../../engine/types.js'
 import { loadEntries } from '../loadEntries.js'
 
 const withUnit = (unit: string) => (value: AttributeValue) =>
-  typeof value === 'number' ? `${value.toLocaleString('en-US')} ${unit}` : '—'
+  typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : '—'
 
 export const pokemon: Subject = {
   // l'id sert aussi de nom de commande : /quiz pokedle

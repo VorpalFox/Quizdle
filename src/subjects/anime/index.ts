@@ -3,7 +3,7 @@ import { loadEntries } from '../loadEntries.js'
 
 // Un texte (« N/A », « Inconnu ») tel quel
 const withUnit = (unit: string) => (value: AttributeValue) =>
-  typeof value === 'number' ? `${value.toLocaleString('en-US')} ${unit}` : typeof value === 'string' ? value : '—'
+  typeof value === 'number' ? `${value.toLocaleString('fr-FR')} ${unit}` : typeof value === 'string' ? value : '—'
 
 // Aucun filtre anti-spoil (validé avec FX : un indice qui manque embrouille plus qu'il ne protège), seule la mort
 // n'est jamais dite. Affiché au lancement de l'Animedle et du Weebdle.
