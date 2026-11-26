@@ -47,11 +47,11 @@ const MIN_SLOTS_FOR_RANDOM = 8
 
 // La source quand AniList dit « OTHER » (id AniList de l'anime)
 const SOURCE_OVERRIDES: Record<number, string> = {
-  114121: 'Roman', // The Daily Life of the Immortal King : un web novel chinois
-  13125: 'Roman', // From the New World
-  1943: 'Roman', // Paprika
-  20541: 'Musique', // Mekakucity Actors : les chansons du Kagerou Project
-  7724: 'Roman', // Shiki
+  114121: 'Novel', // The Daily Life of the Immortal King : un web novel chinois
+  13125: 'Novel', // From the New World
+  1943: 'Novel', // Paprika
+  20541: 'Music', // Mekakucity Actors : les chansons du Kagerou Project
+  7724: 'Novel', // Shiki
 }
 
 // Sans espèce trouvée, un perso d'un anime sans rien de surnaturel est humain. Pas dans les autres : un quart des persos

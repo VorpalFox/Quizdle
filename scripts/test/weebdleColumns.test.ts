@@ -73,7 +73,7 @@ describe('translateCharacterSpecies', () => {
 describe('animeSource', () => {
   it('Familles', () => {
     expect(animeSource('LIGHT_NOVEL')).toBe('Light novel')
-    expect(animeSource('WEB_NOVEL')).toBe('Roman')
+    expect(animeSource('WEB_NOVEL')).toBe('Novel')
     expect(animeSource('OTHER')).toBeNull()
     expect(animeSource(null)).toBeNull()
   })

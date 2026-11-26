@@ -70,9 +70,9 @@ export const genres = (values: string[]) => values.map(genre => GENRES[genre] ??
 // (Manhwa, Manhua) ; un web novel, un one-shot ou un doujinshi rejoignent leur grande famille.
 const SOURCES: Record<string, string | null> = {
   MANGA: 'Manga', ONE_SHOT: 'Manga', DOUJINSHI: 'Manga', WEB_MANGA: 'Manga', MANHWA: 'Manhwa', MANHUA: 'Manhua',
-  LIGHT_NOVEL: 'Light novel', NOVEL: 'Roman', WEB_NOVEL: 'Roman', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel',
-  VIDEO_GAME: 'Jeu vidéo', GAME: 'Jeu vidéo', MULTIMEDIA_PROJECT: 'Projet multimédia', PICTURE_BOOK: 'Livre illustré',
-  LIVE_ACTION: 'Film', COMIC: 'Comics', CARD_GAME: 'Jeu de cartes', MUSIC: 'Musique', OTHER: null,
+  LIGHT_NOVEL: 'Light novel', NOVEL: 'Novel', WEB_NOVEL: 'Novel', ORIGINAL: 'Original', VISUAL_NOVEL: 'Visual novel',
+  VIDEO_GAME: 'Video game', GAME: 'Video game', MULTIMEDIA_PROJECT: 'Multimedia project', PICTURE_BOOK: 'Picture book',
+  LIVE_ACTION: 'Live action', COMIC: 'Comic', CARD_GAME: 'Card game', MUSIC: 'Music', OTHER: null,
 }
 export const animeSource = (source: string | null) => source ? SOURCES[source] ?? null : null
 
