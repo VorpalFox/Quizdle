@@ -101,6 +101,15 @@ describe('introAlignment', () => {
 })
 
 describe('introRoles', () => {
+  it('LegendeDImageAvecUnLien_Retiree', () => {
+    const page = "[[File:King.jpg|thumb|An image of the King, from a defunct [[Uru website]].]]\n'''Ahlsendar''' is a merchant. He sells books."
+    expect(introRoles(introText(page))).toEqual(['merchant'])
+  })
+
+  it('ParagraphesRecolles_DeuxPhrases', () => {
+    expect(introRoles('Rasmus is a character in Solasta II., He is a merchant in Tor Wen.')).toEqual(['merchant'])
+  })
+
   it('CeQuIlEst_SansLaSuite', () => {
     expect(introRoles('William Overbeck is a Vietnam veteran who served in the Army.')).toEqual(['Vietnam veteran'])
     expect(introRoles('Marle is the princess of Guardia.')).toEqual(['princess of Guardia'])

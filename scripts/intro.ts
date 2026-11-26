@@ -38,7 +38,10 @@ export function introRoles(intro: string): string[] {
 }
 
 // L'introduction d'une page : le texte avant la 1re section, sans l'infobox ni les modèles
+// Sans les images, même quand leur légende a un lien (« [[File:x.jpg|thumb|An image… [[Uru website]].]] », wiki de
+// Myst) : sinon la fin de la légende passe pour la 1re phrase
 export function introText(wikitext: string): string {
-  const body = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '').split(/\n==/)[0]!
+  const body = wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, '')
+    .replace(/\[\[\s*(?:file|image|fichier)\s*:[^[\]]*(?:\[\[[^\]]*\]\][^[\]]*)*\]\]/gi, '').split(/\n==/)[0]!
   return cleanValue(body).slice(0, MAX_INTRO_LENGTH)
 }

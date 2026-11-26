@@ -62142,7 +62142,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Businessperson"
+   ],
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
