@@ -2,7 +2,7 @@
 // hair »), en sautant au besoin ce qui parle de la conception du personnage (Wikipédia), et les liens d'une page
 // d'homonymie.
 import { normalize } from '../src/engine/search.js'
-import { DARK_HAIR, DARK_HAIR_IN_TEXT, HAIR_IN_TEXT, hairColors } from './anilist.js'
+import { COLOR_WORDS, DARK_HAIR, DARK_HAIR_IN_TEXT, HAIR_IN_TEXT, hairColors } from './anilist.js'
 
 const MAX_HAIR_COLORS = 2
 
@@ -51,7 +51,31 @@ const FORMER_WINDOW = 25
 // les citations : ce que le perso dit, pas ce qu'il est (Gwendolin : « I like blue hair... and blue fire! »).
 export function textHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
   const text = wikitext.replace(QUOTE_TEMPLATE, '')
-  return hairIn(text, HAIR_IN_TEXT_ALL, skip) ?? hairIn(text, DARK_HAIR_IN_TEXT_ALL, skip)
+  return hairIn(text, HAIR_IN_TEXT_ALL, skip) ?? subjectHair(text, skip) ?? hairIn(text, DARK_HAIR_IN_TEXT_ALL, skip)
+}
+
+// La couleur après le mot « hair », dans la section Appearance seulement : « Her hair is tied into two pigtails, with
+// the left being black and the right being pink » (Zoe Rayne, Palworld), « His hair is purple with yellow tips ».
+// La phrase s'arrête aux yeux, à la peau et aux parenthèses (« his hair is light blond and his eyes are light blue »,
+// « purple (in the light novel it's often said her hair is black) »). La couleur doit finir la phrase ou être suivie
+// d'un mot de cheveux (« yellow tips », « pink highlights », « gray in color ») : pas celle d'un accessoire ou d'autre
+// chose (« a brown band », « two blue pins », « a blue tiara », « turquoise leaves », « smoky purple air »).
+const HAIR_SUBJECT = /\b(?:her|his|their|its)\s+hair\s+(?:is|are|was|were)\b([^.!?]*)/gi
+const END_OF_HAIR = /\(|\b(?:eyes?|skin)\b/i
+const SUBJECT_COLOR = new RegExp(String.raw`\b(?:${COLOR_WORDS})\b(?=\s*(?:$|[,;:]|(?:-|\s)(?:and|or|but|with|in|colou?r(?:ed)?|tips?|streaks?|highlights?|dreadlocks|locks|strands|bangs|tint|tone|hue|shade|dyed|ends?)\b))`, 'gi')
+function subjectHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
+  const section = APPEARANCE.exec(wikitext)?.[1]
+  if (!section)
+    return null
+  for (const found of plainText(section).matchAll(HAIR_SUBJECT)) {
+    if (skip?.test(found[0]))
+      continue
+    const clause = found[1]!.split(END_OF_HAIR)[0]!
+    const colors = [...new Set([...clause.matchAll(SUBJECT_COLOR)].flatMap(match => hairColors(match[0])))].slice(0, MAX_HAIR_COLORS)
+    if (colors.length > 0)
+      return { colors, excerpt: found[0].replace(/\s+/g, ' ').trim().slice(0, 100) }
+  }
+  return null
 }
 const QUOTE_TEMPLATE = /\{\{\s*(?:quote|cquote|quotation|dialogue)\b[^{}]*(?:\{\{[^{}]*(?:\{\{[^{}]*\}\}[^{}]*)*\}\}[^{}]*)*\}\}/gi
 

@@ -60,3 +60,27 @@ describe('textHair, chauve', () => {
     expect(textHair(page)?.colors).toEqual(['Black', 'Red'])
   })
 })
+
+describe('textHair : la couleur après « hair »', () => {
+  const page = (appearance: string) => `Intro.\n==Appearance==\n${appearance}\n==Biography==\nShe wears a red dress.`
+
+  it('lit « her hair is … black … pink » (Zoe Rayne)', () => {
+    expect(textHair(page('Zoe is a young woman. Her hair is tied into two pigtails, with the left being black and the right being pink.'))?.colors).toEqual(['Black', 'Pink'])
+  })
+
+  it("s'arrête aux yeux et aux parenthèses", () => {
+    expect(textHair(page('In the anime, his hair is light blond and his eyes are light blue.'))?.colors).toEqual(['Blond'])
+    expect(textHair(page("Her hair is a dark shade of purple (in the light novel it's often said her hair is black)."))?.colors).toEqual(['Purple'])
+  })
+
+  it("pas la couleur d'un accessoire ou d'autre chose", () => {
+    expect(textHair(page('His hair is now longer, being tied into a tiny ponytail by a brown band.'))).toBeNull()
+    expect(textHair(page('Her hair is worn open and she wears a blue tiara on top of it.'))).toBeNull()
+    expect(textHair(page('His hair is dirty blond and wavy, and he exudes smoky purple air.'))?.colors).toEqual(['Blond'])
+  })
+
+  it('plusieurs adjectifs de cheveux entre la couleur et « hair » (Victor Ashford)', () => {
+    expect(textHair(page('Victor is a pale, thin man with a black and white wavy, shoulder length hair.'))?.colors).toEqual(['Black', 'White'])
+    expect(textHair(page('He wears a black coat, long hair falling on his back.'))).toBeNull()
+  })
+})
