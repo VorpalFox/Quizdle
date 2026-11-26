@@ -209,8 +209,21 @@ async function wikidataArticles(): Promise<Record<string, string>> {
 
 // Les titres à essayer : le lien Wikidata, puis le nom et les alias en lettres latines
 // Avec les voyelles longues en macron aussi, comme beaucoup de wikis (« Shima Toratarō », « Tokita Kōsaku »)
-function characterTitles(target: WikiTarget, article: string | undefined): string[] {
-  const aliases = (target.entry.aliases ?? []).filter(alias => /[a-z]/i.test(alias) && alias.length >= 3)
+// Les alias que portent plusieurs persos d'un même anime (le nom de famille, gardé en alias même partagé) : pas des
+// titres de page à essayer. La page « Jahad » est celle du roi, pas d'Anaak Jahad ; « Daigo », celle du père de
+// Tahoumaru Daigo. Sans page à son nom, la recherche du wiki le trouve (« Anak Zahard »).
+const aliasKey = (anime: unknown, alias: string) => `${anime}|${normalize(alias)}`
+export function sharedAliases(entries: Entry[]): Set<string> {
+  const owners = new Map<string, number>()
+  for (const entry of entries)
+    for (const key of new Set((entry.aliases ?? []).map(alias => aliasKey(entry.attributes.anime, alias))))
+      owners.set(key, (owners.get(key) ?? 0) + 1)
+  return new Set([...owners].filter(([, count]) => count > 1).map(([key]) => key))
+}
+
+export function characterTitles(target: WikiTarget, article: string | undefined, shared: Set<string> = new Set()): string[] {
+  const aliases = (target.entry.aliases ?? []).filter(alias => /[a-z]/i.test(alias) && alias.length >= 3
+    && !shared.has(aliasKey(target.entry.attributes.anime, alias)))
   const names = pageTitles(target.name)
   const macrons = names.map(title => title.replace(/ou/g, 'ō').replace(/uu/g, 'ū').replace(/oo/g, 'ō')).filter(title => !names.includes(title))
   return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases])]
@@ -659,6 +672,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
   // Les personnages de chaque wiki, avec les titres à essayer
   const byWiki = new Map<string, { target: WikiTarget, titles: string[] }[]>()
   const noWiki = new Set<string>()
+  const shared = sharedAliases(targets.map(({ entry }) => entry))
   // Tous les persos : même complets, Fandom ajoute à leurs listes (addedValues)
   for (const target of targets) {
     const article = articles[target.entry.id]
@@ -670,7 +684,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       continue
     }
     // La page imposée à la main (« fandom » des corrections) : seulement elle, ni homonymie ni recherche
-    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article?.split(':').slice(1).join(':'))
+    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article?.split(':').slice(1).join(':'), shared)
     byWiki.set(wiki, [...byWiki.get(wiki) ?? [], { target, titles }])
   }
   // Les titres de page à demander à l'API : pas ceux avec une section, lus dans la page entière

@@ -24224,13 +24224,8 @@
    ],
    "age": null,
    "height": null,
-   "occupation": [
-    "Noble"
-   ],
-   "hair": [
-    "Grey",
-    "Black"
-   ],
+   "occupation": null,
+   "hair": null,
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -50045,12 +50040,8 @@
    ],
    "age": 39,
    "height": null,
-   "occupation": [
-    "Fashion Designer"
-   ],
-   "hair": [
-    "Blue"
-   ],
+   "occupation": null,
+   "hair": null,
    "anime": "Paradise Kiss",
    "genres": [
     "Comedy",
@@ -70107,13 +70098,13 @@
     "Human"
    ],
    "age": null,
-   "height": 240,
+   "height": 154,
    "occupation": [
-    "Royalty",
-    "Noble",
-    "Leader"
+    "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Tower of God",
    "genres": [
     "Action",
