@@ -5,7 +5,8 @@ import { cleanValue } from './wikipedia.js'
 const MAX_INTRO_LENGTH = 1500
 
 // « X is a Vietnam veteran who served… », « X was the princess of Guardia » : ce que le personnage est, sans la suite
-export const WHAT_HE_IS = /\b(?:is|was|serves as|served as|works as|worked as)\s+(?:(?:a|an|the|one of the|also|currently|formerly|now)\s+)*([^.;:,()"]+)/i
+// « is considered by many to be one of the greatest warbosses » (Grimgor, Warhammer), « is regarded as » : comme « is »
+export const WHAT_HE_IS = /\b(?:(?:is|was) (?:considered|regarded|seen)(?: by [^,.;]+?)? (?:to be|as)|is|was|serves as|served as|works as|worked as)\s+(?:(?:a|an|the|one of the|also|currently|formerly|now)\s+)*([^.;:,()"]+)/i
 const END_OF_ROLE = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|introduced|debuting|appearing|created|built|first|known|named|and the)\s.*$/i
 export const MAX_INTRO_SENTENCES = 2
 // Pas un métier : un rôle dans l'histoire ou le jeu (« major character », « final boss »), un lien de famille (« son of »),

@@ -3104,7 +3104,14 @@
   },
   "Q3027554": {
    "_nom": "Dieu-machine",
-   "gender": "Genderless"
+   "_raison": "occupation : une divinité sans métier, « other servants » et « the Emperor of Mankind » de son intro parlent d'autres",
+   "gender": "Genderless",
+   "occupation": {
+    "moins": [
+     "Servant",
+     "Royalty"
+    ]
+   }
   },
   "Q3967463": {
    "_nom": "Squig",
@@ -3368,6 +3375,24 @@
    "occupation": {
     "plus": [
      "Assistant"
+    ]
+   }
+  },
+  "Q107976420": {
+   "_nom": "Archaon, Lord of the End Times",
+   "_raison": "« the last high king of Norsca » : sa page « Archaon » n'est trouvée que par alias, et son Infobox Monarch n'a aucun champ lu",
+   "occupation": {
+    "plus": [
+     "Royalty"
+    ]
+   }
+  },
+  "Q3776893": {
+   "_nom": "Grom the Paunch",
+   "_raison": "« among the greatest of Greenskin Warbosses »",
+   "occupation": {
+    "plus": [
+     "Leader"
     ]
    }
   },

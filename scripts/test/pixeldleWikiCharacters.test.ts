@@ -106,6 +106,10 @@ describe('introRoles', () => {
     expect(introRoles(introText(page))).toEqual(['merchant'])
   })
 
+  it('ConsidereComme_CommeIs', () => {
+    expect(introRoles('Grimgor Ironhide is considered by many to be one of the greatest Black Orc warbosses.')).toEqual(['greatest Black Orc warbosses'])
+  })
+
   it('NomPropreApresAnd_PasUnRole', () => {
     expect(introRoles('The Machine God is the bestower of all knowledge and the Emperor of Mankind.')).toEqual(['bestower of all knowledge'])
   })

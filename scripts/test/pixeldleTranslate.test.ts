@@ -116,6 +116,11 @@ describe('translateGender', () => {
 })
 
 describe('translateOccupation', () => {
+  it('TitresAuPlurielEtInquisiteur', () => {
+    expect(translateOccupation('last of the Slayer Kings of Karak Kadrin')).toBe('Royalty')
+    expect(translateOccupation('Inquisitor of the Ordo Xenos')).toBe('Detective')
+  })
+
   it('MembreDUneTribu_PasChef', () => {
     expect(translateOccupation('Rank D Fire-attribute Yo-kai of the Charming tribe')).not.toBe('Clan leader')
     expect(translateOccupation('Leader of the Drakebeard Clan')).toBe('Clan leader')

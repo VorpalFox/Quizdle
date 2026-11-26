@@ -46246,7 +46246,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Detective"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46316,10 +46318,7 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": [
-    "Servant",
-    "Royalty"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46367,7 +46366,9 @@
     "Dwarf"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Royalty"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46418,7 +46419,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Royalty"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46596,7 +46599,10 @@
     "Orc"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader",
+    "Soldier"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46620,7 +46626,9 @@
     "Goblin"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",

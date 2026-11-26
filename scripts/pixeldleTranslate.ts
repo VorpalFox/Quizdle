@@ -714,7 +714,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/archmage|\bmage\b|wizard|witch|sorcer|warlock|necromancer|druid|shaman|summoner|abjurer|transmuter|diviner|enchant|conjur|alchemist|auror|medium|magician/, 'Mage'],
   [/priest|cleric|\bmonks?\b|\bnun\b|clergy|bishop|archbishop|preacher|religious|cult leader|shrine|tekken grand high/, 'Cleric'],
   // Pouvoir
-  [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
+  // Au pluriel aussi : « the last of the Slayer Kings » (Ungrim Ironfist, Warhammer)
+  [/\bkings?\b|\bqueens?\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
   [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
   // Le chef d'un clan ou d'une tribu, pas un simple membre (« Yo-kai of the Charming tribe », Jibanyan)
   [/chieftain|warchief|chief of the|^(?:clan|tribe)$|\b(?:leader|head|chief|elder) of (?:the |a |his |her )?[\w' -]*\b(?:clan|tribe)\b/, 'Clan leader'],
@@ -727,7 +728,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/archaeologist|anthropologist/, 'Archaeologist'],
   [/scientist|researcher|engineer|inventor|chemist|physicist|geneticist|biologist|cryogenicist|brain data|research/, 'Scientist'],
   [/scholar|historian|philosopher|librarian|archivist|translator/, 'Scholar'],
-  [/detective|investigator|inspector/, 'Detective'],
+  // L'Inquisiteur de Warhammer enquête (Gregor Eisenhorn)
+  [/detective|investigator|inspector|inquisitor/, 'Detective'],
   [/police|cop\b|sheriff|deputy|patrolman|constable/, 'Police officer'],
   // Aventure
   [/survivor/, 'Survivor'],

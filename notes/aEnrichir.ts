@@ -1,5 +1,5 @@
 // Les univers (animes, franchises) dont les persos ont le plus de cases vides, dans notes/<quiz>-a-enrichir.md.
-//   npx tsx notes/aEnrichir.ts weebdle               recalcule le tableau (seuil gardé du fichier)
+//   npx tsx notes/aEnrichir.ts weebdle               recalcule le tableau (au-dessus de 40 % par défaut)
 //   npx tsx notes/aEnrichir.ts pixeldle --seuil 40   seulement les univers au-dessus de 40 % de cases vides
 // Tout est recalculé depuis data/ à chaque fois ; seules les coches [x] / [-] sont reprises de l'ancien fichier.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
@@ -24,7 +24,7 @@ const option = (flag: string) => {
 
 const file = new URL(`./${name}-a-enrichir.md`, import.meta.url)
 const old = existsSync(file) ? readFileSync(file, 'utf8') : ''
-const threshold = option('--seuil') ?? Number(old.match(/au-dessus de (\d+) %/)?.[1] ?? 40)
+const threshold = option('--seuil') ?? 40
 
 const entries: { attributes: Record<string, unknown> }[] = JSON.parse(readFileSync(new URL(`../data/${quiz.data}.json`, import.meta.url), 'utf8'))
 const keys = Object.keys(quiz.keys)
