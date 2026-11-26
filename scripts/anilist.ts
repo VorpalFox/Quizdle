@@ -215,16 +215,16 @@ function capitalize(text: string): string {
 
 // Les mots anglais (AniList, Wikipédia EN) et français (Wikipédia FR)
 const HAIR_COLORS: [RegExp, string][] = [
-  [/black|raven|ebony|noir/i, 'Noirs'], [/white|snow|blanc/i, 'Blancs'], [/silver|platinum|argent/i, 'Argentés'], [/gr[ae]y|gris/i, 'Gris'],
-  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blonds'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Bruns'], [/orange|ginger|roux|rousse/i, 'Roux'],
-  [/\bred|crimson|scarlet|rouge/i, 'Rouges'], [/pink|\brose/i, 'Roses'], [/blue|cyan|teal|turquoise|bleu/i, 'Bleus'], [/green|\bvert/i, 'Verts'],
-  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Violets'], [/bald|shaved|chauve/i, 'Chauve'],
+  [/black|raven|ebony|noir/i, 'Black'], [/white|snow|blanc/i, 'White'], [/silver|platinum|argent/i, 'Silver'], [/gr[ae]y|gris/i, 'Grey'],
+  [/blond|golden|gold|yellow|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
+  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
+  [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Purple'], [/bald|shaved|chauve/i, 'Bald'],
 ]
 const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair »
 export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?\s+hair\b`, 'i')
 
-// Les couleurs citées, dans l'ordre du texte (« White with blue tips » → Blancs, Bleus)
+// Les couleurs citées, dans l'ordre du texte (« White with blue tips » → White, Blue)
 export const hairColors = (text: string) => HAIR_COLORS
   .map(([pattern, color]) => ({ color, index: text.search(pattern) }))
   .filter(({ index }) => index >= 0)

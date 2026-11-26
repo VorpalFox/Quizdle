@@ -37,7 +37,7 @@ export const debugCommand = new SlashCommandBuilder()
   .addSubcommand(sub => addEntryOptions(sub.setName('remove').setDescription('Remove an entry from a quiz for good (saved in data/<subject>-manual.json)')))
   .addSubcommand(sub => addEntryOptions(sub.setName('edit').setDescription('Change or fill an attribute of an entry (saved in data/<subject>-manual.json)'))
     .addStringOption(option => option.setName('attribute').setDescription('Attribute to change').setRequired(true).addChoices(...correctableAttributes()))
-    .addStringOption(option => option.setName('value').setDescription('New value. Lists: "Blancs, -Noirs" adds Blancs, removes Noirs. Empty: "-". Not applicable: "n/a"').setRequired(true)))
+    .addStringOption(option => option.setName('value').setDescription('New value. Lists: "White, -Black" adds White, removes Black. Empty: "-". Not applicable: "n/a"').setRequired(true)))
 
 // Sujet (ceux qui ont un fichier de corrections) + entrée, avec l'autocomplétion
 function addEntryOptions(sub: SlashCommandSubcommandBuilder): SlashCommandSubcommandBuilder {

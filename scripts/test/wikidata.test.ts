@@ -11,9 +11,9 @@ describe('wikidataGender', () => {
 
 describe('wikidataHair', () => {
   it('NomsFrEtEn_NosCouleurs', () => {
-    expect(wikidataHair(['cheveux noirs'])).toEqual(['Noirs'])
-    expect(wikidataHair(['cheveux châtains clairs', 'light blue hair'])).toEqual(['Bruns', 'Bleus'])
-    expect(wikidataHair(['pourpre'])).toEqual(['Violets'])
+    expect(wikidataHair(['cheveux noirs'])).toEqual(['Black'])
+    expect(wikidataHair(['cheveux châtains clairs', 'light blue hair'])).toEqual(['Brown', 'Blue'])
+    expect(wikidataHair(['pourpre'])).toEqual(['Purple'])
   })
 })
 

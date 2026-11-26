@@ -49,7 +49,7 @@ Ne pas modifier `data/<sujet>.json` : les scripts le réécrivent. Les correctio
 ```json
 {
  "exclude": ["307811"],
- "edit": { "27": { "_nom": "Killua Zoldyck", "gender": "Homme", "hair": { "plus": ["Blancs"], "moins": ["Bruns"] } } },
+ "edit": { "27": { "_nom": "Killua Zoldyck", "gender": "Homme", "hair": { "plus": ["White"], "moins": ["Brown"] } } },
  "add": [{ "id": "manuel-1", "name": "Nom", "attributes": { "gender": "Homme", "...": "..." } }]
 }
 ```

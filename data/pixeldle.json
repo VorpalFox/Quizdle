@@ -23,8 +23,8 @@
     "Plombier"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -58,7 +58,7 @@
     "Plombier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -96,7 +96,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -132,8 +132,8 @@
     "Noble"
    ],
    "hair": [
-    "Roux",
-    "Blonds"
+    "Ginger",
+    "Blond"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -191,8 +191,8 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -275,8 +275,8 @@
     "Sportif"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Super Mario",
    "developer": "Camelot Software Planning",
@@ -308,7 +308,7 @@
     "Aucune"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -340,7 +340,7 @@
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -423,7 +423,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -482,7 +482,7 @@
     "Aucune"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Super Mario",
    "developer": "Nintendo",
@@ -629,7 +629,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -664,7 +664,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -694,7 +694,7 @@
     "Souverain"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -720,7 +720,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -797,7 +797,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -850,7 +850,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -954,7 +954,7 @@
     "Souverain"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Capcom",
@@ -1010,7 +1010,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -1036,7 +1036,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -1175,8 +1175,8 @@
     "Dresseur"
    ],
    "hair": [
-    "Blonds",
-    "Noirs"
+    "Blond",
+    "Black"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1205,7 +1205,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "DeNA",
@@ -1235,7 +1235,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1266,7 +1266,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1296,8 +1296,8 @@
     "Dresseur"
    ],
    "hair": [
-    "Gris",
-    "Blonds"
+    "Grey",
+    "Blond"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1327,7 +1327,7 @@
     "Professeur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1358,7 +1358,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1386,7 +1386,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1413,7 +1413,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1447,8 +1447,8 @@
     "Conseiller"
    ],
    "hair": [
-    "Noirs",
-    "Verts"
+    "Black",
+    "Green"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1475,7 +1475,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1502,7 +1502,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1533,7 +1533,7 @@
     "Policier"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1562,7 +1562,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1591,7 +1591,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1619,7 +1619,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1648,7 +1648,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1677,7 +1677,7 @@
     "Noble"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1706,8 +1706,8 @@
     "Dresseur"
    ],
    "hair": [
-    "Noirs",
-    "Blonds"
+    "Black",
+    "Blond"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -1736,7 +1736,7 @@
     "Dresseur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pokémon",
    "developer": "Game Freak",
@@ -2123,7 +2123,7 @@
     "Artiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sega",
@@ -2283,7 +2283,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
@@ -2343,7 +2343,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2369,7 +2369,7 @@
     "Soldat"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2400,7 +2400,7 @@
     "Serveur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2432,7 +2432,7 @@
     "Terroriste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2464,7 +2464,7 @@
     "Chevalier"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2493,7 +2493,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2522,7 +2522,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2556,7 +2556,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2583,7 +2583,7 @@
     "Religieux"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2610,7 +2610,7 @@
     "Garde"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2643,7 +2643,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2728,7 +2728,7 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2758,7 +2758,7 @@
     "Professeur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2788,7 +2788,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2822,7 +2822,7 @@
     "Lancier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2872,7 +2872,7 @@
     "Garde"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2902,7 +2902,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2929,8 +2929,8 @@
     "Assassin"
    ],
    "hair": [
-    "Noirs",
-    "Rouges"
+    "Black",
+    "Red"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -2959,7 +2959,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -2987,8 +2987,8 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3022,8 +3022,8 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns",
-    "Roses"
+    "Brown",
+    "Pink"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3052,8 +3052,8 @@
     "Ninja"
    ],
    "hair": [
-    "Bruns",
-    "Blonds"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3085,7 +3085,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3137,8 +3137,8 @@
     "Pilote"
    ],
    "hair": [
-    "Blonds",
-    "Rouges"
+    "Blond",
+    "Red"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3167,7 +3167,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3195,8 +3195,8 @@
     "Souverain"
    ],
    "hair": [
-    "Rouges",
-    "Chauve"
+    "Red",
+    "Bald"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3229,7 +3229,7 @@
     "Assassin"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3259,8 +3259,8 @@
     "Domestique"
    ],
    "hair": [
-    "Roses",
-    "Violets"
+    "Pink",
+    "Purple"
    ],
    "franchise": "Street Fighter",
    "developer": "Dimps",
@@ -3287,7 +3287,7 @@
     "Justicier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3321,8 +3321,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3354,8 +3354,8 @@
     "Artiste"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3384,7 +3384,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Street Fighter",
    "developer": "Dimps",
@@ -3412,7 +3412,7 @@
     "Assassin"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3439,8 +3439,8 @@
     "Assassin"
    ],
    "hair": [
-    "Noirs",
-    "Blancs"
+    "Black",
+    "White"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3470,7 +3470,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3499,7 +3499,7 @@
     "Policier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Street Fighter",
    "developer": "Capcom",
@@ -3561,7 +3561,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3629,7 +3629,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3694,7 +3694,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3730,7 +3730,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3765,7 +3765,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3844,7 +3844,7 @@
     "Ninja"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3935,7 +3935,7 @@
     "Combattant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -3963,7 +3963,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -4074,7 +4074,7 @@
     "Lancier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -4139,7 +4139,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4174,8 +4174,8 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4207,7 +4207,7 @@
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4237,7 +4237,7 @@
     "Garde"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4266,7 +4266,7 @@
     "Garde"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4296,7 +4296,7 @@
     "Artiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4325,7 +4325,7 @@
     "Ninja"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4355,7 +4355,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4390,7 +4390,7 @@
     "Combattant"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4422,7 +4422,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4451,7 +4451,7 @@
     "Voleur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4483,8 +4483,8 @@
     "Domestique"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4514,7 +4514,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4546,7 +4546,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4578,7 +4578,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4607,7 +4607,7 @@
     "Destructeur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4640,8 +4640,8 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4673,7 +4673,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4701,7 +4701,7 @@
     "Religieux"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4731,7 +4731,7 @@
     "Espion"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tekken",
    "developer": "Bandai Namco",
@@ -4768,7 +4768,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
@@ -4802,7 +4802,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
@@ -4870,7 +4870,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
@@ -4939,7 +4939,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Resident Evil",
    "developer": "Capcom",
@@ -5291,7 +5291,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Journaliste"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5390,8 +5390,8 @@
     "Espion"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5427,8 +5427,8 @@
     "Terroriste"
    ],
    "hair": [
-    "Bruns",
-    "Blancs"
+    "Brown",
+    "White"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5463,8 +5463,8 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5500,8 +5500,8 @@
     "Espion"
    ],
    "hair": [
-    "Blonds",
-    "Blancs"
+    "Blond",
+    "White"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5534,7 +5534,7 @@
     "Espion"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5568,8 +5568,8 @@
     "Ninja"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5600,8 +5600,8 @@
     "Informaticien"
    ],
    "hair": [
-    "Gris",
-    "Bruns"
+    "Grey",
+    "Brown"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5633,7 +5633,7 @@
     "Espion"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Kojima Productions",
@@ -5660,7 +5660,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Metal Gear",
    "developer": "Kojima Productions",
@@ -5697,8 +5697,8 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns",
-    "Blancs"
+    "Brown",
+    "White"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5729,8 +5729,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5762,8 +5762,8 @@
     "Politicien"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Metal Gear",
    "developer": "PlatinumGames",
@@ -5791,7 +5791,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5822,7 +5822,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5849,8 +5849,8 @@
     "Mercenaire"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5881,7 +5881,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Metal Gear",
    "developer": "Kojima Productions",
@@ -5913,7 +5913,7 @@
     "Politicien"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Metal Gear",
    "developer": "Konami",
@@ -5974,8 +5974,8 @@
     "Soldat"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Metal Gear",
    "developer": "Kojima Productions",
@@ -6005,7 +6005,7 @@
     "Espion"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Metal Gear",
    "developer": "Kojima Productions",
@@ -6034,7 +6034,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6064,7 +6064,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Jupiter",
@@ -6091,7 +6091,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6145,7 +6145,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Jupiter",
@@ -6174,7 +6174,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6227,7 +6227,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6256,7 +6256,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6284,7 +6284,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6314,7 +6314,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6401,7 +6401,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6427,7 +6427,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6482,8 +6482,8 @@
     "Archer"
    ],
    "hair": [
-    "Argentés",
-    "Gris"
+    "Silver",
+    "Grey"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6511,7 +6511,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6544,8 +6544,8 @@
     "Épéiste"
    ],
    "hair": [
-    "Chauve",
-    "Argentés"
+    "Bald",
+    "Silver"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6574,7 +6574,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6703,7 +6703,7 @@
     "Musicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Donkey Kong",
    "developer": "Nintendo",
@@ -6766,7 +6766,7 @@
     "Aucune"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
@@ -6857,7 +6857,7 @@
     "Employé"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
@@ -6886,7 +6886,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
@@ -6917,7 +6917,7 @@
     "Aucune"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Donkey Kong",
    "developer": "Rare",
@@ -7648,8 +7648,8 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds",
-    "Verts"
+    "Blond",
+    "Green"
    ],
    "franchise": "Metroid",
    "developer": "Nintendo",
@@ -7881,7 +7881,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Metroid",
    "developer": "Nintendo",
@@ -8209,7 +8209,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
@@ -8430,7 +8430,7 @@
     "Pilote"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Star Fox",
    "developer": "Nintendo",
@@ -8556,7 +8556,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8584,7 +8584,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8611,7 +8611,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8638,7 +8638,7 @@
     "Soldat"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Fire Emblem",
    "developer": "HAL Laboratory",
@@ -8670,8 +8670,8 @@
     "Religieux"
    ],
    "hair": [
-    "Bleus",
-    "Verts"
+    "Blue",
+    "Green"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8700,7 +8700,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8727,7 +8727,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8765,7 +8765,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8821,7 +8821,7 @@
     "Noble"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8884,7 +8884,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8917,7 +8917,7 @@
     "Noble"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8950,7 +8950,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -8984,7 +8984,7 @@
     "Souverain"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -9017,7 +9017,7 @@
     "Noble"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -9045,7 +9045,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -9074,7 +9074,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -9108,10 +9108,10 @@
    "occupation": [
     "Soldat",
     "Dirigeant",
-    "Souverain"
+    "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Fire Emblem",
    "developer": "Intelligent Systems",
@@ -9426,7 +9426,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9485,7 +9485,7 @@
     "Employé"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9545,7 +9545,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9636,7 +9636,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9694,7 +9694,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9723,7 +9723,7 @@
     "Aucune"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Animal Crossing",
    "developer": "Nintendo",
@@ -9750,8 +9750,8 @@
     "Musicien"
    ],
    "hair": [
-    "Noirs",
-    "Blonds"
+    "Black",
+    "Blond"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9778,8 +9778,8 @@
     "Musicien"
    ],
    "hair": [
-    "Gris",
-    "Verts"
+    "Grey",
+    "Green"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9807,7 +9807,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9837,8 +9837,8 @@
     "Aucune"
    ],
    "hair": [
-    "Roses",
-    "Verts"
+    "Pink",
+    "Green"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9895,8 +9895,8 @@
     "Aucune"
    ],
    "hair": [
-    "Bruns",
-    "Bleus"
+    "Brown",
+    "Blue"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9956,8 +9956,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds",
-    "Violets"
+    "Blond",
+    "Purple"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -9987,7 +9987,7 @@
     "Aucune"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -10048,7 +10048,7 @@
     "Aucune"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -10078,7 +10078,7 @@
     "Aucune"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -10209,7 +10209,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10330,7 +10330,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10633,7 +10633,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10698,7 +10698,7 @@
     "Aucune"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10730,7 +10730,7 @@
     "Professeur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Traveller's Tales",
@@ -10902,7 +10902,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
@@ -11171,7 +11171,7 @@
     "Acteur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11399,7 +11399,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11489,7 +11489,7 @@
     "Acteur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11721,8 +11721,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts",
-    "Blonds"
+    "Green",
+    "Blond"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11882,7 +11882,7 @@
     "Criminel"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11938,7 +11938,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11967,8 +11967,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Chauve",
-    "Blancs"
+    "Bald",
+    "White"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12020,7 +12020,7 @@
     "Criminel"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12130,7 +12130,7 @@
     "Tireur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12223,7 +12223,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12522,7 +12522,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12555,7 +12555,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12617,7 +12617,7 @@
     "Aucune"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12648,7 +12648,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12679,7 +12679,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Sly Cooper",
    "developer": "Sucker Punch Productions",
@@ -12772,7 +12772,7 @@
     "Aventurier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -12804,8 +12804,8 @@
     "Aventurier"
    ],
    "hair": [
-    "Blonds",
-    "Gris"
+    "Blond",
+    "Grey"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -12837,7 +12837,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -12896,7 +12896,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -12926,7 +12926,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -12958,7 +12958,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -12990,7 +12990,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -13022,7 +13022,7 @@
     "Cuisinier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -13054,7 +13054,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -13089,7 +13089,7 @@
     "Acteur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -13155,7 +13155,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13253,7 +13253,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13284,7 +13284,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13318,7 +13318,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13381,7 +13381,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13446,7 +13446,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13478,7 +13478,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13622,7 +13622,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13650,7 +13650,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13707,7 +13707,7 @@
     "Politicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
@@ -13739,7 +13739,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13774,7 +13774,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13807,7 +13807,7 @@
     "Sportif"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13841,7 +13841,7 @@
     "Policier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13874,7 +13874,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13903,7 +13903,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13932,7 +13932,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13961,7 +13961,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -13990,7 +13990,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14019,7 +14019,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14050,7 +14050,7 @@
     "Survivant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14079,7 +14079,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14108,7 +14108,7 @@
     "Survivant"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14140,7 +14140,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14170,7 +14170,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14200,7 +14200,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14230,7 +14230,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14260,7 +14260,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14293,7 +14293,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14324,7 +14324,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Last of Us",
    "developer": "Naughty Dog",
@@ -14359,7 +14359,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -14414,7 +14414,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -14448,7 +14448,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14570,8 +14570,8 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs",
-    "Blonds"
+    "Black",
+    "Blond"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14602,7 +14602,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14633,7 +14633,7 @@
     "Tireur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14667,7 +14667,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Halo",
    "developer": "343 Industries",
@@ -14698,7 +14698,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Halo",
    "developer": "343 Industries",
@@ -14729,7 +14729,7 @@
     "Politicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14758,7 +14758,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14813,7 +14813,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Halo",
    "developer": "Bungie",
@@ -14844,7 +14844,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Gears of War",
    "developer": "The Coalition",
@@ -14874,8 +14874,8 @@
     "Soldat"
    ],
    "hair": [
-    "Gris",
-    "Noirs"
+    "Grey",
+    "Black"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -14906,8 +14906,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Blancs",
-    "Chauve"
+    "White",
+    "Bald"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -14937,11 +14937,12 @@
     "Monde réel"
    ],
    "occupation": [
-    "Sportif"
+    "Sportif",
+    "Politicien"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -14971,8 +14972,8 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds",
-    "Chauve"
+    "Blond",
+    "Bald"
    ],
    "franchise": "Gears of War",
    "developer": "The Coalition",
@@ -15301,8 +15302,8 @@
     "Terroriste"
    ],
    "hair": [
-    "Argentés",
-    "Gris"
+    "Silver",
+    "Grey"
    ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -15503,7 +15504,7 @@
     "Aventurier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -15727,7 +15728,7 @@
     "Noble"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dragon Age",
    "developer": "BioWare",
@@ -16204,6 +16205,7 @@
     "Markarth"
    ],
    "occupation": [
+    "Apothicaire",
     "Médecin"
    ],
    "hair": null,
@@ -16241,7 +16243,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16423,7 +16425,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16605,8 +16607,8 @@
     "Souverain"
    ],
    "hair": [
-    "Blancs",
-    "Chauve"
+    "White",
+    "Bald"
    ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16670,7 +16672,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16761,7 +16763,7 @@
     "Survivant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
@@ -16850,7 +16852,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Fallout",
    "developer": "Obsidian Entertainment",
@@ -16977,7 +16979,7 @@
     "Médecin"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Fallout",
    "developer": "Obsidian Entertainment",
@@ -17006,7 +17008,7 @@
     "Avocat"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Fallout",
    "developer": "Bethesda",
@@ -17094,7 +17096,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Fallout",
    "developer": "Bethesda",
@@ -17122,7 +17124,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Fallout",
    "developer": "Obsidian Entertainment",
@@ -17271,7 +17273,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Fallout",
    "developer": "Black Isle Studios",
@@ -17310,7 +17312,7 @@
     "Sorceleur"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17344,7 +17346,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17375,7 +17377,7 @@
     "Pirate"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17409,7 +17411,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17437,8 +17439,8 @@
     "Musicien"
    ],
    "hair": [
-    "Blonds",
-    "Bruns"
+    "Blond",
+    "Brown"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17472,7 +17474,7 @@
     "Chevalier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17504,8 +17506,8 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs",
-    "Rouges"
+    "Black",
+    "Red"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17534,8 +17536,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17565,7 +17567,7 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17597,7 +17599,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17625,7 +17627,7 @@
     "Sorceleur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17652,7 +17654,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17682,7 +17684,7 @@
     "Fermier"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17710,8 +17712,8 @@
     "Sorceleur"
    ],
    "hair": [
-    "Gris",
-    "Noirs"
+    "Grey",
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17741,7 +17743,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17771,8 +17773,8 @@
     "Magicien"
    ],
    "hair": [
-    "Gris",
-    "Noirs"
+    "Grey",
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17804,7 +17806,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17859,7 +17861,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17889,7 +17891,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "The Witcher",
    "developer": "CD Projekt Red",
@@ -17928,7 +17930,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
@@ -17997,7 +17999,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
@@ -18063,7 +18065,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
@@ -18166,7 +18168,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
@@ -18393,7 +18395,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
@@ -18610,7 +18612,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18645,7 +18647,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18680,7 +18682,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18716,7 +18718,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18782,7 +18784,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18906,7 +18908,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -18942,7 +18944,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -19039,7 +19041,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -19104,7 +19106,7 @@
     "Religieux"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -19135,7 +19137,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -19902,7 +19904,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -20445,7 +20447,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20473,7 +20475,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20505,8 +20507,8 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs",
-    "Blancs"
+    "Black",
+    "White"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20541,7 +20543,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20610,8 +20612,8 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20678,7 +20680,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20713,8 +20715,8 @@
     "Tireur"
    ],
    "hair": [
-    "Blancs",
-    "Bruns"
+    "White",
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20749,8 +20751,8 @@
     "Tireur"
    ],
    "hair": [
-    "Chauve",
-    "Noirs"
+    "Bald",
+    "Black"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20782,7 +20784,7 @@
     "Espion"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20841,8 +20843,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Half-Life",
    "developer": "Gearbox Software",
@@ -20870,10 +20872,11 @@
     "Monde réel"
    ],
    "occupation": [
-    "Révolutionnaire"
+    "Révolutionnaire",
+    "Soldat"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20904,7 +20907,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20935,7 +20938,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -20968,8 +20971,8 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Blancs",
-    "Bruns"
+    "White",
+    "Brown"
    ],
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -21103,7 +21106,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Portal",
    "developer": "Valve",
@@ -21394,7 +21397,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21851,7 +21854,7 @@
     "Survivant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -21881,7 +21884,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -21914,7 +21917,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -21946,7 +21949,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -21979,8 +21982,8 @@
     "Employé"
    ],
    "hair": [
-    "Bruns",
-    "Chauve"
+    "Brown",
+    "Bald"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -22011,7 +22014,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -22042,7 +22045,7 @@
     "Prédateur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -22099,7 +22102,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Left 4 Dead",
    "developer": "Valve",
@@ -22131,7 +22134,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22161,7 +22164,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22218,7 +22221,7 @@
     "Aventurier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22303,7 +22306,7 @@
     "Artiste"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22386,7 +22389,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22418,7 +22421,7 @@
     "Aventurier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22448,7 +22451,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22479,7 +22482,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
@@ -22703,7 +22706,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22730,7 +22733,7 @@
     "Justicier"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22783,7 +22786,7 @@
     "Policier"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22836,7 +22839,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22863,7 +22866,7 @@
     "Acteur"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22890,7 +22893,7 @@
     "Magicien"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -22942,7 +22945,7 @@
     "Cuisinier"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -23081,7 +23084,7 @@
     "Musicien"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -23158,7 +23161,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -23186,7 +23189,7 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -24114,7 +24117,7 @@
     "Magicien"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Warcraft",
    "developer": "Blizzard",
@@ -24140,7 +24143,7 @@
     "Garde"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Warcraft",
    "developer": "Blizzard",
@@ -24163,6 +24166,7 @@
     "Inconnu"
    ],
    "occupation": [
+    "Souverain",
     "Noble"
    ],
    "hair": [
@@ -24277,8 +24281,8 @@
     "Soldat"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24312,7 +24316,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24370,8 +24374,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24457,10 +24461,11 @@
    ],
    "occupation": [
     "Soldat",
+    "Conseiller",
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24489,7 +24494,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24520,7 +24525,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "StarCraft",
    "developer": "Blizzard",
@@ -24599,8 +24604,8 @@
    ],
    "occupation": [
     "Politicien",
-    "Dirigeant",
-    "Terroriste"
+    "Conseiller",
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "StarCraft",
@@ -24737,7 +24742,7 @@
     "Destructeur"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Diablo",
    "developer": "Blizzard",
@@ -25060,7 +25065,7 @@
     "Héros"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25088,7 +25093,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25165,7 +25170,7 @@
     "Noble"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25271,7 +25276,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25301,7 +25306,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25352,7 +25357,7 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25382,7 +25387,7 @@
     "Lancier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25414,7 +25419,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25443,7 +25448,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25474,7 +25479,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25510,7 +25515,7 @@
     "Artiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25541,7 +25546,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25571,7 +25576,7 @@
     "Sportif"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25602,7 +25607,7 @@
     "Détective"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25635,7 +25640,7 @@
     "Justicier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25666,7 +25671,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25730,7 +25735,7 @@
     "Combattant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25790,7 +25795,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25821,7 +25826,7 @@
     "Médecin"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25852,7 +25857,7 @@
     "Justicier"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25882,7 +25887,7 @@
     "Avocat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25909,7 +25914,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25970,7 +25975,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26027,7 +26032,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26085,7 +26090,7 @@
     "Ninja"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26143,7 +26148,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26176,7 +26181,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26207,7 +26212,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26267,7 +26272,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26298,7 +26303,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26328,7 +26333,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26356,7 +26361,7 @@
     "Lancier"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26388,7 +26393,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26420,7 +26425,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26446,7 +26451,7 @@
     "Combattant"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26478,7 +26483,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26509,7 +26514,7 @@
     "Domestique"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26560,7 +26565,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26586,7 +26591,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26613,7 +26618,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26667,7 +26672,7 @@
     "Médecin"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26695,7 +26700,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26722,7 +26727,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26748,7 +26753,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26774,7 +26779,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26800,7 +26805,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26826,7 +26831,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26852,7 +26857,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26878,7 +26883,7 @@
     "Soldat"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26904,7 +26909,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26930,7 +26935,7 @@
     "Cuisinier"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26956,7 +26961,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26982,8 +26987,8 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns",
-    "Roux"
+    "Brown",
+    "Ginger"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -27013,7 +27018,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -27039,7 +27044,7 @@
     "Soldat"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -27065,7 +27070,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -27096,7 +27101,7 @@
     "Tireur"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27149,7 +27154,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27176,7 +27181,7 @@
     "Archer"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27202,7 +27207,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27231,7 +27236,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27308,7 +27313,7 @@
     "Magicien"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27409,7 +27414,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27435,7 +27440,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27461,7 +27466,7 @@
     "Aventurier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27537,7 +27542,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -27564,7 +27569,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -27674,7 +27679,7 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -27707,7 +27712,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -27741,7 +27746,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -27771,7 +27776,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -27825,7 +27830,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -27855,7 +27860,7 @@
     "Aucune"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -27884,7 +27889,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Mega Man",
    "developer": "Capcom",
@@ -28300,8 +28305,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Argentés",
-    "Noirs"
+    "Silver",
+    "Black"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28333,8 +28338,8 @@
     "Épéiste"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28364,7 +28369,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28396,7 +28401,7 @@
     "Tireur"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28426,7 +28431,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Castlevania",
    "developer": "Eighting",
@@ -28456,7 +28461,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28487,7 +28492,7 @@
     "Lancier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28518,7 +28523,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Castlevania",
    "developer": "Eighting",
@@ -28548,7 +28553,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28579,7 +28584,7 @@
     "Pirate"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28611,7 +28616,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28669,7 +28674,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28758,7 +28763,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28818,7 +28823,7 @@
     "Noble"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Castlevania",
    "developer": "Konami",
@@ -28880,7 +28885,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -28911,7 +28916,7 @@
     "Écrivain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -28942,7 +28947,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -28973,7 +28978,7 @@
     "Employé"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29005,7 +29010,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29038,7 +29043,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Silent Hill",
    "developer": "NeoBards Entertainment",
@@ -29069,7 +29074,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29244,7 +29249,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29272,7 +29277,7 @@
     "Artiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29390,8 +29395,8 @@
     "Religieux"
    ],
    "hair": [
-    "Roux",
-    "Blonds"
+    "Ginger",
+    "Blond"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29424,7 +29429,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29457,7 +29462,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29516,7 +29521,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29577,7 +29582,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29638,7 +29643,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29729,7 +29734,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -29820,7 +29825,7 @@
     "Sportif"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -29853,7 +29858,7 @@
     "Avocat"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -29886,8 +29891,8 @@
     "Avocat"
    ],
    "hair": [
-    "Argentés",
-    "Bleus"
+    "Silver",
+    "Blue"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -29918,7 +29923,7 @@
     "Avocat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -29950,7 +29955,7 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -29980,7 +29985,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30012,7 +30017,7 @@
     "Artiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30046,7 +30051,7 @@
     "Détective"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30076,10 +30081,11 @@
     "Monde réel"
    ],
    "occupation": [
+    "Voleur",
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30111,7 +30117,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30139,8 +30145,8 @@
     "Avocat"
    ],
    "hair": [
-    "Noirs",
-    "Blancs"
+    "Black",
+    "White"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30170,7 +30176,7 @@
     "Avocat"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30201,8 +30207,8 @@
     "Avocat"
    ],
    "hair": [
-    "Roux",
-    "Rouges"
+    "Ginger",
+    "Red"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30235,8 +30241,8 @@
     "Détective"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30269,7 +30275,7 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30301,7 +30307,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30331,7 +30337,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30362,8 +30368,8 @@
     "Avocat"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30396,7 +30402,7 @@
     "Avocat"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30429,8 +30435,8 @@
     "Avocat"
    ],
    "hair": [
-    "Chauve",
-    "Noirs"
+    "Bald",
+    "Black"
    ],
    "franchise": "Ace Attorney",
    "developer": "Capcom",
@@ -30468,7 +30474,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30501,7 +30507,7 @@
     "Détective"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30533,7 +30539,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30562,7 +30568,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30594,7 +30600,7 @@
     "Policier"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30626,7 +30632,7 @@
     "Musicien"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30656,7 +30662,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30689,7 +30695,7 @@
     "Professeur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30722,7 +30728,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30755,7 +30761,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30788,7 +30794,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30820,7 +30826,7 @@
     "Policier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30849,7 +30855,7 @@
     "Politicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30881,7 +30887,7 @@
     "Détective"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30911,7 +30917,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30941,7 +30947,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -30974,7 +30980,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -31006,7 +31012,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -31036,7 +31042,7 @@
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -31068,8 +31074,8 @@
     "Soldat"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "Professor Layton",
    "developer": "Level-5",
@@ -31107,8 +31113,8 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31139,7 +31145,7 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31169,7 +31175,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31201,7 +31207,7 @@
     "Serveur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31232,7 +31238,7 @@
     "Détective"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31263,7 +31269,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31294,8 +31300,8 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs",
-    "Blonds"
+    "Black",
+    "Blond"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31330,8 +31336,8 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31362,7 +31368,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31394,7 +31400,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31425,7 +31431,7 @@
     "Politicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Sega",
@@ -31457,7 +31463,7 @@
     "Détective"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31489,8 +31495,8 @@
     "Détective"
    ],
    "hair": [
-    "Noirs",
-    "Roux"
+    "Black",
+    "Ginger"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31521,8 +31527,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31553,7 +31559,7 @@
     "Avocat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31584,7 +31590,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31614,7 +31620,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31645,7 +31651,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31676,7 +31682,7 @@
     "Acteur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31709,8 +31715,8 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Like a Dragon",
    "developer": "Ryū ga Gotoku Studio",
@@ -31741,7 +31747,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31771,7 +31777,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31800,7 +31806,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31833,7 +31839,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31860,7 +31866,7 @@
     "Chasseur de primes"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31887,7 +31893,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31919,7 +31925,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31970,7 +31976,7 @@
     "Musicien"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -31996,7 +32002,7 @@
     "Médecin"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32026,7 +32032,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32056,7 +32062,7 @@
     "Tireur"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32087,7 +32093,7 @@
     "Chevalier"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32140,7 +32146,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32167,7 +32173,7 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32199,7 +32205,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32231,7 +32237,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32261,7 +32267,7 @@
     "Médecin"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32291,7 +32297,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Guilty Gear",
    "developer": "Arc System Works",
@@ -32352,8 +32358,8 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs",
-    "Bruns"
+    "Black",
+    "Brown"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32416,7 +32422,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32447,7 +32453,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32532,8 +32538,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Argentés",
-    "Blancs"
+    "Silver",
+    "White"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32564,7 +32570,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32593,7 +32599,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32676,7 +32682,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32738,7 +32744,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32855,7 +32861,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32912,7 +32918,7 @@
     "Ninja"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -32941,7 +32947,7 @@
     "Ninja"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -32975,7 +32981,7 @@
     "Ninja"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Tecmo",
@@ -33003,7 +33009,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33033,7 +33039,7 @@
     "Musicien"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33066,8 +33072,8 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns",
-    "Blonds"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33095,7 +33101,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33124,7 +33130,7 @@
     "Assassin"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33151,7 +33157,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33179,7 +33185,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33207,7 +33213,7 @@
     "Ninja"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33236,7 +33242,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33266,7 +33272,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33294,7 +33300,7 @@
     "Espion"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33324,7 +33330,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33351,7 +33357,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33383,7 +33389,7 @@
     "Religieux"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33410,7 +33416,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33442,7 +33448,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Sega",
@@ -33471,7 +33477,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead or Alive",
    "developer": "Team Ninja",
@@ -33529,7 +33535,7 @@
     "Combattant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -33559,7 +33565,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -33612,7 +33618,7 @@
     "Combattant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -33698,7 +33704,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -34057,7 +34063,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34090,7 +34096,7 @@
     "Lancier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34123,7 +34129,7 @@
     "Lancier"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34235,7 +34241,7 @@
     "Lancier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34322,7 +34328,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34351,7 +34357,7 @@
     "Archer"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34383,7 +34389,7 @@
     "Lancier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34412,7 +34418,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34446,7 +34452,7 @@
     "Magicien"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34479,7 +34485,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34507,7 +34513,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34536,7 +34542,7 @@
     "Lancier"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34565,7 +34571,7 @@
     "Magicien"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34647,7 +34653,7 @@
     "Criminel"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34681,7 +34687,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34719,7 +34725,7 @@
     "Criminel"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34754,7 +34760,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34787,7 +34793,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34820,7 +34826,7 @@
     "Criminel"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34976,7 +34982,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35010,7 +35016,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35048,7 +35054,7 @@
     "Garde"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35108,7 +35114,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35288,7 +35294,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35319,7 +35325,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35434,7 +35440,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35466,7 +35472,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35635,7 +35641,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35752,7 +35758,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35783,7 +35789,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35846,8 +35852,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux",
-    "Bruns"
+    "Ginger",
+    "Brown"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35875,7 +35881,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -35929,8 +35935,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Argentés",
-    "Noirs"
+    "Silver",
+    "Black"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -35957,7 +35963,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -36141,7 +36147,7 @@
     "Combattant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -36175,7 +36181,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -36293,7 +36299,7 @@
     "Érudit"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -36482,7 +36488,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -36545,7 +36551,7 @@
     "Acteur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -36577,7 +36583,7 @@
     "Policier"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -36609,7 +36615,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -36702,8 +36708,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "Undertale",
    "developer": "Toby Fox",
@@ -37248,7 +37254,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Minecraft",
    "developer": "Mojang",
@@ -37913,7 +37919,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
@@ -38045,7 +38051,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Scott Cawthon",
@@ -38167,7 +38173,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
@@ -38229,7 +38235,7 @@
     "Musicien"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Five Nights at Freddy's",
    "developer": "Steel Wool Studios",
@@ -38482,7 +38488,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38512,7 +38518,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38541,7 +38547,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38573,7 +38579,7 @@
     "Politicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38636,8 +38642,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38671,7 +38677,7 @@
     "Religieux"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "BioShock",
    "developer": "Irrational Games",
@@ -38759,7 +38765,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -38871,7 +38877,7 @@
     "Chasseur de trésor"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -38955,7 +38961,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Call of Duty",
    "developer": "Infinity Ward",
@@ -38991,7 +38997,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39023,7 +39029,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Call of Duty",
    "developer": "Infinity Ward",
@@ -39056,7 +39062,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39088,7 +39094,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39154,8 +39160,8 @@
     "Archer"
    ],
    "hair": [
-    "Bruns",
-    "Blancs"
+    "Brown",
+    "White"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39182,7 +39188,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Call of Duty",
    "developer": "Timi Studios",
@@ -39216,7 +39222,7 @@
     "Tireur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39247,7 +39253,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Call of Duty",
    "developer": "Treyarch",
@@ -39279,7 +39285,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Call of Duty",
    "developer": "Infinity Ward",
@@ -39368,7 +39374,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Call of Duty",
    "developer": "Infinity Ward",
@@ -39454,7 +39460,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39481,7 +39487,7 @@
     "Astronaute"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39510,7 +39516,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39539,7 +39545,7 @@
     "Marin"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39566,7 +39572,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39593,7 +39599,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39620,7 +39626,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39649,7 +39655,7 @@
     "Garde"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39676,7 +39682,7 @@
     "Médecin"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39703,7 +39709,7 @@
     "Pilote"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39760,7 +39766,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39787,7 +39793,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39814,7 +39820,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39843,7 +39849,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39948,7 +39954,7 @@
     "Voyageur temporel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -39974,7 +39980,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40073,7 +40079,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40099,7 +40105,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40125,7 +40131,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40151,7 +40157,7 @@
     "Serveur"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40179,7 +40185,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "EarthBound",
    "developer": "Nintendo",
@@ -40208,7 +40214,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40360,7 +40366,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40388,7 +40394,7 @@
     "Souverain"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
@@ -40416,7 +40422,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
@@ -40555,9 +40561,9 @@
     "Religieux"
    ],
    "hair": [
-    "Noirs",
-    "Bruns",
-    "Violets"
+    "Black",
+    "Brown",
+    "Purple"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40588,8 +40594,8 @@
     "Magicien"
    ],
    "hair": [
-    "Roux",
-    "Blonds"
+    "Ginger",
+    "Blond"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40619,7 +40625,7 @@
     "Domestique"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40650,7 +40656,7 @@
     "Garde"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40709,7 +40715,7 @@
     "Religieux"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40738,7 +40744,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40773,7 +40779,7 @@
     "Cuisinier"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40836,7 +40842,7 @@
     "Aucune"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40862,7 +40868,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40892,7 +40898,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40922,7 +40928,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40952,7 +40958,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40981,7 +40987,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41011,7 +41017,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41041,7 +41047,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41071,7 +41077,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41099,7 +41105,7 @@
     "Domestique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41129,7 +41135,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -41264,7 +41270,7 @@
     "Domestique"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41290,7 +41296,7 @@
     "Chômeur"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41316,7 +41322,7 @@
     "Chômeur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41342,7 +41348,7 @@
     "Serveur"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41369,7 +41375,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41395,7 +41401,7 @@
     "Médecin"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41423,7 +41429,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41449,7 +41455,7 @@
     "Écrivain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41475,7 +41481,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41501,7 +41507,7 @@
     "Employé"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41528,7 +41534,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41554,7 +41560,7 @@
     "Employé"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41609,7 +41615,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41635,7 +41641,7 @@
     "Commerçant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41661,7 +41667,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41687,7 +41693,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41713,7 +41719,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41742,7 +41748,7 @@
     "Retraité"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Stardew Valley",
    "developer": "ConcernedApe",
@@ -41954,7 +41960,7 @@
     "Chevalier"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Baldur's Gate",
    "developer": "Larian Studios",
@@ -42271,7 +42277,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42305,8 +42311,8 @@
     "Criminel"
    ],
    "hair": [
-    "Blonds",
-    "Noirs"
+    "Blond",
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42401,8 +42407,8 @@
     "Journaliste"
    ],
    "hair": [
-    "Verts",
-    "Roses"
+    "Green",
+    "Pink"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42436,7 +42442,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42468,7 +42474,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42502,7 +42508,7 @@
     "Musicien"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42532,7 +42538,7 @@
     "Policier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42564,8 +42570,8 @@
     "Commerçant"
    ],
    "hair": [
-    "Bleus",
-    "Gris"
+    "Blue",
+    "Grey"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42596,7 +42602,7 @@
     "Sportif"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42629,8 +42635,8 @@
     "Serveur"
    ],
    "hair": [
-    "Noirs",
-    "Rouges"
+    "Black",
+    "Red"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42660,7 +42666,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42690,7 +42696,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42717,7 +42723,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42776,7 +42782,7 @@
     "Mercenaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42807,7 +42813,7 @@
     "Combattant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42839,7 +42845,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42870,7 +42876,7 @@
     "Chasseur de primes"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Cyberpunk 2077",
    "developer": "CD Projekt Red",
@@ -42902,7 +42908,7 @@
     "Chasseur"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -42936,7 +42942,7 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
@@ -43026,7 +43032,7 @@
     "Espion"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Deus Ex",
    "developer": "Eidos Montréal",
@@ -43305,7 +43311,7 @@
     "Détective"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43333,7 +43339,7 @@
     "Domestique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43362,7 +43368,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43396,8 +43402,8 @@
     "Détective"
    ],
    "hair": [
-    "Gris",
-    "Blonds"
+    "Grey",
+    "Blond"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43425,8 +43431,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns",
-    "Rouges"
+    "Brown",
+    "Red"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43456,7 +43462,7 @@
     "Artiste"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43484,7 +43490,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43514,7 +43520,7 @@
     "Détective"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43547,7 +43553,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43574,7 +43580,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43601,7 +43607,7 @@
     "Domestique"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43628,7 +43634,7 @@
     "Professeur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43655,7 +43661,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43688,7 +43694,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43720,7 +43726,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43749,7 +43755,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43779,7 +43785,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Detroit: Become Human",
    "developer": "Quantic Dream",
@@ -43814,7 +43820,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -43848,8 +43854,8 @@
     "Chômeur"
    ],
    "hair": [
-    "Bleus",
-    "Bruns"
+    "Blue",
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -43879,7 +43885,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -43912,7 +43918,7 @@
     "Musicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Life Is Strange",
    "developer": "Deck Nine",
@@ -43943,7 +43949,7 @@
     "Artiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -43977,7 +43983,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -44010,7 +44016,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -44042,7 +44048,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -44077,7 +44083,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -44107,7 +44113,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -44137,8 +44143,8 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs",
-    "Bleus"
+    "Black",
+    "Blue"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -44166,7 +44172,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Wario",
    "developer": "Treasure",
@@ -44193,7 +44199,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -44219,7 +44225,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Wario",
    "developer": "Nintendo",
@@ -44247,7 +44253,7 @@
     "Ninja"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Wario",
    "developer": "Treasure",
@@ -44280,7 +44286,7 @@
     "Espion"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -44629,7 +44635,7 @@
     "Sportif"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44667,8 +44673,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns",
-    "Argentés"
+    "Brown",
+    "Silver"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44706,7 +44712,7 @@
     "Voyageur temporel"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "Akabur",
@@ -44748,7 +44754,7 @@
     "Sportif"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44783,8 +44789,8 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs",
-    "Chauve"
+    "Black",
+    "Bald"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44821,7 +44827,7 @@
     "Professeur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44859,7 +44865,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44893,8 +44899,8 @@
     "Sportif"
    ],
    "hair": [
-    "Blancs",
-    "Blonds"
+    "White",
+    "Blond"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44931,7 +44937,7 @@
     "Employé"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -44965,7 +44971,7 @@
     "Justicier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45000,7 +45006,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45030,7 +45036,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45061,7 +45067,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45091,7 +45097,7 @@
     "Professeur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45155,7 +45161,7 @@
     "Garde"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45217,7 +45223,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hogwarts Legacy",
    "developer": "KnowWonder",
@@ -45271,8 +45277,8 @@
     "Criminel"
    ],
    "hair": [
-    "Bruns",
-    "Rouges"
+    "Brown",
+    "Red"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45300,8 +45306,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs",
-    "Bleus"
+    "Black",
+    "Blue"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45354,7 +45360,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45383,7 +45389,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45411,7 +45417,7 @@
     "Sportif"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45440,8 +45446,8 @@
     "Mercenaire"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45469,7 +45475,7 @@
     "Employé"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45498,8 +45504,8 @@
     "Musicien"
    ],
    "hair": [
-    "Bruns",
-    "Bleus"
+    "Brown",
+    "Blue"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45533,7 +45539,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45561,7 +45567,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45617,7 +45623,7 @@
     "Assassin"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45646,7 +45652,7 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45675,7 +45681,7 @@
     "Ninja"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45736,7 +45742,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -45769,7 +45775,7 @@
     "Voleur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -45799,7 +45805,7 @@
     "Domestique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -45835,7 +45841,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -45876,7 +45882,7 @@
     "Terroriste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -45936,7 +45942,7 @@
     "Terroriste"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -45968,7 +45974,7 @@
     "Prostitué"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46002,8 +46008,8 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46040,7 +46046,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46076,7 +46082,7 @@
     "Terroriste"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46110,8 +46116,8 @@
     "Ninja"
    ],
    "hair": [
-    "Gris",
-    "Blancs"
+    "Grey",
+    "White"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46148,7 +46154,7 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46181,7 +46187,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46226,7 +46232,7 @@
     "Détective"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46273,7 +46279,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46342,7 +46348,7 @@
     "Assassin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46383,7 +46389,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46421,7 +46427,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46458,8 +46464,8 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs",
-    "Blancs"
+    "Black",
+    "White"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46528,7 +46534,7 @@
     "Médecin"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Batman: Arkham",
    "developer": "Rocksteady Studios",
@@ -46650,7 +46656,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -46680,7 +46686,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
@@ -46712,7 +46718,7 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Doom",
    "developer": "id Software",
@@ -46948,7 +46954,7 @@
     "Avocat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Syberia",
    "developer": "Microids",
@@ -47036,8 +47042,8 @@
     "Chasseur de monstres"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -47213,7 +47219,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
@@ -47274,7 +47280,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47847,7 +47853,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Doki Doki Literature Club",
    "developer": "Team Salvato",
@@ -47878,7 +47884,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Doki Doki Literature Club",
    "developer": "Team Salvato",
@@ -47906,7 +47912,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Roses"
+    "Pink"
    ],
    "franchise": "Doki Doki Literature Club",
    "developer": "Team Salvato",
@@ -47936,7 +47942,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Doki Doki Literature Club",
    "developer": "Team Salvato",
@@ -47994,7 +48000,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48054,7 +48060,7 @@
     "Soldat"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48087,7 +48093,7 @@
     "Garde"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48146,7 +48152,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bleus"
+    "Blue"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48176,7 +48182,7 @@
     "Magicien"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48208,7 +48214,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48238,7 +48244,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48269,7 +48275,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48299,7 +48305,7 @@
     "Soldat"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48325,7 +48331,7 @@
     "Compagnon"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48418,7 +48424,7 @@
     "Politicien"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48478,7 +48484,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
@@ -48507,8 +48513,8 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Rouges",
-    "Blonds"
+    "Red",
+    "Blond"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -48569,7 +48575,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -48629,7 +48635,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -48660,7 +48666,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -48690,7 +48696,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -48774,7 +48780,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -48807,8 +48813,8 @@
     "Soldat"
    ],
    "hair": [
-    "Gris",
-    "Noirs"
+    "Grey",
+    "Black"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -48861,7 +48867,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tomb Raider",
    "developer": "Core Design",
@@ -48889,7 +48895,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -48917,7 +48923,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -48950,8 +48956,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -48985,7 +48991,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -49014,7 +49020,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -49041,7 +49047,7 @@
     "Archéologue"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Tomb Raider",
    "developer": "Crystal Dynamics",
@@ -49070,7 +49076,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49100,7 +49106,7 @@
     "Combattant"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49128,8 +49134,8 @@
     "Souverain"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49158,7 +49164,7 @@
     "Archer"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49185,7 +49191,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49212,7 +49218,7 @@
     "Lancier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49242,7 +49248,7 @@
     "Garde"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49269,7 +49275,7 @@
     "Souverain"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49295,7 +49301,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
@@ -49326,7 +49332,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49358,7 +49364,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49388,8 +49394,8 @@
     "Tireur d'élite"
    ],
    "hair": [
-    "Gris",
-    "Noirs"
+    "Grey",
+    "Black"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49415,7 +49421,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49472,8 +49478,8 @@
     "Professeur"
    ],
    "hair": [
-    "Noirs",
-    "Chauve"
+    "Black",
+    "Bald"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49504,7 +49510,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Gears of War",
    "developer": "The Coalition",
@@ -49566,7 +49572,7 @@
     "Soldat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49625,7 +49631,7 @@
     "Magicien"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Gears of War",
    "developer": "Epic Games",
@@ -49653,7 +49659,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49685,7 +49691,7 @@
     "Archer"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49719,8 +49725,8 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds",
-    "Noirs"
+    "Blond",
+    "Black"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49752,7 +49758,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49787,7 +49793,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49821,7 +49827,7 @@
     "Tireur"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49854,7 +49860,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49887,7 +49893,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49922,7 +49928,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49952,8 +49958,8 @@
     "Tireur"
    ],
    "hair": [
-    "Rouges",
-    "Gris"
+    "Red",
+    "Grey"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -49984,7 +49990,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Far Cry",
    "developer": "Crytek",
@@ -50033,7 +50039,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50060,7 +50066,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50087,7 +50093,7 @@
     "Garde"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50186,7 +50192,7 @@
     "Érudit"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50211,7 +50217,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50263,7 +50269,7 @@
     "Lancier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50293,7 +50299,7 @@
     "Justicier"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50322,7 +50328,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50410,7 +50416,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50441,8 +50447,8 @@
     "Magicien"
    ],
    "hair": [
-    "Blonds",
-    "Violets"
+    "Blond",
+    "Purple"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50469,7 +50475,7 @@
     "Protecteur"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50498,7 +50504,7 @@
     "Magicien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50525,8 +50531,8 @@
     "Magicien"
    ],
    "hair": [
-    "Blancs",
-    "Bleus"
+    "White",
+    "Blue"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50554,8 +50560,8 @@
     "Noble"
    ],
    "hair": [
-    "Argentés",
-    "Blonds"
+    "Silver",
+    "Blond"
    ],
    "franchise": "Bayonetta",
    "developer": "PlatinumGames",
@@ -50582,8 +50588,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds",
-    "Argentés"
+    "Blond",
+    "Silver"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50612,8 +50618,8 @@
     "Commerçant"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50642,8 +50648,8 @@
     "Commerçant"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50726,8 +50732,8 @@
     "Aucune"
    ],
    "hair": [
-    "Blancs",
-    "Bleus"
+    "White",
+    "Blue"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50754,8 +50760,8 @@
     "Aucune"
    ],
    "hair": [
-    "Blancs",
-    "Bleus"
+    "White",
+    "Blue"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50815,8 +50821,8 @@
     "Soldat"
    ],
    "hair": [
-    "Verts",
-    "Bleus"
+    "Green",
+    "Blue"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50843,7 +50849,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -50870,7 +50876,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Nier",
    "developer": "Cavia",
@@ -51100,7 +51106,7 @@
     "Noble"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -51767,7 +51773,7 @@
     "Aucune"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -51797,7 +51803,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -51823,7 +51829,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
@@ -51849,8 +51855,8 @@
     "Souverain"
    ],
    "hair": [
-    "Rouges",
-    "Verts"
+    "Red",
+    "Green"
    ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
@@ -51879,7 +51885,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kid Icarus",
    "developer": "Nintendo",
@@ -51931,7 +51937,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
@@ -52094,7 +52100,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -52305,8 +52311,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Chauve",
-    "Noirs"
+    "Bald",
+    "Black"
    ],
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -52337,7 +52343,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52368,7 +52374,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52488,7 +52494,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52515,7 +52521,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52614,7 +52620,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Violets"
+    "Purple"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52643,7 +52649,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52672,7 +52678,7 @@
     "Aucune"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52701,7 +52707,7 @@
     "Employé"
    ],
    "hair": [
-    "Argentés"
+    "Silver"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52760,7 +52766,7 @@
     "Souverain"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52789,7 +52795,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52900,7 +52906,7 @@
     "Souverain"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52929,7 +52935,7 @@
     "Musicien"
    ],
    "hair": [
-    "Verts"
+    "Green"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -52985,7 +52991,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -53042,7 +53048,7 @@
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -53103,7 +53109,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53131,7 +53137,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53165,7 +53171,7 @@
     "Chasseur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53197,7 +53203,7 @@
     "Pirate"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53232,7 +53238,7 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53262,7 +53268,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53292,7 +53298,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53320,7 +53326,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53352,7 +53358,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53386,7 +53392,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Horizon",
    "developer": "Guerrilla Games",
@@ -53477,7 +53483,7 @@
     "Aucune"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dishonored",
    "developer": "Arkane Studios",
@@ -53505,7 +53511,8 @@
     "Tyvia"
    ],
    "occupation": [
-    "Médecin"
+    "Médecin",
+    "Dirigeant"
    ],
    "hair": null,
    "franchise": "Dishonored",
@@ -53686,8 +53693,8 @@
     "Serveur"
    ],
    "hair": [
-    "Bruns",
-    "Blonds"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53720,7 +53727,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53752,7 +53759,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53783,7 +53790,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53812,7 +53819,7 @@
     "Serveur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53845,7 +53852,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Deck Nine",
@@ -53876,7 +53883,7 @@
     "Serveur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Life Is Strange",
    "developer": "Deck Nine",
@@ -53908,7 +53915,7 @@
     "Écrivain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Life Is Strange",
    "developer": "Deck Nine",
@@ -53937,7 +53944,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -53971,7 +53978,7 @@
     "Criminel"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -54001,7 +54008,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -54031,7 +54038,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Life Is Strange",
    "developer": "Don't Nod",
@@ -54118,7 +54125,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -54149,7 +54156,7 @@
     "Combattant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -54343,7 +54350,7 @@
     "Pilote"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -54429,7 +54436,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -54461,7 +54468,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -54638,7 +54645,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54668,7 +54675,7 @@
     "Sportif"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54698,8 +54705,8 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54728,7 +54735,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54761,7 +54768,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54791,7 +54798,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54821,7 +54828,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54854,7 +54861,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54881,8 +54888,8 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54913,7 +54920,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -54943,7 +54950,7 @@
     "Survivant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Dying Light",
    "developer": "Techland",
@@ -55556,7 +55563,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -55586,7 +55593,7 @@
     "Avocat"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -56060,7 +56067,7 @@
     "Noble"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56119,8 +56126,8 @@
     "Artiste"
    ],
    "hair": [
-    "Gris",
-    "Blonds"
+    "Grey",
+    "Blond"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56152,7 +56159,7 @@
     "Noble"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56186,7 +56193,7 @@
     "Noble"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56217,7 +56224,7 @@
     "Domestique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56248,7 +56255,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56281,7 +56288,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56313,7 +56320,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Kingdom Come: Deliverance",
    "developer": "Warhorse Studios",
@@ -56345,7 +56352,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56378,7 +56385,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56408,8 +56415,8 @@
     "Criminel"
    ],
    "hair": [
-    "Gris",
-    "Blonds"
+    "Grey",
+    "Blond"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56558,7 +56565,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56588,7 +56595,7 @@
     "Tireur"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56648,7 +56655,7 @@
     "Archer"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56678,7 +56685,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56941,7 +56948,7 @@
     "Tireur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -56971,7 +56978,7 @@
     "Garde"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -56999,7 +57006,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57030,7 +57037,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57060,7 +57067,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57087,7 +57094,7 @@
     "Criminel"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57117,7 +57124,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57148,8 +57155,8 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57205,7 +57212,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Mirror's Edge",
    "developer": "DICE",
@@ -57440,7 +57447,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57468,7 +57475,7 @@
     "Chauffeur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57498,7 +57505,7 @@
     "Souverain"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
@@ -57590,7 +57597,7 @@
     "Médecin"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57617,7 +57624,7 @@
     "Noble"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
@@ -57648,7 +57655,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57675,7 +57682,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57739,7 +57746,7 @@
     "Domestique"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
@@ -57882,7 +57889,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Syberia",
    "developer": "Microids",
@@ -58344,8 +58351,8 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns",
-    "Blonds"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Unreal",
    "developer": "Epic Games",
@@ -59216,7 +59223,7 @@
     "Médecin"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59248,7 +59255,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59281,7 +59288,7 @@
     "Tireur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59313,7 +59320,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59345,7 +59352,7 @@
     "Pilote"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59377,7 +59384,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59407,8 +59414,8 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59440,7 +59447,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59474,7 +59481,7 @@
     "Tireur"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59537,7 +59544,7 @@
     "Tireur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Space",
    "developer": "Visceral Games",
@@ -59770,8 +59777,8 @@
     "Livreur"
    ],
    "hair": [
-    "Gris",
-    "Bruns"
+    "Grey",
+    "Brown"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59797,11 +59804,12 @@
    ],
    "occupation": [
     "Espion",
-    "Dirigeant"
+    "Dirigeant",
+    "Politicien"
    ],
    "hair": [
-    "Noirs",
-    "Gris"
+    "Black",
+    "Grey"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59834,8 +59842,8 @@
     "Terroriste"
    ],
    "hair": [
-    "Bruns",
-    "Blonds"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59862,7 +59870,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59891,7 +59899,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59919,7 +59927,7 @@
     "Médecin"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59946,7 +59954,7 @@
     "Livreur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -59973,7 +59981,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -60002,7 +60010,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -60033,8 +60041,8 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -60061,8 +60069,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Chauve",
-    "Blonds"
+    "Bald",
+    "Blond"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -60089,7 +60097,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Death Stranding",
    "developer": "Kojima Productions",
@@ -60718,7 +60726,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -61408,7 +61416,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61434,7 +61442,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61460,7 +61468,7 @@
     "Médecin"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61486,7 +61494,7 @@
     "Fermier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61512,7 +61520,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61538,7 +61546,7 @@
     "Acteur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61564,7 +61572,7 @@
     "Cuisinier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61616,8 +61624,8 @@
     "Scientifique"
    ],
    "hair": [
-    "Noirs",
-    "Bleus"
+    "Black",
+    "Blue"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61643,7 +61651,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61670,7 +61678,7 @@
     "Écrivain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "My Time at Portia / Sandrock",
    "developer": "Pathea Games",
@@ -61749,7 +61757,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Stanley Parable",
    "developer": "Crows Crows Crows",
@@ -61936,7 +61944,7 @@
     "Combattant"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -61966,7 +61974,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -61996,7 +62004,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62028,7 +62036,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62059,7 +62067,7 @@
     "Assassin"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62091,7 +62099,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62123,7 +62131,7 @@
     "Garde"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62205,7 +62213,7 @@
     "Survivant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62233,7 +62241,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62264,7 +62272,7 @@
     "Survivant"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62940,8 +62948,8 @@
     "Chevalier"
    ],
    "hair": [
-    "Bruns",
-    "Noirs"
+    "Brown",
+    "Black"
    ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -63000,7 +63008,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -63080,7 +63088,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -63236,7 +63244,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63294,7 +63302,7 @@
     "Journaliste"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63325,7 +63333,7 @@
     "Chasseur de primes"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63382,7 +63390,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Chauve"
+    "Bald"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63412,7 +63420,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63470,8 +63478,8 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns",
-    "Chauve"
+    "Brown",
+    "Bald"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63501,8 +63509,8 @@
     "Médecin"
    ],
    "hair": [
-    "Chauve",
-    "Bruns"
+    "Bald",
+    "Brown"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63531,8 +63539,8 @@
     "Homme d'affaires"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63858,7 +63866,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -64315,7 +64323,7 @@
     "Souverain"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64393,7 +64401,7 @@
     "Souverain"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64472,7 +64480,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64528,7 +64536,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64558,7 +64566,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64588,7 +64596,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64618,7 +64626,7 @@
     "Informaticien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64651,7 +64659,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64681,7 +64689,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64712,7 +64720,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64743,7 +64751,7 @@
     "Employé"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64773,7 +64781,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64804,7 +64812,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64836,7 +64844,7 @@
     "Voleur"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64867,7 +64875,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64898,7 +64906,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -64929,7 +64937,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "The Alters",
    "developer": "11 bit studios",
@@ -65255,7 +65263,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -65282,7 +65290,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -65312,7 +65320,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -65367,7 +65375,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -66402,7 +66410,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66436,7 +66444,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66469,7 +66477,7 @@
     "Fermier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66503,7 +66511,7 @@
     "Employé"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66533,8 +66541,8 @@
     "Érudit"
    ],
    "hair": [
-    "Blonds",
-    "Gris"
+    "Blond",
+    "Grey"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66567,8 +66575,8 @@
     "Artiste"
    ],
    "hair": [
-    "Noirs",
-    "Rouges"
+    "Black",
+    "Red"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66599,7 +66607,7 @@
     "Serveur"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66632,8 +66640,8 @@
     "Ouvrier"
    ],
    "hair": [
-    "Bruns",
-    "Verts"
+    "Brown",
+    "Green"
    ],
    "franchise": "Lost Records: Bloom & Rage",
    "developer": "Don't Nod Montréal",
@@ -66725,7 +66733,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66755,7 +66763,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66784,7 +66792,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66814,8 +66822,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Violets",
-    "Gris"
+    "Purple",
+    "Grey"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66845,7 +66853,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66874,7 +66882,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66901,7 +66909,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66928,7 +66936,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66957,7 +66965,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -66988,7 +66996,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -67047,7 +67055,7 @@
     "Espion"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67076,7 +67084,7 @@
     "Professeur"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67109,7 +67117,7 @@
     "Noble"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67138,7 +67146,7 @@
     "Espion"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67203,7 +67211,7 @@
     "Espion"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67232,7 +67240,7 @@
     "Serveur"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67295,7 +67303,7 @@
     "Érudit"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67358,7 +67366,7 @@
     "Criminel"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67418,7 +67426,7 @@
     "Policier"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67474,7 +67482,7 @@
     "Survivant"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Sundered",
    "developer": "Thunder Lotus Games",
@@ -67673,8 +67681,8 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges",
-    "Bruns"
+    "Red",
+    "Brown"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67700,7 +67708,7 @@
     "Politicien"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67726,8 +67734,8 @@
     "Politicien"
    ],
    "hair": [
-    "Bleus",
-    "Bruns"
+    "Blue",
+    "Brown"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67780,8 +67788,8 @@
     "Détective"
    ],
    "hair": [
-    "Verts",
-    "Bruns"
+    "Green",
+    "Brown"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67809,7 +67817,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67837,7 +67845,7 @@
     "Artiste"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67865,7 +67873,7 @@
     "Révolutionnaire"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67893,7 +67901,7 @@
     "Soldat"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67923,7 +67931,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67952,7 +67960,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -67978,7 +67986,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Deponia",
    "developer": "Daedalic Entertainment",
@@ -68106,7 +68114,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68133,7 +68141,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68210,7 +68218,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "Myst",
    "developer": "Presto Studios",
@@ -68313,7 +68321,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
@@ -68368,7 +68376,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Roux"
+    "Ginger"
    ],
    "franchise": "Forgotton Anne",
    "developer": "ThroughLine Games",
@@ -69249,7 +69257,7 @@
     "Soldat"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69305,7 +69313,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69359,7 +69367,7 @@
     "Soldat"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69388,7 +69396,7 @@
     "Conseiller"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69451,7 +69459,7 @@
     "Scientifique"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "Amnesia",
    "developer": "The Chinese Room",
@@ -69483,7 +69491,7 @@
     "Artiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69543,7 +69551,7 @@
     "Noble"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69577,7 +69585,7 @@
     "Garde"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69667,7 +69675,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Blonds"
+    "Blond"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69697,7 +69705,7 @@
     "Médecin"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "Amnesia",
    "developer": "Frictional Games",
@@ -69754,7 +69762,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69782,7 +69790,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69810,7 +69818,7 @@
     "Voleur"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69844,7 +69852,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69872,7 +69880,7 @@
     "Ouvrier"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69903,7 +69911,7 @@
     "Magicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69935,7 +69943,7 @@
     "Religieux"
    ],
    "hair": [
-    "Gris"
+    "Grey"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -69963,7 +69971,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -70019,7 +70027,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -70050,7 +70058,7 @@
     "Épéiste"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
@@ -70076,7 +70084,7 @@
     "Inconnu"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "developer": "Rose City Games",
    "genres": [
@@ -70166,7 +70174,7 @@
     "Espion"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "developer": "Respawn Entertainment",
    "genres": [
@@ -70196,7 +70204,7 @@
     "Pilote"
    ],
    "hair": [
-    "Noirs"
+    "Black"
    ],
    "developer": "Respawn Entertainment",
    "genres": [
@@ -70226,8 +70234,8 @@
     "Mercenaire"
    ],
    "hair": [
-    "Bruns",
-    "Gris"
+    "Brown",
+    "Grey"
    ],
    "developer": "Respawn Entertainment",
    "genres": [
@@ -71574,7 +71582,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "developer": "Cavia",
    "genres": [
@@ -71602,7 +71610,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "developer": "Cavia",
    "genres": [
@@ -71630,7 +71638,7 @@
     "Soldat"
    ],
    "hair": [
-    "Blancs"
+    "White"
    ],
    "developer": "Cavia",
    "genres": [
@@ -71660,7 +71668,7 @@
     "Mécanicien"
    ],
    "hair": [
-    "Bruns"
+    "Brown"
    ],
    "developer": "Unknown Worlds",
    "genres": [
@@ -72751,7 +72759,7 @@
     "Dirigeant"
    ],
    "hair": [
-    "Rouges"
+    "Red"
    ],
    "developer": "Thunder Lotus Games",
    "genres": [

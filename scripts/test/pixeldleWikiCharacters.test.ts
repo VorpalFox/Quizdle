@@ -126,11 +126,11 @@ describe('introRoles', () => {
 describe('textHair', () => {
   it('SectionAppearance_Prioritaire', () => {
     const page = ['Her rival has [[Black|black]] hair.', '== Appearance ==', "She has long '''blonde hair''' tied in a ponytail.", '== Story ==', 'Text'].join('\n')
-    expect(textHair(page)?.colors).toEqual(['Blonds'])
+    expect(textHair(page)?.colors).toEqual(['Blond'])
   })
 
   it('SansSection_ToutLeTexte', () => {
-    expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Bruns'])
+    expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Brown'])
   })
 
   it('PasDeCheveux_Null', () => {
@@ -139,7 +139,7 @@ describe('textHair', () => {
 
   it('saute les phrases sur la conception (Wikipédia)', () => {
     const page = 'The original design had him with white hair. Mercy is a Swiss woman with long blonde hair.'
-    expect(textHair(page, DEVELOPMENT)?.colors).toEqual(['Blonds'])
+    expect(textHair(page, DEVELOPMENT)?.colors).toEqual(['Blond'])
     expect(textHair('The novel redesigns him with long red hair.', DEVELOPMENT)).toBeNull()
   })
 })

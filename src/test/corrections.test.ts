@@ -23,8 +23,8 @@ function makeSubject(): Subject {
     attributes,
     entries: [
       { id: '27', name: 'Killua Zoldyck', attributes: { gender: 'Homme', age: 12, hair: null } },
-      { id: '30', name: 'Gon Freecss', attributes: { gender: 'Homme', age: 12, hair: ['Noirs'] } },
-      { id: '31', name: 'Biscuit Krueger', attributes: { gender: null, age: 57, hair: ['Blonds'] } },
+      { id: '30', name: 'Gon Freecss', attributes: { gender: 'Homme', age: 12, hair: ['Black'] } },
+      { id: '31', name: 'Biscuit Krueger', attributes: { gender: null, age: 57, hair: ['Blond'] } },
     ],
   }
 }
@@ -34,8 +34,8 @@ const readJson = (file: URL) => JSON.parse(readFileSync(file, 'utf8')) as Manual
 describe('parseValue', () => {
   it('lit un nombre, une liste ou une valeur simple, et « - » pour vide', () => {
     expect(parseValue(age, '17')).toBe(17)
-    expect(parseValue(hair, 'Blancs, Noirs')).toEqual(['Blancs', 'Noirs'])
-    expect(parseValue(hair, 'Blancs/Blancs')).toEqual(['Blancs'])
+    expect(parseValue(hair, 'White, Black')).toEqual(['White', 'Black'])
+    expect(parseValue(hair, 'White/White')).toEqual(['White'])
     expect(parseValue(gender, ' Femme ')).toBe('Femme')
     expect(parseValue(age, '-')).toBeNull()
     expect(parseValue(hair, 'vide')).toBeNull()
@@ -65,26 +65,26 @@ describe('corrections depuis Discord', () => {
   it('edit écrit la correction et l\'applique sur place (réponse du jour et parties en cours comprises)', () => {
     const subject = makeSubject()
     const killua = subject.entries[0]!
-    const { value, unseen } = editAttribute(subject, killua, hair, 'Blancs', file)
+    const { value, unseen } = editAttribute(subject, killua, hair, 'White', file)
 
-    expect(value).toEqual(['Blancs'])
-    expect(killua.attributes.hair).toEqual(['Blancs'])
+    expect(value).toEqual(['White'])
+    expect(killua.attributes.hair).toEqual(['White'])
     expect(subject.entries[0]).toBe(killua)
-    expect(unseen).toEqual(['Blancs']) // personne d'autre n'a les cheveux blancs
-    expect(readJson(file).edit['27']).toEqual({ _nom: 'Killua Zoldyck', hair: { plus: ['Blancs'] } })
+    expect(unseen).toEqual(['White']) // personne d'autre n'a les cheveux blancs
+    expect(readJson(file).edit['27']).toEqual({ _nom: 'Killua Zoldyck', hair: { plus: ['White'] } })
 
     editAttribute(subject, killua, age, '14', file)
-    expect(readJson(file).edit['27']).toEqual({ _nom: 'Killua Zoldyck', hair: { plus: ['Blancs'] }, age: 14 })
+    expect(readJson(file).edit['27']).toEqual({ _nom: 'Killua Zoldyck', hair: { plus: ['White'] }, age: 14 })
   })
 
   it('edit d\'une liste : ajoute et retire sans toucher au reste, cumulé avec la correction déjà faite', () => {
     const subject = makeSubject()
     const killua = subject.entries[0]!
-    editAttribute(subject, killua, hair, 'Blancs, Gris', file)
-    const { value } = editAttribute(subject, killua, hair, 'Argentés, -Gris', file)
+    editAttribute(subject, killua, hair, 'White, Grey', file)
+    const { value } = editAttribute(subject, killua, hair, 'Silver, -Grey', file)
 
-    expect(value).toEqual(['Blancs', 'Argentés'])
-    expect(readJson(file).edit['27'].hair).toEqual({ plus: ['Blancs', 'Argentés'], moins: ['Gris'] })
+    expect(value).toEqual(['White', 'Silver'])
+    expect(readJson(file).edit['27'].hair).toEqual({ plus: ['White', 'Silver'], moins: ['Grey'] })
 
     editAttribute(subject, killua, hair, '-', file)
     expect(killua.attributes.hair).toBeNull()
@@ -92,7 +92,7 @@ describe('corrections depuis Discord', () => {
 
   it('edit ne signale pas une valeur que d\'autres ont déjà', () => {
     const subject = makeSubject()
-    expect(editAttribute(subject, subject.entries[0]!, hair, 'Noirs', file).unseen).toEqual([])
+    expect(editAttribute(subject, subject.entries[0]!, hair, 'Black', file).unseen).toEqual([])
   })
 
   it('remove retire l\'entrée, l\'ajoute une seule fois à exclude, et dit si c\'était la réponse du jour', () => {
@@ -110,8 +110,8 @@ describe('corrections depuis Discord', () => {
 describe('applyManual', () => {
   const manual: Manual = {
     exclude: ['30'],
-    edit: { 27: { _nom: 'Killua', hair: { plus: ['Blancs'] }, taille: 150 }, 999: { age: 1 } },
-    add: [{ id: 'manuel-1', name: 'Perso Manuel', attributes: { gender: 'Femme', age: 20, hair: ['Roux'] } }],
+    edit: { 27: { _nom: 'Killua', hair: { plus: ['White'] }, taille: 150 }, 999: { age: 1 } },
+    add: [{ id: 'manuel-1', name: 'Perso Manuel', attributes: { gender: 'Femme', age: 20, hair: ['Ginger'] } }],
   }
 
   it('retire, corrige, ajoute, et signale ce qui ne colle pas', () => {
@@ -119,7 +119,7 @@ describe('applyManual', () => {
     const { entries, warnings } = applyManual(original, manual, attributes.map(({ key }) => key))
 
     expect(entries.map(entry => entry.id)).toEqual(['27', '31', 'manuel-1'])
-    expect(entries[0]!.attributes.hair).toEqual(['Blancs'])
+    expect(entries[0]!.attributes.hair).toEqual(['White'])
     expect(original[0]!.attributes.hair).toBeNull() // les entrées d'origine ne sont pas modifiées
     expect(warnings).toHaveLength(2) // l'id 999 inconnu, et « taille » qui n'est pas un attribut
   })
@@ -139,12 +139,12 @@ describe('applySetEdit', () => {
 
   it('une vraie valeur ajoutée remplace Inconnu, Aucune, N/A', () => {
     expect(applySetEdit(['Inconnu', 'Lost in the Galaxy'], { plus: ['Palaven'] })).toEqual(['Lost in the Galaxy', 'Palaven'])
-    expect(applySetEdit(['N/A'], { plus: ['Bruns'] })).toEqual(['Bruns'])
+    expect(applySetEdit(['N/A'], { plus: ['Brown'] })).toEqual(['Brown'])
     expect(applySetEdit(['Inconnu'], { moins: ['Hyrule'] })).toEqual(['Inconnu'])
   })
 
   it('vide si tout est retiré, et rien ne change la 2e fois', () => {
-    expect(applySetEdit(['Bruns'], { moins: ['Bruns'] })).toBeNull()
+    expect(applySetEdit(['Brown'], { moins: ['Brown'] })).toBeNull()
     const edit = { plus: ['Soldat'], moins: ['Garde'] }
     const once = applySetEdit(['Garde', 'Inconnu'], edit)
     expect(applySetEdit(once, edit)).toEqual(once)

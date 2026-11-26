@@ -146,8 +146,8 @@ describe('addedValues', () => {
   })
 
   it('ListesCumulees', () => {
-    expect(addedValues({ occupation: ['Student'], hair: ['Noirs'], species: ['Human'] }, { occupation: ['Student', 'President'], hair: ['Bleus'], species: ['Vampire'] }))
-      .toEqual({ occupation: ['Student', 'President'], hair: ['Noirs', 'Bleus'], species: ['Human', 'Vampire'] })
+    expect(addedValues({ occupation: ['Student'], hair: ['Black'], species: ['Human'] }, { occupation: ['Student', 'President'], hair: ['Blue'], species: ['Vampire'] }))
+      .toEqual({ occupation: ['Student', 'President'], hair: ['Black', 'Blue'], species: ['Human', 'Vampire'] })
   })
 
   it('OccupationIntraduisibleDUneSourceSuivante_LaisseeDeCote', () => {

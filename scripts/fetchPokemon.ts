@@ -28,8 +28,8 @@ const EGG_GROUPS: Record<string, string> = {
   'indeterminate': 'Amorphe', 'water2': 'Aquatique 2', 'ditto': 'Métamorph', 'dragon': 'Draconique', 'no-eggs': 'Inconnu',
 }
 const COLORS: Record<string, string> = {
-  black: 'Noir', blue: 'Bleu', brown: 'Marron', gray: 'Gris', green: 'Vert',
-  pink: 'Rose', purple: 'Violet', red: 'Rouge', white: 'Blanc', yellow: 'Jaune',
+  black: 'Black', blue: 'Blue', brown: 'Brown', gray: 'Grey', green: 'Green',
+  pink: 'Pink', purple: 'Purple', red: 'Red', white: 'White', yellow: 'Yellow',
 }
 const GENERATIONS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix']
 

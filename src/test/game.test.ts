@@ -41,7 +41,7 @@ describe('compareValues', () => {
     expect(compareValues('number', NOT_APPLICABLE, NOT_APPLICABLE)).toBe('correct')
     expect(compareValues('number', 17, NOT_APPLICABLE)).toBe('wrong')
     expect(compareValues('number', NOT_APPLICABLE, 17)).toBe('wrong')
-    expect(compareValues('set', [NOT_APPLICABLE], ['Noirs'])).toBe('wrong')
+    expect(compareValues('set', [NOT_APPLICABLE], ['Black'])).toBe('wrong')
   })
 
   it('bon perso : tout est juste, même ses indices vides', () => {

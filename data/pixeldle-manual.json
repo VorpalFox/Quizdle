@@ -113,8 +113,8 @@
    },
    "hair": {
     "moins": [
-     "Bruns",
-     "Blancs"
+     "Brown",
+     "White"
     ]
    },
    "species": {
@@ -1133,8 +1133,8 @@
    },
    "hair": {
     "plus": [
-     "Rouges",
-     "Verts"
+     "Red",
+     "Green"
     ]
    },
    "nationality": {
@@ -2724,7 +2724,7 @@
    },
    "hair": {
     "moins": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3220,7 +3220,7 @@
    "gender": "Homme",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ]
    }
   },
@@ -3492,7 +3492,7 @@
    },
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3555,8 +3555,8 @@
    },
    "hair": {
     "plus": [
-     "Bruns",
-     "Blonds"
+     "Brown",
+     "Blond"
     ]
    }
   },
@@ -3656,7 +3656,7 @@
    "year": 2002,
    "hair": {
     "plus": [
-     "Bleus"
+     "Blue"
     ]
    }
   },
@@ -3797,7 +3797,7 @@
    "_nom": "Bowser",
    "hair": {
     "plus": [
-     "Rouges"
+     "Red"
     ]
    }
   },
@@ -3805,7 +3805,7 @@
    "_nom": "Roxas",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3813,7 +3813,7 @@
    "_nom": "Marie",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3837,7 +3837,7 @@
    "_nom": "Rhonin",
    "hair": {
     "plus": [
-     "Rouges"
+     "Red"
     ]
    }
   },
@@ -3845,7 +3845,7 @@
    "_nom": "Cenarius",
    "hair": {
     "moins": [
-     "Noirs"
+     "Black"
     ]
    }
   },
@@ -3853,7 +3853,7 @@
    "_nom": "Demoman",
    "hair": {
     "plus": [
-     "Noirs"
+     "Black"
     ]
    }
   },
@@ -3861,7 +3861,7 @@
    "_nom": "Harry Mason",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ]
    }
   },
@@ -3869,7 +3869,7 @@
    "_nom": "Nanami",
    "hair": {
     "moins": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3885,7 +3885,7 @@
    "_nom": "Ann Takamaki",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3893,7 +3893,7 @@
    "_nom": "Luxord",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -3947,7 +3947,7 @@
    "_nom": "Reisen Udongein Inaba",
    "hair": {
     "plus": [
-     "Violets"
+     "Purple"
     ]
    }
   },
@@ -3955,7 +3955,7 @@
    "_nom": "Tawna",
    "hair": {
     "plus": [
-     "Blonds"
+     "Blond"
     ]
    }
   },
@@ -5233,10 +5233,10 @@
    "_raison": "cheveux châtains teints en bleu (pas roses)",
    "hair": {
     "plus": [
-     "Bruns"
+     "Brown"
     ],
     "moins": [
-     "Roses"
+     "Pink"
     ]
    }
   },
@@ -5266,7 +5266,7 @@
    },
    "hair": {
     "moins": [
-     "Rouges"
+     "Red"
     ]
    }
   },
@@ -5347,7 +5347,7 @@
     "nationality": null,
     "occupation": null,
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
@@ -5430,7 +5430,7 @@
      "Espion"
     ],
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -5459,7 +5459,7 @@
      "Pilote"
     ],
     "hair": [
-     "Noirs"
+     "Black"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -5487,8 +5487,8 @@
      "Mercenaire"
     ],
     "hair": [
-     "Bruns",
-     "Gris"
+     "Brown",
+     "Grey"
     ],
     "franchise": "Titanfall / Apex Legends",
     "developer": "Respawn Entertainment",
@@ -6504,7 +6504,7 @@
      "Soldat"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6525,7 +6525,7 @@
      "Soldat"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6546,7 +6546,7 @@
      "Soldat"
     ],
     "hair": [
-     "Blancs"
+     "White"
     ],
     "year": 2017,
     "franchise": "Nier"
@@ -6568,7 +6568,7 @@
      "Mécanicien"
     ],
     "hair": [
-     "Bruns"
+     "Brown"
     ],
     "year": 2018,
     "franchise": "Subnautica"
@@ -7265,7 +7265,7 @@
      "Dirigeant"
     ],
     "hair": [
-     "Rouges"
+     "Red"
     ],
     "franchise": "Sundered",
     "developer": "Thunder Lotus Games",

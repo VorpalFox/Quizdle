@@ -22,7 +22,7 @@ const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*=
 export const DEVELOPMENT = /\b(?:original(?:ly)?|initial(?:ly)?|concepts?|early|considered|redesign\w*|prototypes?|novels?|films?|adaptations?|cosplay\w*|beta|corpse)\b/i
 const HAIR_IN_TEXT_ALL = new RegExp(HAIR_IN_TEXT.source, 'gi')
 const BALD = /\bbald\b|\bhairless\b|shaved head|shaven head/gi
-const BALD_HAIR = 'Chauve'
+const BALD_HAIR = 'Bald'
 // Pas chauve aujourd'hui : il commence à l'être (Kano : « appears to be going bald », Scorpion : « graying hair, which
 // has begun to bald »), c'était avant (Hinata : « Before
 // his death, Hinata had a shaved head »), ou c'est une autre version du perso (Kung Lao : « Kung Lao's revenant form »,
@@ -45,7 +45,7 @@ const FORMER_WINDOW = 25
 
 // Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
 // Sans les phrases qui correspondent à skip (DEVELOPMENT pour Wikipédia). Avec l'extrait, à relire dans le récap.
-// Les cheveux sont une liste : un perso devenu chauve garde aussi ses anciens cheveux (Saitama : Chauve, Noirs, validé
+// Les cheveux sont une liste : un perso devenu chauve garde aussi ses anciens cheveux (Saitama : Bald, Black, validé
 // avec FX), la couleur actuelle d'abord.
 export function textHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
   const section = APPEARANCE.exec(wikitext)?.[1]

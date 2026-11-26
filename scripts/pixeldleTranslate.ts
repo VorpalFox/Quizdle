@@ -153,7 +153,7 @@ export function expandSpecies(value: unknown): string[] | null {
 // L'infobox, sinon le texte de la page entière (textHair : la section Appearance d'abord, « long blonde hair »), à relire
 // dans le récap. Un humain sans couleur trouvée reste vide : il a des cheveux, on ne sait juste pas leur couleur.
 
-// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Chauve », c'est pour les humains vraiment chauves)
+// Pas de cheveux à décrire : « N/A » plutôt qu'une case vide (« Bald », c'est pour les humains vraiment chauves)
 export const NO_HAIR = 'N/A' // = NOT_APPLICABLE du moteur
 const HAIRLESS_SPECIES = new Set(['Robot', 'Animal', 'Monstre', 'Mob', 'Insecte', 'Plante', 'Objet', 'Léviathan', 'Dragon', 'Poisson',
   'Zerg', 'Slime', 'Golem', 'Squelette', 'Koopa', 'Kremling', 'Yoshi', 'Waddle Dee', 'Dark Matter', 'Metroid', 'Parasite', 'Flood',

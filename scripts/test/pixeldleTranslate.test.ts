@@ -73,7 +73,7 @@ describe('hairOrNone', () => {
   })
 
   it('CheveuxConnus_Gardes', () => {
-    expect(hairOrNone(['Bleus'], ['Robot'])).toEqual(['Bleus'])
+    expect(hairOrNone(['Blue'], ['Robot'])).toEqual(['Blue'])
   })
 })
 
