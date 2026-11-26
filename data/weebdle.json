@@ -49962,9 +49962,7 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": [
-    "Blue"
-   ],
+   "hair": null,
    "anime": "Plastic Memories",
    "genres": [
     "Drama",
@@ -53649,8 +53647,7 @@
     "Fighter"
    ],
    "hair": [
-    "White",
-    "Blue"
+    "Blond"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -55407,7 +55404,9 @@
     "Swordsman",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Rokka -Braves of the Six Flowers-",
    "genres": [
     "Action",

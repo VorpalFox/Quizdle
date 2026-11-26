@@ -106,6 +106,10 @@ describe('introRoles', () => {
     expect(introRoles(introText(page))).toEqual(['merchant'])
   })
 
+  it('NomPropreApresAnd_PasUnRole', () => {
+    expect(introRoles('The Machine God is the bestower of all knowledge and the Emperor of Mankind.')).toEqual(['bestower of all knowledge'])
+  })
+
   it('ParagraphesRecolles_DeuxPhrases', () => {
     expect(introRoles('Rasmus is a character in Solasta II., He is a merchant in Tor Wen.')).toEqual(['merchant'])
   })
@@ -148,6 +152,11 @@ describe('textHair', () => {
     expect(textHair('A boy with dark brown hair.')?.colors).toEqual(['Brown'])
     expect(textHair('A boy with medium length dark reddish hair.')).toBeNull()
     expect(textHair('Pauline has dark hair. Later art gives her long brown hair.')?.colors).toEqual(['Brown'])
+  })
+
+  it('AccessoireOuCitation_PasLesCheveux', () => {
+    expect(textHair('Her fur is tied into a ponytail by a red hair tie.')).toBeNull()
+    expect(textHair('{{quote|1=I like blue hair... and blue fire!|2=Gwendolin}} Gwendolin wears goggles.')).toBeNull()
   })
 
   it('PasDeCheveux_Null', () => {

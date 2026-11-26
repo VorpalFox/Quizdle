@@ -716,7 +716,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   // Pouvoir
   [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
   [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
-  [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Clan leader'],
+  // Le chef d'un clan ou d'une tribu, pas un simple membre (« Yo-kai of the Charming tribe », Jibanyan)
+  [/chieftain|warchief|chief of the|^(?:clan|tribe)$|\b(?:leader|head|chief|elder) of (?:the |a |his |her )?[\w' -]*\b(?:clan|tribe)\b/, 'Clan leader'],
   [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier|council+or/, 'Politician'],
   [/lawyer|attorney|prosecutor|judge/, 'Lawyer'],
   [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Businessperson'],
@@ -743,7 +744,8 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/photographer|artist|painter|sculptor|dancer|ballet|model\b|designer/, 'Artist'],
   // Métiers
   [/plumber/, 'Plumber'],
-  [/mechanic/, 'Mechanic'],
+  // Pas « Adeptus Mechanicus » (Warhammer)
+  [/\bmechanics?\b/, 'Mechanic'],
   [/^chef$|\bcook\b|baker|brewer|restaura|yakitori|confection/, 'Cook'],
   [/bartender|barmaid|waiter|waitress|dishwasher/, 'Waiter'],
   [/merchant|vendor|shopkeeper|trader|seller|store|shop|florist|haberdasher|milliner/, 'Merchant'],

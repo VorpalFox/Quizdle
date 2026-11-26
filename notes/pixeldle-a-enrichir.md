@@ -7,7 +7,7 @@ Sur tout le quiz : sexe 0 %, espèce 0 %, nationalité 18 %, occupation 24 %, ch
 
 | Fait | Franchise | Persos | Vide (moy.) | Sexe | Espèce | Nationalité | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|
-| [ ] | Myst | 12 | **50 %** | 0 % | 0 % | 100 % | 75 % | 75 % |
+| [-] | Myst | 12 | **50 %** | 0 % | 0 % | 100 % | 75 % | 75 % |
 | [ ] | Warhammer | 20 | **49 %** | 0 % | 0 % | 95 % | 60 % | 90 % |
 | [ ] | Rayman | 11 | **47 %** | 0 % | 0 % | 100 % | 91 % | 45 % |
 | [ ] | Zenless Zone Zero | 20 | **45 %** | 0 % | 0 % | 100 % | 80 % | 45 % |

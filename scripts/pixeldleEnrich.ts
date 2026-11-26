@@ -296,7 +296,10 @@ function linkedTitle(wiki: Wiki, links: string[]): string | null {
 }
 
 // Une page d'homonymie : ses liens qui citent la franchise d'abord (« Alena (Dragon Quest IV) »)
-export const disambiguationTitles = (page: string, name: string, franchise: string) =>
+// Une page sans infobox qui n'est pas celle d'un perso : une homonymie
+const BARE_NOT_CHARACTER = /\{\{\s*disambig|may (?:also )?refer to/i
+
+export const disambiguationTitles =(page: string, name: string, franchise: string) =>
   disambiguationLinks(page, name, qualifier => mentionsFranchise(qualifier, franchise))
 
 function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
@@ -434,8 +437,19 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
       for (const target of group) {
         const titles = [...titlesFor(target, wiki), ...followed.get(target) ?? []]
         const title = titles.find(title => pages[title] && infobox(pages[title]!))
-        if (!title)
+        // Une page sans infobox (wikis Warhammer : « Gregor Eisenhorn is an Inquisitor… ») : rien à lire dans ses champs,
+        // mais son intro et ses cheveux comptent (pageTexts). Seulement la page à son nom ou celle de Wikidata, pas un
+        // alias, ni une homonymie, ni une page qui ne cite pas la franchise sur un wiki partagé.
+        if (!title) {
+          const bare = titles.find(title => pages[title] && (title === linkedTitle(wiki, target.fandomLinks) || target.names.slice(0, 2).includes(title))
+            && !BARE_NOT_CHARACTER.test(pages[title]!) && (!(target.franchise in SHARED_WIKIS) || mentionsFranchise(pages[title]!, target.franchise)))
+          const id = current.get(target)!.id
+          if (bare && !pageTexts.has(id)) {
+            pageTexts.set(id, pages[bare]!)
+            pageRefs.set(id, { api: wiki.api, title: bare })
+          }
           continue
+        }
         const fields = infobox(pages[title]!)!
         const linked = title === linkedTitle(wiki, target.fandomLinks)
         stats.found++

@@ -47,10 +47,13 @@ const FORMER_WINDOW = 25
 // Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
 // Sans les phrases qui correspondent à skip (DEVELOPMENT pour Wikipédia). Avec l'extrait, à relire dans le récap.
 // Les cheveux sont une liste : un perso devenu chauve garde aussi ses anciens cheveux (Saitama : Bald, Black, validé
-// avec FX), la couleur actuelle d'abord. « Dark hair » (noirs) seulement si la page ne cite aucune vraie couleur.
+// avec FX), la couleur actuelle d'abord. « Dark hair » (noirs) seulement si la page ne cite aucune vraie couleur. Sans
+// les citations : ce que le perso dit, pas ce qu'il est (Gwendolin : « I like blue hair... and blue fire! »).
 export function textHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
-  return hairIn(wikitext, HAIR_IN_TEXT_ALL, skip) ?? hairIn(wikitext, DARK_HAIR_IN_TEXT_ALL, skip)
+  const text = wikitext.replace(QUOTE_TEMPLATE, '')
+  return hairIn(text, HAIR_IN_TEXT_ALL, skip) ?? hairIn(text, DARK_HAIR_IN_TEXT_ALL, skip)
 }
+const QUOTE_TEMPLATE = /\{\{\s*(?:quote|cquote|quotation|dialogue)\b[^{}]*(?:\{\{[^{}]*(?:\{\{[^{}]*\}\}[^{}]*)*\}\}[^{}]*)*\}\}/gi
 
 function hairIn(wikitext: string, pattern: RegExp, skip?: RegExp): { colors: string[], excerpt: string } | null {
   const section = APPEARANCE.exec(wikitext)?.[1]

@@ -116,6 +116,17 @@ describe('translateGender', () => {
 })
 
 describe('translateOccupation', () => {
+  it('MembreDUneTribu_PasChef', () => {
+    expect(translateOccupation('Rank D Fire-attribute Yo-kai of the Charming tribe')).not.toBe('Clan leader')
+    expect(translateOccupation('Leader of the Drakebeard Clan')).toBe('Clan leader')
+    expect(translateOccupation('Chieftain')).toBe('Clan leader')
+  })
+
+  it('MotQuiEnContientUnAutre_PasLeMetier', () => {
+    expect(translateOccupation('servants of the Adeptus Mechanicus')).not.toBe('Mechanic')
+    expect(translateOccupation('Mechanic')).toBe('Mechanic')
+  })
+
   it('ValeurExacteDesInfobox_Dictionnaire', () => {
     expect(translateOccupation('Weaponsmith')).toBe('Worker')
     expect(translateOccupation('· Weaponsmith')).toBe('Worker')

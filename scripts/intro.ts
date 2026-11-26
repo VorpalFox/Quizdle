@@ -32,8 +32,10 @@ export function introRoles(intro: string): string[] {
       return []
     const role = raw.replace(END_OF_ROLE, '').trim()
     const after = ROLE_AFTER_AND.exec(raw.slice(role.length))?.[1]?.replace(END_OF_ROLE, '').trim()
-    // Le filtre avant le découpage : « son of King X and Queen Y » part en entier
-    return [role, after].filter((text): text is string => Boolean(text) && !NOT_A_JOB.test(text!)).flatMap(text => text.split(/\s+and\s+/))
+    // Le filtre avant le découpage : « son of King X and Queen Y » part en entier. Après un « and », pas un nom propre
+    // (« … and the Emperor of Mankind » : l'Empereur n'est pas un rôle du Dieu-machine ; « Leader and Founder » reste)
+    return [role, after].filter((text): text is string => Boolean(text) && !NOT_A_JOB.test(text!))
+      .flatMap(text => text.split(/\s+and\s+/).filter((part, index) => index === 0 || !/^the\s+\p{Lu}/u.test(part)))
   }).filter(role => !NOT_A_JOB.test(role) && !POSSESSIVE_FAMILY.test(role))
 }
 

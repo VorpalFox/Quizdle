@@ -1708,7 +1708,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -1778,7 +1780,9 @@
    "occupation": [
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Bald"
+   ],
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
    "genres": [
@@ -1995,7 +1999,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Bounty hunter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -2544,7 +2550,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
    "genres": [
@@ -17187,6 +17195,7 @@
     "Advisor"
    ],
    "hair": [
+    "Blond",
     "Grey"
    ],
    "franchise": "The Witcher",
@@ -17486,7 +17495,9 @@
     "Criminal",
     "Assassin"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -17726,7 +17737,9 @@
    "occupation": [
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar Games",
    "genres": [
@@ -17759,7 +17772,9 @@
     "Guard",
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar",
    "genres": [
@@ -17822,7 +17837,9 @@
    "occupation": [
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Grand Theft Auto",
    "developer": "Rockstar Games",
    "genres": [
@@ -21070,7 +21087,9 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Advisor"
+   ],
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -22689,7 +22708,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -22714,7 +22735,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -22764,7 +22787,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -22888,7 +22913,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -22961,7 +22988,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -22986,7 +23015,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -23011,7 +23042,9 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -25073,8 +25106,12 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -26792,7 +26829,9 @@
     "Vigilante",
     "Monster hunter"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -26897,7 +26936,9 @@
    "occupation": [
     "Monster hunter"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -28981,7 +29022,9 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Student"
+   ],
    "hair": null,
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -32758,7 +32801,9 @@
     "Monster hunter",
     "Ninja"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -32900,7 +32945,9 @@
    "occupation": [
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -32929,7 +32976,9 @@
    "occupation": [
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Red"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -32985,7 +33034,9 @@
    "occupation": [
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33009,7 +33060,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33146,7 +33199,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33257,7 +33312,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
    "genres": [
@@ -33404,7 +33461,9 @@
    "occupation": [
     "Assistant"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
    "genres": [
@@ -36373,7 +36432,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Ginger"
+   ],
    "franchise": "Minecraft",
    "developer": "Mojang",
    "genres": [
@@ -39450,7 +39511,9 @@
    "occupation": [
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Kid Icarus",
    "developer": "Sora Ltd.",
    "genres": [
@@ -39647,7 +39710,9 @@
     "Hakugyokurou"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
    "genres": [
@@ -39765,7 +39830,9 @@
    "occupation": [
     "Teacher"
    ],
-   "hair": null,
+   "hair": [
+    "Silver"
+   ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
    "genres": [
@@ -40099,7 +40166,9 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -40126,7 +40195,9 @@
    "occupation": [
     "Guard"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -40178,7 +40249,9 @@
     "Monde réel"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Silver"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -43232,7 +43305,7 @@
    "nationality": null,
    "occupation": null,
    "hair": [
-    "N/A"
+    "Blue"
    ],
    "franchise": "Bloons Tower Defense",
    "developer": "Ninja Kiwi",
@@ -46243,7 +46316,10 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Servant",
+    "Royalty"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46312,7 +46388,10 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader",
+    "Politician"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46391,15 +46470,17 @@
     "Primarch"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldier",
+    "Fighter"
+   ],
    "hair": null,
    "franchise": "Warhammer",
-   "developer": "Electronic Arts",
+   "developer": "Relic Entertainment",
    "genres": [
-    "FPS",
-    "Strategy"
+    "TPS"
    ],
-   "year": 1993
+   "year": 2011
   }
  },
  {
@@ -46438,7 +46519,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Soldier"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46486,7 +46569,9 @@
     "Orc"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -46560,7 +46645,9 @@
     "Humanoid"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -48921,7 +49008,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -66409,8 +66498,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Revolutionary",
-    "Leader"
+    "Revolutionary"
    ],
    "hair": [
     "N/A"
@@ -66486,8 +66574,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Worker",
-    "Leader"
+    "Worker"
    ],
    "hair": [
     "N/A"
