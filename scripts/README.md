@@ -21,8 +21,15 @@ Les scripts suivent tous à peu près le même chemin :
 
 1. **Récupérer** les personnages de la liste de départ.
 2. **Attribuer** chaque personnage à un seul anime ou une seule franchise, puis **choisir** 4 à 20 personnages par anime ou franchise (Weebdle, Pixeldle).
-3. **Compléter** les indices que la source principale n'a pas. Chaque source ne remplit que ce qui est resté vide, dans l'ordre :
-   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN). Le Weebdle a trois indices de plus : l'espèce (AniList, Wikidata, l'infobox Fandom puis son intro, toutes les espèces du perso même celles d'un twist : seule la mort n'est jamais dite ; Humain par défaut dans un anime sans surnaturel ou à casting humain), la taille (AniList, l'infobox Fandom) et la source de l'anime (AniList).
+3. **Compléter** les indices que la source principale n'a pas. Chaque source remplit ce qui est resté vide, dans l'ordre :
+   - Animedle et Weebdle : AniList (champ, sinon description), [wikidata.ts](wikidata.ts) (par l'ID AniList), [fandom.ts](fandom.ts) (l'infobox, puis les cheveux décrits dans le texte et l'occupation tirée de l'introduction de la page), [wikipedia.ts](wikipedia.ts) (l'infobox, FR puis EN). Le Weebdle a trois indices de plus : l'espèce (AniList, Wikidata, l'infobox Fandom puis son intro, toutes les espèces du perso même celles d'un twist : seule la mort n'est jamais dite ; Humain par défaut dans un anime sans surnaturel ou à casting humain), la taille (AniList, l'infobox Fandom) et la source de l'anime (AniList). Occupation, espèce, cheveux et arme se cumulent sur toutes les sources (`addedValues` dans [translate.ts](translate.ts)). Pour l'occupation :
+     1. **AniList** : son champ, sinon sa description. Un pré-remplissage, qui ne bloque jamais les suivants.
+     2. **Wikidata** : ajoutée.
+     3. **L'infobox Fandom** : ajoutée. Si elle n'a pas d'occupation, l'intro de la page et l'affiliation s'ajoutent, et sans intro qui en parle, le début des sections du perso.
+     4. **L'infobox Wikipédia** : ajoutée.
+     5. **Tout le temps** : les armes, et Élève quand l'infobox donne une école.
+
+     Une occupation qu'on ne sait pas traduire n'est gardée que venant de la 1re source (listée dans le récap pour être traduite).
    - Pixeldle : [pixeldleWikidata.ts](pixeldleWikidata.ts), puis le wiki de chaque franchise ([pixeldleWikis.ts](pixeldleWikis.ts) le trouve, [pixeldleEnrich.ts](pixeldleEnrich.ts) lit l'infobox, [pixeldleWikiCharacters.ts](pixeldleWikiCharacters.ts) ajoute des personnages quand Wikidata en a trop peu), puis les autres wikis de la franchise, puis Wikipédia en dernier recours. Sauf l'occupation, qui se cumule (champ multiple : plus on en a, plus on recoupe) :
      1. **Wikidata** : un pré-remplissage, qui ne bloque jamais les wikis.
      2. **Les infobox de tous les wikis** de la franchise : leur champ occupation, cumulé.
