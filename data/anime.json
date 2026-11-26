@@ -5121,7 +5121,9 @@
     "Merchant",
     "Shinigami"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Bleach",
    "genres": [
     "Action",

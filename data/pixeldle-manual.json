@@ -225,6 +225,165 @@
    "_raison": "sexe absent du wiki",
    "gender": "Male"
   },
+  "wiki-palworld-grizzbolt": {
+   "_nom": "Grizzbolt",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-faleris": {
+   "_nom": "Faleris",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-lyleen": {
+   "_nom": "Lyleen",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-shadowbeak": {
+   "_nom": "Shadowbeak",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-lamball": {
+   "_nom": "Lamball",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-cattiva": {
+   "_nom": "Cattiva",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-chillet": {
+   "_nom": "Chillet",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-chikipi": {
+   "_nom": "Chikipi",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-anubis": {
+   "_nom": "Anubis",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-sekhmet": {
+   "_nom": "Sekhmet",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ],
+    "moins": [
+     "Blue"
+    ]
+   }
+  },
+  "wiki-palworld-fuack": {
+   "_nom": "Fuack",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-flambelle": {
+   "_nom": "Flambelle",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "Q3776297": {
    "_raison": "dresseur (Wikidata ne donne pas l'espèce)",
    "species": {
@@ -6206,7 +6365,13 @@
     "gender": "Player's choice",
     "year": 2024,
     "franchise": "Palworld",
-    "occupation": null
+    "occupation": [
+     "Trainer",
+     "Survivor"
+    ],
+    "hair": [
+     "Player's choice"
+    ]
    }
   },
   {
@@ -7306,13 +7471,22 @@
    ]
   },
   "Palworld": {
-   "_raison": "les 7 boss de tour, puis les Pals des 4 premiers (le reste : des PNJ génériques)",
+   "_raison": "les 7 boss de tour, les Pals des 4 premiers, puis les Pals les plus connus (Lamball, Cattiva, et le haut des sondages de popularité de Pocketpair 2025 et 2026) ; le reste : des PNJ génériques",
    "pages": [
     "Grizzbolt",
     "Faleris",
     "Lyleen",
-    "Shadowbeak"
+    "Shadowbeak",
+    "Lamball",
+    "Cattiva",
+    "Chillet",
+    "Chikipi",
+    "Anubis",
+    "Sekhmet",
+    "Fuack",
+    "Flambelle"
    ],
+   "limit": 20,
    "preferred": [
     "Zoe Rayne",
     "Marcus Dryden",

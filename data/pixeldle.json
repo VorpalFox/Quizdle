@@ -6127,7 +6127,9 @@
    "occupation": [
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -7261,7 +7263,7 @@
     "Artist"
    ],
    "hair": [
-    "Black"
+    "Brown"
    ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
@@ -22338,7 +22340,10 @@
     "Sailor",
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Blue",
+    "Pink"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -22613,7 +22618,7 @@
     "Swordsman"
    ],
    "hair": [
-    "Black"
+    "Silver"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -23088,7 +23093,10 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Ginger"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -24814,7 +24822,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Square Enix",
    "genres": [
@@ -25422,7 +25432,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -47696,7 +47708,9 @@
    "occupation": [
     "Cleric"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -49300,7 +49314,9 @@
    "occupation": [
     "Mechanic"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -49404,7 +49420,9 @@
    "occupation": [
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -50395,7 +50413,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
    "genres": [
@@ -52030,7 +52050,9 @@
     "Sailor",
     "Merchant"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -53559,7 +53581,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": [
     "N/A"
    ],
@@ -53583,8 +53607,12 @@
     "Pal"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53605,8 +53633,12 @@
     "Pal"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53628,8 +53660,227 @@
     "Griffin"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-lamball",
+  "name": "Lamball",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Sheep",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-cattiva",
+  "name": "Cattiva",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Cat",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-chillet",
+  "name": "Chillet",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Dragon"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-chikipi",
+  "name": "Chikipi",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Chicken",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-anubis",
+  "name": "Anubis",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-sekhmet",
+  "name": "Sekhmet",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-fuack",
+  "name": "Fuack",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-flambelle",
+  "name": "Flambelle",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53652,11 +53903,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Windswept Hills"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Pink"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53679,8 +53935,12 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "Desiccated Dunes"
+   ],
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Brown"
    ],
@@ -53707,7 +53967,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Crescent Moon Shore"
+   ],
    "occupation": [
     "Leader"
    ],
@@ -53736,11 +53998,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Astral Mountains"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "White"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53764,11 +54031,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mount Obsidian"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Purple",
+    "Blond"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53792,11 +54064,15 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sakurajima"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53821,12 +54097,16 @@
     "Human"
    ],
    "nationality": [
+    "Feybreak",
     "Feybreak Tower"
    ],
    "occupation": [
-    "Fighter"
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "White",
+    "Blue"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -69719,8 +69999,13 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Trainer",
+    "Survivor"
+   ],
+   "hair": [
+    "Player's choice"
+   ],
    "developer": "Pocket Pair",
    "genres": [
     "Action-adventure",

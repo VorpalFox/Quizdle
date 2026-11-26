@@ -8296,7 +8296,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -13521,7 +13523,9 @@
    "occupation": [
     "Real estate agent"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -13687,7 +13691,9 @@
     "Soldier",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -13880,7 +13886,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "BTOOOM!",
    "genres": [
     "Action",
@@ -18844,7 +18852,9 @@
    "occupation": [
     "Servant"
    ],
-   "hair": null,
+   "hair": [
+    "Ginger"
+   ],
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
    "genres": [
     "Action",
@@ -21892,7 +21902,9 @@
     "Captain",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Death Note",
    "genres": [
     "Mystery",
@@ -41957,7 +41969,9 @@
     "Oracle",
     "Cleric"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -48708,7 +48722,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Ouran High School Host Club",
    "genres": [
     "Comedy",
@@ -50382,7 +50398,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Red"
+   ],
    "anime": "Plastic Memories",
    "genres": [
     "Drama",
@@ -60287,7 +60305,9 @@
    "age": 22,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Red"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -66483,6 +66503,7 @@
     "Fighter"
    ],
    "hair": [
+    "Grey",
     "Brown"
    ],
    "anime": "The Seven Deadly Sins",
@@ -68627,7 +68648,9 @@
    "age": 16,
    "height": 160,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Purple"
+   ],
    "anime": "Tokyo Ravens",
    "genres": [
     "Action",
@@ -72681,7 +72704,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [
     "Action",
