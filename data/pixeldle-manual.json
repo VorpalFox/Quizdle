@@ -223,7 +223,12 @@
   },
   "wiki-palworld-bjorn-seligsson": {
    "_raison": "sexe absent du wiki",
-   "gender": "Male"
+   "gender": "Male",
+   "nationality": {
+    "moins": [
+     "Feybreak Tower"
+    ]
+   }
   },
   "wiki-palworld-grizzbolt": {
    "_nom": "Grizzbolt",
