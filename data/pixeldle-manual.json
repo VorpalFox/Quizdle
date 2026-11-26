@@ -91,7 +91,8 @@
   "wiki-lost-records-bloom-rage-fuzzbutt",
   "wiki-myst-ahlsendar",
   "wiki-myst-me-erta",
-  "wiki-myst-veovis"
+  "wiki-myst-veovis",
+  "wiki-myst-gehn-s-guard"
  ],
  "edit": {
   "Q2265837": {
@@ -2321,72 +2322,6 @@
     "plus": [
      "Cat",
      "Animal"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-aitrus": {
-   "_nom": "Aitrus",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-ri-neref": {
-   "_nom": "Ri'neref",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-gehn": {
-   "_nom": "Gehn",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-atrus": {
-   "_nom": "Atrus",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-achenar": {
-   "_nom": "Achenar",
-   "species": {
-    "plus": [
-     "D'ni"
-    ],
-    "moins": [
-     "Human"
-    ]
-   }
-  },
-  "wiki-myst-yeesha": {
-   "_nom": "Yeesha",
-   "species": {
-    "plus": [
-     "D'ni"
     ],
     "moins": [
      "Human"

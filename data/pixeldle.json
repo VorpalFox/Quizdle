@@ -63578,7 +63578,8 @@
   "id": "wiki-the-alters-jan-guard",
   "name": "Jan Guard",
   "aliases": [
-   "Guard Jan"
+   "Guard Jan",
+   "Guard"
   ],
   "attributes": {
    "gender": "Male",
@@ -66921,31 +66922,6 @@
   }
  },
  {
-  "id": "wiki-myst-gehn-s-guard",
-  "name": "Gehn's Guard",
-  "aliases": [
-   "Guard Gehn's",
-   "Gehn's"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Guard"
-   ],
-   "hair": null,
-   "franchise": "Myst",
-   "developer": "Cyan Worlds",
-   "genres": [
-    "Adventure"
-   ],
-   "year": 1997
-  }
- },
- {
   "id": "wiki-myst-shomat",
   "name": "Shomat",
   "aliases": [],
@@ -66957,6 +66933,29 @@
    "nationality": null,
    "occupation": [
     "Royalty"
+   ],
+   "hair": null,
+   "franchise": "Myst",
+   "developer": "Cyan Worlds",
+   "genres": [
+    "Adventure",
+    "Puzzle"
+   ],
+   "year": 1993
+  }
+ },
+ {
+  "id": "wiki-myst-telanis",
+  "name": "Telanis",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Leader"
    ],
    "hair": null,
    "franchise": "Myst",
