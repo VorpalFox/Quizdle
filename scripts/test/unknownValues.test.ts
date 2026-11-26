@@ -15,6 +15,9 @@ describe('isUnknownValue', () => {
     expect(isUnknownValue('Unknown (never stated)')).toBe(true)
     expect(isUnknownValue('Inconnue')).toBe(true)
     expect(isUnknownValue('?')).toBe(true)
+    expect(isUnknownValue('Unspecified')).toBe(true)
+    expect(isUnknownValue('Not specified')).toBe(true)
+    expect(isUnknownValue('Unspecified<br>Human')).toBe(false)
   })
 
   it('UneVraieValeur_PasInconnue', () => {

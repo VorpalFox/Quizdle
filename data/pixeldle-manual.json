@@ -414,10 +414,6 @@
     "Stelle"
    ]
   },
-  "Q116252369": {
-   "_raison": "le jeu ne donne jamais son sexe, exprès (le wiki dit Unspecified)",
-   "gender": "Unknown"
-  },
   "Q118669752": {
    "_raison": "le héros de Nier (Replicant / Gestalt)",
    "name": "Nier",
@@ -3139,10 +3135,6 @@
   "Q55946189": {
    "_nom": "Mr. Zurkon",
    "gender": "Male"
-  },
-  "Q141161910": {
-   "_nom": "Lord Saltimatum",
-   "gender": "Other"
   },
   "Q108466077": {
    "_nom": "Azura",
