@@ -332,6 +332,15 @@ export function uniqueNameParts(names: CharacterName[]): (name: CharacterName) =
   }
 }
 
+// Weebdle et Animedle : le nom de famille (le dernier des deux mots chez AniList, « Motoharu Tsuchimikado ») même partagé.
+// Plusieurs persos le portent : le bot liste les homonymes au lieu de jouer. Pas au-delà de deux mots (« Monkey D. Luffy »).
+export function withFamilyName(uniqueParts: (name: CharacterName) => string[]): (name: CharacterName) => string[] {
+  return name => {
+    const parts = name.full.split(' ')
+    return parts.length === 2 ? [...uniqueParts(name), parts[1]!] : uniqueParts(name)
+  }
+}
+
 // Un alias d'une ou deux lettres (« C. », « zi », ou « d » pour « モンキー・D・ルフィ ») serait reconnu dès qu'on écrit
 // cette lettre dans le salon : on ne le garde pas. Le nom complet reste accepté (« L Lawliet », « C.C. »).
 // Les noms en japonais (vides une fois normalisés) ne gênent pas la recherche.
