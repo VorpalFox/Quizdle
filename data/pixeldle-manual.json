@@ -3371,11 +3371,12 @@
     ]
    }
   },
-  "wiki-solasta-shadwyn": {
-   "_nom": "Shadwyn",
-   "species": {
+  "wiki-solasta-rose-fairwind": {
+   "_nom": "Rose Fairwind",
+   "_raison": "membre en vue de la faction The People : rôle politique",
+   "occupation": {
     "plus": [
-     "Unknown"
+     "Politician"
     ]
    }
   },
