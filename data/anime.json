@@ -1943,7 +1943,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
   "attributes": {
    "gender": "Male",
-   "age": "Inconnu",
+   "age": "Unknown",
    "occupation": [
     "Demon hunter",
     "Wild Fiend",
@@ -3641,7 +3641,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png",
   "attributes": {
    "gender": "Female",
-   "age": "Inconnu",
+   "age": "Unknown",
    "occupation": [
     "Spy",
     "Waiter"
@@ -4176,7 +4176,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65643-jimrOw0RGtoB.png",
   "attributes": {
    "gender": "Male",
-   "age": "Inconnu",
+   "age": "Unknown",
    "occupation": [
     "Teacher",
     "Assassin",
@@ -5461,7 +5461,7 @@
    "gender": "Female",
    "age": 19,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond",

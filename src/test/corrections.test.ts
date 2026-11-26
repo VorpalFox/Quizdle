@@ -138,15 +138,15 @@ describe('applySetEdit', () => {
   })
 
   it('une vraie valeur ajoutée remplace Inconnu, Aucune, N/A', () => {
-    expect(applySetEdit(['Inconnu', 'Lost in the Galaxy'], { plus: ['Palaven'] })).toEqual(['Lost in the Galaxy', 'Palaven'])
+    expect(applySetEdit(['Unknown', 'Lost in the Galaxy'], { plus: ['Palaven'] })).toEqual(['Lost in the Galaxy', 'Palaven'])
     expect(applySetEdit(['N/A'], { plus: ['Brown'] })).toEqual(['Brown'])
-    expect(applySetEdit(['Inconnu'], { moins: ['Hyrule'] })).toEqual(['Inconnu'])
+    expect(applySetEdit(['Unknown'], { moins: ['Hyrule'] })).toEqual(['Unknown'])
   })
 
   it('vide si tout est retiré, et rien ne change la 2e fois', () => {
     expect(applySetEdit(['Brown'], { moins: ['Brown'] })).toBeNull()
     const edit = { plus: ['Soldier'], moins: ['Guard'] }
-    const once = applySetEdit(['Guard', 'Inconnu'], edit)
+    const once = applySetEdit(['Guard', 'Unknown'], edit)
     expect(applySetEdit(once, edit)).toEqual(once)
   })
 })

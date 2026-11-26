@@ -104,7 +104,7 @@ describe('translateEntries', () => {
   it('Occupations_TraduitesEtInconnuesListees', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Student', 'Unknown', 'Jedi'] } }
     const { entries, untranslated } = translateEntries([entry])
-    expect(entries[0]!.attributes.occupation).toEqual(['Pupil', 'Inconnu', 'Jedi'])
+    expect(entries[0]!.attributes.occupation).toEqual(['Pupil', 'Unknown', 'Jedi'])
     expect([...untranslated]).toEqual([['Jedi', 1]])
   })
 
@@ -179,7 +179,7 @@ describe('finishOccupations, titres', () => {
 describe('finishOccupations, mort', () => {
   it('MortSansOccupation_Aucune', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: null, deceased: 'deceased' } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Aucune'] })
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['None'] })
   })
 
   it('MortAvecOccupation_PasDeAucune', () => {
@@ -190,12 +190,12 @@ describe('finishOccupations, mort', () => {
 
 describe('groupOccupations, Inconnu et Aucune', () => {
   it('AssumeParLaSource_Garde', () => {
-    expect(translateOccupation('Unknown')).toBe('Inconnu')
-    expect(translateOccupation('None')).toBe('Aucune')
-    expect(groupOccupations(['Inconnu'])).toEqual(['Inconnu'])
+    expect(translateOccupation('Unknown')).toBe('Unknown')
+    expect(translateOccupation('None')).toBe('None')
+    expect(groupOccupations(['Unknown'])).toEqual(['Unknown'])
   })
 
   it('AvecUneVraieOccupation_Efface', () => {
-    expect(groupOccupations(['Inconnu', 'Swordsman'])).toEqual(['Swordsman', 'Fighter'])
+    expect(groupOccupations(['Unknown', 'Swordsman'])).toEqual(['Swordsman', 'Fighter'])
   })
 })

@@ -3119,7 +3119,7 @@
    "gender": "Male",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    },
    "_raison": "année : Kirby's Adventure",
@@ -3345,7 +3345,7 @@
    "_nom": "Meta Knight",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3353,7 +3353,7 @@
    "_nom": "Mysterious girl",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3361,7 +3361,7 @@
    "_nom": "Paimon",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    },
    "_raison": "« as their guide » (page pas lue par le script)",
@@ -3375,7 +3375,7 @@
    "_nom": "Shadwyn",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -3383,7 +3383,7 @@
    "_nom": "Chack",
    "species": {
     "plus": [
-     "Inconnu"
+     "Unknown"
     ]
    }
   },
@@ -5327,7 +5327,7 @@
    "_nom": "Nyarlathotep",
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ],
     "moins": [
      "Leader"
@@ -7291,7 +7291,7 @@
      "The Nether"
     ],
     "occupation": [
-     "Aucune"
+     "None"
     ],
     "hair": [
      "N/A"

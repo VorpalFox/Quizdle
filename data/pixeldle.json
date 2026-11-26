@@ -158,7 +158,7 @@
     "Dinosaur Land"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -183,7 +183,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Bounty hunter",
@@ -212,10 +212,10 @@
     "Toad"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -305,7 +305,7 @@
     "Koopa Kingdom"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Ginger"
@@ -361,10 +361,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -387,7 +387,7 @@
     "Toad"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -417,10 +417,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -447,10 +447,10 @@
     "Koopa"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -476,10 +476,10 @@
     "Koopa"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Red"
@@ -507,10 +507,10 @@
     "Koopa"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -533,10 +533,10 @@
     "Monster"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -560,10 +560,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -589,7 +589,7 @@
     "Subcon"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -714,10 +714,10 @@
     "Hylian"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -765,7 +765,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -791,7 +791,7 @@
     "Sheikah"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Servant"
@@ -817,7 +817,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Noble"
@@ -844,7 +844,7 @@
     "Gerudo"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -874,10 +874,10 @@
     "Zora"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Legend of Zelda",
@@ -899,7 +899,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -948,7 +948,7 @@
     "Minish"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -978,10 +978,10 @@
     "Plant"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1004,7 +1004,7 @@
     "Gerudo"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Advisor"
@@ -1030,10 +1030,10 @@
     "Kokiri"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -1063,7 +1063,7 @@
     "Hyrule"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Legend of Zelda",
@@ -1087,7 +1087,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -1115,10 +1115,10 @@
     "Object"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1410,7 +1410,7 @@
     "Hoenn"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -1765,7 +1765,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1793,7 +1793,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1918,7 +1918,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1945,7 +1945,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -1975,7 +1975,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2004,7 +2004,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2034,7 +2034,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2064,7 +2064,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2094,7 +2094,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2147,7 +2147,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sonic the Hedgehog",
@@ -2176,7 +2176,7 @@
     "North Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2200,7 +2200,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Sonic the Hedgehog",
@@ -2227,7 +2227,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2253,7 +2253,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sonic the Hedgehog",
@@ -2280,7 +2280,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "White"
@@ -2308,7 +2308,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2363,7 +2363,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -2425,7 +2425,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant",
@@ -2516,10 +2516,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -2663,10 +2663,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Final Fantasy",
@@ -2694,7 +2694,7 @@
     "Cosmo Canyon"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -2722,7 +2722,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -2842,10 +2842,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Final Fantasy",
@@ -3082,7 +3082,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -3318,7 +3318,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black",
@@ -3815,7 +3815,7 @@
     "Outworld"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Mortal Kombat",
@@ -4047,7 +4047,7 @@
     "Outworld"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Mortal Kombat",
@@ -4601,7 +4601,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Destroyer"
@@ -5024,7 +5024,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5788,7 +5788,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Bald"
@@ -6061,7 +6061,7 @@
     "Twilight Town"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -6116,7 +6116,7 @@
     "Destiny Islands"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kingdom Hearts",
@@ -6311,7 +6311,7 @@
     "Keyblade Graveyard"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Silver"
@@ -6338,10 +6338,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kingdom Hearts",
@@ -6369,7 +6369,7 @@
     "Keyblade Graveyard"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kingdom Hearts",
@@ -6398,7 +6398,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -6475,7 +6475,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman",
@@ -6508,7 +6508,7 @@
     "The World That Never Was"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -6571,7 +6571,7 @@
     "The World That Never Was"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -6605,7 +6605,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -6638,7 +6638,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -6763,7 +6763,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Red"
@@ -6793,7 +6793,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -6823,7 +6823,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -6883,7 +6883,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -6914,7 +6914,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Grey"
@@ -6944,7 +6944,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -6972,7 +6972,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -7002,7 +7002,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -7035,7 +7035,7 @@
     "Donkey Kong Island"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7063,10 +7063,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7094,7 +7094,7 @@
     "Crocodile Isle"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7123,7 +7123,7 @@
     "Spiral Mountain"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7149,7 +7149,7 @@
     "Crocodile Isle"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7176,7 +7176,7 @@
     "Mobile Island Fortress"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7203,10 +7203,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kirby",
@@ -7227,10 +7227,10 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman"
@@ -7259,7 +7259,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -7288,10 +7288,10 @@
     "Waddle Dee"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7314,10 +7314,10 @@
     "Halcandran"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kirby",
@@ -7341,10 +7341,10 @@
     "Dark Matter"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7371,10 +7371,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7397,7 +7397,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Artist"
@@ -7422,10 +7422,10 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cook"
@@ -7452,7 +7452,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -7476,10 +7476,10 @@
     "Dark Matter"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7503,10 +7503,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7531,7 +7531,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Politician",
@@ -7557,7 +7557,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Destroyer"
@@ -7582,10 +7582,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7609,13 +7609,13 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Kirby",
@@ -7707,7 +7707,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7765,7 +7765,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7793,7 +7793,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -7823,7 +7823,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Metroid",
@@ -7874,7 +7874,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -9162,7 +9162,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Businessperson",
@@ -9192,7 +9192,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Employee"
@@ -9219,7 +9219,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Astronaut",
@@ -9248,7 +9248,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Politician"
@@ -9273,10 +9273,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -9302,7 +9302,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Athlete"
@@ -9331,7 +9331,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant",
@@ -9361,7 +9361,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -9390,7 +9390,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Politician",
@@ -9419,7 +9419,7 @@
     "Yokai"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Sailor",
@@ -9449,7 +9449,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -9479,7 +9479,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Employee"
@@ -9512,7 +9512,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Musician"
@@ -9539,10 +9539,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -9572,10 +9572,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -9601,10 +9601,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -9630,7 +9630,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -9659,7 +9659,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -9688,7 +9688,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -9717,10 +9717,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue"
@@ -9804,7 +9804,7 @@
     "Deepsea Metro"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Pink"
@@ -9834,7 +9834,7 @@
     "Splatsville"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Pink",
@@ -9863,7 +9863,7 @@
     "Inkopolis Galleria"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -9892,7 +9892,7 @@
     "Deepsea Metro"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown",
@@ -9924,7 +9924,7 @@
     "Alterna"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -9953,7 +9953,7 @@
     "Alterna"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond",
@@ -9984,7 +9984,7 @@
     "Alterna"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue"
@@ -10014,7 +10014,7 @@
     "Splatsville"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10045,7 +10045,7 @@
     "Booyah Base"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue"
@@ -10075,7 +10075,7 @@
     "Splatsville"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -10103,10 +10103,10 @@
     "Salmonid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10139,7 +10139,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10206,7 +10206,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -10264,7 +10264,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10294,7 +10294,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10327,7 +10327,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -10355,7 +10355,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10389,7 +10389,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10420,7 +10420,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10450,7 +10450,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10479,7 +10479,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10509,7 +10509,7 @@
     "Gasmoxia"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10568,7 +10568,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10601,7 +10601,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10630,7 +10630,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -10665,7 +10665,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Crash Bandicoot",
@@ -10695,7 +10695,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -10757,7 +10757,7 @@
     "Artisans"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10815,7 +10815,7 @@
     "Artisans"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -10899,7 +10899,7 @@
     "Forgotten Worlds"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -10929,7 +10929,7 @@
     "Gnorc Gnexus"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spyro the Dragon",
@@ -10984,10 +10984,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -11044,10 +11044,10 @@
     "Fairy"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spyro the Dragon",
@@ -11235,7 +11235,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11366,7 +11366,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11396,7 +11396,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -11428,7 +11428,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11449,11 +11449,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -11578,7 +11578,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11603,11 +11603,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -11637,7 +11637,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11662,7 +11662,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11692,7 +11692,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Ratchet & Clank",
@@ -11718,7 +11718,7 @@
     "Spargus"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green",
@@ -11747,7 +11747,7 @@
     "Spargus"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -11876,7 +11876,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Criminal"
@@ -11905,10 +11905,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jak and Daxter",
@@ -11990,10 +11990,10 @@
     "Metal Head"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jak and Daxter",
@@ -12075,7 +12075,7 @@
     "Gol and Maia's citadel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jak and Daxter",
@@ -12099,10 +12099,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jak and Daxter",
@@ -12275,7 +12275,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -12461,7 +12461,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -12614,7 +12614,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -12734,7 +12734,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -12987,7 +12987,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -14137,7 +14137,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -14290,7 +14290,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -14468,7 +14468,7 @@
     "Sangheili"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -14496,11 +14496,11 @@
     "Flood"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -14528,11 +14528,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -14781,7 +14781,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -15328,7 +15328,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -15590,7 +15590,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -15748,7 +15748,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Spy",
@@ -15773,7 +15773,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -15935,7 +15935,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mercenary"
@@ -16011,7 +16011,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage",
@@ -16041,7 +16041,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Adventurer",
@@ -16147,7 +16147,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -16173,10 +16173,10 @@
     "Dragon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -16298,7 +16298,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier",
@@ -16327,7 +16327,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -16358,7 +16358,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -16388,7 +16388,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -16422,7 +16422,7 @@
     "Cyrodiil"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -16482,7 +16482,7 @@
     "Ivarstead"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -16506,7 +16506,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -16568,10 +16568,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Elder Scrolls",
@@ -16700,7 +16700,7 @@
     "Vault 101"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -17183,7 +17183,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -17304,7 +17304,7 @@
     "Mutant"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman",
@@ -17677,7 +17677,7 @@
     "Vampire"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Doctor",
@@ -17737,10 +17737,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Bald"
@@ -17767,7 +17767,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -18781,7 +18781,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -18845,7 +18845,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Red Dead",
@@ -20033,7 +20033,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -20128,10 +20128,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Rayman",
@@ -20153,10 +20153,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -20180,10 +20180,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -20209,10 +20209,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Rayman",
@@ -20236,10 +20236,10 @@
     "Rabbid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Rayman",
@@ -20266,7 +20266,7 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Pirate"
@@ -20295,10 +20295,10 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -20324,10 +20324,10 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -20352,10 +20352,10 @@
     "Fairy"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Rayman",
@@ -20376,10 +20376,10 @@
     "Fairy"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Rayman",
@@ -20400,10 +20400,10 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -20469,7 +20469,7 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Marksman"
@@ -20808,7 +20808,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Marksman"
@@ -20992,7 +20992,7 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -21021,7 +21021,7 @@
     "Xen"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Half-Life",
@@ -21103,7 +21103,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -21220,7 +21220,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -21249,7 +21249,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -21576,7 +21576,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21605,7 +21605,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21632,7 +21632,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21659,7 +21659,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21741,7 +21741,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21768,7 +21768,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21795,7 +21795,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21823,7 +21823,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -22560,7 +22560,7 @@
     "Omnic"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Advisor"
@@ -23158,7 +23158,7 @@
     "Shadow Isles"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -23727,7 +23727,7 @@
     "Orc"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Revolutionary"
@@ -23755,7 +23755,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Knight"
@@ -23783,7 +23783,7 @@
     "Undead"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -23896,7 +23896,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Sailor",
@@ -23927,7 +23927,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric",
@@ -23957,7 +23957,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -24061,7 +24061,7 @@
     "Dragon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -24087,7 +24087,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Prisoner"
@@ -24111,7 +24111,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -24137,7 +24137,7 @@
     "Dragon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -24163,7 +24163,7 @@
     "Dragon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty",
@@ -24190,7 +24190,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Noble",
@@ -24246,7 +24246,7 @@
     "Orc"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -24336,7 +24336,7 @@
     "Protoss"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24425,7 +24425,7 @@
     "Xel'naga"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24456,7 +24456,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24491,7 +24491,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -24545,11 +24545,11 @@
     "Zerg"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -24572,11 +24572,11 @@
     "Zerg"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -24599,7 +24599,7 @@
     "Protoss"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24626,7 +24626,7 @@
     "Zerg"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24658,7 +24658,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scholar"
@@ -24767,7 +24767,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -24820,7 +24820,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -25003,7 +25003,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Monster hunter"
@@ -25030,7 +25030,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -25059,7 +25059,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Hero"
@@ -25087,7 +25087,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -25113,10 +25113,10 @@
     "Monster"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -25139,10 +25139,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dragon Quest",
@@ -25190,10 +25190,10 @@
     "Slime"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -25221,7 +25221,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Thief"
@@ -25245,7 +25245,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Destroyer"
@@ -25270,7 +25270,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman"
@@ -25300,7 +25300,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -25326,10 +25326,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dragon Quest",
@@ -25668,7 +25668,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -25701,7 +25701,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Persona",
@@ -25941,7 +25941,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -25968,7 +25968,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Student",
@@ -26117,7 +26117,7 @@
     "Palmacosta"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Tales of",
@@ -26234,7 +26234,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -26445,7 +26445,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -26559,7 +26559,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman"
@@ -26585,10 +26585,10 @@
     "Blade"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -26612,10 +26612,10 @@
     "Blade"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -26642,10 +26642,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Xenoblade Chronicles",
@@ -26666,7 +26666,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Doctor"
@@ -26692,7 +26692,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Treasure hunter",
@@ -26721,7 +26721,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26747,7 +26747,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26773,7 +26773,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26799,7 +26799,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26825,7 +26825,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26851,7 +26851,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26877,7 +26877,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26903,7 +26903,7 @@
     "Nopon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mechanic"
@@ -26929,7 +26929,7 @@
     "Nopon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cook"
@@ -26955,7 +26955,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -26981,7 +26981,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -27012,7 +27012,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -27038,7 +27038,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -27064,7 +27064,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -27151,7 +27151,7 @@
     "North Cape"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -27256,10 +27256,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Chrono",
@@ -27283,7 +27283,7 @@
     "Proto Dome"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -27336,7 +27336,7 @@
     "Zeal"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Chrono",
@@ -27361,7 +27361,7 @@
     "Hunting Grounds"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -27384,7 +27384,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Actor"
@@ -27411,7 +27411,7 @@
     "Arni"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -27437,7 +27437,7 @@
     "Arni"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -27857,7 +27857,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -28208,7 +28208,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -28238,7 +28238,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -28268,7 +28268,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -29129,7 +29129,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Silent Hill",
@@ -29189,7 +29189,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Silent Hill",
@@ -29220,7 +29220,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Silent Hill",
@@ -29246,7 +29246,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -29359,7 +29359,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -29701,7 +29701,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -30914,7 +30914,7 @@
     "Misthallery"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -30977,7 +30977,7 @@
     "Folsense"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -31009,7 +31009,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -31799,7 +31799,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Pirate",
@@ -31890,7 +31890,7 @@
     "Flask"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -32025,7 +32025,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier",
@@ -32055,7 +32055,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Musician",
@@ -32324,7 +32324,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The King of Fighters",
@@ -32419,7 +32419,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple"
@@ -32535,7 +32535,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Silver",
@@ -32567,7 +32567,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -32679,7 +32679,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -32773,7 +32773,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The King of Fighters",
@@ -32830,7 +32830,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The King of Fighters",
@@ -33327,7 +33327,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -33612,7 +33612,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -33831,7 +33831,7 @@
     "Golem"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -34149,10 +34149,10 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Assistant"
@@ -34207,7 +34207,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman"
@@ -34684,7 +34684,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Pink"
@@ -34888,7 +34888,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -34918,7 +34918,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -34979,7 +34979,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Pink"
@@ -35111,7 +35111,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple"
@@ -35141,7 +35141,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -35170,7 +35170,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -35260,7 +35260,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Honkai: Star Rail",
@@ -35288,10 +35288,10 @@
     "Thiren"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -35319,10 +35319,10 @@
     "Thiren"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -35349,7 +35349,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Waiter"
@@ -35377,10 +35377,10 @@
     "Thiren"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
@@ -35406,10 +35406,10 @@
     "Thiren"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
@@ -35434,10 +35434,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -35466,10 +35466,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -35497,10 +35497,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
@@ -35526,10 +35526,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
@@ -35555,10 +35555,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -35582,7 +35582,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -35607,7 +35607,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -35635,10 +35635,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Pink"
@@ -35665,10 +35665,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Zenless Zone Zero",
@@ -35693,10 +35693,10 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -35724,7 +35724,7 @@
     "Thiren"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Criminal"
@@ -35752,10 +35752,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -35783,10 +35783,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -35815,10 +35815,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -35846,10 +35846,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger",
@@ -35878,7 +35878,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "White"
@@ -35907,7 +35907,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Nier",
@@ -35932,7 +35932,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Silver",
@@ -36047,10 +36047,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36080,7 +36080,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric"
@@ -36109,7 +36109,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Adventurer",
@@ -36178,7 +36178,7 @@
     "Land of Shadows"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -36210,7 +36210,7 @@
     "Ranni's Rise"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Elden Ring",
@@ -36232,7 +36232,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -36322,7 +36322,7 @@
     "Jarburg"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36389,7 +36389,7 @@
     "Ruins"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36453,7 +36453,7 @@
     "Snowdin Forest"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36517,7 +36517,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scientist"
@@ -36612,7 +36612,7 @@
     "Mt. Ebott"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -36644,7 +36644,7 @@
     "Underground"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36705,7 +36705,7 @@
     "Ruins"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red",
@@ -36795,7 +36795,7 @@
     "Hotland"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36856,10 +36856,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -36885,7 +36885,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Noble"
@@ -36976,7 +36976,7 @@
     "The Abyss"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Hollow Knight",
@@ -37005,7 +37005,7 @@
     "Beast's Den"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Hollow Knight",
@@ -37032,7 +37032,7 @@
     "Hallownest"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Hollow Knight",
@@ -37126,10 +37126,10 @@
     "Higher Being"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Hollow Knight",
@@ -37156,10 +37156,10 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37184,10 +37184,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37216,7 +37216,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -37248,10 +37248,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -37281,10 +37281,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Minecraft",
@@ -37313,10 +37313,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37347,10 +37347,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37380,7 +37380,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -37414,7 +37414,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -37446,10 +37446,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37478,10 +37478,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37511,10 +37511,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37543,10 +37543,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37577,7 +37577,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -37609,7 +37609,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -37641,10 +37641,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37680,7 +37680,7 @@
     "The Nether"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37709,10 +37709,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37744,10 +37744,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37774,10 +37774,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37809,10 +37809,10 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -37841,7 +37841,7 @@
     "Mob"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Predator"
@@ -38143,7 +38143,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -38170,7 +38170,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -38485,7 +38485,7 @@
     "Columbia"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -38698,11 +38698,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -38898,7 +38898,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -39398,7 +39398,7 @@
     "Spiral Mountain"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -39513,7 +39513,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -39569,7 +39569,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -39596,7 +39596,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -39736,7 +39736,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Pikmin",
@@ -39763,7 +39763,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -39872,7 +39872,7 @@
     "Outer Space"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -39902,7 +39902,7 @@
     "Onett"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -39926,7 +39926,7 @@
     "Outer Space"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -39977,7 +39977,7 @@
     "Tazmily Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -40004,7 +40004,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -40030,7 +40030,7 @@
     "Tazmily Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40052,7 +40052,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40076,7 +40076,7 @@
     "Tazmily Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -40102,7 +40102,7 @@
     "Tazmily Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -40128,7 +40128,7 @@
     "Sunshine Forest"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -40182,7 +40182,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -40211,7 +40211,7 @@
     "FoggyLand"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -40237,7 +40237,7 @@
     "Tazmily Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40265,7 +40265,7 @@
     "Winters"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40287,7 +40287,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40314,7 +40314,7 @@
     "Twoson"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40338,7 +40338,7 @@
     "Osohe Castle"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "EarthBound",
@@ -40363,7 +40363,7 @@
     "Eagleland"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -40449,7 +40449,7 @@
     "Underworld"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -40503,7 +40503,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Protector"
@@ -40530,7 +40530,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -40619,7 +40619,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Servant"
@@ -40649,7 +40649,7 @@
     "Yokai"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Farmer",
@@ -40684,7 +40684,7 @@
     "Hakugyokurou"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Touhou Project",
@@ -40741,7 +40741,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -40803,7 +40803,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Teacher"
@@ -40839,7 +40839,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Purple"
@@ -40865,7 +40865,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -40895,7 +40895,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -40955,7 +40955,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -40984,7 +40984,7 @@
     "Boundary of Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -41014,7 +41014,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple"
@@ -41044,7 +41044,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blue"
@@ -41071,10 +41071,10 @@
     "Yokai"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -41132,7 +41132,7 @@
     "Gensokyo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple"
@@ -41241,7 +41241,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Hades",
@@ -41585,7 +41585,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Farmer"
@@ -41612,7 +41612,7 @@
     "Pelican Town"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Green"
@@ -41795,10 +41795,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Baldur's Gate",
@@ -41823,7 +41823,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Adventurer",
@@ -41877,7 +41877,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -41903,7 +41903,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Thief"
@@ -41927,7 +41927,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric",
@@ -41954,7 +41954,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Knight"
@@ -41984,7 +41984,7 @@
     "Dragonborn"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -42039,7 +42039,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric"
@@ -42065,7 +42065,7 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric"
@@ -42118,7 +42118,7 @@
     "Netheril"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Baldur's Gate",
@@ -42166,7 +42166,7 @@
     "Githyanki"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -42192,7 +42192,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -42218,7 +42218,7 @@
     "Tiefling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -42244,7 +42244,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -42842,7 +42842,7 @@
     "Heywood"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -43428,7 +43428,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown",
@@ -43577,7 +43577,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -43723,7 +43723,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -43752,7 +43752,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -43782,7 +43782,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -44312,7 +44312,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Archer"
@@ -44341,10 +44341,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44373,7 +44373,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -44406,7 +44406,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44437,7 +44437,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44467,7 +44467,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44497,7 +44497,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44562,7 +44562,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -44594,7 +44594,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -45303,7 +45303,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black",
@@ -45331,7 +45331,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Titanfall / Apex Legends",
@@ -45592,7 +45592,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -45705,7 +45705,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Titanfall / Apex Legends",
@@ -46555,10 +46555,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -46586,10 +46586,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -46614,10 +46614,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -46647,7 +46647,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Driver",
@@ -46683,7 +46683,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -47213,10 +47213,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -47241,7 +47241,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -47301,7 +47301,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Destroyer"
@@ -47330,10 +47330,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47355,7 +47355,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -47380,7 +47380,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -47408,10 +47408,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47433,7 +47433,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Destroyer"
@@ -47462,10 +47462,10 @@
     "Dwarf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47487,10 +47487,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47518,10 +47518,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47547,7 +47547,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric"
@@ -47576,10 +47576,10 @@
     "Primarch"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47601,7 +47601,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -47629,10 +47629,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47654,7 +47654,7 @@
     "Demon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -47683,10 +47683,10 @@
     "Orc"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47712,10 +47712,10 @@
     "Orc"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47740,10 +47740,10 @@
     "Goblin"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47769,10 +47769,10 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Warhammer",
@@ -47794,10 +47794,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -47967,7 +47967,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Doki Doki Literature Club",
@@ -48144,7 +48144,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Noble",
@@ -48325,7 +48325,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Companion"
@@ -48481,7 +48481,7 @@
     "United Kingdom of Euchronia"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -48543,7 +48543,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Les Chevaliers de Baphomet",
@@ -48632,7 +48632,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -48693,7 +48693,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -48716,10 +48716,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The First Descendant",
@@ -48742,10 +48742,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The First Descendant",
@@ -49755,7 +49755,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -50063,7 +50063,7 @@
     "Fortuna"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -50143,7 +50143,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Devil May Cry",
@@ -50166,7 +50166,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Devil May Cry",
@@ -50214,7 +50214,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "White"
@@ -50325,7 +50325,7 @@
     "Alphaverse"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Bald"
@@ -50585,7 +50585,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond",
@@ -50729,7 +50729,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "White",
@@ -50757,7 +50757,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "White",
@@ -50900,7 +50900,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -50928,10 +50928,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dark Souls",
@@ -51045,7 +51045,7 @@
     "Firelink Shrine"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dark Souls",
@@ -51074,7 +51074,7 @@
     "Anor Londo"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dark Souls",
@@ -51131,10 +51131,10 @@
     "Half-dragon"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dark Souls",
@@ -51160,7 +51160,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -51188,7 +51188,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage",
@@ -51218,7 +51218,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Noble"
@@ -51245,11 +51245,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51274,7 +51274,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51300,7 +51300,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51326,7 +51326,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51349,11 +51349,11 @@
     "Mutant"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51378,7 +51378,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51410,7 +51410,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51460,7 +51460,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51485,7 +51485,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51512,11 +51512,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Borderlands",
@@ -51573,7 +51573,7 @@
     "Spiral Mountain"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51602,7 +51602,7 @@
     "Gruntilda's Lair"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Banjo-Kazooie",
@@ -51627,7 +51627,7 @@
     "Spiral Mountain"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51653,7 +51653,7 @@
     "Cauldron Keep"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51682,7 +51682,7 @@
     "Gruntilda's Lair"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51741,7 +51741,7 @@
     "Glitter Gulch Mine"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51770,7 +51770,7 @@
     "Gruntilda's Lair"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -51800,7 +51800,7 @@
     "Gruntilda's Lair"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -51908,7 +51908,7 @@
     "Underworld"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -51931,7 +51931,7 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -51960,7 +51960,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -52014,7 +52014,7 @@
     "Monster"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -52043,7 +52043,7 @@
     "Poncle"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Artist"
@@ -52070,7 +52070,7 @@
     "Oni Island"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Okami",
@@ -52097,7 +52097,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -52145,10 +52145,10 @@
     "Mermaid"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Okami",
@@ -52254,7 +52254,7 @@
     "Kamiki Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Okami",
@@ -52308,7 +52308,7 @@
     "Kamiki Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Bald",
@@ -52395,7 +52395,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52417,7 +52417,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "N/A"
@@ -52441,7 +52441,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52463,7 +52463,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52491,7 +52491,7 @@
     "Springdale"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple"
@@ -52518,7 +52518,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -52547,7 +52547,7 @@
     "Sakura Motomachi"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52569,7 +52569,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52591,7 +52591,7 @@
    ],
    "nationality": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52675,7 +52675,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -52734,7 +52734,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -52961,7 +52961,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Hades",
@@ -53134,7 +53134,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -53265,7 +53265,7 @@
     "Forbidden West"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -53389,7 +53389,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -53477,10 +53477,10 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -53599,7 +53599,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scientist"
@@ -54005,7 +54005,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -54035,7 +54035,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -54209,7 +54209,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "ARK",
@@ -54290,7 +54290,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "ARK",
@@ -54401,7 +54401,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -54430,10 +54430,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -54462,7 +54462,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -54493,7 +54493,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -54523,7 +54523,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -54553,7 +54553,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -54583,7 +54583,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -54612,10 +54612,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Palworld",
@@ -54977,7 +54977,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55008,7 +55008,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -55037,7 +55037,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Programmer"
@@ -55066,7 +55066,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55098,7 +55098,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter"
@@ -55127,7 +55127,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cleric"
@@ -55158,7 +55158,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -55187,7 +55187,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Pilot"
@@ -55216,7 +55216,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Swordsman"
@@ -55245,7 +55245,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55273,7 +55273,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Merchant"
@@ -55300,7 +55300,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55329,7 +55329,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mechanic"
@@ -55358,7 +55358,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55384,11 +55384,11 @@
     "Traveller"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "No Man's Sky",
@@ -55417,7 +55417,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "No Man's Sky",
@@ -55446,7 +55446,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "No Man's Sky",
@@ -55472,7 +55472,7 @@
     "Traveller"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -55499,11 +55499,11 @@
     "Traveller"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "No Man's Sky",
@@ -55529,11 +55529,11 @@
     "Deity"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "No Man's Sky",
@@ -55560,7 +55560,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -55670,7 +55670,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sons Of The Forest",
@@ -55697,7 +55697,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sons Of The Forest",
@@ -55724,7 +55724,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sons Of The Forest",
@@ -55751,7 +55751,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Sons Of The Forest",
@@ -55772,7 +55772,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -55799,7 +55799,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Mage"
@@ -55823,10 +55823,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -55877,10 +55877,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -55954,7 +55954,7 @@
     "Ancient Temple"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Divinity: Original Sin",
@@ -56000,7 +56000,7 @@
     "Imp"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scholar"
@@ -56252,7 +56252,7 @@
     "Samopesh"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -56470,7 +56470,7 @@
     "Broken Railroad"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Long Dark",
@@ -56502,7 +56502,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -56707,10 +56707,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56731,10 +56731,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56755,10 +56755,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56783,10 +56783,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56808,10 +56808,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56834,10 +56834,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Spore",
@@ -56860,7 +56860,7 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -56884,7 +56884,7 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -56911,7 +56911,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Athlete",
@@ -56940,7 +56940,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Athlete",
@@ -56972,7 +56972,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -56999,7 +56999,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Athlete",
@@ -57088,7 +57088,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Criminal"
@@ -57322,7 +57322,7 @@
     "Wonderland"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Alice: Madness Returns",
@@ -57382,7 +57382,7 @@
     "Wonderland"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -57410,7 +57410,7 @@
     "Wonderland"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -57652,7 +57652,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -57856,7 +57856,7 @@
     "Valadilene"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -58158,7 +58158,7 @@
     "Hex-Core"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Pilot"
@@ -58377,7 +58377,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Firewatch",
@@ -58433,7 +58433,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Firewatch",
@@ -58463,7 +58463,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Firewatch",
@@ -58494,7 +58494,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Firewatch",
@@ -58521,7 +58521,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Firewatch",
@@ -58623,7 +58623,7 @@
     "Nomai"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58701,7 +58701,7 @@
     "Nomai"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58831,7 +58831,7 @@
     "Nomai"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58921,7 +58921,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "XCOM",
@@ -58952,7 +58952,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "XCOM",
@@ -59037,7 +59037,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "XCOM",
@@ -59058,7 +59058,7 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Politician"
@@ -59111,10 +59111,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "XCOM",
@@ -59216,7 +59216,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59280,7 +59280,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59317,7 +59317,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -59344,7 +59344,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59377,7 +59377,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59407,7 +59407,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59440,7 +59440,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59472,7 +59472,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59536,7 +59536,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59978,7 +59978,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -60066,7 +60066,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Bald",
@@ -60118,10 +60118,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60147,10 +60147,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60176,7 +60176,7 @@
     "Gale Cliffs"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60256,7 +60256,7 @@
     "Devil's Spine"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60284,7 +60284,7 @@
     "Little Marrow"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60314,7 +60314,7 @@
     "Gale Cliffs"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60366,7 +60366,7 @@
     "The Iron Rig"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60392,7 +60392,7 @@
     "The Marrows"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60418,7 +60418,7 @@
     "Little Marrow"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dredge",
@@ -60445,7 +60445,7 @@
     "Alt Harbor"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60473,7 +60473,7 @@
     "Overbrook"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60500,7 +60500,7 @@
     "Mystery Seed"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Spiritfarer",
@@ -60526,7 +60526,7 @@
     "Furogawa"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60553,7 +60553,7 @@
     "Hikarishima Lighthouse"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Spiritfarer",
@@ -60579,7 +60579,7 @@
     "Hummingberg"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60607,7 +60607,7 @@
     "Overbrook"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60632,10 +60632,10 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60663,7 +60663,7 @@
     "Loneberg"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -60688,7 +60688,7 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -60723,7 +60723,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -60809,7 +60809,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "SOMA",
@@ -60865,7 +60865,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "SOMA",
@@ -60892,7 +60892,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -61119,7 +61119,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Prey",
@@ -61175,7 +61175,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -61410,10 +61410,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -61488,7 +61488,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Farmer"
@@ -61514,7 +61514,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scientist"
@@ -61540,7 +61540,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Actor"
@@ -61566,7 +61566,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cook"
@@ -61592,7 +61592,7 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Cook"
@@ -61645,7 +61645,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -61703,7 +61703,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Stanley Parable",
@@ -61730,7 +61730,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Stanley Parable",
@@ -61754,7 +61754,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -61780,7 +61780,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Stanley Parable",
@@ -61912,7 +61912,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -61971,7 +61971,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -62159,7 +62159,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dead Island",
@@ -62184,7 +62184,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Dead Island",
@@ -62296,10 +62296,10 @@
     "Elf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62318,13 +62318,13 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62350,10 +62350,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62378,10 +62378,10 @@
     "Halfling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62407,10 +62407,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62436,10 +62436,10 @@
     "Siklas"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62465,10 +62465,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62494,10 +62494,10 @@
     "Orc"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62523,10 +62523,10 @@
     "Halfling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62551,10 +62551,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62579,10 +62579,10 @@
     "Dwarf"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Solasta",
@@ -62608,7 +62608,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader"
@@ -62692,7 +62692,7 @@
     "Union Station"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -62752,7 +62752,7 @@
     "The Warrens prison block"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Wasteland",
@@ -62804,7 +62804,7 @@
     "The Bizarre"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Wasteland",
@@ -62832,7 +62832,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Wasteland",
@@ -62915,7 +62915,7 @@
     "Aspen"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Wasteland",
@@ -63085,7 +63085,7 @@
     "Dyrford Village"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -63114,7 +63114,7 @@
     "Caed Nua"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Pillars of Eternity",
@@ -63185,7 +63185,7 @@
     "Aumaua"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Archer",
@@ -63358,7 +63358,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Remember Me",
@@ -63417,7 +63417,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -63567,7 +63567,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Twelve Minutes",
@@ -63594,7 +63594,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Twelve Minutes",
@@ -63652,7 +63652,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63680,7 +63680,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63710,7 +63710,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63771,7 +63771,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63802,7 +63802,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63832,7 +63832,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63863,7 +63863,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -63896,7 +63896,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63924,7 +63924,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63949,7 +63949,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The Sinking City",
@@ -63973,10 +63973,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Blue Prince",
@@ -64008,7 +64008,7 @@
     "Eraja"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Blue Prince",
@@ -64034,10 +64034,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Blue Prince",
@@ -64062,7 +64062,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Writer"
@@ -64093,7 +64093,7 @@
     "Orinda"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Blue Prince",
@@ -64172,7 +64172,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Programmer",
@@ -64202,7 +64202,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -64289,7 +64289,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Servant"
@@ -64317,7 +64317,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -64343,7 +64343,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Artist",
@@ -64368,7 +64368,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Guard"
@@ -64395,7 +64395,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -64421,7 +64421,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Fighter",
@@ -64448,10 +64448,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "We Were Here",
@@ -64474,10 +64474,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -64503,10 +64503,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "We Were Here",
@@ -64530,10 +64530,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -64560,7 +64560,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -64590,7 +64590,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -64619,7 +64619,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64651,7 +64651,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64682,7 +64682,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64713,7 +64713,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64744,7 +64744,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64774,7 +64774,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64805,7 +64805,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64836,7 +64836,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64868,7 +64868,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64899,7 +64899,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64930,11 +64930,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -64961,7 +64961,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64991,11 +64991,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65020,11 +65020,11 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -65049,7 +65049,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -65074,11 +65074,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65099,11 +65099,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -65126,11 +65126,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65151,11 +65151,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65176,11 +65176,11 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -65206,11 +65206,11 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65228,14 +65228,14 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Breathedge",
@@ -65260,7 +65260,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -65287,7 +65287,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -65347,7 +65347,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Chernobylite",
@@ -65372,7 +65372,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -65402,7 +65402,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Chernobylite",
@@ -65487,7 +65487,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jagged Alliance",
@@ -65661,7 +65661,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Jagged Alliance",
@@ -66230,7 +66230,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -66289,7 +66289,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -66378,7 +66378,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
@@ -66407,7 +66407,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -66669,7 +66669,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -66730,7 +66730,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -66760,7 +66760,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -66789,7 +66789,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -66819,7 +66819,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Purple",
@@ -66850,7 +66850,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -66879,7 +66879,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -66906,7 +66906,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -66933,7 +66933,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -66962,7 +66962,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -66993,7 +66993,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -67392,7 +67392,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Nancy Drew",
@@ -67653,7 +67653,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "franchise": "Sundered",
@@ -67678,7 +67678,7 @@
     "Deponia"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red",
@@ -67814,7 +67814,7 @@
     "Elysium"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -67928,7 +67928,7 @@
     "Elysium"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -67957,7 +67957,7 @@
     "Elysium"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -68006,10 +68006,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68030,7 +68030,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Student"
@@ -68055,10 +68055,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68083,10 +68083,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68108,10 +68108,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Black"
@@ -68135,10 +68135,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Grey"
@@ -68162,10 +68162,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68187,10 +68187,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68212,10 +68212,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Red"
@@ -68238,7 +68238,7 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Writer"
@@ -68263,7 +68263,7 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Writer"
@@ -68288,10 +68288,10 @@
     "D'ni"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Myst",
@@ -68313,7 +68313,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Leader",
@@ -68343,10 +68343,10 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68370,10 +68370,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Ginger"
@@ -68398,7 +68398,7 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Revolutionary",
@@ -68427,7 +68427,7 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Revolutionary",
@@ -68456,10 +68456,10 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68484,7 +68484,7 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Revolutionary"
@@ -68512,7 +68512,7 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker",
@@ -68541,10 +68541,10 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68572,7 +68572,7 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Royalty"
@@ -68600,10 +68600,10 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68628,10 +68628,10 @@
     "Forgotling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68664,7 +68664,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -68697,7 +68697,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68728,7 +68728,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68760,7 +68760,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68791,7 +68791,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68822,7 +68822,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68852,7 +68852,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68880,7 +68880,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68912,7 +68912,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68944,7 +68944,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -68975,7 +68975,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -69005,7 +69005,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -69035,7 +69035,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -69066,7 +69066,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -69097,7 +69097,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "Saturnalia",
@@ -69119,7 +69119,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -69145,7 +69145,7 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Assistant"
@@ -69176,7 +69176,7 @@
     "Albion"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The First Descendant",
@@ -69202,7 +69202,7 @@
     "Albion"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The First Descendant",
@@ -69228,7 +69228,7 @@
     "Albion"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "franchise": "The First Descendant",
@@ -69251,7 +69251,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -69307,7 +69307,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Scientist"
@@ -69335,7 +69335,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -69361,7 +69361,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -69759,7 +69759,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -69787,7 +69787,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -70078,10 +70078,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -70111,7 +70111,7 @@
     "Other World"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "developer": "Rose City Games",
@@ -70263,7 +70263,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Luis Antonio",
@@ -70620,7 +70620,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Cyanide",
@@ -70676,7 +70676,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Croteam",
@@ -70700,7 +70700,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -70729,7 +70729,7 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -70762,7 +70762,7 @@
     "Player's choice"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Player's choice"
@@ -70790,10 +70790,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "FromSoftware",
@@ -70816,10 +70816,10 @@
     "Nephalem"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Blizzard",
@@ -70845,7 +70845,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Farmer"
@@ -70871,7 +70871,7 @@
     "Player's choice"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Player's choice"
@@ -70925,7 +70925,7 @@
     "Player's choice"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Player's choice"
@@ -70952,7 +70952,7 @@
     "Player's choice"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Player's choice"
@@ -71007,7 +71007,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Worker"
@@ -71036,7 +71036,7 @@
     "Hearthian"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71092,10 +71092,10 @@
     "Alien"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Maxis",
@@ -71149,10 +71149,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Pocket Pair",
@@ -71177,7 +71177,7 @@
     "Inkling"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
     "Soldier"
@@ -71204,10 +71204,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Total Mayhem Games",
@@ -71232,7 +71232,7 @@
     "Dwarf"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71260,11 +71260,11 @@
     "Traveller"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Hello Games",
@@ -71319,7 +71319,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71376,7 +71376,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71404,7 +71404,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71434,10 +71434,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Rundisc",
@@ -71494,7 +71494,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Irrational Games",
@@ -71661,7 +71661,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71693,7 +71693,7 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71749,7 +71749,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Double Damage Games",
@@ -71772,7 +71772,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -72046,7 +72046,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -72253,7 +72253,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -72306,7 +72306,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -72361,7 +72361,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -72389,7 +72389,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Ensemble Studios",
@@ -72409,10 +72409,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72434,10 +72434,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72459,10 +72459,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72484,10 +72484,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72509,10 +72509,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72534,10 +72534,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72559,10 +72559,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72584,10 +72584,10 @@
     "Human"
    ],
    "nationality": [
-    "Inconnu"
+    "Unknown"
    ],
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": null,
    "developer": "Nexon",
@@ -72636,7 +72636,7 @@
     "Robot"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -72666,11 +72666,11 @@
     "Animal"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -72699,7 +72699,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -72726,7 +72726,7 @@
     "Humanoid"
    ],
    "nationality": [
-    "Inconnu",
+    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -72786,7 +72786,7 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"

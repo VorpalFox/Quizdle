@@ -194,8 +194,8 @@ export function weaponOccupations(value: string): string[] {
 }
 
 // Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
-export const NO_OCCUPATION = 'Aucune'
-export const UNKNOWN_OCCUPATION = 'Inconnu'
+export const NO_OCCUPATION = 'None'
+export const UNKNOWN_OCCUPATION = 'Unknown'
 
 // Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
 const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Deity', 'Demon', 'Angel', 'Infected', 'Griffin', 'Mushroom', 'Basilisk'])
@@ -449,7 +449,7 @@ export function translatePlace(label: string): string[] {
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
 export const REAL_WORLD = 'Monde réel'
-export const OTHER_WORLD = 'Inconnu'
+export const OTHER_WORLD = 'Unknown'
 export const SPACE = 'Lost in the Galaxy'
 export const CTHULHU_MYTHOS = 'Mythe de Cthulhu'
 export type World = 'real' | 'other'

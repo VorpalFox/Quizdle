@@ -80,7 +80,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   // Pas des occupations
   'test subject': null, 'normal person': null, 'sujet psi': null,
   // Assumé par la source : « Unknown » donne Inconnu, « None » donne Aucune. Rien de trouvé, c'est vide (validé avec FX).
-  'unknown': 'Inconnu', 'none': 'Aucune',
+  'unknown': 'Unknown', 'none': 'None',
 }
 
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
@@ -252,7 +252,7 @@ const FROM_FRENCH: Record<string, string> = {
   'prêtresse': 'Priestess', 'rappeur': 'Rapper', 'recrue': 'Recruit', 'reine': 'Queen', 'religieuse': 'Nun',
   'roi': 'King', 'seigneur': 'Lord', 'servante': 'Maid', 'serveuse': 'Waitress', 'serviteur': 'Manservant',
   'soigneur': 'Healer', 'sorcier': 'Sorcerer', 'sorcière': 'Witch', 'tueur': 'Killer', 'vendeur': 'Salesperson',
-  'villageois': 'Villager', 'voyageur': 'Traveler', 'élève': 'Pupil', "pirate de l'espace": 'Space pirate',
+  'inconnu': 'Unknown', 'aucune': 'None', 'villageois': 'Villager', 'voyageur': 'Traveler', 'élève': 'Pupil', "pirate de l'espace": 'Space pirate',
 }
 
 // Le nom français d'une de nos valeurs (la 1re de la table : la valeur finale plutôt qu'un synonyme regroupé). Pour les
@@ -390,7 +390,7 @@ const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   'Blacksmith': ['Artisan'], 'Florist': ['Artisan'], 'Cook': ['Artisan'], 'Odd jobs': ['Employee'], 'Volleyball player': ['Athlete'],
 }
 
-const NO_REAL_OCCUPATION = new Set(['Inconnu', 'Aucune'])
+const NO_REAL_OCCUPATION = new Set(['Unknown', 'None'])
 
 // Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
 export function groupOccupations(values: readonly string[]): string[] | null {
@@ -407,7 +407,7 @@ const MAX_TITLES = 2
 
 // Un perso mort sans aucune occupation : « Aucune » (validé avec FX). Seulement s'il n'a rien d'autre, et jamais
 // « Mort » ou « Défunt » : ce serait un spoil affiché à chaque proposition.
-const NO_OCCUPATION = 'Aucune'
+const NO_OCCUPATION = 'None'
 
 // À la fin, corrections comprises : les armes (comment le perso se bat) et les titres des infobox (attributs de travail
 // « weapon », « titles » et « deceased ») rejoignent l'occupation, puis tout est regroupé

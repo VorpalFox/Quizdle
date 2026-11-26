@@ -48,12 +48,12 @@ describe('weaponOccupations', () => {
 
 describe('occupationOrNone', () => {
   it('CreatureSansMetier_Aucune', () => {
-    expect(occupationOrNone(null, ['Fox', 'Animal'])).toEqual(['Aucune'])
+    expect(occupationOrNone(null, ['Fox', 'Animal'])).toEqual(['None'])
   })
 
   it('HumainSansMetier_Inconnu', () => {
-    expect(occupationOrNone(null, ['Human'])).toEqual(['Inconnu'])
-    expect(occupationOrNone([], ['Elf'])).toEqual(['Inconnu'])
+    expect(occupationOrNone(null, ['Human'])).toEqual(['Unknown'])
+    expect(occupationOrNone([], ['Elf'])).toEqual(['Unknown'])
   })
 
   it('MetierConnu_Garde', () => {
@@ -306,19 +306,19 @@ describe('withWorld', () => {
 
   it('SansLieu_LeMondeDeLaFranchise', () => {
     expect(withWorld(null, ['Human'], 'real')).toEqual(['Monde réel'])
-    expect(withWorld([], ['Hylian'], 'other')).toEqual(['Inconnu'])
+    expect(withWorld([], ['Hylian'], 'other')).toEqual(['Unknown'])
     expect(withWorld(null, ['Human'], null)).toBeNull()
   })
 
   it('VenuDAilleursDansLeMondeReel_Inconnu', () => {
-    expect(withWorld(null, ['Demon'], 'real')).toEqual(['Inconnu'])
-    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Inconnu'])
+    expect(withWorld(null, ['Demon'], 'real')).toEqual(['Unknown'])
+    expect(withWorld(null, ['Sangheili'], 'real')).toEqual(['Unknown'])
     expect(withWorld(null, ['Fox', 'Animal'], 'real')).toEqual(['Monde réel'])
   })
 
   it('UniversPartages_AjoutesATous', () => {
     expect(withWorld(['Earth'], ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Earth', 'Monde réel', 'Lost in the Galaxy'])
-    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Inconnu', 'Lost in the Galaxy'])
+    expect(withWorld(null, ['Human'], 'other', ['Lost in the Galaxy'])).toEqual(['Unknown', 'Lost in the Galaxy'])
     expect(withWorld(null, ['Human'], null, ['Lost in the Galaxy'])).toEqual(['Lost in the Galaxy'])
     expect(withWorld(['Eschaton', 'Mythe de Cthulhu'], ['Human'], null, ['Mythe de Cthulhu'])).toEqual(['Eschaton', 'Mythe de Cthulhu'])
   })

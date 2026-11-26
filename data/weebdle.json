@@ -513,7 +513,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Mage",
@@ -4465,7 +4465,7 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": null,
    "hair": null,
    "anime": "Angel Beats!",
@@ -4637,7 +4637,7 @@
    "age": 15,
    "height": 147,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Silver"
@@ -4901,7 +4901,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -7950,7 +7950,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Musician",
@@ -8404,7 +8404,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Battle Game in 5 Seconds",
@@ -8988,7 +8988,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Silver"
@@ -10265,7 +10265,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Politician",
@@ -10439,7 +10439,7 @@
    "age": 19,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -10533,7 +10533,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Cleric"
@@ -10624,7 +10624,7 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "age": 1000,
    "height": null,
@@ -11109,7 +11109,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -11678,7 +11678,7 @@
   "attributes": {
    "gender": "Female",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 7,
    "occupation": null,
    "hair": null,
@@ -12904,7 +12904,7 @@
     "Bird",
     "Animal"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Assistant"
@@ -12968,7 +12968,7 @@
    "species": [
     "Beastman"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Associate of Gram Grandma"
@@ -13325,7 +13325,7 @@
    "age": 14,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -13424,7 +13424,7 @@
    "age": 19,
    "height": 166,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "BTOOOM!",
@@ -14706,7 +14706,7 @@
     "Human",
     "Demon"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 182,
    "occupation": [
     "Demon hunter",
@@ -15092,7 +15092,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172887-qMCjXPXMSKRk.png",
   "attributes": {
-   "gender": "Inconnu",
+   "gender": "Unknown",
    "species": [
     "Demon"
    ],
@@ -16024,7 +16024,7 @@
    "age": 16,
    "height": 158,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -16090,7 +16090,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 182,
    "occupation": [
     "Student"
@@ -18590,7 +18590,7 @@
    "age": null,
    "height": 160,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Grey"
@@ -18658,7 +18658,7 @@
    "age": null,
    "height": 161,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
@@ -18727,7 +18727,7 @@
    "age": null,
    "height": 190,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Grey"
@@ -18798,7 +18798,7 @@
    "age": null,
    "height": 180,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -18907,7 +18907,7 @@
    "age": null,
    "height": 162,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -18944,7 +18944,7 @@
    "age": null,
    "height": 153,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue",
@@ -18982,7 +18982,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
@@ -19053,7 +19053,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -20646,7 +20646,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -21747,7 +21747,7 @@
     "Homunculus",
     "Doll"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 188,
    "occupation": [
     "Bartender",
@@ -21814,7 +21814,7 @@
     "Homunculus",
     "Doll"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Manager",
@@ -21850,7 +21850,7 @@
     "Homunculus",
     "Doll"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 194,
    "occupation": [
     "Arbiter"
@@ -21957,7 +21957,7 @@
     "Homunculus",
     "Doll"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 169,
    "occupation": [
     "Leader"
@@ -23746,7 +23746,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Devilman Crybaby",
@@ -23938,7 +23938,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -24281,7 +24281,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Fisher"
@@ -24316,7 +24316,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Dororo",
@@ -26719,7 +26719,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 181,
    "occupation": [
     "Noble"
@@ -27071,7 +27071,7 @@
    "age": 26,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue"
@@ -27258,7 +27258,7 @@
    "species": [
     "Elf"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Mage",
@@ -28189,7 +28189,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Leader"
@@ -28221,10 +28221,10 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "From the New World",
@@ -29388,7 +29388,7 @@
    "species": [
     "Gorgon"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Servant"
@@ -30045,7 +30045,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Gleipnir",
@@ -30169,7 +30169,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Red",
@@ -31295,7 +31295,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 159,
    "occupation": [
     "Hunter",
@@ -31331,7 +31331,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Doctor"
@@ -31364,7 +31364,7 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Fighter",
     "Leader"
@@ -31429,7 +31429,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 170,
    "occupation": [
     "Leader",
@@ -31951,7 +31951,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Officer",
@@ -33322,7 +33322,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Courier",
@@ -33519,10 +33519,10 @@
    "species": [
     "Vampire"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -33587,10 +33587,10 @@
    "species": [
     "Vampire"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -33620,7 +33620,7 @@
    "species": [
     "Vampire"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Soldier"
@@ -33656,7 +33656,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -33682,12 +33682,12 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Hellsing Ultimate",
@@ -33716,10 +33716,10 @@
    "species": [
     "Vampire"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -34262,7 +34262,7 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "age": 13,
    "height": 164,
@@ -34386,7 +34386,7 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "age": null,
    "height": null,
@@ -34418,7 +34418,7 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Inconnu"
+    "Unknown"
    ],
    "age": null,
    "height": null,
@@ -36606,7 +36606,7 @@
    "age": 20,
    "height": 186,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -36762,7 +36762,7 @@
    "age": 50,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black",
@@ -36794,7 +36794,7 @@
    "age": 12000,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -36888,7 +36888,7 @@
    "age": 12000,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue",
@@ -37827,7 +37827,7 @@
    "age": 150,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "JUJUTSU KAISEN",
@@ -39046,7 +39046,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Kill la Kill",
@@ -40424,7 +40424,7 @@
    "age": 28,
    "height": 168,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Green"
@@ -42535,7 +42535,7 @@
    "age": null,
    "height": 168,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "White"
@@ -44501,7 +44501,7 @@
    "age": 32,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Red"
@@ -46457,7 +46457,7 @@
   "attributes": {
    "gender": "Female",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 145,
    "occupation": [
     "Spy",
@@ -46588,10 +46588,10 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
-   "height": "Inconnu",
+   "age": "Unknown",
+   "height": "Unknown",
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -47685,7 +47685,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 190,
    "occupation": [
     "Celebrity"
@@ -50843,7 +50843,7 @@
     "Cyborg"
    ],
    "age": 110,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Leader",
     "Soldier"
@@ -50878,9 +50878,9 @@
     "Human"
    ],
    "age": 27,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -50983,7 +50983,7 @@
     "Human"
    ],
    "age": 32,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Celebrity"
    ],
@@ -51016,7 +51016,7 @@
     "Human"
    ],
    "age": 14,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Student"
    ],
@@ -51050,9 +51050,9 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Brown"
@@ -51084,7 +51084,7 @@
     "Human"
    ],
    "age": 28,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Criminal"
    ],
@@ -51394,7 +51394,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Puella Magi Madoka Magica",
@@ -52146,7 +52146,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Ranking of Kings",
@@ -52656,7 +52656,7 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Villain"
    ],
@@ -52692,7 +52692,7 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Noble",
     "Adventurer",
@@ -52730,7 +52730,7 @@
     "Human"
    ],
    "age": 19,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Noble",
     "Adventurer",
@@ -52769,8 +52769,8 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
-   "height": "Inconnu",
+   "age": "Unknown",
+   "height": "Unknown",
    "occupation": [
     "Leader",
     "Captain"
@@ -52805,7 +52805,7 @@
     "Human"
    ],
    "age": 16,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Pilot",
     "Hero"
@@ -52839,7 +52839,7 @@
     "Human"
    ],
    "age": 16,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Student"
    ],
@@ -52980,8 +52980,8 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
-   "height": "Inconnu",
+   "age": "Unknown",
+   "height": "Unknown",
    "occupation": [
     "Hunter",
     "Detective"
@@ -53147,7 +53147,7 @@
     "Human"
    ],
    "age": 20,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": [
     "Officer",
     "Soldier"
@@ -53315,7 +53315,7 @@
     "Human"
    ],
    "age": null,
-   "height": "Inconnu",
+   "height": "Unknown",
    "occupation": null,
    "hair": null,
    "anime": "Re:CREATORS",
@@ -54481,7 +54481,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -54664,7 +54664,7 @@
     "Monkey",
     "Animal"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Anthy Himemiya's Friend"
@@ -55193,7 +55193,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Purple",
@@ -55469,7 +55469,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Rokka -Braves of the Six Flowers-",
@@ -57092,7 +57092,7 @@
    "age": 18,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blond"
@@ -57229,7 +57229,7 @@
    "age": 24,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Blue"
@@ -57264,7 +57264,7 @@
    "age": 60,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Bald"
@@ -57392,7 +57392,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Shiki",
@@ -57492,7 +57492,7 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "Shiki",
@@ -60246,7 +60246,7 @@
    "age": 17,
    "height": 167,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -60278,7 +60278,7 @@
    "age": 17,
    "height": 183,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -63010,7 +63010,7 @@
    "age": 8,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Purple"
@@ -63110,7 +63110,7 @@
    "age": 9,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -66366,7 +66366,7 @@
     "Human",
     "Beast"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 158,
    "occupation": null,
    "hair": [
@@ -66394,7 +66394,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 188,
    "occupation": [
     "Mage"
@@ -66429,8 +66429,8 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
-   "height": "Inconnu",
+   "age": "Unknown",
+   "height": "Unknown",
    "occupation": [
     "Mage"
    ],
@@ -66460,7 +66460,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": null,
    "hair": [
@@ -66621,7 +66621,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Mage",
@@ -66663,7 +66663,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "N/A"
@@ -66781,7 +66781,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "The Witch and the Beast",
@@ -66809,7 +66809,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "The Witch and the Beast",
@@ -67120,7 +67120,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": 168,
    "occupation": [
     "Bartender",
@@ -67412,7 +67412,7 @@
    "age": 15,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -67445,7 +67445,7 @@
    "age": 14,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "White"
@@ -67512,7 +67512,7 @@
    "age": 12,
    "height": null,
    "occupation": [
-    "Inconnu"
+    "Unknown"
    ],
    "hair": [
     "Blond"
@@ -67577,7 +67577,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -67674,7 +67674,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -67705,7 +67705,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Ginger"
@@ -67768,7 +67768,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -67822,15 +67822,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b231456-SOepFGeYFMBn.jpg",
   "attributes": {
-   "gender": "Inconnu",
+   "gender": "Unknown",
    "species": [
     "Dog",
     "Animal"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -67861,7 +67861,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -67892,7 +67892,7 @@
    "age": 11,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -67925,7 +67925,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": null,
    "anime": "To Your Eternity",
@@ -70601,7 +70601,7 @@
   "attributes": {
    "gender": "Female",
    "species": null,
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": null,
    "hair": [
@@ -70633,7 +70633,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": null,
    "hair": [
@@ -71806,7 +71806,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Brown"
@@ -71839,7 +71839,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Pink"
@@ -71939,7 +71939,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Aucune"
+    "None"
    ],
    "hair": [
     "Black"
@@ -73308,7 +73308,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Singer",
@@ -73378,7 +73378,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Owner of BB Lounge"
@@ -73413,7 +73413,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Singer",
@@ -73447,7 +73447,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "DJ",
@@ -73662,7 +73662,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Singer",
@@ -73699,7 +73699,7 @@
    "species": [
     "Human"
    ],
-   "age": "Inconnu",
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Employee"

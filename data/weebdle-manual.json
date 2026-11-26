@@ -440,7 +440,7 @@
    "_raison": "sorcière de Madoka = monstre, pas une magicienne (« The witch of stage settings ») : pas de métier",
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ],
     "moins": [
      "Witch"
@@ -476,7 +476,7 @@
    },
    "occupation": {
     "plus": [
-     "Aucune"
+     "None"
     ]
    }
   },
