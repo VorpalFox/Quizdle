@@ -102,6 +102,8 @@ const RULES: [RegExp, string | null][] = [
   [/\bidols?\b/, 'Idole'],
   // Les bibliothécaires, et le comité de la bibliothèque des lycées (Shiori, The World God Only Knows)
   [/librarian|library committee/, 'Bibliothécaire'],
+  // Le club d'art du lycée (« Loop Art Club Member », Sora, The World God Only Knows) : une artiste
+  [/\bart club\b/, 'Artiste'],
   // Les démons de Chainsaw Man (« Wild Devil », « Contract Devil ») : ce qu'ils sont en guise de rôle (validé avec FX)
   [/\bdevils?$/, 'Démon'],
   // The World God Only Knows : « Track and Field Club Girl » (Ayumi), « Café Owner » (Mari, un Barman, donc aussi Serveur),

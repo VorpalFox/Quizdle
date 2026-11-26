@@ -2095,6 +2095,37 @@
   }
  },
  {
+  "id": "127518",
+  "name": "Nezuko Kamado",
+  "aliases": [
+   "Kamado Nezuko",
+   "竈門禰豆子",
+   "Nezuko"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 12,
+   "occupation": [
+    "Femme au foyer"
+   ],
+   "hair": [
+    "Noirs",
+    "Roux"
+   ],
+   "anime": "Demon Slayer: Kimetsu no Yaiba",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Drame",
+    "Fantasy",
+    "Surnaturel"
+   ],
+   "year": 2019,
+   "studio": "ufotable"
+  }
+ },
+ {
   "id": "64769",
   "name": "Shouyou Hinata",
   "aliases": [
@@ -2125,37 +2156,6 @@
    ],
    "year": 2014,
    "studio": "Production I.G"
-  }
- },
- {
-  "id": "127518",
-  "name": "Nezuko Kamado",
-  "aliases": [
-   "Kamado Nezuko",
-   "竈門禰豆子",
-   "Nezuko"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 12,
-   "occupation": [
-    "Femme au foyer"
-   ],
-   "hair": [
-    "Noirs",
-    "Roux"
-   ],
-   "anime": "Demon Slayer: Kimetsu no Yaiba",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Drame",
-    "Fantasy",
-    "Surnaturel"
-   ],
-   "year": 2019,
-   "studio": "ufotable"
   }
  },
  {
@@ -2319,36 +2319,6 @@
   }
  },
  {
-  "id": "4003",
-  "name": "Joutarou Kuujou",
-  "aliases": [
-   "Kuujou Joutarou",
-   "Professor Kuujou",
-   "空条承太郎",
-   "Joutarou"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 17,
-   "occupation": [
-    "Étudiant",
-    "Marine Biologist"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Aventure",
-    "Surnaturel"
-   ],
-   "year": 2014,
-   "studio": "david production"
-  }
- },
- {
   "id": "46494",
   "name": "Armin Arlert",
   "aliases": [
@@ -2378,6 +2348,36 @@
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
+  }
+ },
+ {
+  "id": "4003",
+  "name": "Joutarou Kuujou",
+  "aliases": [
+   "Kuujou Joutarou",
+   "Professor Kuujou",
+   "空条承太郎",
+   "Joutarou"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 17,
+   "occupation": [
+    "Étudiant",
+    "Marine Biologist"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Aventure",
+    "Surnaturel"
+   ],
+   "year": 2014,
+   "studio": "david production"
   }
  },
  {
@@ -4003,6 +4003,35 @@
   }
  },
  {
+  "id": "71267",
+  "name": "Kenma Kozume",
+  "aliases": [
+   "Kozume Kenma",
+   "孤爪研磨",
+   "Kenma",
+   "Kozume"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+  "attributes": {
+   "gender": "Homme",
+   "age": 16,
+   "occupation": [
+    "Étudiant"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2024,
+   "studio": "Production I.G"
+  }
+ },
+ {
   "id": "246",
   "name": "Gokuu Son",
   "aliases": [
@@ -4039,35 +4068,6 @@
    ],
    "year": 1986,
    "studio": "Toei Animation"
-  }
- },
- {
-  "id": "71267",
-  "name": "Kenma Kozume",
-  "aliases": [
-   "Kozume Kenma",
-   "孤爪研磨",
-   "Kenma",
-   "Kozume"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
-  "attributes": {
-   "gender": "Homme",
-   "age": 16,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "HAIKYU!!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2024,
-   "studio": "Production I.G"
   }
  },
  {
@@ -4801,6 +4801,33 @@
   }
  },
  {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Femme",
+   "age": 16,
+   "occupation": null,
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Kakegurui",
+   "genres": [
+    "Drame",
+    "Mystère",
+    "Psychologique"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
+  }
+ },
+ {
   "id": "718",
   "name": "Kenzou Tenma",
   "aliases": [
@@ -4833,33 +4860,6 @@
    ],
    "year": 2004,
    "studio": "MADHOUSE"
-  }
- },
- {
-  "id": "121889",
-  "name": "Yumeko Jabami",
-  "aliases": [
-   "Jabami Yumeko",
-   "蛇喰夢子",
-   "Yumeko",
-   "Jabami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
-  "attributes": {
-   "gender": "Femme",
-   "age": 16,
-   "occupation": null,
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Kakegurui",
-   "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique"
-   ],
-   "year": 2017,
-   "studio": "MAPPA"
   }
  },
  {
@@ -4956,6 +4956,35 @@
   }
  },
  {
+  "id": "128651",
+  "name": "Hanako",
+  "aliases": [
+   "花子"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 58,
+   "occupation": [
+    "Leader",
+    "Étudiant"
+   ],
+   "hair": [
+    "Noirs"
+   ],
+   "anime": "Toilet-bound Hanako-kun",
+   "genres": [
+    "Action",
+    "Comédie",
+    "Drame",
+    "Mystère",
+    "Surnaturel"
+   ],
+   "year": 2020,
+   "studio": "Lerche"
+  }
+ },
+ {
   "id": "88348",
   "name": "Rudeus Greyrat",
   "aliases": [
@@ -4987,35 +5016,6 @@
    ],
    "year": 2021,
    "studio": "Studio Bind"
-  }
- },
- {
-  "id": "128651",
-  "name": "Hanako",
-  "aliases": [
-   "花子"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128651-GaZImkP2Of1R.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 58,
-   "occupation": [
-    "Leader",
-    "Étudiant"
-   ],
-   "hair": [
-    "Noirs"
-   ],
-   "anime": "Toilet-bound Hanako-kun",
-   "genres": [
-    "Action",
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
-   ],
-   "year": 2020,
-   "studio": "Lerche"
   }
  },
  {
@@ -5545,6 +5545,37 @@
   }
  },
  {
+  "id": "67329",
+  "name": "Kei Tsukishima",
+  "aliases": [
+   "Tsukishima Kei",
+   "月島蛍",
+   "Kei",
+   "Tsukishima"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
+  "attributes": {
+   "gender": "Homme",
+   "age": 15,
+   "occupation": [
+    "Volleyeur",
+    "Étudiant",
+    "Sportif"
+   ],
+   "hair": [
+    "Blonds"
+   ],
+   "anime": "HAIKYU!!",
+   "genres": [
+    "Comédie",
+    "Drame",
+    "Sport"
+   ],
+   "year": 2014,
+   "studio": "Production I.G"
+  }
+ },
+ {
   "id": "136071",
   "name": "Tengen Uzui",
   "aliases": [
@@ -5575,37 +5606,6 @@
    ],
    "year": 2021,
    "studio": "ufotable"
-  }
- },
- {
-  "id": "67329",
-  "name": "Kei Tsukishima",
-  "aliases": [
-   "Tsukishima Kei",
-   "月島蛍",
-   "Kei",
-   "Tsukishima"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
-  "attributes": {
-   "gender": "Homme",
-   "age": 15,
-   "occupation": [
-    "Volleyeur",
-    "Étudiant",
-    "Sportif"
-   ],
-   "hair": [
-    "Blonds"
-   ],
-   "anime": "HAIKYU!!",
-   "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
-   ],
-   "year": 2014,
-   "studio": "Production I.G"
   }
  },
  {

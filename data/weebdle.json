@@ -17594,7 +17594,8 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Artiste"
    ],
    "hair": [
     "Violets"
@@ -67119,14 +67120,14 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": "Inconnu",
    "height": 168,
    "occupation": [
     "Barman",
     "Serveur"
    ],
    "hair": [
-    "Rouges"
+    "Roux"
    ],
    "anime": "The World God Only Knows",
    "genres": [
@@ -67155,7 +67156,7 @@
     "Humain"
    ],
    "age": 300,
-   "height": null,
+   "height": 169,
    "occupation": [
     "Leader"
    ],
@@ -67186,8 +67187,12 @@
    ],
    "age": 17,
    "height": 160,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Artiste"
+   ],
+   "hair": [
+    "Bleus"
+   ],
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
@@ -67214,7 +67219,7 @@
     "Humain"
    ],
    "age": 17,
-   "height": null,
+   "height": 160,
    "occupation": [
     "Étudiant"
    ],
@@ -67247,12 +67252,12 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": 179,
    "occupation": [
     "Professeur"
    ],
    "hair": [
-    "Noirs"
+    "Gris"
    ],
    "anime": "The World God Only Knows",
    "genres": [
@@ -67285,66 +67290,6 @@
    "hair": [
     "Noirs"
    ],
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "387259",
-  "name": "Izumi Ishikiri",
-  "aliases": [
-   "Ishikiri Izumi",
-   "石切いづみ",
-   "Ishikiri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387259-wFtBnAahhk8H.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": "Inconnu",
-   "height": null,
-   "occupation": [
-    "Étudiant"
-   ],
-   "hair": null,
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "387261",
-  "name": "Morita",
-  "aliases": [
-   "森田"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387261-6Fg4adD4hZGL.png",
-  "attributes": {
-   "gender": "Homme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Chauffeur"
-   ],
-   "hair": null,
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
