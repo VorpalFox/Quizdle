@@ -10009,7 +10009,9 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": [
     "Red"
    ],
@@ -10067,7 +10069,9 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10327,7 +10331,9 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -21118,7 +21124,9 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -30051,7 +30059,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Archaeologist"
+    "Archaeologist",
+    "Scientist"
    ],
    "hair": [
     "Grey"
@@ -31578,7 +31587,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Scientist"
    ],
    "hair": [
     "Bald"
@@ -39314,7 +39324,9 @@
    "nationality": [
     "Winters"
    ],
-   "occupation": null,
+   "occupation": [
+    "Scientist"
+   ],
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -53296,7 +53308,6 @@
   "name": "Bjorn Seligsson",
   "aliases": [
    "Seligsson Bjorn",
-   "Bjorn",
    "Seligsson"
   ],
   "attributes": {
@@ -53325,6 +53336,89 @@
   "aliases": [
    "Brawn Dr.",
    "Brawn"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Scientist"
+   ],
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-messenger-of-love",
+  "name": "Messenger of Love",
+  "aliases": [
+   "Love of Messenger",
+   "Messenger"
+  ],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-bjorn-and-bastigor",
+  "name": "Bjorn and Bastigor",
+  "aliases": [
+   "Bastigor and Bjorn",
+   "and",
+   "Bastigor"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": [
+    "Feybreak Tower"
+   ],
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": null,
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-reincarnated-guy",
+  "name": "Reincarnated Guy",
+  "aliases": [
+   "Guy Reincarnated",
+   "Reincarnated",
+   "Guy"
   ],
   "attributes": {
    "gender": "Male",
@@ -60623,7 +60717,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Scientist"
    ],
    "hair": [
     "White"
@@ -63020,7 +63115,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Scientist"
    ],
    "hair": [
     "Brown"
@@ -68669,7 +68765,8 @@
     "Mythe de Cthulhu"
    ],
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Scientist"
    ],
    "hair": null,
    "developer": "Cyanide",

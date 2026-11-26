@@ -667,7 +667,8 @@ const finished = manualApplied.entries.map(entry => {
   // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
   const { weapon, [NAME_TITLE]: _title, ...attributes } = entry.attributes
   const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
-  const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
+  const found = known ?? functionRole(entry) ?? entityRole(entry, species)
+  const occupation = mergeOccupations([...found ?? [], ...doctorRole(entry) ?? []]) ?? null
   return { ...entry, attributes: { ...attributes, species, occupation: occupationOrChoice(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
 
@@ -719,6 +720,12 @@ function entityRole(entry: Entry, species: string[] | null): string[] | null {
   entityRoles.push(`${entry.name} (${entry.attributes.franchise}) : ${role}`)
   return [role]
 }
+
+// « Dr. » ou « Doctor » en tête du nom (Dr. Brawn, Doctor N. Tropy) : Scientifique, ajouté au métier (un médecin a déjà Docteur)
+function doctorRole(entry: Entry): string[] | null {
+  return [entry.name, ...entry.aliases ?? []].some(name => /^(?:dr\.?|doctor|docteur)\s+\S/i.test(name)) ? ['Scientist'] : null
+}
+
 await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, null, 1)}\n`)
 
 // --- Récap ---
