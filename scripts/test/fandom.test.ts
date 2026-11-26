@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { affiliationOccupations, fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { templateSpecies } from '../fandom.js'
+import { affiliationOccupations,fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -221,5 +222,12 @@ describe('infobox dans un modèle propre au perso', () => {
   })
   it('pas une infobox portable générique', () => {
     expect(templateInfobox('<infobox><data source="gender"><label>Gender</label></data></infobox><noinclude>{{InDepthCharacterInfobox|gender=Example}}</noinclude>')).toBeNull()
+  })
+})
+
+describe('templateSpecies', () => {
+  it('ModeleDuPeuple_Espece', () => {
+    expect(templateSpecies('{{Parent Tab Template|tab1=Outline}}{{Hell character\n|Gender = Female\n}}')).toEqual(['Demon'])
+    expect(templateSpecies('{{Target character\n|Gender = Female\n}}')).toEqual([])
   })
 })

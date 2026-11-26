@@ -551,6 +551,15 @@ const SPECIES_ROLE = /\b(?:is|was|became|becomes|turned into|turns into)\s+(?:(?
 const END_OF_SPECIES = /\s(?:who|that|which|whose|in|from|for|with|at|on|to|by|of|and|but|named|known|living|born)\b.*$/i
 // Une espèce de Fate seulement : ailleurs un domestique (les servantes du Domaine des Papillons de Demon Slayer)
 const NOT_SPECIES_IN_INTRO = new Set(['servant'])
+// Les wikis qui ont un modèle d'infobox par peuple, sans champ espèce : le nom du modèle la donne (en anglais, traduite
+// ensuite comme les autres). The World God Only Knows : {{Hell character}} pour les démons de l'Enfer (Elucia, Dokurou).
+const TEMPLATE_SPECIES: [RegExp, string][] = [
+  [/\{\{\s*Hell[ _]character\s*[|\n}]/i, 'Demon'],
+]
+export function templateSpecies(wikitext: string): string[] {
+  return TEMPLATE_SPECIES.filter(([pattern]) => pattern.test(wikitext)).map(([, species]) => species)
+}
+
 export function introSpecies(wikitext: string): string[] {
   const intro = (fandomInfobox(wikitext)?.intro ?? introText(wikitext)).replace(/["“”]/g, '')
   // « ., » : la fin d'un paragraphe, recollé au suivant par cleanValue
@@ -691,8 +700,9 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const occupation = [...new Set([...jobs, ...affiliation ?? [], ...intro?.occupation ?? [], ...school ?? []])]
       if (occupation.length > jobs.length)
         own.occupation = occupation
-      // Sans espèce dans l'infobox : celle que dit l'introduction (« Aqua is a goddess »)
-      const species = isEmpty(values.species) ? introSpecies(pages[title]!) : []
+      // Sans espèce dans l'infobox : celle que dit son modèle ({{Hell character}}), sinon l'introduction (« Aqua is a goddess »)
+      const template = templateSpecies(pages[title]!)
+      const species = !isEmpty(values.species) ? [] : template.length > 0 ? template : introSpecies(pages[title]!)
       if (species.length > 0)
         own.species = species
       const added = addedValues(target.entry.attributes, own)

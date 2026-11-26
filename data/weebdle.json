@@ -67153,7 +67153,7 @@
   "attributes": {
    "gender": "Femme",
    "species": [
-    "Humain"
+    "Démon"
    ],
    "age": 300,
    "height": 169,
@@ -67251,7 +67251,7 @@
    "species": [
     "Humain"
    ],
-   "age": null,
+   "age": 51,
    "height": 179,
    "occupation": [
     "Professeur"
@@ -67283,7 +67283,7 @@
     "Humain"
    ],
    "age": null,
-   "height": null,
+   "height": 170,
    "occupation": [
     "Assistant"
    ],
