@@ -242,6 +242,15 @@ export const hairColors = (text: string) => HAIR_COLORS
   .sort((a, b) => a.index - b.index)
   .map(({ color }) => color)
 
+// Les mèches qui suivent « … hair » : « short white hair with light green streaks » (Lily Everhart), « brown hair
+// with blonde streaks » (Marcus Dryden). Seulement des mèches, pointes ou reflets, juste derrière : pas « blue hair
+// with a red ribbon ».
+const TRAILING_HAIR = new RegExp(String.raw`^,?\s+with\s+(?:(?:a|an|some|several|various|few|two|thin|thick|small|light|dark|bright|pale|deep|faint|subtle|vivid)\s+)*((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?[\s-]+(?:streaks?|tips?|highlights?|strands?|ends|stripes?|locks|accents?|tint|undertones?)\b`, 'i')
+export const trailingHair = (after: string) => {
+  const found = TRAILING_HAIR.exec(after)
+  return found ? hairColors(found[1]!) : []
+}
+
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.
 export function parseHair(description: string | null): string[] | null {
@@ -251,7 +260,7 @@ export function parseHair(description: string | null): string[] | null {
     return fromField
   const text = withoutSpoilers(description)
   const found = HAIR_IN_TEXT.exec(text)
-  const fromText = found ? hairColors(found[1]!) : []
+  const fromText = found ? [...new Set([...hairColors(found[1]!), ...trailingHair(text.slice(found.index + found[0].length))])].slice(0, 2) : []
   if (fromText.length > 0)
     return fromText
   return DARK_HAIR_IN_TEXT.test(text) ? [DARK_HAIR] : null

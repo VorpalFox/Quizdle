@@ -2,7 +2,7 @@
 // hair »), en sautant au besoin ce qui parle de la conception du personnage (Wikipédia), et les liens d'une page
 // d'homonymie.
 import { normalize } from '../src/engine/search.js'
-import { COLOR_WORDS, DARK_HAIR, DARK_HAIR_IN_TEXT, HAIR_IN_TEXT, hairColors } from './anilist.js'
+import { COLOR_WORDS, DARK_HAIR, DARK_HAIR_IN_TEXT, HAIR_IN_TEXT, hairColors, trailingHair } from './anilist.js'
 
 const MAX_HAIR_COLORS = 2
 
@@ -106,7 +106,8 @@ function hairIn(wikitext: string, pattern: RegExp, skip?: RegExp): { colors: str
         former.push(...colors)
         continue
       }
-      current.push(...colors)
+      // Et les mèches juste derrière (« white hair with light green streaks »)
+      current.push(...colors, ...pattern === HAIR_IN_TEXT_ALL ? trailingHair(plain.slice(found.index + found[0].length)) : [])
       break
     }
     const all = [...new Set([...current, ...former])].slice(0, MAX_HAIR_COLORS)

@@ -84,3 +84,13 @@ describe('textHair : la couleur après « hair »', () => {
     expect(textHair(page('He wears a black coat, long hair falling on his back.'))).toBeNull()
   })
 })
+
+describe('textHair : les mèches derrière « hair »', () => {
+  const page = (appearance: string) => `Intro.\n==Appearance==\n${appearance}\n`
+  it('« white hair with light green streaks » (Lily Everhart)', () => {
+    expect(textHair(page('She is barefoot and has short white hair with light green streaks.'))?.colors).toEqual(['White', 'Green'])
+  })
+  it("pas la couleur d'un accessoire", () => {
+    expect(textHair(page('She has long blue hair with a red ribbon.'))?.colors).toEqual(['Blue'])
+  })
+})
