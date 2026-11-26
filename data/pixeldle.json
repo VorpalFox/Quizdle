@@ -619,7 +619,8 @@
     "Politician",
     "Archer",
     "Pirate",
-    "Swordsman"
+    "Swordsman",
+    "Noble"
    ],
    "hair": [
     "Blond"
@@ -649,7 +650,8 @@
     "Hyrule"
    ],
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Soldier"
    ],
    "hair": [
     "Red"
@@ -842,7 +844,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Mage"
    ],
    "hair": null,
    "franchise": "The Legend of Zelda",
@@ -2232,7 +2235,9 @@
    ],
    "occupation": [
     "Guard",
-    "Soldier"
+    "Soldier",
+    "Mercenary",
+    "Driver"
    ],
    "hair": [
     "Blond"
@@ -2438,6 +2443,7 @@
    "occupation": [
     "Guard",
     "Soldier",
+    "Mercenary",
     "Swordsman",
     "Marksman"
    ],
@@ -2466,7 +2472,9 @@
     "Bevelle"
    ],
    "occupation": [
-    "Cleric"
+    "Cleric",
+    "Mage",
+    "Hunter"
    ],
    "hair": [
     "Brown"
@@ -2493,7 +2501,8 @@
     "Besaid"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Athlete"
    ],
    "hair": [
     "Blond"
@@ -2607,7 +2616,9 @@
     "Unknown"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Politician",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -2637,7 +2648,8 @@
     "Balamb Garden"
    ],
    "occupation": [
-    "Teacher"
+    "Teacher",
+    "Mercenary"
    ],
    "hair": [
     "Blond"
@@ -2747,7 +2759,8 @@
     "Dream Zanarkand"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Athlete"
    ],
    "hair": [
     "Black"
@@ -2804,7 +2817,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Fighter",
+    "Worker",
+    "Merchant"
    ],
    "hair": [
     "Black",
@@ -2862,7 +2878,9 @@
    ],
    "occupation": [
     "Journalist",
-    "Soldier"
+    "Soldier",
+    "Spy",
+    "Teacher"
    ],
    "hair": [
     "Brown",
@@ -2927,7 +2945,8 @@
    ],
    "occupation": [
     "Fighter",
-    "Ninja"
+    "Ninja",
+    "Royalty"
    ],
    "hair": [
     "Brown",
@@ -3010,7 +3029,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Soldier"
    ],
    "hair": [
     "Blond",
@@ -3160,7 +3180,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Criminal",
+    "Politician"
    ],
    "hair": [
     "Blond"
@@ -3255,7 +3277,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -3283,7 +3306,8 @@
    ],
    "occupation": [
     "Guard",
-    "Assassin"
+    "Assassin",
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -3341,7 +3365,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Cook"
    ],
    "hair": [
     "Brown"
@@ -3748,6 +3773,7 @@
    "occupation": [
     "Cleric",
     "Fighter",
+    "Student",
     "Swordsman"
    ],
    "hair": null,
@@ -4045,7 +4071,8 @@
     "Businessperson",
     "Leader",
     "Fighter",
-    "Assassin"
+    "Assassin",
+    "Worker"
    ],
    "hair": [
     "Brown",
@@ -4108,7 +4135,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Assassin",
+    "Soldier"
    ],
    "hair": [
     "Blond"
@@ -4137,7 +4166,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Unemployed"
    ],
    "hair": [
     "Blond"
@@ -4167,7 +4197,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Artist"
+    "Artist",
+    "Noble",
+    "Soldier",
+    "Teacher"
    ],
    "hair": [
     "Brown"
@@ -4196,7 +4229,8 @@
    "occupation": [
     "Samurai",
     "Vigilante",
-    "Ninja"
+    "Ninja",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -4261,7 +4295,8 @@
     "Employee",
     "Leader",
     "Teacher",
-    "Fighter"
+    "Fighter",
+    "Worker"
    ],
    "hair": [
     "Silver"
@@ -4293,7 +4328,9 @@
    ],
    "occupation": [
     "Cook",
-    "Fighter"
+    "Fighter",
+    "Teacher",
+    "Waiter"
    ],
    "hair": [
     "Black"
@@ -4385,7 +4422,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -4449,7 +4487,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Archaeologist"
+    "Archaeologist",
+    "Student",
+    "Scientist",
+    "Spy"
    ],
    "hair": [
     "Brown"
@@ -4511,7 +4552,8 @@
     "Businessperson",
     "Assassin",
     "Leader",
-    "Fighter"
+    "Fighter",
+    "Cleric"
    ],
    "hair": [
     "Black",
@@ -4673,7 +4715,9 @@
     "Thief",
     "Soldier",
     "Fighter",
-    "Monster hunter"
+    "Monster hunter",
+    "Guard",
+    "Spy"
    ],
    "hair": [
     "Blond"
@@ -4707,7 +4751,8 @@
    ],
    "occupation": [
     "Police officer",
-    "Spy"
+    "Spy",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -4741,7 +4786,8 @@
     "Vigilante",
     "Spy",
     "Fighter",
-    "Monster hunter"
+    "Monster hunter",
+    "Employee"
    ],
    "hair": [
     "Black"
@@ -4842,7 +4888,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Farmer"
+    "Farmer",
+    "Noble",
+    "Businessperson",
+    "Musician"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -4927,7 +4976,9 @@
     "Police officer",
     "Scientist",
     "Advisor",
-    "Doctor"
+    "Doctor",
+    "Guard",
+    "Teacher"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5012,7 +5063,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Soldier"
+    "Soldier",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5042,7 +5094,8 @@
    ],
    "occupation": [
     "Soldier",
-    "Mercenary"
+    "Mercenary",
+    "Revolutionary"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5072,7 +5125,8 @@
    ],
    "occupation": [
     "Businessperson",
-    "Terrorist"
+    "Terrorist",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5106,7 +5160,8 @@
    ],
    "occupation": [
     "Scientist",
-    "Leader"
+    "Leader",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Resident Evil",
@@ -5437,7 +5492,8 @@
    "occupation": [
     "Mercenary",
     "Soldier",
-    "Ninja"
+    "Ninja",
+    "Spy"
    ],
    "hair": [
     "Silver",
@@ -5502,7 +5558,8 @@
    ],
    "occupation": [
     "Leader",
-    "Spy"
+    "Spy",
+    "Revolutionary"
    ],
    "hair": [
     "Blond"
@@ -5529,7 +5586,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Sniper"
+    "Sniper",
+    "Assassin"
    ],
    "hair": [
     "Brown"
@@ -5598,7 +5656,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Brown",
@@ -5631,7 +5690,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Politician"
+    "Politician",
+    "Student",
+    "Soldier"
    ],
    "hair": [
     "Brown",
@@ -7049,7 +7110,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Swordsman"
+    "Swordsman",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Kirby",
@@ -7678,7 +7740,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Pilot"
+    "Pilot",
+    "Leader"
    ],
    "hair": [
     "N/A"
@@ -7744,7 +7807,8 @@
    ],
    "occupation": [
     "Mechanic",
-    "Pilot"
+    "Pilot",
+    "Scientist"
    ],
    "hair": [
     "N/A"
@@ -7775,7 +7839,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Advisor"
    ],
    "hair": [
     "N/A"
@@ -7807,7 +7872,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Leader"
    ],
    "hair": [
     "N/A"
@@ -7905,7 +7971,8 @@
    ],
    "occupation": [
     "Pilot",
-    "Thief"
+    "Thief",
+    "Leader"
    ],
    "hair": [
     "N/A"
@@ -7939,7 +8006,8 @@
    ],
    "occupation": [
     "Mechanic",
-    "Pilot"
+    "Pilot",
+    "Scientist"
    ],
    "hair": [
     "N/A"
@@ -7971,7 +8039,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Bounty hunter"
    ],
    "hair": [
     "Blue"
@@ -8001,7 +8070,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Leader"
    ],
    "hair": [
     "N/A"
@@ -8065,7 +8135,9 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Leader",
+    "Employee"
    ],
    "hair": [
     "N/A"
@@ -8097,7 +8169,8 @@
    ],
    "occupation": [
     "Sniper",
-    "Pilot"
+    "Pilot",
+    "Assassin"
    ],
    "hair": [
     "N/A"
@@ -8128,7 +8201,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Soldier"
    ],
    "hair": [
     "N/A"
@@ -8160,7 +8234,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Musician"
    ],
    "hair": [
     "N/A"
@@ -8257,7 +8332,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Servant"
    ],
    "hair": [
     "N/A"
@@ -8289,7 +8365,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pilot",
+    "Pirate"
    ],
    "hair": [
     "N/A"
@@ -8318,7 +8395,9 @@
     "Askr"
    ],
    "occupation": [
-    "Merchant"
+    "Merchant",
+    "Advisor",
+    "Soldier"
    ],
    "hair": [
     "Ginger"
@@ -8346,7 +8425,9 @@
     "Daein"
    ],
    "occupation": [
-    "Mercenary"
+    "Mercenary",
+    "Revolutionary",
+    "Soldier"
    ],
    "hair": [
     "Blue"
@@ -8432,7 +8513,8 @@
    "occupation": [
     "Teacher",
     "Mercenary",
-    "Cleric"
+    "Cleric",
+    "Soldier"
    ],
    "hair": [
     "Blue",
@@ -8489,7 +8571,10 @@
     "Ylisse"
    ],
    "occupation": [
-    "Swordsman"
+    "Swordsman",
+    "Noble",
+    "Fighter",
+    "Royalty"
    ],
    "hair": [
     "Blue"
@@ -8527,7 +8612,10 @@
    "occupation": [
     "Royalty",
     "Student",
-    "Revolutionary"
+    "Revolutionary",
+    "Soldier",
+    "Leader",
+    "Noble"
    ],
    "hair": [
     "White"
@@ -8646,7 +8734,10 @@
     "Leicester Alliance"
    ],
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Soldier",
+    "Leader",
+    "Noble"
    ],
    "hair": [
     "Brown"
@@ -9193,7 +9284,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Worker"
+    "Worker",
+    "Merchant"
    ],
    "hair": [
     "N/A"
@@ -11581,7 +11673,8 @@
     "Spargus"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Royalty"
    ],
    "hair": [
     "Bald",
@@ -11977,6 +12070,7 @@
    "occupation": [
     "Artist",
     "Athlete",
+    "Soldier",
     "Marksman",
     "Fighter"
    ],
@@ -12039,7 +12133,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Worker"
+    "Worker",
+    "Pirate"
    ],
    "hair": [
     "N/A"
@@ -12093,7 +12188,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Treasure hunter"
+    "Treasure hunter",
+    "Criminal"
    ],
    "hair": [
     "N/A"
@@ -12492,7 +12588,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Archaeologist"
+    "Archaeologist",
+    "Scientist"
    ],
    "hair": [
     "Blond"
@@ -12616,7 +12713,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Cook"
+    "Cook",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -12683,7 +12781,9 @@
    ],
    "occupation": [
     "Artist",
-    "Actor"
+    "Actor",
+    "Scholar",
+    "Treasure hunter"
    ],
    "hair": [
     "Black"
@@ -12716,7 +12816,8 @@
    ],
    "occupation": [
     "Adventurer",
-    "Treasure hunter"
+    "Treasure hunter",
+    "Thief"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -12817,7 +12918,8 @@
    "occupation": [
     "Businessperson",
     "Thief",
-    "Treasure hunter"
+    "Treasure hunter",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -12914,7 +13016,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Treasure hunter"
+    "Treasure hunter",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -13042,7 +13145,8 @@
    ],
    "occupation": [
     "Soldier",
-    "Leader"
+    "Leader",
+    "Treasure hunter"
    ],
    "hair": [
     "Bald"
@@ -13074,7 +13178,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Treasure hunter",
+    "Pirate"
    ],
    "hair": [
     "Black"
@@ -13137,7 +13243,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Treasure hunter"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -13163,7 +13270,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Revolutionary"
+    "Revolutionary",
+    "Doctor",
+    "Terrorist"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -13246,7 +13355,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Noble"
    ],
    "hair": [
     "Black"
@@ -13275,7 +13385,8 @@
    ],
    "occupation": [
     "Businessperson",
-    "Leader"
+    "Leader",
+    "Pirate"
    ],
    "hair": null,
    "franchise": "Uncharted",
@@ -13303,7 +13414,8 @@
    ],
    "occupation": [
     "Spy",
-    "Politician"
+    "Politician",
+    "Advisor"
    ],
    "hair": [
     "Black"
@@ -13335,7 +13447,9 @@
    ],
    "occupation": [
     "Student",
-    "Archer"
+    "Archer",
+    "Soldier",
+    "Police officer"
    ],
    "hair": [
     "Brown"
@@ -13370,7 +13484,9 @@
    ],
    "occupation": [
     "Worker",
-    "Criminal"
+    "Criminal",
+    "Pirate",
+    "Police officer"
    ],
    "hair": [
     "Black"
@@ -13470,7 +13586,8 @@
    ],
    "occupation": [
     "Survivor",
-    "Criminal"
+    "Criminal",
+    "Pirate"
    ],
    "hair": [
     "Brown"
@@ -13499,7 +13616,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -13646,7 +13764,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -13675,7 +13794,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -13704,7 +13824,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Advisor"
    ],
    "hair": [
     "Ginger"
@@ -13824,7 +13945,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Police officer",
+    "Farmer"
    ],
    "hair": [
     "Black"
@@ -13854,7 +13977,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Survivor"
+    "Survivor",
+    "Police officer"
    ],
    "hair": [
     "Brown"
@@ -14071,6 +14195,7 @@
    ],
    "occupation": [
     "Swordsman",
+    "Cleric",
     "Marksman"
    ],
    "hair": null,
@@ -14159,6 +14284,7 @@
    ],
    "occupation": [
     "Scientist",
+    "Employee",
     "Marksman"
    ],
    "hair": [
@@ -14494,7 +14620,10 @@
     "Tyrus"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Mechanic",
+    "Advisor",
+    "Businessperson"
    ],
    "hair": [
     "White",
@@ -14627,7 +14756,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Spy"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -14720,7 +14850,8 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -14890,7 +15021,8 @@
     "Criminal",
     "Archaeologist",
     "Spy",
-    "Terrorist"
+    "Terrorist",
+    "Leader"
    ],
    "hair": [
     "Silver",
@@ -15001,7 +15133,8 @@
    ],
    "occupation": [
     "Guard",
-    "Soldier"
+    "Soldier",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Mass Effect",
@@ -15204,7 +15337,8 @@
     "Denerim"
    ],
    "occupation": [
-    "Pirate"
+    "Pirate",
+    "Thief"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15229,7 +15363,8 @@
     "Winter Palace"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15283,7 +15418,8 @@
     "The Hanged Man"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15413,7 +15549,8 @@
     "Skyhold"
    ],
    "occupation": [
-    "Revolutionary"
+    "Revolutionary",
+    "Mage"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15438,7 +15575,8 @@
     "Haven"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Thief"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15468,7 +15606,8 @@
     "Denerim"
    ],
    "occupation": [
-    "Revolutionary"
+    "Revolutionary",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15519,7 +15658,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Mercenary"
+    "Mercenary",
+    "Fighter"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15622,7 +15762,8 @@
    "nationality": null,
    "occupation": [
     "Adventurer",
-    "Assassin"
+    "Assassin",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -15700,7 +15841,8 @@
    ],
    "occupation": [
     "Mage",
-    "Scholar"
+    "Scholar",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dragon Age",
@@ -16435,7 +16577,8 @@
    ],
    "occupation": [
     "Bounty hunter",
-    "Actor"
+    "Actor",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Fallout",
@@ -16464,7 +16607,9 @@
     "Los Angeles Vault"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Doctor",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Fallout",
@@ -16498,7 +16643,9 @@
    ],
    "occupation": [
     "Leader",
-    "Scientist"
+    "Scientist",
+    "Businessperson",
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Fallout",
@@ -16613,7 +16760,8 @@
     "Sanctuary Hills"
    ],
    "occupation": [
-    "Waiter"
+    "Waiter",
+    "Servant"
    ],
    "hair": [
     "N/A"
@@ -16709,7 +16857,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Driver"
+    "Driver",
+    "Athlete"
    ],
    "hair": null,
    "franchise": "Fallout",
@@ -16892,7 +17041,8 @@
    ],
    "occupation": [
     "Noble",
-    "Monster hunter"
+    "Monster hunter",
+    "Royalty"
    ],
    "hair": [
     "Grey"
@@ -17052,7 +17202,8 @@
     "Kaedwen"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Advisor"
    ],
    "hair": [
     "Black",
@@ -17082,7 +17233,8 @@
     "Temeria"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Royalty"
    ],
    "hair": [
     "Red",
@@ -17345,7 +17497,8 @@
    "occupation": [
     "Mercenary",
     "Adventurer",
-    "Soldier"
+    "Soldier",
+    "Monster hunter"
    ],
    "hair": [
     "Brown"
@@ -17572,7 +17725,8 @@
    "occupation": [
     "Assassin",
     "Criminal",
-    "Merchant"
+    "Merchant",
+    "Thief"
    ],
    "hair": null,
    "franchise": "Grand Theft Auto",
@@ -17673,7 +17827,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Businessperson"
    ],
    "hair": null,
    "franchise": "Grand Theft Auto",
@@ -17909,7 +18064,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Merchant"
+    "Merchant",
+    "Businessperson"
    ],
    "hair": null,
    "franchise": "Grand Theft Auto",
@@ -18229,6 +18385,7 @@
     "Worker",
     "Farmer",
     "Prostitute",
+    "Servant",
     "Marksman"
    ],
    "hair": [
@@ -18299,6 +18456,7 @@
     "Sniper",
     "Bounty hunter",
     "Thief",
+    "Police officer",
     "Marksman",
     "Archer"
    ],
@@ -18364,6 +18522,7 @@
    ],
    "occupation": [
     "Soldier",
+    "Politician",
     "Marksman"
    ],
    "hair": null,
@@ -18649,7 +18808,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Cleric"
+    "Cleric",
+    "Politician"
    ],
    "hair": [
     "Red"
@@ -18680,7 +18840,9 @@
    ],
    "occupation": [
     "Farmer",
-    "Revolutionary"
+    "Revolutionary",
+    "Cleric",
+    "Businessperson"
    ],
    "hair": [
     "Brown"
@@ -18788,7 +18950,8 @@
     "Swordsman",
     "Adventurer",
     "Teacher",
-    "Assassin"
+    "Assassin",
+    "Noble"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -18933,7 +19096,8 @@
     "Swordsman",
     "Driver",
     "Teacher",
-    "Assassin"
+    "Assassin",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -19036,7 +19200,8 @@
    "occupation": [
     "Writer",
     "Vigilante",
-    "Businessperson"
+    "Businessperson",
+    "Knight"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -19073,7 +19238,8 @@
     "Hunter",
     "Sniper",
     "Sailor",
-    "Assassin"
+    "Assassin",
+    "Knight"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -19356,7 +19522,8 @@
    ],
    "occupation": [
     "Teacher",
-    "Assassin"
+    "Assassin",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -19447,7 +19614,9 @@
    ],
    "occupation": [
     "Sailor",
-    "Merchant"
+    "Merchant",
+    "Soldier",
+    "Criminal"
    ],
    "hair": [
     "Brown"
@@ -19502,7 +19671,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Archer"
+    "Archer",
+    "Noble"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -19528,7 +19698,9 @@
     "City of Light"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Noble",
+    "Revolutionary"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -19553,7 +19725,9 @@
    ],
    "occupation": [
     "Leader",
-    "Time traveler"
+    "Time traveler",
+    "Royalty",
+    "Noble"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -19602,7 +19776,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Noble"
+    "Noble",
+    "Advisor"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -19627,7 +19802,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Noble"
+    "Noble",
+    "Advisor"
    ],
    "hair": null,
    "franchise": "Prince of Persia",
@@ -19945,6 +20121,7 @@
    "occupation": [
     "Scientist",
     "Revolutionary",
+    "Advisor",
     "Sniper",
     "Archer"
    ],
@@ -20109,6 +20286,7 @@
     "Guard",
     "Revolutionary",
     "Spy",
+    "Soldier",
     "Sniper"
    ],
    "hair": [
@@ -20178,6 +20356,7 @@
     "Scientist",
     "Revolutionary",
     "Businessperson",
+    "Leader",
     "Marksman"
    ],
    "hair": [
@@ -20213,6 +20392,7 @@
    "occupation": [
     "Scientist",
     "Revolutionary",
+    "Teacher",
     "Marksman"
    ],
    "hair": [
@@ -20282,7 +20462,8 @@
    ],
    "occupation": [
     "Scientist",
-    "Spy"
+    "Spy",
+    "Revolutionary"
    ],
    "hair": [
     "Red"
@@ -20403,7 +20584,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Advisor",
+    "Leader"
    ],
    "hair": [
     "Red"
@@ -20434,7 +20617,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Advisor"
    ],
    "hair": [
     "Brown"
@@ -20627,7 +20811,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Businessperson"
    ],
    "hair": [
     "Brown"
@@ -20688,7 +20873,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Programmer"
    ],
    "hair": [
     "Brown"
@@ -20776,7 +20962,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mercenary"
+    "Mercenary",
+    "Assassin"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -20833,7 +21020,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mercenary"
+    "Mercenary",
+    "Lawyer",
+    "Cleric"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -20889,7 +21078,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Soldier"
+    "Soldier",
+    "Servant"
    ],
    "hair": [
     "Black"
@@ -21010,7 +21200,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Sniper"
+    "Sniper",
+    "Assassin"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21204,7 +21395,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Team Fortress",
@@ -21397,7 +21589,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mechanic"
+    "Mechanic",
+    "Survivor"
    ],
    "hair": [
     "Brown"
@@ -21494,7 +21687,8 @@
    "occupation": [
     "Survivor",
     "Actor",
-    "Monster hunter"
+    "Monster hunter",
+    "Advisor"
    ],
    "hair": [
     "Black"
@@ -21614,7 +21808,8 @@
    "occupation": [
     "Pilot",
     "Adventurer",
-    "Vigilante"
+    "Vigilante",
+    "Spy"
    ],
    "hair": [
     "Brown"
@@ -21701,7 +21896,8 @@
    ],
    "occupation": [
     "Scientist",
-    "Adventurer"
+    "Adventurer",
+    "Spy"
    ],
    "hair": [
     "Brown"
@@ -21731,7 +21927,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Archer"
+    "Archer",
+    "Assassin"
    ],
    "hair": null,
    "franchise": "Overwatch",
@@ -21758,7 +21955,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Ninja"
+    "Ninja",
+    "Adventurer",
+    "Samurai"
    ],
    "hair": null,
    "franchise": "Overwatch",
@@ -21816,7 +22015,8 @@
    "occupation": [
     "Mercenary",
     "Leader",
-    "Fighter"
+    "Fighter",
+    "Businessperson"
    ],
    "hair": null,
    "franchise": "Overwatch",
@@ -21842,7 +22042,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Adventurer"
+    "Adventurer",
+    "Scientist"
    ],
    "hair": [
     "N/A"
@@ -21931,7 +22132,9 @@
    ],
    "occupation": [
     "Bounty hunter",
-    "Sniper"
+    "Sniper",
+    "Advisor",
+    "Soldier"
    ],
    "hair": [
     "White"
@@ -21962,7 +22165,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Scientist"
+    "Scientist",
+    "Politician"
    ],
    "hair": [
     "Red"
@@ -22074,7 +22278,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Cleric"
    ],
    "hair": null,
    "franchise": "Overwatch",
@@ -22159,7 +22364,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Musician"
    ],
    "hair": null,
    "franchise": "Overwatch",
@@ -22184,7 +22390,9 @@
     "Piltover"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Terrorist",
+    "Scientist"
    ],
    "hair": [
     "Blue"
@@ -22211,7 +22419,9 @@
     "Piltover"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Guard",
+    "Fighter"
    ],
    "hair": [
     "Pink"
@@ -22264,7 +22474,8 @@
     "Piltover"
    ],
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Guard"
    ],
    "hair": [
     "Blue"
@@ -22457,6 +22668,7 @@
     "Vigilante",
     "Waiter",
     "Criminal",
+    "Revolutionary",
     "Fighter"
    ],
    "hair": [
@@ -22797,7 +23009,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Spy"
+    "Guard"
    ],
    "hair": [
     "Brown"
@@ -23153,7 +23365,7 @@
     "Monde réel"
    ],
    "occupation": [
-    "Spy"
+    "Guard"
    ],
    "hair": null,
    "franchise": "Valorant",
@@ -23223,7 +23435,9 @@
    ],
    "nationality": null,
    "occupation": [
-    "Revolutionary"
+    "Revolutionary",
+    "Leader",
+    "Mage"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23275,7 +23489,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23305,7 +23520,9 @@
    ],
    "occupation": [
     "Revolutionary",
-    "Monster hunter"
+    "Monster hunter",
+    "Noble",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23336,7 +23553,9 @@
    "occupation": [
     "Archer",
     "Revolutionary",
-    "Mage"
+    "Mage",
+    "Leader",
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23360,7 +23579,8 @@
     "Twisting Nether"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Guard"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23418,7 +23638,9 @@
    "nationality": null,
    "occupation": [
     "Cleric",
-    "Archer"
+    "Archer",
+    "Leader",
+    "Politician"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23499,7 +23721,8 @@
     "Tomb of Sargeras"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23523,7 +23746,8 @@
     "Dalaran"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Warcraft",
@@ -23593,7 +23817,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Leader"
    ],
    "hair": [
     "Red"
@@ -23749,7 +23974,10 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Advisor",
+    "Spy",
+    "Royalty"
    ],
    "hair": [
     "Red",
@@ -23784,7 +24012,9 @@
    ],
    "occupation": [
     "Soldier",
-    "Revolutionary"
+    "Revolutionary",
+    "Athlete",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -23810,7 +24040,9 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Adventurer"
+    "Adventurer",
+    "Assassin",
+    "Politician"
    ],
    "hair": null,
    "franchise": "StarCraft",
@@ -24169,7 +24401,8 @@
     "Heaven"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Soldier"
    ],
    "hair": null,
    "franchise": "Diablo",
@@ -24224,7 +24457,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Diablo",
@@ -24865,7 +25099,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -25057,7 +25292,8 @@
    ],
    "occupation": [
     "Detective",
-    "Vigilante"
+    "Vigilante",
+    "Assassin"
    ],
    "hair": [
     "Brown"
@@ -25152,7 +25388,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Student"
    ],
    "hair": [
     "Red"
@@ -25274,7 +25511,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Student",
+    "Athlete"
    ],
    "hair": [
     "Red"
@@ -25503,7 +25742,8 @@
     "Mizuho"
    ],
    "occupation": [
-    "Ninja"
+    "Ninja",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -25559,7 +25799,8 @@
    ],
    "occupation": [
     "Vigilante",
-    "Swordsman"
+    "Swordsman",
+    "Knight"
    ],
    "hair": [
     "Black"
@@ -25970,7 +26211,10 @@
    ],
    "nationality": null,
    "occupation": [
-    "Swordsman"
+    "Swordsman",
+    "Mechanic",
+    "Scientist",
+    "Revolutionary"
    ],
    "hair": [
     "Blond"
@@ -27028,7 +27272,9 @@
     "Vigrid"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Cleric",
+    "Mercenary"
    ],
    "hair": [
     "Black"
@@ -27646,7 +27892,8 @@
    "occupation": [
     "Mage",
     "Assassin",
-    "Scientist"
+    "Scientist",
+    "Noble"
    ],
    "hair": [
     "Silver",
@@ -27679,6 +27926,7 @@
     "Monster hunter",
     "Spy",
     "Scientist",
+    "Noble",
     "Swordsman"
    ],
    "hair": [
@@ -27741,6 +27989,7 @@
    ],
    "occupation": [
     "Student",
+    "Noble",
     "Swordsman",
     "Marksman"
    ],
@@ -27832,6 +28081,7 @@
    ],
    "occupation": [
     "Monster hunter",
+    "Leader",
     "Swordsman",
     "Lancer"
    ],
@@ -27925,7 +28175,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Pirate"
+    "Pirate",
+    "Artist",
+    "Thief",
+    "Revolutionary"
    ],
    "hair": [
     "White"
@@ -28226,7 +28479,9 @@
     "Silent Hill"
    ],
    "occupation": [
-    "Servant"
+    "Servant",
+    "Worker",
+    "Employee"
    ],
    "hair": [
     "Blond"
@@ -28793,7 +29048,8 @@
    ],
    "occupation": [
     "Mercenary",
-    "Student"
+    "Student",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -28944,7 +29200,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Athlete"
+    "Athlete",
+    "Student"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -29006,7 +29263,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Artist"
+    "Artist",
+    "Student"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -29097,7 +29355,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Musician"
+    "Musician",
+    "Student"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -29126,7 +29385,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Student"
    ],
    "hair": null,
    "franchise": "Danganronpa",
@@ -29156,7 +29416,9 @@
    "occupation": [
     "Lawyer",
     "Detective",
-    "Athlete"
+    "Athlete",
+    "Student",
+    "Musician"
    ],
    "hair": [
     "Black"
@@ -29189,7 +29451,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Lawyer"
+    "Lawyer",
+    "Advisor"
    ],
    "hair": [
     "Grey"
@@ -29286,7 +29549,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Advisor",
+    "Waiter"
    ],
    "hair": [
     "Black"
@@ -29316,7 +29581,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mage"
+    "Mage",
+    "Student"
    ],
    "hair": [
     "Brown"
@@ -29348,7 +29614,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Artist"
+    "Artist",
+    "Merchant",
+    "Guard"
    ],
    "hair": [
     "Brown"
@@ -29382,7 +29650,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Detective"
+    "Detective",
+    "Driver",
+    "Police officer",
+    "Advisor"
    ],
    "hair": [
     "Brown"
@@ -29448,7 +29719,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Lawyer"
    ],
    "hair": [
     "Brown"
@@ -29638,7 +29910,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Journalist"
+    "Journalist",
+    "Artist"
    ],
    "hair": [
     "Red"
@@ -29699,7 +29972,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Lawyer"
+    "Lawyer",
+    "Merchant",
+    "Criminal"
    ],
    "hair": [
     "Silver",
@@ -29733,7 +30008,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Lawyer"
+    "Lawyer",
+    "Student"
    ],
    "hair": [
     "Purple"
@@ -29931,7 +30207,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Detective"
    ],
    "hair": [
     "Blue"
@@ -30158,7 +30435,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Detective"
    ],
    "hair": [
     "Black"
@@ -30187,7 +30465,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Politician"
+    "Politician",
+    "Archaeologist"
    ],
    "hair": [
     "Brown"
@@ -30439,7 +30718,9 @@
     "Guard",
     "Leader",
     "Driver",
-    "Vigilante"
+    "Vigilante",
+    "Spy",
+    "Businessperson"
    ],
    "hair": [
     "Black",
@@ -30471,7 +30752,10 @@
    ],
    "occupation": [
     "Detective",
-    "Vigilante"
+    "Vigilante",
+    "Police officer",
+    "Journalist",
+    "Waiter"
    ],
    "hair": [
     "Black"
@@ -30501,7 +30785,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Soldier",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -30564,7 +30850,10 @@
    ],
    "occupation": [
     "Lawyer",
-    "Detective"
+    "Detective",
+    "Employee",
+    "Leader",
+    "Doctor"
    ],
    "hair": [
     "Black"
@@ -30595,7 +30884,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Businessperson"
    ],
    "hair": [
     "Black"
@@ -30662,7 +30952,9 @@
    ],
    "occupation": [
     "Leader",
-    "Vigilante"
+    "Vigilante",
+    "Politician",
+    "Employee"
    ],
    "hair": [
     "Black",
@@ -30726,7 +31018,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Advisor"
+    "Advisor",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -30757,7 +31050,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Politician"
+    "Politician",
+    "Criminal"
    ],
    "hair": [
     "Black"
@@ -30789,7 +31083,9 @@
    ],
    "occupation": [
     "Advisor",
-    "Detective"
+    "Detective",
+    "Soldier",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -30821,7 +31117,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Detective"
+    "Detective",
+    "Thief"
    ],
    "hair": [
     "Black",
@@ -30885,7 +31182,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Lawyer"
+    "Lawyer",
+    "Waiter"
    ],
    "hair": [
     "Black"
@@ -30946,7 +31244,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Police officer"
    ],
    "hair": [
     "Brown"
@@ -31008,7 +31307,8 @@
    ],
    "occupation": [
     "Spy",
-    "Actor"
+    "Actor",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -31041,7 +31341,9 @@
    ],
    "occupation": [
     "Police officer",
-    "Vigilante"
+    "Vigilante",
+    "Teacher",
+    "Leader"
    ],
    "hair": [
     "Black",
@@ -31073,7 +31375,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Swordsman"
+    "Swordsman",
+    "Scientist",
+    "Bounty hunter",
+    "Knight"
    ],
    "hair": [
     "Brown"
@@ -31103,7 +31408,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Swordsman"
+    "Swordsman",
+    "Knight",
+    "Police officer",
+    "Royalty"
    ],
    "hair": [
     "Blond"
@@ -31276,7 +31584,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Pirate"
    ],
    "hair": null,
    "franchise": "Guilty Gear",
@@ -31466,6 +31775,7 @@
    ],
    "occupation": [
     "Criminal",
+    "Pirate",
     "Swordsman"
    ],
    "hair": [
@@ -31493,7 +31803,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Writer"
    ],
    "hair": [
     "Brown"
@@ -31618,7 +31929,8 @@
    ],
    "occupation": [
     "Programmer",
-    "Mercenary"
+    "Mercenary",
+    "Athlete"
    ],
    "hair": [
     "White"
@@ -32227,7 +32539,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Ninja"
+    "Ninja",
+    "Leader"
    ],
    "hair": [
     "Purple"
@@ -32290,7 +32603,8 @@
    "occupation": [
     "Archer",
     "Monster hunter",
-    "Ninja"
+    "Ninja",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -32348,7 +32662,9 @@
    ],
    "occupation": [
     "Leader",
-    "Musician"
+    "Musician",
+    "Politician",
+    "Businessperson"
    ],
    "hair": [
     "Blond"
@@ -32410,7 +32726,8 @@
    ],
    "occupation": [
     "Student",
-    "Fighter"
+    "Fighter",
+    "Teacher"
    ],
    "hair": [
     "Brown"
@@ -32466,7 +32783,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Musician"
    ],
    "hair": [
     "Black"
@@ -32522,7 +32840,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Ninja"
+    "Ninja",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -32551,7 +32870,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Merchant"
    ],
    "hair": [
     "White"
@@ -32581,7 +32901,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter"
+    "Fighter",
+    "Guard"
    ],
    "hair": [
     "Brown"
@@ -33704,6 +34025,7 @@
    ],
    "occupation": [
     "Actor",
+    "Leader",
     "Lancer"
    ],
    "hair": [
@@ -33767,6 +34089,7 @@
    "occupation": [
     "Actor",
     "Cleric",
+    "Servant",
     "Mage"
    ],
    "hair": [
@@ -33857,6 +34180,7 @@
    ],
    "occupation": [
     "Politician",
+    "Teacher",
     "Lancer"
    ],
    "hair": [
@@ -35475,7 +35799,8 @@
     "Stormveil Castle"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Noble"
    ],
    "hair": null,
    "franchise": "Elden Ring",
@@ -35875,7 +36200,8 @@
    ],
    "occupation": [
     "Scientist",
-    "Teacher"
+    "Teacher",
+    "Noble"
    ],
    "hair": [
     "N/A"
@@ -35961,7 +36287,9 @@
     "Ruins"
    ],
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Leader",
+    "Musician"
    ],
    "hair": [
     "N/A"
@@ -37678,7 +38006,8 @@
    ],
    "occupation": [
     "Businessperson",
-    "Politician"
+    "Politician",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -37776,7 +38105,8 @@
    ],
    "occupation": [
     "Royalty",
-    "Cleric"
+    "Cleric",
+    "Leader"
    ],
    "hair": [
     "White"
@@ -38055,6 +38385,7 @@
    ],
    "occupation": [
     "Spy",
+    "Soldier",
     "Sniper",
     "Swordsman"
    ],
@@ -38636,7 +38967,9 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Sailor"
+    "Sailor",
+    "Soldier",
+    "Trainer"
    ],
    "hair": [
     "Blond"
@@ -40688,7 +41021,8 @@
     "The Mountain"
    ],
    "occupation": [
-    "Worker"
+    "Worker",
+    "Merchant"
    ],
    "hair": [
     "Ginger"
@@ -40896,7 +41230,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Cleric"
    ],
    "hair": null,
    "franchise": "Baldur's Gate",
@@ -41302,7 +41637,8 @@
    ],
    "occupation": [
     "Musician",
-    "Criminal"
+    "Criminal",
+    "Soldier"
    ],
    "hair": [
     "Blond",
@@ -41434,7 +41770,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Mercenary"
+    "Mercenary",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -41531,7 +41868,8 @@
     "Night City"
    ],
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Detective"
    ],
    "hair": [
     "Black"
@@ -41629,7 +41967,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Waiter"
+    "Waiter",
+    "Scientist",
+    "Mechanic"
    ],
    "hair": [
     "Black",
@@ -41690,7 +42030,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Politician"
    ],
    "hair": [
     "Blond"
@@ -41900,7 +42241,8 @@
    "occupation": [
     "Archer",
     "Fighter",
-    "Hunter"
+    "Hunter",
+    "Leader"
    ],
    "hair": [
     "Red"
@@ -41934,7 +42276,8 @@
    "occupation": [
     "Guard",
     "Vigilante",
-    "Assassin"
+    "Assassin",
+    "Royalty"
    ],
    "hair": [
     "Brown"
@@ -41965,7 +42308,9 @@
     "Gristol"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Noble",
+    "Royalty"
    ],
    "hair": null,
    "franchise": "Dishonored",
@@ -41991,7 +42336,8 @@
     "Serkonos"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Dishonored",
@@ -42184,7 +42530,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Terrorist"
+    "Terrorist",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Deus Ex",
@@ -42248,7 +42595,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader"
+    "Leader",
+    "Businessperson"
    ],
    "hair": null,
    "franchise": "Deus Ex",
@@ -42649,7 +42997,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Advisor"
+    "Advisor",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -42931,7 +43280,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Artist"
+    "Artist",
+    "Teacher"
    ],
    "hair": [
     "Brown"
@@ -43030,7 +43380,8 @@
    ],
    "occupation": [
     "Student",
-    "Mechanic"
+    "Mechanic",
+    "Advisor"
    ],
    "hair": [
     "Brown"
@@ -43065,7 +43416,8 @@
     "Student",
     "Driver",
     "Athlete",
-    "Programmer"
+    "Programmer",
+    "Worker"
    ],
    "hair": [
     "Ginger"
@@ -43181,7 +43533,8 @@
    ],
    "occupation": [
     "Student",
-    "Programmer"
+    "Programmer",
+    "Gamer"
    ],
    "hair": [
     "Brown"
@@ -43598,7 +43951,8 @@
     "Student",
     "Mage",
     "Leader",
-    "Athlete"
+    "Athlete",
+    "Thief"
    ],
    "hair": [
     "Black"
@@ -43636,7 +43990,8 @@
    "occupation": [
     "Teacher",
     "Mage",
-    "Scientist"
+    "Scientist",
+    "Journalist"
    ],
    "hair": [
     "Brown",
@@ -43675,7 +44030,9 @@
     "Student",
     "Politician",
     "Revolutionary",
-    "Time traveler"
+    "Time traveler",
+    "Employee",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -43752,7 +44109,8 @@
    "occupation": [
     "Assassin",
     "Criminal",
-    "Royalty"
+    "Royalty",
+    "Merchant"
    ],
    "hair": [
     "Black",
@@ -43828,7 +44186,9 @@
     "Teacher",
     "Vigilante",
     "Worker",
-    "Scientist"
+    "Scientist",
+    "Guard",
+    "Mage"
    ],
    "hair": [
     "Black"
@@ -43862,7 +44222,8 @@
    ],
    "occupation": [
     "Student",
-    "Athlete"
+    "Athlete",
+    "Leader"
    ],
    "hair": [
     "White",
@@ -43900,7 +44261,8 @@
    ],
    "occupation": [
     "Teacher",
-    "Employee"
+    "Employee",
+    "Mage"
    ],
    "hair": [
     "Black"
@@ -43934,7 +44296,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Vigilante"
+    "Vigilante",
+    "Mage"
    ],
    "hair": [
     "Black"
@@ -43969,7 +44332,8 @@
    ],
    "occupation": [
     "Teacher",
-    "Leader"
+    "Leader",
+    "Mage"
    ],
    "hair": [
     "Red"
@@ -43999,7 +44363,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Student"
+    "Student",
+    "Mage"
    ],
    "hair": [
     "Black"
@@ -44095,7 +44460,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Student"
+    "Student",
+    "Mage"
    ],
    "hair": null,
    "franchise": "Hogwarts Legacy",
@@ -44697,7 +45063,9 @@
    ],
    "occupation": [
     "Soldier",
-    "Worker"
+    "Worker",
+    "Adventurer",
+    "Politician"
    ],
    "hair": [
     "Brown"
@@ -44730,7 +45098,10 @@
     "Monde réel"
    ],
    "occupation": [
-    "Thief"
+    "Thief",
+    "Spy",
+    "Mercenary",
+    "Noble"
    ],
    "hair": [
     "Brown"
@@ -44837,7 +45208,9 @@
     "Doctor",
     "Assassin",
     "Fighter",
-    "Terrorist"
+    "Terrorist",
+    "Scholar",
+    "Criminal"
    ],
    "hair": [
     "Blond"
@@ -44871,7 +45244,9 @@
    ],
    "occupation": [
     "Assassin",
-    "Fighter"
+    "Fighter",
+    "Actor",
+    "Criminal"
    ],
    "hair": null,
    "franchise": "Batman: Arkham",
@@ -44897,7 +45272,8 @@
    ],
    "occupation": [
     "Criminal",
-    "Terrorist"
+    "Terrorist",
+    "Assassin"
    ],
    "hair": [
     "Green"
@@ -44963,7 +45339,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Lawyer"
    ],
    "hair": [
     "Black",
@@ -45001,7 +45378,10 @@
    "occupation": [
     "Detective",
     "Criminal",
-    "Scientist"
+    "Scientist",
+    "Advisor",
+    "Programmer",
+    "Terrorist"
    ],
    "hair": [
     "Brown"
@@ -45037,7 +45417,8 @@
    "occupation": [
     "Assassin",
     "Scientist",
-    "Terrorist"
+    "Terrorist",
+    "Criminal"
    ],
    "hair": [
     "Red"
@@ -45071,7 +45452,9 @@
     "Swordsman",
     "Terrorist",
     "Assassin",
-    "Ninja"
+    "Ninja",
+    "Cleric",
+    "Soldier"
    ],
    "hair": [
     "Grey",
@@ -45109,7 +45492,9 @@
     "Fighter",
     "Terrorist",
     "Guard",
-    "Assassin"
+    "Assassin",
+    "Prisoner",
+    "Mercenary"
    ],
    "hair": [
     "Brown"
@@ -45142,7 +45527,9 @@
    "occupation": [
     "Criminal",
     "Bounty hunter",
-    "Businessperson"
+    "Businessperson",
+    "Cook",
+    "Merchant"
    ],
    "hair": [
     "Black"
@@ -45187,7 +45574,8 @@
    "occupation": [
     "Retiree",
     "Police officer",
-    "Detective"
+    "Detective",
+    "Politician"
    ],
    "hair": [
     "White"
@@ -45274,7 +45662,8 @@
    ],
    "occupation": [
     "Scientist",
-    "Doctor"
+    "Doctor",
+    "Criminal"
    ],
    "hair": null,
    "franchise": "Batman: Arkham",
@@ -45303,7 +45692,9 @@
     "Monde réel"
    ],
    "occupation": [
-    "Assassin"
+    "Assassin",
+    "Soldier",
+    "Mercenary"
    ],
    "hair": [
     "Brown"
@@ -45382,7 +45773,9 @@
    "occupation": [
     "Criminal",
     "Scientist",
-    "Mage"
+    "Mage",
+    "Assassin",
+    "Merchant"
    ],
    "hair": [
     "Brown"
@@ -45419,7 +45812,8 @@
    "occupation": [
     "Scientist",
     "Leader",
-    "Programmer"
+    "Programmer",
+    "Businessperson"
    ],
    "hair": [
     "Black",
@@ -45452,7 +45846,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Criminal"
+    "Criminal",
+    "Noble"
    ],
    "hair": [
     "N/A"
@@ -45489,7 +45884,8 @@
     "Criminal",
     "Assassin",
     "Scientist",
-    "Doctor"
+    "Doctor",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -45897,7 +46293,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Lawyer"
+    "Lawyer",
+    "Adventurer"
    ],
    "hair": [
     "Brown"
@@ -46750,7 +47147,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Student"
+    "Student",
+    "Politician"
    ],
    "hair": [
     "Brown"
@@ -46781,7 +47179,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Student"
+    "Student",
+    "Politician"
    ],
    "hair": [
     "Pink"
@@ -47402,7 +47801,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Revolutionary"
+    "Revolutionary",
+    "Hunter"
    ],
    "hair": [
     "Red",
@@ -47495,7 +47895,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Detective"
+    "Detective",
+    "Student"
    ],
    "hair": null,
    "franchise": "Nancy Drew",
@@ -54358,6 +54759,8 @@
     "Monde réel"
    ],
    "occupation": [
+    "Advisor",
+    "Mercenary",
     "Lawyer"
    ],
    "hair": [
@@ -54384,6 +54787,7 @@
     "Monde réel"
    ],
    "occupation": [
+    "Mercenary",
     "Soldier"
    ],
    "hair": null,
@@ -54410,8 +54814,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Leader",
-    "Businessperson"
+    "Businessperson",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Sons Of The Forest",
@@ -57324,7 +57728,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Scientist"
+    "Teacher"
    ],
    "hair": null,
    "franchise": "Outer Wilds",
@@ -64268,7 +64672,7 @@
     "Lost in the Galaxy"
    ],
    "occupation": [
-    "Pilot"
+    "Pirate"
    ],
    "hair": null,
    "franchise": "Rebel Galaxy",

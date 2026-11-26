@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { birthPlaces, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from '../pixeldleEnrich.js'
+import { birthPlaces, cumulatedOccupations, disambiguationTitles, infobox, infoboxValues, morePlaces, parseGender, parsePlaces, parseSpecies, stripTimelines } from '../pixeldleEnrich.js'
 
 describe('infobox', () => {
   it('ImagesEtDrapeaux_Retires', () => {
@@ -160,5 +160,13 @@ describe('infoboxValues, créatures', () => {
 
   it('NomInterne_EspeceDeTravail', () => {
     expect(infoboxValues({ 'internal name': 'ElecPanda' }, new Map()).internalSpecies).toEqual(['Panda'])
+  })
+})
+
+describe('cumulatedOccupations', () => {
+  it('Cumul_SansDoublonNiAucune', () => {
+    expect(cumulatedOccupations(['Lawyer'], ['Advisor', 'Mercenary', 'Lawyer'])).toEqual(['Lawyer', 'Advisor', 'Mercenary'])
+    expect(cumulatedOccupations(['None'], ['Soldier'])).toEqual(['Soldier'])
+    expect(cumulatedOccupations([], ['None'])).toEqual(['None'])
   })
 })

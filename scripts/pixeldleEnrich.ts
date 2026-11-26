@@ -63,6 +63,9 @@ export const NAME_TITLE = 'nameTitle'
 export const AFFILIATIONS = 'affiliations'
 // Les espèces du nom interne, attribut de travail : ajoutées à l'espèce à la fin (« Pal » + Tigre)
 export const INTERNAL_SPECIES = 'internalSpecies'
+// Attribut de travail : le 1er wiki du perso a-t-il donné une occupation dans son infobox ? Sinon, l'intro de sa page s'ajoute
+// (voir withIntroOccupation). Wikidata ne compte pas : c'est un pré-remplissage, il ne bloque jamais les wikis.
+export const FIRST_WIKI_OCCUPATION = 'firstWikiOccupation'
 const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
@@ -411,6 +414,12 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   return result
 }
 
+// Les occupations cumulées : « Aucune » seulement si personne n'en donne une vraie
+export function cumulatedOccupations(before: readonly string[], more: readonly string[]): string[] {
+  const all = [...new Set([...before, ...more])]
+  return all.length > 1 ? all.filter(name => name !== 'None') : all
+}
+
 export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string, FranchiseWikis>): Promise<EnrichReport> {
   await mkdir(cacheDir, { recursive: true })
   const current = new Map(targets.map(target => [target, target.entry]))
@@ -422,15 +431,20 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
   const pageTexts = new Map<string, string>()
   const pageRefs = new Map<string, { api: string, title: string }>()
 
-  // Passe par passe : 1er wiki de chaque franchise, puis le 2e pour ce qui reste vide, etc.
+  // Passe par passe : 1er wiki de chaque franchise, puis le 2e pour ce qui reste vide, etc. L'occupation, elle, se cumule
+  // sur tous les wikis (champ multiple : plus on en a, plus on recoupe)
   const maxOrder = Math.max(0, ...[...wikis.values()].map(({ order }) => order.length))
   for (let rank = 0; rank < maxOrder; rank++) {
     const byApi = new Map<string, { wiki: Wiki, targets: EnrichTarget[] }>()
+    // Les persos lus pour une case vide ; les autres, seulement pour cumuler l'occupation
+    const lacking = new Set<EnrichTarget>()
     for (const target of targets) {
       const wiki = wikis.get(target.franchise)?.order[rank]
-      // Au 1er wiki, toujours : la nationalité s'additionne (le pays de Wikidata, la ville et la région du wiki)
-      if (!wiki || rank > 0 && !ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
+      if (!wiki)
         continue
+      // Au 1er wiki, toujours : la nationalité s'additionne (le pays de Wikidata, la ville et la région du wiki)
+      if (rank === 0 || ENRICH_KEYS.some(key => isEmpty(current.get(target)!.attributes[key])))
+        lacking.add(target)
       const group = byApi.get(wiki.api) ?? { wiki, targets: [] }
       group.targets.push(target)
       byApi.set(wiki.api, group)
@@ -466,6 +480,9 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
             pageTexts.set(id, pages[bare]!)
             pageRefs.set(id, { api: wiki.api, title: bare })
           }
+          // Le 1er wiki n'a qu'une page sans infobox : son intro donnera l'occupation
+          if (bare && current.get(target)!.attributes[FIRST_WIKI_OCCUPATION] === undefined)
+            current.set(target, { ...current.get(target)!, attributes: { ...current.get(target)!.attributes, [FIRST_WIKI_OCCUPATION]: false } })
           continue
         }
         const fields = infobox(pages[title]!)!
@@ -479,8 +496,13 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
           pageTexts.set(entry.id, pages[title]!)
           pageRefs.set(entry.id, { api: wiki.api, title })
         }
-        const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).flatMap(([key, value]) => {
+        const values = infoboxValues(fields, untranslated)
+        const firstWiki = entry.attributes[FIRST_WIKI_OCCUPATION] === undefined ? { [FIRST_WIKI_OCCUPATION]: !isEmpty(values.occupation) } : {}
+        const added = Object.fromEntries(Object.entries(values).flatMap(([key, value]) => {
           if (isEmpty(value))
+            return []
+          // Lu seulement pour cumuler l'occupation
+          if (!lacking.has(target) && key !== 'occupation')
             return []
           if (key === UNKNOWN_KEYS) {
             const marks = addUnknowns(entry.attributes, value as string[])
@@ -488,13 +510,21 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
           }
           if (key === 'nationality')
             return morePlaces(entry.attributes.nationality, value as string[])
+          if (key === 'occupation') {
+            const before = (entry.attributes.occupation as string[] | null) ?? []
+            const merged = cumulatedOccupations(before, value as string[])
+            return merged.length > before.length || merged.some(name => !before.includes(name)) ? [[key, merged]] : []
+          }
           return isEmpty(entry.attributes[key]) ? [[key, value]] : []
         }))
-        if (Object.keys(added).length === 0)
+        if (Object.keys(added).length === 0) {
+          if (Object.keys(firstWiki).length > 0)
+            current.set(target, { ...entry, attributes: { ...entry.attributes, ...firstWiki } })
           continue
+        }
         for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE && key !== AFFILIATIONS && key !== INTERNAL_SPECIES))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
-        current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
+        current.set(target, { ...entry, attributes: { ...entry.attributes, ...firstWiki, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')
         details.push(`${entry.name} (${target.franchise}, ${wikiLabel(wiki)}, page « ${title} »${linked ? ', lien Wikidata' : ''}) : ${filled}`)
         // Peut-être un autre personnage : sur un wiki partagé, une page qui ne cite pas la franchise ; ailleurs, une page
