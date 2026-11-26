@@ -31,9 +31,13 @@ Les scripts suivent tous à peu près le même chemin :
 
 Le code partagé : [anilist.ts](anilist.ts) (Animedle et Weebdle), [wikiText.ts](wikiText.ts) (cheveux dans le texte, pages d'homonymie, âge des infobox : Weebdle et Pixeldle).
 
+Unknown, None et N/A ne sont posés que quand la source le dit (règle commune en tête de [unknownValues.ts](unknownValues.ts)) : une case qu'on n'a pas réussi à remplir reste vide, pour la compléter à la main.
+
 ## Le cache
 
 Les réponses des API sont gardées dans `.cache/` (hors git) : un script interrompu reprend où il en était, et une relance ne refait aucune requête. La 1re fois, compter de quelques minutes à une vingtaine. Pour rafraîchir une source, supprimer son dossier (`.cache/weebdle/`, `.cache/fandom/`...).
+
+Pour ne reprendre que ce qui a changé sur les wikis (Fandom, wikis du Pixeldle, Wikipédia) : `npm run refresh:cache` ([refreshCache.ts](refreshCache.ts)) retire du cache les pages modifiées, créées ou supprimées depuis la dernière vérif, et les listes de persos des wikis où des pages ont été créées. Relancer ensuite les fetch.
 
 ## Mettre à jour les données
 

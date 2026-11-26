@@ -15,6 +15,7 @@
     "fetch:anime": "tsx scripts/fetchAnime.ts",
     "fetch:weebdle": "tsx scripts/fetchWeebdle.ts",
     "fetch:pixeldle": "tsx scripts/fetchPixeldle.ts",
+    "refresh:cache": "tsx scripts/refreshCache.ts",
     "dump:recos": "tsx scripts/dumpRecommendations.ts",
     "test": "vitest run"
   },
