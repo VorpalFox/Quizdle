@@ -32,6 +32,10 @@ describe('fandomInfobox', () => {
 })
 
 describe('fandomValues', () => {
+  it('ChampsNumerotes_TousLus', () => {
+    expect(fandomValues(fandomInfobox('{{Daily Character|Gender = Male|Job = Student|Job 2 = Buddy - Spirit Capturing}}')!).occupation).toEqual(['Student', 'Buddy - Spirit Capturing'])
+  })
+
   it('ChampsVariables_NosValeurs', () => {
     expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Homme', hair: ['Blonds'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Épéiste'], titles: null, deceased: null })
     expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Homme', hair: ['Noirs'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null })
@@ -59,6 +63,14 @@ describe('fandomValues', () => {
     expect(translateOccupation('Chauffeur of Mio Aoyama')).toBe('Chauffeur')
     expect(translateOccupation('Private Household Demon')).toBe('Servante')
     expect(translateOccupation('Normal Person')).toBeNull()
+  })
+
+  it('IdoleChasseurBibliothecaire', () => {
+    expect(translateOccupation('Roller-coaster Idol')).toBe('Idole')
+    expect(translateOccupation('Runaway Spirit Squad Agent')).toBe('Chasseur de démons')
+    expect(translateOccupation('Demon Hunter')).toBe('Chasseur de démons')
+    expect(translateOccupation('Eloquent Library Committee Member')).toBe('Bibliothécaire')
+    expect(translateOccupation('Bakery Employee')).toBe('Employé')
   })
 
   it('DemonEtCaretaker', () => {
@@ -190,6 +202,11 @@ describe('schoolOccupations', () => {
   it('AncienneEcole_Rien', () => {
     expect(schoolOccupations('Umesato Junior High School (formerly)')).toBeNull()
     expect(schoolOccupations('Graduated from Ohashi High School')).toBeNull()
+  })
+
+  it('PlusieursEcoles_UneActuelleSuffit', () => {
+    expect(schoolOccupations('Far East Devil High School (Graduate), Maijima Private High School')).toEqual(['Élève'])
+    expect(schoolOccupations('Umesato Junior High School (expelled), Criminal')).toBeNull()
   })
 })
 

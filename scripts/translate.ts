@@ -96,7 +96,12 @@ const RULES: [RegExp, string | null][] = [
   [/\broyal (?:body)?guard/, 'Garde'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Pourfendeur de démons'],
-  [/devil hunter|chasseur de d[ée]mon/, 'Chasseur de démons'],
+  // Et les chasseurs d'esprits de The World God Only Knows (« Runaway Spirit Squad Agent », « Buddy - Spirit Capturing »)
+  [/(?:devil|demon) hunter|chasseur de d[ée]mon|runaway spirit|spirit captur/, 'Chasseur de démons'],
+  // « Idol » partout (« Roller-coaster Idol », Kanon) : une idole, pas seulement une célébrité
+  [/\bidols?\b/, 'Idole'],
+  // Les bibliothécaires, et le comité de la bibliothèque des lycées (Shiori, The World God Only Knows)
+  [/librarian|library committee/, 'Bibliothécaire'],
   // Les démons de Chainsaw Man (« Wild Devil », « Contract Devil ») : ce qu'ils sont en guise de rôle (validé avec FX)
   [/\bdevils?$/, 'Démon'],
   // The World God Only Knows : « Track and Field Club Girl » (Ayumi), « Café Owner » (Mari, un Barman, donc aussi Serveur),
@@ -170,8 +175,8 @@ const RULES: [RegExp, string | null][] = [
   [/magician|\bmage\b|magus|sorcerer|sorceress|witch|wizard|\bmagi\b|warlock/, 'Magicien'],
   [/priest|bishop|monk|\bnun\b|miko|shrine|apostle|guru|cleric|religious/, 'Religieux'],
   [/athlete|player|runner|skater|gymnast|pitcher|racer|swimmer|boxer|wrestler/, 'Sportif'],
-  [/farmer|farming|gardener|woodcutter|carpenter|baker|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
-  [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|librarian|delivery|courier/, 'Employé'],
+  [/farmer|farming|gardener|woodcutter|carpenter|\bbakers?\b|seamstress|tailor|hairdresser|florist|bartender|photographer|swordsmith|blacksmith|craftsman|artisan|\bcook\b|\bchef\b/, 'Artisan'],
+  [/worker|clerk|cashier|employee|\bstaff\b|operator|receptionist|secretary|office lady|accountant|delivery|courier/, 'Employé'],
   [/assistant|\baide\b|sidekick|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
   [/traveler|traveller|nomad|wanderer/, 'Voyageur'],
   [/\bpresident\b|representative|second-in-command/, 'Leader'],

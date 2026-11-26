@@ -438,6 +438,15 @@ export function unhide(text: string): string {
 const field = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name.replace(/_/g, ' ')]).find(value => value !== undefined) ?? null
 
+// Le champ et ses suites numérotées (« Job », « Job 2 » sur le wiki de The World God Only Knows)
+function numberedField(fields: Record<string, string>, names: readonly string[]): string | null {
+  const name = names.map(name => name.replace(/_/g, ' ')).find(name => fields[name] !== undefined)
+  if (name === undefined)
+    return null
+  const values = [fields[name]!, ...Array.from({ length: 9 }, (_, index) => fields[`${name} ${index + 2}`]).filter(value => value !== undefined)]
+  return values.filter(value => value.trim()).join(', ') || fields[name]!
+}
+
 // « Unknown » ne remplit rien : c'est la marque de fandomUnknowns, une autre source peut encore donner la valeur
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
@@ -445,7 +454,7 @@ const rawList = (value: string | null) => value ? [value] : null
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
-    occupation: splitOccupations(known(field(fields, FIELDS.occupation)) ?? ''),
+    occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
     species: rawList(known(field(fields, FIELDS.species))),
@@ -486,9 +495,15 @@ export function affiliationOccupations(value: string | null): string[] | null {
 const SCHOOL_FIELDS = ['school', 'schools', 'école']
 // Ceux qui travaillent à l'école : son champ ne fait pas d'eux des élèves
 const SCHOOL_STAFF = new Set(['Professeur', 'Directeur d\'école', 'Instructeur', 'Médecin', 'Domestique', 'Gardien', 'Employé'])
-const FORMER_SCHOOL = /\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
+const SCHOOL_NAME = /school|academy|universit|college|institut|gakuen|gakuin|lyc[ée]e/i
+const FORMER_SCHOOL =/\b(?:former(?:ly)?|graduated?|alumn\w*|dropped out|expelled)\b/i
 export function schoolOccupations(value: string | null): string[] | null {
-  return value && !FORMER_SCHOOL.test(value) ? titleOccupations('Student') : null
+  // Chaque école à part : « Far East Devil High School (Graduate), Maijima Private High School » (Elucia) va encore à la 2e
+  // (seulement ce qui ressemble à une école : pas « Criminal » dans « Umesato Junior High School (expelled), Criminal », Araya)
+  const parts = (value ?? '').split(/\s*(?:,|;|\n|<br\s*\/?>)\s*/i).filter(part => part.trim())
+  const schools = parts.filter(part => SCHOOL_NAME.test(part))
+  const current = (schools.length > 0 ? schools : parts).some(school => !FORMER_SCHOOL.test(school))
+  return current ? titleOccupations('Student') : null
 }
 
 // Les titres traduits en occupations. Un titre qu'on ne sait pas traduire (« Symbol of Evil ») est laissé de côté,

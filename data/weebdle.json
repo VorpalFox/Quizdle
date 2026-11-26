@@ -15987,7 +15987,9 @@
    "height": 158,
    "occupation": [
     "Étudiant",
-    "Musicien",
+    "Idole",
+    "Chanteur",
+    "Célébrité",
     "Artiste"
    ],
    "hair": [
@@ -17181,7 +17183,10 @@
    "age": 16,
    "height": 153,
    "occupation": [
-    "Célébrité"
+    "Idole",
+    "Chanteur",
+    "Célébrité",
+    "Artiste"
    ],
    "hair": [
     "Roses"
@@ -21596,7 +21601,8 @@
   "aliases": [
    "Hatori Arayoshi",
    "葉鳥新義",
-   "Arayoshi"
+   "Arayoshi",
+   "Hatori"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n1930-1ILYLHyqkMQb.png",
   "attributes": {
@@ -21916,7 +21922,10 @@
    "height": 163,
    "occupation": [
     "Étudiant",
-    "Célébrité"
+    "Idole",
+    "Chanteur",
+    "Célébrité",
+    "Artiste"
    ],
    "hair": [
     "Bruns"
@@ -27953,7 +27962,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Leader"
+    "Bibliothécaire"
    ],
    "hair": [
     "Bruns"
@@ -38601,9 +38610,9 @@
    "occupation": [
     "Idole",
     "Leader",
-    "Célébrité",
     "Étudiant",
     "Chanteur",
+    "Célébrité",
     "Artiste"
    ],
    "hair": [
@@ -52686,7 +52695,7 @@
    "occupation": [
     "Noble",
     "Aventurier",
-    "Employé"
+    "Bibliothécaire"
    ],
    "hair": [
     "Gris"
@@ -66831,7 +66840,10 @@
    "age": 17,
    "height": 174,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Chasseur de démons",
+    "Chasseur de monstres",
+    "Combattant"
    ],
    "hair": [
     "Bruns"
@@ -66868,9 +66880,15 @@
    "age": 300,
    "height": 159,
    "occupation": [
-    "Domestique"
+    "Domestique",
+    "Chasseur de démons",
+    "Étudiant",
+    "Chasseur de monstres",
+    "Combattant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
@@ -66932,8 +66950,11 @@
    "age": 16,
    "height": 161,
    "occupation": [
+    "Idole",
+    "Étudiant",
+    "Chanteur",
     "Célébrité",
-    "Étudiant"
+    "Artiste"
    ],
    "hair": [
     "Roses"
@@ -66966,9 +66987,12 @@
    "age": 17,
    "height": 157,
    "occupation": [
+    "Bibliothécaire",
     "Étudiant"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
@@ -67001,7 +67025,7 @@
     "Étudiant"
    ],
    "hair": [
-    "Bruns"
+    "Noirs"
    ],
    "anime": "The World God Only Knows",
    "genres": [
@@ -67031,7 +67055,8 @@
    "age": 16,
    "height": 149,
    "occupation": [
-    "Étudiant"
+    "Étudiant",
+    "Employé"
    ],
    "hair": [
     "Blonds"
@@ -67066,7 +67091,9 @@
    "occupation": [
     "Professeur"
    ],
-   "hair": null,
+   "hair": [
+    "Noirs"
+   ],
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
@@ -67098,7 +67125,7 @@
     "Serveur"
    ],
    "hair": [
-    "Roux"
+    "Rouges"
    ],
    "anime": "The World God Only Knows",
    "genres": [
@@ -67205,36 +67232,6 @@
   }
  },
  {
-  "id": "39121",
-  "name": "Yuu Hatori",
-  "aliases": [
-   "Hatori Yuu",
-   "羽鳥ゆう"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39121-yObuD7CnyznP.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": [
-    "Verts"
-   ],
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
   "id": "34316",
   "name": "Ichirou Kodama",
   "aliases": [
@@ -67256,62 +67253,6 @@
    "hair": [
     "Noirs"
    ],
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "73893",
-  "name": "Yuri",
-  "aliases": [
-   "ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73893-nR6vmNsJ6LsC.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The World God Only Knows",
-   "genres": [
-    "Comédie",
-    "Romance",
-    "Surnaturel"
-   ],
-   "year": 2010,
-   "studio": "Manglobe",
-   "source": "Manga"
-  }
- },
- {
-  "id": "153490",
-  "name": "Lime",
-  "aliases": [
-   "らいむ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153490-Z9KiHKNkucxi.png",
-  "attributes": {
-   "gender": "Femme",
-   "species": [
-    "Humain"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Leader"
-   ],
-   "hair": null,
    "anime": "The World God Only Knows",
    "genres": [
     "Comédie",
@@ -67369,7 +67310,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Leader",
+    "Bibliothécaire",
     "Étudiant"
    ],
    "hair": null,
@@ -67432,6 +67373,61 @@
    "occupation": [
     "Chauffeur"
    ],
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "387268",
+  "name": "Mio no Chichi",
+  "aliases": [
+   "Chichi no Mio",
+   "美生の父"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387268-cWA7XmK4pnYy.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The World God Only Knows",
+   "genres": [
+    "Comédie",
+    "Romance",
+    "Surnaturel"
+   ],
+   "year": 2010,
+   "studio": "Manglobe",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "387277",
+  "name": "Roushinshi",
+  "aliases": [
+   "老紳士"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b387277-v00TBoLhgyUz.png",
+  "attributes": {
+   "gender": "Homme",
+   "species": [
+    "Humain"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": null,
    "hair": null,
    "anime": "The World God Only Knows",
    "genres": [
