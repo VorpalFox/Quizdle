@@ -25,8 +25,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -53,9 +53,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2018,
    "studio": "WIT STUDIO"
@@ -88,9 +88,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -122,7 +122,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -154,9 +154,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -188,9 +188,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -228,9 +228,9 @@
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2006,
@@ -257,10 +257,10 @@
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -288,9 +288,9 @@
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
@@ -325,11 +325,11 @@
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -358,9 +358,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -386,11 +386,11 @@
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Psychological",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "bones"
@@ -427,11 +427,11 @@
    "anime": "Berserk",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Surnaturel"
+    "Horror",
+    "Supernatural"
    ],
    "year": 1997,
    "studio": "OLM"
@@ -457,8 +457,8 @@
    ],
    "anime": "The Apothecary Diaries",
    "genres": [
-    "Drame",
-    "Mystère"
+    "Drama",
+    "Mystery"
    ],
    "year": 2023,
    "studio": "OLM"
@@ -483,8 +483,8 @@
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2023,
@@ -512,9 +512,9 @@
    ],
    "anime": "Steins;Gate",
    "genres": [
-    "Drame",
-    "Psychologique",
-    "Science-fiction",
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2011,
@@ -556,8 +556,8 @@
    "anime": "Vinland Saga",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame"
+    "Adventure",
+    "Drama"
    ],
    "year": 2019,
    "studio": "WIT STUDIO"
@@ -584,9 +584,9 @@
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -617,11 +617,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -649,11 +649,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -683,9 +683,9 @@
    ],
    "anime": "Steins;Gate",
    "genres": [
-    "Drame",
-    "Psychologique",
-    "Science-fiction",
+    "Drama",
+    "Psychological",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2011,
@@ -719,8 +719,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -754,12 +754,12 @@
    ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "CloverWorks"
@@ -786,9 +786,9 @@
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -819,7 +819,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -850,9 +850,9 @@
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
@@ -881,11 +881,11 @@
    "anime": "Mob Psycho 100",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Psychologique",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Psychological",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "bones"
@@ -913,9 +913,9 @@
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -943,9 +943,9 @@
    ],
    "anime": "Violet Evergarden",
    "genres": [
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2018,
    "studio": "Kyoto Animation"
@@ -976,10 +976,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -1005,8 +1005,8 @@
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -1036,11 +1036,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -1071,10 +1071,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -1103,8 +1103,8 @@
    "genres": [
     "Action",
     "Fantasy",
-    "Psychologique",
-    "Surnaturel"
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2017,
    "studio": "ufotable"
@@ -1135,8 +1135,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -1168,10 +1168,10 @@
    ],
    "anime": "My Dress-Up Darling",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Ecchi",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -1203,8 +1203,8 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "david production"
@@ -1235,8 +1235,8 @@
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2017,
    "studio": "bones"
@@ -1269,8 +1269,8 @@
    "anime": "Vinland Saga",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame"
+    "Adventure",
+    "Drama"
    ],
    "year": 2019,
    "studio": "WIT STUDIO"
@@ -1296,8 +1296,8 @@
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -1324,10 +1324,10 @@
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -1362,8 +1362,8 @@
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -1393,9 +1393,9 @@
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
-    "Comédie",
-    "Mystère",
-    "Surnaturel"
+    "Comedy",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "bones"
@@ -1426,9 +1426,9 @@
    "anime": "Gintama",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Science-fiction"
+    "Comedy",
+    "Drama",
+    "Sci-Fi"
    ],
    "year": 2006,
    "studio": "Sunrise"
@@ -1463,10 +1463,10 @@
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Psychologique",
+    "Psychological",
     "Romance",
     "Thriller"
    ],
@@ -1500,10 +1500,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -1532,10 +1532,10 @@
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -1560,11 +1560,11 @@
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Psychologique",
+    "Psychological",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2018,
    "studio": "TRIGGER"
@@ -1591,8 +1591,8 @@
    ],
    "anime": "Classroom of the Elite",
    "genres": [
-    "Drame",
-    "Psychologique"
+    "Drama",
+    "Psychological"
    ],
    "year": 2017,
    "studio": "Lerche"
@@ -1621,7 +1621,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -1656,9 +1656,9 @@
    "anime": "Dr. STONE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Science-fiction"
+    "Adventure",
+    "Comedy",
+    "Sci-Fi"
    ],
    "year": 2019,
    "studio": "TMS Entertainment"
@@ -1689,9 +1689,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -1721,9 +1721,9 @@
    "anime": "One-Punch Man",
    "genres": [
     "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
+    "Comedy",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "MADHOUSE"
@@ -1752,10 +1752,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2020,
    "studio": "A-1 Pictures"
@@ -1787,7 +1787,7 @@
    "anime": "Solo Leveling",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2024,
@@ -1823,9 +1823,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -1854,9 +1854,9 @@
    ],
    "anime": "The Disastrous Life of Saiki K.",
    "genres": [
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "J.C.STAFF"
@@ -1889,8 +1889,8 @@
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -1921,11 +1921,11 @@
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -1956,9 +1956,9 @@
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "MAPPA"
@@ -1986,12 +1986,12 @@
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -2019,11 +2019,11 @@
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Psychologique",
+    "Psychological",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2018,
    "studio": "TRIGGER"
@@ -2052,9 +2052,9 @@
    ],
    "anime": "Horimiya",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "CloverWorks"
@@ -2085,10 +2085,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -2116,10 +2116,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -2150,9 +2150,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -2183,8 +2183,8 @@
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -2213,10 +2213,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -2247,9 +2247,9 @@
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2284,9 +2284,9 @@
    "anime": "Cowboy Bebop",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Science-fiction"
+    "Adventure",
+    "Drama",
+    "Sci-Fi"
    ],
    "year": 1998,
    "studio": "Sunrise"
@@ -2311,7 +2311,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2011,
@@ -2342,9 +2342,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -2373,8 +2373,8 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "david production"
@@ -2403,9 +2403,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -2439,8 +2439,8 @@
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -2466,12 +2466,12 @@
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Ecchi",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "Shaft"
@@ -2502,10 +2502,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2019,
    "studio": "ufotable"
@@ -2534,8 +2534,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2562,8 +2562,8 @@
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2018,
@@ -2594,11 +2594,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -2629,8 +2629,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2662,9 +2662,9 @@
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2697,8 +2697,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -2728,9 +2728,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2018,
    "studio": "WIT STUDIO"
@@ -2755,9 +2755,9 @@
    "anime": "Noragami",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Surnaturel"
+    "Adventure",
+    "Comedy",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "bones"
@@ -2792,7 +2792,7 @@
     "Action",
     "Fantasy",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2006,
    "studio": "Studio DEEN"
@@ -2820,9 +2820,9 @@
    ],
    "anime": "BOCCHI THE ROCK!",
    "genres": [
-    "Comédie",
-    "Musique",
-    "Tranche de vie"
+    "Comedy",
+    "Music",
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -2849,10 +2849,10 @@
    ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2013,
    "studio": "Brain's Base"
@@ -2880,12 +2880,12 @@
    "hair": null,
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -2913,9 +2913,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -2942,10 +2942,10 @@
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
     "Magical girl",
-    "Psychologique",
+    "Psychological",
     "Thriller"
    ],
    "year": 2011,
@@ -2976,10 +2976,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "ufotable"
@@ -3014,7 +3014,7 @@
     "Action",
     "Fantasy",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2006,
    "studio": "Studio DEEN"
@@ -3043,8 +3043,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "MAPPA"
@@ -3076,10 +3076,10 @@
    ],
    "anime": "OSHI NO KO",
    "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "Doga Kobo"
@@ -3106,9 +3106,9 @@
    ],
    "anime": "Horimiya",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "CloverWorks"
@@ -3140,8 +3140,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "MAPPA"
@@ -3170,11 +3170,11 @@
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3199,9 +3199,9 @@
    "hair": null,
    "anime": "A Silent Voice",
    "genres": [
-    "Drame",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2016,
    "studio": "Kyoto Animation"
@@ -3231,8 +3231,8 @@
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
@@ -3262,10 +3262,10 @@
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -3297,11 +3297,11 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Mystère",
-    "Surnaturel"
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "ufotable"
@@ -3331,11 +3331,11 @@
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3364,10 +3364,10 @@
    ],
    "anime": "Monster",
    "genres": [
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2004,
@@ -3396,9 +3396,9 @@
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction",
+    "Sci-Fi",
     "Thriller"
    ],
    "year": 2006,
@@ -3429,11 +3429,11 @@
    "anime": "Neon Genesis Evangelion",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction"
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 1995,
    "studio": "GAINAX"
@@ -3464,8 +3464,8 @@
    "anime": "Black Clover",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2017,
@@ -3494,9 +3494,9 @@
    ],
    "anime": "A Silent Voice",
    "genres": [
-    "Drame",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2016,
    "studio": "Kyoto Animation"
@@ -3526,10 +3526,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -3558,12 +3558,12 @@
    ],
    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2018,
    "studio": "CloverWorks"
@@ -3592,10 +3592,10 @@
    ],
    "anime": "The Quintessential Quintuplets",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "Tezuka Productions"
@@ -3623,9 +3623,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -3652,10 +3652,10 @@
    "anime": "Chainsaw Man",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
+    "Drama",
+    "Horror",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "MAPPA"
@@ -3680,7 +3680,7 @@
    "hair": null,
    "anime": "Assassination Classroom",
    "genres": [
-    "Comédie"
+    "Comedy"
    ],
    "year": 2016,
    "studio": "Lerche"
@@ -3709,8 +3709,8 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "Toei Animation"
@@ -3738,11 +3738,11 @@
    ],
    "anime": "Fruits Basket",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie",
-    "Surnaturel"
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2001,
    "studio": "Studio DEEN"
@@ -3773,9 +3773,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -3805,11 +3805,11 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Sport",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "david production"
@@ -3839,9 +3839,9 @@
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
@@ -3871,9 +3871,9 @@
    "anime": "SPY x FAMILY",
    "genres": [
     "Action",
-    "Comédie",
-    "Tranche de vie",
-    "Surnaturel"
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2022,
    "studio": "CloverWorks"
@@ -3900,10 +3900,10 @@
    "anime": "Land of the Lustrous",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère",
-    "Psychologique"
+    "Mystery",
+    "Psychological"
    ],
    "year": 2017,
    "studio": "Orange"
@@ -3932,7 +3932,7 @@
    "anime": "Sword Art Online",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy",
     "Romance"
    ],
@@ -3965,9 +3965,9 @@
    "anime": "Tokyo Revengers",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "LIDENFILMS"
@@ -3991,11 +3991,11 @@
    ],
    "anime": "The Promised Neverland",
    "genres": [
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2019,
@@ -4023,9 +4023,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2024,
    "studio": "Production I.G"
@@ -4060,11 +4060,11 @@
    "anime": "Dragon Ball",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy",
-    "Science-fiction",
-    "Surnaturel"
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 1986,
    "studio": "Toei Animation"
@@ -4095,9 +4095,9 @@
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
@@ -4129,8 +4129,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -4158,10 +4158,10 @@
    ],
    "anime": "My Teen Romantic Comedy SNAFU",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2013,
    "studio": "Brain's Base"
@@ -4187,9 +4187,9 @@
    "anime": "Assassination Classroom",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "Lerche"
@@ -4215,8 +4215,8 @@
    ],
    "anime": "Rent-a-Girlfriend",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance"
    ],
    "year": 2020,
@@ -4248,7 +4248,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 1999,
@@ -4273,8 +4273,8 @@
    "anime": "Black Clover",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy"
    ],
    "year": 2017,
@@ -4302,9 +4302,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -4332,8 +4332,8 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2012,
    "studio": "david production"
@@ -4359,8 +4359,8 @@
    "anime": "BANANA FISH",
    "genres": [
     "Action",
-    "Drame",
-    "Psychologique",
+    "Drama",
+    "Psychological",
     "Thriller"
    ],
    "year": 2018,
@@ -4389,8 +4389,8 @@
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -4417,7 +4417,7 @@
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy"
    ],
    "year": 2011,
@@ -4444,11 +4444,11 @@
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2007,
    "studio": "GAINAX"
@@ -4478,10 +4478,10 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2025,
    "studio": "ufotable"
@@ -4510,10 +4510,10 @@
    ],
    "anime": "Your lie in April",
    "genres": [
-    "Drame",
-    "Musique",
+    "Drama",
+    "Music",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2014,
    "studio": "A-1 Pictures"
@@ -4543,9 +4543,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -4572,9 +4572,9 @@
    "anime": "Cyberpunk: Edgerunners",
    "genres": [
     "Action",
-    "Drame",
-    "Psychologique",
-    "Science-fiction"
+    "Drama",
+    "Psychological",
+    "Sci-Fi"
    ],
    "year": 2022,
    "studio": "TRIGGER"
@@ -4605,10 +4605,10 @@
    ],
    "anime": "Kaguya-sama: Love is War",
    "genres": [
-    "Comédie",
-    "Psychologique",
+    "Comedy",
+    "Psychological",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2019,
    "studio": "A-1 Pictures"
@@ -4636,9 +4636,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -4666,11 +4666,11 @@
    ],
    "anime": "Fruits Basket",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie",
-    "Surnaturel"
+    "Slice of Life",
+    "Supernatural"
    ],
    "year": 2001,
    "studio": "Studio DEEN"
@@ -4701,7 +4701,7 @@
    "anime": "Sword Art Online",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy",
     "Romance"
    ],
@@ -4727,8 +4727,8 @@
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2023,
@@ -4759,9 +4759,9 @@
    "anime": "ONE PIECE",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy"
    ],
    "year": 1999,
@@ -4791,10 +4791,10 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "david production"
@@ -4819,9 +4819,9 @@
    ],
    "anime": "Kakegurui",
    "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique"
+    "Drama",
+    "Mystery",
+    "Psychological"
    ],
    "year": 2017,
    "studio": "MAPPA"
@@ -4852,10 +4852,10 @@
    ],
    "anime": "Monster",
    "genres": [
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
     "Thriller"
    ],
    "year": 2004,
@@ -4886,8 +4886,8 @@
    "anime": "My Hero Academia",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie"
+    "Adventure",
+    "Comedy"
    ],
    "year": 2016,
    "studio": "bones"
@@ -4914,9 +4914,9 @@
    "anime": "One-Punch Man",
    "genres": [
     "Action",
-    "Comédie",
-    "Science-fiction",
-    "Surnaturel"
+    "Comedy",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2015,
    "studio": "MADHOUSE"
@@ -4945,11 +4945,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2005,
    "studio": "Studio Pierrot"
@@ -4975,10 +4975,10 @@
    "anime": "Toilet-bound Hanako-kun",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "Lerche"
@@ -5009,8 +5009,8 @@
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
@@ -5045,10 +5045,10 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2016,
    "studio": "david production"
@@ -5068,8 +5068,8 @@
    "hair": null,
    "anime": "Howl‘s Moving Castle",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
     "Romance"
    ],
@@ -5098,8 +5098,8 @@
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -5126,10 +5126,10 @@
    ],
    "anime": "Toradora!",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2008,
    "studio": "J.C.STAFF"
@@ -5159,11 +5159,11 @@
    "anime": "Berserk",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy",
-    "Horreur",
-    "Surnaturel"
+    "Horror",
+    "Supernatural"
    ],
    "year": 1997,
    "studio": "OLM"
@@ -5194,11 +5194,11 @@
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -5229,8 +5229,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "MAPPA"
@@ -5260,9 +5260,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2013,
    "studio": "WIT STUDIO"
@@ -5290,11 +5290,11 @@
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2007,
    "studio": "GAINAX"
@@ -5321,8 +5321,8 @@
    "anime": "Black Lagoon",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Thriller"
    ],
    "year": 2006,
@@ -5356,7 +5356,7 @@
    "anime": "Kill la Kill",
    "genres": [
     "Action",
-    "Comédie",
+    "Comedy",
     "Ecchi"
    ],
    "year": 2013,
@@ -5381,8 +5381,8 @@
    ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy"
    ],
@@ -5411,11 +5411,11 @@
    ],
    "anime": "Serial Experiments Lain",
    "genres": [
-    "Drame",
-    "Mystère",
-    "Psychologique",
-    "Science-fiction",
-    "Surnaturel"
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 1998,
    "studio": "Triangle Staff"
@@ -5438,10 +5438,10 @@
    "hair": null,
    "anime": "NANA",
    "genres": [
-    "Drame",
-    "Musique",
+    "Drama",
+    "Music",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2006,
    "studio": "MADHOUSE"
@@ -5471,9 +5471,9 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "david production"
@@ -5501,11 +5501,11 @@
    "anime": "Date A Live",
    "genres": [
     "Action",
-    "Comédie",
+    "Comedy",
     "Ecchi",
     "Mecha",
     "Romance",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2022,
    "studio": "GEEKTOYS"
@@ -5536,9 +5536,9 @@
    "anime": "86 EIGHTY-SIX",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Mecha",
-    "Science-fiction"
+    "Sci-Fi"
    ],
    "year": 2021,
    "studio": "A-1 Pictures"
@@ -5567,9 +5567,9 @@
    ],
    "anime": "HAIKYU!!",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Sport"
+    "Comedy",
+    "Drama",
+    "Sports"
    ],
    "year": 2014,
    "studio": "Production I.G"
@@ -5600,9 +5600,9 @@
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
-    "Aventure",
+    "Adventure",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2021,
    "studio": "ufotable"
@@ -5629,9 +5629,9 @@
    ],
    "anime": "Komi Can’t Communicate",
    "genres": [
-    "Comédie",
+    "Comedy",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2021,
    "studio": "OLM"
@@ -5656,10 +5656,10 @@
    ],
    "anime": "Love, Chunibyo & Other Delusions",
    "genres": [
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2012,
    "studio": "Kyoto Animation"
@@ -5686,12 +5686,12 @@
    ],
    "anime": "Bakemonogatari",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Mystère",
-    "Psychologique",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Psychological",
     "Romance",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2009,
    "studio": "Shaft"
@@ -5719,9 +5719,9 @@
    "anime": "Attack on Titan",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Mystère"
+    "Mystery"
    ],
    "year": 2017,
    "studio": "WIT STUDIO"
@@ -5750,8 +5750,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "MAPPA"
@@ -5780,11 +5780,11 @@
    "anime": "Naruto",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
-    "Drame",
+    "Adventure",
+    "Comedy",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2002,
    "studio": "Studio Pierrot"
@@ -5812,9 +5812,9 @@
    "anime": "Fate/stay night",
    "genres": [
     "Action",
-    "Drame",
+    "Drama",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2011,
    "studio": "ufotable"
@@ -5848,11 +5848,11 @@
    "anime": "The Seven Deadly Sins",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Ecchi",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "A-1 Pictures"
@@ -5885,8 +5885,8 @@
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -5914,8 +5914,8 @@
    "hair": null,
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Ecchi",
     "Fantasy"
    ],
@@ -5947,11 +5947,11 @@
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
-    "Mystère",
-    "Sport",
-    "Surnaturel"
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
    ],
    "year": 2026,
    "studio": "david production"
@@ -5974,9 +5974,9 @@
    "hair": null,
    "anime": "GTO: Great Teacher Onizuka",
    "genres": [
-    "Comédie",
-    "Drame",
-    "Tranche de vie"
+    "Comedy",
+    "Drama",
+    "Slice of Life"
    ],
    "year": 1999,
    "studio": "Studio Pierrot"
@@ -6002,8 +6002,8 @@
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
-    "Aventure",
-    "Drame",
+    "Adventure",
+    "Drama",
     "Fantasy"
    ],
    "year": 2003,
@@ -6036,10 +6036,10 @@
    "anime": "Dragon Ball",
    "genres": [
     "Action",
-    "Aventure",
-    "Comédie",
+    "Adventure",
+    "Comedy",
     "Fantasy",
-    "Surnaturel"
+    "Supernatural"
    ],
    "year": 1989,
    "studio": "Toei Animation"
@@ -6067,11 +6067,11 @@
    "anime": "Tokyo Ghoul",
    "genres": [
     "Action",
-    "Drame",
-    "Horreur",
-    "Mystère",
-    "Psychologique",
-    "Surnaturel"
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
    ],
    "year": 2014,
    "studio": "Studio Pierrot"
@@ -6098,11 +6098,11 @@
    "anime": "DAN DA DAN",
    "genres": [
     "Action",
-    "Comédie",
-    "Drame",
+    "Comedy",
+    "Drama",
     "Romance",
-    "Science-fiction",
-    "Surnaturel"
+    "Sci-Fi",
+    "Supernatural"
    ],
    "year": 2024,
    "studio": "Science SARU"
@@ -6130,9 +6130,9 @@
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
-    "Comédie",
-    "Mystère",
-    "Surnaturel"
+    "Comedy",
+    "Mystery",
+    "Supernatural"
    ],
    "year": 2023,
    "studio": "bones"
@@ -6164,8 +6164,8 @@
    "anime": "JUJUTSU KAISEN",
    "genres": [
     "Action",
-    "Drame",
-    "Surnaturel"
+    "Drama",
+    "Supernatural"
    ],
    "year": 2020,
    "studio": "MAPPA"
@@ -6192,9 +6192,9 @@
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,
@@ -6222,9 +6222,9 @@
    ],
    "anime": "Hyouka",
    "genres": [
-    "Mystère",
+    "Mystery",
     "Romance",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2012,
    "studio": "Kyoto Animation"
@@ -6253,7 +6253,7 @@
    "anime": "Lycoris Recoil",
    "genres": [
     "Action",
-    "Tranche de vie"
+    "Slice of Life"
    ],
    "year": 2022,
    "studio": "A-1 Pictures"
@@ -6285,8 +6285,8 @@
    "anime": "Bleach",
    "genres": [
     "Action",
-    "Aventure",
-    "Surnaturel"
+    "Adventure",
+    "Supernatural"
    ],
    "year": 2004,
    "studio": "Studio Pierrot"
@@ -6316,9 +6316,9 @@
    ],
    "anime": "Death Note",
    "genres": [
-    "Mystère",
-    "Psychologique",
-    "Surnaturel",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
     "Thriller"
    ],
    "year": 2006,

@@ -35,10 +35,10 @@ export async function anilist<T>(query: string, variables: Record<string, unknow
 
 export const GENDERS: Record<string, string> = { Male: 'Male', Female: 'Female' }
 export const GENRES: Record<string, string> = {
-  'Action': 'Action', 'Adventure': 'Aventure', 'Comedy': 'Comédie', 'Drama': 'Drame', 'Ecchi': 'Ecchi',
-  'Fantasy': 'Fantasy', 'Horror': 'Horreur', 'Mahou Shoujo': 'Magical girl', 'Mecha': 'Mecha', 'Music': 'Musique',
-  'Mystery': 'Mystère', 'Psychological': 'Psychologique', 'Romance': 'Romance', 'Sci-Fi': 'Science-fiction',
-  'Slice of Life': 'Tranche de vie', 'Sports': 'Sport', 'Supernatural': 'Surnaturel', 'Thriller': 'Thriller', 'Hentai': 'Hentai',
+  'Action': 'Action', 'Adventure': 'Adventure', 'Comedy': 'Comedy', 'Drama': 'Drama', 'Ecchi': 'Ecchi',
+  'Fantasy': 'Fantasy', 'Horror': 'Horror', 'Mahou Shoujo': 'Magical girl', 'Mecha': 'Mecha', 'Music': 'Music',
+  'Mystery': 'Mystery', 'Psychological': 'Psychological', 'Romance': 'Romance', 'Sci-Fi': 'Sci-Fi',
+  'Slice of Life': 'Slice of Life', 'Sports': 'Sports', 'Supernatural': 'Supernatural', 'Thriller': 'Thriller', 'Hentai': 'Hentai',
 }
 
 export interface CharacterName {

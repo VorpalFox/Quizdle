@@ -56,7 +56,7 @@ const SOURCE_OVERRIDES: Record<number, string> = {
 
 // Sans espèce trouvée, un perso d'un anime sans rien de surnaturel est humain. Pas dans les autres : un quart des persos
 // dont on connaît l'espèce n'y sont pas humains.
-const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Surnaturel', 'Science-fiction', 'Mecha', 'Horreur', 'Magical girl'])
+const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Supernatural', 'Sci-Fi', 'Mecha', 'Horror', 'Magical girl'])
 const HUMAN = 'Humain'
 // Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
 // espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à

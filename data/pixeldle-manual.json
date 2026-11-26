@@ -5352,10 +5352,10 @@
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [
-     "Aventure",
-     "Réflexion",
+     "Adventure",
+     "Puzzle",
      "Visual novel",
-     "Plates-formes"
+     "Platformer"
     ],
     "year": 2019
    }
@@ -5378,10 +5378,10 @@
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [
-     "Aventure",
-     "Réflexion",
+     "Adventure",
+     "Puzzle",
      "Visual novel",
-     "Plates-formes"
+     "Platformer"
     ],
     "year": 2019
    }
@@ -5518,7 +5518,7 @@
     "franchise": "Twelve Minutes",
     "developer": "Luis Antonio",
     "genres": [
-     "Aventure"
+     "Adventure"
     ],
     "year": 2021
    }
@@ -5544,7 +5544,7 @@
     "franchise": "Twelve Minutes",
     "developer": "Luis Antonio",
     "genres": [
-     "Aventure"
+     "Adventure"
     ],
     "year": 2021
    }
@@ -5897,7 +5897,7 @@
     "franchise": "The Talos Principle",
     "developer": "Croteam",
     "genres": [
-     "Réflexion"
+     "Puzzle"
     ],
     "year": 2014
    }
@@ -5923,7 +5923,7 @@
     "developer": "EXOR Studios",
     "genres": [
      "Action",
-     "Stratégie"
+     "Strategy"
     ],
     "year": 2021
    }
@@ -5949,7 +5949,7 @@
     "developer": "EXOR Studios",
     "genres": [
      "Action",
-     "Stratégie"
+     "Strategy"
     ],
     "year": 2021
    }

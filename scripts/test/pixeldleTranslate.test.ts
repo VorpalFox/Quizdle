@@ -169,11 +169,11 @@ describe('translateDeveloper', () => {
 
 describe('translateGenre', () => {
   it('GenresWikidata_NosGenres', () => {
-    expect(translateGenre('jeu de plateforme en 3D')).toBe('Plates-formes')
-    expect(translateGenre('action-RPG')).toBe('Action-RPG')
+    expect(translateGenre('jeu de plateforme en 3D')).toBe('Platformer')
+    expect(translateGenre('action-RPG')).toBe('Action RPG')
     expect(translateGenre('jeu de rôle en ligne massivement multijoueur')).toBe('MMO')
-    expect(translateGenre('jeu de combat motorisé')).toBe('Course')
-    expect(translateGenre('science fiction horror')).toBe('Horreur')
+    expect(translateGenre('jeu de combat motorisé')).toBe('Racing')
+    expect(translateGenre('science fiction horror')).toBe('Horror')
   })
 
   it('Themes_Retires', () => {
@@ -188,8 +188,8 @@ describe('translateGenre', () => {
     expect(translateGenre('jeu vidéo de pêche')).toBe('Simulation')
     expect(translateGenre('jeu de tir')).toBe('FPS')
     expect(translateGenre('Extraction shooter')).toBe('FPS')
-    expect(translateGenre('jeu d\'aventure à la troisième personne')).toBe('Aventure')
-    expect(translateGenre('jeu vidéo comprenant des éléments d\'énigme')).toBe('Réflexion')
+    expect(translateGenre('jeu d\'aventure à la troisième personne')).toBe('Adventure')
+    expect(translateGenre('jeu vidéo comprenant des éléments d\'énigme')).toBe('Puzzle')
     expect(translateGenre('Immersive sim')).toBe('Immersive sim')
     expect(translateGenre('monster-taming game')).toBe('Monster-taming')
     expect(translateGenre('walking simulator')).toBe('Walking simulator')
