@@ -55229,6 +55229,54 @@
   }
  },
  {
+  "id": "wiki-spore-steve",
+  "name": "Steve",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Alien"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Pilot"
+   ],
+   "hair": null,
+   "franchise": "Spore",
+   "developer": "Maxis",
+   "genres": [
+    "Strategy",
+    "RPG",
+    "Simulation",
+    "Arcade"
+   ],
+   "year": 2008
+  }
+ },
+ {
+  "id": "wiki-spore-grox",
+  "name": "Grox",
+  "aliases": [],
+  "attributes": {
+   "gender": null,
+   "species": [
+    "Alien"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "Spore",
+   "developer": "Maxis",
+   "genres": [
+    "Strategy",
+    "RPG",
+    "Simulation",
+    "Arcade"
+   ],
+   "year": 2008
+  }
+ },
+ {
   "id": "wiki-mirror-s-edge-mercury",
   "name": "Mercury",
   "aliases": [],

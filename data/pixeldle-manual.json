@@ -7354,8 +7354,12 @@
    "category": "The Sinking City Characters"
   },
   "Spore": {
-   "_raison": "les persos du jeu Spore seulement (Wikidata et l'avatar) : la catégorie du wiki mélange Darkspore, Spore Hero, Spore Creatures et des fictions de fans",
-   "limit": 4
+   "_raison": "les persos du jeu Spore seulement (Wikidata, l'avatar, Steve et les Grox choisis par FX) : la catégorie du wiki mélange Darkspore, Spore Hero, Spore Creatures et des fictions de fans",
+   "pages": [
+    "Steve",
+    "Grox"
+   ],
+   "limit": 6
   },
   "Solasta": {
    "_raison": "les persos de Crown of the Magister : « Characters » n'a que ceux de Solasta II, pas sorti ; les plus longues pages sont des marchands (inventaires), d'où les persos marquants choisis par FX",
