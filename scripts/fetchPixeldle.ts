@@ -52,7 +52,7 @@ import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrChoice, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
-import { enrichFromWikis, NAME_TITLE } from './pixeldleEnrich.js'
+import { AFFILIATIONS, enrichFromWikis, NAME_TITLE } from './pixeldleEnrich.js'
 import { fillUnknowns } from './unknownValues.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
@@ -675,14 +675,22 @@ const finished = manualApplied.entries.map(entry => {
 // partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
 const worlds = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) => [franchise,
   franchise in FRANCHISE_WORLDS ? FRANCHISE_WORLDS[franchise]! : franchiseWorld(list.map(entry => entry.attributes.nationality as string[] | null))]))
+// Les nationalités de chaque franchise, pour les affiliations (« Humanity/Albion » : Albion)
+const franchiseNations = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) =>
+  [franchise, new Set(list.flatMap(entry => (entry.attributes.nationality as string[] | null) ?? []))]))
 const worldFills: string[] = []
+const affiliationFills: string[] = []
 const placed = finished.map(entry => {
-  const places = entry.attributes.nationality as string[] | null
+  const { [AFFILIATIONS]: affiliations, ...attributes } = entry.attributes
   const franchise = String(entry.attributes.franchise)
+  const known = (attributes.nationality as string[] | null)?.length ? null : ((affiliations as string[] | undefined) ?? []).filter(place => franchiseNations.get(franchise)!.has(place))
+  if (known?.length)
+    affiliationFills.push(`${entry.name} (${franchise}) : ${known.join(', ')}`)
+  const places = known?.length ? known : attributes.nationality as string[] | null
   const nationality = withWorld(places, entry.attributes.species, worlds.get(franchise) ?? null, franchiseUniverses(franchise))
   if (!places?.length && nationality)
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
-  return { ...entry, attributes: { ...entry.attributes, nationality } }
+  return { ...entry, attributes: { ...attributes, nationality } }
 })
 // Unknown dans les cases restées vides que le wiki disait inconnues (fillUnknowns), puis les corrections encore une
 // fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
@@ -739,6 +747,7 @@ lines.push(`## Rôles d'après l'introduction : Compagnon, Assistant, et Destruc
 const worldNames = { real: REAL_WORLD, other: 'autre monde (vide)' }
 lines.push(`## Monde des franchises (${worlds.size}) : FRANCHISE_WORLDS sinon les lieux des personnages, à relire`,
   ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${franchiseUniverses(franchise).map(universe => `, ${universe}`).join('')}`), '')
+lines.push(`## Nationalité vide remplie par l'affiliation (${affiliationFills.length})`, ...affiliationFills.map(text => `- ${text}`), '')
 lines.push(`## Nationalité vide remplie par le monde de la franchise (${worldFills.length})`, ...worldFills.map(text => `- ${text}`), '')
 lines.push(`## Occupations tirées de l'introduction (${occupationExcerpts.length}) : à relire`, ...occupationExcerpts.map(text => `- ${text}`), '')
 lines.push(`## Cheveux tirés du texte des pages (${hairExcerpts.length}) : à relire`, ...hairExcerpts.map(text => `- ${text}`), '')

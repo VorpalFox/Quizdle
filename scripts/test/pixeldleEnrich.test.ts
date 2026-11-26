@@ -123,6 +123,11 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ occupation: 'Councilor' }, new Map()).occupation).toEqual(['Politician'])
   })
 
+  it('AffiliationSansLieu_GardeePourLaFranchise', () => {
+    expect(infoboxValues({ gender: 'Male', affiliation: 'Humanity/Albion' }, new Map()).affiliations).toEqual(['Humanity', 'Albion'])
+    expect(infoboxValues({ gender: 'Male', affiliation: 'Albion', location: 'Kingston' }, new Map()).affiliations).toBeUndefined()
+  })
+
   it('NationDansLAffiliation_Nationalite', () => {
     expect(infoboxValues({ affiliation: 'Principality of Masgarth' }, new Map()).nationality).toEqual(['Principality of Masgarth'])
     expect(infoboxValues({ affiliation: 'The Legacy Council, Adventurers Guild' }, new Map()).nationality).toBeUndefined()

@@ -16058,7 +16058,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Shor's Stone"
+   ],
    "occupation": [
     "Worker"
    ],
@@ -19541,7 +19543,7 @@
     "Human"
    ],
    "nationality": [
-    "Monde réel"
+    "Island of Time"
    ],
    "occupation": [
     "Leader",
@@ -20482,7 +20484,9 @@
    "species": [
     "Alien"
    ],
-   "nationality": null,
+   "nationality": [
+    "Xen"
+   ],
    "occupation": [
     "Leader"
    ],
@@ -37135,7 +37139,7 @@
     "Human"
    ],
    "nationality": [
-    "Monde réel"
+    "Freddy Fazbear's Mega Pizzaplex"
    ],
    "occupation": [
     "Assassin",
@@ -58399,7 +58403,7 @@
     "Human"
    ],
    "nationality": [
-    "Monde réel"
+    "United Cities of America"
    ],
    "occupation": null,
    "hair": [
@@ -58511,7 +58515,7 @@
     "Human"
    ],
    "nationality": [
-    "Monde réel"
+    "United Cities of America"
    ],
    "occupation": [
     "Scientist"
@@ -61075,7 +61079,7 @@
     "Cyborg"
    ],
    "nationality": [
-    "Monde réel"
+    "Base Cochise"
    ],
    "occupation": [
     "Scientist"
@@ -61177,7 +61181,7 @@
     "Human"
    ],
    "nationality": [
-    "Monde réel"
+    "The Bizarre"
    ],
    "occupation": [
     "Merchant"
@@ -67140,7 +67144,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": [
     "Soldier"
    ],
@@ -67262,7 +67268,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": [
     "Soldier"
    ],
@@ -67342,7 +67350,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Albion"
+   ],
    "occupation": [
     "Soldier"
    ],

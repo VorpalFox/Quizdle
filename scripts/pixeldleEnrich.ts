@@ -55,6 +55,8 @@ export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'locati
 const NATION = /^(?:the\s+)?(?:principality|kingdom|empire|republic|grand duchy|duchy|federation|commonwealth|dominion|confederacy|sultanate|khanate|theocracy|shogunate|tsardom|realm)\s+of\s+\S/i
 // Un titre de noblesse en tête du nom, avant le nom lui-même (« Lord Hammond », pas « Lord » tout seul)
 export const NAME_TITLE = 'nameTitle'
+// Les affiliations d'un perso sans lieu, attribut de travail : une nationalité seulement si elle en est déjà une dans sa franchise
+export const AFFILIATIONS = 'affiliations'
 const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
@@ -313,9 +315,9 @@ function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
 const rawField = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name]?.trim()).find(value => value) ?? null
 
-export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE, AttributeValue>> {
+export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS, AttributeValue>> {
   const note = (key: string, raw: string) => untranslated.set(key, [...untranslated.get(key) ?? [], raw])
-  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE, AttributeValue>> = {}
+  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE | typeof AFFILIATIONS, AttributeValue>> = {}
 
   const gender = first(fields, FIELDS.gender)
   if (gender) {
@@ -348,6 +350,9 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const places = [...new Set(found.length > 0 ? found : present(fields, FIELDS.location).flatMap(parsePlaces).slice(0, MAX_LOCATIONS))].slice(0, MAX_PLACES)
   if (places.length > 0)
     result.nationality = places
+  const affiliations = places.length > 0 ? [] : [...new Set(present(fields, FIELDS.affiliation).flatMap(parts).flatMap(parsePlaces))]
+  if (affiliations.length > 0)
+    result[AFFILIATIONS] = affiliations
   const occupation = first(fields, FIELDS.occupation)
   if (occupation) {
     const parsed = parseOccupations(occupation)
@@ -474,7 +479,7 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         }))
         if (Object.keys(added).length === 0)
           continue
-        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE))
+        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE && key !== AFFILIATIONS))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
         current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')
