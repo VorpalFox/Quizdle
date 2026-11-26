@@ -123,9 +123,10 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ occupation: 'Councilor' }, new Map()).occupation).toEqual(['Politician'])
   })
 
-  it('AffiliationSansLieu_GardeePourLaFranchise', () => {
+  it('Affiliation_GardeePourLaFranchise', () => {
     expect(infoboxValues({ gender: 'Male', affiliation: 'Humanity/Albion' }, new Map()).affiliations).toEqual(['Humanity', 'Albion'])
-    expect(infoboxValues({ gender: 'Male', affiliation: 'Albion', location: 'Kingston' }, new Map()).affiliations).toBeUndefined()
+    expect(infoboxValues({ gender: 'Male', affiliation: 'Albion', location: 'Kingston' }, new Map()).affiliations).toEqual(['Albion'])
+    expect(infoboxValues({ gender: 'Male' }, new Map()).affiliations).toBeUndefined()
   })
 
   it('NationDansLAffiliation_Nationalite', () => {

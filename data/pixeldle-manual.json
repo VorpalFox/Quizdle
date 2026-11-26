@@ -5348,12 +5348,27 @@
   },
   "wiki-sundered-nyarlathotep": {
    "_nom": "Nyarlathotep",
+   "_raison": "seulement allié de l'Eschaton (son affiliation), pas des leurs",
    "occupation": {
     "plus": [
      "None"
     ],
     "moins": [
      "Leader"
+    ]
+   },
+   "nationality": {
+    "moins": [
+     "Eschaton"
+    ]
+   }
+  },
+  "Q1148659": {
+   "_nom": "Princesse Daisy",
+   "_raison": "princesse de Sarasaland, seulement alliée du Royaume Champignon (son affiliation)",
+   "nationality": {
+    "moins": [
+     "Mushroom Kingdom"
     ]
    }
   }

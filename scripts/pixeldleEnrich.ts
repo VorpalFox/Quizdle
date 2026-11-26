@@ -55,7 +55,7 @@ export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'locati
 const NATION = /^(?:the\s+)?(?:principality|kingdom|empire|republic|grand duchy|duchy|federation|commonwealth|dominion|confederacy|sultanate|khanate|theocracy|shogunate|tsardom|realm)\s+of\s+\S/i
 // Un titre de noblesse en tête du nom, avant le nom lui-même (« Lord Hammond », pas « Lord » tout seul)
 export const NAME_TITLE = 'nameTitle'
-// Les affiliations d'un perso sans lieu, attribut de travail : une nationalité seulement si elle en est déjà une dans sa franchise
+// Les affiliations du perso, attribut de travail : ajoutées à sa nationalité seulement si elles en sont déjà une dans sa franchise
 export const AFFILIATIONS = 'affiliations'
 const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
@@ -350,7 +350,7 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const places = [...new Set(found.length > 0 ? found : present(fields, FIELDS.location).flatMap(parsePlaces).slice(0, MAX_LOCATIONS))].slice(0, MAX_PLACES)
   if (places.length > 0)
     result.nationality = places
-  const affiliations = places.length > 0 ? [] : [...new Set(present(fields, FIELDS.affiliation).flatMap(parts).flatMap(parsePlaces))]
+  const affiliations = [...new Set(present(fields, FIELDS.affiliation).flatMap(parts).flatMap(parsePlaces))]
   if (affiliations.length > 0)
     result[AFFILIATIONS] = affiliations
   const occupation = first(fields, FIELDS.occupation)

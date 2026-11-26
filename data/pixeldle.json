@@ -37291,6 +37291,7 @@
     "New Harmony",
     "Utah",
     "United States",
+    "Freddy Fazbear's Mega Pizzaplex",
     "Monde réel"
    ],
    "occupation": [
@@ -37353,6 +37354,7 @@
     "New Harmony",
     "Utah",
     "United States",
+    "Freddy Fazbear's Mega Pizzaplex",
     "Monde réel"
    ],
    "occupation": [
@@ -41315,7 +41317,8 @@
     "Watson",
     "Night City",
     "American wilderness",
-    "Heywood"
+    "Heywood",
+    "NUSA"
    ],
    "occupation": [
     "Mercenary",
@@ -41609,6 +41612,7 @@
     "Santo Domingo",
     "Dominican Republic",
     "Night City",
+    "Afterlife",
     "Monde réel"
    ],
    "occupation": [
@@ -43247,6 +43251,7 @@
    "nationality": [
     "Chicago",
     "United States",
+    "The Tower",
     "Monde réel"
    ],
    "occupation": [
@@ -53379,7 +53384,8 @@
     "Human"
    ],
    "nationality": [
-    "Turkey"
+    "Turkey",
+    "The Tower"
    ],
    "occupation": [
     "Athlete"
@@ -58228,6 +58234,7 @@
    ],
    "nationality": [
     "United States",
+    "United Cities of America",
     "Monde réel"
    ],
    "occupation": [
@@ -58320,6 +58327,7 @@
    ],
    "nationality": [
     "United States",
+    "United Cities of America",
     "Monde réel"
    ],
    "occupation": [
@@ -58429,7 +58437,8 @@
    ],
    "nationality": [
     "Central Knot City",
-    "Mountain Knot City"
+    "Mountain Knot City",
+    "United Cities of America"
    ],
    "occupation": [
     "Survivor",
@@ -58461,7 +58470,9 @@
     "Human"
    ],
    "nationality": [
-    "The Beach"
+    "The Beach",
+    "United States",
+    "Monde réel"
    ],
    "occupation": [
     "Soldier"
@@ -65651,6 +65662,7 @@
    ],
    "nationality": [
     "The Nether",
+    "Eschaton",
     "Mythe de Cthulhu"
    ],
    "occupation": [
@@ -65844,7 +65856,8 @@
     "Human"
    ],
    "nationality": [
-    "Deponia"
+    "Deponia",
+    "Kuvaq"
    ],
    "occupation": [
     "Politician"
