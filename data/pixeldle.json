@@ -47849,6 +47849,32 @@
   }
  },
  {
+  "id": "wiki-kirby-whispy-woods",
+  "name": "Whispy Woods",
+  "aliases": [
+   "Woods Whispy",
+   "Whispy",
+   "Woods"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Plant"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Kirby",
+   "developer": "HAL Laboratory",
+   "genres": [
+    "Platformer"
+   ],
+   "year": 1992
+  }
+ },
+ {
   "id": "wiki-tomb-raider-conrad-roth",
   "name": "Conrad Roth",
   "aliases": [

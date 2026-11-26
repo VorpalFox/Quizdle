@@ -3527,6 +3527,19 @@
     ]
    }
   },
+  "wiki-kirby-whispy-woods": {
+   "_nom": "Whispy Woods",
+   "species": {
+    "plus": [
+     "Plant"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "Q613241": {
    "_nom": "Kirby",
    "hair": {
@@ -7589,6 +7602,13 @@
   }
  ],
  "wikis": {
+  "Kirby": {
+   "_raison": "les 10 persos de Wikidata gardés, plus Whispy Woods, le 1er boss",
+   "pages": [
+    "Whispy Woods"
+   ],
+   "limit": 11
+  },
   "Rayman": {
    "_raison": "5 persos de Wikidata (Rayman, Globox, Dark Rayman, Murfy, Rabbid Peach) et un Rabbid de base, pour les deux licences",
    "pages": [
