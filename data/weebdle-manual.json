@@ -694,9 +694,14 @@
   },
   "34315": {
    "_nom": "Yuri Nikaido",
-   "species": [
-    "Humain"
-   ]
+   "species": {
+    "plus": [
+     "Humain"
+    ],
+    "moins": [
+     "Démon"
+    ]
+   }
   }
  },
  "add": [],
