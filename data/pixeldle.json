@@ -45419,7 +45419,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
@@ -45446,7 +45448,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
@@ -55241,7 +55245,9 @@
    "occupation": [
     "Pilot"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [
@@ -55258,13 +55264,15 @@
   "name": "Grox",
   "aliases": [],
   "attributes": {
-   "gender": null,
+   "gender": "N/A",
    "species": [
     "Alien"
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Spore",
    "developer": "Maxis",
    "genres": [

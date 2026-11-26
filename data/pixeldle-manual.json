@@ -3371,6 +3371,11 @@
     ]
    }
   },
+  "wiki-spore-grox": {
+   "_nom": "Grox",
+   "_raison": "une espèce et un empire, pas un individu : le sexe ne s'applique pas",
+   "gender": "N/A"
+  },
   "wiki-solasta-rose-fairwind": {
    "_nom": "Rose Fairwind",
    "_raison": "membre en vue de la faction The People : rôle politique",
@@ -8061,6 +8066,9 @@
   "Spore": {
    "species": [
     "Alien"
+   ],
+   "hair": [
+    "N/A"
    ]
   },
   "Forgotton Anne": {
