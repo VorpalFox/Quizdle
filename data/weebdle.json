@@ -5695,7 +5695,7 @@
    "species": [
     "Human"
    ],
-   "age": 28,
+   "age": 29,
    "height": null,
    "occupation": [
     "Leader",
@@ -5727,8 +5727,7 @@
    "age": 6,
    "height": null,
    "occupation": [
-    "Artisan",
-    "Merchant"
+    "Artisan"
    ],
    "hair": [
     "Blue",
@@ -15966,12 +15965,15 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": null,
-   "height": null,
+   "age": 41,
+   "height": 175,
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Psychiatrist"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystery",
@@ -24222,8 +24224,13 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Grey",
+    "Black"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
@@ -26278,37 +26285,6 @@
   }
  },
  {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": 162,
-   "occupation": [
-    "Student"
-   ],
-   "hair": null,
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Supernatural"
-   ],
-   "year": 2014,
-   "studio": "ufotable",
-   "source": "Visual novel"
-  }
- },
- {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -26331,6 +26307,37 @@
    "hair": [
     "Blue"
    ],
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "year": 2014,
+   "studio": "ufotable",
+   "source": "Visual novel"
+  }
+ },
+ {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": 162,
+   "occupation": [
+    "Student"
+   ],
+   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -37103,37 +37110,6 @@
   }
  },
  {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Pillar Man"
-   ],
-   "age": 12000,
-   "height": null,
-   "occupation": [
-    "Fighter"
-   ],
-   "hair": [
-    "Blond"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Supernatural"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -37155,6 +37131,37 @@
    "hair": [
     "Black",
     "Brown"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Pillar Man"
+   ],
+   "age": 12000,
+   "height": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Blond"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -48801,7 +48808,7 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 15,
    "height": null,
    "occupation": [
     "Student"
@@ -50038,8 +50045,12 @@
    ],
    "age": 39,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fashion Designer"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "Paradise Kiss",
    "genres": [
     "Comedy",
@@ -57751,41 +57762,6 @@
   }
  },
  {
-  "id": "36127",
-  "name": "Tomio Ookawa",
-  "aliases": [
-   "Ookawa Tomio",
-   "大川富雄",
-   "Tomio",
-   "Ookawa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36127.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": 60,
-   "height": null,
-   "occupation": [
-    "None"
-   ],
-   "hair": [
-    "Bald"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horror",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume",
-   "source": "Novel"
-  }
- },
- {
   "id": "36125",
   "name": "Nao Yasumori",
   "aliases": [
@@ -57807,6 +57783,41 @@
    ],
    "hair": [
     "Blue"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horror",
+    "Mystery",
+    "Supernatural",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "36127",
+  "name": "Tomio Ookawa",
+  "aliases": [
+   "Ookawa Tomio",
+   "大川富雄",
+   "Tomio",
+   "Ookawa"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36127.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "age": 60,
+   "height": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Bald"
    ],
    "anime": "Shiki",
    "genres": [
@@ -60430,9 +60441,9 @@
    "age": 28,
    "height": null,
    "occupation": [
+    "Scientist",
     "Employee",
     "Leader",
-    "Scientist",
     "Knight",
     "Fighter"
    ],
@@ -64739,7 +64750,9 @@
    "height": null,
    "occupation": [
     "Mage",
-    "Student"
+    "Exorcist",
+    "Student",
+    "Monster hunter"
    ],
    "hair": [
     "Black"
@@ -64767,7 +64780,8 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Human"
+    "Human",
+    "Elf"
    ],
    "age": null,
    "height": null,
@@ -64841,7 +64855,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Servant"
+   ],
    "hair": [
     "Grey"
    ],
@@ -64874,9 +64890,14 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Mercenary",
+    "Student",
+    "Fighter"
+   ],
    "hair": [
-    "Brown"
+    "Purple",
+    "Red"
    ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
@@ -64941,7 +64962,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Soldier",
+    "Swordsman",
+    "Fighter"
+   ],
    "hair": [
     "Blue"
    ],
@@ -64972,8 +64997,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Companion"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65004,8 +65033,14 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble",
+    "Knight",
+    "Fighter"
+   ],
+   "hair": [
+    "Grey"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65040,42 +65075,8 @@
     "Noble"
    ],
    "hair": [
-    "Brown"
+    "Blond"
    ],
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Romance",
-    "Supernatural"
-   ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "297776",
-  "name": "Blaze Lamprogue",
-  "aliases": [
-   "Lamprogue Blaze",
-   "ブレーズ・ランプローグ",
-   "Blaze",
-   "Lamprogue"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297776-a7VG4YDuCHEa.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Noble"
-   ],
-   "hair": null,
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65106,8 +65107,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Brown"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65140,7 +65145,9 @@
    "occupation": [
     "Trainer"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65168,40 +65175,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Fantasy",
-    "Romance",
-    "Supernatural"
+   "occupation": [
+    "Mage"
    ],
-   "year": 2023,
-   "studio": "Studio Blanc",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "297774",
-  "name": "Berta Lamprogue",
-  "aliases": [
-   "Lamprogue Berta",
-   "ベルタ・ランプローグ",
-   "Berta",
-   "Lamprogue"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297774-THyy8XWwKIPz.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
+   "hair": [
+    "Ginger"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65232,9 +65211,12 @@
    "occupation": [
     "Mage",
     "Swordsman",
+    "Leader",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -65298,8 +65280,83 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble",
+    "Mage"
+   ],
+   "hair": [
+    "Grey"
+   ],
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Romance",
+    "Supernatural"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327376",
+  "name": "Gal Ganis",
+  "aliases": [
+   "Ganis Gal",
+   "ガル・ガニス",
+   "Gal",
+   "Ganis"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327376-fOWqFkHnHsQX.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Demon"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Black"
+   ],
+   "anime": "The Reincarnation of the Strongest Exorcist in Another World",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Romance",
+    "Supernatural"
+   ],
+   "year": 2023,
+   "studio": "Studio Blanc",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "327378",
+  "name": "Cordell",
+  "aliases": [
+   "コーデル"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327378-z8TYWFsoM3UK.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Mage",
+    "Teacher"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "The Reincarnation of the Strongest Exorcist in Another World",
    "genres": [
     "Action",
@@ -69337,38 +69394,6 @@
   }
  },
  {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり",
-   "Koigakubo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": 29,
-   "height": null,
-   "occupation": [
-    "Teacher"
-   ],
-   "hair": null,
-   "anime": "Toradora!",
-   "genres": [
-    "Comedy",
-    "Drama",
-    "Romance",
-    "Slice of Life"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF",
-   "source": "Light novel"
-  }
- },
- {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -69390,6 +69415,38 @@
    "hair": [
     "Blue"
    ],
+   "anime": "Toradora!",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Slice of Life"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり",
+   "Koigakubo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": 29,
+   "height": null,
+   "occupation": [
+    "Teacher"
+   ],
+   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comedy",
@@ -70050,13 +70107,13 @@
     "Human"
    ],
    "age": null,
-   "height": 154,
+   "height": 240,
    "occupation": [
-    "Noble"
+    "Royalty",
+    "Noble",
+    "Leader"
    ],
-   "hair": [
-    "Brown"
-   ],
+   "hair": null,
    "anime": "Tower of God",
    "genres": [
     "Action",
