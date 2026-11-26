@@ -235,6 +235,8 @@ const NATIONALITIES: Record<string, string> = {
   'angleterre': 'United Kingdom', 'irlande du nord': 'United Kingdom', 'royaume-uni de grande-bretagne et d\'irlande': 'United Kingdom',
   // En anglais, depuis les infobox des wikis : le pays ou l'adjectif
   'united states': 'United States', 'united states of america': 'United States', 'usa': 'United States', 'us': 'United States', 'america': 'United States',
+  // Les États-Unis de Cyberpunk 2077 : le même pays
+  'nusa': 'United States', 'new united states': 'United States', 'new united states of america': 'United States',
   'american': 'United States', 'japan': 'Japan', 'japanese': 'Japan', 'united kingdom': 'United Kingdom', 'uk': 'United Kingdom', 'england': 'United Kingdom',
   'english': 'United Kingdom', 'british': 'United Kingdom', 'great britain': 'United Kingdom', 'britain': 'United Kingdom', 'scotland': 'United Kingdom',
   'scottish': 'United Kingdom', 'wales': 'United Kingdom', 'welsh': 'United Kingdom', 'french': 'France', 'germany': 'Germany', 'german': 'Germany',
