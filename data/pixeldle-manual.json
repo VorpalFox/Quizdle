@@ -6434,14 +6434,23 @@
    ],
    "attributes": {
     "species": [
-     "Human"
+     "Human",
+     "Android"
     ],
-    "gender": "Other",
+    "gender": "Unknown",
+    "nationality": [
+     "The Tower"
+    ],
+    "hair": [
+     "Unknown"
+    ],
     "year": 2023,
     "franchise": "Chants of Sennaar",
-    "occupation": null
+    "occupation": [
+     "Adventurer"
+    ]
    },
-   "_raison": "sexe laissé inconnu par le jeu, exprès (comme Frisk)"
+   "_raison": "sexe et cheveux laissés inconnus par le jeu, exprès ; humain en apparence, mais un des êtres artificiels de la fin (spoiler)"
   },
   {
    "id": "avatar-rebel-galaxy",
