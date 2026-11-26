@@ -3885,7 +3885,9 @@
     "Swordsman",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -3911,7 +3913,9 @@
     "Outworld"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Mortal Kombat",
    "developer": "Midway",
    "genres": [
@@ -7186,7 +7190,9 @@
    "occupation": [
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -10255,7 +10261,7 @@
    ],
    "occupation": null,
    "hair": [
-    "N/A"
+    "Black"
    ],
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -12764,7 +12770,9 @@
     "Adventurer",
     "Treasure hunter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Uncharted",
    "developer": "Naughty Dog",
    "genres": [
@@ -22362,7 +22370,9 @@
     "Guard",
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
    "genres": [
@@ -31764,7 +31774,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The King of Fighters",
    "developer": "SNK",
    "genres": [
@@ -47388,7 +47400,7 @@
    ],
    "occupation": null,
    "hair": [
-    "Brown"
+    "Black"
    ],
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -50854,7 +50866,9 @@
    "occupation": [
     "Actor"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Okami",
    "developer": "Clover Studio",
    "genres": [
@@ -51642,7 +51656,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -56175,7 +56191,9 @@
    "occupation": [
     "Teacher"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Alice: Madness Returns",
    "developer": "Spicy Horse",
    "genres": [
@@ -61916,7 +61934,9 @@
     "Mythe de Cthulhu"
    ],
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The Sinking City",
    "developer": "Frogwares",
    "genres": [
@@ -62353,7 +62373,9 @@
    "occupation": [
     "Writer"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
    "genres": [

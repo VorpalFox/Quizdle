@@ -9,12 +9,12 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { AttributeValue, Entry } from '../src/engine/types.js'
-import { heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
+import { gender as pronounGender, heightCm, sleep, splitOccupations, weaponList } from './anilist.js'
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
 import { addedValues, exactSpecies, translateOccupation } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
 import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
-import { disambiguationLinks, infoboxAge, textHair } from './wikiText.js'
+import { disambiguationLinks, infoboxAge, plainText, textHair } from './wikiText.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
 const TITLES_PER_REQUEST = 50
@@ -468,6 +468,15 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
   }
 }
 
+// Le sexe d'après les pronoms de la page, comme pour la description AniList. Pas quand « they » l'emporte sur « he » et
+// « she » réunis : un perso non binaire (Hange, Attack on Titan), pas à deviner.
+const count = (text: string, pattern: RegExp) => (text.match(pattern) ?? []).length
+export function pageGender(text: string): string | null {
+  const they = count(text, /\b(?:they|them|their|theirs|themselves|themself)\b/gi)
+  const gendered = count(text, /\b(?:he|him|his|himself|she|her|hers|herself)\b/gi)
+  return they > gendered ? null : pronounGender(null, text)
+}
+
 // La famille de sang du champ, déjà nettoyé (« Blaise Lamprogue (father), Grey Lamprogue (younger brother) »). Pas les
 // conjoints, ni les liens adoptifs, par alliance ou les demi-frères : leur espèce peut être une autre (Seika,
 // « Adoptive younger brother » de Luft). Un nom qui n'est pas un perso du quiz (« Unknown Priestess ») ne trouvera personne.
@@ -730,7 +739,10 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) ? introOccupations(pages[title]!) : null]))
     const hairless = found.filter(({ values }) => isEmpty(values.hair))
     const silent = found.filter(({ target, title }) => intros.get(target)?.occupation.length === 0 && !title.includes('#'))
-    const wanted = [...hairless, ...silent]
+    // Et le sexe, que ni AniList ni l'infobox ne donnent : les pronoms de la page (Hamdo, Abelia, les persos de BNA)
+    // Pas si l'infobox le dit inconnu en toutes lettres (Mirai no Akuma) : la page ne se contredit pas
+    const genderless = found.filter(({ target, values, unknowns }) => isEmpty(values.gender) && isEmpty(target.entry.attributes.gender) && !unknowns.includes('gender'))
+    const wanted = [...hairless, ...silent, ...genderless]
     const full = wanted.length > 0 ? await fetchFullPages(wiki, plain(wanted.map(({ title }) => title))) : {}
     const textHairs = new Map(hairless.flatMap(({ target, title }) => {
       // Une section imposée : son texte seulement, pas toute la page (Paprika n'a pas les cheveux d'Atsuko)
@@ -743,6 +755,11 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       const hair = textHairs.get(target)
       if (hair)
         own.hair = hair.colors
+      // Au moins deux fois plus de « he » que de « she » sur la page (ou l'inverse), comme pour la description AniList
+      const pageText = genderless.some(item => item.target === target) ? full[title] ?? pages[title] : null
+      const textGender = pageText ? pageGender(plainText(pageText)) : null
+      if (textGender)
+        own.gender = textGender
       // Sans occupation dans l'infobox : le rôle de l'affiliation (« Student (formerly) ») et ce que dit l'introduction,
       // les deux ensemble (Shuichi Kagaya : élève et tueur). Et élève s'il a une école, même avec un métier (Kanon, The
       // World God Only Knows : idole et lycéenne), sauf s'il y travaille (professeur, directeur…)
@@ -770,7 +787,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
         continue
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
-      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}${story?.occupation.length ? ` (occupation d'une section : « ${story.roles.join(' | ')} »)` : ''}`)
+      filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${textGender ? ' (sexe des pronoms de la page)' : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}${story?.occupation.length ? ` (occupation d'une section : « ${story.roles.join(' | ')} »)` : ''}`)
     }
   }
   console.log()

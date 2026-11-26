@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bloodRelatives, templateSpecies } from '../fandom.js'
+import { bloodRelatives, pageGender, templateSpecies } from '../fandom.js'
 import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
@@ -56,6 +56,11 @@ describe('fandomValues', () => {
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
     expect(translateOccupation('One of the Three Beasts')).toBeNull()
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
+  })
+
+  it('PronomsDeLaPage_LeSexe', () => {
+    expect(pageGender('Hamdo is twisted. He will do anything. He is an impatient man who hates her excuses.')).toBe('Male')
+    expect(pageGender('They lead the squad. Their research is everything to them. He respects them.')).toBeNull()
   })
 
   it('RienDansLIntro_LeDebutDesSections', () => {

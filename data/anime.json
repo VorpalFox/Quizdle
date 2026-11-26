@@ -3707,7 +3707,9 @@
     "Leader",
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",

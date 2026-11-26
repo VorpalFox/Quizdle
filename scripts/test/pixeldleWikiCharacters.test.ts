@@ -133,6 +133,14 @@ describe('textHair', () => {
     expect(textHair('A tall man with short brown hair and a beard.')?.colors).toEqual(['Brown'])
   })
 
+  it('CheveuxSombres_Noirs', () => {
+    expect(textHair('He has dark hair and eyes with a stern voice.')?.colors).toEqual(['Black'])
+    expect(textHair('She has short, dark hair.')?.colors).toEqual(['Black'])
+    expect(textHair('A boy with dark brown hair.')?.colors).toEqual(['Brown'])
+    expect(textHair('A boy with medium length dark reddish hair.')).toBeNull()
+    expect(textHair('Pauline has dark hair. Later art gives her long brown hair.')?.colors).toEqual(['Brown'])
+  })
+
   it('PasDeCheveux_Null', () => {
     expect(textHair('A robot made of steel.')).toBeNull()
   })

@@ -1025,7 +1025,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "A Certain Scientific Railgun",
    "genres": [
     "Action",
@@ -7052,7 +7054,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -12714,7 +12718,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162792-bmSjeGgPOllW.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Beastman"
    ],
@@ -12778,7 +12782,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168622-HX9J61JKcHHr.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Beastman"
    ],
@@ -12808,7 +12812,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172222-qOxwnC4Mw3sY.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -12842,7 +12846,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153543-5Yd8l0XX5Qa2.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -12874,7 +12878,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162791-sg420yaElXHL.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Beastman"
    ],
@@ -12906,7 +12910,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168628-hEzPlhygdNnA.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Bird",
     "Animal"
@@ -12940,7 +12944,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162784-Zw0GeVGRjLBJ.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -12971,7 +12975,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168627-TaeBU1uVcAGV.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Beastman"
    ],
@@ -13034,7 +13038,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162787-XbJotvjuQibL.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13065,7 +13069,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b166491-zdyBdVB8KsMt.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13096,7 +13100,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168623-un9RTe2NKiQL.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13131,7 +13135,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172223-hheTLKhiTRp0.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13162,7 +13166,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172225-2lR1JDvdGOX1.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13197,7 +13201,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162788-hEz2VM2lKuz0.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -13230,7 +13234,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168624-bfDnASYkJ4M6.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Beastman"
    ],
@@ -14164,7 +14168,9 @@
     "Detective",
     "Surgeon"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Bungo Stray Dogs",
    "genres": [
     "Action",
@@ -14992,7 +14998,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174271-iC0Ul9YfLOk6.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Cat",
     "Animal"
@@ -15310,7 +15316,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystery",
@@ -15796,7 +15804,9 @@
     "Unemployed",
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "ChäoS;HEAd",
    "genres": [
     "Mystery",
@@ -19053,7 +19063,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/90004-6Iu6dXEn6Mbs.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -23853,7 +23863,9 @@
     "Scientist",
     "Archaeologist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Devilman Crybaby",
    "genres": [
     "Action",
@@ -29937,7 +29949,9 @@
    "age": 19,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -30152,7 +30166,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -30247,7 +30263,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -32726,7 +32744,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/2377-b95gEhI6Udqq.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -33031,7 +33049,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/3432.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -33069,7 +33087,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/10358.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -33478,7 +33496,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/626.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": null,
    "age": null,
    "height": null,
@@ -33505,7 +33523,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/625.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": null,
    "age": null,
    "height": null,
@@ -36999,35 +37017,6 @@
   }
  },
  {
-  "id": "21963",
-  "name": "Santana",
-  "aliases": [
-   "サンタナ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21963-oQKcN4QHHOpK.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Pillar Man"
-   ],
-   "age": 10000,
-   "height": null,
-   "occupation": null,
-   "hair": [
-    "Blond"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Supernatural"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
   "id": "74113",
   "name": "Bruford",
   "aliases": [
@@ -37116,6 +37105,35 @@
    "hair": [
     "Brown",
     "Red"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "130259",
+  "name": "Donovan",
+  "aliases": [
+   "ドノヴァン"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n130259-NcSoB9Rw1xoo.png",
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Black"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -40973,7 +40991,9 @@
    "occupation": [
     "Adventurer"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
@@ -41869,7 +41889,9 @@
     "Soldier",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Magi: The Labyrinth of Magic",
    "genres": [
     "Action",
@@ -46085,7 +46107,9 @@
    "occupation": [
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Adventure",
@@ -46136,7 +46160,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1665.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -46170,7 +46194,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/1666.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Human"
    ],
@@ -46559,7 +46583,9 @@
     "Mangaka",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Occultic;Nine",
    "genres": [
     "Mystery",
@@ -48106,7 +48132,9 @@
     "Celebrity",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drama",
@@ -49755,7 +49783,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203443-0wg2MadenEoE.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -50205,7 +50233,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214299-qbiy5PsA6gRw.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Android"
    ],
@@ -50272,7 +50300,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b214303-4dSgq2YZ4XIk.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": null,
    "age": null,
    "height": null,
@@ -55496,7 +55524,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b252240-ATTskmHapivp.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Yokai"
    ],
@@ -55863,7 +55891,9 @@
     "Engineer",
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -55985,7 +56015,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135053-H157bPibqoqT.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
@@ -58375,8 +58405,7 @@
   "name": "Donovan Desmond",
   "aliases": [
    "Desmond Donovan",
-   "ドノバン・デズモンド",
-   "Donovan"
+   "ドノバン・デズモンド"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b180192-nOvkTcotZyu0.png",
   "attributes": {
@@ -60154,7 +60183,9 @@
     "Officer",
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Sword Art Online",
    "genres": [
     "Action",
@@ -61756,7 +61787,9 @@
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "The Apothecary Diaries",
    "genres": [
     "Drama",
@@ -67612,7 +67645,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163694-USBey19xBAZH.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Wolf",
     "Animal"
@@ -67719,7 +67752,9 @@
    "occupation": [
     "None"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "To Your Eternity",
    "genres": [
     "Adventure",
@@ -67835,7 +67870,7 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b202668-7Mmi5s9mOaXa.png",
   "attributes": {
-   "gender": null,
+   "gender": "Female",
    "species": [
     "Owl",
     "Animal"
@@ -70924,7 +70959,9 @@
    "age": 17,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",

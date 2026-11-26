@@ -2,7 +2,7 @@
 // hair »), en sautant au besoin ce qui parle de la conception du personnage (Wikipédia), et les liens d'une page
 // d'homonymie.
 import { normalize } from '../src/engine/search.js'
-import { HAIR_IN_TEXT, hairColors } from './anilist.js'
+import { DARK_HAIR, DARK_HAIR_IN_TEXT, HAIR_IN_TEXT, hairColors } from './anilist.js'
 
 const MAX_HAIR_COLORS = 2
 
@@ -21,6 +21,7 @@ const APPEARANCE = /^==+\s*(?:physical\s+)?(?:appearance|design|description)\s*=
 // « the novel redesigns him with long red hair », « an outfit was considered to have black hair »
 export const DEVELOPMENT = /\b(?:original(?:ly)?|initial(?:ly)?|concepts?|early|considered|redesign\w*|prototypes?|novels?|films?|adaptations?|cosplay\w*|beta|corpse)\b/i
 const HAIR_IN_TEXT_ALL = new RegExp(HAIR_IN_TEXT.source, 'gi')
+const DARK_HAIR_IN_TEXT_ALL = new RegExp(DARK_HAIR_IN_TEXT.source, 'gi')
 const BALD = /\bbald\b|\bhairless\b|shaved head|shaven head/gi
 const BALD_HAIR = 'Bald'
 // Pas chauve aujourd'hui : il commence à l'être (Kano : « appears to be going bald », Scorpion : « graying hair, which
@@ -46,8 +47,12 @@ const FORMER_WINDOW = 25
 // Les cheveux cités par la page (« long blonde hair ») : d'abord dans la section Appearance, sinon dans tout le texte.
 // Sans les phrases qui correspondent à skip (DEVELOPMENT pour Wikipédia). Avec l'extrait, à relire dans le récap.
 // Les cheveux sont une liste : un perso devenu chauve garde aussi ses anciens cheveux (Saitama : Bald, Black, validé
-// avec FX), la couleur actuelle d'abord.
+// avec FX), la couleur actuelle d'abord. « Dark hair » (noirs) seulement si la page ne cite aucune vraie couleur.
 export function textHair(wikitext: string, skip?: RegExp): { colors: string[], excerpt: string } | null {
+  return hairIn(wikitext, HAIR_IN_TEXT_ALL, skip) ?? hairIn(wikitext, DARK_HAIR_IN_TEXT_ALL, skip)
+}
+
+function hairIn(wikitext: string, pattern: RegExp, skip?: RegExp): { colors: string[], excerpt: string } | null {
   const section = APPEARANCE.exec(wikitext)?.[1]
   const around = (plain: string, index: number, length: number) => plain.slice(Math.max(0, index - 60), index + length + 20).replace(/\s+/g, ' ').trim()
   for (const text of [section, wikitext]) {
@@ -59,10 +64,10 @@ export function textHair(wikitext: string, skip?: RegExp): { colors: string[], e
     const current: string[] = bald ? [BALD_HAIR] : []
     const former: string[] = []
     let excerpt = bald ? around(plain, bald.index!, bald[0].length) : ''
-    for (const found of plain.matchAll(HAIR_IN_TEXT_ALL)) {
+    for (const found of plain.matchAll(pattern)) {
       const end = plain.indexOf('.', found.index + found[0].length)
       const sentence = plain.slice(plain.lastIndexOf('.', found.index) + 1, end < 0 ? undefined : end)
-      const colors = hairColors(found[1]!)
+      const colors = pattern === DARK_HAIR_IN_TEXT_ALL ? [DARK_HAIR] : hairColors(found[1]!)
       if (skip?.test(sentence) || colors.length === 0)
         continue
       excerpt ||= around(plain, found.index, found[0].length)
