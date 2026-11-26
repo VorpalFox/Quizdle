@@ -191,6 +191,8 @@ export function splitOccupations(value: string): string[] | null {
     .replace(/\s*\([^)]*\)/g, '')
     // « Track and Field Club Girl » (Ayumi, The World God Only Knows) : l'athlétisme, pas deux métiers
     .replace(/\btrack and field\b/gi, 'athletics')
+    // « Magical swordsman », « Magic swordman » (Zolmnem et Amyu, The Reincarnation of the Strongest Exorcist) : mage et épéiste
+    .replace(/\bmagic(?:al)?\s+swords?(?:wo)?m[ae]n\b/gi, 'mage, swordsman')
     .split(/\s*(?:,|;|\/|\band\b|\bet\b|\bpuis\b|\bformerly\b|\bprevious(?:ly)?\b|\banciennement\b)\s*/i)
     // « Buddy - Spirit Capturing » (Keima) : deux rôles, si chacun se traduit (pas « Student - Class C »)
     .flatMap(part => {

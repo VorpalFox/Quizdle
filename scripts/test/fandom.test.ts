@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { templateSpecies } from '../fandom.js'
+import { bloodRelatives, templateSpecies } from '../fandom.js'
 import { affiliationOccupations,fandomInfobox, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
@@ -38,8 +38,8 @@ describe('fandomValues', () => {
   })
 
   it('ChampsVariables_NosValeurs', () => {
-    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Swordsman'], titles: null, deceased: null })
-    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Male', hair: ['Black'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null })
+    expect(fandomValues(fandomInfobox(NANAMI)!)).toEqual({ gender: 'Male', hair: ['Blond'], occupation: ['Jujutsu Sorcerer'], age: 27, species: ['Human'], height: null, weapon: ['Swordsman'], titles: null, deceased: null, relatives: null })
+    expect(fandomValues(fandomInfobox(YURI)!)).toEqual({ gender: 'Male', hair: ['Black'], occupation: ['Counterintelligence Officer', 'Diplomat'], age: null, species: null, height: null, weapon: null, titles: null, deceased: null, relatives: null })
   })
 
   it('EcoleSuivieDuRole_LeRolePasLEcole', () => {
@@ -56,6 +56,19 @@ describe('fandomValues', () => {
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
     expect(translateOccupation('One of the Three Beasts')).toBeNull()
     expect(translateOccupation('One of the soldiers')).toBe(translateOccupation('soldiers'))
+  })
+
+  it('FamilleDeSang_SansConjointNiAdoption', () => {
+    expect(bloodRelatives('Mabel Crane (Sister)')).toEqual(['Mabel Crane'])
+    expect(bloodRelatives('Blaise Lamprogue (father), Grey Lamprogue (younger brother), Seika Lamprogue (Adoptive younger brother)')).toEqual(['Blaise Lamprogue', 'Grey Lamprogue'])
+    expect(bloodRelatives('Bertha Lamprogue (wife), Luft Lamprogue(son)')).toEqual(['Luft Lamprogue'])
+    expect(bloodRelatives('Unnamed Mother†')).toBeNull()
+    expect(bloodRelatives('Santana (his attempted god-child), Elizabeth Joestar (daughter in law)')).toBeNull()
+  })
+
+  it('EpeisteMagique_MageEtEpeiste', () => {
+    expect(splitOccupations('Magical swordsman')!.map(translateOccupation)).toEqual(['Mage', 'Swordsman'])
+    expect(splitOccupations('Magic swordman (Hero)')!.map(translateOccupation)).toEqual(['Mage', 'Swordsman'])
   })
 
   it('MetiersDeTheWorldGodOnlyKnows', () => {

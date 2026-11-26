@@ -126,6 +126,8 @@ const FIELDS = {
   titles: ['titles', 'title(s)', 'epithet', 'epithets'],
   // Mort : « Aucune » comme occupation s'il n'en a pas d'autre (finishOccupations). Jamais affiché tel quel : un spoil.
   deceased: ['status', 'vital status'],
+  // La famille de sang liée (« [[Mabel Crane]] (Sister) ») : son espèce, faute de nom de famille commun (familySpecies)
+  relatives: ['relatives', 'relative', 'family', 'relations'],
 } as const
 type Key = keyof typeof FIELDS
 
@@ -462,7 +464,22 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: titleOccupations(field(fields, FIELDS.titles)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
+    relatives: bloodRelatives(field(fields, FIELDS.relatives)),
   }
+}
+
+// La famille de sang du champ, déjà nettoyé (« Blaise Lamprogue (father), Grey Lamprogue (younger brother) »). Pas les
+// conjoints, ni les liens adoptifs, par alliance ou les demi-frères : leur espèce peut être une autre (Seika,
+// « Adoptive younger brother » de Luft). Un nom qui n'est pas un perso du quiz (« Unknown Priestess ») ne trouvera personne.
+const BLOOD_RELATIVE = /\b(?:brothers?|sisters?|siblings?|twins?|father|mother|parents?|sons?|daughters?|child(?:ren)?|grand\w*|uncle|aunt|cousins?|nephew|niece)\b/i
+// Ni le parrain ou le filleul (« Santana (his attempted god-child) », Stroheim)
+const NOT_BLOOD = /adopt|step|foster|in[- ]law|half|surrogate|sworn|god/i
+export function bloodRelatives(value: string | null): string[] | null {
+  const names = (value ?? '').split(/\s*(?:,|;|\n)\s*/)
+    .map(part => part.match(/^(.+?)\s*\(([^)]*)\)/))
+    .filter((match): match is RegExpMatchArray => match !== null && BLOOD_RELATIVE.test(match[2]!) && !NOT_BLOOD.test(match[2]!))
+    .map(match => match[1]!.trim())
+  return names.length > 0 ? [...new Set(names)] : null
 }
 
 // Les indices que l'infobox dit inconnus en toutes lettres (« |age = Unknown ») : « Inconnu » à la fin, si aucune

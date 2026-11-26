@@ -36667,7 +36667,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21960-3stfLc0uwgoT.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": 50,
    "height": 175,
    "occupation": null,
@@ -36854,7 +36856,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21937-mwAbJAgxE8yP.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": 19,
    "height": null,
    "occupation": [
@@ -64205,6 +64209,7 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Mage",
     "Swordsman",
     "Student",
     "Fighter"
@@ -64334,7 +64339,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b293976-A8J0Gm3Jqw4u.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -64623,6 +64630,7 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Mage",
     "Swordsman",
     "Fighter"
    ],
