@@ -1608,6 +1608,11 @@
   "wiki-bloons-tower-defense-admiral-brickell": {
    "_nom": "Admiral Brickell",
    "_raison": "héros singe",
+   "aliases": [
+    "Brickell Admiral",
+    "Admiral Brickell (BTD6)",
+    "Brickell"
+   ],
    "species": {
     "plus": [
      "Monkey",
