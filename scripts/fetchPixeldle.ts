@@ -14,8 +14,9 @@
 //    Piège connu : un reboot au même titre que le 1er jeu (God of War, Tomb Raider), corrigé à la main.
 //    FRANCHISE_DEVELOPERS force le studio, FRANCHISE_GENRES ajoute un genre à toute la franchise (pixeldleTranslate.ts).
 // 7. Les corrections à la main (data/pixeldle-manual.json : defaults, puis edit), puis les valeurs finales :
-//    espèce dépliée, occupations regroupées, jamais vides, et la nationalité vide remplie par le monde de la franchise
-//    (Monde réel, Inconnu, ou vide si on ne sait pas : FRANCHISE_WORLDS, sinon les lieux des autres personnages).
+//    espèce dépliée, occupations regroupées, et la nationalité vide remplie par Monde réel si la franchise s'y passe
+//    (FRANCHISE_WORLDS, sinon les lieux des autres personnages). Unknown, None et N/A suivent la règle commune
+//    (unknownValues.ts) : une case qu'on n'a pas réussi à remplir reste vide.
 //    Les corrections encore une fois à la fin : une valeur retirée à la main ne revient pas.
 //
 // Les valeurs de Wikidata (espèce, genres, développeur...) sont ramenées à nos listes par pixeldleTranslate.ts. Celles
@@ -49,9 +50,10 @@ import { pixeldle } from '../src/subjects/pixeldle/index.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
-import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, OTHER_WORLD, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrNone, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
+import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrChoice, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
 import { enrichFromWikis } from './pixeldleEnrich.js'
+import { fillUnknowns } from './unknownValues.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
 
@@ -655,17 +657,17 @@ const withIntroOccupation = (entry: Entry): Entry => {
 const manualApplied = applyManual([...wikidataEntries, ...wikiEntries].map(withDefaults).map(withTextHair).map(withIntroOccupation), { ...manual, add: manual.add.map(completeAdded) }, pixeldle.attributes.map(({ key }) => key))
 const warnings = manualApplied.warnings
 // À la fin, corrections comprises : l'espèce dépliée (Demi-elfe → Humain + Elfe, Renard → Renard + Animal), les occupations
-// regroupées (Aucune ou Inconnu plutôt que vide), N/A pour les cheveux d'un robot ou d'un animal
+// regroupées, N/A pour les cheveux d'un robot ou d'un animal
 const finished = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
   // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
   const { weapon, ...attributes } = entry.attributes
   const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
   const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
-  return { ...entry, attributes: { ...attributes, species, occupation: occupationOrNone(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
+  return { ...entry, attributes: { ...attributes, species, occupation: occupationOrChoice(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }
 })
 
-// La nationalité vide : le monde de la franchise (Monde réel, Inconnu, ou vide si on ne sait pas), et les univers
+// La nationalité vide : Monde réel si la franchise s'y passe, vide sinon, et les univers
 // partagés (Lost in the Galaxy, Mythe de Cthulhu) pour tous, voir withWorld
 const worlds = new Map([...Map.groupBy(finished, entry => String(entry.attributes.franchise))].map(([franchise, list]) => [franchise,
   franchise in FRANCHISE_WORLDS ? FRANCHISE_WORLDS[franchise]! : franchiseWorld(list.map(entry => entry.attributes.nationality as string[] | null))]))
@@ -678,8 +680,9 @@ const placed = finished.map(entry => {
     worldFills.push(`${entry.name} (${franchise}) : ${nationality.join(', ')}`)
   return { ...entry, attributes: { ...entry.attributes, nationality } }
 })
-// Les corrections encore une fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
-const entries = finishManual(placed, manual, pixeldle.attributes.map(({ key }) => key))
+// Unknown dans les cases restées vides que le wiki disait inconnues (fillUnknowns), puis les corrections encore une
+// fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
+const entries = finishManual(fillUnknowns(placed, pixeldle.attributes), manual, pixeldle.attributes.map(({ key }) => key))
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
 function functionRole(entry: Entry): string[] | null {
@@ -729,7 +732,7 @@ lines.push(`## Ajoutés depuis les wikis (${wikiEntries.length}) : catégorie «
   ...fromWikis.map(({ franchise, wiki, root, found, chosen }) => `- ${franchise.title} (${wiki}) : ${root ? `${found} pages dans Category:${root}` : 'pas de catégorie des personnages'}, ${chosen.length} gardés${chosen.length > 0 ? ` : ${chosen.map(({ name, title }) => name === title ? name : `${name} (« ${title} »)`).join(', ')}` : ''}`), '')
 
 lines.push(`## Rôles d'après l'introduction : Compagnon, Assistant, et Destructeur ou Protecteur pour les dieux, démons et anges (${entityRoles.length}) : à relire`, ...entityRoles.map(text => `- ${text}`), '')
-const worldNames = { real: REAL_WORLD, other: OTHER_WORLD }
+const worldNames = { real: REAL_WORLD, other: 'autre monde (vide)' }
 lines.push(`## Monde des franchises (${worlds.size}) : FRANCHISE_WORLDS sinon les lieux des personnages, à relire`,
   ...[...worlds].map(([franchise, world]) => `- ${franchise} : ${world ? worldNames[world] : 'on ne sait pas'}${franchise in FRANCHISE_WORLDS ? ' (table)' : ''}${franchiseUniverses(franchise).map(universe => `, ${universe}`).join('')}`), '')
 lines.push(`## Nationalité vide remplie par le monde de la franchise (${worldFills.length})`, ...worldFills.map(text => `- ${text}`), '')

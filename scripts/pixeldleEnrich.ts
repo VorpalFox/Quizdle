@@ -11,6 +11,7 @@ import { templateFields } from './fandom.js'
 import { disambiguationLinks } from './wikiText.js'
 import { frenchOccupation, translateOccupation as englishOccupation } from './translate.js'
 import { cleanValue, wikiGender, wikiHair } from './wikipedia.js'
+import { addUnknowns, isUnknownValue, UNKNOWN_KEYS } from './unknownValues.js'
 import { translateGender, translateOccupation, translatePlace, translateSpecies, weaponOccupations } from './pixeldleTranslate.js'
 import type { FranchiseWikis, Wiki } from './pixeldleWikis.js'
 
@@ -36,7 +37,7 @@ const FIELDS = {
   birth: ['born', 'birth'],
   // Où on croise le personnage : en dernier recours, faute de mieux (« Diamond City », « Snowdin »)
   location: ['location', 'located in', 'world'],
-  occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role'],
+  occupation: ['occupation', 'occupations', 'occupation(s)', 'occupation:', 'profession', 'professions', 'job', 'jobs', 'career', 'role', 'work'],
   // Le grade ou la classe, faute d'occupation
   rank: ['rank', 'class', 'position'],
   // Le comportement d'une créature envers le joueur (« Hostile » sur le wiki Minecraft)
@@ -49,9 +50,18 @@ export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'locati
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
 const MAX_LOCATIONS = 2
-// Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année
-const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
+// Ce qui date une naissance, pas un lieu : « circa », « 19th Century », « October 25 », une année. Et la naissance d'une
+// machine (GLaDOS : « 1986: development start », « May 200-: activation »)
+const NOT_BIRTHPLACE = /\d|\b(?:circa|c\.|centur(?:y|ies)|before|after|between|early|late|mid|unknown|development|start|activat\w*|creat\w*|construct\w*|built|january|february|march|april|may|june|july|august|september|october|november|december)\b/i
 export const ENRICH_KEYS: EnrichKey[] = ['gender', 'species', 'nationality', 'occupation', 'hair']
+
+// Les champs de chaque indice, pour voir si l'infobox le dit inconnu en toutes lettres (pas « born » : c'est la date)
+const RAW_FIELDS: Partial<Record<EnrichKey, readonly string[]>> = {
+  gender: FIELDS.gender, species: FIELDS.species, nationality: [...FIELDS.place, ...FIELDS.nationality],
+  occupation: FIELDS.occupation, hair: FIELDS.hair,
+}
+// « Aucune » en toutes lettres dans le champ occupation : None
+const NO_OCCUPATION = /^(?:none|n\/a|aucune?)\.?$/i
 
 // Un champ en anglais sans valeur utile
 const EMPTY = /^(?:unknown|none|n\/a|varies|various|unnamed|\?+|-+|—|tba|tbd)$/i
@@ -108,7 +118,7 @@ export async function fetchPages(api: string, titles: string[]): Promise<Pages> 
 export function infobox(wikitext: string): Record<string, string> | null {
   const text = stripImages(wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, ''))
   const wanted = Object.values(FIELDS).flat() as string[]
-  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|charbox|charinfo|person|npc|champion|bio|hero|villain|summary)[^|{}\n]*/gi)) {
+  for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|charbox|charinfo|person|npc|champion|bio|hero|villain|villager|summary)[^|{}\n]*/gi)) {
     const fields = templateFields(text, match.index!)
     if (wanted.some(name => fields[name]))
       return fields
@@ -286,9 +296,13 @@ function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
 }
 
 // Les valeurs trouvées dans une infobox, null si la valeur n'est pas utile, undefined si on ne sait pas la traduire
-export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey, AttributeValue>> {
+// Le 1er champ rempli de ces noms, brut (« Unknown », « None » compris)
+const rawField = (fields: Record<string, string>, names: readonly string[]) =>
+  names.map(name => fields[name]?.trim()).find(value => value) ?? null
+
+export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS, AttributeValue>> {
   const note = (key: string, raw: string) => untranslated.set(key, [...untranslated.get(key) ?? [], raw])
-  const result: Partial<Record<EnrichKey, AttributeValue>> = {}
+  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS, AttributeValue>> = {}
 
   const gender = first(fields, FIELDS.gender)
   if (gender) {
@@ -328,8 +342,11 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     if (parsed.length > 0)
       result.occupation = [...new Set(parsed)].slice(0, 3)
   }
+  // Le wiki dit qu'il n'en a pas : None (ni le grade, ni Prédateur)
+  if (!result.occupation && NO_OCCUPATION.test(rawField(fields, FIELDS.occupation) ?? ''))
+    result.occupation = ['None']
   // Sans champ occupation : le grade ou la classe (« Commander », « Mage »), seulement ce qu'on sait traduire
-  const rank = occupation ? null : first(fields, FIELDS.rank)
+  const rank = occupation || result.occupation ? null : first(fields, FIELDS.rank)
   const ranks = rank ? parseOccupations(rank) : []
   if (ranks.length > 0)
     result.occupation = [...new Set(ranks)].slice(0, 2)
@@ -346,6 +363,11 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
     if (parsed)
       result.hair = parsed
   }
+  // Ce que l'infobox dit inconnu en toutes lettres (« |hair = Unknown ») : Unknown à la toute fin, si aucune autre source
+  // ne l'a rempli (fillUnknowns). Une case qu'on n'a juste pas trouvée reste vide.
+  const unknowns = ENRICH_KEYS.filter(key => isUnknownValue(rawField(fields, RAW_FIELDS[key] ?? [])))
+  if (unknowns.length > 0)
+    result[UNKNOWN_KEYS] = unknowns
   return result
 }
 
@@ -409,13 +431,17 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         const added = Object.fromEntries(Object.entries(infoboxValues(fields, untranslated)).flatMap(([key, value]) => {
           if (isEmpty(value))
             return []
+          if (key === UNKNOWN_KEYS) {
+            const marks = addUnknowns(entry.attributes, value as string[])
+            return marks ? [[key, marks]] : []
+          }
           if (key === 'nationality')
             return morePlaces(entry.attributes.nationality, value as string[])
           return isEmpty(entry.attributes[key]) ? [[key, value]] : []
         }))
         if (Object.keys(added).length === 0)
           continue
-        for (const key of Object.keys(added))
+        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
         current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')

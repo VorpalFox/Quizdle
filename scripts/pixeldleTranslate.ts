@@ -193,21 +193,13 @@ export function weaponOccupations(value: string): string[] {
   return found.includes('Sniper') ? found.filter(name => name !== 'Marksman') : found
 }
 
-// Pas de case vide pour l'occupation : « Aucune » pour un robot, un animal, une créature sans métier, « Inconnu » sinon
-export const NO_OCCUPATION = 'None'
-export const UNKNOWN_OCCUPATION = 'Unknown'
-
-// Sans métier : en plus des créatures sans cheveux, les dieux, démons et anges
-const JOBLESS_SPECIES = new Set([...HAIRLESS_SPECIES, 'Deity', 'Demon', 'Angel', 'Infected', 'Griffin', 'Mushroom', 'Basilisk'])
-
-export function occupationOrNone(occupation: string[] | null, species: unknown): string[] {
+// L'occupation finale : vide si on ne l'a pas trouvée (None ou Unknown seulement si le wiki le dit, voir pixeldleEnrich.ts).
+// Un avatar dont on choisit la race choisit aussi sa classe.
+export function occupationOrChoice(occupation: string[] | null, species: unknown): string[] | null {
   if (occupation && occupation.length > 0)
     return occupation
   const list = Array.isArray(species) ? species.map(String) : []
-  // Un avatar dont on choisit la race choisit aussi sa classe
-  if (list.includes("Player's choice"))
-    return ["Player's choice"]
-  return [list.some(name => JOBLESS_SPECIES.has(name)) && !list.includes('Human') ? NO_OCCUPATION : UNKNOWN_OCCUPATION]
+  return list.includes("Player's choice") ? ["Player's choice"] : null
 }
 
 export function translateSpecies(label: string): string | null | undefined {
@@ -440,8 +432,8 @@ export function translatePlace(label: string): string[] {
 
 // --- Monde ---
 
-// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, « Inconnu »
-// pour un personnage d'un autre monde, vide (le « ? ») quand on ne sait pas, à corriger à la main. « Monde réel » et pas
+// Le dernier recours de la nationalité (validé avec FX) : « Monde réel » pour un personnage de notre monde, vide sinon
+// (un autre monde sans lieu trouvé, ou on ne sait pas), à compléter à la main. Unknown seulement si le wiki le dit. « Monde réel » et pas
 // « Earth » : la science-fiction du système solaire (Mars, la Lune) est aussi notre monde. Plus loin (une planète d'une
 // autre étoile), ce n'est plus le monde réel. « Monde réel » s'ajoute aussi à tout personnage placé dans un lieu réel,
 // pour qu'il croise ceux qui n'ont que lui (United States face à Monde réel : partiel, pas faux). Les franchises qui se
@@ -449,7 +441,6 @@ export function translatePlace(label: string): string[] {
 // celles du mythe de Cthulhu « Mythe de Cthulhu » (MYTHOS_FRANCHISES) : les univers partagés, voir franchiseUniverses.
 // Le monde de la franchise : FRANCHISE_WORLDS, sinon les lieux des autres personnages (franchiseWorld).
 export const REAL_WORLD = 'Monde réel'
-export const OTHER_WORLD = 'Unknown'
 export const SPACE = 'Lost in the Galaxy'
 export const CTHULHU_MYTHOS = 'Mythe de Cthulhu'
 export type World = 'real' | 'other'
@@ -494,8 +485,8 @@ export function franchiseWorld(places: (string[] | null)[]): World | null {
   return real === 0 && placed.length >= MIN_PLACED_OTHER ? 'other' : null
 }
 
-// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, le monde
-// de sa franchise (Inconnu pour un dieu ou un extraterrestre de notre monde). Les univers partagés de la franchise en
+// Les lieux d'un personnage avec son monde : Monde réel ajouté s'il est placé dans notre monde ; sans lieu, Monde réel
+// si sa franchise s'y passe (pas pour un dieu ou un extraterrestre : vide). Les univers partagés de la franchise en
 // plus (Lost in the Galaxy, Mythe de Cthulhu : franchiseUniverses). null si on ne sait rien.
 export function withWorld(places: string[] | null, species: unknown, world: World | null, universes: readonly string[] = []): string[] | null {
   const spaced = (list: string[]) => [...list, ...universes.filter(universe => !list.includes(universe))]
@@ -503,7 +494,7 @@ export function withWorld(places: string[] | null, species: unknown, world: Worl
     return spaced(places.some(isRealPlace) && !places.includes(REAL_WORLD) ? [...places, REAL_WORLD] : places)
   const list = Array.isArray(species) ? species.map(String) : []
   const ours = list.length === 0 || list.some(name => OUR_WORLD_SPECIES.has(name))
-  const found = spaced(world ? [world === 'real' && ours ? REAL_WORLD : OTHER_WORLD] : [])
+  const found = spaced(world === 'real' && ours ? [REAL_WORLD] : [])
   return found.length > 0 ? found : null
 }
 
@@ -554,7 +545,7 @@ export function franchiseUniverses(franchise: string): string[] {
 // l'introduction de la page (« X is a Vietnam veteran » → Soldat, introRoles), « defaults » du manuel (le métier commun
 // d'une franchise : Valorant, Soulcalibur…). Les armes de l'infobox s'y ajoutent (weaponOccupations). Sans métier :
 // Compagnon ou Assistant si l'introduction le dit (introFunction), Destructeur ou Protecteur pour un dieu, un démon ou un
-// ange (introAlignment), puis Aucune, Au choix ou Inconnu (occupationOrNone). Les quasi-synonymes sont regroupés à la
+// ange (introAlignment), puis Au choix (occupationOrChoice), vide sinon. Les quasi-synonymes sont regroupés à la
 // fin (mergeOccupations). Pas d'occupation pour les rôles d'histoire (antagoniste, compagnon possible) ni les liens de
 // famille.
 

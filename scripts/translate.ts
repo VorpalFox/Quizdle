@@ -45,7 +45,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'idol': 'Idol', 'singer': 'Singer', 'musician': 'Musician', 'rapper': 'Rapper', 'actor': 'Actor', 'actress': 'Actress',
   'model': 'Model', 'grand couturier': 'Tailor', 'dyeing craftsman': 'Artisan',
   'chef': 'Cook', 'cook': 'Cook', 'maid': 'Maid', 'butler': 'Butler', 'servant': 'Manservant',
-  'merchant': 'Trader', 'merchant apprentice': 'Trader', 'tobacco store clerk': 'Salesperson', 'waitress': 'Waitress', 'waiter': 'Waiter',
+  'merchant': 'Trader', 'merchant apprentice': 'Trader', 'leherl': 'Trader','tobacco store clerk': 'Salesperson', 'waitress': 'Waitress', 'waiter': 'Waiter',
   'office worker': 'Office worker', 'salaryman': 'Office worker', 'city hall clerk': 'Civil servant', 'clerk': 'Employee',
   'real estate agent': 'Real estate agent', 'truck driver': 'Trucker', 'housewife': 'Homemaker', 'guide': 'Guide',
   'part-time worker': 'Odd jobs', 'part-timer': 'Odd jobs', 'villager': 'Villager', 'farmer': 'Farmer',
@@ -284,7 +284,11 @@ export function translateOccupation(value: string): string | null | undefined {
     return plain
   // « One of the Three Beasts » : une appartenance à un groupe, pas un métier, sauf si le groupe en est un (« One of the Generals »)
   const group = key.match(/^one of the\s+(.+)$/)?.[1]
-  return group && rule === undefined ? translateOccupation(group) ?? null : rule
+  if (group && rule === undefined)
+    return translateOccupation(group) ?? null
+  // « Leherl at the Gilberta Company » (Tuuli) : le métier, sans l'endroit où il l'exerce
+  const job = key.match(/^(.+?)\s+at\s+(?:the\s+)?\S.*$/)?.[1]
+  return job && rule === undefined ? translateOccupation(job) : rule
 }
 
 // --- Cumul des sources ---

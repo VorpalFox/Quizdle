@@ -157,9 +157,7 @@
    "nationality": [
     "Dinosaur Land"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -182,9 +180,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Bounty hunter",
     "Adventurer",
@@ -211,12 +207,8 @@
    "species": [
     "Toad"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -304,9 +296,7 @@
    "nationality": [
     "Koopa Kingdom"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -360,12 +350,8 @@
     "Dinosaur",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -386,9 +372,7 @@
    "species": [
     "Toad"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -416,12 +400,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -446,12 +426,8 @@
    "species": [
     "Koopa"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -475,12 +451,8 @@
    "species": [
     "Koopa"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -506,12 +478,8 @@
    "species": [
     "Koopa"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -532,12 +500,8 @@
    "species": [
     "Monster"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -559,12 +523,8 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -588,9 +548,7 @@
    "nationality": [
     "Subcon"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -713,12 +671,8 @@
    "species": [
     "Hylian"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -764,9 +718,7 @@
     "Horse",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -790,9 +742,7 @@
    "species": [
     "Sheikah"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Servant"
    ],
@@ -816,9 +766,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Noble"
    ],
@@ -843,9 +791,7 @@
    "species": [
     "Gerudo"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -873,12 +819,8 @@
    "species": [
     "Zora"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -898,9 +840,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -947,9 +887,7 @@
    "species": [
     "Minish"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -977,12 +915,8 @@
    "species": [
     "Plant"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1003,9 +937,7 @@
    "species": [
     "Gerudo"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Advisor"
    ],
@@ -1029,12 +961,8 @@
    "species": [
     "Kokiri"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -1062,9 +990,7 @@
     "Zora Domain",
     "Hyrule"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Legend of Zelda",
    "developer": "Nintendo",
@@ -1086,9 +1012,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -1114,12 +1038,8 @@
    "species": [
     "Object"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1409,9 +1329,7 @@
     "Petalburg City",
     "Hoenn"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -1764,9 +1682,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1792,9 +1708,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1917,9 +1831,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1944,9 +1856,7 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -1974,9 +1884,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2003,9 +1911,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2033,9 +1939,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2063,9 +1967,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2093,9 +1995,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2146,9 +2046,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
@@ -2175,9 +2073,7 @@
    "nationality": [
     "North Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2199,9 +2095,7 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sonic the Hedgehog",
    "developer": "Sonic Team",
@@ -2226,9 +2120,7 @@
     "Robot"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2252,9 +2144,7 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sonic the Hedgehog",
    "developer": "Sega",
@@ -2279,9 +2169,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "White"
    ],
@@ -2307,9 +2195,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2424,9 +2310,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant",
     "Terrorist"
@@ -2515,12 +2399,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -2662,12 +2542,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -2693,9 +2569,7 @@
    "nationality": [
     "Cosmo Canyon"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -2841,12 +2715,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Final Fantasy",
    "developer": "Square Enix",
@@ -3081,9 +2951,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -3317,9 +3185,7 @@
     "Mexico",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black",
     "Brown"
@@ -3814,9 +3680,7 @@
    "nationality": [
     "Outworld"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -4046,9 +3910,7 @@
    "nationality": [
     "Outworld"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Mortal Kombat",
    "developer": "Midway",
@@ -5023,9 +4885,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Resident Evil",
    "developer": "Capcom",
@@ -5787,9 +5647,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Bald"
    ],
@@ -6060,9 +5918,7 @@
     "Castle Oblivion",
     "Twilight Town"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -6115,9 +5971,7 @@
     "Radiant Garden",
     "Destiny Islands"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6310,9 +6164,7 @@
     "Hollow Bastion",
     "Keyblade Graveyard"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Silver"
    ],
@@ -6337,12 +6189,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6368,9 +6216,7 @@
    "nationality": [
     "Keyblade Graveyard"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
@@ -6397,9 +6243,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -6507,9 +6351,7 @@
    "nationality": [
     "The World That Never Was"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -6570,9 +6412,7 @@
    "nationality": [
     "The World That Never Was"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -6604,9 +6444,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -6637,9 +6475,7 @@
     "Donkey Kong and Diddy Kong's Treehouse",
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -6762,9 +6598,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -6792,9 +6626,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -6822,9 +6654,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -6882,9 +6712,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -6913,9 +6741,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -6943,9 +6769,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -6971,9 +6795,7 @@
     "Squirrel",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -7001,9 +6823,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -7034,9 +6854,7 @@
    "nationality": [
     "Donkey Kong Island"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7066,7 +6884,7 @@
     "Unknown"
    ],
    "occupation": [
-    "None"
+    "Unknown"
    ],
    "hair": [
     "N/A"
@@ -7093,9 +6911,7 @@
     "Mobile Island Fortress",
     "Crocodile Isle"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7122,9 +6938,7 @@
    "nationality": [
     "Spiral Mountain"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7148,9 +6962,7 @@
    "nationality": [
     "Crocodile Isle"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7175,9 +6987,7 @@
     "Crocodile Isle",
     "Mobile Island Fortress"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7193,21 +7003,17 @@
   "id": "Q613241",
   "name": "Kirby",
   "aliases": [
+   "Kirby of the Stars",
    "Nintendo Kirby",
-   "Kirby des Étoiles",
-   "Kirby of the Stars"
+   "Kirby des Étoiles"
   ],
   "attributes": {
    "gender": "Male",
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
@@ -7229,9 +7035,7 @@
    "species": [
     "Unknown"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman"
    ],
@@ -7258,9 +7062,7 @@
     "Penguin",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -7287,12 +7089,8 @@
    "species": [
     "Waddle Dee"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7313,12 +7111,8 @@
    "species": [
     "Halcandran"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
@@ -7340,12 +7134,8 @@
    "species": [
     "Dark Matter"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7370,12 +7160,8 @@
     "Walrus",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7396,9 +7182,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Artist"
    ],
@@ -7424,9 +7208,7 @@
    "species": [
     "Unknown"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cook"
    ],
@@ -7451,9 +7233,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -7475,12 +7255,8 @@
    "species": [
     "Dark Matter"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7502,12 +7278,8 @@
     "Hamster",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7530,9 +7302,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Politician",
     "Businessperson"
@@ -7556,9 +7326,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Destroyer"
    ],
@@ -7581,12 +7349,8 @@
     "Bat",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7611,12 +7375,8 @@
    "species": [
     "Unknown"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
@@ -7706,9 +7466,7 @@
     "Zebes",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7764,9 +7522,7 @@
     "Phaaze",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7792,9 +7548,7 @@
     "Sector 2",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -7822,9 +7576,7 @@
     "ZDR",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Metroid",
    "developer": "MercurySteam",
@@ -7874,7 +7626,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -9161,9 +8912,7 @@
     "Raccoon",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Businessperson",
     "Merchant"
@@ -9191,9 +8940,7 @@
     "Hedgehog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Employee"
    ],
@@ -9218,9 +8965,7 @@
     "Seagull",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Astronaut",
     "Sailor"
@@ -9247,9 +8992,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Politician"
    ],
@@ -9272,12 +9015,8 @@
     "Owl",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -9301,9 +9040,7 @@
     "Hedgehog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Athlete"
    ],
@@ -9330,9 +9067,7 @@
     "Skunk",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant",
     "Worker"
@@ -9360,9 +9095,7 @@
     "Fox",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -9389,9 +9122,7 @@
     "Turtle",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Politician",
     "Guide"
@@ -9418,9 +9149,7 @@
    "species": [
     "Yokai"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Sailor",
     "Driver"
@@ -9448,9 +9177,7 @@
     "Hedgehog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -9478,9 +9205,7 @@
     "Dog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Employee"
    ],
@@ -9511,9 +9236,7 @@
     "Dog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Musician"
    ],
@@ -9538,12 +9261,8 @@
     "Cat",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -9571,12 +9290,8 @@
     "Mole",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -9600,12 +9315,8 @@
     "Rabbit",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -9629,9 +9340,7 @@
     "Llama",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -9658,9 +9367,7 @@
     "Llama",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -9687,9 +9394,7 @@
     "Pig",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -9716,12 +9421,8 @@
     "Cat",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -9803,9 +9504,7 @@
     "Order Sector",
     "Deepsea Metro"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Pink"
    ],
@@ -9833,9 +9532,7 @@
    "nationality": [
     "Splatsville"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Pink",
     "Green"
@@ -9862,9 +9559,7 @@
     "Booyah Base",
     "Inkopolis Galleria"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -9891,9 +9586,7 @@
     "Order Sector",
     "Deepsea Metro"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Brown",
     "Blue"
@@ -9923,9 +9616,7 @@
     "Splatsville",
     "Alterna"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -9952,9 +9643,7 @@
     "Splatsville",
     "Alterna"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond",
     "Purple"
@@ -9983,9 +9672,7 @@
     "Splatsville",
     "Alterna"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -10013,9 +9700,7 @@
    "nationality": [
     "Splatsville"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10044,9 +9729,7 @@
    "nationality": [
     "Booyah Base"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -10074,9 +9757,7 @@
     "Inkopolis Square",
     "Splatsville"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -10102,12 +9783,8 @@
    "species": [
     "Salmonid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10138,9 +9815,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10205,9 +9880,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -10263,9 +9936,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10293,9 +9964,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10326,9 +9995,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -10354,9 +10021,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10388,9 +10053,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10419,9 +10082,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10449,9 +10110,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10478,9 +10137,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10508,9 +10165,7 @@
    "nationality": [
     "Gasmoxia"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10567,9 +10222,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10600,9 +10253,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10629,9 +10280,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -10664,9 +10313,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Crash Bandicoot",
    "developer": "Naughty Dog",
@@ -10694,9 +10341,7 @@
     "Australia",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -10756,9 +10401,7 @@
    "nationality": [
     "Artisans"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10814,9 +10457,7 @@
    "nationality": [
     "Artisans"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -10898,9 +10539,7 @@
    "nationality": [
     "Forgotten Worlds"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -10928,9 +10567,7 @@
    "nationality": [
     "Gnorc Gnexus"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
@@ -10983,12 +10620,8 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -11043,12 +10676,8 @@
    "species": [
     "Fairy"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spyro the Dragon",
    "developer": "Insomniac Games",
@@ -11234,9 +10863,7 @@
     "Grelbin",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11365,9 +10992,7 @@
     "Quartu",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11395,9 +11020,7 @@
     "Bolden 3",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -11427,9 +11050,7 @@
     "Teraklon Six",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11449,12 +11070,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -11577,9 +11195,7 @@
     "Rilgar",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11603,12 +11219,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -11636,9 +11249,7 @@
     "Monde réel",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11661,9 +11272,7 @@
     "Sargasso",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11691,9 +11300,7 @@
     "Fastoon",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Ratchet & Clank",
    "developer": "Insomniac Games",
@@ -11717,9 +11324,7 @@
     "Haven City",
     "Spargus"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Green",
     "Blond"
@@ -11746,9 +11351,7 @@
     "Haven City",
     "Spargus"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -11875,9 +11478,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Criminal"
    ],
@@ -11904,12 +11505,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -11989,12 +11586,8 @@
    "species": [
     "Metal Head"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12074,9 +11667,7 @@
    "nationality": [
     "Gol and Maia's citadel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12098,12 +11689,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12274,9 +11861,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -12460,9 +12045,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -12613,9 +12196,7 @@
     "India",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -12733,9 +12314,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -12986,9 +12565,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -13037,9 +12614,9 @@
   "name": "Lord Richard Croft",
   "aliases": [
    "Croft Richard Lord",
-   "Richard James Croft",
    "Lord Richard James Croft, Ph.D",
-   "Richard Croft"
+   "Richard Croft",
+   "Richard James Croft"
   ],
   "attributes": {
    "gender": "Male",
@@ -14136,9 +13713,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -14289,9 +13864,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -14384,9 +13957,13 @@
     "Monde réel"
    ],
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Swordsman",
+    "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "God of War",
    "developer": "Santa Monica Studio",
    "genres": [
@@ -14468,7 +14045,6 @@
     "Sangheili"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -14496,12 +14072,9 @@
     "Flood"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -14528,12 +14101,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -14781,7 +14351,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -15327,9 +14896,7 @@
     "Eden Prime",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -15589,9 +15156,7 @@
     "Palaven",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Mass Effect",
    "developer": "BioWare",
@@ -15747,9 +15312,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Spy",
     "Musician"
@@ -15772,9 +15335,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -15934,9 +15495,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mercenary"
    ],
@@ -16010,9 +15569,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage",
     "Fighter",
@@ -16040,9 +15597,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Adventurer",
     "Assassin"
@@ -16146,9 +15701,7 @@
     "Daedra",
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -16172,12 +15725,8 @@
    "species": [
     "Dragon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -16297,9 +15846,7 @@
     "Deity",
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier",
     "Royalty"
@@ -16326,9 +15873,7 @@
     "Daedra",
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -16357,9 +15902,7 @@
     "Daedra",
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -16387,9 +15930,7 @@
     "Daedra",
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -16421,9 +15962,7 @@
    "nationality": [
     "Cyrodiil"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -16481,9 +16020,7 @@
    "nationality": [
     "Ivarstead"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16505,9 +16042,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -16567,12 +16102,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "The Elder Scrolls",
    "developer": "Bethesda",
@@ -16699,9 +16230,7 @@
     "Scrapyard",
     "Vault 101"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -17182,9 +16711,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -17303,9 +16830,7 @@
     "Human",
     "Mutant"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman",
     "Monster hunter",
@@ -17676,9 +17201,7 @@
    "species": [
     "Vampire"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Doctor",
     "Farmer"
@@ -17736,12 +17259,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Bald"
    ],
@@ -17766,9 +17285,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -18780,9 +18297,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -18844,9 +18359,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Red Dead",
    "developer": "Rockstar",
@@ -20032,9 +19545,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Prince of Persia",
    "developer": "Brøderbund Software",
@@ -20127,12 +19638,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
@@ -20152,12 +19659,8 @@
     "Frog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -20179,12 +19682,8 @@
     "Insect",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -20208,12 +19707,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
@@ -20235,12 +19730,8 @@
    "species": [
     "Rabbid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Rayman",
    "developer": "Ubisoft",
@@ -20265,9 +19756,7 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Pirate"
    ],
@@ -20294,12 +19783,8 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -20323,12 +19808,8 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -20351,12 +19832,8 @@
    "species": [
     "Fairy"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
@@ -20375,12 +19852,8 @@
    "species": [
     "Fairy"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Rayman",
    "developer": "Ubisoft",
@@ -20399,12 +19872,8 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -20468,9 +19937,7 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Marksman"
    ],
@@ -20639,7 +20106,8 @@
     "Monde réel"
    ],
    "occupation": [
-    "Guard"
+    "Guard",
+    "Fighter"
    ],
    "hair": [
     "N/A"
@@ -20807,9 +20275,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Marksman"
    ],
@@ -20991,9 +20457,7 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -21020,9 +20484,7 @@
    "nationality": [
     "Xen"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Half-Life",
    "developer": "Valve",
@@ -21069,8 +20531,7 @@
     "Robot"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
    "occupation": [
@@ -21098,13 +20559,10 @@
     "Human"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -21130,14 +20588,15 @@
     "Human"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -21157,7 +20616,9 @@
     "Robot"
    ],
    "nationality": [
-    "Aperture Science Enrichment Center"
+    "Aperture Science Enrichment Center",
+    "Earth",
+    "Monde réel"
    ],
    "occupation": [
     "Scientist"
@@ -21188,14 +20649,15 @@
     "Human"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
    "occupation": [
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Portal",
    "developer": "Valve",
    "genres": [
@@ -21215,12 +20677,11 @@
     "Robot"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
    "occupation": [
-    "None"
+    "Advisor"
    ],
    "hair": [
     "N/A"
@@ -21244,12 +20705,11 @@
     "Robot"
    ],
    "nationality": [
-    "Michigan",
-    "United States",
+    "Earth",
     "Monde réel"
    ],
    "occupation": [
-    "None"
+    "Advisor"
    ],
    "hair": [
     "N/A"
@@ -21530,12 +20990,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
-   "The Spy",
    "Spy (Team Fortress 2)",
    "Spy (TF2)",
    "Blu Spy",
    "Red Spy",
-   "TF2 Spy"
+   "TF2 Spy",
+   "The Spy"
   ],
   "attributes": {
    "gender": "Male",
@@ -21575,9 +21035,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21604,9 +21062,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21631,9 +21087,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21658,9 +21112,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21740,9 +21192,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21767,9 +21217,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21794,9 +21242,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -21822,9 +21268,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Team Fortress",
    "developer": "Valve",
@@ -22559,9 +22003,7 @@
    "species": [
     "Omnic"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Advisor"
    ],
@@ -23157,9 +22599,7 @@
     "Ionia",
     "Shadow Isles"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -23726,9 +23166,7 @@
    "species": [
     "Orc"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Revolutionary"
    ],
@@ -23754,9 +23192,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Knight"
    ],
@@ -23782,9 +23218,7 @@
    "species": [
     "Undead"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -23895,9 +23329,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Sailor",
     "Advisor",
@@ -23926,9 +23358,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric",
     "Archer"
@@ -23956,9 +23386,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -24060,9 +23488,7 @@
    "species": [
     "Dragon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -24086,9 +23512,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Prisoner"
    ],
@@ -24110,9 +23534,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -24136,9 +23558,7 @@
    "species": [
     "Dragon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -24162,9 +23582,7 @@
    "species": [
     "Dragon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty",
     "Noble"
@@ -24189,9 +23607,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Noble",
     "Mage"
@@ -24245,9 +23661,7 @@
    "species": [
     "Orc"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -24336,7 +23750,6 @@
     "Protoss"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24425,7 +23838,6 @@
     "Xel'naga"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24456,7 +23868,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24490,9 +23901,7 @@
     "Tarsonis",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -24545,12 +23954,9 @@
     "Zerg"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -24572,12 +23978,9 @@
     "Zerg"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -24599,7 +24002,6 @@
     "Protoss"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24626,7 +24028,6 @@
     "Zerg"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -24657,9 +24058,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scholar"
    ],
@@ -24766,9 +24165,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -24819,9 +24216,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -25002,9 +24397,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Monster hunter"
    ],
@@ -25029,9 +24422,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -25058,9 +24449,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Hero"
    ],
@@ -25086,9 +24475,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -25112,12 +24499,8 @@
    "species": [
     "Monster"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -25138,12 +24521,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dragon Quest",
    "developer": "Square Enix",
@@ -25189,12 +24568,8 @@
    "species": [
     "Slime"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -25220,9 +24595,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Thief"
    ],
@@ -25244,9 +24617,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Destroyer"
    ],
@@ -25269,9 +24640,7 @@
     "Human",
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman"
    ],
@@ -25299,9 +24668,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -25325,12 +24692,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dragon Quest",
    "developer": "Spike Chunsoft",
@@ -25667,9 +25030,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -25700,9 +25061,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Persona",
    "developer": "Atlus",
@@ -25940,9 +25299,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -25967,9 +25324,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Student",
     "Swordsman"
@@ -26116,9 +25471,7 @@
    "nationality": [
     "Palmacosta"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Tales of",
    "developer": "Bandai Namco",
@@ -26233,9 +25586,7 @@
     "Dog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -26444,9 +25795,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -26558,9 +25907,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman"
    ],
@@ -26584,12 +25931,8 @@
    "species": [
     "Blade"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -26611,12 +25954,8 @@
    "species": [
     "Blade"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -26641,12 +25980,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Xenoblade Chronicles",
    "developer": "Monolith Soft",
@@ -26665,9 +26000,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Doctor"
    ],
@@ -26691,9 +26024,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Treasure hunter",
     "Mercenary",
@@ -26720,9 +26051,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26746,9 +26075,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26772,9 +26099,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26798,9 +26123,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26824,9 +26147,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26850,9 +26171,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26876,9 +26195,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26902,9 +26219,7 @@
    "species": [
     "Nopon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mechanic"
    ],
@@ -26928,9 +26243,7 @@
    "species": [
     "Nopon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cook"
    ],
@@ -26954,9 +26267,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -26980,9 +26291,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -27011,9 +26320,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -27037,9 +26344,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -27063,9 +26368,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -27150,9 +26453,7 @@
     "Fiendlord's Keep",
     "North Cape"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -27255,12 +26556,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27282,9 +26579,7 @@
    "nationality": [
     "Proto Dome"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -27335,9 +26630,7 @@
    "nationality": [
     "Zeal"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Chrono",
    "developer": "Square Enix",
@@ -27360,9 +26653,7 @@
     "Cursed Woods",
     "Hunting Grounds"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -27410,9 +26701,7 @@
    "nationality": [
     "Arni"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -27436,9 +26725,7 @@
    "nationality": [
     "Arni"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -27856,9 +27143,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -28207,9 +27492,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -28237,9 +27520,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -28267,9 +27548,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -29128,9 +28407,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29188,9 +28465,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29219,9 +28494,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Silent Hill",
    "developer": "Konami",
@@ -29245,9 +28518,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -29358,9 +28629,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -29700,9 +28969,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Danganronpa",
    "developer": "Spike Chunsoft",
@@ -30913,9 +30180,7 @@
    "nationality": [
     "Misthallery"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -30976,9 +30241,7 @@
    "nationality": [
     "Folsense"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -31008,9 +30271,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -31889,9 +31150,7 @@
     "Frasco",
     "Flask"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -32024,9 +31283,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier",
     "Swordsman"
@@ -32054,9 +31311,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Musician",
     "Marksman"
@@ -32323,9 +31578,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32418,9 +31671,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -32534,9 +31785,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Silver",
     "White"
@@ -32566,9 +31815,7 @@
     "South Town",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -32678,9 +31925,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -32772,9 +32017,7 @@
     "China",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -32829,9 +32072,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The King of Fighters",
    "developer": "SNK",
@@ -33326,9 +32567,7 @@
     "China",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -33611,9 +32850,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -33830,9 +33067,7 @@
    "species": [
     "Golem"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -34151,9 +33386,7 @@
    "species": [
     "Unknown"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Assistant"
    ],
@@ -34206,9 +33439,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman"
    ],
@@ -34683,9 +33914,7 @@
     "Astral Express",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Pink"
    ],
@@ -34887,9 +34116,7 @@
     "Astral Express",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34917,9 +34144,7 @@
     "Izumo",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -34978,9 +34203,7 @@
     "Aedes Elysiae",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Pink"
    ],
@@ -35110,9 +34333,7 @@
     "Okhema",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -35140,9 +34361,7 @@
     "Amphoreus",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35169,9 +34388,7 @@
     "Okhema",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35259,9 +34476,7 @@
     "Amphoreus",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
@@ -35287,12 +34502,8 @@
    "species": [
     "Thiren"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -35318,12 +34529,8 @@
    "species": [
     "Thiren"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -35348,9 +34555,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Waiter"
    ],
@@ -35376,12 +34581,8 @@
    "species": [
     "Thiren"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35405,12 +34606,8 @@
    "species": [
     "Thiren"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35433,12 +34630,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -35465,12 +34658,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -35496,12 +34685,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35525,12 +34710,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35554,12 +34735,8 @@
     "Wolf",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -35581,9 +34758,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -35606,9 +34781,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -35634,12 +34807,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Pink"
    ],
@@ -35664,12 +34833,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35692,12 +34857,8 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -35723,9 +34884,7 @@
    "species": [
     "Thiren"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Criminal"
    ],
@@ -35751,12 +34910,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -35782,12 +34937,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -35814,12 +34965,8 @@
     "Bear",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -35845,12 +34992,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Ginger",
     "Brown"
@@ -35877,9 +35020,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "White"
    ],
@@ -35906,9 +35047,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Nier",
    "developer": "Cavia",
@@ -35931,9 +35070,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Silver",
     "Black"
@@ -36046,12 +35183,8 @@
     "Wolf",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36079,9 +35212,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric"
    ],
@@ -36108,9 +35239,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Adventurer",
     "Monster hunter"
@@ -36177,9 +35306,7 @@
     "Caelid",
     "Land of Shadows"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -36209,9 +35336,7 @@
     "Church of Elleh",
     "Ranni's Rise"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Elden Ring",
    "developer": "FromSoftware",
@@ -36231,9 +35356,7 @@
     "Horse",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -36321,9 +35444,7 @@
    "nationality": [
     "Jarburg"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36388,9 +35509,7 @@
     "The Underground",
     "Ruins"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36452,9 +35571,7 @@
     "Snowdin",
     "Snowdin Forest"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36516,9 +35633,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scientist"
    ],
@@ -36611,9 +35726,7 @@
     "Underground",
     "Mt. Ebott"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -36643,9 +35756,7 @@
     "The Underground",
     "Underground"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36704,9 +35815,7 @@
    "nationality": [
     "Ruins"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red",
     "Brown"
@@ -36794,9 +35903,7 @@
    "nationality": [
     "Hotland"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36855,12 +35962,8 @@
     "Dog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -36884,9 +35987,7 @@
     "Insect",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Noble"
    ],
@@ -36975,9 +36076,7 @@
    "nationality": [
     "The Abyss"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
@@ -37004,9 +36103,7 @@
    "nationality": [
     "Beast's Den"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
@@ -37031,9 +36128,7 @@
    "nationality": [
     "Hallownest"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
@@ -37125,12 +36220,8 @@
    "species": [
     "Higher Being"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Hollow Knight",
    "developer": "Team Cherry",
@@ -37155,12 +36246,8 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37183,12 +36270,8 @@
     "Insect",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37215,9 +36298,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -37247,12 +36328,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -37280,12 +36357,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Minecraft",
    "developer": "Mojang",
@@ -37312,12 +36385,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37346,12 +36415,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37379,9 +36444,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -37413,9 +36476,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -37445,12 +36506,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37477,12 +36534,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37510,12 +36563,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37542,12 +36591,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37576,9 +36621,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -37608,9 +36651,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -37640,12 +36681,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37679,9 +36716,7 @@
    "nationality": [
     "The Nether"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37708,12 +36743,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37743,12 +36774,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37773,12 +36800,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37808,12 +36831,8 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -37840,9 +36859,7 @@
    "species": [
     "Mob"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Predator"
    ],
@@ -38142,9 +37159,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -38169,9 +37184,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -38484,9 +37497,7 @@
    "nationality": [
     "Columbia"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -38698,12 +37709,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -38898,7 +37906,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -39397,9 +38404,7 @@
    "nationality": [
     "Spiral Mountain"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -39512,9 +38517,7 @@
     "Giya",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -39568,9 +38571,7 @@
     "PNF-404",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -39595,9 +38596,7 @@
     "Giya",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -39735,9 +38734,7 @@
     "Karut",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Pikmin",
    "developer": "Nintendo",
@@ -39762,9 +38759,7 @@
     "Hocotate",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -39871,9 +38866,7 @@
    "nationality": [
     "Outer Space"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "Nintendo",
@@ -39901,9 +38894,7 @@
    "nationality": [
     "Onett"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -39925,9 +38916,7 @@
    "nationality": [
     "Outer Space"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "Nintendo",
@@ -39976,9 +38965,7 @@
    "nationality": [
     "Tazmily Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -40003,9 +38990,7 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -40029,9 +39014,7 @@
    "nationality": [
     "Tazmily Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40051,9 +39034,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40075,9 +39056,7 @@
    "nationality": [
     "Tazmily Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -40101,9 +39080,7 @@
    "nationality": [
     "Tazmily Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -40127,9 +39104,7 @@
    "nationality": [
     "Sunshine Forest"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -40181,9 +39156,7 @@
     "Podunk",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -40210,9 +39183,7 @@
     "Winters",
     "FoggyLand"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -40236,9 +39207,7 @@
    "nationality": [
     "Tazmily Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40264,9 +39233,7 @@
    "nationality": [
     "Winters"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40286,9 +39253,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "Jeu de fans",
@@ -40313,9 +39278,7 @@
    "nationality": [
     "Twoson"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40337,9 +39300,7 @@
    "nationality": [
     "Osohe Castle"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "EarthBound",
    "developer": "HAL Laboratory",
@@ -40362,9 +39323,7 @@
     "Twoson",
     "Eagleland"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -40448,9 +39407,7 @@
    "nationality": [
     "Underworld"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -40502,9 +39459,7 @@
     "Deity",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Protector"
    ],
@@ -40529,9 +39484,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -40618,9 +39571,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Servant"
    ],
@@ -40648,9 +39599,7 @@
    "species": [
     "Yokai"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Farmer",
     "Guard"
@@ -40683,9 +39632,7 @@
    "nationality": [
     "Hakugyokurou"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -40740,9 +39687,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -40802,9 +39747,7 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Teacher"
    ],
@@ -40838,9 +39781,7 @@
     "Eientei",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -40864,9 +39805,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -40894,9 +39833,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -40954,9 +39891,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Green"
    ],
@@ -40983,9 +39918,7 @@
    "nationality": [
     "Boundary of Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -41013,9 +39946,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -41043,9 +39974,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blue"
    ],
@@ -41070,12 +39999,8 @@
    "species": [
     "Yokai"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -41131,9 +40056,7 @@
    "nationality": [
     "Gensokyo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -41240,9 +40163,7 @@
     "Greece",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -41584,9 +40505,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Farmer"
    ],
@@ -41612,7 +40531,7 @@
     "Pelican Town"
    ],
    "occupation": [
-    "Unknown"
+    "Unemployed"
    ],
    "hair": [
     "Green"
@@ -41794,12 +40713,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Baldur's Gate",
    "developer": "BioWare",
@@ -41822,9 +40737,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Adventurer",
     "Writer"
@@ -41876,9 +40789,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -41902,9 +40813,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Thief"
    ],
@@ -41926,9 +40835,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric",
     "Mage"
@@ -41953,9 +40860,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Knight"
    ],
@@ -41983,9 +40888,7 @@
    "species": [
     "Dragonborn"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -42038,9 +40941,7 @@
     "Human",
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric"
    ],
@@ -42064,9 +40965,7 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric"
    ],
@@ -42117,9 +41016,7 @@
    "nationality": [
     "Netheril"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Baldur's Gate",
    "developer": "Beamdog",
@@ -42165,9 +41062,7 @@
    "species": [
     "Githyanki"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -42191,9 +41086,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -42217,9 +41110,7 @@
    "species": [
     "Tiefling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -42243,9 +41134,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -42841,9 +41730,7 @@
     "Night City",
     "Heywood"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -43427,9 +42314,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown",
     "Red"
@@ -43576,9 +42461,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -43722,9 +42605,7 @@
     "Serbia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -43751,9 +42632,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -43781,9 +42660,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -44311,9 +43188,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Archer"
    ],
@@ -44340,12 +43215,8 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44372,9 +43243,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -44405,9 +43274,7 @@
     "Planet 4546B",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44436,9 +43303,7 @@
     "Planet 4546B",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44466,9 +43331,7 @@
     "Planet 4546B",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44496,9 +43359,7 @@
     "Planet 4546B",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44561,9 +43422,7 @@
     "Planet 4546B",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -44593,9 +43452,7 @@
     "Proteus",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -45302,9 +44159,7 @@
     "Boreas",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black",
     "Blue"
@@ -45330,9 +44185,7 @@
    "nationality": [
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -45591,9 +44444,7 @@
     "Psamathe",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -45704,9 +44555,7 @@
    "nationality": [
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Titanfall / Apex Legends",
    "developer": "Respawn Entertainment",
@@ -46266,8 +45115,6 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter",
-    "Servant",
     "Actor",
     "Employee",
     "Driver",
@@ -46276,7 +45123,9 @@
     "Spy",
     "Waiter",
     "Guard",
-    "Worker"
+    "Worker",
+    "Fighter",
+    "Servant"
    ],
    "hair": [
     "Grey"
@@ -46554,12 +45403,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -46585,12 +45430,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -46613,12 +45454,8 @@
     "Plankton",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -46646,9 +45483,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Driver",
     "Athlete",
@@ -46682,9 +45517,7 @@
     "London",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -47212,12 +46045,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -47240,9 +46069,7 @@
     "Cat",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -47300,9 +46127,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Destroyer"
    ],
@@ -47329,12 +46154,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47354,9 +46175,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -47379,9 +46198,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -47407,12 +46224,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47432,9 +46245,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Destroyer"
    ],
@@ -47461,12 +46272,8 @@
    "species": [
     "Dwarf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47486,12 +46293,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47517,12 +46320,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47546,9 +46345,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric"
    ],
@@ -47575,12 +46372,8 @@
    "species": [
     "Primarch"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47600,9 +46393,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -47628,12 +46419,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47653,9 +46440,7 @@
    "species": [
     "Demon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -47682,12 +46467,8 @@
    "species": [
     "Orc"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47711,12 +46492,8 @@
    "species": [
     "Orc"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47739,12 +46516,8 @@
    "species": [
     "Goblin"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47768,12 +46541,8 @@
    "species": [
     "Humanoid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Warhammer",
    "developer": "Electronic Arts",
@@ -47793,12 +46562,8 @@
    "species": [
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -47966,9 +46731,7 @@
     "Japan",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Doki Doki Literature Club",
    "developer": "Team Salvato",
@@ -48143,9 +46906,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Noble",
     "Royalty",
@@ -48324,9 +47085,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Companion"
    ],
@@ -48480,9 +47239,7 @@
    "nationality": [
     "United Kingdom of Euchronia"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -48542,9 +47299,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Les Chevaliers de Baphomet",
    "developer": "Revolution Software",
@@ -48631,9 +47386,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -48692,9 +47445,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -48715,12 +47466,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -48741,12 +47488,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -49754,9 +48497,7 @@
     "California",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -50062,9 +48803,7 @@
    "nationality": [
     "Fortuna"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -50142,9 +48881,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50165,9 +48902,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Devil May Cry",
    "developer": "Capcom",
@@ -50213,9 +48948,7 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "White"
    ],
@@ -50324,9 +49057,7 @@
    "nationality": [
     "Alphaverse"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Bald"
    ],
@@ -50584,9 +49315,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond",
     "Silver"
@@ -50728,9 +49457,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "White",
     "Blue"
@@ -50756,9 +49483,7 @@
     "Earth",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "White",
     "Blue"
@@ -50899,9 +49624,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -50927,12 +49650,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -51044,9 +49763,7 @@
    "nationality": [
     "Firelink Shrine"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -51073,9 +49790,7 @@
    "nationality": [
     "Anor Londo"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -51130,12 +49845,8 @@
    "species": [
     "Half-dragon"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
@@ -51159,9 +49870,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -51187,9 +49896,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage",
     "Royalty"
@@ -51217,9 +49924,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Noble"
    ],
@@ -51245,12 +49950,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51273,9 +49975,7 @@
     "Athenas",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51299,9 +49999,7 @@
     "Hieronymous",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51325,9 +50023,7 @@
     "Pandora",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51349,12 +50045,9 @@
     "Mutant"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51378,7 +50071,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51409,9 +50101,7 @@
     "Hephaestus",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51460,7 +50150,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51485,7 +50174,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -51512,12 +50200,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Borderlands",
    "developer": "Gearbox Software",
@@ -51572,9 +50257,7 @@
     "Showdown Town",
     "Spiral Mountain"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51601,9 +50284,7 @@
     "Spiral Mountain",
     "Gruntilda's Lair"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Banjo-Kazooie",
    "developer": "Rare",
@@ -51626,9 +50307,7 @@
    "nationality": [
     "Spiral Mountain"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51652,9 +50331,7 @@
    "nationality": [
     "Cauldron Keep"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51681,9 +50358,7 @@
     "Spiral Mountain",
     "Gruntilda's Lair"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51740,9 +50415,7 @@
    "nationality": [
     "Glitter Gulch Mine"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51769,9 +50442,7 @@
     "Spiral Mountain",
     "Gruntilda's Lair"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -51799,9 +50470,7 @@
    "nationality": [
     "Gruntilda's Lair"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -51907,9 +50576,7 @@
    "nationality": [
     "Underworld"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -51930,9 +50597,7 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -51959,9 +50624,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -52013,9 +50676,7 @@
    "species": [
     "Monster"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -52042,9 +50703,7 @@
    "species": [
     "Poncle"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Artist"
    ],
@@ -52069,9 +50728,7 @@
    "nationality": [
     "Oni Island"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -52096,9 +50753,7 @@
     "Celestial Plain",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -52144,12 +50799,8 @@
    "species": [
     "Mermaid"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -52253,9 +50904,7 @@
    "nationality": [
     "Kamiki Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Okami",
    "developer": "Clover Studio",
@@ -52307,9 +50956,7 @@
    "nationality": [
     "Kamiki Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Bald",
     "Black"
@@ -52394,9 +51041,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52416,9 +51061,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -52440,9 +51083,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52462,9 +51103,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52490,9 +51129,7 @@
     "Breezy Hills",
     "Springdale"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple"
    ],
@@ -52517,9 +51154,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -52546,9 +51181,7 @@
     "Sakuragi Hills",
     "Sakura Motomachi"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52568,9 +51201,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52590,9 +51221,7 @@
     "Yokai"
    ],
    "nationality": null,
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
    "developer": "Level-5",
@@ -52674,9 +51303,7 @@
     "Greece",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -52733,9 +51360,7 @@
     "Greece",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -52960,9 +51585,7 @@
     "Greece",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Hades",
    "developer": "Supergiant Games",
@@ -53133,9 +51756,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -53264,9 +51885,7 @@
     "The Base",
     "Forbidden West"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -53388,9 +52007,7 @@
     "Sirius",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -53476,12 +52093,8 @@
    "species": [
     "Deity"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -53598,9 +52211,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scientist"
    ],
@@ -54004,9 +52615,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -54034,9 +52643,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -54208,9 +52815,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -54289,9 +52894,7 @@
     "Roman Empire",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "ARK",
    "developer": "Studio Wildcard",
@@ -54400,9 +53003,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -54429,12 +53030,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -54461,9 +53058,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -54492,9 +53087,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -54522,9 +53115,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -54552,9 +53143,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -54582,9 +53171,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -54611,12 +53198,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -54976,9 +53559,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55007,9 +53588,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -55036,9 +53615,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Programmer"
    ],
@@ -55065,9 +53642,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55097,9 +53672,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter"
    ],
@@ -55126,9 +53699,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cleric"
    ],
@@ -55157,9 +53728,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -55186,9 +53755,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Pilot"
    ],
@@ -55215,9 +53782,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Swordsman"
    ],
@@ -55244,9 +53809,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55272,9 +53835,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Merchant"
    ],
@@ -55299,9 +53860,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55328,9 +53887,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mechanic"
    ],
@@ -55357,9 +53914,7 @@
     "Monkey",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55384,12 +53939,9 @@
     "Traveller"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -55416,9 +53968,7 @@
     "Space Anomaly",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -55445,9 +53995,7 @@
     "Space Anomaly",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -55472,7 +54020,6 @@
     "Traveller"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -55499,12 +54046,9 @@
     "Traveller"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -55529,12 +54073,9 @@
     "Deity"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "No Man's Sky",
    "developer": "Hello Games",
@@ -55559,9 +54100,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -55669,9 +54208,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -55696,9 +54233,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -55723,9 +54258,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -55750,9 +54283,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Sons Of The Forest",
    "developer": "Endnight Games",
@@ -55771,9 +54302,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -55798,9 +54327,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Mage"
    ],
@@ -55822,12 +54349,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
@@ -55876,12 +54399,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
@@ -55953,9 +54472,7 @@
    "nationality": [
     "Ancient Temple"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Divinity: Original Sin",
    "developer": "Larian Studios",
@@ -55999,9 +54516,7 @@
    "species": [
     "Imp"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scholar"
    ],
@@ -56251,9 +54766,7 @@
    "nationality": [
     "Samopesh"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -56469,9 +54982,7 @@
     "Mountain Town",
     "Broken Railroad"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Long Dark",
    "developer": "Hinterland Studio",
@@ -56501,9 +55012,7 @@
     "Canada",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -56706,12 +55215,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "EA Montréal",
@@ -56730,12 +55235,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "EA Montréal",
@@ -56754,12 +55255,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -56782,12 +55279,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "EA Mobile",
@@ -56807,12 +55300,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -56833,12 +55322,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Spore",
    "developer": "Maxis",
@@ -56859,9 +55344,7 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -56883,9 +55366,7 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -56910,9 +55391,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Athlete",
     "Hunter"
@@ -56939,9 +55418,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Athlete",
     "Police officer",
@@ -56971,9 +55448,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -56998,9 +55473,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Athlete",
     "Marksman"
@@ -57087,9 +55560,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Criminal"
    ],
@@ -57321,9 +55792,7 @@
    "nationality": [
     "Wonderland"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Alice: Madness Returns",
    "developer": "Rogue Entertainment",
@@ -57381,9 +55850,7 @@
    "nationality": [
     "Wonderland"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -57409,9 +55876,7 @@
    "nationality": [
     "Wonderland"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -57651,9 +56116,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -57855,9 +56318,7 @@
    "nationality": [
     "Valadilene"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -58157,9 +56618,7 @@
    "species": [
     "Hex-Core"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Pilot"
    ],
@@ -58376,9 +56835,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -58432,9 +56889,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -58462,9 +56917,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -58493,9 +56946,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -58520,9 +56971,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Firewatch",
    "developer": "Campo Santo",
@@ -58623,7 +57072,6 @@
     "Nomai"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58701,7 +57149,6 @@
     "Nomai"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58831,7 +57278,6 @@
     "Nomai"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -58920,9 +57366,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "XCOM",
    "developer": "2K Marin",
@@ -58951,9 +57395,7 @@
     "Maryland",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "XCOM",
    "developer": "2K Marin",
@@ -59036,9 +57478,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "XCOM",
    "developer": "Firaxis Games",
@@ -59057,9 +57497,7 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Politician"
    ],
@@ -59110,12 +57548,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "XCOM",
    "developer": "2K Marin",
@@ -59216,7 +57650,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59280,7 +57713,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59316,9 +57748,7 @@
     "Monde réel",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -59344,7 +57774,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59377,7 +57806,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59407,7 +57835,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59440,7 +57867,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59472,7 +57898,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59536,7 +57961,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -59977,9 +58401,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -60065,9 +58487,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Bald",
     "Blond"
@@ -60117,12 +58537,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60146,12 +58562,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60175,9 +58587,7 @@
    "nationality": [
     "Gale Cliffs"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60255,9 +58665,7 @@
    "nationality": [
     "Devil's Spine"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60283,9 +58691,7 @@
    "nationality": [
     "Little Marrow"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60313,9 +58719,7 @@
    "nationality": [
     "Gale Cliffs"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60365,9 +58769,7 @@
    "nationality": [
     "The Iron Rig"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60391,9 +58793,7 @@
    "nationality": [
     "The Marrows"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60417,9 +58817,7 @@
    "nationality": [
     "Little Marrow"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dredge",
    "developer": "Black Salt Games",
@@ -60444,9 +58842,7 @@
    "nationality": [
     "Alt Harbor"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60472,9 +58868,7 @@
    "nationality": [
     "Overbrook"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60499,9 +58893,7 @@
    "nationality": [
     "Mystery Seed"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
@@ -60525,9 +58917,7 @@
    "nationality": [
     "Furogawa"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60552,9 +58942,7 @@
    "nationality": [
     "Hikarishima Lighthouse"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Spiritfarer",
    "developer": "Thunder Lotus Games",
@@ -60578,9 +58966,7 @@
    "nationality": [
     "Hummingberg"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60606,9 +58992,7 @@
    "nationality": [
     "Overbrook"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60631,12 +59015,8 @@
     "Dog",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60662,9 +59042,7 @@
    "nationality": [
     "Loneberg"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -60687,9 +59065,7 @@
     "Lynx",
     "Animal"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -60722,9 +59098,7 @@
     "Canada",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -60808,9 +59182,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -60864,9 +59236,7 @@
     "South Korea",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "SOMA",
    "developer": "Frictional Games",
@@ -60891,9 +59261,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -61118,9 +59486,7 @@
     "Monde réel",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Prey",
    "developer": "Arkane Studios",
@@ -61174,9 +59540,7 @@
     "Monde réel",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -61409,11 +59773,9 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
-    "Unknown"
+    "None"
    ],
    "hair": [
     "Red"
@@ -61487,9 +59849,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Farmer"
    ],
@@ -61513,9 +59873,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scientist"
    ],
@@ -61539,9 +59897,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Actor"
    ],
@@ -61565,9 +59921,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cook"
    ],
@@ -61591,9 +59945,7 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Cook"
    ],
@@ -61644,9 +59996,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -61702,9 +60052,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Stanley Parable",
    "developer": "Crows Crows Crows",
@@ -61729,9 +60077,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Stanley Parable",
    "developer": "Crows Crows Crows",
@@ -61753,9 +60099,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -61779,9 +60123,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Stanley Parable",
    "developer": "Crows Crows Crows",
@@ -61911,9 +60253,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -61970,9 +60310,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -62158,9 +60496,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dead Island",
    "developer": "Techland",
@@ -62183,9 +60519,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Dead Island",
    "developer": "Dambuster Studios",
@@ -62295,12 +60629,8 @@
    "species": [
     "Elf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62320,12 +60650,8 @@
    "species": [
     "Unknown"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62349,12 +60675,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62377,12 +60699,8 @@
    "species": [
     "Halfling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62406,12 +60724,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62435,12 +60749,8 @@
    "species": [
     "Siklas"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62464,12 +60774,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62493,12 +60799,8 @@
    "species": [
     "Orc"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62522,12 +60824,8 @@
    "species": [
     "Halfling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62550,12 +60848,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62578,12 +60872,8 @@
    "species": [
     "Dwarf"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -62607,9 +60897,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader"
    ],
@@ -62691,9 +60979,7 @@
    "nationality": [
     "Union Station"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -62751,9 +61037,7 @@
     "Los Alamitos",
     "The Warrens prison block"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
    "developer": "InXile Entertainment",
@@ -62803,9 +61087,7 @@
    "nationality": [
     "The Bizarre"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
    "developer": "InXile Entertainment",
@@ -62831,9 +61113,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
    "developer": "InXile Entertainment",
@@ -62914,9 +61194,7 @@
     "Darwin",
     "Aspen"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Wasteland",
    "developer": "InXile Entertainment",
@@ -63084,9 +61362,7 @@
    "nationality": [
     "Dyrford Village"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -63113,9 +61389,7 @@
    "nationality": [
     "Caed Nua"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Pillars of Eternity",
    "developer": "Obsidian Entertainment",
@@ -63184,9 +61458,7 @@
    "species": [
     "Aumaua"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Archer",
     "Scout"
@@ -63357,9 +61629,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Remember Me",
    "developer": "Don't Nod",
@@ -63416,9 +61686,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -63566,9 +61834,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Twelve Minutes",
    "developer": "Luis Antonio",
@@ -63593,9 +61859,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Twelve Minutes",
    "developer": "Luis Antonio",
@@ -63651,9 +61915,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63679,9 +61941,7 @@
     "Oakmont Port",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63709,9 +61969,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63770,9 +62028,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63801,9 +62057,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63831,9 +62085,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63862,9 +62114,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -63895,9 +62145,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63923,9 +62171,7 @@
     "The Shells",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63948,9 +62194,7 @@
     "Underwater Lair",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The Sinking City",
    "developer": "Frogwares",
@@ -63972,12 +62216,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
@@ -64007,9 +62247,7 @@
     "Fenn Aries",
     "Eraja"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
@@ -64033,12 +62271,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
@@ -64061,9 +62295,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Writer"
    ],
@@ -64092,9 +62324,7 @@
     "Mount Holly Estate",
     "Orinda"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Blue Prince",
    "developer": "Dogubomb",
@@ -64171,9 +62401,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Programmer",
     "Leader"
@@ -64201,9 +62429,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -64288,9 +62514,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Servant"
    ],
@@ -64316,9 +62540,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -64342,9 +62564,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Artist",
     "Advisor"
@@ -64367,9 +62587,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Guard"
    ],
@@ -64394,9 +62612,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -64420,9 +62636,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Fighter",
     "Guard"
@@ -64447,12 +62661,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64473,12 +62683,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -64502,12 +62708,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -64529,12 +62731,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -64559,9 +62757,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -64589,9 +62785,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -64619,7 +62813,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64651,7 +62844,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64682,7 +62874,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64713,7 +62904,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64744,7 +62934,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64774,7 +62963,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64805,7 +62993,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64836,7 +63023,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64868,7 +63054,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64899,7 +63084,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64930,12 +63114,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -64961,7 +63142,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -64991,12 +63171,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65020,12 +63197,9 @@
     "Animal"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -65049,7 +63223,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -65074,12 +63247,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65099,12 +63269,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -65126,12 +63293,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65151,12 +63315,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65176,12 +63337,9 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -65206,12 +63364,9 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65231,12 +63386,9 @@
     "Unknown"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Breathedge",
    "developer": "RedRuins Softworks",
@@ -65259,9 +63411,7 @@
     "Ukraine",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -65286,9 +63436,7 @@
     "Russia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -65346,9 +63494,7 @@
     "Russia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -65371,9 +63517,7 @@
     "Russia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -65401,9 +63545,7 @@
     "Russia",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Chernobylite",
    "developer": "The Farm 51",
@@ -65486,9 +63628,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -65660,9 +63800,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Jagged Alliance",
    "developer": "Cypronia",
@@ -66229,9 +64367,7 @@
     "Massachusetts",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -66288,9 +64424,7 @@
     "Massachusetts",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -66377,9 +64511,7 @@
     "Massachusetts",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Banishers: Ghosts of New Eden",
    "developer": "Don't Nod",
@@ -66406,9 +64538,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -66668,9 +64798,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -66729,9 +64857,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -66759,9 +64885,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -66788,9 +64912,7 @@
     "United States",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -66818,9 +64940,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Purple",
     "Grey"
@@ -66849,9 +64969,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Blond"
    ],
@@ -66878,9 +64996,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -66905,9 +65021,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -66932,9 +65046,7 @@
     "United Kingdom",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -66961,9 +65073,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -66992,9 +65102,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -67391,9 +65499,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Nancy Drew",
    "developer": "Her Interactive",
@@ -67677,9 +65783,7 @@
     "Kuvaq",
     "Deponia"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Red",
     "Brown"
@@ -67813,9 +65917,7 @@
     "Habitat Ring",
     "Elysium"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -67927,9 +66029,7 @@
     "Habitat Ring",
     "Elysium"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -67956,9 +66056,7 @@
    "nationality": [
     "Elysium"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -68005,12 +66103,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68029,9 +66123,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Student"
    ],
@@ -68054,12 +66146,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68082,12 +66170,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68107,12 +66191,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Black"
    ],
@@ -68134,12 +66214,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Grey"
    ],
@@ -68161,12 +66237,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68186,12 +66258,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68211,12 +66279,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Red"
    ],
@@ -68237,9 +66301,7 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Writer"
    ],
@@ -68262,9 +66324,7 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Writer"
    ],
@@ -68287,12 +66347,8 @@
    "species": [
     "D'ni"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "franchise": "Myst",
    "developer": "Cyan Worlds",
@@ -68312,9 +66368,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Leader",
     "Royalty",
@@ -68342,12 +66396,8 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68369,12 +66419,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Ginger"
    ],
@@ -68397,9 +66443,7 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Revolutionary",
     "Soldier"
@@ -68426,9 +66470,7 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Revolutionary",
     "Leader"
@@ -68455,12 +66497,8 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68483,9 +66521,7 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Revolutionary"
    ],
@@ -68511,9 +66547,7 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker",
     "Leader"
@@ -68540,12 +66574,8 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68571,9 +66601,7 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Royalty"
    ],
@@ -68599,12 +66627,8 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68627,12 +66651,8 @@
     "Object",
     "Forgotling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "None"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68663,9 +66683,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -68696,9 +66714,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68727,9 +66743,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68759,9 +66773,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68790,9 +66802,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68821,9 +66831,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68851,9 +66859,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68879,9 +66885,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68911,9 +66915,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68943,9 +66945,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -68974,9 +66974,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -69004,9 +67002,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -69034,9 +67030,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -69065,9 +67059,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -69096,9 +67088,7 @@
     "Italy",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "Saturnalia",
    "developer": "Santa Ragione",
@@ -69118,9 +67108,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -69144,9 +67132,7 @@
    "species": [
     "Robot"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Assistant"
    ],
@@ -69175,9 +67161,7 @@
    "nationality": [
     "Albion"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69201,9 +67185,7 @@
    "nationality": [
     "Albion"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69227,9 +67209,7 @@
    "nationality": [
     "Albion"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -69250,9 +67230,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -69306,9 +67284,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Scientist"
    ],
@@ -69334,9 +67310,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -69360,9 +67334,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -69758,9 +67730,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -69786,9 +67756,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -69999,7 +67967,9 @@
     "Soldier",
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Unknown"
+   ],
    "franchise": "A Plague Tale",
    "developer": "Asobo Studio",
    "genres": [
@@ -70077,12 +68047,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": [
     "Brown"
    ],
@@ -70110,9 +68076,7 @@
     "Emrys",
     "Other World"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Rose City Games",
    "genres": [
@@ -70262,9 +68226,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Luis Antonio",
    "genres": [
@@ -70619,9 +68581,7 @@
     "Monde réel",
     "Mythe de Cthulhu"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Cyanide",
    "genres": [
@@ -70675,9 +68635,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Croteam",
    "genres": [
@@ -70700,7 +68658,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -70729,7 +68686,6 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -70761,9 +68717,7 @@
    "species": [
     "Player's choice"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Player's choice"
    ],
@@ -70789,12 +68743,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "FromSoftware",
    "genres": [
@@ -70815,12 +68765,8 @@
    "species": [
     "Nephalem"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Blizzard",
    "genres": [
@@ -70844,9 +68790,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Farmer"
    ],
@@ -70870,9 +68814,7 @@
    "species": [
     "Player's choice"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Player's choice"
    ],
@@ -70924,9 +68866,7 @@
    "species": [
     "Player's choice"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Player's choice"
    ],
@@ -70951,9 +68891,7 @@
    "species": [
     "Player's choice"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Player's choice"
    ],
@@ -71006,9 +68944,7 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Worker"
    ],
@@ -71036,7 +68972,6 @@
     "Hearthian"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71091,12 +69026,8 @@
    "species": [
     "Alien"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Maxis",
    "genres": [
@@ -71148,12 +69079,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Pocket Pair",
    "genres": [
@@ -71176,9 +69103,7 @@
    "species": [
     "Inkling"
    ],
-   "nationality": [
-    "Unknown"
-   ],
+   "nationality": null,
    "occupation": [
     "Soldier"
    ],
@@ -71203,12 +69128,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Total Mayhem Games",
    "genres": [
@@ -71232,7 +69153,6 @@
     "Dwarf"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71260,12 +69180,9 @@
     "Traveller"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Hello Games",
    "genres": [
@@ -71319,7 +69236,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71376,7 +69292,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71404,7 +69319,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71433,12 +69347,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Rundisc",
    "genres": [
@@ -71493,9 +69403,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Irrational Games",
    "genres": [
@@ -71661,7 +69569,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71693,7 +69600,6 @@
     "Human"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -71748,9 +69654,7 @@
    "nationality": [
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Double Damage Games",
    "genres": [
@@ -71771,9 +69675,7 @@
    "nationality": [
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -72045,9 +69947,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Ensemble Studios",
    "genres": [
@@ -72252,9 +70152,7 @@
     "France",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Ensemble Studios",
    "genres": [
@@ -72305,9 +70203,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Ensemble Studios",
    "genres": [
@@ -72360,9 +70256,7 @@
     "China",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Ensemble Studios",
    "genres": [
@@ -72388,9 +70282,7 @@
     "India",
     "Monde réel"
    ],
-   "occupation": [
-    "Unknown"
-   ],
+   "occupation": null,
    "hair": null,
    "developer": "Ensemble Studios",
    "genres": [
@@ -72408,12 +70300,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72433,12 +70321,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72458,12 +70342,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72483,12 +70363,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72508,12 +70384,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72533,12 +70405,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72558,12 +70426,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72583,12 +70447,8 @@
    "species": [
     "Human"
    ],
-   "nationality": [
-    "Unknown"
-   ],
-   "occupation": [
-    "Unknown"
-   ],
+   "nationality": null,
+   "occupation": null,
    "hair": null,
    "developer": "Nexon",
    "genres": [
@@ -72636,7 +70496,6 @@
     "Robot"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [
@@ -72666,12 +70525,9 @@
     "Animal"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -72698,9 +70554,7 @@
    "nationality": [
     "Monde réel"
    ],
-   "occupation": [
-    "None"
-   ],
+   "occupation": null,
    "hair": [
     "N/A"
    ],
@@ -72726,7 +70580,6 @@
     "Humanoid"
    ],
    "nationality": [
-    "Unknown",
     "Lost in the Galaxy"
    ],
    "occupation": [

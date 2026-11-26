@@ -58,6 +58,7 @@ describe('birthPlaces', () => {
   it('DateSeule_Rien', () => {
     expect(birthPlaces('circa, 1852')).toEqual([])
     expect(birthPlaces('Mid to late 19th Century')).toEqual([])
+    expect(birthPlaces('1986: development start, May 200-: activation')).toEqual([])
   })
 })
 
@@ -102,6 +103,17 @@ describe('infoboxValues', () => {
 
   it('Naissance_LieuEnPremier', () => {
     expect(infoboxValues({ born: 'October 25, 1379, Vigrid', region: 'Europe' }, new Map()).nationality).toEqual(['Vigrid', 'Europe'])
+  })
+
+  it('InconnuEnToutesLettres_Marque', () => {
+    expect(infoboxValues({ hair: 'Unknown', occupation: 'Scientist', origin: '?' }, new Map()).unknown).toEqual(['nationality', 'hair'])
+    expect(infoboxValues({ occupation: 'Scientist' }, new Map()).unknown).toBeUndefined()
+    expect(infoboxValues({ born: 'Unknown' }, new Map()).unknown).toBeUndefined()
+  })
+
+  it('AucuneOccupationEnToutesLettres_None', () => {
+    expect(infoboxValues({ occupation: 'None', rank: 'Commander' }, new Map()).occupation).toEqual(['None'])
+    expect(infoboxValues({ occupation: 'N/A', behavior: 'Hostile' }, new Map()).occupation).toEqual(['None'])
   })
 
   it('SansOccupation_GradeOuClasse', () => {

@@ -1,0 +1,27 @@
+# pixeldle : univers les moins remplis (à traiter dans l'ordre)
+
+Recalculé par `npx tsx notes/aEnrichir.ts pixeldle` (`--seuil N`, `--min N` pour changer).
+Les univers d'au moins 5 persos au-dessus de 35 % de cases vides en moyenne, les pires d'abord.
+Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
+Sur tout le quiz : sexe 0 %, espèce 0 %, nationalité 18 %, occupation 25 %, cheveux 40 %.
+
+| Fait | Franchise | Persos | Vide (moy.) | Sexe | Espèce | Nationalité | Occupation | Cheveux |
+|---|---|---|---|---|---|---|---|---|
+| [ ] | Solasta | 12 | **58 %** | 0 % | 0 % | 100 % | 92 % | 100 % |
+| [ ] | Spore | 12 | **55 %** | 0 % | 0 % | 100 % | 83 % | 92 % |
+| [ ] | Myst | 12 | **50 %** | 0 % | 0 % | 100 % | 75 % | 75 % |
+| [ ] | Warhammer | 20 | **49 %** | 0 % | 0 % | 95 % | 60 % | 90 % |
+| [ ] | Rayman | 11 | **47 %** | 0 % | 0 % | 100 % | 91 % | 45 % |
+| [ ] | Zenless Zone Zero | 20 | **45 %** | 0 % | 0 % | 100 % | 80 % | 45 % |
+| [ ] | The First Descendant | 20 | **45 %** | 0 % | 0 % | 80 % | 65 % | 80 % |
+| [ ] | Kirby | 16 | **42 %** | 0 % | 0 % | 100 % | 56 % | 56 % |
+| [ ] | Yo-kai Watch | 12 | **42 %** | 0 % | 0 % | 67 % | 83 % | 58 % |
+| [ ] | Palworld | 9 | **42 %** | 0 % | 0 % | 100 % | 33 % | 78 % |
+| [ ] | Sonic the Hedgehog | 20 | **39 %** | 0 % | 0 % | 95 % | 80 % | 20 % |
+| [ ] | Saturnalia | 15 | **39 %** | 0 % | 0 % | 0 % | 100 % | 93 % |
+| [ ] | Dredge | 12 | **38 %** | 0 % | 0 % | 17 % | 75 % | 100 % |
+| [ ] | We Were Here | 12 | **38 %** | 0 % | 0 % | 100 % | 42 % | 50 % |
+| [ ] | No Man's Sky | 7 | **37 %** | 0 % | 0 % | 0 % | 86 % | 100 % |
+| [ ] | Blue Prince | 12 | **37 %** | 0 % | 0 % | 50 % | 33 % | 100 % |
+| [ ] | Baldur's Gate | 20 | **35 %** | 0 % | 0 % | 70 % | 10 % | 95 % |
+| [ ] | The Sinking City | 12 | **35 %** | 0 % | 0 % | 0 % | 83 % | 92 % |

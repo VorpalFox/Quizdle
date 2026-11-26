@@ -5652,7 +5652,7 @@
    "species": [
     "Human"
    ],
-   "age": 29,
+   "age": 28,
    "height": null,
    "occupation": [
     "Leader",
@@ -5684,7 +5684,8 @@
    "age": 6,
    "height": null,
    "occupation": [
-    "Artisan"
+    "Artisan",
+    "Merchant"
    ],
    "hair": [
     "Blue",
@@ -26044,6 +26045,37 @@
   }
  },
  {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": 162,
+   "occupation": [
+    "Student"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "year": 2014,
+   "studio": "ufotable",
+   "source": "Visual novel"
+  }
+ },
+ {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -26065,37 +26097,6 @@
    "hair": [
     "Blue"
    ],
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Supernatural"
-   ],
-   "year": 2014,
-   "studio": "ufotable",
-   "source": "Visual novel"
-  }
- },
- {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": 162,
-   "occupation": [
-    "Student"
-   ],
-   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -33395,7 +33396,7 @@
    "species": [
     "Vampire"
    ],
-   "age": 20,
+   "age": 70,
    "height": null,
    "occupation": [
     "Officer",
@@ -36746,6 +36747,37 @@
   }
  },
  {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Pillar Man"
+   ],
+   "age": 12000,
+   "height": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Blond"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -36767,37 +36799,6 @@
    "hair": [
     "Black",
     "Brown"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Supernatural"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Pillar Man"
-   ],
-   "age": 12000,
-   "height": null,
-   "occupation": [
-    "None"
-   ],
-   "hair": [
-    "Blond"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -57212,41 +57213,6 @@
   }
  },
  {
-  "id": "36125",
-  "name": "Nao Yasumori",
-  "aliases": [
-   "Yasumori Nao",
-   "安森奈緒",
-   "Yasumori"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Vampire",
-    "Human"
-   ],
-   "age": 24,
-   "height": null,
-   "occupation": [
-    "None"
-   ],
-   "hair": [
-    "Blue"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horror",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume",
-   "source": "Novel"
-  }
- },
- {
   "id": "36127",
   "name": "Tomio Ookawa",
   "aliases": [
@@ -57268,6 +57234,41 @@
    ],
    "hair": [
     "Bald"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horror",
+    "Mystery",
+    "Supernatural",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "36125",
+  "name": "Nao Yasumori",
+  "aliases": [
+   "Yasumori Nao",
+   "安森奈緒",
+   "Yasumori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Vampire",
+    "Human"
+   ],
+   "age": 24,
+   "height": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Blue"
    ],
    "anime": "Shiki",
    "genres": [
@@ -59855,7 +59856,6 @@
    "age": 28,
    "height": null,
    "occupation": [
-    "Scientist",
     "Employee",
     "Leader",
     "Knight",
@@ -68704,6 +68704,37 @@
   }
  },
  {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": 29,
+   "height": null,
+   "occupation": [
+    "Teacher"
+   ],
+   "hair": null,
+   "anime": "Toradora!",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Slice of Life"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF",
+   "source": "Light novel"
+  }
+ },
+ {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -68725,37 +68756,6 @@
    "hair": [
     "Blue"
    ],
-   "anime": "Toradora!",
-   "genres": [
-    "Comedy",
-    "Drama",
-    "Romance",
-    "Slice of Life"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": 29,
-   "height": null,
-   "occupation": [
-    "Teacher"
-   ],
-   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comedy",
