@@ -45,8 +45,17 @@ const FIELDS = {
   // Les armes : comment le personnage se bat (Épéiste, Tireur…), ajouté à son occupation
   weapon: ['weapon', 'weapons', 'weapon(s)', 'equipment', 'armament'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair colors', 'haircolour', 'cheveux'],
+  // L'affiliation : seulement une nation, ajoutée à la nationalité (NATION)
+  affiliation: ['affiliation', 'affiliations', 'allegiance', 'faction'],
+  // Le nom complet, pour son titre de noblesse (NOBLE_TITLE)
+  name: ['name', 'full name', 'fullname'],
 } as const
-export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior'>
+export type EnrichKey = Exclude<keyof typeof FIELDS, 'place' | 'birth' | 'location' | 'rank' | 'behavior' | 'affiliation' | 'name'>
+// Une nation, pas une faction : « Principality of Masgarth », « Kingdom of Hyrule », « Galactic Empire » non (sans « of »)
+const NATION = /^(?:the\s+)?(?:principality|kingdom|empire|republic|grand duchy|duchy|federation|commonwealth|dominion|confederacy|sultanate|khanate|theocracy|shogunate|tsardom|realm)\s+of\s+\S/i
+// Un titre de noblesse en tête du nom, avant le nom lui-même (« Lord Hammond », pas « Lord » tout seul)
+export const NAME_TITLE = 'nameTitle'
+const NOBLE_TITLE = /^(lord|lady|prince|princess|king|queen|duke|duchess|count|countess|baron|baroness|marquis|marquess|emperor|empress)\s+\S/i
 const PREDATOR = 'Predator'
 const HOSTILE = /^(?:hostile|aggressive|predatory)/i
 const MAX_LOCATIONS = 2
@@ -117,7 +126,8 @@ export async function fetchPages(api: string, titles: string[]): Promise<Pages> 
 // Les champs de la 1re infobox de la page qui a au moins un champ qu'on cherche
 export function infobox(wikitext: string): Record<string, string> | null {
   const text = stripImages(wikitext.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>|<ref[\s\S]*?<\/ref>/gi, ''))
-  const wanted = Object.values(FIELDS).flat() as string[]
+  // Pas le nom ni l'affiliation : tout modèle en a (un épisode, une faction), ce n'est pas une infobox de perso
+  const wanted = Object.entries(FIELDS).filter(([key]) => key !== 'name' && key !== 'affiliation').flatMap(([, names]) => names) as string[]
   for (const match of text.matchAll(/\{\{\s*[^|{}\n]*(?:infobox|character|char\b|charbox|charinfo|person|npc|champion|bio|hero|villain|villager|summary)[^|{}\n]*/gi)) {
     const fields = templateFields(text, match.index!)
     if (wanted.some(name => fields[name]))
@@ -300,9 +310,9 @@ function titlesFor(target: EnrichTarget, wiki: Wiki): string[] {
 const rawField = (fields: Record<string, string>, names: readonly string[]) =>
   names.map(name => fields[name]?.trim()).find(value => value) ?? null
 
-export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS, AttributeValue>> {
+export function infoboxValues(fields: Record<string, string>, untranslated: Map<string, string[]>): Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE, AttributeValue>> {
   const note = (key: string, raw: string) => untranslated.set(key, [...untranslated.get(key) ?? [], raw])
-  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS, AttributeValue>> = {}
+  const result: Partial<Record<EnrichKey | typeof UNKNOWN_KEYS | typeof NAME_TITLE, AttributeValue>> = {}
 
   const gender = first(fields, FIELDS.gender)
   if (gender) {
@@ -328,7 +338,10 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   // Tous les champs « pays » et « lieu » s'additionnent : « Pallet Town » (hometown) et « Kanto » (region)
   // Le lieu de naissance d'abord, puis les champs « lieu » et « pays ». Sinon, en dernier recours, là où on le croise.
   const raw = [...present(fields, FIELDS.place), ...present(fields, FIELDS.nationality)]
-  const found = [...present(fields, FIELDS.birth).flatMap(birthPlaces), ...raw.flatMap(parsePlaces)]
+  // Sans lieu, une nation dans l'affiliation (« Principality of Masgarth », Robar Sharp dans Solasta), pas une faction ni
+  // un groupe. Pas en plus d'un vrai lieu : « Kingdom of the Flies » de Liquid Snake est une organisation.
+  const listed = [...present(fields, FIELDS.birth).flatMap(birthPlaces), ...raw.flatMap(parsePlaces)]
+  const found = listed.length > 0 ? listed : present(fields, FIELDS.affiliation).flatMap(parts).filter(part => NATION.test(part)).flatMap(parsePlaces)
   const places = [...new Set(found.length > 0 ? found : present(fields, FIELDS.location).flatMap(parsePlaces).slice(0, MAX_LOCATIONS))].slice(0, MAX_PLACES)
   if (places.length > 0)
     result.nationality = places
@@ -354,6 +367,12 @@ export function infoboxValues(fields: Record<string, string>, untranslated: Map<
   const behavior = first(fields, FIELDS.behavior)
   if (!result.occupation && behavior && HOSTILE.test(firstItem(behavior)))
     result.occupation = [PREDATOR]
+  // Un titre de noblesse en tête du nom (« name = Lord Hammond », Solasta) : Noble ou Royauté, mais en tout dernier
+  // recours, après l'intro (« full name = King Bowser Koopa » : son intro donne aussi Chef). Attribut de travail.
+  const title = NOBLE_TITLE.exec(rawField(fields, FIELDS.name) ?? '')?.[1]
+  const titled = !result.occupation && title ? parseOccupations(title) : []
+  if (titled.length > 0)
+    result[NAME_TITLE] = titled
   const weapons = [...new Set(present(fields, FIELDS.weapon).flatMap(weaponOccupations))]
   if (weapons.length > 0)
     result.weapon = weapons
@@ -441,7 +460,7 @@ export async function enrichFromWikis(targets: EnrichTarget[], wikis: Map<string
         }))
         if (Object.keys(added).length === 0)
           continue
-        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS))
+        for (const key of Object.keys(added).filter(key => key !== UNKNOWN_KEYS && key !== NAME_TITLE))
           stats.filled[key] = (stats.filled[key] ?? 0) + 1
         current.set(target, { ...entry, attributes: { ...entry.attributes, ...added } })
         const filled = Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')

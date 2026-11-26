@@ -717,7 +717,7 @@ const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
   [/\bking\b|\bqueen\b|emperor|empress|monarch|sultan|pharaoh|exalt|head of state|tyrant|dictator|maharajah/, 'Royalty'],
   [/prince|princess|duke|duchess|count\b|countess|marquess|^baron|lord|lady|noble|royal|socialite|sheikh/, 'Noble'],
   [/chieftain|warchief|chief of the|\bclan\b|\btribe\b/, 'Clan leader'],
-  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier/, 'Politician'],
+  [/politician|president|mayor|governor|minister|senator|ambassador|diplomat|head of government|government|bailiff|vizier|council+or/, 'Politician'],
   [/lawyer|attorney|prosecutor|judge/, 'Lawyer'],
   [/ceo\b|chief executive|business|entrepreneur|investor|industrialist|tycoon|magnate|philanthropist|baron|exporter|real estate|charity/, 'Businessperson'],
   [/leader|head of|director|executive|founder|manager|boss|overseer|matron|ringmaster|chairman|supervisor/, 'Leader'],

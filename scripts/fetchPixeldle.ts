@@ -52,7 +52,7 @@ import { aliases, uniqueNameParts, type CharacterName } from './anilist.js'
 import { wikidataGender, wikidataHair, wikidataOccupation } from './wikidata.js'
 import { FRANCHISE_DEVELOPERS, FRANCHISE_GENRES, FRANCHISE_WORLDS, REAL_WORLD, expandSpecies, franchiseUniverses, franchiseWorld, hairOrNone, mergeOccupations, occupationOrChoice, translateDeveloper, translateGender, translateGenre, translateOccupation, translatePlace, translateSpecies, withWorld } from './pixeldleTranslate.js'
 import { findWikis, wikisRecap } from './pixeldleWikis.js'
-import { enrichFromWikis } from './pixeldleEnrich.js'
+import { enrichFromWikis, NAME_TITLE } from './pixeldleEnrich.js'
 import { fillUnknowns } from './unknownValues.js'
 import { citedGame, DEVELOPMENT, fullPages, introAlignment, introFunction, introRoles, introText, pageGames, textHair, wikiCharacters, type WikiCharacter } from './pixeldleWikiCharacters.js'
 import { fetchCharacters, fetchClasses, fetchEnglishLabels, fetchFandomWikiIds, fetchFranchises, fetchGames, fetchLabels, fetchNames, type Character, type Game } from './pixeldleWikidata.js'
@@ -648,6 +648,10 @@ const withIntroOccupation = (entry: Entry): Entry => {
     ({ roles, occupation } = fromIntro(wikipediaIntros.get(entry.id)!))
     source = WIKIPEDIA
   }
+  // Rien dans l'intro : le titre de noblesse du nom (« Lord Hammond »), en tout dernier recours
+  const titled = (entry.attributes[NAME_TITLE] as string[] | null | undefined) ?? []
+  if (occupation.length === 0 && titled.length > 0)
+    return { ...entry, attributes: { ...entry.attributes, occupation: titled } }
   if (occupation.length === 0)
     return entry
   occupationExcerpts.push(`${entry.name} (${entry.attributes.franchise})${source} : ${occupation.join(', ')} ← « ${roles.join(' | ')} »`)
@@ -661,7 +665,7 @@ const warnings = manualApplied.warnings
 const finished = manualApplied.entries.map(entry => {
   const species = expandSpecies(entry.attributes.species)
   // Les armes s'ajoutent à l'occupation (Soldat + Tireur), puis l'attribut de travail disparaît
-  const { weapon, ...attributes } = entry.attributes
+  const { weapon, [NAME_TITLE]: _title, ...attributes } = entry.attributes
   const known = mergeOccupations([...(attributes.occupation as string[] | null) ?? [], ...((weapon as string[] | undefined) ?? []).slice(0, MAX_WEAPONS)]) ?? null
   const occupation = known ?? functionRole(entry) ?? entityRole(entry, species)
   return { ...entry, attributes: { ...attributes, species, occupation: occupationOrChoice(occupation, species), hair: hairOrNone(attributes.hair, species) as string[] | null } }

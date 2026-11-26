@@ -116,6 +116,18 @@ describe('infoboxValues', () => {
     expect(infoboxValues({ occupation: 'N/A', behavior: 'Hostile' }, new Map()).occupation).toEqual(['None'])
   })
 
+  it('TitreDansLeNom_Noble', () => {
+    expect(infoboxValues({ name: 'Lord Hammond', gender: 'Male' }, new Map()).nameTitle).toEqual(['Noble'])
+    expect(infoboxValues({ name: 'Lord Hammond', occupation: 'Soldier' }, new Map()).nameTitle).toBeUndefined()
+    expect(infoboxValues({ name: 'Lord', gender: 'Male' }, new Map()).nameTitle).toBeUndefined()
+    expect(infoboxValues({ occupation: 'Councilor' }, new Map()).occupation).toEqual(['Politician'])
+  })
+
+  it('NationDansLAffiliation_Nationalite', () => {
+    expect(infoboxValues({ affiliation: 'Principality of Masgarth' }, new Map()).nationality).toEqual(['Principality of Masgarth'])
+    expect(infoboxValues({ affiliation: 'The Legacy Council, Adventurers Guild' }, new Map()).nationality).toBeUndefined()
+  })
+
   it('SansOccupation_GradeOuClasse', () => {
     expect(infoboxValues({ rank: 'Commander' }, new Map()).occupation).toEqual(['Soldier'])
     expect(infoboxValues({ occupation: 'Scientist', rank: 'Commander' }, new Map()).occupation).toEqual(['Scientist'])

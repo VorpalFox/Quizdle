@@ -23339,7 +23339,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Kingdom of Kul Tiras"
+   ],
    "occupation": [
     "Sailor",
     "Advisor",
@@ -60647,7 +60649,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -60670,7 +60674,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Principality of Masgarth"
+   ],
    "occupation": [
     "Soldier"
    ],
@@ -60693,7 +60699,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Politician"
+   ],
    "hair": null,
    "franchise": "Solasta",
    "developer": "Tactical Adventures",
@@ -60742,7 +60750,9 @@
    "species": [
     "Elf"
    ],
-   "nationality": null,
+   "nationality": [
+    "Principality of Masgarth"
+   ],
    "occupation": [
     "Royalty"
    ],
@@ -60795,7 +60805,9 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Principality of Masgarth"
+   ],
    "occupation": [
     "Police officer"
    ],
@@ -62694,7 +62706,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -62716,7 +62730,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Blond"
    ],
@@ -62741,7 +62757,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": null,
    "franchise": "We Were Here",
    "developer": "Total Mayhem Games",
@@ -62764,7 +62782,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Brown"
    ],
