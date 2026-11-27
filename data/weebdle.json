@@ -62802,7 +62802,9 @@
     "Noble",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -62901,7 +62903,10 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Assistant"
+   ],
    "hair": [
     "White"
    ],
@@ -63254,7 +63259,9 @@
    "height": null,
    "occupation": [
     "Student",
-    "Cheater"
+    "Cheater",
+    "Writer",
+    "Artist"
    ],
    "hair": [
     "Black"

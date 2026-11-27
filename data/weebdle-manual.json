@@ -768,12 +768,22 @@
     ]
    }
   },
+  "189232": {
+   "_nom": "Ha Tuntian",
+   "_raison": "un chien : pas de cheveux",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "219194": {
    "_nom": "Xuan Ku",
    "_note": "gardé malgré la limite de The Daily Life of the Immortal King ; l'auteur dans l'histoire, il manipule l'intrigue",
    "occupation": {
     "plus": [
-     "Cheater"
+     "Cheater",
+     "Writer"
     ]
    }
   },
