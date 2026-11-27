@@ -575,14 +575,17 @@ export function nobleTitles(value: string | null): string[] | null {
   return found.length > 0 ? found : null
 }
 
-// L'espèce que dit le statut : un fantôme (« Spirit », Mamoru Yotsuya dans Mieruko-chan ; « Deceased (appears as
-// ghost) ») ou un mort-vivant (« Alive (Undead) », Sunako dans Shiki). Pas un spoil : on le voit comme ça à l'écran.
+// L'espèce que dit le statut, le mot du wiki : un esprit (« Spirit », les Shrine Spirits de Mieruko-chan), un fantôme
+// (« Deceased (appears as ghost) ») ou un mort-vivant (« Alive (Undead) », Sunako dans Shiki). Pas un spoil : on le
+// voit comme ça à l'écran.
 export function statusSpecies(value: string | null): string[] | null {
   if (!value)
     return null
   if (/\bundead\b/i.test(value))
     return ['Undead']
-  return /^\s*spirit\s*$|\bghost\b/i.test(value) ? ['Ghost'] : null
+  if (/^\s*spirit\s*$/i.test(value))
+    return ['Spirit']
+  return /\bghost\b/i.test(value) ? ['Ghost'] : null
 }
 
 const mergedLists = (a: string[] | null, b: string[] | null) => a || b ? [...new Set([...a ?? [], ...b ?? []])] : null

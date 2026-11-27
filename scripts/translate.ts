@@ -566,8 +566,8 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
 
 // Pas des espèces qu'on hérite : une Ombre copie une seule personne (Summer Time Rendering), une race d'ALO est un avatar
 // de jeu (SAO). Fée reste héritable : c'est une famille d'espèces (une exception, comme la mère de Kirito, va à la main).
-// Un fantôme ou un mort-vivant non plus : c'est ce qui lui est arrivé (le père de Miko, Mieruko-chan), pas sa famille.
-const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Ghost', 'Undead'])
+// Un esprit, un fantôme ou un mort-vivant non plus : c'est ce qui lui est arrivé (le père de Miko, Mieruko-chan), pas sa famille.
+const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Spirit', 'Ghost', 'Undead'])
 // Pas un nom de famille : « Miranjo no Haha » (la mère de Miranjo), « Kage Haha »
 const NOT_SURNAME = /^(?:haha|chichi|ani|ane|otouto|imouto|musume|musuko|sensei)$/i
 

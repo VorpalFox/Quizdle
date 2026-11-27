@@ -185,7 +185,7 @@ describe('sameName', () => {
   })
 
   it('StatutFantomeOuMortVivant_LEspece', () => {
-    expect(statusSpecies('Spirit')).toEqual(['Ghost'])
+    expect(statusSpecies('Spirit')).toEqual(['Spirit'])
     expect(statusSpecies('Deceased (appears as ghost)')).toEqual(['Ghost'])
     expect(statusSpecies('Alive (Undead)')).toEqual(['Undead'])
     expect(statusSpecies('Exorcised by Shrine Spirits')).toBeNull()
