@@ -63045,7 +63045,9 @@
    "occupation": [
     "God"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -63074,7 +63076,9 @@
    ],
    "age": 35,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Homemaker"
+   ],
    "hair": [
     "Brown"
    ],
@@ -63177,7 +63181,11 @@
    ],
    "age": 16,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Student council president",
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],
@@ -63211,7 +63219,7 @@
    "age": 100,
    "height": null,
    "occupation": [
-    "Leader"
+    "Teacher"
    ],
    "hair": [
     "Black"
@@ -63245,9 +63253,12 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Student"
+    "Student",
+    "Cheater"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",

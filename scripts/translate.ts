@@ -98,6 +98,8 @@ const RULES: [RegExp, string | null][] = [
   // le domestique en chef (« Head servant of the Kirishiki family »), le garde du corps d'un prince
   [/^students? (?:of|at)\b/, 'Pupil'],
   [/^head (?:servant|maid|butler)\b/, 'Manservant'],
+  // Le prof principal d'une classe (« Elite Class Head Teacher », Pan Shengcong à Immortal King) : un prof, pas un chef
+  [/\bhead ?teacher\b/, 'Teacher'],
   [/\broyal (?:body)?guard/, 'Guard'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Demon Slayer'],

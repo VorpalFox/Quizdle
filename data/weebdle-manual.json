@@ -770,7 +770,12 @@
   },
   "219194": {
    "_nom": "Xuan Ku",
-   "_note": "gardé malgré la limite de The Daily Life of the Immortal King"
+   "_note": "gardé malgré la limite de The Daily Life of the Immortal King ; l'auteur dans l'histoire, il manipule l'intrigue",
+   "occupation": {
+    "plus": [
+     "Cheater"
+    ]
+   }
   },
   "409273": {
    "_nom": "Liuyue Jiang",
