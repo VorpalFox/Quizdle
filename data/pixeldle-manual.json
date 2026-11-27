@@ -7416,102 +7416,6 @@
    }
   },
   {
-   "id": "tfd-ajax",
-   "name": "Ajax",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-viessa",
-   "name": "Viessa",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-lepic",
-   "name": "Lepic",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-freyna",
-   "name": "Freyna",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-sharen",
-   "name": "Sharen",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-gley",
-   "name": "Gley",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-valby",
-   "name": "Valby",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-blair",
-   "name": "Blair",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
    "id": "portal-caroline",
    "name": "Caroline",
    "attributes": {
@@ -7770,6 +7674,16 @@
   },
   "The First Descendant": {
    "_raison": "moitié Descendants (jouables), moitié PNJ",
+   "pages": [
+    "Ajax",
+    "Viessa",
+    "Lepic",
+    "Freyna",
+    "Sharen",
+    "Gley",
+    "Valby",
+    "Blair"
+   ],
    "limit": 20
   },
   "Saturnalia": {

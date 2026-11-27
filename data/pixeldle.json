@@ -67796,6 +67796,184 @@
   }
  },
  {
+  "id": "wiki-the-first-descendant-ajax",
+  "name": "Ajax",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-viessa",
+  "name": "Viessa",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-lepic",
+  "name": "Lepic",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-freyna",
+  "name": "Freyna",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-sharen",
+  "name": "Sharen",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-gley",
+  "name": "Gley",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-valby",
+  "name": "Valby",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-blair",
+  "name": "Blair",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
   "id": "wiki-the-first-descendant-alpha",
   "name": "Alpha",
   "aliases": [],
@@ -71019,174 +71197,6 @@
    ],
    "year": 2007,
    "franchise": "Age of Empires III"
-  }
- },
- {
-  "id": "tfd-ajax",
-  "name": "Ajax",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-viessa",
-  "name": "Viessa",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-lepic",
-  "name": "Lepic",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-freyna",
-  "name": "Freyna",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-sharen",
-  "name": "Sharen",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-gley",
-  "name": "Gley",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-valby",
-  "name": "Valby",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-blair",
-  "name": "Blair",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
   }
  },
  {

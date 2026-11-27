@@ -584,7 +584,8 @@ const OCCUPATION_RULES: [RegExp, string | null][] = [
   [/tueur|meurtrier/, 'Killer'],
   [/voleur|braqueur|escroc|brigand|bandit|^rogue$/, 'Thief'],
   [/pirate|corsaire/, 'Pirate'],
-  [/gangster|chef de bande|yakuza|trafiquant|dealer|contrebandier|proxénète|usurier|hors-la-loi|criminel|conspirateur|incendiaire/, 'Criminal'],
+  // Pas un rôle de jeu (« DoT Dealer », « Close-Range Dealer », « damage dealer » : The First Descendant)
+  [/gangster|chef de bande|yakuza|trafiquant|(?<!(?:dot|damage|utility|range|dps|burst|area|sub)[ -])dealer|contrebandier|proxénète|usurier|hors-la-loi|criminel|conspirateur|incendiaire/, 'Criminal'],
   [/terroriste/, 'Terrorist'],
   [/mercenaire/, 'Mercenary'],
   // Combat

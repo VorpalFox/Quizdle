@@ -166,7 +166,8 @@ const RULES: [RegExp, string | null][] = [
   // « TV personality », pas le caractère (« gained a different personality »)
   [/\b(?:idol|celebrity|influencer|youtuber|tiktoker|streamer|(?:tv|television|radio|media|internet|online) personality|talk show host|radio host|entertainer|actor|actress)\b/, 'Celebrity'],
   [/\bconsultant\b/, 'Advisor'],
-  [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Trader'],
+  // Pas un rôle de jeu (« DoT Dealer », « Close-Range Dealer » : The First Descendant)
+  [/merchant|trader|salesman|saleswoman|(?<!(?:dot|damage|utility|range|dps|burst|area|sub)[ -])dealer|businessman|businesswoman|broker|peddler/, 'Trader'],
   [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientist'],
   [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Doctor'],
   [/writer|author|editor|novelist|poet|mangaka/, 'Writer'],
