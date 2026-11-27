@@ -5697,7 +5697,7 @@
    "species": [
     "Human"
    ],
-   "age": 29,
+   "age": 28,
    "height": null,
    "occupation": [
     "Leader",
@@ -5729,7 +5729,8 @@
    "age": 6,
    "height": null,
    "occupation": [
-    "Artisan"
+    "Artisan",
+    "Merchant"
    ],
    "hair": [
     "Blue",
@@ -26318,6 +26319,37 @@
   }
  },
  {
+  "id": "21024",
+  "name": "Ayako Mitsuzuri",
+  "aliases": [
+   "Mitsuzuri Ayako",
+   "美綴綾子",
+   "Mitsuzuri"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": 162,
+   "occupation": [
+    "Student"
+   ],
+   "hair": null,
+   "anime": "Fate/stay night: Unlimited Blade Works",
+   "genres": [
+    "Action",
+    "Fantasy",
+    "Supernatural"
+   ],
+   "year": 2014,
+   "studio": "ufotable",
+   "source": "Visual novel"
+  }
+ },
+ {
   "id": "501",
   "name": "Shinji Matou",
   "aliases": [
@@ -26340,37 +26372,6 @@
    "hair": [
     "Blue"
    ],
-   "anime": "Fate/stay night: Unlimited Blade Works",
-   "genres": [
-    "Action",
-    "Fantasy",
-    "Supernatural"
-   ],
-   "year": 2014,
-   "studio": "ufotable",
-   "source": "Visual novel"
-  }
- },
- {
-  "id": "21024",
-  "name": "Ayako Mitsuzuri",
-  "aliases": [
-   "Mitsuzuri Ayako",
-   "美綴綾子",
-   "Mitsuzuri"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21024-IMc09tprmaQe.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": 162,
-   "occupation": [
-    "Student"
-   ],
-   "hair": null,
    "anime": "Fate/stay night: Unlimited Blade Works",
    "genres": [
     "Action",
@@ -37146,6 +37147,37 @@
   }
  },
  {
+  "id": "21965",
+  "name": "Wamuu",
+  "aliases": [
+   "ワムウ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Pillar Man"
+   ],
+   "age": 12000,
+   "height": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Blond"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "year": 2012,
+   "studio": "david production",
+   "source": "Manga"
+  }
+ },
+ {
   "id": "18062",
   "name": "Will A. Zeppeli",
   "aliases": [
@@ -37167,37 +37199,6 @@
    "hair": [
     "Black",
     "Brown"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Supernatural"
-   ],
-   "year": 2012,
-   "studio": "david production",
-   "source": "Manga"
-  }
- },
- {
-  "id": "21965",
-  "name": "Wamuu",
-  "aliases": [
-   "ワムウ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21965-waQaIDkSC77a.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Pillar Man"
-   ],
-   "age": 12000,
-   "height": null,
-   "occupation": [
-    "Fighter"
-   ],
-   "hair": [
-    "Blond"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -44702,6 +44703,7 @@
   "aliases": [
    "Greyrat Aisha",
    "アイシャ・グレイラット",
+   "Aisha",
    "Greyrat"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145459-qCq1vKZtxkT3.png",
@@ -56148,7 +56150,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Soldier",
+    "Officer"
    ],
    "hair": [
     "Brown"
@@ -56247,7 +56251,9 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Officer",
     "Marksman",
+    "Soldier",
     "Fighter"
    ],
    "hair": [
@@ -56270,6 +56276,7 @@
    "Weiss Johann Matheus",
    "マテウス・ヨハン・ヴァイス",
    "Matheus",
+   "Johann",
    "Weiss"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135058-dZPLFV5RES9P.jpg",
@@ -56282,7 +56289,9 @@
    "height": null,
    "occupation": [
     "Captain",
-    "Leader"
+    "Officer",
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -56341,38 +56350,9 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135044-uoi8pqlghYgJ.png",
   "attributes": {
-   "gender": "Female",
+   "gender": "Genderless",
    "species": [
     "Deity"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Saga of Tanya the Evil",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "year": 2017,
-   "studio": "NUT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "135041",
-  "name": "Warren Grantz",
-  "aliases": [
-   "Grantz Warren",
-   "ヴォーレン・グランツ",
-   "Warren",
-   "Grantz"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135041-h12RTaL7PRTM.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
    ],
    "age": null,
    "height": null,
@@ -56440,7 +56420,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Leader"
+    "Officer",
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -56473,7 +56455,9 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Leader"
+    "Officer",
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -56540,7 +56524,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
    "genres": [
@@ -56553,43 +56539,15 @@
   }
  },
  {
-  "id": "135055",
-  "name": "Aisha Schubert",
+  "id": "135038",
+  "name": "Séverin Bientôt",
   "aliases": [
-   "Schubert Aisha",
-   "アイシャ . シューベルト",
-   "Schubert"
+   "Bientôt Séverin",
+   "セヴラン・ビアント",
+   "Séverin",
+   "Bientôt"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135055-4PUKMsOZ36nM.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Saga of Tanya the Evil",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "year": 2017,
-   "studio": "NUT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "135059",
-  "name": "Maximilian Johann Von Ugar",
-  "aliases": [
-   "Ugar Von Johann Maximilian",
-   "マクシミリアン・ヨハン・フォン・ウーガ",
-   "Maximilian",
-   "Ugar"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135059-Kqq4cq7ZodYX.jpg",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135038-DrBRjpwyv4WJ.jpg",
   "attributes": {
    "gender": "Male",
    "species": [
@@ -56599,9 +56557,47 @@
    "height": null,
    "occupation": [
     "Officer",
-    "Soldier"
+    "Captain",
+    "Marksman",
+    "Soldier",
+    "Leader",
+    "Fighter"
    ],
    "hair": null,
+   "anime": "Saga of Tanya the Evil",
+   "genres": [
+    "Action",
+    "Fantasy"
+   ],
+   "year": 2017,
+   "studio": "NUT",
+   "source": "Light novel"
+  }
+ },
+ {
+  "id": "135042",
+  "name": "Pierre-Michel De Lugo",
+  "aliases": [
+   "Lugo De Pierre-Michel",
+   "ピエール・ミシェル＝ド・ルーゴ",
+   "Pierre-Michel",
+   "Lugo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135042-N2vRPJ6qICiw.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "age": 50,
+   "height": null,
+   "occupation": [
+    "Leader",
+    "Armies of the Republic"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -56631,106 +56627,16 @@
    "height": null,
    "occupation": [
     "Captain",
+    "Officer",
     "Mage",
     "Marksman",
     "Leader",
+    "Soldier",
     "Fighter"
    ],
    "hair": [
     "Black"
    ],
-   "anime": "Saga of Tanya the Evil",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "year": 2017,
-   "studio": "NUT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "135054",
-  "name": "Kurst Von Walhorf",
-  "aliases": [
-   "Walhorf Von Kurst",
-   "クルスト・フォン・ヴァルホルフ",
-   "Kurst",
-   "Walhorf"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135054-Xg6XsE23pLfg.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Mage"
-   ],
-   "hair": null,
-   "anime": "Saga of Tanya the Evil",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "year": 2017,
-   "studio": "NUT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "135050",
-  "name": "Mortiz-Paul Von Hans",
-  "aliases": [
-   "Hans Von Mortiz-Paul",
-   "モーリッツ＝ポール・フォン・ハンス",
-   "Mortiz-Paul"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135050-ZKQAFvgBz3Pm.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Leader"
-   ],
-   "hair": null,
-   "anime": "Saga of Tanya the Evil",
-   "genres": [
-    "Action",
-    "Fantasy"
-   ],
-   "year": 2017,
-   "studio": "NUT",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "135051",
-  "name": "Heinrich Schreise",
-  "aliases": [
-   "Schreise Heinrich",
-   "ハンリヒ・ツー・シュライゼ",
-   "Heinrich",
-   "Schreise"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135051-rUwrmge1ADaD.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Leader"
-   ],
-   "hair": null,
    "anime": "Saga of Tanya the Evil",
    "genres": [
     "Action",
@@ -57811,41 +57717,6 @@
   }
  },
  {
-  "id": "36125",
-  "name": "Nao Yasumori",
-  "aliases": [
-   "Yasumori Nao",
-   "安森奈緒",
-   "Yasumori"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Vampire",
-    "Human"
-   ],
-   "age": 24,
-   "height": null,
-   "occupation": [
-    "None"
-   ],
-   "hair": [
-    "Blue"
-   ],
-   "anime": "Shiki",
-   "genres": [
-    "Horror",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2010,
-   "studio": "Daume",
-   "source": "Novel"
-  }
- },
- {
   "id": "36127",
   "name": "Tomio Ookawa",
   "aliases": [
@@ -57867,6 +57738,41 @@
    ],
    "hair": [
     "Bald"
+   ],
+   "anime": "Shiki",
+   "genres": [
+    "Horror",
+    "Mystery",
+    "Supernatural",
+    "Thriller"
+   ],
+   "year": 2010,
+   "studio": "Daume",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "36125",
+  "name": "Nao Yasumori",
+  "aliases": [
+   "Yasumori Nao",
+   "安森奈緒",
+   "Yasumori"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/36125.jpg",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Vampire",
+    "Human"
+   ],
+   "age": 24,
+   "height": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Blue"
    ],
    "anime": "Shiki",
    "genres": [
@@ -60492,9 +60398,9 @@
    "age": 28,
    "height": null,
    "occupation": [
-    "Scientist",
     "Employee",
     "Leader",
+    "Scientist",
     "Knight",
     "Fighter"
    ],
@@ -69448,6 +69354,38 @@
   }
  },
  {
+  "id": "16402",
+  "name": "Yuri Koigakubo",
+  "aliases": [
+   "Koigakubo Yuri",
+   "恋ヶ窪ゆり",
+   "Koigakubo"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": 29,
+   "height": null,
+   "occupation": [
+    "Teacher"
+   ],
+   "hair": null,
+   "anime": "Toradora!",
+   "genres": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Slice of Life"
+   ],
+   "year": 2008,
+   "studio": "J.C.STAFF",
+   "source": "Light novel"
+  }
+ },
+ {
   "id": "17823",
   "name": "Kouji Haruta",
   "aliases": [
@@ -69469,38 +69407,6 @@
    "hair": [
     "Blue"
    ],
-   "anime": "Toradora!",
-   "genres": [
-    "Comedy",
-    "Drama",
-    "Romance",
-    "Slice of Life"
-   ],
-   "year": 2008,
-   "studio": "J.C.STAFF",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "16402",
-  "name": "Yuri Koigakubo",
-  "aliases": [
-   "Koigakubo Yuri",
-   "恋ヶ窪ゆり",
-   "Koigakubo"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16402-hNoi2ydS82X6.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": 29,
-   "height": null,
-   "occupation": [
-    "Teacher"
-   ],
-   "hair": null,
    "anime": "Toradora!",
    "genres": [
     "Comedy",

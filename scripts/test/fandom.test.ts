@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -46,6 +46,19 @@ describe('fandomValues', () => {
     expect(fandomValues(fandomInfobox('{{Character|Gender=Male|Postion=Private Aichi Symbiosis Academy (Student)}}')!).occupation).toEqual(['Student'])
     expect(fandomValues(fandomInfobox('{{Character|position = Member of the Supreme Five Swords,Private Aichi Symbiosis Academy (Student)}}')!).occupation)
       .toEqual(['Member of the Supreme Five Swords', 'Student'])
+  })
+
+  it('GradeMilitaireSansMetier_LeGrade', () => {
+    const visha = fandomValues(fandomInfobox('{{Character Box|Name=Visha|military_rank=Corporal <small>(Former)</small><br>1st Lieutenant <small>(Current)</small>}}')!)
+    expect(visha.occupation).toEqual(['Corporal', '1st Lieutenant'])
+    expect((visha.occupation as string[]).map(translateOccupation)).toEqual(['Soldier', 'Officer'])
+    expect(fandomValues(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer|Military Rank=Chief Engineer}}')!).occupation).toEqual(['Engineer'])
+  })
+
+  it('GradeSeul_LIntroSAjoute', () => {
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Military Rank=First Lieutenant}}')!)).toBe(true)
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer|Military Rank=Chief Engineer}}')!)).toBe(false)
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer}}')!)).toBe(false)
   })
 
   it('NomDeLEcoleSeul_Eleve', () => {

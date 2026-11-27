@@ -110,9 +110,10 @@ const WIKIS: Record<string, string[] | null> = {
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
 const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
-  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
+  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours. Le grade militaire
+  // (Youjo Senki, 86) sans métier : Officer, Soldier… Pas « rank » tout court, ailleurs c'est un classement (One Punch Man).
   occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
-    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion','previous occupation', 'former occupation', 'f. occupation'],
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion', 'military rank', 'previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
@@ -462,6 +463,12 @@ function numberedField(fields: Record<string, string>, names: readonly string[])
   return values.filter(value => value.trim()).join(', ') || fields[name]!
 }
 
+// L'occupation de l'infobox n'est que le grade (« Military Rank ») : l'intro s'ajoute quand même, elle dit le rôle
+// (Wilibald Koenig, Youjo Senki : « 3rd Company commander » → Leader en plus d'Officer)
+const RANK_FIELD = 'military rank'
+export const rankOnly = (fields: Record<string, string>) =>
+  fields[RANK_FIELD] !== undefined && FIELDS.occupation.every(name => name === RANK_FIELD || fields[name.replace(/_/g, ' ')] === undefined)
+
 // « Unknown » ne remplit rien : c'est la marque de fandomUnknowns, une autre source peut encore donner la valeur
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
@@ -750,7 +757,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord).
     // Et l'occupation, sans infobox ni intro qui en parle : le début des sections du perso (sectionOccupations).
-    const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) ? introOccupations(pages[title]!) : null]))
+    const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) || rankOnly(infoboxOf(title) ?? {}) ? introOccupations(pages[title]!) : null]))
     const hairless = found.filter(({ values }) => isEmpty(values.hair))
     const silent = found.filter(({ target, title }) => intros.get(target)?.occupation.length === 0 && !title.includes('#'))
     // Et le sexe, que ni AniList ni l'infobox ne donnent : les pronoms de la page (Hamdo, Abelia, les persos de BNA)

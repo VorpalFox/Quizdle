@@ -42,7 +42,13 @@
   "121461",
   "121451",
   "297776",
-  "297774"
+  "297774",
+  "135054",
+  "135050",
+  "135051",
+  "135041",
+  "135055",
+  "135059"
  ],
  "edit": {
   "80": {
@@ -349,8 +355,13 @@
   "131041": {
    "_nom": "Gabiru"
   },
+  "135038": {
+   "_nom": "Séverin Bientôt",
+   "_note": "gardé malgré la limite de Saga of Tanya the Evil"
+  },
   "135044": {
    "_nom": "Sonzai X",
+   "gender": "Genderless",
    "species": {
     "plus": [
      "Deity"
@@ -718,7 +729,8 @@
  "add": [],
  "limits": {
   "The Reincarnation of the Strongest Exorcist in Another World": 18,
-  "The World God Only Knows": 15
+  "The World God Only Knows": 15,
+  "Saga of Tanya the Evil": 16
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
@@ -727,6 +739,7 @@
   "264680": "Kage's Mother",
   "121452": "Nono Mozunono",
   "121448": "Chouka U Baragasaki",
-  "201555": "The Nameless Boy"
+  "201555": "The Nameless Boy",
+  "135053": "List of Minor Characters#Ihlen Schwarzkopf"
  }
 }

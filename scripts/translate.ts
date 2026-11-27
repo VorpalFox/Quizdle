@@ -17,7 +17,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'principal': 'Principal', 'delving instructor': 'Instructor', 'student council president': 'Student council president',
   // Armée, police
   'general': 'General', 'briggs general': 'General', 'lieutenant': 'Lieutenant', 'sergeant': 'Sergeant', 'officer': 'Officer',
-  'military officer': 'Officer', 'soldier': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
+  'military officer': 'Officer', 'soldier': 'Soldier', 'corporal': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
   'survey corps': 'Survey Corps', '104th training corps': 'Recruit', '104th trainees squad': 'Recruit',
   'police officer': 'Police officer', 'policeman': 'Police officer', 'spy': 'Spy', 'informant': 'Informant',
   'mercenary': 'Mercenary', 'assassin': 'Assassin',

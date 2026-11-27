@@ -11,7 +11,6 @@ Sur tout le quiz : sexe 1 %, espèce 10 %, âge 42 %, taille 56 %, occupation 16
 | [ ] | Now and Then, Here and There | 11 | **49 %** | 0 % | 0 % | 100 % | 100 % | 27 % | 64 % |
 | [ ] | Paradise Kiss | 20 | **47 %** | 0 % | 0 % | 65 % | 100 % | 55 % | 60 % |
 | [ ] | Tokyo Ravens | 16 | **47 %** | 0 % | 94 % | 44 % | 81 % | 13 % | 50 % |
-| [ ] | Saga of Tanya the Evil | 20 | **46 %** | 10 % | 0 % | 95 % | 95 % | 20 % | 55 % |
 | [ ] | The Daily Life of the Immortal King | 20 | **46 %** | 0 % | 45 % | 50 % | 85 % | 45 % | 50 % |
 | [ ] | Uncle from Another World | 15 | **46 %** | 0 % | 27 % | 67 % | 100 % | 33 % | 47 % |
 | [ ] | Tsubasa RESERVoir CHRoNiCLE | 20 | **45 %** | 0 % | 55 % | 30 % | 95 % | 40 % | 50 % |
