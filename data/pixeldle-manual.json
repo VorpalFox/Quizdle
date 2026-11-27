@@ -3570,6 +3570,24 @@
     ]
    }
   },
+  "wiki-kirby-galacta-knight": {
+   "_nom": "Galacta Knight",
+   "species": {
+    "plus": [
+     "Unknown"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Swordsman"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "Q613241": {
    "_nom": "Kirby",
    "occupation": {

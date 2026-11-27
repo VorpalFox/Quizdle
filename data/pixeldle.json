@@ -47842,12 +47842,16 @@
   ],
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Unknown"
+   ],
    "nationality": null,
    "occupation": [
-    "Fighter"
+    "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
