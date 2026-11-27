@@ -7178,9 +7178,9 @@
   "id": "Q613241",
   "name": "Kirby",
   "aliases": [
-   "Kirby of the Stars",
    "Nintendo Kirby",
-   "Kirby des Étoiles"
+   "Kirby des Étoiles",
+   "Kirby of the Stars"
   ],
   "attributes": {
    "gender": "Male",
@@ -12729,9 +12729,9 @@
   "name": "Lord Richard Croft",
   "aliases": [
    "Croft Richard Lord",
+   "Richard James Croft",
    "Lord Richard James Croft, Ph.D",
-   "Richard Croft",
-   "Richard James Croft"
+   "Richard Croft"
   ],
   "attributes": {
    "gender": "Male",
@@ -21259,12 +21259,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
+   "The Spy",
    "Spy (Team Fortress 2)",
    "Spy (TF2)",
    "Blu Spy",
    "Red Spy",
-   "TF2 Spy",
-   "The Spy"
+   "TF2 Spy"
   ],
   "attributes": {
    "gender": "Male",
@@ -45593,6 +45593,8 @@
     "Monde réel"
    ],
    "occupation": [
+    "Fighter",
+    "Servant",
     "Actor",
     "Employee",
     "Driver",
@@ -45602,8 +45604,6 @@
     "Waiter",
     "Guard",
     "Worker",
-    "Fighter",
-    "Servant",
     "Celebrity",
     "Artist"
    ],

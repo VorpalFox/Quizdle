@@ -80,7 +80,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Dr. STONE')]: ['dr-stone', 'drstone'],
   [normalize('One-Punch Man')]: ['onepunchman'],
   [normalize('Neon Genesis Evangelion')]: ['evangelion'],
-  [normalize('Bakemonogatari')]: ['bakemonogatari1', 'monogatari'],
+  [normalize('Bakemonogatari')]: ['bakemonogatari'],
   [normalize('HAIKYU!!')]: ['haikyuu'],
   [normalize('My Teen Romantic Comedy SNAFU')]: ['oregairu', 'yahari-ore-no-seishun-love-comedy-wa-machigatteiru'],
   [normalize('OSHI NO KO')]: ['oshi-no-ko', 'oshinoko'],
@@ -105,7 +105,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('GTO: Great Teacher Onizuka')]: ['gto', 'great-teacher-onizuka'],
   [normalize('DAN DA DAN')]: ['dandadan'],
   [normalize('Solo Leveling')]: ['solo-leveling', 'sololeveling'],
-  [normalize('Black Lagoon')]: ['blacklagoon'],
+  [normalize('Black Lagoon')]: ['lagooncompany'],
   [normalize('The World God Only Knows')]: ['kaminomi'],
 }
 
@@ -178,9 +178,11 @@ function guesses(titles: string[]): string[] {
 
 async function findWiki(anime: string, titles: string[], wikis: Record<string, string | null>): Promise<string | null> {
   const key = normalize(anime)
-  if (key in wikis)
-    return wikis[key]!
   const listed = WIKIS[key]
+  // Le wiki du cache, sauf s'il n'est plus dans la liste écrite à la main (FMA Brotherhood, passé sur fma : le cache
+  // gardait l'ancien wiki trouvé au hasard)
+  if (key in wikis && (listed === undefined || (listed === null ? wikis[key] === null : listed.includes(wikis[key]!))))
+    return wikis[key]!
   const candidates = listed === null ? [] : listed ?? guesses([anime, ...titles])
   let found: string | null = null
   for (const candidate of candidates) {

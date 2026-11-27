@@ -2512,7 +2512,9 @@
   "attributes": {
    "gender": "Female",
    "age": 598,
-   "occupation": null,
+   "occupation": [
+    "Noble"
+   ],
    "hair": [
     "Blond"
    ],
@@ -2938,10 +2940,13 @@
    "occupation": [
     "Student",
     "Exorcist",
+    "Police officer",
     "Monster hunter",
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Bakemonogatari",
    "genres": [
     "Comedy",
