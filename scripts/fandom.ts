@@ -69,6 +69,8 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Mob Psycho 100')]: ['mob-psycho-100', 'mobpsycho100'],
   [normalize('Frieren: Beyond Journey’s End')]: ['frieren'],
   [normalize('Fullmetal Alchemist')]: ['fma', 'fullmetalalchemist'],
+  // Pas fullmetal-alchemist-brotherhood : une galerie d'images, sans infobox
+  [normalize('Fullmetal Alchemist: Brotherhood')]: ['fma'],
   [normalize('Demon Slayer: Kimetsu no Yaiba')]: ['kimetsu-no-yaiba', 'demonslayer'],
   [normalize('My Dress-Up Darling')]: ['sono-bisque-doll-wa-koi-wo-suru', 'my-dress-up-darling'],
   [normalize('My Hero Academia')]: ['bokunoheroacademia', 'myheroacademia'],

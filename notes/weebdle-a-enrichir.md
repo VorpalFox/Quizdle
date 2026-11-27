@@ -3,7 +3,7 @@
 Recalculé par `npx tsx notes/aEnrichir.ts weebdle` (`--seuil N` pour changer).
 Les univers au-dessus de 40 % de cases vides en moyenne, les pires d'abord.
 Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
-Sur tout le quiz : sexe 1 %, espèce 8 %, âge 41 %, taille 56 %, occupation 14 %, cheveux 19 %.
+Sur tout le quiz : sexe 1 %, espèce 8 %, âge 40 %, taille 55 %, occupation 14 %, cheveux 19 %.
 
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
@@ -20,4 +20,3 @@ Sur tout le quiz : sexe 1 %, espèce 8 %, âge 41 %, taille 56 %, occupation 14 
 | [ ] | Tsubasa RESERVoir CHRoNiCLE | 20 | **41 %** | 0 % | 55 % | 15 % | 95 % | 35 % | 45 % |
 | [ ] | Dororo | 20 | **40 %** | 0 % | 0 % | 90 % | 95 % | 35 % | 20 % |
 | [ ] | Fullmetal Alchemist: Brotherhood | 20 | **40 %** | 0 % | 30 % | 40 % | 100 % | 15 % | 55 % |
-| [ ] | No Game, No Life | 18 | **40 %** | 0 % | 39 % | 44 % | 78 % | 39 % | 39 % |

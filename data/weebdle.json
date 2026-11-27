@@ -28629,9 +28629,14 @@
    "height": null,
    "occupation": [
     "Alchemist",
-    "Scientist"
+    "Mage",
+    "Lancer",
+    "Scientist",
+    "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -28663,9 +28668,13 @@
    "height": null,
    "occupation": [
     "Alchemist",
+    "Fighter",
+    "Lancer",
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -28734,7 +28743,9 @@
    "age": 15,
    "height": null,
    "occupation": [
-    "Mechanic"
+    "Mechanic",
+    "Marksman",
+    "Fighter"
    ],
    "hair": [
     "Blond"
@@ -28773,7 +28784,8 @@
     "Noble",
     "Martial artist",
     "Swordsman",
-    "Servant",
+    "Leader",
+    "Royalty",
     "Fighter"
    ],
    "hair": [
@@ -28813,7 +28825,8 @@
     "Soldier"
    ],
    "hair": [
-    "Black"
+    "Black",
+    "Green"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -28849,10 +28862,12 @@
     "Revolutionary",
     "Soldier",
     "Swordsman",
-    "Noble",
+    "Leader",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -28880,15 +28895,18 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 30,
    "height": null,
    "occupation": [
     "Alchemist",
     "Soldier",
-    "Officer",
+    "Fighter",
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Bald",
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -28912,12 +28930,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b651-S4mzVOTMzej6.png",
   "attributes": {
    "gender": "Other",
-   "species": null,
-   "age": null,
+   "species": [
+    "Homunculus"
+   ],
+   "age": 200,
    "height": null,
    "occupation": null,
    "hair": [
-    "Black"
+    "Black",
+    "Blond"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -28943,7 +28964,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Homunculus"
    ],
    "age": 59,
    "height": null,
@@ -28988,7 +29010,10 @@
    "age": 35,
    "height": null,
    "occupation": [
-    "Leader"
+    "Alchemist",
+    "Butcher",
+    "Homemaker",
+    "Scientist"
    ],
    "hair": [
     "Black"
@@ -29028,6 +29053,7 @@
     "Noble",
     "Martial artist",
     "Alchemist",
+    "Ninja",
     "Fighter",
     "Scientist"
    ],
@@ -29066,9 +29092,12 @@
    "occupation": [
     "Surgeon",
     "Mechanic",
+    "Scientist",
     "Doctor"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -29098,7 +29127,9 @@
    "age": 5,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
     "Action",
@@ -29121,10 +29152,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/5411.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Homunculus"
+   ],
    "age": 160,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Target Locator",
+    "Evidence Eraser for Father"
+   ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -29150,7 +29186,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Chimera"
    ],
    "age": null,
    "height": null,
@@ -29185,15 +29222,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5705-Aoe00iZYSbS1.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
     "Mechanic",
-    "Communications specialist",
-    "Fighter",
-    "Officer",
-    "Soldier"
+    "Communications specialist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -29217,11 +29253,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250775-xdvWrwS9tP00.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Leader"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -29245,7 +29284,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n50123-2kInS5rwOuM7.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -29273,7 +29314,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/n52739-CVU3CZq0UBx7.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
