@@ -812,12 +812,22 @@
   },
   "255295": {
    "_nom": "Sankai",
-   "_note": "les Shrine Spirits, deux jumelles (l'autre fiche, 255296, est exclue) ; « Thrice » dans l'anime",
+   "_note": "les Shrine Spirits, deux jumelles (l'autre fiche, 255296, est exclue) ; « Thrice » dans l'anime ; deux fillettes à l'origine (Towako Oka), donc Female",
    "aliases": [
     "Thrice",
     "Shrine Spirits",
     "さんかい"
-   ]
+   ],
+   "gender": "Female"
+  },
+  "250703": {
+   "_nom": "Mamoru Yotsuya",
+   "_raison": "le père mort de Miko, qu'on voit en fantôme : Ghost en plus de Spirit",
+   "species": {
+    "plus": [
+     "Ghost"
+    ]
+   }
   },
   "409273": {
    "_nom": "Liuyue Jiang",
