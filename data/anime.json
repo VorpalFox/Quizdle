@@ -6207,7 +6207,10 @@
     "Waiter",
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "DAN DA DAN",
    "genres": [
     "Action",

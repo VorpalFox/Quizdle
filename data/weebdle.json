@@ -9447,6 +9447,7 @@
     "Servant"
    ],
    "hair": [
+    "Black",
     "Red"
    ],
    "anime": "Black Butler",
@@ -10419,7 +10420,10 @@
    "occupation": [
     "Journalist"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "Blood Blockade Battlefront",
    "genres": [
     "Action",
@@ -12948,7 +12952,8 @@
     "Adventurer"
    ],
    "hair": [
-    "White"
+    "White",
+    "Black"
    ],
    "anime": "BNA",
    "genres": [
@@ -22040,7 +22045,8 @@
   "aliases": [
    "Onna no Kurokami",
    "黒髪の女",
-   "Kurokami"
+   "Kurokami",
+   "Onna"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b82037-xvKHWk4AE4df.png",
   "attributes": {
@@ -22050,8 +22056,14 @@
    ],
    "age": 21,
    "height": 170,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Athlete",
+    "Assistant"
+   ],
+   "hair": [
+    "Black",
+    "White"
+   ],
    "anime": "Death Parade",
    "genres": [
     "Drama",
@@ -30871,7 +30883,10 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "Golden Time",
    "genres": [
     "Drama",
@@ -40408,7 +40423,10 @@
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Adventure",
@@ -40642,7 +40660,10 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Adventure",
@@ -44558,7 +44579,9 @@
     "Leader"
    ],
    "hair": [
-    "Ginger"
+    "Ginger",
+    "Black",
+    "Red"
    ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
@@ -45768,7 +45791,8 @@
     "Leader"
    ],
    "hair": [
-    "Black"
+    "Black",
+    "Red"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -46024,34 +46048,6 @@
   }
  },
  {
-  "id": "134187",
-  "name": "Queen",
-  "aliases": [
-   "クイーン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134187-DAcVgXbru47p.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
   "id": "139371",
   "name": "Ino Hatsuse",
   "aliases": [
@@ -46111,170 +46107,6 @@
    "hair": [
     "White"
    ],
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "175514",
-  "name": "Koukan",
-  "aliases": [
-   "高官"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175514-ZrcJ1cNLDFcO.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "175515",
-  "name": "Senshi",
-  "aliases": [
-   "戦士"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175515-1jdEVOKdqv7V.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "175516",
-  "name": "Touzoku",
-  "aliases": [
-   "盗賊"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b175516-DEdc65vHCriS.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "329566",
-  "name": "Sakaba no Onna",
-  "aliases": [
-   "Onna no Sakaba",
-   "酒場の女",
-   "Sakaba"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329566-dglcs4vfQrNc.png",
-  "attributes": {
-   "gender": "Female",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "329567",
-  "name": "Nourin Daijin",
-  "aliases": [
-   "Daijin Nourin",
-   "農林大臣",
-   "Nourin",
-   "Daijin"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329567-XQeH6B9k1KRc.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "No Game, No Life",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Ecchi",
-    "Fantasy"
-   ],
-   "year": 2014,
-   "studio": "MADHOUSE",
-   "source": "Light novel"
-  }
- },
- {
-  "id": "329568",
-  "name": "Keizai Daijin",
-  "aliases": [
-   "Daijin Keizai",
-   "経済大臣",
-   "Keizai",
-   "Daijin"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b329568-cMMpD9rgLQEK.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "No Game, No Life",
    "genres": [
     "Adventure",
@@ -48675,7 +48507,8 @@
     "Waiter"
    ],
    "hair": [
-    "Brown"
+    "Black",
+    "Red"
    ],
    "anime": "Ouran High School Host Club",
    "genres": [

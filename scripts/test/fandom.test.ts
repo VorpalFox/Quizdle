@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, animeVersion,fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, animeVersion, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { wikiHair } from '../wikipedia.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -209,6 +210,7 @@ describe('sameName', () => {
   it('CheveuxRomanEtAnime_LaVersionAnime', () => {
     expect(animeVersion('Purple fading to pink and yellow (light novel), Reddish Pink (anime)')).toBe('Reddish Pink (anime)')
     expect(animeVersion('Maroon (anime), Black (light novel)')).toBe('Maroon (anime)')
+    expect(wikiHair('Maroon (anime)')).toEqual(['Black', 'Red'])
     expect(animeVersion('Purple that transitions to orange (LN), Dark Purple (anime)')).toBe('Dark Purple (anime)')
     expect(animeVersion('White at the top that changes to light blue (LN)')).toBe('White at the top that changes to light blue (LN)')
   })
