@@ -678,19 +678,29 @@
   },
   "209533": {
    "_nom": "Kage",
-   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX)",
+   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX) ; une ombre, pas de cheveux",
    "species": {
     "plus": [
      "Shadow"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
   "264680": {
    "_nom": "Kage Haha",
-   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX)",
+   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX) ; une ombre, pas de cheveux",
    "species": {
     "plus": [
      "Human"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },

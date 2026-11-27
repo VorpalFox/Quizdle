@@ -51861,7 +51861,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
@@ -52389,7 +52391,9 @@
     "Criminal",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
