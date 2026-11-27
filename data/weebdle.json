@@ -9050,7 +9050,6 @@
     "Fighter"
    ],
    "hair": [
-    "Blue",
     "Blond"
    ],
    "anime": "Black Bullet",
@@ -11452,7 +11451,6 @@
     "Fighter"
    ],
    "hair": [
-    "Black",
     "Brown"
    ],
    "anime": "Blue Exorcist",
@@ -14351,7 +14349,6 @@
     "Fighter"
    ],
    "hair": [
-    "Black",
     "Blue"
    ],
    "anime": "Bungo Stray Dogs",
@@ -31676,8 +31673,8 @@
     "Soldier"
    ],
    "hair": [
-    "Ginger",
-    "Red"
+    "Red",
+    "Brown"
    ],
    "anime": "Grimgar of Fantasy and Ash",
    "genres": [
@@ -31943,7 +31940,6 @@
    "hair": [
     "Red",
     "Purple",
-    "Green",
     "Pink"
    ],
    "anime": "Grimgar of Fantasy and Ash",
@@ -38632,7 +38628,6 @@
     "Leader"
    ],
    "hair": [
-    "Silver",
     "Pink"
    ],
    "anime": "Kaguya-sama: Love is War",
@@ -43116,8 +43111,7 @@
     "Student"
    ],
    "hair": [
-    "Ginger",
-    "Blond"
+    "Ginger"
    ],
    "anime": "Mieruko-chan",
    "genres": [
@@ -45807,8 +45801,7 @@
     "Creator of Labyrinth Of Tribulation"
    ],
    "hair": [
-    "Pink",
-    "Blond"
+    "Pink"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -45844,7 +45837,7 @@
     "Noble"
    ],
    "hair": [
-    "Purple",
+    "Red",
     "Pink"
    ],
    "anime": "No Game, No Life",
@@ -45880,8 +45873,7 @@
     "Politician"
    ],
    "hair": [
-    "Purple",
-    "Ginger"
+    "Purple"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -45904,7 +45896,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88004-lA45OjvaT5He.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Deity"
+   ],
    "age": 6000,
    "height": null,
    "occupation": [
@@ -45947,8 +45941,7 @@
     "Leader"
    ],
    "hair": [
-    "Purple",
-    "Ginger"
+    "Purple"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -45984,8 +45977,7 @@
     "Politician"
    ],
    "hair": [
-    "Blond",
-    "Purple"
+    "Blond"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -46017,8 +46009,7 @@
     "Cleric"
    ],
    "hair": [
-    "Blond",
-    "Ginger"
+    "Blond"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -46080,8 +46071,7 @@
     "Politician"
    ],
    "hair": [
-    "White",
-    "Grey"
+    "White"
    ],
    "anime": "No Game, No Life",
    "genres": [
@@ -58216,8 +58206,8 @@
     "Student"
    ],
    "hair": [
-    "Brown",
-    "Green"
+    "Green",
+    "Brown"
    ],
    "anime": "SPY x FAMILY",
    "genres": [
@@ -63194,8 +63184,7 @@
     "Servant"
    ],
    "hair": [
-    "Black",
-    "Purple"
+    "Black"
    ],
    "anime": "The Elusive Samurai",
    "genres": [
@@ -72883,7 +72872,6 @@
     "Celebrity"
    ],
    "hair": [
-    "Black",
     "Purple"
    ],
    "anime": "World Trigger",
@@ -72986,7 +72974,6 @@
     "Employee"
    ],
    "hair": [
-    "Black",
     "Purple"
    ],
    "anime": "World Trigger",

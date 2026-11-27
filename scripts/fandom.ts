@@ -489,11 +489,20 @@ export const rankOnly = (fields: Record<string, string>) =>
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
 
+// La version de l'anime quand l'infobox en donne plusieurs (« Purple fading to pink (light novel), Reddish Pink (anime) »,
+// Stephanie Dola) : on joue sur l'anime. Les autres versions (roman, manga, jeu) partent, le reste ne bouge pas.
+const OTHER_MEDIA = /\((?:light novel|ln|novels?|web novel|manga|games?|visual novel)\)/i
+export function animeVersion(value: string | null): string | null {
+  if (!value || !/\(anime\)/i.test(value))
+    return value
+  return value.split(/(?<=\))\s*,\s*/).filter(part => !OTHER_MEDIA.test(part)).join(', ')
+}
+
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
     occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
-    hair: wikiHair(field(fields, FIELDS.hair)),
+    hair: wikiHair(animeVersion(field(fields, FIELDS.hair))),
     age: infoboxAge(field(fields, FIELDS.age)),
     species: mergedLists(rawList(known(field(fields, FIELDS.species))), statusSpecies(field(fields, FIELDS.deceased))),
     height: heightCm(field(fields, FIELDS.height)),

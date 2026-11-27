@@ -503,7 +503,8 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yokai'],
   [/\bspirit\b/, 'Spirit'],
   [/\b(?:giant|gigantes)\b/, 'Giant'],
-  [/\b(?:god|goddess|deity|divine)\b/, 'Deity'],
+  // Old Deus : les dieux de No Game, No Life
+  [/\b(?:god|goddess|deity|divine|deus)\b/, 'Deity'],
   [/\b(?:android|robot|ai)\b/, 'Robot'],
   [/\bhumans?\b/, 'Human'],
 ]
