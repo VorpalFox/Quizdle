@@ -43192,6 +43192,7 @@
   "aliases": [
    "Touno Zen",
    "遠野善",
+   "Zen",
    "Touno"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199022-DhMszO6OYyAH.jpg",
@@ -43504,23 +43505,27 @@
   }
  },
  {
-  "id": "251686",
-  "name": "Morino",
+  "id": "255295",
+  "name": "Sankai",
   "aliases": [
-   "森野"
+   "Thrice",
+   "Shrine Spirits",
+   "さんかい"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251686-zeNgRTyI2T0U.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b255295-1A4uinyuA7bu.png",
   "attributes": {
-   "gender": "Female",
+   "gender": null,
    "species": [
-    "Human"
+    "Ghost"
    ],
    "age": null,
-   "height": 157,
+   "height": null,
    "occupation": [
-    "Student"
+    "Guardian"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Mieruko-chan",
    "genres": [
     "Comedy",
@@ -51756,7 +51761,6 @@
   "aliases": [
    "Shizuki Hitomi",
    "志筑仁美",
-   "Hitomi",
    "Shizuki"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b39584-YxtWll1k1zRe.jpg",

@@ -127,7 +127,7 @@ const RULES: [RegExp, string | null][] = [
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
   [/\b(?:leader|commander|master|chief|chieftain|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
   [/\bcaptain\b/, 'Captain'],
-  [/\bguardian\b/, 'Guardian'],
+  [/\bguardians?\b/, 'Guardian'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],
   // « Pilote d'EVA », « Stamen » et « Pistil » (les pilotes de DARLING in the FRANXX)
   [/\bpilot|stamen|pistil/, 'Pilot'],

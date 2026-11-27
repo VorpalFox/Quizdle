@@ -197,8 +197,9 @@ for (const anime of animes) {
   anime.cast = anime.cast
     .map(({ role, character }) => ({ role, character: { ...character, name: cleanName(character.name) } }))
     .filter(({ character }) => !NOT_CHARACTERS.has(normalize(character.name.full)) && !excludedIds.has(String(character.id)))
+  // Un figurant corrigé à la main compte comme un secondaire : on l'a voulu (les Shrine Spirits de Mieruko-chan)
   for (const { role, character } of anime.cast) {
-    if (role !== 'BACKGROUND')
+    if (role !== 'BACKGROUND' || editedIds.has(String(character.id)))
       appearances.set(character.id, [...appearances.get(character.id) ?? [], { anime, role, character }])
   }
 }

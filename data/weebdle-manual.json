@@ -70,7 +70,10 @@
   "250712",
   "258652",
   "250710",
-  "251688"
+  "251688",
+  "199024",
+  "251686",
+  "255296"
  ],
  "edit": {
   "80": {
@@ -807,6 +810,15 @@
     ]
    }
   },
+  "255295": {
+   "_nom": "Sankai",
+   "_note": "les Shrine Spirits, deux jumelles (l'autre fiche, 255296, est exclue) ; « Thrice » dans l'anime",
+   "aliases": [
+    "Thrice",
+    "Shrine Spirits",
+    "さんかい"
+   ]
+  },
   "409273": {
    "_nom": "Liuyue Jiang",
    "_note": "gardée malgré la limite de The Daily Life of the Immortal King"
@@ -831,6 +843,7 @@
   "135053": "List of Minor Characters#Ihlen Schwarzkopf",
   "219181": "Mother Wang",
   "219178": "Father Wang",
-  "250706": "Mrs. Arai"
+  "250706": "Mrs. Arai",
+  "255295": "Shrine Spirits"
  }
 }
