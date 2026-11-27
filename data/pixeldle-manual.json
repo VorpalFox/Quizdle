@@ -129,7 +129,13 @@
    "_nom": "Von Lycaon"
   },
   "Q136281841": {
-   "_nom": "Koleda Belobog"
+   "_nom": "Koleda Belobog",
+   "occupation": {
+    "plus": [
+     "Businessperson",
+     "Leader"
+    ]
+   }
   },
   "Q2265837": {
    "_raison": "le wiki a pris la page de Terra-Xehanort",

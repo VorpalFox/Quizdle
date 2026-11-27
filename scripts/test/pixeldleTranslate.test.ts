@@ -121,6 +121,12 @@ describe('translateOccupation', () => {
     expect(translateOccupation('Inquisitor of the Ordo Xenos')).toBe('Detective')
   })
 
+  it('PresidentDEntreprise_PasPolitique', () => {
+    expect(translateOccupation('President of Belobog Heavy Industries')).toBe('Businessperson')
+    expect(translateOccupation('Company President')).toBe('Businessperson')
+    expect(translateOccupation('President of the United States')).toBe('Politician')
+  })
+
   it('DealerDeJeu_PasCriminel', () => {
     for (const role of ['DoT Dealer', 'Close-Range Dealer', 'Utility Dealer'])
       expect(translateOccupation(role) ?? null).toBeNull()

@@ -51,6 +51,9 @@ describe('fandomValues', () => {
   it('NomDeLEcoleSeul_Eleve', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
+    expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
+    expect(translateOccupation('Vice President of Sales')).toBe('Company president')
+    expect(translateOccupation('Sewing Club President')).toBe('Leader')
   })
 
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {

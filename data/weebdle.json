@@ -8824,9 +8824,11 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Leader",
+    "Company president",
     "Student",
-    "Employee"
+    "Employee",
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Green"
@@ -9176,9 +9178,11 @@
    "height": null,
    "occupation": [
     "President",
-    "Leader",
+    "Company president",
     "Employee",
     "Marksman",
+    "Leader",
+    "Businessperson",
     "Fighter"
    ],
    "hair": [
@@ -14370,9 +14374,11 @@
    "age": 45,
    "height": 186,
    "occupation": [
-    "Leader",
+    "Company president",
     "Guard",
     "Assassin",
+    "Businessperson",
+    "Leader",
     "Criminal",
     "Fighter"
    ],
@@ -21697,7 +21703,9 @@
    "height": 181,
    "occupation": [
     "President",
-    "Leader"
+    "Company president",
+    "Leader",
+    "Businessperson"
    ],
    "hair": [
     "Black"
@@ -21838,6 +21846,8 @@
    "age": 33,
    "height": 166,
    "occupation": [
+    "Company president",
+    "Businessperson",
     "Leader"
    ],
    "hair": null,
@@ -21872,7 +21882,9 @@
    "height": 169,
    "occupation": [
     "President",
-    "Leader"
+    "Company president",
+    "Leader",
+    "Businessperson"
    ],
    "hair": [
     "Black"
@@ -21944,7 +21956,9 @@
    "age": 32,
    "height": 175,
    "occupation": [
-    "Leader"
+    "Company president",
+    "Leader",
+    "Businessperson"
    ],
    "hair": [
     "Brown"
@@ -24932,7 +24946,9 @@
    "height": 150,
    "occupation": [
     "Leader",
-    "Artisan"
+    "Company president",
+    "Artisan",
+    "Businessperson"
    ],
    "hair": [
     "Brown"
@@ -44439,8 +44455,11 @@
     "Mage",
     "Adventurer",
     "Swordsman",
+    "Company president",
+    "Hero",
     "Fighter",
-    "Hero"
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -44699,7 +44718,9 @@
     "Servant",
     "Advisor",
     "Assistant",
-    "Fighter"
+    "Company president",
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Ginger"
@@ -48101,8 +48122,10 @@
    "height": 167,
    "occupation": [
     "Homemaker",
-    "Leader",
-    "Assistant"
+    "Company president",
+    "Assistant",
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -54443,8 +54466,10 @@
    "age": 22,
    "height": 155,
    "occupation": [
-    "Leader",
-    "Noble"
+    "Company president",
+    "Noble",
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Purple"
@@ -72132,6 +72157,8 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Company president",
+    "Businessperson",
     "Leader"
    ],
    "hair": null,

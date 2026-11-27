@@ -5,6 +5,10 @@
 
 const key = (value: string) => value.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim()
 
+// Le président d'une entreprise, pas d'un pays : « President of Yuzuriha Fashion Company », « Company President »,
+// « Vice President of Sales » (Death Note). Partagé avec le Weebdle et l'Animedle (translate.ts).
+export const COMPANY_PRESIDENT = /\b(?:company|corporate) president\b|\bpresident of\b.*\b(?:company|industries|corp(?:oration)?|co|inc|productions?|conglomerate|group|enterprises?)\b|\bvice[- ]president of (?:sales|marketing|rights|finance|corporate)\b/
+
 // Le 1er motif qui correspond. Les cas précis d'abord.
 const firstRule = (rules: [RegExp, string | null][], value: string) => rules.find(([pattern]) => pattern.test(value))?.[1]
 
@@ -662,6 +666,8 @@ const OCCUPATION_RULES: [RegExp, string | null][] = [
 // traductions du dictionnaire du Weebdle qui ne sont pas dans nos familles (Leader, Mage, Serviteur...).
 // Après les règles françaises : les cas précis d'abord.
 const ENGLISH_OCCUPATION_RULES: [RegExp, string | null][] = [
+  // Le président d'une entreprise, pas d'un pays (« President of Belobog Heavy Industries »)
+  [COMPANY_PRESIDENT, 'Businessperson'],
   // Pas des occupations : des titres, des rôles d'histoire, des phrases
   [/^legend$|^champion$|lesser evil|prime evil|^savior|^beast$|^predator$|^deity$|silent protagonist|she sleeps|making trouble|possibly other|^training$|^development$|^stabilizes|^search-|^catastrophes|pursuit of knowledge|rapid recovery|mow down|^africa$|^bowser's kingdom$|^burkes$|^calanthe$|^crach$|offices?$|uncloak|ultra guardians|^the army|^special forces$|research specimen|alchemilla hospital patient|detainee|devil gene|kindergartner|^aspect of|herald of|left eye|protector of|jailer of|soul devourer|^disciple of|sentinel of light|^primus|^ordermaster|hidden arcanum|^monitor|prime candidate|wandering orphan|^illuminator|^virtuoso|party animal|liquor connoisseur|independently wealthy|reclaiming|^ss of|shikigami|terraformer|sumpsnipe/, null],
   // Les cas qui contiennent un mot d'une autre famille

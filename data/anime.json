@@ -5028,8 +5028,11 @@
     "Mage",
     "Adventurer",
     "Swordsman",
+    "Company president",
+    "Hero",
     "Fighter",
-    "Hero"
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Brown"
