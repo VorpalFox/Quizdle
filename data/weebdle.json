@@ -30047,9 +30047,11 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": [
-    "Red"
+    "Pink"
    ],
    "anime": "Gleipnir",
    "genres": [
@@ -30146,7 +30148,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Pilot"
+   ],
    "hair": [
     "Brown"
    ],
@@ -30249,7 +30253,9 @@
    ],
    "age": 19,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": [
     "Black"
    ],
@@ -30344,7 +30350,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Hunter"
+    "Hunter",
+    "Student"
    ],
    "hair": [
     "Black"
@@ -30410,8 +30417,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Hunter"
+   ],
+   "hair": [
+    "Brown"
+   ],
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -30441,7 +30452,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": [
     "Black"
    ],
