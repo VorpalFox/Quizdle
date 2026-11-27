@@ -268,7 +268,15 @@ export function sameName(name: string, title: string): boolean {
   return nameWords.every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
 }
 
-export const latinName = (name: string) => name.replace(/\s*\([^)]*[^\x00-\x7F][^)]*\)/g, '').trim()
+// Le nom en gras qui ouvre l'intro, sans les liens ('''[[Shuzo Matsutani]]''' → « Shuzo Matsutani »). Seulement en tête
+// du 1er paragraphe, après l'infobox et les images : pas « These two were Bols' wife, '''Kije''' » (une page à deux persos)
+export function introName(text: string): string | null {
+  const intro = text.split('\n').map(line => line.trim()).find(line => line && !/^(\{\{|\||\}\}|\[\[(File|Image):)/i.test(line))
+  const bold = intro?.match(/^'''(.+?)'''/)?.[1]
+  return bold ? bold.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1').trim() || null : null
+}
+
+export const latinName =(name: string) => name.replace(/\s*\([^)]*[^\x00-\x7F][^)]*\)/g, '').trim()
 
 // Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
 function distance(a: string, b: string): number {
@@ -754,8 +762,16 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // Aucune page à son nom : les résultats de la recherche du wiki
     const lost = characters.filter(({ target, titles }) => !target.fandomPage && !titles.some(title => pages[title]))
     const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
-    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
-    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom : en
+    // titre, ou en gras au début de la page (« Shu » commence par '''Shuzo Matsutani''', Now and Then, Here and There)
+    const firstResults = lost.flatMap(({ target }) => (results[target.entry.name] ?? []).slice(0, 1))
+    if (firstResults.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, firstResults) }
+    const named = (name: string, title: string) => {
+      const bold = pages[title] ? introName(pages[title]!) : null
+      return sameName(name, title) || (bold !== null && sameName(name, bold))
+    }
+    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => named(target.entry.name, title))]))
     // Et ses autres noms AniList (« Kansatsu-sha » → « The Beholder », « Upa » → « Oopa ») : des surnoms qu'on ne garde
     // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
     // Sans le japonais entre parenthèses (« Tsundere Elf (ツンデレエルフ) » → « Tsundere Elf », Elga dans Uncle from Another World)

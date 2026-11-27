@@ -46310,7 +46310,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Adventure",
@@ -46586,7 +46588,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Fighter"
    ],
    "hair": null,
    "anime": "Now and Then, Here and There",

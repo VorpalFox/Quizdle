@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -202,6 +202,15 @@ describe('sameName', () => {
     expect(latinName('Tsundere Elf (ツンデレエルフ)')).toBe('Tsundere Elf')
     expect(latinName('Sui')).toBe('Sui')
     expect(latinName('Ryo (Tokyo)')).toBe('Ryo (Tokyo)')
+  })
+
+  it('IntroAvecNomEnGras_LeNomSansLiens', () => {
+    expect(introName("'''Shuzo Matsutani''' (松谷 修造), also known as '''Shuu'''")).toBe('Shuzo Matsutani')
+    expect(introName("'''[[Shuzo Matsutani|Shuzo]]''' is")).toBe('Shuzo')
+    expect(introName('Tabur is a soldier')).toBeNull()
+    expect(introName("{{Infobox\n|gender = Female\n}}\n[[File:Shu.png|thumb]] \n'''Shuzo''' is")).toBe('Shuzo')
+    expect(introName("{{Infobox\n|gender = Female\n}}\nThese two were [[Bols]]' wife, '''Kije''', and daughter")).toBeNull()
+    expect(sameName('Shuuzou Matsutani', 'Shuzo Matsutani')).toBe(true)
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {
