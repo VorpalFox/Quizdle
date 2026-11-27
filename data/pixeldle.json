@@ -7088,7 +7088,9 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Gourmet"
+   ],
    "hair": [
     "N/A"
    ],
@@ -7144,7 +7146,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Fighter"
    ],
    "hair": [
     "N/A"
@@ -7170,7 +7173,9 @@
     "Waddle Dee"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Lancer"
+   ],
    "hair": [
     "N/A"
    ],
@@ -7192,7 +7197,10 @@
     "Halcandran"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Mage",
+    "Adventurer"
+   ],
    "hair": [
     "N/A"
    ],
@@ -7202,30 +7210,6 @@
     "Platformer"
    ],
    "year": 2011
-  }
- },
- {
-  "id": "Q11284128",
-  "name": "Adeleine",
-  "aliases": [],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Artist"
-   ],
-   "hair": [
-    "Brown"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2000
   }
  },
  {
@@ -7254,33 +7238,6 @@
     "Platformer"
    ],
    "year": 1993
-  }
- },
- {
-  "id": "Q69894320",
-  "name": "Prince Fluff",
-  "aliases": [
-   "Fluff Prince",
-   "Fluff"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Royalty"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "Good-Feel",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2010
   }
  },
  {
@@ -47862,7 +47819,9 @@
     "Plant"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Protector"
+   ],
    "hair": [
     "N/A"
    ],

@@ -104,7 +104,9 @@
   "Q93879965",
   "Q93880242",
   "Q128806865",
-  "Q135904431"
+  "Q135904431",
+  "Q11284128",
+  "Q69894320"
  ],
  "edit": {
   "Q2265837": {
@@ -2825,6 +2827,11 @@
   },
   "Q10751211": {
    "_nom": "Waddle Dee",
+   "occupation": {
+    "plus": [
+     "Lancer"
+    ]
+   },
    "species": {
     "plus": [
      "Waddle Dee"
@@ -2834,6 +2841,12 @@
   },
   "Q16575005": {
    "_nom": "Magolor",
+   "occupation": {
+    "plus": [
+     "Mage",
+     "Adventurer"
+    ]
+   },
    "hair": {
     "plus": [
      "N/A"
@@ -3529,6 +3542,11 @@
   },
   "wiki-kirby-whispy-woods": {
    "_nom": "Whispy Woods",
+   "occupation": {
+    "plus": [
+     "Protector"
+    ]
+   },
    "species": {
     "plus": [
      "Plant"
@@ -3540,8 +3558,21 @@
     ]
    }
   },
+  "Q1318338": {
+   "_nom": "Roi Dadidou",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   }
+  },
   "Q613241": {
    "_nom": "Kirby",
+   "occupation": {
+    "plus": [
+     "Gourmet"
+    ]
+   },
    "hair": {
     "plus": [
      "N/A"
@@ -7603,11 +7634,11 @@
  ],
  "wikis": {
   "Kirby": {
-   "_raison": "les 10 persos de Wikidata gardés, plus Whispy Woods, le 1er boss",
+   "_raison": "les 8 persos de Wikidata gardés, plus Whispy Woods, le 1er boss",
    "pages": [
     "Whispy Woods"
    ],
-   "limit": 11
+   "limit": 9
   },
   "Rayman": {
    "_raison": "5 persos de Wikidata (Rayman, Globox, Dark Rayman, Murfy, Rabbid Peach) et un Rabbid de base, pour les deux licences",
