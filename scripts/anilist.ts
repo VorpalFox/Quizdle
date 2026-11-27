@@ -219,14 +219,16 @@ function capitalize(text: string): string {
 const HAIR_COLORS: [RegExp, string][] = [
   [/black|raven|ebony|noir/i, 'Black'], [/white|snow|blanc/i, 'White'], [/silver|platinum|argent/i, 'Silver'], [/gr[ae]y|gris/i, 'Grey'],
   [/blond|golden|gold|yellow|flax|dor[ée]|jaune/i, 'Blond'], [/brown|brunette|chestnut|auburn|\bbrun|ch[âa]tain/i, 'Brown'], [/orange|ginger|roux|rousse/i, 'Ginger'],
-  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
+  [/\bred|crimson|scarlet|rouge/i, 'Red'], [/pink|\brose|magenta|fuchsia/i, 'Pink'], [/blue|cyan|teal|turquoise|bleu/i, 'Blue'], [/green|\bvert/i, 'Green'],
   [/purple|violet|lavender|lilac|mauve|pourpre/i, 'Purple'], [/bald|shaved|chauve/i, 'Bald'],
 ]
-const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac|flax(?:en)?'
+export const COLOR_WORDS = 'black|raven|ebony|white|snow|silver|platinum|gr[ae]y|blonde?|golden|gold|yellow|brown|brunette|chestnut|auburn|orange|ginger|red|crimson|scarlet|pink|magenta|fuchsia|blue|cyan|teal|turquoise|green|purple|violet|lavender|lilac|flax(?:en)?'
 // « black hair », « long silver hair », « black and white hair », « red-colored hair ». Pas un accessoire (« a red hair
-// tie », Blaze the Cat)
+// tie », Blaze the Cat). Entre la couleur et « hair », un mot quelconque, ou plusieurs s'ils décrivent des cheveux
+// (« a black and white wavy, shoulder length hair », Victor Ashford) : pas « black coat, long hair ».
 const HAIR_ACCESSORY = String.raw`(?![- ]?(?:ties?|bands?|clips?|pins?|ornaments?|accessor(?:y|ies)|pieces?|bows?|ribbons?|dye)\b)`
-export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?,?(?:\s+[a-z-]+)?[\s-]+hair\b${HAIR_ACCESSORY}`, 'i')
+const HAIR_ADJECTIVES = 'long|short|wavy|curly|straight|messy|spiky|spikey|thick|thin|silky|braided|flowing|shaggy|unkempt|tousled|fluffy|cropped|layered|loose|neat|slicked(?:-back)?|medium|(?:shoulder|waist|chin|neck|ear)(?:[- ]length)?|length'
+export const HAIR_IN_TEXT = new RegExp(String.raw`\b((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?(?:,?\s+(?:${HAIR_ADJECTIVES})\b)*,?(?:\s+[a-z-]+)?[\s-]+hair\b${HAIR_ACCESSORY}`, 'i')
 // « dark hair », « short, dark hair » dans un texte : noirs (validé avec FX, quitte à compter quelques bruns foncés :
 // Nabuca, Reg, Bertolt…). En dernier recours, si le texte ne cite aucune vraie couleur (Pauline a « dark hair » avant
 // « brown hair »). Pas une nuance en « -ish » (« dark reddish hair »), ni un champ d'infobox (« Dark Gunmetal », Arata).
@@ -240,6 +242,15 @@ export const hairColors = (text: string) => HAIR_COLORS
   .sort((a, b) => a.index - b.index)
   .map(({ color }) => color)
 
+// Les mèches qui suivent « … hair » : « short white hair with light green streaks » (Lily Everhart), « brown hair
+// with blonde streaks » (Marcus Dryden). Seulement des mèches, pointes ou reflets, juste derrière : pas « blue hair
+// with a red ribbon ».
+const TRAILING_HAIR = new RegExp(String.raw`^,?\s+with\s+(?:(?:a|an|some|several|various|few|two|thin|thick|small|light|dark|bright|pale|deep|faint|subtle|vivid)\s+)*((?:${COLOR_WORDS})(?:[- ](?:and|or)?[- ]?(?:${COLOR_WORDS}))*)(?:[- ]colou?red)?[\s-]+(?:streaks?|tips?|highlights?|strands?|ends|stripes?|locks|accents?|tint|undertones?)\b`, 'i')
+export const trailingHair = (after: string) => {
+  const found = TRAILING_HAIR.exec(after)
+  return found ? hairColors(found[1]!) : []
+}
+
 // La couleur des cheveux : la ligne « Hair Color: » de la description, sinon la 1re « black hair » du texte.
 // Rare sur AniList (quelques %) : le reste est à compléter à la main.
 export function parseHair(description: string | null): string[] | null {
@@ -249,7 +260,7 @@ export function parseHair(description: string | null): string[] | null {
     return fromField
   const text = withoutSpoilers(description)
   const found = HAIR_IN_TEXT.exec(text)
-  const fromText = found ? hairColors(found[1]!) : []
+  const fromText = found ? [...new Set([...hairColors(found[1]!), ...trailingHair(text.slice(found.index + found[0].length))])].slice(0, 2) : []
   if (fromText.length > 0)
     return fromText
   return DARK_HAIR_IN_TEXT.test(text) ? [DARK_HAIR] : null

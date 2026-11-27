@@ -21,6 +21,9 @@ const POSSESSIVE_FAMILY = new RegExp(String.raw`['’]s (?:(?:younger|older|elde
 // The Witch and the Beast). En minuscule seulement, articles passés : dans « from Tokyo and Osaka » ou « son of the Pale
 // King and the White Lady », Osaka et White Lady ne sont pas des rôles.
 const ROLE_AFTER_AND = /\sand\s+(?:(?:a|an|the|also|currently|formerly|now)\s+)*(?!(?:a|an|the|also|currently|formerly|now)\s)([a-z][^.;:,()"]*)/
+// Le vrai rôle après la virgule : « is a playable Agent in Zenless Zone Zero, and a Maid of Victoria Housekeeping »,
+// « …, and the Chief of Section 6 ». Avec un article : la majuscule est alors un titre, pas un nom propre.
+const ROLE_AFTER_COMMA_AND = /^\s*,\s*and\s+(?:a|an|the)\s+(?:(?:also|currently|formerly|now)\s+)?([^.;:,()"]+)/i
 
 // Ce que l'introduction dit du personnage, phrase par phrase (« Vietnam veteran », « princess of Guardia »),
 // pour en tirer une occupation. « ., » : la fin d'un paragraphe, recollé au suivant par cleanValue (« Rasmus is a
@@ -28,14 +31,16 @@ const ROLE_AFTER_AND = /\sand\s+(?:(?:a|an|the|also|currently|formerly|now)\s+)*
 export function introRoles(intro: string): string[] {
   const sentences = intro.split(/(?<=[.!?])\s+/).slice(0, MAX_INTRO_SENTENCES).flatMap(sentence => sentence.split(/(?<=[.!?]),\s+/))
   return sentences.flatMap(sentence => {
-    const raw = WHAT_HE_IS.exec(sentence)?.[1]
+    const found = WHAT_HE_IS.exec(sentence)
+    const raw = found?.[1]
     if (!raw)
       return []
     const role = raw.replace(END_OF_ROLE, '').trim()
     const after = ROLE_AFTER_AND.exec(raw.slice(role.length))?.[1]?.replace(END_OF_ROLE, '').trim()
+    const afterComma = ROLE_AFTER_COMMA_AND.exec(sentence.slice(found.index + found[0].length))?.[1]?.replace(END_OF_ROLE, '').trim().replace(/\s+of(?:\s+the)?$/i, '')
     // Le filtre avant le découpage : « son of King X and Queen Y » part en entier. Après un « and », pas un nom propre
     // (« … and the Emperor of Mankind » : l'Empereur n'est pas un rôle du Dieu-machine ; « Leader and Founder » reste)
-    return [role, after].filter((text): text is string => Boolean(text) && !NOT_A_JOB.test(text!))
+    return [role, after, afterComma].filter((text): text is string => Boolean(text) && !NOT_A_JOB.test(text!))
       .flatMap(text => text.split(/\s+and\s+/).filter((part, index) => index === 0 || !/^the\s+\p{Lu}/u.test(part)))
   }).filter(role => !NOT_A_JOB.test(role) && !POSSESSIVE_FAMILY.test(role))
 }

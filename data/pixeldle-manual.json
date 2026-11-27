@@ -92,9 +92,51 @@
   "wiki-myst-ahlsendar",
   "wiki-myst-me-erta",
   "wiki-myst-veovis",
-  "wiki-myst-gehn-s-guard"
+  "wiki-myst-gehn-s-guard",
+  "Q55188391",
+  "Q55571439",
+  "Q55571467",
+  "Q55571551",
+  "Q55571648",
+  "Q55571771",
+  "Q6149649",
+  "Q11233788",
+  "Q93879965",
+  "Q93880242",
+  "Q128806865",
+  "Q135904431",
+  "Q11284128",
+  "Q69894320",
+  "wiki-kirby-kracko",
+  "wiki-kirby-queen-sectonia",
+  "wiki-kirby-the-three-mage-sisters",
+  "wiki-kirby-marx"
  ],
  "edit": {
+  "Q136269347": {
+   "_nom": "Wise"
+  },
+  "Q136270717": {
+   "_nom": "Belle"
+  },
+  "Q136312355": {
+   "_nom": "Burnice White"
+  },
+  "Q136275619": {
+   "_nom": "Nicole Demara"
+  },
+  "Q136260165": {
+   "_nom": "Von Lycaon"
+  },
+  "Q136281841": {
+   "_nom": "Koleda Belobog",
+   "occupation": {
+    "plus": [
+     "Businessperson",
+     "Leader"
+    ]
+   }
+  },
   "Q2265837": {
    "_raison": "le wiki a pris la page de Terra-Xehanort",
    "nationality": {
@@ -129,6 +171,58 @@
    "species": {
     "plus": [
      "Human"
+    ]
+   }
+  },
+  "Q1089230": {
+   "_nom": "Rayman",
+   "occupation": {
+    "plus": [
+     "Plunger Wielder"
+    ]
+   }
+  },
+  "Q71411834": {
+   "_nom": "Rabbid Peach",
+   "aliases": [
+    "Peach Rabbid"
+   ]
+  },
+  "wiki-rayman-rabbids": {
+   "_nom": "Rabbids",
+   "name": "Rabbid",
+   "aliases": [
+    "Rabbids",
+    "Raving Rabbids"
+   ],
+   "gender": "Other",
+   "species": {
+    "plus": [
+     "Rabbid"
+    ],
+    "moins": [
+     "Aliens"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Marksman",
+     "Swordsman",
+     "Plunger Wielder"
+    ]
+   },
+   "year": 2006,
+   "genres": {
+    "plus": [
+     "Party game"
+    ],
+    "moins": [
+     "Platformer"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
@@ -223,7 +317,171 @@
   },
   "wiki-palworld-bjorn-seligsson": {
    "_raison": "sexe absent du wiki",
-   "gender": "Male"
+   "gender": "Male",
+   "nationality": {
+    "moins": [
+     "Feybreak Tower"
+    ]
+   }
+  },
+  "wiki-palworld-grizzbolt": {
+   "_nom": "Grizzbolt",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-faleris": {
+   "_nom": "Faleris",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-lyleen": {
+   "_nom": "Lyleen",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-shadowbeak": {
+   "_nom": "Shadowbeak",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-lamball": {
+   "_nom": "Lamball",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-cattiva": {
+   "_nom": "Cattiva",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-chillet": {
+   "_nom": "Chillet",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-chikipi": {
+   "_nom": "Chikipi",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-anubis": {
+   "_nom": "Anubis",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-sekhmet": {
+   "_nom": "Sekhmet",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ],
+    "moins": [
+     "Blue"
+    ]
+   }
+  },
+  "wiki-palworld-fuack": {
+   "_nom": "Fuack",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "wiki-palworld-flambelle": {
+   "_nom": "Flambelle",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
   },
   "Q3776297": {
    "_raison": "dresseur (Wikidata ne donne pas l'espèce)",
@@ -1386,6 +1644,11 @@
   "wiki-bloons-tower-defense-admiral-brickell": {
    "_nom": "Admiral Brickell",
    "_raison": "héros singe",
+   "aliases": [
+    "Brickell Admiral",
+    "Admiral Brickell (BTD6)",
+    "Brickell"
+   ],
    "species": {
     "plus": [
      "Monkey",
@@ -2592,6 +2855,11 @@
   },
   "Q10751211": {
    "_nom": "Waddle Dee",
+   "occupation": {
+    "plus": [
+     "Lancer"
+    ]
+   },
    "species": {
     "plus": [
      "Waddle Dee"
@@ -2601,6 +2869,17 @@
   },
   "Q16575005": {
    "_nom": "Magolor",
+   "occupation": {
+    "plus": [
+     "Mage",
+     "Adventurer"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Halcandran"
@@ -2620,6 +2899,11 @@
   },
   "Q69894320": {
    "_nom": "Prince Fluff",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Human"
@@ -2634,6 +2918,9 @@
     ]
    },
    "hair": {
+    "plus": [
+     "Pink"
+    ],
     "moins": [
      "Blond"
     ]
@@ -2688,7 +2975,17 @@
      "Humanoid"
     ]
    },
-   "gender": "Male"
+   "gender": "Male",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Purple"
+    ]
+   }
   },
   "Q99671042": {
    "_nom": "Boomer",
@@ -2971,11 +3268,21 @@
   },
   "Q111015357": {
    "_nom": "Spode",
-   "gender": "Genderless"
+   "gender": "Genderless",
+   "occupation": {
+    "plus": [
+     "Unknown"
+    ]
+   }
   },
   "Q125680235": {
    "_nom": "The God That Will Come",
-   "gender": "Genderless"
+   "gender": "Genderless",
+   "occupation": {
+    "plus": [
+     "Unknown"
+    ]
+   }
   },
   "Q4219956": {
    "_nom": "Cyberdemon",
@@ -3034,6 +3341,11 @@
   },
   "Q11302218": {
    "_nom": "Chef Kawasaki",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "gender": "Male",
    "species": {
     "plus": [
@@ -3167,7 +3479,12 @@
   },
   "Q125685268": {
    "_nom": "Bawb",
-   "gender": "Male"
+   "gender": "Male",
+   "occupation": {
+    "plus": [
+     "None"
+    ]
+   }
   },
   "Q139494225": {
    "_nom": "Samuel Hayden (Doom)",
@@ -3251,8 +3568,71 @@
     ]
    }
   },
+  "wiki-kirby-whispy-woods": {
+   "_nom": "Whispy Woods",
+   "occupation": {
+    "plus": [
+     "Protector"
+    ]
+   },
+   "species": {
+    "plus": [
+     "Plant"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "Q1318338": {
+   "_nom": "Roi Dadidou",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   }
+  },
+  "wiki-kirby-galacta-knight": {
+   "_nom": "Galacta Knight",
+   "species": {
+    "plus": [
+     "Unknown"
+    ]
+   },
+   "occupation": {
+    "plus": [
+     "Fighter",
+     "Swordsman"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "Q613241": {
+   "_nom": "Kirby",
+   "occupation": {
+    "plus": [
+     "Gourmet"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
   "Q1328424": {
    "_nom": "Meta Knight",
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   },
    "species": {
     "plus": [
      "Unknown"
@@ -3261,6 +3641,17 @@
   },
   "Q141435323": {
    "_nom": "Mysterious girl",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "Pink",
+     "White"
+    ]
+   },
    "species": {
     "plus": [
      "Unknown"
@@ -3302,7 +3693,12 @@
   "wiki-spore-grox": {
    "_nom": "Grox",
    "_raison": "une espèce et un empire, pas un individu : le sexe ne s'applique pas",
-   "gender": "N/A"
+   "gender": "N/A",
+   "occupation": {
+    "plus": [
+     "Fighter"
+    ]
+   }
   },
   "wiki-solasta-rose-fairwind": {
    "_nom": "Rose Fairwind",
@@ -5293,8 +5689,12 @@
     "species": [
      "Human"
     ],
-    "nationality": null,
-    "occupation": null,
+    "nationality": [
+     "Earth"
+    ],
+    "occupation": [
+     "Swordsman"
+    ],
     "hair": [
      "Brown"
     ],
@@ -5322,8 +5722,12 @@
      "Emrys",
      "Other World"
     ],
-    "occupation": null,
-    "hair": null,
+    "occupation": [
+     "Noble"
+    ],
+    "hair": [
+     "Purple"
+    ],
     "franchise": "The World Next Door",
     "developer": "Rose City Games",
     "genres": [
@@ -6137,7 +6541,13 @@
     "gender": "Player's choice",
     "year": 2008,
     "franchise": "Spore",
-    "occupation": null
+    "occupation": [
+     "Adventurer",
+     "Astronaut"
+    ],
+    "hair": [
+     "Player's choice"
+    ]
    }
   },
   {
@@ -6172,7 +6582,13 @@
     "gender": "Player's choice",
     "year": 2024,
     "franchise": "Palworld",
-    "occupation": null
+    "occupation": [
+     "Trainer",
+     "Survivor"
+    ],
+    "hair": [
+     "Player's choice"
+    ]
    }
   },
   {
@@ -7024,102 +7440,6 @@
    }
   },
   {
-   "id": "tfd-ajax",
-   "name": "Ajax",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-viessa",
-   "name": "Viessa",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-lepic",
-   "name": "Lepic",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-freyna",
-   "name": "Freyna",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-sharen",
-   "name": "Sharen",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-gley",
-   "name": "Gley",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-valby",
-   "name": "Valby",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Female",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
-   "id": "tfd-blair",
-   "name": "Blair",
-   "attributes": {
-    "species": [
-     "Human"
-    ],
-    "gender": "Male",
-    "franchise": "The First Descendant",
-    "occupation": null
-   }
-  },
-  {
    "id": "portal-caroline",
    "name": "Caroline",
    "attributes": {
@@ -7264,6 +7584,20 @@
   }
  ],
  "wikis": {
+  "Kirby": {
+   "_raison": "les 8 persos de Wikidata gardés, plus Whispy Woods, le 1er boss, et Galacta Knight",
+   "pages": [
+    "Whispy Woods"
+   ],
+   "limit": 10
+  },
+  "Rayman": {
+   "_raison": "5 persos de Wikidata (Rayman, Globox, Dark Rayman, Murfy, Rabbid Peach) et un Rabbid de base, pour les deux licences",
+   "pages": [
+    "Rabbids"
+   ],
+   "limit": 6
+  },
   "Firewatch": {
    "_raison": "Henry : sa page ne donne pas le sexe",
    "preferred": [
@@ -7272,13 +7606,22 @@
    ]
   },
   "Palworld": {
-   "_raison": "les 7 boss de tour, puis les Pals des 4 premiers (le reste : des PNJ génériques)",
+   "_raison": "les 7 boss de tour, les Pals des 4 premiers, puis les Pals les plus connus (Lamball, Cattiva, et le haut des sondages de popularité de Pocketpair 2025 et 2026) ; le reste : des PNJ génériques",
    "pages": [
     "Grizzbolt",
     "Faleris",
     "Lyleen",
-    "Shadowbeak"
+    "Shadowbeak",
+    "Lamball",
+    "Cattiva",
+    "Chillet",
+    "Chikipi",
+    "Anubis",
+    "Sekhmet",
+    "Fuack",
+    "Flambelle"
    ],
+   "limit": 20,
    "preferred": [
     "Zoe Rayne",
     "Marcus Dryden",
@@ -7290,20 +7633,14 @@
    ]
   },
   "Yo-kai Watch": {
-   "_raison": "les pages des Yo-kai sont longues à cause des stats (Whisper n'arrivait que 46e)",
+   "_raison": "Jibanyan (Wikidata) et les 4 humains principaux, sans les autres Yo-kai",
    "preferred": [
     "Nathan Adams",
     "Katie Forester",
-    "Whisper",
-    "Komasan",
-    "Komajiro",
-    "Usapyon",
     "Hailey Anne Thomas",
-    "Lord Enma",
-    "Summer Adams",
-    "Shogunyan",
-    "Kyubi"
-   ]
+    "Summer Adams"
+   ],
+   "limit": 5
   },
   "The Stanley Parable": {
    "_raison": "après 5 : des gags et des objets",
@@ -7355,6 +7692,16 @@
   },
   "The First Descendant": {
    "_raison": "moitié Descendants (jouables), moitié PNJ",
+   "pages": [
+    "Ajax",
+    "Viessa",
+    "Lepic",
+    "Freyna",
+    "Sharen",
+    "Gley",
+    "Valby",
+    "Blair"
+   ],
    "limit": 20
   },
   "Saturnalia": {
@@ -8111,5 +8458,8 @@
     "Scientist"
    ]
   }
+ },
+ "limits": {
+  "Zenless Zone Zero": 6
  }
 }

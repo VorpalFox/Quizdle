@@ -3394,37 +3394,6 @@
   }
  },
  {
-  "id": "1111",
-  "name": "C.C.",
-  "aliases": [
-   "シー･ツー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 300,
-   "occupation": [
-    "Pilot",
-    "Slave",
-    "Terrorist",
-    "Criminal"
-   ],
-   "hair": [
-    "Green"
-   ],
-   "anime": "Code Geass: Lelouch of the Rebellion",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mecha",
-    "Sci-Fi",
-    "Thriller"
-   ],
-   "year": 2006,
-   "studio": "Sunrise"
-  }
- },
- {
   "id": "1259",
   "name": "Misato Katsuragi",
   "aliases": [
@@ -3456,6 +3425,37 @@
    ],
    "year": 1995,
    "studio": "GAINAX"
+  }
+ },
+ {
+  "id": "1111",
+  "name": "C.C.",
+  "aliases": [
+   "シー･ツー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 300,
+   "occupation": [
+    "Pilot",
+    "Slave",
+    "Terrorist",
+    "Criminal"
+   ],
+   "hair": [
+    "Green"
+   ],
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
   }
  },
  {
@@ -3771,39 +3771,6 @@
   }
  },
  {
-  "id": "723",
-  "name": "Nami",
-  "aliases": [
-   "ナミ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 18,
-   "occupation": [
-    "Navigator",
-    "Thief",
-    "Pirate",
-    "Officer",
-    "Criminal",
-    "Soldier"
-   ],
-   "hair": [
-    "Ginger"
-   ],
-   "anime": "ONE PIECE",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Drama",
-    "Fantasy"
-   ],
-   "year": 1999,
-   "studio": "Toei Animation"
-  }
- },
- {
   "id": "11772",
   "name": "Gyro Zeppeli",
   "aliases": [
@@ -3834,6 +3801,39 @@
    ],
    "year": 2026,
    "studio": "david production"
+  }
+ },
+ {
+  "id": "723",
+  "name": "Nami",
+  "aliases": [
+   "ナミ"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 18,
+   "occupation": [
+    "Navigator",
+    "Thief",
+    "Pirate",
+    "Officer",
+    "Criminal",
+    "Soldier"
+   ],
+   "hair": [
+    "Ginger"
+   ],
+   "anime": "ONE PIECE",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy"
+   ],
+   "year": 1999,
+   "studio": "Toei Animation"
   }
  },
  {
@@ -5028,8 +5028,11 @@
     "Mage",
     "Adventurer",
     "Swordsman",
+    "Company president",
+    "Hero",
     "Fighter",
-    "Hero"
+    "Businessperson",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -5105,34 +5108,6 @@
   }
  },
  {
-  "id": "210",
-  "name": "Kisuke Urahara",
-  "aliases": [
-   "Urahara Kisuke",
-   "浦原喜助",
-   "Kisuke",
-   "Urahara"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
-  "attributes": {
-   "gender": "Male",
-   "age": null,
-   "occupation": [
-    "Merchant",
-    "Shinigami"
-   ],
-   "hair": null,
-   "anime": "Bleach",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Supernatural"
-   ],
-   "year": 2004,
-   "studio": "Studio Pierrot"
-  }
- },
- {
   "id": "12064",
   "name": "Taiga Aisaka",
   "aliases": [
@@ -5160,6 +5135,36 @@
    ],
    "year": 2008,
    "studio": "J.C.STAFF"
+  }
+ },
+ {
+  "id": "210",
+  "name": "Kisuke Urahara",
+  "aliases": [
+   "Urahara Kisuke",
+   "浦原喜助",
+   "Kisuke",
+   "Urahara"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210-mw01NrQfRjzT.png",
+  "attributes": {
+   "gender": "Male",
+   "age": null,
+   "occupation": [
+    "Merchant",
+    "Shinigami"
+   ],
+   "hair": [
+    "Blond"
+   ],
+   "anime": "Bleach",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+   ],
+   "year": 2004,
+   "studio": "Studio Pierrot"
   }
  },
  {

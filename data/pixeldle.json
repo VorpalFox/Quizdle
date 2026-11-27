@@ -6127,7 +6127,9 @@
    "occupation": [
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Kingdom Hearts",
    "developer": "Square Enix",
    "genres": [
@@ -7076,9 +7078,9 @@
   "id": "Q613241",
   "name": "Kirby",
   "aliases": [
-   "Kirby of the Stars",
    "Nintendo Kirby",
-   "Kirby des Étoiles"
+   "Kirby des Étoiles",
+   "Kirby of the Stars"
   ],
   "attributes": {
    "gender": "Male",
@@ -7086,8 +7088,12 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Gourmet"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7113,7 +7119,9 @@
     "Swordsman",
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7138,7 +7146,8 @@
    ],
    "nationality": null,
    "occupation": [
-    "Royalty"
+    "Royalty",
+    "Fighter"
    ],
    "hair": [
     "N/A"
@@ -7164,7 +7173,9 @@
     "Waddle Dee"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Lancer"
+   ],
    "hair": [
     "N/A"
    ],
@@ -7186,89 +7197,19 @@
     "Halcandran"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Mage",
+    "Adventurer"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
     "Platformer"
    ],
    "year": 2011
-  }
- },
- {
-  "id": "Q6149649",
-  "name": "Dark Matter",
-  "aliases": [
-   "Matter Dark",
-   "Matter"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Dark Matter"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1995
-  }
- },
- {
-  "id": "Q11233788",
-  "name": "Mr. Frosty",
-  "aliases": [
-   "Frosty Mr.",
-   "Frosty"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Walrus",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1993
-  }
- },
- {
-  "id": "Q11284128",
-  "name": "Adeleine",
-  "aliases": [],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Artist"
-   ],
-   "hair": [
-    "Black"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2000
   }
  },
  {
@@ -7288,83 +7229,15 @@
    "occupation": [
     "Cook"
    ],
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
     "Platformer"
    ],
    "year": 1993
-  }
- },
- {
-  "id": "Q69894320",
-  "name": "Prince Fluff",
-  "aliases": [
-   "Fluff Prince",
-   "Fluff"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Royalty"
-   ],
-   "hair": null,
-   "franchise": "Kirby",
-   "developer": "Good-Feel",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2010
-  }
- },
- {
-  "id": "Q93879965",
-  "name": "Gooey",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Dark Matter"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1997
-  }
- },
- {
-  "id": "Q93880242",
-  "name": "Rick",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Hamster",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1997
   }
  },
  {
@@ -7383,7 +7256,9 @@
     "Politician",
     "Businessperson"
    ],
-   "hair": null,
+   "hair": [
+    "Pink"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": [
@@ -7391,51 +7266,6 @@
     "Platformer"
    ],
    "year": 2016
-  }
- },
- {
-  "id": "Q128806865",
-  "name": "Nightmare",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Demon"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Destroyer"
-   ],
-   "hair": null,
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1993
-  }
- },
- {
-  "id": "Q135904431",
-  "name": "Buzzybat",
-  "aliases": [],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Bat",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Kirby",
-   "developer": "HAL Laboratory",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 2011
   }
  },
  {
@@ -7452,8 +7282,13 @@
     "Unknown"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Pink",
+    "White"
+   ],
    "franchise": "Kirby",
    "developer": "HAL Laboratory",
    "genres": null,
@@ -9558,7 +9393,7 @@
    ],
    "hair": [
     "Black",
-    "Blond"
+    "Pink"
    ],
    "franchise": "Splatoon",
    "developer": "Nintendo",
@@ -11516,6 +11351,7 @@
     "Haven City"
    ],
    "occupation": [
+    "Guard",
     "Marksman"
    ],
    "hair": null,
@@ -11700,7 +11536,9 @@
     "Metal Head"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -12732,9 +12570,9 @@
   "name": "Lord Richard Croft",
   "aliases": [
    "Croft Richard Lord",
+   "Richard James Croft",
    "Lord Richard James Croft, Ph.D",
-   "Richard Croft",
-   "Richard James Croft"
+   "Richard Croft"
   ],
   "attributes": {
    "gender": "Male",
@@ -19201,7 +19039,8 @@
     "Writer",
     "Vigilante",
     "Businessperson",
-    "Knight"
+    "Knight",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -19848,8 +19687,13 @@
     "Humanoid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Plunger Wielder",
+    "Marksman"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -19869,7 +19713,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -19888,11 +19734,14 @@
   "attributes": {
    "gender": "Male",
    "species": [
+    "Greenbottle",
     "Insect",
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Guide"
+   ],
    "hair": [
     "N/A"
    ],
@@ -19917,8 +19766,12 @@
     "Humanoid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": [
+    "Purple"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft Montpellier",
    "genres": [
@@ -19931,8 +19784,7 @@
   "id": "Q71411834",
   "name": "Rabbid Peach",
   "aliases": [
-   "Peach Rabbid",
-   "Rabbid"
+   "Peach Rabbid"
   ],
   "attributes": {
    "gender": "Female",
@@ -19940,8 +19792,12 @@
     "Rabbid"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Marksman"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Rayman",
    "developer": "Ubisoft",
    "genres": [
@@ -19950,148 +19806,6 @@
     "Strategy"
    ],
    "year": 2022
-  }
- },
- {
-  "id": "Q55188391",
-  "name": "Admiral Razorbeard",
-  "aliases": [
-   "Razorbeard Admiral",
-   "Razorbeard",
-   "Admiral"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Pirate"
-   ],
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571439",
-  "name": "Henchman 800",
-  "aliases": [
-   "800 Henchman",
-   "800"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571467",
-  "name": "Henchman 1000",
-  "aliases": [
-   "1000 Henchman",
-   "1000"
-  ],
-  "attributes": {
-   "gender": "Genderless",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2001
-  }
- },
- {
-  "id": "Q55571551",
-  "name": "Ly",
-  "aliases": [
-   "Ly the Fairy"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Fairy"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Rayman",
-   "developer": "Ubisoft Montpellier",
-   "genres": [
-    "Platformer"
-   ],
-   "year": 1999
-  }
- },
- {
-  "id": "Q55571648",
-  "name": "Tily",
-  "aliases": [],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Fairy"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Rayman",
-   "developer": "Ubisoft",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2002
-  }
- },
- {
-  "id": "Q55571771",
-  "name": "Razorwife",
-  "aliases": [],
-  "attributes": {
-   "gender": "Other",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Rayman",
-   "developer": "Ubisoft",
-   "genres": [
-    "Racing"
-   ],
-   "year": 2002
   }
  },
  {
@@ -21216,12 +20930,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
+   "The Spy",
    "Spy (Team Fortress 2)",
    "Spy (TF2)",
    "Blu Spy",
    "Red Spy",
-   "TF2 Spy",
-   "The Spy"
+   "TF2 Spy"
   ],
   "attributes": {
    "gender": "Male",
@@ -22338,7 +22052,10 @@
     "Sailor",
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Blue",
+    "Pink"
+   ],
    "franchise": "Overwatch",
    "developer": "Blizzard",
    "genres": [
@@ -22613,7 +22330,7 @@
     "Swordsman"
    ],
    "hair": [
-    "Black"
+    "Silver"
    ],
    "franchise": "League of Legends",
    "developer": "Riot Games",
@@ -23088,7 +22805,10 @@
    "occupation": [
     "Spy"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Ginger"
+   ],
    "franchise": "Valorant",
    "developer": "Riot Games",
    "genres": [
@@ -24814,7 +24534,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Dragon Quest",
    "developer": "Square Enix",
    "genres": [
@@ -25422,7 +25144,9 @@
    "occupation": [
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Persona",
    "developer": "Atlus",
    "genres": [
@@ -33370,7 +33094,8 @@
     "Swordsman"
    ],
    "hair": [
-    "White"
+    "White",
+    "Purple"
    ],
    "franchise": "Soulcalibur",
    "developer": "Bandai Namco",
@@ -33937,7 +33662,9 @@
     "Politician",
     "Swordsman"
    ],
-   "hair": null,
+   "hair": [
+    "Ginger"
+   ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
    "genres": [
@@ -34154,7 +33881,8 @@
     "Swordsman"
    ],
    "hair": [
-    "Grey"
+    "Grey",
+    "Green"
    ],
    "franchise": "Genshin Impact",
    "developer": "miHoYo",
@@ -34862,7 +34590,9 @@
    "occupation": [
     "Royalty"
    ],
-   "hair": null,
+   "hair": [
+    "Silver"
+   ],
    "franchise": "Honkai: Star Rail",
    "developer": "miHoYo",
    "genres": [
@@ -34901,60 +34631,6 @@
   }
  },
  {
-  "id": "Q136384124",
-  "name": "Hoshimi Miyabi",
-  "aliases": [
-   "Miyabi Hoshimi",
-   "Miyabi",
-   "Hoshimi"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Thiren"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Black"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136309476",
-  "name": "Jane Doe",
-  "aliases": [
-   "Doe Jane",
-   "Jane",
-   "Doe"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Thiren"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Black"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
   "id": "Q136312355",
   "name": "Burnice White",
   "aliases": [
@@ -34981,159 +34657,6 @@
   }
  },
  {
-  "id": "Q136514400",
-  "name": "Ju Fufu",
-  "aliases": [
-   "Fufu Ju",
-   "Fufu"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Thiren"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136515548",
-  "name": "Alice Thymefield",
-  "aliases": [
-   "Thymefield Alice",
-   "Alice",
-   "Thymefield"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Thiren"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q141636513",
-  "name": "Claret Flint",
-  "aliases": [
-   "Flint Claret",
-   "Claret"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Blond"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q141636533",
-  "name": "Roxy Ifrita Pryce",
-  "aliases": [
-   "Pryce Ifrita Roxy",
-   "Roxy",
-   "Ifrita",
-   "Pryce"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Humanoid"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Green"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136259894",
-  "name": "Alexandrina Sebastiane",
-  "aliases": [
-   "Sebastiane Alexandrina",
-   "Alexandrina",
-   "Sebastiane"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136260130",
-  "name": "Corin Wickes",
-  "aliases": [
-   "Wickes Corin",
-   "Corin",
-   "Wickes"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
   "id": "Q136260165",
   "name": "Von Lycaon",
   "aliases": [
@@ -35147,7 +34670,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "N/A"
    ],
@@ -35219,112 +34744,11 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Pink"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136276618",
-  "name": "Anby Demara",
-  "aliases": [
-   "Demara Anby",
-   "Anby"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136276681",
-  "name": "Billy Kid",
-  "aliases": [
-   "Kid Billy",
-   "Billy"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Robot"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136278183",
-  "name": "Nekomiya Mana",
-  "aliases": [
-   "Mana Nekomiya",
-   "Nekomiya",
-   "Mana"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Thiren"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Criminal"
-   ],
-   "hair": null,
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136281798",
-  "name": "Grace Howard",
-  "aliases": [
-   "Howard Grace",
-   "Grace"
-  ],
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Black"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -35349,65 +34773,12 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Businessperson",
+    "Leader"
+   ],
    "hair": [
     "Ginger"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136294378",
-  "name": "Ben Bigger",
-  "aliases": [
-   "Bigger Ben",
-   "Ben",
-   "Bigger"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Bear",
-    "Animal"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Zenless Zone Zero",
-   "developer": "miHoYo",
-   "genres": [
-    "Action RPG",
-    "Gacha"
-   ],
-   "year": 2024
-  }
- },
- {
-  "id": "Q136296874",
-  "name": "Anton Ivanov",
-  "aliases": [
-   "Ivanov Anton",
-   "Anton",
-   "Ivanov"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "Ginger",
-    "Brown"
    ],
    "franchise": "Zenless Zone Zero",
    "developer": "miHoYo",
@@ -40182,7 +39553,8 @@
     "Teacher"
    ],
    "hair": [
-    "Silver"
+    "Silver",
+    "Blue"
    ],
    "franchise": "Touhou Project",
    "developer": "Team Shanghai Alice",
@@ -45612,6 +44984,8 @@
     "Monde réel"
    ],
    "occupation": [
+    "Fighter",
+    "Servant",
     "Actor",
     "Employee",
     "Driver",
@@ -45620,9 +44994,7 @@
     "Spy",
     "Waiter",
     "Guard",
-    "Worker",
-    "Fighter",
-    "Servant"
+    "Worker"
    ],
    "hair": [
     "Grey"
@@ -45909,7 +45281,9 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Unknown"
+   ],
    "hair": [
     "N/A"
    ],
@@ -45938,7 +45312,9 @@
     "Deity"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Unknown"
+   ],
    "hair": [
     "N/A"
    ],
@@ -45964,7 +45340,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": [
     "N/A"
    ],
@@ -47686,7 +47064,9 @@
    "occupation": [
     "Cleric"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "franchise": "Metaphor: ReFantazio",
    "developer": "Atlus",
    "genres": [
@@ -48068,6 +47448,63 @@
     "Stealth"
    ],
    "year": 2019
+  }
+ },
+ {
+  "id": "wiki-kirby-whispy-woods",
+  "name": "Whispy Woods",
+  "aliases": [
+   "Woods Whispy",
+   "Whispy",
+   "Woods"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Plant"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Protector"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Kirby",
+   "developer": "HAL Laboratory",
+   "genres": [
+    "Platformer"
+   ],
+   "year": 1992
+  }
+ },
+ {
+  "id": "wiki-kirby-galacta-knight",
+  "name": "Galacta Knight",
+  "aliases": [
+   "Knight Galacta",
+   "Galacta"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Unknown"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Fighter",
+    "Swordsman"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Kirby",
+   "developer": "HAL Laboratory",
+   "genres": [
+    "Action",
+    "Platformer"
+   ],
+   "year": 2008
   }
  },
  {
@@ -49278,6 +48715,35 @@
   }
  },
  {
+  "id": "wiki-rayman-rabbids",
+  "name": "Rabbid",
+  "aliases": [
+   "Rabbids",
+   "Raving Rabbids"
+  ],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Rabbid"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Marksman",
+    "Swordsman",
+    "Plunger Wielder"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Rayman",
+   "developer": "Ubisoft Montpellier",
+   "genres": [
+    "Party game"
+   ],
+   "year": 2006
+  }
+ },
+ {
   "id": "wiki-devil-may-cry-nico",
   "name": "Nico",
   "aliases": [],
@@ -49290,7 +48756,9 @@
    "occupation": [
     "Mechanic"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -49394,7 +48862,9 @@
    "occupation": [
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "Devil May Cry",
    "developer": "Capcom",
    "genres": [
@@ -50385,7 +49855,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "franchise": "Dark Souls",
    "developer": "FromSoftware",
    "genres": [
@@ -51574,88 +51046,6 @@
   }
  },
  {
-  "id": "wiki-yo-kai-watch-whisper",
-  "name": "Whisper",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-komasan",
-  "name": "Komasan",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-komajiro",
-  "name": "Komajiro",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-usapyon",
-  "name": "Usapyon",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
   "id": "wiki-yo-kai-watch-hailey-anne-thomas",
   "name": "Hailey Anne Thomas",
   "aliases": [
@@ -51684,33 +51074,6 @@
   }
  },
  {
-  "id": "wiki-yo-kai-watch-lord-enma",
-  "name": "Lord Enma",
-  "aliases": [
-   "Enma Lord",
-   "Enma"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Royalty"
-   ],
-   "hair": [
-    "Blond"
-   ],
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
   "id": "wiki-yo-kai-watch-summer-adams",
   "name": "Summer Adams",
   "aliases": [
@@ -51725,46 +51088,6 @@
     "Sakuragi Hills",
     "Sakura Motomachi"
    ],
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-shogunyan",
-  "name": "Shogunyan",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-kyubi",
-  "name": "Kyubi",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",
@@ -52020,7 +51343,9 @@
     "Sailor",
     "Merchant"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "franchise": "Hades",
    "developer": "Supergiant Games",
    "genres": [
@@ -53549,7 +52874,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": [
     "N/A"
    ],
@@ -53573,8 +52900,12 @@
     "Pal"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53595,8 +52926,12 @@
     "Pal"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53618,8 +52953,227 @@
     "Griffin"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-lamball",
+  "name": "Lamball",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Sheep",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-cattiva",
+  "name": "Cattiva",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Cat",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-chillet",
+  "name": "Chillet",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Dragon"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-chikipi",
+  "name": "Chikipi",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal",
+    "Chicken",
+    "Animal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-anubis",
+  "name": "Anubis",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-sekhmet",
+  "name": "Sekhmet",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-fuack",
+  "name": "Fuack",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
+   "franchise": "Palworld",
+   "developer": "Pocket Pair",
+   "genres": [
+    "Action-adventure",
+    "Survival",
+    "Monster-taming"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-palworld-flambelle",
+  "name": "Flambelle",
+  "aliases": [],
+  "attributes": {
+   "gender": "Other",
+   "species": [
+    "Pal"
+   ],
+   "nationality": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "N/A"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53642,11 +53196,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Windswept Hills"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Pink"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53669,10 +53228,15 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "Desiccated Dunes"
+   ],
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
-    "Brown"
+    "Brown",
+    "Blond"
    ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -53697,12 +53261,15 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Crescent Moon Shore"
+   ],
    "occupation": [
     "Leader"
    ],
    "hair": [
-    "White"
+    "White",
+    "Green"
    ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
@@ -53726,11 +53293,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Astral Mountains"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "White"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53754,11 +53326,16 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Mount Obsidian"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Purple",
+    "Blond"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53782,11 +53359,15 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
+   "nationality": [
+    "Sakurajima"
+   ],
    "occupation": [
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -53811,12 +53392,15 @@
     "Human"
    ],
    "nationality": [
-    "Feybreak Tower"
+    "Feybreak"
    ],
    "occupation": [
-    "Fighter"
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "White",
+    "Blue"
+   ],
    "franchise": "Palworld",
    "developer": "Pocket Pair",
    "genres": [
@@ -55889,7 +55473,9 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Fighter"
+   ],
    "hair": [
     "N/A"
    ],
@@ -67706,6 +67292,184 @@
   }
  },
  {
+  "id": "wiki-the-first-descendant-ajax",
+  "name": "Ajax",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-viessa",
+  "name": "Viessa",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-lepic",
+  "name": "Lepic",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-freyna",
+  "name": "Freyna",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-sharen",
+  "name": "Sharen",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-gley",
+  "name": "Gley",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-valby",
+  "name": "Valby",
+  "aliases": [],
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
+  "id": "wiki-the-first-descendant-blair",
+  "name": "Blair",
+  "aliases": [],
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "nationality": null,
+   "occupation": null,
+   "hair": null,
+   "franchise": "The First Descendant",
+   "developer": "Nexon",
+   "genres": [
+    "TPS",
+    "RPG",
+    "FPS"
+   ],
+   "year": 2024
+  }
+ },
+ {
   "id": "wiki-the-first-descendant-alpha",
   "name": "Alpha",
   "aliases": [],
@@ -68659,8 +68423,13 @@
    "species": [
     "Human"
    ],
-   "nationality": null,
-   "occupation": null,
+   "nationality": [
+    "Earth",
+    "Monde réel"
+   ],
+   "occupation": [
+    "Swordsman"
+   ],
    "hair": [
     "Brown"
    ],
@@ -68688,8 +68457,12 @@
     "Emrys",
     "Other World"
    ],
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble"
+   ],
+   "hair": [
+    "Purple"
+   ],
    "developer": "Rose City Games",
    "genres": [
     "Adventure",
@@ -69640,8 +69413,13 @@
     "Alien"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Adventurer",
+    "Astronaut"
+   ],
+   "hair": [
+    "Player's choice"
+   ],
    "developer": "Maxis",
    "genres": [
     "Strategy",
@@ -69693,8 +69471,13 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Trainer",
+    "Survivor"
+   ],
+   "hair": [
+    "Player's choice"
+   ],
    "developer": "Pocket Pair",
    "genres": [
     "Action-adventure",
@@ -70910,174 +70693,6 @@
    ],
    "year": 2007,
    "franchise": "Age of Empires III"
-  }
- },
- {
-  "id": "tfd-ajax",
-  "name": "Ajax",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-viessa",
-  "name": "Viessa",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-lepic",
-  "name": "Lepic",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-freyna",
-  "name": "Freyna",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-sharen",
-  "name": "Sharen",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-gley",
-  "name": "Gley",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-valby",
-  "name": "Valby",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
-  }
- },
- {
-  "id": "tfd-blair",
-  "name": "Blair",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "developer": "Nexon",
-   "genres": [
-    "TPS",
-    "RPG",
-    "FPS"
-   ],
-   "year": 2024,
-   "franchise": "The First Descendant"
   }
  },
  {

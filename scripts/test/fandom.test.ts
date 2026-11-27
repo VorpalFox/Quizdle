@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bloodRelatives, pageGender, templateSpecies } from '../fandom.js'
+import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
 import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
@@ -51,6 +51,9 @@ describe('fandomValues', () => {
   it('NomDeLEcoleSeul_Eleve', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
+    expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
+    expect(translateOccupation('Vice President of Sales')).toBe('Company president')
+    expect(translateOccupation('Sewing Club President')).toBe('Leader')
   })
 
   it('UnDesMembresDUnGroupe_RoleDuGroupeOuRien', () => {
@@ -274,5 +277,24 @@ describe('translateOccupation, valeurs déjà traduites', () => {
   it('NomFrancais_PourLesReglesDuPixeldle', () => {
     expect(frenchOccupation('Psychiatrist')).toBe('psychiatre')
     expect(frenchOccupation('Student')).toBe('étudiant')
+  })
+})
+
+describe('characterTitles', () => {
+  const entry = (id: string, name: string, aliases: string[]) => ({ id, name, aliases, attributes: { anime: 'Tower of God' } })
+  const target = (e: ReturnType<typeof entry>) => ({ entry: e as never, name: { full: e.name, native: null, alternative: [] }, animeTitles: ['Tower of God'] })
+
+  it("n'essaie pas un alias porté par un autre perso du même anime (« Jahad », la page du roi)", () => {
+    const anaak = entry('1', 'Anaak Jahad', ['Anaak', 'Jahad'])
+    const shared = sharedAliases([anaak, entry('2', 'Endorsi Jahad', ['Endorsi', 'Jahad']), entry('3', 'Jahad', [])])
+    const titles = characterTitles(target(anaak), undefined, shared)
+    expect(titles).toContain('Anaak')
+    expect(titles).not.toContain('Jahad')
+  })
+
+  it("garde un alias partagé avec un perso d'un autre anime", () => {
+    const anaak = entry('1', 'Anaak Jahad', ['Jahad'])
+    const other = { ...entry('2', 'Kagemitsu Jahad', ['Jahad']), attributes: { anime: 'Dororo' } }
+    expect(characterTitles(target(anaak), undefined, sharedAliases([anaak, other]))).toContain('Jahad')
   })
 })

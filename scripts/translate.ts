@@ -7,7 +7,7 @@
 // avec les valeurs regroupées (Étudiant, pas Lycéen).
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { isSetEdit } from '../src/subjects/manual.js'
-import { expandSpecies, translateSpecies } from './pixeldleTranslate.js'
+import { COMPANY_PRESIDENT, expandSpecies, translateSpecies } from './pixeldleTranslate.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
@@ -86,6 +86,8 @@ const OCCUPATIONS: Record<string, string | null> = {
 // Sinon, le 1er mot-clé trouvé (en anglais ou en français) : « Owner of the Urahara Shop » → Commerçant.
 // Les cas précis d'abord, puis les grandes familles de métiers. null : pas une occupation, on la retire.
 const RULES: [RegExp, string | null][] = [
+  // Avant les métiers du nom de l'entreprise (« President of Rude Mercenary Company » n'est pas un mercenaire)
+  [COMPANY_PRESIDENT, 'Company president'],
   // Les Servants et les Masters de Fate : des esprits invoqués et leurs invocateurs, pas des domestiques ni des chefs
   [/-class servant|servant class|knight class|\bmaster of (?:\w+-class|saber|archer|lancer|rider|caster|assassin|berserker)\b/, null],
   [/yakuza|mafi|crime boss|\bgang|\bthug|enforcer|drug dealer|trafficker|underboss/, 'Mobster'],
@@ -166,7 +168,8 @@ const RULES: [RegExp, string | null][] = [
   // « TV personality », pas le caractère (« gained a different personality »)
   [/\b(?:idol|celebrity|influencer|youtuber|tiktoker|streamer|(?:tv|television|radio|media|internet|online) personality|talk show host|radio host|entertainer|actor|actress)\b/, 'Celebrity'],
   [/\bconsultant\b/, 'Advisor'],
-  [/merchant|trader|salesman|saleswoman|dealer|businessman|businesswoman|broker|peddler/, 'Trader'],
+  // Pas un rôle de jeu (« DoT Dealer », « Close-Range Dealer » : The First Descendant)
+  [/merchant|trader|salesman|saleswoman|(?<!(?:dot|damage|utility|range|dps|burst|area|sub)[ -])dealer|businessman|businesswoman|broker|peddler/, 'Trader'],
   [/scientist|researcher|engineer|technician|analyst|programmer|botanist|pharmacist|chemist|physicist|inventor/, 'Scientist'],
   [/physician|doctor|nurse|medic|psychiatrist|counsel/, 'Doctor'],
   [/writer|author|editor|novelist|poet|mangaka/, 'Writer'],
@@ -384,6 +387,7 @@ const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   // Pouvoir
   'Royalty': ['Noble', 'Leader'], 'President': ['Leader'], 'Manager': ['Leader'], 'Captain': ['Leader'],
   'Principal': ['Teacher', 'Leader'], 'Student council president': ['Student', 'Leader'],
+  'Company president': ['Businessperson', 'Leader'],
   // Sciences, santé
   'Surgeon': ['Doctor'], 'Psychiatrist': ['Doctor'], 'Engineer': ['Scientist'], 'Inventor': ['Scientist'],
   'Archaeologist': ['Scientist'], 'Oceanographer': ['Scientist'], 'Astronomer': ['Scientist'], 'Alchemist': ['Scientist'],

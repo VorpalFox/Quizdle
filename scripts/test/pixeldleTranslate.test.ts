@@ -121,6 +121,18 @@ describe('translateOccupation', () => {
     expect(translateOccupation('Inquisitor of the Ordo Xenos')).toBe('Detective')
   })
 
+  it('PresidentDEntreprise_PasPolitique', () => {
+    expect(translateOccupation('President of Belobog Heavy Industries')).toBe('Businessperson')
+    expect(translateOccupation('Company President')).toBe('Businessperson')
+    expect(translateOccupation('President of the United States')).toBe('Politician')
+  })
+
+  it('DealerDeJeu_PasCriminel', () => {
+    for (const role of ['DoT Dealer', 'Close-Range Dealer', 'Utility Dealer'])
+      expect(translateOccupation(role) ?? null).toBeNull()
+    expect(translateOccupation('dealer')).toBe('Criminal')
+  })
+
   it('MembreDUneTribu_PasChef', () => {
     expect(translateOccupation('Rank D Fire-attribute Yo-kai of the Charming tribe')).not.toBe('Clan leader')
     expect(translateOccupation('Leader of the Drakebeard Clan')).toBe('Clan leader')

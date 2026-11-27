@@ -106,6 +106,13 @@ describe('introRoles', () => {
     expect(introRoles(introText(page))).toEqual(['merchant'])
   })
 
+  it('RoleApresVirguleEtAnd', () => {
+    expect(introRoles('Corin Wickes is a playable Agent in Zenless Zone Zero, and a Maid of Victoria Housekeeping Co.')).toEqual(['Maid of Victoria Housekeeping Co'])
+    // Le modèle de la faction retiré (wiki de ZZZ) : le « of the » qui reste part aussi
+    expect(introRoles('Nicole Demara is a playable Agent in Zenless Zone Zero, and the leader of the .')).toEqual(['leader'])
+    expect(introRoles('Tokyo is a city in Japan, and Osaka is another one.')).toEqual(['city'])
+  })
+
   it('ConsidereComme_CommeIs', () => {
     expect(introRoles('Grimgor Ironhide is considered by many to be one of the greatest Black Orc warbosses.')).toEqual(['greatest Black Orc warbosses'])
   })
