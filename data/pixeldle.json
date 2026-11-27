@@ -51046,88 +51046,6 @@
   }
  },
  {
-  "id": "wiki-yo-kai-watch-whisper",
-  "name": "Whisper",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-komasan",
-  "name": "Komasan",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": [
-    "N/A"
-   ],
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-komajiro",
-  "name": "Komajiro",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-usapyon",
-  "name": "Usapyon",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
   "id": "wiki-yo-kai-watch-hailey-anne-thomas",
   "name": "Hailey Anne Thomas",
   "aliases": [
@@ -51156,33 +51074,6 @@
   }
  },
  {
-  "id": "wiki-yo-kai-watch-lord-enma",
-  "name": "Lord Enma",
-  "aliases": [
-   "Enma Lord",
-   "Enma"
-  ],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": [
-    "Royalty"
-   ],
-   "hair": [
-    "Blond"
-   ],
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
   "id": "wiki-yo-kai-watch-summer-adams",
   "name": "Summer Adams",
   "aliases": [
@@ -51197,46 +51088,6 @@
     "Sakuragi Hills",
     "Sakura Motomachi"
    ],
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-shogunyan",
-  "name": "Shogunyan",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
-   "occupation": null,
-   "hair": null,
-   "franchise": "Yo-kai Watch",
-   "developer": "Level-5",
-   "genres": [
-    "RPG"
-   ],
-   "year": 2013
-  }
- },
- {
-  "id": "wiki-yo-kai-watch-kyubi",
-  "name": "Kyubi",
-  "aliases": [],
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Yokai"
-   ],
-   "nationality": null,
    "occupation": null,
    "hair": null,
    "franchise": "Yo-kai Watch",

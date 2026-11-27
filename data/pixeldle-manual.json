@@ -7633,20 +7633,14 @@
    ]
   },
   "Yo-kai Watch": {
-   "_raison": "les pages des Yo-kai sont longues à cause des stats (Whisper n'arrivait que 46e)",
+   "_raison": "Jibanyan (Wikidata) et les 4 humains principaux, sans les autres Yo-kai",
    "preferred": [
     "Nathan Adams",
     "Katie Forester",
-    "Whisper",
-    "Komasan",
-    "Komajiro",
-    "Usapyon",
     "Hailey Anne Thomas",
-    "Lord Enma",
-    "Summer Adams",
-    "Shogunyan",
-    "Kyubi"
-   ]
+    "Summer Adams"
+   ],
+   "limit": 5
   },
   "The Stanley Parable": {
    "_raison": "après 5 : des gags et des objets",
