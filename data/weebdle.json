@@ -29938,9 +29938,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Athlete"
+   ],
    "hair": [
-    "Brown"
+    "Blond"
    ],
    "anime": "Gleipnir",
    "genres": [
