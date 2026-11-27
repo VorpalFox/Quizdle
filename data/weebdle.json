@@ -2331,7 +2331,6 @@
    "Vise Black",
    "Black Vice",
    "ブラック・バイス",
-   "Black",
    "Vise"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b70325-U2jh3mMkV4Da.png",
@@ -52294,34 +52293,6 @@
    "hair": [
     "Black"
    ],
-   "anime": "Ranking of Kings",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Drama",
-    "Fantasy"
-   ],
-   "year": 2021,
-   "studio": "WIT STUDIO",
-   "source": "Manga"
-  }
- },
- {
-  "id": "260812",
-  "name": "Gigan",
-  "aliases": [
-   "ギガン"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260812-ow7LQPLWFVwO.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Giant"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "Ranking of Kings",
    "genres": [
     "Action",
