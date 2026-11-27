@@ -70,6 +70,7 @@ describe('fandomValues', () => {
     expect(translateOccupation('Guardians')).toBe('Guardian')
     expect(translateOccupation('strong Collector')).toBe('Hunter')
     expect(translateOccupation('Margrave')).toBe('Noble')
+    expect(translateOccupation('guardsman of the Bosse Kingdom')).toBe('Guard')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')

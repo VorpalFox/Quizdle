@@ -52219,7 +52219,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Guard"
+   ],
    "hair": [
     "Blond"
    ],

@@ -19,4 +19,3 @@ Sur tout le quiz : sexe 1 %, espèce 8 %, âge 40 %, taille 55 %, occupation 14 
 | [ ] | The Witch and the Beast | 15 | **41 %** | 0 % | 60 % | 60 % | 73 % | 13 % | 40 % |
 | [ ] | Tsubasa RESERVoir CHRoNiCLE | 20 | **41 %** | 0 % | 55 % | 15 % | 95 % | 35 % | 45 % |
 | [ ] | Dororo | 20 | **40 %** | 0 % | 0 % | 90 % | 95 % | 35 % | 20 % |
-| [ ] | Fullmetal Alchemist: Brotherhood | 20 | **40 %** | 0 % | 30 % | 40 % | 100 % | 15 % | 55 % |

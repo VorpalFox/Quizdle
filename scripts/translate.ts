@@ -165,7 +165,7 @@ const RULES: [RegExp, string | null][] = [
   [/\bbull(?:y|ies)\b|delinquent/, 'Thug'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Fighter'],
   [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officer'],
-  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Guard'],
+  [/\b(?:guard|bodyguard|guardsman|guardsmen|gatekeeper|security|sentinel)s?\b/, 'Guard'],
   [/butler/, 'Butler'],
   // « Tamer », « Monster Tamer » (Ro Nny)
   [/\btamer\b/, 'Trainer'],
