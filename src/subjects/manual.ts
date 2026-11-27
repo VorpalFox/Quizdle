@@ -23,7 +23,7 @@ export interface Manual {
   // Pixeldle : titre de la franchise → valeurs par défaut des attributs vides (espèce « Humain » d'une franchise réaliste…),
   // avant les corrections de « edit »
   defaults?: Record<string, Record<string, AttributeValue>>
-  // Weebdle : titre de l'anime → nombre de personnages voulu, 20 sinon. Plus : le tirage en prend davantage. Moins, quand
+  // Weebdle, Pixeldle : titre de l'anime ou de la franchise → nombre de personnages voulu, 20 sinon. Plus : le tirage en prend davantage. Moins, quand
   // les derniers ne sont que des figurants sans infos : les moins remplis sortent à la fin (jamais un perso corrigé).
   limits?: Record<string, number>
   // Animedle, Weebdle : id → page de son wiki Fandom, quand le script ne la trouve pas seul, avec une section si besoin

@@ -113,6 +113,24 @@
   "wiki-kirby-marx"
  ],
  "edit": {
+  "Q136269347": {
+   "_nom": "Wise"
+  },
+  "Q136270717": {
+   "_nom": "Belle"
+  },
+  "Q136312355": {
+   "_nom": "Burnice White"
+  },
+  "Q136275619": {
+   "_nom": "Nicole Demara"
+  },
+  "Q136260165": {
+   "_nom": "Von Lycaon"
+  },
+  "Q136281841": {
+   "_nom": "Koleda Belobog"
+  },
   "Q2265837": {
    "_raison": "le wiki a pris la page de Terra-Xehanort",
    "nationality": {
@@ -8440,5 +8458,8 @@
     "Scientist"
    ]
   }
+ },
+ "limits": {
+  "Zenless Zone Zero": 6
  }
 }

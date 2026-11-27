@@ -305,9 +305,13 @@ const addedPerFranchise = new Map<string, number>()
 for (const entry of manual.add)
   addedPerFranchise.set(String(entry.attributes.franchise), (addedPerFranchise.get(String(entry.attributes.franchise)) ?? 0) + 1)
 
+// Le nombre de persos tirés pour une franchise : 20, ou plus si les corrections le demandent (« limits »). En dessous de
+// 20, on en tire 20 et les moins remplis sortent à la fin (limitPerFranchise), comme au Weebdle.
+const drawSize = (franchise: Franchise) => Math.max(MAX_PER_FRANCHISE, manual.limits?.[franchise.title] ?? 0)
+
 // Les personnages corrigés à la main sont toujours gardés : ils prennent la place des derniers du tirage
 function select(franchise: Franchise, candidates: Candidate[]): Candidate[] {
-  const max = Math.max(0, MAX_PER_FRANCHISE - (addedPerFranchise.get(franchise.title) ?? 0))
+  const max = Math.max(0, drawSize(franchise) - (addedPerFranchise.get(franchise.title) ?? 0))
   const pinned = candidates.filter(({ id }) => editedIds.has(id))
   const drawn = selectWithoutPinned(franchise, candidates, max).filter(candidate => !pinned.includes(candidate))
   return [...pinned, ...drawn].slice(0, Math.max(max, pinned.length)).toSorted(byMainThenPopularity)
@@ -723,7 +727,28 @@ const placed = finished.map(entry => {
 })
 // Unknown dans les cases restées vides que le wiki disait inconnues (fillUnknowns), puis les corrections encore une
 // fois, à la fin : une valeur retirée à la main reste retirée (une arme redonnerait l'occupation)
-const entries = finishManual(fillUnknowns(placed, pixeldle.attributes), manual, pixeldle.attributes.map(({ key }) => key))
+const removedByLimit: string[] = []
+const entries = limitPerFranchise(finishManual(fillUnknowns(placed, pixeldle.attributes), manual, pixeldle.attributes.map(({ key }) => key)), manual.limits ?? {})
+
+// Un nombre voulu sous 20 (« limits » des corrections), à la fin, toutes les sources passées : sortent les persos les
+// moins remplis (les derniers du tirage à égalité), jamais un perso corrigé ou ajouté à la main. Comme au Weebdle.
+function limitPerFranchise(list: Entry[], limits: Record<string, number>): Entry[] {
+  const FILLED_KEYS = ['gender', 'species', 'nationality', 'occupation', 'hair']
+  const manualIds = new Set([...editedIds, ...manual.add.map(({ id }) => id)])
+  const removed = new Set<Entry>()
+  for (const [franchise, limit] of Object.entries(limits)) {
+    const inFranchise = list.filter(entry => entry.attributes.franchise === franchise)
+    const empties = (entry: Entry) => FILLED_KEYS.filter(key => entry.attributes[key] === null).length
+    const surplus = inFranchise.map((entry, index) => ({ entry, index })).filter(({ entry }) => !manualIds.has(entry.id))
+      .toSorted((a, b) => empties(b.entry) - empties(a.entry) || b.index - a.index)
+      .slice(0, Math.max(0, inFranchise.length - limit))
+    for (const { entry } of surplus) {
+      removed.add(entry)
+      removedByLimit.push(`${entry.name} (${franchise}, id ${entry.id})`)
+    }
+  }
+  return list.filter(entry => !removed.has(entry))
+}
 
 // Sans métier : Compagnon ou Assistant quand l'introduction le dit (« Epona is Link's horse »), à relire dans le récap
 function functionRole(entry: Entry): string[] | null {
@@ -759,6 +784,8 @@ await writeFile(new URL('data/pixeldle.json', root), `${JSON.stringify(entries, 
 const percent = (count: number) => `${Math.round(count / Math.max(entries.length, 1) * 100)} %`
 const lines: string[] = [`# Récap du Pixeldle : ${entries.length} personnages, ${franchises.length} franchises`, '']
 lines.push(`Corrections (data/pixeldle-manual.json) : ${manual.exclude.length} retirés, ${editedIds.size} corrigés, ${manual.add.length} ajoutés`, '')
+if (removedByLimit.length > 0)
+  lines.push(`## Sortis par le plafond de leur franchise (${removedByLimit.length}) : limits des corrections`, ...removedByLimit.map(text => `- ${text}`), '')
 if (warnings.length > 0)
   lines.push(`## ⚠️ Corrections qui ne collent pas (${warnings.length})`, ...warnings.map(text => `- ${text}`), '')
 
