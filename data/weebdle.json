@@ -62793,7 +62793,10 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Demon"
+    "Demon",
+    "Frog",
+    "Animal",
+    "Dog"
    ],
    "age": 42957,
    "height": null,

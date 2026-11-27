@@ -770,7 +770,12 @@
   },
   "189232": {
    "_nom": "Ha Tuntian",
-   "_raison": "un chien : pas de cheveux",
+   "_raison": "un démon-grenouille coincé dans un corps de chien : pas de cheveux, Dog en indice",
+   "species": {
+    "plus": [
+     "Dog"
+    ]
+   },
    "hair": {
     "plus": [
      "N/A"
