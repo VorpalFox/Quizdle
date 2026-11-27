@@ -491,6 +491,15 @@ export const rankOnly = (fields: Record<string, string>) =>
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
 
+// Le grade du champ « rank » (wiki de FMA : « Master Sergeant », « Lieutenant Colonel ») : seulement un vrai grade
+// militaire, « rank » est un classement ailleurs (« S-Class Rank 1 », One Punch Man). Le dernier mot de grade, le vrai
+// (« Lieutenant Colonel » → Colonel, « Master Sergeant » → Sergeant, pas Master → Leader)
+const MILITARY_RANK = /\b(?:private|corporal|sergeant|lieutenant|captain|major|colonel|general|admiral|commodore|ensign)\b/gi
+export function militaryRanks(value: string | null): string[] | null {
+  const ranks = (value ?? '').split(/\s*,\s*/).flatMap(part => part.replace(/\([^)]*\)/g, '').match(MILITARY_RANK)?.slice(-1) ?? [])
+  return ranks.length > 0 ? [...new Set(ranks.map(rank => rank[0]!.toUpperCase() + rank.slice(1).toLowerCase()))] : null
+}
+
 // La version de l'anime quand l'infobox en donne plusieurs (« Purple fading to pink (light novel), Reddish Pink (anime) »,
 // Stephanie Dola) : on joue sur l'anime. Les autres versions (roman, manga, jeu) partent, le reste ne bouge pas.
 const OTHER_MEDIA = /\((?:light novel|ln|novels?|web novel|manga|games?|visual novel)\)/i
@@ -503,7 +512,7 @@ export function animeVersion(value: string | null): string | null {
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
-    occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
+    occupation: mergedLists(splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''), militaryRanks(fields.rank ?? null)),
     hair: wikiHair(animeVersion(field(fields, FIELDS.hair))),
     age: infoboxAge(field(fields, FIELDS.age)),
     species: mergedLists(rawList(known(field(fields, FIELDS.species))), statusSpecies(field(fields, FIELDS.deceased))),

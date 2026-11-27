@@ -1,5 +1,7 @@
 {
  "exclude": [
+  "50123",
+  "52739",
   "134187",
   "175514",
   "175515",
@@ -835,6 +837,15 @@
     "さんかい"
    ],
    "gender": "Female"
+  },
+  "69": {
+   "_nom": "Maes Hughes",
+   "_raison": "Green lu dans le texte, c'est la teinte de l'anime de 2003 : noirs dans Brotherhood",
+   "hair": {
+    "moins": [
+     "Green"
+    ]
+   }
   },
   "122463": {
    "_nom": "Bondrewd",

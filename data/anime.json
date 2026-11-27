@@ -47,7 +47,9 @@
    "occupation": [
     "Thug",
     "Soldier",
-    "Criminal"
+    "Captain",
+    "Criminal",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -1017,9 +1019,11 @@
    "age": 15,
    "occupation": [
     "Alchemist",
+    "Officer",
     "Mage",
     "Lancer",
     "Scientist",
+    "Soldier",
     "Fighter"
    ],
    "hair": [
@@ -2212,6 +2216,7 @@
     "Leader",
     "Soldier",
     "Alchemist",
+    "Officer",
     "Scientist"
    ],
    "hair": [
@@ -3455,6 +3460,7 @@
    "occupation": [
     "Officer",
     "Leader",
+    "Captain",
     "Soldier"
    ],
    "hair": [
@@ -3930,7 +3936,7 @@
    "occupation": [
     "Psychiatrist",
     "Spy",
-    "Sergeant",
+    "Soldier",
     "Doctor"
    ],
    "hair": [
@@ -5813,7 +5819,9 @@
    "age": 17,
    "occupation": [
     "Fighter",
-    "Soldier"
+    "Soldier",
+    "Captain",
+    "Leader"
    ],
    "hair": [
     "Blond"

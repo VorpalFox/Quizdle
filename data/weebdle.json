@@ -3311,7 +3311,8 @@
    "occupation": [
     "Student",
     "Pilot",
-    "Soldier"
+    "Soldier",
+    "Officer"
    ],
    "hair": [
     "Black",
@@ -3524,7 +3525,9 @@
    "age": 27,
    "height": 170,
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Captain",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -3589,7 +3592,8 @@
    "height": 183,
    "occupation": [
     "Soldier",
-    "Pilot"
+    "Pilot",
+    "Officer"
    ],
    "hair": null,
    "anime": "ALDNOAH.ZERO",
@@ -3781,7 +3785,9 @@
    "age": 28,
    "height": 180,
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Officer",
+    "Soldier"
    ],
    "hair": null,
    "anime": "ALDNOAH.ZERO",
@@ -6826,7 +6832,9 @@
    "occupation": [
     "Thug",
     "Soldier",
-    "Criminal"
+    "Captain",
+    "Criminal",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -6935,7 +6943,9 @@
    "height": 185,
    "occupation": [
     "Fighter",
-    "Soldier"
+    "Soldier",
+    "Captain",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -18029,7 +18039,9 @@
     "Pilot",
     "Soldier",
     "Student",
-    "Criminal"
+    "Captain",
+    "Criminal",
+    "Leader"
    ],
    "hair": [
     "Ginger",
@@ -18714,7 +18726,9 @@
    "age": 47,
    "height": 200,
    "occupation": [
-    "Leader"
+    "Leader",
+    "Officer",
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -28629,9 +28643,11 @@
    "height": null,
    "occupation": [
     "Alchemist",
+    "Officer",
     "Mage",
     "Lancer",
     "Scientist",
+    "Soldier",
     "Fighter"
    ],
    "hair": [
@@ -28708,6 +28724,7 @@
     "Leader",
     "Soldier",
     "Alchemist",
+    "Officer",
     "Scientist"
    ],
    "hair": [
@@ -28822,11 +28839,13 @@
    "height": null,
    "occupation": [
     "Spy",
-    "Soldier"
+    "Soldier",
+    "Captain",
+    "Officer",
+    "Leader"
    ],
    "hair": [
-    "Black",
-    "Green"
+    "Black"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -28900,6 +28919,7 @@
    "occupation": [
     "Alchemist",
     "Soldier",
+    "Officer",
     "Fighter",
     "Scientist"
    ],
@@ -28938,7 +28958,8 @@
    "occupation": null,
    "hair": [
     "Black",
-    "Blond"
+    "Blond",
+    "Green"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -29193,10 +29214,50 @@
    "height": null,
    "occupation": [
     "Alchemist",
-    "Scientist"
+    "Officer",
+    "Scientist",
+    "Soldier"
    ],
    "hair": [
     "Brown"
+   ],
+   "anime": "Fullmetal Alchemist: Brotherhood",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "year": 2009,
+   "studio": "bones",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "10956",
+  "name": "Marcoh Tim",
+  "aliases": [
+   "Tim Marcoh",
+   "ティム・マルコー",
+   "Marcoh",
+   "Tim"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n10956-kIbRRBTTFUN1.png",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Scientist",
+    "Doctor",
+    "Soldier",
+    "Alchemist"
+   ],
+   "hair": [
+    "White"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -29229,7 +29290,39 @@
    "height": null,
    "occupation": [
     "Mechanic",
-    "Communications specialist"
+    "Communications specialist",
+    "Soldier"
+   ],
+   "hair": null,
+   "anime": "Fullmetal Alchemist: Brotherhood",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy"
+   ],
+   "year": 2009,
+   "studio": "bones",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "145723",
+  "name": "Joi",
+  "aliases": [
+   "女医"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145723-s5gCNd1pGnT2.jpg",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": null,
+   "height": null,
+   "occupation": [
+    "Doctor",
+    "Scientist"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -29260,67 +29353,8 @@
    "height": null,
    "occupation": [
     "Soldier",
-    "Leader"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist: Brotherhood",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Drama",
-    "Fantasy"
-   ],
-   "year": 2009,
-   "studio": "bones",
-   "source": "Manga"
-  }
- },
- {
-  "id": "50123",
-  "name": "Charlie",
-  "aliases": [
-   "チャーリー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n50123-2kInS5rwOuM7.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Soldier"
-   ],
-   "hair": null,
-   "anime": "Fullmetal Alchemist: Brotherhood",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Drama",
-    "Fantasy"
-   ],
-   "year": 2009,
-   "studio": "bones",
-   "source": "Manga"
-  }
- },
- {
-  "id": "52739",
-  "name": "Damiano",
-  "aliases": [
-   "ダミアノ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/n52739-CVU3CZq0UBx7.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Soldier"
+    "Leader",
+    "Captain"
    ],
    "hair": null,
    "anime": "Fullmetal Alchemist: Brotherhood",
@@ -29391,6 +29425,7 @@
    "height": null,
    "occupation": [
     "Officer",
+    "Captain",
     "Leader",
     "Noble",
     "Soldier"
@@ -29529,8 +29564,7 @@
    "age": 24,
    "height": null,
    "occupation": [
-    "Soldier",
-    "Sergeant"
+    "Soldier"
    ],
    "hair": [
     "Brown"
@@ -29564,7 +29598,8 @@
    "height": 190,
    "occupation": [
     "Doctor",
-    "Leader"
+    "Leader",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -29658,7 +29693,8 @@
    "age": 21,
    "height": null,
    "occupation": [
-    "Driver"
+    "Driver",
+    "Soldier"
    ],
    "hair": [
     "Black"
@@ -56534,7 +56570,8 @@
    "age": 16,
    "height": 155,
    "occupation": [
-    "Soldier"
+    "Soldier",
+    "Officer"
    ],
    "hair": [
     "Blond"
@@ -56611,7 +56648,8 @@
    "height": 183,
    "occupation": [
     "Student",
-    "Soldier"
+    "Soldier",
+    "Officer"
    ],
    "hair": [
     "White"
@@ -56946,7 +56984,10 @@
    ],
    "age": 16,
    "height": 185,
-   "occupation": null,
+   "occupation": [
+    "Officer",
+    "Soldier"
+   ],
    "hair": [
     "Blond"
    ],
@@ -58044,7 +58085,7 @@
    "occupation": [
     "Psychiatrist",
     "Spy",
-    "Sergeant",
+    "Soldier",
     "Doctor"
    ],
    "hair": [
@@ -66984,7 +67025,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Sergeant"
+    "Soldier"
    ],
    "hair": null,
    "anime": "The Witch and the Beast",

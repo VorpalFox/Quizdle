@@ -197,6 +197,7 @@ const WEAPON_RULES: [RegExp, string][] = [
   [/kunai|shuriken/, 'Ninja'],
   [/microphone/, 'Musician'],
   [/scalpel/, 'Doctor'],
+  [/wrench|spanner/, 'Mechanic'],
 ]
 
 export function weaponOccupations(value: string): string[] {

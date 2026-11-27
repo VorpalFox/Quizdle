@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, animeVersion, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, animeVersion, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, militaryRanks, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { wikiHair } from '../wikipedia.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
@@ -205,6 +205,13 @@ describe('sameName', () => {
     expect(latinName('Tsundere Elf (ツンデレエルフ)')).toBe('Tsundere Elf')
     expect(latinName('Sui')).toBe('Sui')
     expect(latinName('Ryo (Tokyo)')).toBe('Ryo (Tokyo)')
+  })
+
+  it('ChampRank_SeulementLesGradesMilitaires', () => {
+    expect(militaryRanks('Master Sergeant')).toEqual(['Sergeant'])
+    expect(militaryRanks('Captain, Major, Lieutenant Colonel, Brigadier General (posthumously)')).toEqual(['Captain', 'Major', 'Colonel', 'General'])
+    expect(militaryRanks('S-Class Rank 1')).toBeNull()
+    expect(translateOccupation('Private')).toBe('Soldier')
   })
 
   it('CheveuxRomanEtAnime_LaVersionAnime', () => {

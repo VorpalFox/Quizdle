@@ -18,6 +18,7 @@ const OCCUPATIONS: Record<string, string | null> = {
   'principal': 'Principal', 'delving instructor': 'Instructor', 'student council president': 'Student council president',
   // Armée, police
   'general': 'General', 'briggs general': 'General', 'lieutenant': 'Lieutenant', 'sergeant': 'Sergeant', 'officer': 'Officer',
+  'private': 'Soldier', 'admiral': 'Officer', 'commodore': 'Officer', 'ensign': 'Officer',
   'military officer': 'Officer', 'soldier': 'Soldier', 'corporal': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
   'survey corps': 'Survey Corps', '104th training corps': 'Recruit', '104th trainees squad': 'Recruit',
   'police officer': 'Police officer', 'policeman': 'Police officer', 'spy': 'Spy', 'informant': 'Informant',
@@ -363,7 +364,7 @@ export function translateEntries(entries: Entry[], corrected: ReadonlyMap<string
 const OCCUPATION_MERGES: Record<string, string> = {
   'Pupil': 'Student', 'High schooler': 'Student', 'Middle schooler': 'Student',
   'Warrior': 'Fighter', 'Killer': 'Assassin', 'Sniper': 'Marksman',
-  'General': 'Officer', 'Lieutenant': 'Officer', 'Recruit': 'Soldier', 'Bodyguard': 'Guard', 'Secret agent': 'Spy',
+  'General': 'Officer', 'Lieutenant': 'Officer', 'Sergeant': 'Soldier', 'Recruit': 'Soldier', 'Bodyguard': 'Guard', 'Secret agent': 'Spy',
   'Mage': 'Mage', 'Magician': 'Mage', 'Sorcerer': 'Mage', 'Witch': 'Mage', 'Magical Girl': 'Magical girl',
   'Priest': 'Cleric', 'Priestess': 'Cleric', 'Nun': 'Cleric', 'Monk': 'Cleric', 'Cleric': 'Cleric',
   'King': 'Royalty', 'Queen': 'Royalty', 'Emperor': 'Royalty', 'Empress': 'Royalty', 'Monarch': 'Royalty',
