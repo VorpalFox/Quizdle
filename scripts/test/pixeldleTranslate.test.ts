@@ -25,7 +25,8 @@ describe('expandSpecies', () => {
 
 describe('mergeOccupations', () => {
   it('QuasiSynonymes_Regroupes', () => {
-    expect(mergeOccupations(['Killer', 'Assassin', 'Pupil'])).toEqual(['Assassin', 'Student'])
+    expect(mergeOccupations(['Killer', 'Assassin', 'Pupil'])).toEqual(['Assassin', 'Student', 'Criminal', 'Fighter'])
+    expect(mergeOccupations(['Sniper', 'Swordsman'])).toEqual(['Sniper', 'Swordsman', 'Shooter', 'Fighter'])
   })
 
   it('Dieu_Retire', () => {

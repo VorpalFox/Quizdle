@@ -8,6 +8,7 @@
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { isSetEdit } from '../src/subjects/manual.js'
 import { COMPANY_PRESIDENT, expandSpecies, translateSpecies } from './pixeldleTranslate.js'
+import { OCCUPATION_FAMILIES, withFamilies } from './occupationFamilies.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
@@ -376,39 +377,6 @@ const OCCUPATION_MERGES: Record<string, string> = {
   'Actress': 'Actor', 'Rapper': 'Singer',
 }
 
-// Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
-// qui se battent se croisent en jaune même avec des armes différentes. Combattant, c'est le corps à corps ; Tireur, à
-// distance (arme à feu, arc) : un tireur et un épéiste ne se croisent pas (validé avec FX)
-const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
-  // Combat
-  'Swordsman': ['Fighter'], 'Samurai': ['Fighter'], 'Ninja': ['Fighter'], 'Knight': ['Fighter'], 'Archer': ['Shooter'],
-  'Marksman': ['Shooter'], 'Lancer': ['Fighter'], 'Mercenary': ['Fighter'], 'Martial artist': ['Fighter'],
-  'Wrestler': ['Fighter', 'Athlete'], 'Bounty hunter': ['Fighter'], 'Nanny': ['Servant'], 'Bartender': ['Waiter'],
-  // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
-  'Officer': ['Soldier'], 'Survey Corps': ['Soldier'], 'Scout': ['Soldier'],
-  'Demon Slayer': ['Monster hunter', 'Fighter'], 'Demon hunter': ['Monster hunter', 'Fighter'],
-  'Vampire hunter': ['Monster hunter', 'Fighter'], 'Exorcist': ['Monster hunter', 'Mage'],
-  'Superhero': ['Hero', 'Fighter'],
-  // Crime
-  'Assassin': ['Criminal', 'Fighter'], 'Serial killer': ['Criminal'], 'Mobster': ['Criminal'], 'Thug': ['Criminal'],
-  'Thief': ['Criminal'], 'Pirate': ['Criminal'], 'Terrorist': ['Criminal'],
-  // Magie, religion
-  'Magical girl': ['Mage'], 'Onmyouji': ['Mage'], 'Curse user': ['Mage'], 'Miko': ['Cleric'], 'Oracle': ['Cleric'],
-  // Pouvoir
-  'Royalty': ['Noble', 'Leader'], 'President': ['Leader'], 'Manager': ['Leader'], 'Captain': ['Leader'],
-  'Principal': ['Teacher', 'Leader'], 'Student council president': ['Student', 'Leader'],
-  'Company president': ['Businessperson', 'Leader'],
-  // Sciences, santé
-  'Surgeon': ['Doctor'], 'Psychiatrist': ['Doctor'], 'Engineer': ['Scientist'], 'Inventor': ['Scientist'],
-  'Archaeologist': ['Scientist'], 'Oceanographer': ['Scientist'], 'Astronomer': ['Scientist'], 'Alchemist': ['Scientist'],
-  // Arts, spectacle
-  'Singer': ['Musician', 'Artist'], 'Musician': ['Artist'], 'Idol': ['Singer', 'Celebrity', 'Artist'],
-  'Actor': ['Celebrity', 'Artist'], 'Model': ['Celebrity', 'Artist'], 'YouTuber': ['Celebrity'], 'Voice actor': ['Artist'],
-  'Mangaka': ['Artist'], 'Writer': ['Artist'], 'Cosplayer': ['Artist'], 'Tailor': ['Artisan'],
-  // Métiers, sport
-  'Blacksmith': ['Artisan'], 'Florist': ['Artisan'], 'Cook': ['Artisan'], 'Odd jobs': ['Employee'], 'Volleyball player': ['Athlete'],
-}
-
 const NO_REAL_OCCUPATION = new Set(['Unknown', 'None'])
 
 // Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
@@ -416,7 +384,7 @@ export function groupOccupations(values: readonly string[]): string[] | null {
   // Inconnu et Aucune s'effacent devant une vraie occupation (une arme, un titre)
   const real = values.filter(value => !NO_REAL_OCCUPATION.has(value))
   const merged = (real.length > 0 ? real : values).map(value => OCCUPATION_MERGES[value] ?? value)
-  const grouped = [...new Set([...merged, ...merged.flatMap(value => OCCUPATION_FAMILIES[value] ?? [])])]
+  const grouped = withFamilies(merged)
   return grouped.length > 0 ? grouped : null
 }
 
