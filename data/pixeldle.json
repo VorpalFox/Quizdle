@@ -47834,6 +47834,30 @@
   }
  },
  {
+  "id": "wiki-kirby-galacta-knight",
+  "name": "Galacta Knight",
+  "aliases": [
+   "Knight Galacta",
+   "Galacta"
+  ],
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "nationality": null,
+   "occupation": [
+    "Fighter"
+   ],
+   "hair": null,
+   "franchise": "Kirby",
+   "developer": "HAL Laboratory",
+   "genres": [
+    "Action",
+    "Platformer"
+   ],
+   "year": 2008
+  }
+ },
+ {
   "id": "wiki-tomb-raider-conrad-roth",
   "name": "Conrad Roth",
   "aliases": [

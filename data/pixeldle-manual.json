@@ -106,7 +106,11 @@
   "Q128806865",
   "Q135904431",
   "Q11284128",
-  "Q69894320"
+  "Q69894320",
+  "wiki-kirby-kracko",
+  "wiki-kirby-queen-sectonia",
+  "wiki-kirby-the-three-mage-sisters",
+  "wiki-kirby-marx"
  ],
  "edit": {
   "Q2265837": {
@@ -7634,11 +7638,11 @@
  ],
  "wikis": {
   "Kirby": {
-   "_raison": "les 8 persos de Wikidata gardés, plus Whispy Woods, le 1er boss",
+   "_raison": "les 8 persos de Wikidata gardés, plus Whispy Woods, le 1er boss, et Galacta Knight",
    "pages": [
     "Whispy Woods"
    ],
-   "limit": 9
+   "limit": 10
   },
   "Rayman": {
    "_raison": "5 persos de Wikidata (Rayman, Globox, Dark Rayman, Murfy, Rabbid Peach) et un Rabbid de base, pour les deux licences",
