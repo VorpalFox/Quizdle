@@ -7078,9 +7078,9 @@
   "id": "Q613241",
   "name": "Kirby",
   "aliases": [
+   "Kirby of the Stars",
    "Nintendo Kirby",
-   "Kirby des Étoiles",
-   "Kirby of the Stars"
+   "Kirby des Étoiles"
   ],
   "attributes": {
    "gender": "Male",
@@ -12570,9 +12570,9 @@
   "name": "Lord Richard Croft",
   "aliases": [
    "Croft Richard Lord",
-   "Richard James Croft",
    "Lord Richard James Croft, Ph.D",
-   "Richard Croft"
+   "Richard Croft",
+   "Richard James Croft"
   ],
   "attributes": {
    "gender": "Male",
@@ -20930,12 +20930,12 @@
   "id": "Q56363422",
   "name": "Spy",
   "aliases": [
-   "The Spy",
    "Spy (Team Fortress 2)",
    "Spy (TF2)",
    "Blu Spy",
    "Red Spy",
-   "TF2 Spy"
+   "TF2 Spy",
+   "The Spy"
   ],
   "attributes": {
    "gender": "Male",
@@ -44984,8 +44984,6 @@
     "Monde réel"
    ],
    "occupation": [
-    "Fighter",
-    "Servant",
     "Actor",
     "Employee",
     "Driver",
@@ -44994,7 +44992,9 @@
     "Spy",
     "Waiter",
     "Guard",
-    "Worker"
+    "Worker",
+    "Fighter",
+    "Servant"
    ],
    "hair": [
     "Grey"
@@ -47384,7 +47384,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -47406,7 +47408,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67304,7 +67308,9 @@
    "occupation": [
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67326,7 +67332,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67348,7 +67356,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67370,7 +67380,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67392,7 +67404,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67414,7 +67428,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67436,7 +67452,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67458,7 +67476,9 @@
    ],
    "nationality": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
    "genres": [
@@ -67506,10 +67526,10 @@
    ],
    "nationality": null,
    "occupation": [
-    "Assistant"
+    "Guide"
    ],
    "hair": [
-    "N/A"
+    "Red"
    ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
@@ -67609,7 +67629,7 @@
     "Soldier"
    ],
    "hair": [
-    "Brown"
+    "Black"
    ],
    "franchise": "The First Descendant",
    "developer": "Nexon",
