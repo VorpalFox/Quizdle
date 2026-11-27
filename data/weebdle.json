@@ -3192,7 +3192,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Guard"
+    "Guard",
+    "Teacher"
    ],
    "hair": [
     "Blond"
@@ -16628,7 +16629,9 @@
    "age": 16,
    "height": null,
    "occupation": [
-    "Student"
+    "Student",
+    "Captain",
+    "Leader"
    ],
    "hair": [
     "Brown"

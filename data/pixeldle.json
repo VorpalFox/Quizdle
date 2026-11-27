@@ -11351,6 +11351,7 @@
     "Haven City"
    ],
    "occupation": [
+    "Guard",
     "Marksman"
    ],
    "hair": null,
@@ -11535,7 +11536,9 @@
     "Metal Head"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "franchise": "Jak and Daxter",
    "developer": "Naughty Dog",
@@ -19036,7 +19039,8 @@
     "Writer",
     "Vigilante",
     "Businessperson",
-    "Knight"
+    "Knight",
+    "Leader"
    ],
    "hair": null,
    "franchise": "Assassin's Creed",
@@ -34666,7 +34670,9 @@
     "Animal"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "N/A"
    ],
@@ -34738,7 +34744,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Pink"
    ],
@@ -34765,7 +34773,9 @@
     "Human"
    ],
    "nationality": null,
-   "occupation": null,
+   "occupation": [
+    "Politician"
+   ],
    "hair": [
     "Ginger"
    ],

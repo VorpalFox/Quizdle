@@ -8,5 +8,4 @@ Sur tout le quiz : sexe 0 %, espèce 0 %, nationalité 17 %, occupation 21 %, ch
 | Fait | Franchise | Persos | Vide (moy.) | Sexe | Espèce | Nationalité | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|
 | [ ] | The First Descendant | 20 | **41 %** | 0 % | 0 % | 65 % | 60 % | 80 % |
-| [ ] | Zenless Zone Zero | 6 | **40 %** | 0 % | 0 % | 100 % | 50 % | 50 % |
 | [ ] | Yo-kai Watch | 12 | **40 %** | 0 % | 0 % | 67 % | 75 % | 58 % |
