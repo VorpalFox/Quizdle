@@ -18622,7 +18622,9 @@
     "Noble",
     "Pilot",
     "Officer",
-    "Soldier"
+    "Royalty",
+    "Soldier",
+    "Leader"
    ],
    "hair": [
     "Black"
@@ -71784,7 +71786,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Adventurer"
+    "Adventurer",
+    "Noble"
    ],
    "hair": [
     "Blond"
@@ -72058,34 +72061,6 @@
     "Businessperson",
     "Leader"
    ],
-   "hair": null,
-   "anime": "Uncle from Another World",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2022,
-   "studio": "Atelier Pontdarc",
-   "source": "Manga"
-  }
- },
- {
-  "id": "293232",
-  "name": "Ricardo Markfield",
-  "aliases": [
-   "Markfield Ricardo",
-   "リカルド=マークフェルド",
-   "Ricardo",
-   "Markfield"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b293232-XCWLpCQcYoQF.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "Uncle from Another World",
    "genres": [

@@ -490,7 +490,7 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     species: rawList(known(field(fields, FIELDS.species))),
     height: heightCm(field(fields, FIELDS.height)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
-    titles: titleOccupations(field(fields, FIELDS.titles)),
+    titles: mergedLists(titleOccupations(field(fields, FIELDS.titles)), nobleTitles(fields.title ?? null)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
     relatives: bloodRelatives(field(fields, FIELDS.relatives)),
   }
@@ -566,6 +566,16 @@ function titleOccupations(value: string | null): string[] | null {
   const found = (splitOccupations(value ?? '') ?? []).map(title => translateOccupation(title.replace(/[«»"]/g, '').trim())).filter((name): name is string => Boolean(name))
   return found.length > 0 ? [...new Set(found)] : null
 }
+
+// Le champ « title » tout court : ailleurs souvent un rôle ou un surnom (Leader à des élèves de Code Geass), donc
+// seulement les titres de noblesse (« Princess », Elga dans Uncle from Another World)
+const NOBLE_TITLES = new Set(['King', 'Queen', 'Prince', 'Princess', 'Emperor', 'Empress', 'Monarch', 'Count', 'Noble', 'Royalty'])
+export function nobleTitles(value: string | null): string[] | null {
+  const found = (titleOccupations(value) ?? []).filter(title => NOBLE_TITLES.has(title))
+  return found.length > 0 ? found : null
+}
+
+const mergedLists = (a: string[] | null, b: string[] | null) => a || b ? [...new Set([...a ?? [], ...b ?? []])] : null
 
 // --- L'introduction ---
 

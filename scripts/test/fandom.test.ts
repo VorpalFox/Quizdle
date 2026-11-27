@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, latinName, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -181,6 +181,12 @@ describe('sameName', () => {
     expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
     expect(sameName('Mabel Laybelle', 'Mabel Rayveil')).toBe(true)
     expect(sameName('Sawae-san', 'Sawae')).toBe(true)
+  })
+
+  it('ChampTitle_SeulementLaNoblesse', () => {
+    expect(nobleTitles('Princess')).toEqual(['Princess'])
+    expect(nobleTitles('Last Descendant of Ice Clan')).toBeNull()
+    expect(nobleTitles('Student Council President')).toBeNull()
   })
 
   it('NomAlternatifAvecJaponais_SansLeJaponais', () => {
