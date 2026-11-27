@@ -30212,7 +30212,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Student"
+    "Student",
+    "Hunter"
    ],
    "hair": [
     "Blond"
@@ -30271,7 +30272,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165843-An5tit3RUKQY.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human",
+    "Monster"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -30341,37 +30345,6 @@
    "hair": [
     "Black"
    ],
-   "anime": "Gleipnir",
-   "genres": [
-    "Action",
-    "Ecchi",
-    "Mystery",
-    "Supernatural"
-   ],
-   "year": 2020,
-   "studio": "PINE JAM",
-   "source": "Manga"
-  }
- },
- {
-  "id": "168789",
-  "name": "Madoka",
-  "aliases": [
-   "円"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168789-5zeehD2rYCjJ.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human",
-    "Monster"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "None"
-   ],
-   "hair": null,
    "anime": "Gleipnir",
    "genres": [
     "Action",
@@ -30561,10 +30534,38 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": [
     "Black"
    ],
+   "anime": "Gleipnir",
+   "genres": [
+    "Action",
+    "Ecchi",
+    "Mystery",
+    "Supernatural"
+   ],
+   "year": 2020,
+   "studio": "PINE JAM",
+   "source": "Manga"
+  }
+ },
+ {
+  "id": "218496",
+  "name": "Taguchi",
+  "aliases": [
+   "田口"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b218496-qOdVZNHthVeM.png",
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
    "anime": "Gleipnir",
    "genres": [
     "Action",

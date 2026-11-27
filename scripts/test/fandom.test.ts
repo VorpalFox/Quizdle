@@ -67,6 +67,7 @@ describe('fandomValues', () => {
     expect(translateOccupation('Elite Class HEad Teacher')).toBe('Teacher')
     expect(translateOccupation('Adjutant in the Royal Army of Lucidion')).toBe('Officer')
     expect(translateOccupation('Guardians')).toBe('Guardian')
+    expect(translateOccupation('strong Collector')).toBe('Hunter')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')

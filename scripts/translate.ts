@@ -193,7 +193,8 @@ const RULES: [RegExp, string | null][] = [
   [/assistant|\baide\b|sidekick|\bbuddy\b|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
   [/traveler|traveller|nomad|wanderer/, 'Traveler'],
   [/\bpresident\b|representative|second-in-command/, 'Leader'],
-  [/\bhunter\b/, 'Hunter'],
+  // Les Collectors de Gleipnir chassent les pièces de l'Alien
+  [/\bhunter\b|\bcollectors?\b/, 'Hunter'],
   [/\bhero(?:ine)?\b|vassal weapon/, 'Hero'],
   [/supervillain|villain/, 'Villain'],
   [/waitress|waiter|hostess/, 'Waiter'],
