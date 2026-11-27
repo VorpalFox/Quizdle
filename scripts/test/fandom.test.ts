@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, latinName, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -65,6 +65,7 @@ describe('fandomValues', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
     expect(translateOccupation('General Student')).toBe('Pupil')
     expect(translateOccupation('Elite Class HEad Teacher')).toBe('Teacher')
+    expect(translateOccupation('Adjutant in the Royal Army of Lucidion')).toBe('Officer')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')
@@ -178,6 +179,14 @@ describe('sameName', () => {
     expect(sameName('Mary', 'Marie')).toBe(true)
     expect(sameName('Ro Nny', 'Lo-Ny')).toBe(true)
     expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
+    expect(sameName('Mabel Laybelle', 'Mabel Rayveil')).toBe(true)
+    expect(sameName('Sawae-san', 'Sawae')).toBe(true)
+  })
+
+  it('NomAlternatifAvecJaponais_SansLeJaponais', () => {
+    expect(latinName('Tsundere Elf (ツンデレエルフ)')).toBe('Tsundere Elf')
+    expect(latinName('Sui')).toBe('Sui')
+    expect(latinName('Ryo (Tokyo)')).toBe('Ryo (Tokyo)')
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {

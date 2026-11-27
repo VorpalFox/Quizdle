@@ -251,20 +251,24 @@ async function searchTitles(wiki: string, names: string[]): Promise<Record<strin
 // Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
 // transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »), c et k
 // (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast),
-// r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »).
+// r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »), b et v pareil (« Laybelle » / « Rayveil »,
+// Uncle from Another World). Sans le suffixe de politesse du nom AniList (« Sawae-san » / « Sawae »).
 // Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
+const HONORIFICS = new Set(['san', 'chan', 'kun', 'sama', 'dono', 'senpai'])
 export function sameName(name: string, title: string): boolean {
   const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r')
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r').replace(/v/g, 'b')
     .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
   // Le nom collé, dans un ordre ou l'autre, découpé autrement (« Shabei Yi » / « Yisha Bei » à Immortal King)
-  const nameWords = words(name)
+  const nameWords = words(name).filter((word, index) => index === 0 || !HONORIFICS.has(word))
   if (nameWords.length > 1 && [nameWords, nameWords.toReversed()].some(order => distance(order.join(''), titleWords.join('')) <= 1))
     return true
   const candidates = [...titleWords, titleWords.join('')]
   return nameWords.every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
 }
+
+export const latinName = (name: string) => name.replace(/\s*\([^)]*[^\x00-\x7F][^)]*\)/g, '').trim()
 
 // Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
 function distance(a: string, b: string): number {
@@ -731,7 +735,8 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
     // Et ses autres noms AniList (« Kansatsu-sha » → « The Beholder », « Upa » → « Oopa ») : des surnoms qu'on ne garde
     // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
-    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
+    // Sans le japonais entre parenthèses (« Tsundere Elf (ツンデレエルフ) » → « Tsundere Elf », Elga dans Uncle from Another World)
+    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.map(latinName).filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
     if (lost.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs

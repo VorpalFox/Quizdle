@@ -20595,9 +20595,11 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": null,
+   "age": 60,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": null,
    "anime": "DARLING in the FRANXX",
    "genres": [
@@ -42824,15 +42826,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b263914-SSfEO4UFXbrd.png",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
+    "Homunculus",
     "Snake",
     "Animal"
    ],
-   "age": null,
-   "height": null,
+   "age": 19,
+   "height": 182,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comedy",
@@ -71773,11 +71778,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205570-eZr6Ac7NBd0L.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Elf"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Adventurer"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Adventure",
@@ -71800,11 +71811,20 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205569-uFcBLlhb3pM2.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Unemployed",
+    "Knight",
+    "Adventurer",
+    "Fighter"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Adventure",
@@ -71894,11 +71914,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b278620-bHheQ5c9zOgy.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Uncle from Another World",
    "genres": [
     "Adventure",
@@ -72087,7 +72113,8 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Noble"
+    "Officer",
+    "Soldier"
    ],
    "hair": [
     "Pink"
@@ -72120,7 +72147,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": null,
    "anime": "Uncle from Another World",
    "genres": [
@@ -72410,10 +72439,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b220599-VJO8UJrkNiui.jpg",
   "attributes": {
    "gender": null,
-   "species": null,
+   "species": [
+    "Robot"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": null,
    "anime": "Vivy -Fluorite Eye's Song-",
    "genres": [

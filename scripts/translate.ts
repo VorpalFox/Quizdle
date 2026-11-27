@@ -101,6 +101,8 @@ const RULES: [RegExp, string | null][] = [
   // Le prof principal d'une classe (« Elite Class Head Teacher », Pan Shengcong à Immortal King) : un prof, pas un chef
   [/\bhead ?teacher\b/, 'Teacher'],
   [/\broyal (?:body)?guard/, 'Guard'],
+  // L'aide de camp d'un officier, même dans une armée royale (Miller Greyler, Uncle from Another World) : pas un noble
+  [/\badjutant\b/, 'Officer'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Demon Slayer'],
   // Et les chasseurs d'esprits de The World God Only Knows (« Runaway Spirit Squad Agent », « Buddy - Spirit Capturing »)
