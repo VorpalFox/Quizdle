@@ -487,7 +487,7 @@ export function fandomValues(fields: Record<string, string>): Record<Key, Attrib
     occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
     hair: wikiHair(field(fields, FIELDS.hair)),
     age: infoboxAge(field(fields, FIELDS.age)),
-    species: rawList(known(field(fields, FIELDS.species))),
+    species: mergedLists(rawList(known(field(fields, FIELDS.species))), statusSpecies(field(fields, FIELDS.deceased))),
     height: heightCm(field(fields, FIELDS.height)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
     titles: mergedLists(titleOccupations(field(fields, FIELDS.titles)), nobleTitles(fields.title ?? null)),
@@ -573,6 +573,16 @@ const NOBLE_TITLES = new Set(['King', 'Queen', 'Prince', 'Princess', 'Emperor', 
 export function nobleTitles(value: string | null): string[] | null {
   const found = (titleOccupations(value) ?? []).filter(title => NOBLE_TITLES.has(title))
   return found.length > 0 ? found : null
+}
+
+// L'espèce que dit le statut : un fantôme (« Spirit », Mamoru Yotsuya dans Mieruko-chan ; « Deceased (appears as
+// ghost) ») ou un mort-vivant (« Alive (Undead) », Sunako dans Shiki). Pas un spoil : on le voit comme ça à l'écran.
+export function statusSpecies(value: string | null): string[] | null {
+  if (!value)
+    return null
+  if (/\bundead\b/i.test(value))
+    return ['Undead']
+  return /^\s*spirit\s*$|\bghost\b/i.test(value) ? ['Ghost'] : null
 }
 
 const mergedLists = (a: string[] | null, b: string[] | null) => a || b ? [...new Set([...a ?? [], ...b ?? []])] : null

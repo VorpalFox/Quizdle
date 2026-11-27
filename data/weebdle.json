@@ -33451,7 +33451,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Vampire"
+    "Vampire",
+    "Undead"
    ],
    "age": 581,
    "height": 220,
@@ -40212,7 +40213,8 @@
   "attributes": {
    "gender": "Female",
    "species": [
-    "Lich"
+    "Lich",
+    "Undead"
    ],
    "age": 20,
    "height": null,
@@ -43120,7 +43122,6 @@
   "aliases": [
    "Yurikawa Hana",
    "百合川ハナ",
-   "Hana",
    "Yurikawa"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139632-b95rh3VplAYY.png",
@@ -43361,7 +43362,9 @@
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "N/A"
+   ],
    "anime": "Mieruko-chan",
    "genres": [
     "Comedy",
@@ -43386,7 +43389,7 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Ghost"
    ],
    "age": null,
    "height": 172,
@@ -43439,63 +43442,6 @@
   }
  },
  {
-  "id": "258652",
-  "name": "Ogawa",
-  "aliases": [
-   "小川"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b258652-dWqsk3mO6zqx.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
-   ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
-  "id": "199024",
-  "name": "Zen no Haha",
-  "aliases": [
-   "Haha no Zen",
-   "善の母"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199024-ggtiHHNnzDBz.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
-   ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
   "id": "250706",
   "name": "Arai",
   "aliases": [
@@ -43512,7 +43458,9 @@
    "occupation": [
     "Teacher"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Mieruko-chan",
    "genres": [
     "Comedy",
@@ -43556,132 +43504,22 @@
   }
  },
  {
-  "id": "250707",
-  "name": "Hitoe",
+  "id": "251686",
+  "name": "Morino",
   "aliases": [
-   "ひとえ"
+   "森野"
   ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250707-0NgScGk516uu.png",
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b251686-zeNgRTyI2T0U.png",
   "attributes": {
    "gender": "Female",
    "species": [
     "Human"
    ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
+   "height": 157,
+   "occupation": [
+    "Student"
    ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
-  "id": "250708",
-  "name": "Mao",
-  "aliases": [
-   "まお"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
-   ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
-  "id": "250710",
-  "name": "Kainushi",
-  "aliases": [
-   "飼い主"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
-   ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
-  "id": "250712",
-  "name": "Horiguchi",
-  "aliases": [
-   "堀口"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Mieruko-chan",
-   "genres": [
-    "Comedy",
-    "Horror",
-    "Slice of Life",
-    "Supernatural"
-   ],
-   "year": 2021,
-   "studio": "Passione",
-   "source": "Manga"
-  }
- },
- {
-  "id": "251688",
-  "name": "Fujita",
-  "aliases": [
-   "藤田"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": null,
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": null,
    "hair": null,
    "anime": "Mieruko-chan",
    "genres": [
@@ -57455,7 +57293,8 @@
    "gender": "Female",
    "species": [
     "Human",
-    "Vampire"
+    "Vampire",
+    "Undead"
    ],
    "age": 13,
    "height": null,
@@ -63370,7 +63209,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Ghost"
    ],
    "age": null,
    "height": null,
@@ -67062,7 +66902,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205117-kZnDFdKPKFEc.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Undead"
+   ],
    "age": "Unknown",
    "height": null,
    "occupation": null,

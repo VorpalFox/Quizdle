@@ -13,14 +13,13 @@ Sur tout le quiz : sexe 1 %, espèce 9 %, âge 41 %, taille 56 %, occupation 15 
 | [ ] | Tokyo Ravens | 16 | **47 %** | 0 % | 94 % | 44 % | 81 % | 13 % | 50 % |
 | [ ] | From the New World | 20 | **44 %** | 10 % | 20 % | 55 % | 100 % | 25 % | 55 % |
 | [ ] | Gleipnir | 20 | **44 %** | 0 % | 5 % | 95 % | 100 % | 45 % | 20 % |
-| [ ] | Mieruko-chan | 20 | **44 %** | 10 % | 0 % | 80 % | 60 % | 60 % | 55 % |
 | [ ] | Summer Time Rendering | 17 | **44 %** | 0 % | 47 % | 65 % | 76 % | 47 % | 29 % |
 | [ ] | Tsubasa RESERVoir CHRoNiCLE | 20 | **44 %** | 0 % | 55 % | 25 % | 95 % | 40 % | 50 % |
 | [ ] | Made in Abyss | 15 | **43 %** | 7 % | 7 % | 93 % | 100 % | 20 % | 33 % |
 | [ ] | Vivy -Fluorite Eye's Song- | 20 | **43 %** | 20 % | 15 % | 100 % | 65 % | 30 % | 25 % |
-| [ ] | The Witch and the Beast | 15 | **42 %** | 0 % | 67 % | 60 % | 73 % | 13 % | 40 % |
 | [ ] | Devilman Crybaby | 20 | **41 %** | 0 % | 0 % | 95 % | 95 % | 25 % | 30 % |
 | [ ] | Fullmetal Alchemist: Brotherhood | 20 | **41 %** | 0 % | 30 % | 40 % | 100 % | 20 % | 55 % |
 | [ ] | Ranking of Kings | 20 | **41 %** | 0 % | 0 % | 100 % | 100 % | 20 % | 25 % |
+| [ ] | The Witch and the Beast | 15 | **41 %** | 0 % | 60 % | 60 % | 73 % | 13 % | 40 % |
 | [ ] | Dororo | 20 | **40 %** | 0 % | 0 % | 90 % | 95 % | 35 % | 20 % |
 | [ ] | No Game, No Life | 18 | **40 %** | 0 % | 39 % | 44 % | 78 % | 39 % | 39 % |

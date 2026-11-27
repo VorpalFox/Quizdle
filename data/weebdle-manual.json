@@ -64,7 +64,13 @@
   "219205",
   "293232",
   "293589",
-  "293233"
+  "293233",
+  "250707",
+  "250708",
+  "250712",
+  "258652",
+  "250710",
+  "251688"
  ],
  "edit": {
   "80": {
@@ -582,12 +588,18 @@
   },
   "251689": {
    "_nom": "Nyansuke",
+   "_raison": "un chat : pas de cheveux",
    "species": {
     "plus": [
      "Cat"
     ],
     "moins": [
      "Human"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
@@ -805,7 +817,8 @@
   "The Reincarnation of the Strongest Exorcist in Another World": 18,
   "The World God Only Knows": 15,
   "Saga of Tanya the Evil": 16,
-  "The Daily Life of the Immortal King": 17
+  "The Daily Life of the Immortal King": 17,
+  "Mieruko-chan": 14
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
@@ -817,6 +830,7 @@
   "201555": "The Nameless Boy",
   "135053": "List of Minor Characters#Ihlen Schwarzkopf",
   "219181": "Mother Wang",
-  "219178": "Father Wang"
+  "219178": "Father Wang",
+  "250706": "Mrs. Arai"
  }
 }

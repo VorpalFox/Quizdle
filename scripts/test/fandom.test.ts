@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
+import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
 import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
@@ -181,6 +181,14 @@ describe('sameName', () => {
     expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
     expect(sameName('Mabel Laybelle', 'Mabel Rayveil')).toBe(true)
     expect(sameName('Sawae-san', 'Sawae')).toBe(true)
+  })
+
+  it('StatutFantomeOuMortVivant_LEspece', () => {
+    expect(statusSpecies('Spirit')).toEqual(['Ghost'])
+    expect(statusSpecies('Deceased (appears as ghost)')).toEqual(['Ghost'])
+    expect(statusSpecies('Alive (Undead)')).toEqual(['Undead'])
+    expect(statusSpecies('Exorcised by Shrine Spirits')).toBeNull()
+    expect(statusSpecies('Alive')).toBeNull()
   })
 
   it('ChampTitle_SeulementLaNoblesse', () => {
