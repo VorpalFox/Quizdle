@@ -1,5 +1,9 @@
 {
  "exclude": [
+  "264479",
+  "264680",
+  "260810",
+  "260813",
   "145723",
   "50123",
   "52739",
@@ -690,6 +694,14 @@
     ]
    }
   },
+  "271149": {
+   "_nom": "Mitsumata",
+   "_note": "épinglé : connu (72 favoris) mais vide, la limite le retirerait avant des inconnus"
+  },
+  "260812": {
+   "_nom": "Gigan",
+   "_note": "épinglé : connu mais vide, la limite le retirerait avant des inconnus"
+  },
   "264680": {
    "_nom": "Kage Haha",
    "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX) ; une ombre, pas de cheveux",
@@ -887,7 +899,8 @@
   "The World God Only Knows": 15,
   "Saga of Tanya the Evil": 16,
   "The Daily Life of the Immortal King": 17,
-  "Mieruko-chan": 14
+  "Mieruko-chan": 14,
+  "Ranking of Kings": 16
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
