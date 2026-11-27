@@ -62,7 +62,9 @@
   "219202",
   "219204",
   "219205",
-  "293232"
+  "293232",
+  "293589",
+  "293233"
  ],
  "edit": {
   "80": {
@@ -790,15 +792,6 @@
     "plus": [
      "Cheater",
      "Writer"
-    ]
-   }
-  },
-  "293590": {
-   "_nom": "Doldoll Rexdol",
-   "_note": "« The Giant Hunter » dans le champ title du wiki, qu'on ne lit pas",
-   "occupation": {
-    "plus": [
-     "Hunter"
     ]
    }
   },

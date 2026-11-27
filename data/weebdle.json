@@ -72040,40 +72040,6 @@
   }
  },
  {
-  "id": "293589",
-  "name": "Hagen Regfalgen",
-  "aliases": [
-   "Regfalgen Hagen",
-   "ハーゲン＝レグファルゲン",
-   "Hagen",
-   "Regfalgen"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b293589-aSbpFCqTHXHB.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Company president",
-    "Businessperson",
-    "Leader"
-   ],
-   "hair": null,
-   "anime": "Uncle from Another World",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2022,
-   "studio": "Atelier Pontdarc",
-   "source": "Manga"
-  }
- },
- {
   "id": "293235",
   "name": "Grayler",
   "aliases": [
@@ -72123,41 +72089,12 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Fighter",
     "Hunter"
    ],
-   "hair": null,
-   "anime": "Uncle from Another World",
-   "genres": [
-    "Adventure",
-    "Comedy",
-    "Fantasy"
+   "hair": [
+    "Red"
    ],
-   "year": 2022,
-   "studio": "Atelier Pontdarc",
-   "source": "Manga"
-  }
- },
- {
-  "id": "293233",
-  "name": "Karn Zernegan",
-  "aliases": [
-   "Zernegan Karn",
-   "カーン=ゼルネガン",
-   "Karn",
-   "Zernegan"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b293233-puB5Jg5PKqrq.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Politician"
-   ],
-   "hair": null,
    "anime": "Uncle from Another World",
    "genres": [
     "Adventure",
