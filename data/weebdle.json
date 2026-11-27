@@ -30114,7 +30114,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],
@@ -30278,7 +30280,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Hunter"
+   ],
    "hair": [
     "Blond"
    ],
@@ -30340,7 +30344,7 @@
    "age": null,
    "height": null,
    "occupation": [
-    "Student"
+    "Hunter"
    ],
    "hair": [
     "Black"
@@ -30540,32 +30544,6 @@
    "hair": [
     "Black"
    ],
-   "anime": "Gleipnir",
-   "genres": [
-    "Action",
-    "Ecchi",
-    "Mystery",
-    "Supernatural"
-   ],
-   "year": 2020,
-   "studio": "PINE JAM",
-   "source": "Manga"
-  }
- },
- {
-  "id": "218496",
-  "name": "Taguchi",
-  "aliases": [
-   "田口"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b218496-qOdVZNHthVeM.png",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "Gleipnir",
    "genres": [
     "Action",
