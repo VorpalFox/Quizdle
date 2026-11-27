@@ -59136,7 +59136,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155711-VwaqEhjhI0FL.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": 29,
    "height": 172,
    "occupation": null,
@@ -59234,7 +59236,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b231699-Gox8gbSdM0Ml.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -59264,7 +59268,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155705-odov1kqX0KEr.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": 16,
    "height": 150,
    "occupation": null,
@@ -59296,7 +59302,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155713-XYxYOuV740Yy.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59330,7 +59338,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155708-mOQnFZUSbcH3.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": 17,
    "height": 178,
    "occupation": null,
@@ -59399,7 +59409,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b265005-h34QGhRmEoGI.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59455,35 +59467,6 @@
   }
  },
  {
-  "id": "283899",
-  "name": "Chitose Hishigata",
-  "aliases": [
-   "Hishigata Chitose",
-   "菱形千登勢",
-   "Hishigata"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b283899-XhsGmW6SW6Yh.png",
-  "attributes": {
-   "gender": "Female",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "Summer Time Rendering",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2022,
-   "studio": "OLM",
-   "source": "Manga"
-  }
- },
- {
   "id": "265006",
   "name": "Alain Kofune",
   "aliases": [
@@ -59520,41 +59503,6 @@
   }
  },
  {
-  "id": "297467",
-  "name": "Asako Kobayakawa",
-  "aliases": [
-   "Kobayakawa Asako",
-   "小早川朝子",
-   "Asako",
-   "Kobayakawa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297467-eo7j43dEsNh6.png",
-  "attributes": {
-   "gender": "Female",
-   "species": [
-    "Human",
-    "Shadow"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Merchant"
-   ],
-   "hair": null,
-   "anime": "Summer Time Rendering",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2022,
-   "studio": "OLM",
-   "source": "Manga"
-  }
- },
- {
   "id": "155709",
   "name": "Seidou Hishigata",
   "aliases": [
@@ -59566,7 +59514,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155709-S0ylh1rEm2ki.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -59575,40 +59525,6 @@
    "hair": [
     "Grey"
    ],
-   "anime": "Summer Time Rendering",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mystery",
-    "Supernatural",
-    "Thriller"
-   ],
-   "year": 2022,
-   "studio": "OLM",
-   "source": "Manga"
-  }
- },
- {
-  "id": "297468",
-  "name": "Tatsuo Kobayakawa",
-  "aliases": [
-   "Kobayakawa Tatsuo",
-   "小早川達夫",
-   "Tatsuo",
-   "Kobayakawa"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b297468-9b9dRtep4Q07.png",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Merchant"
-   ],
-   "hair": null,
    "anime": "Summer Time Rendering",
    "genres": [
     "Action",
@@ -71140,6 +71056,7 @@
   "aliases": [
    "Hibiya Chitose",
    "日比谷千歳",
+   "Chitose",
    "Hibiya"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b228-zmbHojxN4XZX.png",

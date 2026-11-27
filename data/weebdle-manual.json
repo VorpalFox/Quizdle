@@ -1,5 +1,8 @@
 {
  "exclude": [
+  "283899",
+  "297467",
+  "297468",
   "260812",
   "264479",
   "264680",
@@ -911,6 +914,7 @@
   "219181": "Mother Wang",
   "219178": "Father Wang",
   "250706": "Mrs. Arai",
-  "255295": "Shrine Spirits"
+  "255295": "Shrine Spirits",
+  "231699": "Ryunosuke Minakata"
  }
 }

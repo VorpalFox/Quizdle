@@ -3,7 +3,7 @@
 Recalculé par `npx tsx notes/aEnrichir.ts weebdle` (`--seuil N` pour changer).
 Les univers au-dessus de 40 % de cases vides en moyenne, les pires d'abord.
 Fait : [x] traité, [-] passé (pas d'info trouvée), [ ] à faire. Les coches sont gardées au recalcul.
-Sur tout le quiz : sexe 1 %, espèce 8 %, âge 40 %, taille 55 %, occupation 14 %, cheveux 19 %.
+Sur tout le quiz : sexe 1 %, espèce 8 %, âge 40 %, taille 55 %, occupation 14 %, cheveux 18 %.
 
 | Fait | Anime | Persos | Vide (moy.) | Sexe | Espèce | Âge | Taille | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|---|
@@ -15,7 +15,6 @@ Sur tout le quiz : sexe 1 %, espèce 8 %, âge 40 %, taille 55 %, occupation 14 
 | [ ] | Now and Then, Here and There | 7 | **43 %** | 0 % | 0 % | 100 % | 100 % | 29 % | 29 % |
 | [ ] | Vivy -Fluorite Eye's Song- | 20 | **43 %** | 20 % | 15 % | 100 % | 65 % | 30 % | 25 % |
 | [ ] | Devilman Crybaby | 20 | **41 %** | 0 % | 0 % | 95 % | 95 % | 25 % | 30 % |
-| [ ] | Ranking of Kings | 20 | **41 %** | 0 % | 0 % | 100 % | 100 % | 20 % | 25 % |
 | [ ] | The Witch and the Beast | 15 | **41 %** | 0 % | 60 % | 60 % | 73 % | 13 % | 40 % |
 | [ ] | Tsubasa RESERVoir CHRoNiCLE | 20 | **41 %** | 0 % | 55 % | 15 % | 95 % | 35 % | 45 % |
 | [ ] | Dororo | 20 | **40 %** | 0 % | 0 % | 90 % | 95 % | 35 % | 20 % |
