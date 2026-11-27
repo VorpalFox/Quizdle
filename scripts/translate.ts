@@ -33,6 +33,8 @@ const OCCUPATIONS: Record<string, string | null> = {
   'hero': 'Hero', 'pro hero': 'Pro hero', 'villain': 'Villain',
   'pirate': 'Pirate', 'space pirate': 'Space pirate', 'thief': 'Thief', 'criminal': 'Criminal', 'tueur en série': 'Serial killer',
   'god': 'God', 'goddess': 'Goddess', 'god of war': 'God', 'delivery god': 'God', 'god of calamity': 'God',
+  // Yama, dieu de la mort et roi des Enfers bouddhiste (Yan Xiaoluo, Immortal King)
+  'yama': 'God',
   // Noblesse
   'king': 'King', 'queen': 'Queen', 'prince': 'Prince', 'princess': 'Princess', 'emperor': 'Emperor', 'empress': 'Empress',
   'noble': 'Noble', 'lord': 'Lord', 'lady': 'Lady', 'earl of phantomhive': 'Count', 'president': 'President', 'diplomat': 'Diplomat',

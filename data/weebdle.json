@@ -62856,6 +62856,7 @@
   "aliases": [
    "Guo Hao",
    "郭豪",
+   "Hao",
    "Guo"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b212566-uQlmJp4ot2Pz.png",
@@ -62972,7 +62973,7 @@
    "age": 28,
    "height": null,
    "occupation": [
-    "National Comite Of Immortal Arts",
+    "Politician",
     "Hero"
    ],
    "hair": [
@@ -63005,7 +63006,6 @@
    "age": null,
    "height": 143,
    "occupation": [
-    "God of All Spirit Swords",
     "Royalty",
     "Leader",
     "Noble"
@@ -63043,7 +63043,7 @@
    "age": 3000,
    "height": null,
    "occupation": [
-    "Yama"
+    "God"
    ],
    "hair": null,
    "anime": "The Daily Life of the Immortal King",
@@ -63247,6 +63247,94 @@
    "occupation": [
     "Student"
    ],
+   "hair": null,
+   "anime": "The Daily Life of the Immortal King",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "year": 2020,
+   "studio": "Haoliners Animation",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "219217",
+  "name": "Sun Shu",
+  "aliases": [
+   "Shu Sun",
+   "Uncle Sun",
+   "孙叔",
+   "Shu"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Daily Life of the Immortal King",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "year": 2020,
+   "studio": "Haoliners Animation",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "219218",
+  "name": "Guangtou Hunhun",
+  "aliases": [
+   "Hunhun Guangtou",
+   "光头混混",
+   "Guangtou",
+   "Hunhun"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
+   "hair": null,
+   "anime": "The Daily Life of the Immortal King",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "year": 2020,
+   "studio": "Haoliners Animation",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "219219",
+  "name": "Mojin Chanfa Nan",
+  "aliases": [
+   "Nan Chanfa Mojin",
+   "墨镜长发男",
+   "Mojin",
+   "Chanfa",
+   "Nan"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": null,
+   "age": null,
+   "height": null,
+   "occupation": null,
    "hair": null,
    "anime": "The Daily Life of the Immortal King",
    "genres": [

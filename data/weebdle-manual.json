@@ -58,7 +58,10 @@
   "219198",
   "219199",
   "219200",
-  "219203"
+  "219203",
+  "219202",
+  "219204",
+  "219205"
  ],
  "edit": {
   "80": {
@@ -744,6 +747,27 @@
     ]
    }
   },
+  "212567": {
+   "_nom": "Yi Zhou",
+   "_note": "le comité d'État des arts immortels (la cultivation), pas de l'art",
+   "occupation": {
+    "plus": [
+     "Politician"
+    ],
+    "moins": [
+     "National Comite Of Immortal Arts"
+    ]
+   }
+  },
+  "219212": {
+   "_nom": "Jingke",
+   "_note": "God of All Spirit Swords : déjà Leader",
+   "occupation": {
+    "moins": [
+     "God of All Spirit Swords"
+    ]
+   }
+  },
   "219194": {
    "_nom": "Xuan Ku",
    "_note": "gardé malgré la limite de The Daily Life of the Immortal King"
@@ -757,8 +781,7 @@
  "limits": {
   "The Reincarnation of the Strongest Exorcist in Another World": 18,
   "The World God Only Knows": 15,
-  "Saga of Tanya the Evil": 16,
-  "The Daily Life of the Immortal King": 17
+  "Saga of Tanya the Evil": 16
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
