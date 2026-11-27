@@ -424,6 +424,7 @@
     "Adventurer",
     "Marksman",
     "Fighter",
+    "Shooter",
     "Criminal",
     "Monster hunter"
    ],
@@ -2320,7 +2321,8 @@
     "Pilot",
     "Hunter",
     "Criminal",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Green",
@@ -3003,7 +3005,7 @@
     "Archer",
     "Marksman",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -3904,7 +3906,7 @@
    "occupation": [
     "Leader",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Silver"
@@ -4163,7 +4165,7 @@
    "occupation": [
     "Processor",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Ginger",
@@ -4469,7 +4471,8 @@
     "Adventurer",
     "Swordsman",
     "Archer",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Brown",
@@ -5253,7 +5256,8 @@
     "Leader",
     "Archer",
     "Fighter",
-    "Criminal"
+    "Criminal",
+    "Shooter"
    ],
    "hair": [
     "Silver"
@@ -5633,7 +5637,8 @@
     "Leader",
     "Swordsman",
     "Marksman",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Black"

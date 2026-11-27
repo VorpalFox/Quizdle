@@ -377,11 +377,12 @@ const OCCUPATION_MERGES: Record<string, string> = {
 }
 
 // Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
-// qui se battent se croisent en jaune même avec des armes différentes
+// qui se battent se croisent en jaune même avec des armes différentes. Combattant, c'est le corps à corps ; Tireur, à
+// distance (arme à feu, arc) : un tireur et un épéiste ne se croisent pas (validé avec FX)
 const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
   // Combat
-  'Swordsman': ['Fighter'], 'Samurai': ['Fighter'], 'Ninja': ['Fighter'], 'Knight': ['Fighter'], 'Archer': ['Fighter'],
-  'Marksman': ['Fighter'], 'Lancer': ['Fighter'], 'Mercenary': ['Fighter'], 'Martial artist': ['Fighter'],
+  'Swordsman': ['Fighter'], 'Samurai': ['Fighter'], 'Ninja': ['Fighter'], 'Knight': ['Fighter'], 'Archer': ['Shooter'],
+  'Marksman': ['Shooter'], 'Lancer': ['Fighter'], 'Mercenary': ['Fighter'], 'Martial artist': ['Fighter'],
   'Wrestler': ['Fighter', 'Athlete'], 'Bounty hunter': ['Fighter'], 'Nanny': ['Servant'], 'Bartender': ['Waiter'],
   // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
   'Officer': ['Soldier'], 'Survey Corps': ['Soldier'], 'Scout': ['Soldier'],

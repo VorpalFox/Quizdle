@@ -139,7 +139,7 @@ describe('groupOccupations', () => {
 describe('finishOccupations', () => {
   it('Armes_AjouteesALOccupationPuisRetirees', () => {
     const entry = { id: '1', name: 'X', attributes: { occupation: ['Mercenary'], weapon: ['Swordsman', 'Marksman', 'Archer'] } }
-    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenary', 'Swordsman', 'Marksman', 'Fighter'] })
+    expect(finishOccupations([entry])[0]!.attributes).toEqual({ occupation: ['Mercenary', 'Swordsman', 'Marksman', 'Fighter', 'Shooter'] })
   })
 
   it('SansOccupation_LArmeSuffit', () => {

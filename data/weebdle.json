@@ -2043,7 +2043,7 @@
    "height": 161,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -2761,7 +2761,7 @@
    "height": null,
    "occupation": [
     "Archer",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -8884,7 +8884,8 @@
    "height": null,
    "occupation": [
     "Fighter",
-    "Marksman"
+    "Marksman",
+    "Shooter"
    ],
    "hair": [
     "Blond"
@@ -9202,7 +9203,7 @@
     "Marksman",
     "Leader",
     "Businessperson",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Blond"
@@ -9240,7 +9241,8 @@
     "Guard",
     "Swordsman",
     "Marksman",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -10171,7 +10173,7 @@
     "Unemployed",
     "Government Volunteer",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -10392,7 +10394,7 @@
     "Politician",
     "Leader",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -11462,7 +11464,7 @@
     "Marksman",
     "Monster hunter",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -11611,7 +11613,7 @@
     "Marksman",
     "Monster hunter",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Grey"
@@ -20704,7 +20706,8 @@
     "Student",
     "Swordsman",
     "Marksman",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -20742,7 +20745,7 @@
     "Student",
     "Guardian",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -20807,7 +20810,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Blond"
@@ -21001,7 +21004,7 @@
    "occupation": [
     "Teacher",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": null,
    "anime": "Darwin's Game",
@@ -24409,7 +24412,7 @@
    "height": null,
    "occupation": [
     "Archer",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -26145,6 +26148,7 @@
     "Swordsman",
     "Philanthropist",
     "Artisan",
+    "Shooter",
     "Fighter"
    ],
    "hair": [
@@ -28762,7 +28766,7 @@
    "occupation": [
     "Mechanic",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Blond"
@@ -32931,7 +32935,7 @@
     "Marksman",
     "Teacher",
     "Pilot",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Red"
@@ -33591,8 +33595,9 @@
     "Marksman",
     "Vampire hunter",
     "Assassin",
-    "Fighter",
+    "Shooter",
     "Monster hunter",
+    "Fighter",
     "Criminal"
    ],
    "hair": [
@@ -39953,7 +39958,7 @@
     "Scientist",
     "Nudist Beach operative",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black",
@@ -40198,7 +40203,7 @@
     "President",
     "Leader",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Ginger"
@@ -40269,7 +40274,8 @@
     "Adventurer",
     "Swordsman",
     "Archer",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Brown",
@@ -40841,7 +40847,7 @@
    "height": null,
    "occupation": [
     "Archer",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -49955,7 +49961,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Silver"
@@ -50056,7 +50062,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": null,
    "anime": "Plastic Memories",
@@ -50157,7 +50163,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -50190,7 +50196,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Blue"
@@ -50377,7 +50383,7 @@
    "height": null,
    "occupation": [
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": null,
    "anime": "Plastic Memories",
@@ -51327,7 +51333,7 @@
     "Archer",
     "Marksman",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -51368,7 +51374,7 @@
     "God",
     "Archer",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Pink"
@@ -51487,7 +51493,7 @@
     "Magical girl",
     "Marksman",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Blond"
@@ -55934,7 +55940,7 @@
     "Officer",
     "Marksman",
     "Soldier",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -56174,7 +56180,7 @@
     "Officer",
     "Marksman",
     "Soldier",
-    "Fighter"
+    "Shooter"
    ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
@@ -56241,7 +56247,7 @@
     "Marksman",
     "Soldier",
     "Leader",
-    "Fighter"
+    "Shooter"
    ],
    "hair": null,
    "anime": "Saga of Tanya the Evil",
@@ -56312,7 +56318,7 @@
     "Marksman",
     "Leader",
     "Soldier",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -65574,7 +65580,8 @@
     "Student",
     "Hero",
     "Fighter",
-    "Archer"
+    "Archer",
+    "Shooter"
    ],
    "hair": [
     "Brown"
@@ -71063,7 +71070,7 @@
    "occupation": [
     "Archer",
     "Cleric",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Grey"
@@ -72964,7 +72971,8 @@
     "Captain",
     "Student",
     "Marksman",
-    "Leader"
+    "Leader",
+    "Shooter"
    ],
    "hair": [
     "Black"
