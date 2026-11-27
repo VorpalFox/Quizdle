@@ -63,6 +63,7 @@ describe('fandomValues', () => {
 
   it('NomDeLEcoleSeul_Eleve', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
+    expect(translateOccupation('General Student')).toBe('Pupil')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')
@@ -175,6 +176,7 @@ describe('sameName', () => {
     expect(sameName('Matt Kuga', 'Matt Cugat')).toBe(true)
     expect(sameName('Mary', 'Marie')).toBe(true)
     expect(sameName('Ro Nny', 'Lo-Ny')).toBe(true)
+    expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {

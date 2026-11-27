@@ -24735,11 +24735,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135269-r4753BTfJemV.jpg",
   "attributes": {
-   "gender": null,
-   "species": null,
+   "gender": "Male",
+   "species": [
+    "Spirit"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Adventurer"
+   ],
    "hair": null,
    "anime": "Dororo",
    "genres": [
@@ -62743,6 +62747,7 @@
    "Rong Su",
    "Lotus Sun",
    "孙蓉",
+   "Rong",
    "Sun"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189230-CN5kUh1X79DO.png",
@@ -62851,7 +62856,6 @@
   "aliases": [
    "Guo Hao",
    "郭豪",
-   "Hao",
    "Guo"
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b212566-uQlmJp4ot2Pz.png",
@@ -62891,11 +62895,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b219174-5f8GEIdV5oW2.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "White"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -62991,7 +62999,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b219212-74WygXVQDqEI.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Spirit"
+   ],
    "age": null,
    "height": 143,
    "occupation": [
@@ -63059,11 +63069,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
-   "age": null,
+   "species": [
+    "Human"
+   ],
+   "age": 35,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -63112,122 +63126,6 @@
   }
  },
  {
-  "id": "219165",
-  "name": "Zheng Liang",
-  "aliases": [
-   "Liang Zheng",
-   "梁政",
-   "Zheng",
-   "Liang"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Daily Life of the Immortal King",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2020,
-   "studio": "Haoliners Animation",
-   "source": "Novel"
-  }
- },
- {
-  "id": "219166",
-  "name": "Tou Niu",
-  "aliases": [
-   "Niu Tou",
-   "牛头",
-   "Tou",
-   "Niu"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Daily Life of the Immortal King",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2020,
-   "studio": "Haoliners Animation",
-   "source": "Novel"
-  }
- },
- {
-  "id": "219173",
-  "name": "Lujing Tong",
-  "aliases": [
-   "Tong Lujing",
-   "铜炉精",
-   "Lujing",
-   "Tong"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Daily Life of the Immortal King",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2020,
-   "studio": "Haoliners Animation",
-   "source": "Novel"
-  }
- },
- {
-  "id": "219177",
-  "name": "Rong Sun Muqin",
-  "aliases": [
-   "Muqin Sun Rong",
-   "Rong Sun's Mother",
-   "孙蓉母亲",
-   "Muqin"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Female",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Daily Life of the Immortal King",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Fantasy"
-   ],
-   "year": 2020,
-   "studio": "Haoliners Animation",
-   "source": "Novel"
-  }
- },
- {
   "id": "219178",
   "name": "Ling Wang Ba",
   "aliases": [
@@ -63238,39 +63136,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
-   "anime": "The Daily Life of the Immortal King",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Comedy",
-    "Fantasy"
+   "species": [
+    "Human"
    ],
-   "year": 2020,
-   "studio": "Haoliners Animation",
-   "source": "Novel"
-  }
- },
- {
-  "id": "219179",
-  "name": "Feng Xu",
-  "aliases": [
-   "Xu Feng",
-   "徐锋",
-   "Feng"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": null,
-   "age": null,
+   "age": 35,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Writer",
+    "Artist"
+   ],
+   "hair": [
+    "Brown"
+   ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
     "Action",
@@ -63338,6 +63215,73 @@
    ],
    "hair": [
     "Black"
+   ],
+   "anime": "The Daily Life of the Immortal King",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "year": 2020,
+   "studio": "Haoliners Animation",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "219194",
+  "name": "Xuan Ku",
+  "aliases": [
+   "Ku Xuan",
+   "枯玄",
+   "Xuan"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+  "attributes": {
+   "gender": "Male",
+   "species": [
+    "Human"
+   ],
+   "age": 16,
+   "height": null,
+   "occupation": [
+    "Student"
+   ],
+   "hair": null,
+   "anime": "The Daily Life of the Immortal King",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+   ],
+   "year": 2020,
+   "studio": "Haoliners Animation",
+   "source": "Novel"
+  }
+ },
+ {
+  "id": "409273",
+  "name": "Liuyue Jiang",
+  "aliases": [
+   "Jiang Liuyue",
+   "江流月",
+   "Liuyue",
+   "Jiang"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+  "attributes": {
+   "gender": "Female",
+   "species": [
+    "Human"
+   ],
+   "age": 1300,
+   "height": null,
+   "occupation": [
+    "Assistant"
+   ],
+   "hair": [
+    "Brown"
    ],
    "anime": "The Daily Life of the Immortal King",
    "genres": [
@@ -71708,7 +71652,7 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": null,
+   "age": "Unknown",
    "height": null,
    "occupation": [
     "Royalty",

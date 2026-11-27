@@ -12,7 +12,8 @@ import { COMPANY_PRESIDENT, expandSpecies, translateSpecies } from './pixeldleTr
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
   // École
-  'student': 'Pupil', 'high school student': 'High schooler', 'first-year high school student': 'High schooler', 'middle school student': 'Middle schooler',
+  // « General Student » : un élève ordinaire (Xuan Ku, Immortal King), pas un général
+  'student': 'Pupil', 'general student': 'Pupil', 'high school student': 'High schooler', 'first-year high school student': 'High schooler', 'middle school student': 'Middle schooler',
   'university student': 'Student', 'college student': 'Student', 'seimei university junior': 'Student',
   'principal': 'Principal', 'delving instructor': 'Instructor', 'student council president': 'Student council president',
   // Armée, police
@@ -470,7 +471,9 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'hybrid': 'Half-demon', 'parasite': 'Human',
   // To Your Eternity : l'ours Kermode, un vrai ours (« spirit bear ») et pas un esprit
   'spirit bear': 'Bear',
-  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
+  // Les esprits d'épée d'Immortal King (Jingke) : des esprits
+  'spirit sword': 'Spirit', 'spirit swords': 'Spirit',
+  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
 const ANIME_SPECIES_RULES: [RegExp, string][] = [

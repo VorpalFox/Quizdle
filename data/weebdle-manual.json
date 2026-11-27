@@ -48,7 +48,17 @@
   "135051",
   "135041",
   "135055",
-  "135059"
+  "135059",
+  "219177",
+  "219165",
+  "219166",
+  "219173",
+  "219179",
+  "219193",
+  "219198",
+  "219199",
+  "219200",
+  "219203"
  ],
  "edit": {
   "80": {
@@ -724,13 +734,31 @@
      "Demon"
     ]
    }
+  },
+  "219178": {
+   "_nom": "Ling Wang Ba",
+   "_note": "Guru Wang Situ est son nom de plume d'écrivain, pas un religieux",
+   "occupation": {
+    "moins": [
+     "Cleric"
+    ]
+   }
+  },
+  "219194": {
+   "_nom": "Xuan Ku",
+   "_note": "gardé malgré la limite de The Daily Life of the Immortal King"
+  },
+  "409273": {
+   "_nom": "Liuyue Jiang",
+   "_note": "gardée malgré la limite de The Daily Life of the Immortal King"
   }
  },
  "add": [],
  "limits": {
   "The Reincarnation of the Strongest Exorcist in Another World": 18,
   "The World God Only Knows": 15,
-  "Saga of Tanya the Evil": 16
+  "Saga of Tanya the Evil": 16,
+  "The Daily Life of the Immortal King": 17
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
@@ -740,6 +768,8 @@
   "121452": "Nono Mozunono",
   "121448": "Chouka U Baragasaki",
   "201555": "The Nameless Boy",
-  "135053": "List of Minor Characters#Ihlen Schwarzkopf"
+  "135053": "List of Minor Characters#Ihlen Schwarzkopf",
+  "219181": "Mother Wang",
+  "219178": "Father Wang"
  }
 }

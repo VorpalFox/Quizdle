@@ -258,8 +258,12 @@ export function sameName(name: string, title: string): boolean {
     .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r')
     .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
+  // Le nom collé, dans un ordre ou l'autre, découpé autrement (« Shabei Yi » / « Yisha Bei » à Immortal King)
+  const nameWords = words(name)
+  if (nameWords.length > 1 && [nameWords, nameWords.toReversed()].some(order => distance(order.join(''), titleWords.join('')) <= 1))
+    return true
   const candidates = [...titleWords, titleWords.join('')]
-  return words(name).every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
+  return nameWords.every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
 }
 
 // Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
