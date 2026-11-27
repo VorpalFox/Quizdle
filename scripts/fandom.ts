@@ -275,6 +275,8 @@ export function sameName(name: string, title: string): boolean {
 // Tous les mots de ces noms dans le titre, tels quels (« Angela-Ann » dans « Angela Ann Huel »)
 const plainWords = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().split(/[^a-z0-9'’]+/).filter(Boolean)
 const hasWords = (title: string, names: string) => plainWords(names).every(word => plainWords(title).includes(word))
+// Un nom japonais sans espaces ni séparateurs (« 坂井 進 », « クロード・ジャンヌ・エルメイア »)
+const compact = (text: string) => text.replace(/[\s・=＝·]/g, '')
 
 // Le nom en gras qui ouvre l'intro, sans les liens ('''[[Shuzo Matsutani]]''' → « Shuzo Matsutani »). Seulement en tête
 // du 1er paragraphe, après l'infobox et les images : pas « These two were Bols' wife, '''Kije''' » (une page à deux persos)
@@ -839,8 +841,23 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const givenResults = givenNames.size > 0 ? await searchTitles(wiki, [...givenNames.values()]) : {}
     for (const [target, given] of givenNames)
       others.get(target)!.push(...(givenResults[given] ?? []).filter(title => hasWords(title, given) && sameName(target.entry.name, title)))
+    // Toujours rien : la recherche du nom japonais (悪鬼 → « Messiah », 藤堂鏡志朗 → « Kyoshiro Tohdoh »). Le 1er résultat
+    // qui l'écrit dans son début (infobox, intro) : ailleurs dans la page, c'est souvent un autre perso qui le cite
+    // (« Chaos Creator » pour Rimuru) ou un épisode. Après ses autres noms, infobox exigée comme eux : la page de ses
+    // fans écrit aussi 超合金クロビカリ, mais « Superalloy Darkshine » passe avant.
+    const natives = new Map(lost.flatMap(({ target }) => {
+      const native = target.name.native?.trim()
+      return native && /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(native) && searched.get(target)!.length === 0
+        ? [[target, native] as const] : []
+    }))
+    const nativeResults = natives.size > 0 ? await searchTitles(wiki, [...natives.values()]) : {}
     if (lost.length > 0)
-      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values(), ...Object.values(nativeResults)].flat()) }
+    for (const [target, native] of natives) {
+      const title = (nativeResults[native] ?? []).find(title => pages[title] && compact(pages[title]!).includes(compact(native)))
+      if (title)
+        others.get(target)!.push(title)
+    }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs
     // sont dans la page du modèle
     const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])

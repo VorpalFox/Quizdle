@@ -7326,13 +7326,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b84327-Wg2P1FSDecGc.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
     "Noble"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -18551,8 +18555,15 @@
    ],
    "age": 37,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Teacher",
+    "Officer",
+    "Pilot",
+    "Soldier"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Code Geass: Lelouch of the Rebellion",
    "genres": [
     "Action",
@@ -20410,7 +20421,9 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Pilot"
+   ],
    "hair": [
     "Blond"
    ],
@@ -20442,12 +20455,17 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Cyborg"
    ],
-   "age": null,
+   "age": 100,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Scientist"
+   ],
+   "hair": [
+    "Grey"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -20548,8 +20566,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Pilot"
+   ],
+   "hair": [
+    "Green"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -20580,8 +20602,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Pilot"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "DARLING in the FRANXX",
    "genres": [
     "Action",
@@ -20884,7 +20910,9 @@
     "Criminal",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Darwin's Game",
    "genres": [
     "Action",
@@ -21282,13 +21310,15 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181281-2k2szHmkm9WZ.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "None"
+   ],
    "hair": null,
    "anime": "Darwin's Game",
    "genres": [
@@ -28250,11 +28280,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80687-AKagiJAevUqH.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
-   "age": null,
+   "species": [
+    "Human"
+   ],
+   "age": 9,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Red"
+   ],
    "anime": "From the New World",
    "genres": [
     "Drama",
@@ -29640,11 +29676,20 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b217617-NTqnZu1uPCT4.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Elf"
+   ],
    "age": 315,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Nanny",
+    "Fighter",
+    "Slave",
+    "Servant"
+   ],
+   "hair": [
+    "Silver"
+   ],
    "anime": "Gate",
    "genres": [
     "Action",
@@ -31025,14 +31070,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/87749.jpg",
   "attributes": {
-   "gender": null,
+   "gender": "Male",
    "species": [
     "Human"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "age": 20,
+   "height": 178,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Red"
+   ],
    "anime": "Golden Time",
    "genres": [
     "Drama",
@@ -35027,15 +35076,21 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268053-NIgoQd4qfIZV.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
-   "age": null,
+   "species": [
+    "Human",
+    "Demon"
+   ],
+   "age": 25,
    "height": null,
    "occupation": [
     "Royalty",
     "Noble",
+    "Student",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "I'm the Villainess, So I'm Taming the Final Boss",
    "genres": [
     "Comedy",
@@ -35320,11 +35375,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b292211-aVW1I8uWavFN.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Mage"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "anime": "I'm the Villainess, So I'm Taming the Final Boss",
    "genres": [
     "Comedy",
@@ -35422,11 +35483,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268052-Xb22DXnT8xb9.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
-   "age": null,
+   "species": [
+    "Human"
+   ],
+   "age": 17,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Noble",
+    "Student"
+   ],
+   "hair": [
+    "Blond"
+   ],
    "anime": "I'm the Villainess, So I'm Taming the Final Boss",
    "genres": [
     "Comedy",
@@ -35554,10 +35622,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269688-lqAqapxOVjyw.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
-   "age": null,
+   "species": [
+    "Human"
+   ],
+   "age": 17,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Noble",
+    "Student"
+   ],
    "hair": null,
    "anime": "I'm the Villainess, So I'm Taming the Final Boss",
    "genres": [
@@ -40880,11 +40953,15 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326526-xBzwCrMvgXxL.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "KONOSUBA -God's blessing on this wonderful world!",
    "genres": [
     "Adventure",
@@ -43126,9 +43203,13 @@
     "Human"
    ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 179,
+   "occupation": [
+    "Teacher"
+   ],
+   "hair": [
+    "Brown"
+   ],
    "anime": "Mekakucity Actors",
    "genres": [
     "Comedy",
@@ -70009,11 +70090,19 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203167-rdyGeGPTcFIq.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 164,
+   "occupation": [
+    "Royalty",
+    "Noble",
+    "Leader"
+   ],
+   "hair": [
+    "White"
+   ],
    "anime": "Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs",
    "genres": [
     "Action",
@@ -70310,11 +70399,19 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168842-BWD5DWfLIxEb.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "species": [
+    "Human"
+   ],
+   "age": 17,
+   "height": 186,
+   "occupation": [
+    "Student",
+    "Adventurer",
+    "Food Vendor"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs",
    "genres": [
     "Action",
