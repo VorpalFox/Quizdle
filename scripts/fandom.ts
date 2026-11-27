@@ -709,6 +709,25 @@ function speciesHead(part: string): string | null {
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
 
+// L'infobox de perso d'une page déjà téléchargée, avec celle de son modèle s'il en a un (déjà téléchargé aussi)
+function pageInfobox(pages: Pages, title: string): Record<string, string> | null {
+  const template = pages[title] && infoboxTemplate(pages[title]!)
+  // Ceux de la page par-dessus ceux du modèle ({{Lorraine Vivie Infobox|status=Alive}}), sans les paramètres ({{{gender|}}})
+  const fields = { ...template && pages[template] ? templateInfobox(pages[template]!) : null, ...fandomInfobox(pages[title]!) }
+  const read = Object.entries(fields).filter(([, value]) => !value.includes('{{{'))
+  return read.length > 0 && INFOBOX_FIELDS.some(name => fields[name] && !fields[name].includes('{{{')) ? Object.fromEntries(read) : null
+}
+
+// Le wiki du lien Wikidata, s'il est lisible : en anglais ou en français, comme Wikipédia (« fr.ccsakura » → « ccsakura/fr »,
+// la forme qu'attend l'API). null pour une autre langue (« ru.fma », « zh.kimetsu-no-yaiba », « es.doblaje »).
+export function readableWiki(wiki: string): string | null {
+  const [, language, name] = wiki.match(/^([a-z]{2}(?:-[a-z]+)?)\.(.+)$/) ?? []
+  if (language)
+    return language === 'fr' ? `${name}/fr` : null
+  const suffix = wiki.split('/')[1]
+  return !suffix || suffix === 'fr' ? wiki : null
+}
+
 // Remplit les champs vides avec Fandom. Renvoie les entrées complétées, le détail, et les animes sans wiki.
 export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entries: Entry[], filled: string[], noWiki: string[] }> {
   await mkdir(cacheDir, { recursive: true })
@@ -719,18 +738,25 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
   const byWiki = new Map<string, { target: WikiTarget, titles: string[] }[]>()
   const noWiki = new Set<string>()
   const shared = sharedAliases(targets.map(({ entry }) => entry))
+  // Le lien Wikidata vers un autre wiki que celui de l'anime (lgbtqia-characters pour Nanachi, villains, isekai…) : un
+  // repli, lu après le wiki de l'anime
+  const fallbacks: { target: WikiTarget, wiki: string, title: string }[] = []
   // Tous les persos : même complets, Fandom ajoute à leurs listes (addedValues)
   for (const target of targets) {
-    const article = articles[target.entry.id]
     const anime = String(target.entry.attributes.anime ?? '')
-    // Le lien Wikidata donne le wiki et la page ; sinon le wiki de l'anime
-    const wiki = article?.split(':')[0] ?? await findWiki(anime, target.animeTitles, wikis)
+    const [articleWiki, ...articleTitle] = articles[target.entry.id]?.split(':') ?? []
+    // Le wiki de l'anime d'abord ; le lien Wikidata ne donne la page que s'il pointe sur ce wiki
+    const wiki = await findWiki(anime, target.animeTitles, wikis)
+    const fallback = articleWiki && articleWiki !== wiki ? readableWiki(articleWiki) : null
+    if (fallback && fallback !== wiki)
+      fallbacks.push({ target, wiki: fallback, title: articleTitle.join(':') })
     if (!wiki) {
       noWiki.add(anime)
       continue
     }
     // La page imposée à la main (« fandom » des corrections) : seulement elle, ni homonymie ni recherche
-    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article?.split(':').slice(1).join(':'), shared)
+    const article = articleWiki === wiki ? articleTitle.join(':') : undefined
+    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article, shared)
     byWiki.set(wiki, [...byWiki.get(wiki) ?? [], { target, titles }])
   }
   // Les titres de page à demander à l'API : pas ceux avec une section, lus dans la page entière
@@ -783,13 +809,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])
     if (templates.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, templates) }
-    const infoboxOf = (title: string) => {
-      const template = pages[title] && infoboxTemplate(pages[title]!)
-      // Ceux de la page par-dessus ceux du modèle ({{Lorraine Vivie Infobox|status=Alive}}), sans les paramètres ({{{gender|}}})
-      const fields = { ...template && pages[template] ? templateInfobox(pages[template]!) : null, ...fandomInfobox(pages[title]!) }
-      const read = Object.entries(fields).filter(([, value]) => !value.includes('{{{'))
-      return read.length > 0 && INFOBOX_FIELDS.some(name => fields[name] && !fields[name].includes('{{{')) ? Object.fromEntries(read) : null
-    }
+    const infoboxOf = (title: string) => pageInfobox(pages, title)
     // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
     // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
     // pour l'occupation de l'intro et les cheveux. Un résultat de recherche aussi, sans infobox : il porte déjà son nom
@@ -857,6 +877,32 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
       filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${textGender ? ' (sexe des pronoms de la page)' : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}${story?.occupation.length ? ` (occupation d'une section : « ${story.roles.join(' | ')} »)` : ''}`)
+    }
+  }
+
+  // Le repli, comme Wikipédia : l'infobox seulement (ni intro, ni texte, ni recherche), qui remplit ce qui est resté
+  // vide et s'ajoute aux listes (addedValues)
+  const fallbackWikis = [...new Set(fallbacks.map(({ wiki }) => wiki))]
+  for (const wiki of fallbackWikis) {
+    process.stdout.write(`\rFandom (repli) : ${fallbackWikis.indexOf(wiki) + 1}/${fallbackWikis.length} wikis (${wiki})`.padEnd(70))
+    const characters = fallbacks.filter(fallback => fallback.wiki === wiki)
+    let pages = await fetchPages(wiki, characters.map(({ title }) => title))
+    const templates = characters.flatMap(({ title }) => pages[title] && infoboxTemplate(pages[title]!) ? [infoboxTemplate(pages[title]!)!] : [])
+    if (templates.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, templates) }
+    for (const { target, title } of characters) {
+      const infobox = pages[title] ? pageInfobox(pages, title) : null
+      if (!infobox)
+        continue
+      const entry = completed.get(target.entry) ?? target.entry
+      const added = addedValues(entry.attributes, fandomValues(infobox))
+      const unknown = addUnknowns(entry.attributes, fandomUnknowns(infobox))
+      if (unknown)
+        added[UNKNOWN_KEYS] = unknown
+      if (Object.keys(added).length === 0)
+        continue
+      completed.set(target.entry, { ...entry, attributes: { ...entry.attributes, ...added } })
+      filled.push(`${target.entry.name} (repli ${wiki}, page « ${title} ») : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}`)
     }
   }
   console.log()

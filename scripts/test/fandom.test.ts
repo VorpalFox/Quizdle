@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { affiliationOccupations, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -68,6 +68,7 @@ describe('fandomValues', () => {
     expect(translateOccupation('Adjutant in the Royal Army of Lucidion')).toBe('Officer')
     expect(translateOccupation('Guardians')).toBe('Guardian')
     expect(translateOccupation('strong Collector')).toBe('Hunter')
+    expect(translateOccupation('Margrave')).toBe('Noble')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')
@@ -203,6 +204,15 @@ describe('sameName', () => {
     expect(latinName('Tsundere Elf (ツンデレエルフ)')).toBe('Tsundere Elf')
     expect(latinName('Sui')).toBe('Sui')
     expect(latinName('Ryo (Tokyo)')).toBe('Ryo (Tokyo)')
+  })
+
+  it('WikiDuLienWikidata_AnglaisOuFrancaisSeulement', () => {
+    expect(readableWiki('villains')).toBe('villains')
+    expect(readableWiki('fr.ccsakura')).toBe('ccsakura/fr')
+    expect(readableWiki('assassination-classroom/fr')).toBe('assassination-classroom/fr')
+    expect(readableWiki('ru.fma')).toBeNull()
+    expect(readableWiki('zh-tw.newkomica-kari')).toBeNull()
+    expect(readableWiki('es.doblaje')).toBeNull()
   })
 
   it('IntroAvecNomEnGras_LeNomSansLiens', () => {

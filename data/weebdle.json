@@ -2722,7 +2722,10 @@
     "Officer",
     "Hunter",
     "Torturer",
-    "Soldier"
+    "Royalty",
+    "Soldier",
+    "Noble",
+    "Leader"
    ],
    "hair": [
     "Blue"
@@ -5605,10 +5608,11 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 5,
    "height": null,
    "occupation": [
-    "Mage"
+    "Mage",
+    "Servant"
    ],
    "hair": [
     "Blue"
@@ -6704,7 +6708,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Titan"
    ],
    "age": 15,
    "height": 170,
@@ -6714,7 +6719,9 @@
     "Swordsman",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -6821,7 +6828,9 @@
     "Soldier",
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -14756,16 +14765,20 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
-   "age": null,
+   "species": [
+    "Demon"
+   ],
+   "age": "Unknown",
    "height": 168,
    "occupation": [
     "Demon hunter",
+    "Demon",
     "Monster hunter",
     "Fighter"
    ],
    "hair": [
-    "Red"
+    "Red",
+    "Brown"
    ],
    "anime": "Chainsaw Man",
    "genres": [
@@ -14789,12 +14802,14 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Demon"
    ],
    "age": 16,
    "height": 173,
    "occupation": [
     "Demon hunter",
+    "Student",
     "Monster hunter",
     "Fighter"
    ],
@@ -14822,11 +14837,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
-   "age": null,
+   "species": [
+    "Demon"
+   ],
+   "age": "Unknown",
    "height": 170,
    "occupation": [
     "Demon hunter",
+    "Demon",
     "Monster hunter",
     "Fighter"
    ],
@@ -21315,6 +21333,7 @@
    "height": 179,
    "occupation": [
     "Student",
+    "Police officer",
     "Serial killer",
     "Criminal"
    ],
@@ -21347,13 +21366,15 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 19,
    "height": 152,
    "occupation": [
     "Model",
     "Actor",
+    "Singer",
     "Celebrity",
-    "Artist"
+    "Artist",
+    "Musician"
    ],
    "hair": [
     "Blond"
@@ -22682,7 +22703,8 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Demon"
    ],
    "age": 13,
    "height": 165,
@@ -22690,12 +22712,15 @@
     "Mercenary",
     "Swordsman",
     "Demon hunter",
-    "Charcoal seller",
     "Demon Slayer",
+    "Charcoal seller",
     "Fighter",
     "Monster hunter"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -26372,7 +26397,7 @@
     "Human"
    ],
    "age": null,
-   "height": null,
+   "height": 167,
    "occupation": [
     "Captain",
     "Leader"
@@ -26745,9 +26770,7 @@
     "Executor",
     "Leader"
    ],
-   "hair": [
-    "Brown"
-   ],
+   "hair": null,
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -27269,15 +27292,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Elf"
+   ],
    "age": 1000,
-   "height": null,
+   "height": 150,
    "occupation": [
     "Mage",
     "Adventurer"
    ],
    "hair": [
-    "White"
+    "White",
+    "Silver"
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -28736,6 +28762,7 @@
     "Noble",
     "Martial artist",
     "Swordsman",
+    "Servant",
     "Fighter"
    ],
    "hair": [
@@ -28811,6 +28838,7 @@
     "Revolutionary",
     "Soldier",
     "Swordsman",
+    "Noble",
     "Fighter"
    ],
    "hair": null,
@@ -28846,6 +28874,7 @@
    "occupation": [
     "Alchemist",
     "Soldier",
+    "Officer",
     "Scientist"
    ],
    "hair": null,
@@ -28915,8 +28944,7 @@
     "Fighter"
    ],
    "hair": [
-    "Black",
-    "Grey"
+    "Black"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -28947,7 +28975,9 @@
    ],
    "age": 35,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Leader"
+   ],
    "hair": [
     "Black"
    ],
@@ -29264,10 +29294,11 @@
   "attributes": {
    "gender": "Female",
    "species": [
+    "Human",
     "Deity"
    ],
    "age": 961,
-   "height": 145,
+   "height": 162,
    "occupation": [
     "Cleric",
     "Advisor"
@@ -33031,11 +33062,13 @@
     "Leader",
     "Fighter",
     "Officer",
+    "Pilot",
     "Noble",
     "Soldier"
    ],
    "hair": [
-    "Bald"
+    "Bald",
+    "Brown"
    ],
    "anime": "Gurren Lagann",
    "genres": [
@@ -33127,11 +33160,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/3404.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Beastman"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Officer",
+    "Soldier"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "Gurren Lagann",
    "genres": [
     "Action",
@@ -33823,7 +33863,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/626.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": null,
@@ -33851,11 +33893,17 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/625.jpg",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Hellsing Ultimate",
    "genres": [
     "Action",
@@ -34261,8 +34309,14 @@
    ],
    "age": 28,
    "height": 187,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Hunter",
+    "Leader"
+   ],
+   "hair": [
+    "Blue",
+    "Red"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -36898,7 +36952,8 @@
     "Fighter"
    ],
    "hair": [
-    "Brown"
+    "Brown",
+    "Purple"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -38931,9 +38986,12 @@
    "species": [
     "Human"
    ],
-   "age": 17,
-   "height": null,
-   "occupation": null,
+   "age": 16,
+   "height": 166,
+   "occupation": [
+    "Leader",
+    "Student"
+   ],
    "hair": [
     "White"
    ],
@@ -39407,7 +39465,8 @@
    "age": 17,
    "height": null,
    "occupation": [
-    "Student"
+    "Student",
+    "Leader"
    ],
    "hair": [
     "Brown"
@@ -40112,7 +40171,10 @@
    "age": 17,
    "height": 162,
    "occupation": [
-    "Adventurer"
+    "Adventurer",
+    "Swordsman",
+    "Archer",
+    "Fighter"
    ],
    "hair": [
     "Brown",
@@ -40739,7 +40801,8 @@
    "height": 177,
    "occupation": [
     "Student",
-    "Leader"
+    "Leader",
+    "Mage"
    ],
    "hair": [
     "Blue"
@@ -41442,14 +41505,18 @@
   ],
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b122445-5uDu8wMy8Jxi.png",
   "attributes": {
-   "gender": null,
+   "gender": "Unknown",
    "species": [
     "Narehate"
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Adventurer"
+   ],
+   "hair": [
+    "White"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
@@ -41511,10 +41578,10 @@
    "age": null,
    "height": null,
    "occupation": [
+    "Adventurer",
     "Fighter"
    ],
    "hair": [
-    "Black",
     "White"
    ],
    "anime": "Made in Abyss",
@@ -41579,8 +41646,12 @@
    ],
    "age": null,
    "height": null,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Adventurer"
+   ],
+   "hair": [
+    "Blue"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
@@ -44261,7 +44332,7 @@
    "species": [
     "Demon"
    ],
-   "age": null,
+   "age": 37,
    "height": null,
    "occupation": [
     "Mage",
@@ -44340,15 +44411,19 @@
    "species": [
     "Human"
    ],
-   "age": null,
-   "height": null,
+   "age": 20,
+   "height": 170,
    "occupation": [
     "Noble",
     "Fighter",
     "Adventurer",
-    "Swordsman"
+    "Swordsman",
+    "Royalty",
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Red"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Adventure",
@@ -45123,7 +45198,10 @@
     "Hero",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "White",
+    "Red"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -45159,7 +45237,9 @@
     "Hero",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -45190,10 +45270,16 @@
    "age": 15,
    "height": 170,
    "occupation": [
-    "Student"
+    "Student",
+    "Superhero",
+    "Assistant",
+    "Hero",
+    "Fighter"
    ],
    "hair": [
-    "Ginger"
+    "Ginger",
+    "Red",
+    "Black"
    ],
    "anime": "My Hero Academia",
    "genres": [
@@ -45298,11 +45384,16 @@
     "Human"
    ],
    "age": 15,
-   "height": null,
+   "height": 150,
    "occupation": [
-    "Student"
+    "Student",
+    "Superhero",
+    "Hero",
+    "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Green"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -45408,10 +45499,13 @@
    "occupation": [
     "Superhero",
     "Student",
+    "Scientist",
     "Hero",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -45628,7 +45722,9 @@
    "age": 41,
    "height": 160,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Green"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -47750,7 +47846,9 @@
     "Celebrity",
     "Artist"
    ],
-   "hair": null,
+   "hair": [
+    "Blue"
+   ],
    "anime": "OSHI NO KO",
    "genres": [
     "Drama",
@@ -50758,9 +50856,11 @@
     "Human"
    ],
    "age": 19,
-   "height": null,
+   "height": 163,
    "occupation": [
-    "Police officer"
+    "Police officer",
+    "Leader",
+    "Detective"
    ],
    "hair": [
     "Brown"
@@ -51403,12 +51503,16 @@
    "age": 14,
    "height": 158,
    "occupation": [
+    "Student",
     "Magical girl",
+    "Archer",
     "Marksman",
     "Mage",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -51439,7 +51543,14 @@
    ],
    "age": 14,
    "height": 152,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Magical girl",
+    "God",
+    "Archer",
+    "Mage",
+    "Fighter"
+   ],
    "hair": [
     "Pink"
    ],
@@ -51552,7 +51663,13 @@
    ],
    "age": 14,
    "height": 159,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Magical girl",
+    "Marksman",
+    "Mage",
+    "Fighter"
+   ],
    "hair": [
     "Blond"
    ],
@@ -53678,7 +53795,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Yokai"
+   ],
    "age": 17,
    "height": 154,
    "occupation": [
@@ -53720,9 +53839,9 @@
    "age": 17,
    "height": 173,
    "occupation": [
+    "Knight",
     "Student",
     "Servant",
-    "Knight",
     "Cleric",
     "Leader",
     "Unemployed",
@@ -53755,11 +53874,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88576-NWkotUiJ3mK3.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Yokai"
+   ],
    "age": 17,
    "height": 154,
    "occupation": [
-    "Servant"
+    "Servant",
+    "Mage"
    ],
    "hair": [
     "Pink"
@@ -53836,6 +53958,8 @@
    "height": 184,
    "occupation": [
     "Knight",
+    "Guard",
+    "Swordsman",
     "Fighter"
    ],
    "hair": [
@@ -54074,16 +54198,16 @@
     "Human"
    ],
    "age": 29,
-   "height": null,
+   "height": 186,
    "occupation": [
-    "Royalty",
-    "Noble",
-    "Political benefactor of Emilia",
     "Mage",
-    "Leader"
+    "Noble",
+    "Leader",
+    "Royalty"
    ],
    "hair": [
-    "Blue"
+    "Blue",
+    "Grey"
    ],
    "anime": "Re:ZERO -Starting Life in Another World-",
    "genres": [
@@ -54158,9 +54282,10 @@
     "Human"
    ],
    "age": 23,
-   "height": null,
+   "height": 168,
    "occupation": [
     "Assassin",
+    "Serial killer",
     "Slave",
     "Thief",
     "Criminal",
@@ -55850,8 +55975,10 @@
    "height": 157,
    "occupation": [
     "Officer",
+    "Captain",
     "Mage",
-    "Soldier"
+    "Soldier",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -58780,7 +58907,8 @@
    "age": 18,
    "height": 160,
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Scientist"
    ],
    "hair": [
     "Brown"
@@ -58890,9 +59018,14 @@
    ],
    "age": 18,
    "height": 163,
-   "occupation": null,
+   "occupation": [
+    "Odd jobs",
+    "Teacher",
+    "Employee"
+   ],
    "hair": [
-    "Brown"
+    "Brown",
+    "Blond"
    ],
    "anime": "Steins;Gate",
    "genres": [
@@ -58958,6 +59091,7 @@
    "height": 161,
    "occupation": [
     "Miko",
+    "Student",
     "Cleric"
    ],
    "hair": [
@@ -59030,11 +59164,12 @@
    "age": 20,
    "height": 167,
    "occupation": [
+    "Guard",
     "Journalist",
     "Merchant"
    ],
    "hair": [
-    "Brown"
+    "Blond"
    ],
    "anime": "Steins;Gate",
    "genres": [
@@ -61128,13 +61263,21 @@
    "gender": "Other",
    "species": [
     "Human",
-    "Slime"
+    "Slime",
+    "Dragon"
    ],
    "age": 37,
-   "height": null,
-   "occupation": null,
+   "height": 20,
+   "occupation": [
+    "Adventurer",
+    "Leader",
+    "Royalty",
+    "Teacher",
+    "Noble"
+   ],
    "hair": [
-    "Blue"
+    "Blue",
+    "Silver"
    ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
@@ -65081,7 +65224,12 @@
    "age": 20,
    "height": null,
    "occupation": [
-    "Student"
+    "Student",
+    "Hero",
+    "Merchant",
+    "Swordsman",
+    "Mage",
+    "Fighter"
    ],
    "hair": [
     "Black"
@@ -70826,14 +70974,12 @@
   "attributes": {
    "gender": "Male",
    "species": null,
-   "age": null,
+   "age": 21,
    "height": null,
    "occupation": [
     "Teacher"
    ],
-   "hair": [
-    "Blond"
-   ],
+   "hair": null,
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
@@ -71022,12 +71168,12 @@
   "attributes": {
    "gender": "Female",
    "species": null,
-   "age": null,
+   "age": "Unknown",
    "height": 152,
-   "occupation": null,
-   "hair": [
-    "Blond"
+   "occupation": [
+    "None"
    ],
+   "hair": null,
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
@@ -71088,6 +71234,7 @@
    "height": null,
    "occupation": [
     "Archer",
+    "Cleric",
     "Fighter"
    ],
    "hair": [
@@ -71237,15 +71384,12 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human",
-    "Dragon"
+    "Human"
    ],
    "age": 17,
    "height": null,
    "occupation": null,
-   "hair": [
-    "Black"
-   ],
+   "hair": null,
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
@@ -71302,7 +71446,9 @@
    "occupation": [
     "Teacher"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
