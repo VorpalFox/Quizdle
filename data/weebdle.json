@@ -41551,7 +41551,9 @@
    "occupation": [
     "Adventurer"
    ],
-   "hair": null,
+   "hair": [
+    "Unknown"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
@@ -41756,7 +41758,9 @@
    "occupation": [
     "Adventurer"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
