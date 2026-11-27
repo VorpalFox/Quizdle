@@ -256,12 +256,12 @@ async function searchTitles(wiki: string, names: string[]): Promise<Record<strin
 // transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »), c et k
 // (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast),
 // r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »), b et v pareil (« Laybelle » / « Rayveil »,
-// Uncle from Another World). Sans le suffixe de politesse du nom AniList (« Sawae-san » / « Sawae »).
+// Uncle from Another World), hu et fu (フ : « Furr » / « Huel », The Witch and the Beast ; pas chu, shu ni zhu). Sans le suffixe de politesse du nom AniList (« Sawae-san » / « Sawae »).
 // Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
 const HONORIFICS = new Set(['san', 'chan', 'kun', 'sama', 'dono', 'senpai'])
 export function sameName(name: string, title: string): boolean {
   const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r').replace(/v/g, 'b')
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/(?<![csz])hu/g, 'fu').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r').replace(/v/g, 'b')
     .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
   // Le nom collé, dans un ordre ou l'autre, découpé autrement (« Shabei Yi » / « Yisha Bei » à Immortal King)
@@ -271,6 +271,10 @@ export function sameName(name: string, title: string): boolean {
   const candidates = [...titleWords, titleWords.join('')]
   return nameWords.every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
 }
+
+// Tous les mots de ces noms dans le titre, tels quels (« Angela-Ann » dans « Angela Ann Huel »)
+const plainWords = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().split(/[^a-z0-9'’]+/).filter(Boolean)
+const hasWords = (title: string, names: string) => plainWords(names).every(word => plainWords(title).includes(word))
 
 // Le nom en gras qui ouvre l'intro, sans les liens ('''[[Shuzo Matsutani]]''' → « Shuzo Matsutani »). Seulement en tête
 // du 1er paragraphe, après l'infobox et les images : pas « These two were Bols' wife, '''Kije''' » (une page à deux persos)
@@ -824,6 +828,17 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
     // Sans le japonais entre parenthèses (« Tsundere Elf (ツンデレエルフ) » → « Tsundere Elf », Elga dans Uncle from Another World)
     const others = new Map(lost.map(({ target }) => [target, target.name.alternative.map(latinName).filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
+    // Rien à son nom complet : la recherche du prénom seul (« Angela-Ann Furr » → « Angela Ann Huel », le wiki n'a pas
+    // « Furr » ; « Douman Ashida » → « Douman Ashiya »). Le prénom tel quel dans le titre, le reste à une faute près
+    // (sameName), et une infobox de perso exigée comme pour les autres noms : pas « Shin Sekai Year Zero » pour Shin
+    // Sakai, ni « Wang Zhen » pour Zheng Liang.
+    const givenNames = new Map(lost.flatMap(({ target }) => {
+      const given = target.entry.name.split(/\s+/)[0]!
+      return searched.get(target)!.length === 0 && given !== target.entry.name ? [[target, given] as const] : []
+    }))
+    const givenResults = givenNames.size > 0 ? await searchTitles(wiki, [...givenNames.values()]) : {}
+    for (const [target, given] of givenNames)
+      others.get(target)!.push(...(givenResults[given] ?? []).filter(title => hasWords(title, given) && sameName(target.entry.name, title)))
     if (lost.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs

@@ -61,7 +61,7 @@ const HUMAN = 'Human'
 // Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
 // espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à
 // repérer à la main : ChäoS;HEAd, Occultic;Nine, ni Magi (Fanalis, Djinns). Summer Time Rendering oui : ses Ombres ont
-// leur espèce sur le wiki.
+// leur espèce sur le wiki, comme Guideau, Johan et Ashgan dans The Witch and the Beast.
 // Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
 // n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
 const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
@@ -70,7 +70,7 @@ const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA 
   'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',
   'Accel World', 'Akame ga Kill!', 'Angel Beats!', 'Ascendance of a Bookworm', 'Code Geass: Lelouch of the Rebellion', 'OSHI NO KO',
   'Re:CREATORS', 'SPY x FAMILY', 'Steins;Gate', 'The Elusive Samurai', 'World Trigger', 'Ya Boy Kongming!', 'DARLING in the FRANXX', 'Death Parade',
-  'Summer Time Rendering'])
+  'Summer Time Rendering', 'The Witch and the Beast'])
 
 const root = new URL('../', import.meta.url)
 const cacheDir = new URL('.cache/weebdle/', root)

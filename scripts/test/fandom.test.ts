@@ -186,6 +186,7 @@ describe('sameName', () => {
     expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
     expect(sameName('Mabel Laybelle', 'Mabel Rayveil')).toBe(true)
     expect(sameName('Sawae-san', 'Sawae')).toBe(true)
+    expect(sameName('Angela-Ann Furr', 'Angela Ann Huel')).toBe(true)
   })
 
   it('StatutFantomeOuMortVivant_LEspece', () => {

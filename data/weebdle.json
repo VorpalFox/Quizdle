@@ -8731,11 +8731,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b247479-Nsfmbg1CrhXi.jpg",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "height": 170,
+   "occupation": [
+    "Mobster",
+    "Criminal"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Battle Game in 5 Seconds",
    "genres": [
     "Action",
@@ -66455,7 +66462,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b204808-rbQTsYKvr6nE.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": "Unknown",
    "height": 188,
    "occupation": [
@@ -66554,7 +66563,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285316-xDyRoiEgxbgz.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": 168,
    "occupation": [
@@ -66595,7 +66606,9 @@
    "occupation": [
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "The Witch and the Beast",
    "genres": [
     "Action",
@@ -66621,7 +66634,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205311-qglSZDGPzJeZ.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -66686,7 +66701,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b285312-u2xuViX8UEyu.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": "Unknown",
    "height": null,
    "occupation": [
@@ -66755,7 +66772,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319533-ixLLx0aKyPr1.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -66786,7 +66805,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319537-wpKTppVSW1kp.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -66814,7 +66835,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b325563-yqpz2L6q6go2.png",
   "attributes": {
    "gender": "Female",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -66843,7 +66866,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319535-kHp3c3MkF5An.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -66871,7 +66896,9 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b319536-V8FyJIoslvYU.png",
   "attributes": {
    "gender": "Male",
-   "species": null,
+   "species": [
+    "Human"
+   ],
    "age": null,
    "height": null,
    "occupation": [
@@ -68376,7 +68403,11 @@
    "species": null,
    "age": null,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Onmyouji",
+    "Shikigami",
+    "Mage"
+   ],
    "hair": null,
    "anime": "Tokyo Ravens",
    "genres": [
