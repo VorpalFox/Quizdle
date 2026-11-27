@@ -880,29 +880,42 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     }
   }
 
-  // Le repli, comme Wikipédia : l'infobox seulement (ni intro, ni texte, ni recherche), qui remplit ce qui est resté
-  // vide et s'ajoute aux listes (addedValues)
+  // Le repli, comme Wikipédia : l'infobox seulement (ni intro, ni recherche), qui remplit ce qui est resté vide et
+  // s'ajoute aux listes (addedValues). Plus les cheveux du texte s'il n'en a toujours pas : la page vient de Wikidata,
+  // c'est bien la sienne (Fai sur le wiki de xxxHOLiC, Chii sur celui du cosplay)
   const fallbackWikis = [...new Set(fallbacks.map(({ wiki }) => wiki))]
   for (const wiki of fallbackWikis) {
     process.stdout.write(`\rFandom (repli) : ${fallbackWikis.indexOf(wiki) + 1}/${fallbackWikis.length} wikis (${wiki})`.padEnd(70))
-    const characters = fallbacks.filter(fallback => fallback.wiki === wiki)
-    let pages = await fetchPages(wiki, characters.map(({ title }) => title))
+    // Le titre de Wikidata, puis son nom complet si la page a été renommée (« Fai_D._Flowright » → « Fai D. Flourite » sur
+    // xxxHOLiC). Pas ses alias : sur un wiki générique, « Rem » ou « Chii » peut être n'importe qui
+    const candidates = fallbacks.filter(fallback => fallback.wiki === wiki)
+      .map(fallback => ({ ...fallback, titles: [...new Set([fallback.title.replace(/_/g, ' '), ...pageTitles(fallback.target.name)])] }))
+    let pages = await fetchPages(wiki, plain(candidates.flatMap(({ titles }) => titles)))
+    const characters = candidates.flatMap(({ target, titles }) => {
+      const title = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
+      return title ? [{ target, title }] : []
+    })
     const templates = characters.flatMap(({ title }) => pages[title] && infoboxTemplate(pages[title]!) ? [infoboxTemplate(pages[title]!)!] : [])
     if (templates.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, templates) }
+    const current = (target: WikiTarget) => completed.get(target.entry) ?? target.entry
+    const hairless = characters.filter(({ target, title }) => pages[title] && !DISAMBIGUATION.test(pages[title]!) && isEmpty(current(target).attributes.hair))
+    const full = hairless.length > 0 ? await fetchFullPages(wiki, hairless.map(({ title }) => title)) : {}
     for (const { target, title } of characters) {
       const infobox = pages[title] ? pageInfobox(pages, title) : null
-      if (!infobox)
+      const values = infobox ? fandomValues(infobox) : null
+      const hair = isEmpty(values?.hair) && full[title] ? textHair(full[title]!) : null
+      if (!infobox && !hair)
         continue
-      const entry = completed.get(target.entry) ?? target.entry
-      const added = addedValues(entry.attributes, fandomValues(infobox))
-      const unknown = addUnknowns(entry.attributes, fandomUnknowns(infobox))
+      const entry = current(target)
+      const added = addedValues(entry.attributes, { ...values ?? {}, ...hair ? { hair: hair.colors } : {} })
+      const unknown = addUnknowns(entry.attributes, infobox ? fandomUnknowns(infobox) : [])
       if (unknown)
         added[UNKNOWN_KEYS] = unknown
       if (Object.keys(added).length === 0)
         continue
       completed.set(target.entry, { ...entry, attributes: { ...entry.attributes, ...added } })
-      filled.push(`${target.entry.name} (repli ${wiki}, page « ${title} ») : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}`)
+      filled.push(`${target.entry.name} (repli ${wiki}, page « ${title} ») : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}`)
     }
   }
   console.log()

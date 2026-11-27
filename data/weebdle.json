@@ -26770,7 +26770,9 @@
     "Executor",
     "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Brown"
+   ],
    "anime": "Fate/Zero",
    "genres": [
     "Action",
@@ -28944,7 +28946,8 @@
     "Fighter"
    ],
    "hair": [
-    "Black"
+    "Black",
+    "Grey"
    ],
    "anime": "Fullmetal Alchemist: Brotherhood",
    "genres": [
@@ -41582,6 +41585,7 @@
     "Fighter"
    ],
    "hair": [
+    "Black",
     "White"
    ],
    "anime": "Made in Abyss",
@@ -41768,40 +41772,6 @@
   }
  },
  {
-  "id": "123186",
-  "name": "Kiwi",
-  "aliases": [
-   "キウイ"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/123186-lgKM1zM7SB1F.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Assistant"
-   ],
-   "hair": [
-    "Blond"
-   ],
-   "anime": "Made in Abyss",
-   "genres": [
-    "Adventure",
-    "Drama",
-    "Fantasy",
-    "Horror",
-    "Mystery",
-    "Sci-Fi"
-   ],
-   "year": 2017,
-   "studio": "Kinema Citrus",
-   "source": "Manga"
-  }
- },
- {
   "id": "122748",
   "name": "Nat",
   "aliases": [
@@ -41855,66 +41825,6 @@
    "hair": [
     "Black"
    ],
-   "anime": "Made in Abyss",
-   "genres": [
-    "Adventure",
-    "Drama",
-    "Fantasy",
-    "Horror",
-    "Mystery",
-    "Sci-Fi"
-   ],
-   "year": 2017,
-   "studio": "Kinema Citrus",
-   "source": "Manga"
-  }
- },
- {
-  "id": "153051",
-  "name": "Simred",
-  "aliases": [
-   "シムラド"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b153051-oZj2GhZmROrK.jpg",
-  "attributes": {
-   "gender": "Male",
-   "species": [
-    "Human"
-   ],
-   "age": null,
-   "height": null,
-   "occupation": [
-    "Adventurer"
-   ],
-   "hair": [
-    "Brown"
-   ],
-   "anime": "Made in Abyss",
-   "genres": [
-    "Adventure",
-    "Drama",
-    "Fantasy",
-    "Horror",
-    "Mystery",
-    "Sci-Fi"
-   ],
-   "year": 2017,
-   "studio": "Kinema Citrus",
-   "source": "Manga"
-  }
- },
- {
-  "id": "161973",
-  "name": "Ilim",
-  "aliases": [],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b161973-2zHM5lJmpYdZ.png",
-  "attributes": {
-   "gender": "Female",
-   "species": null,
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
    "anime": "Made in Abyss",
    "genres": [
     "Adventure",
@@ -59169,7 +59079,8 @@
     "Merchant"
    ],
    "hair": [
-    "Blond"
+    "Blond",
+    "Brown"
    ],
    "anime": "Steins;Gate",
    "genres": [
@@ -70979,7 +70890,9 @@
    "occupation": [
     "Teacher"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
@@ -71173,7 +71086,9 @@
    "occupation": [
     "None"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
@@ -71389,7 +71304,9 @@
    "age": 17,
    "height": null,
    "occupation": null,
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Tsubasa RESERVoir CHRoNiCLE",
    "genres": [
     "Adventure",
