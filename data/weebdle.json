@@ -46310,9 +46310,12 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 14,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Student",
+    "Soldier"
+   ],
    "hair": [
     "Black"
    ],
@@ -46342,9 +46345,11 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 15,
    "height": null,
-   "occupation": null,
+   "occupation": [
+    "Prisoner"
+   ],
    "hair": [
     "Blond"
    ],
@@ -46404,7 +46409,7 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 17,
    "height": null,
    "occupation": [
     "Soldier"
@@ -46436,12 +46441,14 @@
    "species": [
     "Human"
    ],
-   "age": null,
+   "age": 8,
    "height": null,
    "occupation": [
-    "Fighter"
+    "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Adventure",
@@ -46506,7 +46513,9 @@
     "Officer",
     "Soldier"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Now and Then, Here and There",
    "genres": [
     "Adventure",
