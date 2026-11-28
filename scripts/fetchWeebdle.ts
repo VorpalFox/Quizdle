@@ -28,7 +28,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
-import { fillUnknowns } from './unknownValues.js'
+import { fillUnknowns, UNKNOWN_KEYS } from './unknownValues.js'
 import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, withFamilyName, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { familySpecies, finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
@@ -367,13 +367,15 @@ const fandom = await completeFromFandom(targets.map((target, index) => ({ ...tar
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
-// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut
+// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut (pas sur un Unknown de la source)
 const family = familySpecies(withSpecies.entries)
 const defaultHumans: string[] = []
 const speciesEntries = family.entries.map(entry => {
   const anime = String(entry.attributes.anime)
   const human = !(entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)) || HUMAN_CASTS.has(anime)
-  if (entry.attributes.species !== null || !human)
+  // Pas quand la source dit l'espèce inconnue en toutes lettres (« |species = Unknown », LaLa-Ru) : Inconnu à la fin
+  const unknown = (entry.attributes[UNKNOWN_KEYS] as readonly string[] | null | undefined) ?? []
+  if (entry.attributes.species !== null || !human || unknown.includes('species'))
     return entry
   defaultHumans.push(`${entry.name} (${anime})`)
   return { ...entry, attributes: { ...entry.attributes, species: [HUMAN] } }
