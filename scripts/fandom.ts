@@ -13,7 +13,7 @@ import { gender as pronounGender, heightCm, sleep, splitOccupations, weaponList 
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
 import { addedValues, exactSpecies, translateOccupation } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
-import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
+import { cleanValue, pageTitles, shortVowels, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, plainText, textHair } from './wikiText.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -231,7 +231,9 @@ export function characterTitles(target: WikiTarget, article: string | undefined,
     && !shared.has(aliasKey(target.entry.attributes.anime, alias)))
   const names = pageTitles(target.name)
   const macrons = names.map(title => title.replace(/ou/g, 'ō').replace(/uu/g, 'ū').replace(/oo/g, 'ō')).filter(title => !names.includes(title))
-  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases])]
+  // Les alias aussi sans voyelles longues (« Tahoumaru » → « Tahomaru », Dororo)
+  const shortAliases = aliases.map(shortVowels).filter(alias => alias.length >= 3)
+  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases, ...shortAliases])]
     .filter(title => !/[#<>[\]{}|]/.test(title))
 }
 

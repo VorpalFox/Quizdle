@@ -165,11 +165,14 @@ export function mentionsAnime(wikitext: string, animeTitles: string[]): boolean 
 
 // --- Récupération ---
 
-// Les titres à essayer : nom complet dans les deux ordres, et sans voyelles longues (« Gojou » → « Gojo »)
+// Sans voyelles longues, aussi au milieu du mot (« Gojou » → « Gojo », « Shouji » → « Shoji »)
+export const shortVowels = (title: string) => title.replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/oo/g, 'o')
+
+// Les titres à essayer : nom complet dans les deux ordres, et sans voyelles longues
 export function pageTitles(name: CharacterName): string[] {
   const parts = name.full.split(' ')
   const orders = parts.length > 1 ? [name.full, [...parts].reverse().join(' ')] : [name.full]
-  const short = orders.map(title => title.replace(/ou\b/g, 'o').replace(/uu/g, 'u').replace(/oo/g, 'o'))
+  const short = orders.map(shortVowels)
   return [...new Set([...orders, ...short])].filter(title => !/[#<>[\]{}|]/.test(title))
 }
 

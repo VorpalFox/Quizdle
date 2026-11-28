@@ -1953,7 +1953,8 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Student"
+    "Student",
+    "Pilot"
    ],
    "hair": [
     "Ginger",
@@ -2184,8 +2185,9 @@
    "occupation": [
     "Captain",
     "Volleyball player",
-    "Leader",
-    "Athlete"
+    "Student",
+    "Athlete",
+    "Leader"
    ],
    "hair": [
     "Ginger"
@@ -2419,7 +2421,9 @@
    "age": 17,
    "occupation": [
     "Student",
-    "Marine Biologist"
+    "Marine Biologist",
+    "Oceanographer",
+    "Scientist"
    ],
    "hair": [
     "Black"
@@ -3452,6 +3456,37 @@
   }
  },
  {
+  "id": "1111",
+  "name": "C.C.",
+  "aliases": [
+   "シー･ツー"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 300,
+   "occupation": [
+    "Pilot",
+    "Slave",
+    "Terrorist",
+    "Criminal"
+   ],
+   "hair": [
+    "Green"
+   ],
+   "anime": "Code Geass: Lelouch of the Rebellion",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-Fi",
+    "Thriller"
+   ],
+   "year": 2006,
+   "studio": "Sunrise"
+  }
+ },
+ {
   "id": "1259",
   "name": "Misato Katsuragi",
   "aliases": [
@@ -3484,37 +3519,6 @@
    ],
    "year": 1995,
    "studio": "GAINAX"
-  }
- },
- {
-  "id": "1111",
-  "name": "C.C.",
-  "aliases": [
-   "シー･ツー"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1111-UhmlFtRFrnWa.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 300,
-   "occupation": [
-    "Pilot",
-    "Slave",
-    "Terrorist",
-    "Criminal"
-   ],
-   "hair": [
-    "Green"
-   ],
-   "anime": "Code Geass: Lelouch of the Rebellion",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mecha",
-    "Sci-Fi",
-    "Thriller"
-   ],
-   "year": 2006,
-   "studio": "Sunrise"
   }
  },
  {
@@ -3830,39 +3834,6 @@
   }
  },
  {
-  "id": "11772",
-  "name": "Gyro Zeppeli",
-  "aliases": [
-   "Zeppeli Gyro",
-   "ユリウス・カエサル・ツェペリ",
-   "Gyro",
-   "Zeppeli"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
-  "attributes": {
-   "gender": "Male",
-   "age": 24,
-   "occupation": [
-    "Neapolitan Executioner"
-   ],
-   "hair": [
-    "Blond",
-    "Green"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Drama",
-    "Mystery",
-    "Sports",
-    "Supernatural"
-   ],
-   "year": 2026,
-   "studio": "david production"
-  }
- },
- {
   "id": "723",
   "name": "Nami",
   "aliases": [
@@ -3893,6 +3864,39 @@
    ],
    "year": 1999,
    "studio": "Toei Animation"
+  }
+ },
+ {
+  "id": "11772",
+  "name": "Gyro Zeppeli",
+  "aliases": [
+   "Zeppeli Gyro",
+   "ユリウス・カエサル・ツェペリ",
+   "Gyro",
+   "Zeppeli"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "attributes": {
+   "gender": "Male",
+   "age": 24,
+   "occupation": [
+    "Neapolitan Executioner"
+   ],
+   "hair": [
+    "Blond",
+    "Green"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
+   ],
+   "year": 2026,
+   "studio": "david production"
   }
  },
  {
@@ -4899,35 +4903,6 @@
   }
  },
  {
-  "id": "121889",
-  "name": "Yumeko Jabami",
-  "aliases": [
-   "Jabami Yumeko",
-   "蛇喰夢子",
-   "Yumeko",
-   "Jabami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 16,
-   "occupation": [
-    "Student"
-   ],
-   "hair": [
-    "Black"
-   ],
-   "anime": "Kakegurui",
-   "genres": [
-    "Drama",
-    "Mystery",
-    "Psychological"
-   ],
-   "year": 2017,
-   "studio": "MAPPA"
-  }
- },
- {
   "id": "718",
   "name": "Kenzou Tenma",
   "aliases": [
@@ -4960,6 +4935,35 @@
    ],
    "year": 2004,
    "studio": "MADHOUSE"
+  }
+ },
+ {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 16,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Black"
+   ],
+   "anime": "Kakegurui",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
   }
  },
  {

@@ -24346,12 +24346,17 @@
   "attributes": {
    "gender": "Male",
    "species": [
-    "Human"
+    "Human",
+    "Demon"
    ],
-   "age": null,
-   "height": null,
-   "occupation": null,
-   "hair": null,
+   "age": 15,
+   "height": 170,
+   "occupation": [
+    "None"
+   ],
+   "hair": [
+    "Black"
+   ],
    "anime": "Dororo",
    "genres": [
     "Action",
