@@ -13,7 +13,7 @@ import { gender as pronounGender, heightCm, sleep, splitOccupations, weaponList 
 import { introRoles, introText, MAX_INTRO_SENTENCES } from './intro.js'
 import { addedValues, exactSpecies, translateOccupation } from './translate.js'
 import { addUnknowns, isUnknownValue, UNKNOWN_KEYS, unknownKeys } from './unknownValues.js'
-import { cleanValue, pageTitles, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
+import { cleanValue, pageTitles, shortVowels, wikiGender, wikiHair, type WikiTarget } from './wikipedia.js'
 import { disambiguationLinks, infoboxAge, plainText, textHair } from './wikiText.js'
 
 const USER_AGENT = 'quizdle-data/1.0'
@@ -69,6 +69,8 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Mob Psycho 100')]: ['mob-psycho-100', 'mobpsycho100'],
   [normalize('Frieren: Beyond Journey’s End')]: ['frieren'],
   [normalize('Fullmetal Alchemist')]: ['fma', 'fullmetalalchemist'],
+  // Pas fullmetal-alchemist-brotherhood : une galerie d'images, sans infobox
+  [normalize('Fullmetal Alchemist: Brotherhood')]: ['fma'],
   [normalize('Demon Slayer: Kimetsu no Yaiba')]: ['kimetsu-no-yaiba', 'demonslayer'],
   [normalize('My Dress-Up Darling')]: ['sono-bisque-doll-wa-koi-wo-suru', 'my-dress-up-darling'],
   [normalize('My Hero Academia')]: ['bokunoheroacademia', 'myheroacademia'],
@@ -78,7 +80,7 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('Dr. STONE')]: ['dr-stone', 'drstone'],
   [normalize('One-Punch Man')]: ['onepunchman'],
   [normalize('Neon Genesis Evangelion')]: ['evangelion'],
-  [normalize('Bakemonogatari')]: ['bakemonogatari1', 'monogatari'],
+  [normalize('Bakemonogatari')]: ['bakemonogatari'],
   [normalize('HAIKYU!!')]: ['haikyuu'],
   [normalize('My Teen Romantic Comedy SNAFU')]: ['oregairu', 'yahari-ore-no-seishun-love-comedy-wa-machigatteiru'],
   [normalize('OSHI NO KO')]: ['oshi-no-ko', 'oshinoko'],
@@ -103,16 +105,17 @@ const WIKIS: Record<string, string[] | null> = {
   [normalize('GTO: Great Teacher Onizuka')]: ['gto', 'great-teacher-onizuka'],
   [normalize('DAN DA DAN')]: ['dandadan'],
   [normalize('Solo Leveling')]: ['solo-leveling', 'sololeveling'],
-  [normalize('Black Lagoon')]: ['blacklagoon'],
+  [normalize('Black Lagoon')]: ['lagooncompany'],
   [normalize('The World God Only Knows')]: ['kaminomi'],
 }
 
 // Les champs de l'infobox, selon les wikis (anglais, et français pour les wikis en /fr)
 const FIELDS = {
   gender: ['gender', 'sex', 'sexe', 'genre'],
-  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours
+  // Dans l'ordre : le métier actuel d'abord, l'ancien (« previous occupation ») en dernier recours. Le grade militaire
+  // (Youjo Senki, 86) sans métier : Officer, Soldier… Pas « rank » tout court, ailleurs c'est un classement (One Punch Man).
   occupation: ['occupation', 'current occupation', 'occupations', 'occupation(s)', 'profession', 'professions', 'profession(s)', 'job', 'jobs', 'job(s)',
-    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion','previous occupation', 'former occupation', 'f. occupation'],
+    'métier', 'activité', 'fonction', 'unioccupation', 'hsoccupation', 'position', 'postion', 'military rank', 'previous occupation', 'former occupation', 'f. occupation'],
   hair: ['hair', 'hair color', 'hair colour', 'haircolor', 'hair_color', 'hair colors', 'cheveux', 'couleur de cheveux', 'couleur des cheveux'],
   age: ['age', 'âge', 'ages'],
   // L'espèce brute, traduite à la fin (translateSpeciesEntries) ; la taille en cm (Weebdle seulement)
@@ -175,9 +178,11 @@ function guesses(titles: string[]): string[] {
 
 async function findWiki(anime: string, titles: string[], wikis: Record<string, string | null>): Promise<string | null> {
   const key = normalize(anime)
-  if (key in wikis)
-    return wikis[key]!
   const listed = WIKIS[key]
+  // Le wiki du cache, sauf s'il n'est plus dans la liste écrite à la main (FMA Brotherhood, passé sur fma : le cache
+  // gardait l'ancien wiki trouvé au hasard)
+  if (key in wikis && (listed === undefined || (listed === null ? wikis[key] === null : listed.includes(wikis[key]!))))
+    return wikis[key]!
   const candidates = listed === null ? [] : listed ?? guesses([anime, ...titles])
   let found: string | null = null
   for (const candidate of candidates) {
@@ -226,7 +231,9 @@ export function characterTitles(target: WikiTarget, article: string | undefined,
     && !shared.has(aliasKey(target.entry.attributes.anime, alias)))
   const names = pageTitles(target.name)
   const macrons = names.map(title => title.replace(/ou/g, 'ō').replace(/uu/g, 'ū').replace(/oo/g, 'ō')).filter(title => !names.includes(title))
-  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases])]
+  // Les alias aussi sans voyelles longues (« Tahoumaru » → « Tahomaru », Dororo)
+  const shortAliases = aliases.map(shortVowels).filter(alias => alias.length >= 3)
+  return [...new Set([...(article ? [article.replace(/_/g, ' ')] : []), ...names, ...macrons, ...aliases, ...shortAliases])]
     .filter(title => !/[#<>[\]{}|]/.test(title))
 }
 
@@ -250,16 +257,38 @@ async function searchTitles(wiki: string, names: string[]): Promise<Record<strin
 // Le titre trouvé par la recherche est bien ce perso : chaque mot de son nom AniList s'y retrouve, à une faute de
 // transcription près (« Pyoran » / « Pioran », « Barazaki » / « Baragasaki », « Ayanokouji » / « Ayanokōji »), c et k
 // (pas le « ch » : « Chi » n'est pas « Kai »), y et i pareils (« Matt Kuga » / « Matt Cugat », « Mary » / « Marie » sur le wiki de The Witch and the Beast),
-// r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »).
+// r et l aussi, le japonais ne les distingue pas (« Ro Nny » / « Lo-Ny »), b et v pareil (« Laybelle » / « Rayveil »,
+// Uncle from Another World), hu et fu (フ : « Furr » / « Huel », The Witch and the Beast ; pas chu, shu ni zhu). Sans le suffixe de politesse du nom AniList (« Sawae-san » / « Sawae »).
 // Écarte les autres persos qui partagent un mot (« Ling Wang Ma », sa mère, n'est pas « Wang Ling »).
+const HONORIFICS = new Set(['san', 'chan', 'kun', 'sama', 'dono', 'senpai'])
 export function sameName(name: string, title: string): boolean {
   const words = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r')
+    .replace(/ou/g, 'o').replace(/uu/g, 'u').replace(/ii/g, 'i').replace(/(?<![csz])hu/g, 'fu').replace(/c(?!h)/g, 'k').replace(/y/g, 'i').replace(/l/g, 'r').replace(/v/g, 'b')
     .replace(/['’.]/g, '').split(/[^a-z0-9]+/).filter(Boolean)
   const titleWords = words(title)
+  // Le nom collé, dans un ordre ou l'autre, découpé autrement (« Shabei Yi » / « Yisha Bei » à Immortal King)
+  const nameWords = words(name).filter((word, index) => index === 0 || !HONORIFICS.has(word))
+  if (nameWords.length > 1 && [nameWords, nameWords.toReversed()].some(order => distance(order.join(''), titleWords.join('')) <= 1))
+    return true
   const candidates = [...titleWords, titleWords.join('')]
-  return words(name).every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
+  return nameWords.every(word => candidates.some(candidate => distance(word, candidate) <= (word.length >= 5 ? 2 : word.length >= 3 ? 1 : 0)))
 }
+
+// Tous les mots de ces noms dans le titre, tels quels (« Angela-Ann » dans « Angela Ann Huel »)
+const plainWords = (text: string) => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().split(/[^a-z0-9'’]+/).filter(Boolean)
+const hasWords = (title: string, names: string) => plainWords(names).every(word => plainWords(title).includes(word))
+// Un nom japonais sans espaces ni séparateurs (« 坂井 進 », « クロード・ジャンヌ・エルメイア »)
+const compact = (text: string) => text.replace(/[\s・=＝·]/g, '')
+
+// Le nom en gras qui ouvre l'intro, sans les liens ('''[[Shuzo Matsutani]]''' → « Shuzo Matsutani »). Seulement en tête
+// du 1er paragraphe, après l'infobox et les images : pas « These two were Bols' wife, '''Kije''' » (une page à deux persos)
+export function introName(text: string): string | null {
+  const intro = text.split('\n').map(line => line.trim()).find(line => line && !/^(\{\{|\||\}\}|\[\[(File|Image):)/i.test(line))
+  const bold = intro?.match(/^'''(.+?)'''/)?.[1]
+  return bold ? bold.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1').trim() || null : null
+}
+
+export const latinName =(name: string) => name.replace(/\s*\([^)]*[^\x00-\x7F][^)]*\)/g, '').trim()
 
 // Distance d'édition, une inversion de deux lettres comptant pour une (« Zhou » / « Zhuo »)
 function distance(a: string, b: string): number {
@@ -462,20 +491,44 @@ function numberedField(fields: Record<string, string>, names: readonly string[])
   return values.filter(value => value.trim()).join(', ') || fields[name]!
 }
 
+// L'occupation de l'infobox n'est que le grade (« Military Rank ») : l'intro s'ajoute quand même, elle dit le rôle
+// (Wilibald Koenig, Youjo Senki : « 3rd Company commander » → Leader en plus d'Officer)
+const RANK_FIELD = 'military rank'
+export const rankOnly = (fields: Record<string, string>) =>
+  fields[RANK_FIELD] !== undefined && FIELDS.occupation.every(name => name === RANK_FIELD || fields[name.replace(/_/g, ' ')] === undefined)
+
 // « Unknown » ne remplit rien : c'est la marque de fandomUnknowns, une autre source peut encore donner la valeur
 const known = (value: string | null) => isUnknownValue(value) ? null : value
 const rawList = (value: string | null) => value ? [value] : null
 
+// Le grade du champ « rank » (wiki de FMA : « Master Sergeant », « Lieutenant Colonel ») : seulement un vrai grade
+// militaire, « rank » est un classement ailleurs (« S-Class Rank 1 », One Punch Man). Le dernier mot de grade, le vrai
+// (« Lieutenant Colonel » → Colonel, « Master Sergeant » → Sergeant, pas Master → Leader)
+const MILITARY_RANK = /\b(?:private|corporal|sergeant|lieutenant|captain|major|colonel|general|admiral|commodore|ensign)\b/gi
+export function militaryRanks(value: string | null): string[] | null {
+  const ranks = (value ?? '').split(/\s*,\s*/).flatMap(part => part.replace(/\([^)]*\)/g, '').match(MILITARY_RANK)?.slice(-1) ?? [])
+  return ranks.length > 0 ? [...new Set(ranks.map(rank => rank[0]!.toUpperCase() + rank.slice(1).toLowerCase()))] : null
+}
+
+// La version de l'anime quand l'infobox en donne plusieurs (« Purple fading to pink (light novel), Reddish Pink (anime) »,
+// Stephanie Dola) : on joue sur l'anime. Les autres versions (roman, manga, jeu) partent, le reste ne bouge pas.
+const OTHER_MEDIA = /\((?:light novel|ln|novels?|web novel|manga|games?|visual novel)\)/i
+export function animeVersion(value: string | null): string | null {
+  if (!value || !/\(anime\)/i.test(value))
+    return value
+  return value.split(/(?<=\))\s*,\s*/).filter(part => !OTHER_MEDIA.test(part)).join(', ')
+}
+
 export function fandomValues(fields: Record<string, string>): Record<Key, AttributeValue> {
   return {
     gender: wikiGender(field(fields, FIELDS.gender)),
-    occupation: splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''),
-    hair: wikiHair(field(fields, FIELDS.hair)),
+    occupation: mergedLists(splitOccupations(known(numberedField(fields, FIELDS.occupation)) ?? ''), militaryRanks(fields.rank ?? null)),
+    hair: wikiHair(animeVersion(field(fields, FIELDS.hair))),
     age: infoboxAge(field(fields, FIELDS.age)),
-    species: rawList(known(field(fields, FIELDS.species))),
+    species: mergedLists(rawList(known(field(fields, FIELDS.species))), statusSpecies(field(fields, FIELDS.deceased))),
     height: heightCm(field(fields, FIELDS.height)),
     weapon: weaponList(field(fields, FIELDS.weapon)),
-    titles: titleOccupations(field(fields, FIELDS.titles)),
+    titles: mergedLists(titleOccupations(field(fields, FIELDS.titles)), nobleTitles(fields.title ?? null)),
     deceased: isDeceased(field(fields, FIELDS.deceased)) ? DECEASED : null,
     relatives: bloodRelatives(field(fields, FIELDS.relatives)),
   }
@@ -551,6 +604,29 @@ function titleOccupations(value: string | null): string[] | null {
   const found = (splitOccupations(value ?? '') ?? []).map(title => translateOccupation(title.replace(/[«»"]/g, '').trim())).filter((name): name is string => Boolean(name))
   return found.length > 0 ? [...new Set(found)] : null
 }
+
+// Le champ « title » tout court : ailleurs souvent un rôle ou un surnom (Leader à des élèves de Code Geass), donc
+// seulement les titres de noblesse (« Princess », Elga dans Uncle from Another World)
+const NOBLE_TITLES = new Set(['King', 'Queen', 'Prince', 'Princess', 'Emperor', 'Empress', 'Monarch', 'Count', 'Noble', 'Royalty'])
+export function nobleTitles(value: string | null): string[] | null {
+  const found = (titleOccupations(value) ?? []).filter(title => NOBLE_TITLES.has(title))
+  return found.length > 0 ? found : null
+}
+
+// L'espèce que dit le statut, le mot du wiki : un esprit (« Spirit », les Shrine Spirits de Mieruko-chan), un fantôme
+// (« Deceased (appears as ghost) ») ou un mort-vivant (« Alive (Undead) », Sunako dans Shiki). Pas un spoil : on le
+// voit comme ça à l'écran.
+export function statusSpecies(value: string | null): string[] | null {
+  if (!value)
+    return null
+  if (/\bundead\b/i.test(value))
+    return ['Undead']
+  if (/^\s*spirit\s*$/i.test(value))
+    return ['Spirit']
+  return /\bghost\b/i.test(value) ? ['Ghost'] : null
+}
+
+const mergedLists = (a: string[] | null, b: string[] | null) => a || b ? [...new Set([...a ?? [], ...b ?? []])] : null
 
 // --- L'introduction ---
 
@@ -663,6 +739,25 @@ function speciesHead(part: string): string | null {
 
 const isEmpty = (value: AttributeValue | undefined) => value === null || value === undefined
 
+// L'infobox de perso d'une page déjà téléchargée, avec celle de son modèle s'il en a un (déjà téléchargé aussi)
+function pageInfobox(pages: Pages, title: string): Record<string, string> | null {
+  const template = pages[title] && infoboxTemplate(pages[title]!)
+  // Ceux de la page par-dessus ceux du modèle ({{Lorraine Vivie Infobox|status=Alive}}), sans les paramètres ({{{gender|}}})
+  const fields = { ...template && pages[template] ? templateInfobox(pages[template]!) : null, ...fandomInfobox(pages[title]!) }
+  const read = Object.entries(fields).filter(([, value]) => !value.includes('{{{'))
+  return read.length > 0 && INFOBOX_FIELDS.some(name => fields[name] && !fields[name].includes('{{{')) ? Object.fromEntries(read) : null
+}
+
+// Le wiki du lien Wikidata, s'il est lisible : en anglais ou en français, comme Wikipédia (« fr.ccsakura » → « ccsakura/fr »,
+// la forme qu'attend l'API). null pour une autre langue (« ru.fma », « zh.kimetsu-no-yaiba », « es.doblaje »).
+export function readableWiki(wiki: string): string | null {
+  const [, language, name] = wiki.match(/^([a-z]{2}(?:-[a-z]+)?)\.(.+)$/) ?? []
+  if (language)
+    return language === 'fr' ? `${name}/fr` : null
+  const suffix = wiki.split('/')[1]
+  return !suffix || suffix === 'fr' ? wiki : null
+}
+
 // Remplit les champs vides avec Fandom. Renvoie les entrées complétées, le détail, et les animes sans wiki.
 export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entries: Entry[], filled: string[], noWiki: string[] }> {
   await mkdir(cacheDir, { recursive: true })
@@ -673,18 +768,25 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
   const byWiki = new Map<string, { target: WikiTarget, titles: string[] }[]>()
   const noWiki = new Set<string>()
   const shared = sharedAliases(targets.map(({ entry }) => entry))
+  // Le lien Wikidata vers un autre wiki que celui de l'anime (lgbtqia-characters pour Nanachi, villains, isekai…) : un
+  // repli, lu après le wiki de l'anime
+  const fallbacks: { target: WikiTarget, wiki: string, title: string }[] = []
   // Tous les persos : même complets, Fandom ajoute à leurs listes (addedValues)
   for (const target of targets) {
-    const article = articles[target.entry.id]
     const anime = String(target.entry.attributes.anime ?? '')
-    // Le lien Wikidata donne le wiki et la page ; sinon le wiki de l'anime
-    const wiki = article?.split(':')[0] ?? await findWiki(anime, target.animeTitles, wikis)
+    const [articleWiki, ...articleTitle] = articles[target.entry.id]?.split(':') ?? []
+    // Le wiki de l'anime d'abord ; le lien Wikidata ne donne la page que s'il pointe sur ce wiki
+    const wiki = await findWiki(anime, target.animeTitles, wikis)
+    const fallback = articleWiki && articleWiki !== wiki ? readableWiki(articleWiki) : null
+    if (fallback && fallback !== wiki)
+      fallbacks.push({ target, wiki: fallback, title: articleTitle.join(':') })
     if (!wiki) {
       noWiki.add(anime)
       continue
     }
     // La page imposée à la main (« fandom » des corrections) : seulement elle, ni homonymie ni recherche
-    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article?.split(':').slice(1).join(':'), shared)
+    const article = articleWiki === wiki ? articleTitle.join(':') : undefined
+    const titles = target.fandomPage ? [target.fandomPage] : characterTitles(target, article, shared)
     byWiki.set(wiki, [...byWiki.get(wiki) ?? [], { target, titles }])
   }
   // Les titres de page à demander à l'API : pas ceux avec une section, lus dans la page entière
@@ -716,25 +818,54 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // Aucune page à son nom : les résultats de la recherche du wiki
     const lost = characters.filter(({ target, titles }) => !target.fandomPage && !titles.some(title => pages[title]))
     const results = lost.length > 0 ? await searchTitles(wiki, lost.map(({ target }) => target.entry.name)) : {}
-    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom
-    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => sameName(target.entry.name, title))]))
+    // Le 1er résultat seulement (plus bas, c'est souvent un autre perso qui le cite), et s'il porte bien son nom : en
+    // titre, ou en gras au début de la page (« Shu » commence par '''Shuzo Matsutani''', Now and Then, Here and There)
+    const firstResults = lost.flatMap(({ target }) => (results[target.entry.name] ?? []).slice(0, 1))
+    if (firstResults.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, firstResults) }
+    const named = (name: string, title: string) => {
+      const bold = pages[title] ? introName(pages[title]!) : null
+      return sameName(name, title) || (bold !== null && sameName(name, bold))
+    }
+    const searched = new Map(lost.map(({ target }) => [target, (results[target.entry.name] ?? []).slice(0, 1).filter(title => named(target.entry.name, title))]))
     // Et ses autres noms AniList (« Kansatsu-sha » → « The Beholder », « Upa » → « Oopa ») : des surnoms qu'on ne garde
     // pas en alias (le salon les prendrait pour des propositions). Retenus seulement si la page a une infobox de perso.
-    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
+    // Sans le japonais entre parenthèses (« Tsundere Elf (ツンデレエルフ) » → « Tsundere Elf », Elga dans Uncle from Another World)
+    const others = new Map(lost.map(({ target }) => [target, target.name.alternative.map(latinName).filter(alt => /[a-z]/i.test(alt) && !/[#<>[\]{}|]/.test(alt))]))
+    // Rien à son nom complet : la recherche du prénom seul (« Angela-Ann Furr » → « Angela Ann Huel », le wiki n'a pas
+    // « Furr » ; « Douman Ashida » → « Douman Ashiya »). Le prénom tel quel dans le titre, le reste à une faute près
+    // (sameName), et une infobox de perso exigée comme pour les autres noms : pas « Shin Sekai Year Zero » pour Shin
+    // Sakai, ni « Wang Zhen » pour Zheng Liang.
+    const givenNames = new Map(lost.flatMap(({ target }) => {
+      const given = target.entry.name.split(/\s+/)[0]!
+      return searched.get(target)!.length === 0 && given !== target.entry.name ? [[target, given] as const] : []
+    }))
+    const givenResults = givenNames.size > 0 ? await searchTitles(wiki, [...givenNames.values()]) : {}
+    for (const [target, given] of givenNames)
+      others.get(target)!.push(...(givenResults[given] ?? []).filter(title => hasWords(title, given) && sameName(target.entry.name, title)))
+    // Toujours rien : la recherche du nom japonais (悪鬼 → « Messiah », 藤堂鏡志朗 → « Kyoshiro Tohdoh »). Le 1er résultat
+    // qui l'écrit dans son début (infobox, intro) : ailleurs dans la page, c'est souvent un autre perso qui le cite
+    // (« Chaos Creator » pour Rimuru) ou un épisode. Après ses autres noms, infobox exigée comme eux : la page de ses
+    // fans écrit aussi 超合金クロビカリ, mais « Superalloy Darkshine » passe avant.
+    const natives = new Map(lost.flatMap(({ target }) => {
+      const native = target.name.native?.trim()
+      return native && /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(native) && searched.get(target)!.length === 0
+        ? [[target, native] as const] : []
+    }))
+    const nativeResults = natives.size > 0 ? await searchTitles(wiki, [...natives.values()]) : {}
     if (lost.length > 0)
-      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values()].flat()) }
+      pages = { ...pages, ...await fetchPages(wiki, [...searched.values(), ...others.values(), ...Object.values(nativeResults)].flat()) }
+    for (const [target, native] of natives) {
+      const title = (nativeResults[native] ?? []).find(title => pages[title] && compact(pages[title]!).includes(compact(native)))
+      if (title)
+        others.get(target)!.push(title)
+    }
     // Une infobox propre au perso ({{Lorraine Vivie Infobox}}, wiki de The Unwanted Undead Adventurer) : ses champs
     // sont dans la page du modèle
     const templates = Object.values(pages).flatMap(text => text && infoboxTemplate(text) ? [infoboxTemplate(text)!] : [])
     if (templates.length > 0)
       pages = { ...pages, ...await fetchPages(wiki, templates) }
-    const infoboxOf = (title: string) => {
-      const template = pages[title] && infoboxTemplate(pages[title]!)
-      // Ceux de la page par-dessus ceux du modèle ({{Lorraine Vivie Infobox|status=Alive}}), sans les paramètres ({{{gender|}}})
-      const fields = { ...template && pages[template] ? templateInfobox(pages[template]!) : null, ...fandomInfobox(pages[title]!) }
-      const read = Object.entries(fields).filter(([, value]) => !value.includes('{{{'))
-      return read.length > 0 && INFOBOX_FIELDS.some(name => fields[name] && !fields[name].includes('{{{')) ? Object.fromEntries(read) : null
-    }
+    const infoboxOf = (title: string) => pageInfobox(pages, title)
     // La page de chaque personnage : la 1re qui a une infobox, sinon la 1re page à son nom qui n'est pas une page
     // d'homonymie (infobox dans un modèle maison, {{Saten Ruiko}} sur le wiki de Railgun) : son texte sert encore
     // pour l'occupation de l'intro et les cheveux. Un résultat de recherche aussi, sans infobox : il porte déjà son nom
@@ -750,7 +881,7 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
     // Les replis de Fandom ne dépendent que de son infobox, pas des autres sources : leurs valeurs s'ajoutent (addedValues)
     // Les cheveux que l'infobox ne donne pas : cherchés dans le texte de la page entière (section Appearance d'abord).
     // Et l'occupation, sans infobox ni intro qui en parle : le début des sections du perso (sectionOccupations).
-    const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) ? introOccupations(pages[title]!) : null]))
+    const intros = new Map(found.map(({ target, title, values }) => [target, isEmpty(values.occupation) || rankOnly(infoboxOf(title) ?? {}) ? introOccupations(pages[title]!) : null]))
     const hairless = found.filter(({ values }) => isEmpty(values.hair))
     const silent = found.filter(({ target, title }) => intros.get(target)?.occupation.length === 0 && !title.includes('#'))
     // Et le sexe, que ni AniList ni l'infobox ne donnent : les pronoms de la page (Hamdo, Abelia, les persos de BNA)
@@ -802,6 +933,45 @@ export async function completeFromFandom(targets: WikiTarget[]): Promise<{ entri
       completed.set(target.entry, { ...target.entry, attributes: { ...target.entry.attributes, ...added } })
       const page = target.name.full === title ? '' : `, page « ${title} »`
       filled.push(`${target.entry.name} (${wiki}${page}) : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}${textGender ? ' (sexe des pronoms de la page)' : ''}${affiliation ? ' (occupation de l\'affiliation)' : ''}${school ? ' (élève : école de l\'infobox)' : ''}${species.length > 0 ? ' (espèce de l\'intro)' : ''}${intro?.occupation.length ? ` (occupation de l'intro : « ${intro.roles.join(' | ')} »)` : ''}${story?.occupation.length ? ` (occupation d'une section : « ${story.roles.join(' | ')} »)` : ''}`)
+    }
+  }
+
+  // Le repli, comme Wikipédia : l'infobox seulement (ni intro, ni recherche), qui remplit ce qui est resté vide et
+  // s'ajoute aux listes (addedValues). Plus les cheveux du texte s'il n'en a toujours pas : la page vient de Wikidata,
+  // c'est bien la sienne (Fai sur le wiki de xxxHOLiC, Chii sur celui du cosplay)
+  const fallbackWikis = [...new Set(fallbacks.map(({ wiki }) => wiki))]
+  for (const wiki of fallbackWikis) {
+    process.stdout.write(`\rFandom (repli) : ${fallbackWikis.indexOf(wiki) + 1}/${fallbackWikis.length} wikis (${wiki})`.padEnd(70))
+    // Le titre de Wikidata, puis son nom complet si la page a été renommée (« Fai_D._Flowright » → « Fai D. Flourite » sur
+    // xxxHOLiC). Pas ses alias : sur un wiki générique, « Rem » ou « Chii » peut être n'importe qui
+    const candidates = fallbacks.filter(fallback => fallback.wiki === wiki)
+      .map(fallback => ({ ...fallback, titles: [...new Set([fallback.title.replace(/_/g, ' '), ...pageTitles(fallback.target.name)])] }))
+    let pages = await fetchPages(wiki, plain(candidates.flatMap(({ titles }) => titles)))
+    const characters = candidates.flatMap(({ target, titles }) => {
+      const title = titles.find(title => pages[title] && !DISAMBIGUATION.test(pages[title]!))
+      return title ? [{ target, title }] : []
+    })
+    const templates = characters.flatMap(({ title }) => pages[title] && infoboxTemplate(pages[title]!) ? [infoboxTemplate(pages[title]!)!] : [])
+    if (templates.length > 0)
+      pages = { ...pages, ...await fetchPages(wiki, templates) }
+    const current = (target: WikiTarget) => completed.get(target.entry) ?? target.entry
+    const hairless = characters.filter(({ target, title }) => pages[title] && !DISAMBIGUATION.test(pages[title]!) && isEmpty(current(target).attributes.hair))
+    const full = hairless.length > 0 ? await fetchFullPages(wiki, hairless.map(({ title }) => title)) : {}
+    for (const { target, title } of characters) {
+      const infobox = pages[title] ? pageInfobox(pages, title) : null
+      const values = infobox ? fandomValues(infobox) : null
+      const hair = isEmpty(values?.hair) && full[title] ? textHair(full[title]!) : null
+      if (!infobox && !hair)
+        continue
+      const entry = current(target)
+      const added = addedValues(entry.attributes, { ...values ?? {}, ...hair ? { hair: hair.colors } : {} })
+      const unknown = addUnknowns(entry.attributes, infobox ? fandomUnknowns(infobox) : [])
+      if (unknown)
+        added[UNKNOWN_KEYS] = unknown
+      if (Object.keys(added).length === 0)
+        continue
+      completed.set(target.entry, { ...entry, attributes: { ...entry.attributes, ...added } })
+      filled.push(`${target.entry.name} (repli ${wiki}, page « ${title} ») : ${Object.entries(added).map(([key, value]) => `${key} ${JSON.stringify(value)}`).join(', ')}${hair ? ` (cheveux du texte : « ${hair.excerpt} »)` : ''}`)
     }
   }
   console.log()

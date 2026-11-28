@@ -8,16 +8,19 @@
 import type { AttributeValue, Entry } from '../src/engine/types.js'
 import { isSetEdit } from '../src/subjects/manual.js'
 import { COMPANY_PRESIDENT, expandSpecies, translateSpecies } from './pixeldleTranslate.js'
+import { OCCUPATION_FAMILIES, withFamilies } from './occupationFamilies.js'
 
 // L'occupation exacte, clés en minuscules. null = pas une occupation, on la retire.
 const OCCUPATIONS: Record<string, string | null> = {
   // École
-  'student': 'Pupil', 'high school student': 'High schooler', 'first-year high school student': 'High schooler', 'middle school student': 'Middle schooler',
+  // « General Student » : un élève ordinaire (Xuan Ku, Immortal King), pas un général
+  'student': 'Pupil', 'general student': 'Pupil', 'high school student': 'High schooler', 'first-year high school student': 'High schooler', 'middle school student': 'Middle schooler',
   'university student': 'Student', 'college student': 'Student', 'seimei university junior': 'Student',
   'principal': 'Principal', 'delving instructor': 'Instructor', 'student council president': 'Student council president',
   // Armée, police
   'general': 'General', 'briggs general': 'General', 'lieutenant': 'Lieutenant', 'sergeant': 'Sergeant', 'officer': 'Officer',
-  'military officer': 'Officer', 'soldier': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
+  'private': 'Soldier', 'admiral': 'Officer', 'commodore': 'Officer', 'ensign': 'Officer',
+  'military officer': 'Officer', 'soldier': 'Soldier', 'corporal': 'Soldier', 'scout': 'Scout', 'guard': 'Guard', 'bodyguard': 'Bodyguard',
   'survey corps': 'Survey Corps', '104th training corps': 'Recruit', '104th trainees squad': 'Recruit',
   'police officer': 'Police officer', 'policeman': 'Police officer', 'spy': 'Spy', 'informant': 'Informant',
   'mercenary': 'Mercenary', 'assassin': 'Assassin',
@@ -32,6 +35,8 @@ const OCCUPATIONS: Record<string, string | null> = {
   'hero': 'Hero', 'pro hero': 'Pro hero', 'villain': 'Villain',
   'pirate': 'Pirate', 'space pirate': 'Space pirate', 'thief': 'Thief', 'criminal': 'Criminal', 'tueur en série': 'Serial killer',
   'god': 'God', 'goddess': 'Goddess', 'god of war': 'God', 'delivery god': 'God', 'god of calamity': 'God',
+  // Yama, dieu de la mort et roi des Enfers bouddhiste (Yan Xiaoluo, Immortal King)
+  'yama': 'God',
   // Noblesse
   'king': 'King', 'queen': 'Queen', 'prince': 'Prince', 'princess': 'Princess', 'emperor': 'Emperor', 'empress': 'Empress',
   'noble': 'Noble', 'lord': 'Lord', 'lady': 'Lady', 'earl of phantomhive': 'Count', 'president': 'President', 'diplomat': 'Diplomat',
@@ -95,7 +100,11 @@ const RULES: [RegExp, string | null][] = [
   // le domestique en chef (« Head servant of the Kirishiki family »), le garde du corps d'un prince
   [/^students? (?:of|at)\b/, 'Pupil'],
   [/^head (?:servant|maid|butler)\b/, 'Manservant'],
+  // Le prof principal d'une classe (« Elite Class Head Teacher », Pan Shengcong à Immortal King) : un prof, pas un chef
+  [/\bhead ?teacher\b/, 'Teacher'],
   [/\broyal (?:body)?guard/, 'Guard'],
+  // L'aide de camp d'un officier, même dans une armée royale (Miller Greyler, Uncle from Another World) : pas un noble
+  [/\badjutant\b/, 'Officer'],
   // Les piliers et disciples de Demon Slayer (« Water Hashira »)
   [/hashira|tsuguko|demon slayer/, 'Demon Slayer'],
   // Et les chasseurs d'esprits de The World God Only Knows (« Runaway Spirit Squad Agent », « Buddy - Spirit Capturing »)
@@ -120,7 +129,7 @@ const RULES: [RegExp, string | null][] = [
   // « Leader of the Phantom Troupe », « Commander of the Secret Mobile Corps », « CEO of Seventh Heaven », « Head of the Tendo Family »
   [/\b(?:leader|commander|master|chief|chieftain|commandant|responsable|führer|head|ceo|chairman|chair|director|executive|boss|founder|administrator|supervisor|overseer|mayor|governor|minister)\b/, 'Leader'],
   [/\bcaptain\b/, 'Captain'],
-  [/\bguardian\b/, 'Guardian'],
+  [/\bguardians?\b/, 'Guardian'],
   [/shinigami|soul reaper|dieu de la mort|god of death/, 'Shinigami'],
   // « Pilote d'EVA », « Stamen » et « Pistil » (les pilotes de DARLING in the FRANXX)
   [/\bpilot|stamen|pistil/, 'Pilot'],
@@ -148,7 +157,7 @@ const RULES: [RegExp, string | null][] = [
   [/\bprince\b|\bheir\b/, 'Prince'],
   [/royal guard/, 'Guard'],
   // « Lady » en titre seulement (« Lady of the Night Castle ») : « a proper young lady » (Kirari, Kakegurui) n'est pas noble
-  [/\b(?:duke|duchess|lord|noble|royal|royalty|earl|baron|aristocrat)\b|^lady\b|\blady of\b/, 'Noble'],
+  [/\b(?:duke|duchess|lord|noble|royal|royalty|earl|baron|margrave|aristocrat)\b|^lady\b|\blady of\b/, 'Noble'],
   [/sniper|marksman|gunman|shooter|gâchette/, 'Marksman'],
   // « Magic swordman » aussi, sans s (Amyu)
   [/swords?(?:wo)?m[ae]n/, 'Swordsman'],
@@ -156,7 +165,7 @@ const RULES: [RegExp, string | null][] = [
   [/\bbull(?:y|ies)\b|delinquent/, 'Thug'],
   [/\b(?:soldier|combatant|warrior|warrrior|fighter|gladiator|duelist|raider|attacker|tank|spotter|initiator|mercenary|shinobi)s?\b/, 'Fighter'],
   [/\b(?:general|major|lieutenant|sergeant|colonel|officer)s?\b/, 'Officer'],
-  [/\b(?:guard|bodyguard|gatekeeper|security|sentinel)s?\b/, 'Guard'],
+  [/\b(?:guard|bodyguard|guardsman|guardsmen|gatekeeper|security|sentinel)s?\b/, 'Guard'],
   [/butler/, 'Butler'],
   // « Tamer », « Monster Tamer » (Ro Nny)
   [/\btamer\b/, 'Trainer'],
@@ -186,7 +195,8 @@ const RULES: [RegExp, string | null][] = [
   [/assistant|\baide\b|sidekick|\bbuddy\b|right-hand|adviser|advisor|apprentice|subordinate|attaché/, 'Assistant'],
   [/traveler|traveller|nomad|wanderer/, 'Traveler'],
   [/\bpresident\b|representative|second-in-command/, 'Leader'],
-  [/\bhunter\b/, 'Hunter'],
+  // Les Collectors de Gleipnir chassent les pièces de l'Alien
+  [/\bhunter\b|\bcollectors?\b/, 'Hunter'],
   [/\bhero(?:ine)?\b|vassal weapon/, 'Hero'],
   [/supervillain|villain/, 'Villain'],
   [/waitress|waiter|hostess/, 'Waiter'],
@@ -355,7 +365,7 @@ export function translateEntries(entries: Entry[], corrected: ReadonlyMap<string
 const OCCUPATION_MERGES: Record<string, string> = {
   'Pupil': 'Student', 'High schooler': 'Student', 'Middle schooler': 'Student',
   'Warrior': 'Fighter', 'Killer': 'Assassin', 'Sniper': 'Marksman',
-  'General': 'Officer', 'Lieutenant': 'Officer', 'Recruit': 'Soldier', 'Bodyguard': 'Guard', 'Secret agent': 'Spy',
+  'General': 'Officer', 'Lieutenant': 'Officer', 'Sergeant': 'Soldier', 'Recruit': 'Soldier', 'Bodyguard': 'Guard', 'Secret agent': 'Spy',
   'Mage': 'Mage', 'Magician': 'Mage', 'Sorcerer': 'Mage', 'Witch': 'Mage', 'Magical Girl': 'Magical girl',
   'Priest': 'Cleric', 'Priestess': 'Cleric', 'Nun': 'Cleric', 'Monk': 'Cleric', 'Cleric': 'Cleric',
   'King': 'Royalty', 'Queen': 'Royalty', 'Emperor': 'Royalty', 'Empress': 'Royalty', 'Monarch': 'Royalty',
@@ -367,38 +377,6 @@ const OCCUPATION_MERGES: Record<string, string> = {
   'Actress': 'Actor', 'Rapper': 'Singer',
 }
 
-// Les grandes familles, ajoutées à la valeur précise qui garde son info en plus (Épéiste + Combattant) : deux persos
-// qui se battent se croisent en jaune même avec des armes différentes
-const OCCUPATION_FAMILIES: Record<string, readonly string[]> = {
-  // Combat
-  'Swordsman': ['Fighter'], 'Samurai': ['Fighter'], 'Ninja': ['Fighter'], 'Knight': ['Fighter'], 'Archer': ['Fighter'],
-  'Marksman': ['Fighter'], 'Lancer': ['Fighter'], 'Mercenary': ['Fighter'], 'Martial artist': ['Fighter'],
-  'Wrestler': ['Fighter', 'Athlete'], 'Bounty hunter': ['Fighter'], 'Nanny': ['Servant'], 'Bartender': ['Waiter'],
-  // Soldat à part : un militaire n'est pas forcément un combattant, l'indice n'est pas le même (validé avec FX)
-  'Officer': ['Soldier'], 'Survey Corps': ['Soldier'], 'Scout': ['Soldier'],
-  'Demon Slayer': ['Monster hunter', 'Fighter'], 'Demon hunter': ['Monster hunter', 'Fighter'],
-  'Vampire hunter': ['Monster hunter', 'Fighter'], 'Exorcist': ['Monster hunter', 'Mage'],
-  'Superhero': ['Hero', 'Fighter'],
-  // Crime
-  'Assassin': ['Criminal', 'Fighter'], 'Serial killer': ['Criminal'], 'Mobster': ['Criminal'], 'Thug': ['Criminal'],
-  'Thief': ['Criminal'], 'Pirate': ['Criminal'], 'Terrorist': ['Criminal'],
-  // Magie, religion
-  'Magical girl': ['Mage'], 'Onmyouji': ['Mage'], 'Curse user': ['Mage'], 'Miko': ['Cleric'], 'Oracle': ['Cleric'],
-  // Pouvoir
-  'Royalty': ['Noble', 'Leader'], 'President': ['Leader'], 'Manager': ['Leader'], 'Captain': ['Leader'],
-  'Principal': ['Teacher', 'Leader'], 'Student council president': ['Student', 'Leader'],
-  'Company president': ['Businessperson', 'Leader'],
-  // Sciences, santé
-  'Surgeon': ['Doctor'], 'Psychiatrist': ['Doctor'], 'Engineer': ['Scientist'], 'Inventor': ['Scientist'],
-  'Archaeologist': ['Scientist'], 'Oceanographer': ['Scientist'], 'Astronomer': ['Scientist'], 'Alchemist': ['Scientist'],
-  // Arts, spectacle
-  'Singer': ['Musician', 'Artist'], 'Musician': ['Artist'], 'Idol': ['Singer', 'Celebrity', 'Artist'],
-  'Actor': ['Celebrity', 'Artist'], 'Model': ['Celebrity', 'Artist'], 'YouTuber': ['Celebrity'], 'Voice actor': ['Artist'],
-  'Mangaka': ['Artist'], 'Writer': ['Artist'], 'Cosplayer': ['Artist'], 'Tailor': ['Artisan'],
-  // Métiers, sport
-  'Blacksmith': ['Artisan'], 'Florist': ['Artisan'], 'Cook': ['Artisan'], 'Odd jobs': ['Employee'], 'Volleyball player': ['Athlete'],
-}
-
 const NO_REAL_OCCUPATION = new Set(['Unknown', 'None'])
 
 // Les occupations finales : les synonymes regroupés, puis la famille ajoutée après la valeur précise, sans doublon
@@ -406,7 +384,7 @@ export function groupOccupations(values: readonly string[]): string[] | null {
   // Inconnu et Aucune s'effacent devant une vraie occupation (une arme, un titre)
   const real = values.filter(value => !NO_REAL_OCCUPATION.has(value))
   const merged = (real.length > 0 ? real : values).map(value => OCCUPATION_MERGES[value] ?? value)
-  const grouped = [...new Set([...merged, ...merged.flatMap(value => OCCUPATION_FAMILIES[value] ?? [])])]
+  const grouped = withFamilies(merged)
   return grouped.length > 0 ? grouped : null
 }
 
@@ -470,7 +448,9 @@ const ANIME_SPECIES: Record<string, string | null> = {
   'hybrid': 'Half-demon', 'parasite': 'Human',
   // To Your Eternity : l'ours Kermode, un vrai ours (« spirit bear ») et pas un esprit
   'spirit bear': 'Bear',
-  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'spirit swords': null, 'immortal': null,
+  // Les esprits d'épée d'Immortal King (Jingke) : des esprits
+  'spirit sword': 'Spirit', 'spirit swords': 'Spirit',
+  'none': null, 'unknown': null, 'jewel': null, 'image fragment': null, 'immortal': null,
 }
 // La longue traîne, dans l'ordre (« human-turned beastman - tanuki » : homme-bête avant humain)
 const ANIME_SPECIES_RULES: [RegExp, string][] = [
@@ -493,7 +473,8 @@ const ANIME_SPECIES_RULES: [RegExp, string][] = [
   [/\b(?:yokai|youkai|yōkai|ayakashi|kyouma)\b/, 'Yokai'],
   [/\bspirit\b/, 'Spirit'],
   [/\b(?:giant|gigantes)\b/, 'Giant'],
-  [/\b(?:god|goddess|deity|divine)\b/, 'Deity'],
+  // Old Deus : les dieux de No Game, No Life
+  [/\b(?:god|goddess|deity|divine|deus)\b/, 'Deity'],
   [/\b(?:android|robot|ai)\b/, 'Robot'],
   [/\bhumans?\b/, 'Human'],
 ]
@@ -557,7 +538,8 @@ export function translateSpeciesEntries(entries: Entry[]): { entries: Entry[], u
 
 // Pas des espèces qu'on hérite : une Ombre copie une seule personne (Summer Time Rendering), une race d'ALO est un avatar
 // de jeu (SAO). Fée reste héritable : c'est une famille d'espèces (une exception, comme la mère de Kirito, va à la main).
-const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith'])
+// Un esprit, un fantôme ou un mort-vivant non plus : c'est ce qui lui est arrivé (le père de Miko, Mieruko-chan), pas sa famille.
+const NOT_INHERITED = new Set(['Shadow', 'Sylph', 'Salamander', 'Undine', 'Spriggan', 'Leprechaun', 'Cait Sith', 'Spirit', 'Ghost', 'Undead'])
 // Pas un nom de famille : « Miranjo no Haha » (la mère de Miranjo), « Kage Haha »
 const NOT_SURNAME = /^(?:haha|chichi|ani|ane|otouto|imouto|musume|musuko|sensei)$/i
 

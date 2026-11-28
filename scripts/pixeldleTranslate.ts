@@ -2,6 +2,7 @@
 // Analysis and Development », « jeu de plateforme en 3D ») ramenés à de courtes listes, pour que les indices se comparent.
 // Chaque fonction renvoie la valeur traduite, null si ce n'est pas une valeur à garder (on la retire), undefined si on
 // ne sait pas la traduire (gardée telle quelle et listée dans le récap : à ajouter ici).
+import { withFamilies } from './occupationFamilies.js'
 
 const key = (value: string) => value.toLowerCase().normalize('NFC').replace(/\s+/g, ' ').trim()
 
@@ -197,6 +198,7 @@ const WEAPON_RULES: [RegExp, string][] = [
   [/kunai|shuriken/, 'Ninja'],
   [/microphone/, 'Musician'],
   [/scalpel/, 'Doctor'],
+  [/wrench|spanner/, 'Mechanic'],
 ]
 
 export function weaponOccupations(value: string): string[] {
@@ -873,12 +875,13 @@ const OCCUPATION_MERGES: Record<string, string | null> = {
   'God': null,
 }
 
-// Les occupations finales d'un personnage : regroupées, sans doublon
+// Les occupations finales d'un personnage : regroupées, puis leur famille (Épéiste + Combattant, Tireur…), la même table
+// que l'Animedle et le Weebdle (occupationFamilies.ts), sans doublon
 export function mergeOccupations(value: unknown): string[] | null {
   const list = (Array.isArray(value) ? value : value ? [value] : []).map(String)
     .map(name => name in OCCUPATION_MERGES ? OCCUPATION_MERGES[name] : name)
     .filter((name): name is string => name !== null)
-  return list.length > 0 ? [...new Set(list)] : null
+  return list.length > 0 ? withFamilies(list) : null
 }
 
 // --- Développeur ---

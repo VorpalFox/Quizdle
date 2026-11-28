@@ -1,5 +1,33 @@
 {
  "exclude": [
+  "76624",
+  "283899",
+  "297467",
+  "297468",
+  "260812",
+  "264479",
+  "264680",
+  "260810",
+  "260813",
+  "145723",
+  "50123",
+  "52739",
+  "134187",
+  "175514",
+  "175515",
+  "175516",
+  "329566",
+  "329567",
+  "329568",
+  "161973",
+  "153051",
+  "123186",
+  "218496",
+  "168789",
+  "1670",
+  "262662",
+  "38443",
+  "1671",
   "387259",
   "387261",
   "38910",
@@ -42,7 +70,38 @@
   "121461",
   "121451",
   "297776",
-  "297774"
+  "297774",
+  "135054",
+  "135050",
+  "135051",
+  "135041",
+  "135055",
+  "135059",
+  "219177",
+  "219165",
+  "219166",
+  "219173",
+  "219179",
+  "219193",
+  "219198",
+  "219199",
+  "219200",
+  "219203",
+  "219202",
+  "219204",
+  "219205",
+  "293232",
+  "293589",
+  "293233",
+  "250707",
+  "250708",
+  "250712",
+  "258652",
+  "250710",
+  "251688",
+  "199024",
+  "251686",
+  "255296"
  ],
  "edit": {
   "80": {
@@ -349,8 +408,13 @@
   "131041": {
    "_nom": "Gabiru"
   },
+  "135038": {
+   "_nom": "Séverin Bientôt",
+   "_note": "gardé malgré la limite de Saga of Tanya the Evil"
+  },
   "135044": {
    "_nom": "Sonzai X",
+   "gender": "Genderless",
    "species": {
     "plus": [
      "Deity"
@@ -555,12 +619,18 @@
   },
   "251689": {
    "_nom": "Nyansuke",
+   "_raison": "un chat : pas de cheveux",
    "species": {
     "plus": [
      "Cat"
     ],
     "moins": [
      "Human"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
@@ -617,19 +687,33 @@
   },
   "209533": {
    "_nom": "Kage",
-   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX)",
+   "_raison": "dernier du clan des Ombres, humains maudits (Fandom : « Human (cursed) ») : Humain et Ombre, comme sa mère (validé avec FX) ; une ombre, pas de cheveux",
    "species": {
     "plus": [
      "Shadow"
     ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
    }
+  },
+  "271149": {
+   "_nom": "Mitsumata",
+   "_note": "épinglé : connu (72 favoris) mais vide, la limite le retirerait avant des inconnus"
   },
   "264680": {
    "_nom": "Kage Haha",
-   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX)",
+   "_raison": "la mère de Kage, du clan des Ombres (Fandom : « Shadow clan ») : Humain et Ombre comme lui (validé avec FX) ; une ombre, pas de cheveux",
    "species": {
     "plus": [
      "Human"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
     ]
    }
   },
@@ -713,12 +797,111 @@
      "Demon"
     ]
    }
+  },
+  "219178": {
+   "_nom": "Ling Wang Ba",
+   "_note": "Guru Wang Situ est son nom de plume d'écrivain, pas un religieux",
+   "occupation": {
+    "moins": [
+     "Cleric"
+    ]
+   }
+  },
+  "212567": {
+   "_nom": "Yi Zhou",
+   "_note": "le comité d'État des arts immortels (la cultivation), pas de l'art",
+   "occupation": {
+    "plus": [
+     "Politician"
+    ],
+    "moins": [
+     "National Comite Of Immortal Arts"
+    ]
+   }
+  },
+  "219212": {
+   "_nom": "Jingke",
+   "_note": "God of All Spirit Swords : déjà Leader",
+   "occupation": {
+    "moins": [
+     "God of All Spirit Swords"
+    ]
+   }
+  },
+  "189232": {
+   "_nom": "Ha Tuntian",
+   "_raison": "un démon-grenouille coincé dans un corps de chien : pas de cheveux, Dog en indice",
+   "species": {
+    "plus": [
+     "Dog"
+    ]
+   },
+   "hair": {
+    "plus": [
+     "N/A"
+    ]
+   }
+  },
+  "219194": {
+   "_nom": "Xuan Ku",
+   "_note": "gardé malgré la limite de The Daily Life of the Immortal King ; l'auteur dans l'histoire, il manipule l'intrigue",
+   "occupation": {
+    "plus": [
+     "Cheater",
+     "Writer"
+    ]
+   }
+  },
+  "255295": {
+   "_nom": "Sankai",
+   "_note": "les Shrine Spirits, deux jumelles (l'autre fiche, 255296, est exclue) ; « Thrice » dans l'anime ; deux fillettes à l'origine (Towako Oka), donc Female",
+   "aliases": [
+    "Thrice",
+    "Shrine Spirits",
+    "さんかい"
+   ],
+   "gender": "Female"
+  },
+  "69": {
+   "_nom": "Maes Hughes",
+   "_raison": "Green lu dans le texte, c'est la teinte de l'anime de 2003 : noirs dans Brotherhood",
+   "hair": {
+    "moins": [
+     "Green"
+    ]
+   }
+  },
+  "122463": {
+   "_nom": "Bondrewd",
+   "_raison": "toujours sous son casque : cheveux jamais montrés",
+   "hair": {
+    "plus": [
+     "Unknown"
+    ]
+   }
+  },
+  "250703": {
+   "_nom": "Mamoru Yotsuya",
+   "_raison": "le père mort de Miko, qu'on voit en fantôme : Ghost en plus de Spirit",
+   "species": {
+    "plus": [
+     "Ghost"
+    ]
+   }
+  },
+  "409273": {
+   "_nom": "Liuyue Jiang",
+   "_note": "gardée malgré la limite de The Daily Life of the Immortal King"
   }
  },
  "add": [],
  "limits": {
   "The Reincarnation of the Strongest Exorcist in Another World": 18,
-  "The World God Only Knows": 15
+  "The World God Only Knows": 15,
+  "Saga of Tanya the Evil": 16,
+  "The Daily Life of the Immortal King": 17,
+  "Mieruko-chan": 14,
+  "Ranking of Kings": 15
  },
  "fandom": {
   "3797": "Chiba Atsuko#Alter Ego: Paprika",
@@ -727,6 +910,12 @@
   "264680": "Kage's Mother",
   "121452": "Nono Mozunono",
   "121448": "Chouka U Baragasaki",
-  "201555": "The Nameless Boy"
+  "201555": "The Nameless Boy",
+  "135053": "List of Minor Characters#Ihlen Schwarzkopf",
+  "219181": "Mother Wang",
+  "219178": "Father Wang",
+  "250706": "Mrs. Arai",
+  "255295": "Shrine Spirits",
+  "231699": "Ryunosuke Minakata"
  }
 }

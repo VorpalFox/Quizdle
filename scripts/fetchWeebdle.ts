@@ -28,7 +28,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { normalize } from '../src/engine/search.js'
 import type { Entry } from '../src/engine/types.js'
 import { weebdleAttributes } from '../src/subjects/weebdle/index.js'
-import { fillUnknowns } from './unknownValues.js'
+import { fillUnknowns, UNKNOWN_KEYS } from './unknownValues.js'
 import { aliases, anilist, anilistUnknowns, animeSource, cleanName, cleanTitle, DELAY_MS, gender, genres, parseAge, parseHair, parseHeight, parseOccupation, parseOccupationAtStart, parseSpecies, parseWeapon, sleep, uniqueNameParts, withFamilyName, type CharacterName } from './anilist.js'
 import { applyManual, finishManual, manualFile, readManual } from '../src/subjects/manual.js'
 import { familySpecies, finishOccupations, manualOccupations, translateEntries, translateSpeciesEntries } from './translate.js'
@@ -60,8 +60,8 @@ const NOT_ONLY_HUMANS = new Set(['Fantasy', 'Supernatural', 'Sci-Fi', 'Mecha', '
 const HUMAN = 'Human'
 // Humain par défaut aussi dans ces animes surnaturels ou de SF où tout le monde est humain (des pouvoirs, pas d'autres
 // espèces) ; les exceptions (Monokuma, Sonzai X) sont corrigées à la main. Pas encore ceux qui ont des non-humains à
-// repérer à la main : ChäoS;HEAd, Occultic;Nine,
-// Summer Time Rendering (les Ombres), ni Magi (Fanalis, Djinns).
+// repérer à la main : ChäoS;HEAd, Occultic;Nine, ni Magi (Fanalis, Djinns). Summer Time Rendering oui : ses Ombres ont
+// leur espèce sur le wiki, comme Guideau, Johan et Ashgan dans The Witch and the Beast.
 // Liste écrite à la main exprès : « tous les persos connus sont humains » se trompe justement sur ceux dont l'espèce
 // n'est pas renseignée (Kyuubey, les homoncules de FMA, Reg et Nanachi, Meruem, les espèces de Tower of God).
 const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA LOST IN SPACE', 'BTOOOM!', 'Bungo Stray Dogs', 'Chivalry of a Failed Knight',
@@ -69,7 +69,8 @@ const HUMAN_CASTS = new Set(['ALDNOAH.ZERO', 'The World God Only Knows', 'ASTRA 
   'PSYCHO-PASS', 'Paprika', 'Now and Then, Here and There', 'Blast of Tempest', 'Mieruko-chan', 'Danganronpa: The Animation',
   'Danganronpa 3: The End of Hope’s Peak High School - Future Arc', 'A Certain Magical Index', 'A Certain Scientific Railgun',
   'Accel World', 'Akame ga Kill!', 'Angel Beats!', 'Ascendance of a Bookworm', 'Code Geass: Lelouch of the Rebellion', 'OSHI NO KO',
-  'Re:CREATORS', 'SPY x FAMILY', 'Steins;Gate', 'The Elusive Samurai', 'World Trigger', 'Ya Boy Kongming!', 'DARLING in the FRANXX', 'Death Parade'])
+  'Re:CREATORS', 'SPY x FAMILY', 'Steins;Gate', 'The Elusive Samurai', 'World Trigger', 'Ya Boy Kongming!', 'DARLING in the FRANXX', 'Death Parade',
+  'Summer Time Rendering', 'The Witch and the Beast'])
 
 const root = new URL('../', import.meta.url)
 const cacheDir = new URL('.cache/weebdle/', root)
@@ -197,8 +198,9 @@ for (const anime of animes) {
   anime.cast = anime.cast
     .map(({ role, character }) => ({ role, character: { ...character, name: cleanName(character.name) } }))
     .filter(({ character }) => !NOT_CHARACTERS.has(normalize(character.name.full)) && !excludedIds.has(String(character.id)))
+  // Un figurant corrigé à la main compte comme un secondaire : on l'a voulu (les Shrine Spirits de Mieruko-chan)
   for (const { role, character } of anime.cast) {
-    if (role !== 'BACKGROUND')
+    if (role !== 'BACKGROUND' || editedIds.has(String(character.id)))
       appearances.set(character.id, [...appearances.get(character.id) ?? [], { anime, role, character }])
   }
 }
@@ -365,13 +367,15 @@ const fandom = await completeFromFandom(targets.map((target, index) => ({ ...tar
 const wiki = await completeFromWikipedia(targets.map((target, index) => ({ ...target, entry: fandom.entries[index]! })))
 const translated = translateEntries(wiki.entries, manualOccupations(manual.edit))
 const withSpecies = translateSpeciesEntries(translated.entries)
-// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut
+// Sans espèce : celle de sa famille (même anime, même nom), sinon Humain par défaut (pas sur un Unknown de la source)
 const family = familySpecies(withSpecies.entries)
 const defaultHumans: string[] = []
 const speciesEntries = family.entries.map(entry => {
   const anime = String(entry.attributes.anime)
   const human = !(entry.attributes.genres as string[]).some(genre => NOT_ONLY_HUMANS.has(genre)) || HUMAN_CASTS.has(anime)
-  if (entry.attributes.species !== null || !human)
+  // Pas quand la source dit l'espèce inconnue en toutes lettres (« |species = Unknown », LaLa-Ru) : Inconnu à la fin
+  const unknown = (entry.attributes[UNKNOWN_KEYS] as readonly string[] | null | undefined) ?? []
+  if (entry.attributes.species !== null || !human || unknown.includes('species'))
     return entry
   defaultHumans.push(`${entry.name} (${anime})`)
   return { ...entry, attributes: { ...entry.attributes, species: [HUMAN] } }

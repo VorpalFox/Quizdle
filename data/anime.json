@@ -47,9 +47,13 @@
    "occupation": [
     "Thug",
     "Soldier",
-    "Criminal"
+    "Captain",
+    "Criminal",
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -150,7 +154,9 @@
     "Swordsman",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Attack on Titan",
    "genres": [
     "Action",
@@ -418,6 +424,7 @@
     "Adventurer",
     "Marksman",
     "Fighter",
+    "Shooter",
     "Criminal",
     "Monster hunter"
    ],
@@ -479,7 +486,8 @@
     "Adventurer"
    ],
    "hair": [
-    "White"
+    "White",
+    "Silver"
    ],
    "anime": "Frieren: Beyond Journey’s End",
    "genres": [
@@ -505,7 +513,8 @@
    "gender": "Female",
    "age": 18,
    "occupation": [
-    "Doctor"
+    "Doctor",
+    "Scientist"
    ],
    "hair": [
     "Brown"
@@ -572,14 +581,16 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
   "attributes": {
    "gender": "Female",
-   "age": null,
+   "age": "Unknown",
    "occupation": [
     "Demon hunter",
+    "Demon",
     "Monster hunter",
     "Fighter"
    ],
    "hair": [
-    "Red"
+    "Red",
+    "Brown"
    ],
    "anime": "Chainsaw Man",
    "genres": [
@@ -611,10 +622,12 @@
     "Assassin",
     "Swordsman",
     "Ninja",
-    "Criminal",
-    "Fighter"
+    "Fighter",
+    "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Naruto",
    "genres": [
     "Action",
@@ -646,7 +659,9 @@
     "Ninja",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Silver"
+   ],
    "anime": "Naruto",
    "genres": [
     "Action",
@@ -778,6 +793,7 @@
    "age": 16,
    "occupation": [
     "Demon hunter",
+    "Student",
     "Monster hunter",
     "Fighter"
    ],
@@ -843,6 +859,7 @@
    "age": 17,
    "occupation": [
     "Student",
+    "Police officer",
     "Serial killer",
     "Criminal"
    ],
@@ -902,9 +919,10 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
   "attributes": {
    "gender": "Female",
-   "age": null,
+   "age": "Unknown",
    "occupation": [
     "Demon hunter",
+    "Demon",
     "Monster hunter",
     "Fighter"
    ],
@@ -1002,9 +1020,16 @@
    "age": 15,
    "occupation": [
     "Alchemist",
-    "Scientist"
+    "Officer",
+    "Mage",
+    "Lancer",
+    "Scientist",
+    "Soldier",
+    "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
@@ -1066,12 +1091,15 @@
     "Mercenary",
     "Swordsman",
     "Demon hunter",
-    "Charcoal seller",
     "Demon Slayer",
+    "Charcoal seller",
     "Fighter",
     "Monster hunter"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "Demon Slayer: Kimetsu no Yaiba",
    "genres": [
     "Action",
@@ -1204,7 +1232,8 @@
     "Fighter"
    ],
    "hair": [
-    "Brown"
+    "Brown",
+    "Purple"
    ],
    "anime": "JoJo's Bizarre Adventure",
    "genres": [
@@ -1237,7 +1266,10 @@
     "Hero",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "White",
+    "Red"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -1424,6 +1456,7 @@
    "occupation": [
     "Samurai",
     "Swordsman",
+    "Leader",
     "Fighter"
    ],
    "hair": [
@@ -1455,9 +1488,9 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
+    "Knight",
     "Student",
     "Servant",
-    "Knight",
     "Cleric",
     "Leader",
     "Unemployed",
@@ -1920,7 +1953,8 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
-    "Student"
+    "Student",
+    "Pilot"
    ],
    "hair": [
     "Ginger",
@@ -2151,8 +2185,9 @@
    "occupation": [
     "Captain",
     "Volleyball player",
-    "Leader",
-    "Athlete"
+    "Student",
+    "Athlete",
+    "Leader"
    ],
    "hair": [
     "Ginger"
@@ -2184,6 +2219,7 @@
     "Leader",
     "Soldier",
     "Alchemist",
+    "Officer",
     "Scientist"
    ],
    "hair": [
@@ -2285,8 +2321,10 @@
     "Marksman",
     "Bounty hunter",
     "Pilot",
+    "Hunter",
     "Criminal",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Green",
@@ -2317,8 +2355,14 @@
   "attributes": {
    "gender": "Male",
    "age": 28,
-   "occupation": null,
-   "hair": null,
+   "occupation": [
+    "Hunter",
+    "Leader"
+   ],
+   "hair": [
+    "Blue",
+    "Red"
+   ],
    "anime": "Hunter x Hunter",
    "genres": [
     "Action",
@@ -2377,7 +2421,9 @@
    "age": 17,
    "occupation": [
     "Student",
-    "Marine Biologist"
+    "Marine Biologist",
+    "Oceanographer",
+    "Scientist"
    ],
    "hair": [
     "Black"
@@ -2568,9 +2614,16 @@
   "attributes": {
    "gender": "Other",
    "age": 37,
-   "occupation": null,
+   "occupation": [
+    "Adventurer",
+    "Leader",
+    "Royalty",
+    "Teacher",
+    "Noble"
+   ],
    "hair": [
-    "Blue"
+    "Blue",
+    "Silver"
    ],
    "anime": "That Time I Got Reincarnated as a Slime",
    "genres": [
@@ -2604,7 +2657,9 @@
     "Swordsman",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Naruto",
    "genres": [
     "Action",
@@ -2889,10 +2944,13 @@
    "occupation": [
     "Student",
     "Exorcist",
+    "Police officer",
     "Monster hunter",
     "Mage"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Bakemonogatari",
    "genres": [
     "Comedy",
@@ -2951,12 +3009,16 @@
    "gender": "Female",
    "age": 14,
    "occupation": [
+    "Student",
     "Magical girl",
+    "Archer",
     "Marksman",
     "Mage",
-    "Fighter"
+    "Shooter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "Puella Magi Madoka Magica",
    "genres": [
     "Action",
@@ -3237,7 +3299,7 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88350-QU1iwgZ887U8.png",
   "attributes": {
    "gender": "Female",
-   "age": null,
+   "age": 37,
    "occupation": [
     "Mage",
     "Teacher",
@@ -3394,40 +3456,6 @@
   }
  },
  {
-  "id": "1259",
-  "name": "Misato Katsuragi",
-  "aliases": [
-   "Katsuragi Misato",
-   "葛城ミサト",
-   "Misato",
-   "Katsuragi"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 29,
-   "occupation": [
-    "Officer",
-    "Leader",
-    "Soldier"
-   ],
-   "hair": [
-    "Purple"
-   ],
-   "anime": "Neon Genesis Evangelion",
-   "genres": [
-    "Action",
-    "Drama",
-    "Mecha",
-    "Mystery",
-    "Psychological",
-    "Sci-Fi"
-   ],
-   "year": 1995,
-   "studio": "GAINAX"
-  }
- },
- {
   "id": "1111",
   "name": "C.C.",
   "aliases": [
@@ -3456,6 +3484,41 @@
    ],
    "year": 2006,
    "studio": "Sunrise"
+  }
+ },
+ {
+  "id": "1259",
+  "name": "Misato Katsuragi",
+  "aliases": [
+   "Katsuragi Misato",
+   "葛城ミサト",
+   "Misato",
+   "Katsuragi"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1259-afTQkZ5SVMOn.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 29,
+   "occupation": [
+    "Officer",
+    "Leader",
+    "Captain",
+    "Soldier"
+   ],
+   "hair": [
+    "Purple"
+   ],
+   "anime": "Neon Genesis Evangelion",
+   "genres": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Mystery",
+    "Psychological",
+    "Sci-Fi"
+   ],
+   "year": 1995,
+   "studio": "GAINAX"
   }
  },
  {
@@ -3771,39 +3834,6 @@
   }
  },
  {
-  "id": "11772",
-  "name": "Gyro Zeppeli",
-  "aliases": [
-   "Zeppeli Gyro",
-   "ユリウス・カエサル・ツェペリ",
-   "Gyro",
-   "Zeppeli"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
-  "attributes": {
-   "gender": "Male",
-   "age": 24,
-   "occupation": [
-    "Neapolitan Executioner"
-   ],
-   "hair": [
-    "Blond",
-    "Green"
-   ],
-   "anime": "JoJo's Bizarre Adventure",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Drama",
-    "Mystery",
-    "Sports",
-    "Supernatural"
-   ],
-   "year": 2026,
-   "studio": "david production"
-  }
- },
- {
   "id": "723",
   "name": "Nami",
   "aliases": [
@@ -3837,6 +3867,39 @@
   }
  },
  {
+  "id": "11772",
+  "name": "Gyro Zeppeli",
+  "aliases": [
+   "Zeppeli Gyro",
+   "ユリウス・カエサル・ツェペリ",
+   "Gyro",
+   "Zeppeli"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11772-p7MO37Mk0f5g.png",
+  "attributes": {
+   "gender": "Male",
+   "age": 24,
+   "occupation": [
+    "Neapolitan Executioner"
+   ],
+   "hair": [
+    "Blond",
+    "Green"
+   ],
+   "anime": "JoJo's Bizarre Adventure",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sports",
+    "Supernatural"
+   ],
+   "year": 2026,
+   "studio": "david production"
+  }
+ },
+ {
   "id": "141061",
   "name": "Vladilena Milizé",
   "aliases": [
@@ -3852,7 +3915,7 @@
    "occupation": [
     "Leader",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Silver"
@@ -3884,7 +3947,7 @@
    "occupation": [
     "Psychiatrist",
     "Spy",
-    "Sergeant",
+    "Soldier",
     "Doctor"
    ],
    "hair": [
@@ -4072,6 +4135,9 @@
     "Fighter",
     "Martial artist",
     "Wrestler",
+    "Firefighter",
+    "Guard",
+    "Guardian",
     "Artisan",
     "Athlete"
    ],
@@ -4108,7 +4174,7 @@
    "occupation": [
     "Processor",
     "Marksman",
-    "Fighter"
+    "Shooter"
    ],
    "hair": [
     "Ginger",
@@ -4290,9 +4356,15 @@
    "age": 15,
    "occupation": [
     "Swordsman",
-    "Fighter"
+    "Royalty",
+    "Knight",
+    "Fighter",
+    "Noble",
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Grey"
+   ],
    "anime": "Black Clover",
    "genres": [
     "Action",
@@ -4405,7 +4477,11 @@
    "gender": "Male",
    "age": 17,
    "occupation": [
-    "Adventurer"
+    "Adventurer",
+    "Swordsman",
+    "Archer",
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Brown",
@@ -4656,7 +4732,9 @@
     "Pirate",
     "Criminal"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "ONE PIECE",
    "genres": [
     "Action",
@@ -4825,35 +4903,6 @@
   }
  },
  {
-  "id": "121889",
-  "name": "Yumeko Jabami",
-  "aliases": [
-   "Jabami Yumeko",
-   "蛇喰夢子",
-   "Yumeko",
-   "Jabami"
-  ],
-  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
-  "attributes": {
-   "gender": "Female",
-   "age": 16,
-   "occupation": [
-    "Student"
-   ],
-   "hair": [
-    "Black"
-   ],
-   "anime": "Kakegurui",
-   "genres": [
-    "Drama",
-    "Mystery",
-    "Psychological"
-   ],
-   "year": 2017,
-   "studio": "MAPPA"
-  }
- },
- {
   "id": "718",
   "name": "Kenzou Tenma",
   "aliases": [
@@ -4889,6 +4938,35 @@
   }
  },
  {
+  "id": "121889",
+  "name": "Yumeko Jabami",
+  "aliases": [
+   "Jabami Yumeko",
+   "蛇喰夢子",
+   "Yumeko",
+   "Jabami"
+  ],
+  "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121889-ABsurpy5SjOW.png",
+  "attributes": {
+   "gender": "Female",
+   "age": 16,
+   "occupation": [
+    "Student"
+   ],
+   "hair": [
+    "Black"
+   ],
+   "anime": "Kakegurui",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Psychological"
+   ],
+   "year": 2017,
+   "studio": "MAPPA"
+  }
+ },
+ {
   "id": "89225",
   "name": "Shouta Aizawa",
   "aliases": [
@@ -4908,7 +4986,9 @@
     "Hero",
     "Fighter"
    ],
-   "hair": null,
+   "hair": [
+    "Black"
+   ],
    "anime": "My Hero Academia",
    "genres": [
     "Action",
@@ -5182,8 +5262,11 @@
     "Mercenary",
     "Swordsman",
     "Assassin",
+    "Leader",
+    "Archer",
     "Fighter",
-    "Criminal"
+    "Criminal",
+    "Shooter"
    ],
    "hair": [
     "Silver"
@@ -5526,6 +5609,8 @@
    "gender": "Female",
    "age": 17,
    "occupation": [
+    "Student",
+    "Detective",
     "Adventurer"
    ],
    "hair": [
@@ -5561,7 +5646,8 @@
     "Leader",
     "Swordsman",
     "Marksman",
-    "Fighter"
+    "Fighter",
+    "Shooter"
    ],
    "hair": [
     "Black"
@@ -5747,7 +5833,9 @@
    "age": 17,
    "occupation": [
     "Fighter",
-    "Soldier"
+    "Soldier",
+    "Captain",
+    "Leader"
    ],
    "hair": [
     "Blond"
@@ -5941,14 +6029,18 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88349-5dsNUah3oBj8.png",
   "attributes": {
    "gender": "Female",
-   "age": null,
+   "age": 20,
    "occupation": [
     "Noble",
     "Fighter",
     "Adventurer",
-    "Swordsman"
+    "Swordsman",
+    "Royalty",
+    "Leader"
    ],
-   "hair": null,
+   "hair": [
+    "Red"
+   ],
    "anime": "Mushoku Tensei: Jobless Reincarnation",
    "genres": [
     "Adventure",
@@ -6035,9 +6127,13 @@
    "age": 14,
    "occupation": [
     "Alchemist",
+    "Fighter",
+    "Lancer",
     "Scientist"
    ],
-   "hair": null,
+   "hair": [
+    "Blond"
+   ],
    "anime": "Fullmetal Alchemist",
    "genres": [
     "Action",
@@ -6133,7 +6229,10 @@
     "Waiter",
     "Student"
    ],
-   "hair": null,
+   "hair": [
+    "Black",
+    "Red"
+   ],
    "anime": "DAN DA DAN",
    "genres": [
     "Action",
@@ -6343,12 +6442,14 @@
   "image": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
   "attributes": {
    "gender": "Female",
-   "age": null,
+   "age": 19,
    "occupation": [
     "Model",
     "Actor",
+    "Singer",
     "Celebrity",
-    "Artist"
+    "Artist",
+    "Musician"
    ],
    "hair": [
     "Blond"

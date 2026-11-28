@@ -7,4 +7,4 @@ Sur tout le quiz : sexe 0 %, espèce 0 %, nationalité 16 %, occupation 21 %, ch
 
 | Fait | Franchise | Persos | Vide (moy.) | Sexe | Espèce | Nationalité | Occupation | Cheveux |
 |---|---|---|---|---|---|---|---|---|
-| [ ] | The First Descendant | 20 | **41 %** | 0 % | 0 % | 65 % | 60 % | 80 % |
+

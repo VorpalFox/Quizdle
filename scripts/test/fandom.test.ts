@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { bloodRelatives, characterTitles, pageGender, sharedAliases, templateSpecies } from '../fandom.js'
-import { affiliationOccupations, fandomInfobox, sectionOccupations, fandomValues, introOccupations, infoboxTemplate, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { bloodRelatives, characterTitles, pageGender, sharedAliases, statusSpecies, templateSpecies } from '../fandom.js'
+import { affiliationOccupations, animeVersion, fandomInfobox, latinName, nobleTitles, rankOnly, sectionOccupations, fandomValues, introName, introOccupations, militaryRanks, infoboxTemplate, readableWiki, pageSection, sameName, schoolOccupations, templateInfobox } from '../fandom.js'
+import { wikiHair } from '../wikipedia.js'
 import { frenchOccupation, translateOccupation } from '../translate.js'
 import { splitOccupations } from '../anilist.js'
 
@@ -48,8 +49,28 @@ describe('fandomValues', () => {
       .toEqual(['Member of the Supreme Five Swords', 'Student'])
   })
 
+  it('GradeMilitaireSansMetier_LeGrade', () => {
+    const visha = fandomValues(fandomInfobox('{{Character Box|Name=Visha|military_rank=Corporal <small>(Former)</small><br>1st Lieutenant <small>(Current)</small>}}')!)
+    expect(visha.occupation).toEqual(['Corporal', '1st Lieutenant'])
+    expect((visha.occupation as string[]).map(translateOccupation)).toEqual(['Soldier', 'Officer'])
+    expect(fandomValues(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer|Military Rank=Chief Engineer}}')!).occupation).toEqual(['Engineer'])
+  })
+
+  it('GradeSeul_LIntroSAjoute', () => {
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Military Rank=First Lieutenant}}')!)).toBe(true)
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer|Military Rank=Chief Engineer}}')!)).toBe(false)
+    expect(rankOnly(fandomInfobox('{{Character Infobox|Gender=Male|Occupation=Engineer}}')!)).toBe(false)
+  })
+
   it('NomDeLEcoleSeul_Eleve', () => {
     expect(translateOccupation('Private Aichi Symbiosis Academy')).toBe('Pupil')
+    expect(translateOccupation('General Student')).toBe('Pupil')
+    expect(translateOccupation('Elite Class HEad Teacher')).toBe('Teacher')
+    expect(translateOccupation('Adjutant in the Royal Army of Lucidion')).toBe('Officer')
+    expect(translateOccupation('Guardians')).toBe('Guardian')
+    expect(translateOccupation('strong Collector')).toBe('Hunter')
+    expect(translateOccupation('Margrave')).toBe('Noble')
+    expect(translateOccupation('guardsman of the Bosse Kingdom')).toBe('Guard')
     expect(translateOccupation('Middle School Student')).toBe('Middle schooler')
     expect(translateOccupation('President of Rude Mercenary Company')).toBe('Company president')
     expect(translateOccupation('Vice President of Sales')).toBe('Company president')
@@ -162,6 +183,63 @@ describe('sameName', () => {
     expect(sameName('Matt Kuga', 'Matt Cugat')).toBe(true)
     expect(sameName('Mary', 'Marie')).toBe(true)
     expect(sameName('Ro Nny', 'Lo-Ny')).toBe(true)
+    expect(sameName('Shabei Yi', 'Yisha Bei')).toBe(true)
+    expect(sameName('Mabel Laybelle', 'Mabel Rayveil')).toBe(true)
+    expect(sameName('Sawae-san', 'Sawae')).toBe(true)
+    expect(sameName('Angela-Ann Furr', 'Angela Ann Huel')).toBe(true)
+  })
+
+  it('StatutFantomeOuMortVivant_LEspece', () => {
+    expect(statusSpecies('Spirit')).toEqual(['Spirit'])
+    expect(statusSpecies('Deceased (appears as ghost)')).toEqual(['Ghost'])
+    expect(statusSpecies('Alive (Undead)')).toEqual(['Undead'])
+    expect(statusSpecies('Exorcised by Shrine Spirits')).toBeNull()
+    expect(statusSpecies('Alive')).toBeNull()
+  })
+
+  it('ChampTitle_SeulementLaNoblesse', () => {
+    expect(nobleTitles('Princess')).toEqual(['Princess'])
+    expect(nobleTitles('Last Descendant of Ice Clan')).toBeNull()
+    expect(nobleTitles('Student Council President')).toBeNull()
+  })
+
+  it('NomAlternatifAvecJaponais_SansLeJaponais', () => {
+    expect(latinName('Tsundere Elf (ツンデレエルフ)')).toBe('Tsundere Elf')
+    expect(latinName('Sui')).toBe('Sui')
+    expect(latinName('Ryo (Tokyo)')).toBe('Ryo (Tokyo)')
+  })
+
+  it('ChampRank_SeulementLesGradesMilitaires', () => {
+    expect(militaryRanks('Master Sergeant')).toEqual(['Sergeant'])
+    expect(militaryRanks('Captain, Major, Lieutenant Colonel, Brigadier General (posthumously)')).toEqual(['Captain', 'Major', 'Colonel', 'General'])
+    expect(militaryRanks('S-Class Rank 1')).toBeNull()
+    expect(translateOccupation('Private')).toBe('Soldier')
+  })
+
+  it('CheveuxRomanEtAnime_LaVersionAnime', () => {
+    expect(animeVersion('Purple fading to pink and yellow (light novel), Reddish Pink (anime)')).toBe('Reddish Pink (anime)')
+    expect(animeVersion('Maroon (anime), Black (light novel)')).toBe('Maroon (anime)')
+    expect(wikiHair('Maroon (anime)')).toEqual(['Black', 'Red'])
+    expect(animeVersion('Purple that transitions to orange (LN), Dark Purple (anime)')).toBe('Dark Purple (anime)')
+    expect(animeVersion('White at the top that changes to light blue (LN)')).toBe('White at the top that changes to light blue (LN)')
+  })
+
+  it('WikiDuLienWikidata_AnglaisOuFrancaisSeulement', () => {
+    expect(readableWiki('villains')).toBe('villains')
+    expect(readableWiki('fr.ccsakura')).toBe('ccsakura/fr')
+    expect(readableWiki('assassination-classroom/fr')).toBe('assassination-classroom/fr')
+    expect(readableWiki('ru.fma')).toBeNull()
+    expect(readableWiki('zh-tw.newkomica-kari')).toBeNull()
+    expect(readableWiki('es.doblaje')).toBeNull()
+  })
+
+  it('IntroAvecNomEnGras_LeNomSansLiens', () => {
+    expect(introName("'''Shuzo Matsutani''' (松谷 修造), also known as '''Shuu'''")).toBe('Shuzo Matsutani')
+    expect(introName("'''[[Shuzo Matsutani|Shuzo]]''' is")).toBe('Shuzo')
+    expect(introName('Tabur is a soldier')).toBeNull()
+    expect(introName("{{Infobox\n|gender = Female\n}}\n[[File:Shu.png|thumb]] \n'''Shuzo''' is")).toBe('Shuzo')
+    expect(introName("{{Infobox\n|gender = Female\n}}\nThese two were [[Bols]]' wife, '''Kije''', and daughter")).toBeNull()
+    expect(sameName('Shuuzou Matsutani', 'Shuzo Matsutani')).toBe(true)
   })
 
   it('AutrePersoQuiPartageUnMot_Ecarte', () => {
